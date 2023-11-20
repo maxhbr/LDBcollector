@@ -1,0 +1,7 @@
+- id: "Maven:commons-cli:commons-cli"
+  curations:
+    comment: |
+      The source code repository has moved from Subversion to Git.
+    vcs:
+      type: "Git"
+      url: "https://github.com/apache/commons-cli.git"
