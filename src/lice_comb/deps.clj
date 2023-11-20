@@ -72,9 +72,9 @@
 
 (defmulti dep->expressions-info
   "Returns an expressions-info map for the given tools.dep dep (a MapEntry or
-  two-element vector of `['groupId/artifactId dep-info]`), or nil if no
+  two-element vector of `['group-id/artifact-id dep-info]`), or nil if no
   expressions were found."
-  {:arglists '([[ga info]])}
+  {:arglists '([[ga info :as dep]])}
   (fn [[_ info]] (:deps/manifest info)))
 
 (defmethod dep->expressions-info :mvn
@@ -107,7 +107,7 @@
 
 (defn dep->expressions
   "Returns a set of SPDX expressions (Strings) for the given tools.dep dep (a
-  MapEntry or two-element vector of `['groupId/artifactId dep-info-map]`), or
+  MapEntry or two-element vector of `['group-id/artifact-id dep-info-map]`), or
   nil if no expressions were found."
   [dep]
   (some-> (dep->expressions-info dep)
@@ -130,7 +130,7 @@
 
 (defn dep->pom-uri
   "Returns a java.net.URI that points to the pom for the given tools.dep dep (a
-  MapEntry or two-element vector of `['groupId/artifactId dep-info]`), or nil if
+  MapEntry or two-element vector of `['group-id/artifact-id dep-info]`), or nil if
   the dep is not a Maven dep, or a POM could not be found.  The returned URI is
   guaranteed to be resolvable - either to a file that exists in the local Maven
   cache, or to an HTTP-accessible resource on a remote Maven repository (i.e.
@@ -148,7 +148,7 @@
   for license information for the given tools.dep dep (a MapEntry or two-element
   vector of `['group-id/artifact-id dep-info]`),or nil if no locations were
   found."
-  {:arglists '([[ga info]])}
+  {:arglists '([[ga info :as dep]])}
   (fn [[_ info]] (:deps/manifest info)))
 
 (defmethod dep->locations :mvn
@@ -175,7 +175,7 @@
   "Returns the version (as a String) for the given tools.dep dep (a MapEntry or
   two-element vector of `['group-id/artifact-id dep-info]`),or nil if no version
   was found."
-  {:arglists '([[ga info]])}
+  {:arglists '([[ga info :as dep]])}
   (fn [[_ info]] (:deps/manifest info)))
 
 (defmethod dep->version :mvn
