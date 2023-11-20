@@ -125,7 +125,9 @@
         id-with-suffix            (str base-id "-" suffix)]
     (if (contains? @lcis/license-ids-d id-with-suffix)  ; Not all suffixes are valid with all BSD clause counts, so check that it's valid before returning it
       [id-with-suffix confidence]
-      [(assert-listed-id base-id) (if (= confidence :low) :low :medium)])))  ; The suffix we got wasn't valid, which knocks down confidence
+      [(assert-listed-id base-id) (if suffix
+                                    (if (= confidence :low) :low :medium)  ; We got a suffix but it wasn't valid, which knocks down confidence
+                                    confidence)])))                        ; We didn't get a suffix, so leave confidence where it was
 
 (defn- cc-id-constructor
   "An SPDX id constructor specific to the Creative Commons family of licenses."
