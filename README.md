@@ -120,7 +120,7 @@ $ deps-try com.github.pmonks/lice-comb
 ;=> {"GPL-2.0-or-later WITH Classpath-exception-2.0"
 ;     ({:type :concluded, :confidence :low, :strategy :expression-inference,
 ;       :source ("GNU Public License 2.0 or later w/ the GNU Classpath Exception")}
-;      {:id "GPL-2.0-or-later", :type :concluded, :confidence :medium, :strategy :regex-matching,
+;      {:id "GPL-2.0-or-later", :type :concluded, :confidence :high, :strategy :regex-matching,
 ;       :source ("GNU Public License 2.0 or later w/ the GNU Classpath Exception"
 ;                "GNU Public License 2.0 or later")}
 ;      {:id "Classpath-exception-2.0", :type :concluded, :confidence :low, :strategy :regex-matching,
