@@ -4,4 +4,4 @@
       The source code repository has moved from Subversion to Git.
     vcs:
       type: "Git"
-      url: "https://gitbox.apache.org/repos/asf/commons-bsf"
+      url: "https://github.com/apache/commons-bsf.git"
