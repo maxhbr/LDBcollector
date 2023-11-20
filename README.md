@@ -71,15 +71,21 @@ $ deps-try com.github.pmonks/lice-comb
 (lcm/name->expressions "GNU Public License 2.0 w/ the GNU Classpath Exception")
 ;=> #{"GPL-2.0-only WITH Classpath-exception-2.0"}
 
-(lcm/text->ids (slurp "https://www.apache.org/licenses/LICENSE-2.0.txt"))
-;=> #{"Apache-2.0"}
-
 (lcm/uri->ids "https://www.apache.org/licenses/LICENSE-2.0.txt")
 ;=> #{"Apache-2.0"}
 
+(lcm/text->ids (slurp "https://www.apache.org/licenses/LICENSE-2.0.txt"))
+;=> #{"Apache-2.0"}
 
-;; License extraction from Maven poms, including ones that aren't locally downloaded
+
+;; License extraction from Maven GAVs and POMs, including ones that aren't locally downloaded
 (require '[lice-comb.maven :as lcmvn])
+
+(lcmvn/gav->expressions "commons-io" "commons-io" "2.15.0")
+;=> #{"Apache-2.0"}
+
+(lcmvn/gav->expressions "javax.mail" "mail")
+;=> #{"GPL-2.0-only WITH Classpath-exception-2.0" "CDDL-1.1"}
 
 (lcmvn/pom->expressions (str (System/getProperty "user.home") "/.m2/repository/org/clojure/clojure/1.11.1/clojure-1.11.1.pom"))
 ;=> #{"EPL-1.0"}
@@ -91,7 +97,7 @@ $ deps-try com.github.pmonks/lice-comb
 ;; License extraction from tools.deps dependency maps
 (require '[lice-comb.deps :as lcd])
 
-(lcd/dep->expressions ['org.clojure/clojure {:deps/manifest :mvn :mvn/version "1.11.1"}])
+(lcd/dep->expressions ['org.clojure/clojure {:deps/manifest :mvn :mvn/version "1.12.0-alpha5"}])
 ;=> #{"EPL-1.0"}
 
 
@@ -121,7 +127,7 @@ $ deps-try com.github.pmonks/lice-comb
 (lcmvn/pom->expressions-info "https://repo.clojars.org/canvas/canvas/0.1.6/canvas-0.1.6.pom")
 ;=> {"EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0"
 ;     ({:type :declared, :strategy :spdx-expression, :source ("https://repo.clojars.org/canvas/canvas/0.1.6/canvas-0.1.6.pom"
-;                                                             "<name>"
+;                                                             "<licenses><license><name>"
 ;                                                             "EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0")})}
 
 
@@ -137,9 +143,8 @@ $ deps-try com.github.pmonks/lice-comb
 ;       > com.amazonaws/aws-java-sdk-s3@1.12.129
 ;       > https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-s3/1.12.129/aws-java-sdk-s3-1.12.129.pom
 ;       > https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-pom/1.12.129/aws-java-sdk-pom-1.12.129.pom
-;       > <name>
+;       > <licenses><license><name>
 ;       > Apache License, Version 2.0
-nil
 ```
 
 ### API Documentation
