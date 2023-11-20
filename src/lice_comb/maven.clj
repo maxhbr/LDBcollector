@@ -86,25 +86,6 @@
     result
     (xml-find-first-string xml ks2)))
 
-(defn gav->pom-uri
-  "Returns a java.net.URI pointing to the POM for the given GAV, or nil
-  if one cannot be found.  The returned URI is guaranteed to be resolvable -
-  either to a file that exists in the local Maven cache, or to an HTTP-
-  accessible resource on a remote Maven repository (i.e. Maven Central or
-  Clojars) that resolves."
-  ([{:keys [group-id artifact-id version]}] (gav->pom-uri group-id artifact-id version))
-  ([group-id artifact-id version]
-   (when (and (not (s/blank? group-id))
-              (not (s/blank? artifact-id))
-              (not (s/blank? version)))
-     (let [gav-path  (str (s/replace group-id "." "/") "/" artifact-id "/" version "/" artifact-id "-" version ".pom")
-           local-pom (io/file (str @local-maven-repo-d separator (s/replace gav-path "/" separator)))]
-       (if (and (.exists local-pom)
-                (.isFile local-pom))
-         (.toURI local-pom)
-         (when-let [remote-uri (first (filter lcihttp/uri-resolves? (map #(str % "/" gav-path) (vals remote-maven-repos))))]
-           (java.net.URI. remote-uri)))))))
-
 (defn ga->metadata-uri
   "Returns a java.net.URI pointing to the maven-metadata.xml for the given GA,
   or nil if one cannot be found.  The returned URI is guaranteed to be
@@ -133,6 +114,26 @@
         (if-let [latest-version (xml-find-first-string metadata-xml [:metadata :versioning :latest])]
           latest-version
           (last (xi/find-all metadata-xml [:metadata :versioning :versions :version])))))))
+
+(defn gav->pom-uri
+  "Returns a java.net.URI pointing to the POM for the given GAV, or nil
+  if one cannot be found.  The returned URI is guaranteed to be resolvable -
+  either to a file that exists in the local Maven cache, or to an HTTP-
+  accessible resource on a remote Maven repository (i.e. Maven Central or
+  Clojars) that resolves."
+  ([{:keys [group-id artifact-id version]}] (gav->pom-uri group-id artifact-id version))
+  ([group-id artifact-id]                   (gav->pom-uri group-id artifact-id nil))
+  ([group-id artifact-id version]
+   (when (and (not (s/blank? group-id))
+              (not (s/blank? artifact-id)))
+     (let [version   (or version (ga-latest-version group-id artifact-id))
+           gav-path  (str (s/replace group-id "." "/") "/" artifact-id "/" version "/" artifact-id "-" version ".pom")
+           local-pom (io/file (str @local-maven-repo-d separator (s/replace gav-path "/" separator)))]
+       (if (and (.exists local-pom)
+                (.isFile local-pom))
+         (.toURI local-pom)
+         (when-let [remote-uri (first (filter lcihttp/uri-resolves? (map #(str % "/" gav-path) (vals remote-maven-repos))))]
+           (java.net.URI. remote-uri)))))))
 
 (defmulti pom->expressions-info
   "Returns an expressions-info map for the given POM file (an InputStream or
