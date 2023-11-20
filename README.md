@@ -118,18 +118,22 @@ $ deps-try com.github.pmonks/lice-comb
 
 (lcm/name->expressions-info "GNU Public License 2.0 or later w/ the GNU Classpath Exception")
 ;=> {"GPL-2.0-or-later WITH Classpath-exception-2.0"
-;     ({:type :concluded, :confidence :low, :strategy :expression-inference, :source ("GNU Public License 2.0 or later w/ the GNU Classpath Exception")}
-;      {:id "GPL-2.0-or-later", :type :concluded, :confidence :medium, :strategy :regex-matching, :source ("GNU Public License 2.0 or later w/ the GNU Classpath Exception"
-;                                                                                                          "GNU Public License 2.0 or later")}
-;      {:id "Classpath-exception-2.0", :type :concluded, :confidence :low, :strategy :regex-matching, :source ("GNU Public License 2.0 or later w/ the GNU Classpath Exception"
-;                                                                                                              "the GNU Classpath Exception"
-;                                                                                                              "Classpath Exception")})}
+;     ({:type :concluded, :confidence :low, :strategy :expression-inference,
+;       :source ("GNU Public License 2.0 or later w/ the GNU Classpath Exception")}
+;      {:id "GPL-2.0-or-later", :type :concluded, :confidence :medium, :strategy :regex-matching,
+;       :source ("GNU Public License 2.0 or later w/ the GNU Classpath Exception"
+;                "GNU Public License 2.0 or later")}
+;      {:id "Classpath-exception-2.0", :type :concluded, :confidence :low, :strategy :regex-matching,
+;       :source ("GNU Public License 2.0 or later w/ the GNU Classpath Exception"
+;                "the GNU Classpath Exception"
+;                "Classpath Exception")})}
 
 (lcmvn/pom->expressions-info "https://repo.clojars.org/canvas/canvas/0.1.6/canvas-0.1.6.pom")
 ;=> {"EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0"
-;     ({:type :declared, :strategy :spdx-expression, :source ("https://repo.clojars.org/canvas/canvas/0.1.6/canvas-0.1.6.pom"
-;                                                             "<licenses><license><name>"
-;                                                             "EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0")})}
+;     ({:type :declared, :strategy :spdx-expression,
+;       :source ("https://repo.clojars.org/canvas/canvas/0.1.6/canvas-0.1.6.pom"
+;                "<licenses><license><name>"
+;                "EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0")})}
 
 
 ;; Pretty print expressions-info
