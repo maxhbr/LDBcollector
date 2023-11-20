@@ -31,4 +31,5 @@
                         :developers       [:developer {:id "pmonks" :name "Peter Monks" :email "pmonks+lice-comb@gmail.com"}]
                         :scm              {:url "https://github.com/pmonks/lice-comb" :connection "scm:git:git://github.com/pmonks/lice-comb.git" :developer-connection "scm:git:ssh://git@github.com/pmonks/lice-comb.git"}
                         :issue-management {:system "github" :url "https://github.com/pmonks/lice-comb/issues"}}
-         :codox        {:namespaces ['lice-comb.deps 'lice-comb.files 'lice-comb.lein 'lice-comb.matching 'lice-comb.maven 'lice-comb.utils]}))
+         :codox        {:namespaces ['lice-comb.deps 'lice-comb.files 'lice-comb.lein 'lice-comb.matching 'lice-comb.maven 'lice-comb.utils]}
+         :eastwood     {:exclude-linters [:unused-ret-vals-in-try :no-ns-form-found]}))

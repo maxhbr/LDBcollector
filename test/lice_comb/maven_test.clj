@@ -20,7 +20,7 @@
   (:require [clojure.test               :refer [deftest testing is use-fixtures]]
             [lice-comb.test-boilerplate :refer [fixture valid=]]
             [lice-comb.impl.spdx        :as lcis]
-            [lice-comb.maven            :refer [init! pom->expressions]]))
+            [lice-comb.maven            :refer [init! pom->expressions gav->expressions]]))
 
 (use-fixtures :once fixture)
 
@@ -64,3 +64,19 @@
     (is (valid= #{"Apache-2.0"}                (pom->expressions (str test-data-path "/with-parent.pom")))))
   (testing "Real pom files with licenses in parent - remote"
     (is (valid= #{"Apache-2.0"}                (pom->expressions "https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-core/1.12.69/aws-java-sdk-core-1.12.69.pom")))))
+
+(deftest gav->expressions-tests
+  (testing "Nil GAV"
+    (is (nil? (gav->expressions nil nil)))
+    (is (nil? (gav->expressions nil nil nil))))
+  (testing "Not null but invalid GAVs"
+    (is (nil? (gav->expressions "invalid" "invalid")))
+    (is (nil? (gav->expressions "invalid" "invalid" "invalid"))))
+  (testing "Valid GAs"
+    (is (valid= #{"EPL-2.0"}    (gav->expressions "quil"                "quil")))          ; Clojars
+    (is (valid= #{"EPL-1.0"}    (gav->expressions "org.clojure"         "clojure")))       ; Maven Central
+    (is (valid= #{"Apache-2.0"} (gav->expressions "org.springframework" "spring-core"))))  ; Maven Central
+  (testing "Valid GAVs"
+    (is (valid= #{"EPL-2.0"}    (gav->expressions "quil"                "quil"        "4.3.1323")))  ; Clojars
+    (is (valid= #{"EPL-1.0"}    (gav->expressions "org.clojure"         "clojure"     "1.11.1")))    ; Maven Central
+    (is (valid= #{"Apache-2.0"} (gav->expressions "org.springframework" "spring-core" "6.1.0")))))    ; Maven Central

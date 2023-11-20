@@ -23,8 +23,8 @@
             [clojure.tools.logging           :as log]
             [lice-comb.maven                 :as lcmvn]
             [lice-comb.files                 :as lcf]
-            [lice-comb.impl.http             :as lcihttp]
-            [lice-comb.impl.expressions-info :as lciei]))
+            [lice-comb.impl.expressions-info :as lciei]
+            [lice-comb.impl.utils            :as lciu]))
 
 (defn- normalise-dep
   "Normalises a dep, by removing any classifier suffixes from the artifact-id
@@ -46,43 +46,29 @@
   [[ga info]]
   (str ga "@" (:git/sha info) (when-let [tag (:git/tag info)] (str "/" tag))))
 
-(defn dep->pom-uri
-  "Returns a java.net.URI that points to the pom for the given tools.dep dep (a
-  MapEntry or two-element vector of `['groupId/artifactId dep-info]`), or nil if
-  the dep is not a Maven dep, or a POM could not be found.  The returned URI is
-  guaranteed to be resolvable - either to a file that exists in the local Maven
-  cache, or to an HTTP-accessible resource on a remote Maven repository (i.e.
-  Maven Central or Clojars) that resolves."
-  [dep]
-  (when (and dep
-             (= :mvn (:deps/manifest (second dep))))
-    (let [[ga info]              (normalise-dep dep)
-          [group-id artifact-id] (s/split (str ga) #"/")
-          version                (:mvn/version info)]
-      (lcihttp/gav->pom-uri group-id artifact-id version))))
-
 (defn- expressions-from-dep
   "Find license expressions in the given dep, ignoring exceptions."
   [dep]
   (when dep
-    (let [info    (second dep)
-          pom-uri (dep->pom-uri dep)]
-      (if-let [pom-expressions (try
-                                 (lcmvn/pom->expressions-info pom-uri)
+    (let [[ga info]              (normalise-dep dep)
+          [group-id artifact-id] (s/split (str ga) #"/")
+          version                (:mvn/version info)]
+      (if-let [gav-expressions (try
+                                 (lcmvn/gav->expressions-info group-id artifact-id version)
                                  (catch javax.xml.stream.XMLStreamException xse
-                                   (log/warn (str "Failed to parse " pom-uri " - ignoring") xse)
+                                   (log/warn (str "Failed to parse POM for " group-id "/" artifact-id (when version (str "@" version)) " - ignoring") xse)
                                    nil))]
-        pom-expressions
+        gav-expressions
         ; If we didn't find any licenses in the dep's POM, check the dep's JAR(s)
-        (into {} (filter identity (pmap #(try
-                                           (lcf/zip->expressions-info %)
-                                           (catch javax.xml.stream.XMLStreamException xse
-                                             (log/warn (str "Failed to parse pom inside " % " - ignoring") xse)
-                                             nil)
-                                           (catch java.util.zip.ZipException ze
-                                             (log/warn (str "Failed to unzip " % " - ignoring") ze)
-                                             nil))
-                                        (:paths info))))))))
+        (into {} (filter identity (lciu/pmap* #(try
+                                                 (lcf/zip->expressions-info %)
+                                                 (catch javax.xml.stream.XMLStreamException xse
+                                                   (log/warn (str "Failed to parse pom inside " % " - ignoring") xse)
+                                                   nil)
+                                                 (catch java.util.zip.ZipException ze
+                                                   (log/warn (str "Failed to unzip " % " - ignoring") ze)
+                                                   nil))
+                                              (:paths info))))))))
 
 (defmulti dep->expressions-info
   "Returns an expressions-info map for the given tools.dep dep (a MapEntry or
@@ -93,22 +79,30 @@
 
 (defmethod dep->expressions-info :mvn
   [dep]
-  (when dep
-    (when-let [expressions (expressions-from-dep dep)]
-      (lciei/prepend-source (dep->string dep) expressions))))
+  (when-let [expressions (expressions-from-dep dep)]
+    (lciei/prepend-source (dep->string dep) expressions)))
 
 (defmethod dep->expressions-info :deps
   [dep]
-  (when dep
-    (let [[_ info] (normalise-dep dep)]
-      (lciei/prepend-source (dep->string dep) (lcf/dir->expressions-info (:deps/root info))))))
+  (let [[_ info] (normalise-dep dep)]
+    (lciei/prepend-source (dep->string dep) (lcf/dir->expressions-info (:deps/root info)))))
 
 (defmethod dep->expressions-info nil
-  [_])
+  [[ga _ :as dep]]
+  (let [[normalised-ga _]      (normalise-dep dep)
+        [group-id artifact-id] (s/split (str normalised-ga) #"/")
+        version                (lcmvn/ga-latest-version group-id artifact-id)]
+    (when version
+      (let [gav-expressions    (try
+                                 (lcmvn/gav->expressions-info group-id artifact-id version)
+                                 (catch javax.xml.stream.XMLStreamException xse
+                                   (log/warn (str "Failed to parse POM for " group-id "/" artifact-id (when version (str "@" version)) " - ignoring") xse)
+                                   nil))]
+        (lciei/prepend-source (str ga "@" version) gav-expressions)))))
 
 (defmethod dep->expressions-info :default
-  [dep]
-  (throw (ex-info (str "Unexpected manifest type '" (:deps/manifest (second dep)) "' for dependency " dep)
+  [[_ info :as dep]]
+  (throw (ex-info (str "Unexpected manifest type '" (:deps/manifest info) "' for dependency " dep)
                   {:dep dep})))
 
 (defn dep->expressions
@@ -133,6 +127,74 @@
                         [k (assoc v :lice-comb/license-info expressions-info)])
                       %)
                    deps))))
+
+(defn dep->pom-uri
+  "Returns a java.net.URI that points to the pom for the given tools.dep dep (a
+  MapEntry or two-element vector of `['groupId/artifactId dep-info]`), or nil if
+  the dep is not a Maven dep, or a POM could not be found.  The returned URI is
+  guaranteed to be resolvable - either to a file that exists in the local Maven
+  cache, or to an HTTP-accessible resource on a remote Maven repository (i.e.
+  Maven Central or Clojars) that resolves."
+  [dep]
+  (when (and dep
+             (= :mvn (:deps/manifest (second dep))))
+    (let [[ga info]              (normalise-dep dep)
+          [group-id artifact-id] (s/split (str ga) #"/")
+          version                (:mvn/version info)]
+      (lcmvn/gav->pom-uri group-id artifact-id version))))
+
+(defmulti dep->locations
+  "Returns a sequence of Strings representing locations that may be searched
+  for license information for the given tools.dep dep (a MapEntry or two-element
+  vector of `['group-id/artifact-id dep-info]`),or nil if no locations were
+  found."
+  {:arglists '([[ga info]])}
+  (fn [[_ info]] (:deps/manifest info)))
+
+(defmethod dep->locations :mvn
+  [[ga info]]
+  (let [[group-id artifact-id] (s/split (str ga) #"/")
+         version               (:mvn/version info)]
+    (seq (filter identity (concat (list (lcmvn/gav->pom-uri group-id artifact-id version)) (:paths info))))))
+
+(defmethod dep->locations :deps
+  [[_ info]]
+  (seq (filter identity (list (:deps/root info)))))
+
+(defmethod dep->locations nil
+  [[ga _]]
+  (let [[group-id artifact-id] (s/split (str ga) #"/")]
+    (seq (filter identity (list (lcmvn/gav->pom-uri group-id artifact-id))))))
+
+(defmethod dep->locations :default
+  [[_ info :as dep]]
+  (throw (ex-info (str "Unexpected manifest type '" (:deps/manifest info) "' for dependency " dep)
+                  {:dep dep})))
+
+(defmulti dep->version
+  "Returns the version (as a String) for the given tools.dep dep (a MapEntry or
+  two-element vector of `['group-id/artifact-id dep-info]`),or nil if no version
+  was found."
+  {:arglists '([[ga info]])}
+  (fn [[_ info]] (:deps/manifest info)))
+
+(defmethod dep->version :mvn
+  [[_ info]]
+  (:mvn/version info))
+
+(defmethod dep->version :deps
+  [[_ info]]
+  (str (:git/sha info) (when-let [tag (:git/tag info)] (str "/" tag))))
+
+(defmethod dep->version nil
+  [[ga _]]
+  (let [[group-id artifact-id] (s/split (str ga) #"/")]
+    (lcmvn/ga-latest-version group-id artifact-id)))
+
+(defmethod dep->version :default
+  [[_ info :as dep]]
+  (throw (ex-info (str "Unexpected manifest type '" (:deps/manifest info) "' for dependency " dep)
+                  {:dep dep})))
 
 (defn init!
   "Initialises this namespace upon first call (and does nothing on subsequent

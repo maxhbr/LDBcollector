@@ -383,7 +383,7 @@
   Results are in the order in which they appear in the string, and the function
   returns nil if there were no matches."
   [s]
-  (when-let [matches (seq (filter identity (pmap (partial match s) @license-name-matching-d)))]
+  (when-let [matches (seq (filter identity (lciu/pmap* (partial match s) @license-name-matching-d)))]
     (some->> matches
              (med/distinct-by :id)    ;####TODO: THINK ABOUT MERGING INSTEAD OF DROPPING
              (sort-by :start)
