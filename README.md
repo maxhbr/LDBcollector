@@ -71,10 +71,10 @@ $ deps-try com.github.pmonks/lice-comb
 (lcm/name->expressions "GNU Public License 2.0 w/ the GNU Classpath Exception")
 ;=> #{"GPL-2.0-only WITH Classpath-exception-2.0"}
 
-(lcm/uri->ids "https://www.apache.org/licenses/LICENSE-2.0.txt")
+(lcm/uri->expressions "https://www.apache.org/licenses/LICENSE-2.0.txt")
 ;=> #{"Apache-2.0"}
 
-(lcm/text->ids (slurp "https://www.apache.org/licenses/LICENSE-2.0.txt"))
+(lcm/text->expressions (slurp "https://www.apache.org/licenses/LICENSE-2.0.txt"))
 ;=> #{"Apache-2.0"}
 
 
