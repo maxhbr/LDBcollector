@@ -120,6 +120,21 @@
                       %)
                    deps))))
 
+(defn dep->pom-uri
+  "Returns a java.net.URI that points to the pom for the given tools.dep dep (a
+  MapEntry or two-element vector of `['groupId/artifactId dep-info]`), or nil if
+  the dep is not a Maven dep, or a POM could not be found.  The returned URI is
+  guaranteed to be resolvable - either to a file that exists in the local Maven
+  cache, or to an HTTP-accessible resource on a remote Maven repository (i.e.
+  Maven Central or Clojars) that resolves."
+  [dep]
+  (when (and dep
+             (= :mvn (:deps/manifest (second dep))))
+    (let [[ga info]              (normalise-dep dep)
+          [group-id artifact-id] (s/split (str ga) #"/")
+          version                (:mvn/version info)]
+      (lcmvn/gav->pom-uri group-id artifact-id version))))
+
 (defn init!
   "Initialises this namespace upon first call (and does nothing on subsequent
   calls), returning nil. Consumers of this namespace are not required to call

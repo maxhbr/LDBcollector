@@ -86,7 +86,7 @@
     result
     (xml-find-first-string xml ks2)))
 
-(defn- gav->pom-uri
+(defn gav->pom-uri
   "Returns a java.net.URI pointing to the POM for the given GAV, or nil
   if one cannot be found.  The returned URI is guaranteed to be resolvable -
   either to a file that exists in the local Maven cache, or to an HTTP-
@@ -105,7 +105,7 @@
          (when-let [remote-uri (first (filter lcihttp/uri-resolves? (map #(str % "/" gav-path) (vals remote-maven-repos))))]
            (java.net.URI. remote-uri)))))))
 
-(defn- ga->metadata-uri
+(defn ga->metadata-uri
   "Returns a java.net.URI pointing to the maven-metadata.xml for the given GA,
   or nil if one cannot be found.  The returned URI is guaranteed to be
   resolvable - either to a file that exists in the local Maven cache, or to an
@@ -123,7 +123,7 @@
          (when-let [remote-uri (first (filter lcihttp/uri-resolves? (map #(str % "/" ga-path "/maven-metadata.xml") (vals remote-maven-repos))))]
            (java.net.URI. remote-uri)))))))
 
-(defn- ga-latest-version
+(defn ga-latest-version
   "Determines the latest version of the given GA as a String, or nil if a
   version cannot be determined."
   [group-id artifact-id]
