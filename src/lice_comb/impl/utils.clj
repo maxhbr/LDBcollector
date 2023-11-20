@@ -257,3 +257,10 @@
       (if-not (s/blank? val)
         val
         default))))
+
+; Provides pmap*
+(try
+  (Class/forName "java.lang.VirtualThread")
+  (load "vthread_pmap")
+  (catch ClassNotFoundException _
+    (load "non_vthread_pmap")))

@@ -1,7 +1,7 @@
 ;;;; lice_comb.impl.3rd_party.clj
 ;;;
-;;; Code obtained from third party sources, but not available via standard
-;;; package-consumption mechanisms (i.e. as Maven artifacts)
+;;; Code obtained from third party sources, but not readily available as a
+;;; library via standard package-consumption mechanisms (i.e. a Maven artifact).
 ;;;
 ;;; Copyright and license information is on a per-code-snippet basis, and
 ;;; is communicated inline via further comments.
