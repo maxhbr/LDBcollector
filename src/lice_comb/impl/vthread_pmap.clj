@@ -18,18 +18,15 @@
 
 (in-ns 'lice-comb.impl.utils)
 
-(defn- lice-comb-virtual-thread-factory
-  "A lice-comb specific virtual thread factory."
-  []
-  (-> (Thread/ofVirtual)
-      (.name "lice-comb-pmap*-vthread-" 0)
-      (.factory)))
+(def ^:private lice-comb-virtual-thread-factory (-> (Thread/ofVirtual)
+                                                    (.name "lice-comb-pmap-vthread-" 0)
+                                                    (.factory)))
 
 (defn pmap*
   "Efficient version of pmap which avoids the overhead of lazy-seq, and uses
   JDK 21+ virtual threads."
   [f coll]
-  (let [executor (java.util.concurrent.Executors/newThreadPerTaskExecutor (lice-comb-virtual-thread-factory))
+  (let [executor (java.util.concurrent.Executors/newThreadPerTaskExecutor lice-comb-virtual-thread-factory)
         futures  (mapv #(.submit executor (reify java.util.concurrent.Callable (call [_] (f %)))) coll)
         ret      (mapv #(.get ^java.util.concurrent.Future %) futures)]
     (.shutdownNow executor)
