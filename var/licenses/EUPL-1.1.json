@@ -1,0 +1,30 @@
+{
+"meta": {
+    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+    "comment": ""
+  },
+  "name": "European Union Public Licence 1.1",
+  "scancode_key": "eupl-1.1",
+  "spdxid": "EUPL-1.1",
+  "aliases": [
+   "EUPL-1.1",
+   "European Union Public License 1.1",
+   "eupl-1.1",
+   "European Union Public License, Version 1.1",
+   "License :: OSI Approved :: European Union Public Licence 1.1 (EUPL 1.1)",
+   "European Union Public Licence, v.1.1",
+   "scancode://eupl-1.1",
+   "EUPL 1.1",
+   "EUPL Version 1.1",
+   "EUPL v.1.1",
+   "EUPL V.1.1",
+   "European Union Public License V. 1.1",
+   "European Union Public License v.1.1",
+   "European Union Public License (EUPL) version 1.1",
+   "European Union Public License v1.1",
+   "European Union Public License version 1.1",
+   "scancode:eupl-1.1",
+   "osi:EUPL-1.1",
+   "European Union Public Licence 1.1 (EUPL 1.1)"
+  ]
+}
