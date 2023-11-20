@@ -23,7 +23,6 @@
             [clojure.tools.logging           :as log]
             [lice-comb.maven                 :as lcmvn]
             [lice-comb.files                 :as lcf]
-            [lice-comb.impl.http             :as lcihttp]
             [lice-comb.impl.expressions-info :as lciei]
             [lice-comb.impl.utils            :as lciu]))
 
@@ -47,33 +46,19 @@
   [[ga info]]
   (str ga "@" (:git/sha info) (when-let [tag (:git/tag info)] (str "/" tag))))
 
-(defn dep->pom-uri
-  "Returns a java.net.URI that points to the pom for the given tools.dep dep (a
-  MapEntry or two-element vector of `['groupId/artifactId dep-info]`), or nil if
-  the dep is not a Maven dep, or a POM could not be found.  The returned URI is
-  guaranteed to be resolvable - either to a file that exists in the local Maven
-  cache, or to an HTTP-accessible resource on a remote Maven repository (i.e.
-  Maven Central or Clojars) that resolves."
-  [dep]
-  (when (and dep
-             (= :mvn (:deps/manifest (second dep))))
-    (let [[ga info]              (normalise-dep dep)
-          [group-id artifact-id] (s/split (str ga) #"/")
-          version                (:mvn/version info)]
-      (lcihttp/gav->pom-uri group-id artifact-id version))))
-
 (defn- expressions-from-dep
   "Find license expressions in the given dep, ignoring exceptions."
   [dep]
   (when dep
-    (let [info    (second dep)
-          pom-uri (dep->pom-uri dep)]
-      (if-let [pom-expressions (try
-                                 (lcmvn/pom->expressions-info pom-uri)
+    (let [[ga info]              (normalise-dep dep)
+          [group-id artifact-id] (s/split (str ga) #"/")
+          version                (:mvn/version info)]
+      (if-let [gav-expressions (try
+                                 (lcmvn/gav->expressions-info group-id artifact-id version)
                                  (catch javax.xml.stream.XMLStreamException xse
-                                   (log/warn (str "Failed to parse " pom-uri " - ignoring") xse)
+                                   (log/warn (str "Failed to parse POM for " group-id "/" artifact-id (when version (str "@" version)) " - ignoring") xse)
                                    nil))]
-        pom-expressions
+        gav-expressions
         ; If we didn't find any licenses in the dep's POM, check the dep's JAR(s)
         (into {} (filter identity (lciu/pmap* #(try
                                                  (lcf/zip->expressions-info %)
