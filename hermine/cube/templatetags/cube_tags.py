@@ -18,7 +18,9 @@ def licenseAllowedCSS(license: License):
     :type license: License
     :return: A CSS string
     :rtype: string
+
     """
+
     if license.allowed == License.ALLOWED_ALWAYS:
         return "is-success"
     elif license.allowed == License.ALLOWED_CONTEXT:
@@ -36,7 +38,8 @@ def licenseReviewCSS(license: License):
     :param license: A License object
     :type license: License
     :return: A CSS string
-    :rtype string
+    :rtype: string
+
     """
     if license.status == License.STATUS_CHECKED:
         return "is-success"
@@ -54,9 +57,10 @@ def licenseCopyleftCSS(license: License):
     :param license: A License object
     :type license: License
     :return: A CSS string
-    :rtype string
+    :rtype: string
 
     """
+
     if license.copyleft == License.COPYLEFT_NONE:
         return "is-success"
     if license.copyleft == License.COPYLEFT_WEAK:
@@ -77,7 +81,7 @@ def licenseFOSSCSS(license: License):
     :param license: A License object
     :type license: License
     :return: A CSS string
-    :rtype string
+    :rtype: string
 
     """
     if license.foss == License.FOSS_YES or license.foss == License.FOSS_YES_AUTO:
