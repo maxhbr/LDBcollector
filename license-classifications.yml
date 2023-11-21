@@ -155,7 +155,10 @@ categories:
   - name: "property:AutoConf-or-other-exception"
     description: >-
       This property indicates that the license includes an AutoConf exception or another type of
-      exception to the license terms.
+      exception to the license terms. These exceptions vary in terms: some exceptions render the
+      license, assuming the exception criteria applies, permissive-style. Other exceptions do not
+      render the license permissive style, but rather somehow otherwise relax the terms of the 
+      license, for example by introducing a wider list of compatible copyleft-licenses.
 
   - name: "property:unclear-scanner-finding"
     description: >-
@@ -556,6 +559,15 @@ categorizations:
       - "property:distribute-source-code"
       - "property:AutoConf-or-other-exception"
 
+  # https://spdx.org/licenses/GPL-2.0-only.html
+  # https://scancode-licensedb.aboutcode.org/mysql-floss-exception-2.0.html
+  - id: "GPL-2.0-only WITH LicenseRef-scancode-mysql-floss-exception-2.0"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:AutoConf-or-other-exception"
+
   # https://spdx.org/licenses/GPL-2.0-or-later.html
   # https://spdx.org/licenses/Autoconf-exception-generic.html
   - id: "GPL-2.0-or-later WITH Autoconf-exception-generic"
@@ -598,7 +610,7 @@ categorizations:
       - "copyleft-strong"
       - "property:include-in-notice-file"
       - "property:distribute-source-code"
-      - "property:AutoConf-or-other-exception"
+      - "property:limited-exception"
 
   # https://spdx.org/licenses/GPL-2.0-only.html
   # https://spdx.org/licenses/Font-exception-2.0.html
@@ -616,9 +628,10 @@ categorizations:
       - "copyleft-strong"
       - "property:include-in-notice-file"
       - "property:distribute-source-code"
-      - "property:AutoConf-or-other-exception"
+      - "property:limited-exception"
 
   # https://spdx.org/licenses/GPL-2.0-only.html
+  # https://scancode-licensedb.aboutcode.org/ada-linking-exception.html
   - id: "LicenseRef-gpl-2.0-or-later-with-ada-linking-exception"
     categories:
       - "copyleft-strong"
@@ -4582,3 +4595,22 @@ categorizations:
       - "free-restricted"
       - "property:include-in-notice-file"
       - "property:no-modifications"
+
+  # https://spdx.org/licenses/BSD-4.3RENO.html
+  - id: "BSD-4.3RENO"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  # https://spdx.org/licenses/ECL-2.0.html
+  - id: "ECL-2.0"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "property:patent-clause"
+
+  # https://scancode-licensedb.aboutcode.org/khronos.html
+  - id: "LicenseRef-scancode-khronos"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
