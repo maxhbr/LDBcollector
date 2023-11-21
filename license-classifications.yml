@@ -155,7 +155,10 @@ categories:
   - name: "property:AutoConf-or-other-exception"
     description: >-
       This property indicates that the license includes an AutoConf exception or another type of
-      exception to the license terms.
+      exception to the license terms. These exceptions vary in terms: some exceptions render the
+      license, assuming the exception criteria applies, permissive-style. Other exceptions do not
+      render the license permissive style, but rather somehow otherwise relax the terms of the
+      license, for example by introducing a list of compatible copyleft-licenses.
 
   - name: "property:unclear-scanner-finding"
     description: >-
@@ -552,6 +555,12 @@ categorizations:
 
   # https://spdx.org/licenses/BSD-4-Clause-UC.html
   - id: "BSD-4-Clause-UC"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  # https://spdx.org/licenses/BSD-4.3RENO.html
+  - id: "BSD-4.3RENO"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
@@ -968,6 +977,13 @@ categorizations:
     categories:
       - "property:include-in-notice-file"
       - "permissive"
+
+  # https://spdx.org/licenses/ECL-2.0.html
+  - id: "ECL-2.0"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "property:patent-clause"
 
   - id: "EDL-1.0"
     categories:
@@ -2534,6 +2550,12 @@ categorizations:
   - id: "LicenseRef-Same-license-as"
     categories:
       - "property:unclear-scanner-finding"
+
+  # https://scancode-licensedb.aboutcode.org/khronos.html
+  - id: "LicenseRef-scancode-khronos"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
 
   - id: "LicenseRef-Scanner-WebM"
     categories:
