@@ -77,7 +77,12 @@ class Usage(models.Model):
     addition_date = models.DateTimeField(
         "Last updated", blank=True, null=True, auto_now=True
     )
-    linking = models.CharField(max_length=20, choices=LINKING_CHOICES, blank=True)
+    linking = models.CharField(
+        max_length=20,
+        choices=LINKING_CHOICES,
+        blank=True,
+        help_text="The type of linking between this component and the main code base",
+    )
     component_modified = models.CharField(
         max_length=20,
         choices=MODIFICATION_CHOICES,
@@ -88,6 +93,7 @@ class Usage(models.Model):
         max_length=50,
         choices=EXPLOITATION_CHOICES,
         blank=True,
+        help_text="The way this component is distributed/exploited",
     )
     description = models.TextField(max_length=500, blank=True)
     licenses_chosen = models.ManyToManyField("License", blank=True)
