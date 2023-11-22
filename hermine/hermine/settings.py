@@ -39,7 +39,12 @@ DEBUG = getattr(config, "DEBUG", False)
 
 if (host := getattr(config, "HOST", None)) is not None:
     ALLOWED_HOSTS = [host]
-    CSRF_TRUSTED_ORIGINS = ["https://" + getattr(config, "CSRF_TRUSTED_ORIGINS", host)]
+    csrf_url = (
+        getattr(config, "CSRF_TRUSTED_ORIGINS", None)
+        if getattr(config, "CSRF_TRUSTED_ORIGINS", None) is not None
+        else host
+    )
+    CSRF_TRUSTED_ORIGINS = ["https://" + csrf_url]
 else:
     ALLOWED_HOSTS = []
 
