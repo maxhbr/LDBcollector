@@ -24,6 +24,8 @@
    "GPL version 1.0 or later",
    "GNU General Public License as published by the Free Software Foundation; either version 1, or (at your option) any later version",
    "GNU General Public License, version 1 or later",
-   "scancode:gpl-1.0-plus"
+   "scancode:gpl-1.0-plus",
+   "GPLv1+",
+   "GPLv1.0+"
   ]
 }
