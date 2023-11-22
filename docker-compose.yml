@@ -35,6 +35,7 @@ services:
       - SUPERUSER=admin
       - PASSWORD=admin
       - HOST=${HERMINE_HOST:-localhost}
+      - CSRF_TRUSTED_ORIGINS=${CSRF_TRUSTED_ORIGINS}
       - STATIC_ROOT=/opt/hermine/static
       - ENABLE_PROFILING=${HERMINE_PROFILING:-False}
       - PRODUCTION=${HERMINE_PRODUCTION:-True}
