@@ -46,6 +46,15 @@ SPDX-License-Identifier: AGPL-3.0-only
     </tr>
   </table>
 
+  {% if shared.licenses.missing.count %}
+    <form method="post" action="{% url "cube:shared_licenses_copy" %}">
+      {% csrf_token %}
+      {{ form }}
+      <button type="submit" class="button is-primary">Copy {{ shared.licenses.missing.count }} missing licenses to local data</button>
+      <p class="mt-2">This will also copy any linked obligation or generic obligation.</p>
+    </form>
+  {% endif %}
+
   <h3>Generic obligations</h3>
   <table class="is-flex">
     <tr>
@@ -67,4 +76,12 @@ SPDX-License-Identifier: AGPL-3.0-only
       <td>{{ local.generics.missing.count }}</td>
     </tr>
   </table>
+
+  {% if shared.generics.missing.count %}
+    <form method="post" action="{% url "cube:shared_generics_copy" %}">
+      {% csrf_token %}
+      {{ form }}
+      <button type="submit" class="button is-primary">Copy {{ shared.generics.missing.count }} missing generic obligations to local data</button>
+    </form>
+  {% endif %}
 {% endblock %}

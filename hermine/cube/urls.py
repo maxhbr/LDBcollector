@@ -204,6 +204,21 @@ urlpatterns = [
         name="licensechoice_create",
     ),
     path("shared/", views.SharedReferenceView.as_view(), name="shared_reference"),
+    path(
+        "shared/copy-licenses/",
+        views.CopyReferenceLicensesView.as_view(),
+        name="shared_licenses_copy",
+    ),
+    path(
+        "shared/copy-generics/",
+        views.CopyReferenceGenericsView.as_view(),
+        name="shared_generics_copy",
+    ),
+    path(
+        "shared/copy-obligation/",
+        views.CopyReferenceObligationView.as_view(),
+        name="shared_obligation_copy",
+    ),
     # Releases views
     path(
         "releases/<int:pk>/edit/",
