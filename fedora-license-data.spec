@@ -6,7 +6,7 @@
 %endif
 
 Name:           fedora-license-data
-Version:        1.34
+Version:        1.35
 Release:        1%{?dist}
 Summary:        Fedora Linux license data
 
@@ -97,6 +97,14 @@ make check-grammar
 
 
 %changelog
+* Thu Nov 23 2023 Miroslav Suchý <msuchy@redhat.com> 1.35-1
+- add argon2 as known exception to CC0-1.0
+- new license: LicenseRef-BSD-3-Clause-Clear-WITH-AdditionRef-AOMPL-1.0
+- new license: LicenseRef-BSD-2-Clause-WITH-AdditionRef-AOMPL-1.0
+- new license: GCR-docs
+- new license: AML-glslang
+- new license: Pixar
+
 * Fri Nov 10 2023 Miroslav Suchý <msuchy@redhat.com> 1.34-1
 - new license: hdparm
 - add not allowed license LicenseRef-LLaMA-2
