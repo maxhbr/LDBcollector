@@ -1,13 +1,13 @@
 import os
 
-DEBUG = os.environ.get("PRODUCTION").lower() == "false"
-ENABLE_PROFILING = os.environ.get("ENABLE_PROFILING").lower() == "true"
+DEBUG = os.environ.get("PRODUCTION", "").lower() == "false"
+ENABLE_PROFILING = os.environ.get("ENABLE_PROFILING", "").lower() == "true"
 HOST = os.environ.get("HOST")
 STATIC_ROOT = os.environ.get("STATIC_ROOT")
 MAX_UPLOAD_SIZE = int(os.environ.get("MAX_UPLOAD_SIZE"))
 CSRF_TRUSTED_ORIGINS = os.environ.get("CSRF_TRUSTED_ORIGINS")
 
-if os.environ.get("TRUST_PROXY_HEADERS", False).lower() == "true":
+if os.environ.get("TRUST_PROXY_HEADERS", "").lower() == "true":
     USE_X_FORWARDED_HOST = True
     SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
 
