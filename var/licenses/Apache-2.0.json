@@ -84,6 +84,7 @@
         "http://xml.apache.org/xerces2-j/",
         "Apache License, = = Version 2.0",
         "scancode:apache-2.0",
-        "osi:Apache-2.0"
+        "osi:Apache-2.0",
+        "Apachev2"
     ]
 }
