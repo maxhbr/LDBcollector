@@ -45,6 +45,7 @@ check_file_presence()
        fi
     done
     echo "$RESULT"
+
 }
 
 check_schema()
@@ -106,6 +107,8 @@ check_presence()
     if [ "$_RET" = "OK" ]
     then
         echo OK
+    else
+        exit 1
     fi
 }
 
@@ -113,7 +116,7 @@ check_presence()
 #check_schema
 
 
-ZERO_BSD_PRESENT=" -e 0BSD -i -e zero "
+ZERO_BSD_PRESENT=" -e 0BSD -i -e zero -e \"0-\""
 BSD2_PRESENT=" -e 2 -i -e two -e simplified -e freebsd "
 BSD3_PRESENT=" -e 3 -i -e new -e modified -e revised -e three -e 'no advertising' "
 BSD4_PRESENT=" -e 4 -i -e 'BSD with advertising' -e original "
@@ -157,7 +160,7 @@ check_presence LGPL-3.0-only " -e 3 " " -e 2  -e later"
 check_presence LGPL-2.1-or-later " -e 2 -e later" " -e 3"
 check_presence LGPL-3.0-or-later " -e 3 -e later" " -e 2"
 
-check_presence MIT " -i -e MIT" " -e 0"
+check_presence MIT " -i -e MIT -e Expat" " -e 0"
 check_presence MIT-0 " -e 0 -i -e \"no attribution\"" ""
 check_presence MIT-advertising " -e 0 -i -e advertising" " -i -e \"no advertising\""
 

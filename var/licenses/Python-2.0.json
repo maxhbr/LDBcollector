@@ -19,6 +19,8 @@
    "Python Software Foundation License 2",
    "PSF-2",
    "scancode:python",
-   "osi:Python-2.0"
+   "osi:Python-2.0",
+   "PSFv2",
+   "Python-2"
   ]
 }

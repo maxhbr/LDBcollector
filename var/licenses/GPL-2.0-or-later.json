@@ -50,6 +50,7 @@
         "GNU General Public License, either version 2 or (at your opinion) any newer version",
         "GNU General Public License, V2 or later",
         "scancode:gpl-2.0-plus",
-        "GNU General Public License v2 or later (GPLv2+)"
+        "GNU General Public License v2 or later (GPLv2+)",
+        "GPLv2.0+"
     ]
 }
