@@ -1,12 +1,12 @@
 # {metæffekt}-universe
 Project providing insights on the {metæffekt} license database covering
 
-* 2199 modelled license terms,
-* 148 exceptions,
-* 201 specific and commonly used license expressions, and
+* 2200 modelled license terms,
+* 154 exceptions,
+* 218 specific and commonly used license expressions, and
 * 49 markers.
 
-as of 17th November 2023.
+as of 27th November 2023.
 
 The following links provide letter-specific overviews on the license information:
 
@@ -42,7 +42,7 @@ The following links provide letter-specific overviews on the license information
 The yaml files within the subfolders show metadata on the individual licenses and exceptions.
 The files also contain alternative names that support the normalization of licenses and exceptions.
 
-## Why another list of licenses and exceptions?
+## Why yet another list of licenses and exceptions?
 {metæffekt} follows a defined strategy for analyzing, scanning and documenting software projects. To do this, a 
 consistent information/data baseline is required. This baseline must cover the different license types that are used
 by the software stacks being examined.
@@ -50,7 +50,7 @@ by the software stacks being examined.
 OSI, SPDX and the ScanCode Toolkit provide a good representation of licenses and exceptions in the FOSS domain. 
 However, the license identification and matching strategies are not fully compatible with
 the level of granularity and paradigms set forth by {metæffekt}. Second, the data does not cover publicly
-available commercial licenses (at least not to the extend required).
+available commercial licenses (at least not to the extent required).
 
 This is why {metæffekt} choose to create an overarching database of licenses, 
 references, exceptions, and expressions; the {metæffekt}-universe.
@@ -109,7 +109,7 @@ internal dataset to produce the corrected outputs.
 ## Further information
 {metæffekt} provides visualization of the {metæffekt}-universe on https://metaeffekt.com/#universe.
 
-Currently, ScanCode version 32.0.4 is used.
+Currently, ScanCode version 32.0.4 is used. Upgrade will follow shortly.
 
 Non-approved OSI status information is not yet complete; more details will be added short-term.
 Please note in this context, that all OSI status details except `approved` convey unofficial information collected

@@ -6,6 +6,8 @@ canonicalName: "Public Domain"
 category: "Public Domain"
 shortName: "Public-Domain"
 
+unspecific: true
+
 alternativeNames:
   - "under Public Domain"
   - "distributed into the Public Domain"
