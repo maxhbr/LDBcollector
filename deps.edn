@@ -26,7 +26,7 @@
     hato/hato                             {:mvn/version "0.9.0"}
     dev.weavejester/medley                {:mvn/version "1.7.0"}
     miikka/clj-base62                     {:mvn/version "0.1.1"}
-    com.github.pmonks/clj-spdx            {:mvn/version "1.0.116"}
+    com.github.pmonks/clj-spdx            {:mvn/version "1.0.121"}
     com.github.pmonks/rencg               {:mvn/version "1.0.34"}}
  :aliases
    {:build {:deps       {com.github.pmonks/pbr {:mvn/version "RELEASE"}}
