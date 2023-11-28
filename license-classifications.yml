@@ -1,5 +1,6 @@
 ---
-# SPDX-FileCopyrightText: 2022 HH Partners, Attorneys-at-law Ltd <doubleopen@hhpartners.fi>
+# SPDX-FileCopyrightText: 2023 Double Open Oy <support@doubleopen.org>
+# SPDX-FileCopyrightText: 2022-2023 HH Partners, Attorneys-at-law Ltd <doubleopen@hhpartners.fi>
 # SPDX-FileCopyrightText: 2021 The Linux Foundation® <legal@linuxfoundation.org>
 # SPDX-FileCopyrightText: 2015-2021 nexB, Inc. <info@nexb.com>
 # SPDX-License-Identifier: CC0-1.0 AND CC-BY-3.0 AND CC-BY-4.0
@@ -12,13 +13,14 @@
 # help process unclear scanner findings. The ScanCode LicenseDB, designed and built by nexB, Inc.,
 # is available at: https://scancode-licensedb.aboutcode.org/, licensed under CC-BY-4.0.
 #
-# Double Open content in this file is published under CC0-1.0.
+# Content in this file created by Double Open Oy or the Double Open project by HH Partners is
+# published under CC0-1.0.
 #
 # The following introduces the applicable categories and properties. Each license should be in one
 # category. A license can have multiple properties.
 #
-# Do you want this file to be updated? Make a GitHub issue or send email to doubleopen at
-# hhpartners.fi. If you make a pull request, we expect every contribution to be published under
+# Do you want this file to be updated? Make a GitHub issue or send email to support at
+# doubleopen.org. If you make a pull request, we expect every contribution to be published under
 # CC0-1.0.
 
 categories:
