@@ -1034,3 +1034,11 @@ Baptiste Lepilleur and The JsonCpp Authors explicitly disclaim copyright in all
 jurisdictions which recognize such a disclaimer. In such jurisdictions,
 this software is released into the Public Domain.
 '''
+
+package = libsecret
+location = https://github.com/GNOME/libsecret/blob/master/libsecret/mock/dh.py#L17
+text = '''
+Some utility functions from tlslite which is public domain
+Written by Trevor Perrin <trevp at trevp.net>
+http://trevp.net/tlslite/
+'''
