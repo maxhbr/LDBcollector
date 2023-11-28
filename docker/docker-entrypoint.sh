@@ -18,4 +18,4 @@ then
   f_log "create superuser if none exists with $USER"
   python ./manage.py createsuperuser_if_none_exists --user="$SUPERUSER" --password="$PASSWORD"
 fi
-python -m gunicorn hermine.wsgi -b 0.0.0.0:"$DJANGO_PORT" -t 120
+python ./manage.py runserver 0.0.0.0:"$DJANGO_PORT"
