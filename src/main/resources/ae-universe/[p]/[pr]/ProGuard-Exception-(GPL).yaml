@@ -1,0 +1,12 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
+
+canonicalName: "ProGuard Exception (GPL)"
+category: "ProGuard Exception"
+shortName: "Proguard-Exception-GPL"
+
+type: "exception"
+
+otherIds: 
+  - "scancode:gpl-2.0-proguard"
