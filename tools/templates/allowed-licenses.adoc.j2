@@ -13,7 +13,7 @@ repository.
 
 [.datatable.dt-search]
 |===
-|SPDX Expression | Name | Legacy Abbreviation | URLs
+|SPDX Expression | Name | Legacy Abbreviation
 
 {% for license in ALLOWED_LICENSES %}
 | {{ spdx_url(license) }}
@@ -28,7 +28,6 @@ repository.
   {%- else -%}
           {nbsp}
   {%- endif -%}
- |  {{ additional_urls(license) }}
 {%- endfor %}
 |===
 
@@ -37,7 +36,7 @@ repository.
 
 [.datatable.dt-search]
 |===
-|SPDX Expression | Name | Legacy Abbreviation | URLs
+|SPDX Expression | Name | Legacy Abbreviation
 
 {% for license in CONTENT_LICENSES -%}
 | {{ spdx_url(license) }}
@@ -52,7 +51,6 @@ repository.
   {%- else -%}
         {nbsp}
   {%- endif -%}
- |  {{ additional_urls(license) }}
 {%- endfor %}
 |===
 
@@ -60,7 +58,7 @@ repository.
 
 [.datatable.dt-search]
 |===
-|SPDX Expression | Name | Legacy Abbreviation | URLs
+|SPDX Expression | Name | Legacy Abbreviation
 
 {% for license in DOCUMENTATION_LICENSES -%}
 | {{ spdx_url(license) }}
@@ -75,7 +73,6 @@ repository.
   {%- else -%}
         {nbsp}
   {%- endif -%}
- |  {{ additional_urls(license) }}
 {%- endfor %}
 |===
 
@@ -83,7 +80,7 @@ repository.
 
 [.datatable.dt-search]
 |===
-|SPDX Expression | Name | Legacy Abbreviation | URLs
+|SPDX Expression | Name | Legacy Abbreviation
 
 {% for license in FONTS_LICENSES %}
 | {{ spdx_url(license) }}
@@ -98,7 +95,6 @@ repository.
   {%- else -%}
         {nbsp}
   {%- endif -%}
- |  {{ additional_urls(license) }}
 {%- endfor %}
 |===
 
@@ -107,7 +103,7 @@ repository.
 
 [.datatable.dt-search]
 |===
-|SPDX Expression | Name | Legacy Abbreviation | URLs
+|SPDX Expression | Name | Legacy Abbreviation
 
 {% for license in FIRMWARE_LICENSES -%}
 | {{ spdx_url(license) }}
@@ -122,6 +118,5 @@ repository.
   {%- else -%}
         {nbsp}
   {%- endif -%}
- |  {{ additional_urls(license) }}
 {%- endfor %}
 |===
