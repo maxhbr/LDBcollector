@@ -1,0 +1,13 @@
+{
+"meta": {
+    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+    "comment": ""
+  },
+  "name": "Docbook License",
+  "scancode_key": "docbook",
+  "spdxid": "LicenseRef-scancode-docbook",
+  "aliases": [
+      "dmit",
+      "DMIT"
+  ]
+}
