@@ -7,7 +7,8 @@ package models
 // properties associated with it.
 // It provides structured storage for license-related information.
 type LicenseDB struct {
-	Shortname       string `json:"rf_shortname" gorm:"primary_key"`
+	Id              int64  `json:"rf_id" gorm:"primary_key"`
+	Shortname       string `json:"rf_shortname"`
 	Fullname        string `json:"rf_fullname"`
 	Text            string `json:"rf_text"`
 	Url             string `json:"rf_url"`
@@ -110,7 +111,7 @@ type LicenseInput struct {
 
 // User struct is representation of user information.
 type User struct {
-	UserId       string `json:"userid" gorm:"primary_key" binding:"required"`
+	Id           int64  `json:"id" gorm:"primary_key"`
 	Username     string `json:"username" gorm:"unique" binding:"required"`
 	Userlevel    string `json:"userlevel" gorm:"unique" binding:"required"`
 	Userpassword string `json:"userpassword" gorm:"unique" binding:"required"`
@@ -123,17 +124,19 @@ type UserResponse struct {
 	Meta   PaginationMeta `json:"paginationmeta"`
 }
 
-type Audit struct {
-	Id        int    `json:"id" gorm:"primary_key"`
-	Username  string `json:"username"`
-	Shortname string `json:"shortname"`
-	Timestamp string `json:"timestamp"`
-}
-
 type SearchLicense struct {
 	Field      string `json:"field" binding:"required"`
 	SearchTerm string `json:"search_term" binding:"required"`
 	Search     string `json:"search"`
+}
+
+type Audit struct {
+	Id        int    `json:"id" gorm:"primary_key"`
+	UserId    int64  `json:"user_id"`
+	User      User   `gorm:"foreignKey:UserId;references:Id" json:"-"`
+	TypeId    int64  `json:"type_id"`
+	Timestamp string `json:"timestamp"`
+	Type      string `json:"type"`
 }
 
 type ChangeLog struct {
@@ -154,5 +157,56 @@ type ChangeLogResponse struct {
 type AuditResponse struct {
 	Status int            `json:"status"`
 	Data   []Audit        `json:"data"`
+	Meta   PaginationMeta `json:"paginationmeta"`
+}
+
+type Obligation struct {
+	Id             int64  `json:"id" gorm:"primary_key"`
+	Topic          string `json:"topic"`
+	Type           string `json:"type"`
+	Text           string `json:"text"`
+	Classification string `json:"classification"`
+	Modifications  string `json:"modifications"`
+	Comment        string `json:"comment"`
+	Active         bool   `json:"active"`
+	TextUpdatable  bool   `json:"text_updatable"`
+	Md5            string `json:"md5" gorm:"unique"`
+}
+
+type ObligationInput struct {
+	Topic          string   `json:"topic" binding:"required"`
+	Type           string   `json:"type" binding:"required"`
+	Text           string   `json:"text" binding:"required"`
+	Classification string   `json:"classification"`
+	Modifications  string   `json:"modifications"`
+	Comment        string   `json:"comment"`
+	Active         bool     `json:"active"`
+	TextUpdatable  bool     `json:"text_updatable"`
+	Shortnames     []string `json:"shortnames"`
+}
+
+type UpdateObligation struct {
+	Topic          string `json:"topic"`
+	Type           string `json:"type"`
+	Text           string `json:"text"`
+	Classification string `json:"classification"`
+	Modifications  string `json:"modifications"`
+	Comment        string `json:"comment"`
+	Active         bool   `json:"active"`
+	TextUpdatable  bool   `json:"text_updatable"`
+	Md5            string `json:"md5"`
+}
+
+type ObligationMap struct {
+	ObligationPk int64      `json:"obligation_pk"`
+	Obligation   Obligation `gorm:"foreignKey:ObligationPk;references:Id" json:"-"`
+	OmPk         int64      `json:"om_pk" gorm:"primary_key"`
+	RfPk         int64      `json:"rf_pk"`
+	LicenseDB    LicenseDB  `gorm:"foreignKey:RfPk;references:Id" json:"-"`
+}
+
+type ObligationResponse struct {
+	Status int            `json:"status"`
+	Data   []Obligation   `json:"data"`
 	Meta   PaginationMeta `json:"paginationmeta"`
 }

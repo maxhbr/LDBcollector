@@ -33,7 +33,7 @@ func CreateUser(c *gin.Context) {
 		er := models.LicenseError{
 			Status:    http.StatusBadRequest,
 			Message:   "can not create user with same userid",
-			Error:     fmt.Sprintf("Error: License with userid '%s' already exists", user.UserId),
+			Error:     fmt.Sprintf("Error: License with userid '%d' already exists", user.Id),
 			Path:      c.Request.URL.Path,
 			Timestamp: time.Now().Format(time.RFC3339),
 		}
@@ -80,7 +80,7 @@ func GetUser(c *gin.Context) {
 	var user models.User
 	id := c.Param("id")
 
-	if err := db.DB.Where("userid = ?", id).First(&user).Error; err != nil {
+	if err := db.DB.Where("id = ?", id).First(&user).Error; err != nil {
 		er := models.LicenseError{
 			Status:    http.StatusBadRequest,
 			Message:   "no user with such user id exists",

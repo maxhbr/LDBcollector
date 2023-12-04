@@ -189,7 +189,6 @@ func TestSearchInLicense2(t *testing.T) {
 
 func TestGetUser(t *testing.T) {
 	expectUser := models.User{
-		UserId:       "1",
 		Username:     "fossy",
 		Userpassword: "fossy",
 		Userlevel:    "admin",
@@ -206,7 +205,6 @@ func TestGetUser(t *testing.T) {
 
 func TestCreateUser(t *testing.T) {
 	user := models.User{
-		UserId:       "2",
 		Username:     "general_user",
 		Userpassword: "abc123",
 		Userlevel:    "participant",
