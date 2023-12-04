@@ -53,6 +53,7 @@ func Router() *gin.Engine {
 	return r
 }
 
+// The HandleInvalidUrl function returns the error when an invalid url is entered
 func HandleInvalidUrl(c *gin.Context) {
 
 	er := models.LicenseError{
@@ -64,6 +65,8 @@ func HandleInvalidUrl(c *gin.Context) {
 	}
 	c.JSON(http.StatusNotFound, er)
 }
+
+// The get all License function returns all the license data present in the database
 func GetAllLicense(c *gin.Context) {
 
 	var licenses []models.LicenseDB
@@ -91,6 +94,9 @@ func GetAllLicense(c *gin.Context) {
 	c.JSON(http.StatusOK, res)
 }
 
+// Get license functions return data of the particular license by its shortname.
+// It inputs the shortname as query parameter
+// It returns error ehen no such license exists
 func GetLicense(c *gin.Context) {
 	var license models.LicenseDB
 
@@ -124,6 +130,8 @@ func GetLicense(c *gin.Context) {
 	c.JSON(http.StatusOK, res)
 }
 
+// The Create License function creates license in the database and add the required data
+// It return the license if it already exists in the database
 func CreateLicense(c *gin.Context) {
 	var input models.LicenseInput
 
@@ -200,6 +208,9 @@ func CreateLicense(c *gin.Context) {
 	c.JSON(http.StatusCreated, res)
 }
 
+// The Update license functions updates the particular license with a particular shortname.
+// It also creates the audit and change logs of the updates
+// It returns the updated license
 func UpdateLicense(c *gin.Context) {
 	var update models.LicenseDB
 	var license models.LicenseDB
@@ -446,6 +457,8 @@ func UpdateLicense(c *gin.Context) {
 
 }
 
+// The filter licenses returns the licenses after passing through certain filters.
+// It takes the filters as query parameters and filters accordingly.
 func FilterLicense(c *gin.Context) {
 	SpdxId := c.Query("spdxid")
 	DetectorType := c.Query("detector_type")
@@ -523,6 +536,10 @@ func FilterLicense(c *gin.Context) {
 
 }
 
+// SearchInLicense searches for license data based on user-provided search criteria.
+// It accepts a JSON request body containing search parameters and responds with JSON
+// containing the matching license data or error messages if the search request is
+// invalid or if the search algorithm is not supported.
 func SearchInLicense(c *gin.Context) {
 	var input models.SearchLicense
 
@@ -570,6 +587,8 @@ func SearchInLicense(c *gin.Context) {
 
 }
 
+// GetAllAudit retrieves a list of all audit records from the database and responds with
+// JSON containing the audit data or an error message if the records are not found.
 func GetAllAudit(c *gin.Context) {
 	var audit []models.Audit
 
@@ -595,6 +614,8 @@ func GetAllAudit(c *gin.Context) {
 	c.JSON(http.StatusOK, res)
 }
 
+// GetAudit retrieves a specific audit record by its ID from the database and responds
+// with JSON containing the audit data or an error message if the record is not found.
 func GetAudit(c *gin.Context) {
 	var chngelog models.Audit
 	id := c.Param("audit_id")
@@ -620,6 +641,9 @@ func GetAudit(c *gin.Context) {
 	c.JSON(http.StatusOK, res)
 }
 
+// GetChangeLog retrieves a list of change history records associated with a specific
+// audit by its audit ID from the database and responds with JSON containing the change
+// history data or an error message if no records are found.
 func GetChangeLog(c *gin.Context) {
 	var changelog []models.ChangeLog
 	id := c.Param("audit_id")
@@ -646,6 +670,9 @@ func GetChangeLog(c *gin.Context) {
 	c.JSON(http.StatusOK, res)
 }
 
+// GetChangeLogbyId retrieves a specific change history record by its ID for a given audit.
+// It responds with JSON containing the change history data or error messages if the record
+// is not found or if it does not belong to the specified audit.
 func GetChangeLogbyId(c *gin.Context) {
 	var changelog models.ChangeLog
 	auditid := c.Param("audit_id")
@@ -682,6 +709,10 @@ func GetChangeLogbyId(c *gin.Context) {
 	c.JSON(http.StatusOK, res)
 }
 
+// CreateObligation creates a new obligation record based on the provided input JSON data.
+// It performs validation, generates an MD5 hash of the obligation text, and associates
+// the obligation with relevant licenses. The function responds with JSON containing the
+// newly created obligation data or error messages in case of validation or database errors.
 func CreateObligation(c *gin.Context) {
 	var input models.ObligationInput
 
@@ -764,6 +795,8 @@ func CreateObligation(c *gin.Context) {
 	c.JSON(http.StatusCreated, res)
 }
 
+// GetAllObligation retrieves a list of all active obligation records from the database and
+// responds with JSON containing the obligation data or an error message if no records are found.
 func GetAllObligation(c *gin.Context) {
 	var obligations []models.Obligation
 	query := db.DB.Model(&obligations)
@@ -791,6 +824,10 @@ func GetAllObligation(c *gin.Context) {
 	c.JSON(http.StatusOK, res)
 }
 
+// UpdateObligation updates an existing active obligation record based on the provided input JSON data.
+// It performs validation, updates the specified fields, and records changes in the audit log.
+// The function responds with JSON containing the updated obligation data or error messages in case
+// of validation or database errors.
 func UpdateObligation(c *gin.Context) {
 	var update models.UpdateObligation
 	var oldobligation models.Obligation
@@ -948,6 +985,8 @@ func UpdateObligation(c *gin.Context) {
 	c.JSON(http.StatusOK, res)
 }
 
+// DeleteObligation marks an existing obligation record as inactive based on the provided topic parameter.
+// It responds with an error message if the obligation is not found or if the deactivation operation fails.
 func DeleteObligation(c *gin.Context) {
 	var obligation models.Obligation
 	tp := c.Param("topic")
@@ -965,6 +1004,9 @@ func DeleteObligation(c *gin.Context) {
 	obligation.Active = false
 }
 
+// GetObligation retrieves an active obligation record based on the provided topic parameter.
+// It responds with JSON containing the obligation data or an error message if the obligation
+// is not found or if there is an error during retrieval.
 func GetObligation(c *gin.Context) {
 	var obligation models.Obligation
 	query := db.DB.Model(&obligation)

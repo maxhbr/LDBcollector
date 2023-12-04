@@ -124,12 +124,15 @@ type UserResponse struct {
 	Meta   PaginationMeta `json:"paginationmeta"`
 }
 
+// SearchLicense struct represents the input needed to search in a license.
 type SearchLicense struct {
 	Field      string `json:"field" binding:"required"`
 	SearchTerm string `json:"search_term" binding:"required"`
 	Search     string `json:"search"`
 }
 
+// Audit struct represents an audit entity with certain attributes and properties
+// It has user id as a foreign key
 type Audit struct {
 	Id        int    `json:"id" gorm:"primary_key"`
 	UserId    int64  `json:"user_id"`
@@ -139,6 +142,7 @@ type Audit struct {
 	Type      string `json:"type"`
 }
 
+// ChangeLog struct represents a change entity with certain attributes and properties
 type ChangeLog struct {
 	Id           int    `json:"id" gorm:"primary_key"`
 	Field        string `json:"field"`
@@ -148,18 +152,21 @@ type ChangeLog struct {
 	Audit        Audit  `gorm:"foreignKey:AuditId;references:Id" json:"-"`
 }
 
+// ChangeLogResponse represents the design of API response of change log
 type ChangeLogResponse struct {
 	Status int            `json:"status"`
 	Data   []ChangeLog    `json:"data"`
 	Meta   PaginationMeta `json:"paginationmeta"`
 }
 
+// AuditResponse represents the response format for audit data.
 type AuditResponse struct {
 	Status int            `json:"status"`
 	Data   []Audit        `json:"data"`
 	Meta   PaginationMeta `json:"paginationmeta"`
 }
 
+// Obligation represents an obligation record in the database.
 type Obligation struct {
 	Id             int64  `json:"id" gorm:"primary_key"`
 	Topic          string `json:"topic"`
@@ -173,6 +180,7 @@ type Obligation struct {
 	Md5            string `json:"md5" gorm:"unique"`
 }
 
+// ObligationInput represents the input format for creating a new obligation.
 type ObligationInput struct {
 	Topic          string   `json:"topic" binding:"required"`
 	Type           string   `json:"type" binding:"required"`
@@ -185,6 +193,7 @@ type ObligationInput struct {
 	Shortnames     []string `json:"shortnames"`
 }
 
+// UpdateObligation represents the input format for updating an existing obligation.
 type UpdateObligation struct {
 	Topic          string `json:"topic"`
 	Type           string `json:"type"`
@@ -197,6 +206,7 @@ type UpdateObligation struct {
 	Md5            string `json:"md5"`
 }
 
+// ObligationMap represents the mapping between an obligation and a license.
 type ObligationMap struct {
 	ObligationPk int64      `json:"obligation_pk"`
 	Obligation   Obligation `gorm:"foreignKey:ObligationPk;references:Id" json:"-"`
@@ -205,6 +215,7 @@ type ObligationMap struct {
 	LicenseDB    LicenseDB  `gorm:"foreignKey:RfPk;references:Id" json:"-"`
 }
 
+// ObligationResponse represents the response format for obligation data.
 type ObligationResponse struct {
 	Status int            `json:"status"`
 	Data   []Obligation   `json:"data"`

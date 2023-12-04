@@ -19,6 +19,9 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
+// TestMain is the main testing function for the application. It sets up the testing environment,
+// including configuring the Gin web framework for testing, connecting to a database,
+// running the tests, and exiting with the appropriate exit code.
 func TestMain(m *testing.M) {
 	gin.SetMode(gin.TestMode)
 	dbname := "fossology"
@@ -32,6 +35,7 @@ func TestMain(m *testing.M) {
 	os.Exit(exitcode)
 }
 
+// makeRequest is a utility function for creating and sending HTTP requests during testing.
 func makeRequest(method, path string, body interface{}, isAuthanticated bool) *httptest.ResponseRecorder {
 	reqBody, _ := json.Marshal(body)
 	req := httptest.NewRequest(method, path, bytes.NewBuffer(reqBody))

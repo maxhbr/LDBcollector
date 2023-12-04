@@ -5,6 +5,11 @@ package utils
 
 import "github.com/fossology/LicenseDb/pkg/models"
 
+// The Converter function takes an input of type models.LicenseJson and converts it into a
+// corresponding models.LicenseDB object.
+// It performs several field assignments and transformations to create the LicenseDB object,
+// including generating the SpdxId based on the SpdxCompatible field.
+// The resulting LicenseDB object is returned as the output of this function.
 func Converter(input models.LicenseJson) models.LicenseDB {
 	if input.SpdxCompatible == "t" {
 		input.SpdxCompatible = input.Shortname

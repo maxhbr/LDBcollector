@@ -15,8 +15,10 @@ import (
 	"gorm.io/gorm"
 )
 
+// DB is a global variable to store the GORM database connection.
 var DB *gorm.DB
 
+// Connect establishes a connection to the database using the provided parameters.
 func Connect(dbhost, port, user, dbname, password *string) {
 
 	dburi := fmt.Sprintf("host=%s port=%s user=%s dbname=%s password=%s", *dbhost, *port, *user, *dbname, *password)
@@ -29,12 +31,13 @@ func Connect(dbhost, port, user, dbname, password *string) {
 	DB = database
 }
 
+// Populatedb populates the database with license data from a JSON file if 'populatedb' is true.
 func Populatedb(populatedb bool, datafile string) {
 	if populatedb {
 		var licenses []models.LicenseJson
-		// read the file of data
+		// Read the content of the data file.
 		byteResult, _ := ioutil.ReadFile(datafile)
-		// unmarshal the json file and it into the struct format
+		// Unmarshal the JSON file data into a slice of LicenseJson structs.
 		if err := json.Unmarshal(byteResult, &licenses); err != nil {
 			log.Fatalf("error reading from json file: %v", err)
 		}
