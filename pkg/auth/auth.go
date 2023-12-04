@@ -10,7 +10,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/fossology/LicenseDb/pkg/api"
+	"github.com/fossology/LicenseDb/pkg/db"
 	"github.com/fossology/LicenseDb/pkg/models"
 	"github.com/gin-gonic/gin"
 )
@@ -28,7 +28,7 @@ func CreateUser(c *gin.Context) {
 		c.JSON(http.StatusBadRequest, er)
 		return
 	}
-	result := api.DB.FirstOrCreate(&user)
+	result := db.DB.FirstOrCreate(&user)
 	if result.RowsAffected == 0 {
 		er := models.LicenseError{
 			Status:    http.StatusBadRequest,
@@ -40,21 +40,11 @@ func CreateUser(c *gin.Context) {
 		c.JSON(http.StatusBadRequest, er)
 		return
 	}
-	if result.Error != nil {
-		er := models.LicenseError{
-			Status:    http.StatusInternalServerError,
-			Message:   "Failed to create user",
-			Error:     result.Error.Error(),
-			Path:      c.Request.URL.Path,
-			Timestamp: time.Now().Format(time.RFC3339),
-		}
-		c.JSON(http.StatusInternalServerError, er)
-		return
-	}
+
 	res := models.UserResponse{
 		Data:   []models.User{user},
 		Status: http.StatusCreated,
-		Meta: models.Meta{
+		Meta: models.PaginationMeta{
 			ResourceCount: 1,
 		},
 	}
@@ -64,7 +54,8 @@ func CreateUser(c *gin.Context) {
 
 func GetAllUser(c *gin.Context) {
 	var users []models.User
-	if err := api.DB.Find(&users).Error; err != nil {
+
+	if err := db.DB.Find(&users).Error; err != nil {
 		er := models.LicenseError{
 			Status:    http.StatusInternalServerError,
 			Message:   "can not create user",
@@ -77,7 +68,7 @@ func GetAllUser(c *gin.Context) {
 	res := models.UserResponse{
 		Data:   users,
 		Status: http.StatusOK,
-		Meta: models.Meta{
+		Meta: models.PaginationMeta{
 			ResourceCount: len(users),
 		},
 	}
@@ -89,7 +80,7 @@ func GetUser(c *gin.Context) {
 	var user models.User
 	id := c.Param("id")
 
-	if err := api.DB.Where("userid = ?", id).First(&user).Error; err != nil {
+	if err := db.DB.Where("userid = ?", id).First(&user).Error; err != nil {
 		er := models.LicenseError{
 			Status:    http.StatusBadRequest,
 			Message:   "no user with such user id exists",
@@ -102,7 +93,7 @@ func GetUser(c *gin.Context) {
 	res := models.UserResponse{
 		Data:   []models.User{user},
 		Status: http.StatusOK,
-		Meta: models.Meta{
+		Meta: models.PaginationMeta{
 			ResourceCount: 1,
 		},
 	}
@@ -152,9 +143,8 @@ func AuthenticationMiddleware() gin.HandlerFunc {
 		password := auth[1]
 
 		var user models.User
-
-		err = api.DB.Where("username = ?", username).First(&user).Error
-		if err != nil {
+		result := db.DB.Where("username = ?", username).First(&user)
+		if result.Error != nil {
 			er := models.LicenseError{
 				Status:    http.StatusUnauthorized,
 				Message:   "User name not found",
