@@ -37,11 +37,11 @@ SECRET_KEY = config.SECRET_KEY
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = getattr(config, "DEBUG", False)
 
-if (host := getattr(config, "HOST", None)) is not None:
+if host := getattr(config, "HOST", None):
     ALLOWED_HOSTS = [host]
     csrf_url = (
         getattr(config, "CSRF_TRUSTED_ORIGINS", None)
-        if getattr(config, "CSRF_TRUSTED_ORIGINS", None) is not None
+        if getattr(config, "CSRF_TRUSTED_ORIGINS", None)
         else host
     )
     CSRF_TRUSTED_ORIGINS = ["https://" + csrf_url]
