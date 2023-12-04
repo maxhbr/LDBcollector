@@ -43,8 +43,16 @@ func main() {
 		log.Fatalf("Failed to automigrate database: %v", err)
 	}
 
+	if err := db.DB.AutoMigrate(&models.Audit{}); err != nil {
+		log.Fatalf("Failed to automigrate database: %v", err)
+	}
+
+	if err := db.DB.AutoMigrate(&models.ChangeLog{}); err != nil {
+		log.Fatalf("Failed to automigrate database: %v", err)
+	}
 	db.Populatedb(*populatedb, *datafile)
 
 	r := api.Router()
+
 	r.Run()
 }

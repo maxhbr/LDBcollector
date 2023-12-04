@@ -110,7 +110,7 @@ type LicenseInput struct {
 
 // User struct is representation of user information.
 type User struct {
-	Userid       string `json:"userid" gorm:"primary_key" binding:"required"`
+	UserId       string `json:"userid" gorm:"primary_key" binding:"required"`
 	Username     string `json:"username" gorm:"unique" binding:"required"`
 	Userlevel    string `json:"userlevel" gorm:"unique" binding:"required"`
 	Userpassword string `json:"userpassword" gorm:"unique" binding:"required"`
@@ -123,8 +123,36 @@ type UserResponse struct {
 	Meta   PaginationMeta `json:"paginationmeta"`
 }
 
+type Audit struct {
+	Id        int    `json:"id" gorm:"primary_key"`
+	Username  string `json:"username"`
+	Shortname string `json:"shortname"`
+	Timestamp string `json:"timestamp"`
+}
+
 type SearchLicense struct {
 	Field      string `json:"field" binding:"required"`
 	SearchTerm string `json:"search_term" binding:"required"`
-	SearchType string `json:"search_type"`
+	Search     string `json:"search"`
+}
+
+type ChangeLog struct {
+	Id           int    `json:"id" gorm:"primary_key"`
+	Field        string `json:"field"`
+	UpdatedValue string `json:"updated_value"`
+	OldValue     string `json:"old_value"`
+	AuditId      int    `json:"audit_id"`
+	Audit        Audit  `gorm:"foreignKey:AuditId;references:Id" json:"-"`
+}
+
+type ChangeLogResponse struct {
+	Status int            `json:"status"`
+	Data   []ChangeLog    `json:"data"`
+	Meta   PaginationMeta `json:"paginationmeta"`
+}
+
+type AuditResponse struct {
+	Status int            `json:"status"`
+	Data   []Audit        `json:"data"`
+	Meta   PaginationMeta `json:"paginationmeta"`
 }
