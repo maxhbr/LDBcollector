@@ -89,7 +89,7 @@ type LicenseInput struct {
 	Shortname       string `json:"rf_shortname" binding:"required"`
 	Fullname        string `json:"rf_fullname" binding:"required"`
 	Text            string `json:"rf_text" binding:"required"`
-	Url             string `json:"rf_url" `
+	Url             string `json:"rf_url"`
 	AddDate         string `json:"rf_add_date"`
 	Copyleft        string `json:"rf_copyleft"`
 	FSFfree         string `json:"rf_FSFfree"`
