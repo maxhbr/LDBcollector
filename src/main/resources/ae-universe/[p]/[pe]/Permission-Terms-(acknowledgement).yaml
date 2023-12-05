@@ -9,3 +9,5 @@ shortName: "PT-Acknowledgement"
 alternativeNames:
   - "Permission Terms (acknowledgement)"
 
+otherIds: 
+  - "OpenCode:PT-Acknowledgement"

@@ -6,5 +6,7 @@ canonicalName: "BSD 3-Clause License (variant 052)"
 category: "BSD"
 shortName: "BSD-3-Clause-052"
 
+openCoDEStatus: "approved"
+
 otherIds: 
   - "scancode:bsd-3-clause-no-change"

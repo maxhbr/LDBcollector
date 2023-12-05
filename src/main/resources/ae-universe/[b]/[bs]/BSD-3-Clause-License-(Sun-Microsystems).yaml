@@ -6,6 +6,8 @@ canonicalName: "BSD 3-Clause License (Sun Microsystems)"
 category: "BSD"
 spdxIdentifier: "BSD-3-Clause-Sun"
 
+openCoDEStatus: "approved"
+
 alternativeNames:
   - "BSD 3-Clause License (Sun Microsystems)"
 

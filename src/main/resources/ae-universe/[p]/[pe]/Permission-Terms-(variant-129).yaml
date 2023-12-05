@@ -6,3 +6,7 @@ canonicalName: "Permission Terms (variant 129)"
 category: "Permission"
 shortName: "PT-Var129"
 
+openCoDEStatus: "not approved"
+
+otherIds: 
+  - "OpenCoDE:X11-Var003"

@@ -6,6 +6,10 @@ canonicalName: "Permission Terms"
 category: "Permission"
 shortName: "PT"
 
+openCoDEStatus: "not approved"
+
 alternativeNames:
   - "Permission Terms"
 
+otherIds: 
+  - "OpenCoDE:PT"

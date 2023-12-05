@@ -6,6 +6,8 @@ canonicalName: "ssh-keyscan License"
 category: "ssh-keyscan"
 spdxIdentifier: "ssh-keyscan"
 
+openCoDEStatus: "approved"
+
 alternativeNames:
   - "ssh-keyscan"
 
