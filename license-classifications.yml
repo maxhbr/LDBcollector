@@ -4144,9 +4144,9 @@ categorizations:
 
   - id: "TMate"
     categories:
-      - "property:unchecked"
-      - "copyleft-strong"
+      - "proprietary-free"
       - "property:include-in-notice-file"
+      - "property:distribute-source-code"
 
   - id: "TeX-exception"
     categories:
