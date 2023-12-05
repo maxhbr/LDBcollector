@@ -5,11 +5,10 @@ package main
 
 import (
 	"flag"
-	"log"
-
 	"github.com/fossology/LicenseDb/pkg/api"
 	"github.com/fossology/LicenseDb/pkg/db"
 	"github.com/fossology/LicenseDb/pkg/models"
+	"log"
 )
 
 // declare flags to input the basic requirement of database connection and the path of the data file
