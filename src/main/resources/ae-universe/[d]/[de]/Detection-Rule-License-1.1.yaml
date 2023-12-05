@@ -4,10 +4,12 @@
 
 canonicalName: "Detection Rule License 1.1"
 category: "Detection Rule"
-shortName: "DRL-1.1"
+spdxIdentifier: "DRL-1.1"
 
 alternativeNames:
   - "Detection Rule License (DRL) 1.1"
+  - "Detection Rule License 1.1"
+  - "DRL-1.1"
 
 otherIds: 
   - "scancode:drl-1.1"

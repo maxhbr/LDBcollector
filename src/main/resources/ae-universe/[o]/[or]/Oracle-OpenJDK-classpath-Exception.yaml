@@ -8,3 +8,5 @@ shortName: "Oracle-OpenJDK-classpath-Exception"
 
 type: "exception"
 
+otherIds: 
+  - "scancode:oracle-openjdk-classpath-exception-2.0"
