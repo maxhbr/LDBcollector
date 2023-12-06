@@ -1,0 +1,9 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: LicenseDB
+Source: https://github.com/fossology/LicenseDB/
+Upstream-Contact: FOSSology <fossology@fossology.org>
+Disclaimer: <text> This file is offered as-is, without any warranty. </text>
+
+Files: cmd/laas/docs/*
+Copyright: Fossology contributors
+License: GPL-2.0-only

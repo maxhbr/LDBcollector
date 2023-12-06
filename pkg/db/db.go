@@ -9,10 +9,11 @@ import (
 	"log"
 	"os"
 
-	"github.com/fossology/LicenseDb/pkg/models"
-	"github.com/fossology/LicenseDb/pkg/utils"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
+
+	"github.com/fossology/LicenseDb/pkg/models"
+	"github.com/fossology/LicenseDb/pkg/utils"
 )
 
 // DB is a global variable to store the GORM database connection.

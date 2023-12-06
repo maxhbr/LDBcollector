@@ -1,4 +1,7 @@
 // SPDX-FileCopyrightText: 2023 Kavya Shukla <kavyuushukla@gmail.com>
+// SPDX-FileCopyrightText: 2023 Siemens AG
+// SPDX-FileContributor: Gaurav Mishra <mishra.gaurav@siemens.com>
+//
 // SPDX-License-Identifier: GPL-2.0-only
 
 package api
@@ -11,12 +14,33 @@ import (
 	"strconv"
 	"time"
 
+	"github.com/gin-gonic/gin"
+	swaggerFiles "github.com/swaggo/files"
+	ginSwagger "github.com/swaggo/gin-swagger"
+
 	"github.com/fossology/LicenseDb/pkg/auth"
 	"github.com/fossology/LicenseDb/pkg/db"
 	"github.com/fossology/LicenseDb/pkg/models"
-	"github.com/gin-gonic/gin"
+	"github.com/fossology/LicenseDb/pkg/utils"
 )
 
+// Router Get the gin router with all the routes defined
+//
+//	@title						laas (License as a Service) API
+//	@version					0.0.9
+//	@description				Service to host license information for other services to query over REST API.
+//
+//	@contact.name				FOSSology
+//	@contact.url				https://fossology.org
+//	@contact.email				fossology@fossology.org
+//
+//	@license.name				GPL-2.0-only
+//	@license.url				https://github.com/fossology/LicenseDb/blob/main/LICENSE
+//
+//	@host						localhost:8080
+//	@BasePath					/api/v1
+//
+//	@securityDefinitions.basic	BasicAuth
 func Router() *gin.Engine {
 	// r is a default instance of gin engine
 	r := gin.Default()
@@ -24,31 +48,55 @@ func Router() *gin.Engine {
 	// return error for invalid routes
 	r.NoRoute(HandleInvalidUrl)
 
-	// authorization not required for these routes
-	r.GET("/api/licenses/:shortname", GetLicense)
-	r.POST("/api/search", SearchInLicense)
-	r.GET("/api/licenses", FilterLicense)
+	unAuthorizedv1 := r.Group("/api/v1")
+	{
+		licenses := unAuthorizedv1.Group("/licenses")
+		{
+			licenses.GET("", FilterLicense)
+			licenses.GET(":shortname", GetLicense)
+		}
+		search := unAuthorizedv1.Group("/search")
+		{
+			search.POST("", SearchInLicense)
+		}
+		obligations := unAuthorizedv1.Group("/obligations")
+		{
+			obligations.GET("", GetAllObligation)
+			obligations.GET(":topic", GetObligation)
+		}
+	}
 
-	// set up authentication
-	authorized := r.Group("/")
-	authorized.Use(auth.AuthenticationMiddleware())
+	authorizedv1 := r.Group("/api/v1")
+	authorizedv1.Use(auth.AuthenticationMiddleware())
+	{
+		licenses := authorizedv1.Group("/licenses")
+		{
+			licenses.POST("", CreateLicense)
+			licenses.PATCH(":shortname", UpdateLicense)
+		}
+		users := authorizedv1.Group("/users")
+		{
+			users.GET("", auth.GetAllUser)
+			users.GET(":id", auth.GetUser)
+			users.POST("", auth.CreateUser)
+		}
+		audit := authorizedv1.Group("/audits")
+		{
+			audit.GET("", GetAllAudit)
+			audit.GET(":audit_id", GetAudit)
+			audit.GET(":audit_id/changes", GetChangeLogs)
+			audit.GET(":audit_id/changes/:id", GetChangeLogbyId)
+		}
+		obligations := authorizedv1.Group("/obligations")
+		{
+			obligations.POST("", CreateObligation)
+			obligations.PATCH(":topic", UpdateObligation)
+			obligations.DELETE(":topic", DeleteObligation)
+		}
+	}
 
-	authorized.POST("/api/licenses", CreateLicense)
-	authorized.PATCH("/api/licenses/:shortname", UpdateLicense)
-	authorized.POST("/api/users", auth.CreateUser)
-	authorized.GET("/api/users", auth.GetAllUser)
-	authorized.GET("/api/users/:id", auth.GetUser)
-
-	authorized.GET("/api/audit", GetAllAudit)
-	authorized.GET("/api/audit/:audit_id", GetAudit)
-	authorized.GET("/api/audit/:audit_id/changes", GetChangeLog)
-	authorized.GET("/api/audit/:audit_id/changes/:id", GetChangeLogbyId)
-
-	authorized.POST("/api/obligations", CreateObligation)
-	authorized.DELETE("/api/obligations/:topic", DeleteObligation)
-	authorized.PATCH("/api/obligations/:topic", UpdateObligation)
-	r.GET("/api/obligations", GetAllObligation)
-	r.GET("/api/obligations/:topic", GetObligation)
+	// Host the swagger UI at /swagger/index.html
+	r.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerFiles.Handler))
 
 	return r
 }
@@ -66,7 +114,7 @@ func HandleInvalidUrl(c *gin.Context) {
 	c.JSON(http.StatusNotFound, er)
 }
 
-// The get all License function returns all the license data present in the database
+// GetAllLicense The get all License function returns all the license data present in the database.
 func GetAllLicense(c *gin.Context) {
 
 	var licenses []models.LicenseDB
@@ -94,9 +142,18 @@ func GetAllLicense(c *gin.Context) {
 	c.JSON(http.StatusOK, res)
 }
 
-// Get license functions return data of the particular license by its shortname.
-// It inputs the shortname as query parameter
-// It returns error if no such license exists
+// GetLicense to get a single license by its shortname
+//
+//	@Summary		Get a license by shortname
+//	@Description	Get a single license by its shortname
+//	@Id				GetLicense
+//	@Tags			Licenses
+//	@Accept			json
+//	@Produce		json
+//	@Param			shortname	path		string	true	"Shortname of the license"
+//	@Success		200			{object}	models.LicenseResponse
+//	@Failure		404			{object}	models.LicenseError	"License with shortname not found"
+//	@Router			/licenses/{shortname} [get]
 func GetLicense(c *gin.Context) {
 	var license models.LicenseDB
 
@@ -115,7 +172,7 @@ func GetLicense(c *gin.Context) {
 			Path:      c.Request.URL.Path,
 			Timestamp: time.Now().Format(time.RFC3339),
 		}
-		c.JSON(http.StatusBadRequest, er)
+		c.JSON(http.StatusNotFound, er)
 		return
 	}
 
@@ -130,8 +187,21 @@ func GetLicense(c *gin.Context) {
 	c.JSON(http.StatusOK, res)
 }
 
-// The Create License function creates license in the database and add the required data
-// It returns the license if it already exists in the database.
+// CreateLicense creates a new license in the database.
+//
+//	@Summary		Create a new license
+//	@Description	Create a new license in the service
+//	@Id				CreateLicense
+//	@Tags			Licenses
+//	@Accept			json
+//	@Produce		json
+//	@Param			license	body		models.LicenseInput		true	"New license to be created"
+//	@Success		201		{object}	models.LicenseResponse	"New license created successfully"
+//	@Failure		400		{object}	models.LicenseError		"Invalid request body"
+//	@Failure		409		{object}	models.LicenseError		"License with same shortname already exists"
+//	@Failure		500		{object}	models.LicenseError		"Failed to create license"
+//	@Security		BasicAuth
+//	@Router			/licenses [post]
 func CreateLicense(c *gin.Context) {
 	var input models.LicenseInput
 
@@ -174,13 +244,13 @@ func CreateLicense(c *gin.Context) {
 	if result.RowsAffected == 0 {
 
 		er := models.LicenseError{
-			Status:    http.StatusBadRequest,
+			Status:    http.StatusConflict,
 			Message:   "can not create license with same shortname",
 			Error:     fmt.Sprintf("Error: License with shortname '%s' already exists", input.Shortname),
 			Path:      c.Request.URL.Path,
 			Timestamp: time.Now().Format(time.RFC3339),
 		}
-		c.JSON(http.StatusBadRequest, er)
+		c.JSON(http.StatusConflict, er)
 		return
 	}
 	if result.Error != nil {
@@ -205,9 +275,23 @@ func CreateLicense(c *gin.Context) {
 	c.JSON(http.StatusCreated, res)
 }
 
-// The Update license functions updates the particular license with a particular shortname.
-// It also creates the audit and change logs of the updates
-// It returns the updated license
+// UpdateLicense Update license with given shortname and create audit and changelog entries.
+//
+//	@Summary		Update a license
+//	@Description	Update a license in the service
+//	@Id				UpdateLicense
+//	@Tags			Licenses
+//	@Accept			json
+//	@Produce		json
+//	@Param			shortname	path		string					true	"Shortname of the license to be updated"
+//	@Param			license		body		models.LicenseDB		true	"Update license body"
+//	@Success		200			{object}	models.LicenseResponse	"License updated successfully"
+//	@Failure		400			{object}	models.LicenseError		"Invalid license body"
+//	@Failure		404			{object}	models.LicenseError		"License with shortname not found"
+//	@Failure		409			{object}	models.LicenseError		"License with same shortname already exists"
+//	@Failure		500			{object}	models.LicenseError		"Failed to update license"
+//	@Security		BasicAuth
+//	@Router			/licenses/{shortname} [patch]
 func UpdateLicense(c *gin.Context) {
 	var update models.LicenseDB
 	var license models.LicenseDB
@@ -218,13 +302,13 @@ func UpdateLicense(c *gin.Context) {
 	shortname := c.Param("shortname")
 	if err := db.DB.Where(models.LicenseDB{Shortname: shortname}).First(&license).Error; err != nil {
 		er := models.LicenseError{
-			Status:    http.StatusBadRequest,
+			Status:    http.StatusNotFound,
 			Message:   fmt.Sprintf("license with shortname '%s' not found", shortname),
 			Error:     err.Error(),
 			Path:      c.Request.URL.Path,
 			Timestamp: time.Now().Format(time.RFC3339),
 		}
-		c.JSON(http.StatusBadRequest, er)
+		c.JSON(http.StatusNotFound, er)
 		return
 	}
 	oldlicense = license
@@ -454,8 +538,26 @@ func UpdateLicense(c *gin.Context) {
 
 }
 
-// The filter licenses returns the licenses after passing through certain filters.
-// It takes the filters as query parameters and filters accordingly.
+// FilterLicense Get licenses from service based on different filters.
+//
+//	@Summary		Filter licenses
+//	@Description	Filter licenses based on different parameters
+//	@Id				FilterLicense
+//	@Tags			Licenses
+//	@Accept			json
+//	@Produce		json
+//	@Param			spdxid			query		string					false	"SPDX ID of the license"
+//	@Param			detector_type	query		int						false	"License detector type"
+//	@Param			gplv2compatible	query		bool					false	"GPLv2 compatibility flag status of license"
+//	@Param			gplv3compatible	query		bool					false	"GPLv3 compatibility flag status of license"
+//	@Param			marydone		query		bool					false	"Mary done flag status of license"
+//	@Param			active			query		bool					false	"Active license only"
+//	@Param			osiapproved		query		bool					false	"OSI Approved flag status of license"
+//	@Param			fsffree			query		bool					false	"FSF Free flag status of license"
+//	@Param			copyleft		query		bool					false	"Copyleft flag status of license"
+//	@Success		200				{object}	models.LicenseResponse	"Filtered licenses"
+//	@Failure		400				{object}	models.LicenseError		"Invalid value"
+//	@Router			/licenses [get]
 func FilterLicense(c *gin.Context) {
 	SpdxId := c.Query("spdxid")
 	DetectorType := c.Query("detector_type")
@@ -514,7 +616,7 @@ func FilterLicense(c *gin.Context) {
 		if err != nil {
 			er := models.LicenseError{
 				Status:    http.StatusBadRequest,
-				Message:   "Invalid detector type value",
+				Message:   "invalid detector type value",
 				Error:     err.Error(),
 				Path:      c.Request.URL.Path,
 				Timestamp: time.Now().Format(time.RFC3339),
@@ -573,10 +675,19 @@ func FilterLicense(c *gin.Context) {
 
 }
 
-// SearchInLicense searches for license data based on user-provided search criteria.
-// It accepts a JSON request body containing search parameters and responds with JSON
-// containing the matching license data or error messages if the search request is
-// invalid or if the search algorithm is not supported.
+// SearchInLicense Search for license data based on user-provided search criteria.
+//
+//	@Summary		Search licenses
+//	@Description	Search licenses on different filters and algorithms
+//	@Id				SearchInLicense
+//	@Tags			Licenses
+//	@Accept			json
+//	@Produce		json
+//	@Param			search	body		models.SearchLicense	true	"Search criteria"
+//	@Success		200		{object}	models.LicenseResponse	"Licenses matched"
+//	@Failure		400		{object}	models.LicenseError		"Invalid request"
+//	@Failure		404		{object}	models.LicenseError		"Search algorithm doesn't exist"
+//	@Router			/search [post]
 func SearchInLicense(c *gin.Context) {
 	var input models.SearchLicense
 
@@ -599,16 +710,15 @@ func SearchInLicense(c *gin.Context) {
 		query = query.Where(fmt.Sprintf("%s ILIKE ?", input.Field), fmt.Sprintf("%%%s%%", input.SearchTerm))
 	} else if input.Search == "" || input.Search == "full_text_search" {
 		query = query.Where(input.Field+" @@ plainto_tsquery(?)", input.SearchTerm)
-
 	} else {
 		er := models.LicenseError{
-			Status:    http.StatusBadRequest,
+			Status:    http.StatusNotFound,
 			Message:   "search algorithm doesn't exist",
 			Error:     "search algorithm with such name doesn't exists",
 			Path:      c.Request.URL.Path,
 			Timestamp: time.Now().Format(time.RFC3339),
 		}
-		c.JSON(http.StatusBadRequest, er)
+		c.JSON(http.StatusNotFound, er)
 		return
 	}
 	query.Find(&license)
@@ -624,20 +734,30 @@ func SearchInLicense(c *gin.Context) {
 
 }
 
-// GetAllAudit retrieves a list of all audit records from the database and responds with
-// JSON containing the audit data or an error message if the records are not found.
+// GetAllAudit retrieves a list of all audit records from the database
+//
+//	@Summary		Get audit records
+//	@Description	Get all audit records from the server
+//	@Id				GetAllAudit
+//	@Tags			Audits
+//	@Accept			json
+//	@Produce		json
+//	@Success		200	{object}	models.AuditResponse	"Audit records"
+//	@Failure		404	{object}	models.LicenseError		"Not changelogs in DB"
+//	@Security		BasicAuth
+//	@Router			/audits [get]
 func GetAllAudit(c *gin.Context) {
 	var audit []models.Audit
 
 	if err := db.DB.Find(&audit).Error; err != nil {
 		er := models.LicenseError{
-			Status:    http.StatusBadRequest,
+			Status:    http.StatusNotFound,
 			Message:   "Change log not found",
 			Error:     err.Error(),
 			Path:      c.Request.URL.Path,
 			Timestamp: time.Now().Format(time.RFC3339),
 		}
-		c.JSON(http.StatusBadRequest, er)
+		c.JSON(http.StatusNotFound, er)
 		return
 	}
 	res := models.AuditResponse{
@@ -651,25 +771,37 @@ func GetAllAudit(c *gin.Context) {
 	c.JSON(http.StatusOK, res)
 }
 
-// GetAudit retrieves a specific audit record by its ID from the database and responds
-// with JSON containing the audit data or an error message if the record is not found.
+// GetAudit retrieves a specific audit record by its ID from the database
+//
+//	@Summary		Get an audit record
+//	@Description	Get a specific audit records by ID
+//	@Id				GetAudit
+//	@Tags			Audits
+//	@Accept			json
+//	@Produce		json
+//	@Param			audit_id	path		string	true	"Audit ID"
+//	@Success		200			{object}	models.AuditResponse
+//	@Failure		400			{object}	models.LicenseError	"Invalid audit ID"
+//	@Failure		404			{object}	models.LicenseError	"No audit entry with given ID"
+//	@Security		BasicAuth
+//	@Router			/audits/{audit_id} [get]
 func GetAudit(c *gin.Context) {
 	var changelog models.Audit
 	id := c.Param("audit_id")
-	parsedId, err := parseId(c, id, "audit")
+	parsedId, err := utils.ParseIdToInt(c, id, "audit")
 	if err != nil {
 		return
 	}
 
 	if err := db.DB.Where(models.Audit{Id: parsedId}).First(&changelog).Error; err != nil {
 		er := models.LicenseError{
-			Status:    http.StatusBadRequest,
+			Status:    http.StatusNotFound,
 			Message:   "no change log with such id exists",
 			Error:     err.Error(),
 			Path:      c.Request.URL.Path,
 			Timestamp: time.Now().Format(time.RFC3339),
 		}
-		c.JSON(http.StatusBadRequest, er)
+		c.JSON(http.StatusNotFound, er)
 	}
 	res := models.AuditResponse{
 		Data:   []models.Audit{changelog},
@@ -682,42 +814,37 @@ func GetAudit(c *gin.Context) {
 	c.JSON(http.StatusOK, res)
 }
 
-func parseId(c *gin.Context, id string, idType string) (int, error) {
-	parsedId, err := strconv.Atoi(id)
-	if err != nil {
-		er := models.LicenseError{
-			Status:    http.StatusBadRequest,
-			Message:   fmt.Sprintf("invalid %s id", idType),
-			Error:     err.Error(),
-			Path:      c.Request.URL.Path,
-			Timestamp: time.Now().Format(time.RFC3339),
-		}
-		c.JSON(http.StatusBadRequest, er)
-		return 0, err
-	}
-	return parsedId, nil
-}
-
-// GetChangeLog retrieves a list of change history records associated with a specific
-// audit by its audit ID from the database and responds with JSON containing the change
-// history data or an error message if no records are found.
-func GetChangeLog(c *gin.Context) {
+// GetChangeLogs retrieves a list of change history records associated with a specific audit
+//
+//	@Summary		Get changelogs
+//	@Description	Get changelogs of an audit record
+//	@Id				GetChangeLogs
+//	@Tags			Audits
+//	@Accept			json
+//	@Produce		json
+//	@Param			audit_id	path		string	true	"Audit ID"
+//	@Success		200			{object}	models.ChangeLogResponse
+//	@Failure		400			{object}	models.LicenseError	"Invalid audit ID"
+//	@Failure		404			{object}	models.LicenseError	"No audit entry with given ID"
+//	@Security		BasicAuth
+//	@Router			/audits/{audit_id}/changes [get]
+func GetChangeLogs(c *gin.Context) {
 	var changelog []models.ChangeLog
 	id := c.Param("audit_id")
-	parsedId, err := parseId(c, id, "audit")
+	parsedId, err := utils.ParseIdToInt(c, id, "audit")
 	if err != nil {
 		return
 	}
 
 	if err := db.DB.Where(models.ChangeLog{AuditId: parsedId}).Find(&changelog).Error; err != nil {
 		er := models.LicenseError{
-			Status:    http.StatusBadRequest,
+			Status:    http.StatusNotFound,
 			Message:   "no change log with such id exists",
 			Error:     err.Error(),
 			Path:      c.Request.URL.Path,
 			Timestamp: time.Now().Format(time.RFC3339),
 		}
-		c.JSON(http.StatusBadRequest, er)
+		c.JSON(http.StatusNotFound, er)
 	}
 
 	res := models.ChangeLogResponse{
@@ -732,40 +859,52 @@ func GetChangeLog(c *gin.Context) {
 }
 
 // GetChangeLogbyId retrieves a specific change history record by its ID for a given audit.
-// It responds with JSON containing the change history data or error messages if the record
-// is not found or if it does not belong to the specified audit.
+//
+//	@Summary		Get a changelog
+//	@Description	Get a specific changelog of an audit record by its ID
+//	@Id				GetChangeLogbyId
+//	@Tags			Audits
+//	@Accept			json
+//	@Produce		json
+//	@Param			audit_id	path		string	true	"Audit ID"
+//	@Param			id			path		string	true	"Changelog ID"
+//	@Success		200			{object}	models.ChangeLogResponse
+//	@Failure		400			{object}	models.LicenseError	"Invalid ID"
+//	@Failure		404			{object}	models.LicenseError	"No changelog with given ID found"
+//	@Security		BasicAuth
+//	@Router			/audits/{audit_id}/changes/{id} [get]
 func GetChangeLogbyId(c *gin.Context) {
 	var changelog models.ChangeLog
 	auditId := c.Param("audit_id")
-	parsedAuditId, err := parseId(c, auditId, "audit")
+	parsedAuditId, err := utils.ParseIdToInt(c, auditId, "audit")
 	if err != nil {
 		return
 	}
 	changelogId := c.Param("id")
-	parsedChangeLogId, err := parseId(c, changelogId, "change log")
+	parsedChangeLogId, err := utils.ParseIdToInt(c, changelogId, "changelog")
 	if err != nil {
 		return
 	}
 
 	if err := db.DB.Where(models.ChangeLog{Id: parsedChangeLogId}).Find(&changelog).Error; err != nil {
 		er := models.LicenseError{
-			Status:    http.StatusBadRequest,
+			Status:    http.StatusNotFound,
 			Message:   "no change history with such id exists",
 			Error:     err.Error(),
 			Path:      c.Request.URL.Path,
 			Timestamp: time.Now().Format(time.RFC3339),
 		}
-		c.JSON(http.StatusBadRequest, er)
+		c.JSON(http.StatusNotFound, er)
 	}
 	if changelog.AuditId != parsedAuditId {
 		er := models.LicenseError{
-			Status:    http.StatusBadRequest,
+			Status:    http.StatusNotFound,
 			Message:   "no change history with such id and audit id exists",
 			Error:     "Invalid change history for the requested audit id",
 			Path:      c.Request.URL.Path,
 			Timestamp: time.Now().Format(time.RFC3339),
 		}
-		c.JSON(http.StatusBadRequest, er)
+		c.JSON(http.StatusNotFound, er)
 	}
 	res := models.ChangeLogResponse{
 		Data:   []models.ChangeLog{changelog},
@@ -777,10 +916,21 @@ func GetChangeLogbyId(c *gin.Context) {
 	c.JSON(http.StatusOK, res)
 }
 
-// CreateObligation creates a new obligation record based on the provided input JSON data.
-// It performs validation, generates an MD5 hash of the obligation text, and associates
-// the obligation with relevant licenses. The function responds with JSON containing the
-// newly created obligation data or error messages in case of validation or database errors.
+// CreateObligation creates a new obligation record and associates it with relevant licenses.
+//
+//	@Summary		Create an obligation
+//	@Description	Create an obligation and associate it with licenses
+//	@Id				CreateObligation
+//	@Tags			Obligations
+//	@Accept			json
+//	@Produce		json
+//	@Param			obligation	body		models.ObligationInput	true	"Obligation to create"
+//	@Success		201			{object}	models.ObligationResponse
+//	@Failure		400			{object}	models.LicenseError	"Bad request body"
+//	@Failure		409			{object}	models.LicenseError	"Obligation with same body exists"
+//	@Failure		500			{object}	models.LicenseError	"Unable to create obligation"
+//	@Security		BasicAuth
+//	@Router			/obligations [post]
 func CreateObligation(c *gin.Context) {
 	var input models.ObligationInput
 
@@ -798,7 +948,6 @@ func CreateObligation(c *gin.Context) {
 	s := input.Text
 	hash := md5.Sum([]byte(s))
 	md5hash := hex.EncodeToString(hash[:])
-	fmt.Printf(md5hash)
 	input.Active = true
 
 	input.TextUpdatable = false
@@ -814,7 +963,6 @@ func CreateObligation(c *gin.Context) {
 		TextUpdatable:  input.TextUpdatable,
 		Active:         input.Active,
 	}
-	fmt.Print(obligation)
 
 	result := db.DB.Debug().FirstOrCreate(&obligation)
 
@@ -822,13 +970,13 @@ func CreateObligation(c *gin.Context) {
 	if result.RowsAffected == 0 {
 
 		er := models.LicenseError{
-			Status:    http.StatusBadRequest,
-			Message:   "can not create obligation with same Md5",
-			Error:     fmt.Sprintf("Error: Obligation with Md5 '%s' already exists", obligation.Md5),
+			Status:    http.StatusConflict,
+			Message:   "can not create obligation with same MD5",
+			Error:     fmt.Sprintf("Error: Obligation with MD5 '%s' already exists", obligation.Md5),
 			Path:      c.Request.URL.Path,
 			Timestamp: time.Now().Format(time.RFC3339),
 		}
-		c.JSON(http.StatusBadRequest, er)
+		c.JSON(http.StatusConflict, er)
 		return
 	}
 	if result.Error != nil {
@@ -863,8 +1011,17 @@ func CreateObligation(c *gin.Context) {
 	c.JSON(http.StatusCreated, res)
 }
 
-// GetAllObligation retrieves a list of all active obligation records from the database and
-// responds with JSON containing the obligation data or an error message if no records are found.
+// GetAllObligation retrieves a list of all active obligation records
+//
+//	@Summary		Get all active obligations
+//	@Description	Get all active obligations from the service
+//	@Id				GetAllObligation
+//	@Tags			Obligations
+//	@Accept			json
+//	@Produce		json
+//	@Success		200	{object}	models.ObligationResponse
+//	@Failure		404	{object}	models.LicenseError	"No obligations in DB"
+//	@Router			/obligations [get]
 func GetAllObligation(c *gin.Context) {
 	var obligations []models.Obligation
 	query := db.DB.Model(&obligations)
@@ -872,13 +1029,13 @@ func GetAllObligation(c *gin.Context) {
 	err := query.Find(&obligations).Error
 	if err != nil {
 		er := models.LicenseError{
-			Status:    http.StatusBadRequest,
+			Status:    http.StatusNotFound,
 			Message:   "Obligations not found",
 			Error:     err.Error(),
 			Path:      c.Request.URL.Path,
 			Timestamp: time.Now().Format(time.RFC3339),
 		}
-		c.JSON(http.StatusBadRequest, er)
+		c.JSON(http.StatusNotFound, er)
 		return
 	}
 	res := models.ObligationResponse{
@@ -892,10 +1049,22 @@ func GetAllObligation(c *gin.Context) {
 	c.JSON(http.StatusOK, res)
 }
 
-// UpdateObligation updates an existing active obligation record based on the provided input JSON data.
-// It performs validation, updates the specified fields, and records changes in the audit log.
-// The function responds with JSON containing the updated obligation data or error messages in case
-// of validation or database errors.
+// UpdateObligation updates an existing active obligation record
+//
+//	@Summary		Update obligation
+//	@Description	Update an existing obligation record
+//	@Id				UpdateObligation
+//	@Tags			Obligations
+//	@Accept			json
+//	@Produce		json
+//	@Param			topic		path		string					true	"Topic of the obligation to be updated"
+//	@Param			obligation	body		models.UpdateObligation	true	"Obligation to be updated"
+//	@Success		200			{object}	models.ObligationResponse
+//	@Failure		400			{object}	models.LicenseError	"Invalid request"
+//	@Failure		404			{object}	models.LicenseError	"No obligation with given topic found"
+//	@Failure		500			{object}	models.LicenseError	"Unable to update obligation"
+//	@Security		BasicAuth
+//	@Router			/obligations/{topic} [patch]
 func UpdateObligation(c *gin.Context) {
 	var update models.UpdateObligation
 	var oldobligation models.Obligation
@@ -906,13 +1075,13 @@ func UpdateObligation(c *gin.Context) {
 	tp := c.Param("topic")
 	if err := query.Where(models.Obligation{Active: true, Topic: tp}).First(&obligation).Error; err != nil {
 		er := models.LicenseError{
-			Status:    http.StatusBadRequest,
+			Status:    http.StatusNotFound,
 			Message:   fmt.Sprintf("obligation with topic '%s' not found", tp),
 			Error:     err.Error(),
 			Path:      c.Request.URL.Path,
 			Timestamp: time.Now().Format(time.RFC3339),
 		}
-		c.JSON(http.StatusBadRequest, er)
+		c.JSON(http.StatusNotFound, er)
 		return
 	}
 	oldobligation = obligation
@@ -1001,8 +1170,8 @@ func UpdateObligation(c *gin.Context) {
 		change := models.ChangeLog{
 			AuditId:      audit.Id,
 			Field:        "Modification",
-			OldValue:     oldobligation.Modifications,
-			UpdatedValue: obligation.Modifications,
+			OldValue:     strconv.FormatBool(oldobligation.Modifications),
+			UpdatedValue: strconv.FormatBool(obligation.Modifications),
 		}
 		db.DB.Create(&change)
 	}
@@ -1052,41 +1221,63 @@ func UpdateObligation(c *gin.Context) {
 	c.JSON(http.StatusOK, res)
 }
 
-// DeleteObligation marks an existing obligation record as inactive based on the provided topic parameter.
-// It responds with an error message if the obligation is not found or if the deactivation operation fails.
+// DeleteObligation marks an existing obligation record as inactive
+//
+//	@Summary		Deactivate obligation
+//	@Description	Deactivate an obligation
+//	@Id				DeleteObligation
+//	@Tags			Obligations
+//	@Accept			json
+//	@Produce		json
+//	@Param			topic	path	string	true	"Topic of the obligation to be updated"
+//	@Success		204
+//	@Failure		404	{object}	models.LicenseError	"No obligation with given topic found"
+//	@Security		BasicAuth
+//	@Router			/obligations/{topic} [delete]
 func DeleteObligation(c *gin.Context) {
 	var obligation models.Obligation
 	tp := c.Param("topic")
 	if err := db.DB.Where(models.Obligation{Topic: tp}).First(&obligation).Error; err != nil {
 		er := models.LicenseError{
-			Status:    http.StatusBadRequest,
+			Status:    http.StatusNotFound,
 			Message:   fmt.Sprintf("obligation with topic '%s' not found", tp),
 			Error:     err.Error(),
 			Path:      c.Request.URL.Path,
 			Timestamp: time.Now().Format(time.RFC3339),
 		}
-		c.JSON(http.StatusBadRequest, er)
+		c.JSON(http.StatusNotFound, er)
 		return
 	}
 	obligation.Active = false
+	db.DB.Where(models.Obligation{Topic: tp}).Save(&obligation)
+	c.Status(http.StatusNoContent)
 }
 
-// GetObligation retrieves an active obligation record based on the provided topic parameter.
-// It responds with JSON containing the obligation data or an error message if the obligation
-// is not found or if there is an error during retrieval.
+// GetObligation retrieves an active obligation record
+//
+//	@Summary		Get an obligation
+//	@Description	Get an active based on given topic
+//	@Id				GetObligation
+//	@Tags			Obligations
+//	@Accept			json
+//	@Produce		json
+//	@Param			topic	path		string	true	"Topic of the obligation"
+//	@Success		200		{object}	models.ObligationResponse
+//	@Failure		404		{object}	models.LicenseError	"No obligation with given topic found"
+//	@Router			/obligations/{topic} [get]
 func GetObligation(c *gin.Context) {
 	var obligation models.Obligation
 	query := db.DB.Model(&obligation)
 	tp := c.Param("topic")
 	if err := query.Where(models.Obligation{Active: true, Topic: tp}).First(&obligation).Error; err != nil {
 		er := models.LicenseError{
-			Status:    http.StatusBadRequest,
+			Status:    http.StatusNotFound,
 			Message:   fmt.Sprintf("obligation with topic '%s' not found", tp),
 			Error:     err.Error(),
 			Path:      c.Request.URL.Path,
 			Timestamp: time.Now().Format(time.RFC3339),
 		}
-		c.JSON(http.StatusBadRequest, er)
+		c.JSON(http.StatusNotFound, er)
 		return
 	}
 	res := models.ObligationResponse{

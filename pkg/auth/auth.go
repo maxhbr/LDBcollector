@@ -1,4 +1,7 @@
 // SPDX-FileCopyrightText: 2023 Kavya Shukla <kavyuushukla@gmail.com>
+// SPDX-FileCopyrightText: 2023 Siemens AG
+// SPDX-FileContributor: Gaurav Mishra <mishra.gaurav@siemens.com>
+//
 // SPDX-License-Identifier: GPL-2.0-only
 
 package auth
@@ -10,12 +13,26 @@ import (
 	"strings"
 	"time"
 
+	"github.com/gin-gonic/gin"
+
 	"github.com/fossology/LicenseDb/pkg/db"
 	"github.com/fossology/LicenseDb/pkg/models"
-	"github.com/gin-gonic/gin"
+	"github.com/fossology/LicenseDb/pkg/utils"
 )
 
-// CreateUser creates a new user based on the provided JSON request data.
+// CreateUser creates a new user
+//
+//	@Summary		Create new user
+//	@Description	Create a new service user
+//	@Id				CreateUser
+//	@Tags			Users
+//	@Accept			json
+//	@Produce		json
+//	@Success		201	{object}	models.UserResponse
+//	@Failure		400	{object}	models.LicenseError	"Invalid json body"
+//	@Failure		409	{object}	models.LicenseError	"User already exists"
+//	@Security		BasicAuth
+//	@Router			/users [post]
 func CreateUser(c *gin.Context) {
 	var user models.User
 	if err := c.ShouldBindJSON(&user); err != nil {
@@ -32,13 +49,13 @@ func CreateUser(c *gin.Context) {
 	result := db.DB.FirstOrCreate(&user)
 	if result.RowsAffected == 0 {
 		er := models.LicenseError{
-			Status:    http.StatusBadRequest,
+			Status:    http.StatusConflict,
 			Message:   "can not create user with same userid",
 			Error:     fmt.Sprintf("Error: License with userid '%d' already exists", user.Id),
 			Path:      c.Request.URL.Path,
 			Timestamp: time.Now().Format(time.RFC3339),
 		}
-		c.JSON(http.StatusBadRequest, er)
+		c.JSON(http.StatusConflict, er)
 		return
 	}
 
@@ -54,18 +71,30 @@ func CreateUser(c *gin.Context) {
 }
 
 // GetAllUser retrieves a list of all users from the database.
+//
+//	@Summary		Get users
+//	@Description	Get all service users
+//	@Id				GetAllUsers
+//	@Tags			Users
+//	@Accept			json
+//	@Produce		json
+//	@Success		200	{object}	models.UserResponse
+//	@Failure		404	{object}	models.LicenseError	"Users not found"
+//	@Security		BasicAuth
+//	@Router			/users [get]
 func GetAllUser(c *gin.Context) {
 	var users []models.User
 
 	if err := db.DB.Find(&users).Error; err != nil {
 		er := models.LicenseError{
-			Status:    http.StatusInternalServerError,
-			Message:   "can not create user",
+			Status:    http.StatusNotFound,
+			Message:   "Users not found",
 			Error:     err.Error(),
 			Path:      c.Request.URL.Path,
 			Timestamp: time.Now().Format(time.RFC3339),
 		}
-		c.JSON(http.StatusInternalServerError, er)
+		c.JSON(http.StatusNotFound, er)
+		return
 	}
 	res := models.UserResponse{
 		Data:   users,
@@ -79,19 +108,37 @@ func GetAllUser(c *gin.Context) {
 }
 
 // GetUser retrieves a user by their user ID from the database.
+//
+//	@Summary		Get a user
+//	@Description	Get a single user by ID
+//	@Id				GetUser
+//	@Tags			Users
+//	@Accept			json
+//	@Produce		json
+//	@Param			id	path		int	true	"User ID"
+//	@Success		200	{object}	models.UserResponse
+//	@Failure		400	{object}	models.LicenseError	"Invalid user id"
+//	@Failure		404	{object}	models.LicenseError	"User not found"
+//	@Security		BasicAuth
+//	@Router			/users/{id} [get]
 func GetUser(c *gin.Context) {
 	var user models.User
 	id := c.Param("id")
+	parsedId, err := utils.ParseIdToInt(c, id, "user")
+	if err != nil {
+		return
+	}
 
-	if err := db.DB.Where("id = ?", id).First(&user).Error; err != nil {
+	if err := db.DB.Where(models.User{Id: parsedId}).First(&user).Error; err != nil {
 		er := models.LicenseError{
-			Status:    http.StatusBadRequest,
+			Status:    http.StatusNotFound,
 			Message:   "no user with such user id exists",
 			Error:     err.Error(),
 			Path:      c.Request.URL.Path,
 			Timestamp: time.Now().Format(time.RFC3339),
 		}
-		c.JSON(http.StatusBadRequest, er)
+		c.JSON(http.StatusNotFound, er)
+		return
 	}
 	res := models.UserResponse{
 		Data:   []models.User{user},
@@ -117,7 +164,7 @@ func AuthenticationMiddleware() gin.HandlerFunc {
 				Timestamp: time.Now().Format(time.RFC3339),
 			}
 
-			c.JSON(http.StatusUnauthorized, er)
+			c.JSON(http.StatusBadRequest, er)
 			c.Abort()
 			return
 		}
@@ -125,14 +172,14 @@ func AuthenticationMiddleware() gin.HandlerFunc {
 		decodedAuth, err := base64.StdEncoding.DecodeString(strings.TrimPrefix(authHeader, "Basic "))
 		if err != nil {
 			er := models.LicenseError{
-				Status:    http.StatusBadRequest,
+				Status:    http.StatusUnauthorized,
 				Message:   "Please check your credentials and try again",
 				Error:     err.Error(),
 				Path:      c.Request.URL.Path,
 				Timestamp: time.Now().Format(time.RFC3339),
 			}
 
-			c.JSON(http.StatusBadRequest, er)
+			c.JSON(http.StatusUnauthorized, er)
 			c.Abort()
 			return
 		}
@@ -147,7 +194,7 @@ func AuthenticationMiddleware() gin.HandlerFunc {
 		password := auth[1]
 
 		var user models.User
-		result := db.DB.Where("username = ?", username).First(&user)
+		result := db.DB.Where(models.User{Username: username}).First(&user)
 		if result.Error != nil {
 			er := models.LicenseError{
 				Status:    http.StatusUnauthorized,
