@@ -15,7 +15,7 @@ OUTPUT_FORMATS = [OUTPUT_FORMAT_JSON, OUTPUT_FORMAT_YAML, OUTPUT_FORMAT_TEXT]
 class OutputFormatterFactory():
 
     @staticmethod
-    def formatter(format):
+    def formatter(_format):
         """
         Return a formatter corresponding to the supplied format
 
@@ -28,11 +28,11 @@ class OutputFormatterFactory():
 
         >>> formatter = OutputFormatterFactory.formatter("JSON")
         """
-        if format.lower() == OUTPUT_FORMAT_JSON.lower():
+        if _format.lower() == OUTPUT_FORMAT_JSON.lower():
             return JsonOutputFormatter()
-        elif format.lower() == OUTPUT_FORMAT_YAML.lower():
+        elif _format.lower() == OUTPUT_FORMAT_YAML.lower():
             return YamlOutputFormatter()
-        elif format.lower() == OUTPUT_FORMAT_TEXT.lower():
+        elif _format.lower() == OUTPUT_FORMAT_TEXT.lower():
             return TextOutputFormatter()
 
 class OutputFormatter():
@@ -283,31 +283,31 @@ class JsonOutputFormatter(OutputFormatter):
 class YamlOutputFormatter(OutputFormatter):
 
     def format_compat(self, compat, verbose=False):
-        return yaml.dump(compat)
+        return yaml.safe_dump(compat)
 
     def format_compat_list(self, all_compats, verbose=False):
         return None
 
     def format_expression(self, expression, verbose=False):
-        return yaml.dump(expression)
+        return yaml.safe_dump(expression)
 
     def format_alias_list(self, all_aliases, verbose=False):
-        return yaml.dump(all_aliases)
+        return yaml.safe_dump(all_aliases)
 
     def format_error(self, error, verbose=False):
-        return yaml.dump({'error': f'{error}'})
+        return yaml.safe_dump({'error': f'{error}'})
 
     def format_licenses(self, licenses, verbose=False):
-        return yaml.dump(licenses)
+        return yaml.safe_dump(licenses)
 
     def format_license_complete(self, _license, verbose=False):
-        return yaml.dump(_license)
+        return yaml.safe_dump(_license)
 
     def format_compatibilities(self, compats, verbose=False):
-        return yaml.dump(compats)
+        return yaml.safe_dump(compats)
 
     def format_operators(self, operators, verbose=False):
-        return yaml.dump(operators)
+        return yaml.safe_dump(operators)
 
 class TextOutputFormatter(OutputFormatter):
 
