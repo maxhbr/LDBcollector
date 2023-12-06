@@ -11,7 +11,7 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'FOSS Licenses'
-copyright = '2023, Henrik Sandklef'
+# copyright = '2023, Henrik Sandklef'
 author = 'Henrik Sandklef'
 release = '0.1'
 

@@ -55,7 +55,7 @@ def get_parser():
     # license
     parser_e = subparsers.add_parser(
         'license', help='Convert license to SPDX identifiers and syntax')
-    parser_e.set_defaults(which='license', func=license)
+    parser_e.set_defaults(which='license', func=show_license)
     parser_e.add_argument('license', type=str, nargs='+', help='license expression to fix')
 
     # full license
@@ -124,7 +124,7 @@ def compatibility(fl, formatter, args):
     compatibilities = fl.expression_compatibility_as(" ".join(args.license), validations)
     return formatter.format_compatibilities(compatibilities, args.verbose)
 
-def license(fl, formatter, args):
+def show_license(fl, formatter, args):
     expression = fl.expression_license(" ".join(args.license))
     return formatter.format_expression(expression, args.verbose)
 
