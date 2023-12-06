@@ -153,7 +153,7 @@ class FossLicenses:
                 license_expression = re.sub(reg_exp, f'\\1 {replacement}{extra_add}\\2', license_expression)
         return {
             "license_expression": re.sub(r'\s\s*', ' ', license_expression).strip(),
-            "identifications": replacements
+            "identifications": replacements,
         }
 
     def expression_license(self, license_expression):
@@ -201,7 +201,7 @@ class FossLicenses:
         return {
             'queried_license': license_expression,
             'identified_license': license_parsed,
-            'identifications': replacements
+            'identifications': replacements,
         }
 
     def licenses(self):
@@ -256,7 +256,7 @@ class FossLicenses:
         if identified_license['identified_via'] == 'operator':
             return {
                 IDENTIFIED_ELEMENT_TAG: identified_license,
-                'operator': True
+                'operator': True,
             }
         else:
             return {
@@ -353,11 +353,11 @@ class FossLicenses:
             COMPATIBILITY_TAG: {
                 'compat_as': compat,
                 'queried_name': license_name,
-                'identified_via': method
-            }
+                'identified_via': method,
+            },
         }
 
-    def expression_compatibility_as(self, license_expression, validations=[]):
+    def expression_compatibility_as(self, license_expression, validations=None):
         """Returns an object with information about the compatibility status for the license given.
 
         :param str license_expression: A license expression. E.g "BSD3" or "GPLv2+ || BSD3"
@@ -382,12 +382,13 @@ class FossLicenses:
         compat_licenses = [x.strip() for x in re.split("OR|AND", compat_license_expression)]
         compat_support = self.__validate_compatibilities_support(compat_licenses)
 
-        if Validation.SPDX in validations:
-            self.__validate_license_spdx(compat_license_expression)
-        if Validation.RELAXED in validations:
-            self.__validate_license_relaxed(compat_license_expression)
-        if Validation.OSADL in validations:
-            self.__validate_licenses_osadl(compat_support)
+        if validations:
+            if Validation.SPDX in validations:
+                self.__validate_license_spdx(compat_license_expression)
+            if Validation.RELAXED in validations:
+                self.__validate_license_relaxed(compat_license_expression)
+            if Validation.OSADL in validations:
+                self.__validate_licenses_osadl(compat_support)
 
         return {
             'compatibilities': compats,
@@ -395,7 +396,7 @@ class FossLicenses:
             'identifications': expression_full,
             'identified_license': expression_full['identified_license'],
             'compat_license': compat_license_expression,
-            'compat_support': compat_support
+            'compat_support': compat_support,
         }
 
     def __validate_compatibilities_support(self, licenses):
@@ -418,7 +419,7 @@ class FossLicenses:
             support = self.__validate_compatibility_support(lic)
             compat_support['licenses'].append({
                 'license': lic,
-                'supported': support
+                'supported': support,
             })
             all_supported = all_supported and support
         compat_support['supported'] = all_supported
