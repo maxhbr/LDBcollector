@@ -79,3 +79,15 @@ made under our license (for the code and data).
 * [Max Huber](https://github.com/maxhbr) for [LDBcollector](https://github.com/maxhbr/LDBcollector)
 
 * [OSADL](https://www.osadl.org) for their [License Compatibility Matrix](https://www.osadl.org/Access-to-raw-data.oss-compliance-raw-data-access.0.html)
+
+# Technical notes
+
+## Finding and replacing 
+
+To search for needles, in our case license expressions, (e.g. "BSD 0-Clause") to replace (with e.g. "0BSD") we use the following strategy:
+
+* list all needles in order of length, longest first
+
+* for each needle find and replace
+
+This is a naive approach but given the limited data at hand it should work.
