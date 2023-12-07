@@ -6,7 +6,7 @@
 %endif
 
 Name:           fedora-license-data
-Version:        1.35
+Version:        1.36
 Release:        1%{?dist}
 Summary:        Fedora Linux license data
 
@@ -97,6 +97,12 @@ make check-grammar
 
 
 %changelog
+* Thu Dec 07 2023 Miroslav Suchý <msuchy@redhat.com> 1.36-1
+- new license: TCP-wrappers
+- new license: LicenseRef-Not-Copyrightable
+- new license: SAX-PD-2.0
+- new license: radvd
+
 * Thu Nov 23 2023 Miroslav Suchý <msuchy@redhat.com> 1.35-1
 - add argon2 as known exception to CC0-1.0
 - new license: LicenseRef-BSD-3-Clause-Clear-WITH-AdditionRef-AOMPL-1.0
