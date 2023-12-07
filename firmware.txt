@@ -1,0 +1,25 @@
+# This file is for collecting the actual text found in Fedora                                                                                                                                                     
+# packages for firmware. In Callaway system usually:
+#  Redistributable, no modification permitted
+#  Freely redistributable without restrictions
+# We use SPDX expression, "LicenseRef-Fedora-Firmware"
+# See the instructions at https://docs.fedoraproject.org/en-US/legal/update-existing-packages/#_freely_redistributable_without_restrictions
+#
+# Include the following information:
+#
+# Fedora package name
+#
+# Location of where you found the license notice text.
+# Preferably this would be a direct link to a file. If that is not possible,
+# provide enough information such that someone else can find the text in the wild
+# where you found it.
+#
+# The actual text found that allow redistribution..
+#
+# Copy template below and add yours to top of list, adding a space between entries.
+
+package =
+location =
+text = '''
+text here
+'''
