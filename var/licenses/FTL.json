@@ -1,0 +1,25 @@
+{
+"meta": {
+    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+    "comment": ""
+  },
+  "name": "FreeType Project License",
+  "scancode_key": "freetype",
+  "spdxid": "FTL",
+  "aliases": [
+   "FTL",
+   "Freetype Project License",
+   "FreeType Project License",
+   "FreeType Project LICENSE",
+   "scancode://freetype",
+   "License: FTL",
+   "FreeType project license",
+   "Freetype Project License",
+   "FreeType Project LICENSE",
+   "http://www.freetype.org/FTL.TXT",
+   "http://www.freetype.org/license.html",
+   "https://spdx.org/licenses/ftl",
+   "FreeType License",
+   "scancode:freetype"
+  ]
+}
