@@ -1,0 +1,9 @@
+- id: "PyPI::mock:(,5.1.0["
+  curations:
+    comment: |
+      The package's metadata data only declares an unspecific "BSD License", 
+      but a closer look at the LICENSE.txt reveals that concretely always
+      the "BSD-2-Clause" license has been used.
+      https://github.com/testing-cabal/mock/blob/d344fa2794b3b1ae7e4a4dbf265fb040d6f41d1f/LICENSE.txt
+    declared_license_mapping:
+      "BSD License": "BSD-2-Clause"
