@@ -41,7 +41,7 @@ check_license_schema:
 			echo "OK" ; 
 
 
-check-reuse:
+check-reuse: clean
 	reuse --suppress-deprecation lint
 
 license: check_license_files 
@@ -54,7 +54,7 @@ py-doctest:
 	@cd python && python3 -m doctest -v flame/format.py 
 
 py-test:
-	PYTHONPATH=python/ python3.10 -m pytest --log-cli-level=10 tests/python/
+	PYTHONPATH=python/ python3 -m pytest --log-cli-level=10 tests/python/
 
 py-sort:
 	cd python && isort ./*/*.py --diff
@@ -97,6 +97,7 @@ clean:
 	find . -name ".#*" | xargs rm -fr
 	rm -f .coverage
 	rm -fr python/foss_flame.egg-info
+	rm -fr python/*flame.egg*
 	rm -fr python/dist
 	rm -fr python/build
 	rm -fr python/docs/build

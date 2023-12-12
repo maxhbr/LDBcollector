@@ -6,5 +6,6 @@ flake8 ~= 5.0
 reuse
 twine
 pytest
-
+sphinx
+sphinx-argparse
 

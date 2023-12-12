@@ -4,17 +4,16 @@
     "comment": ""
   },
   "name": "European Union Public Licence 1.2",
-  "scancode_key": "eupl-1.2",
   "spdxid": "EUPL-1.2",
+  "scancode_key": "eupl-1.2",
   "aliases": [
-   "EUPL-1.2",
    "European Union Public License 1.2",
    "eupl-1.2",
    "scancode://eupl-1.2",
-   "EUPL 1.2",
    "European Union Public Licence 1.2",
    "EUPL Version 1.2",
    "EUPL v.1.2",
+   "EUPL 1.2",
    "European Union Public License V. 1.2",
    "European Union Public License v.1.2",
    "European Union Public License, Version 1.2",
@@ -22,8 +21,6 @@
    "European Union Public License v1.2",
    "European Union Public Licence V. 1.2",
    "scancode:eupl-1.2",
-   "osi:EUPL-1.2",
-   "European Union Public Licence 1.2 (EUPL 1.2)",
-   "License :: OSI Approved :: European Union Public Licence 1.2 (EUPL 1.2)"
+   "osi:EUPL-1.2"
   ]
 }
