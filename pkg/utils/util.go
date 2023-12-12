@@ -1,12 +1,20 @@
 // SPDX-FileCopyrightText: 2023 Kavya Shukla <kavyuushukla@gmail.com>
+// SPDX-FileCopyrightText: 2023 Siemens AG
+// SPDX-FileContributor: Gaurav Mishra <mishra.gaurav@siemens.com>
+//
 // SPDX-License-Identifier: GPL-2.0-only
 
 package utils
 
 import (
-	"github.com/fossology/LicenseDb/pkg/models"
+	"fmt"
+	"net/http"
 	"strconv"
 	"time"
+
+	"github.com/gin-gonic/gin"
+
+	"github.com/fossology/LicenseDb/pkg/models"
 )
 
 // The Converter function takes an input of type models.LicenseJson and converts it into a
@@ -94,4 +102,22 @@ func Converter(input models.LicenseJson) models.LicenseDB {
 		Marydone:        marydone,
 	}
 	return result
+}
+
+// ParseIdToInt convert the string ID from gin.Context to an integer and throw error if conversion fails. Also,
+// update the gin.Context with REST API error.
+func ParseIdToInt(c *gin.Context, id string, idType string) (int64, error) {
+	parsedId, err := strconv.ParseInt(id, 10, 64)
+	if err != nil {
+		er := models.LicenseError{
+			Status:    http.StatusBadRequest,
+			Message:   fmt.Sprintf("invalid %s id", idType),
+			Error:     err.Error(),
+			Path:      c.Request.URL.Path,
+			Timestamp: time.Now().Format(time.RFC3339),
+		}
+		c.JSON(http.StatusBadRequest, er)
+		return 0, err
+	}
+	return parsedId, nil
 }

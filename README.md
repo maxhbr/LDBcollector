@@ -86,3 +86,19 @@ go build ./cmd/laas
 ```bash
 go run ./cmd/laas
 ```
+
+### Generating Swagger Documentation
+1. Install [swag](https://github.com/swaggo/swag) using the following command.
+    ```bash
+    go install github.com/swaggo/swag/cmd/swag@latest
+    ```
+2. Run the following command to generate swagger documentation.
+    ```bash
+    swag init --generalInfo api.go --dir ./pkg/api,./pkg/auth,./pkg/db,./pkg/models,./pkg/utils --output ./cmd/laas/docs
+    ```
+3. Swagger documentation will be generated in `./cmd/laas/docs` folder.
+4. Run the project and navigate to `http://localhost:8080/swagger/index.html` to view the documentation.
+5. Optionally, after changing any documentation comments, format them with following command.
+    ```bash
+    swag fmt --generalInfo ./pkg/api/api.go --dir ./pkg/api,./pkg/auth,./pkg/db,./pkg/models,./pkg/utils
+    ```

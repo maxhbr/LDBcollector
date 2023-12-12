@@ -1,0 +1,954 @@
+basePath: /api/v1
+definitions:
+  models.Audit:
+    properties:
+      id:
+        example: 456
+        type: integer
+      timestamp:
+        example: "2023-12-01T18:10:25.00+05:30"
+        type: string
+      type:
+        example: license
+        type: string
+      type_id:
+        example: 34
+        type: integer
+      user_id:
+        example: 123
+        type: integer
+    type: object
+  models.AuditResponse:
+    properties:
+      data:
+        items:
+          $ref: '#/definitions/models.Audit'
+        type: array
+      paginationmeta:
+        $ref: '#/definitions/models.PaginationMeta'
+      status:
+        example: 200
+        type: integer
+    type: object
+  models.ChangeLog:
+    properties:
+      audit_id:
+        example: 456
+        type: integer
+      field:
+        example: rf_text
+        type: string
+      id:
+        example: 789
+        type: integer
+      old_value:
+        example: Old license text
+        type: string
+      updated_value:
+        example: New license text
+        type: string
+    type: object
+  models.ChangeLogResponse:
+    properties:
+      data:
+        items:
+          $ref: '#/definitions/models.ChangeLog'
+        type: array
+      paginationmeta:
+        $ref: '#/definitions/models.PaginationMeta'
+      status:
+        example: 200
+        type: integer
+    type: object
+  models.LicenseDB:
+    properties:
+      marydone:
+        type: boolean
+      rf_FSFfree:
+        type: boolean
+      rf_Fedora:
+        type: string
+      rf_GPLv2compatible:
+        type: boolean
+      rf_GPLv3compatible:
+        type: boolean
+      rf_OSIapproved:
+        type: boolean
+      rf_active:
+        type: boolean
+      rf_add_date:
+        example: "2023-12-01T18:10:25.00+05:30"
+        type: string
+      rf_copyleft:
+        type: boolean
+      rf_detector_type:
+        example: 1
+        type: integer
+      rf_flag:
+        example: 1
+        type: integer
+      rf_fullname:
+        example: MIT License
+        type: string
+      rf_id:
+        example: 123
+        type: integer
+      rf_notes:
+        example: This license has been superseded.
+        type: string
+      rf_risk:
+        type: integer
+      rf_shortname:
+        example: MIT
+        type: string
+      rf_source:
+        type: string
+      rf_spdx_id:
+        example: MIT
+        type: string
+      rf_text:
+        example: MIT License Text here
+        type: string
+      rf_text_updatable:
+        type: boolean
+      rf_url:
+        example: https://opensource.org/licenses/MIT
+        type: string
+    required:
+    - rf_shortname
+    type: object
+  models.LicenseError:
+    properties:
+      error:
+        example: invalid request body
+        type: string
+      message:
+        example: invalid request body
+        type: string
+      path:
+        example: /api/v1/licenses
+        type: string
+      status:
+        example: 400
+        type: integer
+      timestamp:
+        example: "2023-12-01T10:00:51+05:30"
+        type: string
+    type: object
+  models.LicenseInput:
+    properties:
+      marydone:
+        type: boolean
+      rf_FSFfree:
+        type: boolean
+      rf_Fedora:
+        type: string
+      rf_GPLv2compatible:
+        type: boolean
+      rf_GPLv3compatible:
+        type: boolean
+      rf_OSIapproved:
+        type: boolean
+      rf_active:
+        type: boolean
+      rf_add_date:
+        example: "2023-12-01T18:10:25.00+05:30"
+        type: string
+      rf_copyleft:
+        type: boolean
+      rf_detector_type:
+        example: 1
+        type: integer
+      rf_flag:
+        example: 1
+        type: integer
+      rf_fullname:
+        example: MIT License
+        type: string
+      rf_notes:
+        example: This license has been superseded.
+        type: string
+      rf_risk:
+        type: integer
+      rf_shortname:
+        example: MIT
+        type: string
+      rf_source:
+        type: string
+      rf_spdx_id:
+        example: MIT
+        type: string
+      rf_text:
+        example: MIT License Text here
+        type: string
+      rf_text_updatable:
+        type: boolean
+      rf_url:
+        example: https://opensource.org/licenses/MIT
+        type: string
+    type: object
+  models.LicenseResponse:
+    properties:
+      data:
+        items:
+          $ref: '#/definitions/models.LicenseDB'
+        type: array
+      paginationmeta:
+        $ref: '#/definitions/models.PaginationMeta'
+      status:
+        example: 200
+        type: integer
+    type: object
+  models.Obligation:
+    properties:
+      active:
+        type: boolean
+      classification:
+        enum:
+        - green
+        - white
+        - yellow
+        - red
+        type: string
+      comment:
+        example: This is a comment.
+        type: string
+      id:
+        example: 147
+        type: integer
+      md5:
+        example: deadbeef
+        type: string
+      modifications:
+        type: boolean
+      text:
+        example: Source code be made available when distributing the software.
+        type: string
+      text_updatable:
+        type: boolean
+      topic:
+        example: copyleft
+        type: string
+      type:
+        enum:
+        - obligation
+        - restriction
+        - risk
+        - right
+        type: string
+    type: object
+  models.ObligationInput:
+    properties:
+      active:
+        example: true
+        type: boolean
+      classification:
+        enum:
+        - green
+        - white
+        - yellow
+        - red
+        type: string
+      comment:
+        example: This is a comment.
+        type: string
+      modifications:
+        type: boolean
+      shortnames:
+        example:
+        - GPL-2.0-only
+        - GPL-2.0-or-later
+        items:
+          type: string
+        type: array
+      text:
+        example: Source code be made available when distributing the software.
+        type: string
+      text_updatable:
+        type: boolean
+      topic:
+        example: copyleft
+        type: string
+      type:
+        enum:
+        - obligation
+        - restriction
+        - risk
+        - right
+        type: string
+    required:
+    - text
+    - topic
+    - type
+    type: object
+  models.ObligationResponse:
+    properties:
+      data:
+        items:
+          $ref: '#/definitions/models.Obligation'
+        type: array
+      paginationmeta:
+        $ref: '#/definitions/models.PaginationMeta'
+      status:
+        example: 200
+        type: integer
+    type: object
+  models.PaginationMeta:
+    properties:
+      page:
+        example: 1
+        type: integer
+      per_page:
+        example: 10
+        type: integer
+      resource_count:
+        example: 20
+        type: integer
+    type: object
+  models.SearchLicense:
+    properties:
+      field:
+        example: rf_text
+        type: string
+      search:
+        enum:
+        - fuzzy
+        - full_text_search
+        type: string
+      search_term:
+        example: MIT License
+        type: string
+    required:
+    - field
+    - search_term
+    type: object
+  models.UpdateObligation:
+    properties:
+      active:
+        example: true
+        type: boolean
+      classification:
+        enum:
+        - green
+        - white
+        - yellow
+        - red
+        type: string
+      comment:
+        example: This is a comment.
+        type: string
+      modifications:
+        type: boolean
+      text:
+        example: Source code be made available when distributing the software.
+        type: string
+      text_updatable:
+        type: boolean
+      topic:
+        example: copyleft
+        type: string
+      type:
+        enum:
+        - obligation
+        - restriction
+        - risk
+        - right
+        type: string
+    required:
+    - text
+    - topic
+    - type
+    type: object
+  models.User:
+    properties:
+      id:
+        example: 123
+        type: integer
+      userlevel:
+        example: admin
+        type: string
+      username:
+        example: fossy
+        type: string
+      userpassword:
+        type: string
+    required:
+    - userlevel
+    - username
+    - userpassword
+    type: object
+  models.UserResponse:
+    properties:
+      data:
+        items:
+          $ref: '#/definitions/models.User'
+        type: array
+      paginationmeta:
+        $ref: '#/definitions/models.PaginationMeta'
+      status:
+        example: 200
+        type: integer
+    type: object
+host: localhost:8080
+info:
+  contact:
+    email: fossology@fossology.org
+    name: FOSSology
+    url: https://fossology.org
+  description: Service to host license information for other services to query over
+    REST API.
+  license:
+    name: GPL-2.0-only
+    url: https://github.com/fossology/LicenseDb/blob/main/LICENSE
+  title: laas (License as a Service) API
+  version: 0.0.9
+paths:
+  /audits:
+    get:
+      consumes:
+      - application/json
+      description: Get all audit records from the server
+      operationId: GetAllAudit
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Audit records
+          schema:
+            $ref: '#/definitions/models.AuditResponse'
+        "404":
+          description: Not changelogs in DB
+          schema:
+            $ref: '#/definitions/models.LicenseError'
+      security:
+      - BasicAuth: []
+      summary: Get audit records
+      tags:
+      - Audits
+  /audits/{audit_id}:
+    get:
+      consumes:
+      - application/json
+      description: Get a specific audit records by ID
+      operationId: GetAudit
+      parameters:
+      - description: Audit ID
+        in: path
+        name: audit_id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.AuditResponse'
+        "400":
+          description: Invalid audit ID
+          schema:
+            $ref: '#/definitions/models.LicenseError'
+        "404":
+          description: No audit entry with given ID
+          schema:
+            $ref: '#/definitions/models.LicenseError'
+      security:
+      - BasicAuth: []
+      summary: Get an audit record
+      tags:
+      - Audits
+  /audits/{audit_id}/changes:
+    get:
+      consumes:
+      - application/json
+      description: Get changelogs of an audit record
+      operationId: GetChangeLogs
+      parameters:
+      - description: Audit ID
+        in: path
+        name: audit_id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.ChangeLogResponse'
+        "400":
+          description: Invalid audit ID
+          schema:
+            $ref: '#/definitions/models.LicenseError'
+        "404":
+          description: No audit entry with given ID
+          schema:
+            $ref: '#/definitions/models.LicenseError'
+      security:
+      - BasicAuth: []
+      summary: Get changelogs
+      tags:
+      - Audits
+  /audits/{audit_id}/changes/{id}:
+    get:
+      consumes:
+      - application/json
+      description: Get a specific changelog of an audit record by its ID
+      operationId: GetChangeLogbyId
+      parameters:
+      - description: Audit ID
+        in: path
+        name: audit_id
+        required: true
+        type: string
+      - description: Changelog ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.ChangeLogResponse'
+        "400":
+          description: Invalid ID
+          schema:
+            $ref: '#/definitions/models.LicenseError'
+        "404":
+          description: No changelog with given ID found
+          schema:
+            $ref: '#/definitions/models.LicenseError'
+      security:
+      - BasicAuth: []
+      summary: Get a changelog
+      tags:
+      - Audits
+  /licenses:
+    get:
+      consumes:
+      - application/json
+      description: Filter licenses based on different parameters
+      operationId: FilterLicense
+      parameters:
+      - description: SPDX ID of the license
+        in: query
+        name: spdxid
+        type: string
+      - description: License detector type
+        in: query
+        name: detector_type
+        type: integer
+      - description: GPLv2 compatibility flag status of license
+        in: query
+        name: gplv2compatible
+        type: boolean
+      - description: GPLv3 compatibility flag status of license
+        in: query
+        name: gplv3compatible
+        type: boolean
+      - description: Mary done flag status of license
+        in: query
+        name: marydone
+        type: boolean
+      - description: Active license only
+        in: query
+        name: active
+        type: boolean
+      - description: OSI Approved flag status of license
+        in: query
+        name: osiapproved
+        type: boolean
+      - description: FSF Free flag status of license
+        in: query
+        name: fsffree
+        type: boolean
+      - description: Copyleft flag status of license
+        in: query
+        name: copyleft
+        type: boolean
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Filtered licenses
+          schema:
+            $ref: '#/definitions/models.LicenseResponse'
+        "400":
+          description: Invalid value
+          schema:
+            $ref: '#/definitions/models.LicenseError'
+      summary: Filter licenses
+      tags:
+      - Licenses
+    post:
+      consumes:
+      - application/json
+      description: Create a new license in the service
+      operationId: CreateLicense
+      parameters:
+      - description: New license to be created
+        in: body
+        name: license
+        required: true
+        schema:
+          $ref: '#/definitions/models.LicenseInput'
+      produces:
+      - application/json
+      responses:
+        "201":
+          description: New license created successfully
+          schema:
+            $ref: '#/definitions/models.LicenseResponse'
+        "400":
+          description: Invalid request body
+          schema:
+            $ref: '#/definitions/models.LicenseError'
+        "409":
+          description: License with same shortname already exists
+          schema:
+            $ref: '#/definitions/models.LicenseError'
+        "500":
+          description: Failed to create license
+          schema:
+            $ref: '#/definitions/models.LicenseError'
+      security:
+      - BasicAuth: []
+      summary: Create a new license
+      tags:
+      - Licenses
+  /licenses/{shortname}:
+    get:
+      consumes:
+      - application/json
+      description: Get a single license by its shortname
+      operationId: GetLicense
+      parameters:
+      - description: Shortname of the license
+        in: path
+        name: shortname
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.LicenseResponse'
+        "404":
+          description: License with shortname not found
+          schema:
+            $ref: '#/definitions/models.LicenseError'
+      summary: Get a license by shortname
+      tags:
+      - Licenses
+    patch:
+      consumes:
+      - application/json
+      description: Update a license in the service
+      operationId: UpdateLicense
+      parameters:
+      - description: Shortname of the license to be updated
+        in: path
+        name: shortname
+        required: true
+        type: string
+      - description: Update license body
+        in: body
+        name: license
+        required: true
+        schema:
+          $ref: '#/definitions/models.LicenseDB'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: License updated successfully
+          schema:
+            $ref: '#/definitions/models.LicenseResponse'
+        "400":
+          description: Invalid license body
+          schema:
+            $ref: '#/definitions/models.LicenseError'
+        "404":
+          description: License with shortname not found
+          schema:
+            $ref: '#/definitions/models.LicenseError'
+        "409":
+          description: License with same shortname already exists
+          schema:
+            $ref: '#/definitions/models.LicenseError'
+        "500":
+          description: Failed to update license
+          schema:
+            $ref: '#/definitions/models.LicenseError'
+      security:
+      - BasicAuth: []
+      summary: Update a license
+      tags:
+      - Licenses
+  /obligations:
+    get:
+      consumes:
+      - application/json
+      description: Get all active obligations from the service
+      operationId: GetAllObligation
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.ObligationResponse'
+        "404":
+          description: No obligations in DB
+          schema:
+            $ref: '#/definitions/models.LicenseError'
+      summary: Get all active obligations
+      tags:
+      - Obligations
+    post:
+      consumes:
+      - application/json
+      description: Create an obligation and associate it with licenses
+      operationId: CreateObligation
+      parameters:
+      - description: Obligation to create
+        in: body
+        name: obligation
+        required: true
+        schema:
+          $ref: '#/definitions/models.ObligationInput'
+      produces:
+      - application/json
+      responses:
+        "201":
+          description: Created
+          schema:
+            $ref: '#/definitions/models.ObligationResponse'
+        "400":
+          description: Bad request body
+          schema:
+            $ref: '#/definitions/models.LicenseError'
+        "409":
+          description: Obligation with same body exists
+          schema:
+            $ref: '#/definitions/models.LicenseError'
+        "500":
+          description: Unable to create obligation
+          schema:
+            $ref: '#/definitions/models.LicenseError'
+      security:
+      - BasicAuth: []
+      summary: Create an obligation
+      tags:
+      - Obligations
+  /obligations/{topic}:
+    delete:
+      consumes:
+      - application/json
+      description: Deactivate an obligation
+      operationId: DeleteObligation
+      parameters:
+      - description: Topic of the obligation to be updated
+        in: path
+        name: topic
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "204":
+          description: No Content
+        "404":
+          description: No obligation with given topic found
+          schema:
+            $ref: '#/definitions/models.LicenseError'
+      security:
+      - BasicAuth: []
+      summary: Deactivate obligation
+      tags:
+      - Obligations
+    get:
+      consumes:
+      - application/json
+      description: Get an active based on given topic
+      operationId: GetObligation
+      parameters:
+      - description: Topic of the obligation
+        in: path
+        name: topic
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.ObligationResponse'
+        "404":
+          description: No obligation with given topic found
+          schema:
+            $ref: '#/definitions/models.LicenseError'
+      summary: Get an obligation
+      tags:
+      - Obligations
+    patch:
+      consumes:
+      - application/json
+      description: Update an existing obligation record
+      operationId: UpdateObligation
+      parameters:
+      - description: Topic of the obligation to be updated
+        in: path
+        name: topic
+        required: true
+        type: string
+      - description: Obligation to be updated
+        in: body
+        name: obligation
+        required: true
+        schema:
+          $ref: '#/definitions/models.UpdateObligation'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.ObligationResponse'
+        "400":
+          description: Invalid request
+          schema:
+            $ref: '#/definitions/models.LicenseError'
+        "404":
+          description: No obligation with given topic found
+          schema:
+            $ref: '#/definitions/models.LicenseError'
+        "500":
+          description: Unable to update obligation
+          schema:
+            $ref: '#/definitions/models.LicenseError'
+      security:
+      - BasicAuth: []
+      summary: Update obligation
+      tags:
+      - Obligations
+  /search:
+    post:
+      consumes:
+      - application/json
+      description: Search licenses on different filters and algorithms
+      operationId: SearchInLicense
+      parameters:
+      - description: Search criteria
+        in: body
+        name: search
+        required: true
+        schema:
+          $ref: '#/definitions/models.SearchLicense'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Licenses matched
+          schema:
+            $ref: '#/definitions/models.LicenseResponse'
+        "400":
+          description: Invalid request
+          schema:
+            $ref: '#/definitions/models.LicenseError'
+        "404":
+          description: Search algorithm doesn't exist
+          schema:
+            $ref: '#/definitions/models.LicenseError'
+      summary: Search licenses
+      tags:
+      - Licenses
+  /users:
+    get:
+      consumes:
+      - application/json
+      description: Get all service users
+      operationId: GetAllUsers
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.UserResponse'
+        "404":
+          description: Users not found
+          schema:
+            $ref: '#/definitions/models.LicenseError'
+      security:
+      - BasicAuth: []
+      summary: Get users
+      tags:
+      - Users
+    post:
+      consumes:
+      - application/json
+      description: Create a new service user
+      operationId: CreateUser
+      produces:
+      - application/json
+      responses:
+        "201":
+          description: Created
+          schema:
+            $ref: '#/definitions/models.UserResponse'
+        "400":
+          description: Invalid json body
+          schema:
+            $ref: '#/definitions/models.LicenseError'
+        "409":
+          description: User already exists
+          schema:
+            $ref: '#/definitions/models.LicenseError'
+      security:
+      - BasicAuth: []
+      summary: Create new user
+      tags:
+      - Users
+  /users/{id}:
+    get:
+      consumes:
+      - application/json
+      description: Get a single user by ID
+      operationId: GetUser
+      parameters:
+      - description: User ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.UserResponse'
+        "400":
+          description: Invalid user id
+          schema:
+            $ref: '#/definitions/models.LicenseError'
+        "404":
+          description: User not found
+          schema:
+            $ref: '#/definitions/models.LicenseError'
+      security:
+      - BasicAuth: []
+      summary: Get a user
+      tags:
+      - Users
+securityDefinitions:
+  BasicAuth:
+    type: basic
+swagger: "2.0"

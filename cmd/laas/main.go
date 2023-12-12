@@ -1,14 +1,19 @@
 // SPDX-FileCopyrightText: 2023 Kavya Shukla <kavyuushukla@gmail.com>
+// SPDX-FileCopyrightText: 2023 Siemens AG
+// SPDX-FileContributor: Gaurav Mishra <mishra.gaurav@siemens.com>
+//
 // SPDX-License-Identifier: GPL-2.0-only
 
 package main
 
 import (
 	"flag"
+	"log"
+
+	_ "github.com/fossology/LicenseDb/cmd/laas/docs"
 	"github.com/fossology/LicenseDb/pkg/api"
 	"github.com/fossology/LicenseDb/pkg/db"
 	"github.com/fossology/LicenseDb/pkg/models"
-	"log"
 )
 
 // declare flags to input the basic requirement of database connection and the path of the data file

@@ -7,16 +7,16 @@ import (
 	"bytes"
 	"encoding/base64"
 	"encoding/json"
-
 	"net/http"
 	"net/http/httptest"
 	"os"
 	"testing"
 
-	"github.com/fossology/LicenseDb/pkg/db"
-	"github.com/fossology/LicenseDb/pkg/models"
 	"github.com/gin-gonic/gin"
 	"github.com/stretchr/testify/assert"
+
+	"github.com/fossology/LicenseDb/pkg/db"
+	"github.com/fossology/LicenseDb/pkg/models"
 )
 
 // TestMain is the main testing function for the application. It sets up the testing environment,
