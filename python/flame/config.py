@@ -4,7 +4,7 @@
 
 import os
 
-SW_VERSION = "0.1.5"
+SW_VERSION = "0.1.6"
 
 PYTHON_DIR = os.path.dirname(os.path.realpath(__file__))
 VAR_DIR = os.path.join(PYTHON_DIR, 'var')
