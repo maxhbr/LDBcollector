@@ -96,7 +96,7 @@ func GetAllLicense(c *gin.Context) {
 
 // Get license functions return data of the particular license by its shortname.
 // It inputs the shortname as query parameter
-// It returns error ehen no such license exists
+// It returns error if no such license exists
 func GetLicense(c *gin.Context) {
 	var license models.LicenseDB
 
@@ -105,11 +105,11 @@ func GetLicense(c *gin.Context) {
 		return
 	}
 
-	err := db.DB.Where("shortname = ?", queryParam).First(&license).Error
+	err := db.DB.Where(models.LicenseDB{Shortname: queryParam}).First(&license).Error
 
 	if err != nil {
 		er := models.LicenseError{
-			Status:    http.StatusBadRequest,
+			Status:    http.StatusNotFound,
 			Message:   fmt.Sprintf("no license with shortname '%s' exists", queryParam),
 			Error:     err.Error(),
 			Path:      c.Request.URL.Path,
@@ -131,7 +131,7 @@ func GetLicense(c *gin.Context) {
 }
 
 // The Create License function creates license in the database and add the required data
-// It return the license if it already exists in the database
+// It returns the license if it already exists in the database.
 func CreateLicense(c *gin.Context) {
 	var input models.LicenseInput
 
@@ -147,9 +147,6 @@ func CreateLicense(c *gin.Context) {
 		return
 	}
 
-	if input.Active == "" {
-		input.Active = "t"
-	}
 	license := models.LicenseDB{
 		Shortname:       input.Shortname,
 		Fullname:        input.Fullname,
@@ -219,7 +216,7 @@ func UpdateLicense(c *gin.Context) {
 	username := c.GetString("username")
 
 	shortname := c.Param("shortname")
-	if err := db.DB.Where("shortname = ?", shortname).First(&license).Error; err != nil {
+	if err := db.DB.Where(models.LicenseDB{Shortname: shortname}).First(&license).Error; err != nil {
 		er := models.LicenseError{
 			Status:    http.StatusBadRequest,
 			Message:   fmt.Sprintf("license with shortname '%s' not found", shortname),
@@ -263,11 +260,11 @@ func UpdateLicense(c *gin.Context) {
 	}
 
 	var user models.User
-	db.DB.Where("username = ?", username).First(&user)
+	db.DB.Where(models.User{Username: username}).First(&user)
 	audit := models.Audit{
 		UserId:    user.Id,
 		TypeId:    license.Id,
-		Timestamp: time.Now().Format(time.RFC3339),
+		Timestamp: time.Now(),
 		Type:      "license",
 	}
 
@@ -304,8 +301,8 @@ func UpdateLicense(c *gin.Context) {
 		change := models.ChangeLog{
 			AuditId:      audit.Id,
 			Field:        "Adddate",
-			OldValue:     oldlicense.AddDate,
-			UpdatedValue: license.AddDate,
+			OldValue:     oldlicense.AddDate.Format(time.RFC3339),
+			UpdatedValue: license.AddDate.Format(time.RFC3339),
 		}
 		db.DB.Create(&change)
 	}
@@ -313,8 +310,8 @@ func UpdateLicense(c *gin.Context) {
 		change := models.ChangeLog{
 			AuditId:      audit.Id,
 			Field:        "Active",
-			OldValue:     oldlicense.Active,
-			UpdatedValue: license.Active,
+			OldValue:     strconv.FormatBool(oldlicense.Active),
+			UpdatedValue: strconv.FormatBool(license.Active),
 		}
 		db.DB.Create(&change)
 	}
@@ -322,8 +319,8 @@ func UpdateLicense(c *gin.Context) {
 		change := models.ChangeLog{
 			AuditId:      audit.Id,
 			Field:        "Copyleft",
-			OldValue:     oldlicense.Copyleft,
-			UpdatedValue: license.Copyleft,
+			OldValue:     strconv.FormatBool(oldlicense.Copyleft),
+			UpdatedValue: strconv.FormatBool(license.Copyleft),
 		}
 		db.DB.Create(&change)
 	}
@@ -331,8 +328,8 @@ func UpdateLicense(c *gin.Context) {
 		change := models.ChangeLog{
 			AuditId:      audit.Id,
 			Field:        "FSFfree",
-			OldValue:     oldlicense.FSFfree,
-			UpdatedValue: license.FSFfree,
+			OldValue:     strconv.FormatBool(oldlicense.FSFfree),
+			UpdatedValue: strconv.FormatBool(license.FSFfree),
 		}
 		db.DB.Create(&change)
 	}
@@ -340,8 +337,8 @@ func UpdateLicense(c *gin.Context) {
 		change := models.ChangeLog{
 			AuditId:      audit.Id,
 			Field:        "GPLv2compatible",
-			OldValue:     oldlicense.GPLv2compatible,
-			UpdatedValue: license.GPLv2compatible,
+			OldValue:     strconv.FormatBool(oldlicense.GPLv2compatible),
+			UpdatedValue: strconv.FormatBool(license.GPLv2compatible),
 		}
 		db.DB.Create(&change)
 	}
@@ -349,8 +346,8 @@ func UpdateLicense(c *gin.Context) {
 		change := models.ChangeLog{
 			AuditId:      audit.Id,
 			Field:        "GPLv3compatible",
-			OldValue:     oldlicense.GPLv3compatible,
-			UpdatedValue: license.GPLv3compatible,
+			OldValue:     strconv.FormatBool(oldlicense.GPLv3compatible),
+			UpdatedValue: strconv.FormatBool(license.GPLv3compatible),
 		}
 		db.DB.Create(&change)
 	}
@@ -376,8 +373,8 @@ func UpdateLicense(c *gin.Context) {
 		change := models.ChangeLog{
 			AuditId:      audit.Id,
 			Field:        "TextUpdatable",
-			OldValue:     oldlicense.TextUpdatable,
-			UpdatedValue: license.TextUpdatable,
+			OldValue:     strconv.FormatBool(oldlicense.TextUpdatable),
+			UpdatedValue: strconv.FormatBool(license.TextUpdatable),
 		}
 		db.DB.Create(&change)
 	}
@@ -412,8 +409,8 @@ func UpdateLicense(c *gin.Context) {
 		change := models.ChangeLog{
 			AuditId:      audit.Id,
 			Field:        "DetectorType",
-			OldValue:     oldlicense.DetectorType,
-			UpdatedValue: license.DetectorType,
+			OldValue:     strconv.FormatInt(oldlicense.DetectorType, 10),
+			UpdatedValue: strconv.FormatInt(license.DetectorType, 10),
 		}
 		db.DB.Create(&change)
 	}
@@ -439,8 +436,8 @@ func UpdateLicense(c *gin.Context) {
 		change := models.ChangeLog{
 			AuditId:      audit.Id,
 			Field:        "Risk",
-			OldValue:     oldlicense.Risk,
-			UpdatedValue: license.Risk,
+			OldValue:     strconv.FormatInt(oldlicense.Risk, 10),
+			UpdatedValue: strconv.FormatInt(license.Risk, 10),
 		}
 		db.DB.Create(&change)
 	}
@@ -448,8 +445,8 @@ func UpdateLicense(c *gin.Context) {
 		change := models.ChangeLog{
 			AuditId:      audit.Id,
 			Field:        "Marydone",
-			OldValue:     oldlicense.Marydone,
-			UpdatedValue: license.Marydone,
+			OldValue:     strconv.FormatBool(oldlicense.Marydone),
+			UpdatedValue: strconv.FormatBool(license.Marydone),
 		}
 		db.DB.Create(&change)
 	}
@@ -477,39 +474,79 @@ func FilterLicense(c *gin.Context) {
 		return
 	}
 	if active != "" {
-		query = query.Where("active=?", active)
+		parsedActive, err := strconv.ParseBool(active)
+		if err != nil {
+			parsedActive = false
+		}
+		query = query.Where(models.LicenseDB{Active: parsedActive})
 	}
 
 	if fsffree != "" {
-		query = query.Where("fs_ffree=?", fsffree)
+		parsedFsffree, err := strconv.ParseBool(fsffree)
+		if err != nil {
+			parsedFsffree = false
+		}
+		query = query.Where(models.LicenseDB{FSFfree: parsedFsffree})
 	}
 
 	if OSIapproved != "" {
-		query = query.Where("os_iapproved=?", OSIapproved)
+		parsedOsiApproved, err := strconv.ParseBool(OSIapproved)
+		if err != nil {
+			parsedOsiApproved = false
+		}
+		query = query.Where(models.LicenseDB{OSIapproved: parsedOsiApproved})
 	}
 
 	if copyleft != "" {
-		query = query.Where("copyleft=?", copyleft)
+		parsedCopyleft, err := strconv.ParseBool(copyleft)
+		if err != nil {
+			parsedCopyleft = false
+		}
+		query = query.Where(models.LicenseDB{Copyleft: parsedCopyleft})
 	}
 
 	if SpdxId != "" {
-		query = query.Where("spdx_id=?", SpdxId)
+		query = query.Where(models.LicenseDB{SpdxId: SpdxId})
 	}
 
 	if DetectorType != "" {
-		query = query.Where("detector_type=?", DetectorType)
+		parsedDetectorType, err := strconv.ParseInt(DetectorType, 10, 64)
+		if err != nil {
+			er := models.LicenseError{
+				Status:    http.StatusBadRequest,
+				Message:   "Invalid detector type value",
+				Error:     err.Error(),
+				Path:      c.Request.URL.Path,
+				Timestamp: time.Now().Format(time.RFC3339),
+			}
+			c.JSON(http.StatusBadRequest, er)
+			return
+		}
+		query = query.Where(models.LicenseDB{DetectorType: parsedDetectorType})
 	}
 
 	if GPLv2compatible != "" {
-		query = query.Where("gp_lv2compatible=?", GPLv2compatible)
+		parsedGPLv2compatible, err := strconv.ParseBool(GPLv2compatible)
+		if err != nil {
+			parsedGPLv2compatible = false
+		}
+		query = query.Where(models.LicenseDB{GPLv2compatible: parsedGPLv2compatible})
 	}
 
 	if GPLv3compatible != "" {
-		query = query.Where("gp_lv3compatible=?", GPLv3compatible)
+		parsedGPLv3compatible, err := strconv.ParseBool(GPLv3compatible)
+		if err != nil {
+			parsedGPLv3compatible = false
+		}
+		query = query.Where(models.LicenseDB{GPLv3compatible: parsedGPLv3compatible})
 	}
 
 	if marydone != "" {
-		query = query.Where("marydone=?", marydone)
+		parsedMarydone, err := strconv.ParseBool(marydone)
+		if err != nil {
+			parsedMarydone = false
+		}
+		query = query.Where(models.LicenseDB{Marydone: parsedMarydone})
 	}
 
 	if err := query.Error; err != nil {
@@ -617,10 +654,14 @@ func GetAllAudit(c *gin.Context) {
 // GetAudit retrieves a specific audit record by its ID from the database and responds
 // with JSON containing the audit data or an error message if the record is not found.
 func GetAudit(c *gin.Context) {
-	var chngelog models.Audit
+	var changelog models.Audit
 	id := c.Param("audit_id")
+	parsedId, err := parseId(c, id, "audit")
+	if err != nil {
+		return
+	}
 
-	if err := db.DB.Where("id = ?", id).First(&chngelog).Error; err != nil {
+	if err := db.DB.Where(models.Audit{Id: parsedId}).First(&changelog).Error; err != nil {
 		er := models.LicenseError{
 			Status:    http.StatusBadRequest,
 			Message:   "no change log with such id exists",
@@ -631,7 +672,7 @@ func GetAudit(c *gin.Context) {
 		c.JSON(http.StatusBadRequest, er)
 	}
 	res := models.AuditResponse{
-		Data:   []models.Audit{chngelog},
+		Data:   []models.Audit{changelog},
 		Status: http.StatusOK,
 		Meta: models.PaginationMeta{
 			ResourceCount: 1,
@@ -641,14 +682,34 @@ func GetAudit(c *gin.Context) {
 	c.JSON(http.StatusOK, res)
 }
 
+func parseId(c *gin.Context, id string, idType string) (int, error) {
+	parsedId, err := strconv.Atoi(id)
+	if err != nil {
+		er := models.LicenseError{
+			Status:    http.StatusBadRequest,
+			Message:   fmt.Sprintf("invalid %s id", idType),
+			Error:     err.Error(),
+			Path:      c.Request.URL.Path,
+			Timestamp: time.Now().Format(time.RFC3339),
+		}
+		c.JSON(http.StatusBadRequest, er)
+		return 0, err
+	}
+	return parsedId, nil
+}
+
 // GetChangeLog retrieves a list of change history records associated with a specific
 // audit by its audit ID from the database and responds with JSON containing the change
 // history data or an error message if no records are found.
 func GetChangeLog(c *gin.Context) {
 	var changelog []models.ChangeLog
 	id := c.Param("audit_id")
+	parsedId, err := parseId(c, id, "audit")
+	if err != nil {
+		return
+	}
 
-	if err := db.DB.Where("audit_id = ?", id).Find(&changelog).Error; err != nil {
+	if err := db.DB.Where(models.ChangeLog{AuditId: parsedId}).Find(&changelog).Error; err != nil {
 		er := models.LicenseError{
 			Status:    http.StatusBadRequest,
 			Message:   "no change log with such id exists",
@@ -675,10 +736,18 @@ func GetChangeLog(c *gin.Context) {
 // is not found or if it does not belong to the specified audit.
 func GetChangeLogbyId(c *gin.Context) {
 	var changelog models.ChangeLog
-	auditid := c.Param("audit_id")
-	id := c.Param("id")
+	auditId := c.Param("audit_id")
+	parsedAuditId, err := parseId(c, auditId, "audit")
+	if err != nil {
+		return
+	}
+	changelogId := c.Param("id")
+	parsedChangeLogId, err := parseId(c, changelogId, "change log")
+	if err != nil {
+		return
+	}
 
-	if err := db.DB.Where("id = ?", id).Find(&changelog).Error; err != nil {
+	if err := db.DB.Where(models.ChangeLog{Id: parsedChangeLogId}).Find(&changelog).Error; err != nil {
 		er := models.LicenseError{
 			Status:    http.StatusBadRequest,
 			Message:   "no change history with such id exists",
@@ -688,8 +757,7 @@ func GetChangeLogbyId(c *gin.Context) {
 		}
 		c.JSON(http.StatusBadRequest, er)
 	}
-	audit_id, _ := strconv.Atoi(auditid)
-	if changelog.AuditId != audit_id {
+	if changelog.AuditId != parsedAuditId {
 		er := models.LicenseError{
 			Status:    http.StatusBadRequest,
 			Message:   "no change history with such id and audit id exists",
@@ -776,7 +844,7 @@ func CreateObligation(c *gin.Context) {
 	}
 	for _, i := range input.Shortnames {
 		var license models.LicenseDB
-		db.DB.Where("shortname = ?", i).Find(&license)
+		db.DB.Where(models.LicenseDB{Shortname: i}).Find(&license)
 		obmap := models.ObligationMap{
 			ObligationPk: obligation.Id,
 			RfPk:         license.Id,
@@ -800,7 +868,7 @@ func CreateObligation(c *gin.Context) {
 func GetAllObligation(c *gin.Context) {
 	var obligations []models.Obligation
 	query := db.DB.Model(&obligations)
-	query = query.Where("active=?", true)
+	query = query.Where(models.Obligation{Active: true})
 	err := query.Find(&obligations).Error
 	if err != nil {
 		er := models.LicenseError{
@@ -835,9 +903,8 @@ func UpdateObligation(c *gin.Context) {
 
 	username := c.GetString("username")
 	query := db.DB.Model(&obligation)
-	query = query.Where("active=?", true)
 	tp := c.Param("topic")
-	if err := query.Where("topic = ?", tp).First(&obligation).Error; err != nil {
+	if err := query.Where(models.Obligation{Active: true, Topic: tp}).First(&obligation).Error; err != nil {
 		er := models.LicenseError{
 			Status:    http.StatusBadRequest,
 			Message:   fmt.Sprintf("obligation with topic '%s' not found", tp),
@@ -873,11 +940,11 @@ func UpdateObligation(c *gin.Context) {
 	}
 
 	var user models.User
-	db.DB.Where("username = ?", username).First(&user)
+	db.DB.Where(models.User{Username: username}).First(&user)
 	audit := models.Audit{
 		UserId:    user.Id,
 		TypeId:    obligation.Id,
-		Timestamp: time.Now().Format(time.RFC3339),
+		Timestamp: time.Now(),
 		Type:      "Obligation",
 	}
 	db.DB.Create(&audit)
@@ -990,7 +1057,7 @@ func UpdateObligation(c *gin.Context) {
 func DeleteObligation(c *gin.Context) {
 	var obligation models.Obligation
 	tp := c.Param("topic")
-	if err := db.DB.Where("topic= ?", tp).First(&obligation).Error; err != nil {
+	if err := db.DB.Where(models.Obligation{Topic: tp}).First(&obligation).Error; err != nil {
 		er := models.LicenseError{
 			Status:    http.StatusBadRequest,
 			Message:   fmt.Sprintf("obligation with topic '%s' not found", tp),
@@ -1010,9 +1077,8 @@ func DeleteObligation(c *gin.Context) {
 func GetObligation(c *gin.Context) {
 	var obligation models.Obligation
 	query := db.DB.Model(&obligation)
-	query = query.Where("active=?", true)
 	tp := c.Param("topic")
-	if err := query.Where("topic= ?", tp).First(&obligation).Error; err != nil {
+	if err := query.Where(models.Obligation{Active: true, Topic: tp}).First(&obligation).Error; err != nil {
 		er := models.LicenseError{
 			Status:    http.StatusBadRequest,
 			Message:   fmt.Sprintf("obligation with topic '%s' not found", tp),

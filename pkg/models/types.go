@@ -3,31 +3,33 @@
 
 package models
 
-// The License struct represents a license entity with various attributes and
+import "time"
+
+// The LicenseDB struct represents a license entity with various attributes and
 // properties associated with it.
 // It provides structured storage for license-related information.
 type LicenseDB struct {
-	Id              int64  `json:"rf_id" gorm:"primary_key"`
-	Shortname       string `json:"rf_shortname"`
-	Fullname        string `json:"rf_fullname"`
-	Text            string `json:"rf_text"`
-	Url             string `json:"rf_url"`
-	AddDate         string `json:"rf_add_date"`
-	Copyleft        string `json:"rf_copyleft"`
-	FSFfree         string `json:"rf_FSFfree"`
-	OSIapproved     string `json:"rf_OSIapproved"`
-	GPLv2compatible string `json:"rf_GPLv2compatible"`
-	GPLv3compatible string `json:"rf_GPLv3compatible"`
-	Notes           string `json:"rf_notes"`
-	Fedora          string `json:"rf_Fedora"`
-	TextUpdatable   string `json:"rf_text_updatable"`
-	DetectorType    string `json:"rf_detector_type"`
-	Active          string `json:"rf_active"`
-	Source          string `json:"rf_source"`
-	SpdxId          string `json:"rf_spdx_id"`
-	Risk            string `json:"rf_risk"`
-	Flag            string `json:"rf_flag"`
-	Marydone        string `json:"marydone"`
+	Id              int64     `json:"rf_id" gorm:"primary_key"`
+	Shortname       string    `json:"rf_shortname" gorm:"unique;not null" binding:"required"`
+	Fullname        string    `json:"rf_fullname"`
+	Text            string    `json:"rf_text"`
+	Url             string    `json:"rf_url"`
+	AddDate         time.Time `json:"rf_add_date" gorm:"default:CURRENT_TIMESTAMP"`
+	Copyleft        bool      `json:"rf_copyleft"`
+	FSFfree         bool      `json:"rf_FSFfree"`
+	OSIapproved     bool      `json:"rf_OSIapproved"`
+	GPLv2compatible bool      `json:"rf_GPLv2compatible"`
+	GPLv3compatible bool      `json:"rf_GPLv3compatible"`
+	Notes           string    `json:"rf_notes"`
+	Fedora          string    `json:"rf_Fedora"`
+	TextUpdatable   bool      `json:"rf_text_updatable"`
+	DetectorType    int64     `json:"rf_detector_type"`
+	Active          bool      `json:"rf_active"`
+	Source          string    `json:"rf_source"`
+	SpdxId          string    `json:"rf_spdx_id"`
+	Risk            int64     `json:"rf_risk"`
+	Flag            int64     `json:"rf_flag" gorm:"default:1"`
+	Marydone        bool      `json:"marydone"`
 }
 
 type LicenseJson struct {
@@ -44,7 +46,7 @@ type LicenseJson struct {
 	Notes           string `json:"rf_notes"`
 	Fedora          string `json:"rf_Fedora"`
 	TextUpdatable   string `json:"rf_text_updatable"`
-	DetectorType    string `json:"rf_detector_type"`
+	DetectorType    int64  `json:"rf_detector_type"`
 	Active          string `json:"rf_active"`
 	Source          string `json:"rf_source"`
 	SpdxCompatible  string `json:"rf_spdx_compatible"`
@@ -53,7 +55,7 @@ type LicenseJson struct {
 	Marydone        string `json:"marydone"`
 }
 
-// The Meta struct represents additional metadata associated with a
+// The PaginationMeta struct represents additional metadata associated with a
 // license retrieval operation.
 // It contains information that provides context and supplementary details
 // about the retrieved license data.
@@ -87,34 +89,34 @@ type LicenseError struct {
 // The LicenseInput struct represents the input or payload required for creating a license.
 // It contains various fields that capture the necessary information for defining a license entity.
 type LicenseInput struct {
-	Shortname       string `json:"rf_shortname" binding:"required"`
-	Fullname        string `json:"rf_fullname" binding:"required"`
-	Text            string `json:"rf_text" binding:"required"`
-	Url             string `json:"rf_url"`
-	AddDate         string `json:"rf_add_date"`
-	Copyleft        string `json:"rf_copyleft"`
-	FSFfree         string `json:"rf_FSFfree"`
-	OSIapproved     string `json:"rf_OSIapproved"`
-	GPLv2compatible string `json:"rf_GPLv2compatible"`
-	GPLv3compatible string `json:"rf_GPLv3compatible"`
-	Notes           string `json:"rf_notes"`
-	Fedora          string `json:"rf_Fedora"`
-	TextUpdatable   string `json:"rf_text_updatable"`
-	DetectorType    string `json:"rf_detector_type"`
-	Active          string `json:"rf_active"`
-	Source          string `json:"rf_source"`
-	SpdxId          string `json:"rf_spdx_id" binding:"required"`
-	Risk            string `json:"rf_risk"`
-	Flag            string `json:"rf_flag"`
-	Marydone        string `json:"marydone"`
+	Shortname       string    `json:"rf_shortname"`
+	Fullname        string    `json:"rf_fullname"`
+	Text            string    `json:"rf_text"`
+	Url             string    `json:"rf_url"`
+	AddDate         time.Time `json:"rf_add_date"`
+	Copyleft        bool      `json:"rf_copyleft"`
+	FSFfree         bool      `json:"rf_FSFfree"`
+	OSIapproved     bool      `json:"rf_OSIapproved"`
+	GPLv2compatible bool      `json:"rf_GPLv2compatible"`
+	GPLv3compatible bool      `json:"rf_GPLv3compatible"`
+	Notes           string    `json:"rf_notes"`
+	Fedora          string    `json:"rf_Fedora"`
+	TextUpdatable   bool      `json:"rf_text_updatable"`
+	DetectorType    int64     `json:"rf_detector_type"`
+	Active          bool      `json:"rf_active"`
+	Source          string    `json:"rf_source"`
+	SpdxId          string    `json:"rf_spdx_id"`
+	Risk            int64     `json:"rf_risk"`
+	Flag            int64     `json:"rf_flag"`
+	Marydone        bool      `json:"marydone"`
 }
 
 // User struct is representation of user information.
 type User struct {
 	Id           int64  `json:"id" gorm:"primary_key"`
-	Username     string `json:"username" gorm:"unique" binding:"required"`
-	Userlevel    string `json:"userlevel" gorm:"unique" binding:"required"`
-	Userpassword string `json:"userpassword" gorm:"unique" binding:"required"`
+	Username     string `json:"username" gorm:"unique;not null" binding:"required"`
+	Userlevel    string `json:"userlevel" binding:"required"`
+	Userpassword string `json:"userpassword" binding:"required"`
 }
 
 // UserResponse struct is representation of design API response of user.
@@ -134,12 +136,12 @@ type SearchLicense struct {
 // Audit struct represents an audit entity with certain attributes and properties
 // It has user id as a foreign key
 type Audit struct {
-	Id        int    `json:"id" gorm:"primary_key"`
-	UserId    int64  `json:"user_id"`
-	User      User   `gorm:"foreignKey:UserId;references:Id" json:"-"`
-	TypeId    int64  `json:"type_id"`
-	Timestamp string `json:"timestamp"`
-	Type      string `json:"type"`
+	Id        int       `json:"id" gorm:"primary_key"`
+	UserId    int64     `json:"user_id"`
+	User      User      `gorm:"foreignKey:UserId;references:Id" json:"-"`
+	TypeId    int64     `json:"type_id"`
+	Timestamp time.Time `json:"timestamp"`
+	Type      string    `json:"type"`
 }
 
 // ChangeLog struct represents a change entity with certain attributes and properties

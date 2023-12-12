@@ -24,3 +24,7 @@
 # Go workspace file
 go.work
 licenseRef.json
+
+# IDE related files
+/.idea
+/LicenseDb.iml

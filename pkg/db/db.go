@@ -6,8 +6,8 @@ package db
 import (
 	"encoding/json"
 	"fmt"
-	"io/ioutil"
 	"log"
+	"os"
 
 	"github.com/fossology/LicenseDb/pkg/models"
 	"github.com/fossology/LicenseDb/pkg/utils"
@@ -36,15 +36,23 @@ func Populatedb(populatedb bool, datafile string) {
 	if populatedb {
 		var licenses []models.LicenseJson
 		// Read the content of the data file.
-		byteResult, _ := ioutil.ReadFile(datafile)
+		byteResult, err := os.ReadFile(datafile)
+		if err != nil {
+			log.Fatalf("Unable to read JSON file: %v", err)
+		}
 		// Unmarshal the JSON file data into a slice of LicenseJson structs.
 		if err := json.Unmarshal(byteResult, &licenses); err != nil {
 			log.Fatalf("error reading from json file: %v", err)
 		}
 		for _, license := range licenses {
-			// populate the data in the database table
+			// Create the license if it does not already exist in the database.
+			// Otherwise, update the license if flag is 1.
 			result := utils.Converter(license)
-			DB.Create(&result)
+			err := DB.Where(models.LicenseDB{Shortname: result.Shortname, Flag: 1}).Assign(result).
+				FirstOrCreate(&result).Error
+			if err != nil {
+				log.Fatalf("error creating license: %v", err)
+			}
 		}
 	}
 }

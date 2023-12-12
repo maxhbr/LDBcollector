@@ -3,7 +3,11 @@
 
 package utils
 
-import "github.com/fossology/LicenseDb/pkg/models"
+import (
+	"github.com/fossology/LicenseDb/pkg/models"
+	"strconv"
+	"time"
+)
 
 // The Converter function takes an input of type models.LicenseJson and converts it into a
 // corresponding models.LicenseDB object.
@@ -11,32 +15,83 @@ import "github.com/fossology/LicenseDb/pkg/models"
 // including generating the SpdxId based on the SpdxCompatible field.
 // The resulting LicenseDB object is returned as the output of this function.
 func Converter(input models.LicenseJson) models.LicenseDB {
-	if input.SpdxCompatible == "t" {
+	spdxCompatible, err := strconv.ParseBool(input.SpdxCompatible)
+	if err != nil {
+		spdxCompatible = false
+	}
+	if spdxCompatible {
 		input.SpdxCompatible = input.Shortname
 	} else {
 		input.SpdxCompatible = "LicenseRef-fossology-" + input.Shortname
 	}
+
+	copyleft, err := strconv.ParseBool(input.Copyleft)
+	if err != nil {
+		copyleft = false
+	}
+	fsfFree, err := strconv.ParseBool(input.FSFfree)
+	if err != nil {
+		fsfFree = false
+	}
+	osiApproved, err := strconv.ParseBool(input.OSIapproved)
+	if err != nil {
+		osiApproved = false
+	}
+	gplv2Compatible, err := strconv.ParseBool(input.GPLv2compatible)
+	if err != nil {
+		gplv2Compatible = false
+	}
+	gplv3Compatible, err := strconv.ParseBool(input.GPLv3compatible)
+	if err != nil {
+		gplv3Compatible = false
+	}
+	textUpdatable, err := strconv.ParseBool(input.TextUpdatable)
+	if err != nil {
+		textUpdatable = false
+	}
+	active, err := strconv.ParseBool(input.Active)
+	if err != nil {
+		active = false
+	}
+	marydone, err := strconv.ParseBool(input.Marydone)
+	if err != nil {
+		marydone = false
+	}
+	addDate, err := time.Parse(time.RFC3339, input.AddDate)
+	if err != nil {
+		addDate = time.Now()
+	}
+	detectorType := input.DetectorType
+	risk, err := strconv.ParseInt(input.Risk, 10, 64)
+	if err != nil {
+		risk = 0
+	}
+	flag, err := strconv.ParseInt(input.Flag, 10, 64)
+	if err != nil {
+		flag = 1
+	}
+
 	result := models.LicenseDB{
 		Shortname:       input.Shortname,
 		Fullname:        input.Fullname,
 		Text:            input.Text,
 		Url:             input.Url,
-		Copyleft:        input.Copyleft,
-		AddDate:         input.AddDate,
-		FSFfree:         input.FSFfree,
-		OSIapproved:     input.OSIapproved,
-		GPLv2compatible: input.GPLv2compatible,
-		GPLv3compatible: input.GPLv3compatible,
+		Copyleft:        copyleft,
+		AddDate:         addDate,
+		FSFfree:         fsfFree,
+		OSIapproved:     osiApproved,
+		GPLv2compatible: gplv2Compatible,
+		GPLv3compatible: gplv3Compatible,
 		Notes:           input.Notes,
 		Fedora:          input.Fedora,
-		TextUpdatable:   input.TextUpdatable,
-		DetectorType:    input.DetectorType,
-		Active:          input.Active,
+		TextUpdatable:   textUpdatable,
+		DetectorType:    detectorType,
+		Active:          active,
 		Source:          input.Source,
 		SpdxId:          input.SpdxCompatible,
-		Risk:            input.Risk,
-		Flag:            input.Flag,
-		Marydone:        input.Marydone,
+		Risk:            risk,
+		Flag:            flag,
+		Marydone:        marydone,
 	}
 	return result
 }
