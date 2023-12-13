@@ -44,3 +44,16 @@ jobs:
         uses: ibiqlik/action-yamllint@v3
         with:
           file_or_dir: license-classifications.yml
+
+  REUSE:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clone the repository
+        uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+      - name: Check REUSE Compliance
+        run: |
+          pip install --user reuse
+          ~/.local/bin/reuse lint
