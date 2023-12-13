@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2023 Double Open Oy <support@doubleopen.org>
+# SPDX-License-Identifier: CC0-1.0
+
 import re
 import argparse
 
