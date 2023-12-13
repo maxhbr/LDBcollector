@@ -6,6 +6,10 @@ SPDX-License-Identifier: GPL-3.0-or-later
 
 
 
+# 0.1.7
+
+* Python: add reauired files to dist (pypi)
+
 # 0.1.6
 
 More license aliases:
