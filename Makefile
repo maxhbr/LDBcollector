@@ -84,6 +84,9 @@ doc: py-doc
 
 build:
 	cd python && rm -fr build && python3 setup.py sdist
+	cd python && if [ `tar ztvf dist/*.tar.gz | grep -e LICENSES/GPL-3.0-or-later.txt -e requirements.txt -e licenses/ZPL-1.1.json | wc -l` -ne 3 ] ; then echo "Check for files in the tar.gz failed...."; exit 3; fi
+	@echo
+	@echo "build ready :)"
 
 py-release: check clean build
 	./devel/check-release.sh
