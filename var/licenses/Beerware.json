@@ -6,6 +6,7 @@
   "name": "Beer-Ware License",
   "scancode_key": "beerware", 
   "spdxid": "Beerware",
+  "compatibility_as": "MIT",
   "aliases": [
    "Beerware",
    "Beerware License",
