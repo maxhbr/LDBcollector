@@ -12,9 +12,6 @@ on:
     branches:
       - "main"
 
-env:
-  ORT_VERSION: 9.0.0
-
 jobs:
   Check:
     runs-on: ubuntu-latest
@@ -27,12 +24,8 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '17'
-      - name: Setup ORT helper-cli
-        run: |
-          wget https://github.com/oss-review-toolkit/ort/releases/download/$ORT_VERSION/orth-$ORT_VERSION.zip
-          unzip orth-$ORT_VERSION.zip -d /opt
-      - name: Check license-classifications.yml
-        run: /opt/orth-$ORT_VERSION/bin/orth list-license-categories -i license-classifications.yml
+      - name: Check license classifications
+        run: ./scripts/check-license-classifications.main.kts
 
   Lint:
     runs-on: ubuntu-latest
