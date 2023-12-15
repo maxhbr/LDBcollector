@@ -6,8 +6,6 @@
 @file:CompilerOptions("-jvm-target", "11")
 @file:DependsOn("org.ossreviewtoolkit:model:18.0.0")
 
-import java.io.File
-
 import kotlin.system.exitProcess
 
 import org.ossreviewtoolkit.model.licenses.LicenseClassifications
