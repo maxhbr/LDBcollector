@@ -149,9 +149,14 @@ categories:
       This property indicates that the license requires that the source code of the OSS is either
       distributed, or offered to distribute, in connection with the software delivery.
 
-  - name: "property:artistic-license"
+  - name: "property:modification-related-obligations"
     description: >-
-      This property is included only in the Artistic licenses.
+      This property indicates that the license contains obligations that are triggered by modifying
+      the licensed content. The scope of obligations could vary, but typically it is about somehow
+      making sure that the recipients of the modified content don't attribute the modifications to
+      the wrong author and/or that the unmodified content is available to the recipients. The
+      obligations go beoynd of mere marking of the modifications. Artistic-type licenses have this
+      property, but also some others.
 
   - name: "property:AutoConf-or-other-exception"
     description: >-
@@ -412,14 +417,14 @@ categorizations:
     categories:
       - "permissive"
       - "property:include-in-notice-file"
-      - "property:artistic-license"
+      - "property:modification-related-obligations"
 
   # https://spdx.org/licenses/Artistic-1.0-Perl.html
   - id: "Artistic-1.0-Perl"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
-      - "property:distribute-source-code"
+      - "property:modification-related-obligations"
 
   # https://spdx.org/licenses/Artistic-1.0-cl8.html
   - id: "Artistic-1.0-cl8"
@@ -427,14 +432,14 @@ categorizations:
       - "copyleft-file-level"
       - "property:include-in-notice-file"
       - "property:distribute-source-code"
-      - "property:artistic-license"
+      - "property:modification-related-obligations"
 
   # https://spdx.org/licenses/Artistic-2.0.html
   - id: "Artistic-2.0"
     categories:
       - "copyleft-module-level"
       - "property:include-in-notice-file"
-      - "property:artistic-license"
+      - "property:modification-related-obligations"
       - "property:distribute-source-code"
       - "property:patent-clause"
 
@@ -3674,6 +3679,13 @@ categorizations:
   - id: "MIT-style"
     categories:
       - "permissive"
+
+  # https://spdx.org/licenses/MITNFA.html
+  - id: "MITNFA"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "property:modification-related-obligations"
 
   - id: "MPL"
     categories:
