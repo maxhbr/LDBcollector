@@ -1,0 +1,16 @@
+{
+    "meta": {
+        "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+        "comment": ""
+    },
+    "compounds": [
+        {
+            "name": "GNU General Public License v2.0 only with Classpath exception 2.0",
+            "spdxid": "GPL-2.0-only WITH Classpath-exception-2.0",
+            "aliases": [
+                "GPL-2.0-with-classpath-exception",
+                "GPL-2.0-only AND Classpath-exception-2.0"
+            ]
+        }
+    ]
+}
