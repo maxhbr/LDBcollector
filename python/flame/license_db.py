@@ -94,6 +94,11 @@ class FossLicenses:
         for license_file in glob.glob(f'{self.license_dir}/*.json'):
             logging.debug(f' * {license_file}')
             if os.path.basename(license_file) == "compounds.json":
+                # some compound licenses are incorrectly stated as
+                # one, e.g. "GPL-2.0-with-classpath-exception" which
+                # should be "GPL-2.0-only WITH
+                # Classpath-exception-2.0". This file provides
+                # translations for such
                 data = self.__read_json(license_file)
                 COMPOUND_TAG='compounds'
                 for compound in data[COMPOUND_TAG]:
