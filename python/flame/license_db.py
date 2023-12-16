@@ -6,6 +6,7 @@ import collections
 import glob
 import json
 import logging
+import os
 import re
 from pathlib import Path
 import license_expression
@@ -92,13 +93,25 @@ class FossLicenses:
         logging.debug(f'reading from: {self.license_dir}')
         for license_file in glob.glob(f'{self.license_dir}/*.json'):
             logging.debug(f' * {license_file}')
-            data = self.__read_license_file(license_file, check)
-            licenses[data['spdxid']] = data
-            for alias in data[ALIASES_TAG]:
-                if alias in aliases:
-                    raise FlameException(f'Alias "{alias}" -> {data["spdxid"]} already defined as "{aliases[alias]}".')
+            if os.path.basename(license_file) == "compounds.json":
+                data = self.__read_json(license_file)
+                COMPOUND_TAG='compounds'
+                for compound in data[COMPOUND_TAG]:
+                    licenses[compound['spdxid']] = compound
+                    for alias in compound[ALIASES_TAG]:
+                        if alias in aliases:
+                            raise FlameException(f'Alias "{alias}" -> {compound["spdxid"]} already defined as "{aliases[alias]}".')
 
-                aliases[alias] = data['spdxid']
+                        aliases[alias] = compound['spdxid']
+                    
+            else:
+                data = self.__read_license_file(license_file, check)
+                licenses[data['spdxid']] = data
+                for alias in data[ALIASES_TAG]:
+                    if alias in aliases:
+                        raise FlameException(f'Alias "{alias}" -> {data["spdxid"]} already defined as "{aliases[alias]}".')
+
+                    aliases[alias] = data['spdxid']
             if SCANCODE_KEY_TAG in data:
                 scancode_keys[data[SCANCODE_KEY_TAG]] = data['spdxid']
             if COMPATIBILITY_AS_TAG in data:
