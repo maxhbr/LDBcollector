@@ -6,6 +6,7 @@
   "name": "MIT No Attribution",
   "scancode_key": "mit-0", 
   "spdxid": "MIT-0",
+  "compatibility_as": "MIT",
   "aliases": [
    "MIT-0",
    "MIT No Attribution",

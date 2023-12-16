@@ -6,7 +6,6 @@
   "name": "ICU License",
   "scancode_key": "x11", 
   "spdxid": "ICU",
-  "compatibility_as": "x11",
   "aliases": [
       "ICU License",
       "ICU Licens"
