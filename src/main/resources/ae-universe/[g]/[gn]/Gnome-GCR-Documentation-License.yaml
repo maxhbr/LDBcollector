@@ -2,10 +2,11 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
 
-canonicalName: "Redistribution Terms (variant 018)"
-category: "RT"
-shortName: "RT-Var018"
+canonicalName: "Gnome GCR Documentation License"
+category: "GCR-docs"
+spdxIdentifier: "GCR-docs"
 
 alternativeNames:
-  - "Redistribution Terms (variant 018)"
+  - "GCR-docs"
+  - "Gnome GCR Documentation License"
 

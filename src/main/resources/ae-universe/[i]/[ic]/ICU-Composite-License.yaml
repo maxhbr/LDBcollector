@@ -2,12 +2,9 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
 
-canonicalName: "Permission Terms"
-category: "Permission"
-shortName: "PT"
-
-alternativeNames:
-  - "Permission Terms"
+canonicalName: "ICU Composite License"
+category: "ICU"
+shortName: "ICU-Composite"
 
 otherIds: 
-  - "OpenCoDE:PT"
+  - "scancode:ibm-icu"

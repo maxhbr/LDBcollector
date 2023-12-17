@@ -2,12 +2,9 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
 
-canonicalName: "Info-Zip License 2001"
+canonicalName: "Info-Zip License 2007-03"
 category: "Info-Zip License"
-shortName: "Info-Zip-2001"
-
-alternativeNames:
-  - "Info-Zip License 2001"
+shortName: "info-zip-2007-03"
 
 otherIds: 
-  - "scancode:info-zip-2001-01"
+  - "scancode:info-zip-2007-03"

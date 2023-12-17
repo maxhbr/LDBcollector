@@ -4,7 +4,7 @@
 
 canonicalName: "Lisp Lesser General Public License"
 category: "Lisp Lesser General Public License"
-shortName: "LLGPL"
+spdxIdentifier: "LLGPL"
 
 alternativeNames:
   - "Lisp Lesser General Public Licence)"

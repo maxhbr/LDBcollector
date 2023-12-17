@@ -1,0 +1,13 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
+
+canonicalName: "Spencer License (3-Clause; no copyright variant)"
+category: "Spencer"
+shortName: "Spencer-3-CLause-no-copyright"
+
+alternativeNames:
+  - "Henry Spencer Original Regexp License"
+
+otherIds: 
+  - "scancode:hs-regexp-orig"

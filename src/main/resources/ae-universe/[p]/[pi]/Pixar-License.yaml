@@ -2,10 +2,10 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
 
-canonicalName: "Redistribution Terms (variant 018)"
-category: "RT"
-shortName: "RT-Var018"
+canonicalName: "Pixar License"
+category: "Pixar"
+spdxIdentifier: "Pixar"
 
 alternativeNames:
-  - "Redistribution Terms (variant 018)"
+  - "Pixar License"
 

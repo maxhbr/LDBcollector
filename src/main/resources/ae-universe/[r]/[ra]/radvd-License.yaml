@@ -4,7 +4,7 @@
 
 canonicalName: "radvd License"
 category: "radvd License"
-shortName: "radvd"
+spdxIdentifier: "radvd"
 
 alternativeNames:
   - "http://www.litech.org/radvd/"

@@ -6,8 +6,10 @@ canonicalName: "Permission Terms (acknowledgement)"
 category: "Permission"
 shortName: "PT-Acknowledgement"
 
+openCoDEStatus: "approved"
+
 alternativeNames:
   - "Permission Terms (acknowledgement)"
 
 otherIds: 
-  - "OpenCode:PT-Acknowledgement"
+  - "OpenCoDE:PT-Acknowledgement"
