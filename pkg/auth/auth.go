@@ -28,14 +28,15 @@ import (
 //	@Tags			Users
 //	@Accept			json
 //	@Produce		json
-//	@Success		201	{object}	models.UserResponse
-//	@Failure		400	{object}	models.LicenseError	"Invalid json body"
-//	@Failure		409	{object}	models.LicenseError	"User already exists"
+//	@Param			user	body		models.UserInput	true	"User to create"
+//	@Success		201		{object}	models.UserResponse
+//	@Failure		400		{object}	models.LicenseError	"Invalid json body"
+//	@Failure		409		{object}	models.LicenseError	"User already exists"
 //	@Security		BasicAuth
 //	@Router			/users [post]
 func CreateUser(c *gin.Context) {
-	var user models.User
-	if err := c.ShouldBindJSON(&user); err != nil {
+	var input models.UserInput
+	if err := c.ShouldBindJSON(&input); err != nil {
 		er := models.LicenseError{
 			Status:    http.StatusBadRequest,
 			Message:   "invalid json body",
@@ -46,12 +47,29 @@ func CreateUser(c *gin.Context) {
 		c.JSON(http.StatusBadRequest, er)
 		return
 	}
-	result := db.DB.FirstOrCreate(&user)
-	if result.RowsAffected == 0 {
+
+	user := models.User{
+		Username:     input.Username,
+		Userlevel:    input.Userlevel,
+		Userpassword: input.Userpassword,
+	}
+
+	result := db.DB.Where(models.User{Username: user.Username}).FirstOrCreate(&user)
+	if result.Error != nil {
+		er := models.LicenseError{
+			Status:    http.StatusInternalServerError,
+			Message:   "Failed to create the new user",
+			Error:     result.Error.Error(),
+			Path:      c.Request.URL.Path,
+			Timestamp: time.Now().Format(time.RFC3339),
+		}
+		c.JSON(http.StatusInternalServerError, er)
+		return
+	} else if result.RowsAffected == 0 {
 		er := models.LicenseError{
 			Status:    http.StatusConflict,
-			Message:   "can not create user with same userid",
-			Error:     fmt.Sprintf("Error: License with userid '%d' already exists", user.Id),
+			Message:   "can not create user with same username",
+			Error:     fmt.Sprintf("Error: User with username '%s' already exists", user.Username),
 			Path:      c.Request.URL.Path,
 			Timestamp: time.Now().Format(time.RFC3339),
 		}
@@ -95,6 +113,9 @@ func GetAllUser(c *gin.Context) {
 		}
 		c.JSON(http.StatusNotFound, er)
 		return
+	}
+	for i := 0; i < len(users); i++ {
+		users[i].Userpassword = nil
 	}
 	res := models.UserResponse{
 		Data:   users,
@@ -140,6 +161,7 @@ func GetUser(c *gin.Context) {
 		c.JSON(http.StatusNotFound, er)
 		return
 	}
+	user.Userpassword = nil
 	res := models.UserResponse{
 		Data:   []models.User{user},
 		Status: http.StatusOK,
@@ -157,14 +179,14 @@ func AuthenticationMiddleware() gin.HandlerFunc {
 		authHeader := c.GetHeader("Authorization")
 		if authHeader == "" {
 			er := models.LicenseError{
-				Status:    http.StatusBadRequest,
+				Status:    http.StatusUnauthorized,
 				Message:   "Please check your credentials and try again",
 				Error:     "no credentials were passed",
 				Path:      c.Request.URL.Path,
 				Timestamp: time.Now().Format(time.RFC3339),
 			}
 
-			c.JSON(http.StatusBadRequest, er)
+			c.JSON(http.StatusUnauthorized, er)
 			c.Abort()
 			return
 		}
@@ -210,7 +232,7 @@ func AuthenticationMiddleware() gin.HandlerFunc {
 		}
 
 		// Check if the password matches
-		if user.Userpassword != password {
+		if *user.Userpassword != password {
 			er := models.LicenseError{
 				Status:    http.StatusUnauthorized,
 				Message:   "Incorrect password",

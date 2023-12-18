@@ -199,6 +199,55 @@ definitions:
         example: 200
         type: integer
     type: object
+  models.LicenseUpdate:
+    properties:
+      marydone:
+        type: boolean
+      rf_FSFfree:
+        type: boolean
+      rf_Fedora:
+        type: string
+      rf_GPLv2compatible:
+        type: boolean
+      rf_GPLv3compatible:
+        type: boolean
+      rf_OSIapproved:
+        type: boolean
+      rf_active:
+        type: boolean
+      rf_add_date:
+        example: "2023-12-01T18:10:25.00+05:30"
+        type: string
+      rf_copyleft:
+        type: boolean
+      rf_detector_type:
+        example: 1
+        type: integer
+      rf_flag:
+        example: 1
+        type: integer
+      rf_fullname:
+        example: MIT License
+        type: string
+      rf_notes:
+        example: This license has been superseded.
+        type: string
+      rf_risk:
+        type: integer
+      rf_source:
+        type: string
+      rf_spdx_id:
+        example: MIT
+        type: string
+      rf_text:
+        example: MIT License Text here
+        type: string
+      rf_text_updatable:
+        type: boolean
+      rf_url:
+        example: https://opensource.org/licenses/MIT
+        type: string
+    type: object
   models.Obligation:
     properties:
       active:
@@ -364,18 +413,33 @@ definitions:
       id:
         example: 123
         type: integer
+      password:
+        type: string
       userlevel:
         example: admin
         type: string
       username:
         example: fossy
         type: string
-      userpassword:
-        type: string
     required:
+    - password
     - userlevel
     - username
-    - userpassword
+    type: object
+  models.UserInput:
+    properties:
+      password:
+        type: string
+      userlevel:
+        example: admin
+        type: string
+      username:
+        example: fossy
+        type: string
+    required:
+    - password
+    - userlevel
+    - username
     type: object
   models.UserResponse:
     properties:
@@ -656,12 +720,12 @@ paths:
         name: shortname
         required: true
         type: string
-      - description: Update license body
+      - description: Update license body (requires only the fields to be updated)
         in: body
         name: license
         required: true
         schema:
-          $ref: '#/definitions/models.LicenseDB'
+          $ref: '#/definitions/models.LicenseUpdate'
       produces:
       - application/json
       responses:
@@ -696,6 +760,12 @@ paths:
       - application/json
       description: Get all active obligations from the service
       operationId: GetAllObligation
+      parameters:
+      - description: Active obligation only
+        in: query
+        name: active
+        required: true
+        type: boolean
       produces:
       - application/json
       responses:
@@ -896,6 +966,13 @@ paths:
       - application/json
       description: Create a new service user
       operationId: CreateUser
+      parameters:
+      - description: User to create
+        in: body
+        name: user
+        required: true
+        schema:
+          $ref: '#/definitions/models.UserInput'
       produces:
       - application/json
       responses:

@@ -284,7 +284,7 @@ func CreateLicense(c *gin.Context) {
 //	@Accept			json
 //	@Produce		json
 //	@Param			shortname	path		string					true	"Shortname of the license to be updated"
-//	@Param			license		body		models.LicenseDB		true	"Update license body"
+//	@Param			license		body		models.LicenseUpdate	true	"Update license body (requires only the fields to be updated)"
 //	@Success		200			{object}	models.LicenseResponse	"License updated successfully"
 //	@Failure		400			{object}	models.LicenseError		"Invalid license body"
 //	@Failure		404			{object}	models.LicenseError		"License with shortname not found"
@@ -293,7 +293,7 @@ func CreateLicense(c *gin.Context) {
 //	@Security		BasicAuth
 //	@Router			/licenses/{shortname} [patch]
 func UpdateLicense(c *gin.Context) {
-	var update models.LicenseDB
+	var update models.LicenseUpdate
 	var license models.LicenseDB
 	var oldlicense models.LicenseDB
 
@@ -322,6 +322,21 @@ func UpdateLicense(c *gin.Context) {
 		}
 		c.JSON(http.StatusBadRequest, er)
 		return
+	}
+	if update.Text != "" && oldlicense.TextUpdatable == false && oldlicense.Text != update.Text {
+		er := models.LicenseError{
+			Status:    http.StatusBadRequest,
+			Message:   "Text is not updatable",
+			Error:     "Field `rf_text_updatable` needs to be true to update the text",
+			Path:      c.Request.URL.Path,
+			Timestamp: time.Now().Format(time.RFC3339),
+		}
+		c.JSON(http.StatusBadRequest, er)
+		return
+	}
+	if oldlicense.Text != update.Text {
+		// Update flag to indicate the license text was updated.
+		update.Flag = 2
 	}
 	if err := db.DB.Model(&license).Updates(update).Error; err != nil {
 		er := models.LicenseError{
@@ -354,19 +369,10 @@ func UpdateLicense(c *gin.Context) {
 
 	db.DB.Create(&audit)
 
-	if oldlicense.Shortname != license.Shortname {
-		change := models.ChangeLog{
-			AuditId:      audit.Id,
-			Field:        "shortname",
-			OldValue:     oldlicense.Shortname,
-			UpdatedValue: license.Shortname,
-		}
-		db.DB.Create(&change)
-	}
 	if oldlicense.Fullname != license.Fullname {
 		change := models.ChangeLog{
 			AuditId:      audit.Id,
-			Field:        "fullname",
+			Field:        "Fullname",
 			OldValue:     oldlicense.Fullname,
 			UpdatedValue: license.Fullname,
 		}
@@ -439,8 +445,8 @@ func UpdateLicense(c *gin.Context) {
 		change := models.ChangeLog{
 			AuditId:      audit.Id,
 			Field:        "OSIapproved",
-			OldValue:     oldlicense.Shortname,
-			UpdatedValue: license.Shortname,
+			OldValue:     strconv.FormatBool(oldlicense.OSIapproved),
+			UpdatedValue: strconv.FormatBool(license.OSIapproved),
 		}
 		db.DB.Create(&change)
 	}
@@ -475,8 +481,8 @@ func UpdateLicense(c *gin.Context) {
 		change := models.ChangeLog{
 			AuditId:      audit.Id,
 			Field:        "Flag",
-			OldValue:     oldlicense.Shortname,
-			UpdatedValue: license.Shortname,
+			OldValue:     strconv.FormatInt(oldlicense.Flag, 10),
+			UpdatedValue: strconv.FormatInt(license.Flag, 10),
 		}
 		db.DB.Create(&change)
 	}
@@ -721,7 +727,18 @@ func SearchInLicense(c *gin.Context) {
 		c.JSON(http.StatusNotFound, er)
 		return
 	}
-	query.Find(&license)
+	err := query.Find(&license).Error
+	if err != nil {
+		er := models.LicenseError{
+			Status:    http.StatusBadRequest,
+			Message:   "Query failed because of error",
+			Error:     err.Error(),
+			Path:      c.Request.URL.Path,
+			Timestamp: time.Now().Format(time.RFC3339),
+		}
+		c.JSON(http.StatusBadRequest, er)
+		return
+	}
 
 	res := models.LicenseResponse{
 		Data:   license,
@@ -731,7 +748,6 @@ func SearchInLicense(c *gin.Context) {
 		},
 	}
 	c.JSON(http.StatusOK, res)
-
 }
 
 // GetAllAudit retrieves a list of all audit records from the database
@@ -964,7 +980,7 @@ func CreateObligation(c *gin.Context) {
 		Active:         input.Active,
 	}
 
-	result := db.DB.Debug().FirstOrCreate(&obligation)
+	result := db.DB.FirstOrCreate(&obligation)
 
 	fmt.Print(obligation)
 	if result.RowsAffected == 0 {
@@ -1011,7 +1027,7 @@ func CreateObligation(c *gin.Context) {
 	c.JSON(http.StatusCreated, res)
 }
 
-// GetAllObligation retrieves a list of all active obligation records
+// GetAllObligation retrieves a list of all obligation records
 //
 //	@Summary		Get all active obligations
 //	@Description	Get all active obligations from the service
@@ -1019,14 +1035,32 @@ func CreateObligation(c *gin.Context) {
 //	@Tags			Obligations
 //	@Accept			json
 //	@Produce		json
-//	@Success		200	{object}	models.ObligationResponse
-//	@Failure		404	{object}	models.LicenseError	"No obligations in DB"
+//	@Param			active	query		bool	true	"Active obligation only"
+//	@Success		200		{object}	models.ObligationResponse
+//	@Failure		404		{object}	models.LicenseError	"No obligations in DB"
 //	@Router			/obligations [get]
 func GetAllObligation(c *gin.Context) {
 	var obligations []models.Obligation
-	query := db.DB.Model(&obligations)
-	query = query.Where(models.Obligation{Active: true})
-	err := query.Find(&obligations).Error
+	active := c.Query("active")
+	if active == "" {
+		active = "true"
+	}
+	var parsedActive bool
+	parsedActive, err := strconv.ParseBool(active)
+	if err != nil {
+		er := models.LicenseError{
+			Status:    http.StatusBadRequest,
+			Message:   "Invalid active value",
+			Error:     fmt.Sprintf("Parsing failed for value '%s'", active),
+			Path:      c.Request.URL.Path,
+			Timestamp: time.Now().Format(time.RFC3339),
+		}
+		c.JSON(http.StatusBadRequest, er)
+		return
+	}
+	// FIXME: this query is not filtering
+	query := db.DB.Debug().Where(&models.Obligation{Active: parsedActive})
+	err = query.Find(&obligations).Error
 	if err != nil {
 		er := models.LicenseError{
 			Status:    http.StatusNotFound,
