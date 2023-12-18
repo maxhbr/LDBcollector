@@ -79,7 +79,7 @@
 
 3， 请将如下声明文本放入每个源文件的头部注释中。
 
-Copyright (c) [Year] [name of copyright holder]
+Copyright (c) 2023 Weiwei Xu
 [Software Name] is licensed under Mulan PubL v2.
 You can use this software according to the terms and conditions of the Mulan PubL v2.
 You may obtain a copy of Mulan PubL v2 at:
@@ -174,7 +174,7 @@ Create a file named “LICENSE” which contains the whole context of this Licen
 
 Attach the statement to the appropriate annotated syntax at the beginning of each source file.
 
-Copyright (c) [Year] [name of copyright holder]
+Copyright (c) 2023 Weiwei Xu
 [Software Name] is licensed under Mulan PubL v2.
 You can use this software according to the terms and conditions of the Mulan PubL v2.
 You may obtain a copy of Mulan PubL v2 at:
