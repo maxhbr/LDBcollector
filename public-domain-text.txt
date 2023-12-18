@@ -1042,3 +1042,10 @@ Some utility functions from tlslite which is public domain
 Written by Trevor Perrin <trevp at trevp.net>
 http://trevp.net/tlslite/
 '''
+
+package = anthy
+# calctrans/corpus.*.txt
+location = https://ja.osdn.net/dl/anthy/anthy-9100h.tar.gz
+text = '''
+copying: public domain
+'''
