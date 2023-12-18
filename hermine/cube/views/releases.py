@@ -4,6 +4,8 @@
 # SPDX-License-Identifier: AGPL-3.0-only
 import csv
 import logging
+from typing import Any
+
 
 from django.contrib import messages
 from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
@@ -29,11 +31,14 @@ from cube.importers import (
     import_spdx_file,
     import_cyclonedx_file,
     SBOMImportFailure,
+    add_product_history,
 )
 from cube.models import (
     Release,
     Usage,
     Generic,
+    History,
+    Product
 )
 from cube.utils.licenses import (
     get_usages_obligations,
@@ -114,6 +119,9 @@ class ReleaseImportView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView)
                     default_project_name=form.cleaned_data.get("default_project_name"),
                     default_scope_name=form.cleaned_data.get("default_scope_name"),
                 )
+            ################### Added by JEMAI Ahmed [Issue 207]#############################""
+            add_product_history(self.request.FILES["file"],str(self.request.FILES["file"]).split(".")[-1],form.cleaned_data.get("linking"), self.request.user,self.object)
+            #########################################
         except SBOMImportFailure as e:
             form.add_error("file", e)
             return super().form_invalid(form)
@@ -134,7 +142,15 @@ class ReleaseImportView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView)
 
         return super().form_valid(form)
 
+############ Added bu JEMAI Ahmed [Issue 207]#################
+    def get_context_data(self, **kwargs: Any):
 
+        context=super().get_context_data(**kwargs)
+        history_model_data = History.objects.filter(related_release = self.object)
+        context['history_model_data'] = history_model_data
+
+        return context
+########################################
 class ReleaseObligationsView(
     LoginRequiredMixin, PermissionRequiredMixin, generic.DetailView
 ):
