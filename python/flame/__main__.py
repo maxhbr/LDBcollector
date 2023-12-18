@@ -24,10 +24,26 @@ def get_parser():
         formatter_class=RawTextHelpFormatter,
     )
 
+    parser.add_argument('-ndu', '--no-dual-update',
+                        action='store_true',
+                        help='do not update dual licenses (e.g. GPL-2.0-or-later -> GPL-2.0-only OR GPL-3.0-only)',
+                        default=False)
+
+    parser.add_argument('-of', '--output-format',
+                        type=str,
+                        help=f'Chose output format. Available formats: {", ".join(OUTPUT_FORMATS)}',
+                        default="text")
+
     parser.add_argument('-v', '--verbose',
                         action='store_true',
                         help='output verbose information',
                         default=False)
+
+    parser.add_argument('-V', '--version',
+                        action='store_true',
+                        help='output version information',
+                        default=False)
+    parser.set_defaults(which='version', func=version_info)
 
     parser.add_argument('-d', '--debug',
                         action='store_true',
@@ -38,17 +54,6 @@ def get_parser():
                         action='store_true',
                         help='check all license files against JSON schema when initializing. Mainly for the flame developers.',
                         default=False)
-
-    parser.add_argument('-V', '--version',
-                        action='store_true',
-                        help='output version information',
-                        default=False)
-    parser.set_defaults(which='version', func=version_info)
-
-    parser.add_argument('-of', '--output-format',
-                        type=str,
-                        help=f'Chose output format. Available formats: {", ".join(OUTPUT_FORMATS)}',
-                        default="text")
 
     subparsers = parser.add_subparsers(help='Sub commands')
 
@@ -72,6 +77,12 @@ def get_parser():
     parser_c.add_argument('--validate-spdx', action='store_true', dest='validate_spdx', help='Validate that the resulting license expression is valid according to SPDX syntax', default=False)
     parser_c.add_argument('--validate-relaxed', action='store_true', dest='validate_relaxed', help='Validate that the resulting license expression is valid according to SPDX syntax, but allow non SPDX identifiers ', default=False)
     parser_c.add_argument('--validate-osadl', action='store_true', dest='validate_osadl', help='Validate that the resulting licenses are supported by OSADL\'s compatibility matrix', default=False)
+
+    # simplify
+    parser_s = subparsers.add_parser(
+        'simplify', help='Simplify a license (SPDX syntax) expression, e.g. "MIT AND MIT" -> "MIT"')
+    parser_s.set_defaults(which='simplify', func=simplify)
+    parser_s.add_argument('license_expression', type=str, nargs='+', help='license expression to simplify')
 
     # aliases
     parser_a = subparsers.add_parser(
@@ -112,6 +123,10 @@ def licenses(fl, formatter, args):
     all_licenses = fl.licenses()
     return formatter.format_licenses(all_licenses, args.verbose)
 
+def simplify(fl, formatter, args):
+    simplified = fl.simplify(args.license_expression)
+    return str(simplified) # formatter.format_licenses(all_licenses, args.verbose)
+
 def compats(fl, formatter, args):
     all_compats = fl.compatibility_as_list()
     return formatter.format_compat_list(all_compats, args.verbose)
@@ -125,7 +140,7 @@ def compatibility(fl, formatter, args):
     return formatter.format_compatibilities(compatibilities, args.verbose)
 
 def show_license(fl, formatter, args):
-    expression = fl.expression_license(" ".join(args.license))
+    expression = fl.expression_license(" ".join(args.license), update_dual=(not args.no_dual_update))
     return formatter.format_expression(expression, args.verbose)
 
 def full_license(fl, formatter, args):
