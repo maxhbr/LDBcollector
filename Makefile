@@ -9,7 +9,7 @@ check: license python clean check-reuse build
 check_license_files:
 
 # all JSON files should have a LICENSE file
-	@for lf in `find var/licenses -name "*.json"`; \
+	@for lf in `find var/licenses -name "*.json" | grep -v -e compounds.json -e duals.json`; \
 		do \
 			LICENSE_FILE=`echo $$lf | sed 's/\.json/\.LICENSE/g'` ; \
 			echo "$$lf";\
