@@ -1,4 +1,7 @@
-import sys
+# SPDX-FileCopyrightText: 2023 Henrik Sandklef
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+
 import pytest
 
 from flame.license_db import FossLicenses
@@ -33,7 +36,6 @@ def test_aliases_bad_input():
 
 def test_expression_license():
     lic = fl.expression_license("GPL2+", update_dual=False)
-    print("lic: " + str(lic), file=sys.stderr)
     assert lic['identified_license'] == "GPL-2.0-or-later"
 
     lic = fl.expression_license("GPL (v2 or later)", update_dual=False)
