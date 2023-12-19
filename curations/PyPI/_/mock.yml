@@ -1,4 +1,4 @@
-- id: "PyPI::mock:(,5.1.0["
+- id: "PyPI::mock:(,5.1.0]"
   curations:
     comment: |
       The package's metadata data only declares an unspecific "BSD License", 

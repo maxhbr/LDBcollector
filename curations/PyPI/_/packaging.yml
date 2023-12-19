@@ -1,4 +1,4 @@
-- id: "PyPI::packaging:(,23.2["
+- id: "PyPI::packaging:(,23.2]"
   curations:
     comment: |
       The library is licensed under BSD-2-Clause, see:

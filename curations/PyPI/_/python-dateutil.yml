@@ -1,4 +1,4 @@
-- id: "PyPI::python-dateutil:(,2.8.2["
+- id: "PyPI::python-dateutil:(,2.8.2]"
   curations:
     comment: |
       The LICENSE file states that contributions after 2017-12-01 as well as older
