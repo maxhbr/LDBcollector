@@ -256,9 +256,6 @@ class FossLicenses:
                                                       allow_letter=True)
         replacements += ret['identifications']
 
-
-
-        
         # Manage dual licenses (such as GPL-2.0-or-later)
         updates_object = self.__update_or_later(ret['license_expression'])
         updates = updates_object['updates']
@@ -433,7 +430,7 @@ class FossLicenses:
 
     def simplify(self, expression):
         return self.license_expression.parse(' '.join(expression)).simplify()
-    
+
     def expression_compatibility_as(self, license_expression, validations=None, update_dual=True):
         """Returns an object with information about the compatibility status for the license given.
 
