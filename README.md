@@ -8,9 +8,15 @@ SPDX-License-Identifier: GPL-3.0-or-later
 
 A database with meta data for FOSS licenses adding useful information to existing licenses aiming at simplifying compliance work. The meta data consists of:
 
-* compatibility as (another license)
+* other names or aliases for licenses (e.g. "GNU GPL v. 2" is replaced by "GPL-2.0-only")
 
-* other names (aliases)
+* fixes for compound license written as one single license or using faulty syntax (e.g. "GPL-2.0-with-classpath-exception" -> "GPL-2.0-only WITH Classpath-exception-2.0")
+
+* other names for operators (e.g. "||" is replaced by "OR")
+
+* translation of license with dual license features to a compound license expression (e.g. "GPL-2.0-or-later" -> "GPL-2.0-only OR GPL-3.0-only")
+
+* compatibility as another license (e.g. "X11-Style (Keith Packard)" is compatibility wise the same as "HPND")
 
 * license text
 
@@ -73,8 +79,7 @@ made under our license (for the code and data).
 
 # Acknowledgements
 
-* [Nexb](https://www.nexb.com/) for their general and generous work in FOSS compliance, especially [scancode](https://github.com/nexB/scancode-toolkit) and [ScanCode LicenseDB](https://scancode-licensedb.aboutcode.org/).
-
+* [Nexb](https://www.nexb.com/) for their FOSS compliance tools, especially [scancode](https://github.com/nexB/scancode-toolkit) and [ScanCode LicenseDB](https://scancode-licensedb.aboutcode.org/).
 
 * [Max Huber](https://github.com/maxhbr) for [LDBcollector](https://github.com/maxhbr/LDBcollector)
 
@@ -82,12 +87,57 @@ made under our license (for the code and data).
 
 # Technical notes
 
-## Finding and replacing 
+## Normalizing license expressions
 
-To search for needles, in our case license expressions, (e.g. "BSD 0-Clause") to replace (with e.g. "0BSD") we use the following strategy:
+We fix your license expressions with the following methods (listed in order)
+
+### Normalize aliases
+
+With our database we can replace a license like "GPLv2+" to the SPDX
+identifier "GPL-2.0-or-later". We do this by searching for needles and
+replace them. To search for needles, in our case license expressions,
+(e.g. "BSD 0-Clause") to replace (with e.g. "0BSD") we use the
+following strategy:
 
 * list all needles in order of length, longest first
 
 * for each needle find and replace
 
 This is a naive approach but given the limited data at hand it should work.
+
+### Normalize compound license expressions
+
+Some compound licenses (e.g. "GPL-2.0-only WITH
+Classpath-exception-2.0") are stated incorrectly (e.g. "GPL-2.0-only
+AND Classpath-exception-2.0") or as a singe license
+(""GPL-2.0-with-classpath-exception). The license expression is
+scanned for licenses as listed in `var/compounds.json` and replaced
+accordingly.
+
+## Normalize operators
+
+The license expression is scanned for operators as listed in
+`var/operators.json` and replaced accordingly (e.g. "||" is replaced
+by "OR").
+
+## Normalize dual licenses
+
+Some licenses have a built in dual license feature
+(e.g. "GPL-2.0-or-later"). We replace such licenses with the
+corresponding dual licenses.
+
+As an example: "GPL-2.0-or-later" is replacde by "(GPL-2.0-only OR GPL-3.0-only")
+
+## Insert same compatibility as another license
+
+Some licenses are not supported by the OSADL license matrix (e.g.
+"X11-Style (Keith Packard)") but the license is very similar and has
+the same compatibility towards other licenses as another license
+(e.g. "HPND").
+
+To allow for tools (e.g. flict) to check compatibility of an inbound
+license expression against an outbound license expression we replace
+the unknown license with the known and with same compatibility.
+
+
+

@@ -6,6 +6,7 @@ import collections
 import glob
 import json
 import logging
+import os
 import re
 from pathlib import Path
 import license_expression
@@ -28,6 +29,10 @@ LICENSES_TAG = 'licenses'
 ALIASES_TAG = 'aliases'
 COMPATS_TAG = 'compats'
 NAME_TAG = 'name'
+DUALS_TAG = 'dual-licenses'
+DUAL_LICENSES_TAG = 'dual-licenses'
+DUAL_NEWER_TAG = 'newer-versions'
+COMPOUNDS_TAG = 'compounds'
 
 LICENSE_OPERATORS_TAG = 'license_operators'
 
@@ -87,24 +92,48 @@ class FossLicenses:
         self.license_db = {}
         licenses = {}
         aliases = {}
+        duals = {}
         scancode_keys = {}
         compats = {}
         logging.debug(f'reading from: {self.license_dir}')
         for license_file in glob.glob(f'{self.license_dir}/*.json'):
             logging.debug(f' * {license_file}')
-            data = self.__read_license_file(license_file, check)
-            licenses[data['spdxid']] = data
-            for alias in data[ALIASES_TAG]:
-                if alias in aliases:
-                    raise FlameException(f'Alias "{alias}" -> {data["spdxid"]} already defined as "{aliases[alias]}".')
+            if os.path.basename(license_file) == "compounds.json":
+                # some compound licenses are incorrectly stated as
+                # one, e.g. "GPL-2.0-with-classpath-exception" which
+                # should be "GPL-2.0-only WITH
+                # Classpath-exception-2.0". This file provides
+                # translations for such
+                data = self.__read_json(license_file)
+                for compound in data[COMPOUNDS_TAG]:
+                    licenses[compound['spdxid']] = compound
+                    for alias in compound[ALIASES_TAG]:
+                        if alias in aliases:
+                            raise FlameException(f'Alias "{alias}" -> {compound["spdxid"]} already defined as "{aliases[alias]}".')
 
-                aliases[alias] = data['spdxid']
+                        aliases[alias] = compound['spdxid']
+            elif os.path.basename(license_file) == "duals.json":
+                # Read license with built-in dual feature, e.g
+                # "GPL-2.0-or-later" which can be seen as a dual
+                # license "GPL-2.0-only OR GPL-3.0-only"
+                data = self.__read_json(license_file)
+                for dual in data[DUAL_LICENSES_TAG]:
+                    duals[dual['spdxid']] = dual
+            else:
+                data = self.__read_license_file(license_file, check)
+                licenses[data['spdxid']] = data
+                for alias in data[ALIASES_TAG]:
+                    if alias in aliases:
+                        raise FlameException(f'Alias "{alias}" -> {data["spdxid"]} already defined as "{aliases[alias]}".')
+
+                    aliases[alias] = data['spdxid']
             if SCANCODE_KEY_TAG in data:
                 scancode_keys[data[SCANCODE_KEY_TAG]] = data['spdxid']
             if COMPATIBILITY_AS_TAG in data:
                 compats[data['spdxid']] = data[COMPATIBILITY_AS_TAG]
 
         self.license_expression = license_expression.get_spdx_licensing()
+        self.license_db[DUALS_TAG] = duals
         self.license_db[LICENSES_TAG] = licenses
         self.license_db[COMPATS_TAG] = compats
         self.license_db[ALIASES_TAG] = aliases
@@ -142,7 +171,6 @@ class FossLicenses:
             else:
                 reg_exp = r'( |\(|^|\)|\||/)%s( |$|\)|\||&)' % re.escape(needle)
                 extra_add = ""
-
             if re.search(reg_exp, license_expression):
                 replacement = needles[needle]
                 replacements.append({
@@ -156,7 +184,39 @@ class FossLicenses:
             "identifications": replacements,
         }
 
-    def expression_license(self, license_expression):
+    def __update_or_later(self, license_expression):
+        updates = []
+        new_expr = []
+        for lic in re.split(r'(AND|OR|\(|\))', license_expression):
+            if lic.strip() == "":
+                continue
+            trimmed_license = lic.strip().split()[0]
+            if trimmed_license in self.license_db[DUALS_TAG]:
+                newer_list = self.license_db[DUALS_TAG][trimmed_license][DUAL_NEWER_TAG]
+                inner_new = []
+                for newer in newer_list:
+                    if len(inner_new) > 0:
+                        inner_new.append('OR')
+                    inner_new.append(lic.replace(trimmed_license, newer))
+                inner_new_str = f' ( {" ".join(inner_new)} ) '
+                updates.append({
+                    'license-expression': lic,
+                    'license': trimmed_license,
+                    'updates': newer_list,
+                    'updated-license': inner_new_str,
+                })
+
+                new_expr.append(inner_new_str)
+            else:
+                new_expr.append(lic)
+        ret = ' '.join(new_expr)
+        return {
+            "input_license_expression": license_expression,
+            "license_expression": ret,
+            "updates": updates,
+        }
+
+    def expression_license(self, license_expression, update_dual=True):
         """
         Return an object with information about the normalized license for the license given.
 
@@ -196,12 +256,23 @@ class FossLicenses:
                                                       allow_letter=True)
         replacements += ret['identifications']
 
-        license_parsed = str(self.license_expression.parse(ret['license_expression']))
+        # Manage dual licenses (such as GPL-2.0-or-later)
+        updates_object = self.__update_or_later(ret['license_expression'])
+        updates = updates_object['updates']
+        updated_license = str(self.license_expression.parse(updates_object['license_expression']))
+
+        if update_dual:
+            license_parsed = updated_license
+        else:
+            license_parsed = str(self.license_expression.parse(ret['license_expression']))
 
         return {
             'queried_license': license_expression,
             'identified_license': license_parsed,
             'identifications': replacements,
+            'updated_license': updated_license,
+            'license_parsed': license_parsed,
+            'updates': updates,
         }
 
     def licenses(self):
@@ -357,7 +428,10 @@ class FossLicenses:
             },
         }
 
-    def expression_compatibility_as(self, license_expression, validations=None):
+    def simplify(self, expression):
+        return self.license_expression.parse(' '.join(expression)).simplify()
+
+    def expression_compatibility_as(self, license_expression, validations=None, update_dual=True):
         """Returns an object with information about the compatibility status for the license given.
 
         :param str license_expression: A license expression. E.g "BSD3" or "GPLv2+ || BSD3"
@@ -370,7 +444,7 @@ class FossLicenses:
         HPND
 
         """
-        expression_full = self.expression_license(license_expression)
+        expression_full = self.expression_license(license_expression, update_dual)
         compats = []
         ret = self.__update_license_expression_helper(self.license_db[COMPATS_TAG],
                                                       "compat",
@@ -379,7 +453,8 @@ class FossLicenses:
         compats = ret['identifications']
         compat_license_expression = ret['license_expression']
 
-        compat_licenses = [x.strip() for x in re.split("OR|AND", compat_license_expression)]
+        compat_licenses = [x.strip() for x in re.split("\(|OR|AND|\)", compat_license_expression)]
+        compat_licenses = [x for x in compat_licenses if x]
         compat_support = self.__validate_compatibilities_support(compat_licenses)
 
         if validations:
