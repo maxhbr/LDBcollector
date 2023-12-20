@@ -53,11 +53,15 @@ jobs:
   CI:
     runs-on: ubuntu-latest
     if: always()
-    needs: [run_ci_matrix, after_ci_matrix]
+    needs: [skip_check, run_ci_matrix, after_ci_matrix]
     steps:
       - run: |
+          skipped="${{ needs.skip_check.outputs.should_skip }}"
           passed="${{ needs.after_ci_matrix.outputs.success }}"
-          if [[ $passed == "true" ]]; then
+          if [[ $skipped == "true" ]]; then
+            echo "CI matrix skipped"
+            exit 0
+          elif [[ $passed == "true" ]]; then
             echo "CI matrix passed"
             exit 0
           else
