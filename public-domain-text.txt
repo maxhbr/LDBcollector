@@ -574,10 +574,58 @@ This code is public domain software.
 '''
 
 package = abseil-cpp
+          tzdata 
 location = https://github.com/abseil/abseil-cpp/blob/c8a2f92586fe9b4e1aff049108f5db8064924d8e/absl/time/internal/cctz/src/tzfile.h#L8
+           https://github.com/eggert/tz/blob/main/asctime.c#n4
+           https://github.com/eggert/tz/blob/main/tzfile.5#n1
+           https://github.com/eggert/tz/blob/main/tzfile.h#n8
+           https://github.com/eggert/tz/blob/main/difftime.c#n4
+           https://github.com/eggert/tz/blob/main/localtime.c#n4
+           https://github.com/eggert/tz/blob/main/private.h#n8
+           https://github.com/eggert/tz/blob/main/time2posix.3#n1
 text = '''
 This file is in the public domain, so clarified as of
 1996-06-05 by Arthur David Olson.
+'''
+
+package = tzdata
+location = https://github.com/eggert/tz/blob/main/zic.c#n4
+text = '''
+This file is in the public domain, so clarified as of
+2006-07-17 by Arthur David Olson.
+'''
+
+package = tzdata
+location = https://github.com/eggert/tz/blob/main/checklinks.awk#n3
+           https://github.com/eggert/tz/blob/main/checknow.awk#n3
+           https://github.com/eggert/tz/blob/main/checktab.awk#n3
+           https://github.com/eggert/tz/blob/main/tzselect.ksh#n9
+           https://github.com/eggert/tz/blob/main/ziguard.awk#n3
+           https://github.com/eggert/tz/blob/main/zishrink.awk#n3
+text = '''
+Contributed by Paul Eggert.  This file is in the public domain.
+'''
+
+package = tzdata
+location = https://github.com/eggert/tz/blob/main/README#n53
+text = '''
+This file is in the public domain, so clarified as of 2009-05-17 by
+Arthur David Olson.  The other files in this distribution are either
+public domain or BSD licensed; see the file LICENSE for details.
+'''
+
+package = tzdata
+location = https://github.com/eggert/tz/blob/main/LICENSE#n1
+text = '''
+Unless specified below, all files in the tz code and data (including
+this LICENSE file) are in the public domain.
+'''
+
+package = tzdata
+location = https://github.com/eggert/tz/blob/main/tz-how-to.html#n712
+text = '''
+This web page is in the public domain, so clarified as of
+2015-10-20 by Bill Seymour.
 '''
 
 package = ecl
@@ -841,6 +889,20 @@ location = https://github.com/eggert/tz/blob/main/zone.tab
            https://github.com/eggert/tz/blob/main/asia
            https://github.com/eggert/tz/blob/main/antarctica
            https://github.com/eggert/tz/blob/main/africa
+           https://github.com/eggert/tz/blob/main/southamerica#n3
+           https://github.com/eggert/tz/blob/main/tzselect.8#n1
+           https://github.com/eggert/tz/blob/main/zdump.8#n1
+           https://github.com/eggert/tz/blob/main/zdump.c#n4
+           https://github.com/eggert/tz/blob/main/zic.8#n1
+           https://github.com/eggert/tz/blob/main/calendars#n167
+           https://github.com/eggert/tz/blob/main/date.1#n1
+           https://github.com/eggert/tz/blob/main/workman.sh#n4
+           https://github.com/eggert/tz/blob/main/Makefile#n2
+           https://github.com/eggert/tz/blob/main/newctime.3#n1
+           https://github.com/eggert/tz/blob/main/newtzset.3#n1
+           https://github.com/eggert/tz/blob/main/tz-link.html#n1220
+           https://github.com/eggert/tz/blob/main/tz-art.html#n643
+           https://github.com/eggert/tz/blob/main/theory.html#n1497
 text = '''
 # This file is in the public domain, so clarified as of
 # 2009-05-17 by Arthur David Olson.
@@ -853,6 +915,9 @@ package = tzdata
           varnish
 location = https://github.com/eggert/tz/blob/main/zone1970.tab
            https://github.com/eggert/tz/blob/main/backzone
+           https://github.com/eggert/tz/blob/main/leapseconds.awk#n3
+           https://github.com/eggert/tz/blob/main/CONTRIBUTING#n97
+           https://github.com/eggert/tz/blob/main/NEWS#n6099
            https://github.com/abseil/abseil-cpp/blob/c8a2f92586fe9b4e1aff049108f5db8064924d8e/absl/time/internal/cctz/testdata/zoneinfo/zone1970.tab#L3
            https://sourceware.org/cgit/binutils-gdb/tree/libiberty/basename.c#n2
            https://sourceware.org/cgit/binutils-gdb/tree/libiberty/insque.c#n2
