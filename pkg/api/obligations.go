@@ -50,10 +50,7 @@ func GetAllObligation(c *gin.Context) {
 		c.JSON(http.StatusBadRequest, er)
 		return
 	}
-	// FIXME: this query is not filtering
-	query := db.DB.Debug().Where(&models.Obligation{Active: parsedActive})
-	err = query.Find(&obligations).Error
-	if err != nil {
+	if err = db.DB.Where("active = ?", parsedActive).Find(&obligations).Error; err != nil {
 		er := models.LicenseError{
 			Status:    http.StatusNotFound,
 			Message:   "Obligations not found",
@@ -91,7 +88,7 @@ func GetObligation(c *gin.Context) {
 	var obligation models.Obligation
 	query := db.DB.Model(&obligation)
 	tp := c.Param("topic")
-	if err := query.Where(models.Obligation{Active: true, Topic: tp}).First(&obligation).Error; err != nil {
+	if err := query.Where(models.Obligation{Topic: tp}).First(&obligation).Error; err != nil {
 		er := models.LicenseError{
 			Status:    http.StatusNotFound,
 			Message:   fmt.Sprintf("obligation with topic '%s' not found", tp),

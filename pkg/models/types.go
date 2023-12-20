@@ -204,13 +204,13 @@ type AuditResponse struct {
 // Obligation represents an obligation record in the database.
 type Obligation struct {
 	Id             int64  `json:"id" gorm:"primary_key" example:"147"`
-	Topic          string `json:"topic" example:"copyleft"`
+	Topic          string `json:"topic" gorm:"unique" example:"copyleft"`
 	Type           string `json:"type" enums:"obligation,restriction,risk,right"`
 	Text           string `json:"text" example:"Source code be made available when distributing the software."`
 	Classification string `json:"classification" enums:"green,white,yellow,red"`
 	Modifications  bool   `json:"modifications"`
 	Comment        string `json:"comment" example:"This is a comment."`
-	Active         bool   `json:"active"`
+	Active         bool   `json:"active" gorm:"column:active"`
 	TextUpdatable  bool   `json:"text_updatable"`
 	Md5            string `json:"md5" gorm:"unique" example:"deadbeef"`
 }
