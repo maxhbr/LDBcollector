@@ -254,6 +254,17 @@ func UpdateObligation(c *gin.Context) {
 		c.JSON(http.StatusBadRequest, er)
 		return
 	}
+	if oldobligation.TextUpdatable == false && update.Text != "" && update.Text != oldobligation.Text {
+		er := models.LicenseError{
+			Status:    http.StatusBadRequest,
+			Message:   "Can not update obligation text",
+			Error:     "Invalid Request",
+			Path:      c.Request.URL.Path,
+			Timestamp: time.Now().Format(time.RFC3339),
+		}
+		c.JSON(http.StatusBadRequest, er)
+		return
+	}
 	if err := db.DB.Model(&obligation).Updates(update).Error; err != nil {
 		er := models.LicenseError{
 			Status:    http.StatusInternalServerError,
@@ -295,25 +306,13 @@ func UpdateObligation(c *gin.Context) {
 		db.DB.Create(&change)
 	}
 	if oldobligation.Text != obligation.Text {
-		if oldobligation.TextUpdatable == true {
-			change := models.ChangeLog{
-				AuditId:      audit.Id,
-				Field:        "Text",
-				OldValue:     oldobligation.Text,
-				UpdatedValue: obligation.Text,
-			}
-			db.DB.Create(&change)
-		} else {
-			er := models.LicenseError{
-				Status:    http.StatusBadRequest,
-				Message:   "Can not update obligation text",
-				Error:     "Invalid Request",
-				Path:      c.Request.URL.Path,
-				Timestamp: time.Now().Format(time.RFC3339),
-			}
-			c.JSON(http.StatusBadRequest, er)
-			return
+		change := models.ChangeLog{
+			AuditId:      audit.Id,
+			Field:        "Text",
+			OldValue:     oldobligation.Text,
+			UpdatedValue: obligation.Text,
 		}
+		db.DB.Create(&change)
 	}
 	if oldobligation.Classification == obligation.Classification {
 		change := models.ChangeLog{
