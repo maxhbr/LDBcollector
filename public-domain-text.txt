@@ -1062,3 +1062,9 @@ Long text:
 Made with Natural Earth. Free vector and raster map data @ naturalearthdata.com.
 '''
 
+package = attract-mode
+location = https://github.com/mickelson/attract/blob/master/extlibs/gameswf/gameswf/gameswf_abc.cpp#L3
+text = '''
+This source code has been donated to the Public Domain.  Do
+whatever you want with it.
+'''
