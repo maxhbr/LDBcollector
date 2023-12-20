@@ -95,6 +95,11 @@ func Router() *gin.Engine {
 			obligations.PATCH(":topic", UpdateObligation)
 			obligations.DELETE(":topic", DeleteObligation)
 		}
+		obMap := authorizedv1.Group("/obligation_maps")
+		{
+			obMap.PATCH("topic/:topic/license", PatchObligationMap)
+			obMap.PUT("topic/:topic/license", UpdateLicenseInObligationMap)
+		}
 	}
 
 	// Host the swagger UI at /swagger/index.html
