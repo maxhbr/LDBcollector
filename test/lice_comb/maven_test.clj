@@ -80,4 +80,5 @@
     (is (valid= #{"EPL-2.0"}    (gav->expressions "quil"                "quil"        "4.3.1323")))                   ; Clojars
     (is (valid= #{"EPL-2.0"}    (gav->expressions "quil"                "quil"        "4.3.1426-5368295-SNAPSHOT")))  ; Clojars, SNAPSHOT
     (is (valid= #{"EPL-1.0"}    (gav->expressions "org.clojure"         "clojure"     "1.11.1")))                     ; Maven Central
+    (is (valid= #{"EPL-1.0"}    (gav->expressions "org.clojure"         "clojure"     "1.12.0-alpha5")))              ; Maven Central, custom suffix
     (is (valid= #{"Apache-2.0"} (gav->expressions "org.springframework" "spring-core" "6.1.0")))))                    ; Maven Central
