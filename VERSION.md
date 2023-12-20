@@ -6,9 +6,21 @@ SPDX-License-Identifier: GPL-3.0-or-later
 
 
 
+# 0.1.8
+
+* Dual license support
+
+* Compound license support
+
+* more licenses
+
+* Python:
+
+* simplify option
+
 # 0.1.7
 
-* Python: add reauired files to dist (pypi)
+* Python: add required files to dist (pypi)
 
 # 0.1.6
 
