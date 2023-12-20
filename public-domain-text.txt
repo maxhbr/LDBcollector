@@ -1086,4 +1086,12 @@ descriptions are © 1997-2005 Sean Eron Anderson. The code and descriptions are
 distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY and
 without even the implied warranty of merchantability or fitness for a particular
 purpose.
-''' 
+'''
+
+package = python-pyahocorasick
+location = https://github.com/search?q=repo%3AWojciechMula%2Fpyahocorasick+Public+Domain&type=code
+text = '''
+Author    : Wojciech Muła, wojciech_mula@poczta.onet.pl
+WWW       : http://0x80.pl
+License   : public domain
+'''
