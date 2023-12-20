@@ -27,6 +27,7 @@
         "3-clause BSD",
         "Three-clause BSD-style",
         "bsd_3",
+        "Modified BSD Licens",
         "Modified BSD Licence",
         "modified BSD Licence",
         "Modified BSD (3-clause)",
@@ -55,6 +56,10 @@
         "BSD3-clause",
         "BSD 3-Clause",
         "BSD3-like",
-        "new BSD License"
+        "new BSD License",
+        "BSD-3-clause New",
+        "BSD 3-Clause \"New\"",
+        "BSD License (BSD-3-Clause)",
+        "BSD License (BSD License)"
     ]
 }
