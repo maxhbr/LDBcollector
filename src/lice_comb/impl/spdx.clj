@@ -41,7 +41,7 @@
 (def license-list-d   (delay (map sl/id->info @license-ids-d)))
 (def exception-list-d (delay (map se/id->info @exception-ids-d)))
 
-; The unlisted license refs lice-comb uses (note: the unlisted one usually has a hyphen then a base62 suffix appended)
+; The license refs lice-comb uses (note: the unidentified one usually has a hyphen then a base62 suffix appended)
 (def ^:private lice-comb-license-ref-prefix       "LicenseRef-lice-comb")
 (def ^:private public-domain-license-ref          (str lice-comb-license-ref-prefix "-PUBLIC-DOMAIN"))
 (def ^:private proprietary-commercial-license-ref (str lice-comb-license-ref-prefix "-PROPRIETARY-COMMERCIAL"))
@@ -115,7 +115,7 @@
   nil or is not a lice-comb unidentified LicenseRef."
   [id]
   (when (unidentified? id)
-    (str "Unlisted ("
+    (str "Unidentified ("
          (if (> (count id) (count unidentified-license-ref-prefix))
            (lciu/base62-decode (subs id (inc (count unidentified-license-ref-prefix))))
            "-original name not available-")

@@ -128,13 +128,16 @@
 
 (defmethod text->expressions java.lang.String
   [s]
-  ; These clj-spdx APIs are *expensive*, so we paralellise them
-  (let [exc (future (sm/exceptions-within-text s @lcis/exception-ids-d))
-        lic (sm/licenses-within-text s @lcis/license-ids-d)
-        ids (set/union lic @exc)]
-    (when ids
-      ; We don't need to sexp/normalise the keys here, as we never detect an expression from a text
-      (manual-fixes (into {} (map #(hash-map % (list {:id % :type :concluded :confidence :high :strategy :spdx-text-matching})) ids))))))
+  ; clj-spdx's *-within-text APIs are *expensive* but support batching, so we check batches of ids in parallel
+  (let [num-cpus             (.availableProcessors (Runtime/getRuntime))
+        license-id-batches   (partition num-cpus @lcis/license-ids-d)
+        exception-id-batches (partition num-cpus @lcis/exception-ids-d)
+        license-ids-found    (apply set/union (lciu/pmap* #(sm/licenses-within-text   s %) license-id-batches))
+        exception-ids-found  (apply set/union (lciu/pmap* #(sm/exceptions-within-text s %) exception-id-batches))
+        ids-found            (set/union license-ids-found exception-ids-found)]
+    (when ids-found
+      ; Note: we don't need to sexp/normalise the keys here, as we never detect an expression from a text
+      (manual-fixes (into {} (map #(hash-map % (list {:id % :type :concluded :confidence :high :strategy :spdx-text-matching})) ids-found))))))
 
 (defmethod text->expressions java.io.Reader
   [r]

@@ -104,6 +104,25 @@
          (when-let [remote-uri (first (filter lcihttp/uri-resolves? (map #(str % "/" ga-path "/maven-metadata.xml") (vals remote-maven-repos))))]
            (java.net.URI. remote-uri)))))))
 
+(defn gav->metadata-uri
+  "Returns a java.net.URI pointing to the maven-metadata.xml for the given GAV,
+  or nil if one cannot be found.  The returned URI is guaranteed to be
+  resolvable - either to a file that exists in the local Maven cache, or to an
+  HTTP-accessible resource on a remote Maven repository (i.e. Maven Central or
+  Clojars) that resolves."
+  ([{:keys [group-id artifact-id version]}] (gav->metadata-uri group-id artifact-id version))
+  ([group-id artifact-id version]
+   (when (and (not (s/blank? group-id))
+              (not (s/blank? artifact-id))
+              (not (s/blank? version)))
+     (let [gav-path             (str (s/replace group-id "." "/") "/" artifact-id "/" version)
+           local-metadata-paths (map #(str gav-path "/maven-metadata-" % ".xml") (keys remote-maven-repos))]
+       (if-let [local-metadata-file (first (filter #(and (.exists ^java.io.File %) (.isFile ^java.io.File %))
+                                                   (map #(io/file (str @local-maven-repo-d "/" %)) (map #(s/replace % "/" separator) local-metadata-paths))))]
+         (.toURI ^java.io.File local-metadata-file)
+         (when-let [remote-uri (first (filter lcihttp/uri-resolves? (map #(str % "/" gav-path "/maven-metadata.xml") (vals remote-maven-repos))))]
+           (java.net.URI. remote-uri)))))))
+
 (defn ga-latest-version
   "Determines the latest version of the given GA as a String, or nil if a
   version cannot be determined."
@@ -114,6 +133,23 @@
         (if-let [latest-version (xml-find-first-string metadata-xml [:metadata :versioning :latest])]
           latest-version
           (last (xi/find-all metadata-xml [:metadata :versioning :versions :version])))))))
+
+(defn- snapshot-version?
+  "Is version a SNAPSHOT?"
+  [version]
+  (s/ends-with? version "-SNAPSHOT"))
+
+(defn- resolve-snapshot-version
+  "If version is a SNAPSHOT, resolves the version string used in the filenames (which is different to the public version string)."
+  [group-id artifact-id version]
+  (if (snapshot-version? version)
+    (when-let [metadata-uri (gav->metadata-uri group-id artifact-id version)]
+      (with-open [metadata-is (io/input-stream metadata-uri)]
+        (let [metadata-xml (xml/parse metadata-is)
+              timestamp    (xml-find-first-string metadata-xml [:metadata :versioning :snapshot :timestamp])
+              build-number (xml-find-first-string metadata-xml [:metadata :versioning :snapshot :buildNumber])]
+          (str (s/replace version "SNAPSHOT" (str timestamp "-" build-number))))))
+    version))
 
 (defn gav->pom-uri
   "Returns a java.net.URI pointing to the POM for the given GAV, or nil
@@ -126,8 +162,9 @@
   ([group-id artifact-id version]
    (when (and (not (s/blank? group-id))
               (not (s/blank? artifact-id)))
-     (let [version   (or version (ga-latest-version group-id artifact-id))
-           gav-path  (str (s/replace group-id "." "/") "/" artifact-id "/" version "/" artifact-id "-" version ".pom")
+     (let [version      (or version (ga-latest-version group-id artifact-id))
+           file-version (resolve-snapshot-version group-id artifact-id version)
+           gav-path     (str (s/replace group-id "." "/") "/" artifact-id "/" version "/" artifact-id "-" file-version ".pom")
            local-pom (io/file (str @local-maven-repo-d separator (s/replace gav-path "/" separator)))]
        (if (and (.exists local-pom)
                 (.isFile local-pom))
