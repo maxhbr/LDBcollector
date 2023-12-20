@@ -330,6 +330,31 @@ definitions:
     - topic
     - type
     type: object
+  models.ObligationMapResponse:
+    properties:
+      data:
+        items:
+          $ref: '#/definitions/models.ObligationMapUser'
+        type: array
+      paginationmeta:
+        $ref: '#/definitions/models.PaginationMeta'
+      status:
+        example: 200
+        type: integer
+    type: object
+  models.ObligationMapUser:
+    properties:
+      shortnames:
+        example:
+        - GPL-2.0-only
+        - GPL-2.0-or-later
+        items:
+          type: string
+        type: array
+      topic:
+        example: copyleft
+        type: string
+    type: object
   models.ObligationResponse:
     properties:
       data:
@@ -754,6 +779,58 @@ paths:
       summary: Update a license
       tags:
       - Licenses
+  /obligation_maps/license/{license}:
+    get:
+      consumes:
+      - application/json
+      description: Get obligation maps for a given license shortname
+      operationId: GetObligationMapByLicense
+      parameters:
+      - description: Shortname of the license
+        in: path
+        name: license
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.ObligationMapResponse'
+        "404":
+          description: No license with given shortname found or no map for
+          schema:
+            $ref: '#/definitions/models.LicenseError'
+      summary: Get maps for a license
+      tags:
+      - Obligations
+  /obligation_maps/topic/{topic}:
+    get:
+      consumes:
+      - application/json
+      description: Get obligation maps for a given obligation topic
+      operationId: GetObligationMapByTopic
+      parameters:
+      - description: Topic of the obligation
+        in: path
+        name: topic
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.ObligationMapResponse'
+        "404":
+          description: No obligation with given topic found or no map for
+          schema:
+            $ref: '#/definitions/models.LicenseError'
+      summary: Get maps for an obligation
+      tags:
+      - Obligations
   /obligations:
     get:
       consumes:

@@ -240,6 +240,13 @@ type UpdateObligation struct {
 	TextUpdatable  bool   `json:"text_updatable"`
 }
 
+// ObligationResponse represents the response format for obligation data.
+type ObligationResponse struct {
+	Status int            `json:"status" example:"200"`
+	Data   []Obligation   `json:"data"`
+	Meta   PaginationMeta `json:"paginationmeta"`
+}
+
 // ObligationMap represents the mapping between an obligation and a license.
 type ObligationMap struct {
 	ObligationPk int64      `json:"obligation_pk"`
@@ -249,9 +256,15 @@ type ObligationMap struct {
 	LicenseDB    LicenseDB  `gorm:"foreignKey:RfPk;references:Id" json:"-"`
 }
 
-// ObligationResponse represents the response format for obligation data.
-type ObligationResponse struct {
-	Status int            `json:"status" example:"200"`
-	Data   []Obligation   `json:"data"`
-	Meta   PaginationMeta `json:"paginationmeta"`
+// ObligationMapUser Structure with obligation topic and license shortname list, a simple representation for user.
+type ObligationMapUser struct {
+	Topic      string   `json:"topic" example:"copyleft"`
+	Shortnames []string `json:"shortnames" example:"GPL-2.0-only,GPL-2.0-or-later"`
+}
+
+// ObligationMapResponse response format for obligation map data.
+type ObligationMapResponse struct {
+	Status int                 `json:"status" example:"200"`
+	Data   []ObligationMapUser `json:"data"`
+	Meta   PaginationMeta      `json:"paginationmeta"`
 }

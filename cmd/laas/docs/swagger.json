@@ -459,6 +459,84 @@
                 }
             }
         },
+        "/obligation_maps/license/{license}": {
+            "get": {
+                "description": "Get obligation maps for a given license shortname",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Obligations"
+                ],
+                "summary": "Get maps for a license",
+                "operationId": "GetObligationMapByLicense",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "Shortname of the license",
+                        "name": "license",
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/models.ObligationMapResponse"
+                        }
+                    },
+                    "404": {
+                        "description": "No license with given shortname found or no map for",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    }
+                }
+            }
+        },
+        "/obligation_maps/topic/{topic}": {
+            "get": {
+                "description": "Get obligation maps for a given obligation topic",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Obligations"
+                ],
+                "summary": "Get maps for an obligation",
+                "operationId": "GetObligationMapByTopic",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "Topic of the obligation",
+                        "name": "topic",
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/models.ObligationMapResponse"
+                        }
+                    },
+                    "404": {
+                        "description": "No obligation with given topic found or no map for",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    }
+                }
+            }
+        },
         "/obligations": {
             "get": {
                 "description": "Get all active obligations from the service",
@@ -1342,6 +1420,43 @@
                         "risk",
                         "right"
                     ]
+                }
+            }
+        },
+        "models.ObligationMapResponse": {
+            "type": "object",
+            "properties": {
+                "data": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/models.ObligationMapUser"
+                    }
+                },
+                "paginationmeta": {
+                    "$ref": "#/definitions/models.PaginationMeta"
+                },
+                "status": {
+                    "type": "integer",
+                    "example": 200
+                }
+            }
+        },
+        "models.ObligationMapUser": {
+            "type": "object",
+            "properties": {
+                "shortnames": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "example": [
+                        "GPL-2.0-only",
+                        "GPL-2.0-or-later"
+                    ]
+                },
+                "topic": {
+                    "type": "string",
+                    "example": "copyleft"
                 }
             }
         },
