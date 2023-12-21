@@ -2,6 +2,8 @@
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
 
+import json
+import logging
 import os
 
 SW_VERSION = "0.1.8"
@@ -43,3 +45,19 @@ COPYRIGHT
 
 ATTRIBUTION
 """
+
+def read_config():
+    for path in [
+        os.environ.get('FLAME_USER_CONFIG'),
+        os.path.join(os.environ.get('HOME', '/does/not/exist'), '.floss-flame.cfg'),
+    ]:
+        logging.debug("try reading: " + str(path))
+        try:
+            with open(path) as fp:
+                logging.debug("data found: ")
+                return json.load(fp)
+        except Exception as e:
+            logging.debug("file not found: ")
+            logging.debug(str(e))
+            pass
+    return {}
