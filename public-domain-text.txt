@@ -1160,3 +1160,11 @@ Author    : Wojciech Muła, wojciech_mula@poczta.onet.pl
 WWW       : http://0x80.pl
 License   : public domain
 '''
+
+package = python-commoncode
+location = https://github.com/nexB/commoncode/blob/main/src/commoncode/functional.py#L31C1-L35C68
+text = '''
+Originally derived from http://www.andreasen.org/misc/util.py
+2002-2005 by Erwin S. Andreasen -- http://www.andreasen.org/misc.shtml
+This file is in the Public Domain
+'''
