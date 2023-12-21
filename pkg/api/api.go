@@ -48,6 +48,9 @@ func Router() *gin.Engine {
 	// return error for invalid routes
 	r.NoRoute(HandleInvalidUrl)
 
+	// CORS middleware
+	r.Use(auth.CORSMiddleware())
+
 	unAuthorizedv1 := r.Group("/api/v1")
 	{
 		licenses := unAuthorizedv1.Group("/licenses")
