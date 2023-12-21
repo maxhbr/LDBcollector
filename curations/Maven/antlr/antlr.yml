@@ -21,3 +21,10 @@
       hash:
         value: "802655c343cc7806aaf1ec2177a0e663ff209de1"
         algorithm: "SHA1"
+- id: "Maven:antlr:antlr:2.7.7"
+  curations:
+    comment: |
+      Version 2.7.7 declares "BSD License" in its POM, which is wrong when looking at the `LICENSE.txt` contained in the
+      source artifact. Instead, it is the ANTLR-specific Public Domain license.
+    declared_license_mapping:
+      BSD License: "ANTLR-PD"
