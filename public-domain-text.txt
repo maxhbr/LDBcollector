@@ -574,10 +574,58 @@ This code is public domain software.
 '''
 
 package = abseil-cpp
+          tzdata 
 location = https://github.com/abseil/abseil-cpp/blob/c8a2f92586fe9b4e1aff049108f5db8064924d8e/absl/time/internal/cctz/src/tzfile.h#L8
+           https://github.com/eggert/tz/blob/main/asctime.c#L4
+           https://github.com/eggert/tz/blob/main/tzfile.5#L1
+           https://github.com/eggert/tz/blob/main/tzfile.h#L8
+           https://github.com/eggert/tz/blob/main/difftime.c#L4
+           https://github.com/eggert/tz/blob/main/localtime.c#L4
+           https://github.com/eggert/tz/blob/main/private.h#L8
+           https://github.com/eggert/tz/blob/main/time2posix.3#L1
 text = '''
 This file is in the public domain, so clarified as of
 1996-06-05 by Arthur David Olson.
+'''
+
+package = tzdata
+location = https://github.com/eggert/tz/blob/main/zic.c#L4
+text = '''
+This file is in the public domain, so clarified as of
+2006-07-17 by Arthur David Olson.
+'''
+
+package = tzdata
+location = https://github.com/eggert/tz/blob/main/checklinks.awk#L3
+           https://github.com/eggert/tz/blob/main/checknow.awk#L3
+           https://github.com/eggert/tz/blob/main/checktab.awk#L3
+           https://github.com/eggert/tz/blob/main/tzselect.ksh#L9
+           https://github.com/eggert/tz/blob/main/ziguard.awk#L3
+           https://github.com/eggert/tz/blob/main/zishrink.awk#L3
+text = '''
+Contributed by Paul Eggert.  This file is in the public domain.
+'''
+
+package = tzdata
+location = https://github.com/eggert/tz/blob/main/README#L53
+text = '''
+This file is in the public domain, so clarified as of 2009-05-17 by
+Arthur David Olson.  The other files in this distribution are either
+public domain or BSD licensed; see the file LICENSE for details.
+'''
+
+package = tzdata
+location = https://github.com/eggert/tz/blob/main/LICENSE#L1
+text = '''
+Unless specified below, all files in the tz code and data (including
+this LICENSE file) are in the public domain.
+'''
+
+package = tzdata
+location = https://github.com/eggert/tz/blob/main/tz-how-to.html#L712
+text = '''
+This web page is in the public domain, so clarified as of
+2015-10-20 by Bill Seymour.
 '''
 
 package = ecl
@@ -830,17 +878,31 @@ The files contain no AT&T code and are in the public domain.
 '''
 
 package = tzdata
-location = https://github.com/eggert/tz/blob/main/zone.tab
-           https://github.com/eggert/tz/blob/main/backward
-           https://github.com/eggert/tz/blob/main/northamerica
-           https://github.com/eggert/tz/blob/main/iso3166.tab
-           https://github.com/eggert/tz/blob/main/factory
-           https://github.com/eggert/tz/blob/main/europe
-           https://github.com/eggert/tz/blob/main/etcetera
-           https://github.com/eggert/tz/blob/main/australasia
-           https://github.com/eggert/tz/blob/main/asia
-           https://github.com/eggert/tz/blob/main/antarctica
-           https://github.com/eggert/tz/blob/main/africa
+location = https://github.com/eggert/tz/blob/main/zone.tab#L3
+           https://github.com/eggert/tz/blob/main/backward#L3
+           https://github.com/eggert/tz/blob/main/northamerica#L3
+           https://github.com/eggert/tz/blob/main/iso3166.tab#L3
+           https://github.com/eggert/tz/blob/main/factory#L3
+           https://github.com/eggert/tz/blob/main/europe#L3
+           https://github.com/eggert/tz/blob/main/etcetera#L3
+           https://github.com/eggert/tz/blob/main/australasia#L3
+           https://github.com/eggert/tz/blob/main/asia#L3
+           https://github.com/eggert/tz/blob/main/antarctica#L3
+           https://github.com/eggert/tz/blob/main/africa#L3
+           https://github.com/eggert/tz/blob/main/southamerica#L3
+           https://github.com/eggert/tz/blob/main/tzselect.8#L1
+           https://github.com/eggert/tz/blob/main/zdump.8#L1
+           https://github.com/eggert/tz/blob/main/zdump.c#L4
+           https://github.com/eggert/tz/blob/main/zic.8#L1
+           https://github.com/eggert/tz/blob/main/calendars#L167
+           https://github.com/eggert/tz/blob/main/date.1#L1
+           https://github.com/eggert/tz/blob/main/workman.sh#L4
+           https://github.com/eggert/tz/blob/main/Makefile#L2
+           https://github.com/eggert/tz/blob/main/newctime.3#L1
+           https://github.com/eggert/tz/blob/main/newtzset.3#L1
+           https://github.com/eggert/tz/blob/main/tz-link.html#L1220
+           https://github.com/eggert/tz/blob/main/tz-art.html#L643
+           https://github.com/eggert/tz/blob/main/theory.html#L1497
 text = '''
 # This file is in the public domain, so clarified as of
 # 2009-05-17 by Arthur David Olson.
@@ -851,8 +913,11 @@ package = tzdata
           gdb
           binutils
           varnish
-location = https://github.com/eggert/tz/blob/main/zone1970.tab
-           https://github.com/eggert/tz/blob/main/backzone
+location = https://github.com/eggert/tz/blob/main/zone1970.tab#L3
+           https://github.com/eggert/tz/blob/main/backzone#L3
+           https://github.com/eggert/tz/blob/main/leapseconds.awk#L3
+           https://github.com/eggert/tz/blob/main/CONTRIBUTING#L97
+           https://github.com/eggert/tz/blob/main/NEWS#L6105
            https://github.com/abseil/abseil-cpp/blob/c8a2f92586fe9b4e1aff049108f5db8064924d8e/absl/time/internal/cctz/testdata/zoneinfo/zone1970.tab#L3
            https://sourceware.org/cgit/binutils-gdb/tree/libiberty/basename.c#n2
            https://sourceware.org/cgit/binutils-gdb/tree/libiberty/insque.c#n2
