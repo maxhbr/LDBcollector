@@ -21,10 +21,10 @@
   license information."
   (:require [clojure.string                  :as s]
             [clojure.tools.logging           :as log]
+            [embroidery.api                  :as e]
             [lice-comb.maven                 :as lcmvn]
             [lice-comb.files                 :as lcf]
-            [lice-comb.impl.expressions-info :as lciei]
-            [lice-comb.impl.utils            :as lciu]))
+            [lice-comb.impl.expressions-info :as lciei]))
 
 (defn- normalise-dep
   "Normalises a dep, by removing any classifier suffixes from the artifact-id
@@ -60,15 +60,15 @@
                                    nil))]
         gav-expressions
         ; If we didn't find any licenses in the dep's POM, check the dep's JAR(s)
-        (into {} (filter identity (lciu/pmap* #(try
-                                                 (lcf/zip->expressions-info %)
-                                                 (catch javax.xml.stream.XMLStreamException xse
-                                                   (log/warn (str "Failed to parse pom inside " % " - ignoring") xse)
-                                                   nil)
-                                                 (catch java.util.zip.ZipException ze
-                                                   (log/warn (str "Failed to unzip " % " - ignoring") ze)
-                                                   nil))
-                                              (:paths info))))))))
+        (into {} (filter identity (e/pmap* #(try
+                                              (lcf/zip->expressions-info %)
+                                              (catch javax.xml.stream.XMLStreamException xse
+                                                (log/warn (str "Failed to parse pom inside " % " - ignoring") xse)
+                                                nil)
+                                              (catch java.util.zip.ZipException ze
+                                                (log/warn (str "Failed to unzip " % " - ignoring") ze)
+                                                nil))
+                                           (:paths info))))))))
 
 (defmulti dep->expressions-info
   "Returns an expressions-info map for the given tools.dep dep (a MapEntry or

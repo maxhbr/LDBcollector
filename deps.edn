@@ -27,7 +27,8 @@
     dev.weavejester/medley                {:mvn/version "1.7.0"}
     miikka/clj-base62                     {:mvn/version "0.1.1"}
     com.github.pmonks/clj-spdx            {:mvn/version "1.0.126"}
-    com.github.pmonks/rencg               {:mvn/version "1.0.34"}}
+    com.github.pmonks/rencg               {:mvn/version "1.0.34"}
+    com.github.pmonks/embroidery          {:mvn/version "0.1.13"}}
  :aliases
    {:build {:deps       {com.github.pmonks/pbr {:mvn/version "RELEASE"}}
             :ns-default pbr.build}}}

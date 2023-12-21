@@ -22,7 +22,7 @@
 
 (println "\n☔️ Running tests on Clojure" (clojure-version) "/ JVM" (System/getProperty "java.version") (str "(" (System/getProperty "java.vm.name") " v" (System/getProperty "java.vm.version") ")\n"))
 
-(println "⚠️ Note: these tests take around 5 minutes 🐢")
+(println "⚠️ Note: these tests take between 5 and 10 minutes 🐢")
 
 ; Here we hack up a "global once" function
 (def ^:private global-setup (delay
