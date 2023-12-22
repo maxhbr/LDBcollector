@@ -34,8 +34,7 @@ This library leverages, and is inspired by, the *excellent* [SPDX project](https
 #### Clojure CLI
 
 ```shell
-$ # Where #.#.# is replaced with an actual version number (see badge above)
-$ clj -Sdeps '{:deps {com.github.pmonks/lice-comb {:mvn/version "#.#.#"}}}'
+$ clj -Sdeps '{:deps {com.github.pmonks/lice-comb {:mvn/version "RELEASE"}}}'
 ```
 
 #### Leiningen

@@ -26,6 +26,7 @@
             [spdx.exceptions                 :as se]
             [spdx.matching                   :as sm]
             [spdx.expressions                :as sexp]
+            [embroidery.api                  :as e]
             [lice-comb.impl.spdx             :as lcis]
             [lice-comb.impl.regex-matching   :as lcirm]
             [lice-comb.impl.expressions-info :as lciei]
@@ -132,8 +133,8 @@
   (let [num-cpus             (.availableProcessors (Runtime/getRuntime))
         license-id-batches   (partition num-cpus @lcis/license-ids-d)
         exception-id-batches (partition num-cpus @lcis/exception-ids-d)
-        license-ids-found    (apply set/union (lciu/pmap* #(sm/licenses-within-text   s %) license-id-batches))
-        exception-ids-found  (apply set/union (lciu/pmap* #(sm/exceptions-within-text s %) exception-id-batches))
+        license-ids-found    (apply set/union (e/pmap* #(sm/licenses-within-text   s %) license-id-batches))
+        exception-ids-found  (apply set/union (e/pmap* #(sm/exceptions-within-text s %) exception-id-batches))
         ids-found            (set/union license-ids-found exception-ids-found)]
     (when ids-found
       ; Note: we don't need to sexp/normalise the keys here, as we never detect an expression from a text

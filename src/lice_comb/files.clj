@@ -22,6 +22,7 @@
   (:require [clojure.string                  :as s]
             [clojure.java.io                 :as io]
             [clojure.tools.logging           :as log]
+            [embroidery.api                  :as e]
             [lice-comb.matching              :as lcmtch]
             [lice-comb.maven                 :as lcmvn]
             [lice-comb.impl.expressions-info :as lciei]
@@ -145,19 +146,19 @@
   ([dir {:keys [include-zips?] :or {include-zips? false}}]
    (when (lciu/readable-dir? dir)
      (lciei/prepend-source (lciu/filepath dir)
-                           (let [file-expressions (into {} (filter identity (lciu/pmap* #(try
-                                                                                           (file->expressions-info %)
+                           (let [file-expressions (into {} (filter identity (e/pmap* #(try
+                                                                                        (file->expressions-info %)
+                                                                                        (catch Exception e
+                                                                                          (log/warn (str "Unexpected exception while processing " % " - ignoring") e)
+                                                                                          nil))
+                                                                                     (probable-license-files dir))))]
+                             (if include-zips?
+                               (let [zip-expressions (into {} (filter identity (e/pmap* #(try
+                                                                                           (zip->expressions-info %)
                                                                                            (catch Exception e
                                                                                              (log/warn (str "Unexpected exception while processing " % " - ignoring") e)
                                                                                              nil))
-                                                                                        (probable-license-files dir))))]
-                             (if include-zips?
-                               (let [zip-expressions (into {} (filter identity (lciu/pmap* #(try
-                                                                                              (zip->expressions-info %)
-                                                                                              (catch Exception e
-                                                                                                (log/warn (str "Unexpected exception while processing " % " - ignoring") e)
-                                                                                                nil))
-                                                                                           (zip-compressed-files dir))))]
+                                                                                        (zip-compressed-files dir))))]
                                  (merge file-expressions zip-expressions))
                                file-expressions))))))
 
