@@ -13,6 +13,13 @@ ___
 ___
 
 
+### AG Frankfurt, Urteil v. 05.01.2022, Az. 	30 C 4113/20 (47)
+
+Kein Schadensersatz bei Verletzung von CC-Lizenz oder GNU FDL. Keine Erstattung von Abmahnkosten, wenn Lizenzen nicht zutreffend in Abmahnung genannt werden.
+
+Link: [https://www.ifross.org/Fremdartikel/OLG_Muenchen_Urteil_6_U_4750_20.pdf](https://www.rv.hessenrecht.hessen.de/bshe/document/LARE220002983/part/L)
+
+
 ### OLG München, Urteil v. 20.05.2021, Az. 6 U 4750/20
 
 Keine Einhaltung von Lizenzbedingungen von CC-BY-SA-3.0 auf Twitter und Facebook durch Verlinkung, Notwendigkeit der eigenen Erfüllung der Lizenzpflichten im Social-Media-Beitrag
