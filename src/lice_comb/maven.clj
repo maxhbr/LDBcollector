@@ -124,8 +124,8 @@
            (java.net.URI. remote-uri)))))))
 
 (defn ga-latest-version
-  "Determines the latest version of the given GA as a String, or nil if a
-  version cannot be determined."
+  "Determines the latest version of the given GA as a String, or nil if it
+  cannot be determined."
   [group-id artifact-id]
   (when-let [metadata-uri (ga->metadata-uri group-id artifact-id)]
     (with-open [metadata-is (io/input-stream metadata-uri)]
@@ -134,13 +134,24 @@
           latest-version
           (last (xi/find-all metadata-xml [:metadata :versioning :versions :version])))))))
 
+(defn ga-release-version
+  "Determines the release version (if any) of the given GA as a String, or nil
+  if it cannot be determined."
+  [group-id artifact-id]
+  (when-let [metadata-uri (ga->metadata-uri group-id artifact-id)]
+    (with-open [metadata-is (io/input-stream metadata-uri)]
+      (let [metadata-xml (xml/parse metadata-is)]
+        (xml-find-first-string metadata-xml [:metadata :versioning :release])))))
+
 (defn- snapshot-version?
   "Is version a SNAPSHOT?"
   [version]
-  (s/ends-with? version "-SNAPSHOT"))
+  (and (not (s/blank? version))
+       (s/ends-with? (s/upper-case version) "-SNAPSHOT")))
 
 (defn- resolve-snapshot-version
-  "If version is a SNAPSHOT, resolves the version string used in the filenames (which is different to the public version string)."
+  "If version is a SNAPSHOT, resolves the version string used in the filenames
+  (which is different to the public version string)."
   [group-id artifact-id version]
   (if (snapshot-version? version)
     (when-let [metadata-uri (gav->metadata-uri group-id artifact-id version)]
@@ -148,21 +159,32 @@
         (let [metadata-xml (xml/parse metadata-is)
               timestamp    (xml-find-first-string metadata-xml [:metadata :versioning :snapshot :timestamp])
               build-number (xml-find-first-string metadata-xml [:metadata :versioning :snapshot :buildNumber])]
-          (str (s/replace version "SNAPSHOT" (str timestamp "-" build-number))))))
+          (str (s/replace version #"(?i)SNAPSHOT" (str timestamp "-" build-number))))))
     version))
 
+(defn- release-version?
+  "Is version a RELEASE?"
+  [version]
+  (and (not (s/blank? version))
+       (= (s/upper-case version) "RELEASE")))
+
 (defn gav->pom-uri
-  "Returns a java.net.URI pointing to the POM for the given GAV, or nil
-  if one cannot be found.  The returned URI is guaranteed to be resolvable -
-  either to a file that exists in the local Maven cache, or to an HTTP-
-  accessible resource on a remote Maven repository (i.e. Maven Central or
-  Clojars) that resolves."
+  "Returns a java.net.URI pointing to the POM for the given GAV, or nil if one
+  cannot be found.  The returned URI is guaranteed to be resolvable - either to
+  a file that exists in the local Maven cache, or to an HTTP-accessible resource
+  on a remote Maven repository (i.e. Maven Central or Clojars) that resolves.
+
+  If version is not provided, determines the latest version (which may be a
+  SNAPSHOT) and uses that."
   ([{:keys [group-id artifact-id version]}] (gav->pom-uri group-id artifact-id version))
   ([group-id artifact-id]                   (gav->pom-uri group-id artifact-id nil))
   ([group-id artifact-id version]
    (when (and (not (s/blank? group-id))
               (not (s/blank? artifact-id)))
-     (let [version      (or version (ga-latest-version group-id artifact-id))
+     (let [version      (-> (or version (ga-latest-version group-id artifact-id))
+                            (s/replace #"(?i)-SNAPSHOT\z" "-SNAPSHOT")  ; Normalise case of SNAPSHOT versions
+                            (s/replace #"(?i)\ARELEASE\z" "RELEASE"))   ; Normalise case of RELEASE versions
+           version      (if (release-version? version) (ga-release-version group-id artifact-id) version)
            file-version (resolve-snapshot-version group-id artifact-id version)
            gav-path     (str (s/replace group-id "." "/") "/" artifact-id "/" version "/" artifact-id "-" file-version ".pom")
            local-pom (io/file (str @local-maven-repo-d separator (s/replace gav-path "/" separator)))]
