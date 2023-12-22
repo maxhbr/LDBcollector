@@ -64,7 +64,7 @@ urlpatterns = [
         name="component_update",
     ),
     path(
-        "components/<int:pk>/update_funding/",
+        "components/<int:component_id>/update_funding/",
         views.component_update_funding,
         name="component_update_funding",
     ),
