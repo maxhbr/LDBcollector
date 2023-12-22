@@ -6,7 +6,7 @@
 %endif
 
 Name:           fedora-license-data
-Version:        1.36
+Version:        1.37
 Release:        1%{?dist}
 Summary:        Fedora Linux license data
 
@@ -97,6 +97,12 @@ make check-grammar
 
 
 %changelog
+* Fri Dec 22 2023 Miroslav Suchý <msuchy@redhat.com> 1.37-1
+- add license HPND-Kevlin-Henney
+- add license FSFAP-no-warranty-disclaimer
+- add not allowed license LicenseRef-Nikto
+- add LicenseRef-Fedora-Firmware
+
 * Thu Dec 07 2023 Miroslav Suchý <msuchy@redhat.com> 1.36-1
 - new license: TCP-wrappers
 - new license: LicenseRef-Not-Copyrightable
