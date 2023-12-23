@@ -1178,3 +1178,9 @@ enhancements, which I'll incorporate in future versions of the
 program. Please leave the original attribution information intact so
 that credit and blame may be properly apportioned.
 '''
+
+package = openshadinglanguage
+location = https://github.com/AcademySoftwareFoundation/OpenShadingLanguage/blob/cbb0e28159509db58ef7d2058db3acbdb2233703/src/doc/docs.css#L7C4-L7C84
+text = '''
+Licensed as public domain or BSD 2-clause, whichever is more convenient for you.
+'''
