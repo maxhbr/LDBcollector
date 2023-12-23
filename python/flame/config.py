@@ -5,6 +5,7 @@
 import json
 import logging
 import os
+import flame.exception
 
 SW_VERSION = "0.1.8"
 
@@ -46,18 +47,39 @@ COPYRIGHT
 ATTRIBUTION
 """
 
-def read_config():
+
+
+
+def __read_config_helper(path):
+    logging.debug("try reading: " + str(path))
+    print("try reading: " + str(path))
+    try:
+        with open(path) as fp:
+            logging.debug("data found: ")
+            return json.load(fp)
+    except Exception as e:
+        logging.debug(f'file not found or usable: {path}')
+        logging.debug(str(e))
+    raise flame.exception.FlameException(f'Could not read file: {path}')
+    
+    
+def read_config(config=None):
     for path in [
-        os.environ.get('FLAME_USER_CONFIG'),
-        os.path.join(os.environ.get('HOME', '/does/not/exist'), '.floss-flame.cfg'),
+            config,
+            os.environ.get('FLAME_USER_CONFIG', None),
     ]:
-        logging.debug("try reading: " + str(path))
+        print("try: " + str(path))
+        if path:
+            try:
+                return __read_config_helper(path)
+            except Exception as e:
+                raise flame.exception.FlameException(f'Could not read user specified file: {path}')
+    
+    for path in [
+            os.path.join(os.environ.get('HOME', '/does/not/exist'), '.floss-flame.cfg'),
+    ]:
         try:
-            with open(path) as fp:
-                logging.debug("data found: ")
-                return json.load(fp)
+            return __read_config_helper(config)
         except Exception as e:
-            logging.debug("file not found: ")
-            logging.debug(str(e))
             pass
     return {}
