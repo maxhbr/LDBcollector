@@ -1168,3 +1168,13 @@ Originally derived from http://www.andreasen.org/misc/util.py
 2002-2005 by Erwin S. Andreasen -- http://www.andreasen.org/misc.shtml
 This file is in the Public Domain
 '''
+
+package = remind
+location = https://git.skoll.ca/Skollsoft-Public/Remind/src/branch/master/src/moon.c#L56
+text = '''
+This program is in the public domain: "Do what thou wilt shall be the
+whole of the law". I'd appreciate receiving any bug fixes and/or
+enhancements, which I'll incorporate in future versions of the
+program. Please leave the original attribution information intact so
+that credit and blame may be properly apportioned.
+'''
