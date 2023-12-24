@@ -52,7 +52,6 @@ ATTRIBUTION
 
 def __read_config_helper(path):
     logging.debug("try reading: " + str(path))
-    print("try reading: " + str(path))
     try:
         with open(path) as fp:
             logging.debug("data found: ")
@@ -68,7 +67,6 @@ def read_config(config=None):
             config,
             os.environ.get('FLAME_USER_CONFIG', None),
     ]:
-        print("try: " + str(path))
         if path:
             try:
                 return __read_config_helper(path)
