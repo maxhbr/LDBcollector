@@ -102,8 +102,8 @@ class FossLicenses:
         license_dirs = [self.license_dir]
         if self.additional_license_dir:
             license_dirs.append(self.additional_license_dir)
-        for dir in license_dirs:
-            for license_file in glob.glob(f'{dir}/*.json'):
+        for license_dir in license_dirs:
+            for license_file in glob.glob(f'{license_dir}/*.json'):
                 logging.debug(f' * {license_file}')
                 if os.path.basename(license_file) == "compounds.json":
                     # some compound licenses are incorrectly stated as
