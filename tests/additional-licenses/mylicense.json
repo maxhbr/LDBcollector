@@ -1,0 +1,10 @@
+{
+    "meta": {
+        "disclaimer": "",
+	"comment": ""
+    },
+    "spdxid": "LicenseRef-mycompany-mylicense",
+    "aliases": [ ],
+    "name": "My Company License",
+    "compatibility_as": "MIT"
+}

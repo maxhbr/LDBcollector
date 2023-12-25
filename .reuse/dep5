@@ -23,6 +23,14 @@ Files: tests/licenses/*.json
 Copyright: 2023 Henrik Sandklef <hesa@sandklef.com>
 License: CC-BY-4.0
 
+Files: tests/additional-licenses/mylicense.*
+Copyright: 2023 Henrik Sandklef <hesa@sandklef.com>
+License: CC-BY-4.0
+
+Files: tests/user.json
+Copyright: 2023 Henrik Sandklef <hesa@sandklef.com>
+License: CC-BY-4.0
+
 Files: var/*.json
 Copyright: 2023 Henrik Sandklef <hesa@sandklef.com>
 License: CC-BY-4.0

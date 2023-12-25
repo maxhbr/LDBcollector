@@ -2,7 +2,10 @@
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
 
+import json
+import logging
 import os
+import flame.exception
 
 SW_VERSION = "0.1.8"
 
@@ -43,3 +46,39 @@ COPYRIGHT
 
 ATTRIBUTION
 """
+
+def __read_config_helper(path):
+    logging.debug(f'try reading: {path}')
+    try:
+        with open(path) as fp:
+            logging.debug("data found: ")
+            return json.load(fp)
+    except Exception as e:
+        logging.debug(f'file not found or usable: {path}')
+        logging.debug(f'exception: {e}')
+    raise flame.exception.FlameException(f'Could not read file: {path}')
+
+def read_config(config=None):
+    logging.debug('reading config')
+    for path in [
+            config,
+            os.environ.get('FLAME_USER_CONFIG', None),
+    ]:
+        logging.debug(f'reading {path}')
+        if path:
+            try:
+                return __read_config_helper(path)
+            except Exception as e:
+                logging.debug(f'reading {path} failed with {e}')
+                raise flame.exception.FlameException(f'Could not read user specified file: {path}')
+
+    for path in [
+            os.path.join(os.environ.get('HOME', '/does/not/exist'), '.floss-flame.cfg'),
+    ]:
+        logging.debug(f'reading {path}')
+        try:
+            return __read_config_helper(config)
+        except Exception as e:
+            logging.debug(f'reading {path} failed with {e}')
+            pass
+    return {}

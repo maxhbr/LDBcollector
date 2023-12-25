@@ -48,7 +48,9 @@ class FossLicenses:
     :param check: enable check of each license against schema
     :type check: boolean
     :param license_dir: directory where licenses (JSON and LICENSE) are located. Used for testing.
+    :param additional_license_dir: add directory to licenses (JSON and LICENSE) are located. Used for extending flame.
     :type license_dir: str
+    :type additional_license_dir: str
     :param logging_level: log level to use
     :type logging_level: Loggin Level
     :raise FlameException: if license_expression is not valid
@@ -57,9 +59,10 @@ class FossLicenses:
     >>> fl = FossLicenses()
 
     """
-    def __init__(self, check=False, license_dir=LICENSE_DIR, logging_level=logging.INFO):
+    def __init__(self, check=False, license_dir=LICENSE_DIR, additional_license_dir=None, logging_level=logging.INFO):
         logging.basicConfig(level=logging_level)
         self.license_dir = license_dir
+        self.additional_license_dir = additional_license_dir
         self.__init_license_db(check)
         self.supported_licenses = None
 
@@ -96,41 +99,45 @@ class FossLicenses:
         scancode_keys = {}
         compats = {}
         logging.debug(f'reading from: {self.license_dir}')
-        for license_file in glob.glob(f'{self.license_dir}/*.json'):
-            logging.debug(f' * {license_file}')
-            if os.path.basename(license_file) == "compounds.json":
-                # some compound licenses are incorrectly stated as
-                # one, e.g. "GPL-2.0-with-classpath-exception" which
-                # should be "GPL-2.0-only WITH
-                # Classpath-exception-2.0". This file provides
-                # translations for such
-                data = self.__read_json(license_file)
-                for compound in data[COMPOUNDS_TAG]:
-                    licenses[compound['spdxid']] = compound
-                    for alias in compound[ALIASES_TAG]:
+        license_dirs = [self.license_dir]
+        if self.additional_license_dir:
+            license_dirs.append(self.additional_license_dir)
+        for license_dir in license_dirs:
+            for license_file in glob.glob(f'{license_dir}/*.json'):
+                logging.debug(f' * {license_file}')
+                if os.path.basename(license_file) == "compounds.json":
+                    # some compound licenses are incorrectly stated as
+                    # one, e.g. "GPL-2.0-with-classpath-exception" which
+                    # should be "GPL-2.0-only WITH
+                    # Classpath-exception-2.0". This file provides
+                    # translations for such
+                    data = self.__read_json(license_file)
+                    for compound in data[COMPOUNDS_TAG]:
+                        licenses[compound['spdxid']] = compound
+                        for alias in compound[ALIASES_TAG]:
+                            if alias in aliases:
+                                raise FlameException(f'Alias "{alias}" -> {compound["spdxid"]} already defined as "{aliases[alias]}".')
+
+                            aliases[alias] = compound['spdxid']
+                elif os.path.basename(license_file) == "duals.json":
+                    # Read license with built-in dual feature, e.g
+                    # "GPL-2.0-or-later" which can be seen as a dual
+                    # license "GPL-2.0-only OR GPL-3.0-only"
+                    data = self.__read_json(license_file)
+                    for dual in data[DUAL_LICENSES_TAG]:
+                        duals[dual['spdxid']] = dual
+                else:
+                    data = self.__read_license_file(license_file, check)
+                    licenses[data['spdxid']] = data
+                    for alias in data[ALIASES_TAG]:
                         if alias in aliases:
-                            raise FlameException(f'Alias "{alias}" -> {compound["spdxid"]} already defined as "{aliases[alias]}".')
+                            raise FlameException(f'Alias "{alias}" -> {data["spdxid"]} already defined as "{aliases[alias]}".')
 
-                        aliases[alias] = compound['spdxid']
-            elif os.path.basename(license_file) == "duals.json":
-                # Read license with built-in dual feature, e.g
-                # "GPL-2.0-or-later" which can be seen as a dual
-                # license "GPL-2.0-only OR GPL-3.0-only"
-                data = self.__read_json(license_file)
-                for dual in data[DUAL_LICENSES_TAG]:
-                    duals[dual['spdxid']] = dual
-            else:
-                data = self.__read_license_file(license_file, check)
-                licenses[data['spdxid']] = data
-                for alias in data[ALIASES_TAG]:
-                    if alias in aliases:
-                        raise FlameException(f'Alias "{alias}" -> {data["spdxid"]} already defined as "{aliases[alias]}".')
-
-                    aliases[alias] = data['spdxid']
-            if SCANCODE_KEY_TAG in data:
-                scancode_keys[data[SCANCODE_KEY_TAG]] = data['spdxid']
-            if COMPATIBILITY_AS_TAG in data:
-                compats[data['spdxid']] = data[COMPATIBILITY_AS_TAG]
+                        aliases[alias] = data['spdxid']
+                if SCANCODE_KEY_TAG in data:
+                    scancode_keys[data[SCANCODE_KEY_TAG]] = data['spdxid']
+                if COMPATIBILITY_AS_TAG in data:
+                    compats[data['spdxid']] = data[COMPATIBILITY_AS_TAG]
 
         self.license_expression = license_expression.get_spdx_licensing()
         self.license_db[DUALS_TAG] = duals
