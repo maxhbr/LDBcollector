@@ -1184,3 +1184,11 @@ location = https://github.com/AcademySoftwareFoundation/OpenShadingLanguage/blob
 text = '''
 Licensed as public domain or BSD 2-clause, whichever is more convenient for you.
 '''
+
+package = rwhoisd
+location = https://github.com/arineng/rwhoisd/blob/master/rwhoisd/mkdb/metaphon.c#L11-L13
+text = '''
+This implementation was written by Gary A. Parker and originally published
+in the June/July, 1991 (vol. 5 nr. 4) issue of C Gazette. As published,
+this code was explicitly placed in the public domain by the author.
+'''
