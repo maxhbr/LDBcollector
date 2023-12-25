@@ -48,7 +48,9 @@ class FossLicenses:
     :param check: enable check of each license against schema
     :type check: boolean
     :param license_dir: directory where licenses (JSON and LICENSE) are located. Used for testing.
+    :param additional_license_dir: add directory to licenses (JSON and LICENSE) are located. Used for extending flame.
     :type license_dir: str
+    :type additional_license_dir: str
     :param logging_level: log level to use
     :type logging_level: Loggin Level
     :raise FlameException: if license_expression is not valid
