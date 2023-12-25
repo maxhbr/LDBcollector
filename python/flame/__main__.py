@@ -173,7 +173,12 @@ def main():
 
     args = parse()
 
-    config = flame.config.read_config(args.flame_config)
+    try:
+        config = flame.config.read_config(args.flame_config)
+    except Exception as e:
+        logging.error(f'{e}')
+        sys.exit(1)
+
     if args.debug:
         logging.basicConfig(level=logging.DEBUG)
 
