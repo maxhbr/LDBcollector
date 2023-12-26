@@ -457,6 +457,12 @@ categorizations:
     categories:
       - "property:AutoConf-or-other-exception"
 
+  # https://spdx.org/licenses/BlueOak-1.0.0.html
+  - id: "BlueOak-1.0.0"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
   - id: "BSD"
     categories:
       - "permissive"
@@ -3512,6 +3518,13 @@ categorizations:
   - id: "LicenseRef-scancode-us-govt-public-domain"
     categories:
       - "public-domain"
+
+  # https:https://scancode-licensedb.aboutcode.org/w3c-community-cla.html//
+  - id: "LicenseRef-scancode-w3c-community-cla"
+    categories:
+      - "permissive"
+      - "property:modification-related-obligations"
+      - "property:include-in-notice-file"
 
   - id: "LicenseRef-scancode-w3c-docs-19990405"
     categories:
