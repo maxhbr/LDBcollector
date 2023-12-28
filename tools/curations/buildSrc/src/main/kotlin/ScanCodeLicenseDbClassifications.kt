@@ -62,7 +62,9 @@ private val LICENSE_EXCEPTION_CATEGORIZATIONS = listOf(
     "GPL-2.0-or-later WITH Classpath-exception-2.0" to CATEGORY_COPYLEFT_LIMITED,
     "GPL-3.0-only WITH Autoconf-exception-3.0" to CATEGORY_COPYLEFT,
     "GPL-3.0-only WITH Classpath-exception-2.0" to CATEGORY_COPYLEFT_LIMITED,
-    "GPL-3.0-or-later WITH Classpath-exception-2.0" to CATEGORY_COPYLEFT_LIMITED
+    "GPL-3.0-only WITH GCC-exception-3.1" to CATEGORY_COPYLEFT,
+    "GPL-3.0-or-later WITH Classpath-exception-2.0" to CATEGORY_COPYLEFT_LIMITED,
+    "GPL-3.0-or-later WITH GCC-exception-3.1" to CATEGORY_COPYLEFT,
 ).map { (license, category) ->
     LicenseCategorization(
         id = SpdxSingleLicenseExpression.parse(license),
