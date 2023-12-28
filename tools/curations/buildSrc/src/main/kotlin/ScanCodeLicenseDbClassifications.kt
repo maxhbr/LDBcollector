@@ -60,8 +60,8 @@ private val LICENSE_EXCEPTION_CATEGORIZATIONS = listOf(
     "Apache-2.0 WITH Swift-exception" to CATEGORY_PERMISSIVE,
     "GPL-2.0-only WITH Classpath-exception-2.0" to CATEGORY_COPYLEFT_LIMITED,
     "GPL-2.0-or-later WITH Classpath-exception-2.0" to CATEGORY_COPYLEFT_LIMITED,
-    "GPL-3.0-only WITH Classpath-exception-2.0" to CATEGORY_COPYLEFT_LIMITED,
     "GPL-3.0-only WITH Autoconf-exception-3.0" to CATEGORY_COPYLEFT,
+    "GPL-3.0-only WITH Classpath-exception-2.0" to CATEGORY_COPYLEFT_LIMITED,
     "GPL-3.0-or-later WITH Classpath-exception-2.0" to CATEGORY_COPYLEFT_LIMITED
 ).map { (license, category) ->
     LicenseCategorization(
