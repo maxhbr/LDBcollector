@@ -187,3 +187,10 @@ Freely redistributable without restriction
 # https://gitlab.com/fedora/legal/fedora-license-data/-/issues/106
 # (which approves use of LicenseRef-Fedora-MaxPermissive for this case)
 # https://gitlab.gnome.org/GNOME/gnome-software/-/issues/2004
+
+package = libmtp
+location = https://github.com/libmtp/libmtp/blob/master/m4/stdint.m4#L3
+text = '''
+This file may be copied and used freely without restrictions.  No warranty
+is expressed or implied.
+'''
