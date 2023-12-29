@@ -14,9 +14,15 @@ broken out to different tables for each category of *allowed*.
 
 [.datatable.dt-search]
 |===
-| Allowed-content | Allowed-documentation | Allowed-fonts | Allowed-firmware | SPDX Expression | Name | Legacy Abbreviation
+| SPDX Expression | Name | Allowed-content | Allowed-documentation | Allowed-fonts | Allowed-firmware | Legacy Abbreviation
 
 {% for license in ALL_ALLOWED_LICENSES -%}
+| {{ spdx_url(license) }}
+| {%- if 'fedora' in license %}
+        {{ license['fedora']['legacy-name']|join(',') }}
+  {%- else -%}
+        {nbsp}
+  {%- endif -%}
 | {%- if ('allowed-content' in license['license']['status']) or ('allowed' in license['license']['status']) -%}
         &#10004;
   {%- else -%}
@@ -34,12 +40,6 @@ broken out to different tables for each category of *allowed*.
   {%- endif -%}
 | {%- if ('allowed-firmware' in license['license']['status']) or ('allowed' in license['license']['status']) -%}
         &#10004;
-  {%- else -%}
-        {nbsp}
-  {%- endif -%}
-| {{ spdx_url(license) }}
-| {%- if 'fedora' in license %}
-        {{ license['fedora']['legacy-name']|join(',') }}
   {%- else -%}
         {nbsp}
   {%- endif -%}
