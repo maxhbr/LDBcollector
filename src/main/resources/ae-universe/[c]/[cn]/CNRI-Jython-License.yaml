@@ -13,6 +13,8 @@ alternativeNames:
   - "CNRI JYTHON"
   - "CNRI-Jython"
   - "CNRI-JYTHON"
+  - "JPython version 1.1.x"
 
 otherIds: 
   - "scancode:cnri-jython"
+  - "scancode:jpython-1.1"
