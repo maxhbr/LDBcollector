@@ -400,8 +400,8 @@ release_router.register(
     r"exploitations", api_views.ExploitationViewSet, basename="releases-exploitations"
 )
 
-version_router = routers.NestedSimpleRouter(router, r"components")
-version_router.register(
+component_router = routers.NestedSimpleRouter(router, r"components", lookup="component")
+component_router.register(
     r"versions", api_views.VersionViewSet, basename="component-versions"
 )
 
@@ -413,7 +413,7 @@ urlpatterns.append(
             + obligation_router.urls
             + product_router.urls
             + release_router.urls
-            + version_router.urls,
+            + component_router.urls,
         ),
     ),
 )

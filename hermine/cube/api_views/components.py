@@ -74,13 +74,13 @@ class VersionViewSet(viewsets.ModelViewSet):
         """
         qs = super().get_queryset()
 
-        if component := self.kwargs.get("nested_1_pk") is not None:
+        if (component := self.kwargs.get("component_pk")) is not None:
             qs = qs.filter(component=component)
 
         return qs
 
     def perform_create(self, serializer):
-        serializer.save(component_id=self.kwargs.get("nested_1_pk"))
+        serializer.save(component_id=self.kwargs.get("component_pk"))
 
     serializer_class = VersionSerializer
     lookup_field = "id"
