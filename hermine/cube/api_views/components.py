@@ -4,6 +4,7 @@
 
 from rest_framework import viewsets
 from rest_framework import generics
+from rest_framework import filters as rf_filters
 from django_filters import rest_framework as filters
 
 from cube.models import Usage, Component, Version
@@ -48,7 +49,8 @@ class ComponentViewSet(viewsets.ModelViewSet):
     queryset = Component.objects.all()
     serializer_class = ComponentSerializer
     lookup_field = "pk"
-    filter_backends = [filters.DjangoFilterBackend]
+    search_fields = ["name"]
+    filter_backends = [filters.DjangoFilterBackend, rf_filters.SearchFilter]
     filterset_fields = ["name", "purl_type"]
 
 
