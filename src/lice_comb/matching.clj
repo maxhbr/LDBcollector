@@ -111,7 +111,7 @@
   * you cannot pass a String representation of a filename to this method - you
     should pass filenames through clojure.java.io/file (or similar) first"
   [text]
-  (lcim/text->expressions text))
+  (lcim/text->expressions-info text))
 
 (defn text->expressions
   "Returns a set of SPDX expressions (Strings) for the given license text (a
@@ -148,7 +148,7 @@
   2. URIs in the SPDX license and exception lists are not unique - the same URI
      may represent multiple licenses and/or exceptions."
   [uri]
-  (lcim/uri->expressions uri))
+  (lcim/uri->expressions-info uri))
 
 (defn uri->expressions
   "Returns the SPDX license and/or exception identifiers (a set of Strings) for

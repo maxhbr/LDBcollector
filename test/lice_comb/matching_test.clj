@@ -70,7 +70,10 @@
     (is (nil? (text->expressions "")))
     (is (nil? (text->expressions "       ")))
     (is (nil? (text->expressions "\n")))
-    (is (nil? (text->expressions "\t")))))
+    (is (nil? (text->expressions "\t"))))
+;  (testing "Single license and single exception get combined into a single expression")
+;    (is (valid= #{"GPL-2.0 WITH Classpath-exception-2.0"} (text->expressions (slurp "https://raw.githubusercontent.com/openjdk/jdk/master/LICENSE"))))  ; Failing due to https://github.com/spdx/license-list-XML/issues/1972
+    )
 
 (deftest name->expressions-tests
   (testing "Nil, empty or blank"
