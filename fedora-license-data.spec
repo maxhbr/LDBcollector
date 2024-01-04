@@ -6,7 +6,7 @@
 %endif
 
 Name:           fedora-license-data
-Version:        1.37
+Version:        1.38
 Release:        1%{?dist}
 Summary:        Fedora Linux license data
 
@@ -97,6 +97,18 @@ make check-grammar
 
 
 %changelog
+* Thu Jan 04 2024 Miroslav Suchý <msuchy@redhat.com> 1.38-1
+- add GPL-2.0-or-later WITH Bison-exception-1.24
+- Add Unicode-3.0 license
+- Add ISC-Veillard license
+- Add mailprio license
+- Add BSD-Systemics-W3Works license
+- Modify .reuse/dep5
+- Add UltraPermissive notices for libmtp
+- public domain dedication for rwhoisd
+- public domain dedication for openshadinglanguage
+- public domain dedication for remind
+
 * Fri Dec 22 2023 Miroslav Suchý <msuchy@redhat.com> 1.37-1
 - add license HPND-Kevlin-Henney
 - add license FSFAP-no-warranty-disclaimer
