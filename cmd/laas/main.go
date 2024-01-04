@@ -63,7 +63,9 @@ func main() {
 		log.Fatalf("Failed to automigrate database: %v", err)
 	}
 
-	db.Populatedb(*populatedb, *datafile)
+	if *populatedb == true {
+		db.Populatedb(*datafile)
+	}
 
 	r := api.Router()
 

@@ -422,12 +422,12 @@ const docTemplate = `{
                         "required": true
                     },
                     {
-                        "description": "Update license body",
+                        "description": "Update license body (requires only the fields to be updated)",
                         "name": "license",
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/models.LicenseDB"
+                            "$ref": "#/definitions/models.LicenseUpdate"
                         }
                     }
                 ],
@@ -479,6 +479,15 @@ const docTemplate = `{
                 ],
                 "summary": "Get all active obligations",
                 "operationId": "GetAllObligation",
+                "parameters": [
+                    {
+                        "type": "boolean",
+                        "description": "Active obligation only",
+                        "name": "active",
+                        "in": "query",
+                        "required": true
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "OK",
@@ -791,6 +800,17 @@ const docTemplate = `{
                 ],
                 "summary": "Create new user",
                 "operationId": "CreateUser",
+                "parameters": [
+                    {
+                        "description": "User to create",
+                        "name": "user",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/models.UserInput"
+                        }
+                    }
+                ],
                 "responses": {
                     "201": {
                         "description": "Created",
@@ -1149,6 +1169,76 @@ const docTemplate = `{
                 }
             }
         },
+        "models.LicenseUpdate": {
+            "type": "object",
+            "properties": {
+                "marydone": {
+                    "type": "boolean"
+                },
+                "rf_FSFfree": {
+                    "type": "boolean"
+                },
+                "rf_Fedora": {
+                    "type": "string"
+                },
+                "rf_GPLv2compatible": {
+                    "type": "boolean"
+                },
+                "rf_GPLv3compatible": {
+                    "type": "boolean"
+                },
+                "rf_OSIapproved": {
+                    "type": "boolean"
+                },
+                "rf_active": {
+                    "type": "boolean"
+                },
+                "rf_add_date": {
+                    "type": "string",
+                    "example": "2023-12-01T18:10:25.00+05:30"
+                },
+                "rf_copyleft": {
+                    "type": "boolean"
+                },
+                "rf_detector_type": {
+                    "type": "integer",
+                    "example": 1
+                },
+                "rf_flag": {
+                    "type": "integer",
+                    "example": 1
+                },
+                "rf_fullname": {
+                    "type": "string",
+                    "example": "MIT License"
+                },
+                "rf_notes": {
+                    "type": "string",
+                    "example": "This license has been superseded."
+                },
+                "rf_risk": {
+                    "type": "integer"
+                },
+                "rf_source": {
+                    "type": "string"
+                },
+                "rf_spdx_id": {
+                    "type": "string",
+                    "example": "MIT"
+                },
+                "rf_text": {
+                    "type": "string",
+                    "example": "MIT License Text here"
+                },
+                "rf_text_updatable": {
+                    "type": "boolean"
+                },
+                "rf_url": {
+                    "type": "string",
+                    "example": "https://opensource.org/licenses/MIT"
+                }
+            }
+        },
         "models.Obligation": {
             "type": "object",
             "properties": {
@@ -1373,14 +1463,17 @@ const docTemplate = `{
         "models.User": {
             "type": "object",
             "required": [
+                "password",
                 "userlevel",
-                "username",
-                "userpassword"
+                "username"
             ],
             "properties": {
                 "id": {
                     "type": "integer",
                     "example": 123
+                },
+                "password": {
+                    "type": "string"
                 },
                 "userlevel": {
                     "type": "string",
@@ -1389,9 +1482,27 @@ const docTemplate = `{
                 "username": {
                     "type": "string",
                     "example": "fossy"
-                },
-                "userpassword": {
+                }
+            }
+        },
+        "models.UserInput": {
+            "type": "object",
+            "required": [
+                "password",
+                "userlevel",
+                "username"
+            ],
+            "properties": {
+                "password": {
                     "type": "string"
+                },
+                "userlevel": {
+                    "type": "string",
+                    "example": "admin"
+                },
+                "username": {
+                    "type": "string",
+                    "example": "fossy"
                 }
             }
         },

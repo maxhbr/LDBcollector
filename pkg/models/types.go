@@ -12,27 +12,27 @@ import "time"
 // properties associated with it.
 // It provides structured storage for license-related information.
 type LicenseDB struct {
-	Id              int64     `json:"rf_id" gorm:"primary_key" example:"123"`
-	Shortname       string    `json:"rf_shortname" gorm:"unique;not null" binding:"required" example:"MIT"`
-	Fullname        string    `json:"rf_fullname" example:"MIT License"`
-	Text            string    `json:"rf_text" example:"MIT License Text here"`
-	Url             string    `json:"rf_url" example:"https://opensource.org/licenses/MIT"`
-	AddDate         time.Time `json:"rf_add_date" gorm:"default:CURRENT_TIMESTAMP" example:"2023-12-01T18:10:25.00+05:30"`
-	Copyleft        bool      `json:"rf_copyleft"`
-	FSFfree         bool      `json:"rf_FSFfree"`
-	OSIapproved     bool      `json:"rf_OSIapproved"`
-	GPLv2compatible bool      `json:"rf_GPLv2compatible"`
-	GPLv3compatible bool      `json:"rf_GPLv3compatible"`
-	Notes           string    `json:"rf_notes" example:"This license has been superseded."`
-	Fedora          string    `json:"rf_Fedora"`
-	TextUpdatable   bool      `json:"rf_text_updatable"`
-	DetectorType    int64     `json:"rf_detector_type" example:"1"`
-	Active          bool      `json:"rf_active"`
-	Source          string    `json:"rf_source"`
-	SpdxId          string    `json:"rf_spdx_id" example:"MIT"`
-	Risk            int64     `json:"rf_risk"`
-	Flag            int64     `json:"rf_flag" gorm:"default:1" example:"1"`
-	Marydone        bool      `json:"marydone"`
+	Id              int64     `json:"rf_id" gorm:"primary_key;column:rf_id" example:"123"`
+	Shortname       string    `json:"rf_shortname" gorm:"unique;not null;column:rf_shortname" binding:"required" example:"MIT"`
+	Fullname        string    `json:"rf_fullname" gorm:"column:rf_fullname" example:"MIT License"`
+	Text            string    `json:"rf_text" gorm:"column:rf_text" example:"MIT License Text here"`
+	Url             string    `json:"rf_url" gorm:"column:rf_url" example:"https://opensource.org/licenses/MIT"`
+	AddDate         time.Time `json:"rf_add_date" gorm:"default:CURRENT_TIMESTAMP;column:rf_add_date" example:"2023-12-01T18:10:25.00+05:30"`
+	Copyleft        bool      `json:"rf_copyleft" gorm:"column:rf_copyleft"`
+	FSFfree         bool      `json:"rf_FSFfree" gorm:"column:rf_FSFfree"`
+	OSIapproved     bool      `json:"rf_OSIapproved" gorm:"column:rf_OSIapproved"`
+	GPLv2compatible bool      `json:"rf_GPLv2compatible" gorm:"column:rf_GPLv2compatible"`
+	GPLv3compatible bool      `json:"rf_GPLv3compatible" gorm:"column:rf_GPLv3compatible"`
+	Notes           string    `json:"rf_notes" gorm:"column:rf_notes" example:"This license has been superseded."`
+	Fedora          string    `json:"rf_Fedora" gorm:"column:rf_Fedora"`
+	TextUpdatable   bool      `json:"rf_text_updatable" gorm:"column:rf_text_updatable"`
+	DetectorType    int64     `json:"rf_detector_type" gorm:"column:rf_detector_type" example:"1"`
+	Active          bool      `json:"rf_active" gorm:"column:rf_active"`
+	Source          string    `json:"rf_source" gorm:"column:rf_source"`
+	SpdxId          string    `json:"rf_spdx_id" gorm:"column:rf_spdx_id" example:"MIT"`
+	Risk            int64     `json:"rf_risk" gorm:"column:rf_risk"`
+	Flag            int64     `json:"rf_flag" gorm:"default:1;column:rf_flag" example:"1"`
+	Marydone        bool      `json:"marydone" gorm:"column:marydone"`
 }
 
 type LicenseJson struct {
@@ -56,6 +56,30 @@ type LicenseJson struct {
 	Risk            string `json:"rf_risk"`
 	Flag            string `json:"rf_flag"`
 	Marydone        string `json:"marydone"`
+}
+
+// LicenseUpdate struct represents the input format for updating an existing license.
+// Note that the license ID and shortname cannot be updated.
+type LicenseUpdate struct {
+	Fullname        string    `json:"rf_fullname" gorm:"column:rf_fullname" example:"MIT License"`
+	Text            string    `json:"rf_text" gorm:"column:rf_text" example:"MIT License Text here"`
+	Url             string    `json:"rf_url" gorm:"column:rf_url" example:"https://opensource.org/licenses/MIT"`
+	AddDate         time.Time `json:"rf_add_date" gorm:"default:CURRENT_TIMESTAMP;column:rf_add_date" example:"2023-12-01T18:10:25.00+05:30"`
+	Copyleft        bool      `json:"rf_copyleft" gorm:"column:rf_copyleft"`
+	FSFfree         bool      `json:"rf_FSFfree" gorm:"column:rf_FSFfree"`
+	OSIapproved     bool      `json:"rf_OSIapproved" gorm:"column:rf_OSIapproved"`
+	GPLv2compatible bool      `json:"rf_GPLv2compatible" gorm:"column:rf_GPLv2compatible"`
+	GPLv3compatible bool      `json:"rf_GPLv3compatible" gorm:"column:rf_GPLv3compatible"`
+	Notes           string    `json:"rf_notes" gorm:"column:rf_notes" example:"This license has been superseded."`
+	Fedora          string    `json:"rf_Fedora" gorm:"column:rf_Fedora"`
+	TextUpdatable   bool      `json:"rf_text_updatable" gorm:"column:rf_text_updatable"`
+	DetectorType    int64     `json:"rf_detector_type" gorm:"column:rf_detector_type" example:"1"`
+	Active          bool      `json:"rf_active" gorm:"column:rf_active"`
+	Source          string    `json:"rf_source" gorm:"column:rf_source"`
+	SpdxId          string    `json:"rf_spdx_id" gorm:"column:rf_spdx_id" example:"MIT"`
+	Risk            int64     `json:"rf_risk" gorm:"column:rf_risk"`
+	Flag            int64     `json:"rf_flag" gorm:"default:1;column:rf_flag" example:"1"`
+	Marydone        bool      `json:"marydone" gorm:"column:marydone"`
 }
 
 // The PaginationMeta struct represents additional metadata associated with a
@@ -116,10 +140,16 @@ type LicenseInput struct {
 
 // User struct is representation of user information.
 type User struct {
-	Id           int64  `json:"id" gorm:"primary_key" example:"123"`
-	Username     string `json:"username" gorm:"unique;not null" binding:"required" example:"fossy"`
-	Userlevel    string `json:"userlevel" binding:"required" example:"admin"`
-	Userpassword string `json:"userpassword" binding:"required"`
+	Id           int64   `json:"id" gorm:"primary_key" example:"123"`
+	Username     string  `json:"username" gorm:"unique;not null" binding:"required" example:"fossy"`
+	Userlevel    string  `json:"userlevel" binding:"required" example:"admin"`
+	Userpassword *string `json:"password,omitempty" binding:"required"`
+}
+
+type UserInput struct {
+	Username     string  `json:"username" gorm:"unique;not null" binding:"required" example:"fossy"`
+	Userlevel    string  `json:"userlevel" binding:"required" example:"admin"`
+	Userpassword *string `json:"password,omitempty" binding:"required"`
 }
 
 // UserResponse struct is representation of design API response of user.
@@ -174,13 +204,13 @@ type AuditResponse struct {
 // Obligation represents an obligation record in the database.
 type Obligation struct {
 	Id             int64  `json:"id" gorm:"primary_key" example:"147"`
-	Topic          string `json:"topic" example:"copyleft"`
+	Topic          string `json:"topic" gorm:"unique" example:"copyleft"`
 	Type           string `json:"type" enums:"obligation,restriction,risk,right"`
 	Text           string `json:"text" example:"Source code be made available when distributing the software."`
 	Classification string `json:"classification" enums:"green,white,yellow,red"`
 	Modifications  bool   `json:"modifications"`
 	Comment        string `json:"comment" example:"This is a comment."`
-	Active         bool   `json:"active"`
+	Active         bool   `json:"active" gorm:"column:active"`
 	TextUpdatable  bool   `json:"text_updatable"`
 	Md5            string `json:"md5" gorm:"unique" example:"deadbeef"`
 }
