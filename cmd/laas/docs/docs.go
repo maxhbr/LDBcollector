@@ -465,6 +465,206 @@ const docTemplate = `{
                 }
             }
         },
+        "/obligation_maps/license/{license}": {
+            "get": {
+                "description": "Get obligation maps for a given license shortname",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Obligations"
+                ],
+                "summary": "Get maps for a license",
+                "operationId": "GetObligationMapByLicense",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "Shortname of the license",
+                        "name": "license",
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/models.ObligationMapResponse"
+                        }
+                    },
+                    "404": {
+                        "description": "No license with given shortname found or no map for",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    }
+                }
+            }
+        },
+        "/obligation_maps/topic/{topic}": {
+            "get": {
+                "description": "Get obligation maps for a given obligation topic",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Obligations"
+                ],
+                "summary": "Get maps for an obligation",
+                "operationId": "GetObligationMapByTopic",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "Topic of the obligation",
+                        "name": "topic",
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/models.ObligationMapResponse"
+                        }
+                    },
+                    "404": {
+                        "description": "No obligation with given topic found or no map for",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    }
+                }
+            }
+        },
+        "/obligation_maps/topic/{topic}/license": {
+            "put": {
+                "security": [
+                    {
+                        "BasicAuth": []
+                    }
+                ],
+                "description": "Replaces the license list of an obligation topic with the given list in the obligation map.",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Obligations"
+                ],
+                "summary": "Change license list",
+                "operationId": "UpdateLicenseInObligationMap",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "Topic of the obligation",
+                        "name": "topic",
+                        "in": "path",
+                        "required": true
+                    },
+                    {
+                        "description": "Shortnames of the licenses to be in map",
+                        "name": "shortnames",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseShortnamesInput"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/models.ObligationMapResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "Invalid json body",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    },
+                    "404": {
+                        "description": "No license or obligation found.",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    }
+                }
+            },
+            "patch": {
+                "security": [
+                    {
+                        "BasicAuth": []
+                    }
+                ],
+                "description": "Add or remove licenses from obligation map for a given obligation topic",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Obligations"
+                ],
+                "summary": "Add or remove licenses from obligation map",
+                "operationId": "PatchObligationMap",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "Topic of the obligation",
+                        "name": "topic",
+                        "in": "path",
+                        "required": true
+                    },
+                    {
+                        "description": "Shortnames of the licenses with action",
+                        "name": "shortname",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseMapShortnamesInput"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/models.ObligationMapResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "Invalid json body",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    },
+                    "404": {
+                        "description": "No license or obligation found.",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    },
+                    "500": {
+                        "description": "Failure to insert new maps",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    }
+                }
+            }
+        },
         "/obligations": {
             "get": {
                 "description": "Get all active obligations from the service",
@@ -1151,6 +1351,30 @@ const docTemplate = `{
                 }
             }
         },
+        "models.LicenseMapShortnamesElement": {
+            "type": "object",
+            "properties": {
+                "add": {
+                    "type": "boolean",
+                    "example": true
+                },
+                "shortname": {
+                    "type": "string",
+                    "example": "GPL-2.0-only"
+                }
+            }
+        },
+        "models.LicenseMapShortnamesInput": {
+            "type": "object",
+            "properties": {
+                "map": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/models.LicenseMapShortnamesElement"
+                    }
+                }
+            }
+        },
         "models.LicenseResponse": {
             "type": "object",
             "properties": {
@@ -1166,6 +1390,21 @@ const docTemplate = `{
                 "status": {
                     "type": "integer",
                     "example": 200
+                }
+            }
+        },
+        "models.LicenseShortnamesInput": {
+            "type": "object",
+            "properties": {
+                "shortnames": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "example": [
+                        "GPL-2.0-only",
+                        "GPL-2.0-or-later"
+                    ]
                 }
             }
         },
@@ -1348,6 +1587,43 @@ const docTemplate = `{
                         "risk",
                         "right"
                     ]
+                }
+            }
+        },
+        "models.ObligationMapResponse": {
+            "type": "object",
+            "properties": {
+                "data": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/models.ObligationMapUser"
+                    }
+                },
+                "paginationmeta": {
+                    "$ref": "#/definitions/models.PaginationMeta"
+                },
+                "status": {
+                    "type": "integer",
+                    "example": 200
+                }
+            }
+        },
+        "models.ObligationMapUser": {
+            "type": "object",
+            "properties": {
+                "shortnames": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "example": [
+                        "GPL-2.0-only",
+                        "GPL-2.0-or-later"
+                    ]
+                },
+                "topic": {
+                    "type": "string",
+                    "example": "copyleft"
                 }
             }
         },
