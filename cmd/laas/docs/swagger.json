@@ -209,6 +209,36 @@
                 }
             }
         },
+        "/health": {
+            "get": {
+                "description": "Check health of the service",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Health"
+                ],
+                "summary": "Check health",
+                "operationId": "getHealth",
+                "responses": {
+                    "200": {
+                        "description": "Heath is OK",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    },
+                    "500": {
+                        "description": "Connection to DB failed",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    }
+                }
+            }
+        },
         "/licenses": {
             "get": {
                 "description": "Filter licenses based on different parameters",
