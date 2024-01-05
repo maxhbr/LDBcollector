@@ -173,7 +173,7 @@ func GetObligationMapByLicense(c *gin.Context) {
 //	@Failure		400			{object}	models.LicenseError	"Invalid json body"
 //	@Failure		404			{object}	models.LicenseError	"No license or obligation found."
 //	@Failure		500			{object}	models.LicenseError	"Failure to insert new maps"
-//	@Security		BasicAuth
+//	@Security		ApiKeyAuth
 //	@Router			/obligation_maps/topic/{topic}/license [patch]
 func PatchObligationMap(c *gin.Context) {
 	var obligation models.Obligation
@@ -261,7 +261,7 @@ func PatchObligationMap(c *gin.Context) {
 //	@Success		200			{object}	models.ObligationMapResponse
 //	@Failure		400			{object}	models.LicenseError	"Invalid json body"
 //	@Failure		404			{object}	models.LicenseError	"No license or obligation found."
-//	@Security		BasicAuth
+//	@Security		ApiKeyAuth
 //	@Router			/obligation_maps/topic/{topic}/license [put]
 func UpdateLicenseInObligationMap(c *gin.Context) {
 	var obligation models.Obligation

@@ -122,7 +122,7 @@ func GetObligation(c *gin.Context) {
 //	@Failure		400			{object}	models.LicenseError	"Bad request body"
 //	@Failure		409			{object}	models.LicenseError	"Obligation with same body exists"
 //	@Failure		500			{object}	models.LicenseError	"Unable to create obligation"
-//	@Security		BasicAuth
+//	@Security		ApiKeyAuth
 //	@Router			/obligations [post]
 func CreateObligation(c *gin.Context) {
 	var input models.ObligationInput
@@ -218,7 +218,7 @@ func CreateObligation(c *gin.Context) {
 //	@Failure		400			{object}	models.LicenseError	"Invalid request"
 //	@Failure		404			{object}	models.LicenseError	"No obligation with given topic found"
 //	@Failure		500			{object}	models.LicenseError	"Unable to update obligation"
-//	@Security		BasicAuth
+//	@Security		ApiKeyAuth
 //	@Router			/obligations/{topic} [patch]
 func UpdateObligation(c *gin.Context) {
 	var update models.UpdateObligation
@@ -386,7 +386,7 @@ func UpdateObligation(c *gin.Context) {
 //	@Param			topic	path	string	true	"Topic of the obligation to be updated"
 //	@Success		204
 //	@Failure		404	{object}	models.LicenseError	"No obligation with given topic found"
-//	@Security		BasicAuth
+//	@Security		ApiKeyAuth
 //	@Router			/obligations/{topic} [delete]
 func DeleteObligation(c *gin.Context) {
 	var obligation models.Obligation

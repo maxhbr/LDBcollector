@@ -10,6 +10,8 @@ import (
 	"flag"
 	"log"
 
+	"github.com/joho/godotenv"
+
 	_ "github.com/fossology/LicenseDb/cmd/laas/docs"
 	"github.com/fossology/LicenseDb/pkg/api"
 	"github.com/fossology/LicenseDb/pkg/db"
@@ -35,6 +37,12 @@ var (
 )
 
 func main() {
+	err := godotenv.Load(".env")
+
+	if err != nil {
+		log.Fatalf("Error loading .env file")
+	}
+
 	flag.Parse()
 
 	db.Connect(dbhost, port, user, dbname, password)

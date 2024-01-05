@@ -152,6 +152,11 @@ type UserInput struct {
 	Userpassword *string `json:"password,omitempty" binding:"required"`
 }
 
+type UserLogin struct {
+	Username     string `json:"username" binding:"required" example:"fossy"`
+	Userpassword string `json:"password" binding:"required"`
+}
+
 // UserResponse struct is representation of design API response of user.
 type UserResponse struct {
 	Status int            `json:"status" example:"200"`

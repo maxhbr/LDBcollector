@@ -239,7 +239,7 @@ func GetLicense(c *gin.Context) {
 //	@Failure		400		{object}	models.LicenseError		"Invalid request body"
 //	@Failure		409		{object}	models.LicenseError		"License with same shortname already exists"
 //	@Failure		500		{object}	models.LicenseError		"Failed to create license"
-//	@Security		BasicAuth
+//	@Security		ApiKeyAuth
 //	@Router			/licenses [post]
 func CreateLicense(c *gin.Context) {
 	var input models.LicenseInput
@@ -329,7 +329,7 @@ func CreateLicense(c *gin.Context) {
 //	@Failure		404			{object}	models.LicenseError		"License with shortname not found"
 //	@Failure		409			{object}	models.LicenseError		"License with same shortname already exists"
 //	@Failure		500			{object}	models.LicenseError		"Failed to update license"
-//	@Security		BasicAuth
+//	@Security		ApiKeyAuth
 //	@Router			/licenses/{shortname} [patch]
 func UpdateLicense(c *gin.Context) {
 	var update models.LicenseUpdate
