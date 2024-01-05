@@ -15,6 +15,7 @@ import (
 	ginSwagger "github.com/swaggo/gin-swagger"
 
 	"github.com/fossology/LicenseDb/pkg/auth"
+	"github.com/fossology/LicenseDb/pkg/db"
 	"github.com/fossology/LicenseDb/pkg/models"
 )
 
@@ -65,6 +66,10 @@ func Router() *gin.Engine {
 		{
 			obMap.GET("topic/:topic", GetObligationMapByTopic)
 			obMap.GET("license/:license", GetObligationMapByLicense)
+		}
+		health := unAuthorizedv1.Group("/health")
+		{
+			health.GET("", GetHealth)
 		}
 	}
 
@@ -119,4 +124,44 @@ func HandleInvalidUrl(c *gin.Context) {
 		Timestamp: time.Now().Format(time.RFC3339),
 	}
 	c.JSON(http.StatusNotFound, er)
+}
+
+// The GetHealth function returns if the DB is running and connected.
+//
+//	@Summary		Check health
+//	@Description	Check health of the service
+//	@Id				getHealth
+//	@Tags			Health
+//	@Accept			json
+//	@Produce		json
+//	@Success		200	{object}	models.LicenseError	"Heath is OK"
+//	@Failure		500	{object}	models.LicenseError	"Connection to DB failed"
+//	@Router			/health [get]
+func GetHealth(c *gin.Context) {
+	// Fetch one license from DB to check if connection is still working.
+	var license models.LicenseDB
+	err := db.DB.Where(&models.LicenseDB{}).First(&license).Error
+	if license.Id == 0 || err != nil {
+		errorMessage := ""
+		if err != nil {
+			errorMessage = err.Error()
+		}
+		er := models.LicenseError{
+			Status:    http.StatusInternalServerError,
+			Message:   "Database is not running or connected",
+			Error:     errorMessage,
+			Path:      c.Request.URL.Path,
+			Timestamp: time.Now().Format(time.RFC3339),
+		}
+		c.JSON(http.StatusInternalServerError, er)
+		return
+	}
+	er := models.LicenseError{
+		Status:    http.StatusOK,
+		Message:   "Database is running and connected",
+		Error:     "",
+		Path:      c.Request.URL.Path,
+		Timestamp: time.Now().Format(time.RFC3339),
+	}
+	c.JSON(http.StatusOK, er)
 }

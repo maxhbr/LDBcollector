@@ -641,6 +641,26 @@ paths:
       summary: Get a changelog
       tags:
       - Audits
+  /health:
+    get:
+      consumes:
+      - application/json
+      description: Check health of the service
+      operationId: getHealth
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Heath is OK
+          schema:
+            $ref: '#/definitions/models.LicenseError'
+        "500":
+          description: Connection to DB failed
+          schema:
+            $ref: '#/definitions/models.LicenseError'
+      summary: Check health
+      tags:
+      - Health
   /licenses:
     get:
       consumes:
