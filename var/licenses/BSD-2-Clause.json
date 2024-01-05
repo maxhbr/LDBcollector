@@ -37,6 +37,8 @@
         "scancode:bsd-simplified",
         "osi:BSD-2-Clause",
         "License BSD 2-clause",
-        "BSD 2-Clause \"Simplified\""
+        "BSD 2-Clause \"Simplified\"",
+        "BSD 2C",
+        "BSD 2-clause"
     ]
 }
