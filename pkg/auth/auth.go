@@ -13,6 +13,8 @@ import (
 	"strings"
 	"time"
 
+	"golang.org/x/crypto/bcrypt"
+
 	"github.com/gin-gonic/gin"
 
 	"github.com/fossology/LicenseDb/pkg/db"
@@ -52,6 +54,19 @@ func CreateUser(c *gin.Context) {
 		Username:     input.Username,
 		Userlevel:    input.Userlevel,
 		Userpassword: input.Userpassword,
+	}
+
+	err := utils.HashPassword(&user)
+	if err != nil {
+		er := models.LicenseError{
+			Status:    http.StatusBadRequest,
+			Message:   "password hashing failed",
+			Error:     err.Error(),
+			Path:      c.Request.URL.Path,
+			Timestamp: time.Now().Format(time.RFC3339),
+		}
+		c.JSON(http.StatusBadRequest, er)
+		return
 	}
 
 	result := db.DB.Where(models.User{Username: user.Username}).FirstOrCreate(&user)
@@ -231,8 +246,24 @@ func AuthenticationMiddleware() gin.HandlerFunc {
 			return
 		}
 
+		err = EncryptUserPassword(&user)
+		if err != nil {
+			er := models.LicenseError{
+				Status:    http.StatusInternalServerError,
+				Message:   "Failed to encrypt user password",
+				Error:     err.Error(),
+				Path:      c.Request.URL.Path,
+				Timestamp: time.Now().Format(time.RFC3339),
+			}
+
+			c.JSON(http.StatusInternalServerError, er)
+			c.Abort()
+			return
+		}
+
 		// Check if the password matches
-		if *user.Userpassword != password {
+		err = utils.VerifyPassword(password, *user.Userpassword)
+		if err != nil {
 			er := models.LicenseError{
 				Status:    http.StatusUnauthorized,
 				Message:   "Incorrect password",
@@ -265,4 +296,24 @@ func CORSMiddleware() gin.HandlerFunc {
 
 		c.Next()
 	}
+}
+
+// EncryptUserPassword checks if the password is already encrypted or not. If
+// not, it encrypts the password.
+func EncryptUserPassword(user *models.User) error {
+	_, err := bcrypt.Cost([]byte(*user.Userpassword))
+	if err == nil {
+		return nil
+	}
+
+	hashedPassword, err := bcrypt.GenerateFromPassword([]byte(*user.Userpassword), bcrypt.DefaultCost)
+
+	if err != nil {
+		return err
+	}
+	*user.Userpassword = string(hashedPassword)
+
+	db.DB.Model(&user).Updates(user)
+
+	return nil
 }
