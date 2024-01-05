@@ -221,7 +221,7 @@ func AuthenticationMiddleware() gin.HandlerFunc {
 			er := models.LicenseError{
 				Status:    http.StatusUnauthorized,
 				Message:   "User name not found",
-				Error:     err.Error(),
+				Error:     result.Error.Error(),
 				Path:      c.Request.URL.Path,
 				Timestamp: time.Now().Format(time.RFC3339),
 			}
@@ -236,7 +236,7 @@ func AuthenticationMiddleware() gin.HandlerFunc {
 			er := models.LicenseError{
 				Status:    http.StatusUnauthorized,
 				Message:   "Incorrect password",
-				Error:     err.Error(),
+				Error:     "Password does not match",
 				Path:      c.Request.URL.Path,
 				Timestamp: time.Now().Format(time.RFC3339),
 			}
