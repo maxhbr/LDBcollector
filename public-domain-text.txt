@@ -1192,3 +1192,9 @@ This implementation was written by Gary A. Parker and originally published
 in the June/July, 1991 (vol. 5 nr. 4) issue of C Gazette. As published,
 this code was explicitly placed in the public domain by the author.
 '''
+
+package = jansson
+location = https://github.com/akheron/jansson/blob/master/src/lookup3.h#L9
+text = '''
+You can use this free for any purpose.  It's in the public domain.  It has no warranty.
+'''
