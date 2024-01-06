@@ -65,6 +65,8 @@ class FossLicenses:
         self.additional_license_dir = additional_license_dir
         self.__init_license_db(check)
         self.supported_licenses = None
+        self.compat_cache = {}
+        self.license_cache = {}
 
     def __read_json(self, file_name):
         with open(file_name) as f:
@@ -245,6 +247,10 @@ class FossLicenses:
         if not isinstance(license_expression, str):
             raise FlameException('Wrong type (type(license_expresssion)) of input to the function expression_license. Only string is allowed.')
 
+        cache_key = f'{license_expression}__{update_dual}'
+        if cache_key in self.license_cache:
+            return self.license_cache.get(cache_key)
+
         replacements = []
 
         ret = self.__update_license_expression_helper(self.license_db[ALIASES_TAG],
@@ -273,7 +279,7 @@ class FossLicenses:
         else:
             license_parsed = str(self.license_expression.parse(ret['license_expression']))
 
-        return {
+        ret = {
             'queried_license': license_expression,
             'identified_license': license_parsed,
             'identifications': replacements,
@@ -281,6 +287,8 @@ class FossLicenses:
             'license_parsed': license_parsed,
             'updates': updates,
         }
+        self.license_cache[cache_key] = ret
+        return ret
 
     def licenses(self):
         """
@@ -451,6 +459,10 @@ class FossLicenses:
         HPND
 
         """
+        cache_key = f'{license_expression}__{validations}__{update_dual}'
+        if cache_key in self.compat_cache:
+            return self.compat_cache.get(cache_key)
+
         expression_full = self.expression_license(license_expression, update_dual)
         compats = []
         ret = self.__update_license_expression_helper(self.license_db[COMPATS_TAG],
@@ -472,14 +484,16 @@ class FossLicenses:
             if Validation.OSADL in validations:
                 self.__validate_licenses_osadl(compat_support)
 
-        return {
+        ret = {
             'compatibilities': compats,
             'queried_license': license_expression,
-            'identifications': expression_full,
+            'identification': expression_full,
             'identified_license': expression_full['identified_license'],
             'compat_license': compat_license_expression,
             'compat_support': compat_support,
         }
+        self.compat_cache[cache_key] = ret
+        return ret
 
     def __validate_compatibilities_support(self, licenses):
         """Returns an object with information about the compatibility status for the license given.
