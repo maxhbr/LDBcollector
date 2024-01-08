@@ -4,6 +4,7 @@
 
 from rest_framework import viewsets
 from rest_framework import generics
+from rest_framework import filters as rf_filters
 from django_filters import rest_framework as filters
 
 from cube.models import Usage, Component, Version
@@ -48,7 +49,8 @@ class ComponentViewSet(viewsets.ModelViewSet):
     queryset = Component.objects.all()
     serializer_class = ComponentSerializer
     lookup_field = "pk"
-    filter_backends = [filters.DjangoFilterBackend]
+    search_fields = ["name"]
+    filter_backends = [filters.DjangoFilterBackend, rf_filters.SearchFilter]
     filterset_fields = ["name", "purl_type"]
 
 
@@ -72,13 +74,13 @@ class VersionViewSet(viewsets.ModelViewSet):
         """
         qs = super().get_queryset()
 
-        if component := self.kwargs.get("nested_1_pk") is not None:
+        if (component := self.kwargs.get("component_pk")) is not None:
             qs = qs.filter(component=component)
 
         return qs
 
     def perform_create(self, serializer):
-        serializer.save(component_id=self.kwargs.get("nested_1_pk"))
+        serializer.save(component_id=self.kwargs.get("component_pk"))
 
     serializer_class = VersionSerializer
     lookup_field = "id"

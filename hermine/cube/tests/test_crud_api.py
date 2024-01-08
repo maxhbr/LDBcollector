@@ -224,3 +224,15 @@ class APICRUDTests(BaseHermineAPITestCase):
         r = self.client.get(url)
         self.assertEqual(r.status_code, 200)
         self.assertEqual(r.data["count"], 1)
+
+    def test_search_component(self):
+        self.create_component()
+        self.create_component_other()
+        url = "/api/components/?search=beta"
+        r = self.client.get(url)
+        self.assertEqual(r.status_code, 200)
+        self.assertEqual(r.data["count"], 2)
+        url = "/api/components/?search=other"
+        r = self.client.get(url)
+        self.assertEqual(r.status_code, 200)
+        self.assertEqual(r.data["count"], 1)
