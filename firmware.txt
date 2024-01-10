@@ -1,4 +1,4 @@
-# This file is for collecting the actual text found in Fedora                                                                                                                                                     
+# This file is for collecting the actual text found in Fedora
 # packages for firmware. In Callaway system usually:
 #  Redistributable, no modification permitted
 #  Freely redistributable without restrictions
