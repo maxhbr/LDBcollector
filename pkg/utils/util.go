@@ -8,9 +8,13 @@ package utils
 
 import (
 	"fmt"
+	"html"
 	"net/http"
 	"strconv"
+	"strings"
 	"time"
+
+	"golang.org/x/crypto/bcrypt"
 
 	"github.com/gin-gonic/gin"
 
@@ -120,4 +124,25 @@ func ParseIdToInt(c *gin.Context, id string, idType string) (int64, error) {
 		return 0, err
 	}
 	return parsedId, nil
+}
+
+// HashPassword hashes the password of the user using bcrypt. It also trims the
+// username and escapes the HTML characters.
+func HashPassword(user *models.User) error {
+	hashedPassword, err := bcrypt.GenerateFromPassword([]byte(*user.Userpassword), bcrypt.DefaultCost)
+
+	if err != nil {
+		return err
+	}
+	*user.Userpassword = string(hashedPassword)
+
+	user.Username = html.EscapeString(strings.TrimSpace(user.Username))
+
+	return nil
+}
+
+// VerifyPassword compares the input password with the password stored in the
+// database. Returns nil on success, or an error on failure.
+func VerifyPassword(inputPassword, dbPassword string) error {
+	return bcrypt.CompareHashAndPassword([]byte(dbPassword), []byte(inputPassword))
 }

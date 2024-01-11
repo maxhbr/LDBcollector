@@ -492,6 +492,17 @@ definitions:
     - userlevel
     - username
     type: object
+  models.UserLogin:
+    properties:
+      password:
+        type: string
+      username:
+        example: fossy
+        type: string
+    required:
+    - password
+    - username
+    type: object
   models.UserResponse:
     properties:
       data:
@@ -536,7 +547,7 @@ paths:
           schema:
             $ref: '#/definitions/models.LicenseError'
       security:
-      - BasicAuth: []
+      - ApiKeyAuth: []
       summary: Get audit records
       tags:
       - Audits
@@ -568,7 +579,7 @@ paths:
           schema:
             $ref: '#/definitions/models.LicenseError'
       security:
-      - BasicAuth: []
+      - ApiKeyAuth: []
       summary: Get an audit record
       tags:
       - Audits
@@ -600,7 +611,7 @@ paths:
           schema:
             $ref: '#/definitions/models.LicenseError'
       security:
-      - BasicAuth: []
+      - ApiKeyAuth: []
       summary: Get changelogs
       tags:
       - Audits
@@ -637,7 +648,7 @@ paths:
           schema:
             $ref: '#/definitions/models.LicenseError'
       security:
-      - BasicAuth: []
+      - ApiKeyAuth: []
       summary: Get a changelog
       tags:
       - Audits
@@ -750,7 +761,7 @@ paths:
           schema:
             $ref: '#/definitions/models.LicenseError'
       security:
-      - BasicAuth: []
+      - ApiKeyAuth: []
       summary: Create a new license
       tags:
       - Licenses
@@ -821,10 +832,36 @@ paths:
           schema:
             $ref: '#/definitions/models.LicenseError'
       security:
-      - BasicAuth: []
+      - ApiKeyAuth: []
       summary: Update a license
       tags:
       - Licenses
+  /login:
+    post:
+      consumes:
+      - application/json
+      description: Login to get JWT token
+      operationId: Login
+      parameters:
+      - description: Login credentials
+        in: body
+        name: user
+        required: true
+        schema:
+          $ref: '#/definitions/models.UserLogin'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: JWT token
+          schema:
+            properties:
+              token:
+                type: string
+            type: object
+      summary: Login
+      tags:
+      - Users
   /obligation_maps/license/{license}:
     get:
       consumes:
@@ -916,7 +953,7 @@ paths:
           schema:
             $ref: '#/definitions/models.LicenseError'
       security:
-      - BasicAuth: []
+      - ApiKeyAuth: []
       summary: Add or remove licenses from obligation map
       tags:
       - Obligations
@@ -954,7 +991,7 @@ paths:
           schema:
             $ref: '#/definitions/models.LicenseError'
       security:
-      - BasicAuth: []
+      - ApiKeyAuth: []
       summary: Change license list
       tags:
       - Obligations
@@ -1016,7 +1053,7 @@ paths:
           schema:
             $ref: '#/definitions/models.LicenseError'
       security:
-      - BasicAuth: []
+      - ApiKeyAuth: []
       summary: Create an obligation
       tags:
       - Obligations
@@ -1042,7 +1079,7 @@ paths:
           schema:
             $ref: '#/definitions/models.LicenseError'
       security:
-      - BasicAuth: []
+      - ApiKeyAuth: []
       summary: Deactivate obligation
       tags:
       - Obligations
@@ -1108,7 +1145,7 @@ paths:
           schema:
             $ref: '#/definitions/models.LicenseError'
       security:
-      - BasicAuth: []
+      - ApiKeyAuth: []
       summary: Update obligation
       tags:
       - Obligations
@@ -1161,7 +1198,7 @@ paths:
           schema:
             $ref: '#/definitions/models.LicenseError'
       security:
-      - BasicAuth: []
+      - ApiKeyAuth: []
       summary: Get users
       tags:
       - Users
@@ -1193,7 +1230,7 @@ paths:
           schema:
             $ref: '#/definitions/models.LicenseError'
       security:
-      - BasicAuth: []
+      - ApiKeyAuth: []
       summary: Create new user
       tags:
       - Users
@@ -1225,11 +1262,14 @@ paths:
           schema:
             $ref: '#/definitions/models.LicenseError'
       security:
-      - BasicAuth: []
+      - ApiKeyAuth: []
       summary: Get a user
       tags:
       - Users
 securityDefinitions:
-  BasicAuth:
-    type: basic
+  ApiKeyAuth:
+    description: Token from /login endpoint
+    in: header
+    name: Authorization
+    type: apiKey
 swagger: "2.0"

@@ -7,11 +7,14 @@
 package auth
 
 import (
-	"encoding/base64"
 	"fmt"
 	"net/http"
-	"strings"
+	"os"
+	"strconv"
 	"time"
+
+	"github.com/golang-jwt/jwt/v4"
+	"golang.org/x/crypto/bcrypt"
 
 	"github.com/gin-gonic/gin"
 
@@ -32,7 +35,7 @@ import (
 //	@Success		201		{object}	models.UserResponse
 //	@Failure		400		{object}	models.LicenseError	"Invalid json body"
 //	@Failure		409		{object}	models.LicenseError	"User already exists"
-//	@Security		BasicAuth
+//	@Security		ApiKeyAuth
 //	@Router			/users [post]
 func CreateUser(c *gin.Context) {
 	var input models.UserInput
@@ -52,6 +55,19 @@ func CreateUser(c *gin.Context) {
 		Username:     input.Username,
 		Userlevel:    input.Userlevel,
 		Userpassword: input.Userpassword,
+	}
+
+	err := utils.HashPassword(&user)
+	if err != nil {
+		er := models.LicenseError{
+			Status:    http.StatusBadRequest,
+			Message:   "password hashing failed",
+			Error:     err.Error(),
+			Path:      c.Request.URL.Path,
+			Timestamp: time.Now().Format(time.RFC3339),
+		}
+		c.JSON(http.StatusBadRequest, er)
+		return
 	}
 
 	result := db.DB.Where(models.User{Username: user.Username}).FirstOrCreate(&user)
@@ -98,7 +114,7 @@ func CreateUser(c *gin.Context) {
 //	@Produce		json
 //	@Success		200	{object}	models.UserResponse
 //	@Failure		404	{object}	models.LicenseError	"Users not found"
-//	@Security		BasicAuth
+//	@Security		ApiKeyAuth
 //	@Router			/users [get]
 func GetAllUser(c *gin.Context) {
 	var users []models.User
@@ -140,7 +156,7 @@ func GetAllUser(c *gin.Context) {
 //	@Success		200	{object}	models.UserResponse
 //	@Failure		400	{object}	models.LicenseError	"Invalid user id"
 //	@Failure		404	{object}	models.LicenseError	"User not found"
-//	@Security		BasicAuth
+//	@Security		ApiKeyAuth
 //	@Router			/users/{id} [get]
 func GetUser(c *gin.Context) {
 	var user models.User
@@ -176,8 +192,9 @@ func GetUser(c *gin.Context) {
 // AuthenticationMiddleware is a middleware function for user authentication.
 func AuthenticationMiddleware() gin.HandlerFunc {
 	return func(c *gin.Context) {
-		authHeader := c.GetHeader("Authorization")
-		if authHeader == "" {
+		tokenString := c.GetHeader("Authorization")
+
+		if tokenString == "" {
 			er := models.LicenseError{
 				Status:    http.StatusUnauthorized,
 				Message:   "Please check your credentials and try again",
@@ -191,7 +208,13 @@ func AuthenticationMiddleware() gin.HandlerFunc {
 			return
 		}
 
-		decodedAuth, err := base64.StdEncoding.DecodeString(strings.TrimPrefix(authHeader, "Basic "))
+		token, err := jwt.Parse(tokenString, func(token *jwt.Token) (interface{}, error) {
+			if _, ok := token.Method.(*jwt.SigningMethodHMAC); !ok {
+				return nil, fmt.Errorf("unexpected signing method: %v", token.Header["alg"])
+			}
+			return []byte(os.Getenv("API_SECRET")), nil
+		})
+
 		if err != nil {
 			er := models.LicenseError{
 				Status:    http.StatusUnauthorized,
@@ -206,22 +229,30 @@ func AuthenticationMiddleware() gin.HandlerFunc {
 			return
 		}
 
-		auth := strings.SplitN(string(decodedAuth), ":", 2)
-		if len(auth) != 2 {
-			c.AbortWithStatus(http.StatusBadRequest)
+		claims, ok := token.Claims.(jwt.MapClaims)
+		if !ok || !token.Valid {
+			er := models.LicenseError{
+				Status:    http.StatusUnauthorized,
+				Message:   "Invalid token",
+				Error:     err.Error(),
+				Path:      c.Request.URL.Path,
+				Timestamp: time.Now().Format(time.RFC3339),
+			}
+
+			c.JSON(http.StatusUnauthorized, er)
+			c.Abort()
 			return
 		}
 
-		username := auth[0]
-		password := auth[1]
+		userId := int64(claims["id"].(float64))
 
 		var user models.User
-		result := db.DB.Where(models.User{Username: username}).First(&user)
+		result := db.DB.Where(models.User{Id: userId}).First(&user)
 		if result.Error != nil {
 			er := models.LicenseError{
 				Status:    http.StatusUnauthorized,
-				Message:   "User name not found",
-				Error:     result.Error.Error(),
+				Message:   "User not found",
+				Error:     err.Error(),
 				Path:      c.Request.URL.Path,
 				Timestamp: time.Now().Format(time.RFC3339),
 			}
@@ -231,21 +262,7 @@ func AuthenticationMiddleware() gin.HandlerFunc {
 			return
 		}
 
-		// Check if the password matches
-		if *user.Userpassword != password {
-			er := models.LicenseError{
-				Status:    http.StatusUnauthorized,
-				Message:   "Incorrect password",
-				Error:     "Password does not match",
-				Path:      c.Request.URL.Path,
-				Timestamp: time.Now().Format(time.RFC3339),
-			}
-
-			c.JSON(http.StatusUnauthorized, er)
-			c.Abort()
-			return
-		}
-		c.Set("username", username)
+		c.Set("username", user.Username)
 		c.Next()
 	}
 }
@@ -265,4 +282,131 @@ func CORSMiddleware() gin.HandlerFunc {
 
 		c.Next()
 	}
+}
+
+// Login user and get JWT tokens
+//
+//	@Summary		Login
+//	@Description	Login to get JWT token
+//	@Id				Login
+//	@Tags			Users
+//	@Accept			json
+//	@Produce		json
+//	@Param			user	body		models.UserLogin	true	"Login credentials"
+//	@Success		200		{object}	object{token=string}		"JWT token"
+//	@Router			/login [post]
+func Login(c *gin.Context) {
+	var input models.UserLogin
+	if err := c.ShouldBindJSON(&input); err != nil {
+		er := models.LicenseError{
+			Status:    http.StatusBadRequest,
+			Message:   "invalid json body",
+			Error:     err.Error(),
+			Path:      c.Request.URL.Path,
+			Timestamp: time.Now().Format(time.RFC3339),
+		}
+		c.JSON(http.StatusBadRequest, er)
+		return
+	}
+
+	username := input.Username
+	password := input.Userpassword
+
+	var user models.User
+	result := db.DB.Where(models.User{Username: username}).First(&user)
+	if result.Error != nil {
+		er := models.LicenseError{
+			Status:    http.StatusUnauthorized,
+			Message:   "User name not found",
+			Error:     "",
+			Path:      c.Request.URL.Path,
+			Timestamp: time.Now().Format(time.RFC3339),
+		}
+
+		c.JSON(http.StatusUnauthorized, er)
+		c.Abort()
+		return
+	}
+
+	err := encryptUserPassword(&user)
+	if err != nil {
+		er := models.LicenseError{
+			Status:    http.StatusInternalServerError,
+			Message:   "Failed to encrypt user password",
+			Error:     err.Error(),
+			Path:      c.Request.URL.Path,
+			Timestamp: time.Now().Format(time.RFC3339),
+		}
+
+		c.JSON(http.StatusInternalServerError, er)
+		c.Abort()
+		return
+	}
+
+	// Check if the password matches
+	err = utils.VerifyPassword(password, *user.Userpassword)
+	if err != nil {
+		er := models.LicenseError{
+			Status:    http.StatusUnauthorized,
+			Message:   "Incorrect password",
+			Error:     err.Error(),
+			Path:      c.Request.URL.Path,
+			Timestamp: time.Now().Format(time.RFC3339),
+		}
+
+		c.JSON(http.StatusUnauthorized, er)
+		c.Abort()
+		return
+	}
+
+	token, err := generateToken(user)
+	if err != nil {
+		er := models.LicenseError{
+			Status:    http.StatusInternalServerError,
+			Message:   "Failed to generate token",
+			Error:     err.Error(),
+			Path:      c.Request.URL.Path,
+			Timestamp: time.Now().Format(time.RFC3339),
+		}
+		c.JSON(http.StatusInternalServerError, er)
+		return
+	}
+	c.JSON(http.StatusOK, gin.H{"token": token})
+}
+
+// encryptUserPassword checks if the password is already encrypted or not. If
+// not, it encrypts the password.
+func encryptUserPassword(user *models.User) error {
+	_, err := bcrypt.Cost([]byte(*user.Userpassword))
+	if err == nil {
+		return nil
+	}
+
+	hashedPassword, err := bcrypt.GenerateFromPassword([]byte(*user.Userpassword), bcrypt.DefaultCost)
+
+	if err != nil {
+		return err
+	}
+	*user.Userpassword = string(hashedPassword)
+
+	db.DB.Model(&user).Updates(user)
+
+	return nil
+}
+
+// generateToken generates a JWT token for the user.
+func generateToken(user models.User) (string, error) {
+	tokenLifespan, err := strconv.Atoi(os.Getenv("TOKEN_HOUR_LIFESPAN"))
+
+	if err != nil {
+		return "", err
+	}
+
+	claims := jwt.MapClaims{}
+	claims["id"] = user.Id
+	claims["nbf"] = time.Now().Unix()
+	claims["exp"] = time.Now().Add(time.Hour * time.Duration(tokenLifespan)).Unix()
+	token := jwt.NewWithClaims(jwt.SigningMethodHS256, claims)
+
+	return token.SignedString([]byte(os.Getenv("API_SECRET")))
 }

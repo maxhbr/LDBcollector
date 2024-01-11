@@ -27,33 +27,35 @@ and changes.
 - **audits** table has the data of audits that are done in obligations or licenses
 - **change_logs** table has all the change history of a particular audit.
 
-![alt text](./docs/assets/licensedb_erd.png)
+![ER Diagram](./docs/assets/licensedb_erd.png)
 
-### APIs
+## APIs
 
 There are multiple API endpoints for licenses, obligations, user and audit
 endpoints.
 
 ### API endpoints
 
-| #   | Method    | API Endpoints                      | Examples                              | Descriptions                                                                          |
-| --- | --------- | ---------------------------------- | ------------------------------------- | ------------------------------------------------------------------------------------- |
-| 1   | **GET**   | `/api/licenses/:shortname`         | /api/licenses/MIT                     | Gets all data related to licenses by their shortname                                  |
-| 2   | **GET**   | `/api/licenses/`                   | /api/licenses/copyleft="t"&active="t" | Get filter the licenses as per the filters                                            |
-| 3   | **POST**  | `/api/licenses`                    | /api/licenses                         | Create a license with unique shortname                                                |
-| 4   | **POST**  | `/api/licenses/search`             | /api/licenses/search                  | Get the licenses with the post request filtered by field, search term and type       |
-| 5   | **PATCH** | `/api/licenses/:shortname`         | /api/licenses/MIT                     | It updates the particular fields as requested of the license with shortname           |
-| 6   | **GET**   | `/api/users`                       | /api/users                            | Get all the users and their data                                                      |
-| 7   | **GET**   | `/api/users/:id`                   | /api/users/1                          | Get data relate to user by its id                                                     |
-| 8   | **POST**  | `/api/users`                       | /api/users                            | Create a user with unique data                                                        |
-| 9   | **GET**   | `/api/obligations`                 | /api/obligations                      | Get all the obligations                                                               |
-| 10  | **GET**   | `/api/obligation/:topic`           | /api/obligation/topic                 | Gets all data related to obligations by their topic                                   |
-| 11  | **POST**  | `/api/obligations`                 | /api/obligations                      | Create an obligation as well as add it to obligation map                              |
-| 12  | **PATCH** | `/api/obligations/:topic`          | /api/obligations                      | It updates the particular fields as requested of the obligation with topic            |
-| 13  | **GET**   | `/api/audit`                       | /api/audit                            | Get the audit history of all the licenses and obligations                             |
-| 14  | **GET**   | `/api/audit/:audit_id`             | /api/audit/1                          | Get the data of a particular audit by its id                                          |
-| 15  | **GET**   | `/api/audit/:audit_id/changes`     | /api/audit/1/changes                  | Get the change logs of the particular audit id                                        |
-| 16  | **GET**   | `/api/audit/:audit_id/changes/:id` | /api/audit/1/changes/2                | Get a particular change log of the particular audit id                                |
+Check the OpenAPI documentation for the API endpoints at
+[cmd/laas/docs/swagger.yaml](https://github.com/fossology/LicenseDb/blob/main/cmd/laas/docs/swagger.yaml).
+
+The same can be viewed by Swagger UI plugin after installing and running the
+tool at [http://localhost:8080/swagger/index.html](http://localhost:8080/swagger/index.html).
+
+### Authentication
+
+To get the access token, send a POST request to `/api/v1/login` with the
+username and password.
+
+```bash
+curl -X POST "http://localhost:8080/api/v1/login" \
+-H "accept: application/json" -H "Content-Type: application/json" \
+-d "{ \"username\": \"<username>\", \"password\": \"<password>\"}"
+```
+
+As the response of the request, a JWT will be returned. Use this JWT with the
+`Authorization` header (as `-H "Authorization: <JWT>"`) to access endpoints
+requiring authentication.
 
 ## Prerequisite
 
@@ -75,6 +77,14 @@ cd LicenseDb
 go build ./cmd/laas
 ```
 
+- Create the `.env` file in the root directory of the project and change the
+  values of the environment variables as per your requirement.
+
+```bash
+cp .env.example .env
+vim .env
+```
+
 - Run the executable.
 
 ```bash
@@ -85,6 +95,17 @@ go build ./cmd/laas
 
 ```bash
 go run ./cmd/laas
+```
+
+### Create first user
+Connect to the database using `psql` with the following command.
+```bash
+psql -h localhost -p 5432 -U fossy -d fossology
+```
+
+Run the following query to create the first user.
+```sql
+INSERT INTO users (username, userpassword, userlevel) VALUES ('<username>', '<password>', 'admin'); 
 ```
 
 ### Generating Swagger Documentation

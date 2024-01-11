@@ -35,7 +35,10 @@ import (
 //	@host						localhost:8080
 //	@BasePath					/api/v1
 //
-//	@securityDefinitions.basic	BasicAuth
+//	@securityDefinitions.apikey	ApiKeyAuth
+//	@in							header
+//	@name						Authorization
+//	@description				Token from /login endpoint
 func Router() *gin.Engine {
 	// r is a default instance of gin engine
 	r := gin.Default()
@@ -70,6 +73,10 @@ func Router() *gin.Engine {
 		health := unAuthorizedv1.Group("/health")
 		{
 			health.GET("", GetHealth)
+		}
+		login := unAuthorizedv1.Group("/login")
+		{
+			login.POST("", auth.Login)
 		}
 	}
 
