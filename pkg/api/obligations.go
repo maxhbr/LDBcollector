@@ -16,6 +16,7 @@ import (
 
 	"github.com/fossology/LicenseDb/pkg/db"
 	"github.com/fossology/LicenseDb/pkg/models"
+	"github.com/fossology/LicenseDb/pkg/utils"
 	"github.com/gin-gonic/gin"
 )
 
@@ -28,6 +29,8 @@ import (
 //	@Accept			json
 //	@Produce		json
 //	@Param			active	query		bool	true	"Active obligation only"
+//	@Param			page	query		int		false	"Page number"
+//	@Param			limit	query		int		false	"Number of records per page"
 //	@Success		200		{object}	models.ObligationResponse
 //	@Failure		404		{object}	models.LicenseError	"No obligations in DB"
 //	@Router			/obligations [get]
@@ -50,7 +53,12 @@ func GetAllObligation(c *gin.Context) {
 		c.JSON(http.StatusBadRequest, er)
 		return
 	}
-	if err = db.DB.Where("active = ?", parsedActive).Find(&obligations).Error; err != nil {
+	query := db.DB.Model(&models.Obligation{})
+	query.Where("active = ?", parsedActive)
+
+	_ = utils.PreparePaginateResponse(c, query, &models.ObligationResponse{})
+
+	if err = query.Find(&obligations).Error; err != nil {
 		er := models.LicenseError{
 			Status:    http.StatusNotFound,
 			Message:   "Obligations not found",
@@ -64,7 +72,7 @@ func GetAllObligation(c *gin.Context) {
 	res := models.ObligationResponse{
 		Data:   obligations,
 		Status: http.StatusOK,
-		Meta: models.PaginationMeta{
+		Meta: &models.PaginationMeta{
 			ResourceCount: len(obligations),
 		},
 	}
@@ -102,7 +110,7 @@ func GetObligation(c *gin.Context) {
 	res := models.ObligationResponse{
 		Data:   []models.Obligation{obligation},
 		Status: http.StatusOK,
-		Meta: models.PaginationMeta{
+		Meta: &models.PaginationMeta{
 			ResourceCount: 1,
 		},
 	}
@@ -198,7 +206,7 @@ func CreateObligation(c *gin.Context) {
 	res := models.ObligationResponse{
 		Data:   []models.Obligation{obligation},
 		Status: http.StatusCreated,
-		Meta: models.PaginationMeta{
+		Meta: &models.PaginationMeta{
 			ResourceCount: 1,
 		},
 	}
@@ -370,7 +378,7 @@ func UpdateObligation(c *gin.Context) {
 	res := models.ObligationResponse{
 		Data:   []models.Obligation{obligation},
 		Status: http.StatusOK,
-		Meta: models.PaginationMeta{
+		Meta: &models.PaginationMeta{
 			ResourceCount: 1,
 		},
 	}

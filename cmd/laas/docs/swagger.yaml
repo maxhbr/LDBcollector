@@ -395,13 +395,22 @@ definitions:
     type: object
   models.PaginationMeta:
     properties:
-      page:
-        example: 1
-        type: integer
-      per_page:
+      limit:
         example: 10
         type: integer
+      next:
+        example: /api/v1/licenses?limit=10&page=11
+        type: string
+      page:
+        example: 10
+        type: integer
+      previous:
+        example: /api/v1/licenses?limit=10&page=9
+        type: string
       resource_count:
+        example: 200
+        type: integer
+      total_pages:
         example: 20
         type: integer
     type: object
@@ -535,6 +544,15 @@ paths:
       - application/json
       description: Get all audit records from the server
       operationId: GetAllAudit
+      parameters:
+      - description: Page number
+        in: query
+        name: page
+        type: integer
+      - description: Number of records per page
+        in: query
+        name: limit
+        type: integer
       produces:
       - application/json
       responses:
@@ -715,6 +733,14 @@ paths:
         in: query
         name: copyleft
         type: boolean
+      - description: Page number
+        in: query
+        name: page
+        type: integer
+      - description: Limit of responses per page
+        in: query
+        name: limit
+        type: integer
       produces:
       - application/json
       responses:
@@ -1007,6 +1033,14 @@ paths:
         name: active
         required: true
         type: boolean
+      - description: Page number
+        in: query
+        name: page
+        type: integer
+      - description: Number of records per page
+        in: query
+        name: limit
+        type: integer
       produces:
       - application/json
       responses:

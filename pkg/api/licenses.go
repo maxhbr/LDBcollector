@@ -14,6 +14,7 @@ import (
 
 	"github.com/fossology/LicenseDb/pkg/db"
 	"github.com/fossology/LicenseDb/pkg/models"
+	"github.com/fossology/LicenseDb/pkg/utils"
 	"github.com/gin-gonic/gin"
 )
 
@@ -21,8 +22,11 @@ import (
 func GetAllLicense(c *gin.Context) {
 
 	var licenses []models.LicenseDB
+	query := db.DB.Model(&models.LicenseDB{})
 
-	err := db.DB.Find(&licenses).Error
+	_ = utils.PreparePaginateResponse(c, query, &models.LicenseResponse{})
+
+	err := query.Find(&licenses).Error
 	if err != nil {
 		er := models.LicenseError{
 			Status:    http.StatusBadRequest,
@@ -37,7 +41,7 @@ func GetAllLicense(c *gin.Context) {
 	res := models.LicenseResponse{
 		Data:   licenses,
 		Status: http.StatusOK,
-		Meta: models.PaginationMeta{
+		Meta: &models.PaginationMeta{
 			ResourceCount: len(licenses),
 		},
 	}
@@ -62,6 +66,8 @@ func GetAllLicense(c *gin.Context) {
 //	@Param			osiapproved		query		bool					false	"OSI Approved flag status of license"
 //	@Param			fsffree			query		bool					false	"FSF Free flag status of license"
 //	@Param			copyleft		query		bool					false	"Copyleft flag status of license"
+//	@Param			page			query		int						false	"Page number"
+//	@Param			limit			query		int						false	"Limit of responses per page"
 //	@Success		200				{object}	models.LicenseResponse	"Filtered licenses"
 //	@Failure		400				{object}	models.LicenseError		"Invalid value"
 //	@Router			/licenses [get]
@@ -169,12 +175,15 @@ func FilterLicense(c *gin.Context) {
 		c.JSON(http.StatusBadRequest, er)
 		return
 	}
+
+	_ = utils.PreparePaginateResponse(c, query, &models.LicenseResponse{})
+
 	query.Find(&license)
 
 	res := models.LicenseResponse{
 		Data:   license,
 		Status: http.StatusOK,
-		Meta: models.PaginationMeta{
+		Meta: &models.PaginationMeta{
 			ResourceCount: len(license),
 		},
 	}
@@ -218,7 +227,7 @@ func GetLicense(c *gin.Context) {
 	res := models.LicenseResponse{
 		Data:   []models.LicenseDB{license},
 		Status: http.StatusOK,
-		Meta: models.PaginationMeta{
+		Meta: &models.PaginationMeta{
 			ResourceCount: 1,
 		},
 	}
@@ -307,7 +316,7 @@ func CreateLicense(c *gin.Context) {
 	res := models.LicenseResponse{
 		Data:   []models.LicenseDB{license},
 		Status: http.StatusCreated,
-		Meta: models.PaginationMeta{
+		Meta: &models.PaginationMeta{
 			ResourceCount: 1,
 		},
 	}
@@ -393,7 +402,7 @@ func UpdateLicense(c *gin.Context) {
 	res := models.LicenseResponse{
 		Data:   []models.LicenseDB{license},
 		Status: http.StatusOK,
-		Meta: models.PaginationMeta{
+		Meta: &models.PaginationMeta{
 			ResourceCount: 1,
 		},
 	}
@@ -645,7 +654,7 @@ func SearchInLicense(c *gin.Context) {
 	res := models.LicenseResponse{
 		Data:   license,
 		Status: http.StatusOK,
-		Meta: models.PaginationMeta{
+		Meta: &models.PaginationMeta{
 			ResourceCount: len(license),
 		},
 	}

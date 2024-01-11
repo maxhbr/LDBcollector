@@ -87,9 +87,34 @@ type LicenseUpdate struct {
 // It contains information that provides context and supplementary details
 // about the retrieved license data.
 type PaginationMeta struct {
-	ResourceCount int `json:"resource_count" example:"20"`
-	Page          int `json:"page,omitempty" example:"1"`
-	PerPage       int `json:"per_page,omitempty" example:"10"`
+	ResourceCount int    `json:"resource_count" example:"200"`
+	TotalPages    int    `json:"total_pages,omitempty" example:"20"`
+	Page          int    `json:"page,omitempty" example:"10"`
+	Limit         int    `json:"limit,omitempty" example:"10"`
+	Next          string `json:"next,omitempty" example:"/api/v1/licenses?limit=10&page=11"`
+	Previous      string `json:"previous,omitempty" example:"/api/v1/licenses?limit=10&page=9"`
+}
+
+// The PaginationInput struct represents the input required for pagination.
+type PaginationInput struct {
+	Page  int `json:"page" example:"10"`
+	Limit int `json:"limit" example:"10"`
+}
+
+// PaginationParse interface processes the pagination input.
+type PaginationParse interface {
+	GetOffset() int
+	GetLimit() int
+}
+
+// GetOffset returns the offset value for gorm.
+func (p PaginationInput) GetOffset() int {
+	return (p.Page - 1) * p.Limit
+}
+
+// GetLimit returns the limit value for gorm.
+func (p PaginationInput) GetLimit() int {
+	return p.Limit
 }
 
 // LicenseResponse struct is representation of design API response of license.
@@ -97,9 +122,9 @@ type PaginationMeta struct {
 // retrieving license information.
 // It is used to encapsulate license-related data in an organized manner.
 type LicenseResponse struct {
-	Status int            `json:"status" example:"200"`
-	Data   []LicenseDB    `json:"data"`
-	Meta   PaginationMeta `json:"paginationmeta"`
+	Status int             `json:"status" example:"200"`
+	Data   []LicenseDB     `json:"data"`
+	Meta   *PaginationMeta `json:"paginationmeta"`
 }
 
 // The LicenseError struct represents an error response related to license operations.
@@ -201,9 +226,9 @@ type ChangeLogResponse struct {
 
 // AuditResponse represents the response format for audit data.
 type AuditResponse struct {
-	Status int            `json:"status" example:"200"`
-	Data   []Audit        `json:"data"`
-	Meta   PaginationMeta `json:"paginationmeta"`
+	Status int             `json:"status" example:"200"`
+	Data   []Audit         `json:"data"`
+	Meta   *PaginationMeta `json:"paginationmeta"`
 }
 
 // Obligation represents an obligation record in the database.
@@ -247,9 +272,9 @@ type UpdateObligation struct {
 
 // ObligationResponse represents the response format for obligation data.
 type ObligationResponse struct {
-	Status int            `json:"status" example:"200"`
-	Data   []Obligation   `json:"data"`
-	Meta   PaginationMeta `json:"paginationmeta"`
+	Status int             `json:"status" example:"200"`
+	Data   []Obligation    `json:"data"`
+	Meta   *PaginationMeta `json:"paginationmeta"`
 }
 
 // ObligationMap represents the mapping between an obligation and a license.

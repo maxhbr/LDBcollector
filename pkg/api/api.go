@@ -16,6 +16,7 @@ import (
 
 	"github.com/fossology/LicenseDb/pkg/auth"
 	"github.com/fossology/LicenseDb/pkg/db"
+	"github.com/fossology/LicenseDb/pkg/middleware"
 	"github.com/fossology/LicenseDb/pkg/models"
 )
 
@@ -47,7 +48,10 @@ func Router() *gin.Engine {
 	r.NoRoute(HandleInvalidUrl)
 
 	// CORS middleware
-	r.Use(auth.CORSMiddleware())
+	r.Use(middleware.CORSMiddleware())
+
+	// Pagination middleware
+	r.Use(middleware.PaginationMiddleware())
 
 	unAuthorizedv1 := r.Group("/api/v1")
 	{
@@ -81,7 +85,7 @@ func Router() *gin.Engine {
 	}
 
 	authorizedv1 := r.Group("/api/v1")
-	authorizedv1.Use(auth.AuthenticationMiddleware())
+	authorizedv1.Use(middleware.AuthenticationMiddleware())
 	{
 		licenses := authorizedv1.Group("/licenses")
 		{
