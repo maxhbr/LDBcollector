@@ -211,7 +211,25 @@ SPDX-License-Identifier: AGPL-3.0-only
       </div>
     </div>
   </section>
+  {% if license.verbatim %}
+    <section class="card">
+      <header class="card-header">
+        <p class="card-header-title">
+          <span class="icon">
+            <i class="fas fa-info-circle"></i>
+          </span>
+          Text of the license
+        </p>
+      </header>
+      <div class="card-content">
+        <details>
+          <summary><strong>Verbatim text of the license:</strong></summary>
+          <div class="is-italic">{{ license.verbatim|linebreaks }}</div>
+        </details>
 
+      </div>
+    </section>
+  {% endif %}
   {% if license.allowed == "context" or license.context_derogations %}
     <section class="card">
       <header class="card-header">
