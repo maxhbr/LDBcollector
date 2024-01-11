@@ -157,15 +157,17 @@ func CreateObligation(c *gin.Context) {
 		Active:         input.Active,
 	}
 
-	result := db.DB.FirstOrCreate(&obligation)
+	result := db.DB.
+		Where(&models.Obligation{Topic: obligation.Topic}).
+		Or(&models.Obligation{Md5: obligation.Md5}).
+		FirstOrCreate(&obligation)
 
-	fmt.Print(obligation)
 	if result.RowsAffected == 0 {
-
 		er := models.LicenseError{
-			Status:    http.StatusConflict,
-			Message:   "can not create obligation with same MD5",
-			Error:     fmt.Sprintf("Error: Obligation with MD5 '%s' already exists", obligation.Md5),
+			Status:  http.StatusConflict,
+			Message: "can not create obligation with same MD5",
+			Error: fmt.Sprintf("Error: Obligation with topic '%s' or MD5 '%s' already exists",
+				obligation.Topic, obligation.Md5),
 			Path:      c.Request.URL.Path,
 			Timestamp: time.Now().Format(time.RFC3339),
 		}

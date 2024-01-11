@@ -279,9 +279,10 @@ func CreateLicense(c *gin.Context) {
 		Risk:            input.Risk,
 	}
 
-	result := db.DB.FirstOrCreate(&license)
+	result := db.DB.
+		Where(&models.LicenseDB{Shortname: license.Shortname}).
+		FirstOrCreate(&license)
 	if result.RowsAffected == 0 {
-
 		er := models.LicenseError{
 			Status:    http.StatusConflict,
 			Message:   "can not create license with same shortname",
