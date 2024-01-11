@@ -71,11 +71,13 @@ func main() {
 		log.Fatalf("Failed to automigrate database: %v", err)
 	}
 
-	if *populatedb == true {
+	if *populatedb {
 		db.Populatedb(*datafile)
 	}
 
 	r := api.Router()
 
-	r.Run()
+	if err := r.Run(); err != nil {
+		log.Fatalf("Error while running the server: %v", err)
+	}
 }

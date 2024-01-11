@@ -253,7 +253,7 @@ func UpdateObligation(c *gin.Context) {
 		c.JSON(http.StatusBadRequest, er)
 		return
 	}
-	if oldobligation.TextUpdatable == false && update.Text != "" && update.Text != oldobligation.Text {
+	if !oldobligation.TextUpdatable && update.Text != "" && update.Text != oldobligation.Text {
 		er := models.LicenseError{
 			Status:    http.StatusBadRequest,
 			Message:   "Can not update obligation text",
