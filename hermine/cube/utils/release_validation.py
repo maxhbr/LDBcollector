@@ -2,6 +2,7 @@
 #
 #  SPDX-License-Identifier: AGPL-3.0-only
 import logging
+import time
 
 from django.db.models import Count, Case, When, F
 
@@ -29,6 +30,7 @@ STEP_POLICY = 5
 
 # Functions with side effect to update releases according to curations and choices
 def apply_curations(release):
+    start = time.time()
     for usage in release.usage_set.filter(version__corrected_license="").annotate(
         imported_license=Case(
             When(
@@ -43,11 +45,14 @@ def apply_curations(release):
             curation = LicenseCuration.objects.for_version(usage.version).get()
             usage.version.corrected_license = curation.expression_out
             usage.version.save()
-        except (
-            LicenseCuration.DoesNotExist,
-            LicenseCuration.MultipleObjectsReturned,
-        ):
-            logger.warning("Multiple curations for %s", usage.version.component)
+        except LicenseCuration.DoesNotExist:
+            # logger.warning("No curations for %s", usage.version.component)
+            pass
+        except LicenseCuration.MultipleObjectsReturned:
+            logger.warning("Multiple curations for %s ", usage.version.component)
+    end = time.time()
+    duration = end - start
+    logger.warning("End of curations %s", duration)
 
 
 def propagate_choices(release: Release):
