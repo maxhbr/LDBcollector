@@ -58,10 +58,12 @@
         "BSD3-like",
         "new BSD License",
         "BSD-3-clause New",
+        "BSD-3-Clause New",
         "BSD 3-Clause \"New\"",
         "BSD License (BSD-3-Clause)",
         "BSD License (BSD License)",
         "BSD 3C",
-        "BSD-3-Clause license"
+        "BSD-3-Clause license",
+        "BSD License (new BSD)"
     ]
 }

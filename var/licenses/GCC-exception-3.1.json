@@ -1,0 +1,12 @@
+{
+    "meta": {
+        "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+        "comment": ""
+    },
+    "name": "GCC Runtime Library Exception v3.1",
+    "scancode_key": "gcc-exception-3.1",
+    "spdxid": "GCC-exception-3.1",
+    "aliases": [
+        "GCC Runtime Library Exception v3.1"
+    ]
+}
