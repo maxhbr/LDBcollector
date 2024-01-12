@@ -64,7 +64,10 @@ func TestGetLicense(t *testing.T) {
 	assert.Equal(t, http.StatusOK, w.Code)
 
 	var res models.LicenseResponse
-	json.Unmarshal(w.Body.Bytes(), &res)
+	if err := json.Unmarshal(w.Body.Bytes(), &res); err != nil {
+		t.Errorf("Error unmarshalling JSON: %v", err)
+		return
+	}
 
 	assert.Equal(t, expectLicense, res.Data[0])
 
@@ -83,12 +86,12 @@ func TestCreateLicense(t *testing.T) {
 	}
 	w := makeRequest("POST", "/api/licenses", License, true)
 	assert.Equal(t, http.StatusCreated, w.Code)
-	type response struct {
-		Data models.LicenseDB `json:"data"`
-	}
 
 	var res models.LicenseResponse
-	json.Unmarshal(w.Body.Bytes(), &res)
+	if err := json.Unmarshal(w.Body.Bytes(), &res); err != nil {
+		t.Errorf("Error unmarshalling JSON: %v", err)
+		return
+	}
 
 	assert.Equal(t, License, res.Data[0])
 
@@ -114,7 +117,10 @@ func TestUpdateLicense(t *testing.T) {
 	assert.Equal(t, http.StatusOK, w.Code)
 
 	var res models.LicenseResponse
-	json.Unmarshal(w.Body.Bytes(), &res)
+	if err := json.Unmarshal(w.Body.Bytes(), &res); err != nil {
+		t.Errorf("Error unmarshalling JSON: %v", err)
+		return
+	}
 
 	assert.Equal(t, expectedLicense, res.Data[0])
 
@@ -142,7 +148,10 @@ func TestSearchInLicense(t *testing.T) {
 	assert.Equal(t, http.StatusOK, w.Code)
 
 	var res models.LicenseResponse
-	json.Unmarshal(w.Body.Bytes(), &res)
+	if err := json.Unmarshal(w.Body.Bytes(), &res); err != nil {
+		t.Errorf("Error unmarshalling JSON: %v", err)
+		return
+	}
 
 	assert.Equal(t, expectLicense, res.Data[0])
 
@@ -186,38 +195,49 @@ func TestSearchInLicense2(t *testing.T) {
 	assert.Equal(t, http.StatusOK, w.Code)
 
 	var res models.LicenseResponse
-	json.Unmarshal(w.Body.Bytes(), &res)
+	if err := json.Unmarshal(w.Body.Bytes(), &res); err != nil {
+		t.Errorf("Error unmarshalling JSON: %v", err)
+		return
+	}
 
 	assert.Equal(t, expectLicense, res.Data)
 }
 
 func TestGetUser(t *testing.T) {
+	password := "fossy"
 	expectUser := models.User{
 		Username:     "fossy",
-		Userpassword: "fossy",
+		Userpassword: &password,
 		Userlevel:    "admin",
 	}
 	w := makeRequest("GET", "/api/user/1", nil, false)
 	assert.Equal(t, http.StatusOK, w.Code)
 
 	var res models.UserResponse
-	json.Unmarshal(w.Body.Bytes(), &res)
+	if err := json.Unmarshal(w.Body.Bytes(), &res); err != nil {
+		t.Errorf("Error unmarshalling JSON: %v", err)
+		return
+	}
 
 	assert.Equal(t, expectUser, res.Data[0])
 
 }
 
 func TestCreateUser(t *testing.T) {
+	password := "abc123"
 	user := models.User{
 		Username:     "general_user",
-		Userpassword: "abc123",
+		Userpassword: &password,
 		Userlevel:    "participant",
 	}
 	w := makeRequest("POST", "/api/user", user, true)
 	assert.Equal(t, http.StatusOK, w.Code)
 
 	var res models.UserResponse
-	json.Unmarshal(w.Body.Bytes(), &res)
+	if err := json.Unmarshal(w.Body.Bytes(), &res); err != nil {
+		t.Errorf("Error unmarshalling JSON: %v", err)
+		return
+	}
 
 	assert.Equal(t, user, res.Data[0])
 }

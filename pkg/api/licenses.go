@@ -363,7 +363,7 @@ func UpdateLicense(c *gin.Context) {
 		c.JSON(http.StatusBadRequest, er)
 		return
 	}
-	if update.Text != "" && oldlicense.TextUpdatable == false && oldlicense.Text != update.Text {
+	if update.Text != "" && !oldlicense.TextUpdatable && oldlicense.Text != update.Text {
 		er := models.LicenseError{
 			Status:    http.StatusBadRequest,
 			Message:   "Text is not updatable",
