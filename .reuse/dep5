@@ -15,7 +15,7 @@ Files: .github/workflows/push.yml
 Copyright: 2023 Henrik Sandklef <hesa@sandklef.com>
 License: CC-BY-4.0
 
-Files: ./.github/workflows/autorelease.yml
+Files: .github/workflows/autorelease.yml
 Copyright: 2024 Henrik Sandklef <hesa@sandklef.com>
 License: CC-BY-4.0
 
