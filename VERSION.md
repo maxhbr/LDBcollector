@@ -6,6 +6,12 @@ SPDX-License-Identifier: GPL-3.0-or-later
 
 
 
+# 0.1.9
+
+* config support (cli or environment variable)
+
+* Python:
+
 # 0.1.8
 
 * Dual license support
