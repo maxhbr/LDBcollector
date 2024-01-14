@@ -87,18 +87,21 @@ jobs:
     - name: Install dependencies
       if: steps.release-needed.outputs.DO_RELEASE == 'true'
       run: |
+        cd python
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
     - name: Bump version
       id: version-bump
       run: |
+        cd python
         pip install -r requirements-dev.txt
         bump2version --list ${{ steps.release-needed.outputs.RELEASE_TYPE }} ${{ env.VERSION_FILE }} >> $GITHUB_OUTPUT
 
     - name: Build
       if: steps.release-needed.outputs.DO_RELEASE == 'true'
       run: |
+        cd python
         python3 setup.py build sdist bdist_wheel --universal
 
     - name: Commit new version
