@@ -2,9 +2,9 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
 
-canonicalName: "LZMA SDK License 9.11 to 9.20"
-category: "Public Domain"
-spdxIdentifier: "LZMA-SDK-9.11-to-9.20"
+canonicalName: "libmng License 2007"
+category: "libmng License"
+shortName: "libmng-2007"
 
 otherIds: 
-  - "scancode:lzma-sdk-9.11-to-9.20"
+  - "scancode:libmng-2007"

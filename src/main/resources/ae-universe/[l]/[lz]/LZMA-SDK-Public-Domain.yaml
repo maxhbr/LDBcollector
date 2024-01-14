@@ -1,0 +1,13 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
+
+canonicalName: "LZMA SDK Public Domain"
+category: "Public Domain"
+shortName: "LZMA-SDK-PD"
+
+alternativeNames:
+  - "LZMA SDK is written and placed in the public domain by Igor Pavlov"
+
+otherIds: 
+  - "scancode:lzma-sdk-pd"
