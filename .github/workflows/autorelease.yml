@@ -21,7 +21,7 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  VERSION_FILE: flame/config.py
+  VERSION_FILE: python/flame/config.py
   MODULE_CODE: flame/*
   PYPI_PUBLISH: 1
 
@@ -97,9 +97,9 @@ jobs:
       run: |
         cd python
         pip install -r requirements-dev.txt
-        echo "Bumping version: bump2version --list ${{ steps.release-needed.outputs.RELEASE_TYPE }} ${{ env.VERSION_FILE }} >> $GITHUB_OUTPUT"
-        pwd
-        bump2version --new-version=0.19.1 --list ${{ steps.release-needed.outputs.RELEASE_TYPE }} ${{ env.VERSION_FILE }} >> $GITHUB_OUTPUT
+        cd ..
+        echo "Bump version: bump2version --list ${{ steps.release-needed.outputs.RELEASE_TYPE }} ${{ env.VERSION_FILE }} >> $GITHUB_OUTPUT"
+        bump2version --list ${{ steps.release-needed.outputs.RELEASE_TYPE }} ${{ env.VERSION_FILE }} >> $GITHUB_OUTPUT
 
     - name: Build
       if: steps.release-needed.outputs.DO_RELEASE == 'true'
