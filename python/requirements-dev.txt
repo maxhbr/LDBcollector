@@ -2,6 +2,7 @@
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
 
+bump2version
 flake8 ~= 5.0
 reuse
 twine
