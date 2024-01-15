@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - "main"
+      - "hesa-fix-autorelease-II"
   workflow_dispatch:
     inputs:
       bump-version:
@@ -110,6 +111,7 @@ jobs:
       if: steps.release-needed.outputs.DO_RELEASE == 'true'
       uses: actions-x/commit@v6
       with:
+        files: ${{ env.VERSION_FILE }} .bumpversion.cfg
         message: 'Release ${{ steps.version-bump.outputs.new_version }}'
 
     - name: Create new release
