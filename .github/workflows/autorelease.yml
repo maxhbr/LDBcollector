@@ -126,5 +126,6 @@ jobs:
       if: steps.release-needed.outputs.DO_RELEASE == 'true' && env.PYPI_PUBLISH == '1'
       uses: pypa/gh-action-pypi-publish@release/v1
       with:
+        packages-dir: python/dist
         user: __token__
         password: ${{ secrets.PYPI_API_TOKEN }}
