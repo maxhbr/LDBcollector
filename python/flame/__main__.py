@@ -38,7 +38,7 @@ def get_parser():
     parser.add_argument('-of', '--output-format',
                         type=str,
                         help=f'Chose output format. Available formats: {", ".join(OUTPUT_FORMATS)}',
-                        default="text")
+                        default='text')
 
     parser.add_argument('-v', '--verbose',
                         action='store_true',
@@ -142,11 +142,11 @@ def version_info(fl, formatter, args):
 
 def compatibility(fl, formatter, args):
     validations = __validations(args)
-    compatibilities = fl.expression_compatibility_as(" ".join(args.license), validations)
+    compatibilities = fl.expression_compatibility_as(' '.join(args.license), validations)
     return formatter.format_compatibilities(compatibilities, args.verbose)
 
 def show_license(fl, formatter, args):
-    expression = fl.expression_license(" ".join(args.license), update_dual=(not args.no_dual_update))
+    expression = fl.expression_license(' '.join(args.license), update_dual=(not args.no_dual_update))
     return formatter.format_expression(expression, args.verbose)
 
 def full_license(fl, formatter, args):

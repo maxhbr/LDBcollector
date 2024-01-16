@@ -107,7 +107,7 @@ class FossLicenses:
         for license_dir in license_dirs:
             for license_file in glob.glob(f'{license_dir}/*.json'):
                 logging.debug(f' * {license_file}')
-                if os.path.basename(license_file) == "compounds.json":
+                if os.path.basename(license_file) == 'compounds.json':
                     # some compound licenses are incorrectly stated as
                     # one, e.g. "GPL-2.0-with-classpath-exception" which
                     # should be "GPL-2.0-only WITH
@@ -121,7 +121,7 @@ class FossLicenses:
                                 raise FlameException(f'Alias "{alias}" -> {compound["spdxid"]} already defined as "{aliases[alias]}".')
 
                             aliases[alias] = compound['spdxid']
-                elif os.path.basename(license_file) == "duals.json":
+                elif os.path.basename(license_file) == 'duals.json':
                     # Read license with built-in dual feature, e.g
                     # "GPL-2.0-or-later" which can be seen as a dual
                     # license "GPL-2.0-only OR GPL-3.0-only"
@@ -176,10 +176,10 @@ class FossLicenses:
         for needle in reversed(collections.OrderedDict(sorted(needles.items(), key=lambda x: len(x[0])))):
             if allow_letter:
                 reg_exp = r'( |\(|^|\)|\||/)%s( |$|\)|\||&|[a-zA-Z])' % re.escape(needle)
-                extra_add = " "
+                extra_add = ' '
             else:
                 reg_exp = r'( |\(|^|\)|\||/)%s( |$|\)|\||&)' % re.escape(needle)
-                extra_add = ""
+                extra_add = ''
             if re.search(reg_exp, license_expression):
                 replacement = needles[needle]
                 replacements.append({
@@ -189,15 +189,15 @@ class FossLicenses:
                 })
                 license_expression = re.sub(reg_exp, f'\\1 {replacement}{extra_add}\\2', license_expression)
         return {
-            "license_expression": re.sub(r'\s\s*', ' ', license_expression).strip(),
-            "identifications": replacements,
+            'license_expression': re.sub(r'\s\s*', ' ', license_expression).strip(),
+            'identifications': replacements,
         }
 
     def __update_or_later(self, license_expression):
         updates = []
         new_expr = []
         for lic in re.split(r'(AND|OR|\(|\))', license_expression):
-            if lic.strip() == "":
+            if lic.strip() == '':
                 continue
             trimmed_license = lic.strip().split()[0]
             if trimmed_license in self.license_db[DUALS_TAG]:
@@ -220,9 +220,9 @@ class FossLicenses:
                 new_expr.append(lic)
         ret = ' '.join(new_expr)
         return {
-            "input_license_expression": license_expression,
-            "license_expression": ret,
-            "updates": updates,
+            'input_license_expression': license_expression,
+            'license_expression': ret,
+            'updates': updates,
         }
 
     def expression_license(self, license_expression, update_dual=True):
@@ -254,17 +254,17 @@ class FossLicenses:
         replacements = []
 
         ret = self.__update_license_expression_helper(self.license_db[ALIASES_TAG],
-                                                      "alias",
+                                                      'alias',
                                                       license_expression)
         replacements += ret['identifications']
 
         ret = self.__update_license_expression_helper(self.license_db[SCANCODE_KEYS_TAG],
-                                                      "scancode",
+                                                      'scancode',
                                                       ret['license_expression'])
         replacements += ret['identifications']
 
         ret = self.__update_license_expression_helper(self.license_db[LICENSE_OPERATORS_TAG],
-                                                      "operator",
+                                                      'operator',
                                                       ret['license_expression'],
                                                       allow_letter=True)
         replacements += ret['identifications']
@@ -466,13 +466,13 @@ class FossLicenses:
         expression_full = self.expression_license(license_expression, update_dual)
         compats = []
         ret = self.__update_license_expression_helper(self.license_db[COMPATS_TAG],
-                                                      "compat",
+                                                      'compat',
                                                       expression_full['identified_license'])
         ret['license_expression'] = re.sub(r'\s\s*', ' ', ret['license_expression']).strip()
         compats = ret['identifications']
         compat_license_expression = ret['license_expression']
 
-        compat_licenses = [x.strip() for x in re.split("\(|OR|AND|\)", compat_license_expression)]
+        compat_licenses = [x.strip() for x in re.split('\(|OR|AND|\)', compat_license_expression)]
         compat_licenses = [x for x in compat_licenses if x]
         compat_support = self.__validate_compatibilities_support(compat_licenses)
 

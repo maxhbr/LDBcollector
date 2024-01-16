@@ -7,7 +7,7 @@ import logging
 import os
 import flame.exception
 
-SW_VERSION = "0.19.6"
+SW_VERSION = '0.19.6'
 
 PYTHON_DIR = os.path.dirname(os.path.realpath(__file__))
 VAR_DIR = os.path.join(PYTHON_DIR, 'var')
@@ -51,7 +51,7 @@ def __read_config_helper(path):
     logging.debug(f'try reading: {path}')
     try:
         with open(path) as fp:
-            logging.debug("data found: ")
+            logging.debug('data found')
             return json.load(fp)
     except Exception as e:
         logging.debug(f'file not found or usable: {path}')
