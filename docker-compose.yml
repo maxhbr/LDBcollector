@@ -25,6 +25,7 @@ services:
       - static_volume:/opt/hermine/static
       - $PWD/docker/shared.json:/opt/hermine/shared.json
     environment:
+      - DJANGO_THREADS=${THREADS}
       - DJANGO_PORT=8080
       - POSTGRES_NAME=postgres
       - POSTGRES_USER=postgres

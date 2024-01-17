@@ -15,7 +15,7 @@ fi
 
 if test -n "$SUPERUSER" && test -n "$PASSWORD"
 then
-  f_log "create superuser if none exists with $USER"
+  f_log "create superuser if none exists with $SUPERUSER"
   python ./manage.py createsuperuser_if_none_exists --user="$SUPERUSER" --password="$PASSWORD"
 fi
-python -m gunicorn hermine.wsgi -b 0.0.0.0:"$DJANGO_PORT" -t 120
+python -m gunicorn --workers=2 --threads=${DJANGO_THREADS:-$(nproc --all)} --worker-class=gthread --worker-tmp-dir /dev/shm hermine.wsgi -b 0.0.0.0:"$DJANGO_PORT" -t 120
