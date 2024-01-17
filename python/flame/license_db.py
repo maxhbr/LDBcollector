@@ -20,15 +20,19 @@ import osadl_matrix
 
 json_schema = None
 
+FLAME_ALIASES_TAG = 'aliases'
+FLAME_COMPATIBLE_LICENSE_TAG = 'compat_license'
+FLAME_IDENTIFIED_LICENSE_TAG = 'identified_license'
+FLAME_LICENSE_TEXT_TAG = 'license_text'
+FLAME_NAME_TAG = 'name'
+FLAME_COMPATIBILITY_TAG = 'compatibility'
+
 COMPATIBILITY_AS_TAG = 'compatibility_as'
-COMPATIBILITY_TAG = 'compatibility'
 IDENTIFIED_ELEMENT_TAG = 'identified_element'
 SCANCODE_KEY_TAG = 'scancode_key'
 SCANCODE_KEYS_TAG = 'scancode_keys'
 LICENSES_TAG = 'licenses'
-ALIASES_TAG = 'aliases'
 COMPATS_TAG = 'compats'
-NAME_TAG = 'name'
 DUALS_TAG = 'dual-licenses'
 DUAL_LICENSES_TAG = 'dual-licenses'
 DUAL_NEWER_TAG = 'newer-versions'
@@ -89,7 +93,7 @@ class FossLicenses:
         if not Path(license_text_file).is_file():
             raise FileNotFoundError(f'Could not find "{license_text_file}" matching "{license_file}"')
         with open(license_text_file) as lf:
-            data['license_text'] = lf.read()
+            data[FLAME_LICENSE_TEXT_TAG] = lf.read()
 
         return data
 
@@ -116,7 +120,7 @@ class FossLicenses:
                     data = self.__read_json(license_file)
                     for compound in data[COMPOUNDS_TAG]:
                         licenses[compound['spdxid']] = compound
-                        for alias in compound[ALIASES_TAG]:
+                        for alias in compound[FLAME_ALIASES_TAG]:
                             if alias in aliases:
                                 raise FlameException(f'Alias "{alias}" -> {compound["spdxid"]} already defined as "{aliases[alias]}".')
 
@@ -131,7 +135,7 @@ class FossLicenses:
                 else:
                     data = self.__read_license_file(license_file, check)
                     licenses[data['spdxid']] = data
-                    for alias in data[ALIASES_TAG]:
+                    for alias in data[FLAME_ALIASES_TAG]:
                         if alias in aliases:
                             raise FlameException(f'Alias "{alias}" -> {data["spdxid"]} already defined as "{aliases[alias]}".')
 
@@ -145,7 +149,7 @@ class FossLicenses:
         self.license_db[DUALS_TAG] = duals
         self.license_db[LICENSES_TAG] = licenses
         self.license_db[COMPATS_TAG] = compats
-        self.license_db[ALIASES_TAG] = aliases
+        self.license_db[FLAME_ALIASES_TAG] = aliases
         self.license_db[SCANCODE_KEYS_TAG] = scancode_keys
         self.license_db[LICENSE_OPERATORS_TAG] = self.__read_json(LICENSE_OPERATORS_FILE)['operators']
 
@@ -156,8 +160,8 @@ class FossLicenses:
         elif name in self.license_db[LICENSE_OPERATORS_TAG]:
             ret_name = self.license_db[LICENSE_OPERATORS_TAG][name]
             ret_id = 'operator'
-        elif name in self.license_db[ALIASES_TAG]:
-            ret_name = self.license_db[ALIASES_TAG][name]
+        elif name in self.license_db[FLAME_ALIASES_TAG]:
+            ret_name = self.license_db[FLAME_ALIASES_TAG][name]
             ret_id = 'alias'
         elif name in self.license_db[SCANCODE_KEYS_TAG]:
             ret_name = self.license_db[SCANCODE_KEYS_TAG][name]
@@ -253,7 +257,7 @@ class FossLicenses:
 
         replacements = []
 
-        ret = self.__update_license_expression_helper(self.license_db[ALIASES_TAG],
+        ret = self.__update_license_expression_helper(self.license_db[FLAME_ALIASES_TAG],
                                                       'alias',
                                                       license_expression)
         replacements += ret['identifications']
@@ -281,7 +285,7 @@ class FossLicenses:
 
         ret = {
             'queried_license': license_expression,
-            'identified_license': license_parsed,
+            FLAME_IDENTIFIED_LICENSE_TAG: license_parsed,
             'identifications': replacements,
             'updated_license': updated_license,
             'license_parsed': license_parsed,
@@ -338,7 +342,7 @@ class FossLicenses:
 
         """
         identified_license = self.__identify_license(name)
-        identified_name = identified_license[NAME_TAG]
+        identified_name = identified_license[FLAME_NAME_TAG]
         if identified_license['identified_via'] == 'operator':
             return {
                 IDENTIFIED_ELEMENT_TAG: identified_license,
@@ -392,9 +396,9 @@ class FossLicenses:
 
         """
         if alias_license:
-            return {k: v for k, v in self.license_db[ALIASES_TAG].items() if alias_license in v}
+            return {k: v for k, v in self.license_db[FLAME_ALIASES_TAG].items() if alias_license in v}
         # List all aliases that exist
-        return self.license_db[ALIASES_TAG]
+        return self.license_db[FLAME_ALIASES_TAG]
 
     def aliases(self, license_name):
         """Returns a list of all the aliases for a license
@@ -407,8 +411,8 @@ class FossLicenses:
         >>> aliases = fl.aliases("GPLv2+")
 
         """
-        identified_name = self.__identify_license(license_name)[NAME_TAG]
-        return self.license_db[LICENSES_TAG][identified_name][ALIASES_TAG]
+        identified_name = self.__identify_license(license_name)[FLAME_NAME_TAG]
+        return self.license_db[LICENSES_TAG][identified_name][FLAME_ALIASES_TAG]
 
     def operators(self):
         """
@@ -425,7 +429,7 @@ class FossLicenses:
     def __compatibility_as(self, license_name):
         # List compatibility_as for license
         identified = self.__identify_license(license_name)
-        identified_name = identified[NAME_TAG]
+        identified_name = identified[FLAME_NAME_TAG]
 
         if COMPATIBILITY_AS_TAG in self.license_db[LICENSES_TAG][identified_name]:
             compat = self.license_db[LICENSES_TAG][identified_name][COMPATIBILITY_AS_TAG]
@@ -436,7 +440,7 @@ class FossLicenses:
 
         return {
             IDENTIFIED_ELEMENT_TAG: identified,
-            COMPATIBILITY_TAG: {
+            FLAME_COMPATIBILITY_TAG: {
                 'compat_as': compat,
                 'queried_name': license_name,
                 'identified_via': method,
@@ -467,7 +471,7 @@ class FossLicenses:
         compats = []
         ret = self.__update_license_expression_helper(self.license_db[COMPATS_TAG],
                                                       'compat',
-                                                      expression_full['identified_license'])
+                                                      expression_full[FLAME_IDENTIFIED_LICENSE_TAG])
         ret['license_expression'] = re.sub(r'\s\s*', ' ', ret['license_expression']).strip()
         compats = ret['identifications']
         compat_license_expression = ret['license_expression']
@@ -488,8 +492,8 @@ class FossLicenses:
             'compatibilities': compats,
             'queried_license': license_expression,
             'identification': expression_full,
-            'identified_license': expression_full['identified_license'],
-            'compat_license': compat_license_expression,
+            FLAME_IDENTIFIED_LICENSE_TAG: expression_full[FLAME_IDENTIFIED_LICENSE_TAG],
+            FLAME_COMPATIBLE_LICENSE_TAG: compat_license_expression,
             'compat_support': compat_support,
         }
         self.compat_cache[cache_key] = ret
