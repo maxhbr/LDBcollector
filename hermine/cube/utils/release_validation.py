@@ -2,7 +2,6 @@
 #
 #  SPDX-License-Identifier: AGPL-3.0-only
 import logging
-import time
 
 from django.db.models import Count, Case, When, F, Subquery, OuterRef, Q
 
