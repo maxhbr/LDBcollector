@@ -4,7 +4,7 @@
 import logging
 import time
 
-from django.db.models import Count, Case, When, F
+from django.db.models import Count, Case, When, F, Subquery, OuterRef, Q
 
 from cube.models import (
     Release,
@@ -30,29 +30,38 @@ STEP_POLICY = 5
 
 # Functions with side effect to update releases according to curations and choices
 def apply_curations(release):
-    start = time.time()
-    for usage in release.usage_set.filter(version__corrected_license="").annotate(
-        imported_license=Case(
-            When(
-                version__spdx_valid_license_expr="",
-                then=F("version__declared_license_expr"),
-            ),
-            default=F("version__spdx_valid_license_expr"),
+    for usage in (
+        release.usage_set.filter(version__corrected_license="")
+        .annotate(
+            imported_license=Case(
+                When(
+                    version__spdx_valid_license_expr="",
+                    then=F("version__declared_license_expr"),
+                ),
+                default=F("version__spdx_valid_license_expr"),
+            )
+        )
+        .annotate(
+            curation=Subquery(
+                LicenseCuration.objects.filter(
+                    Q(component=OuterRef("version__component")) | Q(component=None),
+                    Q(version=OuterRef("version")) | Q(version=None),
+                    Q(expression_in=OuterRef("imported_license")),
+                ).values("expression_out")
+            )  # includes curations with semantic versioning
         )
     ):
-        # Get the curation for the version
-        try:
-            curation = LicenseCuration.objects.for_version(usage.version).get()
-            usage.version.corrected_license = curation.expression_out
-            usage.version.save()
-        except LicenseCuration.DoesNotExist:
-            # logger.warning("No curations for %s", usage.version.component)
-            pass
-        except LicenseCuration.MultipleObjectsReturned:
-            logger.warning("Multiple curations for %s ", usage.version.component)
-    end = time.time()
-    duration = end - start
-    logger.warning("End of curations %s", duration)
+        if usage.curation is not None:
+            # Check there are no conflicting curations (subquery returns only first row)
+            try:
+                curation = LicenseCuration.objects.for_version(usage.version).get()
+                usage.version.corrected_license = curation.expression_out
+                usage.version.save()
+            except (
+                LicenseCuration.DoesNotExist,
+                LicenseCuration.MultipleObjectsReturned,
+            ):
+                logger.warning("Multiple curations for %s", usage.version.component)
 
 
 def propagate_choices(release: Release):
