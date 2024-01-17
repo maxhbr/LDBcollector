@@ -1198,3 +1198,10 @@ location = https://github.com/akheron/jansson/blob/master/src/lookup3.h#L9
 text = '''
 You can use this free for any purpose.  It's in the public domain.  It has no warranty.
 '''
+
+package = iw
+location = https://github.com/sailfishos-mirror/iw/blob/master/sha256.c#L25C1-L25C1 
+text = '''
+This is based on SHA256 implementation in LibTomCrypt that was released into
+public domain by Tom St Denis.
+'''
