@@ -7,7 +7,7 @@ import logging
 import os
 import flame.exception
 
-SW_VERSION = '0.19.6'
+SW_VERSION = '0.19.7'
 
 PYTHON_DIR = os.path.dirname(os.path.realpath(__file__))
 VAR_DIR = os.path.join(PYTHON_DIR, 'var')
