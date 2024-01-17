@@ -59,10 +59,6 @@ COPY docker/config.py $INSTALL_PATH/hermine/hermine/config.py
 
 EXPOSE $DJANGO_PORT
 
-ENV \
-    NB_WORKERS=2 \
-    NB_THREADS=4
-
 # run entrypoint.sh
 WORKDIR $INSTALL_PATH/hermine
 ENTRYPOINT /opt/hermine/docker-entrypoint.sh
