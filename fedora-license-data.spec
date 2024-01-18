@@ -6,7 +6,7 @@
 %endif
 
 Name:           fedora-license-data
-Version:        1.38
+Version:        1.39
 Release:        1%{?dist}
 Summary:        Fedora Linux license data
 
@@ -97,6 +97,23 @@ make check-grammar
 
 
 %changelog
+* Thu Jan 18 2024 Miroslav Suchý <msuchy@redhat.com> 1.39-1
+- add LicenseRef-docbook-dtds
+- public domain dedication for iw
+- add HPND-MIT-disclaimer
+- add Caldera-no-preamble
+- Delete TOML files for licenses that cannot be found
+- Add xkeyboard-config-Zinoviev
+- Add Adobe-Display-Postscript
+- Add DEC-3-Clause
+- Add HPND-sell-MIT-disclaimer-xserver
+- add not allowed license LicenseRef-sph2pipe
+- add LGPL-2.1-or-later WITH GNU-compiler-exception
+- GNU-compiler-exception: GPL-3.0 -> GPL-2.0
+- firmware.txt: add license for microcode_ctl
+- firmware.txt: remove trailing whitespace
+- public domain dedication for jansson
+
 * Thu Jan 04 2024 Miroslav Suchý <msuchy@redhat.com> 1.38-1
 - add GPL-2.0-or-later WITH Bison-exception-1.24
 - Add Unicode-3.0 license
