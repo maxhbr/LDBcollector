@@ -1,11 +1,7 @@
 [license]
 
-expression = "LicenseRef-TGPPL"
+expression = "TGPPL-1.0"
 status = [ "allowed" ]
-
-url = '''
-https://fedoraproject.org/wiki/Licensing/TGPPL
-'''
 
 [fedora]
 
