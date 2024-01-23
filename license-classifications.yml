@@ -3489,6 +3489,16 @@ categorizations:
   categories:
   - "source-available"
   - "include-in-notice-file"
+- id: "LicenseRef-scancode-dhb-lbnl-bsd-2007"
+  categories:
+  - "copyleft-limited"
+  - "include-in-notice-file"
+  - "include-source-code-offer-in-notice-file"
+- id: "LicenseRef-scancode-dhb-limited-bsd-2015"
+  categories:
+  - "copyleft-limited"
+  - "include-in-notice-file"
+  - "include-source-code-offer-in-notice-file"
 - id: "LicenseRef-scancode-dhtmlab-public"
   categories:
   - "permissive"
@@ -4109,6 +4119,14 @@ categorizations:
   categories:
   - "permissive"
   - "include-in-notice-file"
+- id: "LicenseRef-scancode-fsl-1.0-apache-2.0"
+  categories:
+  - "source-available"
+  - "include-in-notice-file"
+- id: "LicenseRef-scancode-fsl-1.0-mit"
+  categories:
+  - "source-available"
+  - "include-in-notice-file"
 - id: "LicenseRef-scancode-ftdi"
   categories:
   - "proprietary-free"
@@ -4686,6 +4704,16 @@ categorizations:
   categories:
   - "permissive"
   - "include-in-notice-file"
+- id: "LicenseRef-scancode-houdini"
+  categories:
+  - "copyleft"
+  - "include-in-notice-file"
+  - "include-source-code-offer-in-notice-file"
+- id: "LicenseRef-scancode-houdini-project"
+  categories:
+  - "copyleft"
+  - "include-in-notice-file"
+  - "include-source-code-offer-in-notice-file"
 - id: "LicenseRef-scancode-hp"
   categories:
   - "proprietary-free"
@@ -4803,6 +4831,14 @@ categorizations:
   - "proprietary-free"
   - "include-in-notice-file"
 - id: "LicenseRef-scancode-ibm-dhcp"
+  categories:
+  - "permissive"
+  - "include-in-notice-file"
+- id: "LicenseRef-scancode-ibm-employee-written"
+  categories:
+  - "proprietary-free"
+  - "include-in-notice-file"
+- id: "LicenseRef-scancode-ibm-glextrusion"
   categories:
   - "permissive"
   - "include-in-notice-file"
@@ -8032,6 +8068,14 @@ categorizations:
   categories:
   - "permissive"
   - "include-in-notice-file"
+- id: "LicenseRef-scancode-responsible-ai-source-1.0"
+  categories:
+  - "proprietary-free"
+  - "include-in-notice-file"
+- id: "LicenseRef-scancode-responsible-ai-source-1.1"
+  categories:
+  - "proprietary-free"
+  - "include-in-notice-file"
 - id: "LicenseRef-scancode-rh-eula"
   categories:
   - "copyleft"
@@ -9193,6 +9237,10 @@ categorizations:
 - id: "LicenseRef-scancode-unicode-tou"
   categories:
   - "proprietary-free"
+  - "include-in-notice-file"
+- id: "LicenseRef-scancode-unicode-v3"
+  categories:
+  - "permissive"
   - "include-in-notice-file"
 - id: "LicenseRef-scancode-unixcrypt"
   categories:
