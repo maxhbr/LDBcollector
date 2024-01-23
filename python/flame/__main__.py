@@ -30,6 +30,18 @@ def get_parser():
                         help='Read settings from configuration file.',
                         default=None)
 
+    parser.add_argument('-ld', '--license-dir',
+                        type=str,
+                        dest='license_dir',
+                        help='Instead of using flame\'s built in licenses, use the licenses in the supplied directory',
+                        default=None)
+
+    parser.add_argument('-ald', '--additional-license-dir',
+                        type=str,
+                        dest='additional_license_dir',
+                        help='Add licenses as found in the supplied directory',
+                        default=None)
+
     parser.add_argument('-ndu', '--no-dual-update',
                         action='store_true',
                         help='do not update dual licenses (e.g. GPL-2.0-or-later -> GPL-2.0-only OR GPL-3.0-only)',
@@ -173,19 +185,20 @@ def main():
 
     args = parse()
 
-    try:
-        config = flame.config.read_config(args.flame_config)
-    except Exception as e:
-        logging.error(f'{e}')
-        sys.exit(1)
-
     if args.debug:
         logging.basicConfig(level=logging.DEBUG)
 
     formatter = OutputFormatterFactory.formatter(args.output_format)
 
+    config = {}
+    config['flame-config'] = args.flame_config
+    config['check'] = args.check
+    config['additional-license-dir'] = args.additional_license_dir
+    config['license-dir'] = args.license_dir
+    config['flame-config'] = args.flame_config
+
     try:
-        fl = FossLicenses(check=args.check, additional_license_dir=config.get('additional-license-dir', None))
+        fl = FossLicenses(config=config)
     except Exception as e:
         formatted = formatter.format_error(e, args.verbose)
         print(f'{formatted}')
