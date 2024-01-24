@@ -58,10 +58,10 @@ def __read_config_helper(path):
         logging.debug(f'exception: {e}')
     raise flame.exception.FlameException(f'Could not read file: {path}')
 
-def read_config(config=None):
+def read_config(config_file=None):
     logging.debug('reading config')
     for path in [
-            config,
+            config_file,
             os.environ.get('FLAME_USER_CONFIG', None),
     ]:
         logging.debug(f'reading {path}')
@@ -77,7 +77,7 @@ def read_config(config=None):
     ]:
         logging.debug(f'reading {path}')
         try:
-            return __read_config_helper(config)
+            return __read_config_helper(config_file)
         except Exception as e:
             logging.debug(f'reading {path} failed with {e}')
             pass
