@@ -5,7 +5,7 @@
 from flame.license_db import FossLicenses
 import logging
 
-fl = FossLicenses(license_dir="tests/licenses", logging_level=logging.INFO)
+fl = FossLicenses(config={'license-dir': 'tests/licenses', 'level': 'INFO'})
 
 def test_compound_gpl_with():
     lic = fl.expression_license("GPL-2.0-with-classpath-exception", update_dual=False)
