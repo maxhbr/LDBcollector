@@ -4500,3 +4500,8 @@ categorizations:
     categories:
       - "permissive"
       - "property:include-in-notice-file"
+
+  - id: "LicenseRef-scancode-atmel-microcontroller"
+    categories:
+      - "proprietary-free"
+      - "property:include-in-notice-file"
