@@ -4501,6 +4501,7 @@ categorizations:
       - "permissive"
       - "property:include-in-notice-file"
 
+  # https://scancode-licensedb.aboutcode.org/atmel-microcontroller.html
   - id: "LicenseRef-scancode-atmel-microcontroller"
     categories:
       - "proprietary-free"
