@@ -1,5 +1,5 @@
 <!--
-SPDX-FileCopyrightText: 2023 Henrik Sandklef <hesa@sandklef.com>
+SPDX-FileCopyrightText: 2024 Henrik Sandklef <hesa@sandklef.com>
 
 SPDX-License-Identifier: GPL-3.0-or-later
 -->
@@ -140,4 +140,40 @@ license expression against an outbound license expression we replace
 the unknown license with the known and with same compatibility.
 
 
+# Extending flame
 
+## Python API
+
+See [Python API](https://github.com/hesa/foss-licenses/blob/main/PYTHON_API.md)
+
+## Command line program
+
+You can extend [flame](https://github.com/hesa/foss-licenses/blob/main/FLAME.md), the command line program, in two different ways:
+
+* using the option `additional-license-dir`
+
+* using the environment variable `FLAME_USER_CONFIG`
+
+### Using the option `additional-license-dir`
+
+Assuming you want to extend flame with the licenses located in the directory `more-licenses` and then list the licenses (using the command `licenses`):
+
+```
+flame --additional-license-dir more-licenses licenses
+```
+
+### Using the environment variable `FLAME_USER_CONFIG`
+
+You have a config file, called `flame-config.json`, with the variable `additional-license-dir`set to `more-licenses`, like this:
+
+```
+{
+    "additional-license-dir": "./more-licenses/"
+}
+```
+
+then you can start `flame` to read the config file like this:
+
+```
+FLAME_USER_CONFIG=flame-config.json lame --additional-license-dir more-licenses licenses
+```
