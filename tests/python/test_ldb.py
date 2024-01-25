@@ -8,7 +8,7 @@ from flame.license_db import FossLicenses
 from flame.exception import FlameException
 import logging
 
-fl = FossLicenses(check=True, license_dir="tests/licenses", logging_level=logging.INFO)
+fl = FossLicenses(config={'check': True, 'license-dir': 'tests/licenses', 'level': 'logging.INFO'})
 
 def test_alias_list():
     # list of all aliases

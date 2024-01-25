@@ -12,7 +12,7 @@ from pathlib import Path
 import license_expression
 from enum import Enum
 
-from flame.config import LICENSE_DIR, LICENSE_OPERATORS_FILE, LICENSE_SCHEMA_FILE
+from flame.config import LICENSE_DIR, LICENSE_OPERATORS_FILE, LICENSE_SCHEMA_FILE, read_config
 from flame.exception import FlameException
 from jsonschema import validate
 
@@ -48,29 +48,51 @@ class Validation(Enum):
 class FossLicenses:
     """
     Return a FossLicenses object.
+    The config object is checked for the follow variables:
+    * check (boolean): enable check of each license against schema
+    * license-dir (str): directory where licenses (JSON and LICENSE) are located. Used for testing.
+    * additional-license-dir (str): add directory to licenses (JSON and LICENSE) are located. Used for extending flame.
+    * logging-level (str): log level to use
+    * flame-config (str): configuration file to read settings from
 
-    :param check: enable check of each license against schema
-    :type check: boolean
-    :param license_dir: directory where licenses (JSON and LICENSE) are located. Used for testing.
-    :param additional_license_dir: add directory to licenses (JSON and LICENSE) are located. Used for extending flame.
-    :type license_dir: str
-    :type additional_license_dir: str
-    :param logging_level: log level to use
-    :type logging_level: Loggin Level
+
+    :param config:
     :raise FlameException: if license_expression is not valid
     :Example:
 
     >>> fl = FossLicenses()
 
     """
-    def __init__(self, check=False, license_dir=LICENSE_DIR, additional_license_dir=None, logging_level=logging.INFO):
+    def __init__(self, config=None):
+        if not config:
+            config = {}
+        # get config from passed file name via config parameter
+        config_from_file = read_config(config.get('flame-config', None))
+        # read config from file passed via config parameter
+        config_from_file.update((k, v) for k, v in config.items() if v is not None)
+        config = config_from_file
+
+        check = config.get('check', False)
+        logging_level = self.__str_to_loggin_info(config)
         logging.basicConfig(level=logging_level)
-        self.license_dir = license_dir
-        self.additional_license_dir = additional_license_dir
+
+        self.license_dir = config.get('license-dir', LICENSE_DIR)
+        self.additional_license_dir = config.get('additional-license-dir', [])
         self.__init_license_db(check)
         self.supported_licenses = None
         self.compat_cache = {}
         self.license_cache = {}
+
+    def __str_to_loggin_info(self, config):
+        logging_level = config.get('level')
+        if not logging_level:
+            return logging.INFO
+        if logging_level.lower() == "info":
+            return logging.INFO
+        elif logging_level.lower() == "warning":
+            return logging.WARNING
+        elif logging_level.lower() == "debug":
+            return logging.DEBUG
 
     def __read_json(self, file_name):
         with open(file_name) as f:

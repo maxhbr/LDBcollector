@@ -45,3 +45,46 @@ BSD-3-Clause AND HPND
 
 ```
 
+
+## Extending flame
+
+If you want to add your own licenses (e.g. your company's) you can do this in two different ways. But first we need to create a config file for that. Here are some assumptions:
+
+* you define a license called `LicenseRef-mycompany-mylicense` having the same compatibility as `MIT` in a JSON file in `licenses` directory in the current folder, e.g. `./licenses/my-company-license.json`
+
+* you define your flame config in a file, `flame-config.json`, in the current` directory: `./flame-config.json`
+
+
+### Using the Python API
+
+Here you don't need the config file and instead pass the directory in a config object directly to `FossLicenses`.
+
+```python3
+>>> from flame.license_db import FossLicenses
+>>> fl = FossLicenses(config={'additional-license-dir': 'licenses'})
+>>> expression = fl.expression_compatibility_as('LicenseRef-mycompany-mylicense')
+>>> print(expression['compat_license'])
+MIT
+
+```
+### Config file, environment variable and 
+
+The config file, `flame-config.json`, looks like this:
+
+```
+{
+    "additional-license-dir": "./licenses/"
+}
+```
+
+Pass the config file using the environment varialbe `FLAME_USER_CONFIG`.
+
+```FLAME_USER_CONFIG=flame-config.json python3
+>>> from flame.license_db import FossLicenses
+>>> fl = FossLicenses()
+>>> expression = fl.expression_compatibility_as('LicenseRef-mycompany-mylicense')
+>>> print(expression['compat_license'])
+MIT
+
+```
+

@@ -5,7 +5,7 @@
 from flame.license_db import FossLicenses
 import logging
 
-fl = FossLicenses(license_dir="tests/licenses", logging_level=logging.INFO)
+fl = FossLicenses(config={'license_dir': 'tests/licenses', 'level': 'INFO'})
 
 def test_with_no_dual():
     lic = fl.expression_license("GPL-2.0-or-later WITH Classpath-exception-2.0", update_dual=False)

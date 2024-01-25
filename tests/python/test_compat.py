@@ -9,7 +9,7 @@ from flame.license_db import Validation
 from flame.exception import FlameException
 import logging
 
-fl = FossLicenses(license_dir="tests/licenses", logging_level=logging.INFO)
+fl = FossLicenses(config={'license-dir': 'tests/licenses', 'level': 'INFO'})
 
 def test_compat_misc_blanks():
     # add misc blanks to the license expression
