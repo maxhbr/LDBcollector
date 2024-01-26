@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+        "comment": ""
+    },
+    "ambiguities": {
+        "GNU General Public License": {
+            "aliases": [
+                "GPL"
+            ],
+            "problem": "This license has different version (1, 2 and 3). Without a version number it is not possible to determine which of the versions is meant."
+        },
+        "GNU Lesser General Public License": {
+            "aliases": [
+                "LGPL",
+                "GNU Library General Public License"
+            ],
+            "problem": "This license has different version (2.0, 2.1 and 3.0). Without a version number it is not possible to determine which of the versions is meant."
+        }
+    }
+}
