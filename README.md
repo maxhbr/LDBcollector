@@ -18,6 +18,8 @@ A database with meta data for FOSS licenses adding useful information to existin
 
 * compatibility as another license (e.g. "X11-Style (Keith Packard)" is compatibility wise the same as "HPND")
 
+* ambiguous license name (e.g. "GNU General Public License", which misses the version number)
+
 * license text
 
 # Background
@@ -58,11 +60,41 @@ The data can be found in the [var directory](https://github.com/hesa/foss-licens
 
 # Contributions
 
-You are more than welcome to contribute:
+You are more than welcome to contribute.
+
+## License reviews
+
+It would be great if you could check the licenses and feedback us (see HOW below). 
+
+## Hacking
+
+If you find a bug and have a fix or have written a new feature you want addded. Create a PR and we'll have a look..
+
+## Suggest new features and report bugs
+
+We need input from you on how you use or would like to use foss-licenses. 
+
+## Suggest new license to support
+
+Do you miss a license that you want support for. Create an issue with the following information:
+
+* SPDX identifier (if any)
+
+* Scancode identifier (if any)
+
+* License text (or a URL)
+
+* Aliases you would like to add (if any)
+
+* Same compatibility as another license (if any)
+
+## How
 
 * create an [issue](https://github.com/hesa/foss-licenses/issues)
 
-* create PR
+* create PR for code or license contributions
+
+## CLA?
 
 We do not have a CLA or similar, but we assume your contributions are
 made under our license (for the code and data).
@@ -175,5 +207,5 @@ You have a config file, called `flame-config.json`, with the variable `additiona
 then you can start `flame` to read the config file like this:
 
 ```
-FLAME_USER_CONFIG=flame-config.json lame --additional-license-dir more-licenses licenses
+FLAME_USER_CONFIG=flame-config.json flame licenses
 ```
