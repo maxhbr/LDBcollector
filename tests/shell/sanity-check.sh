@@ -157,7 +157,8 @@ check_presence GPL-3.0-or-later " -e 3 -e later" " -e '1 ' -e 2"
 check_presence AGPL-3.0-only     " -e 3 " " -e '1 ' -e 2 -e later -e plus -e +"
 check_presence AGPL-3.0-or-later " -e 3 -e later -e +" " -e '1 ' -e 2"
 
-check_presence LGPL-2.1-only " -e 2 " " -e 3  -e later"
+check_presence LGPL-2.0-only " -e 2.0 " " -e 3  -e later"
+check_presence LGPL-2.1-only " -e 2.1 " " -e 3  -e later"
 check_presence LGPL-3.0-only " -e 3 " " -e 2  -e later"
 
 check_presence LGPL-2.1-or-later " -e 2 -e later" " -e 3"
