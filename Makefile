@@ -9,7 +9,7 @@ check: license python clean check-reuse build
 check_license_files:
 
 # all JSON files should have a LICENSE file
-	@for lf in `find var/licenses -name "*.json" | grep -v -e compounds.json -e duals.json`; \
+	@for lf in `find var/licenses -name "*.json" | grep -v -e compounds.json -e duals.json -e ambiguities.json`; \
 		do \
 			LICENSE_FILE=`echo $$lf | sed 's/\.json/\.LICENSE/g'` ; \
 			echo "$$lf";\
@@ -32,6 +32,10 @@ check_license_files:
 	@echo -n "License schema: " ; \
 		   	jq . var/license_schema.json > /dev/null || exit 1 ; \
 			echo "OK" ;
+
+# Sanity check the content
+	@echo -m "Sanity check the licenses: " ; \
+		./tests/shell/sanity-check.sh || exit 1; echo "OK"
 
 check_license_schema:
 # the py tool has an option "--check" that checks every license against license schema
