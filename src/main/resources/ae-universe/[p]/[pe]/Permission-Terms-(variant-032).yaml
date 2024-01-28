@@ -4,10 +4,14 @@
 
 canonicalName: "Permission Terms (variant 032)"
 category: "Permission"
-shortName: "PT-Var032"
+spdxIdentifier: "HPND-Pbmplus"
 
 alternativeNames:
   - "Open Group Permissions"
+  - "Permission Terms (variant 032)"
+  - "HPND-Pbmplus"
+  - "Historical Permission Notice and Disclaimer - Pbmplus variant"
+  - "Historical Permission Notice and Disclaimer (Pbmplus)"
 
 otherIds: 
   - "scancode:libpbm"

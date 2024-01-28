@@ -4,10 +4,13 @@
 
 canonicalName: "Kevlin Henney License"
 category: "Kevlin Henney License"
-shortName: "Kevlin-Henney"
+spdxIdentifier: "HPND-Kevlin-Henney"
 
 alternativeNames:
   - "kevlin-henney"
+  - "HPND-Kevlin-Henney"
+  - "Historical Permission Notice and Disclaimer - Kevlin Henney variant"
+  - "Historical Permission Notice and Disclaimer (Kevlin Henney)"
 
 otherIds: 
   - "scancode:kevlin-henney"

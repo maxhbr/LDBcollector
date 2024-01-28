@@ -9,6 +9,5 @@ spdxIdentifier: "python-ldap"
 openCoDEStatus: "not approved"
 
 alternativeNames:
-  - "python-ldap"
   - "Python ldap License"
 

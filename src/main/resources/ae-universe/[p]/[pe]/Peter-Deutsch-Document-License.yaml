@@ -4,10 +4,12 @@
 
 canonicalName: "Peter Deutsch Document License"
 category: "Peter Deutsch Document License"
-shortName: "Peter-Deutsch-Document"
+spdxIdentifier: "LPD-document"
 
 alternativeNames:
   - "peter-deutsch-document"
+  - "Peter Deutsch Document License"
+  - "LPD Documentation License"
 
 otherIds: 
   - "scancode:peter-deutsch-document"

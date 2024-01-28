@@ -5,11 +5,14 @@
 canonicalName: "Permission Terms (AZ)"
 category: "Permission"
 shortName: "PT-AZ"
+spdxIdentifier: "xkeyboard-config-Zinoviev"
 
 openCoDEStatus: "approved"
 
 alternativeNames:
   - "Permission Terms (AZ)"
+  - "xkeyboard-config-Zinoviev"
+  - "xkeyboard-config Zinoviev License"
 
 otherIds: 
   - "OpenCoDE:PT-AZ"
