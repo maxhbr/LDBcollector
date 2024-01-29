@@ -168,6 +168,12 @@ const docTemplate = `{
                         "schema": {
                             "$ref": "#/definitions/models.LicenseError"
                         }
+                    },
+                    "500": {
+                        "description": "unable to find changes",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
                     }
                 }
             }

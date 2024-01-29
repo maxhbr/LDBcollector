@@ -38,13 +38,13 @@ func GetAllAudit(c *gin.Context) {
 
 	if err := query.Find(&audit).Error; err != nil {
 		er := models.LicenseError{
-			Status:    http.StatusNotFound,
-			Message:   "Change log not found",
+			Status:    http.StatusInternalServerError,
+			Message:   "unable to fetch audits",
 			Error:     err.Error(),
 			Path:      c.Request.URL.Path,
 			Timestamp: time.Now().Format(time.RFC3339),
 		}
-		c.JSON(http.StatusNotFound, er)
+		c.JSON(http.StatusInternalServerError, er)
 		return
 	}
 	res := models.AuditResponse{
@@ -73,25 +73,26 @@ func GetAllAudit(c *gin.Context) {
 //	@Security		ApiKeyAuth
 //	@Router			/audits/{audit_id} [get]
 func GetAudit(c *gin.Context) {
-	var changelog models.Audit
+	var audit models.Audit
 	id := c.Param("audit_id")
 	parsedId, err := utils.ParseIdToInt(c, id, "audit")
 	if err != nil {
 		return
 	}
 
-	if err := db.DB.Where(models.Audit{Id: parsedId}).First(&changelog).Error; err != nil {
+	if err := db.DB.Where(models.Audit{Id: parsedId}).First(&audit).Error; err != nil {
 		er := models.LicenseError{
 			Status:    http.StatusNotFound,
-			Message:   "no change log with such id exists",
+			Message:   "no audit with such id exists",
 			Error:     err.Error(),
 			Path:      c.Request.URL.Path,
 			Timestamp: time.Now().Format(time.RFC3339),
 		}
 		c.JSON(http.StatusNotFound, er)
+		return
 	}
 	res := models.AuditResponse{
-		Data:   []models.Audit{changelog},
+		Data:   []models.Audit{audit},
 		Status: http.StatusOK,
 		Meta: &models.PaginationMeta{
 			ResourceCount: 1,
@@ -113,6 +114,7 @@ func GetAudit(c *gin.Context) {
 //	@Success		200			{object}	models.ChangeLogResponse
 //	@Failure		400			{object}	models.LicenseError	"Invalid audit ID"
 //	@Failure		404			{object}	models.LicenseError	"No audit entry with given ID"
+//	@Failure		500			{object}	models.LicenseError	"unable to find changes"
 //	@Security		ApiKeyAuth
 //	@Router			/audits/{audit_id}/changes [get]
 func GetChangeLogs(c *gin.Context) {
@@ -123,15 +125,29 @@ func GetChangeLogs(c *gin.Context) {
 		return
 	}
 
-	if err := db.DB.Where(models.ChangeLog{AuditId: parsedId}).Find(&changelog).Error; err != nil {
+	result := db.DB.Where(models.ChangeLog{AuditId: parsedId}).Find(&changelog)
+	if result.Error != nil {
+		er := models.LicenseError{
+			Status:    http.StatusInternalServerError,
+			Message:   "unable to fetch changes",
+			Error:     result.Error.Error(),
+			Path:      c.Request.URL.Path,
+			Timestamp: time.Now().Format(time.RFC3339),
+		}
+		c.JSON(http.StatusInternalServerError, er)
+		return
+	}
+
+	if result.RowsAffected == 0 {
 		er := models.LicenseError{
 			Status:    http.StatusNotFound,
-			Message:   "no change log with such id exists",
-			Error:     err.Error(),
+			Message:   "no audit entry with given ID",
+			Error:     "No audit entry with given ID",
 			Path:      c.Request.URL.Path,
 			Timestamp: time.Now().Format(time.RFC3339),
 		}
 		c.JSON(http.StatusNotFound, er)
+		return
 	}
 
 	res := models.ChangeLogResponse{
@@ -182,6 +198,7 @@ func GetChangeLogbyId(c *gin.Context) {
 			Timestamp: time.Now().Format(time.RFC3339),
 		}
 		c.JSON(http.StatusNotFound, er)
+		return
 	}
 	if changelog.AuditId != parsedAuditId {
 		er := models.LicenseError{
@@ -192,6 +209,7 @@ func GetChangeLogbyId(c *gin.Context) {
 			Timestamp: time.Now().Format(time.RFC3339),
 		}
 		c.JSON(http.StatusNotFound, er)
+		return
 	}
 	res := models.ChangeLogResponse{
 		Data:   []models.ChangeLog{changelog},
