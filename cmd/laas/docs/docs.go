@@ -1009,6 +1009,68 @@ const docTemplate = `{
                 }
             }
         },
+        "/obligations/{topic}/audits": {
+            "get": {
+                "security": [
+                    {
+                        "ApiKeyAuth": []
+                    }
+                ],
+                "description": "Fetches audits corresponding to an obligation",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Obligations"
+                ],
+                "summary": "Fetches audits corresponding to an obligation",
+                "operationId": "GetObligationAudits",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "Topic of the obligation for which audits need to be fetched",
+                        "name": "topic",
+                        "in": "path",
+                        "required": true
+                    },
+                    {
+                        "type": "integer",
+                        "description": "Page number",
+                        "name": "page",
+                        "in": "query"
+                    },
+                    {
+                        "type": "integer",
+                        "description": "Number of records per page",
+                        "name": "limit",
+                        "in": "query"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/models.AuditResponse"
+                        }
+                    },
+                    "404": {
+                        "description": "No obligation with given topic found",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    },
+                    "500": {
+                        "description": "unable to find audits with such obligation topic",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    }
+                }
+            }
+        },
         "/search": {
             "post": {
                 "description": "Search licenses on different filters and algorithms",
