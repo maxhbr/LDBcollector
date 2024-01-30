@@ -200,19 +200,29 @@ def main():
     try:
         fl = FossLicenses(config=config)
     except Exception as e:
+        if args.verbose:
+            import traceback
+            print(traceback.format_exc())
+            print(str(e))
+
+
         formatted = formatter.format_error(e, args.verbose)
-        print(f'{formatted}')
+        print(f'____ {formatted}')
         sys.exit(1)
 
     if args.func:
         try:
-            formatted = args.func(fl, formatter, args)
-            print(formatted)
+            formatted, warnings = args.func(fl, formatter, args)
+            if warnings:
+                print(warnings, file=sys.stderr)
+            print(f'{formatted}')
         except Exception as e:
             if args.verbose:
                 import traceback
                 print(traceback.format_exc())
 
+            print("trace")
+            print("trace")
             formatted = formatter.format_error(e, args.verbose)
             print(f'{formatted}')
             sys.exit(1)
