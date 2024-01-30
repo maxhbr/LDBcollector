@@ -148,6 +148,11 @@ urlpatterns = [
         views.ObligationDiffUpdateView.as_view(),
         name="obligation_diff_update",
     ),
+    path(
+        "obligations/orphans/",
+        views.ObligationsListView.as_view(),
+        name="obligations_orphans",
+    ),
     path("generics/", views.GenericListView.as_view(), name="generic_list"),
     path(
         "generics/<int:pk>/", views.GenericDetailView.as_view(), name="generic_detail"
