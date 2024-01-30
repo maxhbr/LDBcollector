@@ -40,11 +40,6 @@ open class VerifyPackageCurationsTask : DefaultTask() {
                 }
 
                 curations.forEach { curation ->
-                    if (curation.id.name.isBlank()) {
-                        issues += "Only curations for specific packages are allowed, but the curation for package " +
-                                "'${curation.id.toCoordinates()}' in file '$relativePath' does not have a package name."
-                    }
-
                     val version = curation.id.version
                     if (version.isNotBlank() && version.hasVersionRangeIndicators()) {
                         val range = RangesListFactory.create(version)
