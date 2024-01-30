@@ -459,6 +459,17 @@ class ObligationDiffUpdateView(LoginRequiredMixin, PermissionRequiredMixin, Upda
         return modelform_factory(Obligation, fields=[self.kwargs["field"]])
 
 
+class ObligationsListView(LoginRequiredMixin, PermissionRequiredMixin, ListView):
+    permission_required = "cube.view_license"
+    model = Obligation
+    context_object_name = "obligations"
+
+    def get_queryset(self):
+        qs = super().get_queryset()
+        qs = qs.filter(generic__exact=None).order_by("license__spdx_id")
+        return qs
+
+
 class GenericListView(
     LoginRequiredMixin,
     PermissionRequiredMixin,
