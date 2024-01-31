@@ -1,49 +1,64 @@
 {
-  description = "ldbcollector in rust";
+  description = "ldbcollector";
 
   inputs = {
-    nixpkgs.url      = "github:NixOS/nixpkgs/nixpkgs-unstable";
-    rust-overlay.url = "github:oxalica/rust-overlay";
-    flake-utils.url  = "github:numtide/flake-utils";
+    nixpkgs.url = "github:nixos/nixpkgs";
   };
 
-  outputs = { self, nixpkgs, rust-overlay, flake-utils, ... }:
-    flake-utils.lib.eachDefaultSystem (system:
-      let
-        overlays = [ (import rust-overlay) ];
-        pkgs = import nixpkgs {
-          inherit system overlays;
-        };
-      in
-      with pkgs;
-      {
-        packages.ldbcollector-rust = let
-            cargo_nix = import ./rust/Cargo.nix { inherit pkgs nixpkgs; };
-          in cargo_nix.rootCrate.build;
-        packages.ldbcollector-haskell = pkgs.callPackage ./haskell/default.nix {};
-        devShells.default = mkShell {
-          packages = with pkgs; [ 
-            crate2nix
-            cargo-generate
-            cargo-wasi
-            wasm-bindgen-cli
-            wasm
-            wasm-pack
-            wasmer
+  outputs = inputs@{ self, nixpkgs, ... }:let
+    system = "x86_64-linux";
 
-            plantuml graphviz zlib
-          ];
-          buildInputs = [
-            openssl
-            pkg-config
-            rust-bin.beta.latest.default
-            nodejs
-          ];
+    pkgs = nixpkgs.legacyPackages.${system};
+    lib = pkgs.lib;
 
-          shellHook = ''
-            export RUST_LOG=debug
-          '';
-        };
-      }
-    );
+    t = lib.trivial;
+    hl = pkgs.haskell.lib;
+
+    extraLibraries = with pkgs; [
+        plantuml
+        graphviz
+        zlib
+        libffi
+    ];
+    project = devTools:
+      let addBuildTools = (t.flip hl.addBuildTools) devTools;
+          addExtraLibraries = (t.flip hl.addExtraLibraries) extraLibraries;
+      in pkgs.haskellPackages.developPackage {
+        root = ./.;
+        name = "ldbcollector";
+        returnShellEnv = !(devTools == [ ]);
+
+        modifier = (t.flip t.pipe) [
+          addBuildTools
+          addExtraLibraries
+          hl.dontHaddock
+          hl.enableStaticLibraries
+          hl.justStaticExecutables
+          hl.disableLibraryProfiling
+          hl.disableExecutableProfiling
+          ((t.flip hl.appendBuildFlags) ["--ghc-options=\" -threaded -rtsopts -with-rtsopts=-N\"" "+RTS"])
+        ];
+      };
+
+  in {
+    packages.${system} = rec {
+      ldbcollector = project [];
+      default = ldbcollector;
+    };
+    apps.${system} = rec {
+      ldbcollector = {
+        type = "app";
+        program = "${self.packages.${system}.ldbcollector}/bin/ldbcollector-exe";
+      };
+      default = ldbcollector;
+    };
+
+    devShell.${system} = project (with pkgs.haskellPackages; [
+      cabal-fmt
+      cabal-install
+      haskell-language-server
+      hlint
+      ghcid
+    ]);
+  };
 }
