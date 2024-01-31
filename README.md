@@ -40,7 +40,7 @@ graph LR;
     LDBcollector--->Server[Interactive Server\nto browse and analyze\nserved on localhost:3000];
     GraphViz --> Server;
     JSON --> Server;
-    LDBcollector--> Wiki
-    LDBcollector--->Policy[Open Source Policy]
-    Wiki-->Policy
+    LDBcollector--> Wiki;
+    LDBcollector--->Policy[Open Source Policy];
+    Wiki-->Policy;
 ```
