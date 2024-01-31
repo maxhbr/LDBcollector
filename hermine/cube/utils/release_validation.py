@@ -3,7 +3,15 @@
 #  SPDX-License-Identifier: AGPL-3.0-only
 import logging
 
-from django.db.models import Count, Case, When, F, Subquery, OuterRef, Q
+from django.db.models import (
+    Count,
+    Case,
+    When,
+    F,
+    Subquery,
+    OuterRef,
+    Q,
+)
 
 from cube.models import (
     Release,
@@ -11,9 +19,7 @@ from cube.models import (
     LicenseChoice,
     LicenseCuration,
     Exploitation,
-)
-from cube.utils.licenses import (
-    check_licenses_against_policy,
+    Derogation,
 )
 from cube.utils.spdx import has_ors, is_ambiguous, simplified
 
@@ -30,8 +36,7 @@ STEP_POLICY = 5
 # Functions with side effect to update releases according to curations and choices
 def apply_curations(release):
     for usage in (
-        release.usage_set.filter(version__corrected_license="")
-        .annotate(
+        release.usage_set.filter(version__corrected_license="").annotate(
             imported_license=Case(
                 When(
                     version__spdx_valid_license_expr="",
@@ -40,13 +45,15 @@ def apply_curations(release):
                 default=F("version__spdx_valid_license_expr"),
             )
         )
+        # includes curations with semantic versioning which may not match
+        # but still a big performance boost to skip usages with no curations later
         .annotate(
             curation=Subquery(
                 LicenseCuration.objects.filter(
                     Q(component=OuterRef("version__component")) | Q(component=None),
                     Q(version=OuterRef("version")) | Q(version=None),
                     Q(expression_in=OuterRef("imported_license")),
-                ).values("expression_out")
+                ).values("expression_out")[:1]
             )  # includes curations with semantic versioning
         )
     ):
@@ -114,6 +121,70 @@ def propagate_choices(release: Release):
                 resolved.add(usage)
 
     return {"to_resolve": to_resolve, "resolved": resolved}
+
+
+def check_licenses_against_policy(release: Release):
+    response = {}
+    usages_lic_never_allowed = set()
+    usages_lic_context_allowed = set()
+    usages_lic_unknown = set()
+    involved_lic = set()
+    derogations = set()
+
+    usages = (
+        release.usage_set.exclude(licenses_chosen=None)
+        .select_related("version", "version__component")
+        .prefetch_related("licenses_chosen")
+        # includes derogations with semantic versioning which may not match
+        # but still a big performance boost to skip usage with no derogation later
+        .annotate(
+            derogation=Subquery(
+                Derogation.objects.filter(
+                    Q(component=OuterRef("version__component")) | Q(component=None),
+                    Q(version=OuterRef("version")) | Q(version=None),
+                    Q(product=OuterRef("release__product")) | Q(product=None),
+                    Q(release=OuterRef("release")) | Q(release=None),
+                    Q(category__in=OuterRef("release__product__categories"))
+                    | Q(category=None),
+                    Q(scope=OuterRef("scope")) | Q(scope=""),
+                    Q(exploitation=OuterRef("exploitation")) | Q(exploitation=""),
+                    Q(license__in=OuterRef("licenses_chosen")),
+                ).values("pk")
+            )
+        )
+        .all()
+    )
+
+    for usage in usages:
+        for license in usage.licenses_chosen.all():
+            involved_lic.add(license)
+
+            if license.allowed == License.ALLOWED_ALWAYS:
+                continue
+
+            if usage.derogation is not None:
+                license_derogations = list(
+                    Derogation.objects.for_usage(usage).filter(license=license)
+                )
+                if len(license_derogations):
+                    for derogation in license_derogations:
+                        derogations.add(derogation)
+                    continue
+
+            if license.allowed == License.ALLOWED_NEVER:
+                usages_lic_never_allowed.add(usage)
+            elif license.allowed == License.ALLOWED_CONTEXT:
+                usages_lic_context_allowed.add(usage)
+            elif not license.allowed:
+                usages_lic_unknown.add(usage)
+
+    response["usages_lic_never_allowed"] = usages_lic_never_allowed
+    response["usages_lic_context_allowed"] = usages_lic_context_allowed
+    response["usages_lic_unknown"] = usages_lic_unknown
+    response["involved_lic"] = involved_lic
+    response["derogations"] = derogations
+
+    return response
 
 
 # Validations step methods

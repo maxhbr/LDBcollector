@@ -4,8 +4,12 @@
 from django.test import TestCase
 from semantic_version import SimpleSpec
 
-from cube.models import Release, LicenseCuration, LicenseChoice
-from cube.utils.release_validation import apply_curations, propagate_choices
+from cube.models import Release, LicenseCuration, LicenseChoice, License, Derogation
+from cube.utils.release_validation import (
+    apply_curations,
+    propagate_choices,
+    check_licenses_against_policy,
+)
 
 
 class LicenseCurationTestCase(TestCase):
@@ -198,3 +202,153 @@ class LicenseChoiceTestCase(TestCase):
         )
         self.propagate_choices()
         self.assert_choice_did_not_propagate()
+
+
+class LicensePolicyTestCase(TestCase):
+    fixtures = ["test_data.json"]
+
+    def setUp(self):
+        self.release = Release.objects.get(id=1)
+        version = self.release.usage_set.last().version
+        LicenseCuration.objects.create(
+            component=version.component,
+            expression_in="LicenseRef-FakeLicense OR AND LicenseRef-FakeLicense-Permissive",
+            expression_out="LicenseRef-FakeLicense OR LicenseRef-FakeLicense-Permissive",
+        )
+        apply_curations(self.release)
+        LicenseChoice.objects.create(
+            expression_in="LicenseRef-FakeLicense OR LicenseRef-FakeLicense-Permissive",
+            expression_out="LicenseRef-FakeLicense-Permissive",
+        )
+        propagate_choices(self.release)
+
+    def test_unknown(self):
+        never, context, unknown, lic, derogations = check_licenses_against_policy(
+            self.release
+        ).values()
+        self.assertEqual(len(unknown), 2)  # LicenseRef-FakeLicense-Permissive
+        self.assertEqual(len(context), 0)
+        self.assertEqual(len(never), 0)
+        self.assertEqual(len(lic), 1)
+        self.assertEqual(len(derogations), 0)
+        self.assertEqual(lic.pop().spdx_id, "LicenseRef-FakeLicense-Permissive")
+
+    def test_never(self):
+        License.objects.filter(spdx_id="LicenseRef-FakeLicense-Permissive").update(
+            allowed=License.ALLOWED_NEVER
+        )
+        never, context, unknown, lic, derogations = check_licenses_against_policy(
+            self.release
+        ).values()
+        self.assertEqual(len(unknown), 0)
+        self.assertEqual(len(context), 0)
+        self.assertEqual(len(never), 2)
+        self.assertEqual(len(lic), 1)
+        self.assertEqual(len(derogations), 0)
+        self.assertEqual(lic.pop().spdx_id, "LicenseRef-FakeLicense-Permissive")
+
+    def test_allowed(self):
+        License.objects.filter(spdx_id="LicenseRef-FakeLicense-Permissive").update(
+            allowed=License.ALLOWED_ALWAYS
+        )
+        never, context, unknown, lic, derogations = check_licenses_against_policy(
+            self.release
+        ).values()
+        self.assertEqual(len(unknown), 0)
+        self.assertEqual(len(context), 0)
+        self.assertEqual(len(never), 0)
+        self.assertEqual(len(lic), 1)
+        self.assertEqual(len(derogations), 0)
+        self.assertEqual(lic.pop().spdx_id, "LicenseRef-FakeLicense-Permissive")
+
+    def test_release_derogation(self):
+        Derogation.objects.create(
+            release=self.release,
+            license=License.objects.get(spdx_id="LicenseRef-FakeLicense-Permissive"),
+        )
+        never, context, unknown, lic, derogations = check_licenses_against_policy(
+            self.release
+        ).values()
+        self.assertEqual(len(unknown), 0)
+        self.assertEqual(len(context), 0)
+        self.assertEqual(len(never), 0)
+        self.assertEqual(len(lic), 1)
+        self.assertEqual(len(derogations), 1)
+
+    def test_single_version_derogation(self):
+        Derogation.objects.create(
+            version=self.release.usage_set.last().version,
+            license=License.objects.get(spdx_id="LicenseRef-FakeLicense-Permissive"),
+        )
+        never, context, unknown, lic, derogations = check_licenses_against_policy(
+            self.release
+        ).values()
+        self.assertEqual(
+            len(unknown), 1
+        )  # The version which does not have a derogation
+        self.assertEqual(len(context), 0)
+        self.assertEqual(len(never), 0)
+        self.assertEqual(len(lic), 1)
+        self.assertEqual(len(derogations), 1)
+
+    def test_component_derogation(self):
+        Derogation.objects.create(
+            component=self.release.usage_set.last().version.component,
+            license=License.objects.get(spdx_id="LicenseRef-FakeLicense-Permissive"),
+        )
+        never, context, unknown, lic, derogations = check_licenses_against_policy(
+            self.release
+        ).values()
+        self.assertEqual(len(unknown), 0)
+        self.assertEqual(len(context), 0)
+        self.assertEqual(len(never), 0)
+        self.assertEqual(len(lic), 1)
+        self.assertEqual(len(derogations), 1)
+
+    def test_derogation_for_never_allowed(self):
+        Derogation.objects.create(
+            component=self.release.usage_set.last().version.component,
+            license=License.objects.get(spdx_id="LicenseRef-FakeLicense-Permissive"),
+        )
+        License.objects.filter(spdx_id="LicenseRef-FakeLicense-Permissive").update(
+            allowed=License.ALLOWED_NEVER
+        )
+        never, context, unknown, lic, derogations = check_licenses_against_policy(
+            self.release
+        ).values()
+        self.assertEqual(len(unknown), 0)
+        self.assertEqual(len(context), 0)
+        self.assertEqual(len(never), 0)
+        self.assertEqual(len(lic), 1)
+        self.assertEqual(len(derogations), 1)
+        self.assertEqual(lic.pop().spdx_id, "LicenseRef-FakeLicense-Permissive")
+
+    def test_matching_version_spec_derogation(self):
+        Derogation.objects.create(
+            component=self.release.usage_set.last().version.component,
+            version_constraint=SimpleSpec(">=1.0.0"),
+            license=License.objects.get(spdx_id="LicenseRef-FakeLicense-Permissive"),
+        )
+        never, context, unknown, lic, derogations = check_licenses_against_policy(
+            self.release
+        ).values()
+        self.assertEqual(len(unknown), 0)
+        self.assertEqual(len(context), 0)
+        self.assertEqual(len(never), 0)
+        self.assertEqual(len(lic), 1)
+        self.assertEqual(len(derogations), 1)
+
+    def test_single_matching_version_spec_derogation(self):
+        Derogation.objects.create(
+            component=self.release.usage_set.last().version.component,
+            version_constraint=SimpleSpec(">=2.0.0"),
+            license=License.objects.get(spdx_id="LicenseRef-FakeLicense-Permissive"),
+        )
+        never, context, unknown, lic, derogations = check_licenses_against_policy(
+            self.release
+        ).values()
+        self.assertEqual(len(unknown), 1)
+        self.assertEqual(len(context), 0)
+        self.assertEqual(len(never), 0)
+        self.assertEqual(len(lic), 1)
+        self.assertEqual(len(derogations), 1)

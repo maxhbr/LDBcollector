@@ -18,51 +18,6 @@ if TYPE_CHECKING:
 logger = logging.getLogger(__name__)
 
 
-def check_licenses_against_policy(release):
-    from cube.models import License, Derogation
-
-    response = {}
-    usages_lic_never_allowed = set()
-    usages_lic_context_allowed = set()
-    usages_lic_unknown = set()
-    involved_lic = set()
-    derogations = set()
-
-    usages = release.usage_set.all()
-
-    prefetch_related_objects(usages, "licenses_chosen")
-
-    for usage in usages:
-        for license in usage.licenses_chosen.all():
-            involved_lic.add(license)
-
-            if license.allowed == License.ALLOWED_ALWAYS:
-                continue
-
-            license_derogations = Derogation.objects.for_usage(usage).filter(
-                license=license
-            )
-            if license_derogations.exists():
-                for derogation in license_derogations:
-                    derogations.add(derogation)
-                continue
-
-            if license.allowed == License.ALLOWED_NEVER:
-                usages_lic_never_allowed.add(usage)
-            elif license.allowed == License.ALLOWED_CONTEXT:
-                usages_lic_context_allowed.add(usage)
-            elif not license.allowed:
-                usages_lic_unknown.add(usage)
-
-    response["usages_lic_never_allowed"] = usages_lic_never_allowed
-    response["usages_lic_context_allowed"] = usages_lic_context_allowed
-    response["usages_lic_unknown"] = usages_lic_unknown
-    response["involved_lic"] = involved_lic
-    response["derogations"] = derogations
-
-    return response
-
-
 def get_license_triggered_obligations(
     license: "License", exploitation: str = None, modification: str = None
 ):
