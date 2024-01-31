@@ -24,14 +24,19 @@ import (
 //	@Tags			Audits
 //	@Accept			json
 //	@Produce		json
-//	@Success		200	{object}	models.AuditResponse	"Audit records"
-//	@Failure		404	{object}	models.LicenseError		"Not changelogs in DB"
+//	@Param			page	query		int						false	"Page number"
+//	@Param			limit	query		int						false	"Number of records per page"
+//	@Success		200		{object}	models.AuditResponse	"Audit records"
+//	@Failure		404		{object}	models.LicenseError		"Not changelogs in DB"
 //	@Security		ApiKeyAuth
 //	@Router			/audits [get]
 func GetAllAudit(c *gin.Context) {
 	var audit []models.Audit
+	query := db.DB.Model(&models.Audit{})
 
-	if err := db.DB.Find(&audit).Error; err != nil {
+	_ = utils.PreparePaginateResponse(c, query, &models.AuditResponse{})
+
+	if err := query.Find(&audit).Error; err != nil {
 		er := models.LicenseError{
 			Status:    http.StatusNotFound,
 			Message:   "Change log not found",
@@ -45,7 +50,7 @@ func GetAllAudit(c *gin.Context) {
 	res := models.AuditResponse{
 		Data:   audit,
 		Status: http.StatusOK,
-		Meta: models.PaginationMeta{
+		Meta: &models.PaginationMeta{
 			ResourceCount: len(audit),
 		},
 	}
@@ -88,7 +93,7 @@ func GetAudit(c *gin.Context) {
 	res := models.AuditResponse{
 		Data:   []models.Audit{changelog},
 		Status: http.StatusOK,
-		Meta: models.PaginationMeta{
+		Meta: &models.PaginationMeta{
 			ResourceCount: 1,
 		},
 	}

@@ -42,6 +42,20 @@ const docTemplate = `{
                 ],
                 "summary": "Get audit records",
                 "operationId": "GetAllAudit",
+                "parameters": [
+                    {
+                        "type": "integer",
+                        "description": "Page number",
+                        "name": "page",
+                        "in": "query"
+                    },
+                    {
+                        "type": "integer",
+                        "description": "Number of records per page",
+                        "name": "limit",
+                        "in": "query"
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "Audit records",
@@ -312,6 +326,18 @@ const docTemplate = `{
                         "type": "boolean",
                         "description": "Copyleft flag status of license",
                         "name": "copyleft",
+                        "in": "query"
+                    },
+                    {
+                        "type": "integer",
+                        "description": "Page number",
+                        "name": "page",
+                        "in": "query"
+                    },
+                    {
+                        "type": "integer",
+                        "description": "Limit of responses per page",
+                        "name": "limit",
                         "in": "query"
                     }
                 ],
@@ -756,6 +782,18 @@ const docTemplate = `{
                         "name": "active",
                         "in": "query",
                         "required": true
+                    },
+                    {
+                        "type": "integer",
+                        "description": "Page number",
+                        "name": "page",
+                        "in": "query"
+                    },
+                    {
+                        "type": "integer",
+                        "description": "Number of records per page",
+                        "name": "limit",
+                        "in": "query"
                     }
                 ],
                 "responses": {
@@ -1718,15 +1756,27 @@ const docTemplate = `{
         "models.PaginationMeta": {
             "type": "object",
             "properties": {
-                "page": {
-                    "type": "integer",
-                    "example": 1
-                },
-                "per_page": {
+                "limit": {
                     "type": "integer",
                     "example": 10
                 },
+                "next": {
+                    "type": "string",
+                    "example": "/api/v1/licenses?limit=10\u0026page=11"
+                },
+                "page": {
+                    "type": "integer",
+                    "example": 10
+                },
+                "previous": {
+                    "type": "string",
+                    "example": "/api/v1/licenses?limit=10\u0026page=9"
+                },
                 "resource_count": {
+                    "type": "integer",
+                    "example": 200
+                },
+                "total_pages": {
                     "type": "integer",
                     "example": 20
                 }

@@ -14,11 +14,20 @@ import (
 	"strings"
 	"time"
 
+	"gorm.io/gorm"
+
 	"golang.org/x/crypto/bcrypt"
 
 	"github.com/gin-gonic/gin"
 
 	"github.com/fossology/LicenseDb/pkg/models"
+)
+
+var (
+	// DefaultPage Set default page to 1
+	DefaultPage = 1
+	// DefaultLimit Set default max limit to 20
+	DefaultLimit = 20
 )
 
 // The Converter function takes an input of type models.LicenseJson and converts it into a
@@ -145,4 +154,32 @@ func HashPassword(user *models.User) error {
 // database. Returns nil on success, or an error on failure.
 func VerifyPassword(inputPassword, dbPassword string) error {
 	return bcrypt.CompareHashAndPassword([]byte(dbPassword), []byte(inputPassword))
+}
+
+// PreparePaginateResponse prepares the pagination response for the API.
+// It gets the count of total rows and sets the pagination parameters, also
+// updates the query limit and offset and update the "paginationMeta" and
+// "responseModel" in gin.Context for middleware to process.
+func PreparePaginateResponse(c *gin.Context, query *gorm.DB,
+	responseModel interface{}) models.PaginationInput {
+	var totalRows int64
+	query.Count(&totalRows)
+
+	pageVar, exists := c.Get("page")
+	if !exists {
+		pageVar = models.PaginationInput{
+			Page:  DefaultPage,
+			Limit: DefaultLimit,
+		}
+	}
+	pagination := pageVar.(models.PaginationInput)
+
+	query.Offset(pagination.GetOffset()).Limit(pagination.GetLimit())
+
+	var paginationMeta models.PaginationMeta
+	paginationMeta.ResourceCount = int(totalRows)
+
+	c.Set("paginationMeta", paginationMeta)
+	c.Set("responseModel", responseModel)
+	return pagination
 }
