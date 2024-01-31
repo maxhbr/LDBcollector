@@ -16,6 +16,7 @@ class ORTToolsTestCase(TestCase):
             version=Version.objects.first(),
             expression_in="LicenseRef-FakeLicense OR AND",
             expression_out="LicenseRef-FakeLicense OR LicenseRef-FakeLicense-Permissive",
+            explanation="Justification for curation 1",
         )
         self.assertEqual(
             hermine_to_ort(LicenseCuration.objects.first()).curations.concluded_license,
@@ -27,11 +28,13 @@ class ORTToolsTestCase(TestCase):
             version=Version.objects.first(),
             expression_in="LicenseRef-FakeLicense OR AND",
             expression_out="LicenseRef-FakeLicense OR LicenseRef-FakeLicense-Permissive",
+            explanation="Justification for curation 1",
         )
         LicenseCuration.objects.create(
             version=Version.objects.last(),
             expression_in="LicenseRef-FakeLicense OR AND",
             expression_out="LicenseRef-FakeLicense",
+            explanation="Justification for curation 2",
         )
         self.assertEqual(
             export_curations(
@@ -39,17 +42,11 @@ class ORTToolsTestCase(TestCase):
             ),
             """- id: NPM::test_component_alpha:1.0
   curations:
+    comment: Justification for curation 1
     concluded_license: LicenseRef-FakeLicense OR LicenseRef-FakeLicense-Permissive
-    declared_license_mapping:
-      LicenseRef-FakeLicense OR AND: LicenseRef-FakeLicense OR LicenseRef-FakeLicense-Permissive
-    is_meta_data_only: false
-    is_modified: false
 - id: NPM::test_component_alpha:2.0
   curations:
+    comment: Justification for curation 2
     concluded_license: LicenseRef-FakeLicense
-    declared_license_mapping:
-      LicenseRef-FakeLicense OR AND: LicenseRef-FakeLicense
-    is_meta_data_only: false
-    is_modified: false
 """,
         )
