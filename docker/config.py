@@ -34,6 +34,7 @@ OAUTH_TOKEN_URL = os.environ.get("OAUTH_TOKEN_URL")
 OAUTH_AUTHORIZE_URL = os.environ.get("OAUTH_AUTHORIZE_URL")
 OAUTH_USER_URL = os.environ.get("OAUTH_USER_URL")
 OAUTH_USERNAME_PROPERTY = os.environ.get("OAUTH_USERNAME_PROPERTY", "username")
+SOCIAL_AUTH_REDIRECT_IS_HTTPS = os.environ.get("SOCIAL_AUTH_REDIRECT_IS_HTTPS")
 
 # For configuring OAuth the following parameters are required :
 if OAUTH_CLIENT_ID is not None:
