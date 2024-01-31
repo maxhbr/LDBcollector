@@ -98,6 +98,7 @@ def fix_type_case(type: str):
 def hermine_to_ort(curation: LicenseCuration):
     if curation.version is not None:
         component = curation.version.component
+
     elif curation.component is not None:
         component = curation.component
     else:

@@ -296,6 +296,7 @@ class DerogationManager(AbstractUsageRuleManager):
         return (
             super()
             .for_usage(usage)
+            .filter(license__in=usage.version.licenses.all())
             .filter(
                 Q(linking=usage.linking) | Q(linking=""),
                 Q(modification=usage.component_modified) | Q(modification=""),
