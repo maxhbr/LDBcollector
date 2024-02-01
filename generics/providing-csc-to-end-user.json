@@ -1,6 +1,6 @@
 {
   "name": "Providing CSC to end user",
-  "description": "Rendre disponible le code source correspondant (modifications comprises) par :\r\n- au moment de la distribution du logiciel et sur le m\u00eame support ;\t\r\n- en incluant une offre \u00e9crite permettant de l'obtenir ;\t\r\n- en le rendant disponible en ligne ;",
+  "description": "Make the corresponding source code available (including modifications):\r\n-at the time of distribution of the software and on the same medium;\r\n-by including a written offer allowing others to obtain it;\r\n-by making it available online.",
   "metacategory": "ProvidingSourceCode",
   "passivity": "Active"
 }
