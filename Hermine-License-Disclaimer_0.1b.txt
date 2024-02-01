@@ -1,0 +1,12 @@
+DISCLAIMER
+
+VERSION FR
+Cette base de données interprétant 7 licences Open Source vous est gracieusement mise à disposition dans le cadre du projet communautaire Hermine-FOSS afin de permettre de tester l’outil sans aucune garantie. Il s'agit d'une version bêta susceptible d’évoluer.
+
+Ni le projet ni ses membres n’engagent leur responsabilité quant à ces informations ou tout usage que vous pourriez en faire. Celles-ci ne doivent pas être utilisées sans avoir été validées par vos propres conseils.
+
+VERSION EN
+
+This database that covers 7 open source licenses is made available to you, as is and free of charge, as part of the Hermine-FOSS community project, so that you can internally test it at your own risk. This is a beta version that may be improved. 
+
+Neither the project and its members should be liable for this information or any use of it in any way whatsoever. It should not be used without being validated by your own lawyers.
