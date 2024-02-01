@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+        "comment": ""
+    },
+    "ambiguities": {
+        "Artistic License": {
+            "aliases": [
+                "License :: OSI Approved :: Artistic License",
+                "Artistic License"
+            ],
+            "problem": "This license has different version (1.0, and 2.0). Without a version number it is not possible to determine which of the versions is meant."
+        },
+        "BSD": {
+            "aliases": [
+                "BSD License (BSD License)"
+            ],
+            "problem": "There a couple of variants or versions of the BSD license (0BSD, BSD-1-Clause, BSD-2-Clause, BSD-3-Clause and BSD-4-Clause). Without the version/variant of the license it is not possible to determine which of the versions is meant."
+        },
+        "GNU General Public License": {
+            "aliases": [
+                "GPL",
+                "GNU GPL"
+            ],
+            "problem": "This license has different version (1, 2 and 3). Without a version number it is not possible to determine which of the versions is meant."
+        },
+        "GNU Lesser General Public License": {
+            "aliases": [
+                "LGPL",
+                "GNU LGPL",
+                "GNU Library General Public License",
+                "GNU Library General Public License v2 only",
+                "GNU Library General Public License v2 only",
+                "License :: OSI Approved :: GNU Lesser General Public License v2 (LGPLv2)",
+                "GNU Lesser General Public License v2 (LGPLv2)"
+            ],
+            "problem": "This license has different versions (2.0, 2.1 and 3.0). Without a version number it is not possible to determine which of the versions is meant."
+        },
+        "GNU": {
+            "aliases": [
+            ],
+            "problem": "There a couple of licenses related to the GNU project. Without the name of the license and the version number it is not possible to determine which of the versions is meant."
+        }
+    }
+}

@@ -34,6 +34,7 @@ SCANCODE_KEYS_TAG = 'scancode_keys'
 LICENSES_TAG = 'licenses'
 COMPATS_TAG = 'compats'
 DUALS_TAG = 'dual-licenses'
+AMBIG_TAG = 'ambiguties'
 DUAL_LICENSES_TAG = 'dual-licenses'
 DUAL_NEWER_TAG = 'newer-versions'
 COMPOUNDS_TAG = 'compounds'
@@ -128,12 +129,28 @@ class FossLicenses:
         compats = {}
         logging.debug(f'reading from: {self.license_dir}')
         license_dirs = [self.license_dir]
+        self.ambiguities = {'ambiguities': [], 'aliases': {}}
+
         if self.additional_license_dir:
             license_dirs.append(self.additional_license_dir)
         for license_dir in license_dirs:
             for license_file in glob.glob(f'{license_dir}/*.json'):
                 logging.debug(f' * {license_file}')
-                if os.path.basename(license_file) == 'compounds.json':
+                if os.path.basename(license_file) == 'ambiguities.json':
+                    logging.debug(f' * ambiguities file: {license_file}')
+                    data = self.__read_json(f'{license_dir}/ambiguities.json')
+                    data['aliases'] = {}
+
+                    for k, v in data['ambiguities'].items():
+                        # for quicker lookups, add 'aliases' which is the reverse of
+                        # the aliases per license I.e a quicker lookup table when
+                        # identifying ambiguous licenses
+                        for alias in v['aliases']:
+                            data['aliases'][alias] = k
+                        data['aliases'][k] = k
+                    self.ambiguities = data
+
+                elif os.path.basename(license_file) == 'compounds.json':
                     # some compound licenses are incorrectly stated as
                     # one, e.g. "GPL-2.0-with-classpath-exception" which
                     # should be "GPL-2.0-only WITH
@@ -169,6 +186,7 @@ class FossLicenses:
 
         self.license_expression = license_expression.get_spdx_licensing()
         self.license_db[DUALS_TAG] = duals
+        self.license_db[AMBIG_TAG] = self.ambiguities
         self.license_db[LICENSES_TAG] = licenses
         self.license_db[COMPATS_TAG] = compats
         self.license_db[FLAME_ALIASES_TAG] = aliases
@@ -305,10 +323,27 @@ class FossLicenses:
         else:
             license_parsed = str(self.license_expression.parse(ret['license_expression']))
 
+        ambiguities = []
+        aliases = self.license_db[AMBIG_TAG]['aliases']
+
+        tmp_license_expression = ret['license_expression']
+        for alias in reversed(collections.OrderedDict(sorted(aliases.items(), key=lambda x: len(x[0])))):
+            needle = r'(?:\s+|^)%s(?:\s+|$)' % alias
+            if re.search(needle, tmp_license_expression):
+                real_lic = self.license_db[AMBIG_TAG]['aliases'][alias]
+                if alias != real_lic:
+                    about_license = f'An ambiguity was identified in "{ret["license_expression"]}". The ambiguous license is "{real_lic}", identified via "{alias}".'
+                else:
+                    about_license = f'An ambiguity was identified in "{ret["license_expression"]}". The ambiguous license is "{real_lic}"-'
+                problem = self.license_db[AMBIG_TAG]["ambiguities"][real_lic]["problem"]
+                ambiguities.append(f'{about_license} Problem: {problem}')
+                tmp_license_expression = re.sub(needle, ' ', tmp_license_expression)
+
         ret = {
             'queried_license': license_expression,
             FLAME_IDENTIFIED_LICENSE_TAG: license_parsed,
             'identifications': replacements,
+            'ambiguities': ambiguities,
             'updated_license': updated_license,
             'license_parsed': license_parsed,
             'updates': updates,
@@ -363,6 +398,7 @@ class FossLicenses:
         BSD-3-Clause
 
         """
+
         identified_license = self.__identify_license(name)
         identified_name = identified_license[FLAME_NAME_TAG]
         if identified_license['identified_via'] == 'operator':
@@ -511,6 +547,7 @@ class FossLicenses:
                 self.__validate_licenses_osadl(compat_support)
 
         ret = {
+            'ambiguities': expression_full['ambiguities'],
             'compatibilities': compats,
             'queried_license': license_expression,
             'identification': expression_full,

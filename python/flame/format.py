@@ -65,7 +65,7 @@ class OutputFormatter():
         >>> print(formatted)
         HPND
         """
-        return None
+        return None, None
 
     def format_compat_list(self, all_compats, verbose=False):
         """
@@ -88,7 +88,7 @@ class OutputFormatter():
         >>> formatted = formatter.format_compat_list(compat)
 
         """
-        return None
+        return None, None
 
     def format_expression(self, expression, verbose=False):
         """
@@ -111,7 +111,7 @@ class OutputFormatter():
         >>> formatted = formatter.format_alias_list(compat)
 
         """
-        return None
+        return None, None
 
     def format_alias_list(self, all_aliases, verbose=False):
         """
@@ -134,7 +134,7 @@ class OutputFormatter():
         >>> formatted = formatter.format_alias_list(compat)
 
         """
-        return None
+        return None, None
 
     def format_error(self, message, verbose=False):
         """
@@ -159,7 +159,7 @@ class OutputFormatter():
         ...     formatted = formatter.format_error(e)
 
         """
-        return None
+        return None, None
 
     def format_licenses(self, licenses, verbose=False):
         """
@@ -181,7 +181,7 @@ class OutputFormatter():
         >>> formatted = formatter.format_licenses(licenses)
 
         """
-        return None
+        return None, None
 
     def format_license_complete(self, lic, verbose=False):
         """
@@ -203,7 +203,7 @@ class OutputFormatter():
         >>> formatted = formatter.format_license_complete(licenses)
 
         """
-        return None
+        return None, None
 
     def format_compatibilities(self, compats, verbose=False):
         """
@@ -226,7 +226,7 @@ class OutputFormatter():
         >>> formatted = formatter.format_compatibilities(compatibilities)
 
         """
-        return None
+        return None, None
 
     def format_operators(self, operators, verbose=False):
         """
@@ -249,65 +249,65 @@ class OutputFormatter():
         >>> formatted = formatter.format_operators(operators)
 
         """
-        return None
+        return None, None
 
 class JsonOutputFormatter(OutputFormatter):
 
     def format_compat(self, compat, verbose=False):
-        return json.dumps(compat, indent=4)
+        return json.dumps(compat, indent=4), None
 
     def format_compat_list(self, all_compats, verbose=False):
-        return json.dumps(all_compats, indent=4)
+        return json.dumps(all_compats, indent=4), None
 
     def format_expression(self, expression, verbose=False):
-        return json.dumps(expression, indent=4)
+        return json.dumps(expression, indent=4), None
 
     def format_alias_list(self, all_aliases, verbose=False):
-        return json.dumps(all_aliases, indent=4)
+        return json.dumps(all_aliases, indent=4), None
 
     def format_error(self, error, verbose=False):
-        return json.dumps({'error': f'{error}'}, indent=4)
+        return json.dumps({'error': f'{error}'}, indent=4), None
 
     def format_licenses(self, licenses, verbose=False):
-        return json.dumps(licenses, indent=4)
+        return json.dumps(licenses, indent=4), None
 
     def format_license_complete(self, _license, verbose=False):
-        return json.dumps(_license, indent=4)
+        return json.dumps(_license, indent=4), None
 
     def format_compatibilities(self, compats, verbose=False):
-        return json.dumps(compats)
+        return json.dumps(compats), None
 
     def format_operators(self, operators, verbose=False):
-        return json.dumps(operators)
+        return json.dumps(operators), None
 
 class YamlOutputFormatter(OutputFormatter):
 
     def format_compat(self, compat, verbose=False):
-        return yaml.safe_dump(compat)
+        return yaml.safe_dump(compat), None
 
     def format_compat_list(self, all_compats, verbose=False):
-        return None
+        return None, None
 
     def format_expression(self, expression, verbose=False):
-        return yaml.safe_dump(expression)
+        return yaml.safe_dump(expression), None
 
     def format_alias_list(self, all_aliases, verbose=False):
-        return yaml.safe_dump(all_aliases)
+        return yaml.safe_dump(all_aliases), None
 
     def format_error(self, error, verbose=False):
-        return yaml.safe_dump({'error': f'{error}'})
+        return yaml.safe_dump({'error': f'{error}'}), None
 
     def format_licenses(self, licenses, verbose=False):
-        return yaml.safe_dump(licenses)
+        return yaml.safe_dump(licenses), None
 
     def format_license_complete(self, _license, verbose=False):
-        return yaml.safe_dump(_license)
+        return yaml.safe_dump(_license), None
 
     def format_compatibilities(self, compats, verbose=False):
-        return yaml.safe_dump(compats)
+        return yaml.safe_dump(compats), None
 
     def format_operators(self, operators, verbose=False):
-        return yaml.safe_dump(operators)
+        return yaml.safe_dump(operators), None
 
 class TextOutputFormatter(OutputFormatter):
 
@@ -322,7 +322,7 @@ class TextOutputFormatter(OutputFormatter):
             ret.append(f'identified via: {compat["compatibility"]["identified_via"]}')
         else:
             ret.append(f'{compat["compatibility"]["compatibility"]}')
-        return "\n".join(ret)
+        return "\n".join(ret), None
 
     def format_compatibilities(self, compats, verbose=False):
         ret = []
@@ -331,10 +331,15 @@ class TextOutputFormatter(OutputFormatter):
             for compat in compats['compatibilities']:
                 ret.append(f' * "{compat["queried_name"]}" -> "{compat["name"]}" via "{compat["identified_via"]}"')
 
-        return '\n'.join(ret)
+        if compats['ambiguities']:
+            warnings = f'Warnings: {", ".join(compats["ambiguities"])}'
+        else:
+            warnings = None
+
+        return '\n'.join(ret), warnings
 
     def format_compat_list(self, all_compats, verbose=False):
-        return '\n'.join([f'{comp["spdxid"]} -> {comp["compatibility_as"]}' for comp in all_compats])
+        return '\n'.join([f'{comp["spdxid"]} -> {comp["compatibility_as"]}' for comp in all_compats]), None
 
     def __OBSOLETE_format_identified(self, identified, verbose=False):
         ret = []
@@ -351,20 +356,24 @@ class TextOutputFormatter(OutputFormatter):
         if verbose:
             for identification in expression['identifications']:
                 ret.append(f' * "{identification["queried_name"]}" -> "{identification["name"]} via "{identification["identified_via"]}"')
-        return '\n'.join(ret)
+        if expression['ambiguities']:
+            warnings = f'Warnings: {", ".join(expression["ambiguities"])}'
+        else:
+            warnings = None
+        return '\n'.join(ret), warnings
 
     def format_alias_list(self, all_aliases, verbose=False):
-        return '\n'.join([f'{k} -> {v}' for k, v in all_aliases.items()])
+        return '\n'.join([f'{k} -> {v}' for k, v in all_aliases.items()]), None
 
     def format_licenses(self, licenses, verbose=False):
         licenses.sort()
-        return '\n'.join(licenses)
+        return '\n'.join(licenses), None
 
     def format_operators(self, operators, verbose=False):
-        return '\n'.join([f'{k} -> {v}' for k, v in operators.items()])
+        return '\n'.join([f'{k} -> {v}' for k, v in operators.items()]), None
 
     def format_error(self, error, verbose=False):
-        return f'Error, {error}'
+        return f'Error: {error}', None
 
     def format_license_complete(self, lic, verbose=False):
         ret_str = []
@@ -379,4 +388,4 @@ class TextOutputFormatter(OutputFormatter):
         if 'comment_as' in lic:
             ret_str.append(f'    comment:          {lic["comment"]}')
 
-        return "\n".join(ret_str)
+        return "\n".join(ret_str), None

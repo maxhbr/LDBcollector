@@ -11,14 +11,12 @@
    "LGPL-2.1",
    "LGPL2.1",
    "LGPL (v2.1)",
-   "GNU Library General Public License v2 only",   
    "GNU Lesser General Public License Version 2.1",
    "GNU Lesser General Public License v2.1 only",
    "lgpl-2.1",
    "GNU LGPLv2.1",
    "GNU Lesser General Public License 2.1",
    "GNU Lesser General Public License, Version 2.1",
-   "License :: OSI Approved :: GNU Lesser General Public License v2 (LGPLv2)",
    "scancode://lgpl-2.1",
    "LGPL 2.1",
    "GNU LESSER GENERAL PUBLIC LICENSE 2.1",
@@ -56,8 +54,6 @@
    "http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html",
    "https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html",
    "scancode:lgpl-2.1",
-   "osi:LGPL-2.1",
-      "GNU Lesser General Public License v2 (LGPLv2)",
-      "LGPLv2.0"
+   "osi:LGPL-2.1"
   ]
 }
