@@ -3,6 +3,7 @@ dist/
 tmp_generics/
 tmp_licenses/
 generics.json
+licenses.json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
