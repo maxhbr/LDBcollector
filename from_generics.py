@@ -10,14 +10,14 @@ import os
 import re
 import unicodedata
 
-from common import LICENSE_SHARED_FIELDS, GENERIC_SHARED_FIELDS
+from common import GENERIC_SHARED_FIELDS
 
 TMP_DIR_PATH = "./tmp_generics/"
 
 if not os.path.exists(TMP_DIR_PATH):
     os.makedirs(TMP_DIR_PATH)
 
-with open ("generics.json") as source_file:
+with open("generics.json") as source_file:
     data = json.load(source_file)
 
 
