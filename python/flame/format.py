@@ -339,7 +339,7 @@ class TextOutputFormatter(OutputFormatter):
         return '\n'.join(ret), warnings
 
     def format_compat_list(self, all_compats, verbose=False):
-        return '\n'.join([f'{comp["spdxid"]} -> {comp["compatibility_as"]}' for comp in all_compats])
+        return '\n'.join([f'{comp["spdxid"]} -> {comp["compatibility_as"]}' for comp in all_compats]), None
 
     def __OBSOLETE_format_identified(self, identified, verbose=False):
         ret = []
