@@ -113,9 +113,6 @@ def hermine_to_ort(curation: LicenseCuration):
         curations=Curation(
             comment=curation.explanation,
             concluded_license=curation.expression_out,
-            declared_license_mapping={curation.expression_in: curation.expression_out},
-            is_meta_data_only=False,
-            is_modified=False,
         ),
         type=fix_type_case(component.purl_type),
         namespace=component.namespace or "",
