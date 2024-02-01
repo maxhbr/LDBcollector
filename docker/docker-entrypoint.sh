@@ -8,9 +8,9 @@ f_log "Entrypoint start on $DJANGO_PORT"
 python ./manage.py migrate
 python ./manage.py collectstatic --noinput --clear
 
-if [ -f ../shared.json ]
+if [ -f /opt/hermine/shared.json ]
 then
-  python ./manage.py init_shared_data ../shared.json
+  python ./manage.py init_shared_data /opt/hermine/shared.json
 fi
 
 if test -n "$SUPERUSER" && test -n "$PASSWORD"
