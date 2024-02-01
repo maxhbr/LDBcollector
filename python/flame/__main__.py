@@ -8,6 +8,7 @@ from argparse import RawTextHelpFormatter
 import argparse
 import logging
 import sys
+import traceback
 
 from flame.license_db import FossLicenses
 from flame.license_db import Validation
@@ -201,13 +202,11 @@ def main():
         fl = FossLicenses(config=config)
     except Exception as e:
         if args.verbose:
-            import traceback
             print(traceback.format_exc())
             print(str(e))
 
-
         formatted = formatter.format_error(e, args.verbose)
-        print(f'____ {formatted}')
+        print(formatted)
         sys.exit(1)
 
     if args.func:
@@ -215,16 +214,13 @@ def main():
             formatted, warnings = args.func(fl, formatter, args)
             if warnings:
                 print(warnings, file=sys.stderr)
-            print(f'{formatted}')
+            print(formatted)
         except Exception as e:
             if args.verbose:
-                import traceback
                 print(traceback.format_exc())
 
-            print("trace")
-            print("trace")
             formatted = formatter.format_error(e, args.verbose)
-            print(f'{formatted}')
+            print(formatted)
             sys.exit(1)
 
 
