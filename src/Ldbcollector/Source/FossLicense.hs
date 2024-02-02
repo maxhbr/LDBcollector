@@ -93,30 +93,8 @@ instance Source FossLicenseVar where
                     return (fossLicense {_text = Just text})
          in do
               let varLicenses = var </> "licenses"
+              -- ambiguities.json
               jsonFiles <- glob (varLicenses </> "*.json")
               jsons <- mapM parseOrFailJson jsonFiles
               return ((V.fromList . map wrapFact) jsons)
               
-
-              -- -- for each .json file in var/licenses, parse it and return a FossLicense
-              -- mapM (getFacts . FossLicense) =<< do
-              --   files <- listDirectory varLicenses
-              --   forM files $ \file -> do
-              --     let json = varLicenses </> file
-
-
-              -- logFileReadIO json
-              -- decoded <- eitherDecodeFileStrict json :: IO (Either String FossLicenseJson)
-              -- case decoded of
-              --   Left err -> fail err
-              --   Right m -> (return . V.fromList . map wrapFact . toFacts) m
-
-
--- instance Source GoogleLicensePolicy where
---   getSource _ = Source "GoogleLicensePolicy"
---   getFacts (GoogleLicensePolicy json) = do
---     logFileReadIO json
---     decoded <- eitherDecodeFileStrict json :: IO (Either String GoogleLicensePolicyJson)
---     case decoded of
---       Left err -> fail err
---       Right m -> (return . V.fromList . map wrapFact . toFacts) m

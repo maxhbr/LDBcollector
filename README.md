@@ -3,6 +3,12 @@
 This is a framework to collect, parse, normalize and join metadata about open source and other software licenses.
 
 
+## Quickstart:
+
+```
+$ docker-build-and-run.sh
+```
+
 ## History:
 This is a rewrite of the old ldbcollector, which is found  in the branch v1.
 
