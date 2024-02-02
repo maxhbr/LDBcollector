@@ -94,10 +94,10 @@ instance H.ToMarkup LicenseNameCluster where
         H.b "this:"
         H.ul H.! A.class_ "capsulUl clearfix" $ (H.li . H.toMarkup) name
       unless (null sameNames) . H.li $ do
-        H.b (fromString "other LicenseNames:")
+        H.b (fromString ("other LicenseNames (" ++ show (length sameNames) ++ "):"))
         H.ul H.! A.class_ "capsulUl clearfix" $ mapM_ (H.li . H.toMarkup) (sort sameNames)
       unless (null otherNames) . H.li $ do
-        H.b (fromString "other LicenseName Hints:")
+        H.b (fromString ("other LicenseName Hints (" ++ show (length otherNames) ++ "):"))
         H.ul H.! A.class_ "capsulUl clearfix" $ mapM_ (H.li . H.toMarkup) (sort otherNames)
 
 applicableLNsToLicenseNameCluster :: ApplicableLNs -> LicenseNameCluster
@@ -224,7 +224,12 @@ licenseFactsImplicationsToMarkup facts cluster = do
       let licenseTypes = nub $ concatMap getImpliedLicenseTypes facts
       unless (null licenseTypes) $ do
         H.h2 "LicenseTypes"
-        H.ul $ mapM_ (H.li . fromString . show) licenseTypes
+        H.ul $ mapM_ (\ty -> do
+            H.li $ do
+               (fromString . show) ty
+               let providingFacts = map getType $ filter ((ty `elem`) . getImpliedLicenseTypes) facts
+               mapM_ H.toMarkup providingFacts
+            ) licenseTypes
       let ratings = nub $ concatMap getImpliedLicenseRatings facts
       unless (null ratings) $ do
         H.h3 "License Ratings"

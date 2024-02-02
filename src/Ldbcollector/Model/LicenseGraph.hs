@@ -60,7 +60,7 @@ class (HasOriginalData a) => Source a where
   -- getLicenseNamespace _ = Nothing
   getSourceDescription :: a -> Maybe Text
   getSourceDescription _ = Nothing
-  applySource :: a -> LicenseGraphM ()
+  applySource :: a -> LicenseGraphM (String,Int)
   applySource a =
     let source = getSource a
      in timedLGM (show source) $ do
