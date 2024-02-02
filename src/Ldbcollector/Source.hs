@@ -46,7 +46,7 @@ applySources curation = do
   applySource (CavilLicenseChanges "./data/openSUSE-cavil/lib/Cavil/resources/license_changes.txt")
   applySource (Metaeffekt True "./data/org-metaeffekt-metaeffekt-universe/src/main/resources/ae-universe")
   applySource (Warpr "./data/warpr-licensedb/data")
-  -- applySource (FossLicenseVar "./data/hesa-foss-licenses/var")
+  applySource (FossLicenseVar "./data/hesa-foss-licenses/var")
   applySource (FOSSLight "./data/fosslight/fosslight.sqlite.db")
   applySource (HitachiOpenLicense "./data/Hitachi-open-license/data" "./data/Hitachi-open-license.translations.csv")
   applySource (EclipseOrgLegal "./data/eclipse.org-legal-licenses.json")
