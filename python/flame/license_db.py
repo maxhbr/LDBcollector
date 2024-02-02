@@ -6,13 +6,14 @@ import collections
 import glob
 import json
 import logging
-import os
 import re
 from pathlib import Path
 import license_expression
 from enum import Enum
 
-from flame.config import LICENSE_DIR, LICENSE_OPERATORS_FILE, LICENSE_SCHEMA_FILE, read_config
+from flame.config import LICENSE_DIR, LICENSE_SCHEMA_FILE, read_config
+from flame.config import LICENSE_OPERATORS_FILE, LICENSE_COMPUNDS_FILE, LICENSE_AMBIG_FILE, LICENSE_DUALS_FILE
+
 from flame.exception import FlameException
 from jsonschema import validate
 
@@ -77,6 +78,7 @@ class FossLicenses:
         logging_level = self.__str_to_loggin_info(config)
         logging.basicConfig(level=logging_level)
 
+        self.config = config
         self.license_dir = config.get('license-dir', LICENSE_DIR)
         self.additional_license_dir = config.get('additional-license-dir', [])
         self.__init_license_db(check)
@@ -135,54 +137,69 @@ class FossLicenses:
             license_dirs.append(self.additional_license_dir)
         for license_dir in license_dirs:
             for license_file in glob.glob(f'{license_dir}/*.json'):
-                logging.debug(f' * {license_file}')
-                if os.path.basename(license_file) == 'ambiguities.json':
-                    logging.debug(f' * ambiguities file: {license_file}')
-                    data = self.__read_json(f'{license_dir}/ambiguities.json')
-                    data['aliases'] = {}
+                if "duals" in license_file:
+                    continue
+                if "compounds" in license_file:
+                    continue
+                if "ambig" in license_file:
+                    continue
+                logging.debug(f'license_file: {license_file}')
+                data = self.__read_license_file(license_file, check)
+                licenses[data['spdxid']] = data
+                for alias in data[FLAME_ALIASES_TAG]:
+                    if alias in aliases:
+                        raise FlameException(f'Alias "{alias}" -> {data["spdxid"]} already defined as "{aliases[alias]}".')
 
-                    for k, v in data['ambiguities'].items():
-                        # for quicker lookups, add 'aliases' which is the reverse of
-                        # the aliases per license I.e a quicker lookup table when
-                        # identifying ambiguous licenses
-                        for alias in v['aliases']:
-                            data['aliases'][alias] = k
-                        data['aliases'][k] = k
-                    self.ambiguities = data
-
-                elif os.path.basename(license_file) == 'compounds.json':
-                    # some compound licenses are incorrectly stated as
-                    # one, e.g. "GPL-2.0-with-classpath-exception" which
-                    # should be "GPL-2.0-only WITH
-                    # Classpath-exception-2.0". This file provides
-                    # translations for such
-                    data = self.__read_json(license_file)
-                    for compound in data[COMPOUNDS_TAG]:
-                        licenses[compound['spdxid']] = compound
-                        for alias in compound[FLAME_ALIASES_TAG]:
-                            if alias in aliases:
-                                raise FlameException(f'Alias "{alias}" -> {compound["spdxid"]} already defined as "{aliases[alias]}".')
-
-                            aliases[alias] = compound['spdxid']
-                elif os.path.basename(license_file) == 'duals.json':
-                    # Read license with built-in dual feature, e.g
-                    # "GPL-2.0-or-later" which can be seen as a dual
-                    # license "GPL-2.0-only OR GPL-3.0-only"
-                    data = self.__read_json(license_file)
-                    for dual in data[DUAL_LICENSES_TAG]:
-                        duals[dual['spdxid']] = dual
-                else:
-                    data = self.__read_license_file(license_file, check)
-                    licenses[data['spdxid']] = data
-                    for alias in data[FLAME_ALIASES_TAG]:
-                        if alias in aliases:
-                            raise FlameException(f'Alias "{alias}" -> {data["spdxid"]} already defined as "{aliases[alias]}".')
-
-                        aliases[alias] = data['spdxid']
+                    aliases[alias] = data['spdxid']
                 if SCANCODE_KEY_TAG in data:
                     scancode_keys[data[SCANCODE_KEY_TAG]] = data['spdxid']
                 if COMPATIBILITY_AS_TAG in data:
                     compats[data['spdxid']] = data[COMPATIBILITY_AS_TAG]
+
+        # Ambiguous licenses
+        ambig_file = self.config.get('ambiguity_file', LICENSE_AMBIG_FILE)
+        logging.debug(f' * ambiguities file: {ambig_file}')
+        data = self.__read_json(ambig_file)
+        data['aliases'] = {}
+
+        for k, v in data['ambiguities'].items():
+            # for quicker lookups, add 'aliases' which is the reverse of
+            # the aliases per license I.e a quicker lookup table when
+            # identifying ambiguous licenses
+            for alias in v['aliases']:
+                data['aliases'][alias] = k
+            data['aliases'][k] = k
+        self.ambiguities = data
+
+        # Compound licenses
+        # some compound licenses are incorrectly stated as
+        # one, e.g. "GPL-2.0-with-classpath-exception" which
+        # should be "GPL-2.0-only WITH
+        # Classpath-exception-2.0". This file provides
+        # translations for such
+        compounds_file = self.config.get('compunds_file', LICENSE_COMPUNDS_FILE)
+        data = self.__read_json(compounds_file)
+        for compound in data[COMPOUNDS_TAG]:
+            licenses[compound['spdxid']] = compound
+            for alias in compound[FLAME_ALIASES_TAG]:
+                if alias in aliases:
+                    raise FlameException(f'Alias "{alias}" -> {compound["spdxid"]} already defined as "{aliases[alias]}".')
+
+                aliases[alias] = compound['spdxid']
+
+        # Dual licenses
+        # Read license with built-in dual feature, e.g
+        # "GPL-2.0-or-later" which can be seen as a dual
+        # license "GPL-2.0-only OR GPL-3.0-only"
+        duals_file = self.config.get('duals_file', LICENSE_DUALS_FILE)
+        data = self.__read_json(duals_file)
+        for dual in data[DUAL_LICENSES_TAG]:
+            duals[dual['spdxid']] = dual
+
+        logging.debug(f'compounds_file: {compounds_file}')
+        logging.debug(f'ambig_file: {ambig_file}')
+        logging.debug(f'duals_file: {duals_file}')
+        logging.debug(f'config: {self.config}')
 
         self.license_expression = license_expression.get_spdx_licensing()
         self.license_db[DUALS_TAG] = duals
