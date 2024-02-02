@@ -139,7 +139,7 @@ class FossLicenses:
             for license_file in glob.glob(f'{license_dir}/*.json'):
                 if "duals" in license_file:
                     continue
-                if "compunds" in license_file:
+                if "compounds" in license_file:
                     continue
                 if "ambig" in license_file:
                     continue
