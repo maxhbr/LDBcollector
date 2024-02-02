@@ -6,7 +6,7 @@
 %endif
 
 Name:           fedora-license-data
-Version:        1.39
+Version:        1.40
 Release:        1%{?dist}
 Summary:        Fedora Linux license data
 
@@ -97,6 +97,11 @@ make check-grammar
 
 
 %changelog
+* Fri Feb 02 2024 Miroslav Suchý <msuchy@redhat.com> 1.40-1
+- add HPND-UC
+- add GPL-2.0-or-later WITH GStreamer-exception-2008
+- add TGPPL-1.0 (and replace LicenseRef-TGPPL)
+
 * Thu Jan 18 2024 Miroslav Suchý <msuchy@redhat.com> 1.39-1
 - add LicenseRef-docbook-dtds
 - public domain dedication for iw
