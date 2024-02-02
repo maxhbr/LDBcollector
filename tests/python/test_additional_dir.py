@@ -6,7 +6,12 @@ from flame.license_db import FossLicenses
 import logging
 
 # add additional dirs (with licenses)
-fl = FossLicenses(config={'license-dir': 'tests/licenses', 'level': 'INFO', 'additional-license-dir': 'tests/additional-licenses'})
+fl = FossLicenses(config={
+    'license-dir': 'tests/licenses',
+    'duals_file': 'tests/licenses-additional/duals.json',
+    'compunds_file': 'tests/licenses-additional/compounds.json',
+    'level': 'INFO',
+    'additional-license-dir': 'tests/additional-licenses'})
 
 # standard (default licenses)
 fl_std = FossLicenses(config={'license-dir': 'tests/licenses', 'level': 'INFO'})
