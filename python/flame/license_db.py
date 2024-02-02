@@ -137,6 +137,12 @@ class FossLicenses:
             license_dirs.append(self.additional_license_dir)
         for license_dir in license_dirs:
             for license_file in glob.glob(f'{license_dir}/*.json'):
+                if "duals" in license_file:
+                    continue
+                if "compunds" in license_file:
+                    continue
+                if "ambig" in license_file:
+                    continue
                 logging.debug(f'license_file: {license_file}')
                 data = self.__read_license_file(license_file, check)
                 licenses[data['spdxid']] = data
