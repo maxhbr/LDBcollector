@@ -20,5 +20,5 @@ USE CASE Source code delivery OR Binary delivery
 					ATTRIBUTE No profit
 					ATTRIBUTE Duration As long as distributed
 				YOU MUST Reference Source code
-					ATTRIBUTE Below Copyright notice
+					ATTRIBUTE Below Copyright notices
 PATENT HINTS Yes

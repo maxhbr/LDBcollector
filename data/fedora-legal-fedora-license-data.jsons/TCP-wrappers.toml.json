@@ -1,0 +1,13 @@
+{
+  "license": {
+    "expression": "TCP-wrappers",
+    "status": [
+      "allowed"
+    ]
+  },
+  "fedora": {
+    "legacy-abbreviation": [
+      "BSD"
+    ]
+  }
+}

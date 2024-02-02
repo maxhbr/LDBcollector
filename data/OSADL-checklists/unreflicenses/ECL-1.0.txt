@@ -1,0 +1,9 @@
+USE CASE Source code delivery OR Binary delivery
+	YOU MUST Provide License text
+		ATTRIBUTE Viewable
+	YOU MUST Provide Legal notices
+	IF Software modification
+		YOU MUST Provide Modification notice
+		YOU MUST Provide Modification date
+		YOU MUST NOT Misrepresent Authorship
+	YOU MUST NOT Promote

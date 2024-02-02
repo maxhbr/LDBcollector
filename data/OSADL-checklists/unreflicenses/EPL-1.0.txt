@@ -4,7 +4,7 @@ USE CASE Source code delivery
 	IF Software modification
 		YOU MUST Grant License
 			ATTRIBUTE Original license
-		YOU MUST Provide Copyright notice
+		YOU MUST Provide Copyright notices
 	IF Commercial distribution
 		YOU MUST Indemnify Other contributors
 USE CASE Binary delivery

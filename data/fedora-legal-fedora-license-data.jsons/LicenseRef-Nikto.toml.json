@@ -1,0 +1,10 @@
+{
+  "license": {
+    "expression": "LicenseRef-Nikto",
+    "status": [
+      "not-allowed"
+    ],
+    "url": "https://github.com/sullo/nikto/blob/master/program/databases/db_404_strings\n",
+    "text": "File Source: https://cirt.net\n(c) 2001 Chris Sullo, All Rights Reserved.\nThis file may only be distributed and used with the full Nikto package.\nThis file may not be used with any software product without written permission from\nChris Sullo (csullo@gmail.com)\n\nNote:\nBy submitting updates to this file you are transferring any and all copyright\ninterest in the data to Chris Sullo so it can modified, incorporated into this product\nrelicensed or reused.\n"
+  }
+}

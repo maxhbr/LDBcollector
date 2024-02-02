@@ -26,7 +26,7 @@ USE CASE Binary delivery
 		YOU MUST Provide License text
 	OR
 		YOU MUST Reference Source code
-			ATTRIBUTE Notice Following Copyright notice
+			ATTRIBUTE Notice Following Copyright notices
 			ATTRIBUTE No charges
 			ATTRIBUTE Duration As long as distributed
 	IF Software modification

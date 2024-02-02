@@ -29,7 +29,6 @@ https://www.osadl.org/fileadmin/checklists/terms/Documented%20format.txt
 https://www.osadl.org/fileadmin/checklists/terms/Duration.txt
 https://www.osadl.org/fileadmin/checklists/terms/Dynamic.txt
 https://www.osadl.org/fileadmin/checklists/terms/Effective.txt
-https://www.osadl.org/fileadmin/checklists/terms/End.txt
 https://www.osadl.org/fileadmin/checklists/terms/Equivalent.txt
 https://www.osadl.org/fileadmin/checklists/terms/Feasible.txt
 https://www.osadl.org/fileadmin/checklists/terms/File.txt
@@ -58,6 +57,7 @@ https://www.osadl.org/fileadmin/checklists/terms/License%20acceptance.txt
 https://www.osadl.org/fileadmin/checklists/terms/License%20announcement.txt
 https://www.osadl.org/fileadmin/checklists/terms/License%20change.txt
 https://www.osadl.org/fileadmin/checklists/terms/License%20exception.txt
+https://www.osadl.org/fileadmin/checklists/terms/License%20fee.txt
 https://www.osadl.org/fileadmin/checklists/terms/License%20notice.txt
 https://www.osadl.org/fileadmin/checklists/terms/License%20obligation.txt
 https://www.osadl.org/fileadmin/checklists/terms/License%20text.txt
@@ -82,6 +82,7 @@ https://www.osadl.org/fileadmin/checklists/terms/Notice.txt
 https://www.osadl.org/fileadmin/checklists/terms/On%20behalf%20of.txt
 https://www.osadl.org/fileadmin/checklists/terms/On%20other%20server.txt
 https://www.osadl.org/fileadmin/checklists/terms/On%20same%20server.txt
+https://www.osadl.org/fileadmin/checklists/terms/Original%20author.txt
 https://www.osadl.org/fileadmin/checklists/terms/Original%20license.txt
 https://www.osadl.org/fileadmin/checklists/terms/Original%20source%20code.txt
 https://www.osadl.org/fileadmin/checklists/terms/Original%20work.txt
@@ -93,6 +94,7 @@ https://www.osadl.org/fileadmin/checklists/terms/Patent%20notice.txt
 https://www.osadl.org/fileadmin/checklists/terms/Prejudicial.txt
 https://www.osadl.org/fileadmin/checklists/terms/Product%20name.txt
 https://www.osadl.org/fileadmin/checklists/terms/Product.txt
+https://www.osadl.org/fileadmin/checklists/terms/Protocol%20incompatible.txt
 https://www.osadl.org/fileadmin/checklists/terms/Public%20domain.txt
 https://www.osadl.org/fileadmin/checklists/terms/Reasonable.txt
 https://www.osadl.org/fileadmin/checklists/terms/Recipient.txt

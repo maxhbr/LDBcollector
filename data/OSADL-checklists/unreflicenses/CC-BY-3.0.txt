@@ -6,16 +6,16 @@ USE CASE Source code delivery OR Binary delivery
 	YOU MUST NOT Use Technological measures
 		ATTRIBUTE Effective
 		ATTRIBUTE To Restrict Exercise Of Granted rights
-	YOU MUST Forward Copyright notice
+	YOU MUST Forward Copyright notices
 	YOU MUST Provide Attribution notice
 		ATTRIBUTE Reasonable
-	IF Third-party attribution notice In Copyright notice OR Terms of service OR By Reasonable means
+	IF Third-party attribution notice In Copyright notices OR Terms of service OR By Reasonable means
 		YOU MUST Provide Third-party attribution notice
 			ATTRIBUTE Reasonable
 	IF Title
 		YOU MUST Provide Title Of Work
 			ATTRIBUTE Reasonable
-	IF Reference To Copyright notice OR License
+	IF Reference To Copyright notices OR License
 		YOU MUST Provide Reference
 			ATTRIBUTE Reasonable
 	YOU MUST NOT Use
@@ -25,7 +25,7 @@ USE CASE Source code delivery OR Binary delivery
 			ATTRIBUTE Reasonable
 			ATTRIBUTE As Highlighted As Attribution notice For Authorship Of Modification
 		IF Notice From Copyright holder
-			YOU MUST Delete Copyright notice
+			YOU MUST Delete Copyright notices
 				ATTRIBUTE As far as Feasible
 			YOU MUST Delete Attribution notice
 				ATTRIBUTE As far as Feasible
@@ -41,16 +41,16 @@ USE CASE Image delivery OR Font delivery
 	YOU MUST NOT Use Technological measures
 		ATTRIBUTE Effective
 		ATTRIBUTE To Restrict Exercise Of Granted rights
-	YOU MUST Forward Copyright notice
+	YOU MUST Forward Copyright notices
 	YOU MUST Provide Attribution notice
 		ATTRIBUTE Reasonable
-	IF Third-party attribution notice In Copyright notice OR Terms of service OR By Reasonable means
+	IF Third-party attribution notice In Copyright notices OR Terms of service OR By Reasonable means
 		YOU MUST Provide Third-party attribution notice
 			ATTRIBUTE Reasonable
 	IF Title
 		YOU MUST Provide Title Of Work
 			ATTRIBUTE Reasonable
-	IF Reference To Copyright notice OR License
+	IF Reference To Copyright notices OR License
 		YOU MUST Provide Reference
 			ATTRIBUTE Reasonable
 	YOU MUST NOT Use
@@ -60,7 +60,7 @@ USE CASE Image delivery OR Font delivery
 			ATTRIBUTE Reasonable
 			ATTRIBUTE As Highlighted As Attribution notice For Authorship Of Modification
 		IF Notice From Copyright holder
-			YOU MUST Delete Copyright notice
+			YOU MUST Delete Copyright notices
 				ATTRIBUTE As far as Feasible
 			YOU MUST Delete Attribution notice
 				ATTRIBUTE As far as Feasible

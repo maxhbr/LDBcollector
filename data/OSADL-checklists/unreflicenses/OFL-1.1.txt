@@ -1,5 +1,5 @@
 USE CASE Font delivery
-	YOU MUST Provide Copyright notice
+	YOU MUST Provide Copyright notices
 		EITHER
 			ATTRIBUTE Separate Text file
 		OR

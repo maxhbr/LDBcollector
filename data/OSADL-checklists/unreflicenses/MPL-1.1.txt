@@ -26,7 +26,7 @@ USE CASE Binary delivery
 	YOU MUST Include Notice
 		YOU MUST Reference Source code
 		ATTRIBUTE Highlighted
-		ATTRIBUTE Included in Binary delivery OR Documentation
+		ATTRIBUTE Included In Binary delivery OR Documentation
 	IF Patent holder OR Trademark holder OR Third-party patents OR Third-party trademarks
 		YOU MUST Provide File "LEGAL"
 			ATTRIBUTE Crediting Patent holder AND Trademark holder AND Third-party patents AND Third-party trademarks
@@ -40,9 +40,10 @@ USE CASE Binary delivery
 			ATTRIBUTE Same medium
 		OR
 			ATTRIBUTE Via Internet
+			EITHER
 				ATTRIBUTE Duration 12 months
-				EXCEPT IF Software modification Was Updated
-					ATTRIBUTE Duration 6 months
+			OR IF Software modification Was Updated
+				ATTRIBUTE Duration 6 months
 		YOU MUST Provide Standard license notice (Exhibit A)
 		YOU MUST Provide License text
 		YOU MUST Grant License
@@ -54,8 +55,8 @@ USE CASE Binary delivery
 			ATTRIBUTE Highlighted
 			ATTRIBUTE Crediting Initial developer
 			ATTRIBUTE Included In Source code
-			IF Binary delivery Includes Copyright notice OR Documentation Includes Copyright notice
-				ATTRIBUTE Included in Binary delivery OR Documentation
+			IF Binary delivery Includes Copyright notices OR Documentation Includes Copyright notices
+				ATTRIBUTE Included In Binary delivery OR Documentation
 	IF License change
 		YOU MUST Use Compatible license
 		YOU MUST Indemnify Other Contributors

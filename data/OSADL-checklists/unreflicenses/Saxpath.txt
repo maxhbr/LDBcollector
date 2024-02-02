@@ -1,0 +1,14 @@
+USE CASE Source code delivery
+	YOU MUST Forward Copyright notices
+	YOU MUST Forward License text
+	YOU MUST Forward Warranty disclaimer
+	IF Software modification
+		YOU MUST NOT Promote Using "SAXPath"
+		YOU MUST NOT Use "SAXPath" In Product name
+USE CASE Binary delivery
+	YOU MUST Provide Copyright notices In Documentation OR Distribution material
+	YOU MUST Provide License text In Documentation OR Distribution material
+	YOU MUST Provide Warranty disclaimer In Documentation OR Distribution material
+	IF Software modification
+		YOU MUST NOT Promote Using "SAXPath"
+		YOU MUST NOT Use "SAXPath" In Product name

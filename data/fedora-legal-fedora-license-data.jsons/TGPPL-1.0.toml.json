@@ -1,0 +1,16 @@
+{
+  "license": {
+    "expression": "TGPPL-1.0",
+    "status": [
+      "allowed"
+    ]
+  },
+  "fedora": {
+    "legacy-name": [
+      "Transitive Grace Period Public Licence"
+    ],
+    "legacy-abbreviation": [
+      "TGPPL"
+    ]
+  }
+}

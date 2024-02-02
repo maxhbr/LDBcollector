@@ -1,0 +1,10 @@
+{
+  "license": {
+    "expression": "LicenseRef-sph2pipe",
+    "status": [
+      "not-allowed"
+    ],
+    "url": "https://github.com/burrmill/sph2pipe/blob/master/COPYING\n",
+    "text": "5. License\n\nVarious portions of source code from Tony Robinson's \"shorten-2.0\"\npackage are used here by permission of Tony Robinson and SoftSound,\nInc. <http://www.softsound.com> -- these portions are found in the file\n\"shorten_x.c\"; please note the copyright information in that file.  By\nagreement with Tony Robinson and SoftSound, Inc, the Linguistic Data\nConsortium (LDC) grants permission to copy and use this software for the\npurpose of reading \"shorten\"-compressed speech data provided in NIST\nSPHERE file format by the LDC or others.  SoftSound provides useful\ntools for audio compression and other signal processing tasks.\n\nOther portions of source code (in particular the \"writeRIFFHeader\" and\n\"writeAIFFHeader\" functions in \"file_headers.c\", and the \"alaw2pcm\"\nconversion function) were adapted from the \"SoX\" package, a valuable\nopen-source tool maintained primarily by Chris Bagwell, with assistance\nfrom many others (http://sox.sourceforge.net/).  We gratefully\nacknowledge the value provided by all contributors to SoX; sph2pipe\nwould have been much harder to write without this resource.  We\nrecommend that you use SoX if you need to do sample-rate conversion on\naudio data.\n"
+  }
+}

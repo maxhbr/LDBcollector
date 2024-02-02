@@ -1,5 +1,5 @@
 USE CASE Source code delivery
-	YOU MUST Provide Copyright notice
+	YOU MUST Provide Copyright notices
 		ATTRIBUTE Highlighted
 		ATTRIBUTE Appropriately
 	YOU MUST Provide Warranty disclaimer (Warranty disclaimer)
@@ -15,12 +15,12 @@ USE CASE Source code delivery
 		YOU MUST Provide Modification date
 		IF Interactive AND Displaying License announcement
 			YOU MUST Display License announcement
-			YOU MUST Display Copyright notice
+			YOU MUST Display Copyright notices
 			YOU MUST Display Warranty disclaimer
 			YOU MUST Reference License text
 	YOU MUST NOT Restrict Granted rights
 USE CASE Binary delivery
-	YOU MUST Provide Copyright notice
+	YOU MUST Provide Copyright notices
 		ATTRIBUTE Highlighted
 		ATTRIBUTE Appropriately
 	YOU MUST Provide Warranty disclaimer (Warranty disclaimer)
@@ -56,7 +56,7 @@ USE CASE Binary delivery
 		YOU MUST Provide Modification date
 		IF Interactive AND Displaying License announcement
 			YOU MUST Display License announcement (Interactive announcement)
-			YOU MUST Display Copyright notice
+			YOU MUST Display Copyright notices
 			YOU MUST Display Warranty disclaimer (Warranty disclaimer)
 			YOU MUST Reference License text
 	YOU MUST NOT Restrict Granted rights
@@ -72,6 +72,7 @@ COMPATIBILITY CC0-1.0
 COMPATIBILITY curl
 COMPATIBILITY EFL-2.0
 COMPATIBILITY EUPL-1.1
+COMPATIBILITY EUPL-1.2
 COMPATIBILITY FSFAP
 COMPATIBILITY FSFULLR
 COMPATIBILITY GPL-1.0-or-later

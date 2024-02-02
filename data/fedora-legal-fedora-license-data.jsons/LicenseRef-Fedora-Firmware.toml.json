@@ -1,0 +1,15 @@
+{
+  "license": {
+    "expression": "LicenseRef-Fedora-Firmware",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://docs.fedoraproject.org/en-US/legal/license-field/#_firmware\nhttps://docs.fedoraproject.org/en-US/legal/update-existing-packages/#_freely_redistributable_without_restrictions\n"
+  },
+  "fedora": {
+    "legacy-abbreviation": [
+      "Freely redistributable without restrictions",
+      "Redistributable, no modification permitted"
+    ]
+  }
+}

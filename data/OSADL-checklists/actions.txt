@@ -1,4 +1,3 @@
-https://www.osadl.org/fileadmin/checklists/actions/Abuse.txt
 https://www.osadl.org/fileadmin/checklists/actions/Add.txt
 https://www.osadl.org/fileadmin/checklists/actions/Credit.txt
 https://www.osadl.org/fileadmin/checklists/actions/Delete.txt
@@ -7,6 +6,7 @@ https://www.osadl.org/fileadmin/checklists/actions/Display.txt
 https://www.osadl.org/fileadmin/checklists/actions/Disseminate.txt
 https://www.osadl.org/fileadmin/checklists/actions/Distribute.txt
 https://www.osadl.org/fileadmin/checklists/actions/Enable.txt
+https://www.osadl.org/fileadmin/checklists/actions/End.txt
 https://www.osadl.org/fileadmin/checklists/actions/Ensure.txt
 https://www.osadl.org/fileadmin/checklists/actions/Exercise.txt
 https://www.osadl.org/fileadmin/checklists/actions/Exhibit.txt
@@ -23,6 +23,7 @@ https://www.osadl.org/fileadmin/checklists/actions/Litigate.txt
 https://www.osadl.org/fileadmin/checklists/actions/Mark.txt
 https://www.osadl.org/fileadmin/checklists/actions/Misrepresent.txt
 https://www.osadl.org/fileadmin/checklists/actions/Modify.txt
+https://www.osadl.org/fileadmin/checklists/actions/Not%20do%20anything%20else.txt
 https://www.osadl.org/fileadmin/checklists/actions/Notify.txt
 https://www.osadl.org/fileadmin/checklists/actions/Permit.txt
 https://www.osadl.org/fileadmin/checklists/actions/Prepend.txt

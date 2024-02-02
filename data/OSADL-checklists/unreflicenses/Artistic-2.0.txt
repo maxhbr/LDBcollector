@@ -3,7 +3,7 @@ USE CASE Source code delivery
 	YOU MUST Provide Warranty disclaimer
 	IF Software modification
 		EXCEPT IF Provided By Copyright holder
-		YOU MUST Provide Modification report
+			YOU MUST Provide Modification report
 		EITHER
 			YOU MUST Provide Source code Of Modified work
 				ATTRIBUTE To Copyright holder Of Original work
@@ -29,7 +29,7 @@ USE CASE Binary delivery
 					ATTRIBUTE Within 30 days
 	IF Software modification
 		EXCEPT IF Provided By Copyright holder
-		YOU MUST Provide Modification report
+			YOU MUST Provide Modification report
 		EITHER
 			YOU MUST Provide Source code Of Modified work
 				ATTRIBUTE To Copyright holder Of Original work

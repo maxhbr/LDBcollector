@@ -8,10 +8,12 @@ https://www.osadl.org/fileadmin/checklists/language/EITHER.txt
 https://www.osadl.org/fileadmin/checklists/language/EXCEPT%20IF.txt
 https://www.osadl.org/fileadmin/checklists/language/IF.txt
 https://www.osadl.org/fileadmin/checklists/language/INCOMPATIBILITY.txt
+https://www.osadl.org/fileadmin/checklists/language/INCOMPATIBLE%20LICENSES.txt
 https://www.osadl.org/fileadmin/checklists/language/NOT.txt
 https://www.osadl.org/fileadmin/checklists/language/OR%20IF.txt
 https://www.osadl.org/fileadmin/checklists/language/OR.txt
 https://www.osadl.org/fileadmin/checklists/language/PATENT%20HINTS.txt
+https://www.osadl.org/fileadmin/checklists/language/REMARKS.txt
 https://www.osadl.org/fileadmin/checklists/language/USE%20CASE.txt
 https://www.osadl.org/fileadmin/checklists/language/YOU%20MUST%20NOT.txt
 https://www.osadl.org/fileadmin/checklists/language/YOU%20MUST.txt
