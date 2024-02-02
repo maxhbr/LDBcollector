@@ -10,6 +10,7 @@ import Ldbcollector.Source.Cavil
 import Ldbcollector.Source.ChooseALicense
 import Ldbcollector.Source.Curation as X
 import Ldbcollector.Source.EclipseOrgLegal
+import Ldbcollector.Source.FossLicense
 import Ldbcollector.Source.FOSSLight
 import Ldbcollector.Source.FSF
 import Ldbcollector.Source.Fedora
@@ -45,6 +46,7 @@ applySources curation = do
   applySource (CavilLicenseChanges "./data/openSUSE-cavil/lib/Cavil/resources/license_changes.txt")
   applySource (Metaeffekt True "./data/org-metaeffekt-metaeffekt-universe/src/main/resources/ae-universe")
   applySource (Warpr "./data/warpr-licensedb/data")
+  applySource (FossLicenseVar "./data/hesa-foss-licenses/var")
   applySource (FOSSLight "./data/fosslight/fosslight.sqlite.db")
   applySource (HitachiOpenLicense "./data/Hitachi-open-license/data" "./data/Hitachi-open-license.translations.csv")
   applySource (EclipseOrgLegal "./data/eclipse.org-legal-licenses.json")

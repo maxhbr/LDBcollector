@@ -42,6 +42,7 @@ library
       Ldbcollector.Source.Curation
       Ldbcollector.Source.EclipseOrgLegal
       Ldbcollector.Source.Fedora
+      Ldbcollector.Source.FossLicense
       Ldbcollector.Source.FOSSLight
       Ldbcollector.Source.Fossology
       Ldbcollector.Source.FSF
