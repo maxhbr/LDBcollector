@@ -53,6 +53,5 @@ applySources curation = do
                 , applySource (Ifross "./data/ifrOSS-ifrOSS.yaml")
                 , applySource (Curation curation)
                 ]
-  sourceResults <- mapM (id) sources
-  print sourceResults
+  mapM_ (id) sources
   lift $ infoM rootLoggerName "# ... got sources"
