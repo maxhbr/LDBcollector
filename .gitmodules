@@ -81,3 +81,6 @@
 [submodule "data/vinland-technology-flict"]
 	path = data/vinland-technology-flict
 	url = https://github.com/vinland-technology/flict
+[submodule "data/hesa-foss-licenses"]
+	path = data/hesa-foss-licenses
+	url = git@github.com:hesa/foss-licenses.git
