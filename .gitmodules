@@ -84,3 +84,6 @@
 [submodule "data/hesa-foss-licenses"]
 	path = data/hesa-foss-licenses
 	url = git@github.com:hesa/foss-licenses.git
+[submodule "data/doubleopen-project-policy-configuration"]
+	path = data/doubleopen-project-policy-configuration
+	url = git@github.com:doubleopen-project/policy-configuration.git
