@@ -75,6 +75,9 @@ def get_parser():
                         default=False)
 
     subparsers = parser.add_subparsers(help='Sub commands')
+    parser.add_argument('--validate-spdx', action='store_true', dest='validate_spdx', help='Validate that the resulting license expression is valid according to SPDX syntax', default=False)
+    parser.add_argument('--validate-relaxed', action='store_true', dest='validate_relaxed', help='Validate that the resulting license expression is valid according to SPDX syntax, but allow non SPDX identifiers ', default=False)
+    parser.add_argument('--validate-osadl', action='store_true', dest='validate_osadl', help='Validate that the resulting licenses are supported by OSADL\'s compatibility matrix.', default=False)
 
     # license
     parser_e = subparsers.add_parser(
@@ -93,9 +96,6 @@ def get_parser():
         'compat', help='Convert license to using licenses existing in the OSADL\'s matrix')
     parser_c.set_defaults(which='compat', func=compatibility)
     parser_c.add_argument('license', type=str, nargs='+', help='license name to display')
-    parser_c.add_argument('--validate-spdx', action='store_true', dest='validate_spdx', help='Validate that the resulting license expression is valid according to SPDX syntax', default=False)
-    parser_c.add_argument('--validate-relaxed', action='store_true', dest='validate_relaxed', help='Validate that the resulting license expression is valid according to SPDX syntax, but allow non SPDX identifiers ', default=False)
-    parser_c.add_argument('--validate-osadl', action='store_true', dest='validate_osadl', help='Validate that the resulting licenses are supported by OSADL\'s compatibility matrix', default=False)
 
     # simplify
     parser_s = subparsers.add_parser(
@@ -151,7 +151,7 @@ def compats(fl, formatter, args):
     return formatter.format_compat_list(all_compats, args.verbose)
 
 def version_info(fl, formatter, args):
-    return flame.config.SW_VERSION
+    return flame.config.SW_VERSION, None
 
 def compatibility(fl, formatter, args):
     validations = __validations(args)
@@ -159,7 +159,8 @@ def compatibility(fl, formatter, args):
     return formatter.format_compatibilities(compatibilities, args.verbose)
 
 def show_license(fl, formatter, args):
-    expression = fl.expression_license(' '.join(args.license), update_dual=(not args.no_dual_update))
+    validations = __validations(args)
+    expression = fl.expression_license(' '.join(args.license), validations=validations, update_dual=(not args.no_dual_update))
     return formatter.format_expression(expression, args.verbose)
 
 def full_license(fl, formatter, args):
