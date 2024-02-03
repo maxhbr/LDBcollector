@@ -286,7 +286,7 @@ class FossLicenses:
             'updates': updates,
         }
 
-    def expression_license(self, license_expression, update_dual=True):
+    def expression_license(self, license_expression, validations=None, update_dual=True):
         """
         Return an object with information about the normalized license for the license given.
 
@@ -355,6 +355,8 @@ class FossLicenses:
                 problem = self.license_db[AMBIG_TAG]["ambiguities"][real_lic]["problem"]
                 ambiguities.append(f'{about_license} Problem: {problem}')
                 tmp_license_expression = re.sub(needle, ' ', tmp_license_expression)
+
+        self.__validate_license(validations, license_parsed)
 
         ret = {
             'queried_license': license_expression,
@@ -542,7 +544,7 @@ class FossLicenses:
         if cache_key in self.compat_cache:
             return self.compat_cache.get(cache_key)
 
-        expression_full = self.expression_license(license_expression, update_dual)
+        expression_full = self.expression_license(license_expression, validations, update_dual)
         compats = []
         ret = self.__update_license_expression_helper(self.license_db[COMPATS_TAG],
                                                       'compat',
@@ -555,13 +557,7 @@ class FossLicenses:
         compat_licenses = [x for x in compat_licenses if x]
         compat_support = self.__validate_compatibilities_support(compat_licenses)
 
-        if validations:
-            if Validation.SPDX in validations:
-                self.__validate_license_spdx(compat_license_expression)
-            if Validation.RELAXED in validations:
-                self.__validate_license_relaxed(compat_license_expression)
-            if Validation.OSADL in validations:
-                self.__validate_licenses_osadl(compat_support)
+        self.__validate_license(validations, compat_license_expression)
 
         ret = {
             'ambiguities': expression_full['ambiguities'],
@@ -575,19 +571,20 @@ class FossLicenses:
         self.compat_cache[cache_key] = ret
         return ret
 
+    def __validate_license(self, validations, license_expression):
+        if validations:
+            if Validation.SPDX in validations:
+                self.__validate_license_spdx(license_expression)
+            if Validation.RELAXED in validations:
+                self.__validate_license_relaxed(license_expression)
+            if Validation.OSADL in validations:
+                compat_licenses = [x.strip() for x in re.split('\(|OR|AND|\)', license_expression)]
+                compat_licenses = [x for x in compat_licenses if x]
+                compat_support = self.__validate_compatibilities_support(compat_licenses)
+
+                self.__validate_licenses_osadl(compat_support)
+
     def __validate_compatibilities_support(self, licenses):
-        """Returns an object with information about the compatibility status for the license given.
-
-        :param str license_expression: A license expression. E.g "BSD3" or "GPLv2+ || BSD3"
-
-        :Example: supplying only one license, so look at [0]
-
-        >>> fl = FossLicenses()
-        >>> compat = fl.expression_compatibility_as('x11-keith-packard')
-        >>> print(compat['compatibilities'][0]['name'])
-        HPND
-
-        """
         compat_support = {}
         compat_support['licenses'] = []
         all_supported = True
