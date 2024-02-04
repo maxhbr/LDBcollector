@@ -266,7 +266,7 @@ filterStatement (SubStatements stmt substmts) =
     [] -> filterStatement stmt
     filtered -> case filterStatement stmt of
       Just fStmt -> Just $ SubStatements fStmt filtered
-      Nothing -> Just $ SubStatements stmt filtered -- TODO
+      Nothing -> Just $ SubStatements stmt filtered -- TODO (meta TODO: what is that TODO?)
 filterStatement (MaybeStatement Nothing) = Nothing
 filterStatement (MaybeStatement (Just stmt)) = filterStatement stmt
 filterStatement stmt = Just stmt

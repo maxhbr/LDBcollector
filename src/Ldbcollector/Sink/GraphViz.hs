@@ -86,16 +86,14 @@ licenseStatementToLabelValue (LicenseRating rating) =
         NegativeLicenseRating {} -> GVH.DarkRed
         NeutralLicenseRating {} -> GVH.Black
         PositiveLicenseRating {} -> GVH.ForestGreen
-      ns = case rating of
-        NegativeLicenseRating ns _ _ -> ns
-        NeutralLicenseRating ns _ _ -> ns
-        PositiveLicenseRating ns _ _ -> ns
+      nsL = case getRatingNamespace rating of
+                Just ns -> GVH.Str (fromString ns) : GVH.Str ": " : []
+                _ -> []
       description = maybe [] ((GVH.Newline [] :) . textToMultilines) $ getRatingDescription rating
       reason = maybe [] ((GVH.Newline [] :) . textToMultilines) $ getRatingReason rating
    in GV.HtmlLabel . GVH.Text $
-        [ GVH.Str (fromString ns),
-          GVH.Str ": ",
-          GVH.Format GVH.Bold [GVH.Font [color] [(GVH.Str . LT.fromStrict . unLicenseRating) rating]]
+        nsL ++ 
+        [ GVH.Format GVH.Bold [GVH.Font [color] [(GVH.Str . LT.fromStrict . unLicenseRating) rating]]
         ]
           ++ description
           ++ reason
