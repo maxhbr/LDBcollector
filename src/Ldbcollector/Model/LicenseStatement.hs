@@ -2,12 +2,12 @@
 
 module Ldbcollector.Model.LicenseStatement where
 
+import Data.Text qualified as T
 import Ldbcollector.Model.LicenseName
 import MyPrelude
 import Text.Blaze qualified as H
 import Text.Blaze.Html5 qualified as H
 import Text.Blaze.Html5.Attributes qualified as A
-import Data.Text qualified as T
 
 data PCLR = PCLR
   { _permissions :: [Text],
@@ -88,12 +88,14 @@ data LicenseTagText
   | LicenseTagReason Text
   | LicenseTagReasonWithDescription Text Text
   deriving (Eq, Show, Ord, Generic)
+
 instance ToJSON LicenseTagText
 
 data LicenseTag
   = ScopedLicenseTag String Text LicenseTagText
   | UnscopedLicenseTag Text LicenseTagText
   deriving (Eq, Show, Ord, Generic)
+
 instance ToJSON LicenseTag
 
 getTagNamespace :: LicenseTag -> Maybe String
@@ -123,15 +125,15 @@ instance H.ToMarkup LicenseTag where
     let mNs = getTagNamespace r
         rating = unLicenseTag r
         desc = case getTagDescription r of
-            Just desc' -> H.toValue desc'
-            _ -> ""
+          Just desc' -> H.toValue desc'
+          _ -> ""
      in do
           H.div H.! A.title desc $ do
             case mNs of
-                Just ns -> do
-                    H.toMarkup ns
-                    ": "
-                _ -> return ()
+              Just ns -> do
+                H.toMarkup ns
+                ": "
+              _ -> return ()
             H.b $ H.toMarkup rating
             case getTagReason r of
               (Just reason) -> do
@@ -144,6 +146,7 @@ data LicenseRating
   | NeutralLicenseRating LicenseTag
   | NegativeLicenseRating LicenseTag
   deriving (Eq, Show, Ord, Generic)
+
 instance ToJSON LicenseRating
 
 tagFromLicenseRating :: LicenseRating -> LicenseTag
@@ -172,15 +175,15 @@ instance H.ToMarkup LicenseRating where
           NeutralLicenseRating {} -> ""
           NegativeLicenseRating {} -> "color: red;"
         desc = case getRatingDescription r of
-            Just desc' -> H.toValue desc'
-            _ -> ""
+          Just desc' -> H.toValue desc'
+          _ -> ""
      in do
           H.span H.! A.title desc $ do
             case mNs of
-                Just ns -> do
-                    H.toMarkup ns
-                    ": "
-                _ -> return ()
+              Just ns -> do
+                H.toMarkup ns
+                ": "
+              _ -> return ()
             H.b H.! A.style color $ H.toMarkup rating
             case getRatingReason r of
               (Just reason) -> do
@@ -192,9 +195,11 @@ data LicenseComment
   = UnscopedLicenseComment Text
   | ScopedLicenseComment String Text
   deriving (Eq, Ord, Generic)
+
 instance Show LicenseComment where
-    show (UnscopedLicenseComment comment) = T.unpack comment
-    show (ScopedLicenseComment scope comment) = scope ++ ": " ++ T.unpack comment
+  show (UnscopedLicenseComment comment) = T.unpack comment
+  show (ScopedLicenseComment scope comment) = scope ++ ": " ++ T.unpack comment
+
 instance ToJSON LicenseComment
 
 isEmptyLicenseComment :: LicenseComment -> Bool

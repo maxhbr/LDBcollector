@@ -67,17 +67,16 @@ toFacts (GoogleLicensePolicyJson canonical_names types) =
 instance LicenseFactC GoogleLicense where
   getType _ = "GoogleLicense"
   getApplicableLNs (GoogleLicense gln sln _ _) = LN gln `AlternativeLNs` (map LN . maybeToList) sln
-  getImpliedStmts (GoogleLicense _ _ ty desc) = 
-    let 
-        tag = ScopedLicenseTag "Google Policy Classification" ty (LicenseTagDescription desc)
-    in case ty of
-    "restricted" -> [LicenseRating (NegativeLicenseRating tag)]
-    "reciprocal" -> [LicenseRating (NeutralLicenseRating tag)]
-    "notice" -> [LicenseRating (PositiveLicenseRating tag)]
-    "permissive" -> [LicenseRating (PositiveLicenseRating tag)]
-    "unencumbered" -> [LicenseRating (PositiveLicenseRating tag)]
-    "by_exception_only" -> [LicenseRating (NegativeLicenseRating tag)]
-    _ -> []
+  getImpliedStmts (GoogleLicense _ _ ty desc) =
+    let tag = ScopedLicenseTag "Google Policy Classification" ty (LicenseTagDescription desc)
+     in case ty of
+          "restricted" -> [LicenseRating (NegativeLicenseRating tag)]
+          "reciprocal" -> [LicenseRating (NeutralLicenseRating tag)]
+          "notice" -> [LicenseRating (PositiveLicenseRating tag)]
+          "permissive" -> [LicenseRating (PositiveLicenseRating tag)]
+          "unencumbered" -> [LicenseRating (PositiveLicenseRating tag)]
+          "by_exception_only" -> [LicenseRating (NegativeLicenseRating tag)]
+          _ -> []
 
 newtype GoogleLicensePolicy = GoogleLicensePolicy FilePath
 

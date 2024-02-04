@@ -25,7 +25,7 @@ instance LicenseFactC EclipseOrgLegalLicense where
         tag = ScopedLicenseTag (getType a) "Approved" (LicenseTagDescription desc)
         rating = PositiveLicenseRating tag
      in [LicenseRating rating]
-  getImpliedStmts a@(RestrictedLicense _ _) = 
+  getImpliedStmts a@(RestrictedLicense _ _) =
     let tag = ScopedLicenseTag (getType a) "Restricted" NoLicenseTagText
         rating = NegativeLicenseRating tag
      in [LicenseRating rating]

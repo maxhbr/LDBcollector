@@ -32,8 +32,8 @@ getClusters = do
 
       componentNodes = G.scc lngOnlySame
       clusters = map (mapMaybe (lngOnlySame `G.lab`)) componentNodes
-    --   isClusterALicense :: [LicenseName] -> Bool
-    --   isClusterALicense
+  --   isClusterALicense :: [LicenseName] -> Bool
+  --   isClusterALicense
   return clusters
 
 -- ############################################################################

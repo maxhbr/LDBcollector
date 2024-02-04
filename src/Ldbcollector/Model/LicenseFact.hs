@@ -16,7 +16,7 @@ module Ldbcollector.Model.LicenseFact
     LicenseNameCluster (..),
     alternativesFromListOfLNs,
     LicenseFactC (..),
-    licenseFactsImplicationsToMarkup
+    licenseFactsImplicationsToMarkup,
   )
 where
 
@@ -233,13 +233,13 @@ instance Ord LicenseFact where
 
 licenseFactUrl :: LicenseFact -> H.Markup -> H.Markup
 licenseFactUrl fact markup = do
-    let factId@(FactId ty hash) = getFactId fact
-    H.a H.! A.href (H.toValue $ "/fact" </> ty </> hash) $ markup
+  let factId@(FactId ty hash) = getFactId fact
+  H.a H.! A.href (H.toValue $ "/fact" </> ty </> hash) $ markup
 
 licenseFactOriginToMarkup :: LicenseFact -> H.Markup
 licenseFactOriginToMarkup fact =
-    let desc = H.toValue $ show $ getFactId fact
-    in H.span H.! A.title desc $ do
+  let desc = H.toValue $ show $ getFactId fact
+   in H.span H.! A.title desc $ do
         H.toMarkup ("[" :: String)
         licenseFactUrl fact (H.toMarkup $ getType fact)
         H.toMarkup ("]" :: String)
@@ -248,9 +248,9 @@ createProvidedBy :: (LicenseFact -> Bool) -> [LicenseFact] -> H.Markup
 createProvidedBy f facts = do
   let providingFacts = filter f facts
   H.span H.! A.class_ "provided-by" $ do
-      " (provided by: "
-      mapM_ licenseFactOriginToMarkup providingFacts
-      ")"
+    " (provided by: "
+    mapM_ licenseFactOriginToMarkup providingFacts
+    ")"
 
 licenseFactsImplicationsToMarkup :: [LicenseFact] -> LicenseNameCluster -> Markup
 licenseFactsImplicationsToMarkup facts cluster = do
@@ -264,12 +264,15 @@ licenseFactsImplicationsToMarkup facts cluster = do
           implicationsToList title getter = do
             let implications = nub $ concatMap getter facts
             unless (null implications) $ do
-                H.h2 title
-                H.ul $ mapM_ (\i -> do
-                    H.li $ do
-                       H.toMarkup i
-                       createProvidedBy ((i `elem`) . getter) facts
-                    ) implications
+              H.h2 title
+              H.ul $
+                mapM_
+                  ( \i -> do
+                      H.li $ do
+                        H.toMarkup i
+                        createProvidedBy ((i `elem`) . getter) facts
+                  )
+                  implications
 
       implicationsToList "License Types" getImpliedLicenseTypes
       implicationsToList "License Ratings" getImpliedLicenseRatings
@@ -278,31 +281,46 @@ licenseFactsImplicationsToMarkup facts cluster = do
       let urls = nub $ concatMap getImpliedLicenseUrls facts
       unless (null urls) $ do
         H.h3 "URLs"
-        H.ul $ mapM_ (H.li . (\(ns,url) -> do
-            case ns of
-              Just ns' -> do
-                H.toMarkup ns'
-                ": "
-              Nothing -> pure()
-            H.a H.! A.href (H.toValue url) H.! A.target "_blank" $ H.toMarkup url)) urls
+        H.ul $
+          mapM_
+            ( H.li
+                . ( \(ns, url) -> do
+                      case ns of
+                        Just ns' -> do
+                          H.toMarkup ns'
+                          ": "
+                        Nothing -> pure ()
+                      H.a H.! A.href (H.toValue url) H.! A.target "_blank" $ H.toMarkup url
+                  )
+            )
+            urls
       let strStmts = nub $ concatMap getImpliedPlainLicenseStatements facts
       unless (null strStmts) $ do
         H.h3 "Other Statements"
-        H.ul $ mapM_ (H.li . (\case
-                                    (stmt, Just desc) -> do
-                                        H.toMarkup stmt
-                                        H.br
-                                        H.toMarkup desc
-                                    (stmt, Nothing) -> H.toMarkup stmt)) strStmts
+        H.ul $
+          mapM_
+            ( H.li
+                . ( \case
+                      (stmt, Just desc) -> do
+                        H.toMarkup stmt
+                        H.br
+                        H.toMarkup desc
+                      (stmt, Nothing) -> H.toMarkup stmt
+                  )
+            )
+            strStmts
   let texts = nub $ concatMap getImpliedLicenseTexts facts
   unless (null texts) $ do
     H.h3 "Texts"
     H.ul $
-      mapM_ (\text ->
-        H.li $ do
-          H.details $ do
-            H.summary "Text:"
-            H.pre (H.toMarkup text)) texts
+      mapM_
+        ( \text ->
+            H.li $ do
+              H.details $ do
+                H.summary "Text:"
+                H.pre (H.toMarkup text)
+        )
+        texts
 
 instance LicenseFactC LicenseFact where
   getType (LicenseFact _ a) = getType a

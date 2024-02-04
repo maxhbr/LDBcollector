@@ -46,17 +46,17 @@ textToMultilines = intersperse (GVH.Newline []) . map GVH.Str . LT.lines . LT.fr
 licenseStatementToLabelValue :: LicenseStatement -> GV.Label
 licenseStatementToLabelValue (LicenseStatement stmt) = GV.toLabelValue stmt
 licenseStatementToLabelValue (LicenseUrl ns url) =
-    let nsString = case ns of
-                        Just ns' -> ns' ++ ": "
-                        _ -> ""
-     in GV.toLabelValue (nsString ++ url)
+  let nsString = case ns of
+        Just ns' -> ns' ++ ": "
+        _ -> ""
+   in GV.toLabelValue (nsString ++ url)
 licenseStatementToLabelValue (LicenseText txt) = GV.toLabelValue ("$TEXT" :: Text)
 licenseStatementToLabelValue (LicenseRule txt) = GV.toLabelValue ("$RULE" :: Text)
 licenseStatementToLabelValue (LicenseComment txt) =
-    let value = case txt of
-                    UnscopedLicenseComment comment -> TW.wrapText TW.defaultWrapSettings 80 comment
-                    ScopedLicenseComment scope comment -> T.pack scope <> ":\n" <> TW.wrapText TW.defaultWrapSettings 80 comment
-     in GV.toLabelValue (TW.wrapText TW.defaultWrapSettings 80 value)
+  let value = case txt of
+        UnscopedLicenseComment comment -> TW.wrapText TW.defaultWrapSettings 80 comment
+        ScopedLicenseComment scope comment -> T.pack scope <> ":\n" <> TW.wrapText TW.defaultWrapSettings 80 comment
+   in GV.toLabelValue (TW.wrapText TW.defaultWrapSettings 80 value)
 licenseStatementToLabelValue (LicensePCLR pclr) =
   let header =
         GVH.Cells
@@ -87,14 +87,14 @@ licenseStatementToLabelValue (LicenseRating rating) =
         NeutralLicenseRating {} -> GVH.Black
         PositiveLicenseRating {} -> GVH.ForestGreen
       nsL = case getRatingNamespace rating of
-                Just ns -> GVH.Str (fromString ns) : GVH.Str ": " : []
-                _ -> []
+        Just ns -> GVH.Str (fromString ns) : GVH.Str ": " : []
+        _ -> []
       description = maybe [] ((GVH.Newline [] :) . textToMultilines) $ getRatingDescription rating
       reason = maybe [] ((GVH.Newline [] :) . textToMultilines) $ getRatingReason rating
    in GV.HtmlLabel . GVH.Text $
-        nsL ++ 
-        [ GVH.Format GVH.Bold [GVH.Font [color] [(GVH.Str . LT.fromStrict . unLicenseRating) rating]]
-        ]
+        nsL
+          ++ [ GVH.Format GVH.Bold [GVH.Font [color] [(GVH.Str . LT.fromStrict . unLicenseRating) rating]]
+             ]
           ++ description
           ++ reason
 licenseStatementToLabelValue statement = (GV.StrLabel . LT.pack . show) statement

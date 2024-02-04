@@ -91,8 +91,10 @@ listPageAction clusters = do
           H.ul $
             mapM_
               ( \cluster ->
-                  H.li (H.ul H.! A.class_ "capsulUl clearfix" $
-                    mapM_ (H.li . lnToA Nothing) cluster)
+                  H.li
+                    ( H.ul H.! A.class_ "capsulUl clearfix" $
+                        mapM_ (H.li . lnToA Nothing) cluster
+                    )
               )
               clusters
   html (BT.renderHtml page)
@@ -171,7 +173,7 @@ computeSubgraph licenseGraph paramMap = do
               )
           <*> getLicenseNameClusterM (needleNames, sameNames, otherNames)
 
-htmlHead :: T.Text ->  H.Markup
+htmlHead :: T.Text -> H.Markup
 htmlHead title = do
   H.head $ do
     H.title (H.toMarkup title)

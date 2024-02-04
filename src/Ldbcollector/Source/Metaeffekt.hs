@@ -7,9 +7,9 @@ module Ldbcollector.Source.Metaeffekt
 where
 
 import Data.Map qualified as Map
+import Data.Text qualified as T
 import Data.Vector qualified as V
 import Data.Yaml qualified as Y
-import Data.Text qualified as T
 import Data.Yaml.Internal qualified as Y
 import Ldbcollector.Model
 
@@ -26,9 +26,12 @@ data MetaeffektLicense = MetaeffektLicense
 
 isLicenseVariant :: MetaeffektLicense -> Bool
 isLicenseVariant l = case _canonicalName l of
-    LicenseName _ n -> any (`T.isInfixOf` n) [ "(variant "
-                                             , "; variant "
-                                             ]
+  LicenseName _ n ->
+    any
+      (`T.isInfixOf` n)
+      [ "(variant ",
+        "; variant "
+      ]
 
 instance FromJSON MetaeffektLicense where
   parseJSON = withObject "MetaeffektLicense" $ \v ->

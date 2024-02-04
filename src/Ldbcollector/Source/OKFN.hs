@@ -83,7 +83,7 @@ instance LicenseFactC OKFNLicense where
                   "rejected" ->
                     let tag = ScopedLicenseTag "Open Definition" (pack odConfromance) NoLicenseTagText
                      in NegativeLicenseRating tag
-                  _ -> 
+                  _ ->
                     let tag = ScopedLicenseTag "Open Definition" (pack odConfromance) NoLicenseTagText
                      in NeutralLicenseRating tag
         osdConfromance =
@@ -91,7 +91,7 @@ instance LicenseFactC OKFNLicense where
            in case osdConfromance of
                 "approved" -> isOsiApproved (Just True)
                 "rejected" -> isOsiApproved (Just False)
-                _ -> 
+                _ ->
                   let tag = ScopedLicenseTag "OSD" (pack osdConfromance) NoLicenseTagText
                    in LicenseRating $ NeutralLicenseRating tag
      in maybeToList (fmap (LicenseUrl Nothing) (_url l))

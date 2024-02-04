@@ -24,7 +24,7 @@ writeSvgByName outDir lic = do
                   LicenseName (Just ns) name -> T.unpack ns </> T.unpack name
                   LicenseName Nothing name -> T.unpack name
               )
-            <.> "dot"
+          <.> "dot"
       json = dot -<.> "json"
   lift $ createDirectoryIfMissing True (dropFileName dot)
   infoLog $ "generate " ++ dot ++ " ..."

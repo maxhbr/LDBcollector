@@ -51,20 +51,20 @@ classificationToLicenses prefix (IfrossClassification name description licenses 
 
 categoryWithDescriptionToStmt :: (Text, Text) -> LicenseStatement
 categoryWithDescriptionToStmt (classification, description) =
-    let tag = ScopedLicenseTag (scope ++ " Classification") classification (LicenseTagDescription description)
-        positiveRating = LicenseRating $ PositiveLicenseRating tag
-        neutralRating  = LicenseRating $ NeutralLicenseRating tag
-        negativeRating = LicenseRating $ NegativeLicenseRating tag
-     in case classification of
-            "Lizenzen ohne Copyleft-Effekt (\"Permissive Licenses\")" -> neutralRating `SubStatements` [LicenseType Permissive]
-            "Lizenzen mit strengem Copyleft-Effekt" -> neutralRating `SubStatements` [LicenseType StronglyProtective]
-            "Lizenzen mit beschränktem Copyleft-Effekt" -> neutralRating `SubStatements` [LicenseType WeaklyProtective]
-            "Lizenzen mit Wahlmöglichkeiten" -> neutralRating `SubStatements` [LicenseType WeaklyProtective]
-            "Public Domain Erklärungen" -> negativeRating `SubStatements` [LicenseType PublicDomain]
-            "Open Source Lizenzen" -> positiveRating
-            "Ethical Licenses" -> negativeRating
-            "Sonstige (non-free) Software Lizenzen" -> negativeRating
-            _ -> neutralRating
+  let tag = ScopedLicenseTag (scope ++ " Classification") classification (LicenseTagDescription description)
+      positiveRating = LicenseRating $ PositiveLicenseRating tag
+      neutralRating = LicenseRating $ NeutralLicenseRating tag
+      negativeRating = LicenseRating $ NegativeLicenseRating tag
+   in case classification of
+        "Lizenzen ohne Copyleft-Effekt (\"Permissive Licenses\")" -> neutralRating `SubStatements` [LicenseType Permissive]
+        "Lizenzen mit strengem Copyleft-Effekt" -> neutralRating `SubStatements` [LicenseType StronglyProtective]
+        "Lizenzen mit beschränktem Copyleft-Effekt" -> neutralRating `SubStatements` [LicenseType WeaklyProtective]
+        "Lizenzen mit Wahlmöglichkeiten" -> neutralRating `SubStatements` [LicenseType WeaklyProtective]
+        "Public Domain Erklärungen" -> negativeRating `SubStatements` [LicenseType PublicDomain]
+        "Open Source Lizenzen" -> positiveRating
+        "Ethical Licenses" -> negativeRating
+        "Sonstige (non-free) Software Lizenzen" -> negativeRating
+        _ -> neutralRating
 
 categoriesWithDescriptionToStmt :: [(Text, Text)] -> LicenseStatement
 categoriesWithDescriptionToStmt [] = noStmt

@@ -38,7 +38,8 @@ data FossLicense = FossLicense
     _spdxid :: Text,
     _aliases :: [Text],
     _text :: Maybe Text
-  } deriving (Show, Eq, Ord, Generic)
+  }
+  deriving (Show, Eq, Ord, Generic)
 
 $(deriveJSON defaultOptions {fieldLabelModifier = drop 1, constructorTagModifier = map toLower} ''FossLicense)
 
@@ -64,11 +65,11 @@ $(deriveJSON defaultOptions {fieldLabelModifier = drop 1, constructorTagModifier
 
 instance LicenseFactC FossLicense where
   getType _ = "FossLicense"
-  getApplicableLNs fl = let
-          flln = LN $ newNLN "foss-license" (_name fl)
-          scln = LN $ newNLN "scancode" (_scancode_key fl)
-          aliaslns = map (LN . newLN) (_aliases fl)
-      in flln `AlternativeLNs` (scln : aliaslns)
+  getApplicableLNs fl =
+    let flln = LN $ newNLN "foss-license" (_name fl)
+        scln = LN $ newNLN "scancode" (_scancode_key fl)
+        aliaslns = map (LN . newLN) (_aliases fl)
+     in flln `AlternativeLNs` (scln : aliaslns)
   getImpliedLicenseTexts (FossLicense _ _ _ _ _ (Just text)) = [text]
   getImpliedLicenseTexts _ = []
 
@@ -81,20 +82,19 @@ instance HasOriginalData FossLicenseVar where
         NoPreservedOriginalData
 
 instance Source FossLicenseVar where
-    getSource _ = Source "FOSS License"
-    getFacts (FossLicenseVar var) =
-        let parseOrFailJson json = do
-              logFileReadIO json
-              decoded <- eitherDecodeFileStrict json :: IO (Either String FossLicense)
-              case decoded of
-                Left err -> fail err
-                Right fossLicense -> do
-                    text <- T.readFile (json -<.> "LICENSE")
-                    return (fossLicense {_text = Just text})
-         in do
-              let varLicenses = var </> "licenses"
-              -- ambiguities.json
-              jsonFiles <- glob (varLicenses </> "*.json")
-              jsons <- mapM parseOrFailJson jsonFiles
-              return ((V.fromList . map wrapFact) jsons)
-              
+  getSource _ = Source "FOSS License"
+  getFacts (FossLicenseVar var) =
+    let parseOrFailJson json = do
+          logFileReadIO json
+          decoded <- eitherDecodeFileStrict json :: IO (Either String FossLicense)
+          case decoded of
+            Left err -> fail err
+            Right fossLicense -> do
+              text <- T.readFile (json -<.> "LICENSE")
+              return (fossLicense {_text = Just text})
+     in do
+          let varLicenses = var </> "licenses"
+          -- ambiguities.json
+          jsonFiles <- glob (varLicenses </> "*.json")
+          jsons <- mapM parseOrFailJson jsonFiles
+          return ((V.fromList . map wrapFact) jsons)
