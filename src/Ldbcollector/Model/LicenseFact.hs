@@ -134,6 +134,14 @@ class (Eq a) => LicenseFactC a where
   getLicenseNameCluster = applicableLNsToLicenseNameCluster . getApplicableLNs
   getMainLicenseName :: a -> LicenseName
   getMainLicenseName = (\(LicenseNameCluster ln _ _) -> ln) . getLicenseNameCluster
+  getImpliedLicenseTags :: a -> [LicenseTag]
+  getImpliedLicenseTags =
+    let filterFun [] = []
+        filterFun (LicenseTag t : stmts) = t : filterFun stmts
+        filterFun (_ : stmts) = filterFun stmts
+     in filterFun . flattenStatements . getImpliedStmts
+  getAllImpliedLicenseTags :: a -> [LicenseTag]
+  getAllImpliedLicenseTags a = getImpliedLicenseTags a ++ (map tagFromLicenseRating (getImpliedLicenseRatings a))
   getImpliedLicenseRatings :: a -> [LicenseRating]
   getImpliedLicenseRatings =
     let filterFun [] = []
@@ -168,6 +176,12 @@ class (Eq a) => LicenseFactC a where
   getImpliedLicenseRules =
     let filterFun [] = []
         filterFun (LicenseRule r : stmts) = r : filterFun stmts
+        filterFun (_ : stmts) = filterFun stmts
+     in filterFun . flattenStatements . getImpliedStmts
+  getImpliedPlainLicenseStatements :: a -> [(String, Maybe Text)]
+  getImpliedPlainLicenseStatements =
+    let filterFun [] = []
+        filterFun (LicenseStatement r : stmts) = (r, Nothing) : filterFun stmts
         filterFun (_ : stmts) = filterFun stmts
      in filterFun . flattenStatements . getImpliedStmts
 
@@ -234,6 +248,10 @@ licenseFactsImplicationsToMarkup facts cluster = do
       unless (null ratings) $ do
         H.h3 "License Ratings"
         H.ul $ mapM_ (H.li . H.toMarkup) ratings
+      let tags = nub $ concatMap getImpliedLicenseTags facts
+      unless (null tags) $ do
+        H.h3 "License Tags"
+        H.ul $ mapM_ (H.li . H.toMarkup) tags
       let comments = nub $ concatMap getImpliedLicenseComments facts
       unless (null comments) $ do
         H.h3 "License Comments"
@@ -248,6 +266,15 @@ licenseFactsImplicationsToMarkup facts cluster = do
                 ": "
               Nothing -> pure()
             H.a H.! A.href (H.toValue url) H.! A.target "_blank" $ H.toMarkup url)) urls
+      let strStmts = nub $ concatMap getImpliedPlainLicenseStatements facts
+      unless (null strStmts) $ do
+        H.h3 "Other Statements"
+        H.ul $ mapM_ (H.li . (\case
+                                    (stmt, Just desc) -> do
+                                        H.toMarkup stmt
+                                        H.br
+                                        H.toMarkup desc
+                                    (stmt, Nothing) -> H.toMarkup stmt)) strStmts
   let texts = nub $ concatMap getImpliedLicenseTexts facts
   unless (null texts) $ do
     H.h3 "Texts"

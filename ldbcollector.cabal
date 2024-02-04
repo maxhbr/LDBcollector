@@ -51,6 +51,7 @@ library
       Ldbcollector.Source.Ifross
       Ldbcollector.Source.Metaeffekt
       Ldbcollector.Source.OKFN
+      Ldbcollector.Source.ORT
       Ldbcollector.Source.OSADL
       Ldbcollector.Source.OSI
       Ldbcollector.Source.OSLC
