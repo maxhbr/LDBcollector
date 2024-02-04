@@ -68,12 +68,12 @@ instance LicenseFactC GoogleLicense where
   getType _ = "GoogleLicense"
   getApplicableLNs (GoogleLicense gln sln _ _) = LN gln `AlternativeLNs` (map LN . maybeToList) sln
   getImpliedStmts (GoogleLicense _ _ ty desc) = case ty of
-    "restricted" -> [LicenseRating (NegativeLicenseRating "Google Policy Classification" ty (LicenseRatingDescription desc))]
-    "reciprocal" -> [LicenseRating (NeutralLicenseRating "Google Policy Classification" ty (LicenseRatingDescription desc))]
-    "notice" -> [LicenseRating (PositiveLicenseRating "Google Policy Classification" ty (LicenseRatingDescription desc))]
-    "permissive" -> [LicenseRating (PositiveLicenseRating "Google Policy Classification" ty (LicenseRatingDescription desc))]
-    "unencumbered" -> [LicenseRating (PositiveLicenseRating "Google Policy Classification" ty (LicenseRatingDescription desc))]
-    "by_exception_only" -> [LicenseRating (NegativeLicenseRating "Google Policy Classification" ty (LicenseRatingDescription desc))]
+    "restricted" -> [LicenseRating (NegativeLicenseRating "Google Policy Classification" ty (LicenseTagDescription desc))]
+    "reciprocal" -> [LicenseRating (NeutralLicenseRating "Google Policy Classification" ty (LicenseTagDescription desc))]
+    "notice" -> [LicenseRating (PositiveLicenseRating "Google Policy Classification" ty (LicenseTagDescription desc))]
+    "permissive" -> [LicenseRating (PositiveLicenseRating "Google Policy Classification" ty (LicenseTagDescription desc))]
+    "unencumbered" -> [LicenseRating (PositiveLicenseRating "Google Policy Classification" ty (LicenseTagDescription desc))]
+    "by_exception_only" -> [LicenseRating (NegativeLicenseRating "Google Policy Classification" ty (LicenseTagDescription desc))]
     _ -> []
 
 newtype GoogleLicensePolicy = GoogleLicensePolicy FilePath
