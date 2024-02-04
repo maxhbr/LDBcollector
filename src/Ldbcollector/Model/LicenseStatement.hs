@@ -41,6 +41,9 @@ data LicenseType
   | Unlicensed
   deriving (Eq, Show, Ord, Generic)
 
+instance H.ToMarkup LicenseType where
+  toMarkup = H.toMarkup . show
+
 instance ToJSON LicenseType
 
 instance IsString LicenseType where
@@ -79,52 +82,90 @@ class ToLicenseType a where
 instance ToLicenseType String where
   toLicenseType = fromString
 
-data LicenseRatingText
-  = NoLicenseRatingText
-  | LicenseRatingDescription Text
-  | LicenseRatingReason Text
-  | LicenseRatingReasonWithDescription Text Text
+data LicenseTagText
+  = NoLicenseTagText
+  | LicenseTagDescription Text
+  | LicenseTagReason Text
+  | LicenseTagReasonWithDescription Text Text
   deriving (Eq, Show, Ord, Generic)
-instance ToJSON LicenseRatingText
+instance ToJSON LicenseTagText
+
+data LicenseTag
+  = ScopedLicenseTag String Text LicenseTagText
+  | UnscopedLicenseTag Text LicenseTagText
+  deriving (Eq, Show, Ord, Generic)
+instance ToJSON LicenseTag
+
+getTagNamespace :: LicenseTag -> Maybe String
+getTagNamespace (ScopedLicenseTag ns _ _) = Just ns
+getTagNamespace _ = Nothing
+
+unLicenseTag :: LicenseTag -> Text
+unLicenseTag (ScopedLicenseTag _ r _) = r
+unLicenseTag (UnscopedLicenseTag r _) = r
+
+getTagDescription :: LicenseTag -> Maybe Text
+getTagDescription (ScopedLicenseTag _ _ (LicenseTagDescription desc)) = Just desc
+getTagDescription (ScopedLicenseTag _ _ (LicenseTagReasonWithDescription _ desc)) = Just desc
+getTagDescription (UnscopedLicenseTag _ (LicenseTagDescription desc)) = Just desc
+getTagDescription (UnscopedLicenseTag _ (LicenseTagReasonWithDescription _ desc)) = Just desc
+getTagDescription _ = Nothing
+
+getTagReason :: LicenseTag -> Maybe Text
+getTagReason (ScopedLicenseTag _ _ (LicenseTagReason reason)) = Just reason
+getTagReason (ScopedLicenseTag _ _ (LicenseTagReasonWithDescription reason _)) = Just reason
+getTagReason (UnscopedLicenseTag _ (LicenseTagReason reason)) = Just reason
+getTagReason (UnscopedLicenseTag _ (LicenseTagReasonWithDescription reason _)) = Just reason
+getTagReason _ = Nothing
+
+instance H.ToMarkup LicenseTag where
+  toMarkup r =
+    let mNs = getTagNamespace r
+        rating = unLicenseTag r
+        desc = case getTagDescription r of
+            Just desc' -> H.toValue desc'
+            _ -> ""
+     in do
+          H.div H.! A.title desc $ do
+            case mNs of
+                Just ns -> do
+                    H.toMarkup ns
+                    ": "
+                _ -> return ()
+            H.b $ H.toMarkup rating
+            case getTagReason r of
+              (Just reason) -> do
+                H.br
+                H.toMarkup reason
+              _ -> pure ()
 
 data LicenseRating
-  = PositiveLicenseRating String Text LicenseRatingText
-  | NeutralLicenseRating String Text LicenseRatingText
-  | NegativeLicenseRating String Text LicenseRatingText
+  = PositiveLicenseRating LicenseTag
+  | NeutralLicenseRating LicenseTag
+  | NegativeLicenseRating LicenseTag
   deriving (Eq, Show, Ord, Generic)
 instance ToJSON LicenseRating
 
-getRatingNamespace :: LicenseRating -> String
-getRatingNamespace (PositiveLicenseRating ns _ _) = ns
-getRatingNamespace (NeutralLicenseRating ns _ _) = ns
-getRatingNamespace (NegativeLicenseRating ns _ _) = ns
+tagFromLicenseRating :: LicenseRating -> LicenseTag
+tagFromLicenseRating (PositiveLicenseRating t) = t
+tagFromLicenseRating (NeutralLicenseRating t) = t
+tagFromLicenseRating (NegativeLicenseRating t) = t
+
+getRatingNamespace :: LicenseRating -> Maybe String
+getRatingNamespace = getTagNamespace . tagFromLicenseRating
 
 unLicenseRating :: LicenseRating -> Text
-unLicenseRating (PositiveLicenseRating _ r _) = r
-unLicenseRating (NeutralLicenseRating _ r _) = r
-unLicenseRating (NegativeLicenseRating _ r _) = r
+unLicenseRating = unLicenseTag . tagFromLicenseRating
 
 getRatingDescription :: LicenseRating -> Maybe Text
-getRatingDescription (PositiveLicenseRating _ _ (LicenseRatingDescription desc)) = Just desc
-getRatingDescription (PositiveLicenseRating _ _ (LicenseRatingReasonWithDescription _ desc)) = Just desc
-getRatingDescription (NeutralLicenseRating _ _ (LicenseRatingDescription desc)) = Just desc
-getRatingDescription (NeutralLicenseRating _ _ (LicenseRatingReasonWithDescription _ desc)) = Just desc
-getRatingDescription (NegativeLicenseRating _ _ (LicenseRatingDescription desc)) = Just desc
-getRatingDescription (NegativeLicenseRating _ _ (LicenseRatingReasonWithDescription _ desc)) = Just desc
-getRatingDescription _ = Nothing
+getRatingDescription = getTagDescription . tagFromLicenseRating
 
 getRatingReason :: LicenseRating -> Maybe Text
-getRatingReason (PositiveLicenseRating _ _ (LicenseRatingReason reason)) = Just reason
-getRatingReason (PositiveLicenseRating _ _ (LicenseRatingReasonWithDescription reason _)) = Just reason
-getRatingReason (NeutralLicenseRating _ _ (LicenseRatingReason reason)) = Just reason
-getRatingReason (NeutralLicenseRating _ _ (LicenseRatingReasonWithDescription reason _)) = Just reason
-getRatingReason (NegativeLicenseRating _ _ (LicenseRatingReason reason)) = Just reason
-getRatingReason (NegativeLicenseRating _ _ (LicenseRatingReasonWithDescription reason _)) = Just reason
-getRatingReason _ = Nothing
+getRatingReason = getTagReason . tagFromLicenseRating
 
 instance H.ToMarkup LicenseRating where
   toMarkup r =
-    let ns = getRatingNamespace r
+    let mNs = getRatingNamespace r
         rating = unLicenseRating r
         color = case r of
           PositiveLicenseRating {} -> "color: green;"
@@ -134,9 +175,12 @@ instance H.ToMarkup LicenseRating where
             Just desc' -> H.toValue desc'
             _ -> ""
      in do
-          H.div H.! A.title desc $ do
-            H.toMarkup ns
-            ": "
+          H.span H.! A.title desc $ do
+            case mNs of
+                Just ns -> do
+                    H.toMarkup ns
+                    ": "
+                _ -> return ()
             H.b H.! A.style color $ H.toMarkup rating
             case getRatingReason r of
               (Just reason) -> do
@@ -170,6 +214,7 @@ instance H.ToMarkup LicenseComment where
 data LicenseStatement where
   LicenseStatement :: String -> LicenseStatement
   LicenseType :: LicenseType -> LicenseStatement
+  LicenseTag :: LicenseTag -> LicenseStatement
   LicenseRating :: LicenseRating -> LicenseStatement
   LicenseComment :: LicenseComment -> LicenseStatement
   LicenseUrl :: Maybe String -> String -> LicenseStatement
@@ -191,6 +236,12 @@ noStmt = MaybeStatement Nothing
 
 stmt :: String -> LicenseStatement
 stmt = fromString
+
+tagStmt :: Text -> Text -> LicenseStatement
+tagStmt st txt = LicenseTag (UnscopedLicenseTag st (LicenseTagDescription txt))
+
+scopedTagStmt :: String -> Text -> Text -> LicenseStatement
+scopedTagStmt scope st txt = LicenseTag (ScopedLicenseTag scope st (LicenseTagDescription txt))
 
 mStmt :: Maybe String -> LicenseStatement
 mStmt = MaybeStatement . fmap fromString
@@ -218,7 +269,7 @@ filterStatement (SubStatements stmt substmts) =
     [] -> filterStatement stmt
     filtered -> case filterStatement stmt of
       Just fStmt -> Just $ SubStatements fStmt filtered
-      Nothing -> Just $ SubStatements stmt filtered -- TODO
+      Nothing -> Just $ SubStatements stmt filtered -- TODO (meta TODO: what is that TODO?)
 filterStatement (MaybeStatement Nothing) = Nothing
 filterStatement (MaybeStatement (Just stmt)) = filterStatement stmt
 filterStatement stmt = Just stmt

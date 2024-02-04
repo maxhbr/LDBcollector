@@ -87,3 +87,6 @@
 [submodule "data/doubleopen-project-policy-configuration"]
 	path = data/doubleopen-project-policy-configuration
 	url = git@github.com:doubleopen-project/policy-configuration.git
+[submodule "data/oss-review-toolkit-ort-config"]
+	path = data/oss-review-toolkit-ort-config
+	url = git@github.com:oss-review-toolkit/ort-config.git

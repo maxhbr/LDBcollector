@@ -41,10 +41,10 @@ instance LicenseFactC FsfWkingData where
     map (LicenseUrl Nothing) (_uris entry)
       ++ map
         ( \case
-            "libre" -> LicenseRating (PositiveLicenseRating "FSF" "Libre" NoLicenseRatingText)
-            "gpl-2-compatible" -> LicenseRating (NeutralLicenseRating "FSF" "gpl-2-compatible" NoLicenseRatingText)
-            "gpl-3-compatible" -> LicenseRating (NeutralLicenseRating "FSF" "gpl-3-compatible" NoLicenseRatingText)
-            "non-free" -> LicenseRating (NegativeLicenseRating "FSF" "non-free" NoLicenseRatingText)
+            "libre" -> LicenseRating (PositiveLicenseRating (ScopedLicenseTag (getType entry) "Libre" NoLicenseTagText))
+            "gpl-2-compatible" -> LicenseRating (NeutralLicenseRating (ScopedLicenseTag (getType entry) "gpl-2-compatible" NoLicenseTagText))
+            "gpl-3-compatible" -> LicenseRating (NeutralLicenseRating (ScopedLicenseTag (getType entry) "gpl-3-compatible" NoLicenseTagText))
+            "non-free" -> LicenseRating (NegativeLicenseRating (ScopedLicenseTag (getType entry) "non-free" NoLicenseTagText))
             tag -> stmt tag
         )
         (_tags entry)
