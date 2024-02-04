@@ -20,9 +20,9 @@ newtype OSILicense
 instance ToJSON OSILicense
 
 isOsiApproved :: Maybe Bool -> LicenseStatement
-isOsiApproved (Just True) = LicenseRating $ PositiveLicenseRating "OSI" "Approved" NoLicenseTagText
-isOsiApproved (Just False) = LicenseRating $ NegativeLicenseRating "OSI" "Rejected" NoLicenseTagText
-isOsiApproved Nothing = LicenseRating $ NegativeLicenseRating "OSI" "Not-Approved" NoLicenseTagText
+isOsiApproved (Just True) = LicenseRating $ PositiveLicenseRating (ScopedLicenseTag "OSI" "Approved" NoLicenseTagText)
+isOsiApproved (Just False) = LicenseRating $ NegativeLicenseRating (ScopedLicenseTag "OSI" "Rejected" NoLicenseTagText)
+isOsiApproved Nothing = LicenseRating $ NegativeLicenseRating (ScopedLicenseTag "OSI" "Not-Approved" NoLicenseTagText)
 
 instance LicenseFactC OSILicense where
   getType _ = "OSILicense"
@@ -36,14 +36,14 @@ instance LicenseFactC OSILicense where
           map
             ( \kw -> case kw of
                 "osi-approved" -> isOsiApproved (Just True)
-                "discouraged" -> LicenseRating $ NegativeLicenseRating "OSI-keyword" kw NoLicenseTagText
-                "non-reusable" -> LicenseRating $ NegativeLicenseRating "OSI-keyword" kw NoLicenseTagText
-                "retired" -> LicenseRating $ NegativeLicenseRating "OSI-keyword" kw NoLicenseTagText
-                "redundant" -> LicenseRating $ NegativeLicenseRating "OSI-keyword" kw NoLicenseTagText
-                "popular" -> LicenseRating $ PositiveLicenseRating "OSI-keyword" kw NoLicenseTagText
+                "discouraged" -> LicenseRating $ NegativeLicenseRating (ScopedLicenseTag "OSI-keyword" kw NoLicenseTagText)
+                "non-reusable" -> LicenseRating $ NegativeLicenseRating (ScopedLicenseTag "OSI-keyword" kw NoLicenseTagText)
+                "retired" -> LicenseRating $ NegativeLicenseRating (ScopedLicenseTag "OSI-keyword" kw NoLicenseTagText)
+                "redundant" -> LicenseRating $ NegativeLicenseRating (ScopedLicenseTag "OSI-keyword" kw NoLicenseTagText)
+                "popular" -> LicenseRating $ PositiveLicenseRating (ScopedLicenseTag "OSI-keyword" kw NoLicenseTagText)
                 "permissive" -> LicenseType Permissive
                 "copyleft" -> LicenseType Copyleft
-                "special-purpose" -> LicenseRating $ NeutralLicenseRating "OSI-keyword" kw NoLicenseTagText
+                "special-purpose" -> LicenseRating $ NeutralLicenseRating (ScopedLicenseTag "OSI-keyword" kw NoLicenseTagText)
                 _ -> (stmt . T.unpack) kw
             )
             (OSI.olKeywords l)

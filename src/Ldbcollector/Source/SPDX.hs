@@ -49,8 +49,8 @@ instance LicenseFactC SPDXLicense where
   getImpliedStmts lic =
     [ ifToStmt (show (_licenseId lic) ++ " is a deprecated LicenseId") (_isDeprecatedLicenseId lic),
       case _isFsfLibre lic of
-        Just True -> LicenseRating (PositiveLicenseRating "FSF" "Libre" NoLicenseTagText)
-        Just False -> LicenseRating (NegativeLicenseRating "FSF" "Not-Libre" NoLicenseTagText)
+        Just True -> LicenseRating (PositiveLicenseRating (ScopedLicenseTag "FSF" "Libre" NoLicenseTagText))
+        Just False -> LicenseRating (NegativeLicenseRating (ScopedLicenseTag "FSF" "Not-Libre" NoLicenseTagText))
         _ -> noStmt,
       isOsiApproved (Just (_isOsiApproved lic)),
       maybe noStmt (commentStmt (getType lic)) (_licenseComments lic),

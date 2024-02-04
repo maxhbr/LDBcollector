@@ -17,7 +17,7 @@ import qualified Data.Map as Map
 
 data OrtCategory
   = OrtCategory
-  { _name :: String
+  { _name :: Text
   , _description :: Maybe Text
   } deriving (Show, Eq, Ord, Generic)
 
@@ -26,7 +26,7 @@ $(deriveJSON defaultOptions {fieldLabelModifier = drop 1, constructorTagModifier
 data OrtLicenseCategorizationRaw
   = OrtLicenseCategorizationRaw
   { _id :: Text
-  , _categories :: [String]
+  , _categories :: [Text]
   } deriving (Show, Eq, Ord, Generic)
 
 $(deriveJSON defaultOptions {fieldLabelModifier = drop 1, constructorTagModifier = map toLower} ''OrtLicenseCategorizationRaw)
@@ -50,24 +50,24 @@ instance ToJSON OrtLicenseCategorization
 instance LicenseFactC OrtLicenseCategorization where
   getType _ = "OrtLicenseCategorization"
   getApplicableLNs (OrtLicenseCategorization ln _)  = LN ln
-  getImpliedStmts (OrtLicenseCategorization _ cs) = 
+  getImpliedStmts a@(OrtLicenseCategorization _ cs) = 
     map (\(OrtCategory name mdesc) -> case mdesc of
-                    Just desc -> stmtWithText name desc
-                    _ -> stmt name) cs
+                    Just desc -> scopedTagStmt (getType a) name desc
+                    _ -> LicenseTag (ScopedLicenseTag (getType a) name NoLicenseTagText)) cs
 
 
 factsFromClassificationFile :: OrtLicenseClassificationFile -> [OrtLicenseCategorization]
 factsFromClassificationFile (OrtLicenseClassificationFile categories categorizations) = let
-        categoriesMap :: Map.Map String OrtCategory
+        categoriesMap :: Map.Map Text OrtCategory
         categoriesMap = (Map.fromList . map (\c -> (_name c,c))) categories
-        lookupCategory :: String -> OrtCategory
+        lookupCategory :: Text -> OrtCategory
         lookupCategory key = Map.findWithDefault (OrtCategory key Nothing) key categoriesMap
     in map (\(OrtLicenseCategorizationRaw licenseNameString categories) ->
                 OrtLicenseCategorization (newNLN "SPDX" licenseNameString) (map lookupCategory categories)) categorizations
 
 
-newtype OrtLicenseClassifications
-  = OrtLicenseClassifications FilePath
+data OrtLicenseClassifications
+  = OrtLicenseClassifications String FilePath
 
 readClassificationYaml :: FilePath -> IO OrtLicenseClassificationFile
 readClassificationYaml yaml = 
@@ -79,32 +79,13 @@ readClassificationYaml yaml =
           stderrLogIO ("ERROR: " ++ show err)
           undefined -- TODO ;) 
         Right f -> return f
-        
-
-
--- readTxt :: FilePath -> IO (Maybe CALData)
--- readTxt txt = do
---   logFileReadIO txt
---   let fromFilename = takeBaseName (takeBaseName txt)
---   contents <- readFile txt
---   let contentLines = lines contents
---   let parts = (map unlines . Split.splitOn ["---"]) contentLines
-
---   case parts of
---     _ : yaml : others -> do
---       case Y.decodeEither' ((fromString . ("---\n" ++)) yaml) of
---         Left err -> do
---           debugLogIO (show err)
---           return Nothing
---         Right calData -> return (Just calData {_id = Just ((newNLN "cal" . pack) fromFilename)})
---     _ -> return Nothing -- (return . Add . LicenseName . fromString) fromFilename
 
 instance HasOriginalData OrtLicenseClassifications where
-  getOriginalData (OrtLicenseClassifications yaml) =
+  getOriginalData (OrtLicenseClassifications _ yaml) =
     FromFile yaml NoPreservedOriginalData
 
 instance Source OrtLicenseClassifications where
-  getSource _ = Source "ORT License Classification"
-  getFacts (OrtLicenseClassifications yaml) = do
+  getSource (OrtLicenseClassifications source _) = Source source
+  getFacts (OrtLicenseClassifications _ yaml) = do
     f <- readClassificationYaml yaml
     (return . V.fromList . map wrapFact . factsFromClassificationFile) f

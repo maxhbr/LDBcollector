@@ -114,9 +114,8 @@ printFactsForSource source licenseGraph = do
         Nothing -> pure ()
       mapM_
         ( \(source, fact) -> do
-            let factId@(FactId ty hash) = getFactId fact
             H.h2 $ do
-              H.a H.! A.href (H.toValue $ "/fact" </> ty </> hash) $ H.toMarkup (show factId)
+              licenseFactUrl fact $ H.toMarkup (show (getFactId fact))
               " for "
               lnToA (Just $ "&" ++ show source ++ "=on") (getMainLicenseName fact)
             H.toMarkup (getLicenseNameCluster fact)
@@ -283,9 +282,8 @@ mainPage paramMap licenseGraph (subgraph, lnsubgraph, (digraph, typeColoringLook
         H.ul $
           mapM_
             ( \fact -> H.li $ do
-                let factId@(FactId ty hash) = getFactId fact
                 H.h3 $ do
-                  H.a H.! A.href (H.toValue $ "/fact" </> ty </> hash) $ H.toMarkup (show factId)
+                  licenseFactUrl fact $ H.toMarkup (getFactId fact)
                   " for "
                   lnToA Nothing (getMainLicenseName fact)
                 toMarkup fact

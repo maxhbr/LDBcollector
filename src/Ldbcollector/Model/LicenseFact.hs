@@ -11,6 +11,7 @@ module Ldbcollector.Model.LicenseFact
     wrapFact,
     wrapFacts,
     wrapFactV,
+    licenseFactUrl,
     ApplicableLNs (..),
     LicenseNameCluster (..),
     alternativesFromListOfLNs,
@@ -55,6 +56,9 @@ data Qualified a = Qualified
 
 instance Show FactId where
   show (FactId ty hash) = ty ++ ":" ++ hash
+
+instance H.ToMarkup FactId where
+  toMarkup = H.toMarkup . show
 
 instance ToJSON FactId where
   toJSON (FactId ty hash) = toJSON [ty, hash]
@@ -227,6 +231,27 @@ instance Ord LicenseFact where
           then toJSON wv1 <= toJSON wv2
           else t1 <= t2
 
+licenseFactUrl :: LicenseFact -> H.Markup -> H.Markup
+licenseFactUrl fact markup = do
+    let factId@(FactId ty hash) = getFactId fact
+    H.a H.! A.href (H.toValue $ "/fact" </> ty </> hash) $ markup
+
+licenseFactOriginToMarkup :: LicenseFact -> H.Markup
+licenseFactOriginToMarkup fact =
+    let desc = H.toValue $ show $ getFactId fact
+    in H.span H.! A.title desc $ do
+        H.toMarkup ("[" :: String)
+        licenseFactUrl fact (H.toMarkup $ getType fact)
+        H.toMarkup ("]" :: String)
+
+createProvidedBy :: (LicenseFact -> Bool) -> [LicenseFact] -> H.Markup
+createProvidedBy f facts = do
+  let providingFacts = filter f facts
+  H.span H.! A.class_ "provided-by" $ do
+      " (provided by: "
+      mapM_ licenseFactOriginToMarkup providingFacts
+      ")"
+
 licenseFactsImplicationsToMarkup :: [LicenseFact] -> LicenseNameCluster -> Markup
 licenseFactsImplicationsToMarkup facts cluster = do
   -- TODO: shouldn't it be possible to compute the cluster from the facts? Isn' that consistent with the use in Server.hs?
@@ -235,27 +260,21 @@ licenseFactsImplicationsToMarkup facts cluster = do
       H.h2 "LicenseNames"
       H.toMarkup cluster
     H.div $ do
-      let licenseTypes = nub $ concatMap getImpliedLicenseTypes facts
-      unless (null licenseTypes) $ do
-        H.h2 "LicenseTypes"
-        H.ul $ mapM_ (\ty -> do
-            H.li $ do
-               (fromString . show) ty
-               let providingFacts = map getType $ filter ((ty `elem`) . getImpliedLicenseTypes) facts
-               mapM_ H.toMarkup providingFacts
-            ) licenseTypes
-      let ratings = nub $ concatMap getImpliedLicenseRatings facts
-      unless (null ratings) $ do
-        H.h3 "License Ratings"
-        H.ul $ mapM_ (H.li . H.toMarkup) ratings
-      let tags = nub $ concatMap getImpliedLicenseTags facts
-      unless (null tags) $ do
-        H.h3 "License Tags"
-        H.ul $ mapM_ (H.li . H.toMarkup) tags
-      let comments = nub $ concatMap getImpliedLicenseComments facts
-      unless (null comments) $ do
-        H.h3 "License Comments"
-        H.ul $ mapM_ (H.li . H.toMarkup) comments
+      let implicationsToList :: (Eq a, H.ToMarkup a) => H.Html -> (LicenseFact -> [a]) -> Markup
+          implicationsToList title getter = do
+            let implications = nub $ concatMap getter facts
+            unless (null implications) $ do
+                H.h2 title
+                H.ul $ mapM_ (\i -> do
+                    H.li $ do
+                       H.toMarkup i
+                       createProvidedBy ((i `elem`) . getter) facts
+                    ) implications
+
+      implicationsToList "License Types" getImpliedLicenseTypes
+      implicationsToList "License Ratings" getImpliedLicenseRatings
+      implicationsToList "License Tags" getImpliedLicenseTags
+      implicationsToList "License Comments" getImpliedLicenseComments
       let urls = nub $ concatMap getImpliedLicenseUrls facts
       unless (null urls) $ do
         H.h3 "URLs"

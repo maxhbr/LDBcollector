@@ -51,9 +51,10 @@ classificationToLicenses prefix (IfrossClassification name description licenses 
 
 categoryWithDescriptionToStmt :: (Text, Text) -> LicenseStatement
 categoryWithDescriptionToStmt (classification, description) =
-    let positiveRating = LicenseRating $ PositiveLicenseRating (scope ++ " Classification") classification (LicenseTagDescription description)
-        neutralRating  = LicenseRating $ NeutralLicenseRating (scope ++ " Classification") classification (LicenseTagDescription description)
-        negativeRating = LicenseRating $ NegativeLicenseRating (scope ++ " Classification") classification (LicenseTagDescription description)
+    let tag = ScopedLicenseTag (scope ++ " Classification") classification (LicenseTagDescription description)
+        positiveRating = LicenseRating $ PositiveLicenseRating tag
+        neutralRating  = LicenseRating $ NeutralLicenseRating tag
+        negativeRating = LicenseRating $ NegativeLicenseRating tag
      in case classification of
             "Lizenzen ohne Copyleft-Effekt (\"Permissive Licenses\")" -> neutralRating `SubStatements` [LicenseType Permissive]
             "Lizenzen mit strengem Copyleft-Effekt" -> neutralRating `SubStatements` [LicenseType StronglyProtective]

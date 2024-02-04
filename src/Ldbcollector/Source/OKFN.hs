@@ -67,23 +67,33 @@ instance LicenseFactC OKFNLicense where
     let statusStmt =
           LicenseRating $
             let status = _status l
+                tag = ScopedLicenseTag "OKFN status" (pack status) NoLicenseTagText
              in case status of
-                  "approved" -> PositiveLicenseRating "OKFN status" (pack status) NoLicenseTagText
-                  "active" -> PositiveLicenseRating "OKFN status" (pack status) NoLicenseTagText
-                  _ -> NegativeLicenseRating "OKFN status" (pack status) NoLicenseTagText
+                  "approved" -> PositiveLicenseRating tag
+                  "active" -> PositiveLicenseRating tag
+                  _ -> NegativeLicenseRating tag
         odConfromance =
           LicenseRating $
             let odConfromance = _od_conformance l
              in case odConfromance of
-                  "approved" -> PositiveLicenseRating "Open Definition" (pack odConfromance) (LicenseTagDescription "Open means anyone can freely access, use, modify, and share for any purpose (subject, at most, to requirements that preserve provenance and openness).")
-                  "rejected" -> NegativeLicenseRating "Open Definition" (pack odConfromance) NoLicenseTagText
-                  _ -> NeutralLicenseRating "Open Definition" (pack odConfromance) NoLicenseTagText
+                  "approved" ->
+                    let desc = LicenseTagDescription "Open means anyone can freely access, use, modify, and share for any purpose (subject, at most, to requirements that preserve provenance and openness)."
+                        tag = ScopedLicenseTag "Open Definition" (pack odConfromance) desc
+                     in PositiveLicenseRating tag
+                  "rejected" ->
+                    let tag = ScopedLicenseTag "Open Definition" (pack odConfromance) NoLicenseTagText
+                     in NegativeLicenseRating tag
+                  _ -> 
+                    let tag = ScopedLicenseTag "Open Definition" (pack odConfromance) NoLicenseTagText
+                     in NeutralLicenseRating tag
         osdConfromance =
           let osdConfromance = _osd_conformance l
            in case osdConfromance of
                 "approved" -> isOsiApproved (Just True)
                 "rejected" -> isOsiApproved (Just False)
-                _ -> LicenseRating $ NeutralLicenseRating "OSI" (pack osdConfromance) NoLicenseTagText
+                _ -> 
+                  let tag = ScopedLicenseTag "OSD" (pack osdConfromance) NoLicenseTagText
+                   in LicenseRating $ NeutralLicenseRating tag
      in maybeToList (fmap (LicenseUrl Nothing) (_url l))
           ++ [statusStmt, odConfromance, osdConfromance]
 
