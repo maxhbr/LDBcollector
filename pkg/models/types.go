@@ -263,14 +263,15 @@ type ObligationInput struct {
 
 // UpdateObligation represents the input format for updating an existing obligation.
 type UpdateObligation struct {
-	Topic          string `json:"topic" binding:"required" example:"copyleft"`
-	Type           string `json:"type" binding:"required" enums:"obligation,restriction,risk,right"`
-	Text           string `json:"text" binding:"required" example:"Source code be made available when distributing the software."`
+	Topic          string `json:"topic" example:"copyleft"`
+	Type           string `json:"type" enums:"obligation,restriction,risk,right"`
+	Text           string `json:"text" example:"Source code be made available when distributing the software."`
 	Classification string `json:"classification" enums:"green,white,yellow,red"`
 	Modifications  bool   `json:"modifications"`
 	Comment        string `json:"comment" example:"This is a comment."`
 	Active         bool   `json:"active" example:"true"`
 	TextUpdatable  bool   `json:"text_updatable"`
+	Md5            string `json:"-"`
 }
 
 // ObligationResponse represents the response format for obligation data.

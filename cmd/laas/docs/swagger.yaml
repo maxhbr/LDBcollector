@@ -463,10 +463,6 @@ definitions:
         - risk
         - right
         type: string
-    required:
-    - text
-    - topic
-    - type
     type: object
   models.User:
     properties:

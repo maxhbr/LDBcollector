@@ -1808,11 +1808,6 @@ const docTemplate = `{
         },
         "models.UpdateObligation": {
             "type": "object",
-            "required": [
-                "text",
-                "topic",
-                "type"
-            ],
             "properties": {
                 "active": {
                     "type": "boolean",

@@ -234,7 +234,7 @@ func CreateObligation(c *gin.Context) {
 //	@Security		ApiKeyAuth
 //	@Router			/obligations/{topic} [patch]
 func UpdateObligation(c *gin.Context) {
-	db.DB.Transaction(func(tx *gorm.DB) error {
+	_ = db.DB.Transaction(func(tx *gorm.DB) error {
 		var update models.UpdateObligation
 		var oldobligation models.Obligation
 		var obligation models.Obligation
@@ -276,6 +276,12 @@ func UpdateObligation(c *gin.Context) {
 			}
 			c.JSON(http.StatusBadRequest, er)
 			return errors.New("invalid request")
+		}
+
+		if oldobligation.TextUpdatable && update.Text != "" && update.Text != oldobligation.Text {
+			updatedHash := md5.Sum([]byte(update.Text))
+			updatedMd5hash := hex.EncodeToString(updatedHash[:])
+			update.Md5 = updatedMd5hash
 		}
 
 		if err := tx.Model(&obligation).Clauses(clause.Returning{}).Updates(update).Error; err != nil {
@@ -359,13 +365,6 @@ func UpdateObligation(c *gin.Context) {
 				Field:        "TextUpdatable",
 				OldValue:     strconv.FormatBool(oldobligation.TextUpdatable),
 				UpdatedValue: strconv.FormatBool(obligation.TextUpdatable),
-			})
-		}
-		if oldobligation.Md5 != obligation.Md5 {
-			changes = append(changes, models.ChangeLog{
-				Field:        "Md5",
-				OldValue:     oldobligation.Md5,
-				UpdatedValue: obligation.Md5,
 			})
 		}
 
