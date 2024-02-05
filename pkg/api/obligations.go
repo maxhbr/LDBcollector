@@ -303,29 +303,10 @@ func UpdateObligation(c *gin.Context) {
 			return err
 		}
 
-		audit := models.Audit{
-			UserId:    user.Id,
-			TypeId:    obligation.Id,
-			Timestamp: time.Now(),
-			Type:      "Obligation",
-		}
-		if err := tx.Create(&audit).Error; err != nil {
-			er := models.LicenseError{
-				Status:    http.StatusInternalServerError,
-				Message:   "Failed to update license",
-				Error:     err.Error(),
-				Path:      c.Request.URL.Path,
-				Timestamp: time.Now().Format(time.RFC3339),
-			}
-			c.JSON(http.StatusInternalServerError, er)
-			return err
-		}
-
 		var changes []models.ChangeLog
 
 		if oldobligation.Topic != obligation.Topic {
 			changes = append(changes, models.ChangeLog{
-				AuditId:      audit.Id,
 				Field:        "Topic",
 				OldValue:     oldobligation.Topic,
 				UpdatedValue: obligation.Topic,
@@ -333,7 +314,6 @@ func UpdateObligation(c *gin.Context) {
 		}
 		if oldobligation.Type != obligation.Type {
 			changes = append(changes, models.ChangeLog{
-				AuditId:      audit.Id,
 				Field:        "Type",
 				OldValue:     oldobligation.Type,
 				UpdatedValue: obligation.Type,
@@ -341,71 +321,74 @@ func UpdateObligation(c *gin.Context) {
 		}
 		if oldobligation.Text != obligation.Text {
 			changes = append(changes, models.ChangeLog{
-				AuditId:      audit.Id,
 				Field:        "Text",
 				OldValue:     oldobligation.Text,
 				UpdatedValue: obligation.Text,
 			})
 		}
-		if oldobligation.Classification == obligation.Classification {
+		if oldobligation.Classification != obligation.Classification {
 			changes = append(changes, models.ChangeLog{
-				AuditId:      audit.Id,
 				Field:        "Classification",
 				OldValue:     oldobligation.Classification,
 				UpdatedValue: obligation.Classification,
 			})
 		}
-		if oldobligation.Modifications == obligation.Modifications {
+		if oldobligation.Modifications != obligation.Modifications {
 			changes = append(changes, models.ChangeLog{
-				AuditId:      audit.Id,
 				Field:        "Modifications",
 				OldValue:     strconv.FormatBool(oldobligation.Modifications),
 				UpdatedValue: strconv.FormatBool(obligation.Modifications),
 			})
 		}
-		if oldobligation.Comment == obligation.Comment {
+		if oldobligation.Comment != obligation.Comment {
 			changes = append(changes, models.ChangeLog{
-				AuditId:      audit.Id,
 				Field:        "Comment",
 				OldValue:     oldobligation.Comment,
 				UpdatedValue: obligation.Comment,
 			})
 		}
-		if oldobligation.Active == obligation.Active {
+		if oldobligation.Active != obligation.Active {
 			changes = append(changes, models.ChangeLog{
-				AuditId:      audit.Id,
 				Field:        "Active",
 				OldValue:     strconv.FormatBool(oldobligation.Active),
 				UpdatedValue: strconv.FormatBool(obligation.Active),
 			})
 		}
-		if oldobligation.TextUpdatable == obligation.TextUpdatable {
+		if oldobligation.TextUpdatable != obligation.TextUpdatable {
 			changes = append(changes, models.ChangeLog{
-				AuditId:      audit.Id,
 				Field:        "TextUpdatable",
 				OldValue:     strconv.FormatBool(oldobligation.TextUpdatable),
 				UpdatedValue: strconv.FormatBool(obligation.TextUpdatable),
 			})
 		}
-		if oldobligation.Md5 == obligation.Md5 {
+		if oldobligation.Md5 != obligation.Md5 {
 			changes = append(changes, models.ChangeLog{
-				AuditId:      audit.Id,
 				Field:        "Md5",
 				OldValue:     oldobligation.Md5,
 				UpdatedValue: obligation.Md5,
 			})
 		}
 
-		if err := tx.Create(&changes).Error; err != nil {
-			er := models.LicenseError{
-				Status:    http.StatusInternalServerError,
-				Message:   "Failed to update license",
-				Error:     err.Error(),
-				Path:      c.Request.URL.Path,
-				Timestamp: time.Now().Format(time.RFC3339),
+		if len(changes) != 0 {
+			audit := models.Audit{
+				UserId:     user.Id,
+				TypeId:     obligation.Id,
+				Timestamp:  time.Now(),
+				Type:       "Obligation",
+				ChangeLogs: changes,
 			}
-			c.JSON(http.StatusInternalServerError, er)
-			return err
+
+			if err := tx.Create(&audit).Error; err != nil {
+				er := models.LicenseError{
+					Status:    http.StatusInternalServerError,
+					Message:   "Failed to update license",
+					Error:     err.Error(),
+					Path:      c.Request.URL.Path,
+					Timestamp: time.Now().Format(time.RFC3339),
+				}
+				c.JSON(http.StatusInternalServerError, er)
+				return err
+			}
 		}
 
 		res := models.ObligationResponse{
