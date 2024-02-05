@@ -9,6 +9,7 @@ package api
 import (
 	"crypto/md5"
 	"encoding/hex"
+	"errors"
 	"fmt"
 	"net/http"
 	"strconv"
@@ -18,6 +19,8 @@ import (
 	"github.com/fossology/LicenseDb/pkg/models"
 	"github.com/fossology/LicenseDb/pkg/utils"
 	"github.com/gin-gonic/gin"
+	"gorm.io/gorm"
+	"gorm.io/gorm/clause"
 )
 
 // GetAllObligation retrieves a list of all obligation records
@@ -231,158 +234,191 @@ func CreateObligation(c *gin.Context) {
 //	@Security		ApiKeyAuth
 //	@Router			/obligations/{topic} [patch]
 func UpdateObligation(c *gin.Context) {
-	var update models.UpdateObligation
-	var oldobligation models.Obligation
-	var obligation models.Obligation
+	db.DB.Transaction(func(tx *gorm.DB) error {
+		var update models.UpdateObligation
+		var oldobligation models.Obligation
+		var obligation models.Obligation
 
-	username := c.GetString("username")
-	query := db.DB.Model(&obligation)
-	tp := c.Param("topic")
-	if err := query.Where(models.Obligation{Active: true, Topic: tp}).First(&obligation).Error; err != nil {
-		er := models.LicenseError{
-			Status:    http.StatusNotFound,
-			Message:   fmt.Sprintf("obligation with topic '%s' not found", tp),
-			Error:     err.Error(),
-			Path:      c.Request.URL.Path,
-			Timestamp: time.Now().Format(time.RFC3339),
+		username := c.GetString("username")
+		query := tx.Model(&obligation)
+		tp := c.Param("topic")
+		if err := query.Where(models.Obligation{Active: true, Topic: tp}).First(&obligation).Error; err != nil {
+			er := models.LicenseError{
+				Status:    http.StatusNotFound,
+				Message:   fmt.Sprintf("obligation with topic '%s' not found", tp),
+				Error:     err.Error(),
+				Path:      c.Request.URL.Path,
+				Timestamp: time.Now().Format(time.RFC3339),
+			}
+			c.JSON(http.StatusNotFound, er)
+			return err
 		}
-		c.JSON(http.StatusNotFound, er)
-		return
-	}
-	oldobligation = obligation
-	if err := c.ShouldBindJSON(&update); err != nil {
-		er := models.LicenseError{
-			Status:    http.StatusBadRequest,
-			Message:   "invalid json body",
-			Error:     err.Error(),
-			Path:      c.Request.URL.Path,
-			Timestamp: time.Now().Format(time.RFC3339),
-		}
-		c.JSON(http.StatusBadRequest, er)
-		return
-	}
-	if !oldobligation.TextUpdatable && update.Text != "" && update.Text != oldobligation.Text {
-		er := models.LicenseError{
-			Status:    http.StatusBadRequest,
-			Message:   "Can not update obligation text",
-			Error:     "Invalid Request",
-			Path:      c.Request.URL.Path,
-			Timestamp: time.Now().Format(time.RFC3339),
-		}
-		c.JSON(http.StatusBadRequest, er)
-		return
-	}
-	if err := db.DB.Model(&obligation).Updates(update).Error; err != nil {
-		er := models.LicenseError{
-			Status:    http.StatusInternalServerError,
-			Message:   "Failed to update license",
-			Error:     err.Error(),
-			Path:      c.Request.URL.Path,
-			Timestamp: time.Now().Format(time.RFC3339),
-		}
-		c.JSON(http.StatusInternalServerError, er)
-		return
-	}
+		oldobligation = obligation
 
-	var user models.User
-	db.DB.Where(models.User{Username: username}).First(&user)
-	audit := models.Audit{
-		UserId:    user.Id,
-		TypeId:    obligation.Id,
-		Timestamp: time.Now(),
-		Type:      "Obligation",
-	}
-	db.DB.Create(&audit)
+		if err := c.ShouldBindJSON(&update); err != nil {
+			er := models.LicenseError{
+				Status:    http.StatusBadRequest,
+				Message:   "invalid json body",
+				Error:     err.Error(),
+				Path:      c.Request.URL.Path,
+				Timestamp: time.Now().Format(time.RFC3339),
+			}
+			c.JSON(http.StatusBadRequest, er)
+			return err
+		}
+		if !oldobligation.TextUpdatable && update.Text != "" && update.Text != oldobligation.Text {
+			er := models.LicenseError{
+				Status:    http.StatusBadRequest,
+				Message:   "Can not update obligation text",
+				Error:     "invalid request",
+				Path:      c.Request.URL.Path,
+				Timestamp: time.Now().Format(time.RFC3339),
+			}
+			c.JSON(http.StatusBadRequest, er)
+			return errors.New("invalid request")
+		}
 
-	if oldobligation.Topic != obligation.Topic {
-		change := models.ChangeLog{
-			AuditId:      audit.Id,
-			Field:        "Topic",
-			OldValue:     oldobligation.Topic,
-			UpdatedValue: obligation.Topic,
+		if err := tx.Model(&obligation).Clauses(clause.Returning{}).Updates(update).Error; err != nil {
+			er := models.LicenseError{
+				Status:    http.StatusInternalServerError,
+				Message:   "Failed to update license",
+				Error:     err.Error(),
+				Path:      c.Request.URL.Path,
+				Timestamp: time.Now().Format(time.RFC3339),
+			}
+			c.JSON(http.StatusInternalServerError, er)
+			return err
 		}
-		db.DB.Create(&change)
-	}
-	if oldobligation.Type != obligation.Type {
-		change := models.ChangeLog{
-			AuditId:      audit.Id,
-			Field:        "Type",
-			OldValue:     oldobligation.Type,
-			UpdatedValue: obligation.Type,
+
+		var user models.User
+		if err := tx.Where(models.User{Username: username}).First(&user).Error; err != nil {
+			er := models.LicenseError{
+				Status:    http.StatusInternalServerError,
+				Message:   "Failed to update license",
+				Error:     err.Error(),
+				Path:      c.Request.URL.Path,
+				Timestamp: time.Now().Format(time.RFC3339),
+			}
+			c.JSON(http.StatusInternalServerError, er)
+			return err
 		}
-		db.DB.Create(&change)
-	}
-	if oldobligation.Text != obligation.Text {
-		change := models.ChangeLog{
-			AuditId:      audit.Id,
-			Field:        "Text",
-			OldValue:     oldobligation.Text,
-			UpdatedValue: obligation.Text,
+
+		audit := models.Audit{
+			UserId:    user.Id,
+			TypeId:    obligation.Id,
+			Timestamp: time.Now(),
+			Type:      "Obligation",
 		}
-		db.DB.Create(&change)
-	}
-	if oldobligation.Classification == obligation.Classification {
-		change := models.ChangeLog{
-			AuditId:      audit.Id,
-			Field:        "Classification",
-			OldValue:     oldobligation.Classification,
-			UpdatedValue: obligation.Classification,
+		if err := tx.Create(&audit).Error; err != nil {
+			er := models.LicenseError{
+				Status:    http.StatusInternalServerError,
+				Message:   "Failed to update license",
+				Error:     err.Error(),
+				Path:      c.Request.URL.Path,
+				Timestamp: time.Now().Format(time.RFC3339),
+			}
+			c.JSON(http.StatusInternalServerError, er)
+			return err
 		}
-		db.DB.Create(&change)
-	}
-	if oldobligation.Modifications == obligation.Modifications {
-		change := models.ChangeLog{
-			AuditId:      audit.Id,
-			Field:        "Modifications",
-			OldValue:     strconv.FormatBool(oldobligation.Modifications),
-			UpdatedValue: strconv.FormatBool(obligation.Modifications),
+
+		var changes []models.ChangeLog
+
+		if oldobligation.Topic != obligation.Topic {
+			changes = append(changes, models.ChangeLog{
+				AuditId:      audit.Id,
+				Field:        "Topic",
+				OldValue:     oldobligation.Topic,
+				UpdatedValue: obligation.Topic,
+			})
 		}
-		db.DB.Create(&change)
-	}
-	if oldobligation.Comment == obligation.Comment {
-		change := models.ChangeLog{
-			AuditId:      audit.Id,
-			Field:        "Comment",
-			OldValue:     oldobligation.Comment,
-			UpdatedValue: obligation.Comment,
+		if oldobligation.Type != obligation.Type {
+			changes = append(changes, models.ChangeLog{
+				AuditId:      audit.Id,
+				Field:        "Type",
+				OldValue:     oldobligation.Type,
+				UpdatedValue: obligation.Type,
+			})
 		}
-		db.DB.Create(&change)
-	}
-	if oldobligation.Active == obligation.Active {
-		change := models.ChangeLog{
-			AuditId:      audit.Id,
-			Field:        "Active",
-			OldValue:     strconv.FormatBool(oldobligation.Active),
-			UpdatedValue: strconv.FormatBool(obligation.Active),
+		if oldobligation.Text != obligation.Text {
+			changes = append(changes, models.ChangeLog{
+				AuditId:      audit.Id,
+				Field:        "Text",
+				OldValue:     oldobligation.Text,
+				UpdatedValue: obligation.Text,
+			})
 		}
-		db.DB.Create(&change)
-	}
-	if oldobligation.TextUpdatable == obligation.TextUpdatable {
-		change := models.ChangeLog{
-			AuditId:      audit.Id,
-			Field:        "TextUpdatable",
-			OldValue:     strconv.FormatBool(oldobligation.TextUpdatable),
-			UpdatedValue: strconv.FormatBool(obligation.TextUpdatable),
+		if oldobligation.Classification == obligation.Classification {
+			changes = append(changes, models.ChangeLog{
+				AuditId:      audit.Id,
+				Field:        "Classification",
+				OldValue:     oldobligation.Classification,
+				UpdatedValue: obligation.Classification,
+			})
 		}
-		db.DB.Create(&change)
-	}
-	if oldobligation.Md5 == obligation.Md5 {
-		change := models.ChangeLog{
-			AuditId:      audit.Id,
-			Field:        "Md5",
-			OldValue:     oldobligation.Md5,
-			UpdatedValue: obligation.Md5,
+		if oldobligation.Modifications == obligation.Modifications {
+			changes = append(changes, models.ChangeLog{
+				AuditId:      audit.Id,
+				Field:        "Modifications",
+				OldValue:     strconv.FormatBool(oldobligation.Modifications),
+				UpdatedValue: strconv.FormatBool(obligation.Modifications),
+			})
 		}
-		db.DB.Create(&change)
-	}
-	res := models.ObligationResponse{
-		Data:   []models.Obligation{obligation},
-		Status: http.StatusOK,
-		Meta: &models.PaginationMeta{
-			ResourceCount: 1,
-		},
-	}
-	c.JSON(http.StatusOK, res)
+		if oldobligation.Comment == obligation.Comment {
+			changes = append(changes, models.ChangeLog{
+				AuditId:      audit.Id,
+				Field:        "Comment",
+				OldValue:     oldobligation.Comment,
+				UpdatedValue: obligation.Comment,
+			})
+		}
+		if oldobligation.Active == obligation.Active {
+			changes = append(changes, models.ChangeLog{
+				AuditId:      audit.Id,
+				Field:        "Active",
+				OldValue:     strconv.FormatBool(oldobligation.Active),
+				UpdatedValue: strconv.FormatBool(obligation.Active),
+			})
+		}
+		if oldobligation.TextUpdatable == obligation.TextUpdatable {
+			changes = append(changes, models.ChangeLog{
+				AuditId:      audit.Id,
+				Field:        "TextUpdatable",
+				OldValue:     strconv.FormatBool(oldobligation.TextUpdatable),
+				UpdatedValue: strconv.FormatBool(obligation.TextUpdatable),
+			})
+		}
+		if oldobligation.Md5 == obligation.Md5 {
+			changes = append(changes, models.ChangeLog{
+				AuditId:      audit.Id,
+				Field:        "Md5",
+				OldValue:     oldobligation.Md5,
+				UpdatedValue: obligation.Md5,
+			})
+		}
+
+		if err := tx.Create(&changes).Error; err != nil {
+			er := models.LicenseError{
+				Status:    http.StatusInternalServerError,
+				Message:   "Failed to update license",
+				Error:     err.Error(),
+				Path:      c.Request.URL.Path,
+				Timestamp: time.Now().Format(time.RFC3339),
+			}
+			c.JSON(http.StatusInternalServerError, er)
+			return err
+		}
+
+		res := models.ObligationResponse{
+			Data:   []models.Obligation{obligation},
+			Status: http.StatusOK,
+			Meta: &models.PaginationMeta{
+				ResourceCount: 1,
+			},
+		}
+		c.JSON(http.StatusOK, res)
+
+		return nil
+	})
 }
 
 // DeleteObligation marks an existing obligation record as inactive
