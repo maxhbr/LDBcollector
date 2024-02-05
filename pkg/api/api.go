@@ -68,6 +68,7 @@ func Router() *gin.Engine {
 		{
 			obligations.GET("", GetAllObligation)
 			obligations.GET(":topic", GetObligation)
+			obligations.GET(":topic/audits", GetObligationAudits)
 		}
 		obMap := unAuthorizedv1.Group("/obligation_maps")
 		{

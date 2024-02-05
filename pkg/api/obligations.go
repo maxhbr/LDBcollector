@@ -416,3 +416,65 @@ func DeleteObligation(c *gin.Context) {
 	db.DB.Where(models.Obligation{Topic: tp}).Save(&obligation)
 	c.Status(http.StatusNoContent)
 }
+
+// GetObligationAudits fetches audits corresponding to an obligation
+
+// @Summary		Fetches audits corresponding to an obligation
+// @Description	Fetches audits corresponding to an obligation
+// @Id				GetObligationAudits
+// @Tags			Obligations
+// @Accept			json
+// @Produce		json
+// @Param			topic	path		string	true	"Topic of the obligation for which audits need to be fetched"
+// @Param			page	query		int		false	"Page number"
+// @Param			limit	query		int		false	"Number of records per page"
+// @Success		200		{object}	models.AuditResponse
+// @Failure		404		{object}	models.LicenseError	"No obligation with given topic found"
+// @Failure		500		{object}	models.LicenseError	"unable to find audits with such obligation topic"
+// @Security		ApiKeyAuth
+// @Router			/obligations/{topic}/audits [get]
+func GetObligationAudits(c *gin.Context) {
+	var obligation models.Obligation
+	topic := c.Param("topic")
+
+	result := db.DB.Where(models.Obligation{Topic: topic}).Select("id").First(&obligation)
+	if result.Error != nil {
+		er := models.LicenseError{
+			Status:    http.StatusNotFound,
+			Message:   fmt.Sprintf("obligation with topic '%s' not found", topic),
+			Error:     result.Error.Error(),
+			Path:      c.Request.URL.Path,
+			Timestamp: time.Now().Format(time.RFC3339),
+		}
+		c.JSON(http.StatusNotFound, er)
+		return
+	}
+
+	var audits []models.Audit
+	query := db.DB.Model(&models.Audit{})
+	query.Where(models.Audit{TypeId: obligation.Id, Type: "Obligation"})
+	_ = utils.PreparePaginateResponse(c, query, &models.AuditResponse{})
+
+	res := query.Find(&audits)
+	if res.Error != nil {
+		er := models.LicenseError{
+			Status:    http.StatusInternalServerError,
+			Message:   "unable to find audits with such obligation topic",
+			Error:     res.Error.Error(),
+			Path:      c.Request.URL.Path,
+			Timestamp: time.Now().Format(time.RFC3339),
+		}
+		c.JSON(http.StatusInternalServerError, er)
+		return
+	}
+
+	response := models.AuditResponse{
+		Data:   audits,
+		Status: http.StatusOK,
+		Meta: &models.PaginationMeta{
+			ResourceCount: len(audits),
+		},
+	}
+
+	c.JSON(http.StatusOK, response)
+}
