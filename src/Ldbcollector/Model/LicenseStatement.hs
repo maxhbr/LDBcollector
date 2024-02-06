@@ -128,7 +128,7 @@ instance H.ToMarkup LicenseTag where
           Just desc' -> H.toValue desc'
           _ -> ""
      in do
-          H.div H.! A.title desc $ do
+          H.span H.! A.title desc $ do
             case mNs of
               Just ns -> do
                 H.toMarkup ns

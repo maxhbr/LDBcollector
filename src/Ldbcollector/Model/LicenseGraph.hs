@@ -85,6 +85,13 @@ data LicenseGraph = LicenseGraph
     _sources :: Map.Map SourceRef WrappedSource
   }
 
+getSourceOfFact :: LicenseGraph -> FactId -> Maybe SourceRef
+getSourceOfFact (LicenseGraph _ _ _ facts _) factId =
+    case (filter (\(_, f) -> getFactId f == factId) . Map.keys) facts of
+      [(src, _)] -> Just src
+      [] -> Nothing
+      _ -> undefined -- TODO: should never happen
+
 emptyLG :: LicenseGraph
 emptyLG = LicenseGraph G.empty mempty mempty mempty mempty
 

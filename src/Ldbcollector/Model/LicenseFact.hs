@@ -44,6 +44,9 @@ instance Show SourceRef where
 instance IsString SourceRef where
   fromString = Source
 
+instance H.ToMarkup SourceRef where
+  toMarkup = H.toMarkup . show
+
 data FactId
   = FactId String String
   deriving (Eq, Generic)
@@ -248,7 +251,7 @@ createProvidedBy :: (LicenseFact -> Bool) -> [LicenseFact] -> H.Markup
 createProvidedBy f facts = do
   let providingFacts = filter f facts
   H.span H.! A.class_ "provided-by" $ do
-    " (provided by: "
+    "(provided by: "
     mapM_ licenseFactOriginToMarkup providingFacts
     ")"
 

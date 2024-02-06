@@ -88,7 +88,7 @@ listPageAction clusters = do
   let page = H.html $ do
         htmlHead "ldbcollector"
         H.body $ do
-          H.ul $
+          H.ol $
             mapM_
               ( \cluster ->
                   H.li
@@ -109,7 +109,7 @@ printFactsForSource source licenseGraph = do
   return . H.html $ do
     htmlHead "ldbcollector"
     H.body $ do
-      H.h1 $ H.toMarkup (show source)
+      H.h1 $ H.toMarkup source
       case sourceInstance of
         Just sourceInstance' -> do
           H.toMarkup (getOriginalData sourceInstance')
@@ -117,7 +117,7 @@ printFactsForSource source licenseGraph = do
       mapM_
         ( \(source, fact) -> do
             H.h2 $ do
-              licenseFactUrl fact $ H.toMarkup (show (getFactId fact))
+              licenseFactUrl fact $ H.toMarkup (getFactId fact)
               " for "
               lnToA (Just $ "&" ++ show source ++ "=on") (getMainLicenseName fact)
             H.toMarkup (getLicenseNameCluster fact)
@@ -137,7 +137,7 @@ printFacts factId licenseGraph = do
             H.h1 $ do
               H.a H.! A.href (H.toValue $ "/source" </> show source) $ H.toMarkup (show source)
             H.h2 $ do
-              H.toMarkup (show (getFactId fact))
+              H.toMarkup (getFactId fact)
               " for "
               lnToA (Just $ "&" ++ show source ++ "=on") (getMainLicenseName fact)
             toMarkup fact
@@ -284,8 +284,14 @@ mainPage paramMap licenseGraph (subgraph, lnsubgraph, (digraph, typeColoringLook
         H.ul $
           mapM_
             ( \fact -> H.li $ do
+                let factId = getFactId fact
                 H.h3 $ do
-                  licenseFactUrl fact $ H.toMarkup (getFactId fact)
+                  case getSourceOfFact licenseGraph factId of
+                    Just source -> do
+                      H.a H.! A.href (H.toValue $ "/source" </> show source) $ H.toMarkup (show source)
+                      ": "
+                    Nothing -> pure ()
+                  licenseFactUrl fact $ H.toMarkup factId
                   " for "
                   lnToA Nothing (getMainLicenseName fact)
                 toMarkup fact

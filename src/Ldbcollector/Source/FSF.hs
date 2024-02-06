@@ -11,6 +11,7 @@ import Data.ByteString (ByteString)
 import Data.ByteString.Char8 qualified as Char8
 import Data.Map qualified as Map
 import Data.Vector qualified as V
+import qualified Data.Text as T
 import Ldbcollector.Model hiding (ByteString)
 
 data FsfWkingData = FsfWkingData
@@ -42,10 +43,10 @@ instance LicenseFactC FsfWkingData where
       ++ map
         ( \case
             "libre" -> LicenseRating (PositiveLicenseRating (ScopedLicenseTag (getType entry) "Libre" NoLicenseTagText))
-            "gpl-2-compatible" -> LicenseRating (NeutralLicenseRating (ScopedLicenseTag (getType entry) "gpl-2-compatible" NoLicenseTagText))
-            "gpl-3-compatible" -> LicenseRating (NeutralLicenseRating (ScopedLicenseTag (getType entry) "gpl-3-compatible" NoLicenseTagText))
+            "gpl-2-compatible" -> LicenseTag (ScopedLicenseTag (getType entry) "gpl-2-compatible" NoLicenseTagText)
+            "gpl-3-compatible" -> LicenseTag (ScopedLicenseTag (getType entry) "gpl-3-compatible" NoLicenseTagText)
             "non-free" -> LicenseRating (NegativeLicenseRating (ScopedLicenseTag (getType entry) "non-free" NoLicenseTagText))
-            tag -> stmt tag
+            tag -> LicenseTag (ScopedLicenseTag (getType entry) (T.pack tag) NoLicenseTagText)
         )
         (_tags entry)
 
