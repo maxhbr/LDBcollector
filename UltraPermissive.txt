@@ -194,3 +194,11 @@ text = '''
 This file may be copied and used freely without restrictions.  No warranty
 is expressed or implied.
 '''
+
+package = libpng
+          perl-Image-PNG_Libpng
+location = https://sourceforge.net/p/libpng/code/ci/master/tree/contrib/pngsuite/README
+text = '''
+Permission to use, copy, modify, and distribute these images for any
+purpose and without fee is hereby granted.
+'''
