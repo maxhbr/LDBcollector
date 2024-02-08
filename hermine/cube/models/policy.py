@@ -36,13 +36,13 @@ class AbstractComponentRule(models.Model):
     @property
     def condition_display(self):
         if self.version_constraint != "":
-            return f"component: {self.component}:{self.version_constraint}"
+            return f"{self.component}:{self.version_constraint}"
         if self.version is not None:
-            return f"component: {self.version}"
+            return f"{self.version}"
         elif self.component:
-            return f"component: {self.component} (any version)"
+            return f"{self.component} (any version)"
         else:
-            return "component: any"
+            return "any"
 
     def clean(self):
         """Model validation
@@ -142,6 +142,18 @@ class LicenseCuration(AbstractComponentRule):
 
         return self.expression_out == simplified(self.expression_in)
 
+    @property
+    def is_ort_compatible(self):
+        if self.component is None and self.version is None:
+            return False
+
+        if not self.version_constraint:
+            return True
+
+        from cube.utils.ort import version_constraint_is_ort_compatible
+
+        return version_constraint_is_ort_compatible(self.version_constraint)
+
     class Meta:
         verbose_name = "License curation"
         verbose_name_plural = "License curations"
@@ -179,7 +191,7 @@ class AbstractUsageRule(AbstractComponentRule):
 
     @property
     def condition_display(self):
-        result = super().condition_display
+        result = f"component : {super().condition_display}"
         if self.release is not None:
             result += f" — product: {self.release}"
         elif self.product is not None:

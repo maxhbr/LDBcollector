@@ -54,7 +54,7 @@ SPDX-License-Identifier: AGPL-3.0-only -->
     <tbody>
       {% for curation in object_list %}
         <tr>
-          <td>{{ curation.version|default:curation.component|default:'<em>any</em>'}}</td>
+          <td>{{ curation.condition_display }}</td>
           <td>{{ curation.expression_in }}</td>
           <td>
             {% if curation.is_confirmation or curation.is_simplification %}
@@ -70,8 +70,10 @@ SPDX-License-Identifier: AGPL-3.0-only -->
               <a href="{%url 'cube:licensecuration_update' curation.id %}"><i class="far fa-edit"></i></a> |
             {% endif %}
             {% if perms.cube.export_licensecuration %}
-              {% if curation.component or curation.version %}
-                <a href="{%url 'cube:licensecuration_single_export' curation.id %}"><i class="fa fa-download"></i></a></td>
+              {% if curation.is_ort_compatible %}
+                <a href="{%url 'cube:licensecuration_single_export' curation.id %}" title="Export as ORT curation file"><i class="fa fa-download"></i></a></td>
+              {% else %}
+                <i class="fas fa-ban" title="Curation is not compatible with ORT export format"></i>
               {% endif %}
             {% endif %}
           </tr>
