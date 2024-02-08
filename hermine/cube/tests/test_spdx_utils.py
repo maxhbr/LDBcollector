@@ -77,6 +77,16 @@ class GetAndsCorrectionsTestCase(TestCase):
             {"MIT AND X11", "MIT OR X11"},
         )
 
+    def test_get_ands_corrections_with(self):
+        # with
+        self.assertEqual(
+            get_ands_corrections("Zlib AND GPL-2.0-only WITH Classpath-exception-2.0"),
+            {
+                "GPL-2.0-only WITH Classpath-exception-2.0 AND Zlib",
+                "GPL-2.0-only WITH Classpath-exception-2.0 OR Zlib",
+            },
+        )
+
     def test_not_ambiguous_expression(self):
         self.assertEqual(get_ands_corrections("MIT OR X11"), {"MIT OR X11"})
 
