@@ -143,6 +143,8 @@ class Component(models.Model):
     )
 
     def __str__(self):
+        if self.purl_type:
+            return f"{self.purl_type}/{self.name}"
         return self.name
 
     @property
