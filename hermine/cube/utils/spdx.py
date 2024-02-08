@@ -7,7 +7,7 @@ from itertools import product
 from types import MethodType
 from typing import Iterable, List
 
-from license_expression import get_spdx_licensing, BaseSymbol, ExpressionError
+from license_expression import get_spdx_licensing, BaseSymbol, ExpressionError, OR
 
 
 # We manually add "LicenseRef-" licenses as valid symbols
@@ -99,7 +99,7 @@ def _get_ands_corrections_expressions(parsed):
         return {parsed}
 
     simplified = parsed.simplify()
-    simplified_or_expression = reduce(lambda a, b: a | b, simplified.args).simplify()
+    simplified_or_expression = reduce(lambda a, b: OR(a, b), simplified.args).simplify()
 
     if all(isinstance(arg, BaseSymbol) for arg in parsed.args):
         # no sub expressions
