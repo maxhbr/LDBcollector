@@ -2,9 +2,10 @@
 #
 #  SPDX-License-Identifier: AGPL-3.0-only
 from django.test import TestCase
+from semantic_version import SimpleSpec
 
 from cube.models import LicenseCuration, Version
-from cube.utils.ort import hermine_to_ort, export_curations
+from cube.utils.ort import hermine_to_ort, export_curations, simple_spec_to_ivy_string
 
 
 class ORTToolsTestCase(TestCase):
@@ -50,3 +51,15 @@ class ORTToolsTestCase(TestCase):
     concluded_license: LicenseRef-FakeLicense
 """,
         )
+
+    def test_simple_spec_to_ivy_string(self):
+        simple_spec = SimpleSpec(">1.0.0")
+        self.assertEqual(simple_spec_to_ivy_string(simple_spec), "]1.0.0,)")
+        simple_spec = SimpleSpec("<=1.0.0")
+        self.assertEqual(simple_spec_to_ivy_string(simple_spec), "(,1.0.0]")
+        simple_spec = SimpleSpec(">=1.0.0,<2.0.0")
+        self.assertEqual(simple_spec_to_ivy_string(simple_spec), "[1.0.0,2.0.0[")
+
+        with self.assertRaises(ValueError):
+            simple_spec = SimpleSpec("==1.0.0")
+            simple_spec_to_ivy_string(simple_spec)
