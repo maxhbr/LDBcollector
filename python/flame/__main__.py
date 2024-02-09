@@ -62,7 +62,8 @@ def get_parser():
                         action='store_true',
                         help='output version information',
                         default=False)
-    parser.set_defaults(which='version', func=version_info)
+
+    parser.set_defaults(which='help', func=version_info)
 
     parser.add_argument('-d', '--debug',
                         action='store_true',
@@ -151,7 +152,7 @@ def compats(fl, formatter, args):
     return formatter.format_compat_list(all_compats, args.verbose)
 
 def version_info(fl, formatter, args):
-    return flame.config.SW_VERSION
+    return flame.config.SW_VERSION, None
 
 def compatibility(fl, formatter, args):
     validations = __validations(args)
