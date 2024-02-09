@@ -1356,8 +1356,9 @@ fun RuleSet.missingTestsRule() = projectSourceRule("MISSING_TESTS") {
 
 fun RuleSet.noLicenseInDependencyRule() = dependencyRule("NO_LICENSE_IN_DEPENDENCY") {
     require {
-        -hasLicense()
+        -isProject()
         -isExcluded()
+        -hasLicense()
     }
 
     error(
