@@ -11,6 +11,7 @@ alternativeNames:
   - "http://www.erlang.org/EPLICENSE"
   - "Erlang Public License v1.1"
   - "https://spdx.org/licenses/erlpl-1.1"
+  - "ERLANG PUBLIC LICENSE Version 1.1"
 
 otherIds: 
   - "scancode:erlangpl-1.1"

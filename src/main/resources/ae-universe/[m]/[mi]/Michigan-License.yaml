@@ -4,12 +4,14 @@
 
 canonicalName: "Michigan License"
 category: "Michigan"
-shortName: "Michigan"
+spdxIdentifier: "UMich-Merit"
 
 openCoDEStatus: "approved"
 
 alternativeNames:
   - "Michigan License"
+  - "UMich-Merit"
+  - "Michigan/Merit Networks License"
 
 otherIds: 
   - "OpenCoDE:Michigan"

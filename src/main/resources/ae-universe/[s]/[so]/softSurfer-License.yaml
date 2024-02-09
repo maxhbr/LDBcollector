@@ -4,7 +4,7 @@
 
 canonicalName: "softSurfer License"
 category: "softSurfer License"
-shortName: "softSurfer"
+spdxIdentifier: "softSurfer"
 
 openCoDEStatus: "approved"
 

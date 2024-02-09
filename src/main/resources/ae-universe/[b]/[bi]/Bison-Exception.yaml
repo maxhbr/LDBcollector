@@ -4,12 +4,14 @@
 
 canonicalName: "Bison Exception"
 category: "Bison Exception"
-shortName: "Bison-Exception"
+spdxIdentifier: "Bison-exception-1.24"
 
 type: "exception"
 
 alternativeNames:
   - "bison-exception-2.0"
+  - "Bison-exception-1.24"
+  - "Bison exception 1.24"
 
 otherIds: 
   - "scancode:bison-exception-2.0"

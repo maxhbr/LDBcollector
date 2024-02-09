@@ -4,12 +4,14 @@
 
 canonicalName: "Brian Gladman License"
 category: "Brian Gladman License"
-shortName: "Brian-Gladman"
+spdxIdentifier: "Brian-Gladman-2-Clause"
 
 alternativeNames:
   - "http://www.gladman.me.uk/AES"
   - "http://gladman.plushost.co.uk/oldsite/AES/aes-src-12-09-11.zip"
   - "brian-gladman"
+  - "Brian-Gladman-2-Clause"
+  - "Brian Gladman 2-Clause License"
 
 otherIds: 
   - "scancode:brian-gladman"

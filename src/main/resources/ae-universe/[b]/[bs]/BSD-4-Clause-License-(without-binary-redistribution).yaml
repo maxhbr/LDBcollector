@@ -4,7 +4,12 @@
 
 canonicalName: "BSD 4-Clause License (without binary redistribution)"
 category: "BSD"
-shortName: "BSD-4-Clause-no-binary"
+spdxIdentifier: "Mackerras-3-Clause-acknowledgment"
+
+alternativeNames:
+  - "BSD 4-Clause License (without binary redistribution)"
+  - "Mackerras-3-Clause-acknowledgment"
+  - "Mackerras 3-Clause - acknowledgment variant"
 
 otherIds: 
   - "scancode:paul-mackerras"

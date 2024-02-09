@@ -4,7 +4,7 @@
 
 canonicalName: "Permission Terms (variant 005)"
 category: "Permission"
-shortName: "PT-Var005"
+spdxIdentifier: "HPND-doc-sell"
 
 otherIds: 
   - "scancode:x11-doc"

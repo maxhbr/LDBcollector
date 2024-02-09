@@ -4,8 +4,9 @@
 
 canonicalName: "OpenVision Terms"
 category: "OpenVision"
-shortName: "OpenVision-Terms"
+spdxIdentifier: "OpenVision"
 
 alternativeNames:
   - "OpenVision Terms"
+  - "OpenVision License"
 

@@ -4,10 +4,12 @@
 
 canonicalName: "Original SSLeay License"
 category: "SSLeay License"
-shortName: "SSLeay-Original"
+spdxIdentifier: "SSLeay-standalone"
 
 alternativeNames:
   - "Original SSLeay License"
+  - "SSLeay-standalone"
+  - "SSLeay License - standalone"
 
 otherIds: 
   - "scancode:ssleay-windows"

@@ -4,7 +4,7 @@
 
 canonicalName: "Permission Terms (variant 029)"
 category: "Permission"
-shortName: "PT-Var029"
+spdxIdentifier: "HPND-export-US-modify"
 
 otherIds: 
   - "scancode:mit-with-modification-obligations"

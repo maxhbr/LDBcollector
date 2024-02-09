@@ -4,10 +4,12 @@
 
 canonicalName: "BSD 3-Clause License (variant 040)"
 category: "BSD"
-shortName: "BSD-3-Clause-040"
+spdxIdentifier: "Mackerras-3-Clause"
 
 alternativeNames:
   - "paul-mackerras-new"
+  - "Mackerras-3-Clause"
+  - "Mackerras 3-Clause License"
 
 otherIds: 
   - "scancode:paul-mackerras-new"

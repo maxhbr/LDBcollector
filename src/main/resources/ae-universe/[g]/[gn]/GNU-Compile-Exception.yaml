@@ -4,12 +4,14 @@
 
 canonicalName: "GNU Compile Exception"
 category: "GNU Compile Exception"
-shortName: "GNU-Compile-Exception"
+spdxIdentifier: "GNU-compiler-exception"
 
 type: "exception"
 
 alternativeNames:
   - "iolib-exception-2.0"
+  - "GNU-compiler-exception"
+  - "GNU Compiler Exception"
 
 otherIds: 
   - "scancode:iolib-exception-2.0"

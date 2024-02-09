@@ -4,10 +4,12 @@
 
 canonicalName: "Permission Terms (NRL)"
 category: "Permission"
-shortName: "PT-NRL"
+spdxIdentifier: "CMU-Mach-nodoc"
 
 alternativeNames:
   - "Permission Terms (NRL)"
+  - "CMU-Mach-nodoc"
+  - "CMU    Mach - no notices-in-documentation variant"
 
 otherIds: 
   - "scancode:nrl-permission"
