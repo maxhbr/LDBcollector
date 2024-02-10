@@ -1,14 +1,14 @@
 # {metæffekt}-universe
 Project providing insights on the {metæffekt} license database covering
 
-* 2284 modeled license terms,
+* 2288 modeled license terms,
 * 156 exceptions,
 * 2 modifiers
 * 3 restrictions
-* 227 specific and commonly used license expressions, and
-* 50 markers.
+* 229 specific and commonly used license expressions, and
+* 44 consolidated markers.
 
-as of 28th January 2024.
+as of 10th February 2024.
 
 The following links provide letter-specific overviews on the license information:
 
@@ -96,15 +96,15 @@ are used for identification purposes only.
 
 - [Open CoDE License Compliance](https://wikijs.opencode.de/de/Hilfestellungen_und_Richtlinien/Lizenzcompliance) 
   approval information is Open CoDE Public Domain. The status information shown reflects version 1.4 from
-  late November 2023.
+  January 2024.
 
 The content provided in {metæffekt}-universe is licensed under [Creative Commons BY-4.0](LICENSE).
 
 Copyright © metaeffekt GmbH 2021-2024. All rights reserved.
 
 ## Contribution
-As this repository is largely showing converted data a direct contribution in the form of patches is
-not appropriate. You may send requests for corrections or questions 
+As this repository is largely showing converted data. A direct contribution in the form of patches is
+not appropriate. You may create issues on Github or send requests for corrections or questions 
 to [contact@metaeffekt.com](mailto:contact@metaeffekt.com). Modifications will then be applied to the 
 internal dataset to produce the corrected outputs.
 
@@ -113,7 +113,7 @@ internal dataset to produce the corrected outputs.
 
 Currently, ScanCode version 32.0.4 is used. Upgrade will follow shortly.
 
-Non-approved OSI status information is not yet complete; more details will be added short-term.
+Non-approved OSI status information is not yet complete; more details is added incrementally.
 Please note in this context, that all OSI status details except `approved` convey unofficial information collected
 from mailing lists and other public available OSI-centric sources and are subject to interpretation. In the perspective
 of risk-based license assessment and evaluating OSI compliance of software, the information is yet considered useful to
