@@ -62,7 +62,7 @@ class OutputFormatter():
         >>> fl = FossLicenses()
         >>> compat = fl.expression_compatibility_as('x11-keith-packard')
         >>> formatter = OutputFormatterFactory.formatter("TEXT")
-        >>> formatted, warning = formatter.format_compatibilities(compat)
+        >>> formatted, warnings = formatter.format_compatibilities(compat)
         >>> print(formatted)
         HPND
         """
