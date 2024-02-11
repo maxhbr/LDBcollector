@@ -5,18 +5,19 @@
   },
   "name": "FreeType Project License",
   "scancode_key": "freetype",
-  "spdxid": "FTL",
-  "aliases": [
-   "FreeType Project License",
-   "FreeType Project LICENSE",
-   "FreeType",
-   "scancode://freetype",
-   "License: FTL",
-   "FreeType project license",
-   "http://www.freetype.org/FTL.TXT",
-   "http://www.freetype.org/license.html",
-   "https://spdx.org/licenses/ftl",
-   "FreeType License",
-   "scancode:freetype"
+    "spdxid": "FTL",
+    "aliases": [
+        "Freetype Project License",
+        "FreeType Project License",
+        "FreeType Project LICENSE",
+        "FreeType",
+        "scancode://freetype",
+        "License: FTL",
+        "FreeType project license",
+        "http://www.freetype.org/FTL.TXT",
+        "http://www.freetype.org/license.html",
+        "https://spdx.org/licenses/ftl",
+        "FreeType License",
+        "scancode:freetype"
   ]
 }

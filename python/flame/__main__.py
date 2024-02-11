@@ -62,7 +62,8 @@ def get_parser():
                         action='store_true',
                         help='output version information',
                         default=False)
-    parser.set_defaults(which='version', func=version_info)
+
+    parser.set_defaults(which='help', func=version_info)
 
     parser.add_argument('-d', '--debug',
                         action='store_true',
