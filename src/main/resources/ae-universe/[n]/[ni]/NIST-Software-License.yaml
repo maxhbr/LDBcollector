@@ -10,3 +10,5 @@ alternativeNames:
   - "NIST-Software"
   - "NIST Software License"
 
+otherIds: 
+  - "scancode:nist-software"

@@ -9,3 +9,5 @@ shortName: "Redis-Source-Available-2.0"
 alternativeNames:
   - "Redis Source Available License 2.0 (RSALv2) Agreement"
 
+otherIds: 
+  - "scancode:rsalv2"

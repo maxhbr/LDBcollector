@@ -11,3 +11,5 @@ openCoDEStatus: "approved"
 alternativeNames:
   - "UnixCrypt License"
 
+otherIds: 
+  - "scancode:unixcrypt"

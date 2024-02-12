@@ -6,8 +6,12 @@ canonicalName: "ACE License"
 category: "ACE"
 shortName: "ACE"
 
+openCoDEStatus: "(approved)"
+openCoDESimilarLicenseId: "MIT"
+
 osiStatus: "unclear"
 
 alternativeNames:
   - "ACE License"
+  - "COPYRIGHT AND PERMISSION NOTICE (ACE 4100)"
 

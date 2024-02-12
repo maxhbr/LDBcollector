@@ -6,6 +6,9 @@ canonicalName: "European Union Public License 1.2 (SK)"
 category: "EUPL"
 shortName: "EUPL-1.2-SK"
 
+openCoDEStatus: "(approved)"
+openCoDESimilarLicenseId: "EUPL-1.2"
+
 alternativeNames:
   - "European Union Public License v 1.2 SK"
   - "European Union Public License v. 1.2 SK"

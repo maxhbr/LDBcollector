@@ -6,3 +6,5 @@ canonicalName: "Soundex License"
 category: "Soundex"
 spdxIdentifier: "Soundex"
 
+otherIds: 
+  - "scancode:soundex"

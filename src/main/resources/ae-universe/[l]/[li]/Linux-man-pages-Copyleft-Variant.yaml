@@ -10,3 +10,5 @@ alternativeNames:
   - "Linux-man-pages-copyleft-var"
   - "Linux man-pages Copyleft Variant"
 
+otherIds: 
+  - "scancode:linux-man-pages-copyleft-var"

@@ -6,6 +6,9 @@ canonicalName: "European Union Public License 1.2 (IT)"
 category: "EUPL"
 shortName: "EUPL-1.2-IT"
 
+openCoDEStatus: "(approved)"
+openCoDESimilarLicenseId: "EUPL-1.2"
+
 alternativeNames:
   - "European Union Public License v 1.2 IT"
   - "European Union Public License v. 1.2 IT"

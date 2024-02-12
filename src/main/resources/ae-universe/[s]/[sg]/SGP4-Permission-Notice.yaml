@@ -9,3 +9,5 @@ spdxIdentifier: "SGP4"
 alternativeNames:
   - "SGP4 Permission Notice"
 
+otherIds: 
+  - "scancode:sgp4"
