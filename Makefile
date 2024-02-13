@@ -37,6 +37,14 @@ check_license_files:
 	@echo -m "Sanity check the licenses: " ; \
 		./tests/shell/sanity-check.sh || exit 1; echo "OK"
 
+# check JSON file not being licenses
+	@for lf in `find var/  -maxdepth 1  -name "*.json" `; \
+		do \
+		echo -n "$$lf " ; \
+	 	jq . $$lf > /dev/null || exit 1 ; \
+		echo "OK" ; \
+	done
+
 check_license_schema:
 # the py tool has an option "--check" that checks every license against license schema
 # check one license, e.g. mpl, to check 'em all
