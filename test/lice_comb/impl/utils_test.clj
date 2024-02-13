@@ -53,6 +53,7 @@
     (is (= simplified-apache2-uri                                           (simplify-uri "http://www.apache.org/licenses/LICENSE-2.0.html")))
     (is (= simplified-apache2-uri                                           (simplify-uri "https://www.apache.org/licenses/LICENSE-2.0.txt")))
     (is (= simplified-apache2-uri                                           (simplify-uri "https://www.apache.org/licenses/license-2.0.txt")))
+    (is (= simplified-apache2-uri                                           (simplify-uri "https://www.apache.org/licenses/license-2.0.md")))
     (is (= simplified-apache2-uri                                           (simplify-uri "http://apache.org/licenses/LICENSE-2.0.pdf")))
     (is (= simplified-apache2-uri                                           (simplify-uri "               http://www.apache.org/licenses/LICENSE-2.0.html             ")))
     (is (= "http://gnu.org/license/agpl"                                    (simplify-uri "https://www.gnu.org/licenses/agpl.txt")))

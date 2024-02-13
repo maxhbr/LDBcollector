@@ -128,10 +128,10 @@
       (let [luri (s/lower-case (s/trim uri))]
         (if (valid-http-uri? luri)
           (-> luri
-              (s/replace #"\Ahttps?://(www\.)?" "http://")    ; Normalise to http and strip any www. extension on hostname
-              (s/replace #"licen[cs]es?"        "license")    ; Alternative spelling and plurals of "license"
-              (s/replace #"\.[\p{Alnum}]{3,}\z" "")           ; Strip file type extension (if any)
-              (s/replace #"/+\z"                ""))          ; Strip all trailing forward slash (/) characters
+              (s/replace #"\Ahttps?://(www\.)?"     "http://")    ; Normalise to http and strip any www. extension on hostname
+              (s/replace #"licen[cs]es?"            "license")    ; Alternative spelling and plurals of "license"
+              (s/replace #"\.\p{Alpha}\p{Alnum}*\z" "")           ; Strip file type extension (if any)
+              (s/replace #"/+\z"                    ""))          ; Strip all trailing forward slash (/) characters
           luri)))))
 
 (defn readable-dir?
