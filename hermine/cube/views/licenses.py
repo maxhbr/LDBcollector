@@ -580,7 +580,7 @@ class GenericDiffUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateV
 class SharedReferenceView(
     LoginRequiredMixin, PermissionRequiredMixin, SharedDataRequiredMixin, TemplateView
 ):
-    permission_required = "cube.view_licenses"
+    permission_required = "cube.view_license"
     template_name = "cube/shared_reference.html"
 
     def get_context_data(self, **kwargs):
