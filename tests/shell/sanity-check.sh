@@ -70,7 +70,7 @@ check_presence()
     REG_EXP_UNPRESENCE="$3"
 
     _RET="OK"
-    
+
     # check presence
     #echo "cat $FILE | jq  -r .aliases[] | grep -v $REG_EXP_PRESENCE )" | bash
     PRESENT=$(echo "cat $FILE | jq  -r .aliases[] | grep -v $REG_EXP_PRESENCE" | bash )
@@ -80,7 +80,7 @@ check_presence()
         echo "FAIL"
         echo " * cause: Incorrectly present in $FILE"
         echo " --------------------------"
-        echo "$PRESENT"
+        echo "Should be present: $REG_EXP_PRESENCE"
         echo " --------------------------"
         RET=$(( $RET + 1 ))
         _RET="FAIL"
@@ -138,7 +138,7 @@ check_presence CC-BY-3.0 " -e 3 " " -e 4"
 check_presence CC-BY-4.0 " -e 4 " " -e 3"
 check_presence CC-BY-SA-2.5 " -e 2.5 " " -e 3 -e 4"
 check_presence CC-BY-SA-3.0 " -e 3.0 " " -e 2 -e 4"
-check_presence CC-BY-SA-4.0 " -e 4.0 " " -e 2 -e 3"
+check_presence CC-BY-SA-4.0 " -e 4 " " -e 2 -e 3"
 
 check_presence CDDL-1.0 " -e 1.0 " " -e 1.1"
 check_presence CDDL-1.1 " -e 1.1" " -e 1.0"
