@@ -101,12 +101,15 @@
     (is (valid= #{"GPL-2.0-only WITH Classpath-exception-2.0"} (name->expressions "GPL-2.0 WITH Classpath-exception-2.0")))
     (is (valid= #{"Apache-2.0 OR GPL-3.0-only"}         (name->expressions "Apache-2.0 OR GPL-3.0")))
     (is (valid= #{"EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0 OR MIT OR (BSD-3-Clause AND Apache-2.0)"} (name->expressions "EPL-2.0 OR (GPL-2.0+ WITH Classpath-exception-2.0) OR MIT OR (BSD-3-Clause AND Apache-2.0)"))))
-  (testing "Single expressions that are not valid SPDX"
+  (testing "Single expressions that are not SPDX expressions"
     (is (valid= #{"GPL-2.0-only WITH Classpath-exception-2.0"} (name->expressions "GNU General Public License, version 2 with the GNU Classpath Exception")))
     (is (valid= #{"Apache-2.0 OR GPL-3.0-only"}         (name->expressions "Apache License version 2.0 or GNU General Public License version 3")))
     (is (valid= #{"EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0 OR MIT OR (BSD-3-Clause AND Apache-2.0)"} (name->expressions "EPL-2.0 OR (GPL-2.0+ WITH Classpath-exception-2.0) OR MIT OR (BSD-3-Clause AND Apache-2.0)")))
     (is (valid= #{"Apache-2.0 AND MIT"}                 (name->expressions "Apache & MIT licence")))
-    (is (valid= #{"CDDL-1.1"}                           (name->expressions "Common Development and Distribution Licence"))))
+    (is (valid= #{"CDDL-1.1"}                           (name->expressions "Common Development and Distribution Licence")))
+    (is (valid= #{"BSD-2-Clause-FreeBSD"}               (name->expressions "BSD 2 clause freebsd")))
+    (is (valid= #{"BSD-2-Clause-Darwin"}                (name->expressions "BSD 2 clause darwin")))   ; Since SPDX v3.23
+    (is (valid= #{"BSD-3-Clause-acpica"}                (name->expressions "BSD 3 CLAUSE ACPICA"))))  ; Since SPDX v3.23
   (testing "Expressions with weird operators"
     (is (valid= #{"Apache-2.0"}                         (name->expressions "and and and Apache License 2.0")))
     (is (valid= #{"Apache-2.0"}                         (name->expressions "Apache Licence 2.0 or or or")))
@@ -119,7 +122,7 @@
     (is (valid= #{"Apache-2.0" "GPL-3.0-only"}          (name->expressions "Apache License version 2.0 / GNU General Public License version 3")))
     (is (valid= #{"Apache-2.0" "GPL-3.0-only WITH Classpath-exception-2.0"} (name->expressions "Apache License version 2.0 / GNU General Public License version 3 with classpath exception")))
     (is (valid= #{"EPL-2.0 OR (GPL-2.0-or-later WITH Classpath-exception-2.0 AND MIT) OR (BSD-3-Clause AND Apache-2.0)"} (name->expressions "Eclipse Public License or General Public License 2.0 or (at your discretion) later w/ classpath exception aNd MIT Licence or three clause bsd and Apache Licence"))))
-  (testing "Messed up license expressions"
+  (testing "Cursed license expressions"
     (is (valid= #{"Apache-2.0" "MIT"}                   (name->expressions "Apache with MIT"))))
   (testing "Names seen in handpicked POMs on Maven Central"
     (is (valid= #{"AGPL-3.0-only"}                      (name->expressions "GNU Affero General Public License (AGPL) version 3.0")))

@@ -24,7 +24,7 @@
 
 (use-fixtures :once fixture)
 
-(def simplified-apache2-uri "http://apache.org/licenses/license-2.0")
+(def simplified-apache2-uri "http://apache.org/license/license-2.0")
 
 (deftest simplify-uri-tests
   (testing "Nil, empty or blank values"
@@ -43,8 +43,8 @@
     (is (= "mailto:someone@example.com?subject=this%20is%20the%20subject&cc=someone_else@example.com&body=this%20is%20the%20body"
            (simplify-uri "mailto:someone@example.com?subject=This%20is%20the%20subject&cc=someone_else@example.com&body=This%20is%20the%20body"))))
   (testing "Valid uris that don't get simplified"
-    (is (= simplified-apache2-uri                                    (simplify-uri simplified-apache2-uri)))
-    (is (= "http://creativecommons.org/licenses/by-sa/4.0/legalcode" (simplify-uri "http://creativecommons.org/licenses/by-sa/4.0/legalcode"))))
+    (is (= simplified-apache2-uri                                   (simplify-uri simplified-apache2-uri)))
+    (is (= "http://creativecommons.org/license/by-sa/4.0/legalcode" (simplify-uri "http://creativecommons.org/licenses/by-sa/4.0/legalcode"))))
   (testing "Valid uris that get simplified"
     (is (= simplified-apache2-uri                                           (simplify-uri "http://www.apache.org/licenses/LICENSE-2.0")))
     (is (= simplified-apache2-uri                                           (simplify-uri "https://www.apache.org/licenses/LICENSE-2.0")))
@@ -55,7 +55,14 @@
     (is (= simplified-apache2-uri                                           (simplify-uri "https://www.apache.org/licenses/license-2.0.txt")))
     (is (= simplified-apache2-uri                                           (simplify-uri "http://apache.org/licenses/LICENSE-2.0.pdf")))
     (is (= simplified-apache2-uri                                           (simplify-uri "               http://www.apache.org/licenses/LICENSE-2.0.html             ")))
-    (is (= "http://gnu.org/licenses/agpl"                                   (simplify-uri "https://www.gnu.org/licenses/agpl.txt")))
+    (is (= "http://gnu.org/license/agpl"                                    (simplify-uri "https://www.gnu.org/licenses/agpl.txt")))
+    (is (= "http://opensource.org/license/mit"                              (simplify-uri "https://opensource.org/license/MIT")))
+    (is (= "http://opensource.org/license/mit"                              (simplify-uri "https://opensource.org/license/MIT/")))
+    (is (= "http://opensource.org/license/mit"                              (simplify-uri "https://opensource.org/license/mit/")))
+    (is (= "http://opensource.org/license/mit"                              (simplify-uri "https://opensource.org/license/MIT.TXT")))
+    (is (= "http://opensource.org/license/mit"                              (simplify-uri "https://opensource.org/licence/MIT")))
+    (is (= "http://opensource.org/license/mit"                              (simplify-uri "https://opensource.org/licenses/MIT")))
+    (is (= "http://opensource.org/license/mit"                              (simplify-uri "https://opensource.org/licences/MIT")))
     (is (= "http://gnu.org/software/classpath/license"                      (simplify-uri "https://www.gnu.org/software/classpath/license.html")))
     (is (= "http://raw.githubusercontent.com/pmonks/lice-comb/main/license" (simplify-uri "https://raw.githubusercontent.com/pmonks/lice-comb/main/LICENSE")))
     (is (= "http://github.com/pmonks/lice-comb/blob/main/license"           (simplify-uri "https://github.com/pmonks/lice-comb/blob/main/LICENSE")))))

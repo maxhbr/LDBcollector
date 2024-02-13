@@ -113,6 +113,11 @@
                                     "attribution"                                         "Attribution"
                                     "clear"                                               "Clear"
                                     "lbnl"                                                "LBNL"
+                                    "hp"                                                  "HP"
+                                    "sun"                                                 "Sun"
+                                    "flex"                                                "flex"
+                                    "freebsd"                                             "FreeBSD"
+                                    "netbsd"                                              "NetBSD"
                                     "modification"                                        "Modification"
                                     ("no military license" "no military licence")         "No-Military-License"
                                     ("no nuclear license" "no nuclear licence")           "No-Nuclear-License"
@@ -121,6 +126,8 @@
                                     "open mpi"                                            "Open-MPI"
                                     "shortened"                                           "Shortened"
                                     "uc"                                                  "UC"
+                                    "darwin"                                              "Darwin"
+                                    "acpica"                                              "acpica"
                                     nil)
         base-id                   (str (:id m) "-" clause-count "-Clause")
         id-with-suffix            (str base-id "-" suffix)]
@@ -251,7 +258,7 @@
        :pad-ver?   true
        :latest-ver "1.0"}
       {:id         "BSD"
-       :regex      #"(?i)\b(?<clausecount1>\p{Alnum}+)?[\s,-]*(C(lause)?|Type)?\s*\bBSD[\s-]*\(?(Licen[cs]e|Type|C(lause)?)?[\s-]*(?<clausecount2>\p{Alnum}+)?([\s-]+Clause)?(?<suffix>\s+(Patent|Views|Attribution|Clear|LBNL|Modification|No\s+Military\s+Licen[cs]e|No\s+Nuclear\s+Licen[cs]e([\s-]+2014)?|No\s+Nuclear\s+Warranty|Open\s+MPI|Shortened|UC))?"
+       :regex      #"(?i)\b(?<clausecount1>\p{Alnum}+)?[\s,-]*(C(lause)?|Type)?\s*\bBSD[\s-]*\(?(Licen[cs]e|Type|C(lause)?)?[\s-]*(?<clausecount2>\p{Alnum}+)?([\s-]+Clause)?(?<suffix>\s+(Patent|Views|Attribution|Clear|LBNL|HP|Sun|flex|FreeBSD|NetBSD|Modification|No\s+Military\s+Licen[cs]e|No\s+Nuclear\s+Licen[cs]e([\s-]+2014)?|No\s+Nuclear\s+Warranty|Open\s+MPI|Shortened|UC|Darwin|acpica))?"
        :fn         bsd-id-constructor}
       {:id         "CC0"
        :regex      #"(?i)\bCC\s*0"
