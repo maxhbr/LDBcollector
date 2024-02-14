@@ -34,6 +34,15 @@ class AbstractComponentRule(models.Model):
     )
 
     @property
+    def component_or_version(self):
+        if self.component is not None:
+            return self.component
+        elif self.version is not None:
+            return self.version
+        else:
+            return None
+
+    @property
     def condition_display(self):
         if self.version_constraint != "":
             return f"{self.component}:{self.version_constraint}"
