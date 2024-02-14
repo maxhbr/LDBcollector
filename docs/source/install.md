@@ -5,6 +5,31 @@ SPDX-License-Identifier: CC-BY-4.0
 
 # Installing Hermine
 
+
+## Getting the code
+
+You can download latest releases from [Hermine releases page](https://gitlab.com/hermine-project/hermine/-/releases)
+or clone latest development version from [GitLab](https://gitlab.com/hermine-project/hermine/-/tree/main):
+
+```bash
+git clone https://gitlab.com/hermine-project/hermine.git
+```
+
+You can also use git to clone a specific version :
+    
+```bash
+git clone --branch v0.0.1 https://gitlab.com/hermine-project/hermine.git
+```
+
+Major versions changes mean breaking changes, either in the installation configuration or in the API.
+You can find more information in [CHANGELOG.md](https://gitlab.com/hermine-project/hermine/-/blob/main/CHANGELOG.md).
+
+For minor or patch versions, it should be safe to update your instance by pulling the latest tag from the repository or
+downloading from the release page.
+
+
+
+
 ## Docker Compose
 
 Hermine provides a [Docker Compose](https://docs.docker.com/compose/) configuration with the
@@ -72,27 +97,6 @@ docker-compose --profile localhost up -d
 ```
 
 ## Manual install
-
-### Downloading the source code
-
-You can download latest releases from [Hermine releases page](https://gitlab.com/hermine-project/hermine/-/releases)
-or clone latest development version from [GitLab](https://gitlab.com/hermine-project/hermine/-/tree/main):
-
-```bash
-git clone https://gitlab.com/hermine-project/hermine.git
-```
-
-You can also use git to clone a specific version :
-    
-```bash
-git clone --branch v0.0.1 https://gitlab.com/hermine-project/hermine.git
-```
-
-Major versions changes mean breaking changes, either in the installation configuration or in the API.
-You can find more information in [CHANGELOG.md](https://gitlab.com/hermine-project/hermine/-/blob/main/CHANGELOG.md).
-
-For minor or patch versions, it should be safe to update your instance by pulling the latest tag from the repository or
-downloading from the release page.
 
 ### Install python dependencies
 
