@@ -19,7 +19,7 @@
   ],
   "packages": [
     {
-      "name": "spdx-valid-dependency",
+      "name": "@spdx-valid-dependency",
       "SPDXID": "SPDXRef-dependency1",
       "licenseConcluded": "LicenseRef-fakeLicense-ContextAllowed-1.0",
       "licenseDeclared": "LicenseRef-fakeLicense-ContextAllowed-1.0",
@@ -28,7 +28,7 @@
       "downloadLocation": "https://example.com/spdx-valid-dependency.tar.gz"
     },
     {
-      "name": "spdx-invalid-dependency",
+      "name": "@spdx-invalid-dependency",
       "SPDXID": "SPDXRef-dependency2",
       "licenseConcluded": "NOASSERTION",
       "licenseDeclared": "Allowed-1.0 AND ContextAllowed-1.0",
