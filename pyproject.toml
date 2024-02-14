@@ -10,13 +10,13 @@ description = ""
 authors = ["Camille Moulin <cmoulin@inno3.fr>", "Martin Delabre <martin.delabre@inno3.fr>", "Maud Royer <hello@maudroyer.fr>"]
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^3.10"
 djangorestframework = "^3.12.4"
 drf-nested-routers = "^0.93.3"
 psycopg2-binary = "^2.9.2"
 python-dateutil = "^2.8.2"
 odfpy = "^1.4.1"
-django = "^4.1.0"
+django = "^5.0.0"
 spdx-tools = "^0.8.0"
 social-auth-app-django = "^5.0.0"
 django-filter = "^23.1"
