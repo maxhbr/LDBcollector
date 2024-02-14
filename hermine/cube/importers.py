@@ -10,6 +10,7 @@ from datetime import datetime
 from django.core.files.uploadedfile import TemporaryUploadedFile
 from django.db import transaction
 from packageurl import PackageURL
+from spdx_tools.spdx.model import ExternalPackageRefCategory
 from spdx_tools.spdx.parser.error import SPDXParsingError
 from spdx_tools.spdx.parser.parse_anything import parse_file
 
@@ -160,6 +161,16 @@ def import_spdx_file(spdx_file, release_id, replace=False, linking: str = ""):
 
         version_number = package.version or "Current"
 
+        purl = next(
+            (
+                ref.locator
+                for ref in package.external_references
+                if ref.reference_type == "purl"
+                and ref.category == ExternalPackageRefCategory.PACKAGE_MANAGER
+            ),
+            "",
+        )
+
         add_dependency(
             release_id,
             "",
@@ -169,6 +180,7 @@ def import_spdx_file(spdx_file, release_id, replace=False, linking: str = ""):
             declared_license,
             concluded_license,
             linking,
+            purl,
         )
 
     logger.info("SPDX import done", datetime.now())
@@ -190,6 +202,9 @@ def add_dependency(
     # ORT has not concluded license, but declared license is valid
     if not concluded_license and is_valid(declared_license):
         concluded_license = declared_license
+
+    if not component_purl_type and purl:
+        component_purl_type = PackageURL.from_string(purl).type
 
     component, component_log = add_component(
         component_purl_type, component_name, component_defaults
