@@ -45,10 +45,13 @@ SPDX-License-Identifier: MIT
                 </span>
               </div>
             </div>
-            <a title="Log out" class="navbar-item is-desktop-icon-only" href="{% url 'logout' %}">
-              <span class="icon"><i class="fas fa-sign-out-alt"></i></span>
-              <span>Log out</span>
-            </a>
+            <form class="navbar-item" method="post" action="{% url 'logout' %}">{% csrf_token %}
+              <button class="button  is-desktop-icon-only" type="submit">
+                <span class="icon"><i class="fas fa-sign-out-alt"></i>
+                </span>
+                <span>Logout</span>
+              </button>
+            </form>
           </div>
         </div>
       </nav>
@@ -324,5 +327,6 @@ SPDX-License-Identifier: MIT
     </div>
   </body>
 </html>
+
 
 
