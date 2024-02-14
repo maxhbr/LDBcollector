@@ -141,7 +141,7 @@ def import_spdx_file(spdx_file, release_id, replace=False, linking: str = ""):
         Usage.objects.filter(release=release_id).delete()
 
     for package in document.packages:
-        comp_name = package.name.rsplit("@")[0]
+        comp_name = package.name
         comp_url = package.download_location or ""
 
         if package.license_declared is None:
