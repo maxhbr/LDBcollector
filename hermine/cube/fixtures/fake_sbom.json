@@ -25,7 +25,14 @@
       "licenseDeclared": "LicenseRef-fakeLicense-ContextAllowed-1.0",
       "copyrightText": "NOASSERTION",
       "versionInfo": "v1",
-      "downloadLocation": "https://example.com/spdx-valid-dependency.tar.gz"
+      "downloadLocation": "https://example.com/spdx-valid-dependency.tar.gz",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:npm/spdx-valid-dependency@v1"
+        }
+      ]
     },
     {
       "name": "spdx-invalid-dependency",

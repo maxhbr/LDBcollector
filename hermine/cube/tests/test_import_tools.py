@@ -163,6 +163,7 @@ class ImportSBOMTestCase(TestCase):
         usage = Usage.objects.get(
             version__component__name="spdx-valid-dependency",
             version__version_number="v1",
+            version__purl="pkg:npm/spdx-valid-dependency@v1",
         )
         self.assertEqual(
             usage.release.pk,
