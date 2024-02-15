@@ -6,7 +6,7 @@
 %endif
 
 Name:           fedora-license-data
-Version:        1.40
+Version:        1.41
 Release:        1%{?dist}
 Summary:        Fedora Linux license data
 
@@ -97,6 +97,23 @@ make check-grammar
 
 
 %changelog
+* Thu Feb 15 2024 Miroslav Suchý <msuchy@redhat.com>
+- add Sun-PPP license
+- add CC-BY-SA-3.0 WITH GNOME-examples-exception license
+- add GPL-2.0-or-later WITH Gmsh-exception license
+- add HPND-Fenneberg-Livingston license
+- add Brian-Gladman-2-Clause license
+- add gtkbook license
+- add UMich-Merit license
+- add Mackerras-3-Clause license
+- Add legacy name for "LGPL-3.0-or-later WITH openvpn-openssl-exception"
+- add softSurfer license
+- add LGPL-2.1-or-later WITH GStreamer-exception-2005 license
+- add UltraPermissive notice for libpng and perl-Image-PNG-Libpng
+- add BSD-3-Clause-acpica license
+- add SSLeay-standalone license
+- add BSD-2-Clause-Darwin license
+
 * Fri Feb 02 2024 Miroslav Suchý <msuchy@redhat.com> 1.40-1
 - add HPND-UC
 - add GPL-2.0-or-later WITH GStreamer-exception-2008
