@@ -30,6 +30,29 @@ text = '''
 text here
 '''
 
+package = minicom
+location = https://salsa.debian.org/minicom-team/minicom/-/blob/2.9/src/wildmat.c?ref_type=tags#L34-L51
+text = '''
+**  jseymour  1998/04/04 17:45 EST
+**	Before adding this to minicom (as part of my "getsdir()" addition),
+**	I emailed a request to Rich $alz, asking if I could "GPL" it.  Here
+**	is his reply:
+**
+**	    Date: Mon, 30 Mar 1998 10:50:06 -0500 (EST)
+**	    Message-Id: <199803301550.KAA14018@<anonymized>.com>
+**	    From: Rich Salz <salzr@<anonymized>.com>
+**	    To: jseymour@jimsun.LinxNet.com
+**	    Subject: Re: A Little Thing Named "Wildmat"
+**
+**	    Wildmat is in the public domain -- enjoy it.
+**
+**	    I would rather it not get encumbered with various licenses,
+**	    but since it is in the public domain you can do what you want...
+**
+**	So there you go.  (I anonymized his email address as I don't know
+**	that he was particularly interested in having it "advertised".)
+'''
+
 package = man-pages-ja
 location = https://linuxjm.osdn.jp/manual/LDP_man-pages/release/man2/nfsservctl.2
 text = '''
