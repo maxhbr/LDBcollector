@@ -2,9 +2,9 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
 
-canonicalName: "Ferguson Twofish License"
-category: "Ferguson Twofish"
-spdxIdentifier: "Ferguson-Twofish"
+canonicalName: "EnergyPlus License"
+category: "EnergyPlus"
+shortName: "EnergyPlus"
 
 otherIds: 
-  - "scancode:ferguson-twofish"
+  - "scancode:energyplus"

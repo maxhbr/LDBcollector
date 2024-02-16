@@ -1,14 +1,14 @@
 # {metæffekt}-universe
 Project providing insights on the {metæffekt} license database covering
 
-* 2288 modeled license terms,
-* 156 exceptions,
+* 2299 modeled license terms,
+* 159 exceptions,
 * 2 modifiers
 * 3 restrictions
-* 229 specific and commonly used license expressions, and
+* 230 specific and commonly used license expressions, and
 * 44 consolidated markers.
 
-as of 10th February 2024.
+as of 16th February 2024.
 
 The following links provide letter-specific overviews on the license information:
 
@@ -111,7 +111,7 @@ internal dataset to produce the corrected outputs.
 ## Further information
 {metæffekt} provides visualization of the {metæffekt}-universe on https://metaeffekt.com/#universe.
 
-Currently, ScanCode version 32.0.4 is used. Upgrade will follow shortly.
+Currently, ScanCode version 32.0.8 is used. The version has not been fully processed, yet. Updates pending.
 
 Non-approved OSI status information is not yet complete; more details is added incrementally.
 Please note in this context, that all OSI status details except `approved` convey unofficial information collected

@@ -9,4 +9,7 @@ spdxIdentifier: "Lucida-Bitmap-Fonts"
 alternativeNames:
   - "Lucida-Bitmap-Fonts"
   - "Lucida Bitmap Fonts License"
+  - "Bigelow & Holmes Lucida Fonts License"
 
+otherIds: 
+  - "scancode:bigelow-holmes"

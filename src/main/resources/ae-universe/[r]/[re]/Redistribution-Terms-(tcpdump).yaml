@@ -2,9 +2,9 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
 
-canonicalName: "BSD 3-Clause (GPL addition)"
-category: "BSD"
-shortName: "BSD-3-Clause-GPL-addition"
+canonicalName: "Redistribution Terms (tcpdump)"
+category: "RT"
+shortName: "RT-tcpdump"
 
 otherIds: 
-  - "scancode:bsd-top-gpl-addition"
+  - "scancode:bsd-new-tcpdump"

@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
 
-canonicalName: "CeCILL C License"
+canonicalName: "CeCILL-C License"
 category: "CeCILL-C"
 spdxIdentifier: "CECILL-C"
 
@@ -19,4 +19,4 @@ alternativeNames:
   - "eCILL-C Free Software License Agreement"
 
 otherIds: 
-  - "scancode:cecill-c"
+  - "scancode:cecill-c-en"

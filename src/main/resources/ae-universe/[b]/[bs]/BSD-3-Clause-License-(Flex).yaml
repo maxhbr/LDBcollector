@@ -2,16 +2,15 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
 
-canonicalName: "BSD 4.3 TAHOE License"
-category: "BSD-4.3TAHOE"
-spdxIdentifier: "BSD-4.3TAHOE"
+canonicalName: "BSD 3-Clause License (Flex)"
+category: "BSD"
+spdxIdentifier: "BSD-3-Clause-flex"
 
 openCoDEStatus: "approved"
 
 alternativeNames:
-  - "BSD-4.3TAHOE"
-  - "BSD 4.3 TAHOE License"
-  - "BSD-Original-UC-1990"
+  - "BSD-3-Clause-flex"
+  - "BSD 3-Clause Flex variant"
 
 otherIds: 
-  - "scancode:bsla"
+  - "scancode:flex-2.5"

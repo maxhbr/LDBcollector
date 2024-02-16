@@ -2,12 +2,12 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
 
-canonicalName: "Adobe Utopia Font License"
-category: "Adobe Utopia"
-spdxIdentifier: "Adobe-Utopia"
+canonicalName: "BSD 3-Clause License (JGraph)"
+category: "BSD-3-Clause-JGraph"
+shortName: "BSD-3-Clause-JGraph"
 
 alternativeNames:
-  - "Adobe Utopia"
+  - "JGraph License"
 
 otherIds: 
-  - "scancode:adobe-utopia"
+  - "scancode:jgraph"

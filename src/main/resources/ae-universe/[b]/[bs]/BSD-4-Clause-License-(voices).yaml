@@ -2,12 +2,12 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
 
-canonicalName: "BSD 3-Clause (JGraph)"
-category: "BSD-3-Clause-JGraph"
-shortName: "BSD-3-Clause-JGraph"
+canonicalName: "BSD 4-Clause License (voices)"
+category: "BSD"
+shortName: "BSD-4-Clause-voices"
 
 alternativeNames:
-  - "JGraph License"
+  - "BSD-4-Clause with Voices in Head"
 
 otherIds: 
-  - "scancode:jgraph"
+  - "scancode:bsd-original-voices"

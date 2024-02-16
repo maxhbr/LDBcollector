@@ -1,0 +1,13 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+
+canonicalName: "AMD Secure Encrypted Virtualization Firmware License"
+category: "AMD Firmware"
+shortName: "AMD-SEV-Firmware"
+
+alternativeNames:
+  - "AMD Secure Encrypted Virtualization (SEV) Firmware for 4th Generation AMD EPYC® Processors"
+
+otherIds: 
+  - "scancode:amd-aspf-2023"

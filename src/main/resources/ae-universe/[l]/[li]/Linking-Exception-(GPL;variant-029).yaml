@@ -1,0 +1,15 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+
+canonicalName: "Linking Exception (GPL; variant 029)"
+category: "GPL Linking Exception"
+shortName: "Linking-Exception-GPL-029"
+
+type: "exception"
+
+alternativeNames:
+  - "Clojure Exception to GPL-3.0"
+
+otherIds: 
+  - "scancode:clojure-exception-to-gpl-3.0"

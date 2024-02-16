@@ -4,7 +4,7 @@
 
 canonicalName: "Linking Exception (LGPL; variant 002)"
 category: "LGPL Linking Exception"
-spdxIdentifier: "GCC-exception-2.0-note"
+shortName: "Linking-Exception-LGPL-002"
 
 type: "exception"
 

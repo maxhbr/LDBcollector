@@ -2,10 +2,12 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
 
-canonicalName: "BSD-Inferno-Nettverk"
-category: "BSD-Inferno-Nettverk"
-spdxIdentifier: "BSD-Inferno-Nettverk"
+canonicalName: "Creative Commons SA 1.0"
+category: "CC-SA"
+shortName: "CC-SA-1.0"
 
 alternativeNames:
-  - "BSD-Inferno-Nettverk"
+  - "Creative Commons ShareAlike License 1.0"
 
+otherIds: 
+  - "scancode:cc-sa-1.0"

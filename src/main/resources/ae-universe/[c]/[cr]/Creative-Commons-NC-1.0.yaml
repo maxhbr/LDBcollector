@@ -2,12 +2,12 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
 
-canonicalName: "Adobe Utopia Font License"
-category: "Adobe Utopia"
-spdxIdentifier: "Adobe-Utopia"
+canonicalName: "Creative Commons NC 1.0"
+category: "CC-NC"
+shortName: "CC-NC-1.0"
 
 alternativeNames:
-  - "Adobe Utopia"
+  - "Creative Commons NonCommercial License 1.0"
 
 otherIds: 
-  - "scancode:adobe-utopia"
+  - "scancode:cc-nc-1.0"

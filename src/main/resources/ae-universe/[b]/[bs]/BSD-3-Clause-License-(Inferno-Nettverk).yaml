@@ -2,12 +2,12 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
 
-canonicalName: "Adobe Utopia Font License"
-category: "Adobe Utopia"
-spdxIdentifier: "Adobe-Utopia"
+canonicalName: "BSD 3-Clause License (Inferno Nettverk)"
+category: "BSD"
+spdxIdentifier: "BSD-Inferno-Nettverk"
 
 alternativeNames:
-  - "Adobe Utopia"
+  - "BSD-Inferno-Nettverk"
 
 otherIds: 
-  - "scancode:adobe-utopia"
+  - "scancode:bsd-inferno-nettverk"

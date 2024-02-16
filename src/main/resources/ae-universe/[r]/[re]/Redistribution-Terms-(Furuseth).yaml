@@ -2,10 +2,13 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
 
-canonicalName: "Furuseth License"
-category: "Furuseth"
-spdxIdentifier: "Furuseth"
+canonicalName: "Redistribution Terms (Furuseth)"
+category: "RT"
+shortName: "RT-furuseth"
 
 alternativeNames:
+  - "Redistribution Terms (variant 018)"
   - "Furuseth License"
 
+otherIds: 
+  - "scancode:furuseth"

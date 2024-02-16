@@ -2,12 +2,12 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
 
-canonicalName: "Lucida Legal Notice"
-category: "Lucida"
-shortName: "Lucida-Legal-Notice"
+canonicalName: "Creative Commons ND 1.0"
+category: "CC-ND"
+shortName: "CC-ND-1.0"
 
 alternativeNames:
-  - "Lucida Legal Notice"
+  - "Creative Commons NoDerivatives License 1.0"
 
 otherIds: 
-  - "scancode:bigelow-holmes"
+  - "scancode:cc-nd-1.0"

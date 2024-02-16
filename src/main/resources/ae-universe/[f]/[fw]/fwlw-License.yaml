@@ -9,3 +9,5 @@ spdxIdentifier: "fwlw"
 alternativeNames:
   - "fwlw License"
 
+otherIds: 
+  - "scancode:fwlw"
