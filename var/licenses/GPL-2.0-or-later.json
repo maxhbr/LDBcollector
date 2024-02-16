@@ -52,6 +52,7 @@
         "scancode:gpl-2.0-plus",
         "GNU General Public License v2 or later (GPLv2+)",
         "GPLv2.0+",
-        "GPL version 2 or any later version"
+        "GPL version 2 or any later version",
+        "GPL (>= 2)"
     ]
 }
