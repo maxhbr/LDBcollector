@@ -37,3 +37,17 @@ jobs:
     upstream_package_name: fedora-license-data
     downstream_package_name: fedora-license-data
     upstream_tag_template: 'fedora-license-data-{version}'
+  - job: copr_build
+    trigger: commit
+    actions:
+      create-archive:
+        - bash -c "tito build --tgz --test -o ."
+        - bash -c "ls -1t ./*.tar.gz | head -n 1"
+      get-current-version:
+        - bash -c "git describe --match fedora-license-data-[0-9]* --abbrev=0 HEAD | egrep -o [0-9]+\.[0-9]+"
+    specfile_path: fedora-license-data.spec
+    upstream_package_name: fedora-license-data
+    downstream_package_name: fedora-license-data
+    branch: main
+    owner: "@osci"
+    project: fedora-license-data 
