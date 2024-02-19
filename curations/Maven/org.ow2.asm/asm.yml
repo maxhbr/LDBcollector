@@ -1,0 +1,7 @@
+- id: "Maven:org.ow2.asm:asm:(,6.0]"
+  curations:
+    comment: |-
+      No SCM tag specified in the POM: https://repo1.maven.org/maven2/org/ow2/asm/asm/6.0/asm-6.0.pom
+    vcs:
+      type: "Git"
+      url: "https://gitlab.ow2.org/asm/asm.git"
