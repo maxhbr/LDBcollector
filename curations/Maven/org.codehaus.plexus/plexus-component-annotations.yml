@@ -1,0 +1,8 @@
+- id: "Maven:org.codehaus.plexus:plexus-component-annotations:(,1.5.5]"
+  curations:
+    comment: |-
+      Outdated "svn.codehaus.org" host in POM: https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-containers/1.5.5/plexus-containers-1.5.5.pom
+    vcs:
+      type: "Git"
+      url: "https://github.com/sonatype/plexus-containers.git"
+      path: "plexus-component-annotations"
