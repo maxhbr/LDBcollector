@@ -1228,3 +1228,39 @@ text = '''
 This is based on SHA256 implementation in LibTomCrypt that was released into
 public domain by Tom St Denis.
 '''
+
+package = ppp
+location = https://github.com/ppp-project/ppp/blob/master/README#L162-L165
+text = '''
+All of the code can be freely used and redistributed.  The individual
+source files each have their own copyright and permission notice.
+Pppd, pppstats and pppdump are under BSD-style notices.  Some of the
+pppd plugins are GPL'd.  Chat is public domain.
+'''
+
+package = ppp
+location = https://github.com/ppp-project/ppp/blob/master/chat/chat.8#L513-L514
+text = '''
+The chat program is in public domain. This is not the GNU public
+license. If it breaks then you get to keep both pieces.
+'''
+
+package = ppp
+location = https://github.com/ppp-project/ppp/blob/master/chat/chat.c#L14
+text = '''
+This software is in the public domain.
+'''
+
+package = ppp
+location = https://github.com/ppp-project/ppp/blob/master/pppd/ppp-sha1.c#L94-L98
+text = '''
+SHA-1 in C
+By Steve Reid <steve@edmweb.com>
+100% Public Domain
+'''
+
+package = ppp
+location = https://github.com/ppp-project/ppp/blob/master/scripts/chatchat/chatchat.c#L74
+text = '''
+This program is in the public domain.
+'''
