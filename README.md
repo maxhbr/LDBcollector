@@ -30,6 +30,8 @@ To create a merge request to this project you must log in using Fedora OpenID. Y
 
 Since the project is new and has many changes, we do releases very often. Currently it is every two weeks.
 
+If you want faster releases you can use [Copr project](https://copr.fedorainfracloud.org/coprs/g/osci/fedora-license-data/builds/) where automation builds an RPM after each pushed commit.
+
 Releases are made directly from this repository according to the `how-to-release.md` document. Any downstream change in dist-git will be lost or cause us complications when making a release. Please send all contribs directly to the upstream repository.
 
 Changes from this repository are propagated to [fedora-legal-docs](https://gitlab.com/fedora/legal/fedora-legal-docs) after a release.
