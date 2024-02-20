@@ -1,7 +1,6 @@
 # See the documentation for more information:
 # https://packit.dev/docs/configuration/
 ---
-
 srpm_build_deps:
   - tito
   - git
@@ -10,10 +9,10 @@ specfile_path: fedora-license-data.spec
 
 # add or remove files that should be synced
 files_to_sync:
-    - fedora-license-data.spec
-    - .packit.yaml
+  - fedora-license-data.spec
+  - .packit.yaml
 
-upstream_tag_template: "v{version}"
+upstream_tag_template: "fedora-license-data-{version}"
 
 # name in upstream package repository or registry (e.g. in PyPI)
 upstream_package_name: fedora-license-data
@@ -31,18 +30,10 @@ jobs:
   - job: copr_build
     trigger: pull_request
     identifier: fedora-license-data
-    metadata:
-      targets:
-        - fedora-rawhide
-    specfile_path: fedora-license-data.spec
-    upstream_package_name: fedora-license-data
-    downstream_package_name: fedora-license-data
-    upstream_tag_template: 'fedora-license-data-{version}'
+    targets:
+      - fedora-rawhide
   - job: copr_build
     trigger: commit
-    specfile_path: fedora-license-data.spec
-    upstream_package_name: fedora-license-data
-    downstream_package_name: fedora-license-data
     branch: main
     owner: "@osci"
-    project: fedora-license-data 
+    project: fedora-license-data
