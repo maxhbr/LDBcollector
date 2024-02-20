@@ -1264,3 +1264,44 @@ location = https://github.com/ppp-project/ppp/blob/master/scripts/chatchat/chatc
 text = '''
 This program is in the public domain.
 '''
+
+package = rrdtool
+location = https://github.com/oetiker/rrdtool-1.x/blob/master/src/fnv.h#L53-L68 https://github.com/oetiker/rrdtool-1.x/blob/master/src/hash_32.c#L43-L58
+text = '''
+Please do not copyright this code.  This code is in the public domain.
+
+LANDON CURT NOLL DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE,
+INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO
+EVENT SHALL LANDON CURT NOLL BE LIABLE FOR ANY SPECIAL, INDIRECT OR
+CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF
+USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+PERFORMANCE OF THIS SOFTWARE.
+
+By:
+     chongo <Landon Curt Noll> /\oo/\
+     http://reality.sgi.com/chongo/
+     EMail: chongo_fnv at prime dot engr dot sgi dot com
+
+Share and Enjoy!	:-)
+'''
+
+package = rrdtool
+location = https://github.com/oetiker/rrdtool-1.x/blob/master/src/quicksort.h#L1-L8
+text = '''
+This file is in the public domain.
+'''
+
+package = rrdtool
+location = https://github.com/oetiker/rrdtool-1.x/blob/master/src/strftime.c#L1-L15
+text = '''
+implements the ansi c function strftime()
+
+written 6 september 1989 by jim nutt
+released into the public domain by jim nutt
+
+modified 21-Oct-89 by Rob Duff
+
+modified 08-Dec-04 by Tobi Oetiker (added %V)
+updated 2019-03-28 by Wolfgang Stöggl (added %F and %T)
+'''
