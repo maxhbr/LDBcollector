@@ -1305,3 +1305,99 @@ modified 21-Oct-89 by Rob Duff
 modified 08-Dec-04 by Tobi Oetiker (added %V)
 updated 2019-03-28 by Wolfgang Stöggl (added %F and %T)
 '''
+
+package = util-linux
+location = https://github.com/util-linux/util-linux/blob/master/include/all-io.h
+           https://github.com/util-linux/util-linux/blob/master/include/bitops.h
+           https://github.com/util-linux/util-linux/blob/master/include/blkdev.h
+           https://github.com/util-linux/util-linux/blob/master/include/buffer.h
+           https://github.com/util-linux/util-linux/blob/master/include/c.h
+           https://github.com/util-linux/util-linux/blob/master/include/closestream.h
+           https://github.com/util-linux/util-linux/blob/master/include/color-names.h
+           https://github.com/util-linux/util-linux/blob/master/include/coverage.h
+           https://github.com/util-linux/util-linux/blob/master/include/crc32c.h
+           https://github.com/util-linux/util-linux/blob/master/include/crc32.h
+           https://github.com/util-linux/util-linux/blob/master/include/env.h
+           https://github.com/util-linux/util-linux/blob/master/include/fileeq.h
+           https://github.com/util-linux/util-linux/blob/master/include/fileutils.h
+           https://github.com/util-linux/util-linux/blob/master/include/fuzz.h
+           https://github.com/util-linux/util-linux/blob/master/include/idcache.h
+           https://github.com/util-linux/util-linux/blob/master/include/iso9660.h
+           https://github.com/util-linux/util-linux/blob/master/include/jsonwrt.h
+           https://github.com/util-linux/util-linux/blob/master/include/linux_version.h
+           https://github.com/util-linux/util-linux/blob/master/include/loopdev.h
+           https://github.com/util-linux/util-linux/blob/master/include/mangle.h
+           https://github.com/util-linux/util-linux/blob/master/include/md5.h
+           https://github.com/util-linux/util-linux/blob/master/include/minix.h
+           https://github.com/util-linux/util-linux/blob/master/include/monotonic.h
+           https://github.com/util-linux/util-linux/blob/master/include/mount-api-utils.h
+           https://github.com/util-linux/util-linux/blob/master/include/namespace.h
+           https://github.com/util-linux/util-linux/blob/master/include/nls.h
+           https://github.com/util-linux/util-linux/blob/master/include/optutils.h
+           https://github.com/util-linux/util-linux/blob/master/include/partx.h
+           https://github.com/util-linux/util-linux/blob/master/include/path.h
+           https://github.com/util-linux/util-linux/blob/master/include/pathnames.h
+           https://github.com/util-linux/util-linux/blob/master/include/pidfd-utils.h
+           https://github.com/util-linux/util-linux/blob/master/include/procfs.h
+           https://github.com/util-linux/util-linux/blob/master/include/pt-bsd.h
+           https://github.com/util-linux/util-linux/blob/master/include/pt-gpt-partnames.h
+           https://github.com/util-linux/util-linux/blob/master/include/pt-mbr.h
+           https://github.com/util-linux/util-linux/blob/master/include/pt-mbr-partnames.h
+           https://github.com/util-linux/util-linux/blob/master/include/pt-sgi.h
+           https://github.com/util-linux/util-linux/blob/master/include/pt-sun.h
+           https://github.com/util-linux/util-linux/blob/master/include/pty-session.h
+           https://github.com/util-linux/util-linux/blob/master/include/pwdutils.h
+           https://github.com/util-linux/util-linux/blob/master/include/rpmatch.h
+           https://github.com/util-linux/util-linux/blob/master/include/selinux-utils.h
+           https://github.com/util-linux/util-linux/blob/master/include/sha1.h
+           https://github.com/util-linux/util-linux/blob/master/include/sha256.h
+           https://github.com/util-linux/util-linux/blob/master/include/signames.h
+           https://github.com/util-linux/util-linux/blob/master/include/statfs_magic.h
+           https://github.com/util-linux/util-linux/blob/master/include/strutils.h
+           https://github.com/util-linux/util-linux/blob/master/include/swapheader.h
+           https://github.com/util-linux/util-linux/blob/master/include/sysfs.h
+           https://github.com/util-linux/util-linux/blob/master/include/timer.h
+           https://github.com/util-linux/util-linux/blob/master/include/ttyutils.h
+           https://github.com/util-linux/util-linux/blob/master/include/widechar.h
+           https://github.com/util-linux/util-linux/blob/master/lib/blkdev.c
+           https://github.com/util-linux/util-linux/blob/master/lib/buffer.c
+           https://github.com/util-linux/util-linux/blob/master/lib/color-names.c
+           https://github.com/util-linux/util-linux/blob/master/lib/env.c
+           https://github.com/util-linux/util-linux/blob/master/lib/fileeq.c
+           https://github.com/util-linux/util-linux/blob/master/lib/fileutils.c
+           https://github.com/util-linux/util-linux/blob/master/lib/idcache.c
+           https://github.com/util-linux/util-linux/blob/master/lib/jsonwrt.c
+           https://github.com/util-linux/util-linux/blob/master/lib/langinfo.c
+           https://github.com/util-linux/util-linux/blob/master/lib/linux_version.c
+           https://github.com/util-linux/util-linux/blob/master/lib/loopdev.c
+           https://github.com/util-linux/util-linux/blob/master/lib/Makemodule.am
+           https://github.com/util-linux/util-linux/blob/master/lib/mangle.c
+           https://github.com/util-linux/util-linux/blob/master/lib/md5.c
+           https://github.com/util-linux/util-linux/blob/master/lib/monotonic.c
+           https://github.com/util-linux/util-linux/blob/master/lib/path.c
+           https://github.com/util-linux/util-linux/blob/master/lib/procfs.c
+           https://github.com/util-linux/util-linux/blob/master/lib/pty-session.c
+           https://github.com/util-linux/util-linux/blob/master/lib/pwdutils.c
+           https://github.com/util-linux/util-linux/blob/master/lib/selinux-utils.c
+           https://github.com/util-linux/util-linux/blob/master/lib/sha1.c
+           https://github.com/util-linux/util-linux/blob/master/lib/sha256.c
+           https://github.com/util-linux/util-linux/blob/master/lib/signames.c
+           https://github.com/util-linux/util-linux/blob/master/lib/strutils.c
+           https://github.com/util-linux/util-linux/blob/master/lib/swapprober.c
+           https://github.com/util-linux/util-linux/blob/master/lib/sysfs.c
+           https://github.com/util-linux/util-linux/blob/master/lib/timer.c
+           https://github.com/util-linux/util-linux/blob/master/lib/ttyutils.c
+           https://github.com/util-linux/util-linux/blob/master/login-utils/newgrp.1.adoc
+           https://github.com/util-linux/util-linux/blob/master/misc-utils/mcookie.1.adoc
+           https://github.com/util-linux/util-linux/blob/master/misc-utils/mcookie.c
+           https://github.com/util-linux/util-linux/blob/master/misc-utils/rename.1.adoc
+           https://github.com/util-linux/util-linux/blob/master/sys-utils/setpgid.1.adoc
+           https://github.com/util-linux/util-linux/blob/master/sys-utils/setpgid.c
+           https://github.com/util-linux/util-linux/blob/master/sys-utils/setsid.1.adoc
+           https://github.com/util-linux/util-linux/blob/master/sys-utils/setsid.c
+           https://github.com/util-linux/util-linux/blob/master/text-utils/line.1.adoc
+           https://github.com/util-linux/util-linux/blob/master/text-utils/line.c
+text = '''
+No copyright is claimed.  This code is in the public domain; do with
+it what you wish.
+'''
