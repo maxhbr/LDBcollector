@@ -142,22 +142,25 @@ def import_spdx_file(spdx_file, release_id, replace=False, linking: str = ""):
 
     for package in document.packages:
         comp_name = package.name
-        comp_url = package.download_location or ""
+        comp_url = (
+            package.download_location
+            if package.download_location is not None
+            and str(package.download_location) != "NOASSERTION"
+            else ""
+        )
 
-        if package.license_declared is None:
-            declared_license = "NOASSERTION"
-        else:
-            declared_license = str(package.license_declared)
+        declared_license = (
+            str(package.license_declared)
+            if package.license_declared is not None
+            else ""
+        )
 
-        # SPDX output sometimes return "NOASSERTION" instead of an empty value
-        # we want to keep it as declared but it is not a valid license expression
-        if (
-            package.license_concluded is None
-            or str(package.license_concluded) == "NOASSERTION"
-        ):
-            concluded_license = ""
-        else:
-            concluded_license = str(package.license_concluded)
+        concluded_license = (
+            str(package.license_concluded)
+            if package.license_concluded is not None
+            and str(package.license_concluded) != "NOASSERTION"
+            else ""
+        )
 
         version_number = package.version or "Current"
 

@@ -58,7 +58,10 @@ SPDX-License-Identifier: AGPL-3.0-only
         </div>
         <div class="column">
           <p><span class="icon"><i class="fas fa-home"></i></span>Project home page:
-            <a target="_blank" href="{{ object.homepage_url }}"> {{ object.homepage_url }}</a></p>
+            {% if object.homepage_url and object.homepage_url != 'NOASSERTION' %}
+              <a target="_blank" href="{{ object.homepage_url }}"> {{ object.homepage_url }}</a>
+            {% endif %}
+          </p>
           {% if perms.cube.change_component %}
             <p><a href="{% url 'cube:component_update_funding' object.id %}">Get/update funding info</a></p>
           {% endif %}
