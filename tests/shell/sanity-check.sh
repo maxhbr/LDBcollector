@@ -118,6 +118,7 @@ check_presence()
 
 ZERO_BSD_PRESENT=" -e 0BSD -i -e zero -e \"0-\""
 BSD2_PRESENT=" -e 2 -i -e two -e simplified -e freebsd "
+BSD2_PATENT_PRESENT=" -e -i patent" 
 BSD3_PRESENT=" -e 3 -i -e new -e modified -e revised -e three -e 'no advertising' "
 BSD4_PRESENT=" -e 4 -i -e 'BSD with advertising' -e original "
 
@@ -130,10 +131,12 @@ check_presence Artistic-2.0 " -e 2 -e 2.0 " "-e 1"
 
 check_presence 0BSD "$ZERO_BSD_PRESENT" "$BSD3_PRESENT $BSD2_PRESENT "
 check_presence BSD-2-Clause "$BSD2_PRESENT" "$ZERO_BSD_PRESENT $BSD3_PRESENT "
+check_presence BSD-2-Clause-Patent "$BSD2_PATENT_PRESENT" "$ZERO_BSD_PRESENT $BSD3_PRESENT "
 check_presence BSD-3-Clause "$BSD3_PRESENT" "$ZERO_BSD_PRESENT $BSD2_PRESENT"
 check_presence BSD-4-Clause "$BSD4_PRESENT" " $ZERO_BSD_PRESENT $BSD2_PRESENT $BSD3_PRESENT"
 
 check_presence CC0-1.0 " -e 1 -e 0 " " -e [2-9]"
+check_presence CC-PDDC " -i -e pd -e dedication  " " -e [1-9]"
 check_presence CC-BY-3.0 " -e 3 " " -e 4"
 check_presence CC-BY-4.0 " -e 4 " " -e 3"
 check_presence CC-BY-SA-2.5 " -e 2.5 " " -e 3 -e 4"
@@ -142,6 +145,8 @@ check_presence CC-BY-SA-4.0 " -e 4 " " -e 2 -e 3"
 
 check_presence CDDL-1.0 " -e 1.0 " " -e 1.1"
 check_presence CDDL-1.1 " -e 1.1" " -e 1.0"
+
+check_presence CPL-1.0 " -e 1.0  -e 1 " " -e 0.5 -e 2"
 
 check_presence EPL-1.0 " -e 1.0 -e 1" " -e 2"
 check_presence EPL-2.0 " -e 2.0 -e 2" " -e 1"
