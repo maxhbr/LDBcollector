@@ -1208,6 +1208,20 @@ text = '''
 Licensed as public domain or BSD 2-clause, whichever is more convenient for you.
 '''
 
+package = openshadinglanguage
+location = https://github.com/AcademySoftwareFoundation/OpenShadingLanguage/blob/4d39f8099ff0035f4fdafde36a04252175c233a8/THIRD-PARTY.md?plain=1#L99-L107
+text = '''
+Public domain
+
+* The simplex noise implementation is Copyright (c) Stefan Gustavson.
+  It bears the following notice:
+
+  This library is public domain software, released by the author
+  into the public domain in February 2011. You may do anything
+  you like with it. You may even remove all attributions,
+  but of course I'd appreciate it if you kept my name somewhere.
+'''
+
 package = rwhoisd
 location = https://github.com/arineng/rwhoisd/blob/master/rwhoisd/mkdb/metaphon.c#L11-L13
 text = '''
