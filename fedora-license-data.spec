@@ -6,7 +6,7 @@
 %endif
 
 Name:           fedora-license-data
-Version:        1.41
+Version:        1.42
 Release:        1%{?dist}
 Summary:        Fedora Linux license data
 
@@ -97,6 +97,21 @@ make check-grammar
 
 
 %changelog
+* Thu Feb 22 2024 Miroslav Suchý <msuchy@redhat.com>
+- add CMU-Mach-nodoc license
+- add Mackerras-3-Clause-acknowledgment license
+- add bcrypt-Solar-Designer license
+- add HPND-INRIA-IMAG license
+- add OpenVision license
+- public domain dedications for irssi
+- add MIT-Khronos-old license
+- public domain dedications for openshadinglanguage
+- public domain dedication for util-linux
+- public domain dedications for rrdtool
+- public domain dedications for ppp
+- Add public domain text from minicom
+- add GPL-3.0-or-later WITH Autoconf-exception-generic
+
 * Thu Feb 15 2024 Miroslav Suchý <msuchy@redhat.com>
 - add Sun-PPP license
 - add CC-BY-SA-3.0 WITH GNOME-examples-exception license
