@@ -1415,3 +1415,18 @@ text = '''
 No copyright is claimed.  This code is in the public domain; do with
 it what you wish.
 '''
+
+package = irssi
+location = https://github.com/irssi/irssi/blob/master/scripts/autoop.pl#L13
+           https://github.com/irssi/irssi/blob/master/scripts/buf.pl#L16
+           https://github.com/irssi/irssi/blob/master/scripts/dns.pl#L21
+           https://github.com/irssi/irssi/blob/master/scripts/kills.pl#L22
+           https://github.com/irssi/irssi/blob/master/scripts/mail.pl#L10
+           https://github.com/irssi/irssi/blob/master/scripts/mlock.pl#L19
+           https://github.com/irssi/irssi/blob/master/scripts/quitmsg.pl#L14
+           https://github.com/irssi/irssi/blob/master/scripts/examples/command.pl#L14
+           https://github.com/irssi/irssi/blob/master/scripts/examples/msg-event.pl#L14
+           https://github.com/irssi/irssi/blob/master/scripts/examples/redirect.pl#L15
+text = '''
+Public Domain
+'''
