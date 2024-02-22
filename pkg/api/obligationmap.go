@@ -413,11 +413,13 @@ func createObligationMapChangelog(oldObMaps []models.ObligationMap, newObMaps []
 		newLicenses = append(newLicenses, strconv.FormatInt(newObMaps[i].RfPk, 10))
 	}
 
+	oldVal := strings.Join(oldLicenses, ",")
+	newVal := strings.Join(newLicenses, ",")
 	change := models.ChangeLog{
 		AuditId:      audit.Id,
 		Field:        "RfPk",
-		OldValue:     strings.Join(oldLicenses, ","),
-		UpdatedValue: strings.Join(newLicenses, ","),
+		OldValue:     &oldVal,
+		UpdatedValue: &newVal,
 	}
 	return change
 }

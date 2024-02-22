@@ -1,5 +1,7 @@
 basePath: /api/v1
 definitions:
+  datatypes.JSONType-models_LicenseDBSchemaExtension:
+    type: object
   models.Audit:
     properties:
       id:
@@ -62,6 +64,8 @@ definitions:
     type: object
   models.LicenseDB:
     properties:
+      external_ref:
+        $ref: '#/definitions/datatypes.JSONType-models_LicenseDBSchemaExtension'
       marydone:
         type: boolean
       rf_FSFfree:
@@ -137,6 +141,8 @@ definitions:
     type: object
   models.LicenseInput:
     properties:
+      external_ref:
+        $ref: '#/definitions/datatypes.JSONType-models_LicenseDBSchemaExtension'
       marydone:
         type: boolean
       rf_FSFfree:
@@ -741,6 +747,10 @@ paths:
         in: query
         name: limit
         type: integer
+      - description: External reference parameters
+        in: query
+        name: externalRef
+        type: string
       produces:
       - application/json
       responses:

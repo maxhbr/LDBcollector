@@ -345,6 +345,12 @@ const docTemplate = `{
                         "description": "Limit of responses per page",
                         "name": "limit",
                         "in": "query"
+                    },
+                    {
+                        "type": "string",
+                        "description": "External reference parameters",
+                        "name": "externalRef",
+                        "in": "query"
                     }
                 ],
                 "responses": {
@@ -1261,6 +1267,9 @@ const docTemplate = `{
         }
     },
     "definitions": {
+        "datatypes.JSONType-models_LicenseDBSchemaExtension": {
+            "type": "object"
+        },
         "models.Audit": {
             "type": "object",
             "properties": {
@@ -1353,6 +1362,9 @@ const docTemplate = `{
                 "rf_shortname"
             ],
             "properties": {
+                "external_ref": {
+                    "$ref": "#/definitions/datatypes.JSONType-models_LicenseDBSchemaExtension"
+                },
                 "marydone": {
                     "type": "boolean"
                 },
@@ -1456,6 +1468,9 @@ const docTemplate = `{
         "models.LicenseInput": {
             "type": "object",
             "properties": {
+                "external_ref": {
+                    "$ref": "#/definitions/datatypes.JSONType-models_LicenseDBSchemaExtension"
+                },
                 "marydone": {
                     "type": "boolean"
                 },
