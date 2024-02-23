@@ -4,10 +4,11 @@
 
 canonicalName: "Redistribution Terms (Furuseth)"
 category: "RT"
-shortName: "RT-furuseth"
+spdxIdentifier: "Furuseth"
 
 alternativeNames:
   - "Redistribution Terms (variant 018)"
+  - "Redistribution Terms (Furuseth)"
   - "Furuseth License"
 
 otherIds: 

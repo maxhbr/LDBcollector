@@ -9,3 +9,5 @@ spdxIdentifier: "Kastrup"
 alternativeNames:
   - "Kastrup License"
 
+otherIds: 
+  - "scancode:kastrup"

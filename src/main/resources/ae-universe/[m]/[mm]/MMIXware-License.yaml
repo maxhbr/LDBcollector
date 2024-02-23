@@ -6,3 +6,5 @@ canonicalName: "MMIXware License"
 category: "MMIXware"
 spdxIdentifier: "MMIXware"
 
+otherIds: 
+  - "scancode:mmixware"

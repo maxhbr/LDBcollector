@@ -6,3 +6,5 @@ canonicalName: "Permission Terms (variant 006)"
 category: "Permission"
 spdxIdentifier: "HPND-doc"
 
+otherIds: 
+  - "scancode:hpnd-doc"

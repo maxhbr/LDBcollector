@@ -6,3 +6,5 @@ canonicalName: "MIT License (testregex)"
 category: "MIT"
 spdxIdentifier: "MIT-testregex"
 
+otherIds: 
+  - "scancode:mit-testregex"

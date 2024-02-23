@@ -6,3 +6,8 @@ canonicalName: "Permission Terms (ITU/ISO/IEC)"
 category: "Permission"
 shortName: "PT-ITU-ISO-IEC"
 
+alternativeNames:
+  - "JPEG XR License"
+
+otherIds: 
+  - "scancode:jpegxr"

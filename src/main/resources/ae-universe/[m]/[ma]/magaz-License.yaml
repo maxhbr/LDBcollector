@@ -9,3 +9,5 @@ spdxIdentifier: "magaz"
 alternativeNames:
   - "magaz License"
 
+otherIds: 
+  - "scancode:magaz"

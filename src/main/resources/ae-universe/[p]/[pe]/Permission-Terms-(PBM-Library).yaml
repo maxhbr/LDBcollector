@@ -2,9 +2,12 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
 
-canonicalName: "Permission Terms (variant 005)"
+canonicalName: "Permission Terms (PBM Library)"
 category: "Permission"
-spdxIdentifier: "HPND-doc-sell"
+shortName: "PT-PBM-Library"
+
+alternativeNames:
+  - "PBM Library License"
 
 otherIds: 
-  - "scancode:hpnd-doc-sell"
+  - "scancode:libpbm"
