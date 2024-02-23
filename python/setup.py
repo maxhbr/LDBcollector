@@ -25,7 +25,7 @@ setuptools.setup(
     long_description=_long_description,
     long_description_content_type="text/markdown",
     license_files=('LICENSES/CC-BY-4.0.txt', 'LICENSES/GPL-3.0-or-later.txt'),
-    url="https://github.com/hesa/license-db",
+    url="https://github.com/hesa/foss-licenses",
     packages=['flame'],
     entry_points={
         "console_scripts": [
