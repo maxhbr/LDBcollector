@@ -6,7 +6,9 @@
 
 package models
 
-import "time"
+import (
+	"time"
+)
 
 // The LicenseDB struct represents a license entity with various attributes and
 // properties associated with it.
@@ -199,12 +201,13 @@ type SearchLicense struct {
 // Audit struct represents an audit entity with certain attributes and properties
 // It has user id as a foreign key
 type Audit struct {
-	Id        int64     `json:"id" gorm:"primary_key" example:"456"`
-	UserId    int64     `json:"user_id" example:"123"`
-	User      User      `gorm:"foreignKey:UserId;references:Id" json:"-"`
-	TypeId    int64     `json:"type_id" example:"34"`
-	Timestamp time.Time `json:"timestamp" example:"2023-12-01T18:10:25.00+05:30"`
-	Type      string    `json:"type" example:"license"`
+	Id         int64       `json:"id" gorm:"primary_key" example:"456"`
+	UserId     int64       `json:"user_id" example:"123"`
+	User       User        `gorm:"foreignKey:UserId;references:Id" json:"-"`
+	TypeId     int64       `json:"type_id" example:"34"`
+	Timestamp  time.Time   `json:"timestamp" example:"2023-12-01T18:10:25.00+05:30"`
+	Type       string      `json:"type" example:"license"`
+	ChangeLogs []ChangeLog `json:"-"`
 }
 
 // ChangeLog struct represents a change entity with certain attributes and properties
@@ -260,14 +263,15 @@ type ObligationInput struct {
 
 // UpdateObligation represents the input format for updating an existing obligation.
 type UpdateObligation struct {
-	Topic          string `json:"topic" binding:"required" example:"copyleft"`
-	Type           string `json:"type" binding:"required" enums:"obligation,restriction,risk,right"`
-	Text           string `json:"text" binding:"required" example:"Source code be made available when distributing the software."`
+	Topic          string `json:"topic" example:"copyleft"`
+	Type           string `json:"type" enums:"obligation,restriction,risk,right"`
+	Text           string `json:"text" example:"Source code be made available when distributing the software."`
 	Classification string `json:"classification" enums:"green,white,yellow,red"`
 	Modifications  bool   `json:"modifications"`
 	Comment        string `json:"comment" example:"This is a comment."`
 	Active         bool   `json:"active" example:"true"`
 	TextUpdatable  bool   `json:"text_updatable"`
+	Md5            string `json:"-"`
 }
 
 // ObligationResponse represents the response format for obligation data.
