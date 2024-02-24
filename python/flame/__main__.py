@@ -43,6 +43,12 @@ def get_parser():
                         help='Add licenses as found in the supplied directory',
                         default=None)
 
+    parser.add_argument('-lmf', '--license-matrix-file',
+                        type=str,
+                        dest='license_matrix_file',
+                        help='Supply license matrix to override OSADL\'s license compatibility matrix',
+                        default=None)
+
     parser.add_argument('-ndu', '--no-dual-update',
                         action='store_true',
                         help='do not update dual licenses (e.g. GPL-2.0-or-later -> GPL-2.0-only OR GPL-3.0-only)',
@@ -199,6 +205,7 @@ def main():
     config['additional-license-dir'] = args.additional_license_dir
     config['license-dir'] = args.license_dir
     config['flame-config'] = args.flame_config
+    config['license-matrix-file'] = args.license_matrix_file
 
     try:
         fl = FossLicenses(config=config)

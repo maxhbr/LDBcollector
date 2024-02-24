@@ -80,6 +80,7 @@ class FossLicenses:
 
         self.config = config
         self.license_dir = config.get('license-dir', LICENSE_DIR)
+        self.license_matrix_file = config.get('license-matrix-file', None)
         self.additional_license_dir = config.get('additional-license-dir', [])
         self.__init_license_db(check)
         self.supported_licenses = None
@@ -578,10 +579,10 @@ class FossLicenses:
             if Validation.RELAXED in validations:
                 self.__validate_license_relaxed(license_expression)
             if Validation.OSADL in validations:
-                compat_licenses = [x.strip() for x in re.split('\(|OR|AND|\)', license_expression)]
+                compat_license_expression = self.expression_compatibility_as(license_expression)['compat_license']
+                compat_licenses = [x.strip() for x in re.split('\(|OR|AND|\)', compat_license_expression)]
                 compat_licenses = [x for x in compat_licenses if x]
                 compat_support = self.__validate_compatibilities_support(compat_licenses)
-
                 self.__validate_licenses_osadl(compat_support)
 
     def __validate_compatibilities_support(self, licenses):
@@ -601,7 +602,7 @@ class FossLicenses:
 
     def __validate_compatibility_support(self, lic):
         if not self.supported_licenses:
-            self.support_licenses = osadl_matrix.supported_licenses()
+            self.support_licenses = osadl_matrix.supported_licenses(self.license_matrix_file)
         return lic in self.support_licenses
 
     def __validate_license_spdx(self, expr):
