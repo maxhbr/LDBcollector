@@ -47,8 +47,9 @@ Die hier aufgelisteten Lizenzen stammen aus dem Bereich der Freien Software oder
 40. Truecrypt License v. 3: https://github.com/FreeApophis/TrueCrypt/blob/master/License.txt
 41. University of Utah Public License: http://www.cs.utah.edu/~gk/teem/txt/LICENSE.txt
 42. UnRAR License: https://github.com/junrar/junrar/blob/master/LICENSE
-43. YaST and SuSE Linux license terms: http://ftp2.de.freebsd.org/pub/linux/suse/5.3/i386.de/COPYRIGHT.yast
-44. YaST und SuSE Linux Lizenzbestimmungen: https://web.archive.org/web/20040407183411/http://www.suse.de/de/private/support/licenses/yast.html
-45. ZIB Academic License: https://web.archive.org/web/20090408081543/http://www.zib.de:80/Optimization/Software/ziblicense.html
+43. XMOS PUBLIC LICENCE, Version 1: https://github.com/xmos/lib_mic_array/blob/develop/LICENSE.rst
+44. YaST and SuSE Linux license terms: http://ftp2.de.freebsd.org/pub/linux/suse/5.3/i386.de/COPYRIGHT.yast
+45. YaST und SuSE Linux Lizenzbestimmungen: https://web.archive.org/web/20040407183411/http://www.suse.de/de/private/support/licenses/yast.html
+46. ZIB Academic License: https://web.archive.org/web/20090408081543/http://www.zib.de:80/Optimization/Software/ziblicense.html
 
 Eine Sammlung skurriler "Bad Licenses findet sich bei https://github.com/ErikMcClure/bad-licenses
