@@ -2,9 +2,7 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
 
-canonicalName: "Permission Terms (property; variant 001)"
-category: "Permission"
-shortName: "PT-P-001"
+canonicalName: "Three Part Table License"
+category: "Three Part Table"
+shortName: "threeparttable"
 
-otherIds: 
-  - "scancode:amd-historical"
