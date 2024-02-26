@@ -36,7 +36,7 @@ func GetAllAudit(c *gin.Context) {
 
 	_ = utils.PreparePaginateResponse(c, query, &models.AuditResponse{})
 
-	if err := query.Find(&audit).Error; err != nil {
+	if err := query.Order("timestamp desc").Find(&audit).Error; err != nil {
 		er := models.LicenseError{
 			Status:    http.StatusInternalServerError,
 			Message:   "unable to fetch audits",
