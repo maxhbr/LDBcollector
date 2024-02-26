@@ -31,7 +31,7 @@ Files: var/licenses/*.json
 Copyright: 2023 Henrik Sandklef <hesa@sandklef.com>
 License: CC-BY-4.0
 
-Files: tests/licenses/*.json
+Files: tests/licenses/*.json tests/*.json
 Copyright: 2023 Henrik Sandklef <hesa@sandklef.com>
 License: CC-BY-4.0
 
