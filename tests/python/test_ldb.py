@@ -15,6 +15,10 @@ fl = FossLicenses(config={
     'license-dir': 'tests/licenses',
     'level': 'logging.INFO'})
 
+def test_supported():
+    licenses = fl.licenses()
+    assert len(licenses) == 6
+
 def test_alias_list():
     # list of all aliases
     aliases = fl.alias_list()
