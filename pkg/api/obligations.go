@@ -314,57 +314,65 @@ func UpdateObligation(c *gin.Context) {
 		if oldobligation.Topic != obligation.Topic {
 			changes = append(changes, models.ChangeLog{
 				Field:        "Topic",
-				OldValue:     oldobligation.Topic,
-				UpdatedValue: obligation.Topic,
+				OldValue:     &oldobligation.Topic,
+				UpdatedValue: &obligation.Topic,
 			})
 		}
 		if oldobligation.Type != obligation.Type {
 			changes = append(changes, models.ChangeLog{
 				Field:        "Type",
-				OldValue:     oldobligation.Type,
-				UpdatedValue: obligation.Type,
+				OldValue:     &oldobligation.Type,
+				UpdatedValue: &obligation.Type,
 			})
 		}
 		if oldobligation.Text != obligation.Text {
 			changes = append(changes, models.ChangeLog{
 				Field:        "Text",
-				OldValue:     oldobligation.Text,
-				UpdatedValue: obligation.Text,
+				OldValue:     &oldobligation.Text,
+				UpdatedValue: &obligation.Text,
 			})
 		}
 		if oldobligation.Classification != obligation.Classification {
+			oldVal := strconv.FormatBool(oldobligation.Modifications)
+			newVal := strconv.FormatBool(obligation.Modifications)
 			changes = append(changes, models.ChangeLog{
 				Field:        "Classification",
-				OldValue:     oldobligation.Classification,
-				UpdatedValue: obligation.Classification,
+				OldValue:     &oldVal,
+				UpdatedValue: &newVal,
 			})
 		}
 		if oldobligation.Modifications != obligation.Modifications {
+			oldVal := strconv.FormatBool(oldobligation.Modifications)
+			newVal := strconv.FormatBool(obligation.Modifications)
 			changes = append(changes, models.ChangeLog{
 				Field:        "Modifications",
-				OldValue:     strconv.FormatBool(oldobligation.Modifications),
-				UpdatedValue: strconv.FormatBool(obligation.Modifications),
+				OldValue:     &oldVal,
+				UpdatedValue: &newVal,
 			})
 		}
 		if oldobligation.Comment != obligation.Comment {
 			changes = append(changes, models.ChangeLog{
 				Field:        "Comment",
-				OldValue:     oldobligation.Comment,
-				UpdatedValue: obligation.Comment,
+				OldValue:     &oldobligation.Comment,
+				UpdatedValue: &obligation.Comment,
 			})
 		}
 		if oldobligation.Active != obligation.Active {
+			oldVal := strconv.FormatBool(oldobligation.Active)
+			newVal := strconv.FormatBool(obligation.Active)
 			changes = append(changes, models.ChangeLog{
 				Field:        "Active",
-				OldValue:     strconv.FormatBool(oldobligation.Active),
-				UpdatedValue: strconv.FormatBool(obligation.Active),
+				OldValue:     &oldVal,
+				UpdatedValue: &newVal,
 			})
 		}
 		if oldobligation.TextUpdatable != obligation.TextUpdatable {
+			oldVal := strconv.FormatBool(oldobligation.TextUpdatable)
+			newVal := strconv.FormatBool(obligation.TextUpdatable)
 			changes = append(changes, models.ChangeLog{
 				Field:        "TextUpdatable",
-				OldValue:     strconv.FormatBool(oldobligation.TextUpdatable),
-				UpdatedValue: strconv.FormatBool(obligation.TextUpdatable),
+				OldValue:     &oldVal,
+				UpdatedValue: &newVal,
 			})
 		}
 

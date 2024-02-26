@@ -29,7 +29,7 @@ jobs:
 
     - name: Build Swagger documents
       run: |
-        swag init --generalInfo api.go --dir ./pkg/api,./pkg/auth,./pkg/db,./pkg/models,./pkg/utils --output ./swag/docs
+        swag init --parseDependency --generalInfo api.go --dir ./pkg/api,./pkg/auth,./pkg/db,./pkg/models,./pkg/utils --output ./swag/docs
 
     - name: Check doc diff
       run: |

@@ -114,8 +114,9 @@ INSERT INTO users (username, userpassword, userlevel) VALUES ('<username>', '<pa
     go install github.com/swaggo/swag/cmd/swag@latest
     ```
 2. Run the following command to generate swagger documentation.
+    <!-- https://github.com/swaggo/swag/issues/817#issuecomment-730895033 -->
     ```bash
-    swag init --generalInfo api.go --dir ./pkg/api,./pkg/auth,./pkg/db,./pkg/models,./pkg/utils --output ./cmd/laas/docs
+    swag init --parseDependency --generalInfo api.go --dir ./pkg/api,./pkg/auth,./pkg/db,./pkg/models,./pkg/utils --output ./cmd/laas/docs
     ```
 3. Swagger documentation will be generated in `./cmd/laas/docs` folder.
 4. Run the project and navigate to `http://localhost:8080/swagger/index.html` to view the documentation.
