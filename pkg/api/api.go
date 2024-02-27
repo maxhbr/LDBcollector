@@ -7,13 +7,16 @@
 package api
 
 import (
+	"fmt"
 	"net/http"
+	"os"
 	"time"
 
 	"github.com/gin-gonic/gin"
 	swaggerFiles "github.com/swaggo/files"
 	ginSwagger "github.com/swaggo/gin-swagger"
 
+	"github.com/fossology/LicenseDb/cmd/laas/docs"
 	"github.com/fossology/LicenseDb/pkg/auth"
 	"github.com/fossology/LicenseDb/pkg/db"
 	"github.com/fossology/LicenseDb/pkg/middleware"
@@ -33,14 +36,23 @@ import (
 //	@license.name				GPL-2.0-only
 //	@license.url				https://github.com/fossology/LicenseDb/blob/main/LICENSE
 //
-//	@host						localhost:8080
 //	@BasePath					/api/v1
 //
 //	@securityDefinitions.apikey	ApiKeyAuth
 //	@in							header
 //	@name						Authorization
 //	@description				Token from /login endpoint
+
+const DEFAULT_PORT = "8080"
+
 func Router() *gin.Engine {
+
+	port := os.Getenv("PORT")
+	if len(port) == 0 {
+		port = DEFAULT_PORT
+	}
+	docs.SwaggerInfo.Host = fmt.Sprintf("localhost:%s", port)
+
 	// r is a default instance of gin engine
 	r := gin.Default()
 
