@@ -1109,7 +1109,7 @@ fun RuleSet.commercialInDependencyRule() = packageRule("COMMERCIAL_IN_DEPENDENCY
     }
 }
 
-fun RuleSet.copyleftInDependencyRule() = dependencyRule("COPYLEFT_IN_DEPENDENCY") {
+fun RuleSet.copyleftInDependencyRule() = packageRule("COPYLEFT_IN_DEPENDENCY") {
     require {
         -isProject()
         -isExcluded()
@@ -1354,7 +1354,7 @@ fun RuleSet.missingTestsRule() = projectSourceRule("MISSING_TESTS") {
     )
 }
 
-fun RuleSet.noLicenseInDependencyRule() = dependencyRule("NO_LICENSE_IN_DEPENDENCY") {
+fun RuleSet.noLicenseInDependencyRule() = packageRule("NO_LICENSE_IN_DEPENDENCY") {
     require {
         -isProject()
         -isExcluded()
