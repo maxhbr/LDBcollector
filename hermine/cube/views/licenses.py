@@ -9,6 +9,7 @@ from django.contrib.auth.decorators import (
 from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
 from django.core.exceptions import ValidationError, SuspiciousOperation
 from django.db.models import Count
+from django.db.models.functions import Lower
 from django.forms import modelform_factory
 from django.http import HttpResponse
 from django.shortcuts import redirect
@@ -73,6 +74,7 @@ class LicensesListView(
     model = License
     context_object_name = "licenses"
     paginate_by = 50
+    ordering = [Lower("spdx_id")]
     form_class = ImportLicensesForm
     success_url = reverse_lazy("cube:license_list")
     search_fields = ("long_name", "spdx_id")
