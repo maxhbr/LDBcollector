@@ -129,8 +129,11 @@ SPDX-License-Identifier: AGPL-3.0-only
         {% for usage in to_confirm %}
           <tr>
             <td><a href="{% url "cube:component_detail" usage.version.component.id %}" target="_blank">{{ usage.version.component.name }}</a>
-              (<a href="{{ usage.version.component.homepage_url }}" target="_blank">website <span class="icon is-small">
-                <i class="fas fa-link"></i></span></a>)
+              {% if usage.version.component.homepage_url and usage.version.component.homepage_url != 'NOASSERTION' %}
+                (<a href="{{usage.version.component.homepage_url}}" target="_blank">website <span class="icon is-small"><i class="fas fa-link"></i></span></a>)
+              {% else %}
+                (No website)
+              {% endif %}
             </td>
             <td><a href="{% url "admin:cube_version_change" usage.version.id %}" target="_blank">{{ usage.version.version_number }}</a></td>
             <td>{{ usage.scope }}</td>
