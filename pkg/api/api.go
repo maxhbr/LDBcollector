@@ -121,6 +121,7 @@ func Router() *gin.Engine {
 		obligations := authorizedv1.Group("/obligations")
 		{
 			obligations.POST("", CreateObligation)
+			obligations.POST("import", ImportObligations)
 			obligations.PATCH(":topic", UpdateObligation)
 			obligations.DELETE(":topic", DeleteObligation)
 		}

@@ -62,6 +62,16 @@ definitions:
         example: 200
         type: integer
     type: object
+  models.ImportObligationsResponse:
+    properties:
+      data:
+        description: can be of type models.LicenseError or models.ObligationImportStatus
+        items: {}
+        type: array
+      status:
+        example: 200
+        type: integer
+    type: object
   models.LicenseDB:
     properties:
       external_ref:
@@ -317,6 +327,23 @@ definitions:
         - right
         example: risk
         type: string
+    type: object
+  models.ObligationId:
+    properties:
+      id:
+        example: 31
+        type: integer
+      topic:
+        example: copyleft
+        type: string
+    type: object
+  models.ObligationImportStatus:
+    properties:
+      data:
+        $ref: '#/definitions/models.ObligationId'
+      status:
+        example: 200
+        type: integer
     type: object
   models.ObligationMapResponse:
     properties:
@@ -1229,6 +1256,45 @@ paths:
       security:
       - ApiKeyAuth: []
       summary: Fetches audits corresponding to an obligation
+      tags:
+      - Obligations
+  /obligations/import:
+    post:
+      consumes:
+      - multipart/form-data
+      description: Import obligations by uploading a json file
+      operationId: ImportObligations
+      parameters:
+      - description: obligations json file list
+        in: formData
+        name: file
+        required: true
+        type: file
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/models.ImportObligationsResponse'
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/models.ObligationImportStatus'
+                  type: array
+              type: object
+        "400":
+          description: input file must be present
+          schema:
+            $ref: '#/definitions/models.LicenseError'
+        "500":
+          description: Internal server error
+          schema:
+            $ref: '#/definitions/models.LicenseError'
+      security:
+      - ApiKeyAuth: []
+      summary: Import obligations by uploading a json file
       tags:
       - Obligations
   /search:
