@@ -1,0 +1,15 @@
+{{ errors }}
+{% if errors and not fields %}
+  <div>{% for field in hidden_fields %}{{ field }}{% endfor %}</div>
+{% endif %}
+{% for field, errors in fields %}
+  <div{% with classes=field.css_classes %} class="field is-horizontal bulma{% if field.errors %} bulma-error{% endif %}{% if classes %} {{ classes }}{% endif %}"{% endwith %}>
+    {{ field.as_field_group }}
+    {% if forloop.last %}
+      {% for field in hidden_fields %}{{ field }}{% endfor %}
+    {% endif %}
+</div>
+{% endfor %}
+{% if not fields and not errors %}
+  {% for field in hidden_fields %}{{ field }}{% endfor %}
+{% endif %}

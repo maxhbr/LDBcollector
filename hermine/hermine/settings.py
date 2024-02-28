@@ -58,6 +58,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "django.forms",
     "social_django",
     "rest_framework",
     "rest_framework.authtoken",
@@ -100,6 +101,8 @@ TEMPLATES = [
         },
     }
 ]
+
+FORM_RENDERER = "django.forms.renderers.TemplatesSetting"
 
 MESSAGE_TAGS = {
     messages.INFO: "primary",

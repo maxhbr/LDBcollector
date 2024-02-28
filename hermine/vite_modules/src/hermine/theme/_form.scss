@@ -18,3 +18,31 @@
     box-shadow: none!important;
   }
 }
+
+/**
+  Custom code to auto-apply Bulma styles on Django forms with minimal template modification
+ */
+
+.field.bulma {
+  label {
+    @extend .label
+  }
+
+  input {
+    @extend .input
+  }
+
+  select {
+    @extend .select
+  }
+
+  button {
+    @extend .button
+  }
+}
+
+.field.bulma.bulma-error {
+  input, select, .help {
+    @extend .is-danger
+  }
+}
