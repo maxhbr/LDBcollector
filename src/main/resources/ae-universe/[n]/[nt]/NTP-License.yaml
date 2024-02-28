@@ -15,6 +15,5 @@ alternativeNames:
   - "NTP License"
 
 otherIds: 
-  - "scancode:network-time-protocol"
-  - "scancode:ntpl"
+  - "scancode:mit-old-style-no-advert"
   - "osi:NTP"

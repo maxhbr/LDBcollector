@@ -3,6 +3,12 @@
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
 
 canonicalName: "Apache Due Credit Variant"
-category: "Apache Due Credit Variant"
+category: "Apache Due Credit"
 shortName: "Apache-Due-Credit"
 
+alternativeNames:
+  - "Apache Due Credit Variant"
+  - "apache-due-credit"
+
+otherIds: 
+  - "scancode:apache-due-credit"

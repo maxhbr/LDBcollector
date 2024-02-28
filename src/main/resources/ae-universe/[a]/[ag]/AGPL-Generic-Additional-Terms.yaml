@@ -6,5 +6,9 @@ canonicalName: "AGPL Generic Additional Terms"
 category: "AGPL Generic"
 shortName: "AGPL-Generic-Additional-Terms"
 
+alternativeNames:
+  - "AGPL Generic Additional Terms"
+  - "agpl-generic-additional-terms"
+
 otherIds: 
   - "scancode:agpl-generic-additional-terms"

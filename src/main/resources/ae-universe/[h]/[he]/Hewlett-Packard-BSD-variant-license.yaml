@@ -10,3 +10,5 @@ alternativeNames:
   - "BSD-3-Clause-HP"
   - "Hewlett-Packard BSD variant license"
 
+otherIds: 
+  - "scancode:bsd-3-clause-hp"

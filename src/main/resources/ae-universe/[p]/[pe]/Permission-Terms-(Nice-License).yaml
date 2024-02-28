@@ -2,12 +2,9 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
 
-canonicalName: "Zeeff License"
-category: "Zeeff"
-spdxIdentifier: "Zeeff"
-
-alternativeNames:
-  - "Zeeff License"
+canonicalName: "Permission Terms (Nice License)"
+category: "Permission"
+shortName: "PT-Nice"
 
 otherIds: 
-  - "scancode:zeeff"
+  - "scancode:nice"
