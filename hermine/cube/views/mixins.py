@@ -68,8 +68,8 @@ class LicenseRelatedMixin:
         self.license = get_object_or_404(License, id=kwargs["license_pk"])
         return super().dispatch(request, *args, **kwargs)
 
-    def get_context_data(self):
-        context = super().get_context_data()
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
         context["license"] = self.license
         return context
 
