@@ -32,8 +32,8 @@ from cube.models import (
     Derogation,
     Exploitation,
 )
-from cube.utils.spdx import simplified
 from cube.utils.release_validation import update_validation_step, propagate_choices
+from cube.utils.spdx import simplified
 from cube.views import LicenseRelatedMixin
 from cube.views.mixins import (
     SaveAuthorMixin,
@@ -303,3 +303,4 @@ class ReleaseDerogationCreateView(
     model = Derogation
     form_class = CreateDerogationForm
     permission_required = "cube.add_derogation"
+    template_name = "cube/release_derogation_create.html"
