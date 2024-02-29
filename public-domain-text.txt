@@ -1479,3 +1479,13 @@ location = https://flaterco.com/files/libdstr-1.0.tar.bz2
 text = '''
 This source is public domain.  As if you would want it.
 '''
+
+package = dictd
+location = https://github.com/cheusov/dictd/blob/1.13.1/md5.c
+text = '''
+This code implements the MD5 message-digest algorithm.
+The algorithm is due to Ron Rivest.  This code was
+written by Colin Plumb in 1993, no copyright is claimed.
+This code is in the public domain; do with it what you wish.
+'''
+
