@@ -118,9 +118,11 @@ check_presence()
 
 ZERO_BSD_PRESENT=" -e 0BSD -i -e zero -e \"0-\""
 BSD2_PRESENT=" -e 2 -i -e two -e simplified -e freebsd "
-BSD2_PATENT_PRESENT=" -e -i patent" 
+BSD2_PATENT_PRESENT=" -i -e patent" 
 BSD3_PRESENT=" -e 3 -i -e new -e modified -e revised -e three -e 'no advertising' "
 BSD4_PRESENT=" -e 4 -i -e 'BSD with advertising' -e original "
+
+check_presence Academic-2.1 " -e 2.1 " "-e 1"
 
 check_presence Apache-1.0 " -e 1.0" "-e 2 -e 1.1"
 check_presence Apache-1.1 " -e 1.1" "-e 2 -e 1.0"
