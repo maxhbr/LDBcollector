@@ -25,21 +25,25 @@ services:
       - static_volume:/opt/hermine/static
       - $PWD/docker/shared.json:/opt/hermine/shared.json
     environment:
+      # hard-coded defaults for docker-compose
+      - SUPERUSER=admin
+      - PASSWORD=admin
+      - STATIC_ROOT=/opt/hermine/static
       - DJANGO_PORT=8080
       - POSTGRES_NAME=postgres
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
       - POSTGRES_HOST=db
       - POSTGRES_PORT=5432
+      # must be set in .env
       - SECRET=${HERMINE_SECRET:?err}
-      - SUPERUSER=admin
-      - PASSWORD=admin
       - HOST=${HERMINE_HOST:-localhost}
-      - CSRF_TRUSTED_ORIGINS=${CSRF_TRUSTED_ORIGINS}
-      - STATIC_ROOT=/opt/hermine/static
-      - ENABLE_PROFILING=${HERMINE_PROFILING:-False}
+      # can be overridden in .env
       - PRODUCTION=${HERMINE_PRODUCTION:-True}
-      - MAX_UPLOAD_SIZE=${HERMINE_MAX_UPLOAD_SIZE:-10485760}
+      - DJANGO_THREADS=${THREADS} # Defaults to number of cores
+      - CSRF_TRUSTED_ORIGINS=${CSRF_TRUSTED_ORIGINS}
+      - ENABLE_PROFILING=${HERMINE_PROFILING:-False}
+      - MAX_UPLOAD_SIZE=${HERMINE_MAX_UPLOAD_SIZE}
       - TRUST_PROXY_HEADERS=${HERMINE_TRUST_PROXY_HEADERS:-True}
     links:
       - db

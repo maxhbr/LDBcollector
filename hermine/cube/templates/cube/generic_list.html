@@ -54,7 +54,8 @@ SPDX-License-Identifier: AGPL-3.0-only
 
 {% block content %}
   <div id="content-main">
-    <p>The <em>core</em> is the set of generic obligations considered as fitting enough your policy to be executed for every single component, even if the license of a component does not require the obligation expressly.
+    <p>Each obligation extracted from the analysed licenses have been, whenever possible, attached to a generic obligation (the obligations that have not been attached are listed on the <a href="{% url "cube:obligations_orphans" %}">Orphan Obligations page</a>). Designed to simplify the compliance process, these generic obligations represent the common denominator for these many specific obligations.</p>
+    <p>Some of these generic obligations can be added to the <em>Core</em>, if your policy requires that these obligations be systematically met for each Open Source component, even if a component's licence does not explicitly require the obligation to be met. The other (non core) generic obligations will need to be monitored and may require additional work.
     </p>
     <div class="card has-table">
       <header class="card-header">
@@ -76,7 +77,9 @@ SPDX-License-Identifier: AGPL-3.0-only
                     <th>Lead</th>
                     <th>Nb of licenses</th>
                     <th>Active/Passive</th>
-                    <th>Local differences</th>
+                    {% if is_shared_reference_loaded %}
+                      <th>Differences with reference</th>
+                    {% endif %}
                     <th>Actions</th>
                   </tr>
                 </thead>
@@ -88,15 +91,17 @@ SPDX-License-Identifier: AGPL-3.0-only
                       <td>{{generic.team.name}}</td>
                       <td>{{ generic.obligation_set.all|length }}</td>
                       <td>{{ generic.passivity}}</td>
-                      <td>
-                        {% if not generic.reference_diff %}
-                          No
-                        {% elif generic.reference_diff == -1 %}
-                          <i title="Absent in shared reference">Local</i>
-                        {% else %}
-                          <a href="{% url "cube:generic_diff" generic.id %}">See differences</a>
-                        {% endif %}
-                      </td>
+                      {% if is_shared_reference_loaded %}
+                        <td>
+                          {% if not generic.reference_diff %}
+                            No
+                          {% elif generic.reference_diff == -1 %}
+                            <i title="Absent in shared reference">Local</i>
+                          {% else %}
+                            <a href="{% url "cube:generic_diff" generic.id %}">See differences</a>
+                          {% endif %}
+                        </td>
+                      {% endif %}
                       <td class="is-actions-cell">
                         <a href="{% url 'cube:generic_detail' generic.id %}">
                           <span class="icon"><i class="fas fa-eye"></i></span>
@@ -152,7 +157,9 @@ SPDX-License-Identifier: AGPL-3.0-only
                     <th>Lead</th>
                     <th>Nb of licenses</th>
                     <th>Active/Passive</th>
-                    <th>Local differences</th>
+                    {% if is_shared_reference_loaded %}
+                      <th>Differences with reference</th>
+                    {% endif %}
                     <th>Actions</th>
                   </tr>
                 </thead>
@@ -164,15 +171,17 @@ SPDX-License-Identifier: AGPL-3.0-only
                       <td>{{generic.team.name}}</td>
                       <td>{{ generic.obligation_set.all|length }}</td>
                       <td>{{ generic.passivity }}</td>
-                      <td>
-                        {% if not generic.reference_diff %}
-                          No
-                        {% elif generic.reference_diff == -1 %}
-                          <i title="Absent in shared reference">Local</i>
-                        {% else %}
-                          <a href="{% url "cube:generic_diff" generic.id %}">See differences</a>
-                        {% endif %}
-                      </td>
+                      {% if is_shared_reference_loaded %}
+                        <td>
+                          {% if not generic.reference_diff %}
+                            No
+                          {% elif generic.reference_diff == -1 %}
+                            <i title="Absent in shared reference">Local</i>
+                          {% else %}
+                            <a href="{% url "cube:generic_diff" generic.id %}">See differences</a>
+                          {% endif %}
+                        </td>
+                      {% endif %}
                       <td class="is-actions-cell">
                         <a href="{% url 'cube:generic_detail' generic.id %}">
                           <span class="icon"><i class="fas fa-eye"></i></span>

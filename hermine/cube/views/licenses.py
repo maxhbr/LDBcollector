@@ -7,10 +7,12 @@ from django.contrib.auth.decorators import (
     permission_required as permission_required_decorator,
 )
 from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
-from django.core.exceptions import ValidationError
+from django.core.exceptions import ValidationError, SuspiciousOperation
 from django.db.models import Count
+from django.db.models.functions import Lower
 from django.forms import modelform_factory
 from django.http import HttpResponse
+from django.shortcuts import redirect
 from django.urls import reverse_lazy, reverse
 from django.utils.decorators import method_decorator
 from django.views.generic import (
@@ -27,7 +29,12 @@ from odf.style import Style, TextProperties, ParagraphProperties
 from odf.text import H, P, Span
 
 from cube.forms.importers import ImportLicensesForm, ImportGenericsForm
-from cube.forms.licenses import ObligationGenericDiffForm
+from cube.forms.licenses import (
+    ObligationGenericDiffForm,
+    CopyReferenceLicensesForm,
+    CopyReferenceGenericsForm,
+    CopyReferenceObligationForm,
+)
 from cube.models import License, Generic, Obligation
 from cube.utils.reference import (
     LICENSE_SHARED_FIELDS,
@@ -67,6 +74,7 @@ class LicensesListView(
     model = License
     context_object_name = "licenses"
     paginate_by = 50
+    ordering = [Lower("spdx_id")]
     form_class = ImportLicensesForm
     success_url = reverse_lazy("cube:license_list")
     search_fields = ("long_name", "spdx_id")
@@ -184,8 +192,16 @@ class LicenseDiffView(
             obligation_name = obligation.name if obligation is not None else ref.name
             sides = "local" if not ref else "ref" if not obligation else "both"
 
-            if not (obligation and ref):
-                context["obligations_diff"].append((obligation_name, sides, None, None))
+            if sides == "local":
+                context["obligations_diff"].append(
+                    (obligation_name, sides, obligation.id, None)
+                )
+                continue
+
+            if sides == "ref":
+                context["obligations_diff"].append(
+                    (obligation_name, sides, ref.id, None)
+                )
                 continue
 
             fields = [
@@ -445,6 +461,17 @@ class ObligationDiffUpdateView(LoginRequiredMixin, PermissionRequiredMixin, Upda
         return modelform_factory(Obligation, fields=[self.kwargs["field"]])
 
 
+class ObligationsListView(LoginRequiredMixin, PermissionRequiredMixin, ListView):
+    permission_required = "cube.view_license"
+    model = Obligation
+    context_object_name = "obligations"
+
+    def get_queryset(self):
+        qs = super().get_queryset()
+        qs = qs.filter(generic__exact=None).order_by("license__spdx_id")
+        return qs
+
+
 class GenericListView(
     LoginRequiredMixin,
     PermissionRequiredMixin,
@@ -555,7 +582,7 @@ class GenericDiffUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateV
 class SharedReferenceView(
     LoginRequiredMixin, PermissionRequiredMixin, SharedDataRequiredMixin, TemplateView
 ):
-    permission_required = "cube.view_licenses"
+    permission_required = "cube.view_license"
     template_name = "cube/shared_reference.html"
 
     def get_context_data(self, **kwargs):
@@ -602,3 +629,47 @@ class SharedReferenceView(
         }
 
         return context
+
+
+class CopyReferenceLicensesView(
+    LoginRequiredMixin, PermissionRequiredMixin, SharedDataRequiredMixin, FormView
+):
+    permission_required = "cube.change_license"
+    form_class = CopyReferenceLicensesForm
+    success_url = reverse_lazy("cube:shared_reference")
+
+    def form_invalid(self, form):
+        return super().form_valid(form)
+
+    def form_valid(self, form):
+        form.save()
+        return super().form_valid(form)
+
+
+class CopyReferenceGenericsView(
+    LoginRequiredMixin, PermissionRequiredMixin, SharedDataRequiredMixin, FormView
+):
+    permission_required = "cube.change_generic"
+    form_class = CopyReferenceGenericsForm
+    success_url = reverse_lazy("cube:shared_reference")
+
+    def form_invalid(self, form):
+        return super().form_valid(form)
+
+    def form_valid(self, form):
+        form.save()
+        return super().form_valid(form)
+
+
+class CopyReferenceObligationView(
+    LoginRequiredMixin, PermissionRequiredMixin, SharedDataRequiredMixin, FormView
+):
+    permission_required = "cube.change_license"
+    form_class = CopyReferenceObligationForm
+
+    def form_invalid(self, form):
+        raise SuspiciousOperation("Form is invalid")
+
+    def form_valid(self, form):
+        obligation = form.save()
+        return redirect(reverse("cube:license_diff", args=[obligation.license.id]))

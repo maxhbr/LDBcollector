@@ -182,7 +182,10 @@ class ComponentRuleAdminMixin:
         if object.version is not None:
             result = object.version
         elif object.component:
-            result = f"{object.component} (any version)"
+            if object.version_constraint:
+                result = f"{object.component} ({object.version_constraint})"
+            else:
+                result = f"{object.component} (any version)"
 
         return result
 
@@ -210,7 +213,14 @@ class LicenseCurationAdmin(ComponentRuleAdminMixin, admin.ModelAdmin):
         ),
         (
             "Update component conditions",
-            {"fields": ("component_summary", "component", "version")},
+            {
+                "fields": (
+                    "component_summary",
+                    "component",
+                    "version",
+                    "version_constraint",
+                )
+            },
         ),
         ("Details", {"fields": ("explanation",)}),
     )

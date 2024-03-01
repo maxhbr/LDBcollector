@@ -89,7 +89,7 @@
 },
 {
     "model": "cube.license",
-    "pk": 3,
+    "pk": 1,
     "fields": {
         "spdx_id": "LicenseRef-FakeLicense-1.0",
         "status": "To check",
@@ -168,7 +168,7 @@
     "model": "cube.obligation",
     "pk": 50,
     "fields": {
-        "license": 3,
+        "license": 1,
         "generic": null,
         "name": "Test License Distribution Unmodified",
         "verbatim": "Test License Distribution Unmodified",
@@ -181,7 +181,7 @@
     "model": "cube.obligation",
     "pk": 51,
     "fields": {
-        "license": 3,
+        "license": 1,
         "generic": null,
         "name": "Test License Distribution Modified or not",
         "verbatim": "Test License Distribution Modified or not",
@@ -194,7 +194,7 @@
     "model": "cube.obligation",
     "pk": 52,
     "fields": {
-        "license": 3,
+        "license": 1,
         "generic": null,
         "name": "Test License DistributionSource Altered",
         "verbatim": "Test License DistributionSource Altered",
@@ -207,7 +207,7 @@
     "model": "cube.obligation",
     "pk": 53,
     "fields": {
-        "license": 3,
+        "license": 1,
         "generic": null,
         "name": "Test License DistributionSource Unmodified",
         "verbatim": "Test License DistributionSource Unmodified",
@@ -220,7 +220,7 @@
     "model": "cube.obligation",
     "pk": 54,
     "fields": {
-        "license": 3,
+        "license": 1,
         "generic": null,
         "name": "Test License DistributionSource Modified or not",
         "verbatim": "Test License DistributionSource Modified or not",
@@ -233,7 +233,7 @@
     "model": "cube.obligation",
     "pk": 55,
     "fields": {
-        "license": 3,
+        "license": 1,
         "generic": null,
         "name": "Test License DistributionNonSource Altered",
         "verbatim": "Test License DistributionNonSource Altered",
@@ -246,7 +246,7 @@
     "model": "cube.obligation",
     "pk": 56,
     "fields": {
-        "license": 3,
+        "license": 1,
         "generic": null,
         "name": "Test License DistributionNonSource Unmodified",
         "verbatim": "Test License DistributionNonSource Unmodified",
@@ -259,7 +259,7 @@
     "model": "cube.obligation",
     "pk": 57,
     "fields": {
-        "license": 3,
+        "license": 1,
         "generic": null,
         "name": "Test License DistributionNonSource Modified or not",
         "verbatim": "Test License DistributionNonSource Modified or not",
@@ -272,7 +272,7 @@
     "model": "cube.obligation",
     "pk": 58,
     "fields": {
-        "license": 3,
+        "license": 1,
         "generic": null,
         "name": "Test License NetworkAccess Altered",
         "verbatim": "Test License NetworkAccess Altered",
@@ -285,7 +285,7 @@
     "model": "cube.obligation",
     "pk": 59,
     "fields": {
-        "license": 3,
+        "license": 1,
         "generic": null,
         "name": "TestObligation",
         "verbatim": "This obligation is for testing purpose. please delete it.",
@@ -298,7 +298,7 @@
     "model": "cube.obligation",
     "pk": 60,
     "fields": {
-        "license": 3,
+        "license": 1,
         "generic": null,
         "name": "Test License NetworkAccess Unmodified",
         "verbatim": "Test License NetworkAccess Unmodified",
@@ -311,7 +311,7 @@
     "model": "cube.obligation",
     "pk": 61,
     "fields": {
-        "license": 3,
+        "license": 1,
         "generic": null,
         "name": "Test License NetworkAccess Modified or not",
         "verbatim": "Test License NetworkAccess Modified or not",
@@ -324,7 +324,7 @@
     "model": "cube.obligation",
     "pk": 62,
     "fields": {
-        "license": 3,
+        "license": 1,
         "generic": null,
         "name": "Test License Distribution Altered",
         "verbatim": "Test License Distribution Altered",
@@ -337,7 +337,7 @@
     "model": "cube.obligation",
     "pk": 63,
     "fields": {
-        "license": 3,
+        "license": 1,
         "generic": 1,
         "name": "Test Generic Obligation",
         "verbatim": "Test Generic Obligation",

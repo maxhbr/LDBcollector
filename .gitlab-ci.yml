@@ -72,3 +72,6 @@ release:
     name: "$(echo $CI_COMMIT_TAG | sed 's/^v//')"
     tag_name: "$CI_COMMIT_TAG"
     description: See changes in CHANGELOG.md
+
+include:
+  - template: Jobs/Dependency-Scanning.gitlab-ci.yml

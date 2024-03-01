@@ -1,13 +1,17 @@
 import os
 
-DEBUG = os.environ.get("PRODUCTION").lower() == "false"
-ENABLE_PROFILING = os.environ.get("ENABLE_PROFILING").lower() == "true"
+DEBUG = os.environ.get("PRODUCTION", "").lower() == "false"
+ENABLE_PROFILING = os.environ.get("ENABLE_PROFILING", "").lower() == "true"
 HOST = os.environ.get("HOST")
 STATIC_ROOT = os.environ.get("STATIC_ROOT")
-MAX_UPLOAD_SIZE = int(os.environ.get("MAX_UPLOAD_SIZE"))
+MAX_UPLOAD_SIZE = (
+    int(os.environ.get("MAX_UPLOAD_SIZE"))
+    if os.environ.get("MAX_UPLOAD_SIZE")
+    else 10485760
+)
 CSRF_TRUSTED_ORIGINS = os.environ.get("CSRF_TRUSTED_ORIGINS")
 
-if os.environ.get("TRUST_PROXY_HEADERS", False).lower() == "true":
+if os.environ.get("TRUST_PROXY_HEADERS", "").lower() == "true":
     USE_X_FORWARDED_HOST = True
     SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
 
@@ -34,6 +38,7 @@ OAUTH_TOKEN_URL = os.environ.get("OAUTH_TOKEN_URL")
 OAUTH_AUTHORIZE_URL = os.environ.get("OAUTH_AUTHORIZE_URL")
 OAUTH_USER_URL = os.environ.get("OAUTH_USER_URL")
 OAUTH_USERNAME_PROPERTY = os.environ.get("OAUTH_USERNAME_PROPERTY", "username")
+SOCIAL_AUTH_REDIRECT_IS_HTTPS = os.environ.get("SOCIAL_AUTH_REDIRECT_IS_HTTPS")
 
 # For configuring OAuth the following parameters are required :
 if OAUTH_CLIENT_ID is not None:

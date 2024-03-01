@@ -64,7 +64,7 @@ urlpatterns = [
         name="component_update",
     ),
     path(
-        "components/<int:pk>/update_funding/",
+        "components/<int:component_id>/update_funding/",
         views.component_update_funding,
         name="component_update_funding",
     ),
@@ -148,6 +148,11 @@ urlpatterns = [
         views.ObligationDiffUpdateView.as_view(),
         name="obligation_diff_update",
     ),
+    path(
+        "obligations/orphans/",
+        views.ObligationsListView.as_view(),
+        name="obligations_orphans",
+    ),
     path("generics/", views.GenericListView.as_view(), name="generic_list"),
     path(
         "generics/<int:pk>/", views.GenericDetailView.as_view(), name="generic_detail"
@@ -204,6 +209,21 @@ urlpatterns = [
         name="licensechoice_create",
     ),
     path("shared/", views.SharedReferenceView.as_view(), name="shared_reference"),
+    path(
+        "shared/copy-licenses/",
+        views.CopyReferenceLicensesView.as_view(),
+        name="shared_licenses_copy",
+    ),
+    path(
+        "shared/copy-generics/",
+        views.CopyReferenceGenericsView.as_view(),
+        name="shared_generics_copy",
+    ),
+    path(
+        "shared/copy-obligation/",
+        views.CopyReferenceObligationView.as_view(),
+        name="shared_obligation_copy",
+    ),
     # Releases views
     path(
         "releases/<int:pk>/edit/",
@@ -385,8 +405,8 @@ release_router.register(
     r"exploitations", api_views.ExploitationViewSet, basename="releases-exploitations"
 )
 
-version_router = routers.NestedSimpleRouter(router, r"components")
-version_router.register(
+component_router = routers.NestedSimpleRouter(router, r"components", lookup="component")
+component_router.register(
     r"versions", api_views.VersionViewSet, basename="component-versions"
 )
 
@@ -398,7 +418,7 @@ urlpatterns.append(
             + obligation_router.urls
             + product_router.urls
             + release_router.urls
-            + version_router.urls,
+            + component_router.urls,
         ),
     ),
 )

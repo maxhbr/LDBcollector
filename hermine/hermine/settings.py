@@ -37,11 +37,11 @@ SECRET_KEY = config.SECRET_KEY
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = getattr(config, "DEBUG", False)
 
-if (host := getattr(config, "HOST", None)) is not None:
+if host := getattr(config, "HOST", None):
     ALLOWED_HOSTS = [host]
     csrf_url = (
         getattr(config, "CSRF_TRUSTED_ORIGINS", None)
-        if getattr(config, "CSRF_TRUSTED_ORIGINS", None) is not None
+        if getattr(config, "CSRF_TRUSTED_ORIGINS", None)
         else host
     )
     CSRF_TRUSTED_ORIGINS = ["https://" + csrf_url]
@@ -58,6 +58,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "django.forms",
     "social_django",
     "rest_framework",
     "rest_framework.authtoken",
@@ -100,6 +101,8 @@ TEMPLATES = [
         },
     }
 ]
+
+FORM_RENDERER = "django.forms.renderers.TemplatesSetting"
 
 MESSAGE_TAGS = {
     messages.INFO: "primary",

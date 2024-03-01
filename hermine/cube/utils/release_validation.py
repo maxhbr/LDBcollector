@@ -3,7 +3,15 @@
 #  SPDX-License-Identifier: AGPL-3.0-only
 import logging
 
-from django.db.models import Count, Case, When, F
+from django.db.models import (
+    Count,
+    Case,
+    When,
+    F,
+    Subquery,
+    OuterRef,
+    Q,
+)
 
 from cube.models import (
     Release,
@@ -11,9 +19,7 @@ from cube.models import (
     LicenseChoice,
     LicenseCuration,
     Exploitation,
-)
-from cube.utils.licenses import (
-    check_licenses_against_policy,
+    Derogation,
 )
 from cube.utils.spdx import has_ors, is_ambiguous, simplified
 
@@ -29,25 +35,41 @@ STEP_POLICY = 5
 
 # Functions with side effect to update releases according to curations and choices
 def apply_curations(release):
-    for usage in release.usage_set.filter(version__corrected_license="").annotate(
-        imported_license=Case(
-            When(
-                version__spdx_valid_license_expr="",
-                then=F("version__declared_license_expr"),
-            ),
-            default=F("version__spdx_valid_license_expr"),
+    usages = (
+        release.usage_set.filter(version__corrected_license="").annotate(
+            imported_license=Case(
+                When(
+                    version__spdx_valid_license_expr="",
+                    then=F("version__declared_license_expr"),
+                ),
+                default=F("version__spdx_valid_license_expr"),
+            )
         )
-    ):
-        # Get the curation for the version
-        try:
-            curation = LicenseCuration.objects.for_version(usage.version).get()
-            usage.version.corrected_license = curation.expression_out
-            usage.version.save()
-        except (
-            LicenseCuration.DoesNotExist,
-            LicenseCuration.MultipleObjectsReturned,
-        ):
-            logger.warning("Multiple curations for %s", usage.version.component)
+        # includes curations with semantic versioning which may not match
+        # but still a big performance boost to skip usages with no curations later
+        .annotate(
+            curation=Subquery(
+                LicenseCuration.objects.filter(
+                    Q(component=OuterRef("version__component")) | Q(component=None),
+                    Q(version=OuterRef("version")) | Q(version=None),
+                    Q(expression_in=OuterRef("imported_license")),
+                ).values("expression_out")[:1]
+            )  # includes curations with semantic versioning
+        )
+    )
+
+    for usage in usages:
+        if usage.curation is not None:
+            # Check there are no conflicting curations (subquery returns only first row)
+            try:
+                curation = LicenseCuration.objects.for_version(usage.version).get()
+                usage.version.corrected_license = curation.expression_out
+                usage.version.save()
+            except (
+                LicenseCuration.DoesNotExist,
+                LicenseCuration.MultipleObjectsReturned,
+            ):
+                logger.warning("Multiple curations for %s", usage.version.component)
 
 
 def propagate_choices(release: Release):
@@ -58,21 +80,31 @@ def propagate_choices(release: Release):
     :param release: Release to update
     :return: dict with two keys: to_resolve and resolved containing the corresponding usages
     """
-
-    resolved = {
-        usage
-        for usage in release.usage_set.all()
-        .select_related("version", "version__component")
-        .prefetch_related("licenses_chosen")
-        .exclude(license_expression="")
-        if has_ors(
-            usage.version.effective_license
-        )  # we want to list only usages for which a choice was actually necessary
-    }
-
     to_resolve = set()
 
-    for usage in release.usage_set.filter(license_expression=""):
+    usages = (
+        release.usage_set.filter(license_expression="")
+        .select_related("version", "version__component", "release", "release__product")
+        .prefetch_related("licenses_chosen")
+        # includes choices with semantic versioning which may not match
+        # but still a big performance boost to skip usage with no derogation later
+        .annotate(
+            licensechoice=Subquery(
+                LicenseChoice.objects.filter(
+                    Q(component=OuterRef("version__component")) | Q(component=None),
+                    Q(version=OuterRef("version")) | Q(version=None),
+                    Q(product=OuterRef("release__product")) | Q(product=None),
+                    Q(release=OuterRef("release")) | Q(release=None),
+                    Q(category__in=OuterRef("release__product__categories"))
+                    | Q(category=None),
+                    Q(scope=OuterRef("scope")) | Q(scope=""),
+                    Q(exploitation=OuterRef("exploitation")) | Q(exploitation=""),
+                ).values("pk")
+            )
+        )
+    )
+
+    for usage in usages:
         if usage.version.license_is_ambiguous:
             continue
 
@@ -85,8 +117,13 @@ def propagate_choices(release: Release):
                     "%s : can not choose unknown license",
                     usage.version.component,
                 )
+            continue
 
-        elif not usage.license_expression:  # do not override already made choices
+        if not usage.license_expression:  # do not override already made choices
+            if usage.licensechoice is None:
+                to_resolve.add(usage)
+                continue
+
             try:
                 expression_out = (
                     LicenseChoice.objects.for_usage(usage)
@@ -98,9 +135,83 @@ def propagate_choices(release: Release):
             else:
                 usage.license_expression = expression_out
                 usage.save()
-                resolved.add(usage)
+
+    resolved = (
+        usage
+        for usage in release.usage_set.all()
+        .select_related("version")
+        .exclude(license_expression="")
+        if has_ors(
+            usage.version.effective_license
+        )  # we want to list only usages for which a choice was actually necessary
+    )
 
     return {"to_resolve": to_resolve, "resolved": resolved}
+
+
+def check_licenses_against_policy(release: Release):
+    usages_lic_never_allowed = set()
+    usages_lic_context_allowed = set()
+    usages_lic_unknown = set()
+    involved_lic = set()
+    derogations = set()
+
+    usages = (
+        release.usage_set.exclude(licenses_chosen=None)
+        .select_related("version", "version__component", "release", "release__product")
+        .prefetch_related("licenses_chosen")
+        # includes derogations with semantic versioning which may not match
+        # but still a big performance boost to skip usage with no derogation later
+        .annotate(
+            derogation=Subquery(
+                Derogation.objects.filter(
+                    Q(component=OuterRef("version__component")) | Q(component=None),
+                    Q(version=OuterRef("version")) | Q(version=None),
+                    Q(product=OuterRef("release__product")) | Q(product=None),
+                    Q(release=OuterRef("release")) | Q(release=None),
+                    Q(category__in=OuterRef("release__product__categories"))
+                    | Q(category=None),
+                    Q(scope=OuterRef("scope")) | Q(scope=""),
+                    Q(exploitation=OuterRef("exploitation")) | Q(exploitation=""),
+                    Q(license__in=OuterRef("licenses_chosen")),
+                    Q(linking=OuterRef("linking")) | Q(linking=""),
+                    Q(modification=OuterRef("component_modified")) | Q(modification=""),
+                ).values("pk")
+            )
+        )
+        .all()
+    )
+
+    for usage in usages:
+        for license in usage.licenses_chosen.all():
+            involved_lic.add(license)
+
+            if license.allowed == License.ALLOWED_ALWAYS:
+                continue
+
+            if usage.derogation is not None:
+                license_derogations = list(
+                    Derogation.objects.for_usage(usage).filter(license=license)
+                )
+                if len(license_derogations):
+                    for derogation in license_derogations:
+                        derogations.add(derogation)
+                    continue
+
+            if license.allowed == License.ALLOWED_NEVER:
+                usages_lic_never_allowed.add(usage)
+            elif license.allowed == License.ALLOWED_CONTEXT:
+                usages_lic_context_allowed.add(usage)
+            elif not license.allowed:
+                usages_lic_unknown.add(usage)
+
+    return {
+        "usages_lic_never_allowed": usages_lic_never_allowed,
+        "usages_lic_context_allowed": usages_lic_context_allowed,
+        "usages_lic_unknown": usages_lic_unknown,
+        "involved_lic": involved_lic,
+        "derogations": derogations,
+    }
 
 
 # Validations step methods
@@ -108,8 +219,6 @@ def validate_expressions(release):
     """
     Check for components versions that do not have valid SPDX license expressions.
     """
-    apply_curations(release)
-
     context = dict()
     invalid_expressions = release.usage_set.filter(
         version__spdx_valid_license_expr="", version__corrected_license=""

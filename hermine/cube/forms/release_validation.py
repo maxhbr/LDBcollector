@@ -235,6 +235,8 @@ class CreateDerogationForm(BaseUsageConditionForm):
                 (self.ANY, "Any modification"),
             )
 
+        del self.fields["product_release"]
+
     def save(self, **kwargs):
         if self.cleaned_data["linking_choice"] == self.USAGE:
             self.instance.linking = self.usage.linking
@@ -246,7 +248,6 @@ class CreateDerogationForm(BaseUsageConditionForm):
     class Meta:
         model = Derogation
         fields = (
-            "product_release",
             "scope_choice",
             "component_version",
             "version_constraint",

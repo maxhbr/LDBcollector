@@ -23,8 +23,7 @@ RUN npm ci
 COPY . $BUILD_PATH
 RUN npm run build
 
-
-FROM bitnami/python:3.10 as runtime
+FROM python:3.12-slim-bullseye as runtime
 
 ARG INSTALL_PATH=/opt/hermine
 ARG POETRY_VERSION=1.6.1
@@ -45,7 +44,8 @@ WORKDIR $INSTALL_PATH
 RUN apt update && apt install -y postgresql-client net-tools
 
 # install poetry and dependencies
-RUN pip install "poetry==$POETRY_VERSION" gunicorn
+ARG OPTIONAL_PIP_INSTALL=""
+RUN pip install "poetry==$POETRY_VERSION" gunicorn $OPTIONAL_PIP_INSTALL
 COPY pyproject.toml poetry.lock $INSTALL_PATH/
 RUN poetry config virtualenvs.create false && \
     poetry install --no-interaction --no-ansi --without dev

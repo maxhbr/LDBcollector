@@ -31,7 +31,7 @@ class UnauthenticatedTestCase(TestCase):
         reverse("cube:release_bom", kwargs={"release_pk": 1}),
         reverse("cube:release_bom_export", kwargs={"pk": 1}),
         reverse("cube:license_list"),
-        reverse("cube:license_detail", kwargs={"pk": 3}),
+        reverse("cube:license_detail", kwargs={"pk": 1}),
         reverse("cube:generic_list"),
         reverse("cube:generic_detail", kwargs={"pk": 1}),
     ]
@@ -95,7 +95,7 @@ class LicenseViewsTestCase(ForceLoginMixin, TestCase):
     fixtures = ["test_data.json"]
 
     def test_license_details_display_obligations(self):
-        res = self.client.get(reverse("cube:license_detail", args=[3]))
+        res = self.client.get(reverse("cube:license_detail", args=[1]))
         self.assertEqual(res.status_code, 200)
         self.assertContains(res, "Test License Distribution Unmodified")
 

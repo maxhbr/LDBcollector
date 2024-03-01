@@ -2,9 +2,10 @@
 #
 #  SPDX-License-Identifier: AGPL-3.0-only
 from django.test import TestCase
+from semantic_version import SimpleSpec
 
 from cube.models import LicenseCuration, Version
-from cube.utils.ort import hermine_to_ort, export_curations
+from cube.utils.ort import hermine_to_ort, export_curations, simple_spec_to_ivy_string
 
 
 class ORTToolsTestCase(TestCase):
@@ -16,6 +17,7 @@ class ORTToolsTestCase(TestCase):
             version=Version.objects.first(),
             expression_in="LicenseRef-FakeLicense OR AND",
             expression_out="LicenseRef-FakeLicense OR LicenseRef-FakeLicense-Permissive",
+            explanation="Justification for curation 1",
         )
         self.assertEqual(
             hermine_to_ort(LicenseCuration.objects.first()).curations.concluded_license,
@@ -27,11 +29,13 @@ class ORTToolsTestCase(TestCase):
             version=Version.objects.first(),
             expression_in="LicenseRef-FakeLicense OR AND",
             expression_out="LicenseRef-FakeLicense OR LicenseRef-FakeLicense-Permissive",
+            explanation="Justification for curation 1",
         )
         LicenseCuration.objects.create(
             version=Version.objects.last(),
             expression_in="LicenseRef-FakeLicense OR AND",
             expression_out="LicenseRef-FakeLicense",
+            explanation="Justification for curation 2",
         )
         self.assertEqual(
             export_curations(
@@ -39,17 +43,23 @@ class ORTToolsTestCase(TestCase):
             ),
             """- id: NPM::test_component_alpha:1.0
   curations:
+    comment: Justification for curation 1
     concluded_license: LicenseRef-FakeLicense OR LicenseRef-FakeLicense-Permissive
-    declared_license_mapping:
-      LicenseRef-FakeLicense OR AND: LicenseRef-FakeLicense OR LicenseRef-FakeLicense-Permissive
-    is_meta_data_only: false
-    is_modified: false
 - id: NPM::test_component_alpha:2.0
   curations:
+    comment: Justification for curation 2
     concluded_license: LicenseRef-FakeLicense
-    declared_license_mapping:
-      LicenseRef-FakeLicense OR AND: LicenseRef-FakeLicense
-    is_meta_data_only: false
-    is_modified: false
 """,
         )
+
+    def test_simple_spec_to_ivy_string(self):
+        simple_spec = SimpleSpec(">1.0.0")
+        self.assertEqual(simple_spec_to_ivy_string(simple_spec), "]1.0.0,)")
+        simple_spec = SimpleSpec("<=1.0.0")
+        self.assertEqual(simple_spec_to_ivy_string(simple_spec), "(,1.0.0]")
+        simple_spec = SimpleSpec(">=1.0.0,<2.0.0")
+        self.assertEqual(simple_spec_to_ivy_string(simple_spec), "[1.0.0,2.0.0[")
+
+        with self.assertRaises(ValueError):
+            simple_spec = SimpleSpec("==1.0.0")
+            simple_spec_to_ivy_string(simple_spec)

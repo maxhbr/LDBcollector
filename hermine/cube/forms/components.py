@@ -26,9 +26,41 @@ class LicenseCurationCreateForm(AutocompleteFormMixin, ModelForm):
 
 
 class LicenseCurationUpdateForm(ModelForm):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        component = (
+            self.instance.component
+            or self.instance.version
+            and self.instance.version.component
+        )
+        if component is None:
+            del self.fields["version"]
+            del self.fields["version_constraint"]
+            return
+
+        self.fields["version"].queryset = component.versions.all()
+        self.fields[
+            "version"
+        ].help_text = (
+            "Select the version of the component to which the curation applies."
+        )
+        self.fields[
+            "version"
+        ].empty_label = "All versions or versions matching constraint"
+
+    def clean(self):
+        if self.instance.version is not None:
+            self.instance.component = self.instance.version.component
+        cleaned_data = super().clean()
+        if cleaned_data.get("version") is not None:
+            self.instance.component = None
+        return cleaned_data
+
     class Meta:
         model = LicenseCuration
         fields = (
+            "version_constraint",
+            "version",
             "expression_in",
             "expression_out",
             "explanation",

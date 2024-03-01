@@ -93,7 +93,16 @@ SPDX-License-Identifier: AGPL-3.0-only
             <td></td>
             {% if sides == "ref" %}
               <td><em>Only in reference</em></td><td></td>
-              <td></td>
+              <td>
+                {% if perms.cube.change_obligation %}
+                  <form method="POST"
+                        action="{% url "cube:shared_obligation_copy" %}">
+                    {% csrf_token %}
+                    <input type="hidden" value="{{ obligation_id }}" name="obligation" />
+                    <button type="submit" class="button is-small">Copy obligation</button>
+                  </form>
+                {% endif %}
+              </td>
             {% else %}
               <td></td><td><em>Only in local database</em></td>
               <td></td>
