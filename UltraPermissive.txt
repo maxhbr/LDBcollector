@@ -202,3 +202,10 @@ text = '''
 Permission to use, copy, modify, and distribute these images for any
 purpose and without fee is hereby granted.
 '''
+
+package = librecad
+          python-ezdxf
+location = https://github.com/LibreCAD/LibreCAD/blob/10e64902a4f7d8ca20db2db045ef98f062f6fd0c/licenses/KST32B_v2.txt#L4
+text = '''
+FREEWARE (free to copy,change...; NO RESPONSIBILITY) : 無保証
+'''
