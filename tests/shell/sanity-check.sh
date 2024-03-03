@@ -122,8 +122,10 @@ BSD2_PATENT_PRESENT=" -i -e patent"
 BSD3_PRESENT=" -e 3 -i -e new -e modified -e revised -e three -e 'no advertising' "
 BSD4_PRESENT=" -e 4 -i -e 'BSD with advertising' -e original "
 
-check_presence Academic-2.1 " -e 2.1 " "-e 1"
-check_presence Academic-1.1 " -e 1.1 " "-e 2"
+check_presence AFL-2.0 " -e 2.0 " "-e 1 -e 2.1 "
+check_presence AFL-2.1 " -e 2.1 " "-e 1. -e 2.0 -e 0"
+check_presence AFL-1.1 " -e 1.1 " "-e 2. -e 1.2"
+check_presence AFL-1.2 " -e 1.2 " "-e 2. -e 1.1"
 
 check_presence Apache-1.0 " -e 1.0" "-e 2 -e 1.1"
 check_presence Apache-1.1 " -e 1.1" "-e 2 -e 1.0"
