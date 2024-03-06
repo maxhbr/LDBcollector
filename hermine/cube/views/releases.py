@@ -101,7 +101,7 @@ class ReleaseImportView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView)
                     linking=form.cleaned_data.get("linking"),
                 )
         except SBOMImportFailure as e:
-            form.add_error(None, e)
+            form.add_error("file", e)
             return super().form_invalid(form)
 
         messages.add_message(
