@@ -6,6 +6,8 @@ from django import forms
 from cube.forms.mixins import AutocompleteFormMixin
 from cube.models import (
     LicenseChoice,
+    Derogation,
+    Usage,
 )
 
 
@@ -27,3 +29,32 @@ class LicenseChoiceUpdateForm(AutocompleteFormMixin, forms.ModelForm):
         model = LicenseChoice
         fields = "__all__"
         autocomplete_fields = ("component", "version", "product", "release")
+
+
+class AuthorizedContextForm(forms.ModelForm):
+    scope = forms.ChoiceField(
+        label="Scope",
+        help_text="Leave blank to apply to any scope",
+        required=False,
+    )
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.fields["scope"].choices = (
+            ("", "---------"),
+            *(
+                (scope, scope)
+                for scope in Usage.objects.values_list("scope", flat=True).distinct()
+            ),
+        )
+
+    class Meta:
+        model = Derogation
+        fields = (
+            "linking",
+            "modification",
+            "exploitation",
+            "scope",
+            "category",
+            "justification",
+        )
