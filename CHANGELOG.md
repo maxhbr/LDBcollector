@@ -1,5 +1,41 @@
 # Changelog
 
+## 0.3.0
+FEATURES:
+* Add purl type in component and curation list ([3328c10](https://gitlab.com/hermine-project/hermine/commit/3328c10))
+* Better import error messages ([524a015](https://gitlab.com/hermine-project/hermine/commit/524a015))
+* Clarify validation results for authorized contexts licenses ([63831a6](https://gitlab.com/hermine-project/hermine/commit/63831a6))
+* Display purl_type in component name ([3ea79af](https://gitlab.com/hermine-project/hermine/commit/3ea79af))
+* Export ORT versions constraints ([7908df2](https://gitlab.com/hermine-project/hermine/commit/7908df2))
+* Update curation versions ([7a2b739](https://gitlab.com/hermine-project/hermine/commit/7a2b739))
+* Import purl from SPDX files ([98a9925](https://gitlab.com/hermine-project/hermine/commit/98a9925))
+
+BUGFIXES:
+* Do not strip package names starting with @ ([092dbd2](https://gitlab.com/hermine-project/hermine/commit/092dbd2))
+* Don't display reference data column when no ref data ([f9c4e3f](https://gitlab.com/hermine-project/hermine/commit/f9c4e3f))
+* Form and table styling with bulma and django 5 ([d5419e2](https://gitlab.com/hermine-project/hermine/commit/d5419e2)) ([210f8dc](https://gitlab.com/hermine-project/hermine/commit/210f8dc))
+* Avoid some crashes in AND validation form ([77e9940](https://gitlab.com/hermine-project/hermine/commit/77e9940)), closes [#426](https://gitlab.com/hermine-project/hermine/issues/426)
+* Only use concluded_license in ort curations ([6f71a47](https://gitlab.com/hermine-project/hermine/commit/6f71a47)), closes [#252](https://gitlab.com/hermine-project/hermine/issues/252)
+* Order license list by SDPX id ([f55f735](https://gitlab.com/hermine-project/hermine/commit/f55f735)), closes [#267](https://gitlab.com/hermine-project/hermine/issues/267)
+* Replace NOASSERTION by empty string for package url on import, and hide links for NOASSERTION v ([225c38d](https://gitlab.com/hermine-project/hermine/commit/225c38d))
+* Don't display links to NOASSERTION ([49ae040](https://gitlab.com/hermine-project/hermine/commit/49ae040)) ([bffc135](https://gitlab.com/hermine-project/hermine/commit/bffc135))
+* Fix form render for release_import ([2d9429f](https://gitlab.com/hermine-project/hermine/commit/2d9429f))
+* Replace logout link with form ([c12cb89](https://gitlab.com/hermine-project/hermine/commit/c12cb89))
+* Fix a permission name ([5573362](https://gitlab.com/hermine-project/hermine/commit/5573362))
+* docker: Handle cases where MAX_UPLOAD_SIZE is not defined ([62be3fd](https://gitlab.com/hermine-project/hermine/commit/62be3fd))
+* docker: Set correct path to shared.json in entry point ([8f8cd60](https://gitlab.com/hermine-project/hermine/commit/8f8cd60))
+
+DOCUMENTATION:
+* Documentation for using Docker without Docker Compose ([41370e7](https://gitlab.com/hermine-project/hermine/commit/41370e7))
+* Add dev container configuration ([5065654](https://gitlab.com/hermine-project/hermine/commit/5065654))
+* Update reference data ([da8c9d6](https://gitlab.com/hermine-project/hermine/commit/da8c9d6))
+* Add link to documentation to the sidebar ([c9a0e9f](https://gitlab.com/hermine-project/hermine/commit/c9a0e9f))
+* Move downloading instructions as first step ([17b7833](https://gitlab.com/hermine-project/hermine/commit/17b7833))
+
+MISC:
+* Upgrade django to version 5 and Docker python version to 3.12 ([d9c6a01](https://gitlab.com/hermine-project/hermine/commit/d9c6a01)), closes [#254](https://gitlab.com/hermine-project/hermine/issues/254)
+* Better perfs for applying licenses choices ([4d5332c](https://gitlab.com/hermine-project/hermine/commit/4d5332c))
+
 ## 0.2.1
 
 FEATURES :
