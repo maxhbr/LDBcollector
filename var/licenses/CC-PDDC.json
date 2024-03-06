@@ -1,0 +1,17 @@
+{
+"meta": {
+    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+    "comment": ""
+},
+    "name": "Creative Commons Public Domain Certification",
+    "scancode_key": "cc-pd",
+    "spdxid": "CC-PDDC",
+    "compatibility_as": "CC0-1.0",
+    "aliases": [
+        "Creative Commons Public Domain Dedication and Certification",
+        "Creative Commons Copyright-Only Dedication (based on United States law) or Public Domain Certification",
+        "scancode://cc-pd",
+        "CC-PD",
+        "scancode:cc-pd"
+    ]
+}
