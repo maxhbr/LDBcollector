@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.1
+MISC:
+* Update Django to 5.0.3
+
 ## 0.3.0
 FEATURES:
 * Add purl type in component and curation list ([3328c10](https://gitlab.com/hermine-project/hermine/commit/3328c10))
