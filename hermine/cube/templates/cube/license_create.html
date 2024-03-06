@@ -25,34 +25,28 @@ SPDX-License-Identifier: AGPL-3.0-only
   <form method="post">
     {% csrf_token %}
     {{ form.non_field_errors }}
-    <h3>License data</h3>
-    <table>
-      {% for field in shared_fields %}
-        <tr>
-          <th>{{ field.label_tag }}</th>
-          <td>
-            {{ field.errors }}{{ field }}
-            {% if field.help_text %}
-              <br/><span class="helptext">{{ field.help_text }}</span>
-            {% endif %}
-          </td>
-        </tr>
-      {% endfor %}
-    </table>
-    <h3>Internal policy</h3>
-    <table>
-      {% for field in policy_fields %}
-        <tr>
-          <th>{{ field.label_tag }}</th>
-          <td>
-            {{ field.errors }}{{ field }}
-            {% if field.help_text %}
-              <br/><span class="helptext">{{ field.help_text }}</span>
-            {% endif %}
-          </td>
-        </tr>
-      {% endfor %}
-    </table>
-    <input class="button is-primary" type="submit" value="Save"/>
+    <div class="field is-horizontal">
+      <div class="field-label"></div>
+      <div class="field-body">
+        <h2>License data</h2>
+      </div>
+    </div>
+    {% for field in shared_fields %}
+      <div{% with classes=field.css_classes %} class="field is-horizontal bulma{% if field.errors %} bulma-error{% endif %}{% if classes %} {{ classes }}{% endif %}"{% endwith %}>
+        {% include "django/forms/field.html" %}
+      </div>
+    {% endfor %}
+    <div class="field is-horizontal mt-6">
+        <div class="field-label"></div>
+        <div class="field-body">
+          <h2>Internal policy</h2>
+        </div>
+    </div>
+    {% for field in policy_fields %}
+      <div{% with classes=field.css_classes %} class="field is-horizontal bulma{% if field.errors %} bulma-error{% endif %}{% if classes %} {{ classes }}{% endif %}"{% endwith %}>
+        {% include "django/forms/field.html" %}
+      </div>
+    {% endfor %}
+    {% include "cube/includes/bulma_submit.html" %}
   </form>
 {% endblock %}

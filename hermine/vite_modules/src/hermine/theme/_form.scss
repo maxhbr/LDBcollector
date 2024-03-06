@@ -28,8 +28,16 @@
     @extend .label
   }
 
-  input {
+  input:not([type=radio], [type=checkbox]) {
     @extend .input
+  }
+
+  label:has(input[type=radio]) {
+    @extend .radio
+  }
+
+    label:has(input[type=checkbox]) {
+    @extend .checkbox
   }
 
   select {
@@ -38,6 +46,10 @@
 
   button {
     @extend .button
+  }
+
+  textarea {
+    @extend .textarea
   }
 }
 
