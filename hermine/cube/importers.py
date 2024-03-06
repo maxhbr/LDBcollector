@@ -31,15 +31,27 @@ def import_ort_evaluated_model_json_file(
     try:
         data = json.load(json_file)
     except ValueError:
-        raise SBOMImportFailure("Please check file format.")
+        raise SBOMImportFailure("This is not a valid JSON file.")
 
     try:
         paths = data["paths"]
+    except KeyError:
+        raise SBOMImportFailure("paths key not found in the file.")
+
+    try:
         scopes = data["scopes"]
+    except KeyError:
+        raise SBOMImportFailure("scopes key not found in the file.")
+
+    try:
         packages = data["packages"]
+    except KeyError:
+        raise SBOMImportFailure("packages key not found in the file.")
+
+    try:
         licenses = data["licenses"]
     except KeyError:
-        raise SBOMImportFailure("Please check file format.")
+        raise SBOMImportFailure("licenses key not found in the file.")
 
     if replace:
         Usage.objects.filter(release=release_id).delete()
@@ -134,8 +146,7 @@ def import_spdx_file(spdx_file, release_id, replace=False, linking: str = ""):
     try:
         document = parse_spdx_file(spdx_file)
     except SPDXParsingError as e:
-        logger.error(e)
-        raise SBOMImportFailure("Please check file format.")
+        raise SBOMImportFailure(f"Could not parse SPDX file : {e.messages}")
 
     if replace:
         Usage.objects.filter(release=release_id).delete()
