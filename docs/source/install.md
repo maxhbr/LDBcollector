@@ -44,7 +44,10 @@ deployed on a VPS.
 * a `localhost` profile to use Hermine on a local machine or behind a reverse proxy (not suited for development) 
 
 Configuration is made through a [`.env` file](https://github.com/bkeepers/dotenv) which should be
-placed at the root of the project.
+placed at the root of the project. Relevant [configuration variables
+for Hermine image](#image-configuration) are exposed through Compose with
+the prefix `HERMINE_`. Check [docker-compose.yml](https://gitlab.com/hermine-project/hermine/-/blob/main/docker-compose.yml)
+comments for more information.
 
 At first launch, a superadmin user is created with `admin / admin` credential.
 You can update these credentials from `http://example.com/admin/auth/user/`.
@@ -105,6 +108,8 @@ You first need to build the image :
 ```bash
 docker build -t hermine .c
 ```
+
+### Image configuration
 
 Runtime configuration is made through environment variables.
 You can use a `.env` file to set them up.
