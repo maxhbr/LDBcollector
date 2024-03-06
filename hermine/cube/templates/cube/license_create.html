@@ -37,10 +37,10 @@ SPDX-License-Identifier: AGPL-3.0-only
       </div>
     {% endfor %}
     <div class="field is-horizontal mt-6">
-        <div class="field-label"></div>
-        <div class="field-body">
-          <h2>Internal policy</h2>
-        </div>
+      <div class="field-label"></div>
+      <div class="field-body">
+        <h2>Internal policy</h2>
+      </div>
     </div>
     {% for field in policy_fields %}
       <div{% with classes=field.css_classes %} class="field is-horizontal bulma{% if field.errors %} bulma-error{% endif %}{% if classes %} {{ classes }}{% endif %}"{% endwith %}>

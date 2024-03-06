@@ -44,8 +44,8 @@ SPDX-License-Identifier: AGPL-3.0-only
       {% endif %}
       <form action="{% url 'cube:release_import' release.id %}" enctype="multipart/form-data" method="post">
         {% csrf_token %}
-          {{ form }}
-          {% include "cube/includes/bulma_submit.html" with label="Import now" %}
+        {{ form }}
+        {% include "cube/includes/bulma_submit.html" with label="Import now" %}
       </form>
     </div>
   </div>
