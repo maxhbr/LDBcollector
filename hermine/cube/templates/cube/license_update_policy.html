@@ -23,11 +23,5 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% endblock %}
 
 {% block content %}
-  <form method="post">
-    {% csrf_token %}
-    <table>
-      {{ form }}
-    </table>
-    <input type="submit" class="button is-primary" value="Save"/>
-  </form>
+  {% include "cube/includes/default_form.html" %}
 {% endblock %}

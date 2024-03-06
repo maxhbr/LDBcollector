@@ -25,10 +25,17 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% block content %}
   <form method="post">
     {% csrf_token %}
-    <table>
-      {{ form }}
-    </table>
-    <input type="submit" class="button is-primary" value="Save"/>
-    <input type="submit" class="button" formaction="{% url 'cube:license_create' %}" value="Save as new (duplicate)" />
+    {{ form }}
+    <div class="field is-horizontal">
+      <div class="field-label"></div>
+      <div class="field-body">
+        <div class="field">
+          <div class="control">
+            <button type="submit" class="button is-primary">{{ label|default:"Save" }}</button>
+            <button type="submit" class="button" formaction="{% url 'cube:license_create' %}">Save as new (duplicate)</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </form>
 {% endblock %}
