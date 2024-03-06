@@ -179,7 +179,7 @@ urlpatterns = [
         name="authorizedcontext_list",
     ),
     path(
-        "licenses/<int:license_pk>/new_autorized_context/",
+        "licenses/<int:license_pk>/new_authorized_context/",
         views.AuthorizedContextCreateView.as_view(),
         name="authorizedcontext_create",
     ),

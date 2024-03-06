@@ -5,7 +5,11 @@ from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMix
 from django.urls import reverse, reverse_lazy
 from django.views.generic import CreateView, UpdateView, ListView
 
-from cube.forms.policy import LicenseChoiceCreateForm, LicenseChoiceUpdateForm
+from cube.forms.policy import (
+    LicenseChoiceCreateForm,
+    LicenseChoiceUpdateForm,
+    AuthorizedContextForm,
+)
 from cube.models import (
     Derogation,
     LicenseChoice,
@@ -28,16 +32,8 @@ class AuthorizedContextUpdateView(
     UpdateView,
 ):
     permission_required = "cube.change_derogation"
-    model = Derogation
     template_name = "cube/derogation_form.html"
-    fields = (
-        "linking",
-        "modification",
-        "exploitation",
-        "scope",
-        "category",
-        "justification",
-    )
+    form_class = AuthorizedContextForm
     success_url = reverse_lazy("cube:authorizedcontext_list")
 
     def get_context_data(self, **kwargs):
@@ -52,16 +48,8 @@ class AuthorizedContextCreateView(
     CreateView,
 ):
     permission_required = "cube.add_derogation"
-    model = Derogation
     template_name = "cube/derogation_form.html"
-    fields = (
-        "linking",
-        "modification",
-        "exploitation",
-        "scope",
-        "category",
-        "justification",
-    )
+    form_class = AuthorizedContextForm
 
     def get_success_url(self):
         return reverse("cube:license_detail", args=[self.object.license.id])
