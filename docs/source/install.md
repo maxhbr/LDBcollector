@@ -38,6 +38,10 @@ following services:
 [serve static files](https://docs.djangoproject.com/en/4.1/howto/static-files/deployment/)
 and proxy other requests to gunicorn
 
+Beware this config is for `docker compose`
+([Compose v2](https://docs.docker.com/compose/migrate/))
+not for `docker-compose` (Compose v1).
+
 Two profiles are available :
 * an `https` profile where Caddy is configured with automatic HTTPS. It can easily be
 deployed on a VPS.
