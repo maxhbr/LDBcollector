@@ -11,6 +11,10 @@ Files: docs/*
 Copyright: 2021 Hermine-team <hermine@inno3.fr>
 License: CC-BY-4.0
 
+Files: hermine/templates/django/forms/*
+Copyright: 2021 Hermine-team <hermine@inno3.fr>
+License: AGPL-3.0-only
+
 Files: hermine/vite_modules/src/hermine/fonts/*
 Copyright: 2014 The Nunito Project Authors (https://github.com/googlefonts/nunito)
 License: OFL-1.1
@@ -48,6 +52,10 @@ Copyright: Not copyrightable
 License: CC0-1.0
 
 Files: setup.cfg
+Copyright: Not copyrightable
+License: CC0-1.0
+
+Files: .devcontainer/devcontainer.json
 Copyright: Not copyrightable
 License: CC0-1.0
 
