@@ -2,11 +2,13 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
 
-canonicalName: "AML glslang variant License"
-category: "AML"
-spdxIdentifier: "AML-glslang"
+canonicalName: "Node License"
+category: "Node License"
+shortName: "node-js"
 
 alternativeNames:
-  - "AML-glslang"
-  - "AML glslang variant License"
+  - "Node-js License"
+  - "Node.js License"
 
+otherIds: 
+  - "scancode:node-js"

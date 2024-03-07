@@ -4,12 +4,15 @@
 
 canonicalName: "NVIDIA 2002 Proprietary License"
 category: "NVIDIA"
-shortName: "NVIDIA-2002"
+spdxIdentifier: "AML-glslang"
 
 alternativeNames:
   - "nvidia-2002"
   - "NVIDIA-2002"
   - "NVIDIA 2002 Proprietary License"
+  - "AML-glslang"
+  - "AML glslang variant License"
+  - "AML License (glslang variant)"
 
 otherIds: 
   - "scancode:nvidia-2002"
