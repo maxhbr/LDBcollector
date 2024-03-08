@@ -4,6 +4,12 @@
         "comment": ""
     },
     "ambiguities": {
+        "Academic Free License": {
+            "aliases": [
+                "License :: OSI Approved :: Academic Free License (AFL)"
+            ],
+            "problem": "This license has many different versions (1.1, 1.2, 2.0, 2.1 and 3.0). Without a version number it is not possible to determine which of the versions is meant."
+        },
         "Artistic License": {
             "aliases": [
                 "License :: OSI Approved :: Artistic License",
@@ -50,7 +56,7 @@
         "GNU": {
             "aliases": [
             ],
-            "problem": "There a couple of licenses related to the GNU project. Without the name of the license and the version number it is not possible to determine which of the versions is meant."
+            "problem": "There a couple of licenses related to the GNU project. Without the name of the license and version number it is not possible to determine which of the versions is meant."
         }
     }
 }

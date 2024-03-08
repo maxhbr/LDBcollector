@@ -1,0 +1,18 @@
+{
+"meta": {
+    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+    "comment": ""
+  },
+  "name": "Academic Free License 1.1",
+  "scancode_key": "afl-1.1",
+  "spdxid": "AFL-1.1",
+  "aliases": [
+   "Academic Free License v1.1",
+   "Academic Free License 1.1",
+   "scancode://afl-1.1",
+   "AFL 1.1",
+   "AFL, Version 1.1",
+   "AFL, 1.1",
+   "scancode:afl-1.1"
+  ]
+}
