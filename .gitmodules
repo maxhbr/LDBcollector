@@ -90,3 +90,9 @@
 [submodule "data/oss-review-toolkit-ort-config"]
 	path = data/oss-review-toolkit-ort-config
 	url = git@github.com:oss-review-toolkit/ort-config.git
+[submodule "data/hermine-project-hermine-data"]
+	path = data/hermine-project-hermine-data
+	url = git@gitlab.com:hermine-project/community-data.git
+[submodule "data/fossology-LicenseDb"]
+	path = data/fossology-LicenseDb
+	url = https://github.com/fossology/LicenseDb/
