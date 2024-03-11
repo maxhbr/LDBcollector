@@ -1,0 +1,12 @@
+{
+    "meta": {
+        "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+        "comment": ""
+    },
+    "name": "Linux Syscall Exception to GPL",
+    "scancode_key": "linux-syscall-exception-gpl",
+    "spdxid": "Linux-syscall-note",
+    "aliases": [
+    ],
+    "compatibility_as": "Classpath-exception-2.0"
+}
