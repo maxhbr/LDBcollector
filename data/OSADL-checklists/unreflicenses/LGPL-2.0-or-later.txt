@@ -146,7 +146,7 @@ USE CASE Binary delivery Of Combined work
 		IF Software modification Uses Linked work
 			YOU MUST Ensure Functionality Without Linked work
 	YOU MUST NOT Restrict Granted rights
-USE CASE Source code delivery OR Binary delivery Of Combined library
+USE CASE Source code delivery Of Combined library OR Binary delivery Of Combined library
 	YOU MUST Permit Binary delivery of Library
 	YOU MUST Provide Library
 		ATTRIBUTE Uncombined

@@ -155,7 +155,7 @@ USE CASE Binary delivery Of Combined work
 		IF Software modification Uses Linked work
 			YOU MUST Ensure Functionality Without Linked work
 	YOU MUST NOT Restrict Granted rights
-USE CASE Source code delivery OR Binary delivery Of Combined library
+USE CASE Source code delivery Of Combined library OR Binary delivery Of Combined library
 	YOU MUST Permit Binary delivery of Library
 	YOU MUST Provide Library
 		ATTRIBUTE Uncombined
@@ -181,15 +181,21 @@ COMPATIBILITY curl
 COMPATIBILITY EFL-2.0
 COMPATIBILITY EUPL-1.2
 COMPATIBILITY FSFAP
+COMPATIBILITY FSFUL
 COMPATIBILITY FSFULLR
+COMPATIBILITY FSFULLRWD
 COMPATIBILITY IBM-pibs
 COMPATIBILITY ICU
 COMPATIBILITY ISC
 COMPATIBILITY LGPL-2.1-or-later
 COMPATIBILITY Libpng
+COMPATIBILITY LicenseRef-scancode-ppp
 COMPATIBILITY MIT
 COMPATIBILITY MPL-2.0
 COMPATIBILITY NTP
+COMPATIBILITY Saxpath
+COMPATIBILITY SGI-B-2.0
+COMPATIBILITY SMLNJ
 COMPATIBILITY Unlicense
 COMPATIBILITY UPL-1.0
 COMPATIBILITY WTFPL

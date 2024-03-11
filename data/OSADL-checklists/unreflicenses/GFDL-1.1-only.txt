@@ -1,0 +1,83 @@
+USE CASE Original work Delivery
+YOU MUST Provide License text
+YOU MUST Provide Copyright notice
+YOU MUST Provide License notice
+YOU MUST NOT Modify License
+YOU MUST NOT Use Technological measures
+ATTRIBUTE To Restrict Granted rights
+	EITHER
+		YOU MUST NOT Distribute More than 100 printed copies
+	OR
+		YOU MUST Read Original license
+	EITHER
+		YOU MUST NOT Modify
+	OR
+		YOU MUST Read Original license
+USE CASE Text Delivery
+	YOU MUST Provide License text
+	YOU MUST Provide Copyright notice
+	YOU MUST Provide License notice
+	YOU MUST NOT Modify License
+	YOU MUST NOT Use Technological measures
+		ATTRIBUTE To Restrict Granted rights
+	IF Text Delivery Of Over 100 Printed Copies AND Cover Texts Required
+		YOU MUST Use Covers With Cover Texts
+			ATTRIBUTE Viewable
+		YOU MUST Provide Publisher Attribution notice
+			ATTRIBUTE On Covers
+			ATTRIBUTE Viewable
+		YOU MUST Provide Title
+			ATTRIBUTE On Front cover
+			ATTRIBUTE All words equally Viewable
+		IF Copy Cannot Be Modified
+			EITHER
+				YOU MUST Include Modifiable copy
+					ATTRIBUTE Machine-readable
+			OR
+				YOU MUST Reference Modifiable copy
+					ATTRIBUTE Via Internet
+					ATTRIBUTE No charge
+					ATTRIBUTE Duration At least 1 year after Delivery
+	IF Modification
+		YOU MUST Grant License
+			ATTRIBUTE Original License
+		YOU MUST Rename Modification
+			EXCEPT IF Publisher Permits
+		YOU MUST Provide Notice Of Authorship Of Modification
+			ATTRIBUTE On Title page
+		YOU MUST Provide Notice Of Authorship Of Original work
+			ATTRIBUTE On Title page
+			ATTRIBUTE At least 5
+				EXCEPT IF Less than 5
+		YOU MUST Provide Publisher Attribution notice Of Modified work
+			ATTRIBUTE On Title page
+		YOU MUST Forward Copyright notice
+		YOU MUST Provide Copyright notice For Modification
+			ATTRIBUTE Appropriately
+		YOU MUST Include License notice
+			ATTRIBUTE Grant License
+			ATTRIBUTE Original license
+		YOU MUST NOT Modify License notice
+		YOU MUST Provide License text
+			ATTRIBUTE No Modification
+		YOU MUST NOT Modify "History"
+		YOU MUST Add Modification Name To "History"
+		YOU MUST Add Modification date To "History"
+		YOU MUST Add Modification Authorship To "History"
+		YOU MUST Add Modification Publisher To "History"
+		YOU MUST Add Modification notice To "History"
+		YOU MUST NOT Modify Reference To Modifiable copy
+			EXCEPT IF Published more than 4 years ago OR Publisher Permits
+		YOU MUST NOT Modify "Acknowledgements" or "Dedications" AND Title Of "Acknowledgements" or "Dedications"
+		YOU MUST NOT Modify "Invariant Sections"
+		YOU MUST Delete "Endorsements"
+		YOU MUST NOT Rename Using "Endorsements"
+		YOU MUST NOT Promote
+		IF Combined work  With Works Under Original license
+			YOU MUST Include "Invariant Sections"
+				ATTRIBUTE Not Modified
+			YOU MUST List Invariant Sections In License notice
+			IF Name Of Invariant Sections Identical
+				YOU MUST Add Name Of Author OR Name Of Publisher OR Number
+			YOU MUST Combine "History" AND "Acknowledgements" AND "Dedications"
+			YOU MUST Delete "Endorsements"
