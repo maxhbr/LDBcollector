@@ -228,7 +228,7 @@ def main():
             if args.verbose:
                 print(traceback.format_exc())
 
-            formatted = formatter.format_error(e, args.verbose)
+            formatted, warnings = formatter.format_error(e, args.verbose)
             print(formatted)
             sys.exit(1)
 

@@ -188,6 +188,9 @@ class FossLicenses:
 
                 aliases[alias] = compound['spdxid']
 
+            if COMPATIBILITY_AS_TAG in compound:
+                compats[compound['spdxid']] = compound[COMPATIBILITY_AS_TAG]
+
         # Dual licenses
         # Read license with built-in dual feature, e.g
         # "GPL-2.0-or-later" which can be seen as a dual
