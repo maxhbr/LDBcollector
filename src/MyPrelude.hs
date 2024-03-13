@@ -41,6 +41,7 @@ import System.Directory as X
 import System.FilePath as X
 import System.FilePath.Glob as X (glob)
 import System.IO as X (hPutStrLn, stderr)
+import GHC.IO.Encoding (getLocaleEncoding, utf8)
 import System.Log.Formatter
 import System.Log.Handler (setFormatter)
 import System.Log.Handler.Simple
@@ -78,16 +79,21 @@ infoLogIO msg = infoM rootLoggerName msg
 stderrLogIO :: String -> IO ()
 stderrLogIO msg = errorM rootLoggerName (color Yellow msg)
 
-setupLogger :: IO ()
-setupLogger = do
+setupLogger :: Bool -> IO ()
+setupLogger with_logfile = do
   updateGlobalLogger rootLoggerName (setLevel DEBUG)
   hStderr <-
     streamHandler stderr INFO >>= \lh ->
       return $
         setFormatter lh (simpleLogFormatter "[$time : $loggername : $prio] $msg")
-  hFile <-
-    fileHandler "_debug.log" DEBUG >>= \lh ->
-      return $
-        setFormatter lh (simpleLogFormatter "[$time : $loggername : $prio] $msg")
+  if with_logfile
+    then do
+          hFile <-
+            fileHandler "_debug.log" DEBUG >>= \lh ->
+              return $
+                setFormatter lh (simpleLogFormatter "[$time : $loggername : $prio] $msg")
+          updateGlobalLogger rootLoggerName (setHandlers [hStderr, hFile])
+    else do 
+          infoLogIO "not using utf8 encoding, do not setup log-file"
+          updateGlobalLogger rootLoggerName (setHandlers [hStderr])
   infoLogIO "# start ..."
-  updateGlobalLogger rootLoggerName (setHandlers [hStderr, hFile])

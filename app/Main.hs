@@ -93,7 +93,7 @@ main = withUtf8 $ do
   cwd <- getCurrentDirectory
   putStrLn $ "cwd: " ++ cwd
   args <- getArgs
-  setupLogger
+  setupLogger False
   (_, licenseGraph) <- runLicenseGraphM $ do
     timedLGM "warmup" $ do
       timedLGM "applySources" $

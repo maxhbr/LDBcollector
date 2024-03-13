@@ -105,7 +105,6 @@ instance Source OSADL where
   getSource _ = Source "OSADL"
   getFacts (OSADL dir) = do
     osadls <- glob (dir </> "unreflicenses" </> "*.txt")
-    mapM_ print osadls
     rules <- V.fromList . map wrapFact <$> mapM getOSADL osadls
     OSADLMatrix fromMatrix <- getOSADLMatrix (dir </> "matrixseqexpl.json")
     return $ rules <> V.map wrapFact fromMatrix

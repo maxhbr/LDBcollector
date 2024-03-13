@@ -3,11 +3,6 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs";
-    src = {
-      url = "file:.?submodules=1";
-      type = "git";
-      flake = false;  # not including this results in inifite recursion
-    };
   };
 
   outputs = inputs@{ self, nixpkgs, ... }:let
@@ -48,22 +43,20 @@
 
   in {
     packages.${system} = rec {
-      # data = "${inputs.src}/data";
       ldbcollector = project [];
       ldbcollector-untested = hl.dontCheck self.packages.${system}.ldbcollector;
       ldbcollector-image = pkgs.dockerTools.buildImage {
         name = "maxhbr/ldbcollector";
         tag = "0.1.0";
 
-          runAsRoot = ''
-#!${pkgs.runtimeShell}
-mkdir -p "/ldbcollector/data"
-cp -r "${inputs.src}/data/." "/ldbcollector/data"
-'';
-
         config = {
             Cmd = [ "${self.packages.${system}.ldbcollector-untested}/bin/ldbcollector-exe" ];
             WorkingDir = "/ldbcollector";
+            Env = [
+                "LC_ALL=en_US.UTF-8"
+                "LANG=en_US.UTF-8"
+                "LANGUAGE=en_US.UTF-8"
+            ];
             Volumes = {
                 "/ldbcollector/data" = {};
             };

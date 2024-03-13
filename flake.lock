@@ -17,23 +17,7 @@
     },
     "root": {
       "inputs": {
-        "nixpkgs": "nixpkgs",
-        "src": "src"
-      }
-    },
-    "src": {
-      "flake": false,
-      "locked": {
-        "dirtyRev": "62cdbc858906d814acaa6a256dabf986a5898cbd-dirty",
-        "dirtyShortRev": "62cdbc858-dirty",
-        "lastModified": 1710349269,
-        "narHash": "sha256-Tiht3iE86RZ5Ve9lWDVDinfV8CXid8QXu7qix5mgyok=",
-        "type": "git",
-        "url": "file:.?submodules=1"
-      },
-      "original": {
-        "type": "git",
-        "url": "file:.?submodules=1"
+        "nixpkgs": "nixpkgs"
       }
     }
   },
