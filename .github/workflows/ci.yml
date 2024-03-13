@@ -72,32 +72,32 @@ jobs:
           ./.github/workflows/docker-add-data-to-img.sh "$(readlink -f data)" "ghcr.io/maxhbr/ldbcollector:latest" "ghcr.io/maxhbr/ldbcollector-with-data:latest"
           docker push "ghcr.io/maxhbr/ldbcollector-with-data:latest"
 
-  build:
-    name: Build via Cabal
-    runs-on: ubuntu-latest
+  # cabal:
+  #   name: Build via Cabal
+  #   runs-on: ubuntu-latest
 
-    steps:
-    - uses: actions/checkout@v4
-    - name: submodule checkout (partially complete)
-      run: |
-        sed -i 's/git@github.com:/https:\/\/github.com\//g' .gitmodules
-        sed -i 's/git@gitlab.com:/https:\/\/gitlab.com\//g' .gitmodules
-        git submodule sync --recursive || true
-        git submodule update --init --recursive || true
+  #   steps:
+  #   - uses: actions/checkout@v4
+  #   - name: submodule checkout (partially complete)
+  #     run: |
+  #       sed -i 's/git@github.com:/https:\/\/github.com\//g' .gitmodules
+  #       sed -i 's/git@gitlab.com:/https:\/\/gitlab.com\//g' .gitmodules
+  #       git submodule sync --recursive || true
+  #       git submodule update --init --recursive || true
 
-    - uses: haskell/actions/setup@v2
-      with:
-        ghc-version: '9.4.8'
-        cabal-version: 'latest'
-        enable-stack: false
+  #   - uses: haskell/actions/setup@v2
+  #     with:
+  #       ghc-version: '9.4.8'
+  #       cabal-version: 'latest'
+  #       enable-stack: false
 
-    - run: cabal update
-    - run: cabal build
-    # - run: cabal test
-    # - run: time cabal run -- write BSD-3-Clause
-    # - uses: actions/upload-artifact@v2
-    #   with:
-    #     name: out
-    #     path: _out
+  #   - run: cabal update
+  #   - run: cabal build
+  #   # - run: cabal test
+  #   # - run: time cabal run -- write BSD-3-Clause
+  #   # - uses: actions/upload-artifact@v2
+  #   #   with:
+  #   #     name: out
+  #   #     path: _out
 
 
