@@ -17,6 +17,13 @@ jobs:
       - uses: actions/checkout@v4
       #   with:
       #     submodules: true
+      - name: rewrite ssh to https
+        run: |
+          echo '[url "ssh://git@github.com/"]' >> ~/.gitconfig
+          echo '	insteadOf = https://github.com/' >> ~/.gitconfig
+          echo '[url "ssh://git@gitlab.com/"]' >> ~/.gitconfig
+          echo '	insteadOf = https://gitlab.com/' >> ~/.gitconfig
+
       - name: submodule checkout
         run: |
           ssh-keygen -t rsa -b 4096 -m PEM -f gh-actions-key -q -N ""
