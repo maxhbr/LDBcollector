@@ -22,8 +22,8 @@ jobs:
         run: |
           sed -i 's/git@github.com:/https:\/\/github.com\//g' .gitmodules
           sed -i 's/git@gitlab.com:/https:\/\/gitlab.com\//g' .gitmodules
-          git submodule sync --recursive
-          git submodule update --init --recursive
+          git submodule sync --recursive || true
+          git submodule update --init --recursive || true
           # git submodule update --init
 
       - name: 'Login to GitHub Container Registry'
