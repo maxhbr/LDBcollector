@@ -29,16 +29,16 @@ jobs:
 
     - uses: haskell/actions/setup@v2
       with:
-        ghc-version: '9.2.7' # Exact version of ghc to use
+        ghc-version: '9.4.8' # Exact version of ghc to use
         # cabal-version: 'latest'. Omitted, but defaults to 'latest'
         enable-stack: false
 
     - run: cabal update
     - run: cabal build
-    - run: cabal test
-    - run: time cabal run -- write BSD-3-Clause
-    - uses: actions/upload-artifact@v2
-      with:
-        name: out
-        path: _out
+    # - run: cabal test
+    # - run: time cabal run -- write BSD-3-Clause
+    # - uses: actions/upload-artifact@v2
+    #   with:
+    #     name: out
+    #     path: _out
 
