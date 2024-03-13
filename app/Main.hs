@@ -89,7 +89,6 @@ curation =
 
 main :: IO ()
 main = withUtf8 $ do
-  getLocaleEncoding >>= print
   args <- getArgs
   setupLogger
   (_, licenseGraph) <- runLicenseGraphM $ do

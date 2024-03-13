@@ -100,7 +100,6 @@ library
     , unordered-containers
     , vector
     , warp
-    , with-utf8
     , word-wrap
     , yaml
   default-language: GHC2021
@@ -149,6 +148,7 @@ executable ldbcollector-exe
     , unordered-containers
     , vector
     , warp
+    , with-utf8
     , word-wrap
     , yaml
   default-language: GHC2021

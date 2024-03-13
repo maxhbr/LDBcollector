@@ -4,22 +4,24 @@ set -euo pipefail
 
 cd "$(dirname "$0")"
 
-tag="${1:-maxhbr/ldbcollector}"
-
-cat <<EOF >.dockerignore
-$(cat .gitignore)
-.dockerignore
-$(basename "$0")
-EOF
 
 docker="docker"
 if command -v "podman" &> /dev/null; then
   echo "use podman"
   docker="podman"
 fi
+tag="maxhbr/ldbcollector"
 
-echo "build ..."
-cat <<EOF | $docker build --tag "$tag" -f - .
+dockerignore() {
+    cat <<EOF
+$(cat .gitignore)
+.dockerignore
+$(basename "$0")
+EOF
+}
+ 
+dockerfile() {
+    cat <<EOF
 FROM nixos/nix
 
 RUN set -x \
@@ -34,7 +36,29 @@ RUN nix \
     profile install ".#ldbcollector-untested"
 CMD ldbcollector-exe
 EOF
-echo "run ..."
+}
 
-set -x
-exec $docker run --env PORT=3001 --net host "$tag"
+build() {
+    echo "build ..."
+    dockerignore >.dockerignore
+    dockerfile | $docker build --tag "$tag" -f - .
+}
+
+run() {
+    echo "run ..."
+    set -x
+    exec $docker run --env PORT=3001 --net host "$tag"
+}
+
+if [[ $# -gt 0 && "$1" == "--gen-dockerfile-only" ]]; then
+    # used in CI, to build with github actions
+    dockerignore >.dockerignore
+    dockerfile >Dockerfile
+    exit 0
+fi
+
+build
+if [[ $# -gt 0 && "$1" == "--build-only" ]]; then
+    exit 0
+fi
+run
