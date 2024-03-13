@@ -23,6 +23,7 @@ EOF
 dockerfile() {
     cat <<EOF
 FROM nixos/nix
+LABEL org.opencontainers.image.source="https://github.com/maxhbr/ldbcollector"
 
 RUN set -x \
  && nix-channel --add https://nixos.org/channels/nixos-unstable nixpkgs \
