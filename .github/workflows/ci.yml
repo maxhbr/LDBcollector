@@ -1,0 +1,103 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches:
+      - '*'
+  schedule:
+    - cron: '0 0 * * 0' # weekly
+
+jobs:
+  nix:
+    name: Build via Nix
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: submodule checkout (partially complete)
+        run: |
+          sed -i 's/git@github.com:/https:\/\/github.com\//g' .gitmodules
+          sed -i 's/git@gitlab.com:/https:\/\/gitlab.com\//g' .gitmodules
+          git submodule sync --recursive || true
+          git submodule update --init --recursive || true
+      
+      - uses: cachix/install-nix-action@v25
+        with:
+          github_access_token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - run: nix develop --command cabal build
+        # TODO: also run tests
+      - run: nix build .#ldbcollector-untested
+      - run: nix flake check
+
+  docker:
+    name: Build an Docker image via Nix and push
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: submodule checkout (partially complete)
+        run: |
+          sed -i 's/git@github.com:/https:\/\/github.com\//g' .gitmodules
+          sed -i 's/git@gitlab.com:/https:\/\/gitlab.com\//g' .gitmodules
+          git submodule sync --recursive || true
+          git submodule update --init --recursive || true
+    
+      - uses: cachix/install-nix-action@v25
+        with:
+          github_access_token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: 'Login to GitHub Container Registry'
+        uses: docker/login-action@v1
+        with:
+          registry: ghcr.io
+          username: ${{github.actor}}
+          password: ${{secrets.GITHUB_TOKEN}}
+
+      - name: 'Build and push Image'
+        run: |
+          nix build -o ldbcollector.tar.gz .#ldbcollector-image
+          cat ldbcollector.tar.gz | docker load
+          docker tag "maxhbr/ldbcollector" "ghcr.io/maxhbr/ldbcollector:latest"
+          docker push "ghcr.io/maxhbr/ldbcollector:latest"
+
+      - uses: actions/upload-artifact@v2
+        with:
+          name: ldbcollector.tar.gz
+          path: ldbcollector.tar.gz
+          compression-level: 0
+
+      - name: 'Add data and push Image'
+        run: |
+          ./.github/workflows/docker-add-data-to-img.sh "$(readlink -f data)" "ghcr.io/maxhbr/ldbcollector:latest" "ghcr.io/maxhbr/ldbcollector-with-data:latest"
+          docker push "ghcr.io/maxhbr/ldbcollector-with-data:latest"
+
+  build:
+    name: Build via Cabal
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: submodule checkout (partially complete)
+      run: |
+        sed -i 's/git@github.com:/https:\/\/github.com\//g' .gitmodules
+        sed -i 's/git@gitlab.com:/https:\/\/gitlab.com\//g' .gitmodules
+        git submodule sync --recursive || true
+        git submodule update --init --recursive || true
+
+    - uses: haskell/actions/setup@v2
+      with:
+        ghc-version: '9.4.8'
+        cabal-version: 'latest'
+        enable-stack: false
+
+    - run: cabal update
+    - run: cabal build
+    # - run: cabal test
+    # - run: time cabal run -- write BSD-3-Clause
+    # - uses: actions/upload-artifact@v2
+    #   with:
+    #     name: out
+    #     path: _out
+
+
