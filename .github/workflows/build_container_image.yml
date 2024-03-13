@@ -18,7 +18,7 @@ jobs:
       #   with:
       #     submodules: true
 
-      - name: submodule checkout
+      - name: submodule checkout (partially complete)
         run: |
           sed -i 's/git@github.com:/https:\/\/github.com\//g' .gitmodules
           sed -i 's/git@gitlab.com:/https:\/\/gitlab.com\//g' .gitmodules

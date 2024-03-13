@@ -18,11 +18,14 @@ jobs:
     - uses: actions/checkout@v4
     #   with:
     #     submodules: true
-    - name: non recursive submodule checkout
+   
+    - name: submodule checkout (partially complete)
       run: |
-        mkdir ~/.ssh
-        ssh-keyscan -t rsa gitlab.com >> ~/.ssh/known_hosts
-        git submodule update --init
+        sed -i 's/git@github.com:/https:\/\/github.com\//g' .gitmodules
+        sed -i 's/git@gitlab.com:/https:\/\/gitlab.com\//g' .gitmodules
+        git submodule sync --recursive || true
+        git submodule update --init --recursive || true
+        # git submodule update --init
 
     - uses: haskell/actions/setup@v2
       with:
