@@ -17,33 +17,11 @@ jobs:
       - uses: actions/checkout@v4
       #   with:
       #     submodules: true
-      - name: rewrite ssh to https
-        run: |
-          git config --global url.https://github.com/.insteadOf "git@github.com/"
-          git config --global url.https://github.com/.insteadOf "git@github.com:"
-          git config --global url.https://github.com/.insteadOf "ssh://git@github.com:"
-          git config --global url.https://gitlab.com/.insteadOf "git@gitlab.com/"
-          git config --global url.https://gitlab.com/.insteadOf "git@gitlab.com:"
-          git config --global url.https://gitlab.com/.insteadOf "ssh://git@gitlab.com:"
-          echo '[url "https://github.com/"]' >> ~/.gitconfig
-          echo '	insteadOf = ssh://git@github.com/' >> ~/.gitconfig
-          echo '	insteadOf = git@github.com:' >> ~/.gitconfig
-          echo '[url "https://gitlab.com/"]' >> ~/.gitconfig
-          echo '	insteadOf = ssh://git@gitlab.com/' >> ~/.gitconfig
-          echo '	insteadOf = git@gitlab.com:' >> ~/.gitconfig
 
       - name: submodule checkout
         run: |
-          ssh-keygen -t rsa -b 4096 -m PEM -f gh-actions-key -q -N ""
-          # Start the SSH agent and add the key
-          eval "$(ssh-agent -s)"
-          ssh-add gh-actions-key
-          # Ensure SSH does not ask for host verification
-          mkdir -p ~/.ssh
-          echo -e "Host github.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
-          ssh-keyscan -t rsa gitlab.com >> ~/.ssh/known_hosts
-          ssh-keyscan github.com >> ~/.ssh/known_hosts
-          
+          sed -i 's/git@github.com:/https:\/\/github.com\//g' .gitmodules
+          sed -i 's/git@gitlab.com:/https:\/\/gitlab.com\//g' .gitmodules
           git submodule sync --recursive
           git submodule update --init --recursive
           # git submodule update --init
