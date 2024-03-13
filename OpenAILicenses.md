@@ -12,7 +12,8 @@ Ein Überblick über die Systematik der RAIL-Lizenzen findet sich unter https://
 1. GEMMA Terms of Use (Version release: February 21, 2024): https://ai.google.dev/gemma/terms 
 1. Llma 2 Community License Agreement (Version Release Date: July 18, 2023): https://github.com/facebookresearch/llama/blob/v2/LICENSE
 1. Responsible Artificial Intelligence Source Code License (v 1.0) (OpenRAIL-S): https://www.licenses.ai/source-code-license-v1 
-1. Responsible Artificial Intelligence Source Code License (v 1.1) (OpenRAIL-S): https://www.licenses.ai/source-code-license 
+1. Responsible Artificial Intelligence Source Code License (v 1.1) (OpenRAIL-S): https://www.licenses.ai/source-code-license
+1. SIL RAIL-M RAIL License (v1.0): https://huggingface.co/spaces/sil-ai/model-license
 1. STABILITY AI NON-COMMERCIAL RESEARCH COMMUNITY LICENSE AGREEMENT /Version Release Date: November 28, 2023): https://huggingface.co/stabilityai/sdxl-turbo/blob/main/LICENSE.TXT
 1. Stable Video Diffusion Non-commercial Community License Agreement: https://huggingface.co/stabilityai/stable-video-diffusion-img2vid-xt/blob/main/LICENSE
 1. Tongyi Qianwen LICENSE AGREEMENT (Version Release Date: August 3, 2023): https://huggingface.co/Qwen/Qwen1.5-72B/blob/main/LICENSE
