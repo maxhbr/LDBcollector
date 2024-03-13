@@ -15,6 +15,7 @@ import Ldbcollector.Sink.Metrics
 import Ldbcollector.Source
 import System.Environment (getArgs)
 import Prelude hiding (div, head, id)
+import Main.Utf8 (withUtf8)
 
 writeSvgByName :: FilePath -> LicenseName -> LicenseGraphM ()
 writeSvgByName outDir lic = do
@@ -87,7 +88,8 @@ curation =
       ]
 
 main :: IO ()
-main = do
+main = withUtf8 $ do
+  getLocaleEncoding >>= print
   args <- getArgs
   setupLogger
   (_, licenseGraph) <- runLicenseGraphM $ do

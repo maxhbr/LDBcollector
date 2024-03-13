@@ -8,7 +8,6 @@ tag="${1:-maxhbr/ldbcollector}"
 
 cat <<EOF >.dockerignore
 $(cat .gitignore)
-docker
 .dockerignore
 $(basename "$0")
 EOF
@@ -32,8 +31,10 @@ ADD . .
 RUN nix \
     --extra-experimental-features nix-command \
     --extra-experimental-features flakes \
-    profile install "."
+    profile install ".#ldbcollector-untested"
 CMD ldbcollector-exe
 EOF
 echo "run ..."
-$docker run --env PORT=3001 --net host "$tag"
+
+set -x
+exec $docker run --env PORT=3001 --net host "$tag"

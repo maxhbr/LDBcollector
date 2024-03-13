@@ -4,6 +4,7 @@ set -e
 
 mkdir -p OSADL-checklists
 cd OSADL-checklists
+set -x
 wget -O language.txt https://www.osadl.org/fileadmin/checklists/all/language.txt
 wget -O actions.txt https://www.osadl.org/fileadmin/checklists/all/actions.txt
 wget -O terms.txt https://www.osadl.org/fileadmin/checklists/all/terms.txt
