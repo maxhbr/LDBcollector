@@ -25,12 +25,12 @@ jobs:
           git config --global url.https://gitlab.com/.insteadOf "git@gitlab.com/"
           git config --global url.https://gitlab.com/.insteadOf "git@gitlab.com:"
           git config --global url.https://gitlab.com/.insteadOf "ssh://git@gitlab.com:"
-          # echo '[url "https://github.com/"]' >> ~/.gitconfig
-          # echo '	insteadOf = ssh://git@github.com/' >> ~/.gitconfig
-          # echo '	insteadOf = git@github.com:' >> ~/.gitconfig
-          # echo '[url "https://gitlab.com/"]' >> ~/.gitconfig
-          # echo '	insteadOf = ssh://git@gitlab.com/' >> ~/.gitconfig
-          # echo '	insteadOf = git@gitlab.com:' >> ~/.gitconfig
+          echo '[url "https://github.com/"]' >> ~/.gitconfig
+          echo '	insteadOf = ssh://git@github.com/' >> ~/.gitconfig
+          echo '	insteadOf = git@github.com:' >> ~/.gitconfig
+          echo '[url "https://gitlab.com/"]' >> ~/.gitconfig
+          echo '	insteadOf = ssh://git@gitlab.com/' >> ~/.gitconfig
+          echo '	insteadOf = git@gitlab.com:' >> ~/.gitconfig
 
       - name: submodule checkout
         run: |
