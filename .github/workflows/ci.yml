@@ -55,27 +55,3 @@ jobs:
         name: out
         path: _out
 
-  build-docker:
-    runs-on: ubuntu-latest
-
-    steps:
-    - uses: actions/checkout@v3
-    #   with:
-    #     submodules: true
-    - name: non recursive submodule checkout
-      run: |
-        mkdir ~/.ssh
-        ssh-keyscan -t rsa gitlab.com >> ~/.ssh/known_hosts
-        git submodule update --init
-    - name: Set up QEMU
-      uses: docker/setup-qemu-action@v2
-    - name: Set up Docker Buildx
-      uses: docker/setup-buildx-action@v2
-    - run: |
-        ./docker/docker-build.sh
-        docker save maxhbr/ldbcollector:latest | gzip > ldbcollector_latest.tar.gz
-    - uses: actions/upload-artifact@v2
-      with:
-        name: dockerimage
-        path: ldbcollector_latest.tar.gz
-

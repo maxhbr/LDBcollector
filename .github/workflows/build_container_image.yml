@@ -33,6 +33,12 @@ jobs:
 
       - name: 'Build and push Image'
         run: |
-          docker-build-and-run.sh "--build-only"
+          ./docker-build-and-run.sh "--build-only"
+          docker save maxhbr/ldbcollector:latest | gzip > ldbcollector_latest.tar.gz
           docker tag "maxhbr/ldbcollector" "ghcr.io/maxhbr/ldbcollector:latest"
           docker push "ghcr.io/maxhbr/ldbcollector:latest"
+
+      - uses: actions/upload-artifact@v2
+        with:
+          name: dockerimage
+          path: ldbcollector_latest.tar.gz
