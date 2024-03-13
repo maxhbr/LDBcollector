@@ -8,7 +8,7 @@ newtag="$3"
 
 cd $datadir
 
-cat <<EOF | $docker build --tag "$newtag" -f - .
+cat <<EOF | docker build --tag "$newtag" -f - .
 FROM $oldtag
 WORKDIR 
 ADD . /ldbcollector/data
