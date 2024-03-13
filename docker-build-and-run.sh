@@ -34,6 +34,7 @@ ADD . .
 RUN nix \
     --extra-experimental-features nix-command \
     --extra-experimental-features flakes \
+    --impure \
     profile install ".#ldbcollector-untested"
 CMD ldbcollector-exe
 EOF
