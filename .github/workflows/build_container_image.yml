@@ -14,10 +14,14 @@ jobs:
     name: Push Docker image to Docker Hub
     runs-on: ubuntu-latest
     steps:
-      - name: Check out the repo
-        uses: actions/checkout@v4
-        with:
-          submodules: recursive
+      - uses: actions/checkout@v4
+      #   with:
+      #     submodules: true
+      - name: non recursive submodule checkout
+        run: |
+          mkdir ~/.ssh
+          ssh-keyscan -t rsa gitlab.com >> ~/.ssh/known_hosts
+          git submodule update --init
 
       - name: 'Login to GitHub Container Registry'
         uses: docker/login-action@v1
