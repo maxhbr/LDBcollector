@@ -6,5 +6,9 @@ class FlameException(Exception):
     """
     Simple exception for module
     """
-    def __init__(self, message):
+    def __init__(self, message, problems=None):
         super().__init__(message)
+        self._problems = problems
+
+    def problems(self):
+        return self._problems
