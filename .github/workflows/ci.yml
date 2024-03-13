@@ -31,21 +31,9 @@ jobs:
       with:
         ghc-version: '9.2.7' # Exact version of ghc to use
         # cabal-version: 'latest'. Omitted, but defaults to 'latest'
-        enable-stack: true
-        stack-version: 'latest'
+        enable-stack: false
 
-    - name: Cache
-      uses: actions/cache@v1
-      env:
-        cache-name: cache-stack
-      with:
-        path: ~/.stack
-        key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package.yaml') }}
-        restore-keys: |
-          ${{ runner.os }}-build-${{ env.cache-name }}-
-          ${{ runner.os }}-build-
-          ${{ runner.os }}-
-
+    - run: cabal update
     - run: cabal build
     - run: cabal test
     - run: time cabal run -- write BSD-3-Clause
