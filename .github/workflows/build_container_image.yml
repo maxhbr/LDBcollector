@@ -41,7 +41,7 @@ jobs:
         run: |
           nix build -o ldbcollector.tar.gz .#ldbcollector-image
           cat ldbcollector.tar.gz | docker load
-          docker tag "localhost/maxhbr/ldbcollector" "ghcr.io/maxhbr/ldbcollector:latest"
+          docker tag "maxhbr/ldbcollector" "ghcr.io/maxhbr/ldbcollector:latest"
           docker push "ghcr.io/maxhbr/ldbcollector:latest"
 
       - uses: actions/upload-artifact@v2
