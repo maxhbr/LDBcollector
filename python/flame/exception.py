@@ -12,4 +12,3 @@ class FlameException(Exception):
 
     def problems(self):
         return self._problems
-

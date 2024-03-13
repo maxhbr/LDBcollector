@@ -269,7 +269,7 @@ class JsonOutputFormatter(OutputFormatter):
     def format_error(self, error, verbose=False):
         new_error = {
             'message': str(error),
-            'problems': error.problems()
+            'problems': error.problems(),
         }
         return json.dumps(new_error, indent=4), None
 
