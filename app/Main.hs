@@ -16,6 +16,7 @@ import Ldbcollector.Source
 import System.Environment (getArgs)
 import Prelude hiding (div, head, id)
 import Main.Utf8 (withUtf8)
+import System.Directory (getCurrentDirectory, getDirectoryContents)
 
 writeSvgByName :: FilePath -> LicenseName -> LicenseGraphM ()
 writeSvgByName outDir lic = do
@@ -89,6 +90,8 @@ curation =
 
 main :: IO ()
 main = withUtf8 $ do
+  cwd <- getCurrentDirectory
+  putStrLn $ "cwd: " ++ cwd
   args <- getArgs
   setupLogger
   (_, licenseGraph) <- runLicenseGraphM $ do
