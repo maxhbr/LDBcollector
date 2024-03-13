@@ -631,4 +631,5 @@ class FossLicenses:
         """
         """
         if not compat_supported['supported']:
-            raise FlameException(f'Not all licenses supported by OSADL\'s compatibility matrix "{compat_supported}"')
+            raise FlameException('Not all licenses supported by OSADL\'s compatibility matrix',
+                                 compat_supported)
