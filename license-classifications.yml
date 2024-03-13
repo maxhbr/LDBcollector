@@ -5030,3 +5030,10 @@ categorizations:
       - "proprietary-free"
       - "property:include-in-notice-file"
       - "include-in-notice-file"
+
+  # https://spdx.org/licenses/UPL-1.0.html
+  - id: "UPL-1.0"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
