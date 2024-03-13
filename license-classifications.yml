@@ -2166,11 +2166,11 @@ categorizations:
 
   - id: "LPPL-1.3a"
     categories:
-      - "property:unchecked"
       - "copyleft-strong"
       - "property:include-in-notice-file"
       - "include-in-notice-file"
       - "property:distribute-source-code"
+      - "property:mark-modifications"
 
   # https://spdx.org/licenses/LPPL-1.3c.html
   - id: "LPPL-1.3c"
