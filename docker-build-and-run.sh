@@ -29,6 +29,10 @@ RUN set -x \
  && nix-channel --add https://nixos.org/channels/nixos-unstable nixpkgs \
  && nix-channel --update
 
+ENV LANG en_US.UTF-8  
+ENV LANGUAGE en_US:en  
+ENV LC_ALL en_US.UTF-8     
+
 WORKDIR /ldbcollector
 ADD . .
 RUN nix \
@@ -49,7 +53,7 @@ build() {
 run() {
     echo "run ..."
     set -x
-    exec $docker run --env PORT=3001 --net host "$tag"
+    exec $docker run -p 3001:3001 --env PORT=3001 "$tag"
 }
 
 if [[ $# -gt 0 && "$1" == "--gen-dockerfile-only" ]]; then

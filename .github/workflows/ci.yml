@@ -46,13 +46,9 @@ jobs:
           ${{ runner.os }}-build-
           ${{ runner.os }}-
 
-    - run: |
-        sudo apt-get update
-        sudo apt-get install -y graphviz libghc-curl-dev
-
-    - run: stack build
-    - run: stack test
-    - run: time stack run -- write BSD-3-Clause
+    - run: cabal build
+    - run: cabal test
+    - run: time cabal run -- write BSD-3-Clause
     - uses: actions/upload-artifact@v2
       with:
         name: out

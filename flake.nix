@@ -51,6 +51,14 @@
       # data = "${inputs.src}/data";
       ldbcollector = project [];
       ldbcollector-untested = hl.dontCheck self.packages.${system}.ldbcollector;
+      ldbcollector-image = pkgs.dockerTools.buildImage {
+        name = "maxhbr/ldbcollector";
+        tag = "0.1.0";
+
+        config = { Cmd = [ "${self.packages.${system}.ldbcollector-untested}/bin/ldbcollector-exe" ]; };
+
+        created = "now";
+      };
       default = ldbcollector;
     };
     apps.${system} = rec {
