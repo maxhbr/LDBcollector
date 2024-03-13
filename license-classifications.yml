@@ -5063,3 +5063,10 @@ categorizations:
       - "permissive"
       - "property:include-in-notice-file"
       - "include-in-notice-file"
+
+  # hhttps://spdx.org/licenses/xlock.html
+  - id: "xlock"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
