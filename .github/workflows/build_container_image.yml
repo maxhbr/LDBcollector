@@ -49,3 +49,8 @@ jobs:
           name: ldbcollector.tar.gz
           path: ldbcollector.tar.gz
           compression-level: 0
+
+      - name: 'Add data and push Image'
+        run: |
+          ./.github/workflows/docker-add-data-to-img.sh "$(readlink -f data)" "ghcr.io/maxhbr/ldbcollector:latest" "ghcr.io/maxhbr/ldbcollector-with-data:latest"
+          docker push "ghcr.io/maxhbr/ldbcollector-with-data:latest"
