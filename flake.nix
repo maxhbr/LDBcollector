@@ -3,11 +3,11 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs";
-    src = {
-      url = "file:.?submodules=1";
-      type = "git";
-      flake = false;  # not including this results in inifite recursion
-    };
+    # src = {
+    #   url = "file:.?submodules=1";
+    #   type = "git";
+    #   flake = false;  # not including this results in inifite recursion
+    # };
   };
 
   outputs = inputs@{ self, nixpkgs, ... }:let
@@ -48,7 +48,7 @@
 
   in {
     packages.${system} = rec {
-      data = "${inputs.src}/data";
+      # data = "${inputs.src}/data";
       ldbcollector = project [];
       ldbcollector-untested = hl.dontCheck self.packages.${system}.ldbcollector;
       default = ldbcollector;
