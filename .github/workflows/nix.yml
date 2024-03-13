@@ -1,4 +1,4 @@
-name: CI
+name: Nix build
 
 on:
   push:
@@ -16,9 +16,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    #   with:
-    #     submodules: true
-   
     - name: submodule checkout (partially complete)
       run: |
         sed -i 's/git@github.com:/https:\/\/github.com\//g' .gitmodules
@@ -27,18 +24,11 @@ jobs:
         git submodule update --init --recursive || true
         # git submodule update --init
 
-    - uses: haskell/actions/setup@v2
+    - uses: cachix/install-nix-action@v25
       with:
-        ghc-version: '9.2.7' # Exact version of ghc to use
-        # cabal-version: 'latest'. Omitted, but defaults to 'latest'
-        enable-stack: false
+        github_access_token: ${{ secrets.GITHUB_TOKEN }}
 
-    - run: cabal update
-    - run: cabal build
-    - run: cabal test
-    - run: time cabal run -- write BSD-3-Clause
-    - uses: actions/upload-artifact@v2
-      with:
-        name: out
-        path: _out
+    - run: nix build .#
+
+    - run: nix flake check
 
