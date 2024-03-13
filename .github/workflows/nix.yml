@@ -28,7 +28,7 @@ jobs:
       with:
         github_access_token: ${{ secrets.GITHUB_TOKEN }}
 
-    - run: nix build .#
-
+    - run: nix develop --command cabal build --test
+    - run: nix build .#ldbcollector-untested
     - run: nix flake check
 
