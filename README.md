@@ -57,7 +57,7 @@ graph LR;
     GraphViz --> Server;
     JSON --> Server;
     LDBcollector..> Wiki;
-    LDBcollector...>Policy["Open Source Policy"];
+    LDBcollector..>Policy["Open Source Policy"];
     Wiki..>Policy;
 ```
 
