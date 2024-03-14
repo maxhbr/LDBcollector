@@ -3,16 +3,44 @@
 This is a framework to collect, parse, normalize and join metadata about open source and other software licenses.
 
 
-## Quickstart:
+## Ways to build, run and develop:
 
+### Nix
+Nix is used to build the package and to create a container with it. It uses flakes.
+
+#### Develop
+A development environment where cabal is provided can be started with `nix develop`.
+One can directly trigger cabal comands via `nix develop --command "cabal build --test"`.
+This is wrapped in `./nix-develop*.sh` scripts.
+
+The `fmt.sh` script is used to apply formatting rules to the code.
+
+#### Building
+The relevant targets are:
+- `nix build .#` or `nix build .#ldbcollector` to build the package
+- `nix build .#ldbcollector-untested` to build the package without tests in nix
+- `nix build .#ldbcollector-container` to build the container
+
+#### Building and Running
+- `nix build .#` or `nix build .#ldbcollector` to build the package
+
+### Docker
+If the relevant docker images is available (`maxhbr/ldbcollector` or `localhost/maxhbr/ldbcollector`), you can run the container with
+
+```bash
+./docker-run.sh
 ```
-$ docker-build-and-run.sh
-```
+
+There is no direct way to build the image without nix, but you can fetch the images from ghcr.io (`docker pull ghcr.io/maxhbr/ldbcollector:latest` or `docker pull ghcr.io/maxhbr/ldbcollector-with-data:latest`, if you have permissions or if they become public) or as a build artifact of the pipeline.
+
+### Cabal
+This is also a cabal project and can be developed that way. But the nix way is prefered and actually used.
 
 ## History:
 This is a rewrite of the old ldbcollector, which is found  in the branch v1.
 
 This rewrite is not yet stable and for stable use the old version is prefered.
+
 
 # Sources and Outputs
 
