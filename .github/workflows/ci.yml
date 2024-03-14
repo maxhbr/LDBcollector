@@ -58,8 +58,8 @@ jobs:
         run: |
           ./nix-docker-build-and-load.sh
           tag="$(./nix-docker-build-and-load.sh echo-tag)"
-          docker tag "$tag" "ghcr.io/maxhbr/ldbcollector:latest"
-          docker push "ghcr.io/maxhbr/ldbcollector:latest"
+          podman tag "$tag" "ghcr.io/maxhbr/ldbcollector:latest"
+          podman push "ghcr.io/maxhbr/ldbcollector:latest"
 
       - uses: actions/upload-artifact@v2
         with:
@@ -70,7 +70,7 @@ jobs:
       - name: 'Add data and push Image'
         run: |
           ./.github/workflows/docker-add-data-to-img.sh "$(readlink -f data)" "ghcr.io/maxhbr/ldbcollector:latest" "ghcr.io/maxhbr/ldbcollector-with-data:latest"
-          docker push "ghcr.io/maxhbr/ldbcollector-with-data:latest"
+          podman push "ghcr.io/maxhbr/ldbcollector-with-data:latest"
 
   # cabal:
   #   name: Build via Cabal
