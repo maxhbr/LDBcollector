@@ -2166,11 +2166,11 @@ categorizations:
 
   - id: "LPPL-1.3a"
     categories:
-      - "property:unchecked"
       - "copyleft-strong"
       - "property:include-in-notice-file"
       - "include-in-notice-file"
       - "property:distribute-source-code"
+      - "property:mark-modifications"
 
   # https://spdx.org/licenses/LPPL-1.3c.html
   - id: "LPPL-1.3c"
@@ -5040,6 +5040,32 @@ categorizations:
 
 # https://spdx.org/licenses/UPL-1.0.html
   - id: "UPL-1.0"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/GPL-3.0-only.html
+  # https://spdx.org/licenses/Font-exception-2.0.html
+  - id: "GPL-3.0-only WITH Font-exception-2.0"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:antitivo-clause"
+      - "property:distribute-source-code"
+      - "property:patent-clause"
+      - "property:AutoConf-or-other-exception"
+
+  # https://spdx.org/licenses/MIT-Modern-Variant.html
+  - id: "MIT-Modern-Variant"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # hhttps://spdx.org/licenses/xlock.html
+  - id: "xlock"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
