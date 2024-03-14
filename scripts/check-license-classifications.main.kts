@@ -3,8 +3,8 @@
 // SPDX-FileCopyrightText: 2023 Double Open Oy <support@doubleopen.org>
 // SPDX-License-Identifier: CC0-1.0
 
-@file:CompilerOptions("-jvm-target", "17")
-@file:DependsOn("org.ossreviewtoolkit:model:10.0.0")
+@file:CompilerOptions("-jvm-target", "11")
+@file:DependsOn("org.ossreviewtoolkit:model:18.0.0")
 
 import java.io.File
 
