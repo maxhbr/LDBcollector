@@ -24,7 +24,7 @@ val licenseClassifications = runCatching {
 }
 
 val (validLicenses, invalidLicenses) = licenseClassifications.categoriesByLicense.keys.partition {
-    it.isValid(Strictness.ALLOW_ANY)
+    it.isValid(Strictness.ALLOW_LICENSEREF_EXCEPTIONS)
 }
 
 if (invalidLicenses.isNotEmpty()) {
