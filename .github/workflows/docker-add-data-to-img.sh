@@ -10,6 +10,6 @@ cd $datadir
 
 cat <<EOF | docker build --tag "$newtag" -f - .
 FROM $oldtag
-WORKDIR 
+LABEL org.opencontainers.image.source="https://github.com/maxhbr/ldbcollector"
 ADD . /ldbcollector/data
 EOF
