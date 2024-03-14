@@ -19,6 +19,7 @@ jobs:
         run: |
           sed -i 's/git@github.com:/https:\/\/github.com\//g' .gitmodules
           sed -i 's/git@gitlab.com:/https:\/\/gitlab.com\//g' .gitmodules
+          git submodule update --init
           git submodule sync --recursive || true
           git submodule update --init --recursive || true
       
@@ -48,6 +49,7 @@ jobs:
         run: |
           sed -i 's/git@github.com:/https:\/\/github.com\//g' .gitmodules
           sed -i 's/git@gitlab.com:/https:\/\/gitlab.com\//g' .gitmodules
+          git submodule update --init
           git submodule sync --recursive || true
           git submodule update --init --recursive || true
 
