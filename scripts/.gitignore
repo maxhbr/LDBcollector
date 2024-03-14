@@ -1,0 +1,7 @@
+# SPDX-FileCopyrightText: 2024 Double Open Oy <support@doubleopen.org>
+# SPDX-License-Identifier: CC0-1.0
+
+/.gradle/
+/gradle/
+gradlew
+gradlew.bat
