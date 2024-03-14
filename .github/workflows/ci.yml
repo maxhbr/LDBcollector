@@ -28,7 +28,15 @@ jobs:
       
       - run: nix develop --command cabal build
         # TODO: also run tests
-      - run: nix build .#ldbcollector-untested
+      - run: |
+          nix build .#ldbcollector-untested
+          nix-store --export $(nix-store --query --requisites ./result) > ldbcollector.nar
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ldbcollector.nar
+          path: ldbcollector.nar
+          compression-level: 0
+          retention-days: 90
       - run: nix flake check
 
   docker:

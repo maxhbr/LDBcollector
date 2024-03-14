@@ -70,7 +70,7 @@ The `fmt.sh` script is used to apply formatting rules to the code.
 The relevant targets are:
 - `nix build .#` or `nix build .#ldbcollector` to build the package
 - `nix build .#ldbcollector-untested` to build the package without tests in nix
-- `nix build -o ldbcollector.tar.gz .#ldbcollector-container` to build the container
+- `nix build -o ldbcollector.tar.gz .#ldbcollector-image` to build the container
   - it will create an output in `ldbcollector.tar.gz` and has the tag `maxhbr/ldbcollector:latest` and can be loaded with `docker load -i ldbcollector.tar.gz`
   - this is wrapped in the script `./nix-docker-build-and-load.sh`
 

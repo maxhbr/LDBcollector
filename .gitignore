@@ -1,6 +1,7 @@
 _*
 .dockerignore
 /*.tar.gz
+*.nar
 
 # nix
 result
