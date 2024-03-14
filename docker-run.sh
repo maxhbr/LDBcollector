@@ -30,7 +30,7 @@ if [[ -z "$("$docker" images -q "$tag" 2> /dev/null)" ]]; then
     $docker pull "$tag"
 fi
 
-$docker run -it \
+$docker run \
     -v "$(pwd)/data":/ldbcollector/data \
     --env PORT=$PORT \
     -p "$PORT:$PORT" \
