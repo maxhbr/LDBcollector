@@ -56,9 +56,9 @@ jobs:
 
       - name: 'Build and push Image'
         run: |
-          nix build -o ldbcollector.tar.gz .#ldbcollector-image
-          cat ldbcollector.tar.gz | docker load
-          docker tag "maxhbr/ldbcollector" "ghcr.io/maxhbr/ldbcollector:latest"
+          ./nix-docker-build-and-load.sh
+          tag="$(./nix-docker-build-and-load.sh echo-tag)"
+          docker tag "$tag" "ghcr.io/maxhbr/ldbcollector:latest"
           docker push "ghcr.io/maxhbr/ldbcollector:latest"
 
       - uses: actions/upload-artifact@v2
