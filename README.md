@@ -4,12 +4,20 @@ This is a framework to collect, parse, normalize and join metadata about open so
 
 ## Quickstart:
 
-(this might be blocked by missing permissions)
+### Get the docker image
+
+If permissions allow, one can fetch the image from ghcr.io
+```
+$ docker pull ghcr.io/maxhbr/ldbcollector-with-data:latest
+```
+or download the `ldbcollector-with-data.tar.gz` artifact created by github actions and load it with `docker load ...`
+
+### Run the docker image
 
 ```bash
-$ docker pull ghcr.io/maxhbr/ldbcollector-with-data:latest
 $ docker run --env PORT=3001 -p "3001:3001" "ghcr.io/maxhbr/ldbcollector-with-data:latest"
 ```
+One might need to adopt the tag, to match the image in the local registry.
 
 ## History:
 This is a rewrite of the old ldbcollector, which is found  in the branch v1.
