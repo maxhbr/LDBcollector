@@ -21,8 +21,8 @@
 
   In this namespace abbreviations are used for Maven's groupId, artifactId, and
   version concepts.  So for example:
-  * `ga` means groupId & artifactId
-  * `gav` means groupId, artifactId & version
+  * `GA` means groupId & artifactId
+  * `GAV` means groupId, artifactId & version
   
   In function calls where a version isn't required or provided, the library will
   determine and use the latest available version, as determined from (in order):
@@ -279,8 +279,7 @@
            set)))
 
 (defn gav->expressions-info
-  "Returns an expressions-info map for the given Maven GA (group-id,
-  artifact-id) and optionally V (version).
+  "Returns an expressions-info map for the given GA and (optionally) V.
 
   If version is not provided, the latest version is looked up (which involves
   file and potentially also network I/O)."
@@ -292,8 +291,8 @@
          (pom->expressions-info pom-is (str pom-uri)))))))
 
 (defn gav->expressions
-  "Returns a set of SPDX expressions (Strings) for the given Maven GA (group-id,
-  artifact-id) and optionally V (version).
+  "Returns a set of SPDX expressions (Strings) for the given GA and optionally
+  V.
 
   If version is not provided, the latest version is looked up (which involves
   file and potentially also network I/O)."
