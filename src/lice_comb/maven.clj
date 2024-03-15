@@ -17,7 +17,20 @@
 ;
 
 (ns lice-comb.maven
-  "Functionality related to combing Maven POMs for license information."
+  "Functionality related to combing Maven POMs for license information.
+
+In this namespace abbreviations are used for Maven's groupId, artifactId, and
+version concepts.  So for example:
+* `ga` means groupId & artifactId
+* `gav` means groupId, artifactId & version
+
+In function calls where a version isn't required or provided, the library will
+determine and use the latest available version, as determined from (in order):
+1. your local Maven cache (usually ~/.m2/repository)
+2. Maven Central
+3. Clojars
+
+Other/custom Maven artifact repositories are not currently supported."
   (:require [clojure.string                  :as s]
             [clojure.java.io                 :as io]
             [clojure.java.shell              :as sh]
