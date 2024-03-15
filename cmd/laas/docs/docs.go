@@ -848,7 +848,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/models.ObligationInput"
+                            "$ref": "#/definitions/models.ObligationPOSTRequestJSONSchema"
                         }
                     }
                 ],
@@ -989,7 +989,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/models.UpdateObligation"
+                            "$ref": "#/definitions/models.ObligationPATCHRequestJSONSchema"
                         }
                     }
                 ],
@@ -1682,89 +1682,27 @@ const docTemplate = `{
                         "white",
                         "yellow",
                         "red"
-                    ]
+                    ],
+                    "example": "green"
                 },
                 "comment": {
-                    "type": "string",
-                    "example": "This is a comment."
+                    "type": "string"
                 },
                 "id": {
                     "type": "integer",
                     "example": 147
                 },
-                "md5": {
-                    "type": "string",
-                    "example": "deadbeef"
-                },
                 "modifications": {
-                    "type": "boolean"
-                },
-                "text": {
-                    "type": "string",
-                    "example": "Source code be made available when distributing the software."
-                },
-                "text_updatable": {
-                    "type": "boolean"
-                },
-                "topic": {
-                    "type": "string",
-                    "example": "copyleft"
-                },
-                "type": {
-                    "type": "string",
-                    "enum": [
-                        "obligation",
-                        "restriction",
-                        "risk",
-                        "right"
-                    ]
-                }
-            }
-        },
-        "models.ObligationInput": {
-            "type": "object",
-            "required": [
-                "text",
-                "topic",
-                "type"
-            ],
-            "properties": {
-                "active": {
                     "type": "boolean",
                     "example": true
                 },
-                "classification": {
-                    "type": "string",
-                    "enum": [
-                        "green",
-                        "white",
-                        "yellow",
-                        "red"
-                    ]
-                },
-                "comment": {
-                    "type": "string",
-                    "example": "This is a comment."
-                },
-                "modifications": {
-                    "type": "boolean"
-                },
-                "shortnames": {
-                    "type": "array",
-                    "items": {
-                        "type": "string"
-                    },
-                    "example": [
-                        "GPL-2.0-only",
-                        "GPL-2.0-or-later"
-                    ]
-                },
                 "text": {
                     "type": "string",
                     "example": "Source code be made available when distributing the software."
                 },
                 "text_updatable": {
-                    "type": "boolean"
+                    "type": "boolean",
+                    "example": true
                 },
                 "topic": {
                     "type": "string",
@@ -1777,7 +1715,8 @@ const docTemplate = `{
                         "restriction",
                         "risk",
                         "right"
-                    ]
+                    ],
+                    "example": "risk"
                 }
             }
         },
@@ -1815,6 +1754,108 @@ const docTemplate = `{
                 "topic": {
                     "type": "string",
                     "example": "copyleft"
+                }
+            }
+        },
+        "models.ObligationPATCHRequestJSONSchema": {
+            "type": "object",
+            "properties": {
+                "active": {
+                    "type": "boolean",
+                    "example": true
+                },
+                "classification": {
+                    "type": "string",
+                    "enum": [
+                        "green",
+                        "white",
+                        "yellow",
+                        "red"
+                    ]
+                },
+                "comment": {
+                    "type": "string",
+                    "example": "This is a comment."
+                },
+                "modifications": {
+                    "type": "boolean"
+                },
+                "text": {
+                    "type": "string",
+                    "example": "Source code be made available when distributing the software."
+                },
+                "text_updatable": {
+                    "type": "boolean"
+                },
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "obligation",
+                        "restriction",
+                        "risk",
+                        "right"
+                    ]
+                }
+            }
+        },
+        "models.ObligationPOSTRequestJSONSchema": {
+            "type": "object",
+            "required": [
+                "active",
+                "classification",
+                "comment",
+                "modifications",
+                "shortnames",
+                "text",
+                "topic",
+                "type"
+            ],
+            "properties": {
+                "active": {
+                    "type": "boolean",
+                    "example": true
+                },
+                "classification": {
+                    "type": "string",
+                    "enum": [
+                        "green",
+                        "white",
+                        "yellow",
+                        "red"
+                    ]
+                },
+                "comment": {
+                    "type": "string"
+                },
+                "modifications": {
+                    "type": "boolean"
+                },
+                "shortnames": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "example": [
+                        "GPL-2.0-only",
+                        "GPL-2.0-or-later"
+                    ]
+                },
+                "text": {
+                    "type": "string",
+                    "example": "Source code be made available when distributing the software."
+                },
+                "topic": {
+                    "type": "string",
+                    "example": "copyleft"
+                },
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "obligation",
+                        "restriction",
+                        "risk",
+                        "right"
+                    ]
                 }
             }
         },
@@ -1886,51 +1927,6 @@ const docTemplate = `{
                 "search_term": {
                     "type": "string",
                     "example": "MIT License"
-                }
-            }
-        },
-        "models.UpdateObligation": {
-            "type": "object",
-            "properties": {
-                "active": {
-                    "type": "boolean",
-                    "example": true
-                },
-                "classification": {
-                    "type": "string",
-                    "enum": [
-                        "green",
-                        "white",
-                        "yellow",
-                        "red"
-                    ]
-                },
-                "comment": {
-                    "type": "string",
-                    "example": "This is a comment."
-                },
-                "modifications": {
-                    "type": "boolean"
-                },
-                "text": {
-                    "type": "string",
-                    "example": "Source code be made available when distributing the software."
-                },
-                "text_updatable": {
-                    "type": "boolean"
-                },
-                "topic": {
-                    "type": "string",
-                    "example": "copyleft"
-                },
-                "type": {
-                    "type": "string",
-                    "enum": [
-                        "obligation",
-                        "restriction",
-                        "risk",
-                        "right"
-                    ]
                 }
             }
         },
