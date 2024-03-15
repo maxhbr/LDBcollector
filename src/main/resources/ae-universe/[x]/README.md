@@ -68,6 +68,7 @@
 |<sup><a name="xpp-License">[xpp License]([xp]/xpp-License.yaml)</a></sup>|<sup>xpp</sup>|<sup> </sup>|<sup>[xpp](https://spdx.org/licenses/xpp.html)</sup>| |<sup>approved</sup>| |<sup>[indiana-extreme-1.2](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/indiana-extreme-1.2.LICENSE)</sup>|<sup>terms</sup>|
 |<sup><a name="XSkat-License">[XSkat License]([xs]/XSkat-License.yaml)</a></sup>|<sup>XSkat</sup>|<sup> </sup>|<sup>[XSkat](https://spdx.org/licenses/XSkat.html)</sup>| |<sup>approved</sup>|<sup>[xskat](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/xskat.LICENSE)</sup>|<sup>[xskat](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/xskat.LICENSE)</sup>|<sup>terms</sup>|
 |<sup><a name="xxd-License">[xxd License]([xx]/xxd-License.yaml)</a></sup>|<sup>xxd License</sup>|<sup>xxd</sup>| | | |<sup>[xxd](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/xxd.LICENSE)</sup>|<sup>[xxd](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/xxd.LICENSE)</sup>|<sup>terms</sup>|
+|<sup><a name="XZoom-License">[XZoom License]([xz]/XZoom-License.yaml)</a></sup>|<sup>XZoom License</sup>|<sup>XZoom</sup>| | | | | |<sup>terms</sup>|
 
 [3](../[3]/README.md) -
 [4](../[4]/README.md) -

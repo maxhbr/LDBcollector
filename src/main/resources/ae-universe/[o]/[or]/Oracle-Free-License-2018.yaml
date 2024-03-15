@@ -2,11 +2,9 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
 
-canonicalName: "OpenSSL License"
-category: "OpenSSL"
-spdxIdentifier: "OpenSSL"
-
-openCoDEStatus: "approved"
+canonicalName: "Oracle Free License 2018"
+category: "Oracle Free"
+shortName: "Oracle-Free-2018"
 
 otherIds: 
-  - "scancode:openssl-ssleay"
+  - "scancode:oracle-free-2018"

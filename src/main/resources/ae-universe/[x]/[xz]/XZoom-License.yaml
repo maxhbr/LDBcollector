@@ -2,11 +2,10 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
 
-canonicalName: "OpenSSL License"
-category: "OpenSSL"
-spdxIdentifier: "OpenSSL"
+canonicalName: "XZoom License"
+category: "XZoom License"
+shortName: "XZoom"
 
-openCoDEStatus: "approved"
+alternativeNames:
+  - "XZoom License"
 
-otherIds: 
-  - "scancode:openssl-ssleay"
