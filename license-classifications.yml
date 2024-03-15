@@ -1373,6 +1373,18 @@ categorizations:
       - "property:AutoConf-or-other-exception"
 
   # https://spdx.org/licenses/GPL-3.0-or-later.html
+  # https://spdx.org/licenses/Font-exception-2.0.html
+  - id: "GPL-3.0-or-later WITH Font-exception-2.0"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:antitivo-clause"
+      - "property:distribute-source-code"
+      - "property:patent-clause"
+      - "property:AutoConf-or-other-exception"
+
+  # https://spdx.org/licenses/GPL-3.0-or-later.html
   # https://spdx.org/licenses/GCC-exception-3.1.html
   - id: "GPL-3.0-or-later WITH GCC-exception-3.1"
     categories:
@@ -3095,6 +3107,13 @@ categorizations:
     categories:
       - "irrelevant"
 
+  - id: "LicenseRef-scancode-ms-specification"
+    categories:
+      - "free-restricted"
+      - "property:specification-license"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
   # https://scancode-licensedb.aboutcode.org/ms-ws-routing-spec.html
   - id: "LicenseRef-scancode-ms-ws-routing-spec"
     categories:
@@ -3457,8 +3476,8 @@ categorizations:
 
   - id: "LicenseRef-scancode-w3c-docs-19990405"
     categories:
-      - "property:unchecked"
       - "free-restricted"
+      - "property:specification-license"
       - "property:include-in-notice-file"
       - "include-in-notice-file"
 
