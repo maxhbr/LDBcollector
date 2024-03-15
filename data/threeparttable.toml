@@ -1,11 +1,6 @@
 [license]
-
-expression = "LicenseRef-Threeparttable"
+expression = "threeparttable"
 status = [ "allowed" ]
-
-url = '''
-https://fedoraproject.org/wiki/Licensing/Threeparttable
-'''
 
 [fedora]
 
