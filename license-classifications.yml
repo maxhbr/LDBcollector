@@ -430,13 +430,6 @@ categorizations:
       - "property:distribute-source-code"
       - "property:patent-clause"
 
-  # https://spdx.org/licenses/BlueOak-1.0.0.html
-  - id: "BlueOak-1.0.0"
-    categories:
-      - "permissive"
-      - "property:include-in-notice-file"
-      - "include-in-notice-file"
-
   # https://spdx.org/licenses/BSD-1-Clause.html
   - id: "BSD-1-Clause"
     categories:
@@ -603,6 +596,13 @@ categorizations:
   - id: "Bitstream-Vera"
     categories:
       - "free-restricted"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/BlueOak-1.0.0.html
+  - id: "BlueOak-1.0.0"
+    categories:
+      - "permissive"
       - "property:include-in-notice-file"
       - "include-in-notice-file"
 
@@ -945,6 +945,13 @@ categorizations:
       - "include-in-notice-file"
       - "property:patent-clause"
 
+  # https://spdx.org/licenses/EFL-2.0.html
+  - id: "EFL-2.0"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
   # https://spdx.org/licenses/EPL-1.0.html
   - id: "EPL-1.0"
     categories:
@@ -1284,6 +1291,18 @@ categorizations:
       - "property:AutoConf-or-other-exception"
 
   # https://spdx.org/licenses/GPL-3.0-only.html
+  # https://spdx.org/licenses/Font-exception-2.0.html
+  - id: "GPL-3.0-only WITH Font-exception-2.0"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:antitivo-clause"
+      - "property:distribute-source-code"
+      - "property:patent-clause"
+      - "property:AutoConf-or-other-exception"
+
+  # https://spdx.org/licenses/GPL-3.0-only.html
   # https://spdx.org/licenses/GCC-exception-3.1.html
   - id: "GPL-3.0-only WITH GCC-exception-3.1"
     categories:
@@ -1344,6 +1363,18 @@ categorizations:
   # https://spdx.org/licenses/GPL-3.0-or-later.html
   # https://spdx.org/licenses/Bison-exception-2.2.html
   - id: "GPL-3.0-or-later WITH Bison-exception-2.2"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:antitivo-clause"
+      - "property:distribute-source-code"
+      - "property:patent-clause"
+      - "property:AutoConf-or-other-exception"
+
+  # https://spdx.org/licenses/GPL-3.0-or-later.html
+  # https://spdx.org/licenses/Font-exception-2.0.html
+  - id: "GPL-3.0-or-later WITH Font-exception-2.0"
     categories:
       - "copyleft-strong"
       - "property:include-in-notice-file"
@@ -2180,13 +2211,6 @@ categorizations:
     categories:
       - "property:unclear-scanner-finding"
 
-  # https://scancode-licensedb.aboutcode.org/khronos.html
-  - id: "LicenseRef-scancode-khronos"
-    categories:
-      - "permissive"
-      - "property:include-in-notice-file"
-      - "include-in-notice-file"
-
   - id: "LicenseRef-Scanner-WebM"
     categories:
       - "property:include-in-notice-file"
@@ -2534,6 +2558,13 @@ categorizations:
     categories:
       - "permissive"
       - "property:patent-clause"
+
+  # https://scancode-licensedb.aboutcode.org/atmel-microcontroller.html
+  - id: "LicenseRef-scancode-atmel-microcontroller"
+    categories:
+      - "proprietary-free"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
 
   - id: "LicenseRef-scancode-autoconf-macro-exception"
     categories:
@@ -2944,6 +2975,13 @@ categorizations:
       - "property:include-in-notice-file"
       - "include-in-notice-file"
 
+  # https://scancode-licensedb.aboutcode.org/khronos.html
+  - id: "LicenseRef-scancode-khronos"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
   - id: "LicenseRef-scancode-ldap-sdk-free-use"
     categories:
       - "property:unchecked"
@@ -3068,6 +3106,13 @@ categorizations:
   - id: "LicenseRef-scancode-ms-patent-promise"
     categories:
       - "irrelevant"
+
+  - id: "LicenseRef-scancode-ms-specification"
+    categories:
+      - "free-restricted"
+      - "property:specification-license"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
 
   # https://scancode-licensedb.aboutcode.org/ms-ws-routing-spec.html
   - id: "LicenseRef-scancode-ms-ws-routing-spec"
@@ -3431,8 +3476,8 @@ categorizations:
 
   - id: "LicenseRef-scancode-w3c-docs-19990405"
     categories:
-      - "property:unchecked"
       - "free-restricted"
+      - "property:specification-license"
       - "property:include-in-notice-file"
       - "include-in-notice-file"
 
@@ -3579,6 +3624,13 @@ categorizations:
 
   # https://spdx.org/licenses/MIT-CMU.html
   - id: "MIT-CMU"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/MIT-Modern-Variant.html
+  - id: "MIT-Modern-Variant"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
@@ -3969,6 +4021,13 @@ categorizations:
       - "include-in-notice-file"
       - "property:distribute-source-code"
 
+# https://spdx.org/licenses/UPL-1.0.html
+  - id: "UPL-1.0"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
   # https://spdx.org/licenses/Unicode-DFS-2015.html
   - id: "Unicode-DFS-2015"
     categories:
@@ -4149,6 +4208,13 @@ categorizations:
       - "property:include-in-notice-file"
       - "include-in-notice-file"
 
+  # hhttps://spdx.org/licenses/xlock.html
+  - id: "xlock"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
   # https://spdx.org/licenses/xpp.html
   - id: "xpp"
     categories:
@@ -4159,53 +4225,6 @@ categorizations:
 
   # https://spdx.org/licenses/zlib-acknowledgement.html
   - id: "zlib-acknowledgement"
-    categories:
-      - "permissive"
-      - "property:include-in-notice-file"
-      - "include-in-notice-file"
-
-  # https://scancode-licensedb.aboutcode.org/atmel-microcontroller.html
-  - id: "LicenseRef-scancode-atmel-microcontroller"
-    categories:
-      - "proprietary-free"
-      - "property:include-in-notice-file"
-      - "include-in-notice-file"
-
-  # https://spdx.org/licenses/EFL-2.0.html
-  - id: "EFL-2.0"
-    categories:
-      - "permissive"
-      - "property:include-in-notice-file"
-      - "include-in-notice-file"
-
-# https://spdx.org/licenses/UPL-1.0.html
-  - id: "UPL-1.0"
-    categories:
-      - "permissive"
-      - "property:include-in-notice-file"
-      - "include-in-notice-file"
-
-  # https://spdx.org/licenses/GPL-3.0-only.html
-  # https://spdx.org/licenses/Font-exception-2.0.html
-  - id: "GPL-3.0-only WITH Font-exception-2.0"
-    categories:
-      - "copyleft-strong"
-      - "property:include-in-notice-file"
-      - "include-in-notice-file"
-      - "property:antitivo-clause"
-      - "property:distribute-source-code"
-      - "property:patent-clause"
-      - "property:AutoConf-or-other-exception"
-
-  # https://spdx.org/licenses/MIT-Modern-Variant.html
-  - id: "MIT-Modern-Variant"
-    categories:
-      - "permissive"
-      - "property:include-in-notice-file"
-      - "include-in-notice-file"
-
-  # hhttps://spdx.org/licenses/xlock.html
-  - id: "xlock"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
