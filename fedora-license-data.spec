@@ -6,7 +6,7 @@
 %endif
 
 Name:           fedora-license-data
-Version:        1.42
+Version:        1.43
 Release:        1%{?dist}
 Summary:        Fedora Linux license data
 
@@ -97,6 +97,11 @@ make check-grammar
 
 
 %changelog
+* Sat Mar 16 2024 Miroslav Suchý <msuchy@redhat.com> 1.43-1
+- rename LicenseRef-Threeparttable to threeparttable
+- Add “KST32B” license terms to UltraPermissive.txt
+- Add glibc public domain declarations
+
 * Thu Feb 22 2024 Miroslav Suchý <msuchy@redhat.com>
 - add CMU-Mach-nodoc license
 - add Mackerras-3-Clause-acknowledgment license
