@@ -121,16 +121,16 @@ indicate potential issues.
 
 The following table summarizes and details the OSI status values:
 
-| OSI Status Value | Description                                                                                                                     | Official OSI Status |
-|:-----------------|:--------------------------------------------------------------------------------------------------------------------------------|:--------------------|
-| not submitted    | The license appears on the non-approved licenses as [not submitted].                                                            | no                  |
-| submitted        | The license has been submitted or at least requested, but has not yet been further processed.                                   | no                  |
-| pending          | The license is in discussion / review. No decision is available yet.                                                            | no                  |
-| approved         | The license was officially approved by OSI.                                                                                     | yes                 |
-| withdrawn        | The license was withdrawn by the submitter (i.e. the license stuart).                                                           | no                  |
-| rejected         | The license was rejected by OSI. The license is either not valid license or does not conform to the OSI Open Source Definition. | no                  |
-| ineligible       | The terms are not considered a (software) license or show obvious conditions adverse to the OSI Open Source Definition.         | no                  |
-| unclear          | Information from OSI mailing lists and wiki content do not convey sufficient results. Links broken.                             | no                  |
+| OSI Status Value | Description                                                                                                                       | Official OSI Status |
+|:-----------------|:----------------------------------------------------------------------------------------------------------------------------------|:--------------------|
+| not submitted    | The license appears on the non-approved licenses as [not submitted].                                                              | no                  |
+| submitted        | The license has been submitted or at least requested, but has not yet been further processed.                                     | no                  |
+| pending          | The license is in discussion / review. No decision is available yet.                                                              | no                  |
+| approved         | The license was officially approved by OSI.                                                                                       | yes                 |
+| withdrawn        | The license was withdrawn by the submitter (i.e. the license stuart).                                                             | no                  |
+| rejected         | The license was rejected by OSI. The license is either not a valid license or does not conform to the OSI Open Source Definition. | no                  |
+| ineligible       | The terms are not considered a (software) license or show obvious conditions adverse to the OSI Open Source Definition.           | no                  |
+| unclear          | Information from OSI mailing lists and wiki content do not convey sufficient results. Links broken.                               | no                  |
 
 Regarding SPDX the latest version from https://github.com/spdx/license-list-data
 main branch is used to synchronize the {metæffekt}-universe.
