@@ -209,3 +209,13 @@ location = https://github.com/LibreCAD/LibreCAD/blob/10e64902a4f7d8ca20db2db045e
 text = '''
 FREEWARE (free to copy,change...; NO RESPONSIBILITY) : 無保証
 '''
+
+package = swig
+location = https://github.com/swig/swig/blob/master/LICENSE
+text = '''
+You may copy, modify, distribute, and make derivative works based on
+this software, in source code or object code form, without
+restriction. If you distribute the software to others, you may do
+so according to the terms of your choice. This software is offered as
+is, without warranty of any kind.
+'''
