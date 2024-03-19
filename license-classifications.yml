@@ -3381,6 +3381,7 @@ categorizations:
       - "proprietary-free"
       - "property:include-in-notice-file"
       - "include-in-notice-file"
+      - "property:specification-license"
 
   - id: "LicenseRef-scancode-sun-prop-non-commercial"
     categories:
