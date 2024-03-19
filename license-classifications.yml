@@ -4271,3 +4271,5 @@ categorizations:
       - "property:include-in-notice-file"
       - "include-in-notice-file"
       - "property:specification-license"
+      - "property:patent-clause"
+      - "property:no-modifications"
