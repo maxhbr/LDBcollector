@@ -4261,3 +4261,11 @@ categorizations:
       - "permissive"
       - "property:include-in-notice-file"
       - "include-in-notice-file"
+
+  # https://scancode-licensedb.aboutcode.org/jsr-107-jcache-spec.html
+  - id: "LicenseRef-scancode-jsr-107-jcache-spec"
+    categories:
+      - "proprietary-free"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:specification-license"
