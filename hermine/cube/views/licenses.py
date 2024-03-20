@@ -106,6 +106,33 @@ class LicenseDataUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateV
     model = License
     fields = LICENSE_SHARED_FIELDS
     template_name = "cube/license_update.html"
+    obligations = []
+
+    # We override get_object to handle the "duplicate" action
+    # We also store the obligations to duplicate them later
+    def get_object(self, queryset=None):
+        obj = super().get_object(queryset)
+        if "duplicate" in self.request.POST:
+            self.obligations = list(obj.obligation_set.all())
+            obj.pk = None
+            obj.long_name = obj.long_name + " (copy)"
+        return obj
+
+    def form_valid(self, form):
+        if "duplicate" in self.request.POST:
+            self.object.save()
+            for obligation in self.obligations:
+                obligation.pk = None
+                obligation.license = self.object
+                obligation.save()
+            return redirect(self.get_success_url())
+        return super().form_valid(form)
+
+    def form_invalid(self, form):
+        self.object.pk = self.kwargs[
+            "pk"
+        ]  # we need to restore it back to the original value
+        return super().form_invalid(form)
 
 
 class LicensePolicyUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView):
