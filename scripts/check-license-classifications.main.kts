@@ -4,7 +4,7 @@
 // SPDX-License-Identifier: CC0-1.0
 
 @file:CompilerOptions("-jvm-target", "11")
-@file:DependsOn("org.ossreviewtoolkit:model:18.0.0")
+@file:DependsOn("org.ossreviewtoolkit:model:19.0.0")
 
 import kotlin.system.exitProcess
 
