@@ -5,6 +5,7 @@ from django.db import transaction
 from django.forms import ModelForm, ModelChoiceField, Form
 
 from cube.models import Generic, Obligation, License
+from cube.utils.reference import GENERIC_SHARED_FIELDS, LICENSE_SHARED_FIELDS
 
 
 class ObligationGenericDiffForm(ModelForm):
@@ -89,3 +90,46 @@ class CopyReferenceObligationForm(Form):
             obligation.generic = Generic.objects.get(name=generic_name)
         obligation.save(using="default")
         return obligation
+
+
+class SyncEverythingFromReferenceForm(Form):
+    """Form to copy all missing data to local data from reference."""
+
+    def save(self):
+        # Update all existing generics
+        for generic in Generic.objects.all():
+            try:
+                ref = Generic.objects.using("shared").get(name=generic.name)
+            except Generic.DoesNotExist:
+                continue
+            else:
+                for field in GENERIC_SHARED_FIELDS:
+                    setattr(generic, field, getattr(ref, field))
+                generic.save()
+
+        # Copy missing generics
+        CopyReferenceGenericsForm().save()
+
+        # Update all existing licenses
+        for lic in License.objects.all():
+            try:
+                ref = License.objects.using("shared").get(spdx_id=lic.spdx_id)
+            except License.DoesNotExist:
+                continue
+            else:
+                for field in LICENSE_SHARED_FIELDS:
+                    setattr(lic, field, getattr(ref, field))
+                lic.save()
+                lic.obligation_set.all().delete()
+                for obligation in ref.obligation_set.all():
+                    if obligation.generic is not None:
+                        generic_name = obligation.generic.name
+                    obligation.id = None
+                    obligation._state.db = "default"
+                    obligation.license = lic
+                    if obligation.generic is not None:
+                        obligation.generic = Generic.objects.get(name=generic_name)
+                    obligation.save(using="default")
+
+        # Copy missing licenses then their obligations
+        CopyReferenceLicensesForm().save()
