@@ -32,7 +32,7 @@ SPDX-License-Identifier: AGPL-3.0-only
         <div class="field">
           <div class="control">
             <button type="submit" class="button is-primary">{{ label|default:"Save" }}</button>
-            <button type="submit" class="button" formaction="{% url 'cube:license_create' %}">Save as new (duplicate)</button>
+            <button type="submit" class="button" name="duplicate">Save as new (duplicate)</button>
           </div>
         </div>
       </div>
