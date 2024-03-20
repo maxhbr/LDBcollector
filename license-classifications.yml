@@ -376,6 +376,7 @@ categorizations:
       - "permissive"
       - "property:include-in-notice-file"
       - "include-in-notice-file"
+      - "property:advertising-clause"
 
   # https://spdx.org/licenses/Apache-2.0.html
   - id: "Apache-2.0"
@@ -3125,6 +3126,7 @@ categorizations:
       - "permissive"
       - "property:include-in-notice-file"
       - "include-in-notice-file"
+      - "property:advertising-clause"
 
   - id: "LicenseRef-scancode-mysql-floss-exception-2.0"
     categories:
@@ -3374,11 +3376,13 @@ categorizations:
       - "proprietary-free"
       - "property:patent-clause"
 
+  # https://scancode-licensedb.aboutcode.org/sun-jsr-spec-04-2006.html
   - id: "LicenseRef-scancode-sun-jsr-spec-04-2006"
     categories:
       - "proprietary-free"
       - "property:include-in-notice-file"
       - "include-in-notice-file"
+      - "property:specification-license"
 
   - id: "LicenseRef-scancode-sun-prop-non-commercial"
     categories:
@@ -4229,3 +4233,43 @@ categorizations:
       - "permissive"
       - "property:include-in-notice-file"
       - "include-in-notice-file"
+
+  # https://scancode-licensedb.aboutcode.org/hazelcast-community-1.0.html
+  - id: "LicenseRef-scancode-hazelcast-community-1.0"
+    categories:
+      - "free-restricted"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:mark-modifications"
+
+  # https://schemas.xmlsoap.org/wsdl/http/wsdl-http.xsd
+  - id: "LicenseRef-doubleopen-wsdl-schema"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:no-modifications"
+
+  # https://scancode-licensedb.aboutcode.org/arm-cortex-mx.html
+  - id: "LicenseRef-scancode-arm-cortex-mx"
+    categories:
+      - "proprietary-free"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/BSD-2-Clause-Darwin.html
+  - id: "BSD-2-Clause-Darwin"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://scancode-licensedb.aboutcode.org/jsr-107-jcache-spec.html
+  - id: "LicenseRef-scancode-jsr-107-jcache-spec"
+    categories:
+      - "proprietary-free"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:specification-license"
+      - "property:patent-clause"
+      - "property:no-modifications"
