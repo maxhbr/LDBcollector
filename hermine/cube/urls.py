@@ -224,6 +224,11 @@ urlpatterns = [
         views.CopyReferenceObligationView.as_view(),
         name="shared_obligation_copy",
     ),
+    path(
+        "shared/sync-everything/",
+        views.SyncEverythingFromReferenceView.as_view(),
+        name="shared_sync_everything",
+    ),
     # Releases views
     path(
         "releases/<int:pk>/edit/",

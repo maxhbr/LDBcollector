@@ -34,6 +34,7 @@ from cube.forms.licenses import (
     CopyReferenceLicensesForm,
     CopyReferenceGenericsForm,
     CopyReferenceObligationForm,
+    SyncEverythingFromReferenceForm,
 )
 from cube.models import License, Generic, Obligation
 from cube.utils.reference import (
@@ -614,45 +615,35 @@ class SharedReferenceView(
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context["shared"] = {
-            # "version": apps.get_app_config("cube").shared_database_version,
-            # "date": apps.get_app_config("cube").shared_database_date,
-            "licenses": {
-                "total": License.objects.using("shared"),
-                "missing": License.objects.using("shared").exclude(
-                    spdx_id__in=list(
-                        License.objects.all().values_list("spdx_id", flat=True)
-                    )
-                ),
-            },
-            "generics": {
-                "total": Generic.objects.using("shared").all(),
-                "missing": Generic.objects.using("shared").exclude(
-                    name__in=list(Generic.objects.all().values_list("name", flat=True))
-                ),
-            },
+
+        licenses = list(License.objects.all())
+        context["licenses"] = {
+            "total": len(licenses),
+            "diff": len([lic for lic in licenses if lic.reference_diff]),
+            "only_local": License.objects.exclude(
+                spdx_id__in=list(
+                    License.objects.using("shared")
+                    .all()
+                    .values_list("spdx_id", flat=True)
+                )
+            ).count(),
+            "only_shared": License.objects.using("shared")
+            .exclude(spdx_id__in=(lic.spdx_id for lic in licenses))
+            .count(),
         }
-        context["local"] = {
-            "licenses": {
-                "total": License.objects.all(),
-                "missing": License.objects.exclude(
-                    spdx_id__in=list(
-                        License.objects.using("shared")
-                        .all()
-                        .values_list("spdx_id", flat=True)
-                    )
-                ),
-            },
-            "generics": {
-                "total": Generic.objects.all(),
-                "missing": Generic.objects.exclude(
-                    name__in=list(
-                        Generic.objects.using("shared")
-                        .all()
-                        .values_list("name", flat=True)
-                    )
-                ),
-            },
+
+        generics = list(Generic.objects.all())
+        context["generics"] = {
+            "total": len(generics),
+            "diff": len([gen for gen in generics if gen.reference_diff]),
+            "only_local": Generic.objects.exclude(
+                name__in=list(
+                    Generic.objects.using("shared").all().values_list("name", flat=True)
+                )
+            ).count(),
+            "only_shared": Generic.objects.using("shared")
+            .exclude(name__in=(gen.name for gen in generics))
+            .count(),
         }
 
         return context
@@ -700,3 +691,18 @@ class CopyReferenceObligationView(
     def form_valid(self, form):
         obligation = form.save()
         return redirect(reverse("cube:license_diff", args=[obligation.license.id]))
+
+
+class SyncEverythingFromReferenceView(
+    LoginRequiredMixin, PermissionRequiredMixin, SharedDataRequiredMixin, FormView
+):
+    permission_required = "cube.change_license"
+    form_class = SyncEverythingFromReferenceForm
+    success_url = reverse_lazy("cube:shared_reference")
+
+    def form_invalid(self, form):
+        return super().form_valid(form)
+
+    def form_valid(self, form):
+        form.save()
+        return super().form_valid(form)
