@@ -43,7 +43,7 @@ SPDX-License-Identifier: AGPL-3.0-only
   {% else %}
     <div class="notification is-warning">
       <p>No license was found in the local data. You may want to copy licenses from the shared
-      database to initialise Hermine.</p>
+        database to initialise Hermine.</p>
     </div>
   {% endif %}
 
@@ -108,15 +108,15 @@ SPDX-License-Identifier: AGPL-3.0-only
     </div>
     <div class="message-body">
       <p><b>Use this cautiously.</b><p>
-      <p>
-        This updates all licenses, obligations and generic obligations to match the shared database,
-        erasing all your local changes.<br> This also copies any missing data.
-      </p>
-      <form method="post" action="{% url "cube:shared_sync_everything" %}">
-        {% csrf_token %}
-        {{ form }}
-        <button type="submit" class="button is-danger">Sync all local data with shared reference data</button>
-      </form>
-    </div>
-  </div>
+        <p>
+          This updates all licenses, obligations and generic obligations to match the shared database,
+          erasing all your local changes.<br> This also copies any missing data.
+        </p>
+        <form method="post" action="{% url "cube:shared_sync_everything" %}">
+          {% csrf_token %}
+          {{ form }}
+          <button type="submit" class="button is-danger">Sync all local data with shared reference data</button>
+        </form>
+      </div>
+      </div>
 {% endblock %}
