@@ -12,6 +12,12 @@
             ]
         },
         {
+            "spdxid": "GPL-2.0-only WITH Linux-syscall-note",
+            "aliases": [
+            ],
+            "compatibility_as": "GPL-2.0-only WITH Classpath-exception-2.0"
+        },
+        {
             "spdxid": "GPL-2.0-or-later WITH Classpath-exception-2.0",
             "aliases": [
                 "GPL-2.0-or-later AND Classpath-exception-2.0"
