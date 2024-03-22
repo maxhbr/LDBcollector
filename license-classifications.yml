@@ -376,7 +376,6 @@ categorizations:
       - "permissive"
       - "property:include-in-notice-file"
       - "include-in-notice-file"
-      - "property:advertising-clause"
 
   # https://spdx.org/licenses/Apache-2.0.html
   - id: "Apache-2.0"
@@ -2904,6 +2903,7 @@ categorizations:
       - "property:include-in-notice-file"
       - "include-in-notice-file"
 
+  # https://scancode-licensedb.aboutcode.org/indiana-extreme.html
   - id: "LicenseRef-scancode-indiana-extreme"
     categories:
       - "permissive"
@@ -3126,7 +3126,6 @@ categorizations:
       - "permissive"
       - "property:include-in-notice-file"
       - "include-in-notice-file"
-      - "property:advertising-clause"
 
   - id: "LicenseRef-scancode-mysql-floss-exception-2.0"
     categories:
