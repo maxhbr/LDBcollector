@@ -42,9 +42,9 @@
         "GCC Runtime Library exception": {
             "aliases": [
                 "GCC exception",
-                "GCC Exception",
+                "GCC Exception"
             ],
-            "problem": "This exception has different version (2.0, 2.0 with note and 3.0). Without a version number it is not possible to determine which of the versions is meant."
+            "problem": "This exception has different version (2.0, '2.0 with note' and 3.0). Without a version number it is not possible to determine which of the versions is meant."
         },
         "GNU Lesser General Public License": {
             "aliases": [
