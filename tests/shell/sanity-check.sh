@@ -86,18 +86,16 @@ check_presence()
         _RET="FAIL"
     fi
 
-
     # check unpresence
     if [ "$REG_EXP_UNPRESENCE" != "" ]
     then
-        
         UNPRESENT=$(echo "cat $FILE | jq  -r .aliases[] | grep $REG_EXP_UNPRESENCE" | bash )
         if [ "$UNPRESENT" != "" ]
         then
             echo "FAIL"
             echo " * cause: Incorrectly not present in $FILE"
             echo " --------------------------"
-            echo "$UNPRESENT"
+            echo "Unpresent: \"$UNPRESENT\""
             echo " --------------------------"
             RET=$(( $RET + 1 ))
             _RET="FAIL"
@@ -134,6 +132,9 @@ check_presence Apache-2.0 " -e 2" "-e 1"
 
 check_presence Artistic-1.0 " -e 1.0 -e 1" "-e 2 "
 check_presence Artistic-2.0 " -e 2 -e 2.0 " "-e 1"
+
+check_presence BSL-1.0                            " -e BSL-1 -e BSL1 -e 1 " " -i -e original "
+check_presence LicenseRef-scancode-boost-original " -i -e original "        " -e BSL-1 -e BSL1 -e 1 "  
 
 check_presence 0BSD "$ZERO_BSD_PRESENT" "$BSD3_PRESENT $BSD2_PRESENT "
 check_presence BSD-2-Clause "$BSD2_PRESENT" "$ZERO_BSD_PRESENT $BSD3_PRESENT "
