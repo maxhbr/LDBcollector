@@ -6,6 +6,8 @@
   "name": "Boost Original",
   "scancode_key": "boost-original",
   "spdxid": "LicenseRef-scancode-boost-original",
-  "aliases": [
+    "aliases": [
+        "Boost Original",
+        "Original Boost"
   ]
 }
