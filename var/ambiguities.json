@@ -18,6 +18,14 @@
             ],
             "problem": "This license has different version (1.0, and 2.0). Without a version number it is not possible to determine which of the versions is meant."
         },
+        "Boost": {
+            "aliases": [
+                "Boost License",
+                "Boost license",
+                "Boost"
+            ],
+            "problem": "There are at least two versions of the Boost license (Original Boost and BSL-1.0). Without the version/variant of the license it is not possible to determine which of the versions is meant."
+        },
         "BSD": {
             "aliases": [
                 "BSD License (BSD License)"
