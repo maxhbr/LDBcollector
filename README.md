@@ -1,17 +1,17 @@
 | | | | |
 |---:|:---:|:---:|:---:|
-| [**main**](https://github.com/pmonks/lice-comb/tree/main) | [![CI](https://github.com/pmonks/lice-comb/workflows/CI/badge.svg?branch=main)](https://github.com/pmonks/lice-comb/actions?query=workflow%3ACI+branch%3Amain) | [![Dependencies](https://github.com/pmonks/lice-comb/workflows/dependencies/badge.svg?branch=main)](https://github.com/pmonks/lice-comb/actions?query=workflow%3Adependencies+branch%3Amain) | [![Vulnerabilities](https://github.com/pmonks/lice-comb/workflows/vulnerabilities/badge.svg?branch=main)](https://pmonks.github.io/lice-comb/nvd/dependency-check-report.html) |
-| [**dev**](https://github.com/pmonks/lice-comb/tree/dev) | [![CI](https://github.com/pmonks/lice-comb/workflows/CI/badge.svg?branch=dev)](https://github.com/pmonks/lice-comb/actions?query=workflow%3ACI+branch%3Adev) | [![Dependencies](https://github.com/pmonks/lice-comb/workflows/dependencies/badge.svg?branch=dev)](https://github.com/pmonks/lice-comb/actions?query=workflow%3Adependencies+branch%3Adev) | [![Vulnerabilities](https://github.com/pmonks/lice-comb/workflows/vulnerabilities/badge.svg?branch=dev)](https://github.com/pmonks/lice-comb/actions?query=workflow%3Avulnerabilities+branch%3Adev) |
+| [**release**](https://github.com/pmonks/lice-comb/tree/release) | [![CI](https://github.com/pmonks/lice-comb/actions/workflows/ci.yml/badge.svg?branch=release)](https://github.com/pmonks/lice-comb/actions?query=workflow%3ACI+branch%3Arelease) | [![Dependencies](https://github.com/pmonks/lice-comb/actions/workflows/dependencies.yml/badge.svg?branch=release)](https://github.com/pmonks/lice-comb/actions?query=workflow%3Adependencies+branch%3Arelease) | [![Vulnerabilities](https://github.com/pmonks/lice-comb/actions/workflows/vulnerabilities.yml/badge.svg?branch=release)](https://pmonks.github.io/lice-comb/nvd/dependency-check-report.html) |
+| [**dev**](https://github.com/pmonks/lice-comb/tree/dev) | [![CI](https://github.com/pmonks/lice-comb/workflows/CI/badge.svg?branch=dev)](https://github.com/pmonks/lice-comb/actions?query=workflow%3ACI+branch%3Adev) | [![Dependencies](https://github.com/pmonks/lice-comb/actions/workflows/dependencies.yml/badge.svg?branch=dev)](https://github.com/pmonks/lice-comb/actions?query=workflow%3Adependencies+branch%3Adev) | [![Vulnerabilities](https://github.com/pmonks/lice-comb/actions/workflows/vulnerabilities.yml/badge.svg?branch=dev)](https://github.com/pmonks/lice-comb/actions?query=workflow%3Avulnerabilities+branch%3Adev) |
 
-[![Latest Version](https://img.shields.io/clojars/v/com.github.pmonks/lice-comb)](https://clojars.org/com.github.pmonks/lice-comb/) [![Open Issues](https://img.shields.io/github/issues/pmonks/lice-comb.svg)](https://github.com/pmonks/lice-comb/issues) [![License](https://img.shields.io/github/license/pmonks/lice-comb.svg)](https://github.com/pmonks/lice-comb/blob/main/LICENSE)
+[![Latest Version](https://img.shields.io/clojars/v/com.github.pmonks/lice-comb)](https://clojars.org/com.github.pmonks/lice-comb/) [![Open Issues](https://img.shields.io/github/issues/pmonks/lice-comb.svg)](https://github.com/pmonks/lice-comb/issues) [![License](https://img.shields.io/github/license/pmonks/lice-comb.svg)](https://github.com/pmonks/lice-comb/blob/release/LICENSE)
 
-<img alt="lice-comb logo: a fine-toothed metal comb for removing headlice emblazoned with the OSI keyhole logo" align="right" width="25%" src="https://raw.githubusercontent.com/pmonks/lice-comb/main/lice-comb-logo.png">
+<img alt="lice-comb logo: a fine-toothed metal comb for removing headlice emblazoned with the OSI keyhole logo" align="right" width="25%" src="https://raw.githubusercontent.com/pmonks/lice-comb/release/lice-comb-logo.png">
 
 # lice-comb
 
-A Clojure library for software *lice*nse detection.  It does this by *comb*ing through tools.deps and Leiningen dependencies, directory structures, and JAR & ZIP files, attempting to detect what license(s) they contain, and then normalising them into [SPDX license expression(s)](https://spdx.github.io/spdx-spec/v2.3/SPDX-license-expressions/).
+A Clojure library for software *lice*nse detection.  It does this by *comb*ing through tools.deps and Leiningen dependencies, directory structures, and JAR & ZIP files, attempting to detect what license(s) they reference and/or contain, and then normalising them into [SPDX license expressions](https://spdx.github.io/spdx-spec/v2.3/SPDX-license-expressions/).
 
-This library leverages, and is inspired by, the *excellent* [SPDX project](https://spdx.dev/).  It's a great shame that it doesn't have greater traction in the Java & Clojure (and wider open source) communities.  If you're new to SPDX and would prefer to read a primer rather than dry specification documents, I can thoroughly recommend [David A. Wheeler's SPDX Tutorial](https://github.com/david-a-wheeler/spdx-tutorial#spdx-tutorial).
+This library leverages, and is inspired by, the *excellent* [SPDX project](https://spdx.dev/).  It's a great shame that it doesn't have greater traction in the Java & Clojure (and wider open source) communities.  If you're new to SPDX and would prefer to read a primer rather than dry specification documents, [David A. Wheeler's SPDX Tutorial](https://github.com/david-a-wheeler/spdx-tutorial#spdx-tutorial) is a good (albeit slightly outdated) intro.
 
 ## Disclaimer
 
@@ -87,7 +87,7 @@ $ deps-try com.github.pmonks/lice-comb
 (lcmvn/gav->expressions "javax.mail" "mail")
 ;=> #{"GPL-2.0-only WITH Classpath-exception-2.0" "CDDL-1.1"}
 
-(lcmvn/pom->expressions (str (System/getProperty "user.home") "/.m2/repository/org/clojure/clojure/1.11.1/clojure-1.11.1.pom"))
+(lcmvn/pom->expressions (str (System/getProperty "user.home") "/.m2/repository/org/clojure/clojure/1.11.2/clojure-1.11.2.pom"))
 ;=> #{"EPL-1.0"}
 
 (lcmvn/pom->expressions "https://repo1.maven.org/maven2/org/springframework/spring-core/6.0.11/spring-core-6.0.11.pom")
@@ -107,7 +107,7 @@ $ deps-try com.github.pmonks/lice-comb
 (lcl/dep->expressions ['aopalliance/aopalliance "1.0"])
 ;=> #{"LicenseRef-lice-comb-PUBLIC-DOMAIN"}
 ; Also shows how lice-comb handles "public domain" attestations (which are not supported directly
-; by SPDX, as they're not a licensing mechanism)
+; by SPDX, since "public domain" is not a license)
 
 
 ;; Information about matches (useful for better understanding how lice-comb arrived at a given set
@@ -170,17 +170,17 @@ The implementation of [issue #3](https://github.com/pmonks/lice-comb/issues/3) r
 
 [Contributor FAQ](https://github.com/pmonks/lice-comb/wiki/FAQ#contributor-faqs)
 
-[Contributing Guidelines](https://github.com/pmonks/lice-comb/blob/main/.github/CONTRIBUTING.md)
+[Contributing Guidelines](https://github.com/pmonks/lice-comb/blob/release/.github/CONTRIBUTING.md)
 
 [Bug Tracker](https://github.com/pmonks/lice-comb/issues)
 
-[Code of Conduct](https://github.com/pmonks/lice-comb/blob/main/.github/CODE_OF_CONDUCT.md)
+[Code of Conduct](https://github.com/pmonks/lice-comb/blob/release/.github/CODE_OF_CONDUCT.md)
 
 ### Developer Workflow
 
-This project uses the [git-flow branching strategy](https://nvie.com/posts/a-successful-git-branching-model/), with the caveat that the permanent branches are called `main` and `dev`, and any changes to the `main` branch are considered a release and auto-deployed (JARs to Clojars, API docs to GitHub Pages, etc.).
+This project uses the [git-flow branching strategy](https://nvie.com/posts/a-successful-git-branching-model/), and the permanent branches are called `release` and `dev`.  Any changes to the `release` branch are considered a release and auto-deployed (JARs to Clojars, API docs to GitHub Pages, etc.).
 
-For this reason, **all development must occur either in branch `dev`, or (preferably) in temporary branches off of `dev`.**  All PRs from forked repos must also be submitted against `dev`; the `main` branch is **only** updated from `dev` via PRs created by the core development team.  All other changes submitted to `main` will be rejected.
+For this reason, **all development must occur either in branch `dev`, or (preferably) in temporary branches off of `dev`.**  All PRs from forked repos must also be submitted against `dev`; the `release` branch is **only** updated from `dev` via PRs created by the core development team.  All other changes submitted to `release` will be rejected.
 
 ### Build Tasks
 
