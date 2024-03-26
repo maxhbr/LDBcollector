@@ -28,10 +28,10 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: 21
-      - uses: DeLaGuardo/setup-clojure@12.1
+      - uses: DeLaGuardo/setup-clojure@12.5
         with:
           cli: latest
-      - uses: actions/cache@v3
+      - uses: actions/cache@v4
         with:
           path: |
             ~/.m2/repository
@@ -43,8 +43,8 @@ jobs:
       - name: Run NVD vulnerabilities check
         run: clojure -Srepro -J-Dclojure.main.report=stderr -T:build nvd
 
-      - name: Deploy NVD vulnerability report (main branch only)
-        if: ${{ ( success() || failure() ) && github.ref == 'refs/heads/main' }}  # Only deploy report from main branch, and regardless of whether the job succeeded or failed
+      - name: Deploy NVD vulnerability report (release branch only)
+        if: ${{ ( success() || failure() ) && github.ref == 'refs/heads/release' }}  # Only deploy report from release branch, and regardless of whether the job succeeded or failed
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}

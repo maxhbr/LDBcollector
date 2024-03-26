@@ -18,17 +18,17 @@
 
 {:paths ["src" "resources"]
  :deps
-   {org.clojure/tools.logging             {:mvn/version "1.2.4"}
+   {org.clojure/tools.logging             {:mvn/version "1.3.0"}
     commons-validator/commons-validator   {:mvn/version "1.8.0"}
-    org.clojure/data.xml                  {:mvn/version "0.2.0-alpha8"}
+    org.clojure/data.xml                  {:mvn/version "0.2.0-alpha9"}
     clj-xml-validation/clj-xml-validation {:mvn/version "1.0.2"}
     tolitius/xml-in                       {:mvn/version "0.1.1"}
     hato/hato                             {:mvn/version "0.9.0"}
     dev.weavejester/medley                {:mvn/version "1.7.0"}
     miikka/clj-base62                     {:mvn/version "0.1.1"}
-    com.github.pmonks/clj-spdx            {:mvn/version "1.0.126"}
-    com.github.pmonks/rencg               {:mvn/version "1.0.34"}
-    com.github.pmonks/embroidery          {:mvn/version "0.1.13"}}
+    com.github.pmonks/clj-spdx            {:mvn/version "1.0.145"}
+    com.github.pmonks/rencg               {:mvn/version "1.0.51"}
+    com.github.pmonks/embroidery          {:mvn/version "0.1.20"}}
  :aliases
    {:build {:deps       {com.github.pmonks/pbr {:mvn/version "RELEASE"}}
             :ns-default pbr.build}}}

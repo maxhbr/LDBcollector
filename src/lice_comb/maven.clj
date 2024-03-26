@@ -17,7 +17,20 @@
 ;
 
 (ns lice-comb.maven
-  "Functionality related to combing Maven POMs for license information."
+  "Functionality related to combing Maven POMs for license information.
+
+  In this namespace abbreviations are used for Maven's groupId, artifactId, and
+  version concepts.  So for example:
+  * `GA` means groupId & artifactId
+  * `GAV` means groupId, artifactId & version
+  
+  In function calls where a version isn't required or provided, the library will
+  determine and use the latest available version, as determined from (in order):
+  1. your local Maven cache (usually ~/.m2/repository)
+  2. Maven Central
+  3. Clojars
+  
+  Other/custom Maven artifact repositories are not currently supported."
   (:require [clojure.string                  :as s]
             [clojure.java.io                 :as io]
             [clojure.java.shell              :as sh]
@@ -125,7 +138,9 @@
 
 (defn ga-latest-version
   "Determines the latest version of the given GA as a String, or nil if it
-  cannot be determined."
+  cannot be determined.
+
+  Note that this could be a SNAPSHOT, RC, or other pre-release version."
   [group-id artifact-id]
   (when-let [metadata-uri (ga->metadata-uri group-id artifact-id)]
     (with-open [metadata-is (io/input-stream metadata-uri)]
@@ -136,7 +151,7 @@
 
 (defn ga-release-version
   "Determines the release version (if any) of the given GA as a String, or nil
-  if it cannot be determined."
+  if it cannot be determined or the GA doesn't have a released version yet."
   [group-id artifact-id]
   (when-let [metadata-uri (ga->metadata-uri group-id artifact-id)]
     (with-open [metadata-is (io/input-stream metadata-uri)]
@@ -264,8 +279,7 @@
            set)))
 
 (defn gav->expressions-info
-  "Returns an expressions-info map for the given Maven GA (group-id,
-  artifact-id) and optionally V (version).
+  "Returns an expressions-info map for the given GA and (optionally) V.
 
   If version is not provided, the latest version is looked up (which involves
   file and potentially also network I/O)."
@@ -277,8 +291,8 @@
          (pom->expressions-info pom-is (str pom-uri)))))))
 
 (defn gav->expressions
-  "Returns a set of SPDX expressions (Strings) for the given Maven GA (group-id,
-  artifact-id) and optionally V (version).
+  "Returns a set of SPDX expressions (Strings) for the given GA and optionally
+  V.
 
   If version is not provided, the latest version is looked up (which involves
   file and potentially also network I/O)."

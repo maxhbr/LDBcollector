@@ -121,13 +121,13 @@
           fix-mpl-2
           fix-license-id-with-exception-id))
 
-(defmulti text->expressions
-  "Returns an expressions-map for the given license text, or nil if no matches
-  are found."
+(defmulti text->expressions-info
+  "Returns an expressions-info map for the given license text, or nil if no
+  matches are found."
   {:arglists '([text])}
   type)
 
-(defmethod text->expressions java.lang.String
+(defmethod text->expressions-info java.lang.String
   [s]
   ; clj-spdx's *-within-text APIs are *expensive* but support batching, so we check batches of ids in parallel
   (let [num-cpus             (.availableProcessors (Runtime/getRuntime))
@@ -135,30 +135,33 @@
         exception-id-batches (partition num-cpus @lcis/exception-ids-d)
         license-ids-found    (apply set/union (e/pmap* #(sm/licenses-within-text   s %) license-id-batches))
         exception-ids-found  (apply set/union (e/pmap* #(sm/exceptions-within-text s %) exception-id-batches))
-        ids-found            (set/union license-ids-found exception-ids-found)]
-    (when ids-found
-      ; Note: we don't need to sexp/normalise the keys here, as we never detect an expression from a text
-      (manual-fixes (into {} (map #(hash-map % (list {:id % :type :concluded :confidence :high :strategy :spdx-text-matching})) ids-found))))))
+        expressions-found    (if (and (= 1 (count license-ids-found))
+                                      (= 1 (count exception-ids-found)))
+                               #{(str (first license-ids-found) " WITH " (first exception-ids-found))}
+                               (set/union license-ids-found exception-ids-found))]
+    (when expressions-found
+      ; Note: we don't need to sexp/normalise the keys here, as the only expressions that can be returned are constructed correctly
+      (manual-fixes (into {} (map #(hash-map % (list {:id % :type :concluded :confidence :high :strategy :spdx-matching-guidelines})) expressions-found))))))
 
-(defmethod text->expressions java.io.Reader
+(defmethod text->expressions-info java.io.Reader
   [r]
   (let [sw (java.io.StringWriter.)]
     (io/copy r sw)
-    (text->expressions (str sw))))
+    (text->expressions-info (str sw))))
 
-(defmethod text->expressions java.io.InputStream
+(defmethod text->expressions-info java.io.InputStream
   [is]
-  (text->expressions (io/reader is)))
+  (text->expressions-info (io/reader is)))
 
-(defmethod text->expressions :default
+(defmethod text->expressions-info :default
   [src]
   (when src
     (with-open [r (io/reader src)]
-      (text->expressions r))))
+      (text->expressions-info r))))
 
-(defn uri->expressions
-  "Returns an expressions-map for the given license uri, or nil if no matches
-  are found."
+(defn uri->expressions-info
+  "Returns an expressions-info map for the given license uri, or nil if no
+  matches are found."
   [uri]
   (when-not (s/blank? uri)
       ; We don't need to sexp/normalise the keys here, as we never detect an expression from a URI
@@ -171,8 +174,8 @@
 
                                 ; 2. attempt to retrieve the text/plain contents of the uri and perform license text matching on it
                                 (when-let [license-text (lcihttp/get-text uri)]
-                                  (when-let [ids (text->expressions license-text)]
-                                    ids))))))))
+                                  (when-let [expressions (text->expressions-info license-text)]
+                                    expressions))))))))
 
 (defn- string->ids-info
   "Converts the given string (a fragment of a license name) into a sequence of
@@ -196,7 +199,7 @@
                   (map #(hash-map % (list {:id % :type :concluded :confidence :high :strategy :spdx-listed-name :source (list s)})) ids))
 
                 ; 3. Might it be a URI?  (this is to handle some dumb corner cases that exist in pom.xml files hosted on Clojars & Maven Central)
-                (when-let [ids (uri->expressions s)]
+                (when-let [ids (uri->expressions-info s)]
                   (map #(hash-map (key %) (val %)) ids))
 
                 ; 4. Attempt regex name matching
