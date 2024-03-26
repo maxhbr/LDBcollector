@@ -23,9 +23,7 @@
 
 (println "\n☔️ Running tests on Clojure" (clojure-version)
          "/ JVM" (System/getProperty "java.version") (str "(" (System/getProperty "java.vm.name") " " (System/getProperty "java.vm.version") ")")
-         "/ SPDX License List" (slic/version) "\n")
-
-(println "⚠️ Note: these tests take between 5 and 10 minutes 🐢")
+         "/ SPDX License List" (slic/version))
 
 ; Here we hack up a "global once" function
 (def ^:private global-setup (delay
