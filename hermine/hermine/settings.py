@@ -190,10 +190,19 @@ LOGIN_REDIRECT_URL = "/"
 
 # Always send errors to console
 LOGGING = {
+    "version": 1,
     "disable_existing_loggers": False,
     "handlers": {
-        "level": "INFO" if DEBUG else "ERROR",
-        "filters": [],  # remove the default DEBUG filter
+        "console": {
+            "class": "logging.StreamHandler",
+        }
+    },
+    "loggers": {
+        "django": {
+            "handlers": ["console"],
+            "level": "INFO" if DEBUG else "ERROR",
+            "propagate": False,
+        }
     },
 }
 

@@ -99,7 +99,7 @@ def propagate_choices(release: Release):
                     | Q(category=None),
                     Q(scope=OuterRef("scope")) | Q(scope=""),
                     Q(exploitation=OuterRef("exploitation")) | Q(exploitation=""),
-                ).values("pk")
+                ).values("pk")[:1]
             )
         )
     )
@@ -176,7 +176,7 @@ def check_licenses_against_policy(release: Release):
                     Q(license__in=OuterRef("licenses_chosen")),
                     Q(linking=OuterRef("linking")) | Q(linking=""),
                     Q(modification=OuterRef("component_modified")) | Q(modification=""),
-                ).values("pk")
+                ).values("pk")[:1]
             )
         )
         .all()
