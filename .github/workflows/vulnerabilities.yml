@@ -6,19 +6,7 @@ on:
     - cron: '0 2 * * 2'   # Every Tuesday at 2am
 
 jobs:
-  skip_check:
-    runs-on: ubuntu-latest
-    outputs:
-      should_skip: ${{ steps.skip_check.outputs.should_skip }}
-    steps:
-      - id: skip_check
-        uses: fkirc/skip-duplicate-actions@master
-
   vulnerabilities:
-    needs: skip_check
-    if: ${{ needs.skip_check.outputs.should_skip != 'true' }}
-    runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
         with:
