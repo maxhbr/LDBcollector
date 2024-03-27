@@ -1,9 +1,9 @@
-| | | | |
-|---:|:---:|:---:|:---:|
-| [**release**](https://github.com/pmonks/lice-comb/tree/release) | [![CI](https://github.com/pmonks/lice-comb/actions/workflows/ci.yml/badge.svg?branch=release)](https://github.com/pmonks/lice-comb/actions?query=workflow%3ACI+branch%3Arelease) | [![Dependencies](https://github.com/pmonks/lice-comb/actions/workflows/dependencies.yml/badge.svg?branch=release)](https://github.com/pmonks/lice-comb/actions?query=workflow%3Adependencies+branch%3Arelease) | [![Vulnerabilities](https://github.com/pmonks/lice-comb/actions/workflows/vulnerabilities.yml/badge.svg?branch=release)](https://pmonks.github.io/lice-comb/nvd/dependency-check-report.html) |
-| [**dev**](https://github.com/pmonks/lice-comb/tree/dev) | [![CI](https://github.com/pmonks/lice-comb/workflows/CI/badge.svg?branch=dev)](https://github.com/pmonks/lice-comb/actions?query=workflow%3ACI+branch%3Adev) | [![Dependencies](https://github.com/pmonks/lice-comb/actions/workflows/dependencies.yml/badge.svg?branch=dev)](https://github.com/pmonks/lice-comb/actions?query=workflow%3Adependencies+branch%3Adev) | [![Vulnerabilities](https://github.com/pmonks/lice-comb/actions/workflows/vulnerabilities.yml/badge.svg?branch=dev)](https://github.com/pmonks/lice-comb/actions?query=workflow%3Avulnerabilities+branch%3Adev) |
+| | | |
+|---:|:---:|:---:|
+| [**release**](https://github.com/pmonks/lice-comb/tree/release) | [![CI](https://github.com/pmonks/lice-comb/actions/workflows/ci.yml/badge.svg?branch=release)](https://github.com/pmonks/lice-comb/actions?query=workflow%3ACI+branch%3Arelease) | [![Dependencies](https://github.com/pmonks/lice-comb/actions/workflows/dependencies.yml/badge.svg?branch=release)](https://github.com/pmonks/lice-comb/actions?query=workflow%3Adependencies+branch%3Arelease) |
+| [**dev**](https://github.com/pmonks/lice-comb/tree/dev) | [![CI](https://github.com/pmonks/lice-comb/workflows/CI/badge.svg?branch=dev)](https://github.com/pmonks/lice-comb/actions?query=workflow%3ACI+branch%3Adev) | [![Dependencies](https://github.com/pmonks/lice-comb/actions/workflows/dependencies.yml/badge.svg?branch=dev)](https://github.com/pmonks/lice-comb/actions?query=workflow%3Adependencies+branch%3Adev) |
 
-[![Latest Version](https://img.shields.io/clojars/v/com.github.pmonks/lice-comb)](https://clojars.org/com.github.pmonks/lice-comb/) [![Open Issues](https://img.shields.io/github/issues/pmonks/lice-comb.svg)](https://github.com/pmonks/lice-comb/issues) [![License](https://img.shields.io/github/license/pmonks/lice-comb.svg)](https://github.com/pmonks/lice-comb/blob/release/LICENSE)
+[![Latest Version](https://img.shields.io/clojars/v/com.github.pmonks/lice-comb)](https://clojars.org/com.github.pmonks/lice-comb/) [![License](https://img.shields.io/github/license/pmonks/lice-comb.svg)](https://github.com/pmonks/lice-comb/blob/release/LICENSE) [![Open Issues](https://img.shields.io/github/issues/pmonks/lice-comb.svg)](https://github.com/pmonks/lice-comb/issues) [![Vulnerabilities](https://github.com/pmonks/lice-comb/actions/workflows/vulnerabilities.yml/badge.svg)](https://pmonks.github.io/lice-comb/nvd/dependency-check-report.html)
 
 <img alt="lice-comb logo: a fine-toothed metal comb for removing headlice emblazoned with the OSI keyhole logo" align="right" width="25%" src="https://raw.githubusercontent.com/pmonks/lice-comb/release/lice-comb-logo.png">
 
@@ -57,11 +57,11 @@ $ deps-try com.github.pmonks/lice-comb
 
 ; Initialise the matching namespace
 ; Notes:
-; 1. This is slow the first time it's run, due to Spdx-Java-Library downloading SPDX files from the
-;    internet and caching them (it takes ~1 minute on my laptop). It's substantially faster on
-;    subsequent invocations however.
-; 2. This step is optional, though initialisation will still happen regardless, and when it does
-;    you'll incur the same cost
+; 1. This is slow the first time it's run, due to Spdx-Java-Library downloading SPDX files
+;    from the internet and caching them (it takes ~1 minute on my laptop). It's substantially
+;    faster on subsequent invocations however.
+; 2. This step is optional, though initialisation will still happen regardless, and when it
+;    does you'll incur the same cost
 (lcm/init!)
 
 (lcm/name->expressions "Apache")
@@ -106,12 +106,12 @@ $ deps-try com.github.pmonks/lice-comb
 
 (lcl/dep->expressions ['aopalliance/aopalliance "1.0"])
 ;=> #{"LicenseRef-lice-comb-PUBLIC-DOMAIN"}
-; Also shows how lice-comb handles "public domain" attestations (which are not supported directly
-; by SPDX, since "public domain" is not a license)
+; Also shows how lice-comb handles "public domain" attestations (which are not supported
+; directly by SPDX, since "public domain" is not a license)
 
 
-;; Information about matches (useful for better understanding how lice-comb arrived at a given set
-;; of expressions, and how confident it is in the values it's providing)
+;; Information about matches (useful for better understanding how lice-comb arrived at a given
+;; set of expressions, and how confident it is in the values it's providing)
 (lcm/name->expressions-info "Apache-2.0")
 ;=> {"Apache-2.0" ({:type :declared, :strategy :spdx-expression, :source ("Apache-2.0")})}
 

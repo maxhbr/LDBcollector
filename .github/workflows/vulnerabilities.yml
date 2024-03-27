@@ -1,25 +1,12 @@
 name: vulnerabilities
 on:
 # Don't require this on push or pull_request, or it'll block releases even for minor vulnerabilities
-#  push:
-#  pull_request:
+# Note: scheduled actions only run on the default branch - see https://github.com/orgs/community/discussions/38800
   schedule:
     - cron: '0 2 * * 2'   # Every Tuesday at 2am
 
 jobs:
-  skip_check:
-    runs-on: ubuntu-latest
-    outputs:
-      should_skip: ${{ steps.skip_check.outputs.should_skip }}
-    steps:
-      - id: skip_check
-        uses: fkirc/skip-duplicate-actions@master
-
   vulnerabilities:
-    needs: skip_check
-    if: ${{ needs.skip_check.outputs.should_skip != 'true' }}
-    runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
         with:
@@ -43,8 +30,9 @@ jobs:
       - name: Run NVD vulnerabilities check
         run: clojure -Srepro -J-Dclojure.main.report=stderr -T:build nvd
 
-      - name: Deploy NVD vulnerability report (release branch only)
-        if: ${{ ( success() || failure() ) && github.ref == 'refs/heads/release' }}  # Only deploy report from release branch, and regardless of whether the job succeeded or failed
+      - name: Deploy NVD vulnerability report
+#        if: ${{ ( success() || failure() ) && github.ref == 'refs/heads/release' }}  # Only deploy report from release branch, and regardless of whether the job succeeded or failed
+        if: ${{ ( success() || failure() ) }}
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
