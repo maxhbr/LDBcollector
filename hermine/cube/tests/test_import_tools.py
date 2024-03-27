@@ -162,7 +162,7 @@ class ImportSBOMTestCase(TestCase):
         with open("cube/fixtures/fake_sbom.json") as f:
             import_spdx_file(f, 1, linking=Usage.LINKING_DYNAMIC)
         usage = Usage.objects.get(
-            version__component__name="@spdx-valid-dependency",
+            version__component__name="spdx-valid-dependency",
             version__version_number="v1",
             version__purl="pkg:npm/spdx-valid-dependency@v1",
         )
@@ -177,7 +177,7 @@ class ImportSBOMTestCase(TestCase):
         with open("cube/fixtures/fake_sbom.json") as f:
             import_spdx_file(f, 1, replace=False)
         new_usage = Usage.objects.get(
-            version__component__name="@spdx-valid-dependency",
+            version__component__name="spdx-valid-dependency",
             version__version_number="v1",
         )
         self.assertEqual(
@@ -188,7 +188,7 @@ class ImportSBOMTestCase(TestCase):
         with open("cube/fixtures/fake_sbom.json") as f:
             import_spdx_file(f, 1, replace=True)
         new_usage = Usage.objects.get(
-            version__component__name="@spdx-valid-dependency",
+            version__component__name="spdx-valid-dependency",
             version__version_number="v1",
         )
         self.assertNotEqual(
