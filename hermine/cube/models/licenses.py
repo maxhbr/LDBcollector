@@ -138,7 +138,12 @@ class License(models.Model):
     )
     law_choice = models.CharField(max_length=200, blank=True)
     venue_choice = models.CharField(max_length=200, blank=True)
-    comment = models.TextField(max_length=1500, blank=True)
+    comment = models.TextField(
+        "Public comments",
+        max_length=1500,
+        blank=True,
+        help_text="This field will be included when exporting license for public sharing",
+    )
     verbatim = models.TextField(
         "Exact text of the license",
         blank=True,
