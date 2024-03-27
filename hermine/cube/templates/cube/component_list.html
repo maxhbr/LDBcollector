@@ -40,7 +40,7 @@ SPDX-License-Identifier: AGPL-3.0-only
       {% for component in object_list %}
         <tr>
           <td><a href="{% url "cube:component_detail" component.id %}">{{ component.name }}</a></td>
-          <td>{{ component.type }}</td>
+          <td>{{ component.purl_type }}</td>
           <td>
             {% for version in component.versions.all %}
               {{ version.version_number }}
@@ -58,3 +58,4 @@ SPDX-License-Identifier: AGPL-3.0-only
   {% include "cube/includes/list_nav.html" %}
 
 {% endblock %}
+
