@@ -237,7 +237,7 @@
   (when-not (s/blank? s)
     (->> (s/split (s/trim s) #"(?i)\band[/-\\]+or\b")
          (map-split-and-interpose #"(?i)(\band\b|\&)(?!\s+(distribution|all\s+rights\s+reserved))"                                                                :and)
-         (map-split-and-interpose #"(?i)\bor\b(?!\s*(-?later|lator|newer|lesser|library|\(?at\s+your\s+(option|discretion)\)?|([\"']?(Revised|Modified)[\"']?)))" :or)
+         (map-split-and-interpose #"(?i)\bor\b(?!\s*(-?(any\s+)?later|(any\s+)?lator|(any\s+)?newer|lesser|library|\(?at\s+your\s+(option|discretion)\)?|([\"']?(Revised|Modified)[\"']?)))" :or)
          (map-split-and-interpose #"(?i)\b(with\b|w/)(?!\s+the\s+acknowledgment\s+clause\s+removed)"                                                              :with)
          filter-blanks
          (map #(if (string? %) (s/trim %) %)))))
