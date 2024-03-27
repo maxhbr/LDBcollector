@@ -217,8 +217,16 @@ def add_dependency(
     if not concluded_license and is_valid(declared_license):
         concluded_license = declared_license
 
-    if not component_purl_type and purl:
-        component_purl_type = PackageURL.from_string(purl).type
+    if purl:
+        purl_obj = PackageURL.from_string(purl)
+        # Prefer the purl name over the explicit component name
+        component_name = (
+            f"{purl_obj.namespace}/{purl_obj.name}"
+            if purl_obj.namespace
+            else purl_obj.name
+        ) or component_name
+        # Prefer explicit type over the purl type
+        component_purl_type = component_purl_type or purl_obj.type
 
     component, component_log = add_component(
         component_purl_type, component_name, component_defaults
