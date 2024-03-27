@@ -188,6 +188,15 @@ STATICFILES_DIRS = [
 ]
 LOGIN_REDIRECT_URL = "/"
 
+# Always send errors to console
+LOGGING = {
+    "disable_existing_loggers": False,
+    "handlers": {
+        "level": "INFO" if DEBUG else "ERROR",
+        "filters": [],  # remove the default DEBUG filter
+    },
+}
+
 # Added After migration to Django 3.2
 DEFAULT_AUTO_FIELD = "django.db.models.AutoField"
 
