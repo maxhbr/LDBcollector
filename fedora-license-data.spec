@@ -6,7 +6,7 @@
 %endif
 
 Name:           fedora-license-data
-Version:        1.43
+Version:        1.44
 Release:        1%{?dist}
 Summary:        Fedora Linux license data
 
@@ -97,6 +97,14 @@ make check-grammar
 
 
 %changelog
+* Thu Mar 28 2024 Miroslav Suchý <msuchy@redhat.com> 1.44-1
+- add OAR License
+- include dictd md5 public domain text
+- public domain dedication for libdstr
+- Add LicenseRef-RSALv2 (not-allowed)
+- add swig to UltraPermissive
+- add LGPL-3.0-or-later WITH WxWindows-exception-3.1
+
 * Sat Mar 16 2024 Miroslav Suchý <msuchy@redhat.com> 1.43-1
 - rename LicenseRef-Threeparttable to threeparttable
 - Add “KST32B” license terms to UltraPermissive.txt
