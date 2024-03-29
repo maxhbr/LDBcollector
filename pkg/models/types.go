@@ -246,42 +246,39 @@ type AuditResponse struct {
 
 // Obligation represents an obligation record in the database.
 type Obligation struct {
-	Id             int64  `json:"id" gorm:"primary_key" example:"147"`
-	Topic          string `json:"topic" gorm:"unique" example:"copyleft"`
-	Type           string `json:"type" enums:"obligation,restriction,risk,right"`
+	Id             int64  `gorm:"primary_key" json:"id" example:"147"`
+	Topic          string `gorm:"unique" json:"topic" example:"copyleft"`
+	Type           string `json:"type" enums:"obligation,restriction,risk,right" example:"risk"`
 	Text           string `json:"text" example:"Source code be made available when distributing the software."`
-	Classification string `json:"classification" enums:"green,white,yellow,red"`
-	Modifications  bool   `json:"modifications"`
-	Comment        string `json:"comment" example:"This is a comment."`
-	Active         bool   `json:"active" gorm:"column:active"`
-	TextUpdatable  bool   `json:"text_updatable"`
-	Md5            string `json:"md5" gorm:"unique" example:"deadbeef"`
+	Classification string `json:"classification" enums:"green,white,yellow,red" example:"green"`
+	Modifications  bool   `json:"modifications" example:"true"`
+	Comment        string `json:"comment"`
+	Active         bool   `json:"active"`
+	TextUpdatable  bool   `json:"text_updatable" example:"true"`
+	Md5            string `gorm:"unique" json:"-"`
 }
 
-// ObligationInput represents the input format for creating a new obligation.
-type ObligationInput struct {
+// ObligationPOSTRequestJSONSchema represents the data format of POST request for obligation
+type ObligationPOSTRequestJSONSchema struct {
 	Topic          string   `json:"topic" binding:"required" example:"copyleft"`
-	Type           string   `json:"type" binding:"required" enums:"obligation,restriction,risk,right"`
+	Type           string   `json:"type" enums:"obligation,restriction,risk,right" binding:"required"`
 	Text           string   `json:"text" binding:"required" example:"Source code be made available when distributing the software."`
-	Classification string   `json:"classification" enums:"green,white,yellow,red"`
-	Modifications  bool     `json:"modifications"`
-	Comment        string   `json:"comment" example:"This is a comment."`
-	Active         bool     `json:"active" example:"true"`
-	TextUpdatable  bool     `json:"text_updatable"`
-	Shortnames     []string `json:"shortnames" example:"GPL-2.0-only,GPL-2.0-or-later"`
+	Classification string   `json:"classification" enums:"green,white,yellow,red" binding:"required"`
+	Modifications  bool     `json:"modifications" binding:"required"`
+	Comment        string   `json:"comment" binding:"required"`
+	Shortnames     []string `json:"shortnames" binding:"required" example:"GPL-2.0-only,GPL-2.0-or-later"`
+	Active         bool     `json:"active" binding:"required" example:"true"`
 }
 
-// UpdateObligation represents the input format for updating an existing obligation.
-type UpdateObligation struct {
-	Topic          string `json:"topic" example:"copyleft"`
-	Type           string `json:"type" enums:"obligation,restriction,risk,right"`
-	Text           string `json:"text" example:"Source code be made available when distributing the software."`
-	Classification string `json:"classification" enums:"green,white,yellow,red"`
-	Modifications  bool   `json:"modifications"`
-	Comment        string `json:"comment" example:"This is a comment."`
-	Active         bool   `json:"active" example:"true"`
-	TextUpdatable  bool   `json:"text_updatable"`
-	Md5            string `json:"-"`
+// ObligationPATCHRequestJSONSchema represents the data format of PATCH request for obligation
+type ObligationPATCHRequestJSONSchema struct {
+	Type           OptionalData[string] `json:"type" swaggertype:"string" enums:"obligation,restriction,risk,right"`
+	Text           OptionalData[string] `json:"text" swaggertype:"string" example:"Source code be made available when distributing the software."`
+	Classification OptionalData[string] `json:"classification" swaggertype:"string" enums:"green,white,yellow,red"`
+	Modifications  OptionalData[bool]   `json:"modifications" swaggertype:"boolean"`
+	Comment        OptionalData[string] `json:"comment" swaggertype:"string" example:"This is a comment."`
+	Active         OptionalData[bool]   `json:"active" swaggertype:"boolean" example:"true"`
+	TextUpdatable  OptionalData[bool]   `json:"text_updatable" swaggertype:"boolean"`
 }
 
 // ObligationResponse represents the response format for obligation data.
