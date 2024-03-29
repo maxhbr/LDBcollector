@@ -2,6 +2,7 @@
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
 
+import boolean
 import collections
 import glob
 import json
@@ -337,7 +338,11 @@ class FossLicenses:
         # Manage dual licenses (such as GPL-2.0-or-later)
         updates_object = self.__update_or_later(ret['license_expression'])
         updates = updates_object['updates']
-        updated_license = str(self.license_expression.parse(updates_object['license_expression']))
+        try:
+            updated_license = str(self.license_expression.parse(updates_object['license_expression']))
+        except boolean.boolean.ParseError as e:
+            raise FlameException(f'Could not parse \"{updates_object["license_expression"]}\". Exception: {e}')
+
 
         if update_dual:
             license_parsed = updated_license
