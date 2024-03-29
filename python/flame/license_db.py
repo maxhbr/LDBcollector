@@ -486,6 +486,18 @@ class FossLicenses:
         # List all aliases that exist
         return self.license_db[FLAME_ALIASES_TAG]
 
+    def ambiguities_list(self):
+        """Returns a list of all the ambigious licenses. 
+
+        :Example:
+
+        >>> fl = FossLicenses()
+        >>> aliases = fl.ambiguities_list()
+
+        """
+        # List all aliases that exist
+        return self.license_db[AMBIG_TAG]
+
     def aliases(self, license_name):
         """Returns a list of all the aliases for a license
 
