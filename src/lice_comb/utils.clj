@@ -31,7 +31,7 @@
    :spdx-matching-guidelines                      "SPDX matching guidelines"
    :spdx-listed-name                              "SPDX listed name (case insensitive match)"
    :spdx-listed-uri                               "SPDX listed URI (relaxed matching)"
-   :expression-inference                          "inferred SPDX expression"
+   :expression-inference                          "inferred license expression"
    :regex-matching                                "regular expression matching"
    :unidentified                                  "fallback to unidentified LicenseRef"
    :manual-verification                           "manual verification"})
