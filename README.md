@@ -6,9 +6,9 @@ Project providing insights on the {metæffekt} license database covering
 * 3 modifiers
 * 3 restrictions
 * 231 specific and commonly used license expressions, and
-* 45 consolidated markers.
+* 46 consolidated markers.
 
-as of 15th March 2024.
+as of 30th March 2024.
 
 The following links provide letter-specific overviews on the license information:
 
