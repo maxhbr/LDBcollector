@@ -79,10 +79,11 @@
   (lcis/unidentified? id))
 
 (defn unidentified->name
-  "Get the original name of the given unidentified license. Returns nil if id is nil
-  or is not a lice-comb unidentified LicenseRef."
+  "Returns the string 'Unidentified' with the original name of the given
+  unidentified license in parens. Returns nil if id is nil or is not a
+  lice-comb unidentified LicenseRef."
   [id]
-  (lcis/unidentified->name id))
+  (lcis/unidentified->human-readable-name id))
 
 (defn id->name
   "Returns the human readable name of the given license or exception identifier;

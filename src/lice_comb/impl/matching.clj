@@ -236,11 +236,40 @@
   [s]
   (when-not (s/blank? s)
     (->> (s/split (s/trim s) #"(?i)\band[/-\\]+or\b")
-         (map-split-and-interpose #"(?i)(\band\b|\&)(?!\s+(distribution|all\s+rights\s+reserved))"                                                                :and)
-         (map-split-and-interpose #"(?i)\bor\b(?!\s*(-?(any\s+)?later|(any\s+)?lator|(any\s+)?newer|lesser|library|\(?at\s+your\s+(option|discretion)\)?|([\"']?(Revised|Modified)[\"']?)))" :or)
-         (map-split-and-interpose #"(?i)\b(with\b|w/)(?!\s+the\s+acknowledgment\s+clause\s+removed)"                                                              :with)
+         (map-split-and-interpose #"(?i)(\band\b|\&)(?!\s+(distribution|all\s+rights\s+reserved))"
+                                  :and)
+         (map-split-and-interpose #"(?i)\bor\b(?!\s*(-?(greater|(any\s+)?later|(any\s+)?lator|(any\s+)?newer|lesser|library|\(?at\s+your\s+(option|discretion)\)?|([\"']?(Revised|Modified)[\"']?))))"
+                                  :or)
+         (map-split-and-interpose #"(?i)\b(with\b|w/)(?!\s+the\s+acknowledgment\s+clause\s+removed)"
+                                  :with)
          filter-blanks
          (map #(if (string? %) (s/trim %) %)))))
+
+(defn- collapse-unlisted-exceptions
+  "Collapses exception fragments with a LicenseRef on the right side (which is
+  not valid in SPDX v2.3, returning a single LicenseRef for the entire fragment
+  instead.
+
+  Note: this will need to change substantially as part of https://github.com/pmonks/lice-comb/issues/42"
+  [l]
+  (loop [f      (take 3 l)
+         r      (rest l)
+         result nil]
+    (if (< (count f) 3)
+      (concat result f)
+      (let [left  (first f)
+            op    (second f)
+            right (second (rest f))]
+        (if (and (= :with op) (lcis/unidentified? (first (keys right))))
+          (let [skip2      (rest (rest r))
+                left-name  (first (:source (first (first (vals left)))))
+                right-name (lcis/unidentified->name (first (keys right)))
+                new-name   (str left-name " with " right-name)
+                new-id     (lcis/name->unidentified new-name)]
+            (recur (take 3 skip2) (rest skip2)
+                   (concat result (list {new-id (list {:id new-id :type :concluded :confidence :low :strategy :unidentified :source (list new-name)})}))))
+          (recur (take 3 r) (rest r)
+                 (concat result (list left))))))))
 
 (def ^:private push conj)   ; With lists-as-stacks conj == push
 
@@ -308,14 +337,21 @@
                                 (get @cursed-names-d name)
 
                                 ; 2. Construct an expressions-info map from the name
-                                (some->> (split-on-operators name)
-                                         (drop-while keyword?)
-                                         (lc3/rdrop-while keyword?)
-                                         (map #(if (keyword? %) % (string->ids-info %)))
-                                         flatten
-                                         seq
-                                         build-expressions-info-map
-                                         (lciu/mapfonk sexp/normalise)))))))
+                                (let [partial-result (some->> (split-on-operators name)
+                                                              (drop-while keyword?)
+                                                              (lc3/rdrop-while keyword?)
+                                                              (map #(if (keyword? %) % (string->ids-info %)))
+                                                              flatten
+                                                              collapse-unlisted-exceptions
+                                                              seq)
+                                      ids-only       (seq (mapcat keys (filter map? partial-result)))]
+                                  ; Check whether all we have are unidentified LicenseRefs, and if so just return the entire thing as a single unidentified LicenseRef
+                                  (if (every? lcis/unidentified? ids-only)
+                                    (let [id (lcis/name->unidentified (s/trim name))]
+                                      {id (list {:id id :type :concluded :confidence :low :strategy :unidentified :source (list)})})
+                                    (some->> partial-result
+                                             build-expressions-info-map
+                                             (lciu/mapfonk sexp/normalise)))))))))
 
 (defn init!
   "Initialises this namespace upon first call (and does nothing on subsequent

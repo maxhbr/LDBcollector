@@ -115,11 +115,22 @@
   nil or is not a lice-comb unidentified LicenseRef."
   [id]
   (when (unidentified? id)
-    (str "Unidentified ("
-         (if (> (count id) (count unidentified-license-ref-prefix))
-           (lciu/base62-decode (subs id (inc (count unidentified-license-ref-prefix))))
-           "-original name not available-")
-          ")")))
+    (if (> (count id) (count unidentified-license-ref-prefix))
+      (lciu/base62-decode (subs id (inc (count unidentified-license-ref-prefix))))
+      "")))
+
+(defn unidentified->human-readable-name
+  "Returns the string 'Unidentified' with the original name of the given
+  unidentified license in parens. Returns nil if id is nil or is not a
+  lice-comb unidentified LicenseRef."
+  [id]
+  (when (unidentified? id)
+    (let [original-name (unidentified->name id)]
+      (str "Unidentified ("
+           (if (s/blank? original-name)
+             "-original name not available-")
+             original-name
+           ")"))))
 
 (defn init!
   "Initialises this namespace upon first call (and does nothing on subsequent
