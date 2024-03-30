@@ -111,7 +111,9 @@
   "Decodes the given Base62/UTF-8 string."
   [^String s]
   (when s
-    (java.lang.String. ^bytes (base62/decode s) (java.nio.charset.StandardCharsets/UTF_8))))
+    (if (re-matches #"\p{Alnum}*" s)
+      (java.lang.String. ^bytes (base62/decode s) (java.nio.charset.StandardCharsets/UTF_8))
+      (throw (ex-info (str "Invalid BASE62 value provided: " s) {})))))   ; Because clj-base62 has crappy error messages
 
 (defn valid-http-uri?
   "Returns true if given string is a valid HTTP or HTTPS URI."

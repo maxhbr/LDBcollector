@@ -198,7 +198,11 @@
     (is (valid= #{"GPL-2.0-only WITH Classpath-exception-2.0"} (name->expressions "GPL2 w/ CPE")))   ; One of two licenses in javax.xml.bind/jaxb-api@2.4.0-b180830.0359 (via parent)
     (is (valid= #{"GPL-2.0-or-later"}                   (name->expressions "GNU General Public License (GPL) version 2, or any later version")))   ; One of three licenses in org.bytedeco/javacpp-platform@1.5.10
     (is (valid= #{"GPL-2.0-or-later"}                   (name->expressions "GNU General Public License (GPL) version 2, or any lator version")))   ; Spelling variation on the previous test
-    (is (valid= #{"GPL-2.0-or-later"}                   (name->expressions "GNU General Public License (GPL) version 2, or any newer version"))))  ; Ditto
+    (is (valid= #{"GPL-2.0-or-later"}                   (name->expressions "GNU General Public License (GPL) version 2, or any newer version")))   ; Ditto
+    (is (valid= #{"UPL-1.0"}                            (name->expressions "Universal Permissive License, Version 1.0")))
+    (is (valid= #{"CC0-1.0"}                            (name->expressions "Public Domain, per Creative Commons CC0")))
+    (is (valid= #{"LicenseRef-lice-comb-UNIDENTIFIED-210UC7nlCWUwBBse5ma6Ntey1j3a0v0J3kvJVbZ38z7UIQnaj"} (name->expressions "provided without support or warranty")))   ; A nasty corner case because of the "or"
+    (is (valid= #{(str (lcis/name->unidentified "CC Attribution 4.0 International with exception for binary distribution") " OR Apache-2.0")} (name->expressions "CC Attribution 4.0 International with exception for binary distribution or apache 2.0"))))  ; A nasty corner case of a non-standard exception in an otherwise valid expression
   (testing "All names seen in POMs on Clojars as of 2023-07-13"
     (is (valid= #{"AFL-3.0"}                            (name->expressions "Academic Free License 3.0")))
     (is (valid= #{"AGPL-3.0-only" (lcis/proprietary-commercial)} (name->expressions "GNU Affero General Public License Version 3; Other commercial licenses available.")))
@@ -368,7 +372,7 @@
     (is (valid= #{"Beerware"}                           (name->expressions "THE BEER-WARE LICENSE")))
     (is (valid= #{"CC-BY-2.5"}                          (name->expressions "Creative Commons Attribution 2.5 License")))
     (is (valid= #{"CC-BY-3.0"}                          (name->expressions "Creative Commons 3.0")))
-    (is (valid= #{"CC-BY-4.0" (lcis/name->unidentified "exception for binary distribution")} (name->expressions "CC Attribution 4.0 International with exception for binary distribution")))  ; The exception in this case doesn't map to any listed SPDX identifier (including CC-BY variants)
+    (is (valid= #{(lcis/name->unidentified "CC Attribution 4.0 International with exception for binary distribution")} (name->expressions "CC Attribution 4.0 International with exception for binary distribution")))  ; The exception in this case doesn't map to any listed SPDX identifier (including CC-BY variants), and as of SPDX 2.0 unidentified exceptions are to be "rolled in" with the associated license identifier, and reported as a (single) LicenseRef. In SPDX v3.0+ this will change with the addition of the AdditionRef construct.
     (is (valid= #{"CC-BY-4.0"}                          (name->expressions "CC-BY-4.0")))
     (is (valid= #{"CC-BY-4.0"}                          (name->expressions "Creative Commons Attribution License")))  ; Listed license missing version - we assume the latest
     (is (valid= #{"CC-BY-NC-3.0"}                       (name->expressions "Creative Commons Attribution-NonCommercial 3.0")))
