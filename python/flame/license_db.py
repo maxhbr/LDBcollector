@@ -2,6 +2,7 @@
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
 
+import boolean
 import collections
 import glob
 import json
@@ -337,7 +338,10 @@ class FossLicenses:
         # Manage dual licenses (such as GPL-2.0-or-later)
         updates_object = self.__update_or_later(ret['license_expression'])
         updates = updates_object['updates']
-        updated_license = str(self.license_expression.parse(updates_object['license_expression']))
+        try:
+            updated_license = str(self.license_expression.parse(updates_object['license_expression']))
+        except boolean.boolean.ParseError as e:
+            raise FlameException(f'Could not parse \"{updates_object["license_expression"]}\". Exception: {e}')
 
         if update_dual:
             license_parsed = updated_license
@@ -480,6 +484,45 @@ class FossLicenses:
             return {k: v for k, v in self.license_db[FLAME_ALIASES_TAG].items() if alias_license in v}
         # List all aliases that exist
         return self.license_db[FLAME_ALIASES_TAG]
+
+    def ambiguities_list(self):
+        """Returns a list of all the ambigious licenses.
+
+        :Example:
+
+        >>> fl = FossLicenses()
+        >>> aliases = fl.ambiguities_list()
+
+        """
+        # List all aliases that exist
+        return self.license_db[AMBIG_TAG]
+
+    def known_symbols(self):
+        """Returns a list of all all known license symbols.
+
+        :Example:
+
+        >>> fl = FossLicenses()
+        >>> aliases = fl.known_symbols()
+
+        """
+        _symbols = set()
+
+        ambiguities = self.ambiguities_list()['ambiguities']
+        for ambig in ambiguities:
+            _symbols.add(ambig)
+            _symbols.update(set(ambiguities[ambig]['aliases']))
+
+        licenses = self.license_db[LICENSES_TAG]
+        for lic in licenses:
+            _symbols.add(lic)
+            _symbols.update(set(licenses[lic]['aliases']))
+
+        operators = self.license_db[LICENSE_OPERATORS_TAG]
+        for op in operators:
+            _symbols.add(op)
+
+        return list(_symbols)
 
     def aliases(self, license_name):
         """Returns a list of all the aliases for a license
