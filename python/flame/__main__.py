@@ -9,6 +9,7 @@ import argparse
 import logging
 import sys
 import traceback
+import re
 
 from flame.license_db import FossLicenses
 from flame.license_db import Validation
@@ -131,6 +132,12 @@ def get_parser():
         'licenses', help='show all licenses')
     parser_cs.set_defaults(which='licenses', func=licenses)
 
+    # unknown
+    parser_u = subparsers.add_parser(
+        'unknown', help='Show the unknown licenses for a license expression. Intended for foss-licenses developers.')
+    parser_u.set_defaults(which='unknown', func=unknown)
+    parser_u.add_argument('license', type=str, nargs='+', help='license expression to fix')
+
     return parser
 
 def parse():
@@ -148,6 +155,20 @@ def aliases(fl, formatter, args):
 def licenses(fl, formatter, args):
     all_licenses = fl.licenses()
     return formatter.format_licenses(all_licenses, args.verbose)
+
+def unknown(fl, formatter, args):
+    validations = __validations(args)
+    compat_license_expression = fl.expression_license(' '.join(args.license), validations=validations, update_dual=(not args.no_dual_update))
+    compat_licenses = [x.strip() for x in re.split('\(|OR|AND|\)', compat_license_expression['identified_license'])]
+    compat_licenses = [x for x in compat_licenses if x]
+    unknown_symbols = set()
+    for compat_license in compat_licenses:
+        if not compat_license in fl.known_symbols():
+            unknown_symbols.add(compat_license)
+    warnings = None
+    if len(unknown_symbols) != 0:
+        raise FlameException('Unknown symbols identified.\n' + '\n'.join(list(unknown_symbols)))
+    return 'OK', None
 
 def simplify(fl, formatter, args):
     simplified = fl.simplify(args.license_expression)
