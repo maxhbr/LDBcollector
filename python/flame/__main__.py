@@ -163,9 +163,8 @@ def unknown(fl, formatter, args):
     compat_licenses = [x for x in compat_licenses if x]
     unknown_symbols = set()
     for compat_license in compat_licenses:
-        if not compat_license in fl.known_symbols():
+        if compat_license not in fl.known_symbols():
             unknown_symbols.add(compat_license)
-    warnings = None
     if len(unknown_symbols) != 0:
         raise FlameException('Unknown symbols identified.\n' + '\n'.join(list(unknown_symbols)))
     return 'OK', None

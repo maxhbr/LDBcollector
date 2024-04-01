@@ -343,7 +343,6 @@ class FossLicenses:
         except boolean.boolean.ParseError as e:
             raise FlameException(f'Could not parse \"{updates_object["license_expression"]}\". Exception: {e}')
 
-
         if update_dual:
             license_parsed = updated_license
         else:
@@ -487,7 +486,7 @@ class FossLicenses:
         return self.license_db[FLAME_ALIASES_TAG]
 
     def ambiguities_list(self):
-        """Returns a list of all the ambigious licenses. 
+        """Returns a list of all the ambigious licenses.
 
         :Example:
 
@@ -498,9 +497,8 @@ class FossLicenses:
         # List all aliases that exist
         return self.license_db[AMBIG_TAG]
 
-
     def known_symbols(self):
-        """Returns a list of all all known license symbols. 
+        """Returns a list of all all known license symbols.
 
         :Example:
 
@@ -509,7 +507,7 @@ class FossLicenses:
 
         """
         _symbols = set()
-        
+
         ambiguities = self.ambiguities_list()['ambiguities']
         for ambig in ambiguities:
             _symbols.add(ambig)
@@ -525,7 +523,7 @@ class FossLicenses:
             _symbols.add(op)
 
         return list(_symbols)
-    
+
     def aliases(self, license_name):
         """Returns a list of all the aliases for a license
 
