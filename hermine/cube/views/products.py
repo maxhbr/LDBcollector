@@ -35,6 +35,7 @@ class ProductCreateView(
     LoginRequiredMixin, PermissionRequiredMixin, generic.CreateView
 ):
     permission_required = "cube.add_product"
+    model = Product
     form_class = ProductForm
     template_name = "cube/product_create.html"
 
@@ -43,6 +44,7 @@ class ProductUpdateView(
     LoginRequiredMixin, PermissionRequiredMixin, generic.UpdateView
 ):
     permission_required = "cube.change_product"
+    model = Product
     form_class = ProductForm
     template_name = "cube/product_update.html"
 
