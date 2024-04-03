@@ -58,3 +58,37 @@
     @extend .is-danger
   }
 }
+
+.select2.select2-container {
+  @extend .input;
+  padding: 0;
+  position: relative;
+  display: inline-block;
+
+  .select2-selection {
+    height: 100%;
+    padding: 5px 0 !important;
+    border: 0 !important;
+  }
+
+  .select2-selection__rendered {
+    padding: 0;
+    line-height: 1.5;
+
+    .select2-selection__choice {
+      margin-top: 0;
+      max-height: 27px;
+    }
+
+    .select2-search--inline {
+      max-height: 27px;
+      margin: 0;
+      input {
+        border: 0;
+        margin: 0;
+        padding: 5px;
+        max-height: 27px;
+      }
+    }
+  }
+}
