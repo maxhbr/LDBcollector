@@ -2783,6 +2783,8 @@ categorizations:
       - "free-restricted"
       - "property:include-in-notice-file"
       - "include-in-notice-file"
+      - "property:no-modifications"
+      - "property:specification-license"
 
   - id: "LicenseRef-scancode-ecma-no-patent"
     categories:
