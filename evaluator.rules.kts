@@ -966,7 +966,9 @@ fun resolveViolationInSourceCodeText(pkg: Package, license: String) : String {
  */
 
 fun isException(license: SpdxSingleLicenseExpression): Boolean =
-    ("-exception" in license.toString() && " WITH " !in license.toString())
+    license.toString().let { string ->
+        string.startsWith("NOASSERTION WITH ") ||  ("-exception" in string && " WITH " !in string)
+    }
 
 fun PackageRule.hasDefinitionFileName(vararg definitionFileNames: String) =
     object : RuleMatcher {
