@@ -29,8 +29,20 @@ To build front modules, use the following command:
 npm run install
 npm run watch # watch for changes and rebuild
 ```
+## Working with DevContainer
 
+You can also run Hermine inside a [DevContainer](https://containers.dev/).
 
+It allows to develop inside a container, in a described and clean environnment. You need to find how to integrate it to your IDE.
+
+The PostCreate command will do the database migrations, you need to create your superuser and run the server. You also need to create your config file from default one.
+```bash
+cp hermine/hermine/config.default.py hermine/hermine/config.py
+poetry run python hermine/manage.py createsuperuser
+poetry run python hermine/manage.py runserver
+```
+
+## Specific aspects
 
 We document here the Hermine-specific aspects of the code. 
 The different FOSS components on which Hermine relies have their own, very useful 
