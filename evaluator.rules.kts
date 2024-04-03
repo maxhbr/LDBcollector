@@ -965,7 +965,7 @@ fun resolveViolationInSourceCodeText(pkg: Package, license: String) : String {
  * Set of matchers to help keep policy rules easy to understand and corresponding helper functions.
  */
 
-fun isException(license: SpdxSingleLicenseExpression): Boolean =
+fun isExceptionWithoutLicense(license: SpdxSingleLicenseExpression): Boolean =
     license.toString().let { string ->
         string.startsWith("NOASSERTION WITH ") ||  ("-exception" in string && " WITH " !in string)
     }
@@ -995,7 +995,7 @@ fun PackageRule.LicenseRule.isHandled() =
     object : RuleMatcher {
         override val description = "isHandled($license)"
 
-        override fun matches() = license in handledLicenses && !isException(license)
+        override fun matches() = license in handledLicenses && !isExceptionWithoutLicense(license)
     }
 
 fun PackageRule.LicenseRule.isCommercial() =
@@ -1019,11 +1019,11 @@ fun PackageRule.LicenseRule.isCopyleftLimited() =
         override fun matches() = license in copyleftLimitedLicenses
     }
 
-fun PackageRule.LicenseRule.isException() =
+fun PackageRule.LicenseRule.isExceptionWithoutLicense() =
     object : RuleMatcher {
-        override val description = "isException($license)"
+        override val description = "isExceptionWithoutLicense($license)"
 
-        override fun matches() = isException(license)
+        override fun matches() = isExceptionWithoutLicense(license)
     }
 
 fun PackageRule.LicenseRule.isFreeRestricted() =
@@ -1530,7 +1530,7 @@ fun RuleSet.unhandledLicenseRule() = packageRule("UNHANDLED_LICENSE") {
         require {
             -isExcluded()
             -isHandled()
-            -isException()
+            -isExceptionWithoutLicense()
         }
 
         error(
