@@ -20,7 +20,7 @@ class ProductListView(
     model = Product
     template_name = "cube/product_list.html"
     search_fields = ("name", "description")
-    paginate_by = 10
+    paginate_by = 25
 
 
 class ProductDetailView(

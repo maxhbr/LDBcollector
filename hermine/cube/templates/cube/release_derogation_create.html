@@ -11,7 +11,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% block title %}{{ form.usage.release.product.name }} {{ form.usage.release.release_number }}{% endblock %}
 {% block breadcrumbs %}
   <ul>
-    <li>Hermine</li>
+    <li><a href="{% url 'cube:dashboard' %}">Hermine</a></li>
     <li><a href="{% url "cube:product_detail" form.usage.release.product.id %}">{{ form.usage.release.product.name }}</a></li>
     <li><a href="{% url "cube:release_summary" form.usage.release.id %}">{{ form.usage.release.release_number }}</a></li>
     <li>Add derogation</li>
