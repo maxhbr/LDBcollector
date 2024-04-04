@@ -6,7 +6,6 @@
     "name": "Free Software Foundation - Free Software License",
     "scancode_key": "fsf-free",
     "spdxid": "FSFUL",
-    "compatibility_as": "0BSD",
     "aliases": [
         "FSF Unlimited License",
         "scancode://fsf-free",
