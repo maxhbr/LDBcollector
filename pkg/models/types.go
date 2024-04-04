@@ -325,3 +325,39 @@ type ObligationMapResponse struct {
 	Data   []ObligationMapUser `json:"data"`
 	Meta   PaginationMeta      `json:"paginationmeta"`
 }
+
+// ObligationImportRequest represents the request body structure for import obligation
+type ObligationImportRequest struct {
+	ObligationFile string `form:"file"`
+}
+
+// ObligationImport represents an obligation record in the import json file.
+type ObligationImport struct {
+	Topic          string   `json:"topic" example:"copyleft" validate:"required"` // binding:"required" tag cannot be used as is works only for request body
+	Type           string   `json:"type" enums:"obligation,restriction,risk,right" validate:"required"`
+	Text           string   `json:"text" example:"Source code be made available when distributing the software." validate:"required"`
+	Classification string   `json:"classification" enums:"green,white,yellow,red" validate:"required"`
+	Modifications  bool     `json:"modifications" validate:"required"`
+	Comment        string   `json:"comment" example:"This is a comment." validate:"required"`
+	Active         bool     `json:"active" validate:"required"`
+	TextUpdatable  bool     `json:"text_updatable" validate:"required"`
+	Shortnames     []string `json:"shortnames" example:"GPL-2.0-only,GPL-2.0-or-later" validate:"required"`
+}
+
+// ObligationId is the id of successfully imported obligation
+type ObligationId struct {
+	Id    int64  `json:"id" example:"31"`
+	Topic string `json:"topic" example:"copyleft"`
+}
+
+// ObligationImportStatus is the status of obligation records successfully inserted in the database during import
+type ObligationImportStatus struct {
+	Status int          `json:"status" example:"200"`
+	Data   ObligationId `json:"data"`
+}
+
+// ImportObligationsResponse is the response structure for import obligation response
+type ImportObligationsResponse struct {
+	Status int           `json:"status" example:"200"`
+	Data   []interface{} `json:"data"` // can be of type models.LicenseError or models.ObligationImportStatus
+}

@@ -880,6 +880,71 @@ const docTemplate = `{
                 }
             }
         },
+        "/obligations/import": {
+            "post": {
+                "security": [
+                    {
+                        "ApiKeyAuth": []
+                    }
+                ],
+                "description": "Import obligations by uploading a json file",
+                "consumes": [
+                    "multipart/form-data"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Obligations"
+                ],
+                "summary": "Import obligations by uploading a json file",
+                "operationId": "ImportObligations",
+                "parameters": [
+                    {
+                        "type": "file",
+                        "description": "obligations json file list",
+                        "name": "file",
+                        "in": "formData",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "allOf": [
+                                {
+                                    "$ref": "#/definitions/models.ImportObligationsResponse"
+                                },
+                                {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "type": "array",
+                                            "items": {
+                                                "$ref": "#/definitions/models.ObligationImportStatus"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    "400": {
+                        "description": "input file must be present",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    },
+                    "500": {
+                        "description": "Internal server error",
+                        "schema": {
+                            "$ref": "#/definitions/models.LicenseError"
+                        }
+                    }
+                }
+            }
+        },
         "/obligations/{topic}": {
             "get": {
                 "description": "Get an active based on given topic",
@@ -1356,6 +1421,20 @@ const docTemplate = `{
                 }
             }
         },
+        "models.ImportObligationsResponse": {
+            "type": "object",
+            "properties": {
+                "data": {
+                    "description": "can be of type models.LicenseError or models.ObligationImportStatus",
+                    "type": "array",
+                    "items": {}
+                },
+                "status": {
+                    "type": "integer",
+                    "example": 200
+                }
+            }
+        },
         "models.LicenseDB": {
             "type": "object",
             "required": [
@@ -1717,6 +1796,31 @@ const docTemplate = `{
                         "right"
                     ],
                     "example": "risk"
+                }
+            }
+        },
+        "models.ObligationId": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "integer",
+                    "example": 31
+                },
+                "topic": {
+                    "type": "string",
+                    "example": "copyleft"
+                }
+            }
+        },
+        "models.ObligationImportStatus": {
+            "type": "object",
+            "properties": {
+                "data": {
+                    "$ref": "#/definitions/models.ObligationId"
+                },
+                "status": {
+                    "type": "integer",
+                    "example": 200
                 }
             }
         },
