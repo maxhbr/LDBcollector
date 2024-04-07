@@ -10,6 +10,13 @@
             ],
             "problem": "This license has many different versions (1.1, 1.2, 2.0, 2.1 and 3.0). Without a version number it is not possible to determine which of the versions is meant."
         },
+        "Apache License": {
+            "aliases": [
+                "Apache License",
+                "Apache Software License"
+            ],
+            "problem": "This license has different version (1.0, 1.1, and 2.0). Without a version number it is not possible to determine which of the versions is meant."
+        },
         "Artistic License": {
             "aliases": [
                 "License :: OSI Approved :: Artistic License",
@@ -28,7 +35,8 @@
         },
         "BSD": {
             "aliases": [
-                "BSD License (BSD License)"
+                "BSD License (BSD License)",
+                "BSD License"
             ],
             "problem": "There are a couple of variants or versions of the BSD license (0BSD, BSD-1-Clause, BSD-2-Clause, BSD-3-Clause and BSD-4-Clause). Without the version/variant of the license it is not possible to determine which of the versions is meant."
         },
@@ -63,8 +71,7 @@
                 "GNU Library General Public License v2 only",
                 "License :: OSI Approved :: GNU Lesser General Public License v2 (LGPLv2)",
                 "GNU Lesser General Public License v2 (LGPLv2)",
-                "LGPLv2 or later",
-                "GNU General Public License, Version 2 or later"
+                "LGPLv2 or later"
             ],
             "problem": "This license has different versions (2.0, 2.1 and 3.0). Without a version number it is not possible to determine which of the versions is meant."
         },

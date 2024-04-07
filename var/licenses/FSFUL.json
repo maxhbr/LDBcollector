@@ -3,14 +3,12 @@
         "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
         "comment": ""
     },
-    "name": "Free Software Foundation - Free Software License",
+    "name": "FSF Unlimited License",
     "scancode_key": "fsf-free",
     "spdxid": "FSFUL",
-    "compatibility_as": "0BSD",
     "aliases": [
         "FSF Unlimited License",
         "scancode://fsf-free",
-        "FSF Free Software License",
         "FSFUL",
         "scancode:fsf-free"
     ]

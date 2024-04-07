@@ -1,0 +1,19 @@
+{
+    "meta": {
+        "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+        "comment": ""
+    },
+    "name": "FSF Unlimited License (with License Retention)",
+    "scancode_key": "fsf-unlimited",
+    "spdxid": "FSFULLR",
+    "aliases": [
+        "FSF Unlimited License (with License Retention)",
+        "FSF Unlimited License (with retention)",
+        "Free Software Foundation - Unlimited License",
+        "scancode://fsf-unlimited",
+        "FSF-Unlimited",
+        "FSFULLR",
+        "This file is free software; the Free Software Foundation gives unlimited permission to copy and/or distribute it",
+        "scancode:fsf-unlimited"
+    ]
+}
