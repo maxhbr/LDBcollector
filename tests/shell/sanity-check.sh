@@ -161,7 +161,7 @@ check_presence EPL-2.0 " -e 2.0 -e 2" " -e 1"
 check_presence FSFAP    " -i -e FSFAP -e \"All Permissive\" -e fsf-ap"       " -i -e FUL"
 check_presence FSFUL    " -i  -e FSFUL -e unlimited -e fsf-free "      " -e FSFAP -e FSFFULLR -e FSFULLRWD "
 check_presence FSFULLR  " -i -e FSFULLR -e unlimited -e retention "    " -e FSFAP -e FSFULLRWD "
-check_presence FSFULLRWD " -i -e FSFULLRWD " " -e FSFAP  "
+check_presence FSFULLRWD " -i -e FSFULLRWD -e warranty " " -e FSFAP  "
 
 check_presence GPL-1.0-only " -e 1 " " -e 2 -e later -e 3"
 check_presence GPL-2.0-only " -e 2 " " -e '1 ' -e later -e 3"
