@@ -78,7 +78,7 @@ check_presence()
     if [ "$PRESENT" != "" ]
     then
         echo "FAIL"
-        echo " * cause: Incorrectly present in $FILE"
+        echo " * cause: Not present in $FILE"
         echo " --------------------------"
         echo "Should be present: $REG_EXP_PRESENCE"
         echo " --------------------------"
@@ -158,6 +158,11 @@ check_presence CPL-1.0 " -e 1.0  -e 1 " " -e 0.5 -e 2"
 check_presence EPL-1.0 " -e 1.0 -e 1" " -e 2"
 check_presence EPL-2.0 " -e 2.0 -e 2" " -e 1"
 
+check_presence FSFAP    " -i -e FSFAP -e \"All Permissive\" -e fsf-ap"       " -i -e FUL"
+check_presence FSFUL    " -i  -e FSFUL -e unlimited -e fsf-free "      " -e FSFAP -e FSFFULLR -e FSFULLRWD "
+check_presence FSFULLR  " -i -e FSFULLR -e unlimited -e retention "    " -e FSFAP -e FSFULLRWD "
+check_presence FSFULLRWD " -i -e FSFULLRWD " " -e FSFAP  "
+
 check_presence GPL-1.0-only " -e 1 " " -e 2 -e later -e 3"
 check_presence GPL-2.0-only " -e 2 " " -e '1 ' -e later -e 3"
 check_presence GPL-3.0-only " -e 3 " " -e '1 ' -e 2 -e later -i -e affero "
@@ -182,8 +187,8 @@ check_presence MIT-advertising " -e 0 -i -e advertising" " -i -e \"no advertisin
 
 check_presence MPL-1.0 " -e 1.0" "-e 2 -e 1.1"
 check_presence MPL-1.1 " -e 1.1" "-e 2 -e 1.0"
-check_presence MPL-2.0 " -e 2" "-e 1"
-check_presence MPL-2.0-no-copyleft-exception " -e 2 -i -e 'no copyleft'" "-e 1"
+check_presence MPL-2.0 " -e 2" " -e 1"
+check_presence MPL-2.0-no-copyleft-exception " -i -e 2 -e 'no[ \-]copyleft'" "-e 1"
 
 check_presence OFL-1.0 " -e 1.0" " -e 1.1"
 check_presence OFL-1.1 " -e 1.1" " -e 1.0"
