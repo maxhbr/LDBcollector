@@ -73,10 +73,10 @@
   @local-maven-repo-a)
 
 (defn set-local-maven-repo!
-  [dir]
   "Sets the local Maven repo to use from this point onward. The argument is a
   String containing a file path that must be a readable directory that exists
   (throws ex-info if these conditions are not met)."
+  [dir]
   (let [d (io/file dir)]
     (if (and (.exists      d)
              (.isDirectory d)
