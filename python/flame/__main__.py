@@ -115,7 +115,7 @@ def get_parser():
     parser_a = subparsers.add_parser(
         'aliases', help='Display all aliases')
     parser_a.set_defaults(which='aliases', func=aliases)
-    parser_a.add_argument('--license', '-l', type=str, dest='alias_license', help='List only the aliases for licenses containing the given string', default=None)
+    parser_a.add_argument('--include-license', '-il', type=str, dest='include_license', help='List only the aliases for licenses containing the given string (case insensitive)', default=None)
 
     # compatbilities
     parser_cs = subparsers.add_parser(
@@ -149,7 +149,7 @@ def operators(fl, formatter, args):
     return formatter.format_operators(all_op, args.verbose)
 
 def aliases(fl, formatter, args):
-    all_aliases = fl.alias_list(args.alias_license)
+    all_aliases = fl.alias_list(args.include_license)
     return formatter.format_alias_list(all_aliases, args.verbose)
 
 def licenses(fl, formatter, args):
