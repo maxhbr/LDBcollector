@@ -2411,6 +2411,21 @@ categorizations:
       - "property:include-in-notice-file"
       - "include-in-notice-file"
 
+  # https://www.apple.com/legal/sla/docs/xcode.pdf
+  - id: "LicenseRef-doubleopen-apple-xcode-sdk"
+    categories:
+      - "commercial"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://github.com/apache/cxf/blob/3.4.x-fixes/distribution/src/main/release/samples/jax_rs/search/src/main/resources/JavaWebSocketAPI_1.0_Final.pdf
+  - id: "LicenseRef-doubleopen-jsr-356-websocket-spec"
+    categories:
+      - "proprietary-free"
+      - "property:specification-license"
+      - "property:no-modifications"
+      - "property:patent-clause"
+
   - id: "LicenseRef-eCos-exception-2.0"
     categories:
       - "property:AutoConf-or-other-exception"
