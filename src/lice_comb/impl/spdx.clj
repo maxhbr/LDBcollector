@@ -128,8 +128,8 @@
     (let [original-name (unidentified->name id)]
       (str "Unidentified ("
            (if (s/blank? original-name)
-             "-original name not available-")
-             original-name
+             "-original name not available-"
+             original-name)
            ")"))))
 
 (defn init!
