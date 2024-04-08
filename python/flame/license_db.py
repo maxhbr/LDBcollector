@@ -481,7 +481,7 @@ class FossLicenses:
 
         """
         if alias_license:
-            return {k: v for k, v in self.license_db[FLAME_ALIASES_TAG].items() if alias_license in v}
+            return {k: v for k, v in self.license_db[FLAME_ALIASES_TAG].items() if alias_license.lower() in v.lower()}
         # List all aliases that exist
         return self.license_db[FLAME_ALIASES_TAG]
 
