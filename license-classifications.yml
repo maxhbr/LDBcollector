@@ -2424,6 +2424,7 @@ categorizations:
       - "proprietary-free"
       - "property:specification-license"
       - "property:no-modifications"
+      - "property:patent-clause"
 
   - id: "LicenseRef-eCos-exception-2.0"
     categories:
