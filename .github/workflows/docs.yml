@@ -30,7 +30,7 @@ jobs:
         run: clojure -Srepro -J-Dclojure.main.report=stderr -T:build docs
 
       - name: Deploy docs
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           keep_files: true    # Required so that we don't clobber the NVD report (published separately)

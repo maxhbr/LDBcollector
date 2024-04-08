@@ -45,22 +45,73 @@
 
 (def ^:private separator java.io.File/separator)
 
-(def ^:private local-maven-repo-d
-  (delay
-    (try
-      ; The command:
-      ;     mvn help:evaluate -Dexpression=settings.localRepository -q -DforceStdout
-      ; determines where the local repository is located.
-      (let [sh-result (sh/sh "mvn" "help:evaluate" "-Dexpression=settings.localRepository" "-q" "-DforceStdout")]
-        (if (zero? (:exit sh-result))
-          (s/trim (:out sh-result))
-          (str (System/getProperty "user.home") (str separator ".m2" separator "repository"))))
-      (catch java.io.IOException _
-        (str (System/getProperty "user.home") (str separator ".m2" separator "repository"))))))
+(def default-local-maven-repo
+  "A String containing a file path for the default local Maven artifact
+  cache that the library uses.  Attempts to use this Maven client command to
+  determine this value:
 
-; TODO: make this configurable
-(def ^:private remote-maven-repos {"central" "https://repo1.maven.org/maven2"
-                                   "clojars" "https://repo.clojars.org"})
+    mvn help:evaluate -Dexpression=settings.localRepository -q -DforceStdout
+
+  but falls back on a \"best guess\" if the Maven client isn't installed or
+  cannot be executed."
+  (try
+    ; The command:
+    ;     mvn help:evaluate -Dexpression=settings.localRepository -q -DforceStdout
+    ; determines where the local repository is located.
+    (let [sh-result (sh/sh "mvn" "help:evaluate" "-Dexpression=settings.localRepository" "-q" "-DforceStdout")]
+      (if (zero? (:exit sh-result))
+        (s/trim (:out sh-result))
+        (str (System/getProperty "user.home") (str separator ".m2" separator "repository"))))
+    (catch java.io.IOException _
+      (str (System/getProperty "user.home") (str separator ".m2" separator "repository")))))
+
+(def ^:private local-maven-repo-a (atom default-local-maven-repo))
+
+(defn local-maven-repo
+  "The current local Maven repo in use, as a String containing a file path."
+  []
+  @local-maven-repo-a)
+
+(defn set-local-maven-repo!
+  "Sets the local Maven repo to use from this point onward. The argument is a
+  String containing a file path that must be a readable directory that exists
+  (throws ex-info if these conditions are not met)."
+  [dir]
+  (let [d (io/file dir)]
+    (if (and (.exists      d)
+             (.isDirectory d)
+             (.canRead     d))
+      (swap! local-maven-repo-a (constantly dir))
+      (throw (ex-info (str dir " either does not exist, is not a directory, or is not readable.") {}))))
+  nil)
+
+(def default-remote-maven-repos
+  "A map containing the default remote Maven artifact repositories that the
+  library uses. Each key is a string that's the short identifier of the repo
+  (e.g. \"clojars\"), and each value is the base URL of that artifact repository
+  (e.g. \"https://repo.clojars.org\")."
+  {"central" "https://repo1.maven.org/maven2"
+   "clojars" "https://repo.clojars.org"})
+
+(def ^:private remote-maven-repos-a (atom default-remote-maven-repos))
+
+(defn remote-maven-repos
+  "The current remote Maven repos in use, as a map in the format described in
+  `default-remote-maven-repos`."
+  []
+  @remote-maven-repos-a)
+
+(defn set-remote-maven-repos!
+  "Sets the remote Maven repos to use from this point onward. The argument is a
+  map in the format described in `default-remote-maven-repos`.
+
+  For most use cases you should merge `default-remote-maven-repos` with whatever
+  additional repos you wish to provide (the rare exceptions being situations
+  such as a dev environment that contains a custom Maven artifact repository
+  that proxies/caches Maven Central and/or Clojars)."
+  [repos]
+  (swap! remote-maven-repos-a (constantly repos))
+  nil)
 
 (xml/alias-uri 'pom "http://maven.apache.org/POM/4.0.0")
 
@@ -103,25 +154,25 @@
   "Returns a java.net.URI pointing to the maven-metadata.xml for the given GA,
   or nil if one cannot be found.  The returned URI is guaranteed to be
   resolvable - either to a file that exists in the local Maven cache, or to an
-  HTTP-accessible resource on a remote Maven repository (i.e. Maven Central or
+  HTTP-accessible resource on a remote Maven repository (e.g. Maven Central,
   Clojars) that resolves."
   ([{:keys [group-id artifact-id]}] (ga->metadata-uri group-id artifact-id))
   ([group-id artifact-id]
    (when (and (not (s/blank? group-id))
               (not (s/blank? artifact-id)))
      (let [ga-path              (str (s/replace group-id "." "/") "/" artifact-id)
-           local-metadata-paths (map #(str ga-path "/maven-metadata-" % ".xml") (keys remote-maven-repos))]
+           local-metadata-paths (map #(str ga-path "/maven-metadata-" % ".xml") (keys @remote-maven-repos-a))]
        (if-let [local-metadata-file (first (filter #(and (.exists ^java.io.File %) (.isFile ^java.io.File %))
-                                                   (map #(io/file (str @local-maven-repo-d "/" %)) (map #(s/replace % "/" separator) local-metadata-paths))))]
+                                                   (map #(io/file (str @local-maven-repo-a "/" %)) (map #(s/replace % "/" separator) local-metadata-paths))))]
          (.toURI ^java.io.File local-metadata-file)
-         (when-let [remote-uri (first (filter lcihttp/uri-resolves? (map #(str % "/" ga-path "/maven-metadata.xml") (vals remote-maven-repos))))]
+         (when-let [remote-uri (first (filter lcihttp/uri-resolves? (map #(str % "/" ga-path "/maven-metadata.xml") (vals @remote-maven-repos-a))))]
            (java.net.URI. remote-uri)))))))
 
 (defn gav->metadata-uri
   "Returns a java.net.URI pointing to the maven-metadata.xml for the given GAV,
   or nil if one cannot be found.  The returned URI is guaranteed to be
   resolvable - either to a file that exists in the local Maven cache, or to an
-  HTTP-accessible resource on a remote Maven repository (i.e. Maven Central or
+  HTTP-accessible resource on a remote Maven repository (e.g. Maven Central,
   Clojars) that resolves."
   ([{:keys [group-id artifact-id version]}] (gav->metadata-uri group-id artifact-id version))
   ([group-id artifact-id version]
@@ -129,11 +180,11 @@
               (not (s/blank? artifact-id))
               (not (s/blank? version)))
      (let [gav-path             (str (s/replace group-id "." "/") "/" artifact-id "/" version)
-           local-metadata-paths (map #(str gav-path "/maven-metadata-" % ".xml") (keys remote-maven-repos))]
+           local-metadata-paths (map #(str gav-path "/maven-metadata-" % ".xml") (keys @remote-maven-repos-a))]
        (if-let [local-metadata-file (first (filter #(and (.exists ^java.io.File %) (.isFile ^java.io.File %))
-                                                   (map #(io/file (str @local-maven-repo-d "/" %)) (map #(s/replace % "/" separator) local-metadata-paths))))]
+                                                   (map #(io/file (str @local-maven-repo-a "/" %)) (map #(s/replace % "/" separator) local-metadata-paths))))]
          (.toURI ^java.io.File local-metadata-file)
-         (when-let [remote-uri (first (filter lcihttp/uri-resolves? (map #(str % "/" gav-path "/maven-metadata.xml") (vals remote-maven-repos))))]
+         (when-let [remote-uri (first (filter lcihttp/uri-resolves? (map #(str % "/" gav-path "/maven-metadata.xml") (vals @remote-maven-repos-a))))]
            (java.net.URI. remote-uri)))))))
 
 (defn ga-latest-version
@@ -187,7 +238,7 @@
   "Returns a java.net.URI pointing to the POM for the given GAV, or nil if one
   cannot be found.  The returned URI is guaranteed to be resolvable - either to
   a file that exists in the local Maven cache, or to an HTTP-accessible resource
-  on a remote Maven repository (i.e. Maven Central or Clojars) that resolves.
+  on a remote Maven repository (e.g. Maven Central, Clojars) that resolves.
 
   If version is not provided, determines the latest version (which may be a
   SNAPSHOT) and uses that."
@@ -202,11 +253,11 @@
            version      (if (release-version? version) (ga-release-version group-id artifact-id) version)
            file-version (resolve-snapshot-version group-id artifact-id version)
            gav-path     (str (s/replace group-id "." "/") "/" artifact-id "/" version "/" artifact-id "-" file-version ".pom")
-           local-pom (io/file (str @local-maven-repo-d separator (s/replace gav-path "/" separator)))]
+           local-pom (io/file (str @local-maven-repo-a separator (s/replace gav-path "/" separator)))]
        (if (and (.exists local-pom)
                 (.isFile local-pom))
          (.toURI local-pom)
-         (when-let [remote-uri (first (filter lcihttp/uri-resolves? (map #(str % "/" gav-path) (vals remote-maven-repos))))]
+         (when-let [remote-uri (first (filter lcihttp/uri-resolves? (map #(str % "/" gav-path) (vals @remote-maven-repos-a))))]
            (java.net.URI. remote-uri)))))))
 
 (defmulti pom->expressions-info
@@ -309,5 +360,5 @@
   allow explicit control of the cost of initialisation to callers who need it."
   []
   (lcmtch/init!)
-  @local-maven-repo-d
+  @local-maven-repo-a
   nil)

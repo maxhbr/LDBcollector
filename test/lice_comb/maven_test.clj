@@ -18,9 +18,10 @@
 
 (ns lice-comb.maven-test
   (:require [clojure.test               :refer [deftest testing is use-fixtures]]
+            [clojure.java.io            :as io]
             [lice-comb.test-boilerplate :refer [fixture valid=]]
             [lice-comb.impl.spdx        :as lcis]
-            [lice-comb.maven            :refer [init! pom->expressions gav->expressions]]))
+            [lice-comb.maven            :refer [init! pom->expressions gav->expressions default-local-maven-repo default-remote-maven-repos set-remote-maven-repos!]]))
 
 (use-fixtures :once fixture)
 
@@ -84,3 +85,18 @@
     (is (valid= #{"EPL-1.0"}    (gav->expressions "org.clojure"         "clojure"     "RELEASE")))                    ; Maven Central, RELEASE version
     (is (valid= #{"EPL-1.0"}    (gav->expressions "org.clojure"         "clojure"     "1.12.0-alpha5")))              ; Maven Central, custom suffix
     (is (valid= #{"Apache-2.0"} (gav->expressions "org.springframework" "spring-core" "6.1.0")))))                    ; Maven Central
+
+(deftest custom-remote-repos-tests
+  ; Erase jboss-common-core stuff from the local Maven cache, if it's present
+  (let [jboss-maven-cache-dir (io/file (str default-local-maven-repo java.io.File/separator "org" java.io.File/separator "jboss" java.io.File/separator "jboss-common-core"))]
+    (when (.exists jboss-maven-cache-dir)
+      (run! #(.delete %) (reverse (file-seq jboss-maven-cache-dir)))))
+
+  (testing "Default repos"
+    (is (nil? (gav->expressions "org.jboss" "jboss-common-core" "2.5.0.Final-redhat-1"))))  ; This artifact is only found in the JBoss artifact repository
+  (testing "Add a non-default repo"
+    (is (nil? (set-remote-maven-repos! (merge default-remote-maven-repos {"jboss" "https://maven.repository.redhat.com/ga"}))))
+    (is (valid= #{"Apache-2.0"} (gav->expressions "org.jboss" "jboss-common-core" "2.5.0.Final-redhat-1"))))
+  (testing "Remove the non-default repo"
+    (is (nil? (set-remote-maven-repos! default-remote-maven-repos)))
+    (is (nil? (gav->expressions "org.jboss" "jboss-common-core" "2.5.0.Final-redhat-1")))))
