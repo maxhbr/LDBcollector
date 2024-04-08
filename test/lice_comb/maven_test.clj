@@ -20,7 +20,7 @@
   (:require [clojure.test               :refer [deftest testing is use-fixtures]]
             [lice-comb.test-boilerplate :refer [fixture valid=]]
             [lice-comb.impl.spdx        :as lcis]
-            [lice-comb.maven            :refer [init! pom->expressions gav->expressions]]))
+            [lice-comb.maven            :refer [init! pom->expressions gav->expressions default-remote-maven-repos set-remote-maven-repos!]]))
 
 (use-fixtures :once fixture)
 
@@ -84,3 +84,13 @@
     (is (valid= #{"EPL-1.0"}    (gav->expressions "org.clojure"         "clojure"     "RELEASE")))                    ; Maven Central, RELEASE version
     (is (valid= #{"EPL-1.0"}    (gav->expressions "org.clojure"         "clojure"     "1.12.0-alpha5")))              ; Maven Central, custom suffix
     (is (valid= #{"Apache-2.0"} (gav->expressions "org.springframework" "spring-core" "6.1.0")))))                    ; Maven Central
+
+(deftest custom-remote-repos-tests
+  (testing "Default repos"
+    (is (nil? (gav->expressions "org.jboss" "jboss-common-core" "2.5.0.Final-redhat-1"))))  ; This artifact is only found in the JBoss artifact repository
+  (testing "Add a non-default repo"
+    (is (nil? (set-remote-maven-repos! (merge default-remote-maven-repos {"jboss" "https://maven.repository.redhat.com/ga"}))))
+    (is (valid= #{"Apache-2.0"} (gav->expressions "org.jboss" "jboss-common-core" "2.5.0.Final-redhat-1"))))
+  (testing "Remove the non-default repo"
+    (is (nil? (set-remote-maven-repos! default-remote-maven-repos)))
+    (is (nil? (gav->expressions "org.jboss" "jboss-common-core" "2.5.0.Final-redhat-1")))))
