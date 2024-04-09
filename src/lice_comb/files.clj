@@ -23,7 +23,7 @@
             [clojure.java.io                 :as io]
             [clojure.tools.logging           :as log]
             [embroidery.api                  :as e]
-            [lice-comb.matching              :as lcmtch]
+            [lice-comb.matching              :as lcm]
             [lice-comb.maven                 :as lcmvn]
             [lice-comb.impl.expressions-info :as lciei]
             [lice-comb.impl.utils            :as lciu]))
@@ -67,8 +67,8 @@
             (lciei/prepend-source filepath
                                   (cond (or (= lfname "pom.xml")
                                             (s/ends-with? lfname ".pom")) (doall (lcmvn/pom->expressions-info f fname))
-                                        (instance? java.io.InputStream f) (doall (lcmtch/text->expressions-info f))
-                                        :else                             (with-open [is (io/input-stream f)] (doall (lcmtch/text->expressions-info is)))))))))  ; Default is to assume it's a plain text file containing license text(s)
+                                        (instance? java.io.InputStream f) (doall (lcm/text->expressions-info f))
+                                        :else                             (with-open [is (io/input-stream f)] (doall (lcm/text->expressions-info is)))))))))  ; Default is to assume it's a plain text file containing license text(s)
 
 (defn file->expressions
   "Returns a set of SPDX expressions (Strings) for the given file (an
@@ -182,6 +182,6 @@
   this fn, as initialisation will occur implicitly anyway; it is provided to
   allow explicit control of the cost of initialisation to callers who need it."
   []
-  (lcmtch/init!)
+  (lcm/init!)
   (lcmvn/init!)
   nil)
