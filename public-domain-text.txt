@@ -1523,8 +1523,22 @@ WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 '''
 
+package = libtcd
+location = https://flaterco.com/files/xtide/libtcd-2.2.7-r3.tar.xz
+text = '''
+Libtcd itself is public domain.  However, the GNU automake, autoconf,
+libtool, etc. scripts bundled with it as part of its build process are
+not.  Please see their respective licenses.
+
+Libtcd is distributed in the hope that it will be useful, but WITHOUT
+ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.
+'''
+
 package = tcd-utils
+          libtcd
 location = https://flaterco.com/files/xtide/tcd-utils-20240222.tar.xz
+           https://flaterco.com/files/xtide/libtcd-2.2.7-r3.tar.xz
 text = '''
                         DISTRIBUTION STATEMENT
 
