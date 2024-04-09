@@ -84,14 +84,14 @@
     (is (valid= #{"EPL-1.0"}    (gav->expressions "org.clojure"         "clojure"     "1.11.1")))                     ; Maven Central
     (is (valid= #{"EPL-1.0"}    (gav->expressions "org.clojure"         "clojure"     "RELEASE")))                    ; Maven Central, RELEASE version
     (is (valid= #{"EPL-1.0"}    (gav->expressions "org.clojure"         "clojure"     "1.12.0-alpha5")))              ; Maven Central, custom suffix
-    (is (valid= #{"Apache-2.0"} (gav->expressions "org.springframework" "spring-core" "6.1.0")))))                    ; Maven Central
+    (is (valid= #{"Apache-2.0"} (gav->expressions "org.springframework" "spring-core" "6.1.0")))                      ; Maven Central
+    (is (valid= #{"JSON"}       (gav->expressions "org.json"            "json"        "20090211")))))                 ; Maven Central, tests non-detectable name with detectable URL
 
 (deftest custom-remote-repos-tests
   ; Erase jboss-common-core stuff from the local Maven cache, if it's present
   (let [jboss-maven-cache-dir (io/file (str default-local-maven-repo java.io.File/separator "org" java.io.File/separator "jboss" java.io.File/separator "jboss-common-core"))]
     (when (.exists jboss-maven-cache-dir)
       (run! #(.delete %) (reverse (file-seq jboss-maven-cache-dir)))))
-
   (testing "Default repos"
     (is (nil? (gav->expressions "org.jboss" "jboss-common-core" "2.5.0.Final-redhat-1"))))  ; This artifact is only found in the JBoss artifact repository
   (testing "Add a non-default repo"

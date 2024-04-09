@@ -126,11 +126,11 @@
   [id]
   (when (unidentified? id)
     (let [original-name (unidentified->name id)]
-      (str "Unidentified ("
+      (str "Unidentified (\""
            (if (s/blank? original-name)
              "-original name not available-"
-             original-name)
-           ")"))))
+             (s/trim original-name))
+           "\")"))))
 
 (defn init!
   "Initialises this namespace upon first call (and does nothing on subsequent

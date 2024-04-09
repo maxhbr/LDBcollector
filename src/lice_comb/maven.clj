@@ -37,7 +37,7 @@
             [clojure.data.xml                :as xml]
             [clojure.tools.logging           :as log]
             [xml-in.core                     :as xi]
-            [lice-comb.matching              :as lcmtch]
+            [lice-comb.matching              :as lcm]
             [lice-comb.impl.matching         :as lcim]
             [lice-comb.impl.expressions-info :as lciei]
             [lice-comb.impl.http             :as lcihttp]
@@ -120,11 +120,16 @@
   pair. Returns nil if no matches were found."
   [{:keys [name url]}]
   ; 1. Look in the name field(s)
-  (if-let [name-expressions (lciei/prepend-source "<licenses><license><name>" (lcmtch/name->expressions-info name))]
-    name-expressions
-    ; 2. If the names didn't give us any licenses, look in the url field(s) (this tends to be slower and less accurate)
-    (when-let [uri-expressions (lciei/prepend-source "<licenses><license><url>" (lcmtch/uri->expressions-info url))]
-      uri-expressions)))
+  (let [name-expressions (lcm/name->expressions-info name)]
+    (if (or (empty? name-expressions)
+            (and (= 1 (count name-expressions)) (lcm/unidentified? (first (keys name-expressions)))))
+      ; 2. If the names didn't give us any identified licenses, look in the url field(s) (this can be slower and less accurate, which is why it has lower priority)
+      (let [uri-expressions (lcm/uri->expressions-info url)]
+        (if (or (empty? uri-expressions)
+                (and (= 1 (count uri-expressions)) (lcm/unidentified? (first (keys uri-expressions)))))
+          (lciei/prepend-source "<licenses><license><name>" name-expressions)   ; Nothing useful found in URI, so revert to whatever we found in name (i.e. an unidentified license)
+          (lciei/prepend-source "<licenses><license><url>" uri-expressions)))
+      (lciei/prepend-source "<licenses><license><name>" name-expressions))))
 
 (defn- xml-find-all-alts
   "As for xi/find-all, but supports an alternative fallback set of tags (to
@@ -277,32 +282,32 @@
 (defmethod pom->expressions-info java.io.InputStream
   [pom-is filepath]
   (try
-    (lciei/prepend-source filepath
-                          (let [pom-xml (xml/parse pom-is)]
-                            (if-let [pom-licenses (xml-find-all-alts pom-xml [::pom/project ::pom/licenses] [:project :licenses])]
-                              ; <licenses> block exists - process it
-                              (let [name-uri-pairs (some->> pom-licenses
-                                                            (filter map?)                                                    ; Get rid of non-tag content (whitespace etc.)
-                                                            (filter #(or (= ::pom/license (:tag %)) (= :license (:tag %))))  ; Get rid of non <license> tags (which shouldn't exist, but Maven POMs are a shitshow...)
-                                                            (map #(identity (let [name (xml-find-first-string-alts % [::pom/license ::pom/name] [:license :name])
-                                                                                  url  (xml-find-first-string-alts % [::pom/license ::pom/url]  [:license :url])]
-                                                                              (when (or name url)
-                                                                                {:name name :url url}))))
-                                                            set)
-                                    licenses       (into {} (map licenses-from-pair name-uri-pairs))]
-                                (lcim/manual-fixes licenses))
-                              ; License block doesn't exist, so attempt to lookup the parent pom and try again with it
-                              (let [parent       (seq (xi/find-first pom-xml [::pom/project ::pom/parent]))
-                                    parent-no-ns (seq (xi/find-first pom-xml [:project      :parent]))
-                                    parent-gav   (merge {}
-                                                        (when parent       {:group-id    (lciu/strim (first (xi/find-first parent       [::pom/groupId])))
-                                                                            :artifact-id (lciu/strim (first (xi/find-first parent       [::pom/artifactId])))
-                                                                            :version     (lciu/strim (first (xi/find-first parent       [::pom/version])))})
-                                                        (when parent-no-ns {:group-id    (lciu/strim (first (xi/find-first parent-no-ns [:groupId])))
-                                                                            :artifact-id (lciu/strim (first (xi/find-first parent-no-ns [:artifactId])))
-                                                                            :version     (lciu/strim (first (xi/find-first parent-no-ns [:version])))}))]
-                                (when-not (empty? parent-gav)
-                                  (pom->expressions-info (gav->pom-uri parent-gav)))))))   ; Note: naive (stack consuming) recursion, which is fine here as pom hierarchies are rarely very deep
+    (let [pom-xml (xml/parse pom-is)
+          result  (if-let [pom-licenses (xml-find-all-alts pom-xml [::pom/project ::pom/licenses] [:project :licenses])]
+                    ; <licenses> block exists - process it
+                    (let [name-uri-pairs (some->> pom-licenses
+                                                  (filter map?)                                                    ; Get rid of non-tag content (whitespace etc.)
+                                                  (filter #(or (= ::pom/license (:tag %)) (= :license (:tag %))))  ; Get rid of non <license> tags (which shouldn't exist, but Maven POMs are a shitshow...)
+                                                  (map #(identity (let [name (xml-find-first-string-alts % [::pom/license ::pom/name] [:license :name])
+                                                                        url  (xml-find-first-string-alts % [::pom/license ::pom/url]  [:license :url])]
+                                                                    (when (or name url)
+                                                                      {:name name :url url}))))
+                                                  set)
+                          licenses       (into {} (map licenses-from-pair name-uri-pairs))]
+                      (lcim/manual-fixes licenses))
+                    ; License block doesn't exist, so attempt to lookup the parent pom and try again with it
+                    (let [parent       (seq (xi/find-first pom-xml [::pom/project ::pom/parent]))
+                          parent-no-ns (seq (xi/find-first pom-xml [:project      :parent]))
+                          parent-gav   (merge {}
+                                              (when parent       {:group-id    (lciu/strim (first (xi/find-first parent       [::pom/groupId])))
+                                                                  :artifact-id (lciu/strim (first (xi/find-first parent       [::pom/artifactId])))
+                                                                  :version     (lciu/strim (first (xi/find-first parent       [::pom/version])))})
+                                              (when parent-no-ns {:group-id    (lciu/strim (first (xi/find-first parent-no-ns [:groupId])))
+                                                                  :artifact-id (lciu/strim (first (xi/find-first parent-no-ns [:artifactId])))
+                                                                  :version     (lciu/strim (first (xi/find-first parent-no-ns [:version])))}))]
+                      (when-not (empty? parent-gav)
+                        (pom->expressions-info (gav->pom-uri parent-gav)))))]   ; Note: naive (stack consuming) recursion, which is fine here as pom hierarchies are rarely very deep
+      (lciei/prepend-source filepath result))
   (catch javax.xml.stream.XMLStreamException xse
     (throw (javax.xml.stream.XMLStreamException. (str "XML error parsing " filepath) xse)))))
 
@@ -359,6 +364,6 @@
   this fn, as initialisation will occur implicitly anyway; it is provided to
   allow explicit control of the cost of initialisation to callers who need it."
   []
-  (lcmtch/init!)
+  (lcm/init!)
   @local-maven-repo-a
   nil)
