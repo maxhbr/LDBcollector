@@ -123,7 +123,7 @@
   (let [name-expressions (lcm/name->expressions-info name)]
     (if (or (empty? name-expressions)
             (and (= 1 (count name-expressions)) (lcm/unidentified? (first (keys name-expressions)))))
-      ; 2. If the names didn't give us any identified licenses, look in the url field (this can be slower and less accurate, which is why it has lower priority)
+      ; 2. If the name didn't give us any identified licenses, look in the url field (this can be slower and less accurate, which is why it has lower priority)
       (let [uri-expressions (lcm/uri->expressions-info url)]
         (if (or (empty? uri-expressions)
                 (and (= 1 (count uri-expressions)) (lcm/unidentified? (first (keys uri-expressions)))))
