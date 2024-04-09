@@ -120,11 +120,11 @@
   pair. Returns nil if no matches were found."
   [{:keys [name url]}]
   ; 1. Look in the name field(s)
-  (let [name-expressions (when-not (s/blank? name) (lcm/name->expressions-info name))]
+  (let [name-expressions (lcm/name->expressions-info name)]
     (if (or (empty? name-expressions)
             (and (= 1 (count name-expressions)) (lcm/unidentified? (first (keys name-expressions)))))
       ; 2. If the names didn't give us any identified licenses, look in the url field(s) (this can be slower and less accurate, which is why it has lower priority)
-      (let [uri-expressions (when-not (s/blank? url) (lcm/uri->expressions-info url))]
+      (let [uri-expressions (lcm/uri->expressions-info url)]
         (if (or (empty? uri-expressions)
                 (and (= 1 (count uri-expressions)) (lcm/unidentified? (first (keys uri-expressions)))))
           (lciei/prepend-source "<licenses><license><name>" name-expressions)   ; Nothing useful found in URI, so revert to whatever we found in name (i.e. an unidentified license)
