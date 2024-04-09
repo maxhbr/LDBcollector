@@ -1510,3 +1510,26 @@ is his reply:
 So there you go.  (I anonymized his email address as I don't know
 that he was particularly interested in having it "advertised".)
 '''
+
+package = tcd-utils
+location = https://flaterco.com/files/xtide/tcd-utils-20240222.tar.xz
+text = '''
+tcd-utils themselves are public domain.  However, the GNU automake,
+autoconf, etc. scripts bundled with them as part of their build
+process are not.  Please see their respective licenses.
+
+tcd-utils are distributed in the hope that they will be useful, but
+WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+'''
+
+package = tcd-utils
+location = https://flaterco.com/files/xtide/tcd-utils-20240222.tar.xz
+text = '''
+                        DISTRIBUTION STATEMENT
+
+This source file is unclassified, distribution unlimited, public
+domain.  It is distributed in the hope that it will be useful, but
+WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+'''
