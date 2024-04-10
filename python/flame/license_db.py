@@ -313,6 +313,9 @@ class FossLicenses:
         if not isinstance(license_expression, str):
             raise FlameException('Wrong type (type(license_expresssion)) of input to the function expression_license. Only string is allowed.')
 
+        # remove multiple blanks
+        license_expression = re.sub(' [ ]*', ' ', license_expression)
+
         cache_key = f'{license_expression}__{update_dual}'
         if cache_key in self.license_cache:
             return self.license_cache.get(cache_key)
@@ -587,6 +590,7 @@ class FossLicenses:
         HPND
 
         """
+
         cache_key = f'{license_expression}__{validations}__{update_dual}'
         if cache_key in self.compat_cache:
             return self.compat_cache.get(cache_key)
