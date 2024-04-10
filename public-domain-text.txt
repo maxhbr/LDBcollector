@@ -1584,3 +1584,9 @@ C
 Changes made to MOPAC7 code in this work may be used/distributed under the
 same rules as the original MOPAC7 package; this work is in Public Domain.
 '''
+
+package = OpenCTM
+location = https://github.com/Danny02/OpenCTM/raw/e2e588db50a1d2a6b63f668f703bf899e0daf8ee/lib/liblzma/readme.txt
+text = '''
+Public Domain
+'''
