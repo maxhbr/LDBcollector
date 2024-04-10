@@ -27,7 +27,7 @@ BuildRequires:  python%{python3_pkgversion}-tomli
 %endif
 # grammar
 %if 0%{?fedora} || 0%{?rhel} > 8
-BuildRequires:  python3dist(lark-parser)
+BuildRequires:  (python3dist(lark) or python3dist(lark-parser))
 %endif
 
 %if %{with rpmlint}
