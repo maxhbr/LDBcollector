@@ -9,3 +9,5 @@ spdxIdentifier: "pnmstitch"
 alternativeNames:
   - "pnmstitch License"
 
+otherIds: 
+  - "scancode:pnmstitch"

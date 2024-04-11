@@ -4,10 +4,9 @@
 
 canonicalName: "Oracle MySQL FOSS Exception (GPL)"
 category: "Oracle MySQL Exception"
-shortName: "Oracle-MySQL-FOSS-Exception"
+shortName: "Oracle-MySQL-Foss-Exception-GPL"
 
 type: "exception"
 
-alternativeNames:
-  - "MySQL FOSS License Exception"
-
+otherIds: 
+  - "scancode:oracle-mysql-foss-exception-2.0"

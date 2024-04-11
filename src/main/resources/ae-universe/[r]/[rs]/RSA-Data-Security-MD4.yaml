@@ -3,7 +3,7 @@
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
 
 canonicalName: "RSA Data Security MD4"
-category: "RSA Data Security MD4"
+category: "RSA Data Security"
 shortName: "RSA-MD4"
 
 otherIds: 

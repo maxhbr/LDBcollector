@@ -11,3 +11,5 @@ openCoDEStatus: "not approved"
 alternativeNames:
   - "Python ldap License"
 
+otherIds: 
+  - "scancode:python-ldap"

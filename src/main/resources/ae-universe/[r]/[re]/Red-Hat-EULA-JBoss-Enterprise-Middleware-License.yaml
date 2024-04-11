@@ -3,7 +3,7 @@
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
 
 canonicalName: "Red Hat EULA JBoss Enterprise Middleware License"
-category: "Red Hat EULA JBoss Enterprise Middleware License"
+category: "Red Hat EULA JBoss Enterprise Middleware"
 shortName: "RH-EULA-LGPL"
 
 otherIds: 

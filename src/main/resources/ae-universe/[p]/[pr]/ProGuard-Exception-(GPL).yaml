@@ -9,4 +9,4 @@ shortName: "Proguard-Exception-GPL"
 type: "exception"
 
 otherIds: 
-  - "scancode:gpl-2.0-proguard"
+  - "scancode:proguard-exception-2.0"

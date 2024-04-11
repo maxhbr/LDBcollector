@@ -9,3 +9,5 @@ spdxIdentifier: "PADL"
 alternativeNames:
   - "PADL License"
 
+otherIds: 
+  - "scancode:padl"

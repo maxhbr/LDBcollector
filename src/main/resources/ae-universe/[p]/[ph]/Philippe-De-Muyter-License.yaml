@@ -6,5 +6,8 @@ canonicalName: "Philippe De Muyter License"
 category: "Philippe De Muyter License"
 shortName: "Philippe-De-Muyter"
 
+alternativeNames:
+  - "Linum Software License"
+
 otherIds: 
   - "scancode:philippe-de-muyter"
