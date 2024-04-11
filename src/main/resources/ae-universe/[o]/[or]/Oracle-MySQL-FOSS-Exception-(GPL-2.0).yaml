@@ -1,0 +1,13 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+
+canonicalName: "Oracle MySQL FOSS Exception (GPL 2.0)"
+category: "Oracle MySQL Exception"
+shortName: "Oracle-MySQL-FOSS-Exception"
+
+type: "exception"
+
+alternativeNames:
+  - "MySQL FOSS License Exception"
+
