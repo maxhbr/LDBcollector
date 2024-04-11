@@ -36,7 +36,7 @@ repository.
 
 [.datatable.dt-search]
 |===
-|SPDX Expression | Name | Legacy Abbreviation
+|SPDX Expression | Name | Legacy Abbreviation | Usage
 
 {% for license in CONTENT_LICENSES -%}
 | {{ spdx_url(license) }}
@@ -51,6 +51,11 @@ repository.
   {%- else -%}
         {nbsp}
   {%- endif -%}
+| {%- if 'usage' in license['license'] -%}
+        {{- license['license']['usage']|trim -}}
+  {%- else -%}
+        &nbsp;
+  {%- endif -%}
 {%- endfor %}
 |===
 
@@ -58,7 +63,7 @@ repository.
 
 [.datatable.dt-search]
 |===
-|SPDX Expression | Name | Legacy Abbreviation
+|SPDX Expression | Name | Legacy Abbreviation | Usage
 
 {% for license in DOCUMENTATION_LICENSES -%}
 | {{ spdx_url(license) }}
@@ -73,6 +78,11 @@ repository.
   {%- else -%}
         {nbsp}
   {%- endif -%}
+| {%- if 'usage' in license['license'] -%}
+        {{- license['license']['usage']|trim -}}
+  {%- else -%}
+        &nbsp;
+  {%- endif -%}
 {%- endfor %}
 |===
 
@@ -80,7 +90,7 @@ repository.
 
 [.datatable.dt-search]
 |===
-|SPDX Expression | Name | Legacy Abbreviation
+|SPDX Expression | Name | Legacy Abbreviation | Usage
 
 {% for license in FONTS_LICENSES %}
 | {{ spdx_url(license) }}
@@ -95,6 +105,11 @@ repository.
   {%- else -%}
         {nbsp}
   {%- endif -%}
+| {%- if 'usage' in license['license'] -%}
+        {{- license['license']['usage']|trim -}}
+  {%- else -%}
+        &nbsp;
+  {%- endif -%}
 {%- endfor %}
 |===
 
@@ -103,7 +118,7 @@ repository.
 
 [.datatable.dt-search]
 |===
-|SPDX Expression | Name | Legacy Abbreviation
+|SPDX Expression | Name | Legacy Abbreviation | Usage
 
 {% for license in FIRMWARE_LICENSES -%}
 | {{ spdx_url(license) }}
@@ -117,6 +132,11 @@ repository.
         {{ license['fedora']['legacy-abbreviation']|join(',') }}
   {%- else -%}
         {nbsp}
+  {%- endif -%}
+| {%- if 'usage' in license['license'] -%}
+        {{- license['license']['usage']|trim -}}
+  {%- else -%}
+        &nbsp;
   {%- endif -%}
 {%- endfor %}
 |===
