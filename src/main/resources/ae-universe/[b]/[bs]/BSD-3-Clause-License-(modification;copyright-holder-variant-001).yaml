@@ -6,3 +6,5 @@ canonicalName: "BSD 3-Clause License (modification; copyright holder variant 001
 category: "BSD"
 shortName: "BSD-3-Clause-Modification-copyright-variant-001"
 
+otherIds: 
+  - "scancode:bsd-plus-mod-notice"
