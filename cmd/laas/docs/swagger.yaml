@@ -128,8 +128,6 @@ definitions:
       rf_url:
         example: https://opensource.org/licenses/MIT
         type: string
-    required:
-    - rf_shortname
     type: object
   models.LicenseError:
     properties:
@@ -149,7 +147,25 @@ definitions:
         example: "2023-12-01T10:00:51+05:30"
         type: string
     type: object
-  models.LicenseInput:
+  models.LicenseMapShortnamesElement:
+    properties:
+      add:
+        example: true
+        type: boolean
+      shortname:
+        example: GPL-2.0-only
+        type: string
+    type: object
+  models.LicenseMapShortnamesInput:
+    properties:
+      map:
+        items:
+          $ref: '#/definitions/models.LicenseMapShortnamesElement'
+        type: array
+    type: object
+  models.LicensePATCHRequestJSONSchema:
+    type: object
+  models.LicensePOSTRequestJSONSchema:
     properties:
       external_ref:
         $ref: '#/definitions/datatypes.JSONType-models_LicenseDBSchemaExtension'
@@ -167,9 +183,6 @@ definitions:
         type: boolean
       rf_active:
         type: boolean
-      rf_add_date:
-        example: "2023-12-01T18:10:25.00+05:30"
-        type: string
       rf_copyleft:
         type: boolean
       rf_detector_type:
@@ -202,22 +215,27 @@ definitions:
       rf_url:
         example: https://opensource.org/licenses/MIT
         type: string
-    type: object
-  models.LicenseMapShortnamesElement:
-    properties:
-      add:
-        example: true
-        type: boolean
-      shortname:
-        example: GPL-2.0-only
-        type: string
-    type: object
-  models.LicenseMapShortnamesInput:
-    properties:
-      map:
-        items:
-          $ref: '#/definitions/models.LicenseMapShortnamesElement'
-        type: array
+    required:
+    - external_ref
+    - marydone
+    - rf_FSFfree
+    - rf_Fedora
+    - rf_GPLv2compatible
+    - rf_GPLv3compatible
+    - rf_OSIapproved
+    - rf_active
+    - rf_copyleft
+    - rf_detector_type
+    - rf_flag
+    - rf_fullname
+    - rf_notes
+    - rf_risk
+    - rf_shortname
+    - rf_source
+    - rf_spdx_id
+    - rf_text
+    - rf_text_updatable
+    - rf_url
     type: object
   models.LicenseResponse:
     properties:
@@ -240,55 +258,6 @@ definitions:
         items:
           type: string
         type: array
-    type: object
-  models.LicenseUpdate:
-    properties:
-      marydone:
-        type: boolean
-      rf_FSFfree:
-        type: boolean
-      rf_Fedora:
-        type: string
-      rf_GPLv2compatible:
-        type: boolean
-      rf_GPLv3compatible:
-        type: boolean
-      rf_OSIapproved:
-        type: boolean
-      rf_active:
-        type: boolean
-      rf_add_date:
-        example: "2023-12-01T18:10:25.00+05:30"
-        type: string
-      rf_copyleft:
-        type: boolean
-      rf_detector_type:
-        example: 1
-        type: integer
-      rf_flag:
-        example: 1
-        type: integer
-      rf_fullname:
-        example: MIT License
-        type: string
-      rf_notes:
-        example: This license has been superseded.
-        type: string
-      rf_risk:
-        type: integer
-      rf_source:
-        type: string
-      rf_spdx_id:
-        example: MIT
-        type: string
-      rf_text:
-        example: MIT License Text here
-        type: string
-      rf_text_updatable:
-        type: boolean
-      rf_url:
-        example: https://opensource.org/licenses/MIT
-        type: string
     type: object
   models.Obligation:
     properties:
@@ -457,6 +426,14 @@ definitions:
       status:
         example: 200
         type: integer
+    type: object
+  models.OptionalData-string:
+    properties:
+      isDefined:
+        description: This is set to true if corresponding key is present in json object
+        type: boolean
+      value:
+        type: string
     type: object
   models.PaginationMeta:
     properties:
@@ -801,7 +778,7 @@ paths:
         name: license
         required: true
         schema:
-          $ref: '#/definitions/models.LicenseInput'
+          $ref: '#/definitions/models.LicensePOSTRequestJSONSchema'
       produces:
       - application/json
       responses:
@@ -868,7 +845,7 @@ paths:
         name: license
         required: true
         schema:
-          $ref: '#/definitions/models.LicenseUpdate'
+          $ref: '#/definitions/models.LicensePATCHRequestJSONSchema'
       produces:
       - application/json
       responses:

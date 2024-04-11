@@ -393,7 +393,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/models.LicenseInput"
+                            "$ref": "#/definitions/models.LicensePOSTRequestJSONSchema"
                         }
                     }
                 ],
@@ -495,7 +495,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/models.LicenseUpdate"
+                            "$ref": "#/definitions/models.LicensePATCHRequestJSONSchema"
                         }
                     }
                 ],
@@ -1437,9 +1437,6 @@ const docTemplate = `{
         },
         "models.LicenseDB": {
             "type": "object",
-            "required": [
-                "rf_shortname"
-            ],
             "properties": {
                 "external_ref": {
                     "$ref": "#/definitions/datatypes.JSONType-models_LicenseDBSchemaExtension"
@@ -1544,8 +1541,57 @@ const docTemplate = `{
                 }
             }
         },
-        "models.LicenseInput": {
+        "models.LicenseMapShortnamesElement": {
             "type": "object",
+            "properties": {
+                "add": {
+                    "type": "boolean",
+                    "example": true
+                },
+                "shortname": {
+                    "type": "string",
+                    "example": "GPL-2.0-only"
+                }
+            }
+        },
+        "models.LicenseMapShortnamesInput": {
+            "type": "object",
+            "properties": {
+                "map": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/models.LicenseMapShortnamesElement"
+                    }
+                }
+            }
+        },
+        "models.LicensePATCHRequestJSONSchema": {
+            "type": "object"
+        },
+        "models.LicensePOSTRequestJSONSchema": {
+            "type": "object",
+            "required": [
+                "external_ref",
+                "marydone",
+                "rf_FSFfree",
+                "rf_Fedora",
+                "rf_GPLv2compatible",
+                "rf_GPLv3compatible",
+                "rf_OSIapproved",
+                "rf_active",
+                "rf_copyleft",
+                "rf_detector_type",
+                "rf_flag",
+                "rf_fullname",
+                "rf_notes",
+                "rf_risk",
+                "rf_shortname",
+                "rf_source",
+                "rf_spdx_id",
+                "rf_text",
+                "rf_text_updatable",
+                "rf_url"
+            ],
             "properties": {
                 "external_ref": {
                     "$ref": "#/definitions/datatypes.JSONType-models_LicenseDBSchemaExtension"
@@ -1570,10 +1616,6 @@ const docTemplate = `{
                 },
                 "rf_active": {
                     "type": "boolean"
-                },
-                "rf_add_date": {
-                    "type": "string",
-                    "example": "2023-12-01T18:10:25.00+05:30"
                 },
                 "rf_copyleft": {
                     "type": "boolean"
@@ -1621,30 +1663,6 @@ const docTemplate = `{
                 }
             }
         },
-        "models.LicenseMapShortnamesElement": {
-            "type": "object",
-            "properties": {
-                "add": {
-                    "type": "boolean",
-                    "example": true
-                },
-                "shortname": {
-                    "type": "string",
-                    "example": "GPL-2.0-only"
-                }
-            }
-        },
-        "models.LicenseMapShortnamesInput": {
-            "type": "object",
-            "properties": {
-                "map": {
-                    "type": "array",
-                    "items": {
-                        "$ref": "#/definitions/models.LicenseMapShortnamesElement"
-                    }
-                }
-            }
-        },
         "models.LicenseResponse": {
             "type": "object",
             "properties": {
@@ -1675,76 +1693,6 @@ const docTemplate = `{
                         "GPL-2.0-only",
                         "GPL-2.0-or-later"
                     ]
-                }
-            }
-        },
-        "models.LicenseUpdate": {
-            "type": "object",
-            "properties": {
-                "marydone": {
-                    "type": "boolean"
-                },
-                "rf_FSFfree": {
-                    "type": "boolean"
-                },
-                "rf_Fedora": {
-                    "type": "string"
-                },
-                "rf_GPLv2compatible": {
-                    "type": "boolean"
-                },
-                "rf_GPLv3compatible": {
-                    "type": "boolean"
-                },
-                "rf_OSIapproved": {
-                    "type": "boolean"
-                },
-                "rf_active": {
-                    "type": "boolean"
-                },
-                "rf_add_date": {
-                    "type": "string",
-                    "example": "2023-12-01T18:10:25.00+05:30"
-                },
-                "rf_copyleft": {
-                    "type": "boolean"
-                },
-                "rf_detector_type": {
-                    "type": "integer",
-                    "example": 1
-                },
-                "rf_flag": {
-                    "type": "integer",
-                    "example": 1
-                },
-                "rf_fullname": {
-                    "type": "string",
-                    "example": "MIT License"
-                },
-                "rf_notes": {
-                    "type": "string",
-                    "example": "This license has been superseded."
-                },
-                "rf_risk": {
-                    "type": "integer"
-                },
-                "rf_source": {
-                    "type": "string"
-                },
-                "rf_spdx_id": {
-                    "type": "string",
-                    "example": "MIT"
-                },
-                "rf_text": {
-                    "type": "string",
-                    "example": "MIT License Text here"
-                },
-                "rf_text_updatable": {
-                    "type": "boolean"
-                },
-                "rf_url": {
-                    "type": "string",
-                    "example": "https://opensource.org/licenses/MIT"
                 }
             }
         },
@@ -1978,6 +1926,18 @@ const docTemplate = `{
                 "status": {
                     "type": "integer",
                     "example": 200
+                }
+            }
+        },
+        "models.OptionalData-string": {
+            "type": "object",
+            "properties": {
+                "isDefined": {
+                    "description": "This is set to true if corresponding key is present in json object",
+                    "type": "boolean"
+                },
+                "value": {
+                    "type": "string"
                 }
             }
         },
