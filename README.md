@@ -15,7 +15,7 @@ This library leverages, and is inspired by, the *excellent* [SPDX project](https
 
 ## Disclaimer
 
-**The author and contributors to `lice-comb` are not lawyers, and neither they nor `lice-comb` itself provides legal advice. This is nothing more than logic to assist in finding license information.**
+**The author and contributors to `lice-comb` are not lawyers, and neither they nor `lice-comb` itself provides legal advice. This is nothing more than logic to assist in finding license information.**  If you need a primer on the legal aspects of open source software, the author has found the [Blue Oak Council](https://blueoakcouncil.org/) to be a useful resource.
 
 ## System Requirements
 

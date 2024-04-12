@@ -252,6 +252,46 @@
   [_]
   (throw (ex-info "Cannot determine filename of an InputStream - did you forget to provide it separately?" {})))
 
+(defn filter-file-seq*
+  "As for clojure.core/file-seq, but with support for filtering.  pred must be
+  a predicate that accepts one argument of type java.io.File.  Files that don't
+  meet pred will not be included in the result, and directories that don't meet
+  pred will not be recursed into (so pred must be able to handle both distinct
+  cases).
+
+  Note also that dir is always returned, even if it does not meet pred."
+  [^java.io.File dir pred]
+  (let [pred   (or pred (constantly true))
+        filter (reify java.io.FileFilter (accept [_ f] (boolean (pred (.getCanonicalFile ^java.io.File f)))))]  ; Use the canonical file, otherwise we will get tripped up by "." being "hidden" according to the JVM when running on a Unix 🤡
+    (tree-seq
+      (fn [^java.io.File f] (.isDirectory f))
+      (fn [^java.io.File d] (seq (.listFiles d filter)))
+      dir)))
+
+(defn filter-file-seq
+  "As for clojure.core/file-seq, but with support for filtering.  dir-pred
+  controls which directories will be included in the result and recursed into.
+  file-pred controls which files will be included in the result.  Both must be
+  a predicate of one argument of type java.io.File.
+
+  Note also that dir is always returned, even if it does not meet dir-pred."
+  [dir dir-pred file-pred]
+  (let [dir-pred  (or dir-pred  (constantly true))
+        file-pred (or file-pred (constantly true))
+        pred      (fn [^java.io.File f]
+                    (or (and (.isDirectory f) (dir-pred f))
+                        (file-pred f)))]
+    (filter-file-seq* dir pred)))
+
+(defn filter-file-only-seq
+  "As for clojure.core/file-seq, with support for filtering and only returns
+  files (but not any directories that were traversed during the seq).  dir-pred
+  controls which directories will be recursed into.  file-pred controls which
+  files will be included in the result.  Both must be a predicate of one
+  argument of type java.io.File."
+  [dir dir-pred file-pred]
+  (seq (filter #(.isFile ^java.io.File %) (filter-file-seq dir dir-pred file-pred))))
+
 (defn getenv
   "Obtain the given environment variable, returning default (or nil, if default
   is not provided) if it isn't set."

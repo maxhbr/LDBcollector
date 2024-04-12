@@ -119,11 +119,11 @@
   "Attempts to determine the license(s) (a map) from a POM license name/URL
   pair. Returns nil if no matches were found."
   [{:keys [name url]}]
-  ; 1. Look in the name field(s)
+  ; 1. Look in the name field
   (let [name-expressions (lcm/name->expressions-info name)]
     (if (or (empty? name-expressions)
             (and (= 1 (count name-expressions)) (lcm/unidentified? (first (keys name-expressions)))))
-      ; 2. If the names didn't give us any identified licenses, look in the url field(s) (this can be slower and less accurate, which is why it has lower priority)
+      ; 2. If the name didn't give us any identified licenses, look in the url field (this can be slower and less accurate, which is why it has lower priority)
       (let [uri-expressions (lcm/uri->expressions-info url)]
         (if (or (empty? uri-expressions)
                 (and (= 1 (count uri-expressions)) (lcm/unidentified? (first (keys uri-expressions)))))
@@ -258,7 +258,7 @@
            version      (if (release-version? version) (ga-release-version group-id artifact-id) version)
            file-version (resolve-snapshot-version group-id artifact-id version)
            gav-path     (str (s/replace group-id "." "/") "/" artifact-id "/" version "/" artifact-id "-" file-version ".pom")
-           local-pom (io/file (str @local-maven-repo-a separator (s/replace gav-path "/" separator)))]
+           local-pom    (io/file (str @local-maven-repo-a separator (s/replace gav-path "/" separator)))]
        (if (and (.exists local-pom)
                 (.isFile local-pom))
          (.toURI local-pom)

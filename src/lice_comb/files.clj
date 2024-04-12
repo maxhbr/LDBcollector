@@ -45,11 +45,16 @@
 (defn probable-license-files
   "Returns all probable license files in the given directory, recursively, as a
   set of java.io.File objects. dir may be a String or a java.io.File, either of
-  which must refer to a readable directory."
-  [dir]
-  (when (lciu/readable-dir? dir)
-    (some-> (seq (filter #(and (.isFile ^java.io.File %) (probable-license-file? %)) (file-seq (io/file dir))))
-            set)))
+  which must refer to a readable directory. By default ignores hidden
+  directories."
+  ([dir] (probable-license-files dir false))
+  ([dir include-hidden-dirs?]
+   (when (lciu/readable-dir? dir)
+     (some-> (lciu/filter-file-only-seq (io/file dir)
+                                        (fn [^java.io.File d] (and (not= (.getCanonicalFile d) (.getCanonicalFile (io/file (lcmvn/local-maven-repo))))  ; Make sure to exclude the Maven local repo, just in case it happens to be nested within dir
+                                                                   (or include-hidden-dirs? (not (.isHidden d)))))
+                                        probable-license-file?)
+             set))))
 
 (defn file->expressions-info
   "Returns an expressions-info map for the given file (an InputStream or
@@ -123,14 +128,18 @@
 (defn- zip-compressed-files
   "Returns a set of all probable ZIP compressed files (Files) in the given
   directory, recursively, or nil if there are none. dir may be a String or a
-  java.io.File, and must refer to a readable directory."
-  [dir]
-  (when (lciu/readable-dir? dir)
-    (some-> (seq (filter #(and (.isFile ^java.io.File %)
-                               (or (s/ends-with? (str %) ".zip")
-                                   (s/ends-with? (str %) ".jar")))
-                         (file-seq (io/file dir))))
-            set)))
+  java.io.File, and must refer to a readable directory. By default ignores
+  hidden directories."
+  ([dir] (zip-compressed-files dir false))
+  ([dir include-hidden-dirs?]
+   (when (lciu/readable-dir? dir)
+      (some-> (lciu/filter-file-only-seq (io/file dir)
+                                         (fn [^java.io.File d] (or include-hidden-dirs? (not (.isHidden d))))
+                                         (fn [^java.io.File f]
+                                           (let [lname (s/lower-case (.getName f))]
+                                             (or (s/ends-with? lname ".zip")
+                                                 (s/ends-with? lname ".jar")))))
+              set))))
 
 (defn dir->expressions-info
   "Returns an expressions-info map for the given dir (a String or a File,
