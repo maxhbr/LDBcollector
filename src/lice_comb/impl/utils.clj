@@ -262,7 +262,7 @@
   Note also that dir is always returned, even if it does not meet pred."
   [^java.io.File dir pred]
   (let [pred   (or pred (constantly true))
-        filter ^java.io.FileFilter (reify java.io.FileFilter (accept [_ f] (boolean (pred (.getCanonicalFile ^java.io.File f)))))]  ; Use the canonical file, otherwise we will get tripped up by "." being "hidden" according to the JVM when running on a Unix 🤡
+        filter (reify java.io.FileFilter (accept [_ f] (boolean (pred (.getCanonicalFile ^java.io.File f)))))]  ; Use the canonical file, otherwise we will get tripped up by "." being "hidden" according to the JVM when running on a Unix 🤡
     (tree-seq
       (fn [^java.io.File f] (.isDirectory f))
       (fn [^java.io.File d] (seq (.listFiles d filter)))
