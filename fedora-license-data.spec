@@ -6,7 +6,7 @@
 %endif
 
 Name:           fedora-license-data
-Version:        1.44
+Version:        1.45
 Release:        1%{?dist}
 Summary:        Fedora Linux license data
 
@@ -97,6 +97,16 @@ make check-grammar
 
 
 %changelog
+* Fri Apr 12 2024 Miroslav Suchý <msuchy@redhat.com> 1.45-1
+- Update public-domain-text.txt for OpenCTM
+- lark-parser was renamed to lark, allow both
+- public domain dedication for libtcd
+- public domain dedication for mopac7
+- Public domain for sshguard
+- public domain dedication for tcd-utils
+- public domain dedication for minicom
+- add LicenseRef-Catharon license
+
 * Thu Mar 28 2024 Miroslav Suchý <msuchy@redhat.com> 1.44-1
 - add OAR License
 - include dictd md5 public domain text
