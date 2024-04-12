@@ -258,7 +258,7 @@
            version      (if (release-version? version) (ga-release-version group-id artifact-id) version)
            file-version (resolve-snapshot-version group-id artifact-id version)
            gav-path     (str (s/replace group-id "." "/") "/" artifact-id "/" version "/" artifact-id "-" file-version ".pom")
-           local-pom (io/file (str @local-maven-repo-a separator (s/replace gav-path "/" separator)))]
+           local-pom    (io/file (str @local-maven-repo-a separator (s/replace gav-path "/" separator)))]
        (if (and (.exists local-pom)
                 (.isFile local-pom))
          (.toURI local-pom)

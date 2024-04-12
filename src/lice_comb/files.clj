@@ -51,7 +51,8 @@
   ([dir include-hidden-dirs?]
    (when (lciu/readable-dir? dir)
      (some-> (lciu/filter-file-only-seq (io/file dir)
-                                        (fn [^java.io.File d] (or include-hidden-dirs? (not (.isHidden d))))
+                                        (fn [^java.io.File d] (and (not= (.getCanonicalFile d) (.getCanonicalFile (io/file (lcmvn/local-maven-repo))))  ; Make sure to exclude the Maven local repo, just in case it happens to be nested within dir
+                                                                   (or include-hidden-dirs? (not (.isHidden d)))))
                                         probable-license-file?)
              set))))
 
