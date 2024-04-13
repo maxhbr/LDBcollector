@@ -6,14 +6,16 @@
     "ambiguities": {
         "Academic Free License": {
             "aliases": [
-                "License :: OSI Approved :: Academic Free License (AFL)"
+                "License :: OSI Approved :: Academic Free License (AFL)",
+                "AFLv2"
             ],
             "problem": "This license has many different versions (1.1, 1.2, 2.0, 2.1 and 3.0). Without a version number it is not possible to determine which of the versions is meant."
         },
         "Apache License": {
             "aliases": [
                 "Apache License",
-                "Apache Software License"
+                "Apache Software License",
+                "OSI Approved :: Apache Software License"
             ],
             "problem": "This license has different version (1.0, 1.1, and 2.0). Without a version number it is not possible to determine which of the versions is meant."
         },
@@ -71,7 +73,8 @@
                 "GNU Library General Public License v2 only",
                 "License :: OSI Approved :: GNU Lesser General Public License v2 (LGPLv2)",
                 "GNU Lesser General Public License v2 (LGPLv2)",
-                "LGPLv2 or later"
+                "LGPLv2 or later",
+                "LGPLv2"
             ],
             "problem": "This license has different versions (2.0, 2.1 and 3.0). Without a version number it is not possible to determine which of the versions is meant."
         },
@@ -79,6 +82,14 @@
             "aliases": [
             ],
             "problem": "There a couple of licenses related to the GNU project. Without the name of the license and version number it is not possible to determine which of the versions is meant."
+        },
+        "Mozille Public License": {
+            "aliases": [
+                "MPL",
+                "MPL-1",
+                "MPLv1"
+            ],
+            "problem": "This license has different version (1.0, 1.1 and 2.0). Without a version number clearly distinguishing the versions it is not possible to determine which of the versions is meant."
         }
     }
 }
