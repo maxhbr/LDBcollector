@@ -17,6 +17,9 @@
    "X/MIT License",
    "MIT/X11",
    "MIT variant (X11)",
-   "scancode:x11-xconsortium"
+   "scancode:x11-xconsortium",
+   "MIT-X-Consortium",
+   "MIT-X11",
+   "X-Consortium"
   ]
 }

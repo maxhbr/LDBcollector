@@ -196,7 +196,7 @@ check_presence OFL-1.1 " -e 1.1" " -e 1.0"
 check_presence TU-Berlin-1.0 " -e 1" " -e 2"
 check_presence TU-Berlin-2.0 " -e 2" " -e 1"
 
-check_presence X11 " -e 11 -e 'X ' -e 'X/MIT'" 
+check_presence X11 " -i -e 11 -e 'consortium' -e 'X ' -e 'X/MIT'" 
 
 check_presence ZPL-1.1 " -e 1.1" " -e 2"
 check_presence ZPL-2.0 " -e 2.0" " -e 1"
