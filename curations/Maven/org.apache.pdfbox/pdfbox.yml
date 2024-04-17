@@ -1,0 +1,8 @@
+- id: "Maven:org.apache.pdfbox:pdfbox:(,2.0.29]"
+  curations:
+    comment: |-
+      Wrong SVN repository path in parent POM: https://repo1.maven.org/maven2/org/apache/pdfbox/pdfbox-parent/2.0.29/pdfbox-parent-2.0.29.pom
+    vcs:
+      type: "Subversion"
+      url: "https://svn.apache.org/repos/asf/pdfbox"
+      path: "pdfbox"
