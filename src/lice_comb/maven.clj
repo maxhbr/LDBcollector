@@ -30,7 +30,8 @@
   2. Maven Central
   3. Clojars
   
-  Other/custom Maven artifact repositories are not currently supported."
+  Other/custom Maven artifact repositories are supported via the
+  `set-local-maven-repo!` and `set-remote-maven-repos!` fns."
   (:require [clojure.string                  :as s]
             [clojure.java.io                 :as io]
             [clojure.java.shell              :as sh]
