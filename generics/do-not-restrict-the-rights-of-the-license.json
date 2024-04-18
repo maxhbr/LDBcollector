@@ -1,0 +1,6 @@
+{
+  "name": "Do not restrict the rights of the license",
+  "description": "The vendor agreement must not limit the customer rights granted by the Open Source license. For instance, depending on each license terms, in might be : license fee, royalty, or other charge for exercise of rights.",
+  "metacategory": "LicenseAgreement",
+  "passivity": "Passive"
+}

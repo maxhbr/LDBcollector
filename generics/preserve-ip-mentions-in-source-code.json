@@ -1,6 +1,0 @@
-{
-  "name": "Preserve IP mentions in Source code",
-  "description": "Keep all legal notices and license texts intact, including in the headers.",
-  "metacategory": "Mentions",
-  "passivity": "Active"
-}

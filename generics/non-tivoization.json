@@ -1,6 +1,6 @@
 {
   "name": "Non Tivoization",
-  "description": "Make available any methods, procedures, authorization keys, or other information required to install and execute modified versions the information required to run a modified version of the software (including  provision of load certificates) on the hardware.",
+  "description": "\"Tivoization\" refers to hardware limitation that would prevent any modified version of the software to run on the hardware. If your product is a \"consumer product\", you must make available any methods, procedures, authorization keys, or other information  (including provision of load certificates) required to install and execute modified versions of the software on the hardware.",
   "metacategory": "TechnicalConstraints",
   "passivity": "Active"
 }

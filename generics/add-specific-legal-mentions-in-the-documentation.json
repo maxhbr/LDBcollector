@@ -1,0 +1,6 @@
+{
+  "name": "Add specific legal mentions in the documentation",
+  "description": "Include specific mentions/attributions/ statements or warnings in the documentation. For instance : \"This product includes software developed by the Apache Group for use in the Apache HTTP server project (http://www.apache.org/).\"",
+  "metacategory": "Mentions",
+  "passivity": "Active"
+}

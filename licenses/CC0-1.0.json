@@ -1,0 +1,36 @@
+{
+    "spdx_id": "CC0-1.0",
+    "long_name": "Creative Commons Zero v1.0 Universal",
+    "license_version": "1.0",
+    "radical": "CC0",
+    "autoupgrade": null,
+    "steward": "",
+    "inspiration_spdx": "",
+    "copyleft": "None",
+    "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+    "osi_approved": false,
+    "fsf_approved": true,
+    "foss": "Yes-Auto",
+    "patent_grant": false,
+    "ethical_clause": false,
+    "non_commercial": false,
+    "non_tivoisation": false,
+    "law_choice": "",
+    "comment": "[License for non software Work]",
+    "verbatim": "",
+    "obligations": [
+        {
+            "license": [
+                "CC0-1.0"
+            ],
+            "generic": [
+                "Respect trademarks"
+            ],
+            "name": "No trademark or patent rights",
+            "verbatim": "4.a . No trademark or patent rights held by Affirmer are waived, abandoned, surrendered, licensed or otherwise affected by this document.",
+            "passivity": "Passive",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        }
+    ]
+}

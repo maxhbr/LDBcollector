@@ -1,0 +1,99 @@
+{
+    "spdx_id": "ZPL-1.1",
+    "long_name": "Zope Public License 1.1",
+    "license_version": "1.1",
+    "radical": "ZPL",
+    "autoupgrade": null,
+    "steward": "",
+    "inspiration_spdx": "",
+    "copyleft": "None",
+    "url": "http://old.zope.org/Resources/License/ZPL-1.1",
+    "osi_approved": false,
+    "fsf_approved": null,
+    "foss": "Yes",
+    "patent_grant": false,
+    "ethical_clause": false,
+    "non_commercial": false,
+    "non_tivoisation": false,
+    "law_choice": "",
+    "comment": "",
+    "verbatim": "",
+    "obligations": [
+        {
+            "license": [
+                "ZPL-1.1"
+            ],
+            "generic": [
+                "Reproduce license and legal mentions in documentation"
+            ],
+            "name": "License in documentation",
+            "verbatim": "Redistributions in binary form must reproduce the above copyright notice, this list of conditions, and the following disclaimer in the documentation and/or other materials provided with the distribution.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "ZPL-1.1"
+            ],
+            "generic": [
+                "Reproduce license and legal mentions in documentation"
+            ],
+            "name": "Special acknowledgment for modified redistribution",
+            "verbatim": "Modified redistributions of any form whatsoever must retain the following acknowledgment:\r\n\r\n\"This product includes software developed by Zope Corporation for use in the Z Object Publishing Environment (http://www.zope.com/).\"\r\n\r\nIntact (re-)distributions of any official Zope release do not require an external acknowledgement.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "Altered"
+        },
+        {
+            "license": [
+                "ZPL-1.1"
+            ],
+            "generic": [
+                "Preserve legal mentions in source code"
+            ],
+            "name": "Preserve License in source code",
+            "verbatim": "Redistributions in source code must retain the above copyright notice, this list of conditions, and the following disclaimer.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "ZPL-1.1"
+            ],
+            "generic": [
+                "Add specific mentions in advertising"
+            ],
+            "name": "If modified, mention in advertising mentionning features",
+            "verbatim": "All advertising materials and documentation mentioning features derived from or use of this software must display the following acknowledgement:\r\n\r\n\"This product includes software developed by Zope Corporation for use in the Z Object Publishing Environment (http://www.zope.com/).\"\r\n\r\nIn the event that the product being advertised includes an intact Zope distribution (with copyright and license included) then this clause is waived.",
+            "passivity": "",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "Altered"
+        },
+        {
+            "license": [
+                "ZPL-1.1"
+            ],
+            "generic": [
+                "Do not use project or contributor names for endorsement or promotion."
+            ],
+            "name": "No use of names for endorsment",
+            "verbatim": "Names associated with Zope or Zope Corporation must not be used to endorse or promote products derived from this software without prior written permission from Zope Corporation.",
+            "passivity": "",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "ZPL-1.1"
+            ],
+            "generic": null,
+            "name": "Modification must be pacakged as patches",
+            "verbatim": "Modifications are encouraged but must be packaged separately as patches to official Zope releases. Distributions that do not clearly separate the patches from the original work must be clearly labeled as unofficial distributions. Modifications which do not carry the name Zope may be packaged in any form, as long as they conform to all of the clauses above.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "Altered"
+        }
+    ]
+}

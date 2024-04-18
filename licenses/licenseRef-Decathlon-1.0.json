@@ -1,0 +1,22 @@
+{
+    "spdx_id": "licenseRef-Decathlon-1.0",
+    "long_name": "The Decat public license",
+    "license_version": "",
+    "radical": "",
+    "autoupgrade": null,
+    "steward": "",
+    "inspiration_spdx": "",
+    "copyleft": "Strong",
+    "url": "",
+    "osi_approved": null,
+    "fsf_approved": null,
+    "foss": "",
+    "patent_grant": null,
+    "ethical_clause": null,
+    "non_commercial": null,
+    "non_tivoisation": null,
+    "law_choice": "Droit fran\u00e7ais",
+    "comment": "No comment",
+    "verbatim": "Tu feras du sport",
+    "obligations": []
+}

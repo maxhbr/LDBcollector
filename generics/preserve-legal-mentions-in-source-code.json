@@ -1,0 +1,6 @@
+{
+  "name": "Preserve legal mentions in source code",
+  "description": "Keep all legal notices and license texts intact in the Source Code, including in the headers.",
+  "metacategory": "Mentions",
+  "passivity": "Active"
+}
