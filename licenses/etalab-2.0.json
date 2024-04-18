@@ -1,0 +1,36 @@
+{
+    "spdx_id": "etalab-2.0",
+    "long_name": "Etalab Open License 2.0",
+    "license_version": "2.0",
+    "radical": "etalab",
+    "autoupgrade": null,
+    "steward": "",
+    "inspiration_spdx": "",
+    "copyleft": "None",
+    "url": "https://github.com/DISIC/politique-de-contribution-open-source/blob/master/LICENSE.pdf",
+    "osi_approved": false,
+    "fsf_approved": null,
+    "foss": "Yes-Auto",
+    "patent_grant": false,
+    "ethical_clause": false,
+    "non_commercial": false,
+    "non_tivoisation": false,
+    "law_choice": "French Law",
+    "comment": "",
+    "verbatim": "",
+    "obligations": [
+        {
+            "license": [
+                "etalab-2.0"
+            ],
+            "generic": [
+                "Reproduce license and legal mentions in documentation"
+            ],
+            "name": "Licence and copyright notices in documentation",
+            "verbatim": "Sous r\u00e9serve de :\r\n\r\n    - mentionner la paternit\u00e9 de l'\u00ab Information \u00bb : sa source (au moins le nom du \u00ab Conc\u00e9dant \u00bb) et la date de derni\u00e8re mise \u00e0 jour de l'\u00ab Information \u00bb r\u00e9utilis\u00e9e.\r\n\r\nLe \u00ab R\u00e9utilisateur \u00bb peut notamment s'acquitter de cette condition en renvoyant, par un lien hypertexte, vers la source de \u00ab l'Information \u00bb et assurant une mention effective de sa paternit\u00e9.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        }
+    ]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Libraries must stay libraries",
+  "description": "When a software library is modified, the modified work must itself continue to be a software library. Alternativly, you may opt to apply the terms of the GNU General Public License instead of to this License.  This option is useful when you wish to copy part of the code of the Library into a program that is not a library.",
+  "metacategory": "TechnicalConstraints",
+  "passivity": "Active"
+}

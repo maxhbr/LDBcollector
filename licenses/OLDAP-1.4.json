@@ -1,0 +1,88 @@
+{
+    "spdx_id": "OLDAP-1.4",
+    "long_name": "Open LDAP Public License v1.4",
+    "license_version": "1.4",
+    "radical": "OLDAP",
+    "autoupgrade": null,
+    "steward": "",
+    "inspiration_spdx": "",
+    "copyleft": "Weak",
+    "url": "http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=c9f95c2f3f2ffb5e0ae55fe7388af75547660941",
+    "osi_approved": false,
+    "fsf_approved": null,
+    "foss": "Yes",
+    "patent_grant": false,
+    "ethical_clause": false,
+    "non_commercial": false,
+    "non_tivoisation": false,
+    "law_choice": "",
+    "comment": "",
+    "verbatim": "",
+    "obligations": [
+        {
+            "license": [
+                "OLDAP-1.4"
+            ],
+            "generic": [
+                "Providing CSC to end user"
+            ],
+            "name": "Providing CSC to end user or specific actions",
+            "verbatim": "4. You may distribute the programs of this Package in object code or executable form, provided that you do at least ONE of the following:\r\n\r\n    a) distribute a Standard Version of the executables and library files, together with instructions (in the manual page or equivalent) on where to get the Standard Version.\r\n    b) accompany the distribution with the machine-readable source of the Package with your modifications.\r\n    c) accompany any non-standard executables with their corresponding Standard Version executables, giving the non-standard executables non-standard names, and clearly documenting the differences in manual pages (or equivalent), together with instructions on where to get the Standard Version.\r\n    d) make other distribution arrangements with the Copyright Holder.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "OLDAP-1.4"
+            ],
+            "generic": [
+                "Track and mention modifications in the source code"
+            ],
+            "name": "Marking modifications",
+            "verbatim": "3. You may otherwise modify your copy of this Package in any way, provided that you insert a prominent notice in each changed file stating how and when you changed that file",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "Altered"
+        },
+        {
+            "license": [
+                "OLDAP-1.4"
+            ],
+            "generic": [
+                "Preserve legal mentions in source code"
+            ],
+            "name": "Preserve License and notices in source code",
+            "verbatim": "1. You may make and give away verbatim copies of the source form of the Standard Version of this Package without restriction, provided that you duplicate all of the original copyright notices and associated disclaimers.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "OLDAP-1.4"
+            ],
+            "generic": [
+                "Weak Copyleft"
+            ],
+            "name": "Weak Copyleft or renaming",
+            "verbatim": "provided that you do at least ONE of the following:\r\n\r\n    a) place your modifications in the Public Domain or otherwise make them Freely Available, such as by posting said modifications to Usenet or an equivalent medium, or placing the modifications on a major archive site such as uunet.uu.net, or by allowing the Copyright Holder to include your modifications in the Standard Version of the Package.\r\n    b) use the modified Package only within your corporation or organization.\r\n    c) rename any non-standard executables so the names do not conflict with standard executables, which must also be provided, and provide a separate manual page for each non-standard executable that clearly documents how it differs from the Standard Version.\r\n    d) make other distribution arrangements with the Copyright Holder.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "Altered"
+        },
+        {
+            "license": [
+                "OLDAP-1.4"
+            ],
+            "generic": [
+                "Do not use project or contributor names for endorsement or promotion."
+            ],
+            "name": "No use of names for endorsement",
+            "verbatim": "9. The name of the Copyright Holder may not be used to endorse or promote products derived from this software without specific prior written permission.",
+            "passivity": "",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        }
+    ]
+}

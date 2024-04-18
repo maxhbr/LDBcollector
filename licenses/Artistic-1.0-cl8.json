@@ -1,0 +1,101 @@
+{
+    "spdx_id": "Artistic-1.0-cl8",
+    "long_name": "Artistic License 1.0 w/clause 8",
+    "license_version": "1.0",
+    "radical": "Artistic",
+    "autoupgrade": null,
+    "steward": "",
+    "inspiration_spdx": "",
+    "copyleft": "Weak",
+    "url": "https://opensource.org/licenses/Artistic-1.0",
+    "osi_approved": true,
+    "fsf_approved": null,
+    "foss": "Yes",
+    "patent_grant": false,
+    "ethical_clause": false,
+    "non_commercial": false,
+    "non_tivoisation": false,
+    "law_choice": "",
+    "comment": "",
+    "verbatim": "",
+    "obligations": [
+        {
+            "license": [
+                "Artistic-1.0-cl8"
+            ],
+            "generic": [
+                "Providing CSC to end user"
+            ],
+            "name": "Providing CSC to end user or specific actions",
+            "verbatim": "4. You may distribute the programs of this Package in object code or executable form, provided that you do at least ONE of the following:\r\n\r\n    a) distribute a Standard Version of the executables and library files, together with instructions (in the manual page or equivalent) on where to get the Standard Version.\r\n    b) accompany the distribution with the machine-readable source of the Package with your modifications.\r\n    c) accompany any non-standard executables with their corresponding Standard Version executables, giving the non-standard executables non-standard names, and clearly documenting the differences in manual pages (or equivalent), together with instructions on where to get the Standard Version.\r\n    d) make other distribution arrangements with the Copyright Holder.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "Artistic-1.0-cl8"
+            ],
+            "generic": [
+                "Preserve legal mentions in source code"
+            ],
+            "name": "Preserve License and notices in source code",
+            "verbatim": "1. You may make and give away verbatim copies of the source form of the Standard Version of this Package without restriction, provided that you duplicate all of the original copyright notices and associated disclaimers.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "Artistic-1.0-cl8"
+            ],
+            "generic": [
+                "Track and mention modifications in the source code"
+            ],
+            "name": "Marking modifications in source code",
+            "verbatim": "3. You may otherwise modify your copy of this Package in any way, provided that you insert a prominent notice in each changed file stating how and when you changed that file,",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "Altered"
+        },
+        {
+            "license": [
+                "Artistic-1.0-cl8"
+            ],
+            "generic": [
+                "Don't sell the software in itself"
+            ],
+            "name": "Don't charge a fee for this Package itself.",
+            "verbatim": "5. You may charge a reasonable copying fee for any distribution of this Package. You may charge any fee you choose for support of this Package. You may not charge a fee for this Package itself. However, you may distribute this Package in aggregate with other (possibly commercial) programs as part of a larger (possibly commercial) software distribution provided that you do not advertise this Package as a product of your own.",
+            "passivity": "Passive",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "Artistic-1.0-cl8"
+            ],
+            "generic": [
+                "Weak Copyleft"
+            ],
+            "name": "Weak Copyleft or renaming",
+            "verbatim": "3. You may otherwise modify your copy of this Package in any way[...] provided that you do at least ONE of the following:\r\n\r\n    a) place your modifications in the Public Domain or otherwise make them Freely Available, such as by posting said modifications to Usenet or an equivalent medium, or placing the modifications on a major archive site such as ftp.uu.net, or by allowing the Copyright Holder to include your modifications in the Standard Version of the Package.\r\n    b) use the modified Package only within your corporation or organization.\r\n    c) rename any non-standard executables so the names do not conflict with standard executables, which must also be provided, and provide a separate manual page for each non-standard executable that clearly documents how it differs from the Standard Version.\r\n    d) make other distribution arrangements with the Copyright Holder.\r\n\r\n5.[...] However, you may distribute this Package in aggregate with other (possibly commercial) programs as part of a larger (possibly commercial) software distribution provided that you do not advertise this Package as a product of your own.\r\n\r\n8.Aggregation of this Package with a commercial distribution is always permitted provided that the use of this Package is embedded; that is, when no overt attempt is made to make this Package's interfaces visible to the end user of the commercial distribution. Such use shall not be construed as a distribution of this Package.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "Altered"
+        },
+        {
+            "license": [
+                "Artistic-1.0-cl8"
+            ],
+            "generic": [
+                "Do not use project or contributor names for endorsement or promotion."
+            ],
+            "name": "No use of names for endorsement",
+            "verbatim": "9. The name of the Copyright Holder may not be used to endorse or promote products derived from this software without specific prior written permission.",
+            "passivity": "Passive",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        }
+    ]
+}

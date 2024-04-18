@@ -1,0 +1,62 @@
+{
+    "spdx_id": "zlib-acknowledgement",
+    "long_name": "zlib/libpng License with Acknowledgement",
+    "license_version": "",
+    "radical": "zlib-acknowledgement",
+    "autoupgrade": null,
+    "steward": "",
+    "inspiration_spdx": "",
+    "copyleft": "None",
+    "url": "https://fedoraproject.org/wiki/Licensing/ZlibWithAcknowledgement",
+    "osi_approved": false,
+    "fsf_approved": null,
+    "foss": "Yes",
+    "patent_grant": false,
+    "ethical_clause": false,
+    "non_commercial": false,
+    "non_tivoisation": false,
+    "law_choice": "",
+    "comment": "",
+    "verbatim": "",
+    "obligations": [
+        {
+            "license": [
+                "zlib-acknowledgement"
+            ],
+            "generic": [
+                "Track and mention modifications in the source code"
+            ],
+            "name": "Modifications dans les sources",
+            "verbatim": "2. Altered source versions must be plainly marked as such, and must not be misrepresented as\r\nbeing the original software.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "Altered"
+        },
+        {
+            "license": [
+                "zlib-acknowledgement"
+            ],
+            "generic": [
+                "Reproduce license and legal mentions in documentation"
+            ],
+            "name": "Mention du copyright dans la doc",
+            "verbatim": "1. The origin of this software must not be misrepresented; you must not claim that you wrote the\r\noriginal software. If you use this software in a product, an acknowledgment (see the following)\r\nin the product documentation is required.\r\n\r\nPortions Copyright (c) 2002-2007 Charlie Poole or Copyright (c) 2002-2004 James W. Newkirk,\r\nMichael C. Two, Alexei A. Vorontsov or Copyright (c) 2000-2002 Philip A. Craig",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "zlib-acknowledgement"
+            ],
+            "generic": [
+                "Preserve legal mentions in source code"
+            ],
+            "name": "Conserver la licence dans les sources",
+            "verbatim": "3. This notice may not be removed or altered from any source distribution.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        }
+    ]
+}

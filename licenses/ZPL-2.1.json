@@ -1,0 +1,88 @@
+{
+    "spdx_id": "ZPL-2.1",
+    "long_name": "Zope Public License 2.1",
+    "license_version": "2.1",
+    "radical": "ZPL",
+    "autoupgrade": null,
+    "steward": "",
+    "inspiration_spdx": "",
+    "copyleft": "",
+    "url": "http://old.zope.org/Resources/ZPL/",
+    "osi_approved": false,
+    "fsf_approved": true,
+    "foss": "Yes-Auto",
+    "patent_grant": false,
+    "ethical_clause": false,
+    "non_commercial": false,
+    "non_tivoisation": false,
+    "law_choice": "",
+    "comment": "",
+    "verbatim": "",
+    "obligations": [
+        {
+            "license": [
+                "ZPL-2.1"
+            ],
+            "generic": [
+                "Preserve legal mentions in source code"
+            ],
+            "name": "Preserve License in source code",
+            "verbatim": "Redistributions in source code must retain the accompanying copyright notice, this list of conditions, and the following disclaimer.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "ZPL-2.1"
+            ],
+            "generic": [
+                "Reproduce license and legal mentions in documentation"
+            ],
+            "name": "License in documentation",
+            "verbatim": "Redistributions in binary form must reproduce the accompanying copyright notice, this list of conditions, and the following disclaimer in the documentation and/or other materials provided with the distribution.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "ZPL-2.1"
+            ],
+            "generic": [
+                "Track and mention modifications in the source code"
+            ],
+            "name": "Mention of changes and their date",
+            "verbatim": "If any files are modified, you must cause the modified files to carry prominent notices stating that you changed the files and the date of any change.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "Altered"
+        },
+        {
+            "license": [
+                "ZPL-2.1"
+            ],
+            "generic": [
+                "Do not use project or contributor names for endorsement or promotion."
+            ],
+            "name": "No use of names for endorsment",
+            "verbatim": "Names of the copyright holders must not be used to endorse or promote products derived from this software without prior written permission from the copyright holders.",
+            "passivity": "Passive",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "ZPL-2.1"
+            ],
+            "generic": [
+                "Respect trademarks"
+            ],
+            "name": "No use of trademarks",
+            "verbatim": "The right to distribute this software or to use it for any purpose does not give you the right to use Servicemarks (sm) or Trademarks (tm) of the copyright holders. Use of them is covered by separate agreement with the copyright holders.",
+            "passivity": "Passive",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        }
+    ]
+}

@@ -1,0 +1,88 @@
+{
+    "spdx_id": "Apache-1.1",
+    "long_name": "Apache License 1.1",
+    "license_version": "1.1",
+    "radical": "Apache",
+    "autoupgrade": null,
+    "steward": "",
+    "inspiration_spdx": "",
+    "copyleft": "None",
+    "url": "http://apache.org/licenses/LICENSE-1.1",
+    "osi_approved": true,
+    "fsf_approved": true,
+    "foss": "Yes-Auto",
+    "patent_grant": false,
+    "ethical_clause": false,
+    "non_commercial": false,
+    "non_tivoisation": false,
+    "law_choice": "",
+    "comment": "",
+    "verbatim": "",
+    "obligations": [
+        {
+            "license": [
+                "Apache-1.1"
+            ],
+            "generic": [
+                "Preserve legal mentions in source code"
+            ],
+            "name": "Preserve License and notices in source code",
+            "verbatim": "1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "Apache-1.1"
+            ],
+            "generic": [
+                "Reproduce license and legal mentions in documentation"
+            ],
+            "name": "License and notices in documentation",
+            "verbatim": "2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "Apache-1.1"
+            ],
+            "generic": [
+                "Add specific legal mentions in the documentation"
+            ],
+            "name": "Display acknowledgment in end-user documentation",
+            "verbatim": "3. The end-user documentation included with the redistribution, if any, must include the following acknowledgment:\r\n\"This product includes software developed by the Apache Software Foundation (http://www.apache.org/).\"\r\nAlternately, this acknowledgment may appear in the software itself, if and wherever such third-party acknowledgments normally appear.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "Apache-1.1"
+            ],
+            "generic": [
+                "Respect trademarks"
+            ],
+            "name": "Don't use Apache in names of products",
+            "verbatim": "5. Products derived from this software may not be called \"Apache\" nor may \"Apache\" appear in their names without prior written permission of the Apache Group.",
+            "passivity": "Passive",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "Apache-1.1"
+            ],
+            "generic": [
+                "Do not use project or contributor names for endorsement or promotion."
+            ],
+            "name": "No use of names for endorsment",
+            "verbatim": "4. The names \"Apache Server\" and \"Apache Group\" must not be used to    endorse or promote products derived from this software without prior written permission. For written permission, please contact apache@apache.org.",
+            "passivity": "Passive",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        }
+    ]
+}
