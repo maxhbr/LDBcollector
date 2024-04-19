@@ -96,3 +96,6 @@
 [submodule "data/fossology-LicenseDb"]
 	path = data/fossology-LicenseDb
 	url = https://github.com/fossology/LicenseDb/
+[submodule "data/McCoySmith-OSI-License-Categories"]
+	path = data/McCoySmith-OSI-License-Categories
+	url = https://github.com/McCoySmith/OSI-License-Categories
