@@ -1,0 +1,1425 @@
+<html><head><title>ldbcollector: spdx:AFL-1.1</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:AFL-1.1</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>AFL-1.1</span></li></ul></li><li><b>other LicenseNames (18):</b><ul class="capsulUl clearfix"><li><span class="licensename">Academic Free License 1.1</span></li><li><span class="licensename"><span class="namespace">foss-license:</span>Academic Free License 1.1</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>Academic Free License 1.1</span></li><li><span class="licensename">Academic Free License v1.1</span></li><li><span class="licensename"><span class="namespace">fosslight:</span>Academic Free License v1.1</span></li><li><span class="licensename">AFL 1.1</span></li><li><span class="licensename">AFL, 1.1</span></li><li><span class="licensename">AFL, Version 1.1</span></li><li><span class="licensename">AFL-1.1</span></li><li><span class="licensename"><span class="namespace">BlueOak:</span>AFL-1.1</span></li><li><span class="licensename"><span class="namespace">cavil:</span>AFL-1.1</span></li><li><span class="licensename"><span class="namespace">fossology:</span>AFL-1.1</span></li><li><span class="licensename"><span class="namespace">scancode:</span>afl-1.1</span></li><li><span class="licensename"><span class="namespace">spdx:</span>AFL-1.1</span></li><li><span class="licensename">AFL11</span></li><li><span class="licensename"><span class="namespace">google:</span>AFL11</span></li><li><span class="licensename">scancode://afl-1.1</span></li><li><span class="licensename">scancode:afl-1.1</span></li></ul></li><li><b>other LicenseName Hints (2):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fsf:</span>AcademicFreeLicense1.1</span></li><li><span class="licensename">AFL</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="BlueOakCouncil:45ca3516a99594ff122026bac2dc381d">[<a href="/fact/BlueOakCouncil/45ca3516a99594ff122026bac2dc381d">BlueOakCouncil</a>]</span><span title="ScancodeData:089e79494208dd32beaabf34dab62c30">[<a href="/fact/ScancodeData/089e79494208dd32beaabf34dab62c30">ScancodeData</a>]</span><span title="FOSSLight:b71192c59fec777d12628bad1dfe1015">[<a href="/fact/FOSSLight/b71192c59fec777d12628bad1dfe1015">FOSSLight</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">FSF: <b style="color: green;">Libre</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:e717be35d8748ae5f9bcd7314cc91da8">[<a href="/fact/SPDXLicense/e717be35d8748ae5f9bcd7314cc91da8">SPDXLicense</a>]</span>)</span></li><li><span title="">OSI: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:e717be35d8748ae5f9bcd7314cc91da8">[<a href="/fact/SPDXLicense/e717be35d8748ae5f9bcd7314cc91da8">SPDXLicense</a>]</span>)</span></li><li><span title="notice - These licenses contain few restrictions, allowing original or modified third-party software to be shipped in any product without endangering or encumbering our source code. All of the licenses in this category do, however, have an &quot;original Copyright notice&quot; or &quot;advertising clause&quot;, wherein any external distributions must include the notice or clause specified in the license.">Google Policy Classification: <b style="color: green;">notice</b></span><span class="provided-by">(provided by: <span title="GoogleLicense:834bbe2e4d7aae30bd180a9547ec9bee">[<a href="/fact/GoogleLicense/834bbe2e4d7aae30bd180a9547ec9bee">GoogleLicense</a>]</span>)</span></li><li><span title="These licenses lack important but nonessential elements of permissive open software licenses or impose additional requirements or restrictions, such as BSD-style prohibitions against endorsement and promotion.">BlueOakCouncil: <b style="">Bronze</b></span><span class="provided-by">(provided by: <span title="BlueOakCouncil:45ca3516a99594ff122026bac2dc381d">[<a href="/fact/BlueOakCouncil/45ca3516a99594ff122026bac2dc381d">BlueOakCouncil</a>]</span>)</span></li><li><span title="Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.">CoDEStatus: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:a3d1c4d2726fcfbb05bf8ddfb36c1429">[<a href="/fact/MetaeffektLicense/a3d1c4d2726fcfbb05bf8ddfb36c1429">MetaeffektLicense</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:9f474cf5afe4fe88f0242045dbbb4c60">[<a href="/fact/OrtLicenseCategorization/9f474cf5afe4fe88f0242045dbbb4c60">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:9f474cf5afe4fe88f0242045dbbb4c60">[<a href="/fact/OrtLicenseCategorization/9f474cf5afe4fe88f0242045dbbb4c60">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Open source license that is made available under &quot;non-copyleft&quot; licenses. These generally require attribution of the included works and may include other obligations.">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:38a9321315ee60d7873857d63221e4bd">[<a href="/fact/OrtLicenseCategorization/38a9321315ee60d7873857d63221e4bd">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.">OrtLicenseCategorization: <b>property:include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:38a9321315ee60d7873857d63221e4bd">[<a href="/fact/OrtLicenseCategorization/38a9321315ee60d7873857d63221e4bd">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:38a9321315ee60d7873857d63221e4bd">[<a href="/fact/OrtLicenseCategorization/38a9321315ee60d7873857d63221e4bd">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="This property indicates that the license has patent licensing related terms. All patent related provisions in a license, with the exception of a basic patent license, trigger this clause. For example Apache-2.0 license includes a license cancellation clause due to patent disputes.">OrtLicenseCategorization: <b>property:patent-clause</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:38a9321315ee60d7873857d63221e4bd">[<a href="/fact/OrtLicenseCategorization/38a9321315ee60d7873857d63221e4bd">OrtLicenseCategorization</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>This license has been superseded by later versions.<span class="provided-by">(provided by: <span title="SPDXLicense:e717be35d8748ae5f9bcd7314cc91da8">[<a href="/fact/SPDXLicense/e717be35d8748ae5f9bcd7314cc91da8">SPDXLicense</a>]</span>)</span></li><li><b>ScancodeData: </b>Per SPDX.org, this license has been superseded by later versions.<span class="provided-by">(provided by: <span title="ScancodeData:089e79494208dd32beaabf34dab62c30">[<a href="/fact/ScancodeData/089e79494208dd32beaabf34dab62c30">ScancodeData</a>]</span>)</span></li><li><b>Fossology: </b>This license has been superseded by later versions.<span class="provided-by">(provided by: <span title="Fossology:24e46f9035730ab13acebcfcb7a14881">[<a href="/fact/Fossology/24e46f9035730ab13acebcfcb7a14881">Fossology</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://wayback.archive.org/web/20021004124254/http://www.opensource.org/licenses/academic.php" target="_blank">http://wayback.archive.org/web/20021004124254/http://www.opensource.org/licenses/academic.php</a></li><li><a href="http://opensource.linux-mirror.org/licenses/afl-1.1.txt" target="_blank">http://opensource.linux-mirror.org/licenses/afl-1.1.txt</a></li><li><a href="https://spdx.org/licenses/AFL-1.1.html" target="_blank">https://spdx.org/licenses/AFL-1.1.html</a></li><li>OSI: <a href="http://web.archive.org/web/20060924134536/http://www.opensource.org/licenses/afl-1.1.txt" target="_blank">http://web.archive.org/web/20060924134536/http://www.opensource.org/licenses/afl-1.1.txt</a></li><li><a href="http://open2.mirrors-r-us.net/licenses/afl-1.1.txt" target="_blank">http://open2.mirrors-r-us.net/licenses/afl-1.1.txt</a></li><li><a href="http://spdx.org/licenses/AFL-1.1" target="_blank">http://spdx.org/licenses/AFL-1.1</a></li><li><a href="http://web.archive.org/web/20060924134536/http://www.opensource.org/licenses/afl-1.1.txt" target="_blank">http://web.archive.org/web/20060924134536/http://www.opensource.org/licenses/afl-1.1.txt</a></li><li><a href="http://www.opensource.org/licenses/afl-1.1.txt" target="_blank">http://www.opensource.org/licenses/afl-1.1.txt</a></li><li><a href="http://www.gnu.org/licenses/license-list.html#AcademicFreeLicense" target="_blank">http://www.gnu.org/licenses/license-list.html#AcademicFreeLicense</a></li></ul><h3>Other Statements</h3><ul><li>https://spdx.org/licenses/AFL-1.1</li><li>http://web.archive.org/web/20060924134536/http://www.opensource.org/licenses/afl-1.1.txt</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Academic Free License
+Version 1.1
+
+The Academic Free License applies to any original work of authorship (the &quot;Original Work&quot;) whose owner (the &quot;Licensor&quot;) has placed the following notice immediately following the copyright notice for the Original Work:
+
+     &quot;Licensed under the Academic Free License version 1.1.&quot;
+
+Grant of License. Licensor hereby grants to any person obtaining a copy of the Original Work (&quot;You&quot;) a world-wide, royalty-free, non-exclusive, perpetual, non-sublicenseable license
+
+(1) to use, copy, modify, merge, publish, perform, distribute and/or sell copies of the Original Work and derivative works thereof, and
+
+(2) under patent claims owned or controlled by the Licensor that are embodied in the Original Work as furnished by the Licensor, to make, use, sell and offer for sale the Original Work and derivative works thereof, subject to the following conditions.
+
+     Right of Attribution. Redistributions of the Original Work must reproduce all copyright notices in the Original Work as furnished by the Licensor, both in the Original Work itself and in any documentation and/or other materials provided with the distribution of the Original Work in executable form.
+
+     Exclusions from License Grant. Neither the names of Licensor, nor the names of any contributors to the Original Work, nor any of their trademarks or service marks, may be used to endorse or promote products derived from this Original Work without express prior written permission of the Licensor.
+
+WARRANTY AND DISCLAIMERS. LICENSOR WARRANTS THAT THE COPYRIGHT IN AND TO THE ORIGINAL WORK IS OWNED BY THE LICENSOR OR THAT THE ORIGINAL WORK IS DISTRIBUTED BY LICENSOR UNDER A VALID CURRENT LICENSE FROM THE COPYRIGHT OWNER. EXCEPT AS EXPRESSLY STATED IN THE IMMEDIATELY PRECEEDING SENTENCE, THE ORIGINAL WORK IS PROVIDED UNDER THIS LICENSE ON AN &quot;AS IS&quot; BASIS, WITHOUT WARRANTY, EITHER EXPRESS OR IMPLIED, INCLUDING, WITHOUT LIMITATION, THE WARRANTY OF NON-INFRINGEMENT AND WARRANTIES THAT THE ORIGINAL WORK IS MERCHANTABLE OR FIT FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY OF THE ORIGINAL WORK IS WITH YOU. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THIS LICENSE. NO LICENSE TO ORIGINAL WORK IS GRANTED HEREUNDER EXCEPT UNDER THIS DISCLAIMER.
+
+LIMITATION OF LIABILITY. UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER TORT (INCLUDING NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE LICENSOR BE LIABLE TO ANY PERSON FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF ANY CHARACTER ARISING AS A RESULT OF THIS LICENSE OR THE USE OF THE ORIGINAL WORK INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER COMMERCIAL DAMAGES OR LOSSES, EVEN IF SUCH PERSON SHALL HAVE BEEN INFORMED OF THE POSSIBILITY OF SUCH DAMAGES. THIS LIMITATION OF LIABILITY SHALL NOT APPLY TO LIABILITY FOR DEATH OR PERSONAL INJURY RESULTING FROM SUCH PARTY&#39;S NEGLIGENCE TO THE EXTENT APPLICABLE LAW PROHIBITS SUCH LIMITATION. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR LIMITATION OF INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THIS EXCLUSION AND LIMITATION MAY NOT APPLY TO YOU.
+
+License to Source Code. The term &quot;Source Code&quot; means the preferred form of the Original Work for making modifications to it and all available documentation describing how to access and modify the Original Work. Licensor hereby agrees to provide a machine-readable copy of the Source Code of the Original Work along with each copy of the Original Work that Licensor distributes. Licensor reserves the right to satisfy this obligation by placing a machine-readable copy of the Source Code in an information repository reasonably calculated to permit inexpensive and convenient access by You for as long as Licensor continues to distribute the Original Work, and by publishing the address of that information repository in a notice immediately following the copyright notice that applies to the Original Work.
+
+Mutual Termination for Patent Action. This License shall terminate automatically and You may no longer exercise any of the rights granted to You by this License if You file a lawsuit in any court alleging that any OSI Certified open source software that is licensed under any license containing this &quot;Mutual Termination for Patent Action&quot; clause infringes any patent claims that are essential to use that software.
+
+This license is Copyright (C) 2002 Lawrence E. Rosen. All rights reserved.
+Permission is hereby granted to copy and distribute this license without modification. This license may not be modified without the express written permission of its copyright owner.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;Academic Free License&lt;/p&gt;
+
+         &lt;p&gt;Version 1.1&lt;/p&gt;
+
+      &lt;/div&gt;
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;The Academic Free License applies to any original work of authorship (the &amp;quot;Original Work&amp;quot;) whose owner
+         (the &amp;quot;Licensor&amp;quot;) has placed the following notice immediately following the copyright notice for the
+         Original Work:&lt;/p&gt;
+
+         &lt;p&gt;&lt;var class=&quot;optional-license-text&quot;&gt;&amp;quot;&lt;/var&gt;Licensed under the Academic Free License version 1.1.&lt;var class=&quot;optional-license-text&quot;&gt;&amp;quot;&lt;/var&gt;&lt;/p&gt;
+
+      &lt;/div&gt;
+
+      &lt;p&gt;Grant of License. Licensor hereby grants to any person obtaining a copy of the Original Work (&amp;quot;You&amp;quot;) a
+         world-wide, royalty-free, non-exclusive, perpetual, non-sublicenseable license&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; (1)&lt;/var&gt;
+          to use, copy, modify, merge, publish, perform, distribute and/or sell copies of the Original Work
+             and derivative works thereof, and
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; (2)&lt;/var&gt;
+          under patent claims owned or controlled by the Licensor that are embodied in the Original Work as
+             furnished by the Licensor, to make, use, sell and offer for sale the Original Work and
+             derivative works thereof, subject to the following conditions.
+        &lt;/li&gt;
+      
+&lt;/ul&gt;
+      &lt;p&gt;Right of Attribution. Redistributions of the Original Work must reproduce all copyright notices in the
+         Original Work as furnished by the Licensor, both in the Original Work itself and in any documentation
+         and/or other materials provided with the distribution of the Original Work in executable form.&lt;/p&gt;
+
+      &lt;p&gt;Exclusions from License Grant. Neither the names of Licensor, nor the names of any contributors to the
+         Original Work, nor any of their trademarks or service marks, may be used to endorse or promote
+         products derived from this Original Work without express prior written permission of the Licensor.&lt;/p&gt;
+
+      &lt;p&gt;WARRANTY AND DISCLAIMERS. LICENSOR WARRANTS THAT THE COPYRIGHT IN AND TO THE ORIGINAL WORK IS OWNED BY
+         THE LICENSOR OR THAT THE ORIGINAL WORK IS DISTRIBUTED BY LICENSOR UNDER A VALID CURRENT LICENSE FROM
+         THE COPYRIGHT OWNER. EXCEPT AS EXPRESSLY STATED IN THE IMMEDIATELY PRECEEDING SENTENCE, THE ORIGINAL
+         WORK IS PROVIDED UNDER THIS LICENSE ON AN &amp;quot;AS IS&amp;quot; BASIS, WITHOUT WARRANTY, EITHER EXPRESS OR IMPLIED,
+         INCLUDING, WITHOUT LIMITATION, THE WARRANTY OF NON-INFRINGEMENT AND WARRANTIES THAT THE ORIGINAL WORK
+         IS MERCHANTABLE OR FIT FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY OF THE ORIGINAL
+         WORK IS WITH YOU. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THIS LICENSE. NO
+         LICENSE TO ORIGINAL WORK IS GRANTED HEREUNDER EXCEPT UNDER THIS DISCLAIMER.&lt;/p&gt;
+
+      &lt;p&gt;LIMITATION OF LIABILITY. UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER TORT (INCLUDING
+         NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE LICENSOR BE LIABLE TO ANY PERSON FOR ANY DIRECT,
+         INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF ANY CHARACTER ARISING AS A RESULT OF THIS
+         LICENSE OR THE USE OF THE ORIGINAL WORK INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL,
+         WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER COMMERCIAL DAMAGES OR LOSSES,
+         EVEN IF SUCH PERSON SHALL HAVE BEEN INFORMED OF THE POSSIBILITY OF SUCH DAMAGES. THIS LIMITATION OF
+         LIABILITY SHALL NOT APPLY TO LIABILITY FOR DEATH OR PERSONAL INJURY RESULTING FROM SUCH PARTY&amp;apos;S
+         NEGLIGENCE TO THE EXTENT APPLICABLE LAW PROHIBITS SUCH LIMITATION. SOME JURISDICTIONS DO NOT ALLOW THE
+         EXCLUSION OR LIMITATION OF INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THIS EXCLUSION AND LIMITATION MAY
+         NOT APPLY TO YOU.&lt;/p&gt;
+
+      &lt;p&gt;License to Source Code. The term &amp;quot;Source Code&amp;quot; means the preferred form of the Original Work for making
+         modifications to it and all available documentation describing how to access and modify the Original
+         Work. Licensor hereby agrees to provide a machine-readable copy of the Source Code of the Original
+         Work along with each copy of the Original Work that Licensor distributes. Licensor reserves the right
+         to satisfy this obligation by placing a machine-readable copy of the Source Code in an information
+         repository reasonably calculated to permit inexpensive and convenient access by You for as long as
+         Licensor continues to distribute the Original Work, and by publishing the address of that information
+         repository in a notice immediately following the copyright notice that applies to the Original
+         Work.&lt;/p&gt;
+
+      &lt;p&gt;Mutual Termination for Patent Action. This License shall terminate automatically and You may no longer
+         exercise any of the rights granted to You by this License if You file a lawsuit in any court alleging
+         that any OSI Certified open source software that is licensed under any license containing this &amp;quot;Mutual
+         Termination for Patent Action&amp;quot; clause infringes any patent claims that are essential to use that
+         software.&lt;/p&gt;
+
+      &lt;p&gt;This license is Copyright (C) 2002 Lawrence E. Rosen. All rights reserved.&lt;/p&gt;
+
+        &lt;p&gt;Permission is hereby granted to copy and distribute this license without modification. This license
+             may not be modified without the express written permission of its copyright owner.&lt;/p&gt;
+
+    </pre></details></li><li><details><summary>Text:</summary><pre>Academic Free License
+Version 1.1
+
+The Academic Free License applies to any original work of authorship
+(the &quot;Original Work&quot;) whose owner (the &quot;Licensor&quot;) has placed the
+following notice immediately following the copyright notice for the
+Original Work: &quot;Licensed under the Academic Free License version 1.1.&quot;
+
+Grant of License. Licensor hereby grants to any person obtaining a
+copy of the Original Work (&quot;You&quot;) a world-wide, royalty-free,
+non-exclusive, perpetual, non-sublicenseable license (1) to use, copy,
+modify, merge, publish, perform, distribute and/or sell copies of the
+Original Work and derivative works thereof, and (2) under patent
+claims owned or controlled by the Licensor that are embodied in the
+Original Work as furnished by the Licensor, to make, use, sell and
+offer for sale the Original Work and derivative works thereof, subject
+to the following conditions.
+
+Right of Attribution. Redistributions of the Original Work must
+reproduce all copyright notices in the Original Work as furnished by
+the Licensor, both in the Original Work itself and in any
+documentation and/or other materials provided with the distribution of
+the Original Work in executable form.
+
+Exclusions from License Grant. Neither the names of Licensor, nor the
+names of any contributors to the Original Work, nor any of their
+trademarks or service marks, may be used to endorse or promote
+products derived from this Original Work without express prior written
+permission of the Licensor.
+
+WARRANTY AND DISCLAIMERS. LICENSOR WARRANTS THAT THE COPYRIGHT IN AND
+TO THE ORIGINAL WORK IS OWNED BY THE LICENSOR OR THAT THE ORIGINAL
+WORK IS DISTRIBUTED BY LICENSOR UNDER A VALID CURRENT LICENSE FROM THE
+COPYRIGHT OWNER. EXCEPT AS EXPRESSLY STATED IN THE IMMEDIATELY
+PRECEEDING SENTENCE, THE ORIGINAL WORK IS PROVIDED UNDER THIS LICENSE
+ON AN &quot;AS IS&quot; BASIS, WITHOUT WARRANTY, EITHER EXPRESS OR IMPLIED,
+INCLUDING, WITHOUT LIMITATION, THE WARRANTY OF NON-INFRINGEMENT AND
+WARRANTIES THAT THE ORIGINAL WORK IS MERCHANTABLE OR FIT FOR A
+PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY OF THE ORIGINAL
+WORK IS WITH YOU. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN ESSENTIAL
+PART OF THIS LICENSE. NO LICENSE TO ORIGINAL WORK IS GRANTED HEREUNDER
+EXCEPT UNDER THIS DISCLAIMER.
+
+LIMITATION OF LIABILITY. UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL
+THEORY, WHETHER TORT (INCLUDING NEGLIGENCE), CONTRACT, OR OTHERWISE,
+SHALL THE LICENSOR BE LIABLE TO ANY PERSON FOR ANY DIRECT, INDIRECT,
+SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF ANY CHARACTER ARISING
+AS A RESULT OF THIS LICENSE OR THE USE OF THE ORIGINAL WORK INCLUDING,
+WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, WORK STOPPAGE,
+COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER COMMERCIAL
+DAMAGES OR LOSSES, EVEN IF SUCH PERSON SHALL HAVE BEEN INFORMED OF THE
+POSSIBILITY OF SUCH DAMAGES. THIS LIMITATION OF LIABILITY SHALL NOT
+APPLY TO LIABILITY FOR DEATH OR PERSONAL INJURY RESULTING FROM SUCH
+PARTY&#39;S NEGLIGENCE TO THE EXTENT APPLICABLE LAW PROHIBITS SUCH
+LIMITATION. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR
+LIMITATION OF INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THIS EXCLUSION
+AND LIMITATION MAY NOT APPLY TO YOU.
+
+License to Source Code. The term &quot;Source Code&quot; means the preferred
+form of the Original Work for making modifications to it and all
+available documentation describing how to access and modify the
+Original Work. Licensor hereby agrees to provide a machine-readable
+copy of the Source Code of the Original Work along with each copy of
+the Original Work that Licensor distributes. Licensor reserves the
+right to satisfy this obligation by placing a machine-readable copy of
+the Source Code in an information repository reasonably calculated to
+permit inexpensive and convenient access by You for as long as
+Licensor continues to distribute the Original Work, and by publishing
+the address of that information repository in a notice immediately
+following the copyright notice that applies to the Original Work.
+
+Mutual Termination for Patent Action. This License shall terminate
+automatically and You may no longer exercise any of the rights granted
+to You by this License if You file a lawsuit in any court alleging
+that any OSI Certified open source software that is licensed under any
+license containing this &quot;Mutual Termination for Patent Action&quot; clause
+infringes any patent claims that are essential to use that software.
+
+This license is Copyright (C) 2002 Lawrence E. Rosen. All rights
+reserved. Permission is hereby granted to copy and distribute this
+license without modification. This license may not be modified without
+the express written permission of its copyright owner.
+
+--
+END OF LICENSE.</pre></details></li><li><details><summary>Text:</summary><pre>Academic Free License
+
+Version 1.1 The Academic Free License applies to any original work of authorship (the &quot;Original Work&quot;) whose owner (the &quot;Licensor&quot;) has placed the following notice immediately following the copyright notice for the Original Work:
+
+&quot;Licensed under the Academic Free License version 1.1.&quot;
+
+Grant of License. Licensor hereby grants to any person obtaining a copy of the Original Work (&quot;You&quot;) a world-wide, royalty-free, non-exclusive, perpetual, non-sublicenseable license
+
+   (1) to use, copy, modify, merge, publish, perform, distribute and/or sell copies of the Original Work and derivative works thereof, and
+
+   (2) under patent claims owned or controlled by the Licensor that are embodied in the Original Work as furnished by the Licensor, to make, use, sell and offer for sale the Original Work and derivative works thereof, subject to the following conditions.
+
+Right of Attribution. Redistributions of the Original Work must reproduce all copyright notices in the Original Work as furnished by the Licensor, both in the Original Work itself and in any documentation and/or other materials provided with the distribution of the Original Work in executable form.
+
+Exclusions from License Grant. Neither the names of Licensor, nor the names of any contributors to the Original Work, nor any of their trademarks or service marks, may be used to endorse or promote products derived from this Original Work without express prior written permission of the Licensor.
+
+WARRANTY AND DISCLAIMERS. LICENSOR WARRANTS THAT THE COPYRIGHT IN AND TO THE ORIGINAL WORK IS OWNED BY THE LICENSOR OR THAT THE ORIGINAL WORK IS DISTRIBUTED BY LICENSOR UNDER A VALID CURRENT LICENSE FROM THE COPYRIGHT OWNER. EXCEPT AS EXPRESSLY STATED IN THE IMMEDIATELY PRECEEDING SENTENCE, THE ORIGINAL WORK IS PROVIDED UNDER THIS LICENSE ON AN &quot;AS IS&quot; BASIS, WITHOUT WARRANTY, EITHER EXPRESS OR IMPLIED, INCLUDING, WITHOUT LIMITATION, THE WARRANTY OF NON-INFRINGEMENT AND WARRANTIES THAT THE ORIGINAL WORK IS MERCHANTABLE OR FIT FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY OF THE ORIGINAL WORK IS WITH YOU. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THIS LICENSE. NO LICENSE TO ORIGINAL WORK IS GRANTED HEREUNDER EXCEPT UNDER THIS DISCLAIMER.
+
+LIMITATION OF LIABILITY. UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER TORT (INCLUDING NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE LICENSOR BE LIABLE TO ANY PERSON FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF ANY CHARACTER ARISING AS A RESULT OF THIS LICENSE OR THE USE OF THE ORIGINAL WORK INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER COMMERCIAL DAMAGES OR LOSSES, EVEN IF SUCH PERSON SHALL HAVE BEEN INFORMED OF THE POSSIBILITY OF SUCH DAMAGES. THIS LIMITATION OF LIABILITY SHALL NOT APPLY TO LIABILITY FOR DEATH OR PERSONAL INJURY RESULTING FROM SUCH PARTY&#39;S NEGLIGENCE TO THE EXTENT APPLICABLE LAW PROHIBITS SUCH LIMITATION. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR LIMITATION OF INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THIS EXCLUSION AND LIMITATION MAY NOT APPLY TO YOU.
+
+License to Source Code. The term &quot;Source Code&quot; means the preferred form of the Original Work for making modifications to it and all available documentation describing how to access and modify the Original Work. Licensor hereby agrees to provide a machine-readable copy of the Source Code of the Original Work along with each copy of the Original Work that Licensor distributes. Licensor reserves the right to satisfy this obligation by placing a machine-readable copy of the Source Code in an information repository reasonably calculated to permit inexpensive and convenient access by You for as long as Licensor continues to distribute the Original Work, and by publishing the address of that information repository in a notice immediately following the copyright notice that applies to the Original Work.
+
+Mutual Termination for Patent Action. This License shall terminate automatically and You may no longer exercise any of the rights granted to You by this License if You file a lawsuit in any court alleging that any OSI Certified open source software that is licensed under any license containing this &quot;Mutual Termination for Patent Action&quot; clause infringes any patent claims that are essential to use that software.
+
+This license is Copyright (C) 2002 Lawrence E. Rosen. All rights reserved.
+
+Permission is hereby granted to copy and distribute this license without modification. This license may not be modified without the express written permission of its copyright owner.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/e717be35d8748ae5f9bcd7314cc91da8">SPDXLicense:e717be35d8748ae5f9bcd7314cc91da8</a> for <a href="/?license=spdx:AFL-1.1"><span class="licensename"><span class="namespace">spdx:</span>AFL-1.1</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>AFL-1.1</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Academic Free License v1.1</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">FSF: <b style="color: green;">Libre</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:e717be35d8748ae5f9bcd7314cc91da8">[<a href="/fact/SPDXLicense/e717be35d8748ae5f9bcd7314cc91da8">SPDXLicense</a>]</span>)</span></li><li><span title="">OSI: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:e717be35d8748ae5f9bcd7314cc91da8">[<a href="/fact/SPDXLicense/e717be35d8748ae5f9bcd7314cc91da8">SPDXLicense</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>This license has been superseded by later versions.<span class="provided-by">(provided by: <span title="SPDXLicense:e717be35d8748ae5f9bcd7314cc91da8">[<a href="/fact/SPDXLicense/e717be35d8748ae5f9bcd7314cc91da8">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://wayback.archive.org/web/20021004124254/http://www.opensource.org/licenses/academic.php" target="_blank">http://wayback.archive.org/web/20021004124254/http://www.opensource.org/licenses/academic.php</a></li><li><a href="http://opensource.linux-mirror.org/licenses/afl-1.1.txt" target="_blank">http://opensource.linux-mirror.org/licenses/afl-1.1.txt</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Academic Free License
+Version 1.1
+
+The Academic Free License applies to any original work of authorship (the &quot;Original Work&quot;) whose owner (the &quot;Licensor&quot;) has placed the following notice immediately following the copyright notice for the Original Work:
+
+     &quot;Licensed under the Academic Free License version 1.1.&quot;
+
+Grant of License. Licensor hereby grants to any person obtaining a copy of the Original Work (&quot;You&quot;) a world-wide, royalty-free, non-exclusive, perpetual, non-sublicenseable license
+
+(1) to use, copy, modify, merge, publish, perform, distribute and/or sell copies of the Original Work and derivative works thereof, and
+
+(2) under patent claims owned or controlled by the Licensor that are embodied in the Original Work as furnished by the Licensor, to make, use, sell and offer for sale the Original Work and derivative works thereof, subject to the following conditions.
+
+     Right of Attribution. Redistributions of the Original Work must reproduce all copyright notices in the Original Work as furnished by the Licensor, both in the Original Work itself and in any documentation and/or other materials provided with the distribution of the Original Work in executable form.
+
+     Exclusions from License Grant. Neither the names of Licensor, nor the names of any contributors to the Original Work, nor any of their trademarks or service marks, may be used to endorse or promote products derived from this Original Work without express prior written permission of the Licensor.
+
+WARRANTY AND DISCLAIMERS. LICENSOR WARRANTS THAT THE COPYRIGHT IN AND TO THE ORIGINAL WORK IS OWNED BY THE LICENSOR OR THAT THE ORIGINAL WORK IS DISTRIBUTED BY LICENSOR UNDER A VALID CURRENT LICENSE FROM THE COPYRIGHT OWNER. EXCEPT AS EXPRESSLY STATED IN THE IMMEDIATELY PRECEEDING SENTENCE, THE ORIGINAL WORK IS PROVIDED UNDER THIS LICENSE ON AN &quot;AS IS&quot; BASIS, WITHOUT WARRANTY, EITHER EXPRESS OR IMPLIED, INCLUDING, WITHOUT LIMITATION, THE WARRANTY OF NON-INFRINGEMENT AND WARRANTIES THAT THE ORIGINAL WORK IS MERCHANTABLE OR FIT FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY OF THE ORIGINAL WORK IS WITH YOU. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THIS LICENSE. NO LICENSE TO ORIGINAL WORK IS GRANTED HEREUNDER EXCEPT UNDER THIS DISCLAIMER.
+
+LIMITATION OF LIABILITY. UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER TORT (INCLUDING NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE LICENSOR BE LIABLE TO ANY PERSON FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF ANY CHARACTER ARISING AS A RESULT OF THIS LICENSE OR THE USE OF THE ORIGINAL WORK INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER COMMERCIAL DAMAGES OR LOSSES, EVEN IF SUCH PERSON SHALL HAVE BEEN INFORMED OF THE POSSIBILITY OF SUCH DAMAGES. THIS LIMITATION OF LIABILITY SHALL NOT APPLY TO LIABILITY FOR DEATH OR PERSONAL INJURY RESULTING FROM SUCH PARTY&#39;S NEGLIGENCE TO THE EXTENT APPLICABLE LAW PROHIBITS SUCH LIMITATION. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR LIMITATION OF INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THIS EXCLUSION AND LIMITATION MAY NOT APPLY TO YOU.
+
+License to Source Code. The term &quot;Source Code&quot; means the preferred form of the Original Work for making modifications to it and all available documentation describing how to access and modify the Original Work. Licensor hereby agrees to provide a machine-readable copy of the Source Code of the Original Work along with each copy of the Original Work that Licensor distributes. Licensor reserves the right to satisfy this obligation by placing a machine-readable copy of the Source Code in an information repository reasonably calculated to permit inexpensive and convenient access by You for as long as Licensor continues to distribute the Original Work, and by publishing the address of that information repository in a notice immediately following the copyright notice that applies to the Original Work.
+
+Mutual Termination for Patent Action. This License shall terminate automatically and You may no longer exercise any of the rights granted to You by this License if You file a lawsuit in any court alleging that any OSI Certified open source software that is licensed under any license containing this &quot;Mutual Termination for Patent Action&quot; clause infringes any patent claims that are essential to use that software.
+
+This license is Copyright (C) 2002 Lawrence E. Rosen. All rights reserved.
+Permission is hereby granted to copy and distribute this license without modification. This license may not be modified without the express written permission of its copyright owner.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;Academic Free License&lt;/p&gt;
+
+         &lt;p&gt;Version 1.1&lt;/p&gt;
+
+      &lt;/div&gt;
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;The Academic Free License applies to any original work of authorship (the &amp;quot;Original Work&amp;quot;) whose owner
+         (the &amp;quot;Licensor&amp;quot;) has placed the following notice immediately following the copyright notice for the
+         Original Work:&lt;/p&gt;
+
+         &lt;p&gt;&lt;var class=&quot;optional-license-text&quot;&gt;&amp;quot;&lt;/var&gt;Licensed under the Academic Free License version 1.1.&lt;var class=&quot;optional-license-text&quot;&gt;&amp;quot;&lt;/var&gt;&lt;/p&gt;
+
+      &lt;/div&gt;
+
+      &lt;p&gt;Grant of License. Licensor hereby grants to any person obtaining a copy of the Original Work (&amp;quot;You&amp;quot;) a
+         world-wide, royalty-free, non-exclusive, perpetual, non-sublicenseable license&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; (1)&lt;/var&gt;
+          to use, copy, modify, merge, publish, perform, distribute and/or sell copies of the Original Work
+             and derivative works thereof, and
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; (2)&lt;/var&gt;
+          under patent claims owned or controlled by the Licensor that are embodied in the Original Work as
+             furnished by the Licensor, to make, use, sell and offer for sale the Original Work and
+             derivative works thereof, subject to the following conditions.
+        &lt;/li&gt;
+      
+&lt;/ul&gt;
+      &lt;p&gt;Right of Attribution. Redistributions of the Original Work must reproduce all copyright notices in the
+         Original Work as furnished by the Licensor, both in the Original Work itself and in any documentation
+         and/or other materials provided with the distribution of the Original Work in executable form.&lt;/p&gt;
+
+      &lt;p&gt;Exclusions from License Grant. Neither the names of Licensor, nor the names of any contributors to the
+         Original Work, nor any of their trademarks or service marks, may be used to endorse or promote
+         products derived from this Original Work without express prior written permission of the Licensor.&lt;/p&gt;
+
+      &lt;p&gt;WARRANTY AND DISCLAIMERS. LICENSOR WARRANTS THAT THE COPYRIGHT IN AND TO THE ORIGINAL WORK IS OWNED BY
+         THE LICENSOR OR THAT THE ORIGINAL WORK IS DISTRIBUTED BY LICENSOR UNDER A VALID CURRENT LICENSE FROM
+         THE COPYRIGHT OWNER. EXCEPT AS EXPRESSLY STATED IN THE IMMEDIATELY PRECEEDING SENTENCE, THE ORIGINAL
+         WORK IS PROVIDED UNDER THIS LICENSE ON AN &amp;quot;AS IS&amp;quot; BASIS, WITHOUT WARRANTY, EITHER EXPRESS OR IMPLIED,
+         INCLUDING, WITHOUT LIMITATION, THE WARRANTY OF NON-INFRINGEMENT AND WARRANTIES THAT THE ORIGINAL WORK
+         IS MERCHANTABLE OR FIT FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY OF THE ORIGINAL
+         WORK IS WITH YOU. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THIS LICENSE. NO
+         LICENSE TO ORIGINAL WORK IS GRANTED HEREUNDER EXCEPT UNDER THIS DISCLAIMER.&lt;/p&gt;
+
+      &lt;p&gt;LIMITATION OF LIABILITY. UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER TORT (INCLUDING
+         NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE LICENSOR BE LIABLE TO ANY PERSON FOR ANY DIRECT,
+         INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF ANY CHARACTER ARISING AS A RESULT OF THIS
+         LICENSE OR THE USE OF THE ORIGINAL WORK INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL,
+         WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER COMMERCIAL DAMAGES OR LOSSES,
+         EVEN IF SUCH PERSON SHALL HAVE BEEN INFORMED OF THE POSSIBILITY OF SUCH DAMAGES. THIS LIMITATION OF
+         LIABILITY SHALL NOT APPLY TO LIABILITY FOR DEATH OR PERSONAL INJURY RESULTING FROM SUCH PARTY&amp;apos;S
+         NEGLIGENCE TO THE EXTENT APPLICABLE LAW PROHIBITS SUCH LIMITATION. SOME JURISDICTIONS DO NOT ALLOW THE
+         EXCLUSION OR LIMITATION OF INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THIS EXCLUSION AND LIMITATION MAY
+         NOT APPLY TO YOU.&lt;/p&gt;
+
+      &lt;p&gt;License to Source Code. The term &amp;quot;Source Code&amp;quot; means the preferred form of the Original Work for making
+         modifications to it and all available documentation describing how to access and modify the Original
+         Work. Licensor hereby agrees to provide a machine-readable copy of the Source Code of the Original
+         Work along with each copy of the Original Work that Licensor distributes. Licensor reserves the right
+         to satisfy this obligation by placing a machine-readable copy of the Source Code in an information
+         repository reasonably calculated to permit inexpensive and convenient access by You for as long as
+         Licensor continues to distribute the Original Work, and by publishing the address of that information
+         repository in a notice immediately following the copyright notice that applies to the Original
+         Work.&lt;/p&gt;
+
+      &lt;p&gt;Mutual Termination for Patent Action. This License shall terminate automatically and You may no longer
+         exercise any of the rights granted to You by this License if You file a lawsuit in any court alleging
+         that any OSI Certified open source software that is licensed under any license containing this &amp;quot;Mutual
+         Termination for Patent Action&amp;quot; clause infringes any patent claims that are essential to use that
+         software.&lt;/p&gt;
+
+      &lt;p&gt;This license is Copyright (C) 2002 Lawrence E. Rosen. All rights reserved.&lt;/p&gt;
+
+        &lt;p&gt;Permission is hereby granted to copy and distribute this license without modification. This license
+             may not be modified without the express written permission of its copyright owner.&lt;/p&gt;
+
+    </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:AFL-1.1&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Academic Free License v1.1&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;e717be35d8748ae5f9bcd7314cc91da8&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;FSF&quot;,
+                        &quot;Libre&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Approved&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;SPDXLicense&quot;,
+                    &quot;This license has been superseded by later versions.&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;Academic Free License\nVersion 1.1\n\nThe Academic Free License applies to any original work of authorship (the \&quot;Original Work\&quot;) whose owner (the \&quot;Licensor\&quot;) has placed the following notice immediately following the copyright notice for the Original Work:\n\n     \&quot;Licensed under the Academic Free License version 1.1.\&quot;\n\nGrant of License. Licensor hereby grants to any person obtaining a copy of the Original Work (\&quot;You\&quot;) a world-wide, royalty-free, non-exclusive, perpetual, non-sublicenseable license\n\n(1) to use, copy, modify, merge, publish, perform, distribute and/or sell copies of the Original Work and derivative works thereof, and\n\n(2) under patent claims owned or controlled by the Licensor that are embodied in the Original Work as furnished by the Licensor, to make, use, sell and offer for sale the Original Work and derivative works thereof, subject to the following conditions.\n\n     Right of Attribution. Redistributions of the Original Work must reproduce all copyright notices in the Original Work as furnished by the Licensor, both in the Original Work itself and in any documentation and/or other materials provided with the distribution of the Original Work in executable form.\n\n     Exclusions from License Grant. Neither the names of Licensor, nor the names of any contributors to the Original Work, nor any of their trademarks or service marks, may be used to endorse or promote products derived from this Original Work without express prior written permission of the Licensor.\n\nWARRANTY AND DISCLAIMERS. LICENSOR WARRANTS THAT THE COPYRIGHT IN AND TO THE ORIGINAL WORK IS OWNED BY THE LICENSOR OR THAT THE ORIGINAL WORK IS DISTRIBUTED BY LICENSOR UNDER A VALID CURRENT LICENSE FROM THE COPYRIGHT OWNER. EXCEPT AS EXPRESSLY STATED IN THE IMMEDIATELY PRECEEDING SENTENCE, THE ORIGINAL WORK IS PROVIDED UNDER THIS LICENSE ON AN \&quot;AS IS\&quot; BASIS, WITHOUT WARRANTY, EITHER EXPRESS OR IMPLIED, INCLUDING, WITHOUT LIMITATION, THE WARRANTY OF NON-INFRINGEMENT AND WARRANTIES THAT THE ORIGINAL WORK IS MERCHANTABLE OR FIT FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY OF THE ORIGINAL WORK IS WITH YOU. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THIS LICENSE. NO LICENSE TO ORIGINAL WORK IS GRANTED HEREUNDER EXCEPT UNDER THIS DISCLAIMER.\n\nLIMITATION OF LIABILITY. UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER TORT (INCLUDING NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE LICENSOR BE LIABLE TO ANY PERSON FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF ANY CHARACTER ARISING AS A RESULT OF THIS LICENSE OR THE USE OF THE ORIGINAL WORK INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER COMMERCIAL DAMAGES OR LOSSES, EVEN IF SUCH PERSON SHALL HAVE BEEN INFORMED OF THE POSSIBILITY OF SUCH DAMAGES. THIS LIMITATION OF LIABILITY SHALL NOT APPLY TO LIABILITY FOR DEATH OR PERSONAL INJURY RESULTING FROM SUCH PARTY&#39;S NEGLIGENCE TO THE EXTENT APPLICABLE LAW PROHIBITS SUCH LIMITATION. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR LIMITATION OF INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THIS EXCLUSION AND LIMITATION MAY NOT APPLY TO YOU.\n\nLicense to Source Code. The term \&quot;Source Code\&quot; means the preferred form of the Original Work for making modifications to it and all available documentation describing how to access and modify the Original Work. Licensor hereby agrees to provide a machine-readable copy of the Source Code of the Original Work along with each copy of the Original Work that Licensor distributes. Licensor reserves the right to satisfy this obligation by placing a machine-readable copy of the Source Code in an information repository reasonably calculated to permit inexpensive and convenient access by You for as long as Licensor continues to distribute the Original Work, and by publishing the address of that information repository in a notice immediately following the copyright notice that applies to the Original Work.\n\nMutual Termination for Patent Action. This License shall terminate automatically and You may no longer exercise any of the rights granted to You by this License if You file a lawsuit in any court alleging that any OSI Certified open source software that is licensed under any license containing this \&quot;Mutual Termination for Patent Action\&quot; clause infringes any patent claims that are essential to use that software.\n\nThis license is Copyright (C) 2002 Lawrence E. Rosen. All rights reserved.\nPermission is hereby granted to copy and distribute this license without modification. This license may not be modified without the express written permission of its copyright owner.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;Academic Free License&lt;/p&gt;\n\n         &lt;p&gt;Version 1.1&lt;/p&gt;\n\n      &lt;/div&gt;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;The Academic Free License applies to any original work of authorship (the &amp;quot;Original Work&amp;quot;) whose owner\n         (the &amp;quot;Licensor&amp;quot;) has placed the following notice immediately following the copyright notice for the\n         Original Work:&lt;/p&gt;\n\n         &lt;p&gt;&lt;var class=\&quot;optional-license-text\&quot;&gt;&amp;quot;&lt;/var&gt;Licensed under the Academic Free License version 1.1.&lt;var class=\&quot;optional-license-text\&quot;&gt;&amp;quot;&lt;/var&gt;&lt;/p&gt;\n\n      &lt;/div&gt;\n\n      &lt;p&gt;Grant of License. Licensor hereby grants to any person obtaining a copy of the Original Work (&amp;quot;You&amp;quot;) a\n         world-wide, royalty-free, non-exclusive, perpetual, non-sublicenseable license&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; (1)&lt;/var&gt;\n          to use, copy, modify, merge, publish, perform, distribute and/or sell copies of the Original Work\n             and derivative works thereof, and\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; (2)&lt;/var&gt;\n          under patent claims owned or controlled by the Licensor that are embodied in the Original Work as\n             furnished by the Licensor, to make, use, sell and offer for sale the Original Work and\n             derivative works thereof, subject to the following conditions.\n        &lt;/li&gt;\n      \n&lt;/ul&gt;\n      &lt;p&gt;Right of Attribution. Redistributions of the Original Work must reproduce all copyright notices in the\n         Original Work as furnished by the Licensor, both in the Original Work itself and in any documentation\n         and/or other materials provided with the distribution of the Original Work in executable form.&lt;/p&gt;\n\n      &lt;p&gt;Exclusions from License Grant. Neither the names of Licensor, nor the names of any contributors to the\n         Original Work, nor any of their trademarks or service marks, may be used to endorse or promote\n         products derived from this Original Work without express prior written permission of the Licensor.&lt;/p&gt;\n\n      &lt;p&gt;WARRANTY AND DISCLAIMERS. LICENSOR WARRANTS THAT THE COPYRIGHT IN AND TO THE ORIGINAL WORK IS OWNED BY\n         THE LICENSOR OR THAT THE ORIGINAL WORK IS DISTRIBUTED BY LICENSOR UNDER A VALID CURRENT LICENSE FROM\n         THE COPYRIGHT OWNER. EXCEPT AS EXPRESSLY STATED IN THE IMMEDIATELY PRECEEDING SENTENCE, THE ORIGINAL\n         WORK IS PROVIDED UNDER THIS LICENSE ON AN &amp;quot;AS IS&amp;quot; BASIS, WITHOUT WARRANTY, EITHER EXPRESS OR IMPLIED,\n         INCLUDING, WITHOUT LIMITATION, THE WARRANTY OF NON-INFRINGEMENT AND WARRANTIES THAT THE ORIGINAL WORK\n         IS MERCHANTABLE OR FIT FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY OF THE ORIGINAL\n         WORK IS WITH YOU. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THIS LICENSE. NO\n         LICENSE TO ORIGINAL WORK IS GRANTED HEREUNDER EXCEPT UNDER THIS DISCLAIMER.&lt;/p&gt;\n\n      &lt;p&gt;LIMITATION OF LIABILITY. UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER TORT (INCLUDING\n         NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE LICENSOR BE LIABLE TO ANY PERSON FOR ANY DIRECT,\n         INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF ANY CHARACTER ARISING AS A RESULT OF THIS\n         LICENSE OR THE USE OF THE ORIGINAL WORK INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL,\n         WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER COMMERCIAL DAMAGES OR LOSSES,\n         EVEN IF SUCH PERSON SHALL HAVE BEEN INFORMED OF THE POSSIBILITY OF SUCH DAMAGES. THIS LIMITATION OF\n         LIABILITY SHALL NOT APPLY TO LIABILITY FOR DEATH OR PERSONAL INJURY RESULTING FROM SUCH PARTY&amp;apos;S\n         NEGLIGENCE TO THE EXTENT APPLICABLE LAW PROHIBITS SUCH LIMITATION. SOME JURISDICTIONS DO NOT ALLOW THE\n         EXCLUSION OR LIMITATION OF INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THIS EXCLUSION AND LIMITATION MAY\n         NOT APPLY TO YOU.&lt;/p&gt;\n\n      &lt;p&gt;License to Source Code. The term &amp;quot;Source Code&amp;quot; means the preferred form of the Original Work for making\n         modifications to it and all available documentation describing how to access and modify the Original\n         Work. Licensor hereby agrees to provide a machine-readable copy of the Source Code of the Original\n         Work along with each copy of the Original Work that Licensor distributes. Licensor reserves the right\n         to satisfy this obligation by placing a machine-readable copy of the Source Code in an information\n         repository reasonably calculated to permit inexpensive and convenient access by You for as long as\n         Licensor continues to distribute the Original Work, and by publishing the address of that information\n         repository in a notice immediately following the copyright notice that applies to the Original\n         Work.&lt;/p&gt;\n\n      &lt;p&gt;Mutual Termination for Patent Action. This License shall terminate automatically and You may no longer\n         exercise any of the rights granted to You by this License if You file a lawsuit in any court alleging\n         that any OSI Certified open source software that is licensed under any license containing this &amp;quot;Mutual\n         Termination for Patent Action&amp;quot; clause infringes any patent claims that are essential to use that\n         software.&lt;/p&gt;\n\n      &lt;p&gt;This license is Copyright (C) 2002 Lawrence E. Rosen. All rights reserved.&lt;/p&gt;\n\n        &lt;p&gt;Permission is hereby granted to copy and distribute this license without modification. This license\n             may not be modified without the express written permission of its copyright owner.&lt;/p&gt;\n\n    &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://wayback.archive.org/web/20021004124254/http://www.opensource.org/licenses/academic.php&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://opensource.linux-mirror.org/licenses/afl-1.1.txt&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://opensource.linux-mirror.org/licenses/afl-1.1.txt&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://wayback.archive.org/web/20021004124254/http://www.opensource.org/licenses/academic.php&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: false,
+                &quot;isValid&quot;: false,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;N/A&quot;,
+                &quot;order&quot;: 1,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:03:47Z&quot;,
+                &quot;url&quot;: &quot;http://wayback.archive.org/web/20021004124254/http://www.opensource.org/licenses/academic.php&quot;
+            },
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:03:48Z&quot;,
+                &quot;url&quot;: &quot;http://opensource.linux-mirror.org/licenses/afl-1.1.txt&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: true,
+        &quot;isOsiApproved&quot;: true,
+        &quot;licenseComments&quot;: &quot;This license has been superseded by later versions.&quot;,
+        &quot;licenseId&quot;: &quot;spdx:AFL-1.1&quot;,
+        &quot;licenseText&quot;: &quot;Academic Free License\nVersion 1.1\n\nThe Academic Free License applies to any original work of authorship (the \&quot;Original Work\&quot;) whose owner (the \&quot;Licensor\&quot;) has placed the following notice immediately following the copyright notice for the Original Work:\n\n     \&quot;Licensed under the Academic Free License version 1.1.\&quot;\n\nGrant of License. Licensor hereby grants to any person obtaining a copy of the Original Work (\&quot;You\&quot;) a world-wide, royalty-free, non-exclusive, perpetual, non-sublicenseable license\n\n(1) to use, copy, modify, merge, publish, perform, distribute and/or sell copies of the Original Work and derivative works thereof, and\n\n(2) under patent claims owned or controlled by the Licensor that are embodied in the Original Work as furnished by the Licensor, to make, use, sell and offer for sale the Original Work and derivative works thereof, subject to the following conditions.\n\n     Right of Attribution. Redistributions of the Original Work must reproduce all copyright notices in the Original Work as furnished by the Licensor, both in the Original Work itself and in any documentation and/or other materials provided with the distribution of the Original Work in executable form.\n\n     Exclusions from License Grant. Neither the names of Licensor, nor the names of any contributors to the Original Work, nor any of their trademarks or service marks, may be used to endorse or promote products derived from this Original Work without express prior written permission of the Licensor.\n\nWARRANTY AND DISCLAIMERS. LICENSOR WARRANTS THAT THE COPYRIGHT IN AND TO THE ORIGINAL WORK IS OWNED BY THE LICENSOR OR THAT THE ORIGINAL WORK IS DISTRIBUTED BY LICENSOR UNDER A VALID CURRENT LICENSE FROM THE COPYRIGHT OWNER. EXCEPT AS EXPRESSLY STATED IN THE IMMEDIATELY PRECEEDING SENTENCE, THE ORIGINAL WORK IS PROVIDED UNDER THIS LICENSE ON AN \&quot;AS IS\&quot; BASIS, WITHOUT WARRANTY, EITHER EXPRESS OR IMPLIED, INCLUDING, WITHOUT LIMITATION, THE WARRANTY OF NON-INFRINGEMENT AND WARRANTIES THAT THE ORIGINAL WORK IS MERCHANTABLE OR FIT FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY OF THE ORIGINAL WORK IS WITH YOU. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THIS LICENSE. NO LICENSE TO ORIGINAL WORK IS GRANTED HEREUNDER EXCEPT UNDER THIS DISCLAIMER.\n\nLIMITATION OF LIABILITY. UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER TORT (INCLUDING NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE LICENSOR BE LIABLE TO ANY PERSON FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF ANY CHARACTER ARISING AS A RESULT OF THIS LICENSE OR THE USE OF THE ORIGINAL WORK INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER COMMERCIAL DAMAGES OR LOSSES, EVEN IF SUCH PERSON SHALL HAVE BEEN INFORMED OF THE POSSIBILITY OF SUCH DAMAGES. THIS LIMITATION OF LIABILITY SHALL NOT APPLY TO LIABILITY FOR DEATH OR PERSONAL INJURY RESULTING FROM SUCH PARTY&#39;S NEGLIGENCE TO THE EXTENT APPLICABLE LAW PROHIBITS SUCH LIMITATION. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR LIMITATION OF INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THIS EXCLUSION AND LIMITATION MAY NOT APPLY TO YOU.\n\nLicense to Source Code. The term \&quot;Source Code\&quot; means the preferred form of the Original Work for making modifications to it and all available documentation describing how to access and modify the Original Work. Licensor hereby agrees to provide a machine-readable copy of the Source Code of the Original Work along with each copy of the Original Work that Licensor distributes. Licensor reserves the right to satisfy this obligation by placing a machine-readable copy of the Source Code in an information repository reasonably calculated to permit inexpensive and convenient access by You for as long as Licensor continues to distribute the Original Work, and by publishing the address of that information repository in a notice immediately following the copyright notice that applies to the Original Work.\n\nMutual Termination for Patent Action. This License shall terminate automatically and You may no longer exercise any of the rights granted to You by this License if You file a lawsuit in any court alleging that any OSI Certified open source software that is licensed under any license containing this \&quot;Mutual Termination for Patent Action\&quot; clause infringes any patent claims that are essential to use that software.\n\nThis license is Copyright (C) 2002 Lawrence E. Rosen. All rights reserved.\nPermission is hereby granted to copy and distribute this license without modification. This license may not be modified without the express written permission of its copyright owner.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;Academic Free License&lt;/p&gt;\n\n         &lt;p&gt;Version 1.1&lt;/p&gt;\n\n      &lt;/div&gt;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;The Academic Free License applies to any original work of authorship (the &amp;quot;Original Work&amp;quot;) whose owner\n         (the &amp;quot;Licensor&amp;quot;) has placed the following notice immediately following the copyright notice for the\n         Original Work:&lt;/p&gt;\n\n         &lt;p&gt;&lt;var class=\&quot;optional-license-text\&quot;&gt;&amp;quot;&lt;/var&gt;Licensed under the Academic Free License version 1.1.&lt;var class=\&quot;optional-license-text\&quot;&gt;&amp;quot;&lt;/var&gt;&lt;/p&gt;\n\n      &lt;/div&gt;\n\n      &lt;p&gt;Grant of License. Licensor hereby grants to any person obtaining a copy of the Original Work (&amp;quot;You&amp;quot;) a\n         world-wide, royalty-free, non-exclusive, perpetual, non-sublicenseable license&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; (1)&lt;/var&gt;\n          to use, copy, modify, merge, publish, perform, distribute and/or sell copies of the Original Work\n             and derivative works thereof, and\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; (2)&lt;/var&gt;\n          under patent claims owned or controlled by the Licensor that are embodied in the Original Work as\n             furnished by the Licensor, to make, use, sell and offer for sale the Original Work and\n             derivative works thereof, subject to the following conditions.\n        &lt;/li&gt;\n      \n&lt;/ul&gt;\n      &lt;p&gt;Right of Attribution. Redistributions of the Original Work must reproduce all copyright notices in the\n         Original Work as furnished by the Licensor, both in the Original Work itself and in any documentation\n         and/or other materials provided with the distribution of the Original Work in executable form.&lt;/p&gt;\n\n      &lt;p&gt;Exclusions from License Grant. Neither the names of Licensor, nor the names of any contributors to the\n         Original Work, nor any of their trademarks or service marks, may be used to endorse or promote\n         products derived from this Original Work without express prior written permission of the Licensor.&lt;/p&gt;\n\n      &lt;p&gt;WARRANTY AND DISCLAIMERS. LICENSOR WARRANTS THAT THE COPYRIGHT IN AND TO THE ORIGINAL WORK IS OWNED BY\n         THE LICENSOR OR THAT THE ORIGINAL WORK IS DISTRIBUTED BY LICENSOR UNDER A VALID CURRENT LICENSE FROM\n         THE COPYRIGHT OWNER. EXCEPT AS EXPRESSLY STATED IN THE IMMEDIATELY PRECEEDING SENTENCE, THE ORIGINAL\n         WORK IS PROVIDED UNDER THIS LICENSE ON AN &amp;quot;AS IS&amp;quot; BASIS, WITHOUT WARRANTY, EITHER EXPRESS OR IMPLIED,\n         INCLUDING, WITHOUT LIMITATION, THE WARRANTY OF NON-INFRINGEMENT AND WARRANTIES THAT THE ORIGINAL WORK\n         IS MERCHANTABLE OR FIT FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY OF THE ORIGINAL\n         WORK IS WITH YOU. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THIS LICENSE. NO\n         LICENSE TO ORIGINAL WORK IS GRANTED HEREUNDER EXCEPT UNDER THIS DISCLAIMER.&lt;/p&gt;\n\n      &lt;p&gt;LIMITATION OF LIABILITY. UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER TORT (INCLUDING\n         NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE LICENSOR BE LIABLE TO ANY PERSON FOR ANY DIRECT,\n         INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF ANY CHARACTER ARISING AS A RESULT OF THIS\n         LICENSE OR THE USE OF THE ORIGINAL WORK INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL,\n         WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER COMMERCIAL DAMAGES OR LOSSES,\n         EVEN IF SUCH PERSON SHALL HAVE BEEN INFORMED OF THE POSSIBILITY OF SUCH DAMAGES. THIS LIMITATION OF\n         LIABILITY SHALL NOT APPLY TO LIABILITY FOR DEATH OR PERSONAL INJURY RESULTING FROM SUCH PARTY&amp;apos;S\n         NEGLIGENCE TO THE EXTENT APPLICABLE LAW PROHIBITS SUCH LIMITATION. SOME JURISDICTIONS DO NOT ALLOW THE\n         EXCLUSION OR LIMITATION OF INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THIS EXCLUSION AND LIMITATION MAY\n         NOT APPLY TO YOU.&lt;/p&gt;\n\n      &lt;p&gt;License to Source Code. The term &amp;quot;Source Code&amp;quot; means the preferred form of the Original Work for making\n         modifications to it and all available documentation describing how to access and modify the Original\n         Work. Licensor hereby agrees to provide a machine-readable copy of the Source Code of the Original\n         Work along with each copy of the Original Work that Licensor distributes. Licensor reserves the right\n         to satisfy this obligation by placing a machine-readable copy of the Source Code in an information\n         repository reasonably calculated to permit inexpensive and convenient access by You for as long as\n         Licensor continues to distribute the Original Work, and by publishing the address of that information\n         repository in a notice immediately following the copyright notice that applies to the Original\n         Work.&lt;/p&gt;\n\n      &lt;p&gt;Mutual Termination for Patent Action. This License shall terminate automatically and You may no longer\n         exercise any of the rights granted to You by this License if You file a lawsuit in any court alleging\n         that any OSI Certified open source software that is licensed under any license containing this &amp;quot;Mutual\n         Termination for Patent Action&amp;quot; clause infringes any patent claims that are essential to use that\n         software.&lt;/p&gt;\n\n      &lt;p&gt;This license is Copyright (C) 2002 Lawrence E. Rosen. All rights reserved.&lt;/p&gt;\n\n        &lt;p&gt;Permission is hereby granted to copy and distribute this license without modification. This license\n             may not be modified without the express written permission of its copyright owner.&lt;/p&gt;\n\n    &quot;,
+        &quot;name&quot;: &quot;Academic Free License v1.1&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;http://opensource.linux-mirror.org/licenses/afl-1.1.txt&quot;,
+            &quot;http://wayback.archive.org/web/20021004124254/http://www.opensource.org/licenses/academic.php&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;beginOptional&gt;&gt;Academic Free License\n\nVersion 1.1\n\n&lt;&lt;endOptional&gt;&gt;&lt;&lt;beginOptional&gt;&gt; The Academic Free License applies to any original work of authorship (the \&quot;Original Work\&quot;) whose owner (the \&quot;Licensor\&quot;) has placed the following notice immediately following the copyright notice for the Original Work:\n\n&lt;&lt;beginOptional&gt;&gt;\&quot;&lt;&lt;endOptional&gt;&gt;Licensed under the Academic Free License version 1.1.&lt;&lt;beginOptional&gt;&gt;\&quot;&lt;&lt;endOptional&gt;&gt;\n\n&lt;&lt;endOptional&gt;&gt;\n\nGrant of License. Licensor hereby grants to any person obtaining a copy of the Original Work (\&quot;You\&quot;) a world-wide, royalty-free, non-exclusive, perpetual, non-sublicenseable license\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;(1)\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; to use, copy, modify, merge, publish, perform, distribute and/or sell copies of the Original Work and derivative works thereof, and\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;(2)\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; under patent claims owned or controlled by the Licensor that are embodied in the Original Work as furnished by the Licensor, to make, use, sell and offer for sale the Original Work and derivative works thereof, subject to the following conditions.\n\nRight of Attribution. Redistributions of the Original Work must reproduce all copyright notices in the Original Work as furnished by the Licensor, both in the Original Work itself and in any documentation and/or other materials provided with the distribution of the Original Work in executable form.\n\nExclusions from License Grant. Neither the names of Licensor, nor the names of any contributors to the Original Work, nor any of their trademarks or service marks, may be used to endorse or promote products derived from this Original Work without express prior written permission of the Licensor.\n\nWARRANTY AND DISCLAIMERS. LICENSOR WARRANTS THAT THE COPYRIGHT IN AND TO THE ORIGINAL WORK IS OWNED BY THE LICENSOR OR THAT THE ORIGINAL WORK IS DISTRIBUTED BY LICENSOR UNDER A VALID CURRENT LICENSE FROM THE COPYRIGHT OWNER. EXCEPT AS EXPRESSLY STATED IN THE IMMEDIATELY PRECEEDING SENTENCE, THE ORIGINAL WORK IS PROVIDED UNDER THIS LICENSE ON AN \&quot;AS IS\&quot; BASIS, WITHOUT WARRANTY, EITHER EXPRESS OR IMPLIED, INCLUDING, WITHOUT LIMITATION, THE WARRANTY OF NON-INFRINGEMENT AND WARRANTIES THAT THE ORIGINAL WORK IS MERCHANTABLE OR FIT FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY OF THE ORIGINAL WORK IS WITH YOU. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THIS LICENSE. NO LICENSE TO ORIGINAL WORK IS GRANTED HEREUNDER EXCEPT UNDER THIS DISCLAIMER.\n\nLIMITATION OF LIABILITY. UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER TORT (INCLUDING NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE LICENSOR BE LIABLE TO ANY PERSON FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF ANY CHARACTER ARISING AS A RESULT OF THIS LICENSE OR THE USE OF THE ORIGINAL WORK INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER COMMERCIAL DAMAGES OR LOSSES, EVEN IF SUCH PERSON SHALL HAVE BEEN INFORMED OF THE POSSIBILITY OF SUCH DAMAGES. THIS LIMITATION OF LIABILITY SHALL NOT APPLY TO LIABILITY FOR DEATH OR PERSONAL INJURY RESULTING FROM SUCH PARTY&#39;S NEGLIGENCE TO THE EXTENT APPLICABLE LAW PROHIBITS SUCH LIMITATION. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR LIMITATION OF INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THIS EXCLUSION AND LIMITATION MAY NOT APPLY TO YOU.\n\nLicense to Source Code. The term \&quot;Source Code\&quot; means the preferred form of the Original Work for making modifications to it and all available documentation describing how to access and modify the Original Work. Licensor hereby agrees to provide a machine-readable copy of the Source Code of the Original Work along with each copy of the Original Work that Licensor distributes. Licensor reserves the right to satisfy this obligation by placing a machine-readable copy of the Source Code in an information repository reasonably calculated to permit inexpensive and convenient access by You for as long as Licensor continues to distribute the Original Work, and by publishing the address of that information repository in a notice immediately following the copyright notice that applies to the Original Work.\n\nMutual Termination for Patent Action. This License shall terminate automatically and You may no longer exercise any of the rights granted to You by this License if You file a lawsuit in any court alleging that any OSI Certified open source software that is licensed under any license containing this \&quot;Mutual Termination for Patent Action\&quot; clause infringes any patent claims that are essential to use that software.\n\nThis license is Copyright (C) 2002 Lawrence E. Rosen. All rights reserved.\n\nPermission is hereby granted to copy and distribute this license without modification. This license may not be modified without the express written permission of its copyright owner.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/GoogleLicensePolicy">GoogleLicensePolicy</a>: <a href="/fact/GoogleLicense/834bbe2e4d7aae30bd180a9547ec9bee">GoogleLicense:834bbe2e4d7aae30bd180a9547ec9bee</a> for <a href="/?license=google:AFL11"><span class="licensename"><span class="namespace">google:</span>AFL11</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">google:</span>AFL11</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>AFL-1.1</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="notice - These licenses contain few restrictions, allowing original or modified third-party software to be shipped in any product without endangering or encumbering our source code. All of the licenses in this category do, however, have an &quot;original Copyright notice&quot; or &quot;advertising clause&quot;, wherein any external distributions must include the notice or clause specified in the license.">Google Policy Classification: <b style="color: green;">notice</b></span><span class="provided-by">(provided by: <span title="GoogleLicense:834bbe2e4d7aae30bd180a9547ec9bee">[<a href="/fact/GoogleLicense/834bbe2e4d7aae30bd180a9547ec9bee">GoogleLicense</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;google:AFL11&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;spdx:AFL-1.1&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;GoogleLicense&quot;,
+        &quot;834bbe2e4d7aae30bd180a9547ec9bee&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;Google Policy Classification&quot;,
+                        &quot;notice&quot;,
+                        {
+                            &quot;contents&quot;: &quot;notice - These licenses contain few restrictions, allowing original or modified third-party software to be shipped in any product without endangering or encumbering our source code. All of the licenses in this category do, however, have an \&quot;original Copyright notice\&quot; or \&quot;advertising clause\&quot;, wherein any external distributions must include the notice or clause specified in the license.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;googleLicenseName&quot;: &quot;google:AFL11&quot;,
+        &quot;googleLicenseType&quot;: &quot;notice&quot;,
+        &quot;googleLicenseTypeDescription&quot;: &quot;notice - These licenses contain few restrictions, allowing original or modified third-party software to be shipped in any product without endangering or encumbering our source code. All of the licenses in this category do, however, have an \&quot;original Copyright notice\&quot; or \&quot;advertising clause\&quot;, wherein any external distributions must include the notice or clause specified in the license.&quot;,
+        &quot;spdxLicenseName&quot;: &quot;spdx:AFL-1.1&quot;
+    },
+    &quot;type&quot;: &quot;GoogleLicense&quot;
+}</pre></details></li><li><h3><a href="/source/BlueOakCouncil">BlueOakCouncil</a>: <a href="/fact/BlueOakCouncil/45ca3516a99594ff122026bac2dc381d">BlueOakCouncil:45ca3516a99594ff122026bac2dc381d</a> for <a href="/?license=BlueOak:AFL-1.1"><span class="licensename"><span class="namespace">BlueOak:</span>AFL-1.1</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">BlueOak:</span>AFL-1.1</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Academic Free License v1.1</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="BlueOakCouncil:45ca3516a99594ff122026bac2dc381d">[<a href="/fact/BlueOakCouncil/45ca3516a99594ff122026bac2dc381d">BlueOakCouncil</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="These licenses lack important but nonessential elements of permissive open software licenses or impose additional requirements or restrictions, such as BSD-style prohibitions against endorsement and promotion.">BlueOakCouncil: <b style="">Bronze</b></span><span class="provided-by">(provided by: <span title="BlueOakCouncil:45ca3516a99594ff122026bac2dc381d">[<a href="/fact/BlueOakCouncil/45ca3516a99594ff122026bac2dc381d">BlueOakCouncil</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://spdx.org/licenses/AFL-1.1.html" target="_blank">https://spdx.org/licenses/AFL-1.1.html</a></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;BlueOak:AFL-1.1&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Academic Free License v1.1&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;BlueOakCouncil&quot;,
+        &quot;45ca3516a99594ff122026bac2dc381d&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;BlueOakCouncil&quot;,
+                        &quot;Bronze&quot;,
+                        {
+                            &quot;contents&quot;: &quot;These licenses lack important but nonessential elements of permissive open software licenses or impose additional requirements or restrictions, such as BSD-style prohibitions against endorsement and promotion.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NeutralLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://spdx.org/licenses/AFL-1.1.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;contents&quot;: [
+            &quot;Bronze&quot;,
+            &quot;These licenses lack important but nonessential elements of permissive open software licenses or impose additional requirements or restrictions, such as BSD-style prohibitions against endorsement and promotion.&quot;,
+            {
+                &quot;_id&quot;: &quot;AFL-1.1&quot;,
+                &quot;_name&quot;: &quot;Academic Free License v1.1&quot;,
+                &quot;_url&quot;: &quot;https://spdx.org/licenses/AFL-1.1.html&quot;
+            }
+        ],
+        &quot;tag&quot;: &quot;BOCPermissive&quot;
+    },
+    &quot;type&quot;: &quot;BlueOakCouncil&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/089e79494208dd32beaabf34dab62c30">ScancodeData:089e79494208dd32beaabf34dab62c30</a> for <a href="/?license=scancode:afl-1.1"><span class="licensename"><span class="namespace">scancode:</span>afl-1.1</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>afl-1.1</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">Academic Free License 1.1</span></li><li><span class="licensename">AFL 1.1</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:089e79494208dd32beaabf34dab62c30">[<a href="/fact/ScancodeData/089e79494208dd32beaabf34dab62c30">ScancodeData</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>ScancodeData: </b>Per SPDX.org, this license has been superseded by later versions.<span class="provided-by">(provided by: <span title="ScancodeData:089e79494208dd32beaabf34dab62c30">[<a href="/fact/ScancodeData/089e79494208dd32beaabf34dab62c30">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li>OSI: <a href="http://web.archive.org/web/20060924134536/http://www.opensource.org/licenses/afl-1.1.txt" target="_blank">http://web.archive.org/web/20060924134536/http://www.opensource.org/licenses/afl-1.1.txt</a></li><li><a href="http://open2.mirrors-r-us.net/licenses/afl-1.1.txt" target="_blank">http://open2.mirrors-r-us.net/licenses/afl-1.1.txt</a></li><li><a href="http://opensource.linux-mirror.org/licenses/afl-1.1.txt" target="_blank">http://opensource.linux-mirror.org/licenses/afl-1.1.txt</a></li><li><a href="http://spdx.org/licenses/AFL-1.1" target="_blank">http://spdx.org/licenses/AFL-1.1</a></li><li><a href="http://web.archive.org/web/20060924134536/http://www.opensource.org/licenses/afl-1.1.txt" target="_blank">http://web.archive.org/web/20060924134536/http://www.opensource.org/licenses/afl-1.1.txt</a></li><li><a href="http://www.opensource.org/licenses/afl-1.1.txt" target="_blank">http://www.opensource.org/licenses/afl-1.1.txt</a></li><li><a href="http://wayback.archive.org/web/20021004124254/http://www.opensource.org/licenses/academic.php" target="_blank">http://wayback.archive.org/web/20021004124254/http://www.opensource.org/licenses/academic.php</a></li><li><a href="http://www.gnu.org/licenses/license-list.html#AcademicFreeLicense" target="_blank">http://www.gnu.org/licenses/license-list.html#AcademicFreeLicense</a></li></ul><h3>Other Statements</h3><ul><li>https://spdx.org/licenses/AFL-1.1</li><li>http://web.archive.org/web/20060924134536/http://www.opensource.org/licenses/afl-1.1.txt</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Academic Free License
+Version 1.1
+
+The Academic Free License applies to any original work of authorship
+(the &quot;Original Work&quot;) whose owner (the &quot;Licensor&quot;) has placed the
+following notice immediately following the copyright notice for the
+Original Work: &quot;Licensed under the Academic Free License version 1.1.&quot;
+
+Grant of License. Licensor hereby grants to any person obtaining a
+copy of the Original Work (&quot;You&quot;) a world-wide, royalty-free,
+non-exclusive, perpetual, non-sublicenseable license (1) to use, copy,
+modify, merge, publish, perform, distribute and/or sell copies of the
+Original Work and derivative works thereof, and (2) under patent
+claims owned or controlled by the Licensor that are embodied in the
+Original Work as furnished by the Licensor, to make, use, sell and
+offer for sale the Original Work and derivative works thereof, subject
+to the following conditions.
+
+Right of Attribution. Redistributions of the Original Work must
+reproduce all copyright notices in the Original Work as furnished by
+the Licensor, both in the Original Work itself and in any
+documentation and/or other materials provided with the distribution of
+the Original Work in executable form.
+
+Exclusions from License Grant. Neither the names of Licensor, nor the
+names of any contributors to the Original Work, nor any of their
+trademarks or service marks, may be used to endorse or promote
+products derived from this Original Work without express prior written
+permission of the Licensor.
+
+WARRANTY AND DISCLAIMERS. LICENSOR WARRANTS THAT THE COPYRIGHT IN AND
+TO THE ORIGINAL WORK IS OWNED BY THE LICENSOR OR THAT THE ORIGINAL
+WORK IS DISTRIBUTED BY LICENSOR UNDER A VALID CURRENT LICENSE FROM THE
+COPYRIGHT OWNER. EXCEPT AS EXPRESSLY STATED IN THE IMMEDIATELY
+PRECEEDING SENTENCE, THE ORIGINAL WORK IS PROVIDED UNDER THIS LICENSE
+ON AN &quot;AS IS&quot; BASIS, WITHOUT WARRANTY, EITHER EXPRESS OR IMPLIED,
+INCLUDING, WITHOUT LIMITATION, THE WARRANTY OF NON-INFRINGEMENT AND
+WARRANTIES THAT THE ORIGINAL WORK IS MERCHANTABLE OR FIT FOR A
+PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY OF THE ORIGINAL
+WORK IS WITH YOU. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN ESSENTIAL
+PART OF THIS LICENSE. NO LICENSE TO ORIGINAL WORK IS GRANTED HEREUNDER
+EXCEPT UNDER THIS DISCLAIMER.
+
+LIMITATION OF LIABILITY. UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL
+THEORY, WHETHER TORT (INCLUDING NEGLIGENCE), CONTRACT, OR OTHERWISE,
+SHALL THE LICENSOR BE LIABLE TO ANY PERSON FOR ANY DIRECT, INDIRECT,
+SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF ANY CHARACTER ARISING
+AS A RESULT OF THIS LICENSE OR THE USE OF THE ORIGINAL WORK INCLUDING,
+WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, WORK STOPPAGE,
+COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER COMMERCIAL
+DAMAGES OR LOSSES, EVEN IF SUCH PERSON SHALL HAVE BEEN INFORMED OF THE
+POSSIBILITY OF SUCH DAMAGES. THIS LIMITATION OF LIABILITY SHALL NOT
+APPLY TO LIABILITY FOR DEATH OR PERSONAL INJURY RESULTING FROM SUCH
+PARTY&#39;S NEGLIGENCE TO THE EXTENT APPLICABLE LAW PROHIBITS SUCH
+LIMITATION. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR
+LIMITATION OF INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THIS EXCLUSION
+AND LIMITATION MAY NOT APPLY TO YOU.
+
+License to Source Code. The term &quot;Source Code&quot; means the preferred
+form of the Original Work for making modifications to it and all
+available documentation describing how to access and modify the
+Original Work. Licensor hereby agrees to provide a machine-readable
+copy of the Source Code of the Original Work along with each copy of
+the Original Work that Licensor distributes. Licensor reserves the
+right to satisfy this obligation by placing a machine-readable copy of
+the Source Code in an information repository reasonably calculated to
+permit inexpensive and convenient access by You for as long as
+Licensor continues to distribute the Original Work, and by publishing
+the address of that information repository in a notice immediately
+following the copyright notice that applies to the Original Work.
+
+Mutual Termination for Patent Action. This License shall terminate
+automatically and You may no longer exercise any of the rights granted
+to You by this License if You file a lawsuit in any court alleging
+that any OSI Certified open source software that is licensed under any
+license containing this &quot;Mutual Termination for Patent Action&quot; clause
+infringes any patent claims that are essential to use that software.
+
+This license is Copyright (C) 2002 Lawrence E. Rosen. All rights
+reserved. Permission is hereby granted to copy and distribute this
+license without modification. This license may not be modified without
+the express written permission of its copyright owner.
+
+--
+END OF LICENSE.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:afl-1.1&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;AFL 1.1&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Academic Free License 1.1&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;089e79494208dd32beaabf34dab62c30&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;https://spdx.org/licenses/AFL-1.1&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;http://web.archive.org/web/20060924134536/http://www.opensource.org/licenses/afl-1.1.txt&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;ScancodeData&quot;,
+                    &quot;Per SPDX.org, this license has been superseded by later versions.&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                &quot;OSI&quot;,
+                &quot;http://web.archive.org/web/20060924134536/http://www.opensource.org/licenses/afl-1.1.txt&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://open2.mirrors-r-us.net/licenses/afl-1.1.txt&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://opensource.linux-mirror.org/licenses/afl-1.1.txt&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://spdx.org/licenses/AFL-1.1&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://web.archive.org/web/20060924134536/http://www.opensource.org/licenses/afl-1.1.txt&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://www.opensource.org/licenses/afl-1.1.txt&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://wayback.archive.org/web/20021004124254/http://www.opensource.org/licenses/academic.php&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://www.gnu.org/licenses/license-list.html#AcademicFreeLicense&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;Academic Free License\nVersion 1.1\n\nThe Academic Free License applies to any original work of authorship\n(the \&quot;Original Work\&quot;) whose owner (the \&quot;Licensor\&quot;) has placed the\nfollowing notice immediately following the copyright notice for the\nOriginal Work: \&quot;Licensed under the Academic Free License version 1.1.\&quot;\n\nGrant of License. Licensor hereby grants to any person obtaining a\ncopy of the Original Work (\&quot;You\&quot;) a world-wide, royalty-free,\nnon-exclusive, perpetual, non-sublicenseable license (1) to use, copy,\nmodify, merge, publish, perform, distribute and/or sell copies of the\nOriginal Work and derivative works thereof, and (2) under patent\nclaims owned or controlled by the Licensor that are embodied in the\nOriginal Work as furnished by the Licensor, to make, use, sell and\noffer for sale the Original Work and derivative works thereof, subject\nto the following conditions.\n\nRight of Attribution. Redistributions of the Original Work must\nreproduce all copyright notices in the Original Work as furnished by\nthe Licensor, both in the Original Work itself and in any\ndocumentation and/or other materials provided with the distribution of\nthe Original Work in executable form.\n\nExclusions from License Grant. Neither the names of Licensor, nor the\nnames of any contributors to the Original Work, nor any of their\ntrademarks or service marks, may be used to endorse or promote\nproducts derived from this Original Work without express prior written\npermission of the Licensor.\n\nWARRANTY AND DISCLAIMERS. LICENSOR WARRANTS THAT THE COPYRIGHT IN AND\nTO THE ORIGINAL WORK IS OWNED BY THE LICENSOR OR THAT THE ORIGINAL\nWORK IS DISTRIBUTED BY LICENSOR UNDER A VALID CURRENT LICENSE FROM THE\nCOPYRIGHT OWNER. EXCEPT AS EXPRESSLY STATED IN THE IMMEDIATELY\nPRECEEDING SENTENCE, THE ORIGINAL WORK IS PROVIDED UNDER THIS LICENSE\nON AN \&quot;AS IS\&quot; BASIS, WITHOUT WARRANTY, EITHER EXPRESS OR IMPLIED,\nINCLUDING, WITHOUT LIMITATION, THE WARRANTY OF NON-INFRINGEMENT AND\nWARRANTIES THAT THE ORIGINAL WORK IS MERCHANTABLE OR FIT FOR A\nPARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY OF THE ORIGINAL\nWORK IS WITH YOU. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN ESSENTIAL\nPART OF THIS LICENSE. NO LICENSE TO ORIGINAL WORK IS GRANTED HEREUNDER\nEXCEPT UNDER THIS DISCLAIMER.\n\nLIMITATION OF LIABILITY. UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL\nTHEORY, WHETHER TORT (INCLUDING NEGLIGENCE), CONTRACT, OR OTHERWISE,\nSHALL THE LICENSOR BE LIABLE TO ANY PERSON FOR ANY DIRECT, INDIRECT,\nSPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF ANY CHARACTER ARISING\nAS A RESULT OF THIS LICENSE OR THE USE OF THE ORIGINAL WORK INCLUDING,\nWITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, WORK STOPPAGE,\nCOMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER COMMERCIAL\nDAMAGES OR LOSSES, EVEN IF SUCH PERSON SHALL HAVE BEEN INFORMED OF THE\nPOSSIBILITY OF SUCH DAMAGES. THIS LIMITATION OF LIABILITY SHALL NOT\nAPPLY TO LIABILITY FOR DEATH OR PERSONAL INJURY RESULTING FROM SUCH\nPARTY&#39;S NEGLIGENCE TO THE EXTENT APPLICABLE LAW PROHIBITS SUCH\nLIMITATION. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR\nLIMITATION OF INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THIS EXCLUSION\nAND LIMITATION MAY NOT APPLY TO YOU.\n\nLicense to Source Code. The term \&quot;Source Code\&quot; means the preferred\nform of the Original Work for making modifications to it and all\navailable documentation describing how to access and modify the\nOriginal Work. Licensor hereby agrees to provide a machine-readable\ncopy of the Source Code of the Original Work along with each copy of\nthe Original Work that Licensor distributes. Licensor reserves the\nright to satisfy this obligation by placing a machine-readable copy of\nthe Source Code in an information repository reasonably calculated to\npermit inexpensive and convenient access by You for as long as\nLicensor continues to distribute the Original Work, and by publishing\nthe address of that information repository in a notice immediately\nfollowing the copyright notice that applies to the Original Work.\n\nMutual Termination for Patent Action. This License shall terminate\nautomatically and You may no longer exercise any of the rights granted\nto You by this License if You file a lawsuit in any court alleging\nthat any OSI Certified open source software that is licensed under any\nlicense containing this \&quot;Mutual Termination for Patent Action\&quot; clause\ninfringes any patent claims that are essential to use that software.\n\nThis license is Copyright (C) 2002 Lawrence E. Rosen. All rights\nreserved. Permission is hereby granted to copy and distribute this\nlicense without modification. This license may not be modified without\nthe express written permission of its copyright owner.\n\n--\nEND OF LICENSE.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Permissive&quot;,
+        &quot;_homepageUrl&quot;: &quot;https://spdx.org/licenses/AFL-1.1&quot;,
+        &quot;_key&quot;: &quot;afl-1.1&quot;,
+        &quot;_name&quot;: &quot;Academic Free License 1.1&quot;,
+        &quot;_notes&quot;: &quot;Per SPDX.org, this license has been superseded by later versions.&quot;,
+        &quot;_osiUrl&quot;: &quot;http://web.archive.org/web/20060924134536/http://www.opensource.org/licenses/afl-1.1.txt&quot;,
+        &quot;_otherUrls&quot;: [
+            &quot;http://wayback.archive.org/web/20021004124254/http://www.opensource.org/licenses/academic.php&quot;,
+            &quot;http://www.gnu.org/licenses/license-list.html#AcademicFreeLicense&quot;
+        ],
+        &quot;_owner&quot;: &quot;Lawrence Rosen&quot;,
+        &quot;_shortName&quot;: &quot;AFL 1.1&quot;,
+        &quot;_spdxId&quot;: &quot;AFL-1.1&quot;,
+        &quot;_text&quot;: &quot;Academic Free License\nVersion 1.1\n\nThe Academic Free License applies to any original work of authorship\n(the \&quot;Original Work\&quot;) whose owner (the \&quot;Licensor\&quot;) has placed the\nfollowing notice immediately following the copyright notice for the\nOriginal Work: \&quot;Licensed under the Academic Free License version 1.1.\&quot;\n\nGrant of License. Licensor hereby grants to any person obtaining a\ncopy of the Original Work (\&quot;You\&quot;) a world-wide, royalty-free,\nnon-exclusive, perpetual, non-sublicenseable license (1) to use, copy,\nmodify, merge, publish, perform, distribute and/or sell copies of the\nOriginal Work and derivative works thereof, and (2) under patent\nclaims owned or controlled by the Licensor that are embodied in the\nOriginal Work as furnished by the Licensor, to make, use, sell and\noffer for sale the Original Work and derivative works thereof, subject\nto the following conditions.\n\nRight of Attribution. Redistributions of the Original Work must\nreproduce all copyright notices in the Original Work as furnished by\nthe Licensor, both in the Original Work itself and in any\ndocumentation and/or other materials provided with the distribution of\nthe Original Work in executable form.\n\nExclusions from License Grant. Neither the names of Licensor, nor the\nnames of any contributors to the Original Work, nor any of their\ntrademarks or service marks, may be used to endorse or promote\nproducts derived from this Original Work without express prior written\npermission of the Licensor.\n\nWARRANTY AND DISCLAIMERS. LICENSOR WARRANTS THAT THE COPYRIGHT IN AND\nTO THE ORIGINAL WORK IS OWNED BY THE LICENSOR OR THAT THE ORIGINAL\nWORK IS DISTRIBUTED BY LICENSOR UNDER A VALID CURRENT LICENSE FROM THE\nCOPYRIGHT OWNER. EXCEPT AS EXPRESSLY STATED IN THE IMMEDIATELY\nPRECEEDING SENTENCE, THE ORIGINAL WORK IS PROVIDED UNDER THIS LICENSE\nON AN \&quot;AS IS\&quot; BASIS, WITHOUT WARRANTY, EITHER EXPRESS OR IMPLIED,\nINCLUDING, WITHOUT LIMITATION, THE WARRANTY OF NON-INFRINGEMENT AND\nWARRANTIES THAT THE ORIGINAL WORK IS MERCHANTABLE OR FIT FOR A\nPARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY OF THE ORIGINAL\nWORK IS WITH YOU. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN ESSENTIAL\nPART OF THIS LICENSE. NO LICENSE TO ORIGINAL WORK IS GRANTED HEREUNDER\nEXCEPT UNDER THIS DISCLAIMER.\n\nLIMITATION OF LIABILITY. UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL\nTHEORY, WHETHER TORT (INCLUDING NEGLIGENCE), CONTRACT, OR OTHERWISE,\nSHALL THE LICENSOR BE LIABLE TO ANY PERSON FOR ANY DIRECT, INDIRECT,\nSPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF ANY CHARACTER ARISING\nAS A RESULT OF THIS LICENSE OR THE USE OF THE ORIGINAL WORK INCLUDING,\nWITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, WORK STOPPAGE,\nCOMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER COMMERCIAL\nDAMAGES OR LOSSES, EVEN IF SUCH PERSON SHALL HAVE BEEN INFORMED OF THE\nPOSSIBILITY OF SUCH DAMAGES. THIS LIMITATION OF LIABILITY SHALL NOT\nAPPLY TO LIABILITY FOR DEATH OR PERSONAL INJURY RESULTING FROM SUCH\nPARTY&#39;S NEGLIGENCE TO THE EXTENT APPLICABLE LAW PROHIBITS SUCH\nLIMITATION. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR\nLIMITATION OF INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THIS EXCLUSION\nAND LIMITATION MAY NOT APPLY TO YOU.\n\nLicense to Source Code. The term \&quot;Source Code\&quot; means the preferred\nform of the Original Work for making modifications to it and all\navailable documentation describing how to access and modify the\nOriginal Work. Licensor hereby agrees to provide a machine-readable\ncopy of the Source Code of the Original Work along with each copy of\nthe Original Work that Licensor distributes. Licensor reserves the\nright to satisfy this obligation by placing a machine-readable copy of\nthe Source Code in an information repository reasonably calculated to\npermit inexpensive and convenient access by You for as long as\nLicensor continues to distribute the Original Work, and by publishing\nthe address of that information repository in a notice immediately\nfollowing the copyright notice that applies to the Original Work.\n\nMutual Termination for Patent Action. This License shall terminate\nautomatically and You may no longer exercise any of the rights granted\nto You by this License if You file a lawsuit in any court alleging\nthat any OSI Certified open source software that is licensed under any\nlicense containing this \&quot;Mutual Termination for Patent Action\&quot; clause\ninfringes any patent claims that are essential to use that software.\n\nThis license is Copyright (C) 2002 Lawrence E. Rosen. All rights\nreserved. Permission is hereby granted to copy and distribute this\nlicense without modification. This license may not be modified without\nthe express written permission of its copyright owner.\n\n--\nEND OF LICENSE.&quot;,
+        &quot;_textUrls&quot;: [
+            &quot;http://open2.mirrors-r-us.net/licenses/afl-1.1.txt&quot;,
+            &quot;http://opensource.linux-mirror.org/licenses/afl-1.1.txt&quot;,
+            &quot;http://spdx.org/licenses/AFL-1.1&quot;,
+            &quot;http://web.archive.org/web/20060924134536/http://www.opensource.org/licenses/afl-1.1.txt&quot;,
+            &quot;http://www.opensource.org/licenses/afl-1.1.txt&quot;
+        ]
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/Fossology">Fossology</a>: <a href="/fact/Fossology/24e46f9035730ab13acebcfcb7a14881">Fossology:24e46f9035730ab13acebcfcb7a14881</a> for <a href="/?license=fossology:AFL-1.1"><span class="licensename"><span class="namespace">fossology:</span>AFL-1.1</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fossology:</span>AFL-1.1</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Academic Free License v1.1</span></li></ul></li></ul></div><div><h2>License Comments</h2><ul><li><b>Fossology: </b>This license has been superseded by later versions.<span class="provided-by">(provided by: <span title="Fossology:24e46f9035730ab13acebcfcb7a14881">[<a href="/fact/Fossology/24e46f9035730ab13acebcfcb7a14881">Fossology</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://opensource.linux-mirror.org/licenses/afl-1.1.txt" target="_blank">http://opensource.linux-mirror.org/licenses/afl-1.1.txt</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Academic Free License
+
+Version 1.1 The Academic Free License applies to any original work of authorship (the &quot;Original Work&quot;) whose owner (the &quot;Licensor&quot;) has placed the following notice immediately following the copyright notice for the Original Work:
+
+&quot;Licensed under the Academic Free License version 1.1.&quot;
+
+Grant of License. Licensor hereby grants to any person obtaining a copy of the Original Work (&quot;You&quot;) a world-wide, royalty-free, non-exclusive, perpetual, non-sublicenseable license
+
+   (1) to use, copy, modify, merge, publish, perform, distribute and/or sell copies of the Original Work and derivative works thereof, and
+
+   (2) under patent claims owned or controlled by the Licensor that are embodied in the Original Work as furnished by the Licensor, to make, use, sell and offer for sale the Original Work and derivative works thereof, subject to the following conditions.
+
+Right of Attribution. Redistributions of the Original Work must reproduce all copyright notices in the Original Work as furnished by the Licensor, both in the Original Work itself and in any documentation and/or other materials provided with the distribution of the Original Work in executable form.
+
+Exclusions from License Grant. Neither the names of Licensor, nor the names of any contributors to the Original Work, nor any of their trademarks or service marks, may be used to endorse or promote products derived from this Original Work without express prior written permission of the Licensor.
+
+WARRANTY AND DISCLAIMERS. LICENSOR WARRANTS THAT THE COPYRIGHT IN AND TO THE ORIGINAL WORK IS OWNED BY THE LICENSOR OR THAT THE ORIGINAL WORK IS DISTRIBUTED BY LICENSOR UNDER A VALID CURRENT LICENSE FROM THE COPYRIGHT OWNER. EXCEPT AS EXPRESSLY STATED IN THE IMMEDIATELY PRECEEDING SENTENCE, THE ORIGINAL WORK IS PROVIDED UNDER THIS LICENSE ON AN &quot;AS IS&quot; BASIS, WITHOUT WARRANTY, EITHER EXPRESS OR IMPLIED, INCLUDING, WITHOUT LIMITATION, THE WARRANTY OF NON-INFRINGEMENT AND WARRANTIES THAT THE ORIGINAL WORK IS MERCHANTABLE OR FIT FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY OF THE ORIGINAL WORK IS WITH YOU. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THIS LICENSE. NO LICENSE TO ORIGINAL WORK IS GRANTED HEREUNDER EXCEPT UNDER THIS DISCLAIMER.
+
+LIMITATION OF LIABILITY. UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER TORT (INCLUDING NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE LICENSOR BE LIABLE TO ANY PERSON FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF ANY CHARACTER ARISING AS A RESULT OF THIS LICENSE OR THE USE OF THE ORIGINAL WORK INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER COMMERCIAL DAMAGES OR LOSSES, EVEN IF SUCH PERSON SHALL HAVE BEEN INFORMED OF THE POSSIBILITY OF SUCH DAMAGES. THIS LIMITATION OF LIABILITY SHALL NOT APPLY TO LIABILITY FOR DEATH OR PERSONAL INJURY RESULTING FROM SUCH PARTY&#39;S NEGLIGENCE TO THE EXTENT APPLICABLE LAW PROHIBITS SUCH LIMITATION. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR LIMITATION OF INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THIS EXCLUSION AND LIMITATION MAY NOT APPLY TO YOU.
+
+License to Source Code. The term &quot;Source Code&quot; means the preferred form of the Original Work for making modifications to it and all available documentation describing how to access and modify the Original Work. Licensor hereby agrees to provide a machine-readable copy of the Source Code of the Original Work along with each copy of the Original Work that Licensor distributes. Licensor reserves the right to satisfy this obligation by placing a machine-readable copy of the Source Code in an information repository reasonably calculated to permit inexpensive and convenient access by You for as long as Licensor continues to distribute the Original Work, and by publishing the address of that information repository in a notice immediately following the copyright notice that applies to the Original Work.
+
+Mutual Termination for Patent Action. This License shall terminate automatically and You may no longer exercise any of the rights granted to You by this License if You file a lawsuit in any court alleging that any OSI Certified open source software that is licensed under any license containing this &quot;Mutual Termination for Patent Action&quot; clause infringes any patent claims that are essential to use that software.
+
+This license is Copyright (C) 2002 Lawrence E. Rosen. All rights reserved.
+
+Permission is hereby granted to copy and distribute this license without modification. This license may not be modified without the express written permission of its copyright owner.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;fossology:AFL-1.1&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Academic Free License v1.1&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;Fossology&quot;,
+        &quot;24e46f9035730ab13acebcfcb7a14881&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    null,
+                    &quot;http://opensource.linux-mirror.org/licenses/afl-1.1.txt&quot;
+                ],
+                &quot;tag&quot;: &quot;LicenseUrl&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;Fossology&quot;,
+                        &quot;This license has been superseded by later versions.&quot;
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+                },
+                &quot;tag&quot;: &quot;LicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;Academic Free License\n\nVersion 1.1 The Academic Free License applies to any original work of authorship (the \&quot;Original Work\&quot;) whose owner (the \&quot;Licensor\&quot;) has placed the following notice immediately following the copyright notice for the Original Work:\n\n\&quot;Licensed under the Academic Free License version 1.1.\&quot;\n\nGrant of License. Licensor hereby grants to any person obtaining a copy of the Original Work (\&quot;You\&quot;) a world-wide, royalty-free, non-exclusive, perpetual, non-sublicenseable license\n\n   (1) to use, copy, modify, merge, publish, perform, distribute and/or sell copies of the Original Work and derivative works thereof, and\n\n   (2) under patent claims owned or controlled by the Licensor that are embodied in the Original Work as furnished by the Licensor, to make, use, sell and offer for sale the Original Work and derivative works thereof, subject to the following conditions.\n\nRight of Attribution. Redistributions of the Original Work must reproduce all copyright notices in the Original Work as furnished by the Licensor, both in the Original Work itself and in any documentation and/or other materials provided with the distribution of the Original Work in executable form.\n\nExclusions from License Grant. Neither the names of Licensor, nor the names of any contributors to the Original Work, nor any of their trademarks or service marks, may be used to endorse or promote products derived from this Original Work without express prior written permission of the Licensor.\n\nWARRANTY AND DISCLAIMERS. LICENSOR WARRANTS THAT THE COPYRIGHT IN AND TO THE ORIGINAL WORK IS OWNED BY THE LICENSOR OR THAT THE ORIGINAL WORK IS DISTRIBUTED BY LICENSOR UNDER A VALID CURRENT LICENSE FROM THE COPYRIGHT OWNER. EXCEPT AS EXPRESSLY STATED IN THE IMMEDIATELY PRECEEDING SENTENCE, THE ORIGINAL WORK IS PROVIDED UNDER THIS LICENSE ON AN \&quot;AS IS\&quot; BASIS, WITHOUT WARRANTY, EITHER EXPRESS OR IMPLIED, INCLUDING, WITHOUT LIMITATION, THE WARRANTY OF NON-INFRINGEMENT AND WARRANTIES THAT THE ORIGINAL WORK IS MERCHANTABLE OR FIT FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY OF THE ORIGINAL WORK IS WITH YOU. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THIS LICENSE. NO LICENSE TO ORIGINAL WORK IS GRANTED HEREUNDER EXCEPT UNDER THIS DISCLAIMER.\n\nLIMITATION OF LIABILITY. UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER TORT (INCLUDING NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE LICENSOR BE LIABLE TO ANY PERSON FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF ANY CHARACTER ARISING AS A RESULT OF THIS LICENSE OR THE USE OF THE ORIGINAL WORK INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER COMMERCIAL DAMAGES OR LOSSES, EVEN IF SUCH PERSON SHALL HAVE BEEN INFORMED OF THE POSSIBILITY OF SUCH DAMAGES. THIS LIMITATION OF LIABILITY SHALL NOT APPLY TO LIABILITY FOR DEATH OR PERSONAL INJURY RESULTING FROM SUCH PARTY&#39;S NEGLIGENCE TO THE EXTENT APPLICABLE LAW PROHIBITS SUCH LIMITATION. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR LIMITATION OF INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THIS EXCLUSION AND LIMITATION MAY NOT APPLY TO YOU.\n\nLicense to Source Code. The term \&quot;Source Code\&quot; means the preferred form of the Original Work for making modifications to it and all available documentation describing how to access and modify the Original Work. Licensor hereby agrees to provide a machine-readable copy of the Source Code of the Original Work along with each copy of the Original Work that Licensor distributes. Licensor reserves the right to satisfy this obligation by placing a machine-readable copy of the Source Code in an information repository reasonably calculated to permit inexpensive and convenient access by You for as long as Licensor continues to distribute the Original Work, and by publishing the address of that information repository in a notice immediately following the copyright notice that applies to the Original Work.\n\nMutual Termination for Patent Action. This License shall terminate automatically and You may no longer exercise any of the rights granted to You by this License if You file a lawsuit in any court alleging that any OSI Certified open source software that is licensed under any license containing this \&quot;Mutual Termination for Patent Action\&quot; clause infringes any patent claims that are essential to use that software.\n\nThis license is Copyright (C) 2002 Lawrence E. Rosen. All rights reserved.\n\nPermission is hereby granted to copy and distribute this license without modification. This license may not be modified without the express written permission of its copyright owner.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_marydone&quot;: false,
+        &quot;_rf_FSFfree&quot;: null,
+        &quot;_rf_Fedora&quot;: null,
+        &quot;_rf_GPLv2compatible&quot;: null,
+        &quot;_rf_GPLv3compatible&quot;: null,
+        &quot;_rf_OSIapproved&quot;: null,
+        &quot;_rf_active&quot;: true,
+        &quot;_rf_add_date&quot;: null,
+        &quot;_rf_copyleft&quot;: null,
+        &quot;_rf_fullname&quot;: &quot;Academic Free License v1.1&quot;,
+        &quot;_rf_notes&quot;: &quot;This license has been superseded by later versions.&quot;,
+        &quot;_rf_risk&quot;: null,
+        &quot;_rf_shortname&quot;: &quot;fossology:AFL-1.1&quot;,
+        &quot;_rf_source&quot;: null,
+        &quot;_rf_spdx_compatible&quot;: true,
+        &quot;_rf_text&quot;: &quot;Academic Free License\n\nVersion 1.1 The Academic Free License applies to any original work of authorship (the \&quot;Original Work\&quot;) whose owner (the \&quot;Licensor\&quot;) has placed the following notice immediately following the copyright notice for the Original Work:\n\n\&quot;Licensed under the Academic Free License version 1.1.\&quot;\n\nGrant of License. Licensor hereby grants to any person obtaining a copy of the Original Work (\&quot;You\&quot;) a world-wide, royalty-free, non-exclusive, perpetual, non-sublicenseable license\n\n   (1) to use, copy, modify, merge, publish, perform, distribute and/or sell copies of the Original Work and derivative works thereof, and\n\n   (2) under patent claims owned or controlled by the Licensor that are embodied in the Original Work as furnished by the Licensor, to make, use, sell and offer for sale the Original Work and derivative works thereof, subject to the following conditions.\n\nRight of Attribution. Redistributions of the Original Work must reproduce all copyright notices in the Original Work as furnished by the Licensor, both in the Original Work itself and in any documentation and/or other materials provided with the distribution of the Original Work in executable form.\n\nExclusions from License Grant. Neither the names of Licensor, nor the names of any contributors to the Original Work, nor any of their trademarks or service marks, may be used to endorse or promote products derived from this Original Work without express prior written permission of the Licensor.\n\nWARRANTY AND DISCLAIMERS. LICENSOR WARRANTS THAT THE COPYRIGHT IN AND TO THE ORIGINAL WORK IS OWNED BY THE LICENSOR OR THAT THE ORIGINAL WORK IS DISTRIBUTED BY LICENSOR UNDER A VALID CURRENT LICENSE FROM THE COPYRIGHT OWNER. EXCEPT AS EXPRESSLY STATED IN THE IMMEDIATELY PRECEEDING SENTENCE, THE ORIGINAL WORK IS PROVIDED UNDER THIS LICENSE ON AN \&quot;AS IS\&quot; BASIS, WITHOUT WARRANTY, EITHER EXPRESS OR IMPLIED, INCLUDING, WITHOUT LIMITATION, THE WARRANTY OF NON-INFRINGEMENT AND WARRANTIES THAT THE ORIGINAL WORK IS MERCHANTABLE OR FIT FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY OF THE ORIGINAL WORK IS WITH YOU. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THIS LICENSE. NO LICENSE TO ORIGINAL WORK IS GRANTED HEREUNDER EXCEPT UNDER THIS DISCLAIMER.\n\nLIMITATION OF LIABILITY. UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER TORT (INCLUDING NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE LICENSOR BE LIABLE TO ANY PERSON FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF ANY CHARACTER ARISING AS A RESULT OF THIS LICENSE OR THE USE OF THE ORIGINAL WORK INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER COMMERCIAL DAMAGES OR LOSSES, EVEN IF SUCH PERSON SHALL HAVE BEEN INFORMED OF THE POSSIBILITY OF SUCH DAMAGES. THIS LIMITATION OF LIABILITY SHALL NOT APPLY TO LIABILITY FOR DEATH OR PERSONAL INJURY RESULTING FROM SUCH PARTY&#39;S NEGLIGENCE TO THE EXTENT APPLICABLE LAW PROHIBITS SUCH LIMITATION. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR LIMITATION OF INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THIS EXCLUSION AND LIMITATION MAY NOT APPLY TO YOU.\n\nLicense to Source Code. The term \&quot;Source Code\&quot; means the preferred form of the Original Work for making modifications to it and all available documentation describing how to access and modify the Original Work. Licensor hereby agrees to provide a machine-readable copy of the Source Code of the Original Work along with each copy of the Original Work that Licensor distributes. Licensor reserves the right to satisfy this obligation by placing a machine-readable copy of the Source Code in an information repository reasonably calculated to permit inexpensive and convenient access by You for as long as Licensor continues to distribute the Original Work, and by publishing the address of that information repository in a notice immediately following the copyright notice that applies to the Original Work.\n\nMutual Termination for Patent Action. This License shall terminate automatically and You may no longer exercise any of the rights granted to You by this License if You file a lawsuit in any court alleging that any OSI Certified open source software that is licensed under any license containing this \&quot;Mutual Termination for Patent Action\&quot; clause infringes any patent claims that are essential to use that software.\n\nThis license is Copyright (C) 2002 Lawrence E. Rosen. All rights reserved.\n\nPermission is hereby granted to copy and distribute this license without modification. This license may not be modified without the express written permission of its copyright owner.&quot;,
+        &quot;_rf_text_updatable&quot;: false,
+        &quot;_rf_url&quot;: &quot;http://opensource.linux-mirror.org/licenses/afl-1.1.txt&quot;
+    },
+    &quot;type&quot;: &quot;Fossology&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/9f474cf5afe4fe88f0242045dbbb4c60">OrtLicenseCategorization:9f474cf5afe4fe88f0242045dbbb4c60</a> for <a href="/?license=SPDX:AFL-1.1"><span class="licensename"><span class="namespace">SPDX:</span>AFL-1.1</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>AFL-1.1</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:9f474cf5afe4fe88f0242045dbbb4c60">[<a href="/fact/OrtLicenseCategorization/9f474cf5afe4fe88f0242045dbbb4c60">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:9f474cf5afe4fe88f0242045dbbb4c60">[<a href="/fact/OrtLicenseCategorization/9f474cf5afe4fe88f0242045dbbb4c60">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:AFL-1.1&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;9f474cf5afe4fe88f0242045dbbb4c60&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:AFL-1.1&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/doubleopen">doubleopen</a>: <a href="/fact/OrtLicenseCategorization/38a9321315ee60d7873857d63221e4bd">OrtLicenseCategorization:38a9321315ee60d7873857d63221e4bd</a> for <a href="/?license=SPDX:AFL-1.1"><span class="licensename"><span class="namespace">SPDX:</span>AFL-1.1</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>AFL-1.1</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="Open source license that is made available under &quot;non-copyleft&quot; licenses. These generally require attribution of the included works and may include other obligations.">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:38a9321315ee60d7873857d63221e4bd">[<a href="/fact/OrtLicenseCategorization/38a9321315ee60d7873857d63221e4bd">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.">OrtLicenseCategorization: <b>property:include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:38a9321315ee60d7873857d63221e4bd">[<a href="/fact/OrtLicenseCategorization/38a9321315ee60d7873857d63221e4bd">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:38a9321315ee60d7873857d63221e4bd">[<a href="/fact/OrtLicenseCategorization/38a9321315ee60d7873857d63221e4bd">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="This property indicates that the license has patent licensing related terms. All patent related provisions in a license, with the exception of a basic patent license, trigger this clause. For example Apache-2.0 license includes a license cancellation clause due to patent disputes.">OrtLicenseCategorization: <b>property:patent-clause</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:38a9321315ee60d7873857d63221e4bd">[<a href="/fact/OrtLicenseCategorization/38a9321315ee60d7873857d63221e4bd">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:AFL-1.1&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;38a9321315ee60d7873857d63221e4bd&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;contents&quot;: &quot;Open source license that is made available under \&quot;non-copyleft\&quot; licenses. These generally require attribution of the included works and may include other obligations.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;property:include-in-notice-file&quot;,
+                    {
+                        &quot;contents&quot;: &quot;Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;contents&quot;: &quot;Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;property:patent-clause&quot;,
+                    {
+                        &quot;contents&quot;: &quot;This property indicates that the license has patent licensing related terms. All patent related provisions in a license, with the exception of a basic patent license, trigger this clause. For example Apache-2.0 license includes a license cancellation clause due to patent disputes.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: &quot;Open source license that is made available under \&quot;non-copyleft\&quot; licenses. These generally require attribution of the included works and may include other obligations.&quot;,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: &quot;Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.&quot;,
+                &quot;name&quot;: &quot;property:include-in-notice-file&quot;
+            },
+            {
+                &quot;description&quot;: &quot;Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.&quot;,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            },
+            {
+                &quot;description&quot;: &quot;This property indicates that the license has patent licensing related terms. All patent related provisions in a license, with the exception of a basic patent license, trigger this clause. For example Apache-2.0 license includes a license cancellation clause due to patent disputes.&quot;,
+                &quot;name&quot;: &quot;property:patent-clause&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:AFL-1.1&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/b7eccfc9a19726a8d39e87d7afe23407">CavilLicenseChange:b7eccfc9a19726a8d39e87d7afe23407</a> for <a href="/?license=cavil:AFL-1.1"><span class="licensename"><span class="namespace">cavil:</span>AFL-1.1</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>AFL-1.1</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">AFL-1.1</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:AFL-1.1&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;AFL-1.1&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;b7eccfc9a19726a8d39e87d7afe23407&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;AFL-1.1&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:AFL-1.1&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/a3d1c4d2726fcfbb05bf8ddfb36c1429">MetaeffektLicense:a3d1c4d2726fcfbb05bf8ddfb36c1429</a> for <a href="/?license=metaeffekt:Academic Free License 1.1"><span class="licensename"><span class="namespace">metaeffekt:</span>Academic Free License 1.1</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>Academic Free License 1.1</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>AFL-1.1</span></li></ul></li><li><b>other LicenseName Hints (5):</b><ul class="capsulUl clearfix"><li><span class="licensename">AFL</span></li><li><span class="licensename">AFL, 1.1</span></li><li><span class="licensename">AFL, Version 1.1</span></li><li><span class="licensename">AFL-1.1</span></li><li><span class="licensename"><span class="namespace">scancode:</span>afl-1.1</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.">CoDEStatus: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:a3d1c4d2726fcfbb05bf8ddfb36c1429">[<a href="/fact/MetaeffektLicense/a3d1c4d2726fcfbb05bf8ddfb36c1429">MetaeffektLicense</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:Academic Free License 1.1&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:AFL-1.1&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;AFL&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;AFL, Version 1.1&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;AFL, 1.1&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;AFL-1.1&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:afl-1.1&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;a3d1c4d2726fcfbb05bf8ddfb36c1429&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;CoDEStatus&quot;,
+                        &quot;Approved&quot;,
+                        {
+                            &quot;contents&quot;: &quot;Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;AFL, Version 1.1&quot;,
+            &quot;AFL, 1.1&quot;,
+            &quot;AFL-1.1&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:Academic Free License 1.1&quot;,
+        &quot;_category&quot;: &quot;AFL&quot;,
+        &quot;_openCoDEStatus&quot;: &quot;approved&quot;,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:afl-1.1&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:AFL-1.1&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li><li><h3><a href="/source/FOSS License">FOSS License</a>: <a href="/fact/FossLicense/8f0d1390e5a1df34138de26a620d64b3">FossLicense:8f0d1390e5a1df34138de26a620d64b3</a> for <a href="/?license=foss-license:Academic Free License 1.1"><span class="licensename"><span class="namespace">foss-license:</span>Academic Free License 1.1</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">foss-license:</span>Academic Free License 1.1</span></li></ul></li><li><b>other LicenseNames (8):</b><ul class="capsulUl clearfix"><li><span class="licensename">Academic Free License 1.1</span></li><li><span class="licensename">Academic Free License v1.1</span></li><li><span class="licensename">AFL 1.1</span></li><li><span class="licensename">AFL, 1.1</span></li><li><span class="licensename">AFL, Version 1.1</span></li><li><span class="licensename"><span class="namespace">scancode:</span>afl-1.1</span></li><li><span class="licensename">scancode://afl-1.1</span></li><li><span class="licensename">scancode:afl-1.1</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;foss-license:Academic Free License 1.1&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;scancode:afl-1.1&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Academic Free License v1.1&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Academic Free License 1.1&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode://afl-1.1&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;AFL 1.1&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;AFL, Version 1.1&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;AFL, 1.1&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:afl-1.1&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FossLicense&quot;,
+        &quot;8f0d1390e5a1df34138de26a620d64b3&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;aliases&quot;: [
+            &quot;Academic Free License v1.1&quot;,
+            &quot;Academic Free License 1.1&quot;,
+            &quot;scancode://afl-1.1&quot;,
+            &quot;AFL 1.1&quot;,
+            &quot;AFL, Version 1.1&quot;,
+            &quot;AFL, 1.1&quot;,
+            &quot;scancode:afl-1.1&quot;
+        ],
+        &quot;meta&quot;: {
+            &quot;comment&quot;: &quot;&quot;,
+            &quot;disclaimer&quot;: &quot;https://github.com/hesa/license-db/tree/main/var/disclamer.md&quot;
+        },
+        &quot;name&quot;: &quot;Academic Free License 1.1&quot;,
+        &quot;scancode_key&quot;: &quot;afl-1.1&quot;,
+        &quot;spdxid&quot;: &quot;AFL-1.1&quot;,
+        &quot;text&quot;: &quot;Academic Free License\nVersion 1.1\n\nThe Academic Free License applies to any original work of authorship\n(the \&quot;Original Work\&quot;) whose owner (the \&quot;Licensor\&quot;) has placed the\nfollowing notice immediately following the copyright notice for the\nOriginal Work: \&quot;Licensed under the Academic Free License version 1.1.\&quot;\n\nGrant of License. Licensor hereby grants to any person obtaining a\ncopy of the Original Work (\&quot;You\&quot;) a world-wide, royalty-free,\nnon-exclusive, perpetual, non-sublicenseable license (1) to use, copy,\nmodify, merge, publish, perform, distribute and/or sell copies of the\nOriginal Work and derivative works thereof, and (2) under patent\nclaims owned or controlled by the Licensor that are embodied in the\nOriginal Work as furnished by the Licensor, to make, use, sell and\noffer for sale the Original Work and derivative works thereof, subject\nto the following conditions.\n\nRight of Attribution. Redistributions of the Original Work must\nreproduce all copyright notices in the Original Work as furnished by\nthe Licensor, both in the Original Work itself and in any\ndocumentation and/or other materials provided with the distribution of\nthe Original Work in executable form.\n\nExclusions from License Grant. Neither the names of Licensor, nor the\nnames of any contributors to the Original Work, nor any of their\ntrademarks or service marks, may be used to endorse or promote\nproducts derived from this Original Work without express prior written\npermission of the Licensor.\n\nWARRANTY AND DISCLAIMERS. LICENSOR WARRANTS THAT THE COPYRIGHT IN AND\nTO THE ORIGINAL WORK IS OWNED BY THE LICENSOR OR THAT THE ORIGINAL\nWORK IS DISTRIBUTED BY LICENSOR UNDER A VALID CURRENT LICENSE FROM THE\nCOPYRIGHT OWNER. EXCEPT AS EXPRESSLY STATED IN THE IMMEDIATELY\nPRECEEDING SENTENCE, THE ORIGINAL WORK IS PROVIDED UNDER THIS LICENSE\nON AN \&quot;AS IS\&quot; BASIS, WITHOUT WARRANTY, EITHER EXPRESS OR IMPLIED,\nINCLUDING, WITHOUT LIMITATION, THE WARRANTY OF NON-INFRINGEMENT AND\nWARRANTIES THAT THE ORIGINAL WORK IS MERCHANTABLE OR FIT FOR A\nPARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY OF THE ORIGINAL\nWORK IS WITH YOU. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN ESSENTIAL\nPART OF THIS LICENSE. NO LICENSE TO ORIGINAL WORK IS GRANTED HEREUNDER\nEXCEPT UNDER THIS DISCLAIMER.\n\nLIMITATION OF LIABILITY. UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL\nTHEORY, WHETHER TORT (INCLUDING NEGLIGENCE), CONTRACT, OR OTHERWISE,\nSHALL THE LICENSOR BE LIABLE TO ANY PERSON FOR ANY DIRECT, INDIRECT,\nSPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF ANY CHARACTER ARISING\nAS A RESULT OF THIS LICENSE OR THE USE OF THE ORIGINAL WORK INCLUDING,\nWITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, WORK STOPPAGE,\nCOMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER COMMERCIAL\nDAMAGES OR LOSSES, EVEN IF SUCH PERSON SHALL HAVE BEEN INFORMED OF THE\nPOSSIBILITY OF SUCH DAMAGES. THIS LIMITATION OF LIABILITY SHALL NOT\nAPPLY TO LIABILITY FOR DEATH OR PERSONAL INJURY RESULTING FROM SUCH\nPARTY&#39;S NEGLIGENCE TO THE EXTENT APPLICABLE LAW PROHIBITS SUCH\nLIMITATION. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR\nLIMITATION OF INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THIS EXCLUSION\nAND LIMITATION MAY NOT APPLY TO YOU.\n\nLicense to Source Code. The term \&quot;Source Code\&quot; means the preferred\nform of the Original Work for making modifications to it and all\navailable documentation describing how to access and modify the\nOriginal Work. Licensor hereby agrees to provide a machine-readable\ncopy of the Source Code of the Original Work along with each copy of\nthe Original Work that Licensor distributes. Licensor reserves the\nright to satisfy this obligation by placing a machine-readable copy of\nthe Source Code in an information repository reasonably calculated to\npermit inexpensive and convenient access by You for as long as\nLicensor continues to distribute the Original Work, and by publishing\nthe address of that information repository in a notice immediately\nfollowing the copyright notice that applies to the Original Work.\n\nMutual Termination for Patent Action. This License shall terminate\nautomatically and You may no longer exercise any of the rights granted\nto You by this License if You file a lawsuit in any court alleging\nthat any OSI Certified open source software that is licensed under any\nlicense containing this \&quot;Mutual Termination for Patent Action\&quot; clause\ninfringes any patent claims that are essential to use that software.\n\nThis license is Copyright (C) 2002 Lawrence E. Rosen. All rights\nreserved. Permission is hereby granted to copy and distribute this\nlicense without modification. This license may not be modified without\nthe express written permission of its copyright owner.\n\n--\nEND OF LICENSE.&quot;
+    },
+    &quot;type&quot;: &quot;FossLicense&quot;
+}</pre></details></li><li><h3><a href="/source/FOSSLight">FOSSLight</a>: <a href="/fact/FOSSLight/b71192c59fec777d12628bad1dfe1015">FOSSLight:b71192c59fec777d12628bad1dfe1015</a> for <a href="/?license=fosslight:Academic Free License v1.1"><span class="licensename"><span class="namespace">fosslight:</span>Academic Free License v1.1</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fosslight:</span>Academic Free License v1.1</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">AFL-1.1</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="FOSSLight:b71192c59fec777d12628bad1dfe1015">[<a href="/fact/FOSSLight/b71192c59fec777d12628bad1dfe1015">FOSSLight</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;fosslight:Academic Free License v1.1&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;AFL-1.1&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            []
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FOSSLight&quot;,
+        &quot;b71192c59fec777d12628bad1dfe1015&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_FOSSLightFact_License&quot;: {
+            &quot;_fossLight_ATTRIBUTION&quot;: &quot;&quot;,
+            &quot;_fossLight_CREATED_DATE&quot;: [],
+            &quot;_fossLight_CREATOR&quot;: [],
+            &quot;_fossLight_DESCRIPTION&quot;: &quot;&quot;,
+            &quot;_fossLight_LICENSE_TEXT&quot;: &quot;Academic Free License\nVersion 1.1\n\nThe Academic Free License applies to any original work of authorship (the \&quot;Original Work\&quot;) whose owner (the \&quot;Licensor\&quot;) has placed the following notice immediately following the copyright notice for the Original Work: \n\n     \&quot;Licensed under the Academic Free License version 1.1.\&quot;\n\nGrant of License. Licensor hereby grants to any person obtaining a copy of the Original Work (\&quot;You\&quot;) a world-wide, royalty-free, non-exclusive, perpetual, non-sublicenseable license \n\n(1) to use, copy, modify, merge, publish, perform, distribute and/or sell copies of the Original Work and derivative works thereof, and \n\n(2) under patent claims owned or controlled by the Licensor that are embodied in the Original Work as furnished by the Licensor, to make, use, sell and offer for sale the Original Work and derivative works thereof, subject to the following conditions.\n\n     Right of Attribution. Redistributions of the Original Work must reproduce all copyright notices in the Original Work as furnished by the Licensor, both in the Original Work itself and in any documentation and/or other materials provided with the distribution of the Original Work in executable form.\n\n     Exclusions from License Grant. Neither the names of Licensor, nor the names of any contributors to the Original Work, nor any of their trademarks or service marks, may be used to endorse or promote products derived from this Original Work without express prior written permission of the Licensor.\n\nWARRANTY AND DISCLAIMERS. LICENSOR WARRANTS THAT THE COPYRIGHT IN AND TO THE ORIGINAL WORK IS OWNED BY THE LICENSOR OR THAT THE ORIGINAL WORK IS DISTRIBUTED BY LICENSOR UNDER A VALID CURRENT LICENSE FROM THE COPYRIGHT OWNER. EXCEPT AS EXPRESSLY STATED IN THE IMMEDIATELY PRECEEDING SENTENCE, THE ORIGINAL WORK IS PROVIDED UNDER THIS LICENSE ON AN \&quot;AS IS\&quot; BASIS, WITHOUT WARRANTY, EITHER EXPRESS OR IMPLIED, INCLUDING, WITHOUT LIMITATION, THE WARRANTY OF NON-INFRINGEMENT AND WARRANTIES THAT THE ORIGINAL WORK IS MERCHANTABLE OR FIT FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY OF THE ORIGINAL WORK IS WITH YOU. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THIS LICENSE. NO LICENSE TO ORIGINAL WORK IS GRANTED HEREUNDER EXCEPT UNDER THIS DISCLAIMER.\n\nLIMITATION OF LIABILITY. UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER TORT (INCLUDING NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE LICENSOR BE LIABLE TO ANY PERSON FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF ANY CHARACTER ARISING AS A RESULT OF THIS LICENSE OR THE USE OF THE ORIGINAL WORK INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER COMMERCIAL DAMAGES OR LOSSES, EVEN IF SUCH PERSON SHALL HAVE BEEN INFORMED OF THE POSSIBILITY OF SUCH DAMAGES. THIS LIMITATION OF LIABILITY SHALL NOT APPLY TO LIABILITY FOR DEATH OR PERSONAL INJURY RESULTING FROM SUCH PARTY&#39;S NEGLIGENCE TO THE EXTENT APPLICABLE LAW PROHIBITS SUCH LIMITATION. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR LIMITATION OF INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THIS EXCLUSION AND LIMITATION MAY NOT APPLY TO YOU.\n\nLicense to Source Code. The term \&quot;Source Code\&quot; means the preferred form of the Original Work for making modifications to it and all available documentation describing how to access and modify the Original Work. Licensor hereby agrees to provide a machine-readable copy of the Source Code of the Original Work along with each copy of the Original Work that Licensor distributes. Licensor reserves the right to satisfy this obligation by placing a machine-readable copy of the Source Code in an information repository reasonably calculated to permit inexpensive and convenient access by You for as long as Licensor continues to distribute the Original Work, and by publishing the address of that information repository in a notice immediately following the copyright notice that applies to the Original Work.\n\nMutual Termination for Patent Action. This License shall terminate automatically and You may no longer exercise any of the rights granted to You by this License if You file a lawsuit in any court alleging that any OSI Certified open source software that is licensed under any license containing this \&quot;Mutual Termination for Patent Action\&quot; clause infringes any patent claims that are essential to use that software.\n\nThis license is Copyright (C) 2002 Lawrence E. Rosen. All rights reserved. \nPermission is hereby granted to copy and distribute this license without modification. This license may not be modified without the express written permission of its copyright owner.&quot;,
+            &quot;_fossLight_MODIFIED_DATE&quot;: [],
+            &quot;_fossLight_MODIFIER&quot;: [],
+            &quot;_fossLight_OBLIGATION_DISCLOSING_SRC&quot;: false,
+            &quot;_fossLight_OBLIGATION_NEEDS_CHECK&quot;: false,
+            &quot;_fossLight_OBLIGATION_NOTIFICATION&quot;: true,
+            &quot;_fossLight_REQ_LICENSE_TEXT&quot;: false,
+            &quot;_fossLight_RESTRICTION&quot;: null,
+            &quot;_fossLight_SHORT_IDENTIFIER&quot;: &quot;AFL-1.1&quot;,
+            &quot;_fossLight_USE&quot;: true,
+            &quot;_fossLight_WEBPAGE&quot;: &quot;https://spdx.org/licenses/AFL-1.1.html&quot;,
+            &quot;_fossLight_id&quot;: 3,
+            &quot;_fossLight_name&quot;: &quot;fosslight:Academic Free License v1.1&quot;,
+            &quot;_fossLight_type&quot;: &quot;FOSSLight_License_Type_Permissive&quot;
+        },
+        &quot;_FOSSLightFact_Nicks&quot;: []
+    },
+    &quot;type&quot;: &quot;FOSSLight&quot;
+}</pre></details></li></ul></body></html>
