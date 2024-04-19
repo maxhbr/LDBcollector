@@ -2,4 +2,4 @@
   curations:
     comment: |
       Enforce scanning the source artifact because figuring out the relevant files in the VCS is complex.
-    source_code_origins: [ ARTIFACT ]
+    source_code_origins: [ARTIFACT]
