@@ -1,0 +1,8 @@
+{
+  "license": {
+    "expression": "SSLeay-standalone",
+    "status": [
+      "allowed"
+    ]
+  }
+}

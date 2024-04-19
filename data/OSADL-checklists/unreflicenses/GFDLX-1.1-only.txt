@@ -1,0 +1,28 @@
+USE CASE Unmodified Delivery
+	YOU MUST Provide License text
+	YOU MUST Provide Copyright notice
+	YOU MUST Provide License notice
+	YOU MUST NOT Modify License
+	YOU MUST NOT Restrict Granted rights
+		ATTRIBUTE Using Technological measures
+	IF Text Delivery Of Over 100 Printed Copies AND Cover Texts Required
+		YOU MUST Use Covers With Cover Texts
+			ATTRIBUTE Viewable
+		YOU MUST Provide Publisher Attribution notice
+			ATTRIBUTE On Covers
+			ATTRIBUTE Viewable
+		YOU MUST Provide Title
+			ATTRIBUTE On Front cover
+			ATTRIBUTE All words equally Viewable
+		IF Copy Cannot Be Modified
+			EITHER
+				YOU MUST Include Modifiable copy
+					ATTRIBUTE Machine-readable
+			OR
+				YOU MUST Reference Modifiable copy
+					ATTRIBUTE Via Internet
+					ATTRIBUTE No charge
+					ATTRIBUTE Duration At least 1 year after Delivery
+USE CASE Modified Delivery
+	YOU MUST Refer To License text
+		REMARKS This section of the GFDL-1.1-only checklist was intentionally left blank, as the syntax and dictionary of the checklists project are overwhelmed by the excess and complexity of the conditions in this section.

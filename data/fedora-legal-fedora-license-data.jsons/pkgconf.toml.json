@@ -1,0 +1,8 @@
+{
+  "license": {
+    "expression": "pkgconf",
+    "status": [
+      "allowed"
+    ]
+  }
+}

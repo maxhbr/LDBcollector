@@ -4,5 +4,13 @@
     "status": [
       "allowed"
     ]
+  },
+  "fedora": {
+    "legacy-name": [
+      "GNU Lesser General Public License v3.0 or later, with exceptions"
+    ],
+    "legacy-abbreviation": [
+      "LGPLv3+ with exceptions"
+    ]
   }
 }

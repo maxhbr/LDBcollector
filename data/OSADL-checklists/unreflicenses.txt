@@ -39,6 +39,7 @@ https://www.osadl.org/fileadmin/checklists/unreflicenses/FSFULLR.txt
 https://www.osadl.org/fileadmin/checklists/unreflicenses/FSFULLRWD.txt
 https://www.osadl.org/fileadmin/checklists/unreflicenses/FTL.txt
 https://www.osadl.org/fileadmin/checklists/unreflicenses/GFDL-1.1-only.txt
+https://www.osadl.org/fileadmin/checklists/unreflicenses/GFDLX-1.1-only.txt
 https://www.osadl.org/fileadmin/checklists/unreflicenses/GPL-1.0-only.txt
 https://www.osadl.org/fileadmin/checklists/unreflicenses/GPL-1.0-or-later.txt
 https://www.osadl.org/fileadmin/checklists/unreflicenses/GPL-2.0-only%20WITH%20Classpath-exception-2.0.txt
