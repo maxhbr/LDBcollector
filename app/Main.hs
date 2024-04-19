@@ -6,6 +6,7 @@ module Main where
 import Control.Monad.State qualified as MTL
 import Data.Monoid (mconcat)
 import Data.Text qualified as T
+import Data.Text.Lazy qualified as TL
 import Data.Vector qualified as V
 import Ldbcollector.Model
 import Ldbcollector.Server
@@ -18,8 +19,8 @@ import Prelude hiding (div, head, id)
 import Main.Utf8 (withUtf8)
 import System.Directory (getCurrentDirectory, getDirectoryContents)
 
-writeSvgByName :: FilePath -> LicenseName -> LicenseGraphM ()
-writeSvgByName outDir lic = do
+writeFilesByName :: FilePath -> LicenseName -> LicenseGraphM ()
+writeFilesByName outDir lic = do
   let dot =
         outDir
           </> ( case lic of
@@ -28,12 +29,14 @@ writeSvgByName outDir lic = do
               )
           <.> "dot"
       json = dot -<.> "json"
+      html = dot -<.> "html"
   lift $ createDirectoryIfMissing True (dropFileName dot)
   infoLog $ "generate " ++ dot ++ " ..."
   focus mempty (V.singleton (LGName lic)) $
     \(needleNames, sameNames, otherNames, _statements) -> do
       writeJSON json
       writeGraphViz needleNames sameNames otherNames dot
+      writeSingleHtml html ((TL.fromStrict . licenseNameToText) lic) (needleNames, sameNames, otherNames)
   infoLog "... done"
 
 writeSvgByNS :: FilePath -> Text -> LicenseGraphM ()
@@ -46,7 +49,7 @@ writeSvgByNS outDir selectedNS = do
               _ -> False
           )
           allLicenseNames
-  V.mapM_ (writeSvgByName outDir) filteredLicenses
+  V.mapM_ (writeFilesByName outDir) filteredLicenses
 
 curation :: Vector CurationItem
 curation =
@@ -100,7 +103,7 @@ main = withUtf8 $ do
         applySources curation
       writeMetrics
     case args of
-      "write" : names -> mapM_ (writeSvgByName "_out" . fromString) names
+      "write" : names -> mapM_ (writeFilesByName "_out" . fromString) names
       ["writeNS", ns] -> writeSvgByNS "_out" (fromString ns)
       _ -> serve
   return ()

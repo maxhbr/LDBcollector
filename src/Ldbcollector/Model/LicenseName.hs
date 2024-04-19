@@ -6,6 +6,7 @@ module Ldbcollector.Model.LicenseName
     newNLN,
     setNS,
     unsetNS,
+    licenseNameToText,
     fromText,
     LicenseNameRelation (..),
   )
