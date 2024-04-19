@@ -66,6 +66,9 @@
         "3-clause BSD license",
         "BSD 3-Clause license",
         "BSD 3-Clause New",
-        "BSD 3-clause \"New\" or \"Revised\" License"
+        "BSD 3-clause \"New\" or \"Revised\" License",
+        "BSD License 3",
+        "BSD -3 Clause",
+        "BSD 3-clause"
     ]
 }

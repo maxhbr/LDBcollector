@@ -1,0 +1,12 @@
+{
+    "meta": {
+        "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+        "comment": ""
+    },
+    "name": "g10-permissive",
+    "scancode_key": "g10-permissive",
+    "spdxid": "LicenseRef-scancode-g10-permissive",
+    "compatibility_as": "MIT",
+    "aliases": [
+    ]
+}

@@ -24,6 +24,7 @@
         "Boost Software License v1.0",
         "scancode:boost-1.0",
         "osi:BSL-1.0",
-        "BSL 1.0 License"
+        "BSL 1.0 License",
+        "Boost-1.0"
     ]
 }
