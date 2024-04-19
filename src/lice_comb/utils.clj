@@ -21,10 +21,9 @@
   (:require [clojure.string :as s]))
 
 (def strategy->string
-  "A map that turns a matching strategy keyword (e.g. as found in an
-  expression-info map) into a human readable equivalent.  This is mostly
-  intended for debugging / developer discovery purposes, and the behaviour may
-  change without warning."
+  "A map that turns a matching strategy keyword (as found in an expression-info
+  map) into a human readable equivalent.  This is mostly intended for debugging
+  / developer discovery purposes, and the behaviour may change without warning."
   {:spdx-expression                               "SPDX expression"
    :spdx-listed-identifier-exact-match            "SPDX identifier"
    :spdx-listed-identifier-case-insensitive-match "SPDX identifier (case insensitive match)"
@@ -37,9 +36,9 @@
    :manual-verification                           "manual verification"})
 
 (defn expression-info-sort-by-keyfn
-  "A sort-by keyfn for expression-info maps.  This is mostly intended for
-  debugging / developer discovery purposes, and the behaviour may change without
-  warning."
+  "A [[clojure.core/sort-by]] keyfn for expression-info maps.  This is mostly
+  intended for debugging / developer discovery purposes, and the behaviour may
+  change without warning."
   [m]
   (when m
     (str (case (:id m)
@@ -69,10 +68,9 @@
            :unidentified                                  "9"))))
 
 (defn expression-info->string
-  "Converts the given expression-info map into a human-readable string, using
-  the information in license-info map m.  This is mostly intended for
-  debugging / developer discovery purposes, and the behaviour may change without
-  warning."
+  "Converts `m`, an expression-info map, into a human-readable `String`.  This
+  is mostly intended for debugging / developer discovery purposes, and the
+  behaviour may change without warning."
   [m expr]
   (when (and m expr)
     (str expr " "
@@ -87,7 +85,7 @@
                           info-list))))))
 
 (defn expressions-info->string
-  "Converts the given expressions-info map into a human-readable string.  This
+  "Converts `m`, an expressions-info map, into a human-readable `String`.  This
   is mostly intended for debugging / developer discovery purposes, and the
   behaviour may change without warning."
   [m]

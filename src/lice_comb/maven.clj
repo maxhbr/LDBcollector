@@ -21,14 +21,15 @@
 
   In this namespace abbreviations are used for Maven's groupId, artifactId, and
   version concepts.  So for example:
+
   * `GA` means groupId & artifactId
   * `GAV` means groupId, artifactId & version
   
   In function calls where a version isn't required or provided, the library will
   determine and use the latest available version, as determined from (in order):
+
   1. your local Maven cache (usually ~/.m2/repository)
-  2. Maven Central
-  3. Clojars
+  2. remote Maven artifact repositories (e.g. Maven Central, CLojars)
   
   Other/custom Maven artifact repositories are supported via the
   `set-local-maven-repo!` and `set-remote-maven-repos!` fns."
@@ -47,11 +48,11 @@
 (def ^:private separator java.io.File/separator)
 
 (def default-local-maven-repo
-  "A String containing a file path for the default local Maven artifact
-  cache that the library uses.  Attempts to use this Maven client command to
-  determine this value:
+  "A `String` containing a file path for the default local Maven artifact cache
+  that the library uses.  Attempts to use this Maven client command to determine
+  this value by default:
 
-    mvn help:evaluate -Dexpression=settings.localRepository -q -DforceStdout
+    `mvn help:evaluate -Dexpression=settings.localRepository -q -DforceStdout`
 
   but falls back on a \"best guess\" if the Maven client isn't installed or
   cannot be executed."
@@ -69,14 +70,14 @@
 (def ^:private local-maven-repo-a (atom default-local-maven-repo))
 
 (defn local-maven-repo
-  "The current local Maven repo in use, as a String containing a file path."
+  "The current local Maven repo in use, as a `String` containing a file path."
   []
   @local-maven-repo-a)
 
 (defn set-local-maven-repo!
-  "Sets the local Maven repo to use from this point onward. The argument is a
-  String containing a file path that must be a readable directory that exists
-  (throws ex-info if these conditions are not met)."
+  "Sets the local Maven repo to use from this point onward. `dir` is a `String`
+  that must be a readable directory that exists (throws ex-info if these
+  conditions are not met)."
   [dir]
   (let [d (io/file dir)]
     (if (and (.exists      d)
@@ -88,9 +89,9 @@
 
 (def default-remote-maven-repos
   "A map containing the default remote Maven artifact repositories that the
-  library uses. Each key is a string that's the short identifier of the repo
-  (e.g. \"clojars\"), and each value is the base URL of that artifact repository
-  (e.g. \"https://repo.clojars.org\")."
+  library uses. Each key is a `String` that's the short identifier of the repo
+  (e.g. `\"clojars\"`), and each value is the base URL of that artifact
+  repository (e.g. `\"https://repo.clojars.org\"`)."
   {"central" "https://repo1.maven.org/maven2"
    "clojars" "https://repo.clojars.org"})
 
@@ -98,18 +99,19 @@
 
 (defn remote-maven-repos
   "The current remote Maven repos in use, as a map in the format described in
-  `default-remote-maven-repos`."
+  [[default-remote-maven-repos]]."
   []
   @remote-maven-repos-a)
 
 (defn set-remote-maven-repos!
   "Sets the remote Maven repos to use from this point onward. The argument is a
-  map in the format described in `default-remote-maven-repos`.
+  map in the format described in [[default-remote-maven-repos]].
 
   For most use cases you should merge `default-remote-maven-repos` with whatever
   additional repos you wish to provide (the rare exceptions being situations
   such as a dev environment that contains a custom Maven artifact repository
-  that proxies/caches Maven Central and/or Clojars)."
+  that proxies Maven Central and/or Clojars, and you don't want lice-comb to
+  attempt to access anything but the proxy)."
   [repos]
   (swap! remote-maven-repos-a (constantly repos))
   nil)
@@ -157,8 +159,8 @@
     (xml-find-first-string xml ks2)))
 
 (defn ga->metadata-uri
-  "Returns a java.net.URI pointing to the maven-metadata.xml for the given GA,
-  or nil if one cannot be found.  The returned URI is guaranteed to be
+  "Returns a `URI` pointing to the `maven-metadata.xml` for the given GA, or
+  `nil` if one cannot be found.  The returned `URI` is guaranteed to be
   resolvable - either to a file that exists in the local Maven cache, or to an
   HTTP-accessible resource on a remote Maven repository (e.g. Maven Central,
   Clojars) that resolves."
@@ -175,8 +177,8 @@
            (java.net.URI. remote-uri)))))))
 
 (defn gav->metadata-uri
-  "Returns a java.net.URI pointing to the maven-metadata.xml for the given GAV,
-  or nil if one cannot be found.  The returned URI is guaranteed to be
+  "Returns a `URI` pointing to the `maven-metadata.xml` for the given GAV, or
+  `nil` if one cannot be found.  The returned URI is guaranteed to be
   resolvable - either to a file that exists in the local Maven cache, or to an
   HTTP-accessible resource on a remote Maven repository (e.g. Maven Central,
   Clojars) that resolves."
@@ -194,10 +196,11 @@
            (java.net.URI. remote-uri)))))))
 
 (defn ga-latest-version
-  "Determines the latest version of the given GA as a String, or nil if it
+  "Determines the latest version of the given GA as a `String`, or `nil` if it
   cannot be determined.
 
-  Note that this could be a SNAPSHOT, RC, or other pre-release version."
+  Note: this could be a SNAPSHOT, RC, alpha, beta, or any other type of
+  pre-release version."
   [group-id artifact-id]
   (when-let [metadata-uri (ga->metadata-uri group-id artifact-id)]
     (with-open [metadata-is (io/input-stream metadata-uri)]
@@ -207,8 +210,8 @@
           (last (xi/find-all metadata-xml [:metadata :versioning :versions :version])))))))
 
 (defn ga-release-version
-  "Determines the release version (if any) of the given GA as a String, or nil
-  if it cannot be determined or the GA doesn't have a released version yet."
+  "Determines the release version (if any) of the given GA as a `String`, or
+  `nil` if it cannot be determined or the GA doesn't have a released version."
   [group-id artifact-id]
   (when-let [metadata-uri (ga->metadata-uri group-id artifact-id)]
     (with-open [metadata-is (io/input-stream metadata-uri)]
@@ -241,13 +244,13 @@
        (= (s/upper-case version) "RELEASE")))
 
 (defn gav->pom-uri
-  "Returns a java.net.URI pointing to the POM for the given GAV, or nil if one
-  cannot be found.  The returned URI is guaranteed to be resolvable - either to
-  a file that exists in the local Maven cache, or to an HTTP-accessible resource
+  "Returns a `URI` pointing to the POM for the given GAV, or `nil` if one cannot
+  be found.  The returned `URI` is guaranteed to be resolvable - either to a
+  file that exists in the local Maven cache, or to an HTTP-accessible resource
   on a remote Maven repository (e.g. Maven Central, Clojars) that resolves.
 
   If version is not provided, determines the latest version (which may be a
-  SNAPSHOT) and uses that."
+  SNAPSHOT, or other pre-release version) and uses that."
   ([{:keys [group-id artifact-id version]}] (gav->pom-uri group-id artifact-id version))
   ([group-id artifact-id]                   (gav->pom-uri group-id artifact-id nil))
   ([group-id artifact-id version]
@@ -267,13 +270,13 @@
            (java.net.URI. remote-uri)))))))
 
 (defmulti pom->expressions-info
-  "Returns an expressions-info map for the given POM file (an InputStream or
-  something that can have an io/input-stream opened on it), or nil if no
+  "Returns an expressions-info map for `pom` (an `InputStream` or something that
+  can have an `clojure.java.io/input-stream` opened on it), or `nil` if no
   expressions were found.
 
-  If an InputStream is provided, it is the caller's responsibility to open and
-  close it, and a filepath associated with the InputStream *must* be provided as
-  the second parameter (it is optional for other types of input).
+  If an `InputStream` is provided, it is the caller's responsibility to open and
+  close it, and a filepath associated with the `InputStream` *must* be provided
+  as the second parameter (it is not required for other types of input).
 
   Note: throws on XML parsing error"
   {:arglists '([pom] [pom filepath])}
@@ -322,13 +325,8 @@
          (log/info (str "'" filepath "'") "contains no license information"))))))
 
 (defn pom->expressions
-  "Returns a set of SPDX expressions (Strings) for the given POM file (an
-  InputStream or something that can have an io/input-stream opened on it), or
-  nil if no expressions were found.
-
-  If an InputStream is provided, it is the caller's responsibility to open and
-  close it, and a filepath associated with the InputStream *must* be provided as
-  the second parameter (it is optional for other types of input)."
+  "Returns a set of SPDX expressions (`String`s) for `pom`. See
+   [[pom->expressions-info]] for details."
   ([pom] (pom->expressions pom (lciu/filepath pom)))
   ([pom filepath]
    (some-> (pom->expressions-info pom filepath)
@@ -336,9 +334,11 @@
            set)))
 
 (defn gav->expressions-info
-  "Returns an expressions-info map for the given GA and (optionally) V.
+  "Returns an expressions-info map for the given GA and (optionally) V, by
+  looking up the POM for the given GA(V) and calling [[pom->expressions-info]]
+  on it.
 
-  If version is not provided, the latest version is looked up (which involves
+  If `version` is not provided, the latest version is looked up (which involves
   file and potentially also network I/O)."
   ([group-id artifact-id] (gav->expressions-info group-id artifact-id nil))
   ([group-id artifact-id version]
@@ -348,11 +348,8 @@
          (pom->expressions-info pom-is (str pom-uri)))))))
 
 (defn gav->expressions
-  "Returns a set of SPDX expressions (Strings) for the given GA and optionally
-  V.
-
-  If version is not provided, the latest version is looked up (which involves
-  file and potentially also network I/O)."
+  "Returns a set of SPDX expressions (`String`s) for the given GA and
+  optionally V. See [[gav->expressions-info]] for details."
   ([group-id artifact-id] (gav->expressions group-id artifact-id nil))
   ([group-id artifact-id version]
    (some-> (gav->expressions-info group-id artifact-id version)
@@ -363,7 +360,9 @@
   "Initialises this namespace upon first call (and does nothing on subsequent
   calls), returning nil. Consumers of this namespace are not required to call
   this fn, as initialisation will occur implicitly anyway; it is provided to
-  allow explicit control of the cost of initialisation to callers who need it."
+  allow explicit control of the cost of initialisation to callers who need it.
+
+  Note: this method may have a substantial performance cost."
   []
   (lcm/init!)
   @local-maven-repo-a
