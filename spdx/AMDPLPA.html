@@ -1,0 +1,1128 @@
+<html><head><title>ldbcollector: spdx:AMDPLPA</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:AMDPLPA</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>AMDPLPA</span></li></ul></li><li><b>other LicenseNames (11):</b><ul class="capsulUl clearfix"><li><span class="licensename">AMD PLPA License</span></li><li><span class="licensename">AMD&#39;s plpa_map.c License</span></li><li><span class="licensename">AMDPLPA</span></li><li><span class="licensename"><span class="namespace">BlueOak:</span>AMDPLPA</span></li><li><span class="licensename"><span class="namespace">cavil:</span>AMDPLPA</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>AMDPLPA</span></li><li><span class="licensename"><span class="namespace">fossology:</span>AMDPLPA</span></li><li><span class="licensename"><span class="namespace">scancode:</span>amdplpa</span></li><li><span class="licensename"><span class="namespace">spdx:</span>AMDPLPA</span></li><li><span class="licensename">AMDPLPA License</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>AMDPLPA License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="BlueOakCouncil:7ee0c2f3febb567855da0589edadf450">[<a href="/fact/BlueOakCouncil/7ee0c2f3febb567855da0589edadf450">BlueOakCouncil</a>]</span><span title="ScancodeData:b720cb23529334a168315295a8a57000">[<a href="/fact/ScancodeData/b720cb23529334a168315295a8a57000">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:e38e9c5c1d5b3f3260f310c3ff02c7f7">[<a href="/fact/SPDXLicense/e38e9c5c1d5b3f3260f310c3ff02c7f7">SPDXLicense</a>]</span>)</span></li><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:c8f6ceb4790a355b39b72b13a81b4095">[<a href="/fact/FedoraEntry/c8f6ceb4790a355b39b72b13a81b4095">FedoraEntry</a>]</span>)</span></li><li><span title="These licenses lack important but nonessential elements of permissive open software licenses or impose additional requirements or restrictions, such as BSD-style prohibitions against endorsement and promotion.">BlueOakCouncil: <b style="">Bronze</b></span><span class="provided-by">(provided by: <span title="BlueOakCouncil:7ee0c2f3febb567855da0589edadf450">[<a href="/fact/BlueOakCouncil/7ee0c2f3febb567855da0589edadf450">BlueOakCouncil</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:a4f3db449a1c3a0f3cef021822db1e1a">[<a href="/fact/OrtLicenseCategorization/a4f3db449a1c3a0f3cef021822db1e1a">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:a4f3db449a1c3a0f3cef021822db1e1a">[<a href="/fact/OrtLicenseCategorization/a4f3db449a1c3a0f3cef021822db1e1a">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Open source license that is made available under &quot;non-copyleft&quot; licenses. These generally require attribution of the included works and may include other obligations.">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:77df51740bd1187120def66d6a50c0f3">[<a href="/fact/OrtLicenseCategorization/77df51740bd1187120def66d6a50c0f3">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.">OrtLicenseCategorization: <b>property:include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:77df51740bd1187120def66d6a50c0f3">[<a href="/fact/OrtLicenseCategorization/77df51740bd1187120def66d6a50c0f3">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:77df51740bd1187120def66d6a50c0f3">[<a href="/fact/OrtLicenseCategorization/77df51740bd1187120def66d6a50c0f3">OrtLicenseCategorization</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/AMD_plpa_map_License" target="_blank">https://fedoraproject.org/wiki/Licensing/AMD_plpa_map_License</a></li><li><a href="https://spdx.org/licenses/AMDPLPA.html" target="_blank">https://spdx.org/licenses/AMDPLPA.html</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li><li>https://fedoraproject.org/wiki/Licensing/AMD_plpa_map_License</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright (c) 2006, 2007 Advanced Micro Devices, Inc.
+All rights reserved.
+
+Redistribution and use in any form of this material and any product thereof including software in source or binary forms, along with any related documentation, with or without modification (&quot;this material&quot;), is permitted provided that the following conditions are met:
+
+     Redistributions of source code of any software must retain the above copyright notice and all terms of this license as part of the code.
+
+     Redistributions in binary form of any software must reproduce the above copyright notice and all terms of this license in any related documentation and/or other materials.
+
+     Neither the names nor trademarks of Advanced Micro Devices, Inc. or any copyright holders or contributors may be used to endorse or promote products derived from this material without specific prior written permission.
+
+     Notice about U.S. Government restricted rights: This material is provided with &quot;RESTRICTED RIGHTS.&quot; Use, duplication or disclosure by the U.S. Government is subject to the full extent of restrictions set forth in FAR52.227 and DFARS252.227 et seq., or any successor or applicable regulations. Use of this material by the U.S. Government constitutes acknowledgment of the proprietary rights of Advanced Micro Devices, Inc. and any copyright holders and contributors.
+
+     ANY BREACH OF ANY TERM OF THIS LICENSE SHALL RESULT IN THE IMMEDIATE REVOCATION OF ALL RIGHTS TO REDISTRIBUTE, ACCESS OR USE THIS MATERIAL.
+
+THIS MATERIAL IS PROVIDED BY ADVANCED MICRO DEVICES, INC. AND ANY COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; IN ITS CURRENT CONDITION AND WITHOUT ANY REPRESENTATIONS, GUARANTEE, OR WARRANTY OF ANY KIND OR IN ANY WAY RELATED TO SUPPORT, INDEMNITY, ERROR FREE OR UNINTERRUPTED OPERATION, OR THAT IT IS FREE FROM DEFECTS OR VIRUSES. ALL OBLIGATIONS ARE HEREBY DISCLAIMED - WHETHER EXPRESS, IMPLIED, OR STATUTORY - INCLUDING, BUT NOT LIMITED TO, ANY IMPLIED WARRANTIES OF TITLE, MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, ACCURACY, COMPLETENESS, OPERABILITY, QUALITY OF SERVICE, OR NON-INFRINGEMENT. IN NO EVENT SHALL ADVANCED MICRO DEVICES, INC. OR ANY COPYRIGHT HOLDERS OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, PUNITIVE, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, REVENUE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED OR BASED ON ANY THEORY OF LIABILITY ARISING IN ANY WAY RELATED TO THIS MATERIAL, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. THE ENTIRE AND AGGREGATE LIABILITY OF ADVANCED MICRO DEVICES, INC. AND ANY COPYRIGHT HOLDERS AND CONTRIBUTORS SHALL NOT EXCEED TEN DOLLARS (US $10.00). ANYONE REDISTRIBUTING OR ACCESSING OR USING THIS MATERIAL ACCEPTS THIS ALLOCATION OF RISK AND AGREES TO RELEASE ADVANCED MICRO DEVICES, INC. AND ANY COPYRIGHT HOLDERS AND CONTRIBUTORS FROM ANY AND ALL LIABILITIES, OBLIGATIONS, CLAIMS, OR DEMANDS IN EXCESS OF TEN DOLLARS (US $10.00). THE FOREGOING ARE ESSENTIAL TERMS OF THIS LICENSE AND, IF ANY OF THESE TERMS ARE CONSTRUED AS UNENFORCEABLE, FAIL IN ESSENTIAL PURPOSE, OR BECOME VOID OR DETRIMENTAL TO ADVANCED MICRO DEVICES, INC. OR ANY COPYRIGHT HOLDERS OR CONTRIBUTORS FOR ANY REASON, THEN ALL RIGHTS TO REDISTRIBUTE, ACCESS OR USE THIS MATERIAL SHALL TERMINATE IMMEDIATELY. MOREOVER, THE FOREGOING SHALL SURVIVE ANY EXPIRATION OR TERMINATION OF THIS LICENSE OR ANY AGREEMENT OR ACCESS OR USE RELATED TO THIS MATERIAL.
+
+NOTICE IS HEREBY PROVIDED, AND BY REDISTRIBUTING OR ACCESSING OR USING THIS MATERIAL SUCH NOTICE IS ACKNOWLEDGED, THAT THIS MATERIAL MAY BE SUBJECT TO RESTRICTIONS UNDER THE LAWS AND REGULATIONS OF THE UNITED STATES OR OTHER COUNTRIES, WHICH INCLUDE BUT ARE NOT LIMITED TO, U.S. EXPORT CONTROL LAWS SUCH AS THE EXPORT ADMINISTRATION REGULATIONS AND NATIONAL SECURITY CONTROLS AS DEFINED THEREUNDER, AS WELL AS STATE DEPARTMENT CONTROLS UNDER THE U.S. MUNITIONS LIST. THIS MATERIAL MAY NOT BE USED, RELEASED, TRANSFERRED, IMPORTED, EXPORTED AND/OR RE- EXPORTED IN ANY MANNER PROHIBITED UNDER ANY APPLICABLE LAWS, INCLUDING U.S. EXPORT CONTROL LAWS REGARDING SPECIFICALLY DESIGNATED PERSONS, COUNTRIES AND NATIONALS OF COUNTRIES SUBJECT TO NATIONAL SECURITY CONTROLS. MOREOVER, THE FOREGOING SHALL SURVIVE ANY EXPIRATION OR TERMINATION OF ANY LICENSE OR AGREEMENT OR ACCESS OR USE RELATED TO THIS MATERIAL.
+
+This license forms the entire agreement regarding the subject matter hereof and supersedes all proposals and prior discussions and writings between the parties with respect thereto. This license does not affect any ownership, rights, title, or interest in, or relating to, this material. No terms of this license can be modified or waived, and no breach of this license can be excused, unless done so in a writing signed by all affected parties. Each term of this license is separately enforceable. If any term of this license is determined to be or becomes unenforceable or illegal, such term shall be reformed to the minimum extent necessary in order for this license to remain in effect in accordance with its terms as modified by such reformation. This license shall be governed by and construed in accordance with the laws of the State of Texas without regard to rules on conflicts of law of any state or jurisdiction or the United Nations Convention on the International Sale of Goods. All disputes arising out of this license shall be subject to the jurisdiction of the federal and state courts in Austin, Texas, and all defenses are hereby waived concerning personal jurisdiction and venue of these courts.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+         Copyright (c) 2006, 2007 Advanced Micro Devices, Inc.
+         &lt;p&gt;All rights reserved.&lt;/p&gt;
+
+      &lt;/div&gt;
+
+      &lt;p&gt;Redistribution and use in any form of this material and any product thereof including software in source
+         or binary forms, along with any related documentation, with or without modification (&amp;quot;this material&amp;quot;),
+         is permitted provided that the following conditions are met:&lt;/p&gt;
+
+      &lt;p&gt;Redistributions of source code of any software must retain the above copyright notice and all terms of
+         this license as part of the code.&lt;/p&gt;
+
+      &lt;p&gt;Redistributions in binary form of any software must reproduce the above copyright notice and all terms of
+         this license in any related documentation and/or other materials.&lt;/p&gt;
+
+      &lt;p&gt;Neither the names nor trademarks of Advanced Micro Devices, Inc. or any copyright holders or contributors
+         may be used to endorse or promote products derived from this material without specific prior written
+         permission.&lt;/p&gt;
+
+      &lt;p&gt;Notice about U.S. Government restricted rights: This material is provided with &amp;quot;RESTRICTED RIGHTS.&amp;quot; Use,
+         duplication or disclosure by the U.S. Government is subject to the full extent of restrictions set
+         forth in FAR52.227 and DFARS252.227 et seq., or any successor or applicable regulations. Use of this
+         material by the U.S. Government constitutes acknowledgment of the proprietary rights of Advanced Micro
+         Devices, Inc. and any copyright holders and contributors.&lt;/p&gt;
+
+      &lt;p&gt;ANY BREACH OF ANY TERM OF THIS LICENSE SHALL RESULT IN THE IMMEDIATE REVOCATION OF ALL RIGHTS TO
+         REDISTRIBUTE, ACCESS OR USE THIS MATERIAL.&lt;/p&gt;
+
+      &lt;p&gt;THIS MATERIAL IS PROVIDED BY ADVANCED MICRO DEVICES, INC. AND ANY COPYRIGHT HOLDERS AND CONTRIBUTORS &amp;quot;AS
+         IS&amp;quot; IN ITS CURRENT CONDITION AND WITHOUT ANY REPRESENTATIONS, GUARANTEE, OR WARRANTY OF ANY KIND OR IN
+         ANY WAY RELATED TO SUPPORT, INDEMNITY, ERROR FREE OR UNINTERRUPTED OPERATION, OR THAT IT IS FREE FROM
+         DEFECTS OR VIRUSES. ALL OBLIGATIONS ARE HEREBY DISCLAIMED - WHETHER EXPRESS, IMPLIED, OR STATUTORY -
+         INCLUDING, BUT NOT LIMITED TO, ANY IMPLIED WARRANTIES OF TITLE, MERCHANTABILITY, FITNESS FOR A
+         PARTICULAR PURPOSE, ACCURACY, COMPLETENESS, OPERABILITY, QUALITY OF SERVICE, OR NON-INFRINGEMENT. IN
+         NO EVENT SHALL ADVANCED MICRO DEVICES, INC. OR ANY COPYRIGHT HOLDERS OR CONTRIBUTORS BE LIABLE FOR ANY
+         DIRECT, INDIRECT, INCIDENTAL, SPECIAL, PUNITIVE, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+         NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, REVENUE, DATA, OR PROFITS;
+         OR BUSINESS INTERRUPTION) HOWEVER CAUSED OR BASED ON ANY THEORY OF LIABILITY ARISING IN ANY WAY
+         RELATED TO THIS MATERIAL, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. THE ENTIRE AND AGGREGATE
+         LIABILITY OF ADVANCED MICRO DEVICES, INC. AND ANY COPYRIGHT HOLDERS AND CONTRIBUTORS SHALL NOT EXCEED
+         TEN DOLLARS (US $10.00). ANYONE REDISTRIBUTING OR ACCESSING OR USING THIS MATERIAL ACCEPTS THIS
+         ALLOCATION OF RISK AND AGREES TO RELEASE ADVANCED MICRO DEVICES, INC. AND ANY COPYRIGHT HOLDERS AND
+         CONTRIBUTORS FROM ANY AND ALL LIABILITIES, OBLIGATIONS, CLAIMS, OR DEMANDS IN EXCESS OF TEN DOLLARS
+         (US $10.00). THE FOREGOING ARE ESSENTIAL TERMS OF THIS LICENSE AND, IF ANY OF THESE TERMS ARE
+         CONSTRUED AS UNENFORCEABLE, FAIL IN ESSENTIAL PURPOSE, OR BECOME VOID OR DETRIMENTAL TO ADVANCED MICRO
+         DEVICES, INC. OR ANY COPYRIGHT HOLDERS OR CONTRIBUTORS FOR ANY REASON, THEN ALL RIGHTS TO
+         REDISTRIBUTE, ACCESS OR USE THIS MATERIAL SHALL TERMINATE IMMEDIATELY. MOREOVER, THE FOREGOING SHALL
+         SURVIVE ANY EXPIRATION OR TERMINATION OF THIS LICENSE OR ANY AGREEMENT OR ACCESS OR USE RELATED TO
+         THIS MATERIAL.&lt;/p&gt;
+
+      &lt;p&gt;NOTICE IS HEREBY PROVIDED, AND BY REDISTRIBUTING OR ACCESSING OR USING THIS MATERIAL SUCH NOTICE IS
+         ACKNOWLEDGED, THAT THIS MATERIAL MAY BE SUBJECT TO RESTRICTIONS UNDER THE LAWS AND REGULATIONS OF THE
+         UNITED STATES OR OTHER COUNTRIES, WHICH INCLUDE BUT ARE NOT LIMITED TO, U.S. EXPORT CONTROL LAWS SUCH
+         AS THE EXPORT ADMINISTRATION REGULATIONS AND NATIONAL SECURITY CONTROLS AS DEFINED THEREUNDER, AS WELL
+         AS STATE DEPARTMENT CONTROLS UNDER THE U.S. MUNITIONS LIST. THIS MATERIAL MAY NOT BE USED, RELEASED,
+         TRANSFERRED, IMPORTED, EXPORTED AND/OR RE- EXPORTED IN ANY MANNER PROHIBITED UNDER ANY APPLICABLE
+         LAWS, INCLUDING U.S. EXPORT CONTROL LAWS REGARDING SPECIFICALLY DESIGNATED PERSONS, COUNTRIES AND
+         NATIONALS OF COUNTRIES SUBJECT TO NATIONAL SECURITY CONTROLS. MOREOVER, THE FOREGOING SHALL SURVIVE
+         ANY EXPIRATION OR TERMINATION OF ANY LICENSE OR AGREEMENT OR ACCESS OR USE RELATED TO THIS
+         MATERIAL.&lt;/p&gt;
+
+      &lt;p&gt;This license forms the entire agreement regarding the subject matter hereof and supersedes all proposals
+         and prior discussions and writings between the parties with respect thereto. This license does not
+         affect any ownership, rights, title, or interest in, or relating to, this material. No terms of this
+         license can be modified or waived, and no breach of this license can be excused, unless done so in a
+         writing signed by all affected parties. Each term of this license is separately enforceable. If any
+         term of this license is determined to be or becomes unenforceable or illegal, such term shall be
+         reformed to the minimum extent necessary in order for this license to remain in effect in accordance
+         with its terms as modified by such reformation. This license shall be governed by and construed in
+         accordance with the laws of the State of Texas without regard to rules on conflicts of law of any
+         state or jurisdiction or the United Nations Convention on the International Sale of Goods. All
+         disputes arising out of this license shall be subject to the jurisdiction of the federal and state
+         courts in Austin, Texas, and all defenses are hereby waived concerning personal jurisdiction and venue
+         of these courts.&lt;/p&gt;
+
+    </pre></details></li><li><details><summary>Text:</summary><pre>Redistribution and use in any form of this material and any product thereof including
+software in source or binary forms, along with any related documentation, with or
+without modification (&quot;this material&quot;), is permitted provided that the following
+conditions are met:
+
+     Redistributions of source code of any software must retain the above copyright
+     notice and all terms of this license as part of the code.
+
+     Redistributions in binary form of any software must reproduce the above
+     copyright notice and all terms of this license in any related documentation
+     and/or other materials.
+
+     Neither the names nor trademarks of Advanced Micro Devices, Inc. or any
+     copyright holders or contributors may be used to endorse or promote products
+     derived from this material without specific prior written permission.
+
+     Notice about U.S. Government restricted rights: This material is provided with
+     &quot;RESTRICTED RIGHTS.&quot; Use, duplication or disclosure by the U.S. Government is
+     subject to the full extent of restrictions set forth in FAR52.227 and
+     DFARS252.227 et seq., or any successor or applicable regulations. Use of this
+     material by the U.S. Government constitutes acknowledgment of the proprietary
+     rights of Advanced Micro Devices, Inc. and any copyright holders and
+     contributors.
+
+     ANY BREACH OF ANY TERM OF THIS LICENSE SHALL RESULT IN THE IMMEDIATE REVOCATION
+     OF ALL RIGHTS TO REDISTRIBUTE, ACCESS OR USE THIS MATERIAL.
+
+THIS MATERIAL IS PROVIDED BY ADVANCED MICRO DEVICES, INC. AND ANY COPYRIGHT HOLDERS
+AND CONTRIBUTORS &quot;AS IS&quot; IN ITS CURRENT CONDITION AND WITHOUT ANY REPRESENTATIONS,
+GUARANTEE, OR WARRANTY OF ANY KIND OR IN ANY WAY RELATED TO SUPPORT, INDEMNITY, ERROR
+FREE OR UNINTERRUPTED OPERATION, OR THAT IT IS FREE FROM DEFECTS OR VIRUSES. ALL
+OBLIGATIONS ARE HEREBY DISCLAIMED - WHETHER EXPRESS, IMPLIED, OR STATUTORY -
+INCLUDING, BUT NOT LIMITED TO, ANY IMPLIED WARRANTIES OF TITLE, MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE, ACCURACY, COMPLETENESS, OPERABILITY, QUALITY OF
+SERVICE, OR NON-INFRINGEMENT. IN NO EVENT SHALL ADVANCED MICRO DEVICES, INC. OR ANY
+COPYRIGHT HOLDERS OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, PUNITIVE, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED
+TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, REVENUE, DATA, OR
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED OR BASED ON ANY THEORY OF LIABILITY
+ARISING IN ANY WAY RELATED TO THIS MATERIAL, EVEN IF ADVISED OF THE POSSIBILITY OF
+SUCH DAMAGE. THE ENTIRE AND AGGREGATE LIABILITY OF ADVANCED MICRO DEVICES, INC. AND
+ANY COPYRIGHT HOLDERS AND CONTRIBUTORS SHALL NOT EXCEED TEN DOLLARS (US $10.00).
+ANYONE REDISTRIBUTING OR ACCESSING OR USING THIS MATERIAL ACCEPTS THIS ALLOCATION OF
+RISK AND AGREES TO RELEASE ADVANCED MICRO DEVICES, INC. AND ANY COPYRIGHT HOLDERS AND
+CONTRIBUTORS FROM ANY AND ALL LIABILITIES, OBLIGATIONS, CLAIMS, OR DEMANDS IN EXCESS
+OF TEN DOLLARS (US $10.00). THE FOREGOING ARE ESSENTIAL TERMS OF THIS LICENSE AND, IF
+ANY OF THESE TERMS ARE CONSTRUED AS UNENFORCEABLE, FAIL IN ESSENTIAL PURPOSE, OR
+BECOME VOID OR DETRIMENTAL TO ADVANCED MICRO DEVICES, INC. OR ANY COPYRIGHT HOLDERS
+OR CONTRIBUTORS FOR ANY REASON, THEN ALL RIGHTS TO REDISTRIBUTE, ACCESS OR USE THIS
+MATERIAL SHALL TERMINATE IMMEDIATELY. MOREOVER, THE FOREGOING SHALL SURVIVE ANY
+EXPIRATION OR TERMINATION OF THIS LICENSE OR ANY AGREEMENT OR ACCESS OR USE RELATED
+TO THIS MATERIAL.
+
+NOTICE IS HEREBY PROVIDED, AND BY REDISTRIBUTING OR ACCESSING OR USING THIS MATERIAL
+SUCH NOTICE IS ACKNOWLEDGED, THAT THIS MATERIAL MAY BE SUBJECT TO RESTRICTIONS UNDER
+THE LAWS AND REGULATIONS OF THE UNITED STATES OR OTHER COUNTRIES, WHICH INCLUDE BUT
+ARE NOT LIMITED TO, U.S. EXPORT CONTROL LAWS SUCH AS THE EXPORT ADMINISTRATION
+REGULATIONS AND NATIONAL SECURITY CONTROLS AS DEFINED THEREUNDER, AS WELL AS STATE
+DEPARTMENT CONTROLS UNDER THE U.S. MUNITIONS LIST. THIS MATERIAL MAY NOT BE USED,
+RELEASED, TRANSFERRED, IMPORTED, EXPORTED AND/OR RE- EXPORTED IN ANY MANNER
+PROHIBITED UNDER ANY APPLICABLE LAWS, INCLUDING U.S. EXPORT CONTROL LAWS REGARDING
+SPECIFICALLY DESIGNATED PERSONS, COUNTRIES AND NATIONALS OF COUNTRIES SUBJECT TO
+NATIONAL SECURITY CONTROLS. MOREOVER, THE FOREGOING SHALL SURVIVE ANY EXPIRATION OR
+TERMINATION OF ANY LICENSE OR AGREEMENT OR ACCESS OR USE RELATED TO THIS MATERIAL.
+
+This license forms the entire agreement regarding the subject matter hereof and
+supersedes all proposals and prior discussions and writings between the parties with
+respect thereto. This license does not affect any ownership, rights, title, or
+interest in, or relating to, this material. No terms of this license can be modified
+or waived, and no breach of this license can be excused, unless done so in a writing
+signed by all affected parties. Each term of this license is separately enforceable.
+If any term of this license is determined to be or becomes unenforceable or illegal,
+such term shall be reformed to the minimum extent necessary in order for this license
+to remain in effect in accordance with its terms as modified by such reformation.
+This license shall be governed by and construed in accordance with the laws of the
+State of Texas without regard to rules on conflicts of law of any state or
+jurisdiction or the United Nations Convention on the International Sale of Goods. All
+disputes arising out of this license shall be subject to the jurisdiction of the
+federal and state courts in Austin, Texas, and all defenses are hereby waived
+concerning personal jurisdiction and venue of these courts.</pre></details></li><li><details><summary>Text:</summary><pre>Copyright (c) 2006, 2007 Advanced Micro Devices, Inc.
+
+All rights reserved.
+
+Redistribution and use in any form of this material and any product thereof including software in source or binary forms, along with any related documentation, with or without modification (&quot;this material&quot;), is permitted provided that the following conditions are met:
+
+Redistributions of source code of any software must retain the above copyright notice and all terms of this license as part of the code.
+
+Redistributions in binary form of any software must reproduce the above copyright notice and all terms of this license in any related documentation and/or other materials.
+
+Neither the names nor trademarks of Advanced Micro Devices, Inc. or any copyright holders or contributors may be used to endorse or promote products derived from this material without specific prior written permission.
+
+Notice about U.S. Government restricted rights: This material is provided with &quot;RESTRICTED RIGHTS.&quot; Use, duplication or disclosure by the U.S. Government is subject to the full extent of restrictions set forth in FAR52.227 and DFARS252.227 et seq., or any successor or applicable regulations. Use of this material by the U.S. Government constitutes acknowledgment of the proprietary rights of Advanced Micro Devices, Inc. and any copyright holders and contributors.
+
+ANY BREACH OF ANY TERM OF THIS LICENSE SHALL RESULT IN THE IMMEDIATE REVOCATION OF ALL RIGHTS TO REDISTRIBUTE, ACCESS OR USE THIS MATERIAL.
+
+THIS MATERIAL IS PROVIDED BY ADVANCED MICRO DEVICES, INC. AND ANY COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; IN ITS CURRENT CONDITION AND WITHOUT ANY REPRESENTATIONS, GUARANTEE, OR WARRANTY OF ANY KIND OR IN ANY WAY RELATED TO SUPPORT, INDEMNITY, ERROR FREE OR UNINTERRUPTED OPERATION, OR THAT IT IS FREE FROM DEFECTS OR VIRUSES. ALL OBLIGATIONS ARE HEREBY DISCLAIMED - WHETHER EXPRESS, IMPLIED, OR STATUTORY - INCLUDING, BUT NOT LIMITED TO, ANY IMPLIED WARRANTIES OF TITLE, MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, ACCURACY, COMPLETENESS, OPERABILITY, QUALITY OF SERVICE, OR NON-INFRINGEMENT. IN NO EVENT SHALL ADVANCED MICRO DEVICES, INC. OR ANY COPYRIGHT HOLDERS OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, PUNITIVE, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, REVENUE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED OR BASED ON ANY THEORY OF LIABILITY ARISING IN ANY WAY RELATED TO THIS MATERIAL, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. THE ENTIRE AND AGGREGATE LIABILITY OF ADVANCED MICRO DEVICES, INC. AND ANY COPYRIGHT HOLDERS AND CONTRIBUTORS SHALL NOT EXCEED TEN DOLLARS (US $10.00). ANYONE REDISTRIBUTING OR ACCESSING OR USING THIS MATERIAL ACCEPTS THIS ALLOCATION OF RISK AND AGREES TO RELEASE ADVANCED MICRO DEVICES, INC. AND ANY COPYRIGHT HOLDERS AND CONTRIBUTORS FROM ANY AND ALL LIABILITIES, OBLIGATIONS, CLAIMS, OR DEMANDS IN EXCESS OF TEN DOLLARS (US $10.00). THE FOREGOING ARE ESSENTIAL TERMS OF THIS LICENSE AND, IF ANY OF THESE TERMS ARE CONSTRUED AS UNENFORCEABLE, FAIL IN ESSENTIAL PURPOSE, OR BECOME VOID OR DETRIMENTAL TO ADVANCED MICRO DEVICES, INC. OR ANY COPYRIGHT HOLDERS OR CONTRIBUTORS FOR ANY REASON, THEN ALL RIGHTS TO REDISTRIBUTE, ACCESS OR USE THIS MATERIAL SHALL TERMINATE IMMEDIATELY. MOREOVER, THE FOREGOING SHALL SURVIVE ANY EXPIRATION OR TERMINATION OF THIS LICENSE OR ANY AGREEMENT OR ACCESS OR USE RELATED TO THIS MATERIAL.
+
+NOTICE IS HEREBY PROVIDED, AND BY REDISTRIBUTING OR ACCESSING OR USING THIS MATERIAL SUCH NOTICE IS ACKNOWLEDGED, THAT THIS MATERIAL MAY BE SUBJECT TO RESTRICTIONS UNDER THE LAWS AND REGULATIONS OF THE UNITED STATES OR OTHER COUNTRIES, WHICH INCLUDE BUT ARE NOT LIMITED TO, U.S. EXPORT CONTROL LAWS SUCH AS THE EXPORT ADMINISTRATION REGULATIONS AND NATIONAL SECURITY CONTROLS AS DEFINED THEREUNDER, AS WELL AS STATE DEPARTMENT CONTROLS UNDER THE U.S. MUNITIONS LIST. THIS MATERIAL MAY NOT BE USED, RELEASED, TRANSFERRED, IMPORTED, EXPORTED AND/OR RE- EXPORTED IN ANY MANNER PROHIBITED UNDER ANY APPLICABLE LAWS, INCLUDING U.S. EXPORT CONTROL LAWS REGARDING SPECIFICALLY DESIGNATED PERSONS, COUNTRIES AND NATIONALS OF COUNTRIES SUBJECT TO NATIONAL SECURITY CONTROLS. MOREOVER, THE FOREGOING SHALL SURVIVE ANY EXPIRATION OR TERMINATION OF ANY LICENSE OR AGREEMENT OR ACCESS OR USE RELATED TO THIS MATERIAL.
+
+This license forms the entire agreement regarding the subject matter hereof and supersedes all proposals and prior discussions and writings between the parties with respect thereto. This license does not affect any ownership, rights, title, or interest in, or relating to, this material. No terms of this license can be modified or waived, and no breach of this license can be excused, unless done so in a writing signed by all affected parties. Each term of this license is separately enforceable. If any term of this license is determined to be or becomes unenforceable or illegal, such term shall be reformed to the minimum extent necessary in order for this license to remain in effect in accordance with its terms as modified by such reformation. This license shall be governed by and construed in accordance with the laws of the State of Texas without regard to rules on conflicts of law of any state or jurisdiction or the United Nations Convention on the International Sale of Goods. All disputes arising out of this license shall be subject to the jurisdiction of the federal and state courts in Austin, Texas, and all defenses are hereby waived concerning personal jurisdiction and venue of these courts.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/e38e9c5c1d5b3f3260f310c3ff02c7f7">SPDXLicense:e38e9c5c1d5b3f3260f310c3ff02c7f7</a> for <a href="/?license=spdx:AMDPLPA"><span class="licensename"><span class="namespace">spdx:</span>AMDPLPA</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>AMDPLPA</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">AMD&#39;s plpa_map.c License</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:e38e9c5c1d5b3f3260f310c3ff02c7f7">[<a href="/fact/SPDXLicense/e38e9c5c1d5b3f3260f310c3ff02c7f7">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/AMD_plpa_map_License" target="_blank">https://fedoraproject.org/wiki/Licensing/AMD_plpa_map_License</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright (c) 2006, 2007 Advanced Micro Devices, Inc.
+All rights reserved.
+
+Redistribution and use in any form of this material and any product thereof including software in source or binary forms, along with any related documentation, with or without modification (&quot;this material&quot;), is permitted provided that the following conditions are met:
+
+     Redistributions of source code of any software must retain the above copyright notice and all terms of this license as part of the code.
+
+     Redistributions in binary form of any software must reproduce the above copyright notice and all terms of this license in any related documentation and/or other materials.
+
+     Neither the names nor trademarks of Advanced Micro Devices, Inc. or any copyright holders or contributors may be used to endorse or promote products derived from this material without specific prior written permission.
+
+     Notice about U.S. Government restricted rights: This material is provided with &quot;RESTRICTED RIGHTS.&quot; Use, duplication or disclosure by the U.S. Government is subject to the full extent of restrictions set forth in FAR52.227 and DFARS252.227 et seq., or any successor or applicable regulations. Use of this material by the U.S. Government constitutes acknowledgment of the proprietary rights of Advanced Micro Devices, Inc. and any copyright holders and contributors.
+
+     ANY BREACH OF ANY TERM OF THIS LICENSE SHALL RESULT IN THE IMMEDIATE REVOCATION OF ALL RIGHTS TO REDISTRIBUTE, ACCESS OR USE THIS MATERIAL.
+
+THIS MATERIAL IS PROVIDED BY ADVANCED MICRO DEVICES, INC. AND ANY COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; IN ITS CURRENT CONDITION AND WITHOUT ANY REPRESENTATIONS, GUARANTEE, OR WARRANTY OF ANY KIND OR IN ANY WAY RELATED TO SUPPORT, INDEMNITY, ERROR FREE OR UNINTERRUPTED OPERATION, OR THAT IT IS FREE FROM DEFECTS OR VIRUSES. ALL OBLIGATIONS ARE HEREBY DISCLAIMED - WHETHER EXPRESS, IMPLIED, OR STATUTORY - INCLUDING, BUT NOT LIMITED TO, ANY IMPLIED WARRANTIES OF TITLE, MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, ACCURACY, COMPLETENESS, OPERABILITY, QUALITY OF SERVICE, OR NON-INFRINGEMENT. IN NO EVENT SHALL ADVANCED MICRO DEVICES, INC. OR ANY COPYRIGHT HOLDERS OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, PUNITIVE, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, REVENUE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED OR BASED ON ANY THEORY OF LIABILITY ARISING IN ANY WAY RELATED TO THIS MATERIAL, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. THE ENTIRE AND AGGREGATE LIABILITY OF ADVANCED MICRO DEVICES, INC. AND ANY COPYRIGHT HOLDERS AND CONTRIBUTORS SHALL NOT EXCEED TEN DOLLARS (US $10.00). ANYONE REDISTRIBUTING OR ACCESSING OR USING THIS MATERIAL ACCEPTS THIS ALLOCATION OF RISK AND AGREES TO RELEASE ADVANCED MICRO DEVICES, INC. AND ANY COPYRIGHT HOLDERS AND CONTRIBUTORS FROM ANY AND ALL LIABILITIES, OBLIGATIONS, CLAIMS, OR DEMANDS IN EXCESS OF TEN DOLLARS (US $10.00). THE FOREGOING ARE ESSENTIAL TERMS OF THIS LICENSE AND, IF ANY OF THESE TERMS ARE CONSTRUED AS UNENFORCEABLE, FAIL IN ESSENTIAL PURPOSE, OR BECOME VOID OR DETRIMENTAL TO ADVANCED MICRO DEVICES, INC. OR ANY COPYRIGHT HOLDERS OR CONTRIBUTORS FOR ANY REASON, THEN ALL RIGHTS TO REDISTRIBUTE, ACCESS OR USE THIS MATERIAL SHALL TERMINATE IMMEDIATELY. MOREOVER, THE FOREGOING SHALL SURVIVE ANY EXPIRATION OR TERMINATION OF THIS LICENSE OR ANY AGREEMENT OR ACCESS OR USE RELATED TO THIS MATERIAL.
+
+NOTICE IS HEREBY PROVIDED, AND BY REDISTRIBUTING OR ACCESSING OR USING THIS MATERIAL SUCH NOTICE IS ACKNOWLEDGED, THAT THIS MATERIAL MAY BE SUBJECT TO RESTRICTIONS UNDER THE LAWS AND REGULATIONS OF THE UNITED STATES OR OTHER COUNTRIES, WHICH INCLUDE BUT ARE NOT LIMITED TO, U.S. EXPORT CONTROL LAWS SUCH AS THE EXPORT ADMINISTRATION REGULATIONS AND NATIONAL SECURITY CONTROLS AS DEFINED THEREUNDER, AS WELL AS STATE DEPARTMENT CONTROLS UNDER THE U.S. MUNITIONS LIST. THIS MATERIAL MAY NOT BE USED, RELEASED, TRANSFERRED, IMPORTED, EXPORTED AND/OR RE- EXPORTED IN ANY MANNER PROHIBITED UNDER ANY APPLICABLE LAWS, INCLUDING U.S. EXPORT CONTROL LAWS REGARDING SPECIFICALLY DESIGNATED PERSONS, COUNTRIES AND NATIONALS OF COUNTRIES SUBJECT TO NATIONAL SECURITY CONTROLS. MOREOVER, THE FOREGOING SHALL SURVIVE ANY EXPIRATION OR TERMINATION OF ANY LICENSE OR AGREEMENT OR ACCESS OR USE RELATED TO THIS MATERIAL.
+
+This license forms the entire agreement regarding the subject matter hereof and supersedes all proposals and prior discussions and writings between the parties with respect thereto. This license does not affect any ownership, rights, title, or interest in, or relating to, this material. No terms of this license can be modified or waived, and no breach of this license can be excused, unless done so in a writing signed by all affected parties. Each term of this license is separately enforceable. If any term of this license is determined to be or becomes unenforceable or illegal, such term shall be reformed to the minimum extent necessary in order for this license to remain in effect in accordance with its terms as modified by such reformation. This license shall be governed by and construed in accordance with the laws of the State of Texas without regard to rules on conflicts of law of any state or jurisdiction or the United Nations Convention on the International Sale of Goods. All disputes arising out of this license shall be subject to the jurisdiction of the federal and state courts in Austin, Texas, and all defenses are hereby waived concerning personal jurisdiction and venue of these courts.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+         Copyright (c) 2006, 2007 Advanced Micro Devices, Inc.
+         &lt;p&gt;All rights reserved.&lt;/p&gt;
+
+      &lt;/div&gt;
+
+      &lt;p&gt;Redistribution and use in any form of this material and any product thereof including software in source
+         or binary forms, along with any related documentation, with or without modification (&amp;quot;this material&amp;quot;),
+         is permitted provided that the following conditions are met:&lt;/p&gt;
+
+      &lt;p&gt;Redistributions of source code of any software must retain the above copyright notice and all terms of
+         this license as part of the code.&lt;/p&gt;
+
+      &lt;p&gt;Redistributions in binary form of any software must reproduce the above copyright notice and all terms of
+         this license in any related documentation and/or other materials.&lt;/p&gt;
+
+      &lt;p&gt;Neither the names nor trademarks of Advanced Micro Devices, Inc. or any copyright holders or contributors
+         may be used to endorse or promote products derived from this material without specific prior written
+         permission.&lt;/p&gt;
+
+      &lt;p&gt;Notice about U.S. Government restricted rights: This material is provided with &amp;quot;RESTRICTED RIGHTS.&amp;quot; Use,
+         duplication or disclosure by the U.S. Government is subject to the full extent of restrictions set
+         forth in FAR52.227 and DFARS252.227 et seq., or any successor or applicable regulations. Use of this
+         material by the U.S. Government constitutes acknowledgment of the proprietary rights of Advanced Micro
+         Devices, Inc. and any copyright holders and contributors.&lt;/p&gt;
+
+      &lt;p&gt;ANY BREACH OF ANY TERM OF THIS LICENSE SHALL RESULT IN THE IMMEDIATE REVOCATION OF ALL RIGHTS TO
+         REDISTRIBUTE, ACCESS OR USE THIS MATERIAL.&lt;/p&gt;
+
+      &lt;p&gt;THIS MATERIAL IS PROVIDED BY ADVANCED MICRO DEVICES, INC. AND ANY COPYRIGHT HOLDERS AND CONTRIBUTORS &amp;quot;AS
+         IS&amp;quot; IN ITS CURRENT CONDITION AND WITHOUT ANY REPRESENTATIONS, GUARANTEE, OR WARRANTY OF ANY KIND OR IN
+         ANY WAY RELATED TO SUPPORT, INDEMNITY, ERROR FREE OR UNINTERRUPTED OPERATION, OR THAT IT IS FREE FROM
+         DEFECTS OR VIRUSES. ALL OBLIGATIONS ARE HEREBY DISCLAIMED - WHETHER EXPRESS, IMPLIED, OR STATUTORY -
+         INCLUDING, BUT NOT LIMITED TO, ANY IMPLIED WARRANTIES OF TITLE, MERCHANTABILITY, FITNESS FOR A
+         PARTICULAR PURPOSE, ACCURACY, COMPLETENESS, OPERABILITY, QUALITY OF SERVICE, OR NON-INFRINGEMENT. IN
+         NO EVENT SHALL ADVANCED MICRO DEVICES, INC. OR ANY COPYRIGHT HOLDERS OR CONTRIBUTORS BE LIABLE FOR ANY
+         DIRECT, INDIRECT, INCIDENTAL, SPECIAL, PUNITIVE, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+         NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, REVENUE, DATA, OR PROFITS;
+         OR BUSINESS INTERRUPTION) HOWEVER CAUSED OR BASED ON ANY THEORY OF LIABILITY ARISING IN ANY WAY
+         RELATED TO THIS MATERIAL, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. THE ENTIRE AND AGGREGATE
+         LIABILITY OF ADVANCED MICRO DEVICES, INC. AND ANY COPYRIGHT HOLDERS AND CONTRIBUTORS SHALL NOT EXCEED
+         TEN DOLLARS (US $10.00). ANYONE REDISTRIBUTING OR ACCESSING OR USING THIS MATERIAL ACCEPTS THIS
+         ALLOCATION OF RISK AND AGREES TO RELEASE ADVANCED MICRO DEVICES, INC. AND ANY COPYRIGHT HOLDERS AND
+         CONTRIBUTORS FROM ANY AND ALL LIABILITIES, OBLIGATIONS, CLAIMS, OR DEMANDS IN EXCESS OF TEN DOLLARS
+         (US $10.00). THE FOREGOING ARE ESSENTIAL TERMS OF THIS LICENSE AND, IF ANY OF THESE TERMS ARE
+         CONSTRUED AS UNENFORCEABLE, FAIL IN ESSENTIAL PURPOSE, OR BECOME VOID OR DETRIMENTAL TO ADVANCED MICRO
+         DEVICES, INC. OR ANY COPYRIGHT HOLDERS OR CONTRIBUTORS FOR ANY REASON, THEN ALL RIGHTS TO
+         REDISTRIBUTE, ACCESS OR USE THIS MATERIAL SHALL TERMINATE IMMEDIATELY. MOREOVER, THE FOREGOING SHALL
+         SURVIVE ANY EXPIRATION OR TERMINATION OF THIS LICENSE OR ANY AGREEMENT OR ACCESS OR USE RELATED TO
+         THIS MATERIAL.&lt;/p&gt;
+
+      &lt;p&gt;NOTICE IS HEREBY PROVIDED, AND BY REDISTRIBUTING OR ACCESSING OR USING THIS MATERIAL SUCH NOTICE IS
+         ACKNOWLEDGED, THAT THIS MATERIAL MAY BE SUBJECT TO RESTRICTIONS UNDER THE LAWS AND REGULATIONS OF THE
+         UNITED STATES OR OTHER COUNTRIES, WHICH INCLUDE BUT ARE NOT LIMITED TO, U.S. EXPORT CONTROL LAWS SUCH
+         AS THE EXPORT ADMINISTRATION REGULATIONS AND NATIONAL SECURITY CONTROLS AS DEFINED THEREUNDER, AS WELL
+         AS STATE DEPARTMENT CONTROLS UNDER THE U.S. MUNITIONS LIST. THIS MATERIAL MAY NOT BE USED, RELEASED,
+         TRANSFERRED, IMPORTED, EXPORTED AND/OR RE- EXPORTED IN ANY MANNER PROHIBITED UNDER ANY APPLICABLE
+         LAWS, INCLUDING U.S. EXPORT CONTROL LAWS REGARDING SPECIFICALLY DESIGNATED PERSONS, COUNTRIES AND
+         NATIONALS OF COUNTRIES SUBJECT TO NATIONAL SECURITY CONTROLS. MOREOVER, THE FOREGOING SHALL SURVIVE
+         ANY EXPIRATION OR TERMINATION OF ANY LICENSE OR AGREEMENT OR ACCESS OR USE RELATED TO THIS
+         MATERIAL.&lt;/p&gt;
+
+      &lt;p&gt;This license forms the entire agreement regarding the subject matter hereof and supersedes all proposals
+         and prior discussions and writings between the parties with respect thereto. This license does not
+         affect any ownership, rights, title, or interest in, or relating to, this material. No terms of this
+         license can be modified or waived, and no breach of this license can be excused, unless done so in a
+         writing signed by all affected parties. Each term of this license is separately enforceable. If any
+         term of this license is determined to be or becomes unenforceable or illegal, such term shall be
+         reformed to the minimum extent necessary in order for this license to remain in effect in accordance
+         with its terms as modified by such reformation. This license shall be governed by and construed in
+         accordance with the laws of the State of Texas without regard to rules on conflicts of law of any
+         state or jurisdiction or the United Nations Convention on the International Sale of Goods. All
+         disputes arising out of this license shall be subject to the jurisdiction of the federal and state
+         courts in Austin, Texas, and all defenses are hereby waived concerning personal jurisdiction and venue
+         of these courts.&lt;/p&gt;
+
+    </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:AMDPLPA&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;AMD&#39;s plpa_map.c License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;e38e9c5c1d5b3f3260f310c3ff02c7f7&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;Copyright (c) 2006, 2007 Advanced Micro Devices, Inc.\nAll rights reserved.\n\nRedistribution and use in any form of this material and any product thereof including software in source or binary forms, along with any related documentation, with or without modification (\&quot;this material\&quot;), is permitted provided that the following conditions are met:\n\n     Redistributions of source code of any software must retain the above copyright notice and all terms of this license as part of the code.\n\n     Redistributions in binary form of any software must reproduce the above copyright notice and all terms of this license in any related documentation and/or other materials.\n\n     Neither the names nor trademarks of Advanced Micro Devices, Inc. or any copyright holders or contributors may be used to endorse or promote products derived from this material without specific prior written permission.\n\n     Notice about U.S. Government restricted rights: This material is provided with \&quot;RESTRICTED RIGHTS.\&quot; Use, duplication or disclosure by the U.S. Government is subject to the full extent of restrictions set forth in FAR52.227 and DFARS252.227 et seq., or any successor or applicable regulations. Use of this material by the U.S. Government constitutes acknowledgment of the proprietary rights of Advanced Micro Devices, Inc. and any copyright holders and contributors.\n\n     ANY BREACH OF ANY TERM OF THIS LICENSE SHALL RESULT IN THE IMMEDIATE REVOCATION OF ALL RIGHTS TO REDISTRIBUTE, ACCESS OR USE THIS MATERIAL.\n\nTHIS MATERIAL IS PROVIDED BY ADVANCED MICRO DEVICES, INC. AND ANY COPYRIGHT HOLDERS AND CONTRIBUTORS \&quot;AS IS\&quot; IN ITS CURRENT CONDITION AND WITHOUT ANY REPRESENTATIONS, GUARANTEE, OR WARRANTY OF ANY KIND OR IN ANY WAY RELATED TO SUPPORT, INDEMNITY, ERROR FREE OR UNINTERRUPTED OPERATION, OR THAT IT IS FREE FROM DEFECTS OR VIRUSES. ALL OBLIGATIONS ARE HEREBY DISCLAIMED - WHETHER EXPRESS, IMPLIED, OR STATUTORY - INCLUDING, BUT NOT LIMITED TO, ANY IMPLIED WARRANTIES OF TITLE, MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, ACCURACY, COMPLETENESS, OPERABILITY, QUALITY OF SERVICE, OR NON-INFRINGEMENT. IN NO EVENT SHALL ADVANCED MICRO DEVICES, INC. OR ANY COPYRIGHT HOLDERS OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, PUNITIVE, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, REVENUE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED OR BASED ON ANY THEORY OF LIABILITY ARISING IN ANY WAY RELATED TO THIS MATERIAL, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. THE ENTIRE AND AGGREGATE LIABILITY OF ADVANCED MICRO DEVICES, INC. AND ANY COPYRIGHT HOLDERS AND CONTRIBUTORS SHALL NOT EXCEED TEN DOLLARS (US $10.00). ANYONE REDISTRIBUTING OR ACCESSING OR USING THIS MATERIAL ACCEPTS THIS ALLOCATION OF RISK AND AGREES TO RELEASE ADVANCED MICRO DEVICES, INC. AND ANY COPYRIGHT HOLDERS AND CONTRIBUTORS FROM ANY AND ALL LIABILITIES, OBLIGATIONS, CLAIMS, OR DEMANDS IN EXCESS OF TEN DOLLARS (US $10.00). THE FOREGOING ARE ESSENTIAL TERMS OF THIS LICENSE AND, IF ANY OF THESE TERMS ARE CONSTRUED AS UNENFORCEABLE, FAIL IN ESSENTIAL PURPOSE, OR BECOME VOID OR DETRIMENTAL TO ADVANCED MICRO DEVICES, INC. OR ANY COPYRIGHT HOLDERS OR CONTRIBUTORS FOR ANY REASON, THEN ALL RIGHTS TO REDISTRIBUTE, ACCESS OR USE THIS MATERIAL SHALL TERMINATE IMMEDIATELY. MOREOVER, THE FOREGOING SHALL SURVIVE ANY EXPIRATION OR TERMINATION OF THIS LICENSE OR ANY AGREEMENT OR ACCESS OR USE RELATED TO THIS MATERIAL.\n\nNOTICE IS HEREBY PROVIDED, AND BY REDISTRIBUTING OR ACCESSING OR USING THIS MATERIAL SUCH NOTICE IS ACKNOWLEDGED, THAT THIS MATERIAL MAY BE SUBJECT TO RESTRICTIONS UNDER THE LAWS AND REGULATIONS OF THE UNITED STATES OR OTHER COUNTRIES, WHICH INCLUDE BUT ARE NOT LIMITED TO, U.S. EXPORT CONTROL LAWS SUCH AS THE EXPORT ADMINISTRATION REGULATIONS AND NATIONAL SECURITY CONTROLS AS DEFINED THEREUNDER, AS WELL AS STATE DEPARTMENT CONTROLS UNDER THE U.S. MUNITIONS LIST. THIS MATERIAL MAY NOT BE USED, RELEASED, TRANSFERRED, IMPORTED, EXPORTED AND/OR RE- EXPORTED IN ANY MANNER PROHIBITED UNDER ANY APPLICABLE LAWS, INCLUDING U.S. EXPORT CONTROL LAWS REGARDING SPECIFICALLY DESIGNATED PERSONS, COUNTRIES AND NATIONALS OF COUNTRIES SUBJECT TO NATIONAL SECURITY CONTROLS. MOREOVER, THE FOREGOING SHALL SURVIVE ANY EXPIRATION OR TERMINATION OF ANY LICENSE OR AGREEMENT OR ACCESS OR USE RELATED TO THIS MATERIAL.\n\nThis license forms the entire agreement regarding the subject matter hereof and supersedes all proposals and prior discussions and writings between the parties with respect thereto. This license does not affect any ownership, rights, title, or interest in, or relating to, this material. No terms of this license can be modified or waived, and no breach of this license can be excused, unless done so in a writing signed by all affected parties. Each term of this license is separately enforceable. If any term of this license is determined to be or becomes unenforceable or illegal, such term shall be reformed to the minimum extent necessary in order for this license to remain in effect in accordance with its terms as modified by such reformation. This license shall be governed by and construed in accordance with the laws of the State of Texas without regard to rules on conflicts of law of any state or jurisdiction or the United Nations Convention on the International Sale of Goods. All disputes arising out of this license shall be subject to the jurisdiction of the federal and state courts in Austin, Texas, and all defenses are hereby waived concerning personal jurisdiction and venue of these courts.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n      &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n         Copyright (c) 2006, 2007 Advanced Micro Devices, Inc.\n         &lt;p&gt;All rights reserved.&lt;/p&gt;\n\n      &lt;/div&gt;\n\n      &lt;p&gt;Redistribution and use in any form of this material and any product thereof including software in source\n         or binary forms, along with any related documentation, with or without modification (&amp;quot;this material&amp;quot;),\n         is permitted provided that the following conditions are met:&lt;/p&gt;\n\n      &lt;p&gt;Redistributions of source code of any software must retain the above copyright notice and all terms of\n         this license as part of the code.&lt;/p&gt;\n\n      &lt;p&gt;Redistributions in binary form of any software must reproduce the above copyright notice and all terms of\n         this license in any related documentation and/or other materials.&lt;/p&gt;\n\n      &lt;p&gt;Neither the names nor trademarks of Advanced Micro Devices, Inc. or any copyright holders or contributors\n         may be used to endorse or promote products derived from this material without specific prior written\n         permission.&lt;/p&gt;\n\n      &lt;p&gt;Notice about U.S. Government restricted rights: This material is provided with &amp;quot;RESTRICTED RIGHTS.&amp;quot; Use,\n         duplication or disclosure by the U.S. Government is subject to the full extent of restrictions set\n         forth in FAR52.227 and DFARS252.227 et seq., or any successor or applicable regulations. Use of this\n         material by the U.S. Government constitutes acknowledgment of the proprietary rights of Advanced Micro\n         Devices, Inc. and any copyright holders and contributors.&lt;/p&gt;\n\n      &lt;p&gt;ANY BREACH OF ANY TERM OF THIS LICENSE SHALL RESULT IN THE IMMEDIATE REVOCATION OF ALL RIGHTS TO\n         REDISTRIBUTE, ACCESS OR USE THIS MATERIAL.&lt;/p&gt;\n\n      &lt;p&gt;THIS MATERIAL IS PROVIDED BY ADVANCED MICRO DEVICES, INC. AND ANY COPYRIGHT HOLDERS AND CONTRIBUTORS &amp;quot;AS\n         IS&amp;quot; IN ITS CURRENT CONDITION AND WITHOUT ANY REPRESENTATIONS, GUARANTEE, OR WARRANTY OF ANY KIND OR IN\n         ANY WAY RELATED TO SUPPORT, INDEMNITY, ERROR FREE OR UNINTERRUPTED OPERATION, OR THAT IT IS FREE FROM\n         DEFECTS OR VIRUSES. ALL OBLIGATIONS ARE HEREBY DISCLAIMED - WHETHER EXPRESS, IMPLIED, OR STATUTORY -\n         INCLUDING, BUT NOT LIMITED TO, ANY IMPLIED WARRANTIES OF TITLE, MERCHANTABILITY, FITNESS FOR A\n         PARTICULAR PURPOSE, ACCURACY, COMPLETENESS, OPERABILITY, QUALITY OF SERVICE, OR NON-INFRINGEMENT. IN\n         NO EVENT SHALL ADVANCED MICRO DEVICES, INC. OR ANY COPYRIGHT HOLDERS OR CONTRIBUTORS BE LIABLE FOR ANY\n         DIRECT, INDIRECT, INCIDENTAL, SPECIAL, PUNITIVE, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT\n         NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, REVENUE, DATA, OR PROFITS;\n         OR BUSINESS INTERRUPTION) HOWEVER CAUSED OR BASED ON ANY THEORY OF LIABILITY ARISING IN ANY WAY\n         RELATED TO THIS MATERIAL, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. THE ENTIRE AND AGGREGATE\n         LIABILITY OF ADVANCED MICRO DEVICES, INC. AND ANY COPYRIGHT HOLDERS AND CONTRIBUTORS SHALL NOT EXCEED\n         TEN DOLLARS (US $10.00). ANYONE REDISTRIBUTING OR ACCESSING OR USING THIS MATERIAL ACCEPTS THIS\n         ALLOCATION OF RISK AND AGREES TO RELEASE ADVANCED MICRO DEVICES, INC. AND ANY COPYRIGHT HOLDERS AND\n         CONTRIBUTORS FROM ANY AND ALL LIABILITIES, OBLIGATIONS, CLAIMS, OR DEMANDS IN EXCESS OF TEN DOLLARS\n         (US $10.00). THE FOREGOING ARE ESSENTIAL TERMS OF THIS LICENSE AND, IF ANY OF THESE TERMS ARE\n         CONSTRUED AS UNENFORCEABLE, FAIL IN ESSENTIAL PURPOSE, OR BECOME VOID OR DETRIMENTAL TO ADVANCED MICRO\n         DEVICES, INC. OR ANY COPYRIGHT HOLDERS OR CONTRIBUTORS FOR ANY REASON, THEN ALL RIGHTS TO\n         REDISTRIBUTE, ACCESS OR USE THIS MATERIAL SHALL TERMINATE IMMEDIATELY. MOREOVER, THE FOREGOING SHALL\n         SURVIVE ANY EXPIRATION OR TERMINATION OF THIS LICENSE OR ANY AGREEMENT OR ACCESS OR USE RELATED TO\n         THIS MATERIAL.&lt;/p&gt;\n\n      &lt;p&gt;NOTICE IS HEREBY PROVIDED, AND BY REDISTRIBUTING OR ACCESSING OR USING THIS MATERIAL SUCH NOTICE IS\n         ACKNOWLEDGED, THAT THIS MATERIAL MAY BE SUBJECT TO RESTRICTIONS UNDER THE LAWS AND REGULATIONS OF THE\n         UNITED STATES OR OTHER COUNTRIES, WHICH INCLUDE BUT ARE NOT LIMITED TO, U.S. EXPORT CONTROL LAWS SUCH\n         AS THE EXPORT ADMINISTRATION REGULATIONS AND NATIONAL SECURITY CONTROLS AS DEFINED THEREUNDER, AS WELL\n         AS STATE DEPARTMENT CONTROLS UNDER THE U.S. MUNITIONS LIST. THIS MATERIAL MAY NOT BE USED, RELEASED,\n         TRANSFERRED, IMPORTED, EXPORTED AND/OR RE- EXPORTED IN ANY MANNER PROHIBITED UNDER ANY APPLICABLE\n         LAWS, INCLUDING U.S. EXPORT CONTROL LAWS REGARDING SPECIFICALLY DESIGNATED PERSONS, COUNTRIES AND\n         NATIONALS OF COUNTRIES SUBJECT TO NATIONAL SECURITY CONTROLS. MOREOVER, THE FOREGOING SHALL SURVIVE\n         ANY EXPIRATION OR TERMINATION OF ANY LICENSE OR AGREEMENT OR ACCESS OR USE RELATED TO THIS\n         MATERIAL.&lt;/p&gt;\n\n      &lt;p&gt;This license forms the entire agreement regarding the subject matter hereof and supersedes all proposals\n         and prior discussions and writings between the parties with respect thereto. This license does not\n         affect any ownership, rights, title, or interest in, or relating to, this material. No terms of this\n         license can be modified or waived, and no breach of this license can be excused, unless done so in a\n         writing signed by all affected parties. Each term of this license is separately enforceable. If any\n         term of this license is determined to be or becomes unenforceable or illegal, such term shall be\n         reformed to the minimum extent necessary in order for this license to remain in effect in accordance\n         with its terms as modified by such reformation. This license shall be governed by and construed in\n         accordance with the laws of the State of Texas without regard to rules on conflicts of law of any\n         state or jurisdiction or the United Nations Convention on the International Sale of Goods. All\n         disputes arising out of this license shall be subject to the jurisdiction of the federal and state\n         courts in Austin, Texas, and all defenses are hereby waived concerning personal jurisdiction and venue\n         of these courts.&lt;/p&gt;\n\n    &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://fedoraproject.org/wiki/Licensing/AMD_plpa_map_License&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://fedoraproject.org/wiki/Licensing/AMD_plpa_map_License&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:00:57Z&quot;,
+                &quot;url&quot;: &quot;https://fedoraproject.org/wiki/Licensing/AMD_plpa_map_License&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:AMDPLPA&quot;,
+        &quot;licenseText&quot;: &quot;Copyright (c) 2006, 2007 Advanced Micro Devices, Inc.\nAll rights reserved.\n\nRedistribution and use in any form of this material and any product thereof including software in source or binary forms, along with any related documentation, with or without modification (\&quot;this material\&quot;), is permitted provided that the following conditions are met:\n\n     Redistributions of source code of any software must retain the above copyright notice and all terms of this license as part of the code.\n\n     Redistributions in binary form of any software must reproduce the above copyright notice and all terms of this license in any related documentation and/or other materials.\n\n     Neither the names nor trademarks of Advanced Micro Devices, Inc. or any copyright holders or contributors may be used to endorse or promote products derived from this material without specific prior written permission.\n\n     Notice about U.S. Government restricted rights: This material is provided with \&quot;RESTRICTED RIGHTS.\&quot; Use, duplication or disclosure by the U.S. Government is subject to the full extent of restrictions set forth in FAR52.227 and DFARS252.227 et seq., or any successor or applicable regulations. Use of this material by the U.S. Government constitutes acknowledgment of the proprietary rights of Advanced Micro Devices, Inc. and any copyright holders and contributors.\n\n     ANY BREACH OF ANY TERM OF THIS LICENSE SHALL RESULT IN THE IMMEDIATE REVOCATION OF ALL RIGHTS TO REDISTRIBUTE, ACCESS OR USE THIS MATERIAL.\n\nTHIS MATERIAL IS PROVIDED BY ADVANCED MICRO DEVICES, INC. AND ANY COPYRIGHT HOLDERS AND CONTRIBUTORS \&quot;AS IS\&quot; IN ITS CURRENT CONDITION AND WITHOUT ANY REPRESENTATIONS, GUARANTEE, OR WARRANTY OF ANY KIND OR IN ANY WAY RELATED TO SUPPORT, INDEMNITY, ERROR FREE OR UNINTERRUPTED OPERATION, OR THAT IT IS FREE FROM DEFECTS OR VIRUSES. ALL OBLIGATIONS ARE HEREBY DISCLAIMED - WHETHER EXPRESS, IMPLIED, OR STATUTORY - INCLUDING, BUT NOT LIMITED TO, ANY IMPLIED WARRANTIES OF TITLE, MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, ACCURACY, COMPLETENESS, OPERABILITY, QUALITY OF SERVICE, OR NON-INFRINGEMENT. IN NO EVENT SHALL ADVANCED MICRO DEVICES, INC. OR ANY COPYRIGHT HOLDERS OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, PUNITIVE, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, REVENUE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED OR BASED ON ANY THEORY OF LIABILITY ARISING IN ANY WAY RELATED TO THIS MATERIAL, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. THE ENTIRE AND AGGREGATE LIABILITY OF ADVANCED MICRO DEVICES, INC. AND ANY COPYRIGHT HOLDERS AND CONTRIBUTORS SHALL NOT EXCEED TEN DOLLARS (US $10.00). ANYONE REDISTRIBUTING OR ACCESSING OR USING THIS MATERIAL ACCEPTS THIS ALLOCATION OF RISK AND AGREES TO RELEASE ADVANCED MICRO DEVICES, INC. AND ANY COPYRIGHT HOLDERS AND CONTRIBUTORS FROM ANY AND ALL LIABILITIES, OBLIGATIONS, CLAIMS, OR DEMANDS IN EXCESS OF TEN DOLLARS (US $10.00). THE FOREGOING ARE ESSENTIAL TERMS OF THIS LICENSE AND, IF ANY OF THESE TERMS ARE CONSTRUED AS UNENFORCEABLE, FAIL IN ESSENTIAL PURPOSE, OR BECOME VOID OR DETRIMENTAL TO ADVANCED MICRO DEVICES, INC. OR ANY COPYRIGHT HOLDERS OR CONTRIBUTORS FOR ANY REASON, THEN ALL RIGHTS TO REDISTRIBUTE, ACCESS OR USE THIS MATERIAL SHALL TERMINATE IMMEDIATELY. MOREOVER, THE FOREGOING SHALL SURVIVE ANY EXPIRATION OR TERMINATION OF THIS LICENSE OR ANY AGREEMENT OR ACCESS OR USE RELATED TO THIS MATERIAL.\n\nNOTICE IS HEREBY PROVIDED, AND BY REDISTRIBUTING OR ACCESSING OR USING THIS MATERIAL SUCH NOTICE IS ACKNOWLEDGED, THAT THIS MATERIAL MAY BE SUBJECT TO RESTRICTIONS UNDER THE LAWS AND REGULATIONS OF THE UNITED STATES OR OTHER COUNTRIES, WHICH INCLUDE BUT ARE NOT LIMITED TO, U.S. EXPORT CONTROL LAWS SUCH AS THE EXPORT ADMINISTRATION REGULATIONS AND NATIONAL SECURITY CONTROLS AS DEFINED THEREUNDER, AS WELL AS STATE DEPARTMENT CONTROLS UNDER THE U.S. MUNITIONS LIST. THIS MATERIAL MAY NOT BE USED, RELEASED, TRANSFERRED, IMPORTED, EXPORTED AND/OR RE- EXPORTED IN ANY MANNER PROHIBITED UNDER ANY APPLICABLE LAWS, INCLUDING U.S. EXPORT CONTROL LAWS REGARDING SPECIFICALLY DESIGNATED PERSONS, COUNTRIES AND NATIONALS OF COUNTRIES SUBJECT TO NATIONAL SECURITY CONTROLS. MOREOVER, THE FOREGOING SHALL SURVIVE ANY EXPIRATION OR TERMINATION OF ANY LICENSE OR AGREEMENT OR ACCESS OR USE RELATED TO THIS MATERIAL.\n\nThis license forms the entire agreement regarding the subject matter hereof and supersedes all proposals and prior discussions and writings between the parties with respect thereto. This license does not affect any ownership, rights, title, or interest in, or relating to, this material. No terms of this license can be modified or waived, and no breach of this license can be excused, unless done so in a writing signed by all affected parties. Each term of this license is separately enforceable. If any term of this license is determined to be or becomes unenforceable or illegal, such term shall be reformed to the minimum extent necessary in order for this license to remain in effect in accordance with its terms as modified by such reformation. This license shall be governed by and construed in accordance with the laws of the State of Texas without regard to rules on conflicts of law of any state or jurisdiction or the United Nations Convention on the International Sale of Goods. All disputes arising out of this license shall be subject to the jurisdiction of the federal and state courts in Austin, Texas, and all defenses are hereby waived concerning personal jurisdiction and venue of these courts.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n      &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n         Copyright (c) 2006, 2007 Advanced Micro Devices, Inc.\n         &lt;p&gt;All rights reserved.&lt;/p&gt;\n\n      &lt;/div&gt;\n\n      &lt;p&gt;Redistribution and use in any form of this material and any product thereof including software in source\n         or binary forms, along with any related documentation, with or without modification (&amp;quot;this material&amp;quot;),\n         is permitted provided that the following conditions are met:&lt;/p&gt;\n\n      &lt;p&gt;Redistributions of source code of any software must retain the above copyright notice and all terms of\n         this license as part of the code.&lt;/p&gt;\n\n      &lt;p&gt;Redistributions in binary form of any software must reproduce the above copyright notice and all terms of\n         this license in any related documentation and/or other materials.&lt;/p&gt;\n\n      &lt;p&gt;Neither the names nor trademarks of Advanced Micro Devices, Inc. or any copyright holders or contributors\n         may be used to endorse or promote products derived from this material without specific prior written\n         permission.&lt;/p&gt;\n\n      &lt;p&gt;Notice about U.S. Government restricted rights: This material is provided with &amp;quot;RESTRICTED RIGHTS.&amp;quot; Use,\n         duplication or disclosure by the U.S. Government is subject to the full extent of restrictions set\n         forth in FAR52.227 and DFARS252.227 et seq., or any successor or applicable regulations. Use of this\n         material by the U.S. Government constitutes acknowledgment of the proprietary rights of Advanced Micro\n         Devices, Inc. and any copyright holders and contributors.&lt;/p&gt;\n\n      &lt;p&gt;ANY BREACH OF ANY TERM OF THIS LICENSE SHALL RESULT IN THE IMMEDIATE REVOCATION OF ALL RIGHTS TO\n         REDISTRIBUTE, ACCESS OR USE THIS MATERIAL.&lt;/p&gt;\n\n      &lt;p&gt;THIS MATERIAL IS PROVIDED BY ADVANCED MICRO DEVICES, INC. AND ANY COPYRIGHT HOLDERS AND CONTRIBUTORS &amp;quot;AS\n         IS&amp;quot; IN ITS CURRENT CONDITION AND WITHOUT ANY REPRESENTATIONS, GUARANTEE, OR WARRANTY OF ANY KIND OR IN\n         ANY WAY RELATED TO SUPPORT, INDEMNITY, ERROR FREE OR UNINTERRUPTED OPERATION, OR THAT IT IS FREE FROM\n         DEFECTS OR VIRUSES. ALL OBLIGATIONS ARE HEREBY DISCLAIMED - WHETHER EXPRESS, IMPLIED, OR STATUTORY -\n         INCLUDING, BUT NOT LIMITED TO, ANY IMPLIED WARRANTIES OF TITLE, MERCHANTABILITY, FITNESS FOR A\n         PARTICULAR PURPOSE, ACCURACY, COMPLETENESS, OPERABILITY, QUALITY OF SERVICE, OR NON-INFRINGEMENT. IN\n         NO EVENT SHALL ADVANCED MICRO DEVICES, INC. OR ANY COPYRIGHT HOLDERS OR CONTRIBUTORS BE LIABLE FOR ANY\n         DIRECT, INDIRECT, INCIDENTAL, SPECIAL, PUNITIVE, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT\n         NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, REVENUE, DATA, OR PROFITS;\n         OR BUSINESS INTERRUPTION) HOWEVER CAUSED OR BASED ON ANY THEORY OF LIABILITY ARISING IN ANY WAY\n         RELATED TO THIS MATERIAL, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. THE ENTIRE AND AGGREGATE\n         LIABILITY OF ADVANCED MICRO DEVICES, INC. AND ANY COPYRIGHT HOLDERS AND CONTRIBUTORS SHALL NOT EXCEED\n         TEN DOLLARS (US $10.00). ANYONE REDISTRIBUTING OR ACCESSING OR USING THIS MATERIAL ACCEPTS THIS\n         ALLOCATION OF RISK AND AGREES TO RELEASE ADVANCED MICRO DEVICES, INC. AND ANY COPYRIGHT HOLDERS AND\n         CONTRIBUTORS FROM ANY AND ALL LIABILITIES, OBLIGATIONS, CLAIMS, OR DEMANDS IN EXCESS OF TEN DOLLARS\n         (US $10.00). THE FOREGOING ARE ESSENTIAL TERMS OF THIS LICENSE AND, IF ANY OF THESE TERMS ARE\n         CONSTRUED AS UNENFORCEABLE, FAIL IN ESSENTIAL PURPOSE, OR BECOME VOID OR DETRIMENTAL TO ADVANCED MICRO\n         DEVICES, INC. OR ANY COPYRIGHT HOLDERS OR CONTRIBUTORS FOR ANY REASON, THEN ALL RIGHTS TO\n         REDISTRIBUTE, ACCESS OR USE THIS MATERIAL SHALL TERMINATE IMMEDIATELY. MOREOVER, THE FOREGOING SHALL\n         SURVIVE ANY EXPIRATION OR TERMINATION OF THIS LICENSE OR ANY AGREEMENT OR ACCESS OR USE RELATED TO\n         THIS MATERIAL.&lt;/p&gt;\n\n      &lt;p&gt;NOTICE IS HEREBY PROVIDED, AND BY REDISTRIBUTING OR ACCESSING OR USING THIS MATERIAL SUCH NOTICE IS\n         ACKNOWLEDGED, THAT THIS MATERIAL MAY BE SUBJECT TO RESTRICTIONS UNDER THE LAWS AND REGULATIONS OF THE\n         UNITED STATES OR OTHER COUNTRIES, WHICH INCLUDE BUT ARE NOT LIMITED TO, U.S. EXPORT CONTROL LAWS SUCH\n         AS THE EXPORT ADMINISTRATION REGULATIONS AND NATIONAL SECURITY CONTROLS AS DEFINED THEREUNDER, AS WELL\n         AS STATE DEPARTMENT CONTROLS UNDER THE U.S. MUNITIONS LIST. THIS MATERIAL MAY NOT BE USED, RELEASED,\n         TRANSFERRED, IMPORTED, EXPORTED AND/OR RE- EXPORTED IN ANY MANNER PROHIBITED UNDER ANY APPLICABLE\n         LAWS, INCLUDING U.S. EXPORT CONTROL LAWS REGARDING SPECIFICALLY DESIGNATED PERSONS, COUNTRIES AND\n         NATIONALS OF COUNTRIES SUBJECT TO NATIONAL SECURITY CONTROLS. MOREOVER, THE FOREGOING SHALL SURVIVE\n         ANY EXPIRATION OR TERMINATION OF ANY LICENSE OR AGREEMENT OR ACCESS OR USE RELATED TO THIS\n         MATERIAL.&lt;/p&gt;\n\n      &lt;p&gt;This license forms the entire agreement regarding the subject matter hereof and supersedes all proposals\n         and prior discussions and writings between the parties with respect thereto. This license does not\n         affect any ownership, rights, title, or interest in, or relating to, this material. No terms of this\n         license can be modified or waived, and no breach of this license can be excused, unless done so in a\n         writing signed by all affected parties. Each term of this license is separately enforceable. If any\n         term of this license is determined to be or becomes unenforceable or illegal, such term shall be\n         reformed to the minimum extent necessary in order for this license to remain in effect in accordance\n         with its terms as modified by such reformation. This license shall be governed by and construed in\n         accordance with the laws of the State of Texas without regard to rules on conflicts of law of any\n         state or jurisdiction or the United Nations Convention on the International Sale of Goods. All\n         disputes arising out of this license shall be subject to the jurisdiction of the federal and state\n         courts in Austin, Texas, and all defenses are hereby waived concerning personal jurisdiction and venue\n         of these courts.&lt;/p&gt;\n\n    &quot;,
+        &quot;name&quot;: &quot;AMD&#39;s plpa_map.c License&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://fedoraproject.org/wiki/Licensing/AMD_plpa_map_License&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;Copyright (c) 2006, 2007 Advanced Micro Devices, Inc.  All rights reserved.  \&quot;;match=\&quot;.{0,5000}\&quot;&gt;&gt;\n\nRedistribution and use in any form of this material and any product thereof including software in source or binary forms, along with any related documentation, with or without modification (\&quot;this material\&quot;), is permitted provided that the following conditions are met:\n\nRedistributions of source code of any software must retain the above copyright notice and all terms of this license as part of the code.\n\nRedistributions in binary form of any software must reproduce the above copyright notice and all terms of this license in any related documentation and/or other materials.\n\nNeither the names nor trademarks of Advanced Micro Devices, Inc. or any copyright holders or contributors may be used to endorse or promote products derived from this material without specific prior written permission.\n\nNotice about U.S. Government restricted rights: This material is provided with \&quot;RESTRICTED RIGHTS.\&quot; Use, duplication or disclosure by the U.S. Government is subject to the full extent of restrictions set forth in FAR52.227 and DFARS252.227 et seq., or any successor or applicable regulations. Use of this material by the U.S. Government constitutes acknowledgment of the proprietary rights of Advanced Micro Devices, Inc. and any copyright holders and contributors.\n\nANY BREACH OF ANY TERM OF THIS LICENSE SHALL RESULT IN THE IMMEDIATE REVOCATION OF ALL RIGHTS TO REDISTRIBUTE, ACCESS OR USE THIS MATERIAL.\n\nTHIS MATERIAL IS PROVIDED BY ADVANCED MICRO DEVICES, INC. AND ANY COPYRIGHT HOLDERS AND CONTRIBUTORS \&quot;AS IS\&quot; IN ITS CURRENT CONDITION AND WITHOUT ANY REPRESENTATIONS, GUARANTEE, OR WARRANTY OF ANY KIND OR IN ANY WAY RELATED TO SUPPORT, INDEMNITY, ERROR FREE OR UNINTERRUPTED OPERATION, OR THAT IT IS FREE FROM DEFECTS OR VIRUSES. ALL OBLIGATIONS ARE HEREBY DISCLAIMED - WHETHER EXPRESS, IMPLIED, OR STATUTORY - INCLUDING, BUT NOT LIMITED TO, ANY IMPLIED WARRANTIES OF TITLE, MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, ACCURACY, COMPLETENESS, OPERABILITY, QUALITY OF SERVICE, OR NON-INFRINGEMENT. IN NO EVENT SHALL ADVANCED MICRO DEVICES, INC. OR ANY COPYRIGHT HOLDERS OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, PUNITIVE, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, REVENUE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED OR BASED ON ANY THEORY OF LIABILITY ARISING IN ANY WAY RELATED TO THIS MATERIAL, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. THE ENTIRE AND AGGREGATE LIABILITY OF ADVANCED MICRO DEVICES, INC. AND ANY COPYRIGHT HOLDERS AND CONTRIBUTORS SHALL NOT EXCEED TEN DOLLARS (US $10.00). ANYONE REDISTRIBUTING OR ACCESSING OR USING THIS MATERIAL ACCEPTS THIS ALLOCATION OF RISK AND AGREES TO RELEASE ADVANCED MICRO DEVICES, INC. AND ANY COPYRIGHT HOLDERS AND CONTRIBUTORS FROM ANY AND ALL LIABILITIES, OBLIGATIONS, CLAIMS, OR DEMANDS IN EXCESS OF TEN DOLLARS (US $10.00). THE FOREGOING ARE ESSENTIAL TERMS OF THIS LICENSE AND, IF ANY OF THESE TERMS ARE CONSTRUED AS UNENFORCEABLE, FAIL IN ESSENTIAL PURPOSE, OR BECOME VOID OR DETRIMENTAL TO ADVANCED MICRO DEVICES, INC. OR ANY COPYRIGHT HOLDERS OR CONTRIBUTORS FOR ANY REASON, THEN ALL RIGHTS TO REDISTRIBUTE, ACCESS OR USE THIS MATERIAL SHALL TERMINATE IMMEDIATELY. MOREOVER, THE FOREGOING SHALL SURVIVE ANY EXPIRATION OR TERMINATION OF THIS LICENSE OR ANY AGREEMENT OR ACCESS OR USE RELATED TO THIS MATERIAL.\n\nNOTICE IS HEREBY PROVIDED, AND BY REDISTRIBUTING OR ACCESSING OR USING THIS MATERIAL SUCH NOTICE IS ACKNOWLEDGED, THAT THIS MATERIAL MAY BE SUBJECT TO RESTRICTIONS UNDER THE LAWS AND REGULATIONS OF THE UNITED STATES OR OTHER COUNTRIES, WHICH INCLUDE BUT ARE NOT LIMITED TO, U.S. EXPORT CONTROL LAWS SUCH AS THE EXPORT ADMINISTRATION REGULATIONS AND NATIONAL SECURITY CONTROLS AS DEFINED THEREUNDER, AS WELL AS STATE DEPARTMENT CONTROLS UNDER THE U.S. MUNITIONS LIST. THIS MATERIAL MAY NOT BE USED, RELEASED, TRANSFERRED, IMPORTED, EXPORTED AND/OR RE- EXPORTED IN ANY MANNER PROHIBITED UNDER ANY APPLICABLE LAWS, INCLUDING U.S. EXPORT CONTROL LAWS REGARDING SPECIFICALLY DESIGNATED PERSONS, COUNTRIES AND NATIONALS OF COUNTRIES SUBJECT TO NATIONAL SECURITY CONTROLS. MOREOVER, THE FOREGOING SHALL SURVIVE ANY EXPIRATION OR TERMINATION OF ANY LICENSE OR AGREEMENT OR ACCESS OR USE RELATED TO THIS MATERIAL.\n\nThis license forms the entire agreement regarding the subject matter hereof and supersedes all proposals and prior discussions and writings between the parties with respect thereto. This license does not affect any ownership, rights, title, or interest in, or relating to, this material. No terms of this license can be modified or waived, and no breach of this license can be excused, unless done so in a writing signed by all affected parties. Each term of this license is separately enforceable. If any term of this license is determined to be or becomes unenforceable or illegal, such term shall be reformed to the minimum extent necessary in order for this license to remain in effect in accordance with its terms as modified by such reformation. This license shall be governed by and construed in accordance with the laws of the State of Texas without regard to rules on conflicts of law of any state or jurisdiction or the United Nations Convention on the International Sale of Goods. All disputes arising out of this license shall be subject to the jurisdiction of the federal and state courts in Austin, Texas, and all defenses are hereby waived concerning personal jurisdiction and venue of these courts.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/c8f6ceb4790a355b39b72b13a81b4095">FedoraEntry:c8f6ceb4790a355b39b72b13a81b4095</a> for <a href="/?license=Fedora:AMDPLPA"><span class="licensename"><span class="namespace">Fedora:</span>AMDPLPA</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>AMDPLPA</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>AMDPLPA</span></li></ul></li><li><b>other LicenseName Hints (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">AMD&#39;s plpa_map.c License</span></li><li><span class="licensename">AMDPLPA</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:c8f6ceb4790a355b39b72b13a81b4095">[<a href="/fact/FedoraEntry/c8f6ceb4790a355b39b72b13a81b4095">FedoraEntry</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/AMD_plpa_map_License" target="_blank">https://fedoraproject.org/wiki/Licensing/AMD_plpa_map_License</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:AMDPLPA&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:AMDPLPA&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;AMD&#39;s plpa_map.c License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;AMDPLPA&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;c8f6ceb4790a355b39b72b13a81b4095&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://fedoraproject.org/wiki/Licensing/AMD_plpa_map_License&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [
+                &quot;AMDPLPA&quot;
+            ],
+            &quot;_legacy_names&quot;: [
+                &quot;AMD&#39;s plpa_map.c License&quot;
+            ],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;AMDPLPA&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:AMDPLPA&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: [
+                &quot;https://fedoraproject.org/wiki/Licensing/AMD_plpa_map_License&quot;
+            ]
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/BlueOakCouncil">BlueOakCouncil</a>: <a href="/fact/BlueOakCouncil/7ee0c2f3febb567855da0589edadf450">BlueOakCouncil:7ee0c2f3febb567855da0589edadf450</a> for <a href="/?license=BlueOak:AMDPLPA"><span class="licensename"><span class="namespace">BlueOak:</span>AMDPLPA</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">BlueOak:</span>AMDPLPA</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">AMD&#39;s plpa_map.c License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="BlueOakCouncil:7ee0c2f3febb567855da0589edadf450">[<a href="/fact/BlueOakCouncil/7ee0c2f3febb567855da0589edadf450">BlueOakCouncil</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="These licenses lack important but nonessential elements of permissive open software licenses or impose additional requirements or restrictions, such as BSD-style prohibitions against endorsement and promotion.">BlueOakCouncil: <b style="">Bronze</b></span><span class="provided-by">(provided by: <span title="BlueOakCouncil:7ee0c2f3febb567855da0589edadf450">[<a href="/fact/BlueOakCouncil/7ee0c2f3febb567855da0589edadf450">BlueOakCouncil</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://spdx.org/licenses/AMDPLPA.html" target="_blank">https://spdx.org/licenses/AMDPLPA.html</a></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;BlueOak:AMDPLPA&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;AMD&#39;s plpa_map.c License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;BlueOakCouncil&quot;,
+        &quot;7ee0c2f3febb567855da0589edadf450&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;BlueOakCouncil&quot;,
+                        &quot;Bronze&quot;,
+                        {
+                            &quot;contents&quot;: &quot;These licenses lack important but nonessential elements of permissive open software licenses or impose additional requirements or restrictions, such as BSD-style prohibitions against endorsement and promotion.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NeutralLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://spdx.org/licenses/AMDPLPA.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;contents&quot;: [
+            &quot;Bronze&quot;,
+            &quot;These licenses lack important but nonessential elements of permissive open software licenses or impose additional requirements or restrictions, such as BSD-style prohibitions against endorsement and promotion.&quot;,
+            {
+                &quot;_id&quot;: &quot;AMDPLPA&quot;,
+                &quot;_name&quot;: &quot;AMD&#39;s plpa_map.c License&quot;,
+                &quot;_url&quot;: &quot;https://spdx.org/licenses/AMDPLPA.html&quot;
+            }
+        ],
+        &quot;tag&quot;: &quot;BOCPermissive&quot;
+    },
+    &quot;type&quot;: &quot;BlueOakCouncil&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/b720cb23529334a168315295a8a57000">ScancodeData:b720cb23529334a168315295a8a57000</a> for <a href="/?license=scancode:amdplpa"><span class="licensename"><span class="namespace">scancode:</span>amdplpa</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>amdplpa</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">AMD PLPA License</span></li><li><span class="licensename">AMD PLPA License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:b720cb23529334a168315295a8a57000">[<a href="/fact/ScancodeData/b720cb23529334a168315295a8a57000">ScancodeData</a>]</span>)</span></li></ul><h3>Other Statements</h3><ul><li>https://fedoraproject.org/wiki/Licensing/AMD_plpa_map_License</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Redistribution and use in any form of this material and any product thereof including
+software in source or binary forms, along with any related documentation, with or
+without modification (&quot;this material&quot;), is permitted provided that the following
+conditions are met:
+
+     Redistributions of source code of any software must retain the above copyright
+     notice and all terms of this license as part of the code.
+
+     Redistributions in binary form of any software must reproduce the above
+     copyright notice and all terms of this license in any related documentation
+     and/or other materials.
+
+     Neither the names nor trademarks of Advanced Micro Devices, Inc. or any
+     copyright holders or contributors may be used to endorse or promote products
+     derived from this material without specific prior written permission.
+
+     Notice about U.S. Government restricted rights: This material is provided with
+     &quot;RESTRICTED RIGHTS.&quot; Use, duplication or disclosure by the U.S. Government is
+     subject to the full extent of restrictions set forth in FAR52.227 and
+     DFARS252.227 et seq., or any successor or applicable regulations. Use of this
+     material by the U.S. Government constitutes acknowledgment of the proprietary
+     rights of Advanced Micro Devices, Inc. and any copyright holders and
+     contributors.
+
+     ANY BREACH OF ANY TERM OF THIS LICENSE SHALL RESULT IN THE IMMEDIATE REVOCATION
+     OF ALL RIGHTS TO REDISTRIBUTE, ACCESS OR USE THIS MATERIAL.
+
+THIS MATERIAL IS PROVIDED BY ADVANCED MICRO DEVICES, INC. AND ANY COPYRIGHT HOLDERS
+AND CONTRIBUTORS &quot;AS IS&quot; IN ITS CURRENT CONDITION AND WITHOUT ANY REPRESENTATIONS,
+GUARANTEE, OR WARRANTY OF ANY KIND OR IN ANY WAY RELATED TO SUPPORT, INDEMNITY, ERROR
+FREE OR UNINTERRUPTED OPERATION, OR THAT IT IS FREE FROM DEFECTS OR VIRUSES. ALL
+OBLIGATIONS ARE HEREBY DISCLAIMED - WHETHER EXPRESS, IMPLIED, OR STATUTORY -
+INCLUDING, BUT NOT LIMITED TO, ANY IMPLIED WARRANTIES OF TITLE, MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE, ACCURACY, COMPLETENESS, OPERABILITY, QUALITY OF
+SERVICE, OR NON-INFRINGEMENT. IN NO EVENT SHALL ADVANCED MICRO DEVICES, INC. OR ANY
+COPYRIGHT HOLDERS OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, PUNITIVE, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED
+TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, REVENUE, DATA, OR
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED OR BASED ON ANY THEORY OF LIABILITY
+ARISING IN ANY WAY RELATED TO THIS MATERIAL, EVEN IF ADVISED OF THE POSSIBILITY OF
+SUCH DAMAGE. THE ENTIRE AND AGGREGATE LIABILITY OF ADVANCED MICRO DEVICES, INC. AND
+ANY COPYRIGHT HOLDERS AND CONTRIBUTORS SHALL NOT EXCEED TEN DOLLARS (US $10.00).
+ANYONE REDISTRIBUTING OR ACCESSING OR USING THIS MATERIAL ACCEPTS THIS ALLOCATION OF
+RISK AND AGREES TO RELEASE ADVANCED MICRO DEVICES, INC. AND ANY COPYRIGHT HOLDERS AND
+CONTRIBUTORS FROM ANY AND ALL LIABILITIES, OBLIGATIONS, CLAIMS, OR DEMANDS IN EXCESS
+OF TEN DOLLARS (US $10.00). THE FOREGOING ARE ESSENTIAL TERMS OF THIS LICENSE AND, IF
+ANY OF THESE TERMS ARE CONSTRUED AS UNENFORCEABLE, FAIL IN ESSENTIAL PURPOSE, OR
+BECOME VOID OR DETRIMENTAL TO ADVANCED MICRO DEVICES, INC. OR ANY COPYRIGHT HOLDERS
+OR CONTRIBUTORS FOR ANY REASON, THEN ALL RIGHTS TO REDISTRIBUTE, ACCESS OR USE THIS
+MATERIAL SHALL TERMINATE IMMEDIATELY. MOREOVER, THE FOREGOING SHALL SURVIVE ANY
+EXPIRATION OR TERMINATION OF THIS LICENSE OR ANY AGREEMENT OR ACCESS OR USE RELATED
+TO THIS MATERIAL.
+
+NOTICE IS HEREBY PROVIDED, AND BY REDISTRIBUTING OR ACCESSING OR USING THIS MATERIAL
+SUCH NOTICE IS ACKNOWLEDGED, THAT THIS MATERIAL MAY BE SUBJECT TO RESTRICTIONS UNDER
+THE LAWS AND REGULATIONS OF THE UNITED STATES OR OTHER COUNTRIES, WHICH INCLUDE BUT
+ARE NOT LIMITED TO, U.S. EXPORT CONTROL LAWS SUCH AS THE EXPORT ADMINISTRATION
+REGULATIONS AND NATIONAL SECURITY CONTROLS AS DEFINED THEREUNDER, AS WELL AS STATE
+DEPARTMENT CONTROLS UNDER THE U.S. MUNITIONS LIST. THIS MATERIAL MAY NOT BE USED,
+RELEASED, TRANSFERRED, IMPORTED, EXPORTED AND/OR RE- EXPORTED IN ANY MANNER
+PROHIBITED UNDER ANY APPLICABLE LAWS, INCLUDING U.S. EXPORT CONTROL LAWS REGARDING
+SPECIFICALLY DESIGNATED PERSONS, COUNTRIES AND NATIONALS OF COUNTRIES SUBJECT TO
+NATIONAL SECURITY CONTROLS. MOREOVER, THE FOREGOING SHALL SURVIVE ANY EXPIRATION OR
+TERMINATION OF ANY LICENSE OR AGREEMENT OR ACCESS OR USE RELATED TO THIS MATERIAL.
+
+This license forms the entire agreement regarding the subject matter hereof and
+supersedes all proposals and prior discussions and writings between the parties with
+respect thereto. This license does not affect any ownership, rights, title, or
+interest in, or relating to, this material. No terms of this license can be modified
+or waived, and no breach of this license can be excused, unless done so in a writing
+signed by all affected parties. Each term of this license is separately enforceable.
+If any term of this license is determined to be or becomes unenforceable or illegal,
+such term shall be reformed to the minimum extent necessary in order for this license
+to remain in effect in accordance with its terms as modified by such reformation.
+This license shall be governed by and construed in accordance with the laws of the
+State of Texas without regard to rules on conflicts of law of any state or
+jurisdiction or the United Nations Convention on the International Sale of Goods. All
+disputes arising out of this license shall be subject to the jurisdiction of the
+federal and state courts in Austin, Texas, and all defenses are hereby waived
+concerning personal jurisdiction and venue of these courts.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:amdplpa&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;AMD PLPA License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;AMD PLPA License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;b720cb23529334a168315295a8a57000&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;https://fedoraproject.org/wiki/Licensing/AMD_plpa_map_License&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;Redistribution and use in any form of this material and any product thereof including\nsoftware in source or binary forms, along with any related documentation, with or\nwithout modification (\&quot;this material\&quot;), is permitted provided that the following\nconditions are met:\n\n     Redistributions of source code of any software must retain the above copyright\n     notice and all terms of this license as part of the code.\n\n     Redistributions in binary form of any software must reproduce the above\n     copyright notice and all terms of this license in any related documentation\n     and/or other materials.\n\n     Neither the names nor trademarks of Advanced Micro Devices, Inc. or any\n     copyright holders or contributors may be used to endorse or promote products\n     derived from this material without specific prior written permission.\n\n     Notice about U.S. Government restricted rights: This material is provided with\n     \&quot;RESTRICTED RIGHTS.\&quot; Use, duplication or disclosure by the U.S. Government is\n     subject to the full extent of restrictions set forth in FAR52.227 and\n     DFARS252.227 et seq., or any successor or applicable regulations. Use of this\n     material by the U.S. Government constitutes acknowledgment of the proprietary\n     rights of Advanced Micro Devices, Inc. and any copyright holders and\n     contributors.\n\n     ANY BREACH OF ANY TERM OF THIS LICENSE SHALL RESULT IN THE IMMEDIATE REVOCATION\n     OF ALL RIGHTS TO REDISTRIBUTE, ACCESS OR USE THIS MATERIAL.\n\nTHIS MATERIAL IS PROVIDED BY ADVANCED MICRO DEVICES, INC. AND ANY COPYRIGHT HOLDERS\nAND CONTRIBUTORS \&quot;AS IS\&quot; IN ITS CURRENT CONDITION AND WITHOUT ANY REPRESENTATIONS,\nGUARANTEE, OR WARRANTY OF ANY KIND OR IN ANY WAY RELATED TO SUPPORT, INDEMNITY, ERROR\nFREE OR UNINTERRUPTED OPERATION, OR THAT IT IS FREE FROM DEFECTS OR VIRUSES. ALL\nOBLIGATIONS ARE HEREBY DISCLAIMED - WHETHER EXPRESS, IMPLIED, OR STATUTORY -\nINCLUDING, BUT NOT LIMITED TO, ANY IMPLIED WARRANTIES OF TITLE, MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE, ACCURACY, COMPLETENESS, OPERABILITY, QUALITY OF\nSERVICE, OR NON-INFRINGEMENT. IN NO EVENT SHALL ADVANCED MICRO DEVICES, INC. OR ANY\nCOPYRIGHT HOLDERS OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,\nSPECIAL, PUNITIVE, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED\nTO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, REVENUE, DATA, OR\nPROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED OR BASED ON ANY THEORY OF LIABILITY\nARISING IN ANY WAY RELATED TO THIS MATERIAL, EVEN IF ADVISED OF THE POSSIBILITY OF\nSUCH DAMAGE. THE ENTIRE AND AGGREGATE LIABILITY OF ADVANCED MICRO DEVICES, INC. AND\nANY COPYRIGHT HOLDERS AND CONTRIBUTORS SHALL NOT EXCEED TEN DOLLARS (US $10.00).\nANYONE REDISTRIBUTING OR ACCESSING OR USING THIS MATERIAL ACCEPTS THIS ALLOCATION OF\nRISK AND AGREES TO RELEASE ADVANCED MICRO DEVICES, INC. AND ANY COPYRIGHT HOLDERS AND\nCONTRIBUTORS FROM ANY AND ALL LIABILITIES, OBLIGATIONS, CLAIMS, OR DEMANDS IN EXCESS\nOF TEN DOLLARS (US $10.00). THE FOREGOING ARE ESSENTIAL TERMS OF THIS LICENSE AND, IF\nANY OF THESE TERMS ARE CONSTRUED AS UNENFORCEABLE, FAIL IN ESSENTIAL PURPOSE, OR\nBECOME VOID OR DETRIMENTAL TO ADVANCED MICRO DEVICES, INC. OR ANY COPYRIGHT HOLDERS\nOR CONTRIBUTORS FOR ANY REASON, THEN ALL RIGHTS TO REDISTRIBUTE, ACCESS OR USE THIS\nMATERIAL SHALL TERMINATE IMMEDIATELY. MOREOVER, THE FOREGOING SHALL SURVIVE ANY\nEXPIRATION OR TERMINATION OF THIS LICENSE OR ANY AGREEMENT OR ACCESS OR USE RELATED\nTO THIS MATERIAL.\n\nNOTICE IS HEREBY PROVIDED, AND BY REDISTRIBUTING OR ACCESSING OR USING THIS MATERIAL\nSUCH NOTICE IS ACKNOWLEDGED, THAT THIS MATERIAL MAY BE SUBJECT TO RESTRICTIONS UNDER\nTHE LAWS AND REGULATIONS OF THE UNITED STATES OR OTHER COUNTRIES, WHICH INCLUDE BUT\nARE NOT LIMITED TO, U.S. EXPORT CONTROL LAWS SUCH AS THE EXPORT ADMINISTRATION\nREGULATIONS AND NATIONAL SECURITY CONTROLS AS DEFINED THEREUNDER, AS WELL AS STATE\nDEPARTMENT CONTROLS UNDER THE U.S. MUNITIONS LIST. THIS MATERIAL MAY NOT BE USED,\nRELEASED, TRANSFERRED, IMPORTED, EXPORTED AND/OR RE- EXPORTED IN ANY MANNER\nPROHIBITED UNDER ANY APPLICABLE LAWS, INCLUDING U.S. EXPORT CONTROL LAWS REGARDING\nSPECIFICALLY DESIGNATED PERSONS, COUNTRIES AND NATIONALS OF COUNTRIES SUBJECT TO\nNATIONAL SECURITY CONTROLS. MOREOVER, THE FOREGOING SHALL SURVIVE ANY EXPIRATION OR\nTERMINATION OF ANY LICENSE OR AGREEMENT OR ACCESS OR USE RELATED TO THIS MATERIAL.\n\nThis license forms the entire agreement regarding the subject matter hereof and\nsupersedes all proposals and prior discussions and writings between the parties with\nrespect thereto. This license does not affect any ownership, rights, title, or\ninterest in, or relating to, this material. No terms of this license can be modified\nor waived, and no breach of this license can be excused, unless done so in a writing\nsigned by all affected parties. Each term of this license is separately enforceable.\nIf any term of this license is determined to be or becomes unenforceable or illegal,\nsuch term shall be reformed to the minimum extent necessary in order for this license\nto remain in effect in accordance with its terms as modified by such reformation.\nThis license shall be governed by and construed in accordance with the laws of the\nState of Texas without regard to rules on conflicts of law of any state or\njurisdiction or the United Nations Convention on the International Sale of Goods. All\ndisputes arising out of this license shall be subject to the jurisdiction of the\nfederal and state courts in Austin, Texas, and all defenses are hereby waived\nconcerning personal jurisdiction and venue of these courts.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Permissive&quot;,
+        &quot;_homepageUrl&quot;: &quot;https://fedoraproject.org/wiki/Licensing/AMD_plpa_map_License&quot;,
+        &quot;_key&quot;: &quot;amdplpa&quot;,
+        &quot;_name&quot;: &quot;AMD PLPA License&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [],
+        &quot;_owner&quot;: &quot;Advanced Micro Devices&quot;,
+        &quot;_shortName&quot;: &quot;AMD PLPA License&quot;,
+        &quot;_spdxId&quot;: &quot;AMDPLPA&quot;,
+        &quot;_text&quot;: &quot;Redistribution and use in any form of this material and any product thereof including\nsoftware in source or binary forms, along with any related documentation, with or\nwithout modification (\&quot;this material\&quot;), is permitted provided that the following\nconditions are met:\n\n     Redistributions of source code of any software must retain the above copyright\n     notice and all terms of this license as part of the code.\n\n     Redistributions in binary form of any software must reproduce the above\n     copyright notice and all terms of this license in any related documentation\n     and/or other materials.\n\n     Neither the names nor trademarks of Advanced Micro Devices, Inc. or any\n     copyright holders or contributors may be used to endorse or promote products\n     derived from this material without specific prior written permission.\n\n     Notice about U.S. Government restricted rights: This material is provided with\n     \&quot;RESTRICTED RIGHTS.\&quot; Use, duplication or disclosure by the U.S. Government is\n     subject to the full extent of restrictions set forth in FAR52.227 and\n     DFARS252.227 et seq., or any successor or applicable regulations. Use of this\n     material by the U.S. Government constitutes acknowledgment of the proprietary\n     rights of Advanced Micro Devices, Inc. and any copyright holders and\n     contributors.\n\n     ANY BREACH OF ANY TERM OF THIS LICENSE SHALL RESULT IN THE IMMEDIATE REVOCATION\n     OF ALL RIGHTS TO REDISTRIBUTE, ACCESS OR USE THIS MATERIAL.\n\nTHIS MATERIAL IS PROVIDED BY ADVANCED MICRO DEVICES, INC. AND ANY COPYRIGHT HOLDERS\nAND CONTRIBUTORS \&quot;AS IS\&quot; IN ITS CURRENT CONDITION AND WITHOUT ANY REPRESENTATIONS,\nGUARANTEE, OR WARRANTY OF ANY KIND OR IN ANY WAY RELATED TO SUPPORT, INDEMNITY, ERROR\nFREE OR UNINTERRUPTED OPERATION, OR THAT IT IS FREE FROM DEFECTS OR VIRUSES. ALL\nOBLIGATIONS ARE HEREBY DISCLAIMED - WHETHER EXPRESS, IMPLIED, OR STATUTORY -\nINCLUDING, BUT NOT LIMITED TO, ANY IMPLIED WARRANTIES OF TITLE, MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE, ACCURACY, COMPLETENESS, OPERABILITY, QUALITY OF\nSERVICE, OR NON-INFRINGEMENT. IN NO EVENT SHALL ADVANCED MICRO DEVICES, INC. OR ANY\nCOPYRIGHT HOLDERS OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,\nSPECIAL, PUNITIVE, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED\nTO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, REVENUE, DATA, OR\nPROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED OR BASED ON ANY THEORY OF LIABILITY\nARISING IN ANY WAY RELATED TO THIS MATERIAL, EVEN IF ADVISED OF THE POSSIBILITY OF\nSUCH DAMAGE. THE ENTIRE AND AGGREGATE LIABILITY OF ADVANCED MICRO DEVICES, INC. AND\nANY COPYRIGHT HOLDERS AND CONTRIBUTORS SHALL NOT EXCEED TEN DOLLARS (US $10.00).\nANYONE REDISTRIBUTING OR ACCESSING OR USING THIS MATERIAL ACCEPTS THIS ALLOCATION OF\nRISK AND AGREES TO RELEASE ADVANCED MICRO DEVICES, INC. AND ANY COPYRIGHT HOLDERS AND\nCONTRIBUTORS FROM ANY AND ALL LIABILITIES, OBLIGATIONS, CLAIMS, OR DEMANDS IN EXCESS\nOF TEN DOLLARS (US $10.00). THE FOREGOING ARE ESSENTIAL TERMS OF THIS LICENSE AND, IF\nANY OF THESE TERMS ARE CONSTRUED AS UNENFORCEABLE, FAIL IN ESSENTIAL PURPOSE, OR\nBECOME VOID OR DETRIMENTAL TO ADVANCED MICRO DEVICES, INC. OR ANY COPYRIGHT HOLDERS\nOR CONTRIBUTORS FOR ANY REASON, THEN ALL RIGHTS TO REDISTRIBUTE, ACCESS OR USE THIS\nMATERIAL SHALL TERMINATE IMMEDIATELY. MOREOVER, THE FOREGOING SHALL SURVIVE ANY\nEXPIRATION OR TERMINATION OF THIS LICENSE OR ANY AGREEMENT OR ACCESS OR USE RELATED\nTO THIS MATERIAL.\n\nNOTICE IS HEREBY PROVIDED, AND BY REDISTRIBUTING OR ACCESSING OR USING THIS MATERIAL\nSUCH NOTICE IS ACKNOWLEDGED, THAT THIS MATERIAL MAY BE SUBJECT TO RESTRICTIONS UNDER\nTHE LAWS AND REGULATIONS OF THE UNITED STATES OR OTHER COUNTRIES, WHICH INCLUDE BUT\nARE NOT LIMITED TO, U.S. EXPORT CONTROL LAWS SUCH AS THE EXPORT ADMINISTRATION\nREGULATIONS AND NATIONAL SECURITY CONTROLS AS DEFINED THEREUNDER, AS WELL AS STATE\nDEPARTMENT CONTROLS UNDER THE U.S. MUNITIONS LIST. THIS MATERIAL MAY NOT BE USED,\nRELEASED, TRANSFERRED, IMPORTED, EXPORTED AND/OR RE- EXPORTED IN ANY MANNER\nPROHIBITED UNDER ANY APPLICABLE LAWS, INCLUDING U.S. EXPORT CONTROL LAWS REGARDING\nSPECIFICALLY DESIGNATED PERSONS, COUNTRIES AND NATIONALS OF COUNTRIES SUBJECT TO\nNATIONAL SECURITY CONTROLS. MOREOVER, THE FOREGOING SHALL SURVIVE ANY EXPIRATION OR\nTERMINATION OF ANY LICENSE OR AGREEMENT OR ACCESS OR USE RELATED TO THIS MATERIAL.\n\nThis license forms the entire agreement regarding the subject matter hereof and\nsupersedes all proposals and prior discussions and writings between the parties with\nrespect thereto. This license does not affect any ownership, rights, title, or\ninterest in, or relating to, this material. No terms of this license can be modified\nor waived, and no breach of this license can be excused, unless done so in a writing\nsigned by all affected parties. Each term of this license is separately enforceable.\nIf any term of this license is determined to be or becomes unenforceable or illegal,\nsuch term shall be reformed to the minimum extent necessary in order for this license\nto remain in effect in accordance with its terms as modified by such reformation.\nThis license shall be governed by and construed in accordance with the laws of the\nState of Texas without regard to rules on conflicts of law of any state or\njurisdiction or the United Nations Convention on the International Sale of Goods. All\ndisputes arising out of this license shall be subject to the jurisdiction of the\nfederal and state courts in Austin, Texas, and all defenses are hereby waived\nconcerning personal jurisdiction and venue of these courts.&quot;,
+        &quot;_textUrls&quot;: []
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/Fossology">Fossology</a>: <a href="/fact/Fossology/40c0d46b514b093999dbf215a98a9700">Fossology:40c0d46b514b093999dbf215a98a9700</a> for <a href="/?license=fossology:AMDPLPA"><span class="licensename"><span class="namespace">fossology:</span>AMDPLPA</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fossology:</span>AMDPLPA</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">AMD&#39;s plpa_map.c License</span></li></ul></li></ul></div><div><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/AMD_plpa_map_License" target="_blank">https://fedoraproject.org/wiki/Licensing/AMD_plpa_map_License</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright (c) 2006, 2007 Advanced Micro Devices, Inc.
+
+All rights reserved.
+
+Redistribution and use in any form of this material and any product thereof including software in source or binary forms, along with any related documentation, with or without modification (&quot;this material&quot;), is permitted provided that the following conditions are met:
+
+Redistributions of source code of any software must retain the above copyright notice and all terms of this license as part of the code.
+
+Redistributions in binary form of any software must reproduce the above copyright notice and all terms of this license in any related documentation and/or other materials.
+
+Neither the names nor trademarks of Advanced Micro Devices, Inc. or any copyright holders or contributors may be used to endorse or promote products derived from this material without specific prior written permission.
+
+Notice about U.S. Government restricted rights: This material is provided with &quot;RESTRICTED RIGHTS.&quot; Use, duplication or disclosure by the U.S. Government is subject to the full extent of restrictions set forth in FAR52.227 and DFARS252.227 et seq., or any successor or applicable regulations. Use of this material by the U.S. Government constitutes acknowledgment of the proprietary rights of Advanced Micro Devices, Inc. and any copyright holders and contributors.
+
+ANY BREACH OF ANY TERM OF THIS LICENSE SHALL RESULT IN THE IMMEDIATE REVOCATION OF ALL RIGHTS TO REDISTRIBUTE, ACCESS OR USE THIS MATERIAL.
+
+THIS MATERIAL IS PROVIDED BY ADVANCED MICRO DEVICES, INC. AND ANY COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; IN ITS CURRENT CONDITION AND WITHOUT ANY REPRESENTATIONS, GUARANTEE, OR WARRANTY OF ANY KIND OR IN ANY WAY RELATED TO SUPPORT, INDEMNITY, ERROR FREE OR UNINTERRUPTED OPERATION, OR THAT IT IS FREE FROM DEFECTS OR VIRUSES. ALL OBLIGATIONS ARE HEREBY DISCLAIMED - WHETHER EXPRESS, IMPLIED, OR STATUTORY - INCLUDING, BUT NOT LIMITED TO, ANY IMPLIED WARRANTIES OF TITLE, MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, ACCURACY, COMPLETENESS, OPERABILITY, QUALITY OF SERVICE, OR NON-INFRINGEMENT. IN NO EVENT SHALL ADVANCED MICRO DEVICES, INC. OR ANY COPYRIGHT HOLDERS OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, PUNITIVE, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, REVENUE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED OR BASED ON ANY THEORY OF LIABILITY ARISING IN ANY WAY RELATED TO THIS MATERIAL, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. THE ENTIRE AND AGGREGATE LIABILITY OF ADVANCED MICRO DEVICES, INC. AND ANY COPYRIGHT HOLDERS AND CONTRIBUTORS SHALL NOT EXCEED TEN DOLLARS (US $10.00). ANYONE REDISTRIBUTING OR ACCESSING OR USING THIS MATERIAL ACCEPTS THIS ALLOCATION OF RISK AND AGREES TO RELEASE ADVANCED MICRO DEVICES, INC. AND ANY COPYRIGHT HOLDERS AND CONTRIBUTORS FROM ANY AND ALL LIABILITIES, OBLIGATIONS, CLAIMS, OR DEMANDS IN EXCESS OF TEN DOLLARS (US $10.00). THE FOREGOING ARE ESSENTIAL TERMS OF THIS LICENSE AND, IF ANY OF THESE TERMS ARE CONSTRUED AS UNENFORCEABLE, FAIL IN ESSENTIAL PURPOSE, OR BECOME VOID OR DETRIMENTAL TO ADVANCED MICRO DEVICES, INC. OR ANY COPYRIGHT HOLDERS OR CONTRIBUTORS FOR ANY REASON, THEN ALL RIGHTS TO REDISTRIBUTE, ACCESS OR USE THIS MATERIAL SHALL TERMINATE IMMEDIATELY. MOREOVER, THE FOREGOING SHALL SURVIVE ANY EXPIRATION OR TERMINATION OF THIS LICENSE OR ANY AGREEMENT OR ACCESS OR USE RELATED TO THIS MATERIAL.
+
+NOTICE IS HEREBY PROVIDED, AND BY REDISTRIBUTING OR ACCESSING OR USING THIS MATERIAL SUCH NOTICE IS ACKNOWLEDGED, THAT THIS MATERIAL MAY BE SUBJECT TO RESTRICTIONS UNDER THE LAWS AND REGULATIONS OF THE UNITED STATES OR OTHER COUNTRIES, WHICH INCLUDE BUT ARE NOT LIMITED TO, U.S. EXPORT CONTROL LAWS SUCH AS THE EXPORT ADMINISTRATION REGULATIONS AND NATIONAL SECURITY CONTROLS AS DEFINED THEREUNDER, AS WELL AS STATE DEPARTMENT CONTROLS UNDER THE U.S. MUNITIONS LIST. THIS MATERIAL MAY NOT BE USED, RELEASED, TRANSFERRED, IMPORTED, EXPORTED AND/OR RE- EXPORTED IN ANY MANNER PROHIBITED UNDER ANY APPLICABLE LAWS, INCLUDING U.S. EXPORT CONTROL LAWS REGARDING SPECIFICALLY DESIGNATED PERSONS, COUNTRIES AND NATIONALS OF COUNTRIES SUBJECT TO NATIONAL SECURITY CONTROLS. MOREOVER, THE FOREGOING SHALL SURVIVE ANY EXPIRATION OR TERMINATION OF ANY LICENSE OR AGREEMENT OR ACCESS OR USE RELATED TO THIS MATERIAL.
+
+This license forms the entire agreement regarding the subject matter hereof and supersedes all proposals and prior discussions and writings between the parties with respect thereto. This license does not affect any ownership, rights, title, or interest in, or relating to, this material. No terms of this license can be modified or waived, and no breach of this license can be excused, unless done so in a writing signed by all affected parties. Each term of this license is separately enforceable. If any term of this license is determined to be or becomes unenforceable or illegal, such term shall be reformed to the minimum extent necessary in order for this license to remain in effect in accordance with its terms as modified by such reformation. This license shall be governed by and construed in accordance with the laws of the State of Texas without regard to rules on conflicts of law of any state or jurisdiction or the United Nations Convention on the International Sale of Goods. All disputes arising out of this license shall be subject to the jurisdiction of the federal and state courts in Austin, Texas, and all defenses are hereby waived concerning personal jurisdiction and venue of these courts.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;fossology:AMDPLPA&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;AMD&#39;s plpa_map.c License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;Fossology&quot;,
+        &quot;40c0d46b514b093999dbf215a98a9700&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    null,
+                    &quot;https://fedoraproject.org/wiki/Licensing/AMD_plpa_map_License&quot;
+                ],
+                &quot;tag&quot;: &quot;LicenseUrl&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;Copyright (c) 2006, 2007 Advanced Micro Devices, Inc.\n\nAll rights reserved.\n\nRedistribution and use in any form of this material and any product thereof including software in source or binary forms, along with any related documentation, with or without modification (\&quot;this material\&quot;), is permitted provided that the following conditions are met:\n\nRedistributions of source code of any software must retain the above copyright notice and all terms of this license as part of the code.\n\nRedistributions in binary form of any software must reproduce the above copyright notice and all terms of this license in any related documentation and/or other materials.\n\nNeither the names nor trademarks of Advanced Micro Devices, Inc. or any copyright holders or contributors may be used to endorse or promote products derived from this material without specific prior written permission.\n\nNotice about U.S. Government restricted rights: This material is provided with \&quot;RESTRICTED RIGHTS.\&quot; Use, duplication or disclosure by the U.S. Government is subject to the full extent of restrictions set forth in FAR52.227 and DFARS252.227 et seq., or any successor or applicable regulations. Use of this material by the U.S. Government constitutes acknowledgment of the proprietary rights of Advanced Micro Devices, Inc. and any copyright holders and contributors.\n\nANY BREACH OF ANY TERM OF THIS LICENSE SHALL RESULT IN THE IMMEDIATE REVOCATION OF ALL RIGHTS TO REDISTRIBUTE, ACCESS OR USE THIS MATERIAL.\n\nTHIS MATERIAL IS PROVIDED BY ADVANCED MICRO DEVICES, INC. AND ANY COPYRIGHT HOLDERS AND CONTRIBUTORS \&quot;AS IS\&quot; IN ITS CURRENT CONDITION AND WITHOUT ANY REPRESENTATIONS, GUARANTEE, OR WARRANTY OF ANY KIND OR IN ANY WAY RELATED TO SUPPORT, INDEMNITY, ERROR FREE OR UNINTERRUPTED OPERATION, OR THAT IT IS FREE FROM DEFECTS OR VIRUSES. ALL OBLIGATIONS ARE HEREBY DISCLAIMED - WHETHER EXPRESS, IMPLIED, OR STATUTORY - INCLUDING, BUT NOT LIMITED TO, ANY IMPLIED WARRANTIES OF TITLE, MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, ACCURACY, COMPLETENESS, OPERABILITY, QUALITY OF SERVICE, OR NON-INFRINGEMENT. IN NO EVENT SHALL ADVANCED MICRO DEVICES, INC. OR ANY COPYRIGHT HOLDERS OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, PUNITIVE, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, REVENUE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED OR BASED ON ANY THEORY OF LIABILITY ARISING IN ANY WAY RELATED TO THIS MATERIAL, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. THE ENTIRE AND AGGREGATE LIABILITY OF ADVANCED MICRO DEVICES, INC. AND ANY COPYRIGHT HOLDERS AND CONTRIBUTORS SHALL NOT EXCEED TEN DOLLARS (US $10.00). ANYONE REDISTRIBUTING OR ACCESSING OR USING THIS MATERIAL ACCEPTS THIS ALLOCATION OF RISK AND AGREES TO RELEASE ADVANCED MICRO DEVICES, INC. AND ANY COPYRIGHT HOLDERS AND CONTRIBUTORS FROM ANY AND ALL LIABILITIES, OBLIGATIONS, CLAIMS, OR DEMANDS IN EXCESS OF TEN DOLLARS (US $10.00). THE FOREGOING ARE ESSENTIAL TERMS OF THIS LICENSE AND, IF ANY OF THESE TERMS ARE CONSTRUED AS UNENFORCEABLE, FAIL IN ESSENTIAL PURPOSE, OR BECOME VOID OR DETRIMENTAL TO ADVANCED MICRO DEVICES, INC. OR ANY COPYRIGHT HOLDERS OR CONTRIBUTORS FOR ANY REASON, THEN ALL RIGHTS TO REDISTRIBUTE, ACCESS OR USE THIS MATERIAL SHALL TERMINATE IMMEDIATELY. MOREOVER, THE FOREGOING SHALL SURVIVE ANY EXPIRATION OR TERMINATION OF THIS LICENSE OR ANY AGREEMENT OR ACCESS OR USE RELATED TO THIS MATERIAL.\n\nNOTICE IS HEREBY PROVIDED, AND BY REDISTRIBUTING OR ACCESSING OR USING THIS MATERIAL SUCH NOTICE IS ACKNOWLEDGED, THAT THIS MATERIAL MAY BE SUBJECT TO RESTRICTIONS UNDER THE LAWS AND REGULATIONS OF THE UNITED STATES OR OTHER COUNTRIES, WHICH INCLUDE BUT ARE NOT LIMITED TO, U.S. EXPORT CONTROL LAWS SUCH AS THE EXPORT ADMINISTRATION REGULATIONS AND NATIONAL SECURITY CONTROLS AS DEFINED THEREUNDER, AS WELL AS STATE DEPARTMENT CONTROLS UNDER THE U.S. MUNITIONS LIST. THIS MATERIAL MAY NOT BE USED, RELEASED, TRANSFERRED, IMPORTED, EXPORTED AND/OR RE- EXPORTED IN ANY MANNER PROHIBITED UNDER ANY APPLICABLE LAWS, INCLUDING U.S. EXPORT CONTROL LAWS REGARDING SPECIFICALLY DESIGNATED PERSONS, COUNTRIES AND NATIONALS OF COUNTRIES SUBJECT TO NATIONAL SECURITY CONTROLS. MOREOVER, THE FOREGOING SHALL SURVIVE ANY EXPIRATION OR TERMINATION OF ANY LICENSE OR AGREEMENT OR ACCESS OR USE RELATED TO THIS MATERIAL.\n\nThis license forms the entire agreement regarding the subject matter hereof and supersedes all proposals and prior discussions and writings between the parties with respect thereto. This license does not affect any ownership, rights, title, or interest in, or relating to, this material. No terms of this license can be modified or waived, and no breach of this license can be excused, unless done so in a writing signed by all affected parties. Each term of this license is separately enforceable. If any term of this license is determined to be or becomes unenforceable or illegal, such term shall be reformed to the minimum extent necessary in order for this license to remain in effect in accordance with its terms as modified by such reformation. This license shall be governed by and construed in accordance with the laws of the State of Texas without regard to rules on conflicts of law of any state or jurisdiction or the United Nations Convention on the International Sale of Goods. All disputes arising out of this license shall be subject to the jurisdiction of the federal and state courts in Austin, Texas, and all defenses are hereby waived concerning personal jurisdiction and venue of these courts.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_marydone&quot;: false,
+        &quot;_rf_FSFfree&quot;: null,
+        &quot;_rf_Fedora&quot;: null,
+        &quot;_rf_GPLv2compatible&quot;: null,
+        &quot;_rf_GPLv3compatible&quot;: null,
+        &quot;_rf_OSIapproved&quot;: null,
+        &quot;_rf_active&quot;: true,
+        &quot;_rf_add_date&quot;: null,
+        &quot;_rf_copyleft&quot;: null,
+        &quot;_rf_fullname&quot;: &quot;AMD&#39;s plpa_map.c License&quot;,
+        &quot;_rf_notes&quot;: null,
+        &quot;_rf_risk&quot;: null,
+        &quot;_rf_shortname&quot;: &quot;fossology:AMDPLPA&quot;,
+        &quot;_rf_source&quot;: null,
+        &quot;_rf_spdx_compatible&quot;: true,
+        &quot;_rf_text&quot;: &quot;Copyright (c) 2006, 2007 Advanced Micro Devices, Inc.\n\nAll rights reserved.\n\nRedistribution and use in any form of this material and any product thereof including software in source or binary forms, along with any related documentation, with or without modification (\&quot;this material\&quot;), is permitted provided that the following conditions are met:\n\nRedistributions of source code of any software must retain the above copyright notice and all terms of this license as part of the code.\n\nRedistributions in binary form of any software must reproduce the above copyright notice and all terms of this license in any related documentation and/or other materials.\n\nNeither the names nor trademarks of Advanced Micro Devices, Inc. or any copyright holders or contributors may be used to endorse or promote products derived from this material without specific prior written permission.\n\nNotice about U.S. Government restricted rights: This material is provided with \&quot;RESTRICTED RIGHTS.\&quot; Use, duplication or disclosure by the U.S. Government is subject to the full extent of restrictions set forth in FAR52.227 and DFARS252.227 et seq., or any successor or applicable regulations. Use of this material by the U.S. Government constitutes acknowledgment of the proprietary rights of Advanced Micro Devices, Inc. and any copyright holders and contributors.\n\nANY BREACH OF ANY TERM OF THIS LICENSE SHALL RESULT IN THE IMMEDIATE REVOCATION OF ALL RIGHTS TO REDISTRIBUTE, ACCESS OR USE THIS MATERIAL.\n\nTHIS MATERIAL IS PROVIDED BY ADVANCED MICRO DEVICES, INC. AND ANY COPYRIGHT HOLDERS AND CONTRIBUTORS \&quot;AS IS\&quot; IN ITS CURRENT CONDITION AND WITHOUT ANY REPRESENTATIONS, GUARANTEE, OR WARRANTY OF ANY KIND OR IN ANY WAY RELATED TO SUPPORT, INDEMNITY, ERROR FREE OR UNINTERRUPTED OPERATION, OR THAT IT IS FREE FROM DEFECTS OR VIRUSES. ALL OBLIGATIONS ARE HEREBY DISCLAIMED - WHETHER EXPRESS, IMPLIED, OR STATUTORY - INCLUDING, BUT NOT LIMITED TO, ANY IMPLIED WARRANTIES OF TITLE, MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, ACCURACY, COMPLETENESS, OPERABILITY, QUALITY OF SERVICE, OR NON-INFRINGEMENT. IN NO EVENT SHALL ADVANCED MICRO DEVICES, INC. OR ANY COPYRIGHT HOLDERS OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, PUNITIVE, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, REVENUE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED OR BASED ON ANY THEORY OF LIABILITY ARISING IN ANY WAY RELATED TO THIS MATERIAL, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. THE ENTIRE AND AGGREGATE LIABILITY OF ADVANCED MICRO DEVICES, INC. AND ANY COPYRIGHT HOLDERS AND CONTRIBUTORS SHALL NOT EXCEED TEN DOLLARS (US $10.00). ANYONE REDISTRIBUTING OR ACCESSING OR USING THIS MATERIAL ACCEPTS THIS ALLOCATION OF RISK AND AGREES TO RELEASE ADVANCED MICRO DEVICES, INC. AND ANY COPYRIGHT HOLDERS AND CONTRIBUTORS FROM ANY AND ALL LIABILITIES, OBLIGATIONS, CLAIMS, OR DEMANDS IN EXCESS OF TEN DOLLARS (US $10.00). THE FOREGOING ARE ESSENTIAL TERMS OF THIS LICENSE AND, IF ANY OF THESE TERMS ARE CONSTRUED AS UNENFORCEABLE, FAIL IN ESSENTIAL PURPOSE, OR BECOME VOID OR DETRIMENTAL TO ADVANCED MICRO DEVICES, INC. OR ANY COPYRIGHT HOLDERS OR CONTRIBUTORS FOR ANY REASON, THEN ALL RIGHTS TO REDISTRIBUTE, ACCESS OR USE THIS MATERIAL SHALL TERMINATE IMMEDIATELY. MOREOVER, THE FOREGOING SHALL SURVIVE ANY EXPIRATION OR TERMINATION OF THIS LICENSE OR ANY AGREEMENT OR ACCESS OR USE RELATED TO THIS MATERIAL.\n\nNOTICE IS HEREBY PROVIDED, AND BY REDISTRIBUTING OR ACCESSING OR USING THIS MATERIAL SUCH NOTICE IS ACKNOWLEDGED, THAT THIS MATERIAL MAY BE SUBJECT TO RESTRICTIONS UNDER THE LAWS AND REGULATIONS OF THE UNITED STATES OR OTHER COUNTRIES, WHICH INCLUDE BUT ARE NOT LIMITED TO, U.S. EXPORT CONTROL LAWS SUCH AS THE EXPORT ADMINISTRATION REGULATIONS AND NATIONAL SECURITY CONTROLS AS DEFINED THEREUNDER, AS WELL AS STATE DEPARTMENT CONTROLS UNDER THE U.S. MUNITIONS LIST. THIS MATERIAL MAY NOT BE USED, RELEASED, TRANSFERRED, IMPORTED, EXPORTED AND/OR RE- EXPORTED IN ANY MANNER PROHIBITED UNDER ANY APPLICABLE LAWS, INCLUDING U.S. EXPORT CONTROL LAWS REGARDING SPECIFICALLY DESIGNATED PERSONS, COUNTRIES AND NATIONALS OF COUNTRIES SUBJECT TO NATIONAL SECURITY CONTROLS. MOREOVER, THE FOREGOING SHALL SURVIVE ANY EXPIRATION OR TERMINATION OF ANY LICENSE OR AGREEMENT OR ACCESS OR USE RELATED TO THIS MATERIAL.\n\nThis license forms the entire agreement regarding the subject matter hereof and supersedes all proposals and prior discussions and writings between the parties with respect thereto. This license does not affect any ownership, rights, title, or interest in, or relating to, this material. No terms of this license can be modified or waived, and no breach of this license can be excused, unless done so in a writing signed by all affected parties. Each term of this license is separately enforceable. If any term of this license is determined to be or becomes unenforceable or illegal, such term shall be reformed to the minimum extent necessary in order for this license to remain in effect in accordance with its terms as modified by such reformation. This license shall be governed by and construed in accordance with the laws of the State of Texas without regard to rules on conflicts of law of any state or jurisdiction or the United Nations Convention on the International Sale of Goods. All disputes arising out of this license shall be subject to the jurisdiction of the federal and state courts in Austin, Texas, and all defenses are hereby waived concerning personal jurisdiction and venue of these courts.&quot;,
+        &quot;_rf_text_updatable&quot;: false,
+        &quot;_rf_url&quot;: &quot;https://fedoraproject.org/wiki/Licensing/AMD_plpa_map_License&quot;
+    },
+    &quot;type&quot;: &quot;Fossology&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/a4f3db449a1c3a0f3cef021822db1e1a">OrtLicenseCategorization:a4f3db449a1c3a0f3cef021822db1e1a</a> for <a href="/?license=SPDX:AMDPLPA"><span class="licensename"><span class="namespace">SPDX:</span>AMDPLPA</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>AMDPLPA</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:a4f3db449a1c3a0f3cef021822db1e1a">[<a href="/fact/OrtLicenseCategorization/a4f3db449a1c3a0f3cef021822db1e1a">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:a4f3db449a1c3a0f3cef021822db1e1a">[<a href="/fact/OrtLicenseCategorization/a4f3db449a1c3a0f3cef021822db1e1a">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:AMDPLPA&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;a4f3db449a1c3a0f3cef021822db1e1a&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:AMDPLPA&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/doubleopen">doubleopen</a>: <a href="/fact/OrtLicenseCategorization/77df51740bd1187120def66d6a50c0f3">OrtLicenseCategorization:77df51740bd1187120def66d6a50c0f3</a> for <a href="/?license=SPDX:AMDPLPA"><span class="licensename"><span class="namespace">SPDX:</span>AMDPLPA</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>AMDPLPA</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="Open source license that is made available under &quot;non-copyleft&quot; licenses. These generally require attribution of the included works and may include other obligations.">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:77df51740bd1187120def66d6a50c0f3">[<a href="/fact/OrtLicenseCategorization/77df51740bd1187120def66d6a50c0f3">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.">OrtLicenseCategorization: <b>property:include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:77df51740bd1187120def66d6a50c0f3">[<a href="/fact/OrtLicenseCategorization/77df51740bd1187120def66d6a50c0f3">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:77df51740bd1187120def66d6a50c0f3">[<a href="/fact/OrtLicenseCategorization/77df51740bd1187120def66d6a50c0f3">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:AMDPLPA&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;77df51740bd1187120def66d6a50c0f3&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;contents&quot;: &quot;Open source license that is made available under \&quot;non-copyleft\&quot; licenses. These generally require attribution of the included works and may include other obligations.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;property:include-in-notice-file&quot;,
+                    {
+                        &quot;contents&quot;: &quot;Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;contents&quot;: &quot;Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.&quot;,
+                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: &quot;Open source license that is made available under \&quot;non-copyleft\&quot; licenses. These generally require attribution of the included works and may include other obligations.&quot;,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: &quot;Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant copyright notices and the license text into the project/product notice file.&quot;,
+                &quot;name&quot;: &quot;property:include-in-notice-file&quot;
+            },
+            {
+                &quot;description&quot;: &quot;Same as above, as a temporary work-around for the category name not being configurable in ORT reports, see https://github.com/oss-review-toolkit/ort/issues/8220.&quot;,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:AMDPLPA&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/448a45857c9b734221941f9987d73f0c">CavilLicenseChange:448a45857c9b734221941f9987d73f0c</a> for <a href="/?license=cavil:AMDPLPA"><span class="licensename"><span class="namespace">cavil:</span>AMDPLPA</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>AMDPLPA</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">AMDPLPA</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:AMDPLPA&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;AMDPLPA&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;448a45857c9b734221941f9987d73f0c&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;AMDPLPA&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:AMDPLPA&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/da308a53520180b8a4e5c62bdf3d7efe">MetaeffektLicense:da308a53520180b8a4e5c62bdf3d7efe</a> for <a href="/?license=metaeffekt:AMDPLPA License"><span class="licensename"><span class="namespace">metaeffekt:</span>AMDPLPA License</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>AMDPLPA License</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>AMDPLPA</span></li></ul></li><li><b>other LicenseName Hints (4):</b><ul class="capsulUl clearfix"><li><span class="licensename">AMDPLPA</span></li><li><span class="licensename"><span class="namespace">scancode:</span>amdplpa</span></li><li><span class="licensename">AMDPLPA License</span></li><li><span class="licensename">AMDPLPA LICENSE</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:AMDPLPA License&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:AMDPLPA&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;AMDPLPA&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;AMDPLPA License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;AMDPLPA LICENSE&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:amdplpa&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;da308a53520180b8a4e5c62bdf3d7efe&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;AMDPLPA License&quot;,
+            &quot;AMDPLPA LICENSE&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:AMDPLPA License&quot;,
+        &quot;_category&quot;: &quot;AMDPLPA&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:amdplpa&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:AMDPLPA&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li></ul></body></html>

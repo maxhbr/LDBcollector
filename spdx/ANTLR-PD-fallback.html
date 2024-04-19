@@ -1,0 +1,637 @@
+<html><head><title>ldbcollector: spdx:ANTLR-PD-fallback</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:ANTLR-PD-fallback</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>ANTLR-PD-fallback</span></li></ul></li><li><b>other LicenseNames (9):</b><ul class="capsulUl clearfix"><li><span class="licensename">ANTLR Software Rights Notice (with fallback)</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>ANTLR Software Rights Notice (with fallback)</span></li><li><span class="licensename">ANTLR Software Rights Notice with license fallback</span></li><li><span class="licensename">ANTLR-PD with fallback</span></li><li><span class="licensename">ANTLR-PD-fallback</span></li><li><span class="licensename"><span class="namespace">BlueOak:</span>ANTLR-PD-fallback</span></li><li><span class="licensename"><span class="namespace">cavil:</span>ANTLR-PD-fallback</span></li><li><span class="licensename"><span class="namespace">scancode:</span>antlr-pd-fallback</span></li><li><span class="licensename"><span class="namespace">spdx:</span>ANTLR-PD-fallback</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="BlueOakCouncil:edd1755aad6a3ac2068a8d26532c5780">[<a href="/fact/BlueOakCouncil/edd1755aad6a3ac2068a8d26532c5780">BlueOakCouncil</a>]</span>)</span></li><li>PublicDomain<span class="provided-by">(provided by: <span title="ScancodeData:02d09cd1ce97094698323373767a9bc6">[<a href="/fact/ScancodeData/02d09cd1ce97094698323373767a9bc6">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:ea9c0a2af4f541a3a0c7a1543908cf08">[<a href="/fact/SPDXLicense/ea9c0a2af4f541a3a0c7a1543908cf08">SPDXLicense</a>]</span>)</span></li><li><span title="These licenses lack important but nonessential elements of permissive open software licenses or impose additional requirements or restrictions, such as BSD-style prohibitions against endorsement and promotion.">BlueOakCouncil: <b style="">Bronze</b></span><span class="provided-by">(provided by: <span title="BlueOakCouncil:edd1755aad6a3ac2068a8d26532c5780">[<a href="/fact/BlueOakCouncil/edd1755aad6a3ac2068a8d26532c5780">BlueOakCouncil</a>]</span>)</span></li><li><span title="Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.">CoDEStatus: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:a5648d324026e8b54ad68102913ef540">[<a href="/fact/MetaeffektLicense/a5648d324026e8b54ad68102913ef540">MetaeffektLicense</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>public-domain</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:42ca4c0754c5601b5dba0e20d7ff816c">[<a href="/fact/OrtLicenseCategorization/42ca4c0754c5601b5dba0e20d7ff816c">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:42ca4c0754c5601b5dba0e20d7ff816c">[<a href="/fact/OrtLicenseCategorization/42ca4c0754c5601b5dba0e20d7ff816c">OrtLicenseCategorization</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>ANTLR used a public domain notice through version 2.7 and then switched to a BSD license for version 3.0 and later. Their original notice did not include the third paragraph with the fallback license listed here; see ANTLR-PD for the version without this third paragraph.<span class="provided-by">(provided by: <span title="SPDXLicense:ea9c0a2af4f541a3a0c7a1543908cf08">[<a href="/fact/SPDXLicense/ea9c0a2af4f541a3a0c7a1543908cf08">SPDXLicense</a>]</span>)</span></li><li><b>ScancodeData: </b>Per SPDX.org, ANTLR used this public domain notice through version 2.7 and
+then switched to a BSD license for version 3.0 and later.
+<span class="provided-by">(provided by: <span title="ScancodeData:02d09cd1ce97094698323373767a9bc6">[<a href="/fact/ScancodeData/02d09cd1ce97094698323373767a9bc6">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://www.antlr2.org/license.html" target="_blank">http://www.antlr2.org/license.html</a></li><li><a href="https://spdx.org/licenses/ANTLR-PD-fallback.html" target="_blank">https://spdx.org/licenses/ANTLR-PD-fallback.html</a></li><li><a href="http://www.antlr2.org/" target="_blank">http://www.antlr2.org/</a></li></ul><h3>Other Statements</h3><ul><li>http://www.antlr2.org/</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>ANTLR 2 License
+
+We reserve no legal rights to the ANTLR--it is fully in the public domain. An individual or company may do whatever they wish with source code distributed with ANTLR or the code generated by ANTLR, including the incorporation of ANTLR, or its output, into commerical software.
+
+We encourage users to develop software with ANTLR. However, we do ask that credit is given to us for developing ANTLR. By &quot;credit&quot;, we mean that if you use ANTLR or incorporate any source code into one of your programs (commercial product, research project, or otherwise) that you acknowledge this fact somewhere in the documentation, research report, etc... If you like ANTLR and have developed a nice tool with the output, please mention that you developed it using ANTLR. In addition, we ask that the headers remain intact in our source code. As long as these guidelines are kept, we expect to continue enhancing this system and expect to make other tools available as they are completed.
+
+In countries where the Public Domain status of the work may not be valid, the author grants a copyright licence to the general public to deal in the work without restriction and permission to sublicence derivates under the terms of any (OSI approved) Open Source licence. 
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;ANTLR 2 License&lt;/p&gt;
+
+      &lt;/div&gt;
+
+      &lt;p&gt;We reserve no legal rights to the ANTLR--it is fully in the public domain. An individual or company may
+         do whatever they wish with source code distributed with ANTLR or the code generated by ANTLR,
+         including the incorporation of ANTLR, or its output, into commerical software.&lt;/p&gt;
+
+      &lt;p&gt;We encourage users to develop software with ANTLR. However, we do ask that credit is given to us for
+         developing ANTLR. By &amp;quot;credit&amp;quot;, we mean that if you use ANTLR or incorporate any source code into one
+         of your programs (commercial product, research project, or otherwise) that you acknowledge this fact
+         somewhere in the documentation, research report, etc... If you like ANTLR and have developed a nice
+         tool with the output, please mention that you developed it using ANTLR. In addition, we ask that the
+         headers remain intact in our source code. As long as these guidelines are kept, we expect to continue
+         enhancing this system and expect to make other tools available as they are completed.&lt;/p&gt;
+
+      &lt;p&gt;In countries where the Public Domain status of the work may not be valid, the author grants a copyright
+         licence to the general public to deal in the work without restriction and permission to sublicence
+         derivates under the terms of any (OSI approved) Open Source licence.&lt;/p&gt;
+
+    </pre></details></li><li><details><summary>Text:</summary><pre>ANTLR 2 License
+
+We reserve no legal rights to the ANTLR --it is fully in the public domain. An
+individual or company may do whatever they wish with source code distributed
+with ANTLR or the code generated by ANTLR, including the incorporation of ANTLR,
+or its output, into commerical software.
+
+We encourage users to develop software with ANTLR. However, we do ask that
+credit is given to us for developing ANTLR. By &quot;credit&quot;, we mean that if you use
+ANTLR or incorporate any source code into one of your programs (commercial
+product, research project, or otherwise) that you acknowledge this fact
+somewhere in the documentation, research report, etc... If you like ANTLR and
+have developed a nice tool with the output, please mention that you developed it
+using ANTLR. In addition, we ask that the headers remain intact in our source
+code. As long as these guidelines are kept, we expect to continue enhancing this
+system and expect to make other tools available as they are completed.
+
+In countries where the Public Domain status of the work may not be valid, the
+author grants a copyright licence to the general public to deal in the work
+without restriction and permission to sublicence derivates under the terms of
+any (OSI approved) Open Source licence.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/ea9c0a2af4f541a3a0c7a1543908cf08">SPDXLicense:ea9c0a2af4f541a3a0c7a1543908cf08</a> for <a href="/?license=spdx:ANTLR-PD-fallback"><span class="licensename"><span class="namespace">spdx:</span>ANTLR-PD-fallback</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>ANTLR-PD-fallback</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">ANTLR Software Rights Notice with license fallback</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:ea9c0a2af4f541a3a0c7a1543908cf08">[<a href="/fact/SPDXLicense/ea9c0a2af4f541a3a0c7a1543908cf08">SPDXLicense</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>SPDXLicense: </b>ANTLR used a public domain notice through version 2.7 and then switched to a BSD license for version 3.0 and later. Their original notice did not include the third paragraph with the fallback license listed here; see ANTLR-PD for the version without this third paragraph.<span class="provided-by">(provided by: <span title="SPDXLicense:ea9c0a2af4f541a3a0c7a1543908cf08">[<a href="/fact/SPDXLicense/ea9c0a2af4f541a3a0c7a1543908cf08">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://www.antlr2.org/license.html" target="_blank">http://www.antlr2.org/license.html</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>ANTLR 2 License
+
+We reserve no legal rights to the ANTLR--it is fully in the public domain. An individual or company may do whatever they wish with source code distributed with ANTLR or the code generated by ANTLR, including the incorporation of ANTLR, or its output, into commerical software.
+
+We encourage users to develop software with ANTLR. However, we do ask that credit is given to us for developing ANTLR. By &quot;credit&quot;, we mean that if you use ANTLR or incorporate any source code into one of your programs (commercial product, research project, or otherwise) that you acknowledge this fact somewhere in the documentation, research report, etc... If you like ANTLR and have developed a nice tool with the output, please mention that you developed it using ANTLR. In addition, we ask that the headers remain intact in our source code. As long as these guidelines are kept, we expect to continue enhancing this system and expect to make other tools available as they are completed.
+
+In countries where the Public Domain status of the work may not be valid, the author grants a copyright licence to the general public to deal in the work without restriction and permission to sublicence derivates under the terms of any (OSI approved) Open Source licence. 
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;optional-license-text&quot;&gt; 
+         &lt;p&gt;ANTLR 2 License&lt;/p&gt;
+
+      &lt;/div&gt;
+
+      &lt;p&gt;We reserve no legal rights to the ANTLR--it is fully in the public domain. An individual or company may
+         do whatever they wish with source code distributed with ANTLR or the code generated by ANTLR,
+         including the incorporation of ANTLR, or its output, into commerical software.&lt;/p&gt;
+
+      &lt;p&gt;We encourage users to develop software with ANTLR. However, we do ask that credit is given to us for
+         developing ANTLR. By &amp;quot;credit&amp;quot;, we mean that if you use ANTLR or incorporate any source code into one
+         of your programs (commercial product, research project, or otherwise) that you acknowledge this fact
+         somewhere in the documentation, research report, etc... If you like ANTLR and have developed a nice
+         tool with the output, please mention that you developed it using ANTLR. In addition, we ask that the
+         headers remain intact in our source code. As long as these guidelines are kept, we expect to continue
+         enhancing this system and expect to make other tools available as they are completed.&lt;/p&gt;
+
+      &lt;p&gt;In countries where the Public Domain status of the work may not be valid, the author grants a copyright
+         licence to the general public to deal in the work without restriction and permission to sublicence
+         derivates under the terms of any (OSI approved) Open Source licence.&lt;/p&gt;
+
+    </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:ANTLR-PD-fallback&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;ANTLR Software Rights Notice with license fallback&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;ea9c0a2af4f541a3a0c7a1543908cf08&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;SPDXLicense&quot;,
+                    &quot;ANTLR used a public domain notice through version 2.7 and then switched to a BSD license for version 3.0 and later. Their original notice did not include the third paragraph with the fallback license listed here; see ANTLR-PD for the version without this third paragraph.&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;ANTLR 2 License\n\nWe reserve no legal rights to the ANTLR--it is fully in the public domain. An individual or company may do whatever they wish with source code distributed with ANTLR or the code generated by ANTLR, including the incorporation of ANTLR, or its output, into commerical software.\n\nWe encourage users to develop software with ANTLR. However, we do ask that credit is given to us for developing ANTLR. By \&quot;credit\&quot;, we mean that if you use ANTLR or incorporate any source code into one of your programs (commercial product, research project, or otherwise) that you acknowledge this fact somewhere in the documentation, research report, etc... If you like ANTLR and have developed a nice tool with the output, please mention that you developed it using ANTLR. In addition, we ask that the headers remain intact in our source code. As long as these guidelines are kept, we expect to continue enhancing this system and expect to make other tools available as they are completed.\n\nIn countries where the Public Domain status of the work may not be valid, the author grants a copyright licence to the general public to deal in the work without restriction and permission to sublicence derivates under the terms of any (OSI approved) Open Source licence. \n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;ANTLR 2 License&lt;/p&gt;\n\n      &lt;/div&gt;\n\n      &lt;p&gt;We reserve no legal rights to the ANTLR--it is fully in the public domain. An individual or company may\n         do whatever they wish with source code distributed with ANTLR or the code generated by ANTLR,\n         including the incorporation of ANTLR, or its output, into commerical software.&lt;/p&gt;\n\n      &lt;p&gt;We encourage users to develop software with ANTLR. However, we do ask that credit is given to us for\n         developing ANTLR. By &amp;quot;credit&amp;quot;, we mean that if you use ANTLR or incorporate any source code into one\n         of your programs (commercial product, research project, or otherwise) that you acknowledge this fact\n         somewhere in the documentation, research report, etc... If you like ANTLR and have developed a nice\n         tool with the output, please mention that you developed it using ANTLR. In addition, we ask that the\n         headers remain intact in our source code. As long as these guidelines are kept, we expect to continue\n         enhancing this system and expect to make other tools available as they are completed.&lt;/p&gt;\n\n      &lt;p&gt;In countries where the Public Domain status of the work may not be valid, the author grants a copyright\n         licence to the general public to deal in the work without restriction and permission to sublicence\n         derivates under the terms of any (OSI approved) Open Source licence.&lt;/p&gt;\n\n    &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://www.antlr2.org/license.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://www.antlr2.org/license.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;true&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:03:29Z&quot;,
+                &quot;url&quot;: &quot;http://www.antlr2.org/license.html&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: &quot;ANTLR used a public domain notice through version 2.7 and then switched to a BSD license for version 3.0 and later. Their original notice did not include the third paragraph with the fallback license listed here; see ANTLR-PD for the version without this third paragraph.&quot;,
+        &quot;licenseId&quot;: &quot;spdx:ANTLR-PD-fallback&quot;,
+        &quot;licenseText&quot;: &quot;ANTLR 2 License\n\nWe reserve no legal rights to the ANTLR--it is fully in the public domain. An individual or company may do whatever they wish with source code distributed with ANTLR or the code generated by ANTLR, including the incorporation of ANTLR, or its output, into commerical software.\n\nWe encourage users to develop software with ANTLR. However, we do ask that credit is given to us for developing ANTLR. By \&quot;credit\&quot;, we mean that if you use ANTLR or incorporate any source code into one of your programs (commercial product, research project, or otherwise) that you acknowledge this fact somewhere in the documentation, research report, etc... If you like ANTLR and have developed a nice tool with the output, please mention that you developed it using ANTLR. In addition, we ask that the headers remain intact in our source code. As long as these guidelines are kept, we expect to continue enhancing this system and expect to make other tools available as they are completed.\n\nIn countries where the Public Domain status of the work may not be valid, the author grants a copyright licence to the general public to deal in the work without restriction and permission to sublicence derivates under the terms of any (OSI approved) Open Source licence. \n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n      &lt;div class=\&quot;optional-license-text\&quot;&gt; \n         &lt;p&gt;ANTLR 2 License&lt;/p&gt;\n\n      &lt;/div&gt;\n\n      &lt;p&gt;We reserve no legal rights to the ANTLR--it is fully in the public domain. An individual or company may\n         do whatever they wish with source code distributed with ANTLR or the code generated by ANTLR,\n         including the incorporation of ANTLR, or its output, into commerical software.&lt;/p&gt;\n\n      &lt;p&gt;We encourage users to develop software with ANTLR. However, we do ask that credit is given to us for\n         developing ANTLR. By &amp;quot;credit&amp;quot;, we mean that if you use ANTLR or incorporate any source code into one\n         of your programs (commercial product, research project, or otherwise) that you acknowledge this fact\n         somewhere in the documentation, research report, etc... If you like ANTLR and have developed a nice\n         tool with the output, please mention that you developed it using ANTLR. In addition, we ask that the\n         headers remain intact in our source code. As long as these guidelines are kept, we expect to continue\n         enhancing this system and expect to make other tools available as they are completed.&lt;/p&gt;\n\n      &lt;p&gt;In countries where the Public Domain status of the work may not be valid, the author grants a copyright\n         licence to the general public to deal in the work without restriction and permission to sublicence\n         derivates under the terms of any (OSI approved) Open Source licence.&lt;/p&gt;\n\n    &quot;,
+        &quot;name&quot;: &quot;ANTLR Software Rights Notice with license fallback&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;http://www.antlr2.org/license.html&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;beginOptional&gt;&gt;ANTLR 2 License\n\n&lt;&lt;endOptional&gt;&gt;\n\nWe reserve no legal rights to the ANTLR--it is fully in the public domain. An individual or company may do whatever they wish with source code distributed with ANTLR or the code generated by ANTLR, including the incorporation of ANTLR, or its output, into commerical software.\n\nWe encourage users to develop software with ANTLR. However, we do ask that credit is given to us for developing ANTLR. By \&quot;credit\&quot;, we mean that if you use ANTLR or incorporate any source code into one of your programs (commercial product, research project, or otherwise) that you acknowledge this fact somewhere in the documentation, research report, etc... If you like ANTLR and have developed a nice tool with the output, please mention that you developed it using ANTLR. In addition, we ask that the headers remain intact in our source code. As long as these guidelines are kept, we expect to continue enhancing this system and expect to make other tools available as they are completed.\n\nIn countries where the Public Domain status of the work may not be valid, the author grants a copyright licence to the general public to deal in the work without restriction and permission to sublicence derivates under the terms of any (OSI approved) Open Source licence.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/BlueOakCouncil">BlueOakCouncil</a>: <a href="/fact/BlueOakCouncil/edd1755aad6a3ac2068a8d26532c5780">BlueOakCouncil:edd1755aad6a3ac2068a8d26532c5780</a> for <a href="/?license=BlueOak:ANTLR-PD-fallback"><span class="licensename"><span class="namespace">BlueOak:</span>ANTLR-PD-fallback</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">BlueOak:</span>ANTLR-PD-fallback</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">ANTLR Software Rights Notice with license fallback</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="BlueOakCouncil:edd1755aad6a3ac2068a8d26532c5780">[<a href="/fact/BlueOakCouncil/edd1755aad6a3ac2068a8d26532c5780">BlueOakCouncil</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="These licenses lack important but nonessential elements of permissive open software licenses or impose additional requirements or restrictions, such as BSD-style prohibitions against endorsement and promotion.">BlueOakCouncil: <b style="">Bronze</b></span><span class="provided-by">(provided by: <span title="BlueOakCouncil:edd1755aad6a3ac2068a8d26532c5780">[<a href="/fact/BlueOakCouncil/edd1755aad6a3ac2068a8d26532c5780">BlueOakCouncil</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://spdx.org/licenses/ANTLR-PD-fallback.html" target="_blank">https://spdx.org/licenses/ANTLR-PD-fallback.html</a></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;BlueOak:ANTLR-PD-fallback&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;ANTLR Software Rights Notice with license fallback&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;BlueOakCouncil&quot;,
+        &quot;edd1755aad6a3ac2068a8d26532c5780&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;BlueOakCouncil&quot;,
+                        &quot;Bronze&quot;,
+                        {
+                            &quot;contents&quot;: &quot;These licenses lack important but nonessential elements of permissive open software licenses or impose additional requirements or restrictions, such as BSD-style prohibitions against endorsement and promotion.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NeutralLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://spdx.org/licenses/ANTLR-PD-fallback.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;contents&quot;: [
+            &quot;Bronze&quot;,
+            &quot;These licenses lack important but nonessential elements of permissive open software licenses or impose additional requirements or restrictions, such as BSD-style prohibitions against endorsement and promotion.&quot;,
+            {
+                &quot;_id&quot;: &quot;ANTLR-PD-fallback&quot;,
+                &quot;_name&quot;: &quot;ANTLR Software Rights Notice with license fallback&quot;,
+                &quot;_url&quot;: &quot;https://spdx.org/licenses/ANTLR-PD-fallback.html&quot;
+            }
+        ],
+        &quot;tag&quot;: &quot;BOCPermissive&quot;
+    },
+    &quot;type&quot;: &quot;BlueOakCouncil&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/02d09cd1ce97094698323373767a9bc6">ScancodeData:02d09cd1ce97094698323373767a9bc6</a> for <a href="/?license=scancode:antlr-pd-fallback"><span class="licensename"><span class="namespace">scancode:</span>antlr-pd-fallback</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>antlr-pd-fallback</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">ANTLR Software Rights Notice with license fallback</span></li><li><span class="licensename">ANTLR-PD with fallback</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>PublicDomain<span class="provided-by">(provided by: <span title="ScancodeData:02d09cd1ce97094698323373767a9bc6">[<a href="/fact/ScancodeData/02d09cd1ce97094698323373767a9bc6">ScancodeData</a>]</span>)</span></li></ul><h2>License Comments</h2><ul><li><b>ScancodeData: </b>Per SPDX.org, ANTLR used this public domain notice through version 2.7 and
+then switched to a BSD license for version 3.0 and later.
+<span class="provided-by">(provided by: <span title="ScancodeData:02d09cd1ce97094698323373767a9bc6">[<a href="/fact/ScancodeData/02d09cd1ce97094698323373767a9bc6">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="http://www.antlr2.org/" target="_blank">http://www.antlr2.org/</a></li><li><a href="http://www.antlr2.org/license.html" target="_blank">http://www.antlr2.org/license.html</a></li></ul><h3>Other Statements</h3><ul><li>http://www.antlr2.org/</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>ANTLR 2 License
+
+We reserve no legal rights to the ANTLR --it is fully in the public domain. An
+individual or company may do whatever they wish with source code distributed
+with ANTLR or the code generated by ANTLR, including the incorporation of ANTLR,
+or its output, into commerical software.
+
+We encourage users to develop software with ANTLR. However, we do ask that
+credit is given to us for developing ANTLR. By &quot;credit&quot;, we mean that if you use
+ANTLR or incorporate any source code into one of your programs (commercial
+product, research project, or otherwise) that you acknowledge this fact
+somewhere in the documentation, research report, etc... If you like ANTLR and
+have developed a nice tool with the output, please mention that you developed it
+using ANTLR. In addition, we ask that the headers remain intact in our source
+code. As long as these guidelines are kept, we expect to continue enhancing this
+system and expect to make other tools available as they are completed.
+
+In countries where the Public Domain status of the work may not be valid, the
+author grants a copyright licence to the general public to deal in the work
+without restriction and permission to sublicence derivates under the terms of
+any (OSI approved) Open Source licence.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:antlr-pd-fallback&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;ANTLR-PD with fallback&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;ANTLR Software Rights Notice with license fallback&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;02d09cd1ce97094698323373767a9bc6&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;PublicDomain&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;http://www.antlr2.org/&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;ScancodeData&quot;,
+                    &quot;Per SPDX.org, ANTLR used this public domain notice through version 2.7 and\nthen switched to a BSD license for version 3.0 and later.\n&quot;
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseComment&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://www.antlr2.org/&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;http://www.antlr2.org/license.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;ANTLR 2 License\n\nWe reserve no legal rights to the ANTLR --it is fully in the public domain. An\nindividual or company may do whatever they wish with source code distributed\nwith ANTLR or the code generated by ANTLR, including the incorporation of ANTLR,\nor its output, into commerical software.\n\nWe encourage users to develop software with ANTLR. However, we do ask that\ncredit is given to us for developing ANTLR. By \&quot;credit\&quot;, we mean that if you use\nANTLR or incorporate any source code into one of your programs (commercial\nproduct, research project, or otherwise) that you acknowledge this fact\nsomewhere in the documentation, research report, etc... If you like ANTLR and\nhave developed a nice tool with the output, please mention that you developed it\nusing ANTLR. In addition, we ask that the headers remain intact in our source\ncode. As long as these guidelines are kept, we expect to continue enhancing this\nsystem and expect to make other tools available as they are completed.\n\nIn countries where the Public Domain status of the work may not be valid, the\nauthor grants a copyright licence to the general public to deal in the work\nwithout restriction and permission to sublicence derivates under the terms of\nany (OSI approved) Open Source licence.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Public Domain&quot;,
+        &quot;_homepageUrl&quot;: &quot;http://www.antlr2.org/&quot;,
+        &quot;_key&quot;: &quot;antlr-pd-fallback&quot;,
+        &quot;_name&quot;: &quot;ANTLR Software Rights Notice with license fallback&quot;,
+        &quot;_notes&quot;: &quot;Per SPDX.org, ANTLR used this public domain notice through version 2.7 and\nthen switched to a BSD license for version 3.0 and later.\n&quot;,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [
+            &quot;http://www.antlr2.org/license.html&quot;
+        ],
+        &quot;_owner&quot;: &quot;ANTLR&quot;,
+        &quot;_shortName&quot;: &quot;ANTLR-PD with fallback&quot;,
+        &quot;_spdxId&quot;: &quot;ANTLR-PD-fallback&quot;,
+        &quot;_text&quot;: &quot;ANTLR 2 License\n\nWe reserve no legal rights to the ANTLR --it is fully in the public domain. An\nindividual or company may do whatever they wish with source code distributed\nwith ANTLR or the code generated by ANTLR, including the incorporation of ANTLR,\nor its output, into commerical software.\n\nWe encourage users to develop software with ANTLR. However, we do ask that\ncredit is given to us for developing ANTLR. By \&quot;credit\&quot;, we mean that if you use\nANTLR or incorporate any source code into one of your programs (commercial\nproduct, research project, or otherwise) that you acknowledge this fact\nsomewhere in the documentation, research report, etc... If you like ANTLR and\nhave developed a nice tool with the output, please mention that you developed it\nusing ANTLR. In addition, we ask that the headers remain intact in our source\ncode. As long as these guidelines are kept, we expect to continue enhancing this\nsystem and expect to make other tools available as they are completed.\n\nIn countries where the Public Domain status of the work may not be valid, the\nauthor grants a copyright licence to the general public to deal in the work\nwithout restriction and permission to sublicence derivates under the terms of\nany (OSI approved) Open Source licence.&quot;,
+        &quot;_textUrls&quot;: [
+            &quot;http://www.antlr2.org/&quot;
+        ]
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/42ca4c0754c5601b5dba0e20d7ff816c">OrtLicenseCategorization:42ca4c0754c5601b5dba0e20d7ff816c</a> for <a href="/?license=SPDX:ANTLR-PD-fallback"><span class="licensename"><span class="namespace">SPDX:</span>ANTLR-PD-fallback</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>ANTLR-PD-fallback</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>public-domain</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:42ca4c0754c5601b5dba0e20d7ff816c">[<a href="/fact/OrtLicenseCategorization/42ca4c0754c5601b5dba0e20d7ff816c">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:42ca4c0754c5601b5dba0e20d7ff816c">[<a href="/fact/OrtLicenseCategorization/42ca4c0754c5601b5dba0e20d7ff816c">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:ANTLR-PD-fallback&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;42ca4c0754c5601b5dba0e20d7ff816c&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;public-domain&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;public-domain&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:ANTLR-PD-fallback&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/0dabf8fc6981a38ade77c93533fee5b0">CavilLicenseChange:0dabf8fc6981a38ade77c93533fee5b0</a> for <a href="/?license=cavil:ANTLR-PD-fallback"><span class="licensename"><span class="namespace">cavil:</span>ANTLR-PD-fallback</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>ANTLR-PD-fallback</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">ANTLR-PD-fallback</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:ANTLR-PD-fallback&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;ANTLR-PD-fallback&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;0dabf8fc6981a38ade77c93533fee5b0&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;ANTLR-PD-fallback&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:ANTLR-PD-fallback&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/a5648d324026e8b54ad68102913ef540">MetaeffektLicense:a5648d324026e8b54ad68102913ef540</a> for <a href="/?license=metaeffekt:ANTLR Software Rights Notice (with fallback)"><span class="licensename"><span class="namespace">metaeffekt:</span>ANTLR Software Rights Notice (with fallback)</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>ANTLR Software Rights Notice (with fallback)</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>ANTLR-PD-fallback</span></li></ul></li><li><b>other LicenseName Hints (3):</b><ul class="capsulUl clearfix"><li><span class="licensename">ANTLR Software Rights Notice with license fallback</span></li><li><span class="licensename">ANTLR-PD-Fallback</span></li><li><span class="licensename"><span class="namespace">scancode:</span>antlr-pd-fallback</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.">CoDEStatus: <b style="color: green;">Approved</b></span><span class="provided-by">(provided by: <span title="MetaeffektLicense:a5648d324026e8b54ad68102913ef540">[<a href="/fact/MetaeffektLicense/a5648d324026e8b54ad68102913ef540">MetaeffektLicense</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:ANTLR Software Rights Notice (with fallback)&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:ANTLR-PD-fallback&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;ANTLR-PD-Fallback&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;ANTLR Software Rights Notice with license fallback&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:antlr-pd-fallback&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;a5648d324026e8b54ad68102913ef540&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;CoDEStatus&quot;,
+                        &quot;Approved&quot;,
+                        {
+                            &quot;contents&quot;: &quot;Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;ANTLR Software Rights Notice with license fallback&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:ANTLR Software Rights Notice (with fallback)&quot;,
+        &quot;_category&quot;: &quot;ANTLR-PD-Fallback&quot;,
+        &quot;_openCoDEStatus&quot;: &quot;approved&quot;,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:antlr-pd-fallback&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:ANTLR-PD-fallback&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li></ul></body></html>

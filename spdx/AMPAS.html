@@ -1,0 +1,851 @@
+<html><head><title>ldbcollector: spdx:AMPAS</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"><style>body.fixed {
+    overflow: hidden;
+}
+
+header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+header form {
+    padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+    overflow: scroll;
+    z-index: 100;
+    padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
+}
+
+#content-graph svg{
+    width: 100%;
+    height: 100%;
+}
+
+.licensename {
+    font-weight: bold;
+}
+.licensename > .namespace {
+    font-weight: normal;
+}
+
+.capsulUl {
+    list-style-type: none;
+}
+
+.capsulUl > li, .capsul {
+    display:inline;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 10px;
+}
+.capsulUl > li {
+    float: left;
+}
+
+@media (min-width:1200px) {
+    .two-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.two-columns-grid > *, .three-columns-grid > *, details {
+    margin:1rem;
+    padding:1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.provided-by {
+    font-size: 0.5em;
+    opacity: 0.7;
+}</style><script src="https://d3js.org/d3.v5.min.js"></script><script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script><script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script></head><body><h1>spdx:AMPAS</h1><h1>Summary</h1><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>AMPAS</span></li></ul></li><li><b>other LicenseNames (12):</b><ul class="capsulUl clearfix"><li><span class="licensename">Academy of Motion Picture Arts and Sciences BSD</span></li><li><span class="licensename">Academy of Motion Picture Arts and Sciences BSD-Style</span></li><li><span class="licensename">AMPAS</span></li><li><span class="licensename"><span class="namespace">BlueOak:</span>AMPAS</span></li><li><span class="licensename"><span class="namespace">cavil:</span>AMPAS</span></li><li><span class="licensename"><span class="namespace">Fedora:</span>AMPAS</span></li><li><span class="licensename"><span class="namespace">fossology:</span>AMPAS</span></li><li><span class="licensename"><span class="namespace">scancode:</span>ampas</span></li><li><span class="licensename"><span class="namespace">spdx:</span>AMPAS</span></li><li><span class="licensename">AMPAS BSD-Style License</span></li><li><span class="licensename">AMPAS License</span></li><li><span class="licensename"><span class="namespace">metaeffekt:</span>AMPAS License</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">AMPAS BSD</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="BlueOakCouncil:912373167335a1d2aebeb7fcece2ec28">[<a href="/fact/BlueOakCouncil/912373167335a1d2aebeb7fcece2ec28">BlueOakCouncil</a>]</span><span title="ScancodeData:7ba9361d1c822a6bd7d38aa9debc6643">[<a href="/fact/ScancodeData/7ba9361d1c822a6bd7d38aa9debc6643">ScancodeData</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:b5281eeac7424bb74ef6da4140392966">[<a href="/fact/SPDXLicense/b5281eeac7424bb74ef6da4140392966">SPDXLicense</a>]</span>)</span></li><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:6a29c63de856dccf383220a2d0afc183">[<a href="/fact/FedoraEntry/6a29c63de856dccf383220a2d0afc183">FedoraEntry</a>]</span>)</span></li><li><span title="These licenses lack important but nonessential elements of permissive open software licenses or impose additional requirements or restrictions, such as BSD-style prohibitions against endorsement and promotion.">BlueOakCouncil: <b style="">Bronze</b></span><span class="provided-by">(provided by: <span title="BlueOakCouncil:912373167335a1d2aebeb7fcece2ec28">[<a href="/fact/BlueOakCouncil/912373167335a1d2aebeb7fcece2ec28">BlueOakCouncil</a>]</span>)</span></li></ul><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:d7bbbc98f1fce9be18ab19bff62c7577">[<a href="/fact/OrtLicenseCategorization/d7bbbc98f1fce9be18ab19bff62c7577">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:d7bbbc98f1fce9be18ab19bff62c7577">[<a href="/fact/OrtLicenseCategorization/d7bbbc98f1fce9be18ab19bff62c7577">OrtLicenseCategorization</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/BSD#AMPASBSD" target="_blank">https://fedoraproject.org/wiki/Licensing/BSD#AMPASBSD</a></li><li><a href="https://spdx.org/licenses/AMPAS.html" target="_blank">https://spdx.org/licenses/AMPAS.html</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li><li>https://fedoraproject.org/wiki/Licensing/BSD#AMPASBSD</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright (c) 2006 Academy of Motion Picture Arts and Sciences (&quot;A.M.P.A.S.&quot;). Portions contributed by others as indicated. All rights reserved.
+
+A world-wide, royalty-free, non-exclusive right to distribute, copy, modify, create derivatives, and use, in source and binary forms, is hereby granted, subject to acceptance of this license. Performance of any of the aforementioned acts indicates acceptance to be bound by the following terms and conditions:
+
+     * Redistributions of source code must retain the above copyright notice, this list of conditions and the Disclaimer of Warranty.
+
+     * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the Disclaimer of Warranty in the documentation and/or other materials provided with the distribution.
+
+     * Nothing in this license shall be deemed to grant any rights to trademarks, copyrights, patents, trade secrets or any other intellectual property of A.M.P.A.S. or any contributors, except as expressly stated herein, and neither the name of A.M.P.A.S. nor of any other contributors to this software, may be used to endorse or promote products derived from this software without specific prior written permission of A.M.P.A.S. or contributor, as appropriate.
+
+This license shall be governed by the laws of the State of California, and subject to the jurisdiction of the courts therein.
+
+Disclaimer of Warranty: THIS SOFTWARE IS PROVIDED BY A.M.P.A.S. AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT ARE DISCLAIMED. IN NO EVENT SHALL A.M.P.A.S., ANY CONTRIBUTORS OR DISTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+         &lt;p&gt;Copyright (c) 2006 Academy of Motion Picture Arts and Sciences (&amp;quot;A.M.P.A.S.&amp;quot;). Portions contributed by
+         others as indicated. All rights reserved.&lt;/p&gt;
+
+      &lt;/div&gt;
+
+      &lt;p&gt;A world-wide, royalty-free, non-exclusive right to distribute, copy, modify, create derivatives, and use,
+         in source and binary forms, is hereby granted, subject to acceptance of this license. Performance of
+         any of the aforementioned acts indicates acceptance to be bound by the following terms and
+         conditions:&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; *&lt;/var&gt;
+          Redistributions of source code must retain the above copyright notice, this list of conditions
+             and the Disclaimer of Warranty.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; *&lt;/var&gt;
+          Redistributions in binary form must reproduce the above copyright notice, this list of conditions
+             and the Disclaimer of Warranty in the documentation and/or other materials provided with the
+             distribution.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; *&lt;/var&gt;
+          Nothing in this license shall be deemed to grant any rights to trademarks, copyrights, patents,
+             trade secrets or any other intellectual property of A.M.P.A.S. or any contributors, except as
+             expressly stated herein, and neither the name of A.M.P.A.S. nor of any other contributors to
+             this software, may be used to endorse or promote products derived from this software without
+             specific prior written permission of A.M.P.A.S. or contributor, as appropriate.
+        &lt;/li&gt;
+      
+&lt;/ul&gt;
+      &lt;p&gt;This license shall be governed by the laws of the State of California, and subject to the jurisdiction of
+         the courts therein.&lt;/p&gt;
+
+      &lt;p&gt;Disclaimer of Warranty: THIS SOFTWARE IS PROVIDED BY A.M.P.A.S. AND CONTRIBUTORS &amp;quot;AS IS&amp;quot; AND ANY EXPRESS
+         OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY,
+         FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT ARE DISCLAIMED. IN NO EVENT SHALL A.M.P.A.S.,
+         ANY CONTRIBUTORS OR DISTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY,
+         OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+         LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+         LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING
+         IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&lt;/p&gt;
+
+    </pre></details></li><li><details><summary>Text:</summary><pre>A world-wide, royalty-free, non-exclusive right to distribute, copy, modify, create derivatives, and use, in source and binary forms, is hereby granted, subject to acceptance of this license. Performance of any of the aforementioned acts indicates acceptance to be bound by the following terms and conditions:
+
+     * Redistributions of source code must retain the above copyright notice, this list of conditions and the Disclaimer of Warranty.
+
+     * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the Disclaimer of Warranty in the documentation and/or other materials provided with the distribution.
+
+     * Nothing in this license shall be deemed to grant any rights to trademarks, copyrights, patents, trade secrets or any other intellectual property of A.M.P.A.S. or any contributors, except as expressly stated herein, and neither the name of A.M.P.A.S. nor of any other contributors to this software, may be used to endorse or promote products derived from this software without specific prior written permission of A.M.P.A.S. or contributor, as appropriate.
+
+This license shall be governed by the laws of the State of California, and subject to the jurisdiction of the courts therein.
+
+Disclaimer of Warranty: THIS SOFTWARE IS PROVIDED BY A.M.P.A.S. AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT ARE DISCLAIMED. IN NO EVENT SHALL A.M.P.A.S., ANY CONTRIBUTORS OR DISTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</pre></details></li><li><details><summary>Text:</summary><pre>Copyright (c) 2006 Academy of Motion Picture Arts and Sciences (&quot;A.M.P.A.S.&quot;). Portions contributed by others as indicated. All rights reserved.
+
+A world-wide, royalty-free, non-exclusive right to distribute, copy, modify, create derivatives, and use, in source and binary forms, is hereby granted, subject to acceptance of this license. Performance of any of the aforementioned acts indicates acceptance to be bound by the following terms and conditions:
+
+   * Redistributions of source code must retain the above copyright notice, this list of conditions and the Disclaimer of Warranty.
+
+   * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the Disclaimer of Warranty in the documentation and/or other materials provided with the distribution.
+
+   * Nothing in this license shall be deemed to grant any rights to trademarks, copyrights, patents, trade secrets or any other intellectual property of A.M.P.A.S. or any contributors, except as expressly stated herein, and neither the name of A.M.P.A.S. nor of any other contributors to this software, may be used to endorse or promote products derived from this software without specific prior written permission of A.M.P.A.S. or contributor, as appropriate.
+
+This license shall be governed by the laws of the State of California, and subject to the jurisdiction of the courts therein.
+
+Disclaimer of Warranty: THIS SOFTWARE IS PROVIDED BY A.M.P.A.S. AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT ARE DISCLAIMED. IN NO EVENT SHALL A.M.P.A.S., ANY CONTRIBUTORS OR DISTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</pre></details></li></ul><h1>by Source</h1><ul><li><h3><a href="/source/SPDX">SPDX</a>: <a href="/fact/SPDXLicense/b5281eeac7424bb74ef6da4140392966">SPDXLicense:b5281eeac7424bb74ef6da4140392966</a> for <a href="/?license=spdx:AMPAS"><span class="licensename"><span class="namespace">spdx:</span>AMPAS</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>AMPAS</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Academy of Motion Picture Arts and Sciences BSD</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="">OSI: <b style="color: red;">Rejected</b></span><span class="provided-by">(provided by: <span title="SPDXLicense:b5281eeac7424bb74ef6da4140392966">[<a href="/fact/SPDXLicense/b5281eeac7424bb74ef6da4140392966">SPDXLicense</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/BSD#AMPASBSD" target="_blank">https://fedoraproject.org/wiki/Licensing/BSD#AMPASBSD</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright (c) 2006 Academy of Motion Picture Arts and Sciences (&quot;A.M.P.A.S.&quot;). Portions contributed by others as indicated. All rights reserved.
+
+A world-wide, royalty-free, non-exclusive right to distribute, copy, modify, create derivatives, and use, in source and binary forms, is hereby granted, subject to acceptance of this license. Performance of any of the aforementioned acts indicates acceptance to be bound by the following terms and conditions:
+
+     * Redistributions of source code must retain the above copyright notice, this list of conditions and the Disclaimer of Warranty.
+
+     * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the Disclaimer of Warranty in the documentation and/or other materials provided with the distribution.
+
+     * Nothing in this license shall be deemed to grant any rights to trademarks, copyrights, patents, trade secrets or any other intellectual property of A.M.P.A.S. or any contributors, except as expressly stated herein, and neither the name of A.M.P.A.S. nor of any other contributors to this software, may be used to endorse or promote products derived from this software without specific prior written permission of A.M.P.A.S. or contributor, as appropriate.
+
+This license shall be governed by the laws of the State of California, and subject to the jurisdiction of the courts therein.
+
+Disclaimer of Warranty: THIS SOFTWARE IS PROVIDED BY A.M.P.A.S. AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT ARE DISCLAIMED. IN NO EVENT SHALL A.M.P.A.S., ANY CONTRIBUTORS OR DISTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+</pre></details></li><li><details><summary>Text:</summary><pre>
+      &lt;div class=&quot;replaceable-license-text&quot;&gt; 
+         &lt;p&gt;Copyright (c) 2006 Academy of Motion Picture Arts and Sciences (&amp;quot;A.M.P.A.S.&amp;quot;). Portions contributed by
+         others as indicated. All rights reserved.&lt;/p&gt;
+
+      &lt;/div&gt;
+
+      &lt;p&gt;A world-wide, royalty-free, non-exclusive right to distribute, copy, modify, create derivatives, and use,
+         in source and binary forms, is hereby granted, subject to acceptance of this license. Performance of
+         any of the aforementioned acts indicates acceptance to be bound by the following terms and
+         conditions:&lt;/p&gt;
+
+&lt;ul style=&quot;list-style:none&quot;&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; *&lt;/var&gt;
+          Redistributions of source code must retain the above copyright notice, this list of conditions
+             and the Disclaimer of Warranty.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; *&lt;/var&gt;
+          Redistributions in binary form must reproduce the above copyright notice, this list of conditions
+             and the Disclaimer of Warranty in the documentation and/or other materials provided with the
+             distribution.
+        &lt;/li&gt;
+        
+&lt;li&gt;
+            &lt;var class=&quot;replaceable-license-text&quot;&gt; *&lt;/var&gt;
+          Nothing in this license shall be deemed to grant any rights to trademarks, copyrights, patents,
+             trade secrets or any other intellectual property of A.M.P.A.S. or any contributors, except as
+             expressly stated herein, and neither the name of A.M.P.A.S. nor of any other contributors to
+             this software, may be used to endorse or promote products derived from this software without
+             specific prior written permission of A.M.P.A.S. or contributor, as appropriate.
+        &lt;/li&gt;
+      
+&lt;/ul&gt;
+      &lt;p&gt;This license shall be governed by the laws of the State of California, and subject to the jurisdiction of
+         the courts therein.&lt;/p&gt;
+
+      &lt;p&gt;Disclaimer of Warranty: THIS SOFTWARE IS PROVIDED BY A.M.P.A.S. AND CONTRIBUTORS &amp;quot;AS IS&amp;quot; AND ANY EXPRESS
+         OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY,
+         FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT ARE DISCLAIMED. IN NO EVENT SHALL A.M.P.A.S.,
+         ANY CONTRIBUTORS OR DISTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY,
+         OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+         LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+         LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING
+         IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&lt;/p&gt;
+
+    </pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;spdx:AMPAS&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Academy of Motion Picture Arts and Sciences BSD&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;SPDXLicense&quot;,
+        &quot;b5281eeac7424bb74ef6da4140392966&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;OSI&quot;,
+                        &quot;Rejected&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NegativeLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;Copyright (c) 2006 Academy of Motion Picture Arts and Sciences (\&quot;A.M.P.A.S.\&quot;). Portions contributed by others as indicated. All rights reserved.\n\nA world-wide, royalty-free, non-exclusive right to distribute, copy, modify, create derivatives, and use, in source and binary forms, is hereby granted, subject to acceptance of this license. Performance of any of the aforementioned acts indicates acceptance to be bound by the following terms and conditions:\n\n     * Redistributions of source code must retain the above copyright notice, this list of conditions and the Disclaimer of Warranty.\n\n     * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the Disclaimer of Warranty in the documentation and/or other materials provided with the distribution.\n\n     * Nothing in this license shall be deemed to grant any rights to trademarks, copyrights, patents, trade secrets or any other intellectual property of A.M.P.A.S. or any contributors, except as expressly stated herein, and neither the name of A.M.P.A.S. nor of any other contributors to this software, may be used to endorse or promote products derived from this software without specific prior written permission of A.M.P.A.S. or contributor, as appropriate.\n\nThis license shall be governed by the laws of the State of California, and subject to the jurisdiction of the courts therein.\n\nDisclaimer of Warranty: THIS SOFTWARE IS PROVIDED BY A.M.P.A.S. AND CONTRIBUTORS \&quot;AS IS\&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT ARE DISCLAIMED. IN NO EVENT SHALL A.M.P.A.S., ANY CONTRIBUTORS OR DISTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n&quot;,
+                    &quot;tag&quot;: &quot;LicenseText&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: &quot;\n      &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n         &lt;p&gt;Copyright (c) 2006 Academy of Motion Picture Arts and Sciences (&amp;quot;A.M.P.A.S.&amp;quot;). Portions contributed by\n         others as indicated. All rights reserved.&lt;/p&gt;\n\n      &lt;/div&gt;\n\n      &lt;p&gt;A world-wide, royalty-free, non-exclusive right to distribute, copy, modify, create derivatives, and use,\n         in source and binary forms, is hereby granted, subject to acceptance of this license. Performance of\n         any of the aforementioned acts indicates acceptance to be bound by the following terms and\n         conditions:&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; *&lt;/var&gt;\n          Redistributions of source code must retain the above copyright notice, this list of conditions\n             and the Disclaimer of Warranty.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; *&lt;/var&gt;\n          Redistributions in binary form must reproduce the above copyright notice, this list of conditions\n             and the Disclaimer of Warranty in the documentation and/or other materials provided with the\n             distribution.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; *&lt;/var&gt;\n          Nothing in this license shall be deemed to grant any rights to trademarks, copyrights, patents,\n             trade secrets or any other intellectual property of A.M.P.A.S. or any contributors, except as\n             expressly stated herein, and neither the name of A.M.P.A.S. nor of any other contributors to\n             this software, may be used to endorse or promote products derived from this software without\n             specific prior written permission of A.M.P.A.S. or contributor, as appropriate.\n        &lt;/li&gt;\n      \n&lt;/ul&gt;\n      &lt;p&gt;This license shall be governed by the laws of the State of California, and subject to the jurisdiction of\n         the courts therein.&lt;/p&gt;\n\n      &lt;p&gt;Disclaimer of Warranty: THIS SOFTWARE IS PROVIDED BY A.M.P.A.S. AND CONTRIBUTORS &amp;quot;AS IS&amp;quot; AND ANY EXPRESS\n         OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY,\n         FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT ARE DISCLAIMED. IN NO EVENT SHALL A.M.P.A.S.,\n         ANY CONTRIBUTORS OR DISTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY,\n         OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n         LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF\n         LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING\n         IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&lt;/p&gt;\n\n    &quot;,
+                        &quot;tag&quot;: &quot;LicenseText&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://fedoraproject.org/wiki/Licensing/BSD#AMPASBSD&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://fedoraproject.org/wiki/Licensing/BSD#AMPASBSD&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;crossRef&quot;: [
+            {
+                &quot;isLive&quot;: true,
+                &quot;isValid&quot;: true,
+                &quot;isWayBackLink&quot;: false,
+                &quot;match&quot;: &quot;false&quot;,
+                &quot;order&quot;: 0,
+                &quot;timestamp&quot;: &quot;2024-04-17T05:00:05Z&quot;,
+                &quot;url&quot;: &quot;https://fedoraproject.org/wiki/Licensing/BSD#AMPASBSD&quot;
+            }
+        ],
+        &quot;isDeprecatedLicenseId&quot;: false,
+        &quot;isFsfLibre&quot;: null,
+        &quot;isOsiApproved&quot;: false,
+        &quot;licenseComments&quot;: null,
+        &quot;licenseId&quot;: &quot;spdx:AMPAS&quot;,
+        &quot;licenseText&quot;: &quot;Copyright (c) 2006 Academy of Motion Picture Arts and Sciences (\&quot;A.M.P.A.S.\&quot;). Portions contributed by others as indicated. All rights reserved.\n\nA world-wide, royalty-free, non-exclusive right to distribute, copy, modify, create derivatives, and use, in source and binary forms, is hereby granted, subject to acceptance of this license. Performance of any of the aforementioned acts indicates acceptance to be bound by the following terms and conditions:\n\n     * Redistributions of source code must retain the above copyright notice, this list of conditions and the Disclaimer of Warranty.\n\n     * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the Disclaimer of Warranty in the documentation and/or other materials provided with the distribution.\n\n     * Nothing in this license shall be deemed to grant any rights to trademarks, copyrights, patents, trade secrets or any other intellectual property of A.M.P.A.S. or any contributors, except as expressly stated herein, and neither the name of A.M.P.A.S. nor of any other contributors to this software, may be used to endorse or promote products derived from this software without specific prior written permission of A.M.P.A.S. or contributor, as appropriate.\n\nThis license shall be governed by the laws of the State of California, and subject to the jurisdiction of the courts therein.\n\nDisclaimer of Warranty: THIS SOFTWARE IS PROVIDED BY A.M.P.A.S. AND CONTRIBUTORS \&quot;AS IS\&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT ARE DISCLAIMED. IN NO EVENT SHALL A.M.P.A.S., ANY CONTRIBUTORS OR DISTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n&quot;,
+        &quot;licenseTextHtml&quot;: &quot;\n      &lt;div class=\&quot;replaceable-license-text\&quot;&gt; \n         &lt;p&gt;Copyright (c) 2006 Academy of Motion Picture Arts and Sciences (&amp;quot;A.M.P.A.S.&amp;quot;). Portions contributed by\n         others as indicated. All rights reserved.&lt;/p&gt;\n\n      &lt;/div&gt;\n\n      &lt;p&gt;A world-wide, royalty-free, non-exclusive right to distribute, copy, modify, create derivatives, and use,\n         in source and binary forms, is hereby granted, subject to acceptance of this license. Performance of\n         any of the aforementioned acts indicates acceptance to be bound by the following terms and\n         conditions:&lt;/p&gt;\n\n&lt;ul style=\&quot;list-style:none\&quot;&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; *&lt;/var&gt;\n          Redistributions of source code must retain the above copyright notice, this list of conditions\n             and the Disclaimer of Warranty.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; *&lt;/var&gt;\n          Redistributions in binary form must reproduce the above copyright notice, this list of conditions\n             and the Disclaimer of Warranty in the documentation and/or other materials provided with the\n             distribution.\n        &lt;/li&gt;\n        \n&lt;li&gt;\n            &lt;var class=\&quot;replaceable-license-text\&quot;&gt; *&lt;/var&gt;\n          Nothing in this license shall be deemed to grant any rights to trademarks, copyrights, patents,\n             trade secrets or any other intellectual property of A.M.P.A.S. or any contributors, except as\n             expressly stated herein, and neither the name of A.M.P.A.S. nor of any other contributors to\n             this software, may be used to endorse or promote products derived from this software without\n             specific prior written permission of A.M.P.A.S. or contributor, as appropriate.\n        &lt;/li&gt;\n      \n&lt;/ul&gt;\n      &lt;p&gt;This license shall be governed by the laws of the State of California, and subject to the jurisdiction of\n         the courts therein.&lt;/p&gt;\n\n      &lt;p&gt;Disclaimer of Warranty: THIS SOFTWARE IS PROVIDED BY A.M.P.A.S. AND CONTRIBUTORS &amp;quot;AS IS&amp;quot; AND ANY EXPRESS\n         OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY,\n         FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT ARE DISCLAIMED. IN NO EVENT SHALL A.M.P.A.S.,\n         ANY CONTRIBUTORS OR DISTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY,\n         OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n         LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF\n         LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING\n         IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&lt;/p&gt;\n\n    &quot;,
+        &quot;name&quot;: &quot;Academy of Motion Picture Arts and Sciences BSD&quot;,
+        &quot;seeAlso&quot;: [
+            &quot;https://fedoraproject.org/wiki/Licensing/BSD#AMPASBSD&quot;
+        ],
+        &quot;standardLicenseTemplate&quot;: &quot;&lt;&lt;var;name=\&quot;copyright\&quot;;original=\&quot;Copyright (c) 2006 Academy of Motion Picture Arts and Sciences (\&quot;A.M.P.A.S.\&quot;). Portions contributed by others as indicated. All rights reserved.  \&quot;;match=\&quot;.{0,5000}\&quot;&gt;&gt;\n\nA world-wide, royalty-free, non-exclusive right to distribute, copy, modify, create derivatives, and use, in source and binary forms, is hereby granted, subject to acceptance of this license. Performance of any of the aforementioned acts indicates acceptance to be bound by the following terms and conditions:\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;*\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Redistributions of source code must retain the above copyright notice, this list of conditions and the Disclaimer of Warranty.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;*\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the Disclaimer of Warranty in the documentation and/or other materials provided with the distribution.\n\n   &lt;&lt;var;name=\&quot;bullet\&quot;;original=\&quot;*\&quot;;match=\&quot;.{0,20}\&quot;&gt;&gt; Nothing in this license shall be deemed to grant any rights to trademarks, copyrights, patents, trade secrets or any other intellectual property of A.M.P.A.S. or any contributors, except as expressly stated herein, and neither the name of A.M.P.A.S. nor of any other contributors to this software, may be used to endorse or promote products derived from this software without specific prior written permission of A.M.P.A.S. or contributor, as appropriate.\n\nThis license shall be governed by the laws of the State of California, and subject to the jurisdiction of the courts therein.\n\nDisclaimer of Warranty: THIS SOFTWARE IS PROVIDED BY A.M.P.A.S. AND CONTRIBUTORS \&quot;AS IS\&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT ARE DISCLAIMED. IN NO EVENT SHALL A.M.P.A.S., ANY CONTRIBUTORS OR DISTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\n&quot;
+    },
+    &quot;type&quot;: &quot;SPDXLicense&quot;
+}</pre></details></li><li><h3><a href="/source/Fedora">Fedora</a>: <a href="/fact/FedoraEntry/6a29c63de856dccf383220a2d0afc183">FedoraEntry:6a29c63de856dccf383220a2d0afc183</a> for <a href="/?license=Fedora:AMPAS"><span class="licensename"><span class="namespace">Fedora:</span>AMPAS</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">Fedora:</span>AMPAS</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>AMPAS</span></li></ul></li><li><b>other LicenseName Hints (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">Academy of Motion Picture Arts and Sciences BSD</span></li><li><span class="licensename">AMPAS BSD</span></li></ul></li></ul></div><div><h2>License Ratings</h2><ul><li><span title="A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.">Fedora: <b style="color: green;">allowed</b></span><span class="provided-by">(provided by: <span title="FedoraEntry:6a29c63de856dccf383220a2d0afc183">[<a href="/fact/FedoraEntry/6a29c63de856dccf383220a2d0afc183">FedoraEntry</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/BSD#AMPASBSD" target="_blank">https://fedoraproject.org/wiki/Licensing/BSD#AMPASBSD</a></li></ul><h3>Other Statements</h3><ul><li>[&quot;allowed&quot;]</li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;Fedora:AMPAS&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:AMPAS&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Academy of Motion Picture Arts and Sciences BSD&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;AMPAS BSD&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;FedoraEntry&quot;,
+        &quot;6a29c63de856dccf383220a2d0afc183&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: [
+                {
+                    &quot;contents&quot;: &quot;[\&quot;allowed\&quot;]&quot;,
+                    &quot;tag&quot;: &quot;LicenseStatement&quot;
+                },
+                [
+                    {
+                        &quot;contents&quot;: {
+                            &quot;contents&quot;: {
+                                &quot;contents&quot;: [
+                                    &quot;Fedora&quot;,
+                                    &quot;allowed&quot;,
+                                    {
+                                        &quot;contents&quot;: &quot;A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users&#39; exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy.&quot;,
+                                        &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                                    }
+                                ],
+                                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                            },
+                            &quot;tag&quot;: &quot;PositiveLicenseRating&quot;
+                        },
+                        &quot;tag&quot;: &quot;LicenseRating&quot;
+                    }
+                ]
+            ],
+            &quot;tag&quot;: &quot;SubStatements&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://fedoraproject.org/wiki/Licensing/BSD#AMPASBSD&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_fedora&quot;: {
+            &quot;_legacy_abbreviation&quot;: [
+                &quot;AMPAS BSD&quot;
+            ],
+            &quot;_legacy_names&quot;: [
+                &quot;Academy of Motion Picture Arts and Sciences BSD&quot;
+            ],
+            &quot;_notes&quot;: null
+        },
+        &quot;_id&quot;: &quot;AMPAS&quot;,
+        &quot;_license&quot;: {
+            &quot;_expression&quot;: &quot;spdx:AMPAS&quot;,
+            &quot;_scancode_key&quot;: null,
+            &quot;_status&quot;: [
+                &quot;allowed&quot;
+            ],
+            &quot;_text&quot;: null,
+            &quot;_urls&quot;: [
+                &quot;https://fedoraproject.org/wiki/Licensing/BSD#AMPASBSD&quot;
+            ]
+        }
+    },
+    &quot;type&quot;: &quot;FedoraEntry&quot;
+}</pre></details></li><li><h3><a href="/source/BlueOakCouncil">BlueOakCouncil</a>: <a href="/fact/BlueOakCouncil/912373167335a1d2aebeb7fcece2ec28">BlueOakCouncil:912373167335a1d2aebeb7fcece2ec28</a> for <a href="/?license=BlueOak:AMPAS"><span class="licensename"><span class="namespace">BlueOak:</span>AMPAS</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">BlueOak:</span>AMPAS</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Academy of Motion Picture Arts and Sciences BSD</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="BlueOakCouncil:912373167335a1d2aebeb7fcece2ec28">[<a href="/fact/BlueOakCouncil/912373167335a1d2aebeb7fcece2ec28">BlueOakCouncil</a>]</span>)</span></li></ul><h2>License Ratings</h2><ul><li><span title="These licenses lack important but nonessential elements of permissive open software licenses or impose additional requirements or restrictions, such as BSD-style prohibitions against endorsement and promotion.">BlueOakCouncil: <b style="">Bronze</b></span><span class="provided-by">(provided by: <span title="BlueOakCouncil:912373167335a1d2aebeb7fcece2ec28">[<a href="/fact/BlueOakCouncil/912373167335a1d2aebeb7fcece2ec28">BlueOakCouncil</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://spdx.org/licenses/AMPAS.html" target="_blank">https://spdx.org/licenses/AMPAS.html</a></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;BlueOak:AMPAS&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Academy of Motion Picture Arts and Sciences BSD&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;BlueOakCouncil&quot;,
+        &quot;912373167335a1d2aebeb7fcece2ec28&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;BlueOakCouncil&quot;,
+                        &quot;Bronze&quot;,
+                        {
+                            &quot;contents&quot;: &quot;These licenses lack important but nonessential elements of permissive open software licenses or impose additional requirements or restrictions, such as BSD-style prohibitions against endorsement and promotion.&quot;,
+                            &quot;tag&quot;: &quot;LicenseTagDescription&quot;
+                        }
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+                },
+                &quot;tag&quot;: &quot;NeutralLicenseRating&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseRating&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://spdx.org/licenses/AMPAS.html&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;contents&quot;: [
+            &quot;Bronze&quot;,
+            &quot;These licenses lack important but nonessential elements of permissive open software licenses or impose additional requirements or restrictions, such as BSD-style prohibitions against endorsement and promotion.&quot;,
+            {
+                &quot;_id&quot;: &quot;AMPAS&quot;,
+                &quot;_name&quot;: &quot;Academy of Motion Picture Arts and Sciences BSD&quot;,
+                &quot;_url&quot;: &quot;https://spdx.org/licenses/AMPAS.html&quot;
+            }
+        ],
+        &quot;tag&quot;: &quot;BOCPermissive&quot;
+    },
+    &quot;type&quot;: &quot;BlueOakCouncil&quot;
+}</pre></details></li><li><h3><a href="/source/ScancodeLicenseDB">ScancodeLicenseDB</a>: <a href="/fact/ScancodeData/7ba9361d1c822a6bd7d38aa9debc6643">ScancodeData:7ba9361d1c822a6bd7d38aa9debc6643</a> for <a href="/?license=scancode:ampas"><span class="licensename"><span class="namespace">scancode:</span>ampas</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">scancode:</span>ampas</span></li></ul></li><li><b>other LicenseNames (2):</b><ul class="capsulUl clearfix"><li><span class="licensename">Academy of Motion Picture Arts and Sciences BSD-Style</span></li><li><span class="licensename">AMPAS BSD-Style License</span></li></ul></li></ul></div><div><h2>License Types</h2><ul><li>Permissive<span class="provided-by">(provided by: <span title="ScancodeData:7ba9361d1c822a6bd7d38aa9debc6643">[<a href="/fact/ScancodeData/7ba9361d1c822a6bd7d38aa9debc6643">ScancodeData</a>]</span>)</span></li></ul><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/BSD#AMPASBSD" target="_blank">https://fedoraproject.org/wiki/Licensing/BSD#AMPASBSD</a></li></ul><h3>Other Statements</h3><ul><li>https://fedoraproject.org/wiki/Licensing/BSD#AMPASBSD</li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>A world-wide, royalty-free, non-exclusive right to distribute, copy, modify, create derivatives, and use, in source and binary forms, is hereby granted, subject to acceptance of this license. Performance of any of the aforementioned acts indicates acceptance to be bound by the following terms and conditions:
+
+     * Redistributions of source code must retain the above copyright notice, this list of conditions and the Disclaimer of Warranty.
+
+     * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the Disclaimer of Warranty in the documentation and/or other materials provided with the distribution.
+
+     * Nothing in this license shall be deemed to grant any rights to trademarks, copyrights, patents, trade secrets or any other intellectual property of A.M.P.A.S. or any contributors, except as expressly stated herein, and neither the name of A.M.P.A.S. nor of any other contributors to this software, may be used to endorse or promote products derived from this software without specific prior written permission of A.M.P.A.S. or contributor, as appropriate.
+
+This license shall be governed by the laws of the State of California, and subject to the jurisdiction of the courts therein.
+
+Disclaimer of Warranty: THIS SOFTWARE IS PROVIDED BY A.M.P.A.S. AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT ARE DISCLAIMED. IN NO EVENT SHALL A.M.P.A.S., ANY CONTRIBUTORS OR DISTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;scancode:ampas&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;AMPAS BSD-Style License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;Academy of Motion Picture Arts and Sciences BSD-Style&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;ScancodeData&quot;,
+        &quot;7ba9361d1c822a6bd7d38aa9debc6643&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;tag&quot;: &quot;Permissive&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseType&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: &quot;https://fedoraproject.org/wiki/Licensing/BSD#AMPASBSD&quot;,
+                &quot;tag&quot;: &quot;LicenseStatement&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: [
+                null,
+                &quot;https://fedoraproject.org/wiki/Licensing/BSD#AMPASBSD&quot;
+            ],
+            &quot;tag&quot;: &quot;LicenseUrl&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;A world-wide, royalty-free, non-exclusive right to distribute, copy, modify, create derivatives, and use, in source and binary forms, is hereby granted, subject to acceptance of this license. Performance of any of the aforementioned acts indicates acceptance to be bound by the following terms and conditions:\n\n     * Redistributions of source code must retain the above copyright notice, this list of conditions and the Disclaimer of Warranty.\n\n     * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the Disclaimer of Warranty in the documentation and/or other materials provided with the distribution.\n\n     * Nothing in this license shall be deemed to grant any rights to trademarks, copyrights, patents, trade secrets or any other intellectual property of A.M.P.A.S. or any contributors, except as expressly stated herein, and neither the name of A.M.P.A.S. nor of any other contributors to this software, may be used to endorse or promote products derived from this software without specific prior written permission of A.M.P.A.S. or contributor, as appropriate.\n\nThis license shall be governed by the laws of the State of California, and subject to the jurisdiction of the courts therein.\n\nDisclaimer of Warranty: THIS SOFTWARE IS PROVIDED BY A.M.P.A.S. AND CONTRIBUTORS \&quot;AS IS\&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT ARE DISCLAIMED. IN NO EVENT SHALL A.M.P.A.S., ANY CONTRIBUTORS OR DISTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_category&quot;: &quot;Permissive&quot;,
+        &quot;_homepageUrl&quot;: &quot;https://fedoraproject.org/wiki/Licensing/BSD#AMPASBSD&quot;,
+        &quot;_key&quot;: &quot;ampas&quot;,
+        &quot;_name&quot;: &quot;Academy of Motion Picture Arts and Sciences BSD-Style&quot;,
+        &quot;_notes&quot;: null,
+        &quot;_osiUrl&quot;: null,
+        &quot;_otherUrls&quot;: [],
+        &quot;_owner&quot;: &quot;AMPAS&quot;,
+        &quot;_shortName&quot;: &quot;AMPAS BSD-Style License&quot;,
+        &quot;_spdxId&quot;: &quot;AMPAS&quot;,
+        &quot;_text&quot;: &quot;A world-wide, royalty-free, non-exclusive right to distribute, copy, modify, create derivatives, and use, in source and binary forms, is hereby granted, subject to acceptance of this license. Performance of any of the aforementioned acts indicates acceptance to be bound by the following terms and conditions:\n\n     * Redistributions of source code must retain the above copyright notice, this list of conditions and the Disclaimer of Warranty.\n\n     * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the Disclaimer of Warranty in the documentation and/or other materials provided with the distribution.\n\n     * Nothing in this license shall be deemed to grant any rights to trademarks, copyrights, patents, trade secrets or any other intellectual property of A.M.P.A.S. or any contributors, except as expressly stated herein, and neither the name of A.M.P.A.S. nor of any other contributors to this software, may be used to endorse or promote products derived from this software without specific prior written permission of A.M.P.A.S. or contributor, as appropriate.\n\nThis license shall be governed by the laws of the State of California, and subject to the jurisdiction of the courts therein.\n\nDisclaimer of Warranty: THIS SOFTWARE IS PROVIDED BY A.M.P.A.S. AND CONTRIBUTORS \&quot;AS IS\&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT ARE DISCLAIMED. IN NO EVENT SHALL A.M.P.A.S., ANY CONTRIBUTORS OR DISTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&quot;,
+        &quot;_textUrls&quot;: [
+            &quot;https://fedoraproject.org/wiki/Licensing/BSD#AMPASBSD&quot;
+        ]
+    },
+    &quot;type&quot;: &quot;ScancodeData&quot;
+}</pre></details></li><li><h3><a href="/source/Fossology">Fossology</a>: <a href="/fact/Fossology/8f9f2d770bd1dc6e2f4e1898482a0cb1">Fossology:8f9f2d770bd1dc6e2f4e1898482a0cb1</a> for <a href="/?license=fossology:AMPAS"><span class="licensename"><span class="namespace">fossology:</span>AMPAS</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">fossology:</span>AMPAS</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">Academy of Motion Picture Arts and Sciences BSD</span></li></ul></li></ul></div><div><h3>URLs</h3><ul><li><a href="https://fedoraproject.org/wiki/Licensing/BSD#AMPASBSD" target="_blank">https://fedoraproject.org/wiki/Licensing/BSD#AMPASBSD</a></li></ul></div></div><h3>Texts</h3><ul><li><details><summary>Text:</summary><pre>Copyright (c) 2006 Academy of Motion Picture Arts and Sciences (&quot;A.M.P.A.S.&quot;). Portions contributed by others as indicated. All rights reserved.
+
+A world-wide, royalty-free, non-exclusive right to distribute, copy, modify, create derivatives, and use, in source and binary forms, is hereby granted, subject to acceptance of this license. Performance of any of the aforementioned acts indicates acceptance to be bound by the following terms and conditions:
+
+   * Redistributions of source code must retain the above copyright notice, this list of conditions and the Disclaimer of Warranty.
+
+   * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the Disclaimer of Warranty in the documentation and/or other materials provided with the distribution.
+
+   * Nothing in this license shall be deemed to grant any rights to trademarks, copyrights, patents, trade secrets or any other intellectual property of A.M.P.A.S. or any contributors, except as expressly stated herein, and neither the name of A.M.P.A.S. nor of any other contributors to this software, may be used to endorse or promote products derived from this software without specific prior written permission of A.M.P.A.S. or contributor, as appropriate.
+
+This license shall be governed by the laws of the State of California, and subject to the jurisdiction of the courts therein.
+
+Disclaimer of Warranty: THIS SOFTWARE IS PROVIDED BY A.M.P.A.S. AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT ARE DISCLAIMED. IN NO EVENT SHALL A.M.P.A.S., ANY CONTRIBUTORS OR DISTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</pre></details></li></ul><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;fossology:AMPAS&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;Academy of Motion Picture Arts and Sciences BSD&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;AlternativeLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;Fossology&quot;,
+        &quot;8f9f2d770bd1dc6e2f4e1898482a0cb1&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    null,
+                    &quot;https://fedoraproject.org/wiki/Licensing/BSD#AMPASBSD&quot;
+                ],
+                &quot;tag&quot;: &quot;LicenseUrl&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: {
+                    &quot;contents&quot;: [
+                        &quot;Fossology&quot;,
+                        &quot;&quot;
+                    ],
+                    &quot;tag&quot;: &quot;ScopedLicenseComment&quot;
+                },
+                &quot;tag&quot;: &quot;LicenseComment&quot;
+            },
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: &quot;Copyright (c) 2006 Academy of Motion Picture Arts and Sciences (\&quot;A.M.P.A.S.\&quot;). Portions contributed by others as indicated. All rights reserved.\n\nA world-wide, royalty-free, non-exclusive right to distribute, copy, modify, create derivatives, and use, in source and binary forms, is hereby granted, subject to acceptance of this license. Performance of any of the aforementioned acts indicates acceptance to be bound by the following terms and conditions:\n\n   * Redistributions of source code must retain the above copyright notice, this list of conditions and the Disclaimer of Warranty.\n\n   * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the Disclaimer of Warranty in the documentation and/or other materials provided with the distribution.\n\n   * Nothing in this license shall be deemed to grant any rights to trademarks, copyrights, patents, trade secrets or any other intellectual property of A.M.P.A.S. or any contributors, except as expressly stated herein, and neither the name of A.M.P.A.S. nor of any other contributors to this software, may be used to endorse or promote products derived from this software without specific prior written permission of A.M.P.A.S. or contributor, as appropriate.\n\nThis license shall be governed by the laws of the State of California, and subject to the jurisdiction of the courts therein.\n\nDisclaimer of Warranty: THIS SOFTWARE IS PROVIDED BY A.M.P.A.S. AND CONTRIBUTORS \&quot;AS IS\&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT ARE DISCLAIMED. IN NO EVENT SHALL A.M.P.A.S., ANY CONTRIBUTORS OR DISTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&quot;,
+            &quot;tag&quot;: &quot;LicenseText&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        },
+        {
+            &quot;contents&quot;: null,
+            &quot;tag&quot;: &quot;MaybeStatement&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_marydone&quot;: false,
+        &quot;_rf_FSFfree&quot;: null,
+        &quot;_rf_Fedora&quot;: null,
+        &quot;_rf_GPLv2compatible&quot;: null,
+        &quot;_rf_GPLv3compatible&quot;: null,
+        &quot;_rf_OSIapproved&quot;: null,
+        &quot;_rf_active&quot;: true,
+        &quot;_rf_add_date&quot;: null,
+        &quot;_rf_copyleft&quot;: null,
+        &quot;_rf_fullname&quot;: &quot;Academy of Motion Picture Arts and Sciences BSD&quot;,
+        &quot;_rf_notes&quot;: &quot;&quot;,
+        &quot;_rf_risk&quot;: null,
+        &quot;_rf_shortname&quot;: &quot;fossology:AMPAS&quot;,
+        &quot;_rf_source&quot;: null,
+        &quot;_rf_spdx_compatible&quot;: true,
+        &quot;_rf_text&quot;: &quot;Copyright (c) 2006 Academy of Motion Picture Arts and Sciences (\&quot;A.M.P.A.S.\&quot;). Portions contributed by others as indicated. All rights reserved.\n\nA world-wide, royalty-free, non-exclusive right to distribute, copy, modify, create derivatives, and use, in source and binary forms, is hereby granted, subject to acceptance of this license. Performance of any of the aforementioned acts indicates acceptance to be bound by the following terms and conditions:\n\n   * Redistributions of source code must retain the above copyright notice, this list of conditions and the Disclaimer of Warranty.\n\n   * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the Disclaimer of Warranty in the documentation and/or other materials provided with the distribution.\n\n   * Nothing in this license shall be deemed to grant any rights to trademarks, copyrights, patents, trade secrets or any other intellectual property of A.M.P.A.S. or any contributors, except as expressly stated herein, and neither the name of A.M.P.A.S. nor of any other contributors to this software, may be used to endorse or promote products derived from this software without specific prior written permission of A.M.P.A.S. or contributor, as appropriate.\n\nThis license shall be governed by the laws of the State of California, and subject to the jurisdiction of the courts therein.\n\nDisclaimer of Warranty: THIS SOFTWARE IS PROVIDED BY A.M.P.A.S. AND CONTRIBUTORS \&quot;AS IS\&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT ARE DISCLAIMED. IN NO EVENT SHALL A.M.P.A.S., ANY CONTRIBUTORS OR DISTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&quot;,
+        &quot;_rf_text_updatable&quot;: true,
+        &quot;_rf_url&quot;: &quot;https://fedoraproject.org/wiki/Licensing/BSD#AMPASBSD&quot;
+    },
+    &quot;type&quot;: &quot;Fossology&quot;
+}</pre></details></li><li><h3><a href="/source/ort-config">ort-config</a>: <a href="/fact/OrtLicenseCategorization/d7bbbc98f1fce9be18ab19bff62c7577">OrtLicenseCategorization:d7bbbc98f1fce9be18ab19bff62c7577</a> for <a href="/?license=SPDX:AMPAS"><span class="licensename"><span class="namespace">SPDX:</span>AMPAS</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">SPDX:</span>AMPAS</span></li></ul></li></ul></div><div><h2>License Tags</h2><ul><li><span title="">OrtLicenseCategorization: <b>permissive</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:d7bbbc98f1fce9be18ab19bff62c7577">[<a href="/fact/OrtLicenseCategorization/d7bbbc98f1fce9be18ab19bff62c7577">OrtLicenseCategorization</a>]</span>)</span></li><li><span title="">OrtLicenseCategorization: <b>include-in-notice-file</b></span><span class="provided-by">(provided by: <span title="OrtLicenseCategorization:d7bbbc98f1fce9be18ab19bff62c7577">[<a href="/fact/OrtLicenseCategorization/d7bbbc98f1fce9be18ab19bff62c7577">OrtLicenseCategorization</a>]</span>)</span></li></ul></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: &quot;SPDX:AMPAS&quot;,
+        &quot;tag&quot;: &quot;LN&quot;
+    },
+    &quot;id&quot;: [
+        &quot;OrtLicenseCategorization&quot;,
+        &quot;d7bbbc98f1fce9be18ab19bff62c7577&quot;
+    ],
+    &quot;impliedStmts&quot;: [
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;permissive&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        },
+        {
+            &quot;contents&quot;: {
+                &quot;contents&quot;: [
+                    &quot;OrtLicenseCategorization&quot;,
+                    &quot;include-in-notice-file&quot;,
+                    {
+                        &quot;tag&quot;: &quot;NoLicenseTagText&quot;
+                    }
+                ],
+                &quot;tag&quot;: &quot;ScopedLicenseTag&quot;
+            },
+            &quot;tag&quot;: &quot;LicenseTag&quot;
+        }
+    ],
+    &quot;raw&quot;: {
+        &quot;_olcCategories&quot;: [
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;permissive&quot;
+            },
+            {
+                &quot;description&quot;: null,
+                &quot;name&quot;: &quot;include-in-notice-file&quot;
+            }
+        ],
+        &quot;_olcLicensename&quot;: &quot;SPDX:AMPAS&quot;
+    },
+    &quot;type&quot;: &quot;OrtLicenseCategorization&quot;
+}</pre></details></li><li><h3><a href="/source/CavilLicenseChanges">CavilLicenseChanges</a>: <a href="/fact/CavilLicenseChange/585cc8247a11e455b47df4ad5cbefd17">CavilLicenseChange:585cc8247a11e455b47df4ad5cbefd17</a> for <a href="/?license=cavil:AMPAS"><span class="licensename"><span class="namespace">cavil:</span>AMPAS</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">cavil:</span>AMPAS</span></li></ul></li><li><b>other LicenseName Hints (1):</b><ul class="capsulUl clearfix"><li><span class="licensename">AMPAS</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: &quot;cavil:AMPAS&quot;,
+                &quot;tag&quot;: &quot;LN&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;AMPAS&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;CavilLicenseChange&quot;,
+        &quot;585cc8247a11e455b47df4ad5cbefd17&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_clcAlias&quot;: [
+            &quot;AMPAS&quot;
+        ],
+        &quot;_clcName&quot;: &quot;cavil:AMPAS&quot;
+    },
+    &quot;type&quot;: &quot;CavilLicenseChange&quot;
+}</pre></details></li><li><h3><a href="/source/Metaeffekt">Metaeffekt</a>: <a href="/fact/MetaeffektLicense/90752de9e40ec5c5213748061cdd5d02">MetaeffektLicense:90752de9e40ec5c5213748061cdd5d02</a> for <a href="/?license=metaeffekt:AMPAS License"><span class="licensename"><span class="namespace">metaeffekt:</span>AMPAS License</span></a></h3><div class="two-columns-grid"><div><h2>LicenseNames</h2><ul><li><b>this:</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">metaeffekt:</span>AMPAS License</span></li></ul></li><li><b>other LicenseNames (1):</b><ul class="capsulUl clearfix"><li><span class="licensename"><span class="namespace">spdx:</span>AMPAS</span></li></ul></li><li><b>other LicenseName Hints (4):</b><ul class="capsulUl clearfix"><li><span class="licensename">AMPAS</span></li><li><span class="licensename"><span class="namespace">scancode:</span>ampas</span></li><li><span class="licensename">AMPAS License</span></li><li><span class="licensename">AMPAS LICENSE</span></li></ul></li></ul></div><div></div></div><details><summary>JSON:</summary><pre>{
+    &quot;applicableLNs&quot;: {
+        &quot;contents&quot;: [
+            {
+                &quot;contents&quot;: [
+                    {
+                        &quot;contents&quot;: &quot;metaeffekt:AMPAS License&quot;,
+                        &quot;tag&quot;: &quot;LN&quot;
+                    },
+                    [
+                        {
+                            &quot;contents&quot;: &quot;spdx:AMPAS&quot;,
+                            &quot;tag&quot;: &quot;LN&quot;
+                        }
+                    ]
+                ],
+                &quot;tag&quot;: &quot;AlternativeLNs&quot;
+            },
+            [
+                {
+                    &quot;contents&quot;: &quot;AMPAS&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;AMPAS License&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;AMPAS LICENSE&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                },
+                {
+                    &quot;contents&quot;: &quot;scancode:ampas&quot;,
+                    &quot;tag&quot;: &quot;LN&quot;
+                }
+            ]
+        ],
+        &quot;tag&quot;: &quot;ImpreciseLNs&quot;
+    },
+    &quot;id&quot;: [
+        &quot;MetaeffektLicense&quot;,
+        &quot;90752de9e40ec5c5213748061cdd5d02&quot;
+    ],
+    &quot;impliedStmts&quot;: [],
+    &quot;raw&quot;: {
+        &quot;_alternativeNames&quot;: [
+            &quot;AMPAS License&quot;,
+            &quot;AMPAS LICENSE&quot;
+        ],
+        &quot;_canonicalName&quot;: &quot;metaeffekt:AMPAS License&quot;,
+        &quot;_category&quot;: &quot;AMPAS&quot;,
+        &quot;_openCoDEStatus&quot;: null,
+        &quot;_otherIds&quot;: [
+            &quot;scancode:ampas&quot;
+        ],
+        &quot;_shortName&quot;: null,
+        &quot;_spdxIdentifier&quot;: &quot;spdx:AMPAS&quot;
+    },
+    &quot;type&quot;: &quot;MetaeffektLicense&quot;
+}</pre></details></li></ul></body></html>
