@@ -19,7 +19,7 @@ import MyPrelude
 data BlueOakLicense = BlueOakLicense
   { _name :: String,
     _id :: String,
-    _url :: String
+    _url :: Maybe String
   }
   deriving (Eq, Show, Ord, Generic)
 
@@ -28,7 +28,7 @@ instance FromJSON BlueOakLicense where
     BlueOakLicense
       <$> v .: "name"
       <*> v .: "id"
-      <*> v .: "url"
+      <*> v .:? "url"
 
 instance ToJSON BlueOakLicense
 
@@ -116,7 +116,8 @@ alnFromBol (BlueOakLicense name id _) =
                      ]
 
 getImpliedStmtsOfBOL :: BlueOakLicense -> [LicenseStatement]
-getImpliedStmtsOfBOL (BlueOakLicense {_url = url}) = [LicenseUrl Nothing url]
+getImpliedStmtsOfBOL (BlueOakLicense {_url = Just url}) = [LicenseUrl Nothing url]
+getImpliedStmtsOfBOL _ = []
 
 instance LicenseFactC BlueOakCouncilFact where
   getType _ = "BlueOakCouncil"
