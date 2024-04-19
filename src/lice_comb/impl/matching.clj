@@ -164,18 +164,17 @@
   matches are found."
   [uri]
   (when-not (s/blank? uri)
-      ; We don't need to sexp/normalise the keys here, as we never detect an expression from a URI
-    (lciei/prepend-source uri
-                          (manual-fixes
-                            (let [suri (lciu/simplify-uri uri)]
-                              (or ; 1. Does the simplified URI match any of the simplified URIs in the SPDX license or exception lists?
-                                (when-let [ids (get @lcis/index-uri-to-id-d suri)]
-                                  (into {} (map #(hash-map % (list {:id % :type :concluded :confidence :high :strategy :spdx-listed-uri :source (list uri)})) ids)))
+    (let [result (manual-fixes
+                   (let [suri (lciu/simplify-uri uri)]
+                     (or ; 1. Does the simplified URI match any of the simplified URIs in the SPDX license or exception lists?
+                       (when-let [ids (get @lcis/index-uri-to-id-d suri)]
+                         (into {} (map #(hash-map % (list {:id % :type :concluded :confidence :high :strategy :spdx-listed-uri :source (list uri)})) ids)))
 
-                                ; 2. attempt to retrieve the text/plain contents of the uri and perform license text matching on it
-                                (when-let [license-text (lcihttp/get-text uri)]
-                                  (when-let [expressions (text->expressions-info license-text)]
-                                    expressions))))))))
+                       ; 2. attempt to retrieve the text/plain contents of the uri and perform license text matching on it
+                       (when-let [license-text (lcihttp/get-text uri)]
+                         (text->expressions-info license-text)))))]
+      ; We don't need to sexp/normalise the keys here, as we never detect an expression from a URI
+      (lciei/prepend-source uri result))))
 
 (defn- string->ids-info
   "Converts the given string (a fragment of a license name) into a sequence of
