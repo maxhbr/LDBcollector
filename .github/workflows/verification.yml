@@ -15,19 +15,17 @@ jobs:
       GRADLE_OPTS: -Dorg.gradle.daemon=false
     steps:
     - name: Checkout Repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
     - name: Setup Java
-      uses: actions/setup-java@v2
+      uses: actions/setup-java@v4
       with:
         distribution: temurin
         java-version: 17
+    - name: Setup Gradle
+      uses: gradle/actions/setup-gradle@v3
+      with:
+        gradle-home-cache-cleanup: true
     - name: Verify package configurations
-      uses: gradle/gradle-build-action@v2
-      with:
-        build-root-directory: tools/curations
-        arguments: verifyPackageConfigurations
+      run: ./gradlew -p tools/curations verifyPackageConfigurations
     - name: Verify package curations
-      uses: gradle/gradle-build-action@v2
-      with:
-        build-root-directory: tools/curations
-        arguments: verifyPackageCurations
+      run: ./gradlew -p tools/curations verifyPackageCurations
