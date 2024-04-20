@@ -9,3 +9,5 @@ spdxIdentifier: "FBM"
 alternativeNames:
   - "Fuzzy Bitmap License"
 
+otherIds: 
+  - "scancode:fbm"

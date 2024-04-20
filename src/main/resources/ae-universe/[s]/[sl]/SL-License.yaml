@@ -6,3 +6,5 @@ canonicalName: "SL License"
 category: "SL"
 spdxIdentifier: "SL"
 
+otherIds: 
+  - "scancode:sl"

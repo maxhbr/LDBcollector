@@ -12,3 +12,5 @@ alternativeNames:
   - "stunnel-exception"
   - "stunnel Exception"
 
+otherIds: 
+  - "scancode:stunnel-exception"

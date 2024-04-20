@@ -13,5 +13,4 @@ alternativeNames:
   - "Apache 2.0 with Runtime Library Exception"
 
 otherIds: 
-  - "scancode:apache-2.0-runtime-library-exception"
   - "scancode:apple-runtime-library-exception"

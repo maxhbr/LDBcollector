@@ -11,4 +11,7 @@ openCoDEStatus: "approved"
 alternativeNames:
   - "OFL-1.0-no-RFN"
   - "SIL Open Font License 1.0 with no Reserved Font Name"
+  - "SIL Open Font License, Version 1.0. with no Reserved Font Name"
 
+otherIds: 
+  - "scancode:ofl-1.0-no-rfn"

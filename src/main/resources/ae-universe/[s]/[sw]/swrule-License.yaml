@@ -9,3 +9,5 @@ spdxIdentifier: "swrule"
 alternativeNames:
   - "swrule License"
 
+otherIds: 
+  - "scancode:swrule"

@@ -6,5 +6,8 @@ canonicalName: "Linum Software License"
 category: "Linum Software License"
 shortName: "Linum"
 
+alternativeNames:
+  - "Linum Software License"
+
 otherIds: 
   - "scancode:linum"

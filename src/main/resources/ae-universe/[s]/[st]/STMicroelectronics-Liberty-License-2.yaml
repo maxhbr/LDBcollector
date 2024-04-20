@@ -1,0 +1,14 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+
+canonicalName: "STMicroelectronics Liberty License 2"
+category: "STMicroelectronics"
+shortName: "STM-Liberty-2"
+
+alternativeNames:
+  - "STMicro Liberty License v2"
+  - "MCD-ST Liberty SW License"
+
+otherIds: 
+  - "scancode:st-mcd-2.0"

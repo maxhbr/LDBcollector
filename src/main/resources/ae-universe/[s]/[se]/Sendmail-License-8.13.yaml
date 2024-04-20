@@ -1,0 +1,17 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+
+canonicalName: "Sendmail License 8.13"
+category: "Sendmail"
+shortName: "Sendmail-8.13"
+
+openCoDEStatus: "approved"
+
+alternativeNames:
+  - "Revision: 8.13 $, Last updated $Date: 2004/05/11 23:57:57"
+  - "Sendmail v8.13"
+  - "Sendmail License v8.13"
+
+otherIds: 
+  - "scancode:sendmail"

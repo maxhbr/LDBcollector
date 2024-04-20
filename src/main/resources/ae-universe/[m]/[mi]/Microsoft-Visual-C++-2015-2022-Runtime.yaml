@@ -1,0 +1,13 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+
+canonicalName: "Microsoft Visual C++ 2015-2022 Runtime"
+category: "Microsoft Visual C++ 2015-2022 Runtime"
+shortName: "ms-visual-cpp-2015-runtime"
+
+alternativeNames:
+  - "Microsoft Visual C++ 2015-2022 Runtime"
+
+otherIds: 
+  - "scancode:ms-visual-cpp-2015-runtime"

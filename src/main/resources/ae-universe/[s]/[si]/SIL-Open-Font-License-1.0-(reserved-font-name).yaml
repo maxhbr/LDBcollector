@@ -9,4 +9,7 @@ spdxIdentifier: "OFL-1.0-RFN"
 alternativeNames:
   - "OFL-1.0-RFN"
   - "SIL Open Font License 1.0 with Reserved Font Name"
+  - "is a Reserved Font Name for this Font Software"
 
+otherIds: 
+  - "scancode:ofl-1.0-rfn"

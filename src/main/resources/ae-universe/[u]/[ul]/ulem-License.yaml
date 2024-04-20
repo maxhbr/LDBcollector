@@ -9,3 +9,5 @@ spdxIdentifier: "ulem"
 alternativeNames:
   - "ulem License"
 
+otherIds: 
+  - "scancode:ulem"

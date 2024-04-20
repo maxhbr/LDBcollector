@@ -1,0 +1,17 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+
+canonicalName: "Unmodified Binary Distribution Exception (GPL)"
+category: "Unmodified Binary Distribution Exception"
+shortName: "UBDL-Exception-GPL"
+spdxIdentifier: "UBDL-exception"
+
+type: "exception"
+
+alternativeNames:
+  - "Unmodified Binary Distribution Licence"
+  - "Unmodified Binary Distribution Exception"
+
+otherIds: 
+  - "scancode:ubdl"
