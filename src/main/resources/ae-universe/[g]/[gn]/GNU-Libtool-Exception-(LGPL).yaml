@@ -1,0 +1,15 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+
+canonicalName: "GNU Libtool Exception (LGPL)"
+category: "GNU Libtool Exception"
+shortName: "Libtool-Exception-LGPL"
+
+type: "exception"
+
+alternativeNames:
+  - "GNU Libtool exception to LGPL"
+
+otherIds: 
+  - "scancode:libtool-exception-lgpl"

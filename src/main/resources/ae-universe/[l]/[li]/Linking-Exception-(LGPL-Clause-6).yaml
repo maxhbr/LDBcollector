@@ -1,0 +1,15 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+
+canonicalName: "Linking Exception (LGPL Clause 6)"
+category: "Linking Exception LGPL"
+shortName: "Linking-Exception-LGPL-clause-6"
+
+type: "exception"
+
+alternativeNames:
+  - "Clause 6 Exception to LGPL 2.1"
+
+otherIds: 
+  - "scancode:clause-6-exception-lgpl-2.1"

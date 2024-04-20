@@ -1,0 +1,15 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+
+canonicalName: "BSD 4-Clause License (Systemics; without endorsement clause)"
+category: "BSD"
+shortName: "BSD-4-Clause-Systemics-without-endorsement"
+spdxIdentifier: "BSD-Systemics"
+
+alternativeNames:
+  - "BSD-Systemics"
+  - "Systemics BSD variant license"
+
+otherIds: 
+  - "scancode:bsd-systemics"
