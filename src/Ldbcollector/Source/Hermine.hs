@@ -70,16 +70,43 @@ data HermineGeneric
     }
   deriving (Eq, Ord, Show, Generic)
 $(deriveJSON defaultOptions {fieldLabelModifier = drop 3, constructorTagModifier = map toLower} ''HermineGeneric)
+instance H.ToMarkup HermineGeneric where
+  toMarkup hg = do
+    H.h5 $ H.toMarkup (hg_name hg)
+    H.p $ do
+      H.strong "Description:"
+      H.toMarkup (hg_description hg)
+    case hg_metacategory hg of
+      Just metacategory -> do
+        H.p $ do
+          H.strong "Metacategory:"
+          H.toMarkup (show metacategory)
+      _ -> return ()
+    case hg_passivity hg of
+      Just passivity -> do
+        H.p $ do
+          H.strong "Passivity:"
+          H.toMarkup (show passivity)
+      _ -> return ()
 
 data HermineGenericRef
     = Unresolved !String
     | Resolved !HermineGeneric
     deriving (Eq, Ord, Show, Generic)
+instance FromJSON HermineGenericRef where
+    parseJSON = withText "HermineGenericRef" $ \t -> return $ Unresolved (unpack t)
+instance ToJSON HermineGenericRef where
+    toJSON (Unresolved s) = toJSON s
+    toJSON (Resolved hg) = toJSON hg
+instance H.ToMarkup HermineGenericRef where
+  toMarkup = \case
+    Unresolved name -> H.toMarkup name
+    Resolved generic -> H.toMarkup generic
 
 data HermineObligation
     = HermineObligation
     { ho_license :: ![String],
-      ho_generic :: !(Maybe [String]), -- ![HermineGeneric],
+      ho_generic :: !(Maybe [HermineGenericRef]),
       ho_name :: !String,
       ho_verbatim :: !String,
       ho_passivity :: !String,
@@ -352,14 +379,35 @@ instance HasOriginalData HermineData where
 instance Source HermineData where
   getSource _ = Source "HermineData"
   getFacts (HermineData dir) =
-    let parseOrFailJson json = do
+    let parseOrFailGenericJson json = do
+          logFileReadIO json
+          decoded <- eitherDecodeFileStrict json :: IO (Either String HermineGeneric)
+          case decoded of
+            Left err -> fail err
+            Right hermineGeneric -> return hermineGeneric
+        reworkHermineLicense :: [HermineGeneric] -> HermineLicense -> HermineLicense
+        reworkHermineLicense generics hermineLicense = let
+              reworkObligation :: HermineObligation -> HermineObligation
+              reworkObligation obligation = let
+                    reworkGenericRef :: HermineGenericRef -> HermineGenericRef
+                    reworkGenericRef = \case
+                      Unresolved name -> case (find ((== name) . hg_name) generics) of
+                        Just generic -> Resolved generic
+                        Nothing -> Unresolved name
+                      resolved -> resolved
+                    reworkGenericRefs :: [HermineGenericRef] -> [HermineGenericRef]
+                    reworkGenericRefs = map reworkGenericRef
+                  in obligation { ho_generic = Just (reworkGenericRefs (fromMaybe [] (ho_generic obligation))) }
+            in hermineLicense { hl_obligations = map reworkObligation (hl_obligations hermineLicense) }
+        parseOrFailJson generics json = do
           logFileReadIO json
           decoded <- eitherDecodeFileStrict json :: IO (Either String HermineLicense)
           case decoded of
             Left err -> fail err
-            Right hermineLicense -> return hermineLicense
+            Right hermineLicense -> return (reworkHermineLicense generics hermineLicense)
      in do
           hermineGenericsJsons <- glob (dir </> "generics" </> "*.json")
+          hermineGenerics <- mapM parseOrFailGenericJson hermineGenericsJsons
           hermineLicenseJsons <- glob (dir </> "licenses" </> "*.json")
-          hermineLicenses <- mapM parseOrFailJson hermineLicenseJsons
+          hermineLicenses <- mapM (parseOrFailJson hermineGenerics) hermineLicenseJsons
           (return . V.fromList) (wrapFacts hermineLicenses)

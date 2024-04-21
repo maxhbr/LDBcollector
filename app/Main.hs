@@ -18,6 +18,8 @@ import System.Environment (getArgs)
 import Prelude hiding (div, head, id)
 import Main.Utf8 (withUtf8)
 import System.Directory (getCurrentDirectory, getDirectoryContents)
+import Control.Concurrent.Async.Pool (withTaskGroup, mapConcurrently)
+import Control.Concurrent (getNumCapabilities)
 
 writeFilesByName :: FilePath -> LicenseName -> LicenseGraphM ()
 writeFilesByName outDir lic = do
@@ -49,7 +51,14 @@ writeSvgByNS outDir selectedNS = do
               _ -> False
           )
           allLicenseNames
-  V.mapM_ (writeFilesByName outDir) filteredLicenses
+  if True
+    then do
+      numCaps <- lift $ getNumCapabilities
+      graph <- MTL.get 
+      lift $ withTaskGroup (numCaps - 3) $ \group -> do 
+          _ <- mapConcurrently group (runLicenseGraphM' graph . writeFilesByName outDir) (V.toList filteredLicenses)
+          return ()
+    else V.mapM_ (writeFilesByName outDir) filteredLicenses
 
 curation :: Vector CurationItem
 curation =
