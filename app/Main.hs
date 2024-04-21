@@ -55,7 +55,7 @@ writeSvgByNS outDir selectedNS = do
     then do
       numCaps <- lift $ getNumCapabilities
       graph <- MTL.get 
-      lift $ withTaskGroup (numCaps - 3) $ \group -> do 
+      lift $ withTaskGroup (max 1 (numCaps - 3)) $ \group -> do 
           _ <- mapConcurrently group (runLicenseGraphM' graph . writeFilesByName outDir) (V.toList filteredLicenses)
           return ()
     else V.mapM_ (writeFilesByName outDir) filteredLicenses
