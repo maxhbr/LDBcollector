@@ -47,6 +47,7 @@ library
       Ldbcollector.Source.Fossology
       Ldbcollector.Source.FSF
       Ldbcollector.Source.GoogleLicensePolicy
+      Ldbcollector.Source.Hermine
       Ldbcollector.Source.HitachiOpenLicense
       Ldbcollector.Source.Ifross
       Ldbcollector.Source.Metaeffekt
