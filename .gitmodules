@@ -99,3 +99,7 @@
 [submodule "data/McCoySmith-OSI-License-Categories"]
 	path = data/McCoySmith-OSI-License-Categories
 	url = https://github.com/McCoySmith/OSI-License-Categories
+[submodule "generatedV2"]
+	path = generatedV2
+	url = https://github.com/maxhbr/LDBcollector/
+	branch = generatedV2

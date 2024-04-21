@@ -112,7 +112,7 @@ main = withUtf8 $ do
         applySources curation
       writeMetrics
     case args of
-      "write" : names -> mapM_ (writeFilesByName "_out" . fromString) names
-      ["writeNS", ns] -> writeSvgByNS "_out" (fromString ns)
+      "write" : names -> mapM_ (writeFilesByName "generatedV2" . fromString) names
+      ["writeNS", ns] -> writeSvgByNS "generatedV2" (fromString ns)
       _ -> serve
   return ()
