@@ -83,16 +83,16 @@
 	url = https://github.com/vinland-technology/flict
 [submodule "data/hesa-foss-licenses"]
 	path = data/hesa-foss-licenses
-	url = git@github.com:hesa/foss-licenses.git
+	url = https://github.com/hesa/foss-licenses
 [submodule "data/doubleopen-project-policy-configuration"]
 	path = data/doubleopen-project-policy-configuration
-	url = git@github.com:doubleopen-project/policy-configuration.git
+	url = https://github.com/doubleopen-project/policy-configuration
 [submodule "data/oss-review-toolkit-ort-config"]
 	path = data/oss-review-toolkit-ort-config
-	url = git@github.com:oss-review-toolkit/ort-config.git
+	url = https://github.com/oss-review-toolkit/ort-config
 [submodule "data/hermine-project-hermine-data"]
 	path = data/hermine-project-hermine-data
-	url = git@gitlab.com:hermine-project/community-data.git
+	url = https://gitlab.com/hermine-project/community-data
 [submodule "data/fossology-LicenseDb"]
 	path = data/fossology-LicenseDb
 	url = https://github.com/fossology/LicenseDb/
