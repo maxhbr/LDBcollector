@@ -2,3 +2,9 @@
 	path = generatedV2
 	url = https://github.com/maxhbr/LDBcollector/
 	branch = generatedV2
+[submodule "data/github-choosealicense.com/license-list-XML"]
+	path = data/github-choosealicense.com/license-list-XML
+	url = https://github.com/spdx/license-list-XML.git
+[submodule "data/warpr-licensedb/upstream/creativecommons"]
+	path = data/warpr-licensedb/upstream/creativecommons
+	url = git://github.com/creativecommons/license.rdf.git
