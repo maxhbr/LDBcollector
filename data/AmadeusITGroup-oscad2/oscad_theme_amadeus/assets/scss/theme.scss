@@ -1,0 +1,14 @@
+@import "bootstrap/variables";
+
+.navbar-headerbar.theme {
+  margin-bottom: 0;
+  background: #005EBB;
+  color: #FFF;
+}
+
+$screen-xxs-max = $screen-xs-max / 2;
+@media (max-width: $screen-xxs-max) {
+  .hidden-xxs {
+    display: none;
+  }
+}
