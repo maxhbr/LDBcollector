@@ -1,0 +1,28 @@
+{
+  "env": {
+    "node": true,
+    "browser": true,
+    "jquery": true,
+    "es2021": true
+  },
+  "extends": ["eslint:recommended", "plugin:vue/strongly-recommended", "prettier"],
+  "plugins": ["import", "prettier"],
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module"
+  },
+  "rules": {
+    "prettier/prettier": "error",
+    "import/order": [
+      "error",
+      {
+        "groups": ["type", "builtin", ["sibling", "parent"], "index", "object"],
+        "newlines-between": "never",
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        }
+      }
+    ]
+  }
+}

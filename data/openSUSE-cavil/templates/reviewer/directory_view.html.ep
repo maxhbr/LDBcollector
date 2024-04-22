@@ -1,0 +1,33 @@
+% layout 'default';
+% title "Directory listing of $filename";
+
+%= include 'reviewer/_path'
+
+<div class="row">
+  <div class="col-12 mb-4">
+    <div class="file-list">
+      <table>
+        % for my $entry (@$dirs, @$files, @$processed) {
+          % my $name = $entry->basename;
+          % my $path = "$filename/$name";
+          <tr>
+            <td class="pe-1">
+              % if (-d $entry) {
+                <i class="fa fa-folder"></i>
+              % }
+              % elsif ($name =~ /\.processed(?:\.\w+|$)/) {
+                <i class="far fa-copy"></i>
+              % }
+              % else {
+                <i class="far fa-file"></i>
+              % }
+            </td>
+            <td>
+              <a href="<%= url_for('file_view', id => $id, file => $path) %>"><%= $name %></a>
+            </td>
+          </tr>
+        % }
+      </table>
+    </div>
+  </div>
+</div>

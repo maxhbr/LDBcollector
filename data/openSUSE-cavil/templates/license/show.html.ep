@@ -1,0 +1,70 @@
+% layout 'default';
+% title "License details of $license";
+
+<div class="row g-4">
+  % if (current_user_has_role 'admin') {
+    %= form_for 'update_patterns' => begin
+      <div class="col mb-3">
+          <label class="form-label" for="license">Name</label>
+          %= text_field license => $license, class => 'form-control', readonly => 'readonly'
+      </div>
+      <div class="col mb-3">
+          <label class="form-label" for="name">SPDX</label>
+        %= text_field spdx => $patterns->[0]{spdx}, class => 'form-control'
+      </div>
+      <div class="col mb-3">
+        %= submit_button 'Update', class => 'btn btn-secondary'
+      </div>
+    % end
+  % }
+  % else {
+    <div class="col mb3">
+        <label class="form-label" for="license">Name</label>
+        %= text_field license => $license, class => 'form-control', disabled => 'disabled'
+    </div>
+    <div class="col mb-3">
+        <label class="form-label" for="name">SPDX</label>
+      %= text_field spdx => $patterns->[0]{spdx}, class => 'form-control', disabled => 'disabled'
+    </div>
+  % }
+</div>
+
+<h3>Patterns for this license
+  % if (current_user_has_role 'admin') {
+    %= link_to '(Add new)' => url_for('new_pattern')->query('license-name' => $license), class => 'btn', role => 'btn'
+  % }
+</h3>
+
+% for my $match (@$patterns) {
+  <div class="row pattern-container">
+    <div class="col-12 pattern-file-container">
+      <div class="pattern-header">
+        <div>Created <time class="timeago" datetime="<%= $match->{created} %>"><%= $match->{created} %></time>
+          % if (current_user_has_role 'admin') {
+            <a href="<%= url_for('edit_pattern', id => $match->{id}) %>" title="Edit" class="float-end">
+              <i class="fas fa-edit"></i>
+            </a>
+          % }
+        </div>
+      </div>
+      <div class="pattern-source">
+        <pre><%= $match->{pattern} %></pre>
+      </div>
+      <div class="pattern-footer">
+        <span><b>Risk:</b> <%= $match->{risk} %></span>
+        % if ($match->{packname}) {
+          <span><b>Package:</b> <%= $match->{packname} %></span>
+        % }
+        % if ($match->{patent} || $match->{trademark} || $match->{export_restricted}) {
+          <span><b>Flags:</b>
+              %= $match->{patent} ? 'Patent' : ''
+              %= $match->{trademark} ? 'Trademark' : ''
+              %= $match->{export_restricted} ? 'Export Restricted' : ''
+          </span>
+        % }
+      </div>
+    </div>
+  </div>
+% }
+
+% content_for ready_function => 'jQuery("time.timeago").timeago();'

@@ -1,0 +1,9 @@
+% layout 'default';
+% title 'Snippets';
+
+<div id="classify-snippets"></div>
+
+% content_for 'ready_function' => begin
+  % my $has_classifier_role = current_user_has_role('classifier') ? 'true' : 'false';
+  cavil.setupClassifySnippets(<%= $has_classifier_role %>);
+% end

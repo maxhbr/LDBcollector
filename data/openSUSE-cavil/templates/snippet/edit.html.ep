@@ -1,0 +1,9 @@
+% layout 'default', title => "Edit snippet";
+
+<h3>Edit Snippet</h3>
+
+<div id="edit-snippet"></div>
+
+% content_for ready_function => begin
+  cavil.setupEditSnippet(<%= $snippet->{id} %>);
+% end
