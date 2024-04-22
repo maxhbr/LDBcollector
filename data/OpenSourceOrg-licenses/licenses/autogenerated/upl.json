@@ -1,0 +1,22 @@
+[
+    {
+        "id": "UPL",
+        "links": [
+            {
+                "note": "OSI Page",
+                "url": "https://opensource.org/licenses/UPL"
+            }
+        ],
+        "name": "The Universal Permissive License (UPL), Version 1.0",
+        "keywords": [
+            "osi-approved"
+        ],
+        "text": [
+            {
+                "media_type": "text/html",
+                "title": "HTML",
+                "url": "https://opensource.org/licenses/UPL"
+            }
+        ]
+    }
+]

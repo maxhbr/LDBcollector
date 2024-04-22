@@ -1,0 +1,24 @@
+[
+    {
+        "id": "Motosoto",
+        "links": [
+            {
+                "note": "OSI Page",
+                "url": "https://opensource.org/licenses/Motosoto"
+            }
+        ],
+        "name": "Motosoto Open Source License, Version 0.9.1",
+        "keywords": [
+            "discouraged",
+            "non-reusable",
+            "osi-approved"
+        ],
+        "text": [
+            {
+                "media_type": "text/html",
+                "title": "HTML",
+                "url": "https://opensource.org/licenses/Motosoto"
+            }
+        ]
+    }
+]

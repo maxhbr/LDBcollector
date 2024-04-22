@@ -1,0 +1,24 @@
+[
+    {
+        "id": "CUA-OPL-1.0",
+        "links": [
+            {
+                "note": "OSI Page",
+                "url": "https://opensource.org/licenses/CUA-OPL-1.0"
+            }
+        ],
+        "name": "CUA Office Public License",
+        "keywords": [
+            "discouraged",
+            "non-reusable",
+            "osi-approved"
+        ],
+        "text": [
+            {
+                "media_type": "text/html",
+                "title": "HTML",
+                "url": "https://opensource.org/licenses/CUA-OPL-1.0"
+            }
+        ]
+    }
+]

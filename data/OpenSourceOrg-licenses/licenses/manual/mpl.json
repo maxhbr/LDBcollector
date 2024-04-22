@@ -1,0 +1,77 @@
+[
+    {
+        "id": "MPL-2.0",
+        "identifiers": [],
+        "keywords": [
+            "osi-approved",
+            "popular",
+            "copyleft"
+        ],
+        "links": [
+            {
+                "note": "OSI Page",
+                "url": "https://opensource.org/licenses/MPL-2.0"
+            },
+            {
+                "note": "Mozilla Page",
+                "url": "https://www.mozilla.org/en-US/MPL/"
+            }
+        ],
+        "name": "Mozilla Public License, Version 2.0",
+        "other_names": [],
+        "superseded_by": null,
+        "text": [
+            {
+                "media_type": "text/html",
+                "title": "HTML",
+                "url": "https://www.mozilla.org/en-US/MPL/2.0/"
+            }
+        ]
+    },
+    {
+        "id": "MPL-1.1",
+        "keywords": [
+            "osi-approved",
+            "discouraged",
+            "obsolete"
+        ],
+        "links": [
+            {
+                "note": "OSI Page",
+                "url": "https://opensource.org/licenses/MPL-1.1"
+            }
+        ],
+        "name": "Mozilla Public License, Version 1.1",
+        "superseded_by": "MPL-2.0",
+        "text": [
+            {
+                "media_type": "text/html",
+                "title": "HTML",
+                "url": "https://opensource.org/licenses/MPL-1.1"
+            }
+        ]
+    },
+    {
+        "id": "MPL-1.0",
+        "keywords": [
+            "osi-approved",
+            "discouraged",
+            "obsolete"
+        ],
+        "links": [
+            {
+                "note": "OSI Page",
+                "url": "https://opensource.org/licenses/MPL-1.0"
+            }
+        ],
+        "name": "Mozilla Public License, Version 1.0",
+        "superseded_by": "MPL-2.0",
+        "text": [
+            {
+                "media_type": "text/html",
+                "title": "HTML",
+                "url": "https://opensource.org/licenses/MPL-1.0"
+            }
+        ]
+    }
+]

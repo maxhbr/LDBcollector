@@ -1,0 +1,24 @@
+[
+    {
+        "id": "PHP-3.0",
+        "links": [
+            {
+                "note": "OSI Page",
+                "url": "https://opensource.org/licenses/PHP-3.0"
+            }
+        ],
+        "name": "The PHP License, Version 3.0",
+        "keywords": [
+            "discouraged",
+            "non-reusable",
+            "osi-approved"
+        ],
+        "text": [
+            {
+                "media_type": "text/html",
+                "title": "HTML",
+                "url": "https://opensource.org/licenses/PHP-3.0"
+            }
+        ]
+    }
+]

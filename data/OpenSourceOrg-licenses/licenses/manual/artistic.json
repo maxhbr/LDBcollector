@@ -1,0 +1,46 @@
+[
+    {
+        "id": "Artistic-1.0",
+        "links": [
+            {
+                "note": "OSI Page",
+                "url": "https://opensource.org/licenses/Artistic-1.0"
+            }
+        ],
+        "name": "Artistic License, Version 1.0",
+        "superseded_by": "Artistic-2.0",
+        "keywords": [
+            "osi-approved",
+            "discouraged",
+            "obsolete"
+        ],
+        "text": [
+            {
+                "media_type": "text/html",
+                "title": "HTML",
+                "url": "https://opensource.org/licenses/Artistic-1.0"
+            }
+        ]
+    },
+    {
+        "id": "Artistic-2.0",
+        "links": [
+            {
+                "note": "OSI Page",
+                "url": "https://opensource.org/licenses/Artistic-2.0"
+            }
+        ],
+        "name": "Artistic License, Version 2.0",
+        "keywords": [
+            "miscellaneous",
+            "osi-approved"
+        ],
+        "text": [
+            {
+                "media_type": "text/html",
+                "title": "HTML",
+                "url": "https://opensource.org/licenses/Artistic-2.0"
+            }
+        ]
+    }
+]

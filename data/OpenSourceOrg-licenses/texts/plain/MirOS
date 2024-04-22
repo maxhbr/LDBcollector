@@ -1,0 +1,68 @@
+/*-
+ * Copyright (c) year, year, year, ...
+ *	First M. Last <user@host.domain>
+ *
+ * Provided that these terms and disclaimer and all copyright notices
+ * are retained or reproduced in an accompanying document, permission
+ * is granted to deal in this work without restriction, including un-
+ * limited rights to use, publicly perform, distribute, sell, modify,
+ * merge, give away, or sublicence.
+ *
+ * This work is provided "AS IS" and WITHOUT WARRANTY of any kind, to
+ * the utmost extent permitted by applicable law, neither express nor
+ * implied; without malicious intent or gross negligence. In no event
+ * may a licensor, author or contributor be held liable for indirect,
+ * direct, other damage, loss, or other issues arising in any way out
+ * of dealing in the work, even if advised of the possibility of such
+ * damage or existence of a defect, except proven that it results out
+ * of said person's immediate fault when using the work as intended.
+ */
+
+INSTRUCTIONS:
+To apply the template[1] specify the years of copyright (separated by
+comma, not as a range), the legal names of the copyright holders, and
+the real names of the authors (and licensors, possibly) if different.
+Avoid adding any text that could be read as further restriction.
+
+RATIONALE:
+This licence is apt for any kind of work (such as source code, fonts,
+documentation, graphics, sound etc.) and the preferred terms for work
+added to MirBSD. It has been drafted as universally usable equivalent
+of the "historic permission notice"[2] adapted to Europen law because
+some countries have specific requirements for disclaimers, and author
+and licensor can differ in (droit d'auteur) legislations. The licence
+conforms to DFSG[3] 1.1, OKD[4] 2.1, OSD[5] 1.9, CSD[6], qualifies as
+a Free Software[7] and Free Documentation[8] licence, for Free Cultu-
+ral Works[9], and is thus included in relevant lists[10] of licences.
+It's also a licence suitable for OER and Open Content[18].
+
+The webpage[19] for this licence contains further information as well
+as additional resources such as translations.
+
+REFERENCES:
+[1] also on the web with its own homepage[19] or as plaintext, either
+    UTF-8 encoded at http://www.mirbsd.org/MirOS-Licence or with just
+    ASCII at http://www.mirbsd.org/MirOS-Licence.asc
+[2] https://opensource.org/licenses/historical.php
+[3] http://www.debian.org/social_contract#guidelines
+[4] http://opendefinition.org/od/2.1/en/
+[5] https://opensource.org/osd
+[6] http://copyfree.org/standard
+[7] http://www.gnu.org/philosophy/free-sw.html
+[8] http://www.gnu.org/philosophy/free-doc.html
+[9] http://freedomdefined.org/Definition
+[10] ifrOSS[11][12], Debian[13] (DFSG[3]), OKFN[14] (OKD[4]),
+     OSI[15] (OSD[5]), Copyfree[16] (CSD[6]), although not
+     yet on the FSF[17] list
+[11] http://www.ifross.org/lizenz-center
+[12] http://www.ifross.org/en/license-center
+[13] https://wiki.debian.org/DFSGLicenses
+[14] http://opendefinition.org/licenses/
+[15] https://opensource.org/licenses/alphabetical
+[16] http://copyfree.org/standard/licenses
+[17] http://www.gnu.org/licenses/license-list.html
+[18] http://opencontent.org/definition/
+[19] http://www.mirbsd.org/MirOS-Licence.htm
+
+___________________________________________________________________________
+$MirOS: src/share/misc/licence.template,v 1.31 2017/03/11 19:22:21 tg Rel $

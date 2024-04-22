@@ -1,0 +1,24 @@
+[
+    {
+        "id": "APSL-2.0",
+        "links": [
+            {
+                "note": "OSI Page",
+                "url": "https://opensource.org/licenses/APSL-2.0"
+            }
+        ],
+        "name": "Apple Public Source License, Version 2.0",
+        "keywords": [
+            "discouraged",
+            "non-reusable",
+            "osi-approved"
+        ],
+        "text": [
+            {
+                "media_type": "text/html",
+                "title": "HTML",
+                "url": "https://opensource.org/licenses/APSL-2.0"
+            }
+        ]
+    }
+]

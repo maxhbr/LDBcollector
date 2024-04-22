@@ -1,0 +1,22 @@
+[
+    {
+        "id": "QPL-1.0",
+        "links": [
+            {
+                "note": "OSI Page",
+                "url": "https://opensource.org/licenses/QPL-1.0"
+            }
+        ],
+        "name": "The Q Public License Version (QPL-1.0)",
+        "keywords": [
+            "osi-approved"
+        ],
+        "text": [
+            {
+                "media_type": "text/html",
+                "title": "HTML",
+                "url": "https://opensource.org/licenses/QPL-1.0"
+            }
+        ]
+    }
+]
