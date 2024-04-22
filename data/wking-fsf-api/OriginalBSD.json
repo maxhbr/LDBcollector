@@ -1,0 +1,17 @@
+{
+  "@context": "https://wking.github.io/fsf-api/schema/license.jsonld",
+  "id": "OriginalBSD",
+  "identifiers": {
+    "spdx": [
+      "BSD-4-Clause"
+    ]
+  },
+  "name": "Original BSD license",
+  "tags": [
+    "libre"
+  ],
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#OriginalBSD",
+    "http://directory.fsf.org/wiki/License:BSD_4Clause"
+  ]
+}

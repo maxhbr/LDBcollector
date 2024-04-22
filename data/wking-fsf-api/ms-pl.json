@@ -1,0 +1,17 @@
+{
+  "@context": "https://wking.github.io/fsf-api/schema/license.jsonld",
+  "id": "ms-pl",
+  "identifiers": {
+    "spdx": [
+      "MS-PL"
+    ]
+  },
+  "name": "Microsoft Public License (Ms-PL)",
+  "tags": [
+    "libre"
+  ],
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#ms-pl",
+    "http://directory.fsf.org/wiki/License:MsPL"
+  ]
+}

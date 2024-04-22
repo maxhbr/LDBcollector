@@ -1,0 +1,17 @@
+{
+  "@context": "https://wking.github.io/fsf-api/schema/license.jsonld",
+  "id": "Zimbra",
+  "identifiers": {
+    "spdx": [
+      "Zimbra-1.3"
+    ]
+  },
+  "name": "Zimbra Public License 1.3",
+  "tags": [
+    "libre"
+  ],
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#Zimbra",
+    "http://www.zimbra.com/license/zimbra-public-license-1-3.html"
+  ]
+}

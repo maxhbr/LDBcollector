@@ -1,0 +1,19 @@
+{
+  "@context": "https://wking.github.io/fsf-api/schema/license.jsonld",
+  "id": "apache2",
+  "identifiers": {
+    "spdx": [
+      "Apache-2.0"
+    ]
+  },
+  "name": "Apache License, Version 2.0",
+  "tags": [
+    "gpl-2-compatible",
+    "gpl-3-compatible",
+    "libre"
+  ],
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#apache2",
+    "http://directory.fsf.org/wiki/License:Apache2.0"
+  ]
+}

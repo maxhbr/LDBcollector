@@ -1,0 +1,12 @@
+{
+  "@context": "https://wking.github.io/fsf-api/schema/license.jsonld",
+  "id": "Truecrypt-3.0",
+  "name": "Truecrypt license 3.0",
+  "tags": [
+    "non-free"
+  ],
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#Truecrypt-3.0",
+    "http://directory.fsf.org/wiki/License:TrueCrypt"
+  ]
+}

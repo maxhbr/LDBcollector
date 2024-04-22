@@ -1,0 +1,16 @@
+{
+  "@context": "https://wking.github.io/fsf-api/schema/license.jsonld",
+  "id": "Aladdin",
+  "identifiers": {
+    "spdx": [
+      "Aladdin"
+    ]
+  },
+  "name": "Aladdin Free Public License",
+  "tags": [
+    "non-free"
+  ],
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#Aladdin"
+  ]
+}

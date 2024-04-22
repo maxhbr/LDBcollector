@@ -1,0 +1,19 @@
+{
+  "@context": "https://wking.github.io/fsf-api/schema/license.jsonld",
+  "id": "BerkeleyDB",
+  "identifiers": {
+    "spdx": [
+      "Sleepycat"
+    ]
+  },
+  "name": "Berkeley Database License",
+  "tags": [
+    "gpl-2-compatible",
+    "gpl-3-compatible",
+    "libre"
+  ],
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#BerkeleyDB",
+    "http://directory.fsf.org/wiki/License:Sleepycat"
+  ]
+}

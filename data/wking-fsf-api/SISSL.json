@@ -1,0 +1,12 @@
+{
+  "@context": "https://wking.github.io/fsf-api/schema/license.jsonld",
+  "id": "SISSL",
+  "name": "Sun Industry Standards Source License 1.0",
+  "tags": [
+    "libre"
+  ],
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#SISSL",
+    "http://www.openoffice.org/licenses/sissl_license.html"
+  ]
+}

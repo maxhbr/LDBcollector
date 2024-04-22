@@ -1,0 +1,17 @@
+{
+  "@context": "https://wking.github.io/fsf-api/schema/license.jsonld",
+  "id": "EPL2",
+  "identifiers": {
+    "spdx": [
+      "EPL-2.0"
+    ]
+  },
+  "name": "Eclipse Public License Version 2.0",
+  "tags": [
+    "libre"
+  ],
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#EPL2",
+    "http://directory.fsf.org/wiki/License:EPLv2.0"
+  ]
+}

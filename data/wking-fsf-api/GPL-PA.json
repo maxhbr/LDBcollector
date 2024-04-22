@@ -1,0 +1,12 @@
+{
+  "@context": "https://wking.github.io/fsf-api/schema/license.jsonld",
+  "id": "GPL-PA",
+  "name": "GPL for Computer Programs of the Public Administration",
+  "tags": [
+    "non-free"
+  ],
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#GPL-PA",
+    "http://directory.fsf.org/wiki/License:GPL-PA"
+  ]
+}

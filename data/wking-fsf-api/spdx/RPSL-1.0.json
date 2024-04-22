@@ -1,0 +1,17 @@
+{
+  "@context": "https://wking.github.io/fsf-api/schema/license.jsonld",
+  "id": "RPSL",
+  "identifiers": {
+    "spdx": [
+      "RPSL-1.0"
+    ]
+  },
+  "name": "RealNetworks Public Source License (RPSL), Version 1.0",
+  "tags": [
+    "libre"
+  ],
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#RPSL",
+    "http://directory.fsf.org/wiki/License:RPSLv1.0"
+  ]
+}

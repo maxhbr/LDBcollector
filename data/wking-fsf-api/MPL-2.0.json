@@ -1,0 +1,19 @@
+{
+  "@context": "https://wking.github.io/fsf-api/schema/license.jsonld",
+  "id": "MPL-2.0",
+  "identifiers": {
+    "spdx": [
+      "MPL-2.0"
+    ]
+  },
+  "name": "Mozilla Public\n       License (MPL) version 2.0",
+  "tags": [
+    "gpl-2-compatible",
+    "gpl-3-compatible",
+    "libre"
+  ],
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#MPL-2.0",
+    "http://directory.fsf.org/wiki/License:MPLv2.0"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "@context": "https://wking.github.io/fsf-api/schema/license.jsonld",
+  "id": "WTFPL",
+  "identifiers": {
+    "spdx": [
+      "WTFPL"
+    ]
+  },
+  "name": "WTFPL, Version 2",
+  "tags": [
+    "gpl-2-compatible",
+    "gpl-3-compatible",
+    "libre"
+  ],
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#WTFPL",
+    "http://sam.zoy.org/wtfpl/COPYING"
+  ]
+}

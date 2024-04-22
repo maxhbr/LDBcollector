@@ -1,0 +1,19 @@
+{
+  "@context": "https://wking.github.io/fsf-api/schema/license.jsonld",
+  "id": "CeCILL",
+  "identifiers": {
+    "spdx": [
+      "CECILL-2.0"
+    ]
+  },
+  "name": "CeCILL version 2",
+  "tags": [
+    "gpl-2-compatible",
+    "gpl-3-compatible",
+    "libre"
+  ],
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#CeCILL",
+    "https://directory.fsf.org/wiki/License:CeCILLv2"
+  ]
+}

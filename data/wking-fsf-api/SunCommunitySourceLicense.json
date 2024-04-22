@@ -1,0 +1,12 @@
+{
+  "@context": "https://wking.github.io/fsf-api/schema/license.jsonld",
+  "id": "SunCommunitySourceLicense",
+  "name": "Sun Community Source License",
+  "tags": [
+    "non-free"
+  ],
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#SunCommunitySourceLicense",
+    "http://directory.fsf.org/wiki/License:SunCSLv2.8"
+  ]
+}

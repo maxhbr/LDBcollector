@@ -1,0 +1,17 @@
+{
+  "@context": "https://wking.github.io/fsf-api/schema/license.jsonld",
+  "id": "CommonPublicLicense10",
+  "identifiers": {
+    "spdx": [
+      "CPL-1.0"
+    ]
+  },
+  "name": "Common Public License Version 1.0",
+  "tags": [
+    "libre"
+  ],
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#CommonPublicLicense10",
+    "http://directory.fsf.org/wiki/License:CPLv1.0"
+  ]
+}

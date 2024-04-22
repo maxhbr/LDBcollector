@@ -1,0 +1,12 @@
+{
+  "@context": "https://wking.github.io/fsf-api/schema/license.jsonld",
+  "id": "GNUVerbatim",
+  "name": "GNU Verbatim Copying License",
+  "tags": [
+    "viewpoint"
+  ],
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#GNUVerbatim",
+    "https://www.gnu.org/licenses/licenses.html#VerbatimCopying"
+  ]
+}

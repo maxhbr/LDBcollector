@@ -1,0 +1,17 @@
+{
+  "@context": "https://wking.github.io/fsf-api/schema/license.jsonld",
+  "id": "JSON",
+  "identifiers": {
+    "spdx": [
+      "JSON"
+    ]
+  },
+  "name": "The JSON License",
+  "tags": [
+    "non-free"
+  ],
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#JSON",
+    "http://directory.fsf.org/wiki/License:JSON"
+  ]
+}

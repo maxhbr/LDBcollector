@@ -1,0 +1,17 @@
+{
+  "@context": "https://wking.github.io/fsf-api/schema/license.jsonld",
+  "id": "CPAL",
+  "identifiers": {
+    "spdx": [
+      "CPAL-1.0"
+    ]
+  },
+  "name": "Common Public Attribution License 1.0 (CPAL)",
+  "tags": [
+    "libre"
+  ],
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#CPAL",
+    "https://www.socialtext.net/open/cpal_license_in_wikitext"
+  ]
+}
