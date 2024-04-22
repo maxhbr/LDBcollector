@@ -1,0 +1,852 @@
+{
+    "@context": {
+        "cc": "http://creativecommons.org/ns#",
+        "dc": "http://purl.org/dc/terms/",
+        "dc11": "http://purl.org/dc/elements/1.1/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "li": "https://licensedb.org/ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "cc:legalcode": {
+            "@type": "@id"
+        },
+        "cc:permits": {
+            "@type": "@id"
+        },
+        "cc:requires": {
+            "@type": "@id"
+        },
+        "cc:prohibits": {
+            "@type": "@id"
+        },
+        "cc:jurisdiction": {
+            "@type": "@id"
+        },
+        "cc:licenseClass": {
+            "@type": "@id"
+        },
+        "dc:creator": {
+            "@type": "@id"
+        },
+        "dc:source": {
+            "@type": "@id"
+        },
+        "dc:replaces": {
+            "@type": "@id"
+        },
+        "dc:isBasedOn": {
+            "@type": "@id"
+        },
+        "dc:isReplacedBy": {
+            "@type": "@id"
+        },
+        "foaf:logo": {
+            "@type": "@id"
+        },
+        "li:plaintext": {
+            "@type": "@id"
+        },
+        "li:libre": {
+            "@type": "@id"
+        },
+        "owl:sameAs": {
+            "@type": "@id"
+        }
+    },
+    "@id": "https://licensedb.org/id/CC-BY-NC-2.5-mk",
+    "@type": [
+        "cc:License",
+        "li:License"
+    ],
+    "cc:jurisdiction": "http://creativecommons.org/international/mk/",
+    "cc:legalcode": "http://creativecommons.org/licenses/by-nc/2.5/mk/legalcode",
+    "cc:licenseClass": "http://creativecommons.org/license/",
+    "cc:permits": [
+        "cc:DerivativeWorks",
+        "cc:Distribution",
+        "cc:Reproduction"
+    ],
+    "cc:prohibits": "cc:CommercialUse",
+    "cc:requires": [
+        "cc:Attribution",
+        "cc:Notice"
+    ],
+    "dc:creator": "http://creativecommons.org",
+    "dc:hasVersion": "2.5",
+    "dc:identifier": "by-nc",
+    "dc:source": "http://creativecommons.org/licenses/by-nc/2.5/",
+    "dc:title": [
+        {
+            "@language": "af",
+            "@value": "Erkenning-NieKommersieel 2.5 Macedonia"
+        },
+        {
+            "@language": "ar",
+            "@value": "نسب - غير تجاري 2.5 مقدونيا"
+        },
+        {
+            "@language": "as",
+            "@value": "Attribution-NonCommercial 2.5 Macedonia"
+        },
+        {
+            "@language": "ast",
+            "@value": "Attribution-NonCommercial 2.5 Macedonia"
+        },
+        {
+            "@language": "ast-es",
+            "@value": "Attribution-NonCommercial 2.5 Macedonia"
+        },
+        {
+            "@language": "az",
+            "@value": "Attribution-NonCommercial 2.5 Macedonia"
+        },
+        {
+            "@language": "be",
+            "@value": "Attribution-NonCommercial 2.5 Македонія"
+        },
+        {
+            "@language": "bg",
+            "@value": "Признание-Некомерсиално 2.5 Македония"
+        },
+        {
+            "@language": "bn",
+            "@value": "Attribution-NonCommercial 2.5 Macedonia"
+        },
+        {
+            "@language": "ca",
+            "@value": "Reconeixement-NoComercial 2.5 Macedònia"
+        },
+        {
+            "@language": "cs",
+            "@value": "Uveďte autora-Neužívejte komerčně 2.5 Makedonie"
+        },
+        {
+            "@language": "da",
+            "@value": "Navngivelse-IkkeKommerciel 2.5 Macedonia"
+        },
+        {
+            "@language": "de",
+            "@value": "Namensnennung-Nicht-kommerziell 2.5 Mazedonien"
+        },
+        {
+            "@language": "de-at",
+            "@value": "Namensnennung-NichtKommerziell 2.5 Mazedonien"
+        },
+        {
+            "@language": "de-ch",
+            "@value": "Namensnennung-NichtKommerziell 2.5 Mazedonien"
+        },
+        {
+            "@language": "el",
+            "@value": "Αναφορά Δημιουργού-Μη Εμπορική Χρήση 2.5 Πρώην Γιουγκοσλαβική Δημοκρατία της Μακεδονίας"
+        },
+        {
+            "@language": "en",
+            "@value": "Attribution-NonCommercial 2.5 Macedonia"
+        },
+        {
+            "@language": "en-ca",
+            "@value": "Attribution-NonCommercial 2.5 Macedonia"
+        },
+        {
+            "@language": "en-gb",
+            "@value": "Attribution-NonCommercial 2.5 Macedonia"
+        },
+        {
+            "@language": "en-hk",
+            "@value": "Attribution-NonCommercial 2.5 Macedonia"
+        },
+        {
+            "@language": "en-sg",
+            "@value": "Attribution-NonCommercial 2.5 Macedonia"
+        },
+        {
+            "@language": "en-us",
+            "@value": "Attribution-NonCommercial 2.5 Macedonia"
+        },
+        {
+            "@language": "eo",
+            "@value": "Atribuite-Nekomerce 2.5 Makedonujo"
+        },
+        {
+            "@language": "es",
+            "@value": "Atribución-NoComercial 2.5 Macedonia"
+        },
+        {
+            "@language": "es-ar",
+            "@value": "Atribución-NoComercial 2.5 Macedonia"
+        },
+        {
+            "@language": "es-cl",
+            "@value": "Atribución-NoComercial 2.5 Macedonia"
+        },
+        {
+            "@language": "es-co",
+            "@value": "Reconocimiento-NoComercial 2.5 Macedonia"
+        },
+        {
+            "@language": "es-ec",
+            "@value": "Reconocimiento-NoComercial 2.5 Macedonia"
+        },
+        {
+            "@language": "es-es",
+            "@value": "Reconocimiento-NoComercial 2.5 Macedonia"
+        },
+        {
+            "@language": "es-gt",
+            "@value": "Reconocimiento-NoComercial 2.5 Macedonia"
+        },
+        {
+            "@language": "es-mx",
+            "@value": "Atribución-No Comercial 2.5 Macedonia"
+        },
+        {
+            "@language": "es-pe",
+            "@value": "Reconocimiento-NoComercial 2.5 Macedonia"
+        },
+        {
+            "@language": "es-pr",
+            "@value": "Reconocimiento-NoComercial 2.5 Macedonia"
+        },
+        {
+            "@language": "et",
+            "@value": "Autorile viitamine + Mitteäriline eesmärk 2.5 Makedoonia"
+        },
+        {
+            "@language": "eu",
+            "@value": "Aitortu-EzKomertziala 2.5 Macedonia"
+        },
+        {
+            "@language": "fa",
+            "@value": "Attribution-NonCommercial 2.5 مقدونیه"
+        },
+        {
+            "@language": "fi",
+            "@value": "Nimeä-Epäkaupallinen 2.5 Makedonia"
+        },
+        {
+            "@language": "fr",
+            "@value": "Paternité - Pas d'Utilisation Commerciale 2.5 Macédoine"
+        },
+        {
+            "@language": "fr-ca",
+            "@value": "Paternité - Pas d'Utilisation Commerciale 2.5 Macédonie"
+        },
+        {
+            "@language": "fr-ch",
+            "@value": "Paternité - Pas d'Utilisation Commerciale 2.5 Macédonie"
+        },
+        {
+            "@language": "fr-lu",
+            "@value": "Paternité - Pas d'Utilisation Commerciale 2.5 Macédonie"
+        },
+        {
+            "@language": "ga",
+            "@value": "Attribution-NonCommercial 2.5 Macedonia"
+        },
+        {
+            "@language": "gl",
+            "@value": "Recoñecemento-NonComercial 2.5 Macedonia"
+        },
+        {
+            "@language": "he",
+            "@value": "ייחוס-שימוש לא מסחרי 2.5 מקדוניה"
+        },
+        {
+            "@language": "hi",
+            "@value": "Attribution-NonCommercial 2.5 Macedonia"
+        },
+        {
+            "@language": "hr",
+            "@value": "Imenovanje-Nekomercijalno 2.5 Makedonija"
+        },
+        {
+            "@language": "hu",
+            "@value": "Nevezd meg! - Ne add el! 2.5 Macedonia"
+        },
+        {
+            "@language": "hy",
+            "@value": "Հղում - Ոչ-առևտրային օգտագործում 2.5 Մակեդոնիա"
+        },
+        {
+            "@language": "id",
+            "@value": "Attribusi-NonKomersial 2.5 Makedonia"
+        },
+        {
+            "@language": "is",
+            "@value": "Attribution-NonCommercial 2.5 Macedonia"
+        },
+        {
+            "@language": "it",
+            "@value": "Attribuzione - Non commerciale 2.5 Macedonia"
+        },
+        {
+            "@language": "it-ch",
+            "@value": "Attribuzione - Non commerciale 2.5 Macedonia"
+        },
+        {
+            "@language": "ja",
+            "@value": "表示 - 非営利 2.5 マセドニア"
+        },
+        {
+            "@language": "ka",
+            "@value": "ავტორობის მითითებით არაკომერციული გამოყენებისათვის 2.5 მაკედონია"
+        },
+        {
+            "@language": "kk",
+            "@value": "Коммерциялық емес 2.5 Macedonia"
+        },
+        {
+            "@language": "ko",
+            "@value": "저작자표시-비영리 2.5 Macedonia"
+        },
+        {
+            "@language": "lt",
+            "@value": "Attribution-NonCommercial 2.5 Makedonija"
+        },
+        {
+            "@language": "lv",
+            "@value": "Atsaucoties-Nekomerciāli 2.5 Makedonija"
+        },
+        {
+            "@language": "mk",
+            "@value": "НаведиИзвор-Некомерцијално 2.5 Македонија"
+        },
+        {
+            "@language": "ml",
+            "@value": "Attribution-NonCommercial 2.5 മസഡോണിയൻ"
+        },
+        {
+            "@language": "mn",
+            "@value": "Attribution-NonCommercial 2.5 Macedonia"
+        },
+        {
+            "@language": "ms",
+            "@value": "Pengiktirafan-BukanKomersial 2.5 Macedonia"
+        },
+        {
+            "@language": "nl",
+            "@value": "Naamsvermelding-NietCommercieel 2.5 Macedonië"
+        },
+        {
+            "@language": "no",
+            "@value": "Navngivelse-Ikkekommersiell 2.5 Makedonia"
+        },
+        {
+            "@language": "nso",
+            "@value": "Tsebagatšo- E sego ya kgwebo 2.5 Macedonia"
+        },
+        {
+            "@language": "oci-es",
+            "@value": "Attribution-NonCommercial 2.5 Macedonia"
+        },
+        {
+            "@language": "pl",
+            "@value": "Uznanie autorstwa-Użycie niekomercyjne 2.5 Macedonia"
+        },
+        {
+            "@language": "pt",
+            "@value": "Atribuição - NãoComercial 2.5 Macedónia"
+        },
+        {
+            "@language": "pt-br",
+            "@value": "Atribuição-Uso não-comercial 2.5 Macedonia"
+        },
+        {
+            "@language": "pt-pt",
+            "@value": "Atribuição-Uso Não-Comercial 2.5 Macedonia"
+        },
+        {
+            "@language": "ro",
+            "@value": "Atribuire-NeComercial 2.5 Macedonia"
+        },
+        {
+            "@language": "ru",
+            "@value": "Attribution-NonCommercial (Атрибуция — Некоммерческое использование) 2.5 Македония"
+        },
+        {
+            "@language": "si-lk",
+            "@value": "Attribution-NonCommercial 2.5 Macedonia"
+        },
+        {
+            "@language": "sl",
+            "@value": "Priznanje avtorstva-Nekomercialno 2.5 Makedonija"
+        },
+        {
+            "@language": "sq",
+            "@value": "Attribution-NonCommercial 2.5 Maqedoni"
+        },
+        {
+            "@language": "sr",
+            "@value": "Autorstvo-Nekomercijalno 2.5 Makedonija"
+        },
+        {
+            "@language": "sr",
+            "@value": "Ауторство-Некомерцијално 2.5 Македонија"
+        },
+        {
+            "@language": "sr-latn",
+            "@value": "Autorstvo-Nekomercijalno 2.5 Makedonija"
+        },
+        {
+            "@language": "st",
+            "@value": "Attribution-NonCommercial 2.5 Macedonia"
+        },
+        {
+            "@language": "sv",
+            "@value": "Erkännande-IckeKommersiell 2.5 Makedonien"
+        },
+        {
+            "@language": "ta",
+            "@value": "Attribution-NonCommercial 2.5 Macedonia"
+        },
+        {
+            "@language": "te",
+            "@value": "Attribution-NonCommercial 2.5 మాసిడోనియా"
+        },
+        {
+            "@language": "th",
+            "@value": "แสดงที่มา-ไม่ใช้เพื่อการค้า 2.5 มาซิโดเนีย"
+        },
+        {
+            "@language": "tr",
+            "@value": "Alıntı-Gayriticari 2.5 Makedonya"
+        },
+        {
+            "@language": "uk",
+            "@value": "Attribution-NonCommercial 2.5 Macedonia"
+        },
+        {
+            "@language": "ur",
+            "@value": "Attribution-NonCommercial 2.5 Macedonia"
+        },
+        {
+            "@language": "vi",
+            "@value": "Ghi nhận công của tác giả - Phi thương mại  2.5 Macedonia"
+        },
+        {
+            "@language": "zh",
+            "@value": "署名-非商业性使用 2.5 马其顿"
+        },
+        {
+            "@language": "zh-hk",
+            "@value": "姓名標示-非商業性 2.5 馬其頓"
+        },
+        {
+            "@language": "zh-tw",
+            "@value": "姓名標示-非商業性 2.5 馬其頓"
+        },
+        {
+            "@language": "zu",
+            "@value": "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano 2.5 Macedonia"
+        },
+        {
+            "@language": "zxx",
+            "@value": "${Attribution-NonCommercial} 2.5 ${Macedonia}"
+        }
+    ],
+    "owl:sameAs": {
+        "@id": "http://creativecommons.org/licenses/by-nc/2.5/mk/",
+        "@type": "cc:License",
+        "cc:jurisdiction": "http://creativecommons.org/international/mk/",
+        "cc:legalcode": "http://creativecommons.org/licenses/by-nc/2.5/mk/legalcode",
+        "cc:licenseClass": "http://creativecommons.org/license/",
+        "cc:permits": [
+            "cc:DerivativeWorks",
+            "cc:Distribution",
+            "cc:Reproduction"
+        ],
+        "cc:prohibits": "cc:CommercialUse",
+        "cc:requires": [
+            "cc:Attribution",
+            "cc:Notice"
+        ],
+        "dc:creator": "http://creativecommons.org",
+        "dc:hasVersion": "2.5",
+        "dc:identifier": "by-nc",
+        "dc:source": "http://creativecommons.org/licenses/by-nc/2.5/",
+        "dc:title": [
+            {
+                "@language": "af",
+                "@value": "Erkenning-NieKommersieel 2.5 Macedonia"
+            },
+            {
+                "@language": "ar",
+                "@value": "نسب - غير تجاري 2.5 مقدونيا"
+            },
+            {
+                "@language": "as",
+                "@value": "Attribution-NonCommercial 2.5 Macedonia"
+            },
+            {
+                "@language": "ast",
+                "@value": "Attribution-NonCommercial 2.5 Macedonia"
+            },
+            {
+                "@language": "ast-es",
+                "@value": "Attribution-NonCommercial 2.5 Macedonia"
+            },
+            {
+                "@language": "az",
+                "@value": "Attribution-NonCommercial 2.5 Macedonia"
+            },
+            {
+                "@language": "be",
+                "@value": "Attribution-NonCommercial 2.5 Македонія"
+            },
+            {
+                "@language": "bg",
+                "@value": "Признание-Некомерсиално 2.5 Македония"
+            },
+            {
+                "@language": "bn",
+                "@value": "Attribution-NonCommercial 2.5 Macedonia"
+            },
+            {
+                "@language": "ca",
+                "@value": "Reconeixement-NoComercial 2.5 Macedònia"
+            },
+            {
+                "@language": "cs",
+                "@value": "Uveďte autora-Neužívejte komerčně 2.5 Makedonie"
+            },
+            {
+                "@language": "da",
+                "@value": "Navngivelse-IkkeKommerciel 2.5 Macedonia"
+            },
+            {
+                "@language": "de",
+                "@value": "Namensnennung-Nicht-kommerziell 2.5 Mazedonien"
+            },
+            {
+                "@language": "de-at",
+                "@value": "Namensnennung-NichtKommerziell 2.5 Mazedonien"
+            },
+            {
+                "@language": "de-ch",
+                "@value": "Namensnennung-NichtKommerziell 2.5 Mazedonien"
+            },
+            {
+                "@language": "el",
+                "@value": "Αναφορά Δημιουργού-Μη Εμπορική Χρήση 2.5 Πρώην Γιουγκοσλαβική Δημοκρατία της Μακεδονίας"
+            },
+            {
+                "@language": "en",
+                "@value": "Attribution-NonCommercial 2.5 Macedonia"
+            },
+            {
+                "@language": "en-ca",
+                "@value": "Attribution-NonCommercial 2.5 Macedonia"
+            },
+            {
+                "@language": "en-gb",
+                "@value": "Attribution-NonCommercial 2.5 Macedonia"
+            },
+            {
+                "@language": "en-hk",
+                "@value": "Attribution-NonCommercial 2.5 Macedonia"
+            },
+            {
+                "@language": "en-sg",
+                "@value": "Attribution-NonCommercial 2.5 Macedonia"
+            },
+            {
+                "@language": "en-us",
+                "@value": "Attribution-NonCommercial 2.5 Macedonia"
+            },
+            {
+                "@language": "eo",
+                "@value": "Atribuite-Nekomerce 2.5 Makedonujo"
+            },
+            {
+                "@language": "es",
+                "@value": "Atribución-NoComercial 2.5 Macedonia"
+            },
+            {
+                "@language": "es-ar",
+                "@value": "Atribución-NoComercial 2.5 Macedonia"
+            },
+            {
+                "@language": "es-cl",
+                "@value": "Atribución-NoComercial 2.5 Macedonia"
+            },
+            {
+                "@language": "es-co",
+                "@value": "Reconocimiento-NoComercial 2.5 Macedonia"
+            },
+            {
+                "@language": "es-ec",
+                "@value": "Reconocimiento-NoComercial 2.5 Macedonia"
+            },
+            {
+                "@language": "es-es",
+                "@value": "Reconocimiento-NoComercial 2.5 Macedonia"
+            },
+            {
+                "@language": "es-gt",
+                "@value": "Reconocimiento-NoComercial 2.5 Macedonia"
+            },
+            {
+                "@language": "es-mx",
+                "@value": "Atribución-No Comercial 2.5 Macedonia"
+            },
+            {
+                "@language": "es-pe",
+                "@value": "Reconocimiento-NoComercial 2.5 Macedonia"
+            },
+            {
+                "@language": "es-pr",
+                "@value": "Reconocimiento-NoComercial 2.5 Macedonia"
+            },
+            {
+                "@language": "et",
+                "@value": "Autorile viitamine + Mitteäriline eesmärk 2.5 Makedoonia"
+            },
+            {
+                "@language": "eu",
+                "@value": "Aitortu-EzKomertziala 2.5 Macedonia"
+            },
+            {
+                "@language": "fa",
+                "@value": "Attribution-NonCommercial 2.5 مقدونیه"
+            },
+            {
+                "@language": "fi",
+                "@value": "Nimeä-Epäkaupallinen 2.5 Makedonia"
+            },
+            {
+                "@language": "fr",
+                "@value": "Paternité - Pas d'Utilisation Commerciale 2.5 Macédoine"
+            },
+            {
+                "@language": "fr-ca",
+                "@value": "Paternité - Pas d'Utilisation Commerciale 2.5 Macédonie"
+            },
+            {
+                "@language": "fr-ch",
+                "@value": "Paternité - Pas d'Utilisation Commerciale 2.5 Macédonie"
+            },
+            {
+                "@language": "fr-lu",
+                "@value": "Paternité - Pas d'Utilisation Commerciale 2.5 Macédonie"
+            },
+            {
+                "@language": "ga",
+                "@value": "Attribution-NonCommercial 2.5 Macedonia"
+            },
+            {
+                "@language": "gl",
+                "@value": "Recoñecemento-NonComercial 2.5 Macedonia"
+            },
+            {
+                "@language": "he",
+                "@value": "ייחוס-שימוש לא מסחרי 2.5 מקדוניה"
+            },
+            {
+                "@language": "hi",
+                "@value": "Attribution-NonCommercial 2.5 Macedonia"
+            },
+            {
+                "@language": "hr",
+                "@value": "Imenovanje-Nekomercijalno 2.5 Makedonija"
+            },
+            {
+                "@language": "hu",
+                "@value": "Nevezd meg! - Ne add el! 2.5 Macedonia"
+            },
+            {
+                "@language": "hy",
+                "@value": "Հղում - Ոչ-առևտրային օգտագործում 2.5 Մակեդոնիա"
+            },
+            {
+                "@language": "id",
+                "@value": "Attribusi-NonKomersial 2.5 Makedonia"
+            },
+            {
+                "@language": "is",
+                "@value": "Attribution-NonCommercial 2.5 Macedonia"
+            },
+            {
+                "@language": "it",
+                "@value": "Attribuzione - Non commerciale 2.5 Macedonia"
+            },
+            {
+                "@language": "it-ch",
+                "@value": "Attribuzione - Non commerciale 2.5 Macedonia"
+            },
+            {
+                "@language": "ja",
+                "@value": "表示 - 非営利 2.5 マセドニア"
+            },
+            {
+                "@language": "ka",
+                "@value": "ავტორობის მითითებით არაკომერციული გამოყენებისათვის 2.5 მაკედონია"
+            },
+            {
+                "@language": "kk",
+                "@value": "Коммерциялық емес 2.5 Macedonia"
+            },
+            {
+                "@language": "ko",
+                "@value": "저작자표시-비영리 2.5 Macedonia"
+            },
+            {
+                "@language": "lt",
+                "@value": "Attribution-NonCommercial 2.5 Makedonija"
+            },
+            {
+                "@language": "lv",
+                "@value": "Atsaucoties-Nekomerciāli 2.5 Makedonija"
+            },
+            {
+                "@language": "mk",
+                "@value": "НаведиИзвор-Некомерцијално 2.5 Македонија"
+            },
+            {
+                "@language": "ml",
+                "@value": "Attribution-NonCommercial 2.5 മസഡോണിയൻ"
+            },
+            {
+                "@language": "mn",
+                "@value": "Attribution-NonCommercial 2.5 Macedonia"
+            },
+            {
+                "@language": "ms",
+                "@value": "Pengiktirafan-BukanKomersial 2.5 Macedonia"
+            },
+            {
+                "@language": "nl",
+                "@value": "Naamsvermelding-NietCommercieel 2.5 Macedonië"
+            },
+            {
+                "@language": "no",
+                "@value": "Navngivelse-Ikkekommersiell 2.5 Makedonia"
+            },
+            {
+                "@language": "nso",
+                "@value": "Tsebagatšo- E sego ya kgwebo 2.5 Macedonia"
+            },
+            {
+                "@language": "oci-es",
+                "@value": "Attribution-NonCommercial 2.5 Macedonia"
+            },
+            {
+                "@language": "pl",
+                "@value": "Uznanie autorstwa-Użycie niekomercyjne 2.5 Macedonia"
+            },
+            {
+                "@language": "pt",
+                "@value": "Atribuição - NãoComercial 2.5 Macedónia"
+            },
+            {
+                "@language": "pt-br",
+                "@value": "Atribuição-Uso não-comercial 2.5 Macedonia"
+            },
+            {
+                "@language": "pt-pt",
+                "@value": "Atribuição-Uso Não-Comercial 2.5 Macedonia"
+            },
+            {
+                "@language": "ro",
+                "@value": "Atribuire-NeComercial 2.5 Macedonia"
+            },
+            {
+                "@language": "ru",
+                "@value": "Attribution-NonCommercial (Атрибуция — Некоммерческое использование) 2.5 Македония"
+            },
+            {
+                "@language": "si-lk",
+                "@value": "Attribution-NonCommercial 2.5 Macedonia"
+            },
+            {
+                "@language": "sl",
+                "@value": "Priznanje avtorstva-Nekomercialno 2.5 Makedonija"
+            },
+            {
+                "@language": "sq",
+                "@value": "Attribution-NonCommercial 2.5 Maqedoni"
+            },
+            {
+                "@language": "sr",
+                "@value": "Autorstvo-Nekomercijalno 2.5 Makedonija"
+            },
+            {
+                "@language": "sr",
+                "@value": "Ауторство-Некомерцијално 2.5 Македонија"
+            },
+            {
+                "@language": "sr-latn",
+                "@value": "Autorstvo-Nekomercijalno 2.5 Makedonija"
+            },
+            {
+                "@language": "st",
+                "@value": "Attribution-NonCommercial 2.5 Macedonia"
+            },
+            {
+                "@language": "sv",
+                "@value": "Erkännande-IckeKommersiell 2.5 Makedonien"
+            },
+            {
+                "@language": "ta",
+                "@value": "Attribution-NonCommercial 2.5 Macedonia"
+            },
+            {
+                "@language": "te",
+                "@value": "Attribution-NonCommercial 2.5 మాసిడోనియా"
+            },
+            {
+                "@language": "th",
+                "@value": "แสดงที่มา-ไม่ใช้เพื่อการค้า 2.5 มาซิโดเนีย"
+            },
+            {
+                "@language": "tr",
+                "@value": "Alıntı-Gayriticari 2.5 Makedonya"
+            },
+            {
+                "@language": "uk",
+                "@value": "Attribution-NonCommercial 2.5 Macedonia"
+            },
+            {
+                "@language": "ur",
+                "@value": "Attribution-NonCommercial 2.5 Macedonia"
+            },
+            {
+                "@language": "vi",
+                "@value": "Ghi nhận công của tác giả - Phi thương mại  2.5 Macedonia"
+            },
+            {
+                "@language": "zh",
+                "@value": "署名-非商业性使用 2.5 马其顿"
+            },
+            {
+                "@language": "zh-hk",
+                "@value": "姓名標示-非商業性 2.5 馬其頓"
+            },
+            {
+                "@language": "zh-tw",
+                "@value": "姓名標示-非商業性 2.5 馬其頓"
+            },
+            {
+                "@language": "zu",
+                "@value": "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano 2.5 Macedonia"
+            },
+            {
+                "@language": "zxx",
+                "@value": "${Attribution-NonCommercial} 2.5 ${Macedonia}"
+            }
+        ],
+        "owl:sameAs": "https://licensedb.org/id/CC-BY-NC-2.5-mk",
+        "foaf:logo": [
+            "http://i.creativecommons.org/l/by-nc/2.5/mk/80x15.png",
+            "http://i.creativecommons.org/l/by-nc/2.5/mk/88x31.png"
+        ]
+    },
+    "foaf:logo": [
+        "http://i.creativecommons.org/l/by-nc/2.5/mk/80x15.png",
+        "http://i.creativecommons.org/l/by-nc/2.5/mk/88x31.png"
+    ],
+    "li:id": "CC-BY-NC-2.5-mk",
+    "li:name": "CC BY-NC 2.5 MK"
+}

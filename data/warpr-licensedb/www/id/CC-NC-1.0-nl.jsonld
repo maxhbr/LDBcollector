@@ -1,0 +1,848 @@
+{
+    "@context": {
+        "cc": "http://creativecommons.org/ns#",
+        "dc": "http://purl.org/dc/terms/",
+        "dc11": "http://purl.org/dc/elements/1.1/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "li": "https://licensedb.org/ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "cc:legalcode": {
+            "@type": "@id"
+        },
+        "cc:permits": {
+            "@type": "@id"
+        },
+        "cc:requires": {
+            "@type": "@id"
+        },
+        "cc:prohibits": {
+            "@type": "@id"
+        },
+        "cc:jurisdiction": {
+            "@type": "@id"
+        },
+        "cc:licenseClass": {
+            "@type": "@id"
+        },
+        "dc:creator": {
+            "@type": "@id"
+        },
+        "dc:source": {
+            "@type": "@id"
+        },
+        "dc:replaces": {
+            "@type": "@id"
+        },
+        "dc:isBasedOn": {
+            "@type": "@id"
+        },
+        "dc:isReplacedBy": {
+            "@type": "@id"
+        },
+        "foaf:logo": {
+            "@type": "@id"
+        },
+        "li:plaintext": {
+            "@type": "@id"
+        },
+        "li:libre": {
+            "@type": "@id"
+        },
+        "owl:sameAs": {
+            "@type": "@id"
+        }
+    },
+    "@id": "https://licensedb.org/id/CC-NC-1.0-nl",
+    "@type": [
+        "cc:License",
+        "li:License"
+    ],
+    "cc:deprecatedOn": {
+        "@type": "http://www.w3.org/2001/XMLSchema-datatypes#date",
+        "@value": "2004-05-25"
+    },
+    "cc:jurisdiction": "http://creativecommons.org/international/nl/",
+    "cc:legalcode": "http://creativecommons.org/licenses/nc/1.0/nl/legalcode",
+    "cc:licenseClass": "http://creativecommons.org/license/",
+    "cc:permits": [
+        "cc:DerivativeWorks",
+        "cc:Distribution",
+        "cc:Reproduction"
+    ],
+    "cc:prohibits": "cc:CommercialUse",
+    "cc:requires": "cc:Notice",
+    "dc:creator": "http://creativecommons.org",
+    "dc:hasVersion": "1.0",
+    "dc:identifier": "nc",
+    "dc:source": "http://creativecommons.org/licenses/nc/1.0/",
+    "dc:title": [
+        {
+            "@language": "af",
+            "@value": "NieKommersieel 1.0 Nederland"
+        },
+        {
+            "@language": "ar",
+            "@value": "غير تجاري 1.0 هولندا"
+        },
+        {
+            "@language": "as",
+            "@value": "NonCommercial 1.0 Netherlands"
+        },
+        {
+            "@language": "ast",
+            "@value": "NonCommercial 1.0 Netherlands"
+        },
+        {
+            "@language": "ast-es",
+            "@value": "NonCommercial 1.0 Netherlands"
+        },
+        {
+            "@language": "az",
+            "@value": "NonCommercial 1.0 Netherlands"
+        },
+        {
+            "@language": "be",
+            "@value": "NonCommercial 1.0 Нідэрланды"
+        },
+        {
+            "@language": "bg",
+            "@value": "Некомерсиално 1.0 Холандия"
+        },
+        {
+            "@language": "bn",
+            "@value": "অ-বানিজ্যিক 1.0 Netherlands"
+        },
+        {
+            "@language": "ca",
+            "@value": "NoComercial 1.0 Holanda"
+        },
+        {
+            "@language": "cs",
+            "@value": "Neužívejte dílo komerčně 1.0 Nizozemí"
+        },
+        {
+            "@language": "da",
+            "@value": "IkkeKommerciel 1.0 Holland"
+        },
+        {
+            "@language": "de",
+            "@value": "Nicht kommerziell 1.0 Niederlande"
+        },
+        {
+            "@language": "de-at",
+            "@value": "NichtKommerziell 1.0 Niederlande"
+        },
+        {
+            "@language": "de-ch",
+            "@value": "NichtKommerziell 1.0 Niederlande"
+        },
+        {
+            "@language": "el",
+            "@value": "Μη Εμπορική Χρήση 1.0 Ολλανδία"
+        },
+        {
+            "@language": "en",
+            "@value": "NonCommercial 1.0 Netherlands"
+        },
+        {
+            "@language": "en-ca",
+            "@value": "NonCommercial 1.0 Netherlands"
+        },
+        {
+            "@language": "en-gb",
+            "@value": "Non-Commercial 1.0 Netherlands"
+        },
+        {
+            "@language": "en-hk",
+            "@value": "Non-Commercial 1.0 Netherlands"
+        },
+        {
+            "@language": "en-sg",
+            "@value": "Non-Commercial 1.0 Netherlands"
+        },
+        {
+            "@language": "en-us",
+            "@value": "NonCommercial 1.0 Netherlands"
+        },
+        {
+            "@language": "eo",
+            "@value": "Nekomerce 1.0 Nederlando"
+        },
+        {
+            "@language": "es",
+            "@value": "NoComercial 1.0 Holanda"
+        },
+        {
+            "@language": "es-ar",
+            "@value": "NoComercial 1.0 Holanda"
+        },
+        {
+            "@language": "es-cl",
+            "@value": "NoComercial 1.0 Holanda"
+        },
+        {
+            "@language": "es-co",
+            "@value": "NoComercial 1.0 Holanda"
+        },
+        {
+            "@language": "es-ec",
+            "@value": "No Comercial 1.0 Holanda"
+        },
+        {
+            "@language": "es-es",
+            "@value": "NoComercial 1.0 Holanda"
+        },
+        {
+            "@language": "es-gt",
+            "@value": "No Comercial 1.0 Holanda"
+        },
+        {
+            "@language": "es-mx",
+            "@value": "No Comercial 1.0 Holanda"
+        },
+        {
+            "@language": "es-pe",
+            "@value": "NoComercial 1.0 Holanda"
+        },
+        {
+            "@language": "es-pr",
+            "@value": "NoComercial 1.0 Holanda"
+        },
+        {
+            "@language": "et",
+            "@value": "Mitteäriline eesmärk 1.0 Holland"
+        },
+        {
+            "@language": "eu",
+            "@value": "EzKomertziala 1.0 Herbehereak"
+        },
+        {
+            "@language": "fa",
+            "@value": "غیر تجاری 1.0 هلند"
+        },
+        {
+            "@language": "fi",
+            "@value": "Epäkaupallinen 1.0 Hollanti"
+        },
+        {
+            "@language": "fr",
+            "@value": "Pas d'Utilisation Commerciale 1.0 Pays-Bas"
+        },
+        {
+            "@language": "fr-ca",
+            "@value": "Pas d'Utilisation Commerciale 1.0 Pays-Bas"
+        },
+        {
+            "@language": "fr-ch",
+            "@value": "Pas d'Utilisation Commerciale 1.0 Pays-Bas"
+        },
+        {
+            "@language": "fr-lu",
+            "@value": "Pas d'Utilisation Commerciale 1.0 Pays-Bas"
+        },
+        {
+            "@language": "ga",
+            "@value": "NonCommercial 1.0 Netherlands"
+        },
+        {
+            "@language": "gl",
+            "@value": "NonComercial 1.0 Holanda"
+        },
+        {
+            "@language": "he",
+            "@value": "שימוש לא מסחרי 1.0 הולנד"
+        },
+        {
+            "@language": "hi",
+            "@value": "NonCommercial 1.0 Netherlands"
+        },
+        {
+            "@language": "hr",
+            "@value": "Nekomercijalno 1.0 Nizozemska"
+        },
+        {
+            "@language": "hu",
+            "@value": "Ne add el! 1.0 Hollandia"
+        },
+        {
+            "@language": "hy",
+            "@value": "Ոչ-առևտրային օգտագործում 1.0 Նիդերլանդներ"
+        },
+        {
+            "@language": "id",
+            "@value": "NonKomersial 1.0 Belanda"
+        },
+        {
+            "@language": "is",
+            "@value": "NonCommercial 1.0 Holland"
+        },
+        {
+            "@language": "it",
+            "@value": "NonCommerciale 1.0 Olanda"
+        },
+        {
+            "@language": "it-ch",
+            "@value": "NonCommerciale 1.0 Olanda"
+        },
+        {
+            "@language": "ja",
+            "@value": "非営利 1.0 オランダ"
+        },
+        {
+            "@language": "ka",
+            "@value": "არაკომერციული  1.0 ნიდერლანდები"
+        },
+        {
+            "@language": "kk",
+            "@value": "Коммерциялық емес 1.0 Netherlands"
+        },
+        {
+            "@language": "ko",
+            "@value": "비영리 1.0 네덜란드"
+        },
+        {
+            "@language": "lt",
+            "@value": "Nekomercinis 1.0 Nyderlandai"
+        },
+        {
+            "@language": "lv",
+            "@value": "Nekomerciāli 1.0 Nīderlande"
+        },
+        {
+            "@language": "mk",
+            "@value": "Некомерцијално 1.0 Холандија"
+        },
+        {
+            "@language": "ml",
+            "@value": "NonCommercial 1.0 നെതർലാന്റ്സ്"
+        },
+        {
+            "@language": "mn",
+            "@value": "NonCommercial 1.0 Netherlands"
+        },
+        {
+            "@language": "ms",
+            "@value": "BukanKomersial 1.0 Netherlands"
+        },
+        {
+            "@language": "nl",
+            "@value": "NietCommercieel 1.0 Nederland"
+        },
+        {
+            "@language": "no",
+            "@value": "Ikkekommersiell 1.0 Nederland"
+        },
+        {
+            "@language": "nso",
+            "@value": "E sego ya Kgwebo 1.0 Netherlands"
+        },
+        {
+            "@language": "oci-es",
+            "@value": "NonCommercial 1.0 Netherlands"
+        },
+        {
+            "@language": "pl",
+            "@value": "Użycie niekomercyjne 1.0 Holandia"
+        },
+        {
+            "@language": "pt",
+            "@value": "NãoComercial 1.0 Holanda"
+        },
+        {
+            "@language": "pt-br",
+            "@value": "Uso não-comercial 1.0 Netherlands"
+        },
+        {
+            "@language": "pt-pt",
+            "@value": "Uso Não-Comercial 1.0 Holanda"
+        },
+        {
+            "@language": "ro",
+            "@value": "NeComercial 1.0 Olanda"
+        },
+        {
+            "@language": "ru",
+            "@value": "Некоммерческое использование 1.0 Нидерланды"
+        },
+        {
+            "@language": "si-lk",
+            "@value": "NonCommercial 1.0 Netherlands"
+        },
+        {
+            "@language": "sl",
+            "@value": "Nekomercialno 1.0 Nizozemska"
+        },
+        {
+            "@language": "sq",
+            "@value": "NonCommercial 1.0 Holandë"
+        },
+        {
+            "@language": "sr",
+            "@value": "Nekomercijalno 1.0 Holandija"
+        },
+        {
+            "@language": "sr",
+            "@value": "Некомерцијално 1.0 Холандија"
+        },
+        {
+            "@language": "sr-latn",
+            "@value": "Nekomercijalno 1.0 Holandija"
+        },
+        {
+            "@language": "st",
+            "@value": "NonCommercial 1.0 Netherlands"
+        },
+        {
+            "@language": "sv",
+            "@value": "IckeKommersiell 1.0 Nederländerna"
+        },
+        {
+            "@language": "ta",
+            "@value": "NonCommercial 1.0 நெதர்லாந்து"
+        },
+        {
+            "@language": "te",
+            "@value": "NonCommercial 1.0 నెదర్లాండ్స్"
+        },
+        {
+            "@language": "th",
+            "@value": "ไม่ใช้เพื่อการค้า 1.0 เนเธอร์แลนด์"
+        },
+        {
+            "@language": "tr",
+            "@value": "Gayriticari 1.0 Hollanda"
+        },
+        {
+            "@language": "uk",
+            "@value": "NonCommercial 1.0 Netherlands"
+        },
+        {
+            "@language": "ur",
+            "@value": "NonCommercial 1.0 Netherlands"
+        },
+        {
+            "@language": "vi",
+            "@value": "Phi thương mại 1.0 Nước Hà Lan"
+        },
+        {
+            "@language": "zh",
+            "@value": "非商业性使用 1.0 荷兰"
+        },
+        {
+            "@language": "zh-hk",
+            "@value": "非商業性 1.0 荷蘭"
+        },
+        {
+            "@language": "zh-tw",
+            "@value": "非商業性 1.0 荷蘭"
+        },
+        {
+            "@language": "zu",
+            "@value": "Ungayisebenziseli Ezentengiselwano 1.0 iNetherlands"
+        },
+        {
+            "@language": "zxx",
+            "@value": "${NonCommercial} 1.0 ${Netherlands}"
+        }
+    ],
+    "owl:sameAs": {
+        "@id": "http://creativecommons.org/licenses/nc/1.0/nl/",
+        "@type": "cc:License",
+        "cc:deprecatedOn": {
+            "@type": "http://www.w3.org/2001/XMLSchema-datatypes#date",
+            "@value": "2004-05-25"
+        },
+        "cc:jurisdiction": "http://creativecommons.org/international/nl/",
+        "cc:legalcode": "http://creativecommons.org/licenses/nc/1.0/nl/legalcode",
+        "cc:licenseClass": "http://creativecommons.org/license/",
+        "cc:permits": [
+            "cc:DerivativeWorks",
+            "cc:Distribution",
+            "cc:Reproduction"
+        ],
+        "cc:prohibits": "cc:CommercialUse",
+        "cc:requires": "cc:Notice",
+        "dc:creator": "http://creativecommons.org",
+        "dc:hasVersion": "1.0",
+        "dc:identifier": "nc",
+        "dc:source": "http://creativecommons.org/licenses/nc/1.0/",
+        "dc:title": [
+            {
+                "@language": "af",
+                "@value": "NieKommersieel 1.0 Nederland"
+            },
+            {
+                "@language": "ar",
+                "@value": "غير تجاري 1.0 هولندا"
+            },
+            {
+                "@language": "as",
+                "@value": "NonCommercial 1.0 Netherlands"
+            },
+            {
+                "@language": "ast",
+                "@value": "NonCommercial 1.0 Netherlands"
+            },
+            {
+                "@language": "ast-es",
+                "@value": "NonCommercial 1.0 Netherlands"
+            },
+            {
+                "@language": "az",
+                "@value": "NonCommercial 1.0 Netherlands"
+            },
+            {
+                "@language": "be",
+                "@value": "NonCommercial 1.0 Нідэрланды"
+            },
+            {
+                "@language": "bg",
+                "@value": "Некомерсиално 1.0 Холандия"
+            },
+            {
+                "@language": "bn",
+                "@value": "অ-বানিজ্যিক 1.0 Netherlands"
+            },
+            {
+                "@language": "ca",
+                "@value": "NoComercial 1.0 Holanda"
+            },
+            {
+                "@language": "cs",
+                "@value": "Neužívejte dílo komerčně 1.0 Nizozemí"
+            },
+            {
+                "@language": "da",
+                "@value": "IkkeKommerciel 1.0 Holland"
+            },
+            {
+                "@language": "de",
+                "@value": "Nicht kommerziell 1.0 Niederlande"
+            },
+            {
+                "@language": "de-at",
+                "@value": "NichtKommerziell 1.0 Niederlande"
+            },
+            {
+                "@language": "de-ch",
+                "@value": "NichtKommerziell 1.0 Niederlande"
+            },
+            {
+                "@language": "el",
+                "@value": "Μη Εμπορική Χρήση 1.0 Ολλανδία"
+            },
+            {
+                "@language": "en",
+                "@value": "NonCommercial 1.0 Netherlands"
+            },
+            {
+                "@language": "en-ca",
+                "@value": "NonCommercial 1.0 Netherlands"
+            },
+            {
+                "@language": "en-gb",
+                "@value": "Non-Commercial 1.0 Netherlands"
+            },
+            {
+                "@language": "en-hk",
+                "@value": "Non-Commercial 1.0 Netherlands"
+            },
+            {
+                "@language": "en-sg",
+                "@value": "Non-Commercial 1.0 Netherlands"
+            },
+            {
+                "@language": "en-us",
+                "@value": "NonCommercial 1.0 Netherlands"
+            },
+            {
+                "@language": "eo",
+                "@value": "Nekomerce 1.0 Nederlando"
+            },
+            {
+                "@language": "es",
+                "@value": "NoComercial 1.0 Holanda"
+            },
+            {
+                "@language": "es-ar",
+                "@value": "NoComercial 1.0 Holanda"
+            },
+            {
+                "@language": "es-cl",
+                "@value": "NoComercial 1.0 Holanda"
+            },
+            {
+                "@language": "es-co",
+                "@value": "NoComercial 1.0 Holanda"
+            },
+            {
+                "@language": "es-ec",
+                "@value": "No Comercial 1.0 Holanda"
+            },
+            {
+                "@language": "es-es",
+                "@value": "NoComercial 1.0 Holanda"
+            },
+            {
+                "@language": "es-gt",
+                "@value": "No Comercial 1.0 Holanda"
+            },
+            {
+                "@language": "es-mx",
+                "@value": "No Comercial 1.0 Holanda"
+            },
+            {
+                "@language": "es-pe",
+                "@value": "NoComercial 1.0 Holanda"
+            },
+            {
+                "@language": "es-pr",
+                "@value": "NoComercial 1.0 Holanda"
+            },
+            {
+                "@language": "et",
+                "@value": "Mitteäriline eesmärk 1.0 Holland"
+            },
+            {
+                "@language": "eu",
+                "@value": "EzKomertziala 1.0 Herbehereak"
+            },
+            {
+                "@language": "fa",
+                "@value": "غیر تجاری 1.0 هلند"
+            },
+            {
+                "@language": "fi",
+                "@value": "Epäkaupallinen 1.0 Hollanti"
+            },
+            {
+                "@language": "fr",
+                "@value": "Pas d'Utilisation Commerciale 1.0 Pays-Bas"
+            },
+            {
+                "@language": "fr-ca",
+                "@value": "Pas d'Utilisation Commerciale 1.0 Pays-Bas"
+            },
+            {
+                "@language": "fr-ch",
+                "@value": "Pas d'Utilisation Commerciale 1.0 Pays-Bas"
+            },
+            {
+                "@language": "fr-lu",
+                "@value": "Pas d'Utilisation Commerciale 1.0 Pays-Bas"
+            },
+            {
+                "@language": "ga",
+                "@value": "NonCommercial 1.0 Netherlands"
+            },
+            {
+                "@language": "gl",
+                "@value": "NonComercial 1.0 Holanda"
+            },
+            {
+                "@language": "he",
+                "@value": "שימוש לא מסחרי 1.0 הולנד"
+            },
+            {
+                "@language": "hi",
+                "@value": "NonCommercial 1.0 Netherlands"
+            },
+            {
+                "@language": "hr",
+                "@value": "Nekomercijalno 1.0 Nizozemska"
+            },
+            {
+                "@language": "hu",
+                "@value": "Ne add el! 1.0 Hollandia"
+            },
+            {
+                "@language": "hy",
+                "@value": "Ոչ-առևտրային օգտագործում 1.0 Նիդերլանդներ"
+            },
+            {
+                "@language": "id",
+                "@value": "NonKomersial 1.0 Belanda"
+            },
+            {
+                "@language": "is",
+                "@value": "NonCommercial 1.0 Holland"
+            },
+            {
+                "@language": "it",
+                "@value": "NonCommerciale 1.0 Olanda"
+            },
+            {
+                "@language": "it-ch",
+                "@value": "NonCommerciale 1.0 Olanda"
+            },
+            {
+                "@language": "ja",
+                "@value": "非営利 1.0 オランダ"
+            },
+            {
+                "@language": "ka",
+                "@value": "არაკომერციული  1.0 ნიდერლანდები"
+            },
+            {
+                "@language": "kk",
+                "@value": "Коммерциялық емес 1.0 Netherlands"
+            },
+            {
+                "@language": "ko",
+                "@value": "비영리 1.0 네덜란드"
+            },
+            {
+                "@language": "lt",
+                "@value": "Nekomercinis 1.0 Nyderlandai"
+            },
+            {
+                "@language": "lv",
+                "@value": "Nekomerciāli 1.0 Nīderlande"
+            },
+            {
+                "@language": "mk",
+                "@value": "Некомерцијално 1.0 Холандија"
+            },
+            {
+                "@language": "ml",
+                "@value": "NonCommercial 1.0 നെതർലാന്റ്സ്"
+            },
+            {
+                "@language": "mn",
+                "@value": "NonCommercial 1.0 Netherlands"
+            },
+            {
+                "@language": "ms",
+                "@value": "BukanKomersial 1.0 Netherlands"
+            },
+            {
+                "@language": "nl",
+                "@value": "NietCommercieel 1.0 Nederland"
+            },
+            {
+                "@language": "no",
+                "@value": "Ikkekommersiell 1.0 Nederland"
+            },
+            {
+                "@language": "nso",
+                "@value": "E sego ya Kgwebo 1.0 Netherlands"
+            },
+            {
+                "@language": "oci-es",
+                "@value": "NonCommercial 1.0 Netherlands"
+            },
+            {
+                "@language": "pl",
+                "@value": "Użycie niekomercyjne 1.0 Holandia"
+            },
+            {
+                "@language": "pt",
+                "@value": "NãoComercial 1.0 Holanda"
+            },
+            {
+                "@language": "pt-br",
+                "@value": "Uso não-comercial 1.0 Netherlands"
+            },
+            {
+                "@language": "pt-pt",
+                "@value": "Uso Não-Comercial 1.0 Holanda"
+            },
+            {
+                "@language": "ro",
+                "@value": "NeComercial 1.0 Olanda"
+            },
+            {
+                "@language": "ru",
+                "@value": "Некоммерческое использование 1.0 Нидерланды"
+            },
+            {
+                "@language": "si-lk",
+                "@value": "NonCommercial 1.0 Netherlands"
+            },
+            {
+                "@language": "sl",
+                "@value": "Nekomercialno 1.0 Nizozemska"
+            },
+            {
+                "@language": "sq",
+                "@value": "NonCommercial 1.0 Holandë"
+            },
+            {
+                "@language": "sr",
+                "@value": "Nekomercijalno 1.0 Holandija"
+            },
+            {
+                "@language": "sr",
+                "@value": "Некомерцијално 1.0 Холандија"
+            },
+            {
+                "@language": "sr-latn",
+                "@value": "Nekomercijalno 1.0 Holandija"
+            },
+            {
+                "@language": "st",
+                "@value": "NonCommercial 1.0 Netherlands"
+            },
+            {
+                "@language": "sv",
+                "@value": "IckeKommersiell 1.0 Nederländerna"
+            },
+            {
+                "@language": "ta",
+                "@value": "NonCommercial 1.0 நெதர்லாந்து"
+            },
+            {
+                "@language": "te",
+                "@value": "NonCommercial 1.0 నెదర్లాండ్స్"
+            },
+            {
+                "@language": "th",
+                "@value": "ไม่ใช้เพื่อการค้า 1.0 เนเธอร์แลนด์"
+            },
+            {
+                "@language": "tr",
+                "@value": "Gayriticari 1.0 Hollanda"
+            },
+            {
+                "@language": "uk",
+                "@value": "NonCommercial 1.0 Netherlands"
+            },
+            {
+                "@language": "ur",
+                "@value": "NonCommercial 1.0 Netherlands"
+            },
+            {
+                "@language": "vi",
+                "@value": "Phi thương mại 1.0 Nước Hà Lan"
+            },
+            {
+                "@language": "zh",
+                "@value": "非商业性使用 1.0 荷兰"
+            },
+            {
+                "@language": "zh-hk",
+                "@value": "非商業性 1.0 荷蘭"
+            },
+            {
+                "@language": "zh-tw",
+                "@value": "非商業性 1.0 荷蘭"
+            },
+            {
+                "@language": "zu",
+                "@value": "Ungayisebenziseli Ezentengiselwano 1.0 iNetherlands"
+            },
+            {
+                "@language": "zxx",
+                "@value": "${NonCommercial} 1.0 ${Netherlands}"
+            }
+        ],
+        "owl:sameAs": "https://licensedb.org/id/CC-NC-1.0-nl",
+        "foaf:logo": "http://i.creativecommons.org/l/nc/1.0/nl/88x31.png"
+    },
+    "foaf:logo": "http://i.creativecommons.org/l/nc/1.0/nl/88x31.png",
+    "li:id": "CC-NC-1.0-nl",
+    "li:name": "CC NC 1.0 NL"
+}

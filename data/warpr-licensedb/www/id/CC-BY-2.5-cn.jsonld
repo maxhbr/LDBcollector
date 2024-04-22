@@ -1,0 +1,851 @@
+{
+    "@context": {
+        "cc": "http://creativecommons.org/ns#",
+        "dc": "http://purl.org/dc/terms/",
+        "dc11": "http://purl.org/dc/elements/1.1/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "li": "https://licensedb.org/ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "cc:legalcode": {
+            "@type": "@id"
+        },
+        "cc:permits": {
+            "@type": "@id"
+        },
+        "cc:requires": {
+            "@type": "@id"
+        },
+        "cc:prohibits": {
+            "@type": "@id"
+        },
+        "cc:jurisdiction": {
+            "@type": "@id"
+        },
+        "cc:licenseClass": {
+            "@type": "@id"
+        },
+        "dc:creator": {
+            "@type": "@id"
+        },
+        "dc:source": {
+            "@type": "@id"
+        },
+        "dc:replaces": {
+            "@type": "@id"
+        },
+        "dc:isBasedOn": {
+            "@type": "@id"
+        },
+        "dc:isReplacedBy": {
+            "@type": "@id"
+        },
+        "foaf:logo": {
+            "@type": "@id"
+        },
+        "li:plaintext": {
+            "@type": "@id"
+        },
+        "li:libre": {
+            "@type": "@id"
+        },
+        "owl:sameAs": {
+            "@type": "@id"
+        }
+    },
+    "@id": "https://licensedb.org/id/CC-BY-2.5-cn",
+    "@type": [
+        "cc:License",
+        "li:License"
+    ],
+    "cc:jurisdiction": "http://creativecommons.org/international/cn/",
+    "cc:legalcode": "http://creativecommons.org/licenses/by/2.5/cn/legalcode",
+    "cc:licenseClass": "http://creativecommons.org/license/",
+    "cc:permits": [
+        "cc:DerivativeWorks",
+        "cc:Distribution",
+        "cc:Reproduction"
+    ],
+    "cc:requires": [
+        "cc:Attribution",
+        "cc:Notice"
+    ],
+    "dc:creator": "http://creativecommons.org",
+    "dc:hasVersion": "2.5",
+    "dc:identifier": "by",
+    "dc:source": "http://creativecommons.org/licenses/by/2.5/",
+    "dc:title": [
+        {
+            "@language": "af",
+            "@value": "Erkenning 2.5 Sjinese Vasteland"
+        },
+        {
+            "@language": "ar",
+            "@value": "نسب المصنف  2.5 الصين "
+        },
+        {
+            "@language": "as",
+            "@value": "Attribution 2.5 China Mainland"
+        },
+        {
+            "@language": "ast",
+            "@value": "Attribution 2.5 China Mainland"
+        },
+        {
+            "@language": "ast-es",
+            "@value": "Attribution 2.5 China Mainland"
+        },
+        {
+            "@language": "az",
+            "@value": "Attribution 2.5 China Mainland"
+        },
+        {
+            "@language": "be",
+            "@value": "Атрыбуцыя 2.5 Мацерыковы Кітай"
+        },
+        {
+            "@language": "bg",
+            "@value": "Признание 2.5 Китай (континентален)"
+        },
+        {
+            "@language": "bn",
+            "@value": "Attribution 2.5 China Mainland"
+        },
+        {
+            "@language": "ca",
+            "@value": "Reconeixement 2.5 Xina"
+        },
+        {
+            "@language": "cs",
+            "@value": "Uveďte autora 2.5 Kontinentální Čína"
+        },
+        {
+            "@language": "da",
+            "@value": "Navngivelse 2.5 Kina"
+        },
+        {
+            "@language": "de",
+            "@value": "Namensnennung 2.5 Volksrepublik China"
+        },
+        {
+            "@language": "de-at",
+            "@value": "Namensnennung 2.5 China"
+        },
+        {
+            "@language": "de-ch",
+            "@value": "Namensnennung 2.5 China"
+        },
+        {
+            "@language": "el",
+            "@value": "Αναφορά Δημιουργού 2.5 Κίνα"
+        },
+        {
+            "@language": "en",
+            "@value": "Attribution 2.5 China Mainland"
+        },
+        {
+            "@language": "en-ca",
+            "@value": "Attribution 2.5 China Mainland"
+        },
+        {
+            "@language": "en-gb",
+            "@value": "Attribution 2.5 China"
+        },
+        {
+            "@language": "en-hk",
+            "@value": "Attribution 2.5 China"
+        },
+        {
+            "@language": "en-sg",
+            "@value": "Attribution 2.5 China"
+        },
+        {
+            "@language": "en-us",
+            "@value": "Attribution 2.5 China Mainland"
+        },
+        {
+            "@language": "eo",
+            "@value": "Atribuite 2.5 Ĉinujo"
+        },
+        {
+            "@language": "es",
+            "@value": "Atribución 2.5 China continental"
+        },
+        {
+            "@language": "es-ar",
+            "@value": "Atribución 2.5 China"
+        },
+        {
+            "@language": "es-cl",
+            "@value": "Atribución 2.5 China"
+        },
+        {
+            "@language": "es-co",
+            "@value": "Reconocimiento 2.5 China"
+        },
+        {
+            "@language": "es-ec",
+            "@value": "Reconocimiento 2.5 China"
+        },
+        {
+            "@language": "es-es",
+            "@value": "Reconocimiento 2.5 China"
+        },
+        {
+            "@language": "es-gt",
+            "@value": "Reconocimiento 2.5 China"
+        },
+        {
+            "@language": "es-mx",
+            "@value": "Atribución 2.5 China"
+        },
+        {
+            "@language": "es-pe",
+            "@value": "Reconocimiento 2.5 China"
+        },
+        {
+            "@language": "es-pr",
+            "@value": "Reconocimiento 2.5 China"
+        },
+        {
+            "@language": "et",
+            "@value": "Autorile viitamine 2.5 Mandri-Hiina"
+        },
+        {
+            "@language": "eu",
+            "@value": "Aitortu 2.5 Txina"
+        },
+        {
+            "@language": "fa",
+            "@value": "Attribution 2.5 چین سرزمین اصلی"
+        },
+        {
+            "@language": "fi",
+            "@value": "Nimeä 2.5 Kiina"
+        },
+        {
+            "@language": "fr",
+            "@value": "Attribution 2.5 Chine continentale"
+        },
+        {
+            "@language": "fr-ca",
+            "@value": "Paternité 2.5 Chine"
+        },
+        {
+            "@language": "fr-ch",
+            "@value": "Paternité 2.5 Chine"
+        },
+        {
+            "@language": "fr-lu",
+            "@value": "Paternité 2.5 Chine"
+        },
+        {
+            "@language": "ga",
+            "@value": "Attribution 2.5 China Mainland"
+        },
+        {
+            "@language": "gl",
+            "@value": "Recoñecemento 2.5 China"
+        },
+        {
+            "@language": "he",
+            "@value": "ייחוס 2.5 סין"
+        },
+        {
+            "@language": "hi",
+            "@value": "Attribution 2.5 China Mainland"
+        },
+        {
+            "@language": "hr",
+            "@value": "Imenovanje 2.5 Kina"
+        },
+        {
+            "@language": "hu",
+            "@value": "Nevezd meg! 2.5 Kína"
+        },
+        {
+            "@language": "hy",
+            "@value": "Հղում 2.5 China Mainland"
+        },
+        {
+            "@language": "id",
+            "@value": "Atribusi 2.5 Cina Daratan"
+        },
+        {
+            "@language": "is",
+            "@value": "Attribution 2.5 China Mainland"
+        },
+        {
+            "@language": "it",
+            "@value": "Attribuzione 2.5 Cina"
+        },
+        {
+            "@language": "it-ch",
+            "@value": "Attribuzione 2.5 Cina"
+        },
+        {
+            "@language": "ja",
+            "@value": "表示 2.5 中華人民共和国"
+        },
+        {
+            "@language": "ka",
+            "@value": "ავტორობის მითითებით  2.5 ჩინეთი (მატერიკი)"
+        },
+        {
+            "@language": "kk",
+            "@value": "Атауын сақтау 2.5 China Mainland"
+        },
+        {
+            "@language": "ko",
+            "@value": "저작자표시(Attribution) 2.5 중국 본토"
+        },
+        {
+            "@language": "lt",
+            "@value": "Priskyrimas 2.5 Kinijos žemynas"
+        },
+        {
+            "@language": "lv",
+            "@value": "Atsaucoties 2.5 Ķīna"
+        },
+        {
+            "@language": "mk",
+            "@value": "Наведи извор 2.5 Кина"
+        },
+        {
+            "@language": "ml",
+            "@value": "കടപ്പാട് 2.5 China Mainland"
+        },
+        {
+            "@language": "mn",
+            "@value": "Attribution 2.5 China Mainland"
+        },
+        {
+            "@language": "ms",
+            "@value": "Pengiktirafan 2.5 Tanah Besar Cina"
+        },
+        {
+            "@language": "nl",
+            "@value": "Naamsvermelding 2.5 China (vasteland)"
+        },
+        {
+            "@language": "no",
+            "@value": "Navngivelse 2.5 Kina"
+        },
+        {
+            "@language": "nso",
+            "@value": "Tsebagatšo 2.5 China Naga-bogareng"
+        },
+        {
+            "@language": "oci-es",
+            "@value": "Attribution 2.5 China Mainland"
+        },
+        {
+            "@language": "pl",
+            "@value": "Uznanie autorstwa 2.5 Chiny"
+        },
+        {
+            "@language": "pt",
+            "@value": "Atribuição  2.5 China Continental"
+        },
+        {
+            "@language": "pt-br",
+            "@value": "Atribuição 2.5 China Mainland"
+        },
+        {
+            "@language": "pt-pt",
+            "@value": "Atribuição 2.5 China"
+        },
+        {
+            "@language": "ro",
+            "@value": "Atribuire 2.5 China continentală"
+        },
+        {
+            "@language": "ru",
+            "@value": "Attribution (Атрибуция) 2.5 Материковый Китай"
+        },
+        {
+            "@language": "si-lk",
+            "@value": "Attribution 2.5 China Mainland"
+        },
+        {
+            "@language": "sl",
+            "@value": "Priznanje avtorstva 2.5 Kitajska"
+        },
+        {
+            "@language": "sq",
+            "@value": "Attribution 2.5 Kinë Kontinentale"
+        },
+        {
+            "@language": "sr",
+            "@value": "Autorstvo 2.5 Kina"
+        },
+        {
+            "@language": "sr",
+            "@value": "Ауторство 2.5 Кина"
+        },
+        {
+            "@language": "sr-latn",
+            "@value": "Autorstvo 2.5 Kina"
+        },
+        {
+            "@language": "st",
+            "@value": "Attribution 2.5 China Mainland"
+        },
+        {
+            "@language": "sv",
+            "@value": "Erkännande 2.5 Kina"
+        },
+        {
+            "@language": "ta",
+            "@value": "Attribution 2.5 China Mainland"
+        },
+        {
+            "@language": "te",
+            "@value": "ఆపాదింపు 2.5 చైనా మెయిన్లాండ్"
+        },
+        {
+            "@language": "th",
+            "@value": "แสดงที่มา 2.5 จีนแผ่นดินใหญ่"
+        },
+        {
+            "@language": "tr",
+            "@value": "Attribution 2.5 Çin Halk Cumhuriyeti"
+        },
+        {
+            "@language": "uk",
+            "@value": "Attribution 2.5 China Mainland"
+        },
+        {
+            "@language": "ur",
+            "@value": "Attribution 2.5 China Mainland"
+        },
+        {
+            "@language": "vi",
+            "@value": "Ghi nhận công của tác giả 2.5 China Mainland"
+        },
+        {
+            "@language": "zh",
+            "@value": "署名 2.5 中国大陆"
+        },
+        {
+            "@language": "zh-hk",
+            "@value": "姓名標示 2.5 中國大陸"
+        },
+        {
+            "@language": "zh-tw",
+            "@value": "姓名標示 2.5 中國大陸"
+        },
+        {
+            "@language": "zu",
+            "@value": "Qaphela Umnikazi 2.5 EMainland China"
+        },
+        {
+            "@language": "zxx",
+            "@value": "${Attribution} 2.5 ${China Mainland}"
+        }
+    ],
+    "owl:sameAs": {
+        "@id": "http://creativecommons.org/licenses/by/2.5/cn/",
+        "@type": "cc:License",
+        "cc:jurisdiction": "http://creativecommons.org/international/cn/",
+        "cc:legalcode": "http://creativecommons.org/licenses/by/2.5/cn/legalcode",
+        "cc:licenseClass": "http://creativecommons.org/license/",
+        "cc:permits": [
+            "cc:DerivativeWorks",
+            "cc:Distribution",
+            "cc:Reproduction"
+        ],
+        "cc:requires": [
+            "cc:Attribution",
+            "cc:Notice"
+        ],
+        "dc:creator": "http://creativecommons.org",
+        "dc:hasVersion": "2.5",
+        "dc:identifier": "by",
+        "dc:source": "http://creativecommons.org/licenses/by/2.5/",
+        "dc:title": [
+            {
+                "@language": "af",
+                "@value": "Erkenning 2.5 Sjinese Vasteland"
+            },
+            {
+                "@language": "ar",
+                "@value": "نسب المصنف  2.5 الصين "
+            },
+            {
+                "@language": "as",
+                "@value": "Attribution 2.5 China Mainland"
+            },
+            {
+                "@language": "ast",
+                "@value": "Attribution 2.5 China Mainland"
+            },
+            {
+                "@language": "ast-es",
+                "@value": "Attribution 2.5 China Mainland"
+            },
+            {
+                "@language": "az",
+                "@value": "Attribution 2.5 China Mainland"
+            },
+            {
+                "@language": "be",
+                "@value": "Атрыбуцыя 2.5 Мацерыковы Кітай"
+            },
+            {
+                "@language": "bg",
+                "@value": "Признание 2.5 Китай (континентален)"
+            },
+            {
+                "@language": "bn",
+                "@value": "Attribution 2.5 China Mainland"
+            },
+            {
+                "@language": "ca",
+                "@value": "Reconeixement 2.5 Xina"
+            },
+            {
+                "@language": "cs",
+                "@value": "Uveďte autora 2.5 Kontinentální Čína"
+            },
+            {
+                "@language": "da",
+                "@value": "Navngivelse 2.5 Kina"
+            },
+            {
+                "@language": "de",
+                "@value": "Namensnennung 2.5 Volksrepublik China"
+            },
+            {
+                "@language": "de-at",
+                "@value": "Namensnennung 2.5 China"
+            },
+            {
+                "@language": "de-ch",
+                "@value": "Namensnennung 2.5 China"
+            },
+            {
+                "@language": "el",
+                "@value": "Αναφορά Δημιουργού 2.5 Κίνα"
+            },
+            {
+                "@language": "en",
+                "@value": "Attribution 2.5 China Mainland"
+            },
+            {
+                "@language": "en-ca",
+                "@value": "Attribution 2.5 China Mainland"
+            },
+            {
+                "@language": "en-gb",
+                "@value": "Attribution 2.5 China"
+            },
+            {
+                "@language": "en-hk",
+                "@value": "Attribution 2.5 China"
+            },
+            {
+                "@language": "en-sg",
+                "@value": "Attribution 2.5 China"
+            },
+            {
+                "@language": "en-us",
+                "@value": "Attribution 2.5 China Mainland"
+            },
+            {
+                "@language": "eo",
+                "@value": "Atribuite 2.5 Ĉinujo"
+            },
+            {
+                "@language": "es",
+                "@value": "Atribución 2.5 China continental"
+            },
+            {
+                "@language": "es-ar",
+                "@value": "Atribución 2.5 China"
+            },
+            {
+                "@language": "es-cl",
+                "@value": "Atribución 2.5 China"
+            },
+            {
+                "@language": "es-co",
+                "@value": "Reconocimiento 2.5 China"
+            },
+            {
+                "@language": "es-ec",
+                "@value": "Reconocimiento 2.5 China"
+            },
+            {
+                "@language": "es-es",
+                "@value": "Reconocimiento 2.5 China"
+            },
+            {
+                "@language": "es-gt",
+                "@value": "Reconocimiento 2.5 China"
+            },
+            {
+                "@language": "es-mx",
+                "@value": "Atribución 2.5 China"
+            },
+            {
+                "@language": "es-pe",
+                "@value": "Reconocimiento 2.5 China"
+            },
+            {
+                "@language": "es-pr",
+                "@value": "Reconocimiento 2.5 China"
+            },
+            {
+                "@language": "et",
+                "@value": "Autorile viitamine 2.5 Mandri-Hiina"
+            },
+            {
+                "@language": "eu",
+                "@value": "Aitortu 2.5 Txina"
+            },
+            {
+                "@language": "fa",
+                "@value": "Attribution 2.5 چین سرزمین اصلی"
+            },
+            {
+                "@language": "fi",
+                "@value": "Nimeä 2.5 Kiina"
+            },
+            {
+                "@language": "fr",
+                "@value": "Attribution 2.5 Chine continentale"
+            },
+            {
+                "@language": "fr-ca",
+                "@value": "Paternité 2.5 Chine"
+            },
+            {
+                "@language": "fr-ch",
+                "@value": "Paternité 2.5 Chine"
+            },
+            {
+                "@language": "fr-lu",
+                "@value": "Paternité 2.5 Chine"
+            },
+            {
+                "@language": "ga",
+                "@value": "Attribution 2.5 China Mainland"
+            },
+            {
+                "@language": "gl",
+                "@value": "Recoñecemento 2.5 China"
+            },
+            {
+                "@language": "he",
+                "@value": "ייחוס 2.5 סין"
+            },
+            {
+                "@language": "hi",
+                "@value": "Attribution 2.5 China Mainland"
+            },
+            {
+                "@language": "hr",
+                "@value": "Imenovanje 2.5 Kina"
+            },
+            {
+                "@language": "hu",
+                "@value": "Nevezd meg! 2.5 Kína"
+            },
+            {
+                "@language": "hy",
+                "@value": "Հղում 2.5 China Mainland"
+            },
+            {
+                "@language": "id",
+                "@value": "Atribusi 2.5 Cina Daratan"
+            },
+            {
+                "@language": "is",
+                "@value": "Attribution 2.5 China Mainland"
+            },
+            {
+                "@language": "it",
+                "@value": "Attribuzione 2.5 Cina"
+            },
+            {
+                "@language": "it-ch",
+                "@value": "Attribuzione 2.5 Cina"
+            },
+            {
+                "@language": "ja",
+                "@value": "表示 2.5 中華人民共和国"
+            },
+            {
+                "@language": "ka",
+                "@value": "ავტორობის მითითებით  2.5 ჩინეთი (მატერიკი)"
+            },
+            {
+                "@language": "kk",
+                "@value": "Атауын сақтау 2.5 China Mainland"
+            },
+            {
+                "@language": "ko",
+                "@value": "저작자표시(Attribution) 2.5 중국 본토"
+            },
+            {
+                "@language": "lt",
+                "@value": "Priskyrimas 2.5 Kinijos žemynas"
+            },
+            {
+                "@language": "lv",
+                "@value": "Atsaucoties 2.5 Ķīna"
+            },
+            {
+                "@language": "mk",
+                "@value": "Наведи извор 2.5 Кина"
+            },
+            {
+                "@language": "ml",
+                "@value": "കടപ്പാട് 2.5 China Mainland"
+            },
+            {
+                "@language": "mn",
+                "@value": "Attribution 2.5 China Mainland"
+            },
+            {
+                "@language": "ms",
+                "@value": "Pengiktirafan 2.5 Tanah Besar Cina"
+            },
+            {
+                "@language": "nl",
+                "@value": "Naamsvermelding 2.5 China (vasteland)"
+            },
+            {
+                "@language": "no",
+                "@value": "Navngivelse 2.5 Kina"
+            },
+            {
+                "@language": "nso",
+                "@value": "Tsebagatšo 2.5 China Naga-bogareng"
+            },
+            {
+                "@language": "oci-es",
+                "@value": "Attribution 2.5 China Mainland"
+            },
+            {
+                "@language": "pl",
+                "@value": "Uznanie autorstwa 2.5 Chiny"
+            },
+            {
+                "@language": "pt",
+                "@value": "Atribuição  2.5 China Continental"
+            },
+            {
+                "@language": "pt-br",
+                "@value": "Atribuição 2.5 China Mainland"
+            },
+            {
+                "@language": "pt-pt",
+                "@value": "Atribuição 2.5 China"
+            },
+            {
+                "@language": "ro",
+                "@value": "Atribuire 2.5 China continentală"
+            },
+            {
+                "@language": "ru",
+                "@value": "Attribution (Атрибуция) 2.5 Материковый Китай"
+            },
+            {
+                "@language": "si-lk",
+                "@value": "Attribution 2.5 China Mainland"
+            },
+            {
+                "@language": "sl",
+                "@value": "Priznanje avtorstva 2.5 Kitajska"
+            },
+            {
+                "@language": "sq",
+                "@value": "Attribution 2.5 Kinë Kontinentale"
+            },
+            {
+                "@language": "sr",
+                "@value": "Autorstvo 2.5 Kina"
+            },
+            {
+                "@language": "sr",
+                "@value": "Ауторство 2.5 Кина"
+            },
+            {
+                "@language": "sr-latn",
+                "@value": "Autorstvo 2.5 Kina"
+            },
+            {
+                "@language": "st",
+                "@value": "Attribution 2.5 China Mainland"
+            },
+            {
+                "@language": "sv",
+                "@value": "Erkännande 2.5 Kina"
+            },
+            {
+                "@language": "ta",
+                "@value": "Attribution 2.5 China Mainland"
+            },
+            {
+                "@language": "te",
+                "@value": "ఆపాదింపు 2.5 చైనా మెయిన్లాండ్"
+            },
+            {
+                "@language": "th",
+                "@value": "แสดงที่มา 2.5 จีนแผ่นดินใหญ่"
+            },
+            {
+                "@language": "tr",
+                "@value": "Attribution 2.5 Çin Halk Cumhuriyeti"
+            },
+            {
+                "@language": "uk",
+                "@value": "Attribution 2.5 China Mainland"
+            },
+            {
+                "@language": "ur",
+                "@value": "Attribution 2.5 China Mainland"
+            },
+            {
+                "@language": "vi",
+                "@value": "Ghi nhận công của tác giả 2.5 China Mainland"
+            },
+            {
+                "@language": "zh",
+                "@value": "署名 2.5 中国大陆"
+            },
+            {
+                "@language": "zh-hk",
+                "@value": "姓名標示 2.5 中國大陸"
+            },
+            {
+                "@language": "zh-tw",
+                "@value": "姓名標示 2.5 中國大陸"
+            },
+            {
+                "@language": "zu",
+                "@value": "Qaphela Umnikazi 2.5 EMainland China"
+            },
+            {
+                "@language": "zxx",
+                "@value": "${Attribution} 2.5 ${China Mainland}"
+            }
+        ],
+        "owl:sameAs": "https://licensedb.org/id/CC-BY-2.5-cn",
+        "foaf:logo": [
+            "http://i.creativecommons.org/l/by/2.5/cn/80x15.png",
+            "http://i.creativecommons.org/l/by/2.5/cn/88x31.png"
+        ]
+    },
+    "foaf:logo": [
+        "http://i.creativecommons.org/l/by/2.5/cn/80x15.png",
+        "http://i.creativecommons.org/l/by/2.5/cn/88x31.png"
+    ],
+    "li:id": "CC-BY-2.5-cn",
+    "li:libre": "http://creativecommons.org/",
+    "li:name": "CC BY 2.5 CN"
+}

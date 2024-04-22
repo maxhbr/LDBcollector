@@ -1,0 +1,850 @@
+{
+    "@context": {
+        "cc": "http://creativecommons.org/ns#",
+        "dc": "http://purl.org/dc/terms/",
+        "dc11": "http://purl.org/dc/elements/1.1/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "li": "https://licensedb.org/ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "cc:legalcode": {
+            "@type": "@id"
+        },
+        "cc:permits": {
+            "@type": "@id"
+        },
+        "cc:requires": {
+            "@type": "@id"
+        },
+        "cc:prohibits": {
+            "@type": "@id"
+        },
+        "cc:jurisdiction": {
+            "@type": "@id"
+        },
+        "cc:licenseClass": {
+            "@type": "@id"
+        },
+        "dc:creator": {
+            "@type": "@id"
+        },
+        "dc:source": {
+            "@type": "@id"
+        },
+        "dc:replaces": {
+            "@type": "@id"
+        },
+        "dc:isBasedOn": {
+            "@type": "@id"
+        },
+        "dc:isReplacedBy": {
+            "@type": "@id"
+        },
+        "foaf:logo": {
+            "@type": "@id"
+        },
+        "li:plaintext": {
+            "@type": "@id"
+        },
+        "li:libre": {
+            "@type": "@id"
+        },
+        "owl:sameAs": {
+            "@type": "@id"
+        }
+    },
+    "@id": "https://licensedb.org/id/CC-BY-NC-2.5-scotland",
+    "@type": [
+        "cc:License",
+        "li:License"
+    ],
+    "cc:jurisdiction": "http://creativecommons.org/international/scotland/",
+    "cc:legalcode": "http://creativecommons.org/licenses/by-nc/2.5/scotland/legalcode",
+    "cc:licenseClass": "http://creativecommons.org/license/",
+    "cc:permits": [
+        "cc:Distribution",
+        "cc:Reproduction"
+    ],
+    "cc:prohibits": "cc:CommercialUse",
+    "cc:requires": [
+        "cc:Attribution",
+        "cc:Notice"
+    ],
+    "dc:creator": "http://creativecommons.org",
+    "dc:hasVersion": "2.5",
+    "dc:identifier": "by-nc",
+    "dc:source": "http://creativecommons.org/licenses/by-nc/2.5/",
+    "dc:title": [
+        {
+            "@language": "af",
+            "@value": "Erkenning-NieKommersieel 2.5 VK: Skotland"
+        },
+        {
+            "@language": "ar",
+            "@value": "نسب - غير تجاري 2.5 سكوتلندا - المملكة المتحدة"
+        },
+        {
+            "@language": "as",
+            "@value": "Attribution-NonCommercial 2.5 UK: Scotland"
+        },
+        {
+            "@language": "ast",
+            "@value": "Attribution-NonCommercial 2.5 UK: Scotland"
+        },
+        {
+            "@language": "ast-es",
+            "@value": "Attribution-NonCommercial 2.5 UK: Scotland"
+        },
+        {
+            "@language": "az",
+            "@value": "Attribution-NonCommercial 2.5 UK: Scotland"
+        },
+        {
+            "@language": "be",
+            "@value": "Attribution-NonCommercial 2.5 Шатландыя"
+        },
+        {
+            "@language": "bg",
+            "@value": "Признание-Некомерсиално 2.5 Обединено кралство: Шотландия"
+        },
+        {
+            "@language": "bn",
+            "@value": "Attribution-NonCommercial 2.5 UK: Scotland"
+        },
+        {
+            "@language": "ca",
+            "@value": "Reconeixement-NoComercial 2.5 Escòcia"
+        },
+        {
+            "@language": "cs",
+            "@value": "Uveďte autora-Neužívejte komerčně 2.5 Skotsko"
+        },
+        {
+            "@language": "da",
+            "@value": "Navngivelse-IkkeKommerciel 2.5 Skotland"
+        },
+        {
+            "@language": "de",
+            "@value": "Namensnennung-Nicht-kommerziell 2.5 Schottland"
+        },
+        {
+            "@language": "de-at",
+            "@value": "Namensnennung-NichtKommerziell 2.5 Schottland"
+        },
+        {
+            "@language": "de-ch",
+            "@value": "Namensnennung-NichtKommerziell 2.5 Schottland"
+        },
+        {
+            "@language": "el",
+            "@value": "Αναφορά Δημιουργού-Μη Εμπορική Χρήση 2.5 Ηνωμένο Βασίλειο: Σκωτία"
+        },
+        {
+            "@language": "en",
+            "@value": "Attribution-NonCommercial 2.5 UK: Scotland"
+        },
+        {
+            "@language": "en-ca",
+            "@value": "Attribution-NonCommercial 2.5 UK: Scotland"
+        },
+        {
+            "@language": "en-gb",
+            "@value": "Attribution-NonCommercial 2.5 UK: Scotland"
+        },
+        {
+            "@language": "en-hk",
+            "@value": "Attribution-NonCommercial 2.5 UK: Scotland"
+        },
+        {
+            "@language": "en-sg",
+            "@value": "Attribution-NonCommercial 2.5 UK: Scotland"
+        },
+        {
+            "@language": "en-us",
+            "@value": "Attribution-NonCommercial 2.5 UK: Scotland"
+        },
+        {
+            "@language": "eo",
+            "@value": "Atribuite-Nekomerce 2.5 Britujo: Skotujo"
+        },
+        {
+            "@language": "es",
+            "@value": "Atribución-NoComercial 2.5 Escocia"
+        },
+        {
+            "@language": "es-ar",
+            "@value": "Atribución-NoComercial 2.5 Reino Unido: Escocia"
+        },
+        {
+            "@language": "es-cl",
+            "@value": "Atribución-NoComercial 2.5 Escocia"
+        },
+        {
+            "@language": "es-co",
+            "@value": "Reconocimiento-NoComercial 2.5 Escocia"
+        },
+        {
+            "@language": "es-ec",
+            "@value": "Reconocimiento-NoComercial 2.5 Escocia"
+        },
+        {
+            "@language": "es-es",
+            "@value": "Reconocimiento-NoComercial 2.5 Escocia"
+        },
+        {
+            "@language": "es-gt",
+            "@value": "Reconocimiento-NoComercial 2.5 Escocia"
+        },
+        {
+            "@language": "es-mx",
+            "@value": "Atribución-No Comercial 2.5 Escocia"
+        },
+        {
+            "@language": "es-pe",
+            "@value": "Reconocimiento-NoComercial 2.5 Escocia"
+        },
+        {
+            "@language": "es-pr",
+            "@value": "Reconocimiento-NoComercial 2.5 Escocia"
+        },
+        {
+            "@language": "et",
+            "@value": "Autorile viitamine + Mitteäriline eesmärk 2.5 Šotimaa"
+        },
+        {
+            "@language": "eu",
+            "@value": "Aitortu-EzKomertziala 2.5 Eskozia"
+        },
+        {
+            "@language": "fa",
+            "@value": "Attribution-NonCommercial 2.5 انگلستان : اسکاتلند"
+        },
+        {
+            "@language": "fi",
+            "@value": "Nimeä-Epäkaupallinen 2.5 Iso-Britannia: Scotland"
+        },
+        {
+            "@language": "fr",
+            "@value": "Paternité - Pas d'Utilisation Commerciale 2.5 Royaume-Uni : Ecosse"
+        },
+        {
+            "@language": "fr-ca",
+            "@value": "Paternité - Pas d'Utilisation Commerciale 2.5 Royaume-Uni : Ecosse"
+        },
+        {
+            "@language": "fr-ch",
+            "@value": "Paternité - Pas d'Utilisation Commerciale 2.5 Royaume-Uni : Ecosse"
+        },
+        {
+            "@language": "fr-lu",
+            "@value": "Paternité - Pas d'Utilisation Commerciale 2.5 Royaume-Uni : Ecosse"
+        },
+        {
+            "@language": "ga",
+            "@value": "Attribution-NonCommercial 2.5 UK: Scotland"
+        },
+        {
+            "@language": "gl",
+            "@value": "Recoñecemento-NonComercial 2.5 UK: Scotland"
+        },
+        {
+            "@language": "he",
+            "@value": "ייחוס-שימוש לא מסחרי 2.5 סקוטלנד"
+        },
+        {
+            "@language": "hi",
+            "@value": "Attribution-NonCommercial 2.5 UK: Scotland"
+        },
+        {
+            "@language": "hr",
+            "@value": "Imenovanje-Nekomercijalno 2.5 VB: Škotska"
+        },
+        {
+            "@language": "hu",
+            "@value": "Nevezd meg! - Ne add el! 2.5 UK: Skócia"
+        },
+        {
+            "@language": "hy",
+            "@value": "Հղում - Ոչ-առևտրային օգտագործում 2.5 ՄԹ: Շոտլանդիա"
+        },
+        {
+            "@language": "id",
+            "@value": "Attribusi-NonKomersial 2.5 Britania Raya: Skotlandia"
+        },
+        {
+            "@language": "is",
+            "@value": "Attribution-NonCommercial 2.5 UK: Scotland"
+        },
+        {
+            "@language": "it",
+            "@value": "Attribuzione - Non commerciale 2.5 UK: Scotland"
+        },
+        {
+            "@language": "it-ch",
+            "@value": "Attribuzione - Non commerciale 2.5 UK: Scotland"
+        },
+        {
+            "@language": "ja",
+            "@value": "表示 - 非営利 2.5 スコットランド（英）"
+        },
+        {
+            "@language": "ka",
+            "@value": "ავტორობის მითითებით არაკომერციული გამოყენებისათვის 2.5 გაერტიანებული სამეფო: შოტლანდია"
+        },
+        {
+            "@language": "kk",
+            "@value": "Коммерциялық емес 2.5 UK: Scotland"
+        },
+        {
+            "@language": "ko",
+            "@value": "저작자표시-비영리 2.5 영국 : 스코틀란드"
+        },
+        {
+            "@language": "lt",
+            "@value": "Attribution-NonCommercial 2.5 Jungtinė Karalystė: Škotija"
+        },
+        {
+            "@language": "lv",
+            "@value": "Atsaucoties-Nekomerciāli 2.5 Apvienotā karaliste: Skotija"
+        },
+        {
+            "@language": "mk",
+            "@value": "НаведиИзвор-Некомерцијално 2.5 Велика Британија: Шкотска"
+        },
+        {
+            "@language": "ml",
+            "@value": "Attribution-NonCommercial 2.5 UK: Scotland"
+        },
+        {
+            "@language": "mn",
+            "@value": "Attribution-NonCommercial 2.5 UK: Scotland"
+        },
+        {
+            "@language": "ms",
+            "@value": "Pengiktirafan-BukanKomersial 2.5 UK: Scotland"
+        },
+        {
+            "@language": "nl",
+            "@value": "Naamsvermelding-NietCommercieel 2.5 Schotland"
+        },
+        {
+            "@language": "no",
+            "@value": "Navngivelse-Ikkekommersiell 2.5 UK: Skottland"
+        },
+        {
+            "@language": "nso",
+            "@value": "Tsebagatšo- E sego ya kgwebo 2.5 UK: Scotland"
+        },
+        {
+            "@language": "oci-es",
+            "@value": "Attribution-NonCommercial 2.5 UK: Scotland"
+        },
+        {
+            "@language": "pl",
+            "@value": "Uznanie autorstwa-Użycie niekomercyjne 2.5 UK: Szkocja"
+        },
+        {
+            "@language": "pt",
+            "@value": "Atribuição - NãoComercial 2.5 Reino Unido: Escócia"
+        },
+        {
+            "@language": "pt-br",
+            "@value": "Atribuição-Uso não-comercial 2.5 UK: Scotland"
+        },
+        {
+            "@language": "pt-pt",
+            "@value": "Atribuição-Uso Não-Comercial 2.5 UK: Scotland"
+        },
+        {
+            "@language": "ro",
+            "@value": "Atribuire-NeComercial 2.5 Marea Britanie: Scoţia"
+        },
+        {
+            "@language": "ru",
+            "@value": "Attribution-NonCommercial (Атрибуция — Некоммерческое использование) 2.5 Великобритания: Шотландия"
+        },
+        {
+            "@language": "si-lk",
+            "@value": "Attribution-NonCommercial 2.5 UK: Scotland"
+        },
+        {
+            "@language": "sl",
+            "@value": "Priznanje avtorstva-Nekomercialno 2.5 Združeno kraljestvo: Škotska"
+        },
+        {
+            "@language": "sq",
+            "@value": "Attribution-NonCommercial 2.5 UK: Skoci"
+        },
+        {
+            "@language": "sr",
+            "@value": "Autorstvo-Nekomercijalno 2.5 VB: Škotska"
+        },
+        {
+            "@language": "sr",
+            "@value": "Ауторство-Некомерцијално 2.5 ВБ: Шкотска"
+        },
+        {
+            "@language": "sr-latn",
+            "@value": "Autorstvo-Nekomercijalno 2.5 VB: Škotska"
+        },
+        {
+            "@language": "st",
+            "@value": "Attribution-NonCommercial 2.5 UK: Scotland"
+        },
+        {
+            "@language": "sv",
+            "@value": "Erkännande-IckeKommersiell 2.5 UK: Skottland"
+        },
+        {
+            "@language": "ta",
+            "@value": "Attribution-NonCommercial 2.5 UK: Scotland"
+        },
+        {
+            "@language": "te",
+            "@value": "Attribution-NonCommercial 2.5 UK: Scotland"
+        },
+        {
+            "@language": "th",
+            "@value": "แสดงที่มา-ไม่ใช้เพื่อการค้า 2.5 สหราชอาณาจักร : สกอตแลนด์"
+        },
+        {
+            "@language": "tr",
+            "@value": "Alıntı-Gayriticari 2.5 UK: İngiltere"
+        },
+        {
+            "@language": "uk",
+            "@value": "Attribution-NonCommercial 2.5 UK: Scotland"
+        },
+        {
+            "@language": "ur",
+            "@value": "Attribution-NonCommercial 2.5 UK: Scotland"
+        },
+        {
+            "@language": "vi",
+            "@value": "Ghi nhận công của tác giả - Phi thương mại  2.5 UK: Scotland"
+        },
+        {
+            "@language": "zh",
+            "@value": "署名-非商业性使用 2.5 英国：苏格兰"
+        },
+        {
+            "@language": "zh-hk",
+            "@value": "姓名標示-非商業性 2.5 英國: 蘇格蘭"
+        },
+        {
+            "@language": "zh-tw",
+            "@value": "姓名標示-非商業性 2.5 英國: 蘇格蘭"
+        },
+        {
+            "@language": "zu",
+            "@value": "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano 2.5 E-UK: Scotland"
+        },
+        {
+            "@language": "zxx",
+            "@value": "${Attribution-NonCommercial} 2.5 ${UK: Scotland}"
+        }
+    ],
+    "owl:sameAs": {
+        "@id": "http://creativecommons.org/licenses/by-nc/2.5/scotland/",
+        "@type": "cc:License",
+        "cc:jurisdiction": "http://creativecommons.org/international/scotland/",
+        "cc:legalcode": "http://creativecommons.org/licenses/by-nc/2.5/scotland/legalcode",
+        "cc:licenseClass": "http://creativecommons.org/license/",
+        "cc:permits": [
+            "cc:Distribution",
+            "cc:Reproduction"
+        ],
+        "cc:prohibits": "cc:CommercialUse",
+        "cc:requires": [
+            "cc:Attribution",
+            "cc:Notice"
+        ],
+        "dc:creator": "http://creativecommons.org",
+        "dc:hasVersion": "2.5",
+        "dc:identifier": "by-nc",
+        "dc:source": "http://creativecommons.org/licenses/by-nc/2.5/",
+        "dc:title": [
+            {
+                "@language": "af",
+                "@value": "Erkenning-NieKommersieel 2.5 VK: Skotland"
+            },
+            {
+                "@language": "ar",
+                "@value": "نسب - غير تجاري 2.5 سكوتلندا - المملكة المتحدة"
+            },
+            {
+                "@language": "as",
+                "@value": "Attribution-NonCommercial 2.5 UK: Scotland"
+            },
+            {
+                "@language": "ast",
+                "@value": "Attribution-NonCommercial 2.5 UK: Scotland"
+            },
+            {
+                "@language": "ast-es",
+                "@value": "Attribution-NonCommercial 2.5 UK: Scotland"
+            },
+            {
+                "@language": "az",
+                "@value": "Attribution-NonCommercial 2.5 UK: Scotland"
+            },
+            {
+                "@language": "be",
+                "@value": "Attribution-NonCommercial 2.5 Шатландыя"
+            },
+            {
+                "@language": "bg",
+                "@value": "Признание-Некомерсиално 2.5 Обединено кралство: Шотландия"
+            },
+            {
+                "@language": "bn",
+                "@value": "Attribution-NonCommercial 2.5 UK: Scotland"
+            },
+            {
+                "@language": "ca",
+                "@value": "Reconeixement-NoComercial 2.5 Escòcia"
+            },
+            {
+                "@language": "cs",
+                "@value": "Uveďte autora-Neužívejte komerčně 2.5 Skotsko"
+            },
+            {
+                "@language": "da",
+                "@value": "Navngivelse-IkkeKommerciel 2.5 Skotland"
+            },
+            {
+                "@language": "de",
+                "@value": "Namensnennung-Nicht-kommerziell 2.5 Schottland"
+            },
+            {
+                "@language": "de-at",
+                "@value": "Namensnennung-NichtKommerziell 2.5 Schottland"
+            },
+            {
+                "@language": "de-ch",
+                "@value": "Namensnennung-NichtKommerziell 2.5 Schottland"
+            },
+            {
+                "@language": "el",
+                "@value": "Αναφορά Δημιουργού-Μη Εμπορική Χρήση 2.5 Ηνωμένο Βασίλειο: Σκωτία"
+            },
+            {
+                "@language": "en",
+                "@value": "Attribution-NonCommercial 2.5 UK: Scotland"
+            },
+            {
+                "@language": "en-ca",
+                "@value": "Attribution-NonCommercial 2.5 UK: Scotland"
+            },
+            {
+                "@language": "en-gb",
+                "@value": "Attribution-NonCommercial 2.5 UK: Scotland"
+            },
+            {
+                "@language": "en-hk",
+                "@value": "Attribution-NonCommercial 2.5 UK: Scotland"
+            },
+            {
+                "@language": "en-sg",
+                "@value": "Attribution-NonCommercial 2.5 UK: Scotland"
+            },
+            {
+                "@language": "en-us",
+                "@value": "Attribution-NonCommercial 2.5 UK: Scotland"
+            },
+            {
+                "@language": "eo",
+                "@value": "Atribuite-Nekomerce 2.5 Britujo: Skotujo"
+            },
+            {
+                "@language": "es",
+                "@value": "Atribución-NoComercial 2.5 Escocia"
+            },
+            {
+                "@language": "es-ar",
+                "@value": "Atribución-NoComercial 2.5 Reino Unido: Escocia"
+            },
+            {
+                "@language": "es-cl",
+                "@value": "Atribución-NoComercial 2.5 Escocia"
+            },
+            {
+                "@language": "es-co",
+                "@value": "Reconocimiento-NoComercial 2.5 Escocia"
+            },
+            {
+                "@language": "es-ec",
+                "@value": "Reconocimiento-NoComercial 2.5 Escocia"
+            },
+            {
+                "@language": "es-es",
+                "@value": "Reconocimiento-NoComercial 2.5 Escocia"
+            },
+            {
+                "@language": "es-gt",
+                "@value": "Reconocimiento-NoComercial 2.5 Escocia"
+            },
+            {
+                "@language": "es-mx",
+                "@value": "Atribución-No Comercial 2.5 Escocia"
+            },
+            {
+                "@language": "es-pe",
+                "@value": "Reconocimiento-NoComercial 2.5 Escocia"
+            },
+            {
+                "@language": "es-pr",
+                "@value": "Reconocimiento-NoComercial 2.5 Escocia"
+            },
+            {
+                "@language": "et",
+                "@value": "Autorile viitamine + Mitteäriline eesmärk 2.5 Šotimaa"
+            },
+            {
+                "@language": "eu",
+                "@value": "Aitortu-EzKomertziala 2.5 Eskozia"
+            },
+            {
+                "@language": "fa",
+                "@value": "Attribution-NonCommercial 2.5 انگلستان : اسکاتلند"
+            },
+            {
+                "@language": "fi",
+                "@value": "Nimeä-Epäkaupallinen 2.5 Iso-Britannia: Scotland"
+            },
+            {
+                "@language": "fr",
+                "@value": "Paternité - Pas d'Utilisation Commerciale 2.5 Royaume-Uni : Ecosse"
+            },
+            {
+                "@language": "fr-ca",
+                "@value": "Paternité - Pas d'Utilisation Commerciale 2.5 Royaume-Uni : Ecosse"
+            },
+            {
+                "@language": "fr-ch",
+                "@value": "Paternité - Pas d'Utilisation Commerciale 2.5 Royaume-Uni : Ecosse"
+            },
+            {
+                "@language": "fr-lu",
+                "@value": "Paternité - Pas d'Utilisation Commerciale 2.5 Royaume-Uni : Ecosse"
+            },
+            {
+                "@language": "ga",
+                "@value": "Attribution-NonCommercial 2.5 UK: Scotland"
+            },
+            {
+                "@language": "gl",
+                "@value": "Recoñecemento-NonComercial 2.5 UK: Scotland"
+            },
+            {
+                "@language": "he",
+                "@value": "ייחוס-שימוש לא מסחרי 2.5 סקוטלנד"
+            },
+            {
+                "@language": "hi",
+                "@value": "Attribution-NonCommercial 2.5 UK: Scotland"
+            },
+            {
+                "@language": "hr",
+                "@value": "Imenovanje-Nekomercijalno 2.5 VB: Škotska"
+            },
+            {
+                "@language": "hu",
+                "@value": "Nevezd meg! - Ne add el! 2.5 UK: Skócia"
+            },
+            {
+                "@language": "hy",
+                "@value": "Հղում - Ոչ-առևտրային օգտագործում 2.5 ՄԹ: Շոտլանդիա"
+            },
+            {
+                "@language": "id",
+                "@value": "Attribusi-NonKomersial 2.5 Britania Raya: Skotlandia"
+            },
+            {
+                "@language": "is",
+                "@value": "Attribution-NonCommercial 2.5 UK: Scotland"
+            },
+            {
+                "@language": "it",
+                "@value": "Attribuzione - Non commerciale 2.5 UK: Scotland"
+            },
+            {
+                "@language": "it-ch",
+                "@value": "Attribuzione - Non commerciale 2.5 UK: Scotland"
+            },
+            {
+                "@language": "ja",
+                "@value": "表示 - 非営利 2.5 スコットランド（英）"
+            },
+            {
+                "@language": "ka",
+                "@value": "ავტორობის მითითებით არაკომერციული გამოყენებისათვის 2.5 გაერტიანებული სამეფო: შოტლანდია"
+            },
+            {
+                "@language": "kk",
+                "@value": "Коммерциялық емес 2.5 UK: Scotland"
+            },
+            {
+                "@language": "ko",
+                "@value": "저작자표시-비영리 2.5 영국 : 스코틀란드"
+            },
+            {
+                "@language": "lt",
+                "@value": "Attribution-NonCommercial 2.5 Jungtinė Karalystė: Škotija"
+            },
+            {
+                "@language": "lv",
+                "@value": "Atsaucoties-Nekomerciāli 2.5 Apvienotā karaliste: Skotija"
+            },
+            {
+                "@language": "mk",
+                "@value": "НаведиИзвор-Некомерцијално 2.5 Велика Британија: Шкотска"
+            },
+            {
+                "@language": "ml",
+                "@value": "Attribution-NonCommercial 2.5 UK: Scotland"
+            },
+            {
+                "@language": "mn",
+                "@value": "Attribution-NonCommercial 2.5 UK: Scotland"
+            },
+            {
+                "@language": "ms",
+                "@value": "Pengiktirafan-BukanKomersial 2.5 UK: Scotland"
+            },
+            {
+                "@language": "nl",
+                "@value": "Naamsvermelding-NietCommercieel 2.5 Schotland"
+            },
+            {
+                "@language": "no",
+                "@value": "Navngivelse-Ikkekommersiell 2.5 UK: Skottland"
+            },
+            {
+                "@language": "nso",
+                "@value": "Tsebagatšo- E sego ya kgwebo 2.5 UK: Scotland"
+            },
+            {
+                "@language": "oci-es",
+                "@value": "Attribution-NonCommercial 2.5 UK: Scotland"
+            },
+            {
+                "@language": "pl",
+                "@value": "Uznanie autorstwa-Użycie niekomercyjne 2.5 UK: Szkocja"
+            },
+            {
+                "@language": "pt",
+                "@value": "Atribuição - NãoComercial 2.5 Reino Unido: Escócia"
+            },
+            {
+                "@language": "pt-br",
+                "@value": "Atribuição-Uso não-comercial 2.5 UK: Scotland"
+            },
+            {
+                "@language": "pt-pt",
+                "@value": "Atribuição-Uso Não-Comercial 2.5 UK: Scotland"
+            },
+            {
+                "@language": "ro",
+                "@value": "Atribuire-NeComercial 2.5 Marea Britanie: Scoţia"
+            },
+            {
+                "@language": "ru",
+                "@value": "Attribution-NonCommercial (Атрибуция — Некоммерческое использование) 2.5 Великобритания: Шотландия"
+            },
+            {
+                "@language": "si-lk",
+                "@value": "Attribution-NonCommercial 2.5 UK: Scotland"
+            },
+            {
+                "@language": "sl",
+                "@value": "Priznanje avtorstva-Nekomercialno 2.5 Združeno kraljestvo: Škotska"
+            },
+            {
+                "@language": "sq",
+                "@value": "Attribution-NonCommercial 2.5 UK: Skoci"
+            },
+            {
+                "@language": "sr",
+                "@value": "Autorstvo-Nekomercijalno 2.5 VB: Škotska"
+            },
+            {
+                "@language": "sr",
+                "@value": "Ауторство-Некомерцијално 2.5 ВБ: Шкотска"
+            },
+            {
+                "@language": "sr-latn",
+                "@value": "Autorstvo-Nekomercijalno 2.5 VB: Škotska"
+            },
+            {
+                "@language": "st",
+                "@value": "Attribution-NonCommercial 2.5 UK: Scotland"
+            },
+            {
+                "@language": "sv",
+                "@value": "Erkännande-IckeKommersiell 2.5 UK: Skottland"
+            },
+            {
+                "@language": "ta",
+                "@value": "Attribution-NonCommercial 2.5 UK: Scotland"
+            },
+            {
+                "@language": "te",
+                "@value": "Attribution-NonCommercial 2.5 UK: Scotland"
+            },
+            {
+                "@language": "th",
+                "@value": "แสดงที่มา-ไม่ใช้เพื่อการค้า 2.5 สหราชอาณาจักร : สกอตแลนด์"
+            },
+            {
+                "@language": "tr",
+                "@value": "Alıntı-Gayriticari 2.5 UK: İngiltere"
+            },
+            {
+                "@language": "uk",
+                "@value": "Attribution-NonCommercial 2.5 UK: Scotland"
+            },
+            {
+                "@language": "ur",
+                "@value": "Attribution-NonCommercial 2.5 UK: Scotland"
+            },
+            {
+                "@language": "vi",
+                "@value": "Ghi nhận công của tác giả - Phi thương mại  2.5 UK: Scotland"
+            },
+            {
+                "@language": "zh",
+                "@value": "署名-非商业性使用 2.5 英国：苏格兰"
+            },
+            {
+                "@language": "zh-hk",
+                "@value": "姓名標示-非商業性 2.5 英國: 蘇格蘭"
+            },
+            {
+                "@language": "zh-tw",
+                "@value": "姓名標示-非商業性 2.5 英國: 蘇格蘭"
+            },
+            {
+                "@language": "zu",
+                "@value": "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano 2.5 E-UK: Scotland"
+            },
+            {
+                "@language": "zxx",
+                "@value": "${Attribution-NonCommercial} 2.5 ${UK: Scotland}"
+            }
+        ],
+        "owl:sameAs": "https://licensedb.org/id/CC-BY-NC-2.5-scotland",
+        "foaf:logo": [
+            "http://i.creativecommons.org/l/by-nc/2.5/scotland/80x15.png",
+            "http://i.creativecommons.org/l/by-nc/2.5/scotland/88x31.png"
+        ]
+    },
+    "foaf:logo": [
+        "http://i.creativecommons.org/l/by-nc/2.5/scotland/80x15.png",
+        "http://i.creativecommons.org/l/by-nc/2.5/scotland/88x31.png"
+    ],
+    "li:id": "CC-BY-NC-2.5-scotland",
+    "li:name": "CC BY-NC 2.5 SCOTLAND"
+}

@@ -1,0 +1,233 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/elements/1.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://creativecommons.org/licenses/nd-nc/1.0/fi/> a cc:License ;
+    cc:deprecatedOn "2004-05-25"^^<http://www.w3.org/2001/XMLSchema-datatypes#date> ;
+    cc:jurisdiction <http://creativecommons.org/international/fi/> ;
+    cc:legalcode <http://creativecommons.org/licenses/nd-nc/1.0/fi/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:Distribution,
+        cc:Reproduction ;
+    cc:prohibits cc:CommercialUse ;
+    cc:requires cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "1.0" ;
+    dc:identifier "nd-nc" ;
+    dc:source <http://creativecommons.org/licenses/nd-nc/1.0/> ;
+    dc:title "GeenAfleidings-NieKommersieel 1.0 Finland"@af,
+        "لا اشتقاق- غير تجاري 1.0 فلندا"@ar,
+        "NoDerivs-NonCommercial 1.0 Finland"@as,
+        "NoDerivs-NonCommercial 1.0 Finland"@ast,
+        "NoDerivs-NonCommercial 1.0 Finland"@ast-es,
+        "NoDerivs-NonCommercial 1.0 Finland"@az,
+        "NoDerivs-NonCommercial 1.0 Фінляндыя"@be,
+        "Без производни-Некомерсиално 1.0 Финландия"@bg,
+        "NoDerivs-NonCommercial 1.0 Finland"@bn,
+        "SenseObraDerivada-NoComercial 1.0 Finlàndia"@ca,
+        "Nezasahujte do díla-Nevyužívejte dílo komerčně 1.0 Finsko"@cs,
+        "IngenBearbejdelse-IkkeKommerciel 1.0 Finland"@da,
+        "Keine Bearbeitung-Nicht-kommerziell 1.0 Finnland"@de,
+        "KeineBearbeitung-NichtKommerziell 1.0 Finnland"@de-at,
+        "KeineBearbeitung-NichtKommerziell 1.0 Finnland"@de-ch,
+        "Όχι Παράγωγα Έργα - Μη Εμπορική Χρήση 1.0 Φιλανδία"@el,
+        "NoDerivs-NonCommercial 1.0 Finland"@en,
+        "NoDerivs-NonCommercial 1.0 Finland"@en-ca,
+        "NoDerivs-NonCommercial 1.0 Finland"@en-gb,
+        "NoDerivs-NonCommercial 1.0 Finland"@en-hk,
+        "NoDerivs-NonCommercial 1.0 Finland"@en-sg,
+        "NoDerivs-NonCommercial 1.0 Finland"@en-us,
+        "Nemodifite-Nekomerce 1.0 Suomujo"@eo,
+        "SinDerivadas-NoComercial 1.0 Finlandia"@es,
+        "SinDerivadas-NoComercial 1.0 Finlandia"@es-ar,
+        "SinDerivadas-NoComercial 1.0 Finlandia"@es-cl,
+        "SinObraDerivada-NoComercial 1.0 Finlandia"@es-co,
+        "SinObraDerivada-NoComercial 1.0 Finlandia"@es-ec,
+        "SinObraDerivada-NoComercial 1.0 Finlandia"@es-es,
+        "SinObraDerivada-NoComercial 1.0 Finlandia"@es-gt,
+        "No Derivadas-No Comercial 1.0 Finlandia"@es-mx,
+        "SinObraDerivada-NoComercial 1.0 Finlandia"@es-pe,
+        "SinObraDerivada-NoComercial 1.0 Finlandia"@es-pr,
+        "Mitteäriline eesmärk + Tuletatud teoste keeld 1.0 Soome"@et,
+        "LanEratorririkGabe-EzKomertziala 1.0 Finlandia"@eu,
+        "NoDerivs-NonCommercial 1.0 فنلاند"@fa,
+        "Ei muutoksia-Epäkaupallinen 1.0 Suomi"@fi,
+        "Pas de Modification - Pas d'Utilisation Commerciale 1.0 Finlande"@fr,
+        "Pas de Modification - Pas d'Utilisation Commerciale 1.0 Finlande"@fr-ca,
+        "Pas de Modification - Pas d'Utilisation Commerciale 1.0 Finlande"@fr-ch,
+        "Pas de Modification - Pas d'Utilisation Commerciale 1.0 Finlande"@fr-lu,
+        "NoDerivs-NonCommercial 1.0 Finland"@ga,
+        "SenObraDerivada-NonComercial 1.0 Finlandia"@gl,
+        "איסור יצירות נגזרות-שימוש לא מסחרי 1.0 פינלנד"@he,
+        "NoDerivs-NonCommercial 1.0 Finland"@hi,
+        "Bez prerada-nekomercijalno 1.0 Finska"@hr,
+        "Ne változtasd! - Ne add el! 1.0 Finnország"@hu,
+        "Օգտագործում առանց վերափոխումների - ոչ-առևտրային օգտագործում 1.0 Finland"@hy,
+        "TanpaTurunan-NonKomersial 1.0 Finlandia"@id,
+        "NoDerivs-NonCommercial 1.0 Finland"@is,
+        "NoOpereDerivate-NonCommerciale 1.0 Finlandia"@it,
+        "NoOpereDerivate-NonCommerciale 1.0 Finlandia"@it-ch,
+        "改変禁止 - 非営利 1.0 フィンランド"@ja,
+        "გადამუშავების გარეშე–არაკომერციული გამოყენებისათვის 1.0 ფინეთი"@ka,
+        "NoDerivs-NonCommercial 1.0 Finland"@kk,
+        "변경금지-비영리 1.0 핀란드"@ko,
+        "NoDerivs-NonCommercial 1.0 Suomija"@lt,
+        "Nemainīts-Nekomerciāls 1.0 Somija"@lv,
+        "БезИзведениДела-Некомерцијално 1.0 Финска"@mk,
+        "NoDerivs-NonCommercial 1.0 ഫിൻലാന്റ്"@ml,
+        "NoDerivs-NonCommercial 1.0 Finland"@mn,
+        "TiadaTerbitan-BukanKomersial 1.0 Finland"@ms,
+        "GeenAfgeleideWerken-NietCommercieel 1.0 Finland"@nl,
+        "IngenBearbeidelse-Ikkekommersiell 1.0 Finland"@no,
+        "Tše sa Fetolwego - E sego tša Kgwebo 1.0 Finland"@nso,
+        "NoDerivs-NonCommercial 1.0 Finland"@oci-es,
+        "Bez utworów zależnych-Użycie niekomercyjne 1.0 Finlandia"@pl,
+        "SemDerivados - NãoComercial 1.0 Finlândia"@pt,
+        "Vedada a criação de obras derivadas-Uso não-comercial 1.0 Finland"@pt-br,
+        "Proibição de realização de Obras Derivadas-Uso Não-Comercial 1.0 Filândia"@pt-pt,
+        "FărăModificări-Necomercial 1.0 Finlanda"@ro,
+        "NoDerivs-NonCommercial (Без производных произведений — Некоммерческое использование) 1.0 Финляндия"@ru,
+        "NoDerivs-NonCommercial 1.0 Finland"@si-lk,
+        "Brez predelav-Nekomercialno 1.0 Finska"@sl,
+        "NoDerivs-NonCommercial 1.0 Finlandë"@sq,
+        "Bez prerada-Nekomercijalno 1.0 Finska"@sr,
+        "Без прерада-Некомерцијално 1.0 Финска"@sr,
+        "Bez prerada-Nekomercijalno 1.0 Finska"@sr-latn,
+        "NoDerivs-NonCommercial 1.0 Finland"@st,
+        "IngaBearbetningar-IckeKommersiell 1.0 Finland"@sv,
+        "NoDerivs-NonCommercial 1.0 Finland"@ta,
+        "NoDerivs-NonCommercial 1.0 ఫిన్లాండ్"@te,
+        "ไม่แก้ไขดัดแปลง-ไม่ใช้เพื่อการค้า 1.0 ฟินแลนด์"@th,
+        "NoDerivs-Gayriticari 1.0 Finlandiya"@tr,
+        "NoDerivs-NonCommercial 1.0 Finland"@uk,
+        "NoDerivs-NonCommercial 1.0 Finland"@ur,
+        "NoDerivs-NonCommercial 1.0 Finland"@vi,
+        "禁止演绎-非商业性使用 1.0 芬兰"@zh,
+        "禁止改作-非商業性 1.0 芬蘭"@zh-hk,
+        "禁止改作-非商業性 1.0 芬蘭"@zh-tw,
+        "Ungasuseli lutho kulokhu-Ungayisebenziseli Ezentengiselwano 1.0 iFinland"@zu,
+        "${NoDerivs-NonCommercial} 1.0 ${Finland}"@zxx ;
+    owl:sameAs <https://licensedb.org/id/CC-ND-NC-1.0-fi> ;
+    foaf:logo <http://i.creativecommons.org/l/nd-nc/1.0/fi/88x31.png> .
+
+<https://licensedb.org/id/CC-ND-NC-1.0-fi> a cc:License,
+        li:License ;
+    cc:deprecatedOn "2004-05-25"^^<http://www.w3.org/2001/XMLSchema-datatypes#date> ;
+    cc:jurisdiction <http://creativecommons.org/international/fi/> ;
+    cc:legalcode <http://creativecommons.org/licenses/nd-nc/1.0/fi/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:Distribution,
+        cc:Reproduction ;
+    cc:prohibits cc:CommercialUse ;
+    cc:requires cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "1.0" ;
+    dc:identifier "nd-nc" ;
+    dc:source <http://creativecommons.org/licenses/nd-nc/1.0/> ;
+    dc:title "GeenAfleidings-NieKommersieel 1.0 Finland"@af,
+        "لا اشتقاق- غير تجاري 1.0 فلندا"@ar,
+        "NoDerivs-NonCommercial 1.0 Finland"@as,
+        "NoDerivs-NonCommercial 1.0 Finland"@ast,
+        "NoDerivs-NonCommercial 1.0 Finland"@ast-es,
+        "NoDerivs-NonCommercial 1.0 Finland"@az,
+        "NoDerivs-NonCommercial 1.0 Фінляндыя"@be,
+        "Без производни-Некомерсиално 1.0 Финландия"@bg,
+        "NoDerivs-NonCommercial 1.0 Finland"@bn,
+        "SenseObraDerivada-NoComercial 1.0 Finlàndia"@ca,
+        "Nezasahujte do díla-Nevyužívejte dílo komerčně 1.0 Finsko"@cs,
+        "IngenBearbejdelse-IkkeKommerciel 1.0 Finland"@da,
+        "Keine Bearbeitung-Nicht-kommerziell 1.0 Finnland"@de,
+        "KeineBearbeitung-NichtKommerziell 1.0 Finnland"@de-at,
+        "KeineBearbeitung-NichtKommerziell 1.0 Finnland"@de-ch,
+        "Όχι Παράγωγα Έργα - Μη Εμπορική Χρήση 1.0 Φιλανδία"@el,
+        "NoDerivs-NonCommercial 1.0 Finland"@en,
+        "NoDerivs-NonCommercial 1.0 Finland"@en-ca,
+        "NoDerivs-NonCommercial 1.0 Finland"@en-gb,
+        "NoDerivs-NonCommercial 1.0 Finland"@en-hk,
+        "NoDerivs-NonCommercial 1.0 Finland"@en-sg,
+        "NoDerivs-NonCommercial 1.0 Finland"@en-us,
+        "Nemodifite-Nekomerce 1.0 Suomujo"@eo,
+        "SinDerivadas-NoComercial 1.0 Finlandia"@es,
+        "SinDerivadas-NoComercial 1.0 Finlandia"@es-ar,
+        "SinDerivadas-NoComercial 1.0 Finlandia"@es-cl,
+        "SinObraDerivada-NoComercial 1.0 Finlandia"@es-co,
+        "SinObraDerivada-NoComercial 1.0 Finlandia"@es-ec,
+        "SinObraDerivada-NoComercial 1.0 Finlandia"@es-es,
+        "SinObraDerivada-NoComercial 1.0 Finlandia"@es-gt,
+        "No Derivadas-No Comercial 1.0 Finlandia"@es-mx,
+        "SinObraDerivada-NoComercial 1.0 Finlandia"@es-pe,
+        "SinObraDerivada-NoComercial 1.0 Finlandia"@es-pr,
+        "Mitteäriline eesmärk + Tuletatud teoste keeld 1.0 Soome"@et,
+        "LanEratorririkGabe-EzKomertziala 1.0 Finlandia"@eu,
+        "NoDerivs-NonCommercial 1.0 فنلاند"@fa,
+        "Ei muutoksia-Epäkaupallinen 1.0 Suomi"@fi,
+        "Pas de Modification - Pas d'Utilisation Commerciale 1.0 Finlande"@fr,
+        "Pas de Modification - Pas d'Utilisation Commerciale 1.0 Finlande"@fr-ca,
+        "Pas de Modification - Pas d'Utilisation Commerciale 1.0 Finlande"@fr-ch,
+        "Pas de Modification - Pas d'Utilisation Commerciale 1.0 Finlande"@fr-lu,
+        "NoDerivs-NonCommercial 1.0 Finland"@ga,
+        "SenObraDerivada-NonComercial 1.0 Finlandia"@gl,
+        "איסור יצירות נגזרות-שימוש לא מסחרי 1.0 פינלנד"@he,
+        "NoDerivs-NonCommercial 1.0 Finland"@hi,
+        "Bez prerada-nekomercijalno 1.0 Finska"@hr,
+        "Ne változtasd! - Ne add el! 1.0 Finnország"@hu,
+        "Օգտագործում առանց վերափոխումների - ոչ-առևտրային օգտագործում 1.0 Finland"@hy,
+        "TanpaTurunan-NonKomersial 1.0 Finlandia"@id,
+        "NoDerivs-NonCommercial 1.0 Finland"@is,
+        "NoOpereDerivate-NonCommerciale 1.0 Finlandia"@it,
+        "NoOpereDerivate-NonCommerciale 1.0 Finlandia"@it-ch,
+        "改変禁止 - 非営利 1.0 フィンランド"@ja,
+        "გადამუშავების გარეშე–არაკომერციული გამოყენებისათვის 1.0 ფინეთი"@ka,
+        "NoDerivs-NonCommercial 1.0 Finland"@kk,
+        "변경금지-비영리 1.0 핀란드"@ko,
+        "NoDerivs-NonCommercial 1.0 Suomija"@lt,
+        "Nemainīts-Nekomerciāls 1.0 Somija"@lv,
+        "БезИзведениДела-Некомерцијално 1.0 Финска"@mk,
+        "NoDerivs-NonCommercial 1.0 ഫിൻലാന്റ്"@ml,
+        "NoDerivs-NonCommercial 1.0 Finland"@mn,
+        "TiadaTerbitan-BukanKomersial 1.0 Finland"@ms,
+        "GeenAfgeleideWerken-NietCommercieel 1.0 Finland"@nl,
+        "IngenBearbeidelse-Ikkekommersiell 1.0 Finland"@no,
+        "Tše sa Fetolwego - E sego tša Kgwebo 1.0 Finland"@nso,
+        "NoDerivs-NonCommercial 1.0 Finland"@oci-es,
+        "Bez utworów zależnych-Użycie niekomercyjne 1.0 Finlandia"@pl,
+        "SemDerivados - NãoComercial 1.0 Finlândia"@pt,
+        "Vedada a criação de obras derivadas-Uso não-comercial 1.0 Finland"@pt-br,
+        "Proibição de realização de Obras Derivadas-Uso Não-Comercial 1.0 Filândia"@pt-pt,
+        "FărăModificări-Necomercial 1.0 Finlanda"@ro,
+        "NoDerivs-NonCommercial (Без производных произведений — Некоммерческое использование) 1.0 Финляндия"@ru,
+        "NoDerivs-NonCommercial 1.0 Finland"@si-lk,
+        "Brez predelav-Nekomercialno 1.0 Finska"@sl,
+        "NoDerivs-NonCommercial 1.0 Finlandë"@sq,
+        "Bez prerada-Nekomercijalno 1.0 Finska"@sr,
+        "Без прерада-Некомерцијално 1.0 Финска"@sr,
+        "Bez prerada-Nekomercijalno 1.0 Finska"@sr-latn,
+        "NoDerivs-NonCommercial 1.0 Finland"@st,
+        "IngaBearbetningar-IckeKommersiell 1.0 Finland"@sv,
+        "NoDerivs-NonCommercial 1.0 Finland"@ta,
+        "NoDerivs-NonCommercial 1.0 ఫిన్లాండ్"@te,
+        "ไม่แก้ไขดัดแปลง-ไม่ใช้เพื่อการค้า 1.0 ฟินแลนด์"@th,
+        "NoDerivs-Gayriticari 1.0 Finlandiya"@tr,
+        "NoDerivs-NonCommercial 1.0 Finland"@uk,
+        "NoDerivs-NonCommercial 1.0 Finland"@ur,
+        "NoDerivs-NonCommercial 1.0 Finland"@vi,
+        "禁止演绎-非商业性使用 1.0 芬兰"@zh,
+        "禁止改作-非商業性 1.0 芬蘭"@zh-hk,
+        "禁止改作-非商業性 1.0 芬蘭"@zh-tw,
+        "Ungasuseli lutho kulokhu-Ungayisebenziseli Ezentengiselwano 1.0 iFinland"@zu,
+        "${NoDerivs-NonCommercial} 1.0 ${Finland}"@zxx ;
+    owl:sameAs <http://creativecommons.org/licenses/nd-nc/1.0/fi/> ;
+    foaf:logo <http://i.creativecommons.org/l/nd-nc/1.0/fi/88x31.png> ;
+    li:id "CC-ND-NC-1.0-fi" ;
+    li:name "CC ND-NC 1.0 FI" .
+

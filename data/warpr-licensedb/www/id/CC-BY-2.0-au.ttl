@@ -1,0 +1,238 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/elements/1.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://creativecommons.org/licenses/by/2.0/au/> a cc:License ;
+    cc:jurisdiction <http://creativecommons.org/international/au/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by/2.0/au/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.0" ;
+    dc:identifier "by" ;
+    dc:isReplacedBy <http://creativecommons.org/licenses/by/2.1/au/> ;
+    dc:source <http://creativecommons.org/licenses/by/2.0/> ;
+    dc:title "Erkenning 2.0 Australië"@af,
+        "نسب المصنف  2.0 أستراليا"@ar,
+        "Attribution 2.0 Australia"@as,
+        "Attribution 2.0 Australia"@ast,
+        "Attribution 2.0 Australia"@ast-es,
+        "Attribution 2.0 Australia"@az,
+        "Атрыбуцыя 2.0 Аўстралія"@be,
+        "Признание 2.0 Австралия"@bg,
+        "Attribution 2.0 Australia"@bn,
+        "Reconeixement 2.0 Austràlia"@ca,
+        "Uveďte autora 2.0 Austrálie"@cs,
+        "Navngivelse 2.0 Australien"@da,
+        "Namensnennung 2.0 Australien"@de,
+        "Namensnennung 2.0 Australien"@de-at,
+        "Namensnennung 2.0 Australien"@de-ch,
+        "Αναφορά Δημιουργού 2.0 Αυστραλία"@el,
+        "Attribution 2.0 Australia"@en,
+        "Attribution 2.0 Australia"@en-ca,
+        "Attribution 2.0 Australia"@en-gb,
+        "Attribution 2.0 Australia"@en-hk,
+        "Attribution 2.0 Australia"@en-sg,
+        "Attribution 2.0 Australia"@en-us,
+        "Atribuite 2.0 Aŭstralio"@eo,
+        "Atribución 2.0 Australia"@es,
+        "Atribución 2.0 Australia"@es-ar,
+        "Atribución 2.0 Australia"@es-cl,
+        "Reconocimiento 2.0 Australia"@es-co,
+        "Reconocimiento 2.0 Australia"@es-ec,
+        "Reconocimiento 2.0 Australia"@es-es,
+        "Reconocimiento 2.0 Australia"@es-gt,
+        "Atribución 2.0 Australia"@es-mx,
+        "Reconocimiento 2.0 Australia"@es-pe,
+        "Reconocimiento 2.0 Australia"@es-pr,
+        "Autorile viitamine 2.0 Austraalia"@et,
+        "Aitortu 2.0 Australia"@eu,
+        "Attribution 2.0 استرالیا"@fa,
+        "Nimeä 2.0 Australia"@fi,
+        "Attribution 2.0 Australie"@fr,
+        "Paternité 2.0 Australie"@fr-ca,
+        "Paternité 2.0 Australie"@fr-ch,
+        "Paternité 2.0 Australie"@fr-lu,
+        "Attribution 2.0 Australia"@ga,
+        "Recoñecemento 2.0 Australia"@gl,
+        "ייחוס 2.0 אוסטרליה"@he,
+        "Attribution 2.0 Australia"@hi,
+        "Imenovanje 2.0 Australija"@hr,
+        "Nevezd meg! 2.0 Ausztrália"@hu,
+        "Հղում 2.0 Australia"@hy,
+        "Atribusi 2.0 Australia"@id,
+        "Attribution 2.0 Australia"@is,
+        "Attribuzione 2.0 Australia"@it,
+        "Attribuzione 2.0 Australia"@it-ch,
+        "表示 2.0 オーストラリア"@ja,
+        "ავტორობის მითითებით  2.0 ავსტრალია"@ka,
+        "Атауын сақтау 2.0 Australia"@kk,
+        "저작자표시(Attribution) 2.0 Australia"@ko,
+        "Priskyrimas 2.0 Australija"@lt,
+        "Atsaucoties 2.0 Austrālija"@lv,
+        "Наведи извор 2.0 Австралија"@mk,
+        "കടപ്പാട് 2.0 ആസ്ട്രേലിയ"@ml,
+        "Attribution 2.0 Australia"@mn,
+        "Pengiktirafan 2.0 Australia"@ms,
+        "Naamsvermelding 2.0 Australië"@nl,
+        "Navngivelse 2.0 Australia"@no,
+        "Tsebagatšo 2.0 Australia"@nso,
+        "Attribution 2.0 Australia"@oci-es,
+        "Uznanie autorstwa 2.0 Australia"@pl,
+        "Atribuição  2.0 Austrália"@pt,
+        "Atribuição 2.0 Australia"@pt-br,
+        "Atribuição 2.0 Austrália"@pt-pt,
+        "Atribuire 2.0 Australia"@ro,
+        "Attribution (Атрибуция) 2.0 Австралия"@ru,
+        "Attribution 2.0 Australia"@si-lk,
+        "Priznanje avtorstva 2.0 Avstralija"@sl,
+        "Attribution 2.0 Australi"@sq,
+        "Autorstvo 2.0 Australija"@sr,
+        "Ауторство 2.0 Аустралија"@sr,
+        "Autorstvo 2.0 Australija"@sr-latn,
+        "Attribution 2.0 Australia"@st,
+        "Erkännande 2.0 Australien"@sv,
+        "Attribution 2.0 Australia"@ta,
+        "ఆపాదింపు 2.0 ఆస్ట్రేలియా"@te,
+        "แสดงที่มา 2.0 ออสเตรเลีย"@th,
+        "Attribution 2.0 Avustralya"@tr,
+        "Attribution 2.0 Australia"@uk,
+        "Attribution 2.0 Australia"@ur,
+        "Ghi nhận công của tác giả 2.0 Nước Úc "@vi,
+        "署名 2.0 澳大利亚"@zh,
+        "姓名標示 2.0 澳大利亞"@zh-hk,
+        "姓名標示 2.0 澳大利亞"@zh-tw,
+        "Qaphela Umnikazi 2.0 e-Australia"@zu,
+        "${Attribution} 2.0 ${Australia}"@zxx ;
+    owl:sameAs <https://licensedb.org/id/CC-BY-2.0-au> ;
+    foaf:logo <http://i.creativecommons.org/l/by/2.0/au/80x15.png>,
+        <http://i.creativecommons.org/l/by/2.0/au/88x31.png> .
+
+<https://licensedb.org/id/CC-BY-2.0-au> a cc:License,
+        li:License ;
+    cc:jurisdiction <http://creativecommons.org/international/au/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by/2.0/au/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.0" ;
+    dc:identifier "by" ;
+    dc:isReplacedBy <https://licensedb.org/id/CC-BY-2.1-au> ;
+    dc:source <http://creativecommons.org/licenses/by/2.0/> ;
+    dc:title "Erkenning 2.0 Australië"@af,
+        "نسب المصنف  2.0 أستراليا"@ar,
+        "Attribution 2.0 Australia"@as,
+        "Attribution 2.0 Australia"@ast,
+        "Attribution 2.0 Australia"@ast-es,
+        "Attribution 2.0 Australia"@az,
+        "Атрыбуцыя 2.0 Аўстралія"@be,
+        "Признание 2.0 Австралия"@bg,
+        "Attribution 2.0 Australia"@bn,
+        "Reconeixement 2.0 Austràlia"@ca,
+        "Uveďte autora 2.0 Austrálie"@cs,
+        "Navngivelse 2.0 Australien"@da,
+        "Namensnennung 2.0 Australien"@de,
+        "Namensnennung 2.0 Australien"@de-at,
+        "Namensnennung 2.0 Australien"@de-ch,
+        "Αναφορά Δημιουργού 2.0 Αυστραλία"@el,
+        "Attribution 2.0 Australia"@en,
+        "Attribution 2.0 Australia"@en-ca,
+        "Attribution 2.0 Australia"@en-gb,
+        "Attribution 2.0 Australia"@en-hk,
+        "Attribution 2.0 Australia"@en-sg,
+        "Attribution 2.0 Australia"@en-us,
+        "Atribuite 2.0 Aŭstralio"@eo,
+        "Atribución 2.0 Australia"@es,
+        "Atribución 2.0 Australia"@es-ar,
+        "Atribución 2.0 Australia"@es-cl,
+        "Reconocimiento 2.0 Australia"@es-co,
+        "Reconocimiento 2.0 Australia"@es-ec,
+        "Reconocimiento 2.0 Australia"@es-es,
+        "Reconocimiento 2.0 Australia"@es-gt,
+        "Atribución 2.0 Australia"@es-mx,
+        "Reconocimiento 2.0 Australia"@es-pe,
+        "Reconocimiento 2.0 Australia"@es-pr,
+        "Autorile viitamine 2.0 Austraalia"@et,
+        "Aitortu 2.0 Australia"@eu,
+        "Attribution 2.0 استرالیا"@fa,
+        "Nimeä 2.0 Australia"@fi,
+        "Attribution 2.0 Australie"@fr,
+        "Paternité 2.0 Australie"@fr-ca,
+        "Paternité 2.0 Australie"@fr-ch,
+        "Paternité 2.0 Australie"@fr-lu,
+        "Attribution 2.0 Australia"@ga,
+        "Recoñecemento 2.0 Australia"@gl,
+        "ייחוס 2.0 אוסטרליה"@he,
+        "Attribution 2.0 Australia"@hi,
+        "Imenovanje 2.0 Australija"@hr,
+        "Nevezd meg! 2.0 Ausztrália"@hu,
+        "Հղում 2.0 Australia"@hy,
+        "Atribusi 2.0 Australia"@id,
+        "Attribution 2.0 Australia"@is,
+        "Attribuzione 2.0 Australia"@it,
+        "Attribuzione 2.0 Australia"@it-ch,
+        "表示 2.0 オーストラリア"@ja,
+        "ავტორობის მითითებით  2.0 ავსტრალია"@ka,
+        "Атауын сақтау 2.0 Australia"@kk,
+        "저작자표시(Attribution) 2.0 Australia"@ko,
+        "Priskyrimas 2.0 Australija"@lt,
+        "Atsaucoties 2.0 Austrālija"@lv,
+        "Наведи извор 2.0 Австралија"@mk,
+        "കടപ്പാട് 2.0 ആസ്ട്രേലിയ"@ml,
+        "Attribution 2.0 Australia"@mn,
+        "Pengiktirafan 2.0 Australia"@ms,
+        "Naamsvermelding 2.0 Australië"@nl,
+        "Navngivelse 2.0 Australia"@no,
+        "Tsebagatšo 2.0 Australia"@nso,
+        "Attribution 2.0 Australia"@oci-es,
+        "Uznanie autorstwa 2.0 Australia"@pl,
+        "Atribuição  2.0 Austrália"@pt,
+        "Atribuição 2.0 Australia"@pt-br,
+        "Atribuição 2.0 Austrália"@pt-pt,
+        "Atribuire 2.0 Australia"@ro,
+        "Attribution (Атрибуция) 2.0 Австралия"@ru,
+        "Attribution 2.0 Australia"@si-lk,
+        "Priznanje avtorstva 2.0 Avstralija"@sl,
+        "Attribution 2.0 Australi"@sq,
+        "Autorstvo 2.0 Australija"@sr,
+        "Ауторство 2.0 Аустралија"@sr,
+        "Autorstvo 2.0 Australija"@sr-latn,
+        "Attribution 2.0 Australia"@st,
+        "Erkännande 2.0 Australien"@sv,
+        "Attribution 2.0 Australia"@ta,
+        "ఆపాదింపు 2.0 ఆస్ట్రేలియా"@te,
+        "แสดงที่มา 2.0 ออสเตรเลีย"@th,
+        "Attribution 2.0 Avustralya"@tr,
+        "Attribution 2.0 Australia"@uk,
+        "Attribution 2.0 Australia"@ur,
+        "Ghi nhận công của tác giả 2.0 Nước Úc "@vi,
+        "署名 2.0 澳大利亚"@zh,
+        "姓名標示 2.0 澳大利亞"@zh-hk,
+        "姓名標示 2.0 澳大利亞"@zh-tw,
+        "Qaphela Umnikazi 2.0 e-Australia"@zu,
+        "${Attribution} 2.0 ${Australia}"@zxx ;
+    owl:sameAs <http://creativecommons.org/licenses/by/2.0/au/> ;
+    foaf:logo <http://i.creativecommons.org/l/by/2.0/au/80x15.png>,
+        <http://i.creativecommons.org/l/by/2.0/au/88x31.png> ;
+    li:id "CC-BY-2.0-au" ;
+    li:libre <http://creativecommons.org/> ;
+    li:name "CC BY 2.0 AU" .
+

@@ -1,0 +1,47 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://licensedb.org/id/Zlib> a cc:License,
+        li:License ;
+    cc:legalcode <http://zlib.net/zlib_license.html> ;
+    dc:title "Zlib License" ;
+    schema:sameAs <http://spdx.org/licenses/Zlib>,
+        <http://zlib.net/zlib_license.html> ;
+    spdx:licenseId "Zlib" ;
+    li:id "Zlib" ;
+    li:libre <http://debian.org/>,
+        <http://fsf.org/>,
+        <http://opensource.org/> ;
+    li:name "Zlib License" ;
+    li:notice [ li:canonical true ;
+            li:orlater false ;
+            li:short false ;
+            li:text """Copyright (C) {{year}} {{rightsholder}}
+
+This software is provided 'as-is', without any express or implied
+warranty. In no event will the authors be held liable for any damages
+arising from the use of this software.
+
+Permission is granted to anyone to use this software for any purpose,
+including commercial applications, and to alter it and redistribute it
+freely, subject to the following restrictions:
+
+1. The origin of this software must not be misrepresented; you must not
+claim that you wrote the original software. If you use this software
+in a product, an acknowledgment in the product documentation would be
+appreciated but is not required.
+2. Altered source versions must be plainly marked as such, and must not be
+misrepresented as being the original software.
+3. This notice may not be removed or altered from any source distribution.
+""" ] .
+

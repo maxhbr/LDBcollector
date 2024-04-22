@@ -1,0 +1,235 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/elements/1.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://creativecommons.org/licenses/by-nc-nd/2.5/pe/> a cc:License ;
+    cc:jurisdiction <http://creativecommons.org/international/pe/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nc-nd/2.5/pe/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:Distribution,
+        cc:Reproduction ;
+    cc:prohibits cc:CommercialUse ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.5" ;
+    dc:identifier "by-nc-nd" ;
+    dc:source <http://creativecommons.org/licenses/by-nc-nd/2.5/> ;
+    dc:title "Erkenning-NieKommersieel-GeenAfleidings 2.5 Peru"@af,
+        "نسب- غير تجاري - لا اشتقاق 2.5 بيرو"@ar,
+        "Attribution-NonCommercial-NoDerivs 2.5 Peru"@as,
+        "Attribution-NonCommercial-NoDerivs 2.5 Peru"@ast,
+        "Attribution-NonCommercial-NoDerivs 2.5 Peru"@ast-es,
+        "Attribution-NonCommercial-NoDerivs 2.5 Peru"@az,
+        "Attribution-NonCommercial-NoDerivs 2.5 Пяру"@be,
+        "Признание-Некомерсиално-Без производни 2.5 Перу"@bg,
+        "Attribution-NonCommercial-NoDerivs 2.5 Peru"@bn,
+        "Reconeixement-NoComercial-SenseObraDerivada 2.5 Perú"@ca,
+        "Uveďte autora-Neužívejte dílo komerčně-Nezasahujte do díla 2.5 Peru"@cs,
+        "Navngivelse-IkkeKommerciel-IngenBearbejdelse 2.5 Peru"@da,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 2.5 Peru"@de,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 2.5 Peru"@de-at,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 2.5 Peru"@de-ch,
+        "Αναφορά Δημιουργού-Μη Εμπορική Χρήση-Όχι Παράγωγα Έργα 2.5 Περού"@el,
+        "Attribution-NonCommercial-NoDerivs 2.5 Peru"@en,
+        "Attribution-NonCommercial-NoDerivs 2.5 Peru"@en-ca,
+        "Attribution-NonCommercial-NoDerivs 2.5 Peru"@en-gb,
+        "Attribution-NonCommercial-NoDerivs 2.5 Peru"@en-hk,
+        "Attribution-NonCommercial-NoDerivs 2.5 Peru"@en-sg,
+        "Attribution-NonCommercial-NoDerivs 2.5 Peru"@en-us,
+        "Atribuite-Nekomerce-Nemodifite 2.5 Peruo"@eo,
+        "Atribución-NoComercial-SinDerivadas 2.5 Perú"@es,
+        "Atribución-NoComercial-SinDerivadas 2.5 Perú"@es-ar,
+        "Atribución-NoComercial-SinDerivadas 2.5 Perú"@es-cl,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.5 Perú"@es-co,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.5 Perú"@es-ec,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.5 Perú"@es-es,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.5 Perú"@es-gt,
+        "Atribución-No Comercial-No Derivadas 2.5 Perú"@es-mx,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.5 Perú"@es-pe,
+        "Reconocimiento-NoComercial-SinObrasDerivadas 2.5 Perú"@es-pr,
+        "Autorile viitamine + Mitteäriline eesmärk + Tuletatud teoste keeld 2.5 Peruu"@et,
+        "Aitortu-EzKomertziala-LanEratorririkGabe 2.5 Peru"@eu,
+        "Attribution-NonCommercial-NoDerivs 2.5 پرو"@fa,
+        "Nimeä-Ei muutoksia-Epäkaupallinen 2.5 Peru"@fi,
+        "Attribution - Pas d’Utilisation Commerciale - Pas de Modification 2.5 Pérou"@fr,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.5 Pérou"@fr-ca,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.5 Pérou"@fr-ch,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.5 Pérou"@fr-lu,
+        "Attribution-NonCommercial-NoDerivs 2.5 Peru"@ga,
+        "Recoñecemento-NonComercial-SenObraDerivada 2.5 Peru"@gl,
+        "ייחוס-שימוש לא מסחרי-איסור יצירות נגזרות 2.5 פרו"@he,
+        "Attribution-NonCommercial-NoDerivs 2.5 पेरू"@hi,
+        "Imenovanje-Nekomercijalno-Bez prerada 2.5 Peru"@hr,
+        "Nevezd meg! - Ne add el! - Ne változtasd! 2.5 Peru"@hu,
+        "Հղում - Ոչ-առևտրային օգտագործում - Օգտագործում առանց վերափոխումների 2.5 Պերու"@hy,
+        "Atribusi-NonKomersial-TanpaTurunan 2.5 Peru"@id,
+        "Attribution-NonCommercial-NoDerivs 2.5 Perú"@is,
+        "Attribuzione - Non commerciale - Non opere derivate 2.5 Perù"@it,
+        "Attribuzione - Non commerciale - Non opere derivate 2.5 Peru"@it-ch,
+        "表示 - 非営利 - 改変禁止 2.5 ペルー"@ja,
+        "ავტორობის მითითებით–არაკომერციული გამოყენბისათვის–გადამუშავების გარეშე 2.5 პერუ"@ka,
+        "Attribution-NonCommercial-NoDerivs 2.5 Peru"@kk,
+        "저작자표시-비영리-변경금지 2.5 페루"@ko,
+        "Attribution-NonCommercial-NoDerivs 2.5 Peru"@lt,
+        "Atsaucoties-Nekomerciāls-Nemainīts 2.5 Peru"@lv,
+        "НаведиИзвор-Некомерцијално-БезАдаптираниДела 2.5 Перу"@mk,
+        "Attribution-NonCommercial-NoDerivs 2.5 പെറു"@ml,
+        "Attribution-NonCommercial-NoDerivs 2.5 Peru"@mn,
+        "Pengiktirafan-BukanKomersial-TiadaTerbitan 2.5 Peru"@ms,
+        "Naamsvermelding-NietCommercieel-GeenAfgeleideWerken 2.5 Peru"@nl,
+        "Navngivelse-Ikkekommersiell-IngenBearbeidelse 2.5 Peru"@no,
+        "Tsebagatšo-E sego ya Kgwebo-Tše sa fetolwego 2.5 Peru"@nso,
+        "Attribution-NonCommercial-NoDerivs 2.5 Peru"@oci-es,
+        "Uznanie autorstwa-Użycie niekomercyjne-Bez utworów zależnych 2.5 Peru"@pl,
+        "Atribuição - NãoComercial - SemDerivados 2.5 Peru"@pt,
+        "Atribuição-Uso não-comercial-Vedada a criação de obras derivadas 2.5 Peru"@pt-br,
+        "Atribuição-Uso Não-Comercial-Proibição de realização de Obras Derivadas 2.5 Peru"@pt-pt,
+        "Atribuire-Necomercial-FărăModificări 2.5 Peru"@ro,
+        "Attribution-NonCommercial-NoDerivs (Атрибуция — Некоммерческое использование — Без производных произведений) 2.5 Перу"@ru,
+        "Attribution-NonCommercial-NoDerivs 2.5 Peru"@si-lk,
+        "Priznanje avtorstva-Nekomercialno-Brez predelav 2.5 Peru"@sl,
+        "Attribution-NonCommercial-NoDerivs 2.5 Peru"@sq,
+        "Autorstvo-Nekomercijalno-Bez prerada 2.5 Peru"@sr,
+        "Ауторство-Некомерцијално-Без прерада 2.5 Перу"@sr,
+        "Autorstvo-Nekomercijalno-Bez prerada 2.5 Peru"@sr-latn,
+        "Attribution-NonCommercial-NoDerivs 2.5 Peru"@st,
+        "Erkännande-Ickekommersiell-IngaBearbetningar 2.5 Peru"@sv,
+        "Attribution-NonCommercial-NoDerivs 2.5 பெரு"@ta,
+        "Attribution-NonCommercial-NoDerivs 2.5 పెరూ"@te,
+        "แสดงที่มา-ไม่ใช้เพื่อการค้า-ไม่ดัดแปลง 2.5 เปรู"@th,
+        "Attribution-Gayriticari-NoDerivs 2.5 Peru"@tr,
+        "Attribution-NonCommercial-NoDerivs 2.5 Peru"@uk,
+        "Attribution-NonCommercial-NoDerivs 2.5 Peru"@ur,
+        "Ghi nhận công của tác giả - Phi thương mại - Không phái sinh  2.5 Nước Peru"@vi,
+        "署名-非商业性使用-禁止演绎 2.5 秘鲁"@zh,
+        "姓名標示-非商業性-禁止改作 2.5 秘魯"@zh-hk,
+        "姓名標示-非商業性-禁止改作 2.5 秘魯"@zh-tw,
+        "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano-Ungasuseli lutho kulokhu 2.5 ePeru"@zu,
+        "${Attribution-NonCommercial-NoDerivs} 2.5 ${Peru}"@zxx ;
+    owl:sameAs <https://licensedb.org/id/CC-BY-NC-ND-2.5-pe> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nc-nd/2.5/pe/80x15.png>,
+        <http://i.creativecommons.org/l/by-nc-nd/2.5/pe/88x31.png> .
+
+<https://licensedb.org/id/CC-BY-NC-ND-2.5-pe> a cc:License,
+        li:License ;
+    cc:jurisdiction <http://creativecommons.org/international/pe/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nc-nd/2.5/pe/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:Distribution,
+        cc:Reproduction ;
+    cc:prohibits cc:CommercialUse ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.5" ;
+    dc:identifier "by-nc-nd" ;
+    dc:source <http://creativecommons.org/licenses/by-nc-nd/2.5/> ;
+    dc:title "Erkenning-NieKommersieel-GeenAfleidings 2.5 Peru"@af,
+        "نسب- غير تجاري - لا اشتقاق 2.5 بيرو"@ar,
+        "Attribution-NonCommercial-NoDerivs 2.5 Peru"@as,
+        "Attribution-NonCommercial-NoDerivs 2.5 Peru"@ast,
+        "Attribution-NonCommercial-NoDerivs 2.5 Peru"@ast-es,
+        "Attribution-NonCommercial-NoDerivs 2.5 Peru"@az,
+        "Attribution-NonCommercial-NoDerivs 2.5 Пяру"@be,
+        "Признание-Некомерсиално-Без производни 2.5 Перу"@bg,
+        "Attribution-NonCommercial-NoDerivs 2.5 Peru"@bn,
+        "Reconeixement-NoComercial-SenseObraDerivada 2.5 Perú"@ca,
+        "Uveďte autora-Neužívejte dílo komerčně-Nezasahujte do díla 2.5 Peru"@cs,
+        "Navngivelse-IkkeKommerciel-IngenBearbejdelse 2.5 Peru"@da,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 2.5 Peru"@de,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 2.5 Peru"@de-at,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 2.5 Peru"@de-ch,
+        "Αναφορά Δημιουργού-Μη Εμπορική Χρήση-Όχι Παράγωγα Έργα 2.5 Περού"@el,
+        "Attribution-NonCommercial-NoDerivs 2.5 Peru"@en,
+        "Attribution-NonCommercial-NoDerivs 2.5 Peru"@en-ca,
+        "Attribution-NonCommercial-NoDerivs 2.5 Peru"@en-gb,
+        "Attribution-NonCommercial-NoDerivs 2.5 Peru"@en-hk,
+        "Attribution-NonCommercial-NoDerivs 2.5 Peru"@en-sg,
+        "Attribution-NonCommercial-NoDerivs 2.5 Peru"@en-us,
+        "Atribuite-Nekomerce-Nemodifite 2.5 Peruo"@eo,
+        "Atribución-NoComercial-SinDerivadas 2.5 Perú"@es,
+        "Atribución-NoComercial-SinDerivadas 2.5 Perú"@es-ar,
+        "Atribución-NoComercial-SinDerivadas 2.5 Perú"@es-cl,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.5 Perú"@es-co,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.5 Perú"@es-ec,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.5 Perú"@es-es,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.5 Perú"@es-gt,
+        "Atribución-No Comercial-No Derivadas 2.5 Perú"@es-mx,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.5 Perú"@es-pe,
+        "Reconocimiento-NoComercial-SinObrasDerivadas 2.5 Perú"@es-pr,
+        "Autorile viitamine + Mitteäriline eesmärk + Tuletatud teoste keeld 2.5 Peruu"@et,
+        "Aitortu-EzKomertziala-LanEratorririkGabe 2.5 Peru"@eu,
+        "Attribution-NonCommercial-NoDerivs 2.5 پرو"@fa,
+        "Nimeä-Ei muutoksia-Epäkaupallinen 2.5 Peru"@fi,
+        "Attribution - Pas d’Utilisation Commerciale - Pas de Modification 2.5 Pérou"@fr,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.5 Pérou"@fr-ca,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.5 Pérou"@fr-ch,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.5 Pérou"@fr-lu,
+        "Attribution-NonCommercial-NoDerivs 2.5 Peru"@ga,
+        "Recoñecemento-NonComercial-SenObraDerivada 2.5 Peru"@gl,
+        "ייחוס-שימוש לא מסחרי-איסור יצירות נגזרות 2.5 פרו"@he,
+        "Attribution-NonCommercial-NoDerivs 2.5 पेरू"@hi,
+        "Imenovanje-Nekomercijalno-Bez prerada 2.5 Peru"@hr,
+        "Nevezd meg! - Ne add el! - Ne változtasd! 2.5 Peru"@hu,
+        "Հղում - Ոչ-առևտրային օգտագործում - Օգտագործում առանց վերափոխումների 2.5 Պերու"@hy,
+        "Atribusi-NonKomersial-TanpaTurunan 2.5 Peru"@id,
+        "Attribution-NonCommercial-NoDerivs 2.5 Perú"@is,
+        "Attribuzione - Non commerciale - Non opere derivate 2.5 Perù"@it,
+        "Attribuzione - Non commerciale - Non opere derivate 2.5 Peru"@it-ch,
+        "表示 - 非営利 - 改変禁止 2.5 ペルー"@ja,
+        "ავტორობის მითითებით–არაკომერციული გამოყენბისათვის–გადამუშავების გარეშე 2.5 პერუ"@ka,
+        "Attribution-NonCommercial-NoDerivs 2.5 Peru"@kk,
+        "저작자표시-비영리-변경금지 2.5 페루"@ko,
+        "Attribution-NonCommercial-NoDerivs 2.5 Peru"@lt,
+        "Atsaucoties-Nekomerciāls-Nemainīts 2.5 Peru"@lv,
+        "НаведиИзвор-Некомерцијално-БезАдаптираниДела 2.5 Перу"@mk,
+        "Attribution-NonCommercial-NoDerivs 2.5 പെറു"@ml,
+        "Attribution-NonCommercial-NoDerivs 2.5 Peru"@mn,
+        "Pengiktirafan-BukanKomersial-TiadaTerbitan 2.5 Peru"@ms,
+        "Naamsvermelding-NietCommercieel-GeenAfgeleideWerken 2.5 Peru"@nl,
+        "Navngivelse-Ikkekommersiell-IngenBearbeidelse 2.5 Peru"@no,
+        "Tsebagatšo-E sego ya Kgwebo-Tše sa fetolwego 2.5 Peru"@nso,
+        "Attribution-NonCommercial-NoDerivs 2.5 Peru"@oci-es,
+        "Uznanie autorstwa-Użycie niekomercyjne-Bez utworów zależnych 2.5 Peru"@pl,
+        "Atribuição - NãoComercial - SemDerivados 2.5 Peru"@pt,
+        "Atribuição-Uso não-comercial-Vedada a criação de obras derivadas 2.5 Peru"@pt-br,
+        "Atribuição-Uso Não-Comercial-Proibição de realização de Obras Derivadas 2.5 Peru"@pt-pt,
+        "Atribuire-Necomercial-FărăModificări 2.5 Peru"@ro,
+        "Attribution-NonCommercial-NoDerivs (Атрибуция — Некоммерческое использование — Без производных произведений) 2.5 Перу"@ru,
+        "Attribution-NonCommercial-NoDerivs 2.5 Peru"@si-lk,
+        "Priznanje avtorstva-Nekomercialno-Brez predelav 2.5 Peru"@sl,
+        "Attribution-NonCommercial-NoDerivs 2.5 Peru"@sq,
+        "Autorstvo-Nekomercijalno-Bez prerada 2.5 Peru"@sr,
+        "Ауторство-Некомерцијално-Без прерада 2.5 Перу"@sr,
+        "Autorstvo-Nekomercijalno-Bez prerada 2.5 Peru"@sr-latn,
+        "Attribution-NonCommercial-NoDerivs 2.5 Peru"@st,
+        "Erkännande-Ickekommersiell-IngaBearbetningar 2.5 Peru"@sv,
+        "Attribution-NonCommercial-NoDerivs 2.5 பெரு"@ta,
+        "Attribution-NonCommercial-NoDerivs 2.5 పెరూ"@te,
+        "แสดงที่มา-ไม่ใช้เพื่อการค้า-ไม่ดัดแปลง 2.5 เปรู"@th,
+        "Attribution-Gayriticari-NoDerivs 2.5 Peru"@tr,
+        "Attribution-NonCommercial-NoDerivs 2.5 Peru"@uk,
+        "Attribution-NonCommercial-NoDerivs 2.5 Peru"@ur,
+        "Ghi nhận công của tác giả - Phi thương mại - Không phái sinh  2.5 Nước Peru"@vi,
+        "署名-非商业性使用-禁止演绎 2.5 秘鲁"@zh,
+        "姓名標示-非商業性-禁止改作 2.5 秘魯"@zh-hk,
+        "姓名標示-非商業性-禁止改作 2.5 秘魯"@zh-tw,
+        "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano-Ungasuseli lutho kulokhu 2.5 ePeru"@zu,
+        "${Attribution-NonCommercial-NoDerivs} 2.5 ${Peru}"@zxx ;
+    owl:sameAs <http://creativecommons.org/licenses/by-nc-nd/2.5/pe/> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nc-nd/2.5/pe/80x15.png>,
+        <http://i.creativecommons.org/l/by-nc-nd/2.5/pe/88x31.png> ;
+    li:id "CC-BY-NC-ND-2.5-pe" ;
+    li:name "CC BY-NC-ND 2.5 PE" .
+

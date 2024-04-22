@@ -1,0 +1,253 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/elements/1.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://creativecommons.org/licenses/by-sa/2.5/es/> a cc:License ;
+    cc:jurisdiction <http://creativecommons.org/international/es/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-sa/2.5/es/legalcode.ca>,
+        <http://creativecommons.org/licenses/by-sa/2.5/es/legalcode.es>,
+        <http://creativecommons.org/licenses/by-sa/2.5/es/legalcode.eu>,
+        <http://creativecommons.org/licenses/by-sa/2.5/es/legalcode.gl> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Attribution,
+        cc:Notice,
+        cc:ShareAlike ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.5" ;
+    dc:identifier "by-sa" ;
+    dc:source <http://creativecommons.org/licenses/by-sa/2.5/> ;
+    dc:title "Erkenning-InsgelyksDeel 2.5 Spanje"@af,
+        "نسب العمل- المشاركة على قدم المساواة 2.5 اسبانيا"@ar,
+        "Attribution-ShareAlike 2.5 Spain"@as,
+        "Attribution-ShareAlike 2.5 Spain"@ast,
+        "Attribution-ShareAlike 2.5 Spain"@ast-es,
+        "Attribution-ShareAlike 2.5 Spain"@az,
+        "Attribution-ShareAlike 2.5 Іспанія"@be,
+        "Признание-Споделяне на споделеното 2.5 Испания"@bg,
+        "Attribution-ShareAlike 2.5 Spain"@bn,
+        "Reconeixement-CompartirIgual 2.5 Espanya"@ca,
+        "Uveďte autora-Zachovejte licenci 2.5 Španělsko"@cs,
+        "Navngivelse-DelPåSammeVilkår 2.5 Spanien"@da,
+        "Namensnennung-Weitergabe unter gleichen Bedingungen 2.5 Spanien"@de,
+        "Namensnennung-Weitergabe unter gleichen Bedingungen 2.5 Spanien"@de-at,
+        "Namensnennung-Weitergabe unter gleichen Bedingungen 2.5 Spanien"@de-ch,
+        "Αναφορά Δημιουργού - Παρόμοια Διανομή 2.5 Ισπανία"@el,
+        "Attribution-ShareAlike 2.5 Spain"@en,
+        "Attribution-ShareAlike 2.5 Spain"@en-ca,
+        "Attribution-ShareAlike 2.5 Spain"@en-gb,
+        "Attribution-ShareAlike 2.5 Spain"@en-hk,
+        "Attribution-ShareAlike 2.5 Spain"@en-sg,
+        "Attribution-ShareAlike 2.5 Spain"@en-us,
+        "Atribuite-Samkondiĉe 2.5 Hispanujo"@eo,
+        "Atribución-CompartirIgual 2.5 España"@es,
+        "Atribución-CompartirDerivadasIgual 2.5 España"@es-ar,
+        "Atribución-LicenciarIgual 2.5 España"@es-cl,
+        "Reconocimiento-CompartirIgual 2.5 España"@es-co,
+        "Reconocimiento-CompartirIgual 2.5 España"@es-ec,
+        "Reconocimiento-CompartirIgual 2.5 España"@es-es,
+        "Reconocimiento-CompartirIgual 2.5 España"@es-gt,
+        "Atribución-Licenciamiento Recíproco 2.5 España"@es-mx,
+        "Reconocimiento-CompartirIgual 2.5 España"@es-pe,
+        "Reconocimiento-CompartirIgual 2.5 España"@es-pr,
+        "Autorile viitamine + Jagamine samadel tingimustel 2.5 Hispaania"@et,
+        "Aitortu-PartekatuBerdin 2.5 Espainia"@eu,
+        "Attribution-ShareAlike 2.5 اسپانیا"@fa,
+        "Nimeä-Tarttuva 2.5 Espanja"@fi,
+        "Paternité - Partage à l'Identique 2.5 Espagne"@fr,
+        "Paternité - Partage des Conditions Initiales à l'Identique 2.5 Espagne"@fr-ca,
+        "Paternité - Partage des Conditions Initiales à l'Identique 2.5 Espagne"@fr-ch,
+        "Paternité - Partage des Conditions Initiales à l'Identique 2.5 Espagne"@fr-lu,
+        "Attribution-ShareAlike 2.5 Spain"@ga,
+        "Recoñecemento-CompartirIgual 2.5 España"@gl,
+        "ייחוס-שיתוף זהה 2.5 ספרד"@he,
+        "Attribution-ShareAlike 2.5 Spain"@hi,
+        "Imenovanje-Dijeli pod istim uvjetima 2.5 Španjolska"@hr,
+        "Nevezd meg! - Így add tovább! 2.5 Spanyolország"@hu,
+        "Հղում - համանման տարածում 2.5 Իսպանիա"@hy,
+        "Atribusi-BerbagiSerupa 2.5 Spanyol"@id,
+        "Attribution-ShareAlike 2.5 Spánn"@is,
+        "Attribuzione - Condividi allo stesso modo 2.5 Spagna"@it,
+        "Attribuzione - Condividi allo stesso modo 2.5 Spagna"@it-ch,
+        "表示 - 継承 2.5 スペイン"@ja,
+        "ავტორობის მითითებით – გავრცელება იგივე პირობებით  2.5 ესპანეთი"@ka,
+        "Attribution-ShareAlike 2.5 Spain"@kk,
+        "저작자표시-동일조건변경허락 2.5 스페인"@ko,
+        "Attribution-ShareAlike 2.5 Ispanų"@lt,
+        "Atsaucoties-Nemainot licenci 2.5 Spānija"@lv,
+        "НаведиИзвор-СподелиПодИстиУслови 2.5 Шпанија"@mk,
+        "Attribution-ShareAlike 2.5 സ്പെയിൻ"@ml,
+        "Attribution-ShareAlike 2.5 Spain"@mn,
+        "Pengiktirafan-PerkongsianSerupa 2.5 Sepanyol"@ms,
+        "Naamsvermelding-GelijkDelen 2.5 Spanje"@nl,
+        "Navngivelse-DelPåSammeVilkår 2.5 Spania"@no,
+        "Tsebagatšo -Mohlakanelwa 2.5 Sepania"@nso,
+        "Attribution-ShareAlike 2.5 Spain"@oci-es,
+        "Uznanie autorstwa-Na tych samych warunkach 2.5 Hiszpania"@pl,
+        "Atribuição - CompartilhaIgual 2.5 Espanha"@pt,
+        "Attribution-ShareAlike 2.5 Spain"@pt-br,
+        "Atribuição-Partilha nos termos da mesma licença 2.5 Espanha"@pt-pt,
+        "Atribuire - Distribuire-în-condiţii-identice 2.5 Spania"@ro,
+        "Attribution-ShareAlike (Атрибуция — С сохранением условий) 2.5 Испания"@ru,
+        "Attribution-ShareAlike 2.5 Spain"@si-lk,
+        "Priznanje avtorstva-Deljenje pod enakimi pogoji 2.5 Španija"@sl,
+        "Attribution-ShareAlike 2.5 Spanjë"@sq,
+        "Autorstvo-Deliti pod istim uslovima 2.5 Španija"@sr,
+        "Ауторство-Делити под истим условима 2.5 Шпанија"@sr,
+        "Autorstvo-Deliti pod istim uslovima 2.5 Španija"@sr-latn,
+        "Attribution-ShareAlike 2.5 Spain"@st,
+        "Erkännande-DelaLika 2.5 Spanien"@sv,
+        "Attribution-ShareAlike 2.5 ஸ்பெயின்"@ta,
+        "Attribution-ShareAlike 2.5 స్పెయిన్"@te,
+        "แสดงที่มา-อนุญาตแบบเดียวกัน 2.5 สเปน"@th,
+        "Alıntı-LisansıDevamEttirme 2.5 İspanya"@tr,
+        "Attribution-ShareAlike 2.5 Spain"@uk,
+        "Attribution-ShareAlike 2.5 Spain"@ur,
+        "Attribution-ShareAlike 2.5 Nước Tây Ban Nha"@vi,
+        "署名-相同方式共享 2.5 西班牙"@zh,
+        "姓名標示-相同方式分享 2.5 西班牙"@zh-hk,
+        "姓名標示-相同方式分享 2.5 西班牙"@zh-tw,
+        "Qaphela Umnikazi-Zihlanganyeleni 2.5 Espain"@zu,
+        "${Attribution-ShareAlike} 2.5 ${Spain}"@zxx ;
+    owl:sameAs <https://licensedb.org/id/CC-BY-SA-2.5-es> ;
+    foaf:logo <http://i.creativecommons.org/l/by-sa/2.5/es/80x15.png>,
+        <http://i.creativecommons.org/l/by-sa/2.5/es/88x31.png> .
+
+<https://licensedb.org/id/CC-BY-SA-2.5-es> a cc:License,
+        li:License ;
+    cc:jurisdiction <http://creativecommons.org/international/es/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-sa/2.5/es/legalcode.ca>,
+        <http://creativecommons.org/licenses/by-sa/2.5/es/legalcode.es>,
+        <http://creativecommons.org/licenses/by-sa/2.5/es/legalcode.eu>,
+        <http://creativecommons.org/licenses/by-sa/2.5/es/legalcode.gl> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Attribution,
+        cc:Notice,
+        cc:ShareAlike ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.5" ;
+    dc:identifier "by-sa" ;
+    dc:replaces <https://licensedb.org/id/CC-BY-SA-2.1-es> ;
+    dc:source <http://creativecommons.org/licenses/by-sa/2.5/> ;
+    dc:title "Erkenning-InsgelyksDeel 2.5 Spanje"@af,
+        "نسب العمل- المشاركة على قدم المساواة 2.5 اسبانيا"@ar,
+        "Attribution-ShareAlike 2.5 Spain"@as,
+        "Attribution-ShareAlike 2.5 Spain"@ast,
+        "Attribution-ShareAlike 2.5 Spain"@ast-es,
+        "Attribution-ShareAlike 2.5 Spain"@az,
+        "Attribution-ShareAlike 2.5 Іспанія"@be,
+        "Признание-Споделяне на споделеното 2.5 Испания"@bg,
+        "Attribution-ShareAlike 2.5 Spain"@bn,
+        "Reconeixement-CompartirIgual 2.5 Espanya"@ca,
+        "Uveďte autora-Zachovejte licenci 2.5 Španělsko"@cs,
+        "Navngivelse-DelPåSammeVilkår 2.5 Spanien"@da,
+        "Namensnennung-Weitergabe unter gleichen Bedingungen 2.5 Spanien"@de,
+        "Namensnennung-Weitergabe unter gleichen Bedingungen 2.5 Spanien"@de-at,
+        "Namensnennung-Weitergabe unter gleichen Bedingungen 2.5 Spanien"@de-ch,
+        "Αναφορά Δημιουργού - Παρόμοια Διανομή 2.5 Ισπανία"@el,
+        "Attribution-ShareAlike 2.5 Spain"@en,
+        "Attribution-ShareAlike 2.5 Spain"@en-ca,
+        "Attribution-ShareAlike 2.5 Spain"@en-gb,
+        "Attribution-ShareAlike 2.5 Spain"@en-hk,
+        "Attribution-ShareAlike 2.5 Spain"@en-sg,
+        "Attribution-ShareAlike 2.5 Spain"@en-us,
+        "Atribuite-Samkondiĉe 2.5 Hispanujo"@eo,
+        "Atribución-CompartirIgual 2.5 España"@es,
+        "Atribución-CompartirDerivadasIgual 2.5 España"@es-ar,
+        "Atribución-LicenciarIgual 2.5 España"@es-cl,
+        "Reconocimiento-CompartirIgual 2.5 España"@es-co,
+        "Reconocimiento-CompartirIgual 2.5 España"@es-ec,
+        "Reconocimiento-CompartirIgual 2.5 España"@es-es,
+        "Reconocimiento-CompartirIgual 2.5 España"@es-gt,
+        "Atribución-Licenciamiento Recíproco 2.5 España"@es-mx,
+        "Reconocimiento-CompartirIgual 2.5 España"@es-pe,
+        "Reconocimiento-CompartirIgual 2.5 España"@es-pr,
+        "Autorile viitamine + Jagamine samadel tingimustel 2.5 Hispaania"@et,
+        "Aitortu-PartekatuBerdin 2.5 Espainia"@eu,
+        "Attribution-ShareAlike 2.5 اسپانیا"@fa,
+        "Nimeä-Tarttuva 2.5 Espanja"@fi,
+        "Paternité - Partage à l'Identique 2.5 Espagne"@fr,
+        "Paternité - Partage des Conditions Initiales à l'Identique 2.5 Espagne"@fr-ca,
+        "Paternité - Partage des Conditions Initiales à l'Identique 2.5 Espagne"@fr-ch,
+        "Paternité - Partage des Conditions Initiales à l'Identique 2.5 Espagne"@fr-lu,
+        "Attribution-ShareAlike 2.5 Spain"@ga,
+        "Recoñecemento-CompartirIgual 2.5 España"@gl,
+        "ייחוס-שיתוף זהה 2.5 ספרד"@he,
+        "Attribution-ShareAlike 2.5 Spain"@hi,
+        "Imenovanje-Dijeli pod istim uvjetima 2.5 Španjolska"@hr,
+        "Nevezd meg! - Így add tovább! 2.5 Spanyolország"@hu,
+        "Հղում - համանման տարածում 2.5 Իսպանիա"@hy,
+        "Atribusi-BerbagiSerupa 2.5 Spanyol"@id,
+        "Attribution-ShareAlike 2.5 Spánn"@is,
+        "Attribuzione - Condividi allo stesso modo 2.5 Spagna"@it,
+        "Attribuzione - Condividi allo stesso modo 2.5 Spagna"@it-ch,
+        "表示 - 継承 2.5 スペイン"@ja,
+        "ავტორობის მითითებით – გავრცელება იგივე პირობებით  2.5 ესპანეთი"@ka,
+        "Attribution-ShareAlike 2.5 Spain"@kk,
+        "저작자표시-동일조건변경허락 2.5 스페인"@ko,
+        "Attribution-ShareAlike 2.5 Ispanų"@lt,
+        "Atsaucoties-Nemainot licenci 2.5 Spānija"@lv,
+        "НаведиИзвор-СподелиПодИстиУслови 2.5 Шпанија"@mk,
+        "Attribution-ShareAlike 2.5 സ്പെയിൻ"@ml,
+        "Attribution-ShareAlike 2.5 Spain"@mn,
+        "Pengiktirafan-PerkongsianSerupa 2.5 Sepanyol"@ms,
+        "Naamsvermelding-GelijkDelen 2.5 Spanje"@nl,
+        "Navngivelse-DelPåSammeVilkår 2.5 Spania"@no,
+        "Tsebagatšo -Mohlakanelwa 2.5 Sepania"@nso,
+        "Attribution-ShareAlike 2.5 Spain"@oci-es,
+        "Uznanie autorstwa-Na tych samych warunkach 2.5 Hiszpania"@pl,
+        "Atribuição - CompartilhaIgual 2.5 Espanha"@pt,
+        "Attribution-ShareAlike 2.5 Spain"@pt-br,
+        "Atribuição-Partilha nos termos da mesma licença 2.5 Espanha"@pt-pt,
+        "Atribuire - Distribuire-în-condiţii-identice 2.5 Spania"@ro,
+        "Attribution-ShareAlike (Атрибуция — С сохранением условий) 2.5 Испания"@ru,
+        "Attribution-ShareAlike 2.5 Spain"@si-lk,
+        "Priznanje avtorstva-Deljenje pod enakimi pogoji 2.5 Španija"@sl,
+        "Attribution-ShareAlike 2.5 Spanjë"@sq,
+        "Autorstvo-Deliti pod istim uslovima 2.5 Španija"@sr,
+        "Ауторство-Делити под истим условима 2.5 Шпанија"@sr,
+        "Autorstvo-Deliti pod istim uslovima 2.5 Španija"@sr-latn,
+        "Attribution-ShareAlike 2.5 Spain"@st,
+        "Erkännande-DelaLika 2.5 Spanien"@sv,
+        "Attribution-ShareAlike 2.5 ஸ்பெயின்"@ta,
+        "Attribution-ShareAlike 2.5 స్పెయిన్"@te,
+        "แสดงที่มา-อนุญาตแบบเดียวกัน 2.5 สเปน"@th,
+        "Alıntı-LisansıDevamEttirme 2.5 İspanya"@tr,
+        "Attribution-ShareAlike 2.5 Spain"@uk,
+        "Attribution-ShareAlike 2.5 Spain"@ur,
+        "Attribution-ShareAlike 2.5 Nước Tây Ban Nha"@vi,
+        "署名-相同方式共享 2.5 西班牙"@zh,
+        "姓名標示-相同方式分享 2.5 西班牙"@zh-hk,
+        "姓名標示-相同方式分享 2.5 西班牙"@zh-tw,
+        "Qaphela Umnikazi-Zihlanganyeleni 2.5 Espain"@zu,
+        "${Attribution-ShareAlike} 2.5 ${Spain}"@zxx ;
+    owl:sameAs <http://creativecommons.org/licenses/by-sa/2.5/es/> ;
+    foaf:logo <http://i.creativecommons.org/l/by-sa/2.5/es/80x15.png>,
+        <http://i.creativecommons.org/l/by-sa/2.5/es/88x31.png> ;
+    li:id "CC-BY-SA-2.5-es" ;
+    li:libre <http://creativecommons.org/> ;
+    li:name "CC BY-SA 2.5 ES" .
+
+<http://creativecommons.org/licenses/by-sa/2.5/es/legalcode.ca> dc:language "ca" .
+
+<http://creativecommons.org/licenses/by-sa/2.5/es/legalcode.es> dc:language "es" .
+
+<http://creativecommons.org/licenses/by-sa/2.5/es/legalcode.eu> dc:language "eu" .
+
+<http://creativecommons.org/licenses/by-sa/2.5/es/legalcode.gl> dc:language "gl" .
+

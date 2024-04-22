@@ -1,0 +1,240 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/elements/1.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://creativecommons.org/licenses/by-nd/2.5/ca/> a cc:License ;
+    cc:jurisdiction <http://creativecommons.org/international/ca/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nd/2.5/ca/legalcode.en>,
+        <http://creativecommons.org/licenses/by-nd/2.5/ca/legalcode.fr> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.5" ;
+    dc:identifier "by-nd" ;
+    dc:source <http://creativecommons.org/licenses/by-nd/2.5/> ;
+    dc:title "Erkenning-GeenAfleidings 2.5 Kanada"@af,
+        "نسب- غير مشتق 2.5 كندا"@ar,
+        "Attribution-NoDerivs 2.5 Canada"@as,
+        "Attribution-NoDerivs 2.5 Canada"@ast,
+        "Attribution-NoDerivs 2.5 Canada"@ast-es,
+        "Attribution-NoDerivs 2.5 Canada"@az,
+        "Attribution-NoDerivs 2.5 Канада"@be,
+        "Признание-Без производни 2.5 Канада"@bg,
+        "Attribution-NoDerivs 2.5 Canada"@bn,
+        "Reconeixement-SenseObraDerivada 2.5 Canadà"@ca,
+        "Uveďte autora-Nezasahujte do díla 2.5 Kanada"@cs,
+        "Navngivelse-IngenBearbejdelse 2.5 Canada"@da,
+        "Namensnennung-Keine Bearbeitung 2.5 Kanada"@de,
+        "Namensnennung-KeineBearbeitung 2.5 Kanada"@de-at,
+        "Namensnennung-KeineBearbeitung 2.5 Kanada"@de-ch,
+        "Αναφορά Δημιουργού-Όχι Παράγωγα Έργα 2.5 Καναδάς"@el,
+        "Attribution-NoDerivs 2.5 Canada"@en,
+        "Attribution-NoDerivs 2.5 Canada"@en-ca,
+        "Attribution-NoDerivs 2.5 Canada"@en-gb,
+        "Attribution-NoDerivs 2.5 Canada"@en-hk,
+        "Attribution-NoDerivs 2.5 Canada"@en-sg,
+        "Attribution-NoDerivs 2.5 Canada"@en-us,
+        "Atribuite-Nemodifite 2.5 Kanado"@eo,
+        "Atribución-SinDerivadas 2.5 Canadá"@es,
+        "Atribución-SinDerivadas 2.5 Canadá"@es-ar,
+        "Atribución-SinDerivadas 2.5 Canadá"@es-cl,
+        "Reconocimiento-SinObraDerivada 2.5 Canadá"@es-co,
+        "Reconocimiento-SinObraDerivada 2.5 Canadá"@es-ec,
+        "Reconocimiento-SinObraDerivada 2.5 Canadá"@es-es,
+        "Reconocimiento-SinObraDerivada 2.5 Canadá"@es-gt,
+        "Atribución-No Derivadas 2.5 Canadá"@es-mx,
+        "Reconocimiento-SinObraDerivada 2.5 Canadá"@es-pe,
+        "Reconocimiento-SinObraDerivada 2.5 Canadá"@es-pr,
+        "Autorile viitamine + Tuletatud teoste keeld 2.5 Kanada"@et,
+        "Aitortu-LanEratorririkGabe 2.5 Kanada"@eu,
+        "Attribution-NoDerivs 2.5 کانادا"@fa,
+        "Nimeä-Ei muutoksia 2.5 Kanada"@fi,
+        "Paternité - Pas de Modification 2.5 Canada"@fr,
+        "Paternité - Pas de Modification 2.5 Canada"@fr-ca,
+        "Paternité - Pas de Modification 2.5 Canada"@fr-ch,
+        "Paternité - Pas de Modification 2.5 Canada"@fr-lu,
+        "Attribution-NoDerivs 2.5 Canada"@ga,
+        "Recoñecemento-SenObraDerivada 2.5 Canadá"@gl,
+        "ייחוס-איסור יצירות נגזרות 2.5 קנדה"@he,
+        "Attribution-NoDerivs 2.5 Canada"@hi,
+        "Imenovanje-Bez prerada 2.5 Kanada"@hr,
+        "Nevezd meg! - Ne változtasd! 2.5 Kanada"@hu,
+        "Հղում - Օգտագործում առանց վերափոխումների 2.5 Կանադա"@hy,
+        "Atribusi-TanpaTurunan 2.5 Kanada"@id,
+        "Attribution-NoDerivs 2.5 Canada"@is,
+        "Attribuzione - Non opere derivate 2.5 Canada"@it,
+        "Attribuzione - Non opere derivate 2.5 Canada"@it-ch,
+        "表示 - 改変禁止 2.5 カナダ"@ja,
+        "ავტორობის მითითებით გადამუშავების გარეშე 2.5 კანადა"@ka,
+        "Туынды жасамау 2.5 Canada"@kk,
+        "저작자표시-변경금지 2.5 캐나다"@ko,
+        "Attribution-NoDerivs 2.5 Kanada"@lt,
+        "Atsaucoties-Neatvasinot 2.5 Kanāda"@lv,
+        "НаведиИзвор-БезИзведениДела 2.5 Канада"@mk,
+        "Attribution-NoDerivs 2.5 കാനഡ"@ml,
+        "Attribution-NoDerivs 2.5 Canada"@mn,
+        "Pengiktirafan-TiadaTerbitan 2.5 Kanada"@ms,
+        "Naamsvermelding-GeenAfgeleideWerken 2.5 Canada"@nl,
+        "Navngivelse-IngenBearbeidelse 2.5 Canada"@no,
+        "Tsebagatšo - Tše sa Fetolwego 2.5 Khanada"@nso,
+        "Attribution-NoDerivs 2.5 Canada"@oci-es,
+        "Uznanie autorstwa-Bez utworów zależnych 2.5 Kanada"@pl,
+        "Atribuição - SemDerivados 2.5 Canadá"@pt,
+        "Atribuição-Vedada a criação de obras derivativas 2.5 Canada"@pt-br,
+        "Atribuição-Proibição de realização de Obras Derivadas 2.5 Canadá"@pt-pt,
+        "Atribuire-FărăModificări 2.5 Canada"@ro,
+        "Attribution-NoDerivs (Атрибуция — Без производных произведений) 2.5 Канада"@ru,
+        "Attribution-NoDerivs 2.5 Canada"@si-lk,
+        "Priznanje avtorstva-Brez predelav 2.5 Kanada"@sl,
+        "Attribution-NoDerivs 2.5 Kanada"@sq,
+        "Autorstvo-Bez prerada 2.5 Kanada"@sr,
+        "Ауторство-Без прерада 2.5 Канада"@sr,
+        "Autorstvo-Bez prerada 2.5 Kanada"@sr-latn,
+        "Attribution-NoDerivs 2.5 Canada"@st,
+        "Erkännande-IngaBearbetningar 2.5 Kanada"@sv,
+        "Attribution-NoDerivs 2.5 Canada"@ta,
+        "Attribution-NoDerivs 2.5 కెనడా"@te,
+        "แสดงที่มา-ไม่ดัดแปลง 2.5 แคนาดา"@th,
+        "Alıntı-Türetilemez 2.5 Kanada"@tr,
+        "Attribution-NoDerivs 2.5 Canada"@uk,
+        "Attribution-NoDerivs 2.5 Canada"@ur,
+        "Ghi nhận công của tác giả - Không phái sinh 2.5 Canada"@vi,
+        "署名-禁止演绎 2.5 加拿大"@zh,
+        "姓名標示-禁止改作 2.5 加拿大"@zh-hk,
+        "姓名標示-禁止改作 2.5 加拿大"@zh-tw,
+        "Qaphela Umnikazi-Ungasuseli lutho kulokhu 2.5 Ecanada"@zu,
+        "${Attribution-NoDerivs} 2.5 ${Canada}"@zxx ;
+    owl:sameAs <https://licensedb.org/id/CC-BY-ND-2.5-ca> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nd/2.5/ca/80x15.png>,
+        <http://i.creativecommons.org/l/by-nd/2.5/ca/88x31.png> .
+
+<https://licensedb.org/id/CC-BY-ND-2.5-ca> a cc:License,
+        li:License ;
+    cc:jurisdiction <http://creativecommons.org/international/ca/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nd/2.5/ca/legalcode.en>,
+        <http://creativecommons.org/licenses/by-nd/2.5/ca/legalcode.fr> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.5" ;
+    dc:identifier "by-nd" ;
+    dc:replaces <https://licensedb.org/id/CC-BY-ND-2.0-ca> ;
+    dc:source <http://creativecommons.org/licenses/by-nd/2.5/> ;
+    dc:title "Erkenning-GeenAfleidings 2.5 Kanada"@af,
+        "نسب- غير مشتق 2.5 كندا"@ar,
+        "Attribution-NoDerivs 2.5 Canada"@as,
+        "Attribution-NoDerivs 2.5 Canada"@ast,
+        "Attribution-NoDerivs 2.5 Canada"@ast-es,
+        "Attribution-NoDerivs 2.5 Canada"@az,
+        "Attribution-NoDerivs 2.5 Канада"@be,
+        "Признание-Без производни 2.5 Канада"@bg,
+        "Attribution-NoDerivs 2.5 Canada"@bn,
+        "Reconeixement-SenseObraDerivada 2.5 Canadà"@ca,
+        "Uveďte autora-Nezasahujte do díla 2.5 Kanada"@cs,
+        "Navngivelse-IngenBearbejdelse 2.5 Canada"@da,
+        "Namensnennung-Keine Bearbeitung 2.5 Kanada"@de,
+        "Namensnennung-KeineBearbeitung 2.5 Kanada"@de-at,
+        "Namensnennung-KeineBearbeitung 2.5 Kanada"@de-ch,
+        "Αναφορά Δημιουργού-Όχι Παράγωγα Έργα 2.5 Καναδάς"@el,
+        "Attribution-NoDerivs 2.5 Canada"@en,
+        "Attribution-NoDerivs 2.5 Canada"@en-ca,
+        "Attribution-NoDerivs 2.5 Canada"@en-gb,
+        "Attribution-NoDerivs 2.5 Canada"@en-hk,
+        "Attribution-NoDerivs 2.5 Canada"@en-sg,
+        "Attribution-NoDerivs 2.5 Canada"@en-us,
+        "Atribuite-Nemodifite 2.5 Kanado"@eo,
+        "Atribución-SinDerivadas 2.5 Canadá"@es,
+        "Atribución-SinDerivadas 2.5 Canadá"@es-ar,
+        "Atribución-SinDerivadas 2.5 Canadá"@es-cl,
+        "Reconocimiento-SinObraDerivada 2.5 Canadá"@es-co,
+        "Reconocimiento-SinObraDerivada 2.5 Canadá"@es-ec,
+        "Reconocimiento-SinObraDerivada 2.5 Canadá"@es-es,
+        "Reconocimiento-SinObraDerivada 2.5 Canadá"@es-gt,
+        "Atribución-No Derivadas 2.5 Canadá"@es-mx,
+        "Reconocimiento-SinObraDerivada 2.5 Canadá"@es-pe,
+        "Reconocimiento-SinObraDerivada 2.5 Canadá"@es-pr,
+        "Autorile viitamine + Tuletatud teoste keeld 2.5 Kanada"@et,
+        "Aitortu-LanEratorririkGabe 2.5 Kanada"@eu,
+        "Attribution-NoDerivs 2.5 کانادا"@fa,
+        "Nimeä-Ei muutoksia 2.5 Kanada"@fi,
+        "Paternité - Pas de Modification 2.5 Canada"@fr,
+        "Paternité - Pas de Modification 2.5 Canada"@fr-ca,
+        "Paternité - Pas de Modification 2.5 Canada"@fr-ch,
+        "Paternité - Pas de Modification 2.5 Canada"@fr-lu,
+        "Attribution-NoDerivs 2.5 Canada"@ga,
+        "Recoñecemento-SenObraDerivada 2.5 Canadá"@gl,
+        "ייחוס-איסור יצירות נגזרות 2.5 קנדה"@he,
+        "Attribution-NoDerivs 2.5 Canada"@hi,
+        "Imenovanje-Bez prerada 2.5 Kanada"@hr,
+        "Nevezd meg! - Ne változtasd! 2.5 Kanada"@hu,
+        "Հղում - Օգտագործում առանց վերափոխումների 2.5 Կանադա"@hy,
+        "Atribusi-TanpaTurunan 2.5 Kanada"@id,
+        "Attribution-NoDerivs 2.5 Canada"@is,
+        "Attribuzione - Non opere derivate 2.5 Canada"@it,
+        "Attribuzione - Non opere derivate 2.5 Canada"@it-ch,
+        "表示 - 改変禁止 2.5 カナダ"@ja,
+        "ავტორობის მითითებით გადამუშავების გარეშე 2.5 კანადა"@ka,
+        "Туынды жасамау 2.5 Canada"@kk,
+        "저작자표시-변경금지 2.5 캐나다"@ko,
+        "Attribution-NoDerivs 2.5 Kanada"@lt,
+        "Atsaucoties-Neatvasinot 2.5 Kanāda"@lv,
+        "НаведиИзвор-БезИзведениДела 2.5 Канада"@mk,
+        "Attribution-NoDerivs 2.5 കാനഡ"@ml,
+        "Attribution-NoDerivs 2.5 Canada"@mn,
+        "Pengiktirafan-TiadaTerbitan 2.5 Kanada"@ms,
+        "Naamsvermelding-GeenAfgeleideWerken 2.5 Canada"@nl,
+        "Navngivelse-IngenBearbeidelse 2.5 Canada"@no,
+        "Tsebagatšo - Tše sa Fetolwego 2.5 Khanada"@nso,
+        "Attribution-NoDerivs 2.5 Canada"@oci-es,
+        "Uznanie autorstwa-Bez utworów zależnych 2.5 Kanada"@pl,
+        "Atribuição - SemDerivados 2.5 Canadá"@pt,
+        "Atribuição-Vedada a criação de obras derivativas 2.5 Canada"@pt-br,
+        "Atribuição-Proibição de realização de Obras Derivadas 2.5 Canadá"@pt-pt,
+        "Atribuire-FărăModificări 2.5 Canada"@ro,
+        "Attribution-NoDerivs (Атрибуция — Без производных произведений) 2.5 Канада"@ru,
+        "Attribution-NoDerivs 2.5 Canada"@si-lk,
+        "Priznanje avtorstva-Brez predelav 2.5 Kanada"@sl,
+        "Attribution-NoDerivs 2.5 Kanada"@sq,
+        "Autorstvo-Bez prerada 2.5 Kanada"@sr,
+        "Ауторство-Без прерада 2.5 Канада"@sr,
+        "Autorstvo-Bez prerada 2.5 Kanada"@sr-latn,
+        "Attribution-NoDerivs 2.5 Canada"@st,
+        "Erkännande-IngaBearbetningar 2.5 Kanada"@sv,
+        "Attribution-NoDerivs 2.5 Canada"@ta,
+        "Attribution-NoDerivs 2.5 కెనడా"@te,
+        "แสดงที่มา-ไม่ดัดแปลง 2.5 แคนาดา"@th,
+        "Alıntı-Türetilemez 2.5 Kanada"@tr,
+        "Attribution-NoDerivs 2.5 Canada"@uk,
+        "Attribution-NoDerivs 2.5 Canada"@ur,
+        "Ghi nhận công của tác giả - Không phái sinh 2.5 Canada"@vi,
+        "署名-禁止演绎 2.5 加拿大"@zh,
+        "姓名標示-禁止改作 2.5 加拿大"@zh-hk,
+        "姓名標示-禁止改作 2.5 加拿大"@zh-tw,
+        "Qaphela Umnikazi-Ungasuseli lutho kulokhu 2.5 Ecanada"@zu,
+        "${Attribution-NoDerivs} 2.5 ${Canada}"@zxx ;
+    owl:sameAs <http://creativecommons.org/licenses/by-nd/2.5/ca/> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nd/2.5/ca/80x15.png>,
+        <http://i.creativecommons.org/l/by-nd/2.5/ca/88x31.png> ;
+    li:id "CC-BY-ND-2.5-ca" ;
+    li:name "CC BY-ND 2.5 CA" .
+
+<http://creativecommons.org/licenses/by-nd/2.5/ca/legalcode.en> dc:language "en" .
+
+<http://creativecommons.org/licenses/by-nd/2.5/ca/legalcode.fr> dc:language "fr" .
+

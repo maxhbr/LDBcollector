@@ -1,0 +1,235 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/elements/1.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://creativecommons.org/licenses/by-nc-nd/2.5/mk/> a cc:License ;
+    cc:jurisdiction <http://creativecommons.org/international/mk/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nc-nd/2.5/mk/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:Distribution,
+        cc:Reproduction ;
+    cc:prohibits cc:CommercialUse ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.5" ;
+    dc:identifier "by-nc-nd" ;
+    dc:source <http://creativecommons.org/licenses/by-nc-nd/2.5/> ;
+    dc:title "Erkenning-NieKommersieel-GeenAfleidings 2.5 Macedonia"@af,
+        "نسب- غير تجاري - لا اشتقاق 2.5 مقدونيا"@ar,
+        "Attribution-NonCommercial-NoDerivs 2.5 Macedonia"@as,
+        "Attribution-NonCommercial-NoDerivs 2.5 Macedonia"@ast,
+        "Attribution-NonCommercial-NoDerivs 2.5 Macedonia"@ast-es,
+        "Attribution-NonCommercial-NoDerivs 2.5 Macedonia"@az,
+        "Attribution-NonCommercial-NoDerivs 2.5 Македонія"@be,
+        "Признание-Некомерсиално-Без производни 2.5 Македония"@bg,
+        "Attribution-NonCommercial-NoDerivs 2.5 Macedonia"@bn,
+        "Reconeixement-NoComercial-SenseObraDerivada 2.5 Macedònia"@ca,
+        "Uveďte autora-Neužívejte dílo komerčně-Nezasahujte do díla 2.5 Makedonie"@cs,
+        "Navngivelse-IkkeKommerciel-IngenBearbejdelse 2.5 Macedonia"@da,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 2.5 Mazedonien"@de,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 2.5 Mazedonien"@de-at,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 2.5 Mazedonien"@de-ch,
+        "Αναφορά Δημιουργού-Μη Εμπορική Χρήση-Όχι Παράγωγα Έργα 2.5 Πρώην Γιουγκοσλαβική Δημοκρατία της Μακεδονίας"@el,
+        "Attribution-NonCommercial-NoDerivs 2.5 Macedonia"@en,
+        "Attribution-NonCommercial-NoDerivs 2.5 Macedonia"@en-ca,
+        "Attribution-NonCommercial-NoDerivs 2.5 Macedonia"@en-gb,
+        "Attribution-NonCommercial-NoDerivs 2.5 Macedonia"@en-hk,
+        "Attribution-NonCommercial-NoDerivs 2.5 Macedonia"@en-sg,
+        "Attribution-NonCommercial-NoDerivs 2.5 Macedonia"@en-us,
+        "Atribuite-Nekomerce-Nemodifite 2.5 Makedonujo"@eo,
+        "Atribución-NoComercial-SinDerivadas 2.5 Macedonia"@es,
+        "Atribución-NoComercial-SinDerivadas 2.5 Macedonia"@es-ar,
+        "Atribución-NoComercial-SinDerivadas 2.5 Macedonia"@es-cl,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.5 Macedonia"@es-co,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.5 Macedonia"@es-ec,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.5 Macedonia"@es-es,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.5 Macedonia"@es-gt,
+        "Atribución-No Comercial-No Derivadas 2.5 Macedonia"@es-mx,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.5 Macedonia"@es-pe,
+        "Reconocimiento-NoComercial-SinObrasDerivadas 2.5 Macedonia"@es-pr,
+        "Autorile viitamine + Mitteäriline eesmärk + Tuletatud teoste keeld 2.5 Makedoonia"@et,
+        "Aitortu-EzKomertziala-LanEratorririkGabe 2.5 Macedonia"@eu,
+        "Attribution-NonCommercial-NoDerivs 2.5 مقدونیه"@fa,
+        "Nimeä-Ei muutoksia-Epäkaupallinen 2.5 Makedonia"@fi,
+        "Attribution - Pas d’Utilisation Commerciale - Pas de Modification 2.5 Macédoine"@fr,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.5 Macédonie"@fr-ca,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.5 Macédonie"@fr-ch,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.5 Macédonie"@fr-lu,
+        "Attribution-NonCommercial-NoDerivs 2.5 Macedonia"@ga,
+        "Recoñecemento-NonComercial-SenObraDerivada 2.5 Macedonia"@gl,
+        "ייחוס-שימוש לא מסחרי-איסור יצירות נגזרות 2.5 מקדוניה"@he,
+        "Attribution-NonCommercial-NoDerivs 2.5 Macedonia"@hi,
+        "Imenovanje-Nekomercijalno-Bez prerada 2.5 Makedonija"@hr,
+        "Nevezd meg! - Ne add el! - Ne változtasd! 2.5 Macedonia"@hu,
+        "Հղում - Ոչ-առևտրային օգտագործում - Օգտագործում առանց վերափոխումների 2.5 Մակեդոնիա"@hy,
+        "Atribusi-NonKomersial-TanpaTurunan 2.5 Makedonia"@id,
+        "Attribution-NonCommercial-NoDerivs 2.5 Macedonia"@is,
+        "Attribuzione - Non commerciale - Non opere derivate 2.5 Macedonia"@it,
+        "Attribuzione - Non commerciale - Non opere derivate 2.5 Macedonia"@it-ch,
+        "表示 - 非営利 - 改変禁止 2.5 マセドニア"@ja,
+        "ავტორობის მითითებით–არაკომერციული გამოყენბისათვის–გადამუშავების გარეშე 2.5 მაკედონია"@ka,
+        "Attribution-NonCommercial-NoDerivs 2.5 Macedonia"@kk,
+        "저작자표시-비영리-변경금지 2.5 Macedonia"@ko,
+        "Attribution-NonCommercial-NoDerivs 2.5 Makedonija"@lt,
+        "Atsaucoties-Nekomerciāls-Nemainīts 2.5 Makedonija"@lv,
+        "НаведиИзвор-Некомерцијално-БезАдаптираниДела 2.5 Македонија"@mk,
+        "Attribution-NonCommercial-NoDerivs 2.5 മസഡോണിയൻ"@ml,
+        "Attribution-NonCommercial-NoDerivs 2.5 Macedonia"@mn,
+        "Pengiktirafan-BukanKomersial-TiadaTerbitan 2.5 Macedonia"@ms,
+        "Naamsvermelding-NietCommercieel-GeenAfgeleideWerken 2.5 Macedonië"@nl,
+        "Navngivelse-Ikkekommersiell-IngenBearbeidelse 2.5 Makedonia"@no,
+        "Tsebagatšo-E sego ya Kgwebo-Tše sa fetolwego 2.5 Macedonia"@nso,
+        "Attribution-NonCommercial-NoDerivs 2.5 Macedonia"@oci-es,
+        "Uznanie autorstwa-Użycie niekomercyjne-Bez utworów zależnych 2.5 Macedonia"@pl,
+        "Atribuição - NãoComercial - SemDerivados 2.5 Macedónia"@pt,
+        "Atribuição-Uso não-comercial-Vedada a criação de obras derivadas 2.5 Macedonia"@pt-br,
+        "Atribuição-Uso Não-Comercial-Proibição de realização de Obras Derivadas 2.5 Macedonia"@pt-pt,
+        "Atribuire-Necomercial-FărăModificări 2.5 Macedonia"@ro,
+        "Attribution-NonCommercial-NoDerivs (Атрибуция — Некоммерческое использование — Без производных произведений) 2.5 Македония"@ru,
+        "Attribution-NonCommercial-NoDerivs 2.5 Macedonia"@si-lk,
+        "Priznanje avtorstva-Nekomercialno-Brez predelav 2.5 Makedonija"@sl,
+        "Attribution-NonCommercial-NoDerivs 2.5 Maqedoni"@sq,
+        "Autorstvo-Nekomercijalno-Bez prerada 2.5 Makedonija"@sr,
+        "Ауторство-Некомерцијално-Без прерада 2.5 Македонија"@sr,
+        "Autorstvo-Nekomercijalno-Bez prerada 2.5 Makedonija"@sr-latn,
+        "Attribution-NonCommercial-NoDerivs 2.5 Macedonia"@st,
+        "Erkännande-Ickekommersiell-IngaBearbetningar 2.5 Makedonien"@sv,
+        "Attribution-NonCommercial-NoDerivs 2.5 Macedonia"@ta,
+        "Attribution-NonCommercial-NoDerivs 2.5 మాసిడోనియా"@te,
+        "แสดงที่มา-ไม่ใช้เพื่อการค้า-ไม่ดัดแปลง 2.5 มาซิโดเนีย"@th,
+        "Attribution-Gayriticari-NoDerivs 2.5 Makedonya"@tr,
+        "Attribution-NonCommercial-NoDerivs 2.5 Macedonia"@uk,
+        "Attribution-NonCommercial-NoDerivs 2.5 Macedonia"@ur,
+        "Ghi nhận công của tác giả - Phi thương mại - Không phái sinh  2.5 Macedonia"@vi,
+        "署名-非商业性使用-禁止演绎 2.5 马其顿"@zh,
+        "姓名標示-非商業性-禁止改作 2.5 馬其頓"@zh-hk,
+        "姓名標示-非商業性-禁止改作 2.5 馬其頓"@zh-tw,
+        "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano-Ungasuseli lutho kulokhu 2.5 Macedonia"@zu,
+        "${Attribution-NonCommercial-NoDerivs} 2.5 ${Macedonia}"@zxx ;
+    owl:sameAs <https://licensedb.org/id/CC-BY-NC-ND-2.5-mk> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nc-nd/2.5/mk/80x15.png>,
+        <http://i.creativecommons.org/l/by-nc-nd/2.5/mk/88x31.png> .
+
+<https://licensedb.org/id/CC-BY-NC-ND-2.5-mk> a cc:License,
+        li:License ;
+    cc:jurisdiction <http://creativecommons.org/international/mk/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nc-nd/2.5/mk/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:Distribution,
+        cc:Reproduction ;
+    cc:prohibits cc:CommercialUse ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.5" ;
+    dc:identifier "by-nc-nd" ;
+    dc:source <http://creativecommons.org/licenses/by-nc-nd/2.5/> ;
+    dc:title "Erkenning-NieKommersieel-GeenAfleidings 2.5 Macedonia"@af,
+        "نسب- غير تجاري - لا اشتقاق 2.5 مقدونيا"@ar,
+        "Attribution-NonCommercial-NoDerivs 2.5 Macedonia"@as,
+        "Attribution-NonCommercial-NoDerivs 2.5 Macedonia"@ast,
+        "Attribution-NonCommercial-NoDerivs 2.5 Macedonia"@ast-es,
+        "Attribution-NonCommercial-NoDerivs 2.5 Macedonia"@az,
+        "Attribution-NonCommercial-NoDerivs 2.5 Македонія"@be,
+        "Признание-Некомерсиално-Без производни 2.5 Македония"@bg,
+        "Attribution-NonCommercial-NoDerivs 2.5 Macedonia"@bn,
+        "Reconeixement-NoComercial-SenseObraDerivada 2.5 Macedònia"@ca,
+        "Uveďte autora-Neužívejte dílo komerčně-Nezasahujte do díla 2.5 Makedonie"@cs,
+        "Navngivelse-IkkeKommerciel-IngenBearbejdelse 2.5 Macedonia"@da,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 2.5 Mazedonien"@de,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 2.5 Mazedonien"@de-at,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 2.5 Mazedonien"@de-ch,
+        "Αναφορά Δημιουργού-Μη Εμπορική Χρήση-Όχι Παράγωγα Έργα 2.5 Πρώην Γιουγκοσλαβική Δημοκρατία της Μακεδονίας"@el,
+        "Attribution-NonCommercial-NoDerivs 2.5 Macedonia"@en,
+        "Attribution-NonCommercial-NoDerivs 2.5 Macedonia"@en-ca,
+        "Attribution-NonCommercial-NoDerivs 2.5 Macedonia"@en-gb,
+        "Attribution-NonCommercial-NoDerivs 2.5 Macedonia"@en-hk,
+        "Attribution-NonCommercial-NoDerivs 2.5 Macedonia"@en-sg,
+        "Attribution-NonCommercial-NoDerivs 2.5 Macedonia"@en-us,
+        "Atribuite-Nekomerce-Nemodifite 2.5 Makedonujo"@eo,
+        "Atribución-NoComercial-SinDerivadas 2.5 Macedonia"@es,
+        "Atribución-NoComercial-SinDerivadas 2.5 Macedonia"@es-ar,
+        "Atribución-NoComercial-SinDerivadas 2.5 Macedonia"@es-cl,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.5 Macedonia"@es-co,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.5 Macedonia"@es-ec,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.5 Macedonia"@es-es,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.5 Macedonia"@es-gt,
+        "Atribución-No Comercial-No Derivadas 2.5 Macedonia"@es-mx,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.5 Macedonia"@es-pe,
+        "Reconocimiento-NoComercial-SinObrasDerivadas 2.5 Macedonia"@es-pr,
+        "Autorile viitamine + Mitteäriline eesmärk + Tuletatud teoste keeld 2.5 Makedoonia"@et,
+        "Aitortu-EzKomertziala-LanEratorririkGabe 2.5 Macedonia"@eu,
+        "Attribution-NonCommercial-NoDerivs 2.5 مقدونیه"@fa,
+        "Nimeä-Ei muutoksia-Epäkaupallinen 2.5 Makedonia"@fi,
+        "Attribution - Pas d’Utilisation Commerciale - Pas de Modification 2.5 Macédoine"@fr,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.5 Macédonie"@fr-ca,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.5 Macédonie"@fr-ch,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.5 Macédonie"@fr-lu,
+        "Attribution-NonCommercial-NoDerivs 2.5 Macedonia"@ga,
+        "Recoñecemento-NonComercial-SenObraDerivada 2.5 Macedonia"@gl,
+        "ייחוס-שימוש לא מסחרי-איסור יצירות נגזרות 2.5 מקדוניה"@he,
+        "Attribution-NonCommercial-NoDerivs 2.5 Macedonia"@hi,
+        "Imenovanje-Nekomercijalno-Bez prerada 2.5 Makedonija"@hr,
+        "Nevezd meg! - Ne add el! - Ne változtasd! 2.5 Macedonia"@hu,
+        "Հղում - Ոչ-առևտրային օգտագործում - Օգտագործում առանց վերափոխումների 2.5 Մակեդոնիա"@hy,
+        "Atribusi-NonKomersial-TanpaTurunan 2.5 Makedonia"@id,
+        "Attribution-NonCommercial-NoDerivs 2.5 Macedonia"@is,
+        "Attribuzione - Non commerciale - Non opere derivate 2.5 Macedonia"@it,
+        "Attribuzione - Non commerciale - Non opere derivate 2.5 Macedonia"@it-ch,
+        "表示 - 非営利 - 改変禁止 2.5 マセドニア"@ja,
+        "ავტორობის მითითებით–არაკომერციული გამოყენბისათვის–გადამუშავების გარეშე 2.5 მაკედონია"@ka,
+        "Attribution-NonCommercial-NoDerivs 2.5 Macedonia"@kk,
+        "저작자표시-비영리-변경금지 2.5 Macedonia"@ko,
+        "Attribution-NonCommercial-NoDerivs 2.5 Makedonija"@lt,
+        "Atsaucoties-Nekomerciāls-Nemainīts 2.5 Makedonija"@lv,
+        "НаведиИзвор-Некомерцијално-БезАдаптираниДела 2.5 Македонија"@mk,
+        "Attribution-NonCommercial-NoDerivs 2.5 മസഡോണിയൻ"@ml,
+        "Attribution-NonCommercial-NoDerivs 2.5 Macedonia"@mn,
+        "Pengiktirafan-BukanKomersial-TiadaTerbitan 2.5 Macedonia"@ms,
+        "Naamsvermelding-NietCommercieel-GeenAfgeleideWerken 2.5 Macedonië"@nl,
+        "Navngivelse-Ikkekommersiell-IngenBearbeidelse 2.5 Makedonia"@no,
+        "Tsebagatšo-E sego ya Kgwebo-Tše sa fetolwego 2.5 Macedonia"@nso,
+        "Attribution-NonCommercial-NoDerivs 2.5 Macedonia"@oci-es,
+        "Uznanie autorstwa-Użycie niekomercyjne-Bez utworów zależnych 2.5 Macedonia"@pl,
+        "Atribuição - NãoComercial - SemDerivados 2.5 Macedónia"@pt,
+        "Atribuição-Uso não-comercial-Vedada a criação de obras derivadas 2.5 Macedonia"@pt-br,
+        "Atribuição-Uso Não-Comercial-Proibição de realização de Obras Derivadas 2.5 Macedonia"@pt-pt,
+        "Atribuire-Necomercial-FărăModificări 2.5 Macedonia"@ro,
+        "Attribution-NonCommercial-NoDerivs (Атрибуция — Некоммерческое использование — Без производных произведений) 2.5 Македония"@ru,
+        "Attribution-NonCommercial-NoDerivs 2.5 Macedonia"@si-lk,
+        "Priznanje avtorstva-Nekomercialno-Brez predelav 2.5 Makedonija"@sl,
+        "Attribution-NonCommercial-NoDerivs 2.5 Maqedoni"@sq,
+        "Autorstvo-Nekomercijalno-Bez prerada 2.5 Makedonija"@sr,
+        "Ауторство-Некомерцијално-Без прерада 2.5 Македонија"@sr,
+        "Autorstvo-Nekomercijalno-Bez prerada 2.5 Makedonija"@sr-latn,
+        "Attribution-NonCommercial-NoDerivs 2.5 Macedonia"@st,
+        "Erkännande-Ickekommersiell-IngaBearbetningar 2.5 Makedonien"@sv,
+        "Attribution-NonCommercial-NoDerivs 2.5 Macedonia"@ta,
+        "Attribution-NonCommercial-NoDerivs 2.5 మాసిడోనియా"@te,
+        "แสดงที่มา-ไม่ใช้เพื่อการค้า-ไม่ดัดแปลง 2.5 มาซิโดเนีย"@th,
+        "Attribution-Gayriticari-NoDerivs 2.5 Makedonya"@tr,
+        "Attribution-NonCommercial-NoDerivs 2.5 Macedonia"@uk,
+        "Attribution-NonCommercial-NoDerivs 2.5 Macedonia"@ur,
+        "Ghi nhận công của tác giả - Phi thương mại - Không phái sinh  2.5 Macedonia"@vi,
+        "署名-非商业性使用-禁止演绎 2.5 马其顿"@zh,
+        "姓名標示-非商業性-禁止改作 2.5 馬其頓"@zh-hk,
+        "姓名標示-非商業性-禁止改作 2.5 馬其頓"@zh-tw,
+        "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano-Ungasuseli lutho kulokhu 2.5 Macedonia"@zu,
+        "${Attribution-NonCommercial-NoDerivs} 2.5 ${Macedonia}"@zxx ;
+    owl:sameAs <http://creativecommons.org/licenses/by-nc-nd/2.5/mk/> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nc-nd/2.5/mk/80x15.png>,
+        <http://i.creativecommons.org/l/by-nc-nd/2.5/mk/88x31.png> ;
+    li:id "CC-BY-NC-ND-2.5-mk" ;
+    li:name "CC BY-NC-ND 2.5 MK" .
+

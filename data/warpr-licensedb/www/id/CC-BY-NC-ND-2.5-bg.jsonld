@@ -1,0 +1,850 @@
+{
+    "@context": {
+        "cc": "http://creativecommons.org/ns#",
+        "dc": "http://purl.org/dc/terms/",
+        "dc11": "http://purl.org/dc/elements/1.1/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "li": "https://licensedb.org/ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "cc:legalcode": {
+            "@type": "@id"
+        },
+        "cc:permits": {
+            "@type": "@id"
+        },
+        "cc:requires": {
+            "@type": "@id"
+        },
+        "cc:prohibits": {
+            "@type": "@id"
+        },
+        "cc:jurisdiction": {
+            "@type": "@id"
+        },
+        "cc:licenseClass": {
+            "@type": "@id"
+        },
+        "dc:creator": {
+            "@type": "@id"
+        },
+        "dc:source": {
+            "@type": "@id"
+        },
+        "dc:replaces": {
+            "@type": "@id"
+        },
+        "dc:isBasedOn": {
+            "@type": "@id"
+        },
+        "dc:isReplacedBy": {
+            "@type": "@id"
+        },
+        "foaf:logo": {
+            "@type": "@id"
+        },
+        "li:plaintext": {
+            "@type": "@id"
+        },
+        "li:libre": {
+            "@type": "@id"
+        },
+        "owl:sameAs": {
+            "@type": "@id"
+        }
+    },
+    "@id": "https://licensedb.org/id/CC-BY-NC-ND-2.5-bg",
+    "@type": [
+        "cc:License",
+        "li:License"
+    ],
+    "cc:jurisdiction": "http://creativecommons.org/international/bg/",
+    "cc:legalcode": "http://creativecommons.org/licenses/by-nc-nd/2.5/bg/legalcode",
+    "cc:licenseClass": "http://creativecommons.org/license/",
+    "cc:permits": [
+        "cc:Distribution",
+        "cc:Reproduction"
+    ],
+    "cc:prohibits": "cc:CommercialUse",
+    "cc:requires": [
+        "cc:Attribution",
+        "cc:Notice"
+    ],
+    "dc:creator": "http://creativecommons.org",
+    "dc:hasVersion": "2.5",
+    "dc:identifier": "by-nc-nd",
+    "dc:source": "http://creativecommons.org/licenses/by-nc-nd/2.5/",
+    "dc:title": [
+        {
+            "@language": "af",
+            "@value": "Erkenning-NieKommersieel-GeenAfleidings 2.5 Bulgarye"
+        },
+        {
+            "@language": "ar",
+            "@value": "نسب- غير تجاري - لا اشتقاق 2.5 بلغاريا"
+        },
+        {
+            "@language": "as",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 Bulgaria"
+        },
+        {
+            "@language": "ast",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 Bulgaria"
+        },
+        {
+            "@language": "ast-es",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 Bulgaria"
+        },
+        {
+            "@language": "az",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 Bulgaria"
+        },
+        {
+            "@language": "be",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 Балгарыя"
+        },
+        {
+            "@language": "bg",
+            "@value": "Признание-Некомерсиално-Без производни 2.5 България"
+        },
+        {
+            "@language": "bn",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 Bulgaria"
+        },
+        {
+            "@language": "ca",
+            "@value": "Reconeixement-NoComercial-SenseObraDerivada 2.5 Bulgària"
+        },
+        {
+            "@language": "cs",
+            "@value": "Uveďte autora-Neužívejte dílo komerčně-Nezasahujte do díla 2.5 Bulharsko"
+        },
+        {
+            "@language": "da",
+            "@value": "Navngivelse-IkkeKommerciel-IngenBearbejdelse 2.5 Bulgarien"
+        },
+        {
+            "@language": "de",
+            "@value": "Namensnennung-NichtKommerziell-KeineBearbeitung 2.5 Bulgarien"
+        },
+        {
+            "@language": "de-at",
+            "@value": "Namensnennung-NichtKommerziell-KeineBearbeitung 2.5 Bulgarien"
+        },
+        {
+            "@language": "de-ch",
+            "@value": "Namensnennung-NichtKommerziell-KeineBearbeitung 2.5 Bulgarien"
+        },
+        {
+            "@language": "el",
+            "@value": "Αναφορά Δημιουργού-Μη Εμπορική Χρήση-Όχι Παράγωγα Έργα 2.5 Βουλγαρία"
+        },
+        {
+            "@language": "en",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 Bulgaria"
+        },
+        {
+            "@language": "en-ca",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 Bulgaria"
+        },
+        {
+            "@language": "en-gb",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 Bulgaria"
+        },
+        {
+            "@language": "en-hk",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 Bulgaria"
+        },
+        {
+            "@language": "en-sg",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 Bulgaria"
+        },
+        {
+            "@language": "en-us",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 Bulgaria"
+        },
+        {
+            "@language": "eo",
+            "@value": "Atribuite-Nekomerce-Nemodifite 2.5 Bulgarujo"
+        },
+        {
+            "@language": "es",
+            "@value": "Atribución-NoComercial-SinDerivadas 2.5 Bulgaria"
+        },
+        {
+            "@language": "es-ar",
+            "@value": "Atribución-NoComercial-SinDerivadas 2.5 Bulgaria"
+        },
+        {
+            "@language": "es-cl",
+            "@value": "Atribución-NoComercial-SinDerivadas 2.5 Bulgaria"
+        },
+        {
+            "@language": "es-co",
+            "@value": "Reconocimiento-NoComercial-SinObraDerivada 2.5 Bulgaria"
+        },
+        {
+            "@language": "es-ec",
+            "@value": "Reconocimiento-NoComercial-SinObraDerivada 2.5 Bulgaria"
+        },
+        {
+            "@language": "es-es",
+            "@value": "Reconocimiento-NoComercial-SinObraDerivada 2.5 Bulgaria"
+        },
+        {
+            "@language": "es-gt",
+            "@value": "Reconocimiento-NoComercial-SinObraDerivada 2.5 Bulgaria"
+        },
+        {
+            "@language": "es-mx",
+            "@value": "Atribución-No Comercial-No Derivadas 2.5 Bulgaria"
+        },
+        {
+            "@language": "es-pe",
+            "@value": "Reconocimiento-NoComercial-SinObraDerivada 2.5 Bulgaria"
+        },
+        {
+            "@language": "es-pr",
+            "@value": "Reconocimiento-NoComercial-SinObrasDerivadas 2.5 Bulgaria"
+        },
+        {
+            "@language": "et",
+            "@value": "Autorile viitamine + Mitteäriline eesmärk + Tuletatud teoste keeld 2.5 Bulgaaria"
+        },
+        {
+            "@language": "eu",
+            "@value": "Aitortu-EzKomertziala-LanEratorririkGabe 2.5 Bulgaria"
+        },
+        {
+            "@language": "fa",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 بلغارستان"
+        },
+        {
+            "@language": "fi",
+            "@value": "Nimeä-Ei muutoksia-Epäkaupallinen 2.5 Bulgaria"
+        },
+        {
+            "@language": "fr",
+            "@value": "Attribution - Pas d’Utilisation Commerciale - Pas de Modification 2.5 Bulgarie"
+        },
+        {
+            "@language": "fr-ca",
+            "@value": "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.5 Bulgarie"
+        },
+        {
+            "@language": "fr-ch",
+            "@value": "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.5 Bulgarie"
+        },
+        {
+            "@language": "fr-lu",
+            "@value": "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.5 Bulgarie"
+        },
+        {
+            "@language": "ga",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 Bulgaria"
+        },
+        {
+            "@language": "gl",
+            "@value": "Recoñecemento-NonComercial-SenObraDerivada 2.5 Bulgaria"
+        },
+        {
+            "@language": "he",
+            "@value": "ייחוס-שימוש לא מסחרי-איסור יצירות נגזרות 2.5 בולגריה"
+        },
+        {
+            "@language": "hi",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 बुलगेरिया"
+        },
+        {
+            "@language": "hr",
+            "@value": "Imenovanje-Nekomercijalno-Bez prerada 2.5 Bugarska"
+        },
+        {
+            "@language": "hu",
+            "@value": "Nevezd meg! - Ne add el! - Ne változtasd! 2.5 Bulgária"
+        },
+        {
+            "@language": "hy",
+            "@value": "Հղում - Ոչ-առևտրային օգտագործում - Օգտագործում առանց վերափոխումների 2.5 Բուլղարիա"
+        },
+        {
+            "@language": "id",
+            "@value": "Atribusi-NonKomersial-TanpaTurunan 2.5 Bulgaria"
+        },
+        {
+            "@language": "is",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 Búlgaría"
+        },
+        {
+            "@language": "it",
+            "@value": "Attribuzione - Non commerciale - Non opere derivate 2.5 Bulgaria"
+        },
+        {
+            "@language": "it-ch",
+            "@value": "Attribuzione - Non commerciale - Non opere derivate 2.5 Bulgaria"
+        },
+        {
+            "@language": "ja",
+            "@value": "表示 - 非営利 - 改変禁止 2.5 ブルガリア"
+        },
+        {
+            "@language": "ka",
+            "@value": "ავტორობის მითითებით–არაკომერციული გამოყენბისათვის–გადამუშავების გარეშე 2.5 ბულგარეთი"
+        },
+        {
+            "@language": "kk",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 Bulgaria"
+        },
+        {
+            "@language": "ko",
+            "@value": "저작자표시-비영리-변경금지 2.5 불가리아"
+        },
+        {
+            "@language": "lt",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 Bulgarija"
+        },
+        {
+            "@language": "lv",
+            "@value": "Atsaucoties-Nekomerciāls-Nemainīts 2.5 Bulgārija"
+        },
+        {
+            "@language": "mk",
+            "@value": "НаведиИзвор-Некомерцијално-БезАдаптираниДела 2.5 Бугарија"
+        },
+        {
+            "@language": "ml",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 ബൾഗേറിയ"
+        },
+        {
+            "@language": "mn",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 Болгар"
+        },
+        {
+            "@language": "ms",
+            "@value": "Pengiktirafan-BukanKomersial-TiadaTerbitan 2.5 Bulgaria"
+        },
+        {
+            "@language": "nl",
+            "@value": "Naamsvermelding-NietCommercieel-GeenAfgeleideWerken 2.5 Bulgarije"
+        },
+        {
+            "@language": "no",
+            "@value": "Navngivelse-Ikkekommersiell-IngenBearbeidelse 2.5 Bulgaria"
+        },
+        {
+            "@language": "nso",
+            "@value": "Tsebagatšo-E sego ya Kgwebo-Tše sa fetolwego 2.5 Bulgaria"
+        },
+        {
+            "@language": "oci-es",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 Bulgaria"
+        },
+        {
+            "@language": "pl",
+            "@value": "Uznanie autorstwa-Użycie niekomercyjne-Bez utworów zależnych 2.5 Bułgaria"
+        },
+        {
+            "@language": "pt",
+            "@value": "Atribuição - NãoComercial - SemDerivados 2.5 Bulgária"
+        },
+        {
+            "@language": "pt-br",
+            "@value": "Atribuição-Uso não-comercial-Vedada a criação de obras derivadas 2.5 Bulgária"
+        },
+        {
+            "@language": "pt-pt",
+            "@value": "Atribuição-Uso Não-Comercial-Proibição de realização de Obras Derivadas 2.5 Bulgaria"
+        },
+        {
+            "@language": "ro",
+            "@value": "Atribuire-Necomercial-FărăModificări 2.5 Bulgaria"
+        },
+        {
+            "@language": "ru",
+            "@value": "Attribution-NonCommercial-NoDerivs (Атрибуция — Некоммерческое использование — Без производных произведений) 2.5 Болгария"
+        },
+        {
+            "@language": "si-lk",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 Bulgaria"
+        },
+        {
+            "@language": "sl",
+            "@value": "Priznanje avtorstva-Nekomercialno-Brez predelav 2.5 Bolgarija"
+        },
+        {
+            "@language": "sq",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 Bullgari"
+        },
+        {
+            "@language": "sr",
+            "@value": "Autorstvo-Nekomercijalno-Bez prerada 2.5 Bugarska"
+        },
+        {
+            "@language": "sr",
+            "@value": "Ауторство-Некомерцијално-Без прерада 2.5 Бугарска"
+        },
+        {
+            "@language": "sr-latn",
+            "@value": "Autorstvo-Nekomercijalno-Bez prerada 2.5 Bugarska"
+        },
+        {
+            "@language": "st",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 Bulgaria"
+        },
+        {
+            "@language": "sv",
+            "@value": "Erkännande-Ickekommersiell-IngaBearbetningar 2.5 Bulgarien"
+        },
+        {
+            "@language": "ta",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 Bulgaria"
+        },
+        {
+            "@language": "te",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 బల్గేరియా"
+        },
+        {
+            "@language": "th",
+            "@value": "แสดงที่มา-ไม่ใช้เพื่อการค้า-ไม่ดัดแปลง 2.5 บัลแกเรีย"
+        },
+        {
+            "@language": "tr",
+            "@value": "Attribution-Gayriticari-NoDerivs 2.5 Bulgaristan"
+        },
+        {
+            "@language": "uk",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 Болгарія"
+        },
+        {
+            "@language": "ur",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 Bulgaria"
+        },
+        {
+            "@language": "vi",
+            "@value": "Ghi nhận công của tác giả - Phi thương mại - Không phái sinh  2.5 Nước Bungari"
+        },
+        {
+            "@language": "zh",
+            "@value": "署名-非商业性使用-禁止演绎 2.5 保加利亚"
+        },
+        {
+            "@language": "zh-hk",
+            "@value": "姓名標示-非商業性-禁止改作 2.5 保加利亞"
+        },
+        {
+            "@language": "zh-tw",
+            "@value": "姓名標示-非商業性-禁止改作 2.5 保加利亞"
+        },
+        {
+            "@language": "zu",
+            "@value": "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano-Ungasuseli lutho kulokhu 2.5 iBulgaria"
+        },
+        {
+            "@language": "zxx",
+            "@value": "${Attribution-NonCommercial-NoDerivs} 2.5 ${Bulgaria}"
+        }
+    ],
+    "owl:sameAs": {
+        "@id": "http://creativecommons.org/licenses/by-nc-nd/2.5/bg/",
+        "@type": "cc:License",
+        "cc:jurisdiction": "http://creativecommons.org/international/bg/",
+        "cc:legalcode": "http://creativecommons.org/licenses/by-nc-nd/2.5/bg/legalcode",
+        "cc:licenseClass": "http://creativecommons.org/license/",
+        "cc:permits": [
+            "cc:Distribution",
+            "cc:Reproduction"
+        ],
+        "cc:prohibits": "cc:CommercialUse",
+        "cc:requires": [
+            "cc:Attribution",
+            "cc:Notice"
+        ],
+        "dc:creator": "http://creativecommons.org",
+        "dc:hasVersion": "2.5",
+        "dc:identifier": "by-nc-nd",
+        "dc:source": "http://creativecommons.org/licenses/by-nc-nd/2.5/",
+        "dc:title": [
+            {
+                "@language": "af",
+                "@value": "Erkenning-NieKommersieel-GeenAfleidings 2.5 Bulgarye"
+            },
+            {
+                "@language": "ar",
+                "@value": "نسب- غير تجاري - لا اشتقاق 2.5 بلغاريا"
+            },
+            {
+                "@language": "as",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 Bulgaria"
+            },
+            {
+                "@language": "ast",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 Bulgaria"
+            },
+            {
+                "@language": "ast-es",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 Bulgaria"
+            },
+            {
+                "@language": "az",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 Bulgaria"
+            },
+            {
+                "@language": "be",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 Балгарыя"
+            },
+            {
+                "@language": "bg",
+                "@value": "Признание-Некомерсиално-Без производни 2.5 България"
+            },
+            {
+                "@language": "bn",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 Bulgaria"
+            },
+            {
+                "@language": "ca",
+                "@value": "Reconeixement-NoComercial-SenseObraDerivada 2.5 Bulgària"
+            },
+            {
+                "@language": "cs",
+                "@value": "Uveďte autora-Neužívejte dílo komerčně-Nezasahujte do díla 2.5 Bulharsko"
+            },
+            {
+                "@language": "da",
+                "@value": "Navngivelse-IkkeKommerciel-IngenBearbejdelse 2.5 Bulgarien"
+            },
+            {
+                "@language": "de",
+                "@value": "Namensnennung-NichtKommerziell-KeineBearbeitung 2.5 Bulgarien"
+            },
+            {
+                "@language": "de-at",
+                "@value": "Namensnennung-NichtKommerziell-KeineBearbeitung 2.5 Bulgarien"
+            },
+            {
+                "@language": "de-ch",
+                "@value": "Namensnennung-NichtKommerziell-KeineBearbeitung 2.5 Bulgarien"
+            },
+            {
+                "@language": "el",
+                "@value": "Αναφορά Δημιουργού-Μη Εμπορική Χρήση-Όχι Παράγωγα Έργα 2.5 Βουλγαρία"
+            },
+            {
+                "@language": "en",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 Bulgaria"
+            },
+            {
+                "@language": "en-ca",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 Bulgaria"
+            },
+            {
+                "@language": "en-gb",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 Bulgaria"
+            },
+            {
+                "@language": "en-hk",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 Bulgaria"
+            },
+            {
+                "@language": "en-sg",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 Bulgaria"
+            },
+            {
+                "@language": "en-us",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 Bulgaria"
+            },
+            {
+                "@language": "eo",
+                "@value": "Atribuite-Nekomerce-Nemodifite 2.5 Bulgarujo"
+            },
+            {
+                "@language": "es",
+                "@value": "Atribución-NoComercial-SinDerivadas 2.5 Bulgaria"
+            },
+            {
+                "@language": "es-ar",
+                "@value": "Atribución-NoComercial-SinDerivadas 2.5 Bulgaria"
+            },
+            {
+                "@language": "es-cl",
+                "@value": "Atribución-NoComercial-SinDerivadas 2.5 Bulgaria"
+            },
+            {
+                "@language": "es-co",
+                "@value": "Reconocimiento-NoComercial-SinObraDerivada 2.5 Bulgaria"
+            },
+            {
+                "@language": "es-ec",
+                "@value": "Reconocimiento-NoComercial-SinObraDerivada 2.5 Bulgaria"
+            },
+            {
+                "@language": "es-es",
+                "@value": "Reconocimiento-NoComercial-SinObraDerivada 2.5 Bulgaria"
+            },
+            {
+                "@language": "es-gt",
+                "@value": "Reconocimiento-NoComercial-SinObraDerivada 2.5 Bulgaria"
+            },
+            {
+                "@language": "es-mx",
+                "@value": "Atribución-No Comercial-No Derivadas 2.5 Bulgaria"
+            },
+            {
+                "@language": "es-pe",
+                "@value": "Reconocimiento-NoComercial-SinObraDerivada 2.5 Bulgaria"
+            },
+            {
+                "@language": "es-pr",
+                "@value": "Reconocimiento-NoComercial-SinObrasDerivadas 2.5 Bulgaria"
+            },
+            {
+                "@language": "et",
+                "@value": "Autorile viitamine + Mitteäriline eesmärk + Tuletatud teoste keeld 2.5 Bulgaaria"
+            },
+            {
+                "@language": "eu",
+                "@value": "Aitortu-EzKomertziala-LanEratorririkGabe 2.5 Bulgaria"
+            },
+            {
+                "@language": "fa",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 بلغارستان"
+            },
+            {
+                "@language": "fi",
+                "@value": "Nimeä-Ei muutoksia-Epäkaupallinen 2.5 Bulgaria"
+            },
+            {
+                "@language": "fr",
+                "@value": "Attribution - Pas d’Utilisation Commerciale - Pas de Modification 2.5 Bulgarie"
+            },
+            {
+                "@language": "fr-ca",
+                "@value": "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.5 Bulgarie"
+            },
+            {
+                "@language": "fr-ch",
+                "@value": "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.5 Bulgarie"
+            },
+            {
+                "@language": "fr-lu",
+                "@value": "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.5 Bulgarie"
+            },
+            {
+                "@language": "ga",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 Bulgaria"
+            },
+            {
+                "@language": "gl",
+                "@value": "Recoñecemento-NonComercial-SenObraDerivada 2.5 Bulgaria"
+            },
+            {
+                "@language": "he",
+                "@value": "ייחוס-שימוש לא מסחרי-איסור יצירות נגזרות 2.5 בולגריה"
+            },
+            {
+                "@language": "hi",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 बुलगेरिया"
+            },
+            {
+                "@language": "hr",
+                "@value": "Imenovanje-Nekomercijalno-Bez prerada 2.5 Bugarska"
+            },
+            {
+                "@language": "hu",
+                "@value": "Nevezd meg! - Ne add el! - Ne változtasd! 2.5 Bulgária"
+            },
+            {
+                "@language": "hy",
+                "@value": "Հղում - Ոչ-առևտրային օգտագործում - Օգտագործում առանց վերափոխումների 2.5 Բուլղարիա"
+            },
+            {
+                "@language": "id",
+                "@value": "Atribusi-NonKomersial-TanpaTurunan 2.5 Bulgaria"
+            },
+            {
+                "@language": "is",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 Búlgaría"
+            },
+            {
+                "@language": "it",
+                "@value": "Attribuzione - Non commerciale - Non opere derivate 2.5 Bulgaria"
+            },
+            {
+                "@language": "it-ch",
+                "@value": "Attribuzione - Non commerciale - Non opere derivate 2.5 Bulgaria"
+            },
+            {
+                "@language": "ja",
+                "@value": "表示 - 非営利 - 改変禁止 2.5 ブルガリア"
+            },
+            {
+                "@language": "ka",
+                "@value": "ავტორობის მითითებით–არაკომერციული გამოყენბისათვის–გადამუშავების გარეშე 2.5 ბულგარეთი"
+            },
+            {
+                "@language": "kk",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 Bulgaria"
+            },
+            {
+                "@language": "ko",
+                "@value": "저작자표시-비영리-변경금지 2.5 불가리아"
+            },
+            {
+                "@language": "lt",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 Bulgarija"
+            },
+            {
+                "@language": "lv",
+                "@value": "Atsaucoties-Nekomerciāls-Nemainīts 2.5 Bulgārija"
+            },
+            {
+                "@language": "mk",
+                "@value": "НаведиИзвор-Некомерцијално-БезАдаптираниДела 2.5 Бугарија"
+            },
+            {
+                "@language": "ml",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 ബൾഗേറിയ"
+            },
+            {
+                "@language": "mn",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 Болгар"
+            },
+            {
+                "@language": "ms",
+                "@value": "Pengiktirafan-BukanKomersial-TiadaTerbitan 2.5 Bulgaria"
+            },
+            {
+                "@language": "nl",
+                "@value": "Naamsvermelding-NietCommercieel-GeenAfgeleideWerken 2.5 Bulgarije"
+            },
+            {
+                "@language": "no",
+                "@value": "Navngivelse-Ikkekommersiell-IngenBearbeidelse 2.5 Bulgaria"
+            },
+            {
+                "@language": "nso",
+                "@value": "Tsebagatšo-E sego ya Kgwebo-Tše sa fetolwego 2.5 Bulgaria"
+            },
+            {
+                "@language": "oci-es",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 Bulgaria"
+            },
+            {
+                "@language": "pl",
+                "@value": "Uznanie autorstwa-Użycie niekomercyjne-Bez utworów zależnych 2.5 Bułgaria"
+            },
+            {
+                "@language": "pt",
+                "@value": "Atribuição - NãoComercial - SemDerivados 2.5 Bulgária"
+            },
+            {
+                "@language": "pt-br",
+                "@value": "Atribuição-Uso não-comercial-Vedada a criação de obras derivadas 2.5 Bulgária"
+            },
+            {
+                "@language": "pt-pt",
+                "@value": "Atribuição-Uso Não-Comercial-Proibição de realização de Obras Derivadas 2.5 Bulgaria"
+            },
+            {
+                "@language": "ro",
+                "@value": "Atribuire-Necomercial-FărăModificări 2.5 Bulgaria"
+            },
+            {
+                "@language": "ru",
+                "@value": "Attribution-NonCommercial-NoDerivs (Атрибуция — Некоммерческое использование — Без производных произведений) 2.5 Болгария"
+            },
+            {
+                "@language": "si-lk",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 Bulgaria"
+            },
+            {
+                "@language": "sl",
+                "@value": "Priznanje avtorstva-Nekomercialno-Brez predelav 2.5 Bolgarija"
+            },
+            {
+                "@language": "sq",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 Bullgari"
+            },
+            {
+                "@language": "sr",
+                "@value": "Autorstvo-Nekomercijalno-Bez prerada 2.5 Bugarska"
+            },
+            {
+                "@language": "sr",
+                "@value": "Ауторство-Некомерцијално-Без прерада 2.5 Бугарска"
+            },
+            {
+                "@language": "sr-latn",
+                "@value": "Autorstvo-Nekomercijalno-Bez prerada 2.5 Bugarska"
+            },
+            {
+                "@language": "st",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 Bulgaria"
+            },
+            {
+                "@language": "sv",
+                "@value": "Erkännande-Ickekommersiell-IngaBearbetningar 2.5 Bulgarien"
+            },
+            {
+                "@language": "ta",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 Bulgaria"
+            },
+            {
+                "@language": "te",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 బల్గేరియా"
+            },
+            {
+                "@language": "th",
+                "@value": "แสดงที่มา-ไม่ใช้เพื่อการค้า-ไม่ดัดแปลง 2.5 บัลแกเรีย"
+            },
+            {
+                "@language": "tr",
+                "@value": "Attribution-Gayriticari-NoDerivs 2.5 Bulgaristan"
+            },
+            {
+                "@language": "uk",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 Болгарія"
+            },
+            {
+                "@language": "ur",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 Bulgaria"
+            },
+            {
+                "@language": "vi",
+                "@value": "Ghi nhận công của tác giả - Phi thương mại - Không phái sinh  2.5 Nước Bungari"
+            },
+            {
+                "@language": "zh",
+                "@value": "署名-非商业性使用-禁止演绎 2.5 保加利亚"
+            },
+            {
+                "@language": "zh-hk",
+                "@value": "姓名標示-非商業性-禁止改作 2.5 保加利亞"
+            },
+            {
+                "@language": "zh-tw",
+                "@value": "姓名標示-非商業性-禁止改作 2.5 保加利亞"
+            },
+            {
+                "@language": "zu",
+                "@value": "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano-Ungasuseli lutho kulokhu 2.5 iBulgaria"
+            },
+            {
+                "@language": "zxx",
+                "@value": "${Attribution-NonCommercial-NoDerivs} 2.5 ${Bulgaria}"
+            }
+        ],
+        "owl:sameAs": "https://licensedb.org/id/CC-BY-NC-ND-2.5-bg",
+        "foaf:logo": [
+            "http://i.creativecommons.org/l/by-nc-nd/2.5/bg/80x15.png",
+            "http://i.creativecommons.org/l/by-nc-nd/2.5/bg/88x31.png"
+        ]
+    },
+    "foaf:logo": [
+        "http://i.creativecommons.org/l/by-nc-nd/2.5/bg/80x15.png",
+        "http://i.creativecommons.org/l/by-nc-nd/2.5/bg/88x31.png"
+    ],
+    "li:id": "CC-BY-NC-ND-2.5-bg",
+    "li:name": "CC BY-NC-ND 2.5 BG"
+}

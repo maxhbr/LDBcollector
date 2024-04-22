@@ -1,0 +1,243 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/elements/1.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://creativecommons.org/licenses/by/2.5/ca/> a cc:License ;
+    cc:jurisdiction <http://creativecommons.org/international/ca/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by/2.5/ca/legalcode.en>,
+        <http://creativecommons.org/licenses/by/2.5/ca/legalcode.fr> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.5" ;
+    dc:identifier "by" ;
+    dc:source <http://creativecommons.org/licenses/by/2.5/> ;
+    dc:title "Erkenning 2.5 Kanada"@af,
+        "نسب المصنف  2.5 كندا"@ar,
+        "Attribution 2.5 Canada"@as,
+        "Attribution 2.5 Canada"@ast,
+        "Attribution 2.5 Canada"@ast-es,
+        "Attribution 2.5 Canada"@az,
+        "Атрыбуцыя 2.5 Канада"@be,
+        "Признание 2.5 Канада"@bg,
+        "Attribution 2.5 Canada"@bn,
+        "Reconeixement 2.5 Canadà"@ca,
+        "Uveďte autora 2.5 Kanada"@cs,
+        "Navngivelse 2.5 Canada"@da,
+        "Namensnennung 2.5 Kanada"@de,
+        "Namensnennung 2.5 Kanada"@de-at,
+        "Namensnennung 2.5 Kanada"@de-ch,
+        "Αναφορά Δημιουργού 2.5 Καναδάς"@el,
+        "Attribution 2.5 Canada"@en,
+        "Attribution 2.5 Canada"@en-ca,
+        "Attribution 2.5 Canada"@en-gb,
+        "Attribution 2.5 Canada"@en-hk,
+        "Attribution 2.5 Canada"@en-sg,
+        "Attribution 2.5 Canada"@en-us,
+        "Atribuite 2.5 Kanado"@eo,
+        "Atribución 2.5 Canadá"@es,
+        "Atribución 2.5 Canadá"@es-ar,
+        "Atribución 2.5 Canadá"@es-cl,
+        "Reconocimiento 2.5 Canadá"@es-co,
+        "Reconocimiento 2.5 Canadá"@es-ec,
+        "Reconocimiento 2.5 Canadá"@es-es,
+        "Reconocimiento 2.5 Canadá"@es-gt,
+        "Atribución 2.5 Canadá"@es-mx,
+        "Reconocimiento 2.5 Canadá"@es-pe,
+        "Reconocimiento 2.5 Canadá"@es-pr,
+        "Autorile viitamine 2.5 Kanada"@et,
+        "Aitortu 2.5 Kanada"@eu,
+        "Attribution 2.5 کانادا"@fa,
+        "Nimeä 2.5 Kanada"@fi,
+        "Attribution 2.5 Canada"@fr,
+        "Paternité 2.5 Canada"@fr-ca,
+        "Paternité 2.5 Canada"@fr-ch,
+        "Paternité 2.5 Canada"@fr-lu,
+        "Attribution 2.5 Canada"@ga,
+        "Recoñecemento 2.5 Canadá"@gl,
+        "ייחוס 2.5 קנדה"@he,
+        "Attribution 2.5 Canada"@hi,
+        "Imenovanje 2.5 Kanada"@hr,
+        "Nevezd meg! 2.5 Kanada"@hu,
+        "Հղում 2.5 Կանադա"@hy,
+        "Atribusi 2.5 Kanada"@id,
+        "Attribution 2.5 Canada"@is,
+        "Attribuzione 2.5 Canada"@it,
+        "Attribuzione 2.5 Canada"@it-ch,
+        "表示 2.5 カナダ"@ja,
+        "ავტორობის მითითებით  2.5 კანადა"@ka,
+        "Атауын сақтау 2.5 Canada"@kk,
+        "저작자표시(Attribution) 2.5 캐나다"@ko,
+        "Priskyrimas 2.5 Kanada"@lt,
+        "Atsaucoties 2.5 Kanāda"@lv,
+        "Наведи извор 2.5 Канада"@mk,
+        "കടപ്പാട് 2.5 കാനഡ"@ml,
+        "Attribution 2.5 Canada"@mn,
+        "Pengiktirafan 2.5 Kanada"@ms,
+        "Naamsvermelding 2.5 Canada"@nl,
+        "Navngivelse 2.5 Canada"@no,
+        "Tsebagatšo 2.5 Khanada"@nso,
+        "Attribution 2.5 Canada"@oci-es,
+        "Uznanie autorstwa 2.5 Kanada"@pl,
+        "Atribuição  2.5 Canadá"@pt,
+        "Atribuição 2.5 Canada"@pt-br,
+        "Atribuição 2.5 Canadá"@pt-pt,
+        "Atribuire 2.5 Canada"@ro,
+        "Attribution (Атрибуция) 2.5 Канада"@ru,
+        "Attribution 2.5 Canada"@si-lk,
+        "Priznanje avtorstva 2.5 Kanada"@sl,
+        "Attribution 2.5 Kanada"@sq,
+        "Autorstvo 2.5 Kanada"@sr,
+        "Ауторство 2.5 Канада"@sr,
+        "Autorstvo 2.5 Kanada"@sr-latn,
+        "Attribution 2.5 Canada"@st,
+        "Erkännande 2.5 Kanada"@sv,
+        "Attribution 2.5 Canada"@ta,
+        "ఆపాదింపు 2.5 కెనడా"@te,
+        "แสดงที่มา 2.5 แคนาดา"@th,
+        "Attribution 2.5 Kanada"@tr,
+        "Attribution 2.5 Canada"@uk,
+        "Attribution 2.5 Canada"@ur,
+        "Ghi nhận công của tác giả 2.5 Canada"@vi,
+        "署名 2.5 加拿大"@zh,
+        "姓名標示 2.5 加拿大"@zh-hk,
+        "姓名標示 2.5 加拿大"@zh-tw,
+        "Qaphela Umnikazi 2.5 Ecanada"@zu,
+        "${Attribution} 2.5 ${Canada}"@zxx ;
+    owl:sameAs <https://licensedb.org/id/CC-BY-2.5-ca> ;
+    foaf:logo <http://i.creativecommons.org/l/by/2.5/ca/80x15.png>,
+        <http://i.creativecommons.org/l/by/2.5/ca/88x31.png> .
+
+<https://licensedb.org/id/CC-BY-2.5-ca> a cc:License,
+        li:License ;
+    cc:jurisdiction <http://creativecommons.org/international/ca/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by/2.5/ca/legalcode.en>,
+        <http://creativecommons.org/licenses/by/2.5/ca/legalcode.fr> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.5" ;
+    dc:identifier "by" ;
+    dc:replaces <https://licensedb.org/id/CC-BY-2.0-ca> ;
+    dc:source <http://creativecommons.org/licenses/by/2.5/> ;
+    dc:title "Erkenning 2.5 Kanada"@af,
+        "نسب المصنف  2.5 كندا"@ar,
+        "Attribution 2.5 Canada"@as,
+        "Attribution 2.5 Canada"@ast,
+        "Attribution 2.5 Canada"@ast-es,
+        "Attribution 2.5 Canada"@az,
+        "Атрыбуцыя 2.5 Канада"@be,
+        "Признание 2.5 Канада"@bg,
+        "Attribution 2.5 Canada"@bn,
+        "Reconeixement 2.5 Canadà"@ca,
+        "Uveďte autora 2.5 Kanada"@cs,
+        "Navngivelse 2.5 Canada"@da,
+        "Namensnennung 2.5 Kanada"@de,
+        "Namensnennung 2.5 Kanada"@de-at,
+        "Namensnennung 2.5 Kanada"@de-ch,
+        "Αναφορά Δημιουργού 2.5 Καναδάς"@el,
+        "Attribution 2.5 Canada"@en,
+        "Attribution 2.5 Canada"@en-ca,
+        "Attribution 2.5 Canada"@en-gb,
+        "Attribution 2.5 Canada"@en-hk,
+        "Attribution 2.5 Canada"@en-sg,
+        "Attribution 2.5 Canada"@en-us,
+        "Atribuite 2.5 Kanado"@eo,
+        "Atribución 2.5 Canadá"@es,
+        "Atribución 2.5 Canadá"@es-ar,
+        "Atribución 2.5 Canadá"@es-cl,
+        "Reconocimiento 2.5 Canadá"@es-co,
+        "Reconocimiento 2.5 Canadá"@es-ec,
+        "Reconocimiento 2.5 Canadá"@es-es,
+        "Reconocimiento 2.5 Canadá"@es-gt,
+        "Atribución 2.5 Canadá"@es-mx,
+        "Reconocimiento 2.5 Canadá"@es-pe,
+        "Reconocimiento 2.5 Canadá"@es-pr,
+        "Autorile viitamine 2.5 Kanada"@et,
+        "Aitortu 2.5 Kanada"@eu,
+        "Attribution 2.5 کانادا"@fa,
+        "Nimeä 2.5 Kanada"@fi,
+        "Attribution 2.5 Canada"@fr,
+        "Paternité 2.5 Canada"@fr-ca,
+        "Paternité 2.5 Canada"@fr-ch,
+        "Paternité 2.5 Canada"@fr-lu,
+        "Attribution 2.5 Canada"@ga,
+        "Recoñecemento 2.5 Canadá"@gl,
+        "ייחוס 2.5 קנדה"@he,
+        "Attribution 2.5 Canada"@hi,
+        "Imenovanje 2.5 Kanada"@hr,
+        "Nevezd meg! 2.5 Kanada"@hu,
+        "Հղում 2.5 Կանադա"@hy,
+        "Atribusi 2.5 Kanada"@id,
+        "Attribution 2.5 Canada"@is,
+        "Attribuzione 2.5 Canada"@it,
+        "Attribuzione 2.5 Canada"@it-ch,
+        "表示 2.5 カナダ"@ja,
+        "ავტორობის მითითებით  2.5 კანადა"@ka,
+        "Атауын сақтау 2.5 Canada"@kk,
+        "저작자표시(Attribution) 2.5 캐나다"@ko,
+        "Priskyrimas 2.5 Kanada"@lt,
+        "Atsaucoties 2.5 Kanāda"@lv,
+        "Наведи извор 2.5 Канада"@mk,
+        "കടപ്പാട് 2.5 കാനഡ"@ml,
+        "Attribution 2.5 Canada"@mn,
+        "Pengiktirafan 2.5 Kanada"@ms,
+        "Naamsvermelding 2.5 Canada"@nl,
+        "Navngivelse 2.5 Canada"@no,
+        "Tsebagatšo 2.5 Khanada"@nso,
+        "Attribution 2.5 Canada"@oci-es,
+        "Uznanie autorstwa 2.5 Kanada"@pl,
+        "Atribuição  2.5 Canadá"@pt,
+        "Atribuição 2.5 Canada"@pt-br,
+        "Atribuição 2.5 Canadá"@pt-pt,
+        "Atribuire 2.5 Canada"@ro,
+        "Attribution (Атрибуция) 2.5 Канада"@ru,
+        "Attribution 2.5 Canada"@si-lk,
+        "Priznanje avtorstva 2.5 Kanada"@sl,
+        "Attribution 2.5 Kanada"@sq,
+        "Autorstvo 2.5 Kanada"@sr,
+        "Ауторство 2.5 Канада"@sr,
+        "Autorstvo 2.5 Kanada"@sr-latn,
+        "Attribution 2.5 Canada"@st,
+        "Erkännande 2.5 Kanada"@sv,
+        "Attribution 2.5 Canada"@ta,
+        "ఆపాదింపు 2.5 కెనడా"@te,
+        "แสดงที่มา 2.5 แคนาดา"@th,
+        "Attribution 2.5 Kanada"@tr,
+        "Attribution 2.5 Canada"@uk,
+        "Attribution 2.5 Canada"@ur,
+        "Ghi nhận công của tác giả 2.5 Canada"@vi,
+        "署名 2.5 加拿大"@zh,
+        "姓名標示 2.5 加拿大"@zh-hk,
+        "姓名標示 2.5 加拿大"@zh-tw,
+        "Qaphela Umnikazi 2.5 Ecanada"@zu,
+        "${Attribution} 2.5 ${Canada}"@zxx ;
+    owl:sameAs <http://creativecommons.org/licenses/by/2.5/ca/> ;
+    foaf:logo <http://i.creativecommons.org/l/by/2.5/ca/80x15.png>,
+        <http://i.creativecommons.org/l/by/2.5/ca/88x31.png> ;
+    li:id "CC-BY-2.5-ca" ;
+    li:libre <http://creativecommons.org/> ;
+    li:name "CC BY 2.5 CA" .
+
+<http://creativecommons.org/licenses/by/2.5/ca/legalcode.en> dc:language "en" .
+
+<http://creativecommons.org/licenses/by/2.5/ca/legalcode.fr> dc:language "fr" .
+

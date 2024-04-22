@@ -1,0 +1,12 @@
+#!/bin/sh
+
+if [ -z "$1" ]; then
+    echo "Usage: ./debug <id>"
+    echo ""
+    echo "    id     When a docker build fails, look for the ID of the last layer"
+    echo "           which built successfully and specify that here."
+    echo ""
+    exit 1
+fi
+
+docker run --rm -it "$1" bash -il

@@ -1,0 +1,859 @@
+{
+    "@context": {
+        "cc": "http://creativecommons.org/ns#",
+        "dc": "http://purl.org/dc/terms/",
+        "dc11": "http://purl.org/dc/elements/1.1/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "li": "https://licensedb.org/ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "cc:legalcode": {
+            "@type": "@id"
+        },
+        "cc:permits": {
+            "@type": "@id"
+        },
+        "cc:requires": {
+            "@type": "@id"
+        },
+        "cc:prohibits": {
+            "@type": "@id"
+        },
+        "cc:jurisdiction": {
+            "@type": "@id"
+        },
+        "cc:licenseClass": {
+            "@type": "@id"
+        },
+        "dc:creator": {
+            "@type": "@id"
+        },
+        "dc:source": {
+            "@type": "@id"
+        },
+        "dc:replaces": {
+            "@type": "@id"
+        },
+        "dc:isBasedOn": {
+            "@type": "@id"
+        },
+        "dc:isReplacedBy": {
+            "@type": "@id"
+        },
+        "foaf:logo": {
+            "@type": "@id"
+        },
+        "li:plaintext": {
+            "@type": "@id"
+        },
+        "li:libre": {
+            "@type": "@id"
+        },
+        "owl:sameAs": {
+            "@type": "@id"
+        }
+    },
+    "@id": "https://licensedb.org/id/CC-BY-2.0-kr",
+    "@type": [
+        "cc:License",
+        "li:License"
+    ],
+    "cc:jurisdiction": "http://creativecommons.org/international/kr/",
+    "cc:legalcode": "http://creativecommons.org/licenses/by/2.0/kr/legalcode",
+    "cc:licenseClass": "http://creativecommons.org/license/",
+    "cc:permits": [
+        "cc:DerivativeWorks",
+        "cc:Distribution",
+        "cc:Reproduction"
+    ],
+    "cc:requires": [
+        "cc:Attribution",
+        "cc:Notice"
+    ],
+    "dc:creator": "http://creativecommons.org",
+    "dc:hasVersion": "2.0",
+    "dc:identifier": "by",
+    "dc:source": "http://creativecommons.org/licenses/by/2.0/",
+    "dc:title": [
+        {
+            "@language": "af",
+            "@value": "Erkenning 2.0 South Korea"
+        },
+        {
+            "@language": "ar",
+            "@value": "نسب المصنف  2.0 South Korea"
+        },
+        {
+            "@language": "as",
+            "@value": "Attribution 2.0 South Korea"
+        },
+        {
+            "@language": "ast",
+            "@value": "Attribution 2.0 South Korea"
+        },
+        {
+            "@language": "ast-es",
+            "@value": "Attribution 2.0 Korea"
+        },
+        {
+            "@language": "az",
+            "@value": "Attribution 2.0 South Korea"
+        },
+        {
+            "@language": "be",
+            "@value": "Атрыбуцыя 2.0 South Korea"
+        },
+        {
+            "@language": "bg",
+            "@value": "Признание 2.0 South Korea"
+        },
+        {
+            "@language": "bn",
+            "@value": "Attribution 2.0 South Korea"
+        },
+        {
+            "@language": "ca",
+            "@value": "Reconeixement 2.0 Corea del Sud"
+        },
+        {
+            "@language": "cs",
+            "@value": "Uveďte autora 2.0 South Korea"
+        },
+        {
+            "@language": "da",
+            "@value": "Navngivelse 2.0 Sydkorea"
+        },
+        {
+            "@language": "de",
+            "@value": "Namensnennung 2.0 Süd-Korea"
+        },
+        {
+            "@language": "de-at",
+            "@value": "Namensnennung 2.0 country.kr"
+        },
+        {
+            "@language": "de-ch",
+            "@value": "Namensnennung 2.0 country.kr"
+        },
+        {
+            "@language": "el",
+            "@value": "Αναφορά Δημιουργού 2.0 South Korea"
+        },
+        {
+            "@language": "en",
+            "@value": "Attribution 2.0 South Korea"
+        },
+        {
+            "@language": "en-ca",
+            "@value": "Attribution 2.0 country.kr"
+        },
+        {
+            "@language": "en-gb",
+            "@value": "Attribution 2.0 South Korea"
+        },
+        {
+            "@language": "en-hk",
+            "@value": "Attribution 2.0 country.kr"
+        },
+        {
+            "@language": "en-sg",
+            "@value": "Attribution 2.0 country.kr"
+        },
+        {
+            "@language": "en-us",
+            "@value": "Attribution 2.0 South Korea"
+        },
+        {
+            "@language": "eo",
+            "@value": "Atribuite 2.0 Sud-Koreujo"
+        },
+        {
+            "@language": "es",
+            "@value": "Atribución 2.0 South Korea"
+        },
+        {
+            "@language": "es-ar",
+            "@value": "Atribución 2.0 Corea del Sur"
+        },
+        {
+            "@language": "es-cl",
+            "@value": "Atribución 2.0 Corea"
+        },
+        {
+            "@language": "es-co",
+            "@value": "Reconocimiento 2.0 Corea"
+        },
+        {
+            "@language": "es-ec",
+            "@value": "Reconocimiento 2.0 Corea"
+        },
+        {
+            "@language": "es-es",
+            "@value": "Reconocimiento 2.0 South Korea"
+        },
+        {
+            "@language": "es-gt",
+            "@value": "Reconocimiento 2.0 Corea"
+        },
+        {
+            "@language": "es-mx",
+            "@value": "Atribución 2.0 Corea"
+        },
+        {
+            "@language": "es-pe",
+            "@value": "Reconocimiento 2.0 country.kr"
+        },
+        {
+            "@language": "es-pr",
+            "@value": "Reconocimiento 2.0 Corea"
+        },
+        {
+            "@language": "et",
+            "@value": "Autorile viitamine 2.0 South Korea"
+        },
+        {
+            "@language": "eu",
+            "@value": "Aitortu 2.0 South Korea"
+        },
+        {
+            "@language": "fa",
+            "@value": "Attribution 2.0 South Korea"
+        },
+        {
+            "@language": "fi",
+            "@value": "Nimeä 2.0 South Korea"
+        },
+        {
+            "@language": "fr",
+            "@value": "Attribution 2.0 Corée du Sud"
+        },
+        {
+            "@language": "fr-ca",
+            "@value": "Paternité 2.0 South Korea"
+        },
+        {
+            "@language": "fr-ch",
+            "@value": "Paternité 2.0 country.kr"
+        },
+        {
+            "@language": "fr-lu",
+            "@value": "Paternité 2.0 country.kr"
+        },
+        {
+            "@language": "ga",
+            "@value": "Attribution 2.0 South Korea"
+        },
+        {
+            "@language": "gl",
+            "@value": "Recoñecemento 2.0 South Korea"
+        },
+        {
+            "@language": "he",
+            "@value": "ייחוס 2.0 South Korea"
+        },
+        {
+            "@language": "hi",
+            "@value": "Attribution 2.0 South Korea"
+        },
+        {
+            "@language": "hr",
+            "@value": "Imenovanje 2.0 South Korea"
+        },
+        {
+            "@language": "hu",
+            "@value": "Nevezd meg! 2.0 South Korea"
+        },
+        {
+            "@language": "hy",
+            "@value": "Հղում 2.0 South Korea"
+        },
+        {
+            "@language": "id",
+            "@value": "Atribusi 2.0 South Korea"
+        },
+        {
+            "@language": "is",
+            "@value": "Attribution 2.0 South Korea"
+        },
+        {
+            "@language": "it",
+            "@value": "Attribuzione 2.0 Korea Del Sud"
+        },
+        {
+            "@language": "it-ch",
+            "@value": "Attribuzione 2.0 country.kr"
+        },
+        {
+            "@language": "ja",
+            "@value": "表示 2.0 大韓民国"
+        },
+        {
+            "@language": "ka",
+            "@value": "ავტორობის მითითებით  2.0 South Korea"
+        },
+        {
+            "@language": "kk",
+            "@value": "Атауын сақтау 2.0 South Korea"
+        },
+        {
+            "@language": "ko",
+            "@value": "저작자표시(Attribution) 2.0 대한민국"
+        },
+        {
+            "@language": "lt",
+            "@value": "Priskyrimas 2.0 South Korea"
+        },
+        {
+            "@language": "lv",
+            "@value": "Atsaucoties 2.0 South Korea"
+        },
+        {
+            "@language": "mk",
+            "@value": "Наведи извор 2.0 Јужна Кореја"
+        },
+        {
+            "@language": "ml",
+            "@value": "കടപ്പാട് 2.0 South Korea"
+        },
+        {
+            "@language": "mn",
+            "@value": "Attribution 2.0 South Korea"
+        },
+        {
+            "@language": "ms",
+            "@value": "Pengiktirafan 2.0 South Korea"
+        },
+        {
+            "@language": "nl",
+            "@value": "Naamsvermelding 2.0 Zuid Korea"
+        },
+        {
+            "@language": "no",
+            "@value": "Navngivelse 2.0 Sør-Korea"
+        },
+        {
+            "@language": "nso",
+            "@value": "Tsebagatšo 2.0 South Korea"
+        },
+        {
+            "@language": "oci-es",
+            "@value": "Attribution 2.0 South Korea"
+        },
+        {
+            "@language": "pl",
+            "@value": "Uznanie autorstwa 2.0 Korea Południowa"
+        },
+        {
+            "@language": "pt",
+            "@value": "Atribuição  2.0 Coreia do Sul"
+        },
+        {
+            "@language": "pt-br",
+            "@value": "Atribuição 2.0 South Korea"
+        },
+        {
+            "@language": "pt-pt",
+            "@value": "Atribuição 2.0 country.kr"
+        },
+        {
+            "@language": "ro",
+            "@value": "Atribuire 2.0 South Korea"
+        },
+        {
+            "@language": "ru",
+            "@value": "Attribution (Атрибуция) 2.0 Южная Корея"
+        },
+        {
+            "@language": "si-lk",
+            "@value": "Attribution 2.0 South Korea"
+        },
+        {
+            "@language": "sl",
+            "@value": "Priznanje avtorstva 2.0 South Korea"
+        },
+        {
+            "@language": "sq",
+            "@value": "Attribution 2.0 South Korea"
+        },
+        {
+            "@language": "sr",
+            "@value": "Autorstvo 2.0 Koreja"
+        },
+        {
+            "@language": "sr",
+            "@value": "Ауторство 2.0 South Korea"
+        },
+        {
+            "@language": "sr-latn",
+            "@value": "Autorstvo 2.0 South Korea"
+        },
+        {
+            "@language": "st",
+            "@value": "Attribution 2.0 Korea"
+        },
+        {
+            "@language": "sv",
+            "@value": "Erkännande 2.0 South Korea"
+        },
+        {
+            "@language": "ta",
+            "@value": "Attribution 2.0 South Korea"
+        },
+        {
+            "@language": "te",
+            "@value": "ఆపాదింపు 2.0 South Korea"
+        },
+        {
+            "@language": "th",
+            "@value": "แสดงที่มา 2.0 South Korea"
+        },
+        {
+            "@language": "tr",
+            "@value": "Attribution 2.0 Güney Kore"
+        },
+        {
+            "@language": "uk",
+            "@value": "Attribution 2.0 South Korea"
+        },
+        {
+            "@language": "ur",
+            "@value": "Attribution 2.0 South Korea"
+        },
+        {
+            "@language": "vi",
+            "@value": "Ghi nhận công của tác giả 2.0 South Korea"
+        },
+        {
+            "@language": "zh",
+            "@value": "署名 2.0 South Korea"
+        },
+        {
+            "@language": "zh-hk",
+            "@value": "姓名標示 2.0 South Korea"
+        },
+        {
+            "@language": "zh-tw",
+            "@value": "姓名標示 2.0 South Korea"
+        },
+        {
+            "@language": "zh-tw",
+            "@value": "姓名標示 2.0 南韓"
+        },
+        {
+            "@language": "zu",
+            "@value": "Qaphela Umnikazi 2.0 South Korea"
+        },
+        {
+            "@language": "zxx",
+            "@value": "${Attribution} 2.0 ${Korea}"
+        }
+    ],
+    "owl:sameAs": {
+        "@id": "http://creativecommons.org/licenses/by/2.0/kr/",
+        "@type": "cc:License",
+        "cc:jurisdiction": "http://creativecommons.org/international/kr/",
+        "cc:legalcode": "http://creativecommons.org/licenses/by/2.0/kr/legalcode",
+        "cc:licenseClass": "http://creativecommons.org/license/",
+        "cc:permits": [
+            "cc:DerivativeWorks",
+            "cc:Distribution",
+            "cc:Reproduction"
+        ],
+        "cc:requires": [
+            "cc:Attribution",
+            "cc:Notice"
+        ],
+        "dc:creator": "http://creativecommons.org",
+        "dc:hasVersion": "2.0",
+        "dc:identifier": "by",
+        "dc:source": "http://creativecommons.org/licenses/by/2.0/",
+        "dc:title": [
+            {
+                "@language": "af",
+                "@value": "Erkenning 2.0 South Korea"
+            },
+            {
+                "@language": "ar",
+                "@value": "نسب المصنف  2.0 South Korea"
+            },
+            {
+                "@language": "as",
+                "@value": "Attribution 2.0 South Korea"
+            },
+            {
+                "@language": "ast",
+                "@value": "Attribution 2.0 South Korea"
+            },
+            {
+                "@language": "ast-es",
+                "@value": "Attribution 2.0 Korea"
+            },
+            {
+                "@language": "az",
+                "@value": "Attribution 2.0 South Korea"
+            },
+            {
+                "@language": "be",
+                "@value": "Атрыбуцыя 2.0 South Korea"
+            },
+            {
+                "@language": "bg",
+                "@value": "Признание 2.0 South Korea"
+            },
+            {
+                "@language": "bn",
+                "@value": "Attribution 2.0 South Korea"
+            },
+            {
+                "@language": "ca",
+                "@value": "Reconeixement 2.0 Corea del Sud"
+            },
+            {
+                "@language": "cs",
+                "@value": "Uveďte autora 2.0 South Korea"
+            },
+            {
+                "@language": "da",
+                "@value": "Navngivelse 2.0 Sydkorea"
+            },
+            {
+                "@language": "de",
+                "@value": "Namensnennung 2.0 Süd-Korea"
+            },
+            {
+                "@language": "de-at",
+                "@value": "Namensnennung 2.0 country.kr"
+            },
+            {
+                "@language": "de-ch",
+                "@value": "Namensnennung 2.0 country.kr"
+            },
+            {
+                "@language": "el",
+                "@value": "Αναφορά Δημιουργού 2.0 South Korea"
+            },
+            {
+                "@language": "en",
+                "@value": "Attribution 2.0 South Korea"
+            },
+            {
+                "@language": "en-ca",
+                "@value": "Attribution 2.0 country.kr"
+            },
+            {
+                "@language": "en-gb",
+                "@value": "Attribution 2.0 South Korea"
+            },
+            {
+                "@language": "en-hk",
+                "@value": "Attribution 2.0 country.kr"
+            },
+            {
+                "@language": "en-sg",
+                "@value": "Attribution 2.0 country.kr"
+            },
+            {
+                "@language": "en-us",
+                "@value": "Attribution 2.0 South Korea"
+            },
+            {
+                "@language": "eo",
+                "@value": "Atribuite 2.0 Sud-Koreujo"
+            },
+            {
+                "@language": "es",
+                "@value": "Atribución 2.0 South Korea"
+            },
+            {
+                "@language": "es-ar",
+                "@value": "Atribución 2.0 Corea del Sur"
+            },
+            {
+                "@language": "es-cl",
+                "@value": "Atribución 2.0 Corea"
+            },
+            {
+                "@language": "es-co",
+                "@value": "Reconocimiento 2.0 Corea"
+            },
+            {
+                "@language": "es-ec",
+                "@value": "Reconocimiento 2.0 Corea"
+            },
+            {
+                "@language": "es-es",
+                "@value": "Reconocimiento 2.0 South Korea"
+            },
+            {
+                "@language": "es-gt",
+                "@value": "Reconocimiento 2.0 Corea"
+            },
+            {
+                "@language": "es-mx",
+                "@value": "Atribución 2.0 Corea"
+            },
+            {
+                "@language": "es-pe",
+                "@value": "Reconocimiento 2.0 country.kr"
+            },
+            {
+                "@language": "es-pr",
+                "@value": "Reconocimiento 2.0 Corea"
+            },
+            {
+                "@language": "et",
+                "@value": "Autorile viitamine 2.0 South Korea"
+            },
+            {
+                "@language": "eu",
+                "@value": "Aitortu 2.0 South Korea"
+            },
+            {
+                "@language": "fa",
+                "@value": "Attribution 2.0 South Korea"
+            },
+            {
+                "@language": "fi",
+                "@value": "Nimeä 2.0 South Korea"
+            },
+            {
+                "@language": "fr",
+                "@value": "Attribution 2.0 Corée du Sud"
+            },
+            {
+                "@language": "fr-ca",
+                "@value": "Paternité 2.0 South Korea"
+            },
+            {
+                "@language": "fr-ch",
+                "@value": "Paternité 2.0 country.kr"
+            },
+            {
+                "@language": "fr-lu",
+                "@value": "Paternité 2.0 country.kr"
+            },
+            {
+                "@language": "ga",
+                "@value": "Attribution 2.0 South Korea"
+            },
+            {
+                "@language": "gl",
+                "@value": "Recoñecemento 2.0 South Korea"
+            },
+            {
+                "@language": "he",
+                "@value": "ייחוס 2.0 South Korea"
+            },
+            {
+                "@language": "hi",
+                "@value": "Attribution 2.0 South Korea"
+            },
+            {
+                "@language": "hr",
+                "@value": "Imenovanje 2.0 South Korea"
+            },
+            {
+                "@language": "hu",
+                "@value": "Nevezd meg! 2.0 South Korea"
+            },
+            {
+                "@language": "hy",
+                "@value": "Հղում 2.0 South Korea"
+            },
+            {
+                "@language": "id",
+                "@value": "Atribusi 2.0 South Korea"
+            },
+            {
+                "@language": "is",
+                "@value": "Attribution 2.0 South Korea"
+            },
+            {
+                "@language": "it",
+                "@value": "Attribuzione 2.0 Korea Del Sud"
+            },
+            {
+                "@language": "it-ch",
+                "@value": "Attribuzione 2.0 country.kr"
+            },
+            {
+                "@language": "ja",
+                "@value": "表示 2.0 大韓民国"
+            },
+            {
+                "@language": "ka",
+                "@value": "ავტორობის მითითებით  2.0 South Korea"
+            },
+            {
+                "@language": "kk",
+                "@value": "Атауын сақтау 2.0 South Korea"
+            },
+            {
+                "@language": "ko",
+                "@value": "저작자표시(Attribution) 2.0 대한민국"
+            },
+            {
+                "@language": "lt",
+                "@value": "Priskyrimas 2.0 South Korea"
+            },
+            {
+                "@language": "lv",
+                "@value": "Atsaucoties 2.0 South Korea"
+            },
+            {
+                "@language": "mk",
+                "@value": "Наведи извор 2.0 Јужна Кореја"
+            },
+            {
+                "@language": "ml",
+                "@value": "കടപ്പാട് 2.0 South Korea"
+            },
+            {
+                "@language": "mn",
+                "@value": "Attribution 2.0 South Korea"
+            },
+            {
+                "@language": "ms",
+                "@value": "Pengiktirafan 2.0 South Korea"
+            },
+            {
+                "@language": "nl",
+                "@value": "Naamsvermelding 2.0 Zuid Korea"
+            },
+            {
+                "@language": "no",
+                "@value": "Navngivelse 2.0 Sør-Korea"
+            },
+            {
+                "@language": "nso",
+                "@value": "Tsebagatšo 2.0 South Korea"
+            },
+            {
+                "@language": "oci-es",
+                "@value": "Attribution 2.0 South Korea"
+            },
+            {
+                "@language": "pl",
+                "@value": "Uznanie autorstwa 2.0 Korea Południowa"
+            },
+            {
+                "@language": "pt",
+                "@value": "Atribuição  2.0 Coreia do Sul"
+            },
+            {
+                "@language": "pt-br",
+                "@value": "Atribuição 2.0 South Korea"
+            },
+            {
+                "@language": "pt-pt",
+                "@value": "Atribuição 2.0 country.kr"
+            },
+            {
+                "@language": "ro",
+                "@value": "Atribuire 2.0 South Korea"
+            },
+            {
+                "@language": "ru",
+                "@value": "Attribution (Атрибуция) 2.0 Южная Корея"
+            },
+            {
+                "@language": "si-lk",
+                "@value": "Attribution 2.0 South Korea"
+            },
+            {
+                "@language": "sl",
+                "@value": "Priznanje avtorstva 2.0 South Korea"
+            },
+            {
+                "@language": "sq",
+                "@value": "Attribution 2.0 South Korea"
+            },
+            {
+                "@language": "sr",
+                "@value": "Autorstvo 2.0 Koreja"
+            },
+            {
+                "@language": "sr",
+                "@value": "Ауторство 2.0 South Korea"
+            },
+            {
+                "@language": "sr-latn",
+                "@value": "Autorstvo 2.0 South Korea"
+            },
+            {
+                "@language": "st",
+                "@value": "Attribution 2.0 Korea"
+            },
+            {
+                "@language": "sv",
+                "@value": "Erkännande 2.0 South Korea"
+            },
+            {
+                "@language": "ta",
+                "@value": "Attribution 2.0 South Korea"
+            },
+            {
+                "@language": "te",
+                "@value": "ఆపాదింపు 2.0 South Korea"
+            },
+            {
+                "@language": "th",
+                "@value": "แสดงที่มา 2.0 South Korea"
+            },
+            {
+                "@language": "tr",
+                "@value": "Attribution 2.0 Güney Kore"
+            },
+            {
+                "@language": "uk",
+                "@value": "Attribution 2.0 South Korea"
+            },
+            {
+                "@language": "ur",
+                "@value": "Attribution 2.0 South Korea"
+            },
+            {
+                "@language": "vi",
+                "@value": "Ghi nhận công của tác giả 2.0 South Korea"
+            },
+            {
+                "@language": "zh",
+                "@value": "署名 2.0 South Korea"
+            },
+            {
+                "@language": "zh-hk",
+                "@value": "姓名標示 2.0 South Korea"
+            },
+            {
+                "@language": "zh-tw",
+                "@value": "姓名標示 2.0 South Korea"
+            },
+            {
+                "@language": "zh-tw",
+                "@value": "姓名標示 2.0 南韓"
+            },
+            {
+                "@language": "zu",
+                "@value": "Qaphela Umnikazi 2.0 South Korea"
+            },
+            {
+                "@language": "zxx",
+                "@value": "${Attribution} 2.0 ${Korea}"
+            }
+        ],
+        "owl:sameAs": "https://licensedb.org/id/CC-BY-2.0-kr",
+        "foaf:logo": [
+            "http://i.creativecommons.org/l/by/2.0/kr/80x15.png",
+            "http://i.creativecommons.org/l/by/2.0/kr/88x31.png"
+        ]
+    },
+    "foaf:logo": [
+        "http://i.creativecommons.org/l/by/2.0/kr/80x15.png",
+        "http://i.creativecommons.org/l/by/2.0/kr/88x31.png"
+    ],
+    "li:id": "CC-BY-2.0-kr",
+    "li:libre": "http://creativecommons.org/",
+    "li:name": "CC BY 2.0 KR"
+}

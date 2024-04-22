@@ -1,0 +1,239 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/elements/1.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://creativecommons.org/licenses/by-nd/2.0/be/> a cc:License ;
+    cc:jurisdiction <http://creativecommons.org/international/be/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nd/2.0/be/legalcode.fr>,
+        <http://creativecommons.org/licenses/by-nd/2.0/be/legalcode.nl> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.0" ;
+    dc:identifier "by-nd" ;
+    dc:source <http://creativecommons.org/licenses/by-nd/2.0/> ;
+    dc:title "Erkenning-GeenAfleidings 2.0 België"@af,
+        "نسب- غير مشتق 2.0 بلجيكا"@ar,
+        "Attribution-NoDerivs 2.0 Belgium"@as,
+        "Attribution-NoDerivs 2.0 Belgium"@ast,
+        "Attribution-NoDerivs 2.0 Belgium"@ast-es,
+        "Attribution-NoDerivs 2.0 Belgium"@az,
+        "Attribution-NoDerivs 2.0 Бельгія"@be,
+        "Признание-Без производни 2.0 Белгия"@bg,
+        "Attribution-NoDerivs 2.0 Belgium"@bn,
+        "Reconeixement-SenseObraDerivada 2.0 Bèlgica"@ca,
+        "Uveďte autora-Nezasahujte do díla 2.0 Belgie"@cs,
+        "Navngivelse-IngenBearbejdelse 2.0 Belgien"@da,
+        "Namensnennung-Keine Bearbeitung 2.0 Belgien"@de,
+        "Namensnennung-KeineBearbeitung 2.0 Belgien"@de-at,
+        "Namensnennung-KeineBearbeitung 2.0 Belgien"@de-ch,
+        "Αναφορά Δημιουργού-Όχι Παράγωγα Έργα 2.0 Βέλγιο"@el,
+        "Attribution-NoDerivs 2.0 Belgium"@en,
+        "Attribution-NoDerivs 2.0 Belgium"@en-ca,
+        "Attribution-NoDerivs 2.0 Belgium"@en-gb,
+        "Attribution-NoDerivs 2.0 Belgium"@en-hk,
+        "Attribution-NoDerivs 2.0 Belgium"@en-sg,
+        "Attribution-NoDerivs 2.0 Belgium"@en-us,
+        "Atribuite-Nemodifite 2.0 Belgujo"@eo,
+        "Atribución-SinDerivadas 2.0 Bélgica"@es,
+        "Atribución-SinDerivadas 2.0 Bélgica"@es-ar,
+        "Atribución-SinDerivadas 2.0 Bélgica"@es-cl,
+        "Reconocimiento-SinObraDerivada 2.0 Bélgica"@es-co,
+        "Reconocimiento-SinObraDerivada 2.0 Bélgica"@es-ec,
+        "Reconocimiento-SinObraDerivada 2.0 Bélgica"@es-es,
+        "Reconocimiento-SinObraDerivada 2.0 Bélgica"@es-gt,
+        "Atribución-No Derivadas 2.0 Bélgica"@es-mx,
+        "Reconocimiento-SinObraDerivada 2.0 Bélgica"@es-pe,
+        "Reconocimiento-SinObraDerivada 2.0 Bélgica"@es-pr,
+        "Autorile viitamine + Tuletatud teoste keeld 2.0 Belgia"@et,
+        "Aitortu-LanEratorririkGabe 2.0 Belgika"@eu,
+        "Attribution-NoDerivs 2.0 بلژیک"@fa,
+        "Nimeä-Ei muutoksia 2.0 Belgia"@fi,
+        "Paternité - Pas de Modification 2.0 Belgique"@fr,
+        "Paternité - Pas de Modification 2.0 Belgique"@fr-ca,
+        "Paternité - Pas de Modification 2.0 Belgique"@fr-ch,
+        "Paternité - Pas de Modification 2.0 Belgique"@fr-lu,
+        "Attribution-NoDerivs 2.0 Belgium"@ga,
+        "Recoñecemento-SenObraDerivada 2.0 Bélxica"@gl,
+        "ייחוס-איסור יצירות נגזרות 2.0 בלגיה"@he,
+        "Attribution-NoDerivs 2.0 बेलजियम"@hi,
+        "Imenovanje-Bez prerada 2.0 Belgija"@hr,
+        "Nevezd meg! - Ne változtasd! 2.0 Belgium"@hu,
+        "Հղում - Օգտագործում առանց վերափոխումների 2.0 Բելգիա"@hy,
+        "Atribusi-TanpaTurunan 2.0 Belgia"@id,
+        "Attribution-NoDerivs 2.0 Belgía"@is,
+        "Attribuzione - Non opere derivate 2.0 Belgio"@it,
+        "Attribuzione - Non opere derivate 2.0 Belgio"@it-ch,
+        "表示 - 改変禁止 2.0 ベルギー"@ja,
+        "ავტორობის მითითებით გადამუშავების გარეშე 2.0 ბელგია"@ka,
+        "Туынды жасамау 2.0 Belgium"@kk,
+        "저작자표시-변경금지 2.0 벨기에"@ko,
+        "Attribution-NoDerivs 2.0 Belgija"@lt,
+        "Atsaucoties-Neatvasinot 2.0 Beļģija"@lv,
+        "НаведиИзвор-БезИзведениДела 2.0 Белгија"@mk,
+        "Attribution-NoDerivs 2.0 ബെൽജിയം"@ml,
+        "Attribution-NoDerivs 2.0 Бельги"@mn,
+        "Pengiktirafan-TiadaTerbitan 2.0 Belgium"@ms,
+        "Naamsvermelding-GeenAfgeleideWerken 2.0 België"@nl,
+        "Navngivelse-IngenBearbeidelse 2.0 Belgia"@no,
+        "Tsebagatšo - Tše sa Fetolwego 2.0 Belgium"@nso,
+        "Attribution-NoDerivs 2.0 Belgium"@oci-es,
+        "Uznanie autorstwa-Bez utworów zależnych 2.0 Belgia"@pl,
+        "Atribuição - SemDerivados 2.0 Bélgica"@pt,
+        "Atribuição-Vedada a criação de obras derivativas 2.0 Bélgica"@pt-br,
+        "Atribuição-Proibição de realização de Obras Derivadas 2.0 Bélgica"@pt-pt,
+        "Atribuire-FărăModificări 2.0 Belgia"@ro,
+        "Attribution-NoDerivs (Атрибуция — Без производных произведений) 2.0 Бельгия"@ru,
+        "Attribution-NoDerivs 2.0 Belgium"@si-lk,
+        "Priznanje avtorstva-Brez predelav 2.0 Belgija"@sl,
+        "Attribution-NoDerivs 2.0 Belgjikë"@sq,
+        "Autorstvo-Bez prerada 2.0 Belgija"@sr,
+        "Ауторство-Без прерада 2.0 Белгија"@sr,
+        "Autorstvo-Bez prerada 2.0 Belgija"@sr-latn,
+        "Attribution-NoDerivs 2.0 Belgium"@st,
+        "Erkännande-IngaBearbetningar 2.0 Belgien"@sv,
+        "Attribution-NoDerivs 2.0 பெல்ஜியம்"@ta,
+        "Attribution-NoDerivs 2.0 బెల్జియం"@te,
+        "แสดงที่มา-ไม่ดัดแปลง 2.0 เบลเยียม"@th,
+        "Alıntı-Türetilemez 2.0 Belçika"@tr,
+        "Attribution-NoDerivs 2.0 Бельгія"@uk,
+        "Attribution-NoDerivs 2.0 Belgium"@ur,
+        "Ghi nhận công của tác giả - Không phái sinh 2.0 Nước Bỉ"@vi,
+        "署名-禁止演绎 2.0 比利时"@zh,
+        "姓名標示-禁止改作 2.0 比利時"@zh-hk,
+        "姓名標示-禁止改作 2.0 比利時"@zh-tw,
+        "Qaphela Umnikazi-Ungasuseli lutho kulokhu 2.0 eBelgium"@zu,
+        "${Attribution-NoDerivs} 2.0 ${Belgium}"@zxx ;
+    owl:sameAs <https://licensedb.org/id/CC-BY-ND-2.0-be> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nd/2.0/be/80x15.png>,
+        <http://i.creativecommons.org/l/by-nd/2.0/be/88x31.png> .
+
+<https://licensedb.org/id/CC-BY-ND-2.0-be> a cc:License,
+        li:License ;
+    cc:jurisdiction <http://creativecommons.org/international/be/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nd/2.0/be/legalcode.fr>,
+        <http://creativecommons.org/licenses/by-nd/2.0/be/legalcode.nl> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.0" ;
+    dc:identifier "by-nd" ;
+    dc:source <http://creativecommons.org/licenses/by-nd/2.0/> ;
+    dc:title "Erkenning-GeenAfleidings 2.0 België"@af,
+        "نسب- غير مشتق 2.0 بلجيكا"@ar,
+        "Attribution-NoDerivs 2.0 Belgium"@as,
+        "Attribution-NoDerivs 2.0 Belgium"@ast,
+        "Attribution-NoDerivs 2.0 Belgium"@ast-es,
+        "Attribution-NoDerivs 2.0 Belgium"@az,
+        "Attribution-NoDerivs 2.0 Бельгія"@be,
+        "Признание-Без производни 2.0 Белгия"@bg,
+        "Attribution-NoDerivs 2.0 Belgium"@bn,
+        "Reconeixement-SenseObraDerivada 2.0 Bèlgica"@ca,
+        "Uveďte autora-Nezasahujte do díla 2.0 Belgie"@cs,
+        "Navngivelse-IngenBearbejdelse 2.0 Belgien"@da,
+        "Namensnennung-Keine Bearbeitung 2.0 Belgien"@de,
+        "Namensnennung-KeineBearbeitung 2.0 Belgien"@de-at,
+        "Namensnennung-KeineBearbeitung 2.0 Belgien"@de-ch,
+        "Αναφορά Δημιουργού-Όχι Παράγωγα Έργα 2.0 Βέλγιο"@el,
+        "Attribution-NoDerivs 2.0 Belgium"@en,
+        "Attribution-NoDerivs 2.0 Belgium"@en-ca,
+        "Attribution-NoDerivs 2.0 Belgium"@en-gb,
+        "Attribution-NoDerivs 2.0 Belgium"@en-hk,
+        "Attribution-NoDerivs 2.0 Belgium"@en-sg,
+        "Attribution-NoDerivs 2.0 Belgium"@en-us,
+        "Atribuite-Nemodifite 2.0 Belgujo"@eo,
+        "Atribución-SinDerivadas 2.0 Bélgica"@es,
+        "Atribución-SinDerivadas 2.0 Bélgica"@es-ar,
+        "Atribución-SinDerivadas 2.0 Bélgica"@es-cl,
+        "Reconocimiento-SinObraDerivada 2.0 Bélgica"@es-co,
+        "Reconocimiento-SinObraDerivada 2.0 Bélgica"@es-ec,
+        "Reconocimiento-SinObraDerivada 2.0 Bélgica"@es-es,
+        "Reconocimiento-SinObraDerivada 2.0 Bélgica"@es-gt,
+        "Atribución-No Derivadas 2.0 Bélgica"@es-mx,
+        "Reconocimiento-SinObraDerivada 2.0 Bélgica"@es-pe,
+        "Reconocimiento-SinObraDerivada 2.0 Bélgica"@es-pr,
+        "Autorile viitamine + Tuletatud teoste keeld 2.0 Belgia"@et,
+        "Aitortu-LanEratorririkGabe 2.0 Belgika"@eu,
+        "Attribution-NoDerivs 2.0 بلژیک"@fa,
+        "Nimeä-Ei muutoksia 2.0 Belgia"@fi,
+        "Paternité - Pas de Modification 2.0 Belgique"@fr,
+        "Paternité - Pas de Modification 2.0 Belgique"@fr-ca,
+        "Paternité - Pas de Modification 2.0 Belgique"@fr-ch,
+        "Paternité - Pas de Modification 2.0 Belgique"@fr-lu,
+        "Attribution-NoDerivs 2.0 Belgium"@ga,
+        "Recoñecemento-SenObraDerivada 2.0 Bélxica"@gl,
+        "ייחוס-איסור יצירות נגזרות 2.0 בלגיה"@he,
+        "Attribution-NoDerivs 2.0 बेलजियम"@hi,
+        "Imenovanje-Bez prerada 2.0 Belgija"@hr,
+        "Nevezd meg! - Ne változtasd! 2.0 Belgium"@hu,
+        "Հղում - Օգտագործում առանց վերափոխումների 2.0 Բելգիա"@hy,
+        "Atribusi-TanpaTurunan 2.0 Belgia"@id,
+        "Attribution-NoDerivs 2.0 Belgía"@is,
+        "Attribuzione - Non opere derivate 2.0 Belgio"@it,
+        "Attribuzione - Non opere derivate 2.0 Belgio"@it-ch,
+        "表示 - 改変禁止 2.0 ベルギー"@ja,
+        "ავტორობის მითითებით გადამუშავების გარეშე 2.0 ბელგია"@ka,
+        "Туынды жасамау 2.0 Belgium"@kk,
+        "저작자표시-변경금지 2.0 벨기에"@ko,
+        "Attribution-NoDerivs 2.0 Belgija"@lt,
+        "Atsaucoties-Neatvasinot 2.0 Beļģija"@lv,
+        "НаведиИзвор-БезИзведениДела 2.0 Белгија"@mk,
+        "Attribution-NoDerivs 2.0 ബെൽജിയം"@ml,
+        "Attribution-NoDerivs 2.0 Бельги"@mn,
+        "Pengiktirafan-TiadaTerbitan 2.0 Belgium"@ms,
+        "Naamsvermelding-GeenAfgeleideWerken 2.0 België"@nl,
+        "Navngivelse-IngenBearbeidelse 2.0 Belgia"@no,
+        "Tsebagatšo - Tše sa Fetolwego 2.0 Belgium"@nso,
+        "Attribution-NoDerivs 2.0 Belgium"@oci-es,
+        "Uznanie autorstwa-Bez utworów zależnych 2.0 Belgia"@pl,
+        "Atribuição - SemDerivados 2.0 Bélgica"@pt,
+        "Atribuição-Vedada a criação de obras derivativas 2.0 Bélgica"@pt-br,
+        "Atribuição-Proibição de realização de Obras Derivadas 2.0 Bélgica"@pt-pt,
+        "Atribuire-FărăModificări 2.0 Belgia"@ro,
+        "Attribution-NoDerivs (Атрибуция — Без производных произведений) 2.0 Бельгия"@ru,
+        "Attribution-NoDerivs 2.0 Belgium"@si-lk,
+        "Priznanje avtorstva-Brez predelav 2.0 Belgija"@sl,
+        "Attribution-NoDerivs 2.0 Belgjikë"@sq,
+        "Autorstvo-Bez prerada 2.0 Belgija"@sr,
+        "Ауторство-Без прерада 2.0 Белгија"@sr,
+        "Autorstvo-Bez prerada 2.0 Belgija"@sr-latn,
+        "Attribution-NoDerivs 2.0 Belgium"@st,
+        "Erkännande-IngaBearbetningar 2.0 Belgien"@sv,
+        "Attribution-NoDerivs 2.0 பெல்ஜியம்"@ta,
+        "Attribution-NoDerivs 2.0 బెల్జియం"@te,
+        "แสดงที่มา-ไม่ดัดแปลง 2.0 เบลเยียม"@th,
+        "Alıntı-Türetilemez 2.0 Belçika"@tr,
+        "Attribution-NoDerivs 2.0 Бельгія"@uk,
+        "Attribution-NoDerivs 2.0 Belgium"@ur,
+        "Ghi nhận công của tác giả - Không phái sinh 2.0 Nước Bỉ"@vi,
+        "署名-禁止演绎 2.0 比利时"@zh,
+        "姓名標示-禁止改作 2.0 比利時"@zh-hk,
+        "姓名標示-禁止改作 2.0 比利時"@zh-tw,
+        "Qaphela Umnikazi-Ungasuseli lutho kulokhu 2.0 eBelgium"@zu,
+        "${Attribution-NoDerivs} 2.0 ${Belgium}"@zxx ;
+    owl:sameAs <http://creativecommons.org/licenses/by-nd/2.0/be/> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nd/2.0/be/80x15.png>,
+        <http://i.creativecommons.org/l/by-nd/2.0/be/88x31.png> ;
+    li:id "CC-BY-ND-2.0-be" ;
+    li:name "CC BY-ND 2.0 BE" .
+
+<http://creativecommons.org/licenses/by-nd/2.0/be/legalcode.fr> dc:language "fr" .
+
+<http://creativecommons.org/licenses/by-nd/2.0/be/legalcode.nl> dc:language "nl" .
+

@@ -1,0 +1,115 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://licensedb.org/id/GPL-3> a cc:License,
+        li:License ;
+    cc:legalcode <http://gnu.org/licenses/gpl-3.0.html> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Copyleft,
+        cc:Notice,
+        cc:SourceCode ;
+    dc:creator <http://fsf.org/> ;
+    dc:hasVersion "3.0" ;
+    dc:identifier "GNU GPL" ;
+    dc:replaces <https://licensedb.org/id/GPL-2> ;
+    dc:title "GNU General Public License" ;
+    schema:sameAs <http://gnu.org/licenses/gpl-3.0.html>,
+        <http://spdx.org/licenses/GPL-3.0>,
+        <http://spdx.org/licenses/GPL-3.0+>,
+        <http://spdx.org/licenses/GPL-3.0-with-GCC-exception>,
+        <http://spdx.org/licenses/GPL-3.0-with-autoconf-exception> ;
+    spdx:licenseId "GPL-3.0",
+        "GPL-3.0+",
+        "GPL-3.0-with-GCC-exception",
+        "GPL-3.0-with-autoconf-exception" ;
+    owl:sameAs <magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&dn=gpl-3.0.txt> ;
+    foaf:logo <http://www.gnu.org/graphics/gplv3-127x51.png>,
+        <http://www.gnu.org/graphics/gplv3-88x31.png> ;
+    li:id "GPL-3" ;
+    li:libre <http://debian.org/>,
+        <http://freedomdefined.org/>,
+        <http://fsf.org/>,
+        <http://opensource.org/> ;
+    li:name "GNU GPLv3" ;
+    li:notice [ li:canonical false ;
+            li:orlater true ;
+            li:short true ;
+            li:text """Copyright (C) {{year}}  {{rightsholder}}
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+""" ],
+        [ li:canonical false ;
+            li:orlater false ;
+            li:short true ;
+            li:text """Copyright (C) {{year}}  {{rightsholder}}
+License GPLv3-only: GNU GPL version 3 <http://gnu.org/licenses/gpl-3.0.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+""" ],
+        [ li:canonical true ;
+            li:orlater true ;
+            li:short false ;
+            li:text """{{description}}
+Copyright (C) {{year}}  {{rightsholder}}
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+""" ],
+        [ li:canonical false ;
+            li:orlater false ;
+            li:short false ;
+            li:text """{{description}}
+Copyright (C) {{year}}  {{rightsholder}}
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License, version 3 as
+published by the Free Software Foundation.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+""" ] ;
+    li:plaintext <http://gnu.org/licenses/gpl-3.0.txt> .
+
+<http://gnu.org/licenses/gpl-3.0.html> a cc:License ;
+    cc:legalcode <http://gnu.org/licenses/gpl-3.0.html> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Copyleft,
+        cc:Notice,
+        cc:SourceCode ;
+    dc:creator <http://fsf.org/> ;
+    dc:hasVersion "3.0" ;
+    dc:identifier "GNU GPL" ;
+    dc:title "GNU General Public License" ;
+    foaf:logo <http://www.gnu.org/graphics/gplv3-127x51.png>,
+        <http://www.gnu.org/graphics/gplv3-88x31.png> .
+

@@ -1,0 +1,56 @@
+
+Database
+========
+
+The License Database consists of all the files included in
+www/id/license-database.tar.gz.  This archive is built from the files
+in data/.
+
+The License Database itself is contributed to the public domain using
+the CC0 1.0 Universal Public Domain Dedication:
+
+To the extent possible under law, the contributors of the License
+Database project waive all copyright and related or neighboring rights
+to The License Database. See the CC0.txt file included with the
+database for more information.
+
+
+Software
+========
+
+The Software consists of all the files in the project root and the
+files in bin/, etc/, and src/.
+
+Copyright 2012  Kuno Woudt
+
+All software related to the License Database project is licensed under
+the Apache License, Version 2.0. See the file Apache-2.0.txt for more
+information.
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+implied.  See the License for the specific language governing
+permissions and limitations under the License.
+
+
+Upstream
+========
+
+upstream/jquery contains jquery by John Resig & The Dojo Foundation.
+Please see upstream/jquery/copyright.txt for their license details.
+
+All the files in upstream/plaintext are plaintext versions of licenses
+intended for free software, open source or free culture projects,
+obtained directly from their publishers and included without
+modifications.  Similarly upstream/rdf contains metadata about
+licenses obtained directly from their publishers.
+
+Most of these licenses are not explicit about the terms which apply to
+the license text itself.  Our belief is that there is at least an
+implicit permission which allows distribution of verbatim copies of
+these licenses and their associated metadata.
+
+If however you are the copyright holder for any of this data and wish
+for it to be removed from this project, please contact
+kuno@frob.nl .

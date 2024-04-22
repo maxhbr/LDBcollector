@@ -1,0 +1,88 @@
+{
+    "@context": {
+        "cc": "http://creativecommons.org/ns#",
+        "dc": "http://purl.org/dc/terms/",
+        "dc11": "http://purl.org/dc/elements/1.1/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "li": "https://licensedb.org/ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "cc:legalcode": {
+            "@type": "@id"
+        },
+        "cc:permits": {
+            "@type": "@id"
+        },
+        "cc:requires": {
+            "@type": "@id"
+        },
+        "cc:prohibits": {
+            "@type": "@id"
+        },
+        "cc:jurisdiction": {
+            "@type": "@id"
+        },
+        "cc:licenseClass": {
+            "@type": "@id"
+        },
+        "dc:creator": {
+            "@type": "@id"
+        },
+        "dc:source": {
+            "@type": "@id"
+        },
+        "dc:replaces": {
+            "@type": "@id"
+        },
+        "dc:isBasedOn": {
+            "@type": "@id"
+        },
+        "dc:isReplacedBy": {
+            "@type": "@id"
+        },
+        "foaf:logo": {
+            "@type": "@id"
+        },
+        "li:plaintext": {
+            "@type": "@id"
+        },
+        "li:libre": {
+            "@type": "@id"
+        },
+        "owl:sameAs": {
+            "@type": "@id"
+        }
+    },
+    "@id": "https://licensedb.org/id/MirOS",
+    "@type": [
+        "cc:License",
+        "li:License"
+    ],
+    "cc:legalcode": "http://mirbsd.de/MirOS-Licence",
+    "dc:title": "MirOS",
+    "schema:sameAs": [
+        {
+            "@id": "http://mirbsd.de/MirOS-Licence"
+        },
+        {
+            "@id": "http://spdx.org/licenses/MirOS"
+        }
+    ],
+    "spdx:licenseId": "MirOS",
+    "li:id": "MirOS",
+    "li:libre": [
+        "http://debian.org/",
+        "http://fsf.org/",
+        "http://opendefinition.org/",
+        "http://opensource.org/"
+    ],
+    "li:name": "MirOS",
+    "li:notice": {
+        "li:canonical": true,
+        "li:orlater": false,
+        "li:short": false,
+        "li:text": "/*\n* Copyright (C) {{year}}\n* {{rightsholder}}\n*\n* Provided that these terms and disclaimer and all copyright notices\n* are retained or reproduced in an accompanying document, permission\n* is granted to deal in this work without restriction, including un‐\n* limited rights to use, publicly perform, distribute, sell, modify,\n* merge, give away, or sublicence.\n*\n* This work is provided \"AS IS\" and WITHOUT WARRANTY of any kind, to\n* the utmost extent permitted by applicable law, neither express nor\n* implied; without malicious intent or gross negligence. In no event\n* may a licensor, author or contributor be held liable for indirect,\n* direct, other damage, loss, or other issues arising in any way out\n* of dealing in the work, even if advised of the possibility of such\n* damage or existence of a defect, except proven that it results out\n* of said person's immediate fault when using the work as intended.\n*/\n"
+    }
+}

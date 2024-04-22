@@ -1,0 +1,848 @@
+{
+    "@context": {
+        "cc": "http://creativecommons.org/ns#",
+        "dc": "http://purl.org/dc/terms/",
+        "dc11": "http://purl.org/dc/elements/1.1/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "li": "https://licensedb.org/ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "cc:legalcode": {
+            "@type": "@id"
+        },
+        "cc:permits": {
+            "@type": "@id"
+        },
+        "cc:requires": {
+            "@type": "@id"
+        },
+        "cc:prohibits": {
+            "@type": "@id"
+        },
+        "cc:jurisdiction": {
+            "@type": "@id"
+        },
+        "cc:licenseClass": {
+            "@type": "@id"
+        },
+        "dc:creator": {
+            "@type": "@id"
+        },
+        "dc:source": {
+            "@type": "@id"
+        },
+        "dc:replaces": {
+            "@type": "@id"
+        },
+        "dc:isBasedOn": {
+            "@type": "@id"
+        },
+        "dc:isReplacedBy": {
+            "@type": "@id"
+        },
+        "foaf:logo": {
+            "@type": "@id"
+        },
+        "li:plaintext": {
+            "@type": "@id"
+        },
+        "li:libre": {
+            "@type": "@id"
+        },
+        "owl:sameAs": {
+            "@type": "@id"
+        }
+    },
+    "@id": "https://licensedb.org/id/CC-BY-ND-2.5-cn",
+    "@type": [
+        "cc:License",
+        "li:License"
+    ],
+    "cc:jurisdiction": "http://creativecommons.org/international/cn/",
+    "cc:legalcode": "http://creativecommons.org/licenses/by-nd/2.5/cn/legalcode",
+    "cc:licenseClass": "http://creativecommons.org/license/",
+    "cc:permits": [
+        "cc:Distribution",
+        "cc:Reproduction"
+    ],
+    "cc:requires": [
+        "cc:Attribution",
+        "cc:Notice"
+    ],
+    "dc:creator": "http://creativecommons.org",
+    "dc:hasVersion": "2.5",
+    "dc:identifier": "by-nd",
+    "dc:source": "http://creativecommons.org/licenses/by-nd/2.5/",
+    "dc:title": [
+        {
+            "@language": "af",
+            "@value": "Erkenning-GeenAfleidings 2.5 Sjinese Vasteland"
+        },
+        {
+            "@language": "ar",
+            "@value": "نسب- غير مشتق 2.5 الصين "
+        },
+        {
+            "@language": "as",
+            "@value": "Attribution-NoDerivs 2.5 China Mainland"
+        },
+        {
+            "@language": "ast",
+            "@value": "Attribution-NoDerivs 2.5 China Mainland"
+        },
+        {
+            "@language": "ast-es",
+            "@value": "Attribution-NoDerivs 2.5 China Mainland"
+        },
+        {
+            "@language": "az",
+            "@value": "Attribution-NoDerivs 2.5 China Mainland"
+        },
+        {
+            "@language": "be",
+            "@value": "Attribution-NoDerivs 2.5 Мацерыковы Кітай"
+        },
+        {
+            "@language": "bg",
+            "@value": "Признание-Без производни 2.5 Китай (континентален)"
+        },
+        {
+            "@language": "bn",
+            "@value": "Attribution-NoDerivs 2.5 China Mainland"
+        },
+        {
+            "@language": "ca",
+            "@value": "Reconeixement-SenseObraDerivada 2.5 Xina"
+        },
+        {
+            "@language": "cs",
+            "@value": "Uveďte autora-Nezasahujte do díla 2.5 Kontinentální Čína"
+        },
+        {
+            "@language": "da",
+            "@value": "Navngivelse-IngenBearbejdelse 2.5 Kina"
+        },
+        {
+            "@language": "de",
+            "@value": "Namensnennung-Keine Bearbeitung 2.5 Volksrepublik China"
+        },
+        {
+            "@language": "de-at",
+            "@value": "Namensnennung-KeineBearbeitung 2.5 China"
+        },
+        {
+            "@language": "de-ch",
+            "@value": "Namensnennung-KeineBearbeitung 2.5 China"
+        },
+        {
+            "@language": "el",
+            "@value": "Αναφορά Δημιουργού-Όχι Παράγωγα Έργα 2.5 Κίνα"
+        },
+        {
+            "@language": "en",
+            "@value": "Attribution-NoDerivs 2.5 China Mainland"
+        },
+        {
+            "@language": "en-ca",
+            "@value": "Attribution-NoDerivs 2.5 China Mainland"
+        },
+        {
+            "@language": "en-gb",
+            "@value": "Attribution-NoDerivs 2.5 China"
+        },
+        {
+            "@language": "en-hk",
+            "@value": "Attribution-NoDerivs 2.5 China"
+        },
+        {
+            "@language": "en-sg",
+            "@value": "Attribution-NoDerivs 2.5 China"
+        },
+        {
+            "@language": "en-us",
+            "@value": "Attribution-NoDerivs 2.5 China Mainland"
+        },
+        {
+            "@language": "eo",
+            "@value": "Atribuite-Nemodifite 2.5 Ĉinujo"
+        },
+        {
+            "@language": "es",
+            "@value": "Atribución-SinDerivadas 2.5 China continental"
+        },
+        {
+            "@language": "es-ar",
+            "@value": "Atribución-SinDerivadas 2.5 China"
+        },
+        {
+            "@language": "es-cl",
+            "@value": "Atribución-SinDerivadas 2.5 China"
+        },
+        {
+            "@language": "es-co",
+            "@value": "Reconocimiento-SinObraDerivada 2.5 China"
+        },
+        {
+            "@language": "es-ec",
+            "@value": "Reconocimiento-SinObraDerivada 2.5 China"
+        },
+        {
+            "@language": "es-es",
+            "@value": "Reconocimiento-SinObraDerivada 2.5 China"
+        },
+        {
+            "@language": "es-gt",
+            "@value": "Reconocimiento-SinObraDerivada 2.5 China"
+        },
+        {
+            "@language": "es-mx",
+            "@value": "Atribución-No Derivadas 2.5 China"
+        },
+        {
+            "@language": "es-pe",
+            "@value": "Reconocimiento-SinObraDerivada 2.5 China"
+        },
+        {
+            "@language": "es-pr",
+            "@value": "Reconocimiento-SinObraDerivada 2.5 China"
+        },
+        {
+            "@language": "et",
+            "@value": "Autorile viitamine + Tuletatud teoste keeld 2.5 Mandri-Hiina"
+        },
+        {
+            "@language": "eu",
+            "@value": "Aitortu-LanEratorririkGabe 2.5 Txina"
+        },
+        {
+            "@language": "fa",
+            "@value": "Attribution-NoDerivs 2.5 چین سرزمین اصلی"
+        },
+        {
+            "@language": "fi",
+            "@value": "Nimeä-Ei muutoksia 2.5 Kiina"
+        },
+        {
+            "@language": "fr",
+            "@value": "Paternité - Pas de Modification 2.5 Chine continentale"
+        },
+        {
+            "@language": "fr-ca",
+            "@value": "Paternité - Pas de Modification 2.5 Chine"
+        },
+        {
+            "@language": "fr-ch",
+            "@value": "Paternité - Pas de Modification 2.5 Chine"
+        },
+        {
+            "@language": "fr-lu",
+            "@value": "Paternité - Pas de Modification 2.5 Chine"
+        },
+        {
+            "@language": "ga",
+            "@value": "Attribution-NoDerivs 2.5 China Mainland"
+        },
+        {
+            "@language": "gl",
+            "@value": "Recoñecemento-SenObraDerivada 2.5 China"
+        },
+        {
+            "@language": "he",
+            "@value": "ייחוס-איסור יצירות נגזרות 2.5 סין"
+        },
+        {
+            "@language": "hi",
+            "@value": "Attribution-NoDerivs 2.5 China Mainland"
+        },
+        {
+            "@language": "hr",
+            "@value": "Imenovanje-Bez prerada 2.5 Kina"
+        },
+        {
+            "@language": "hu",
+            "@value": "Nevezd meg! - Ne változtasd! 2.5 Kína"
+        },
+        {
+            "@language": "hy",
+            "@value": "Հղում - Օգտագործում առանց վերափոխումների 2.5 China Mainland"
+        },
+        {
+            "@language": "id",
+            "@value": "Atribusi-TanpaTurunan 2.5 Cina Daratan"
+        },
+        {
+            "@language": "is",
+            "@value": "Attribution-NoDerivs 2.5 China Mainland"
+        },
+        {
+            "@language": "it",
+            "@value": "Attribuzione - Non opere derivate 2.5 Cina"
+        },
+        {
+            "@language": "it-ch",
+            "@value": "Attribuzione - Non opere derivate 2.5 Cina"
+        },
+        {
+            "@language": "ja",
+            "@value": "表示 - 改変禁止 2.5 中華人民共和国"
+        },
+        {
+            "@language": "ka",
+            "@value": "ავტორობის მითითებით გადამუშავების გარეშე 2.5 ჩინეთი (მატერიკი)"
+        },
+        {
+            "@language": "kk",
+            "@value": "Туынды жасамау 2.5 China Mainland"
+        },
+        {
+            "@language": "ko",
+            "@value": "저작자표시-변경금지 2.5 중국 본토"
+        },
+        {
+            "@language": "lt",
+            "@value": "Attribution-NoDerivs 2.5 Kinijos žemynas"
+        },
+        {
+            "@language": "lv",
+            "@value": "Atsaucoties-Neatvasinot 2.5 Ķīna"
+        },
+        {
+            "@language": "mk",
+            "@value": "НаведиИзвор-БезИзведениДела 2.5 Кина"
+        },
+        {
+            "@language": "ml",
+            "@value": "Attribution-NoDerivs 2.5 China Mainland"
+        },
+        {
+            "@language": "mn",
+            "@value": "Attribution-NoDerivs 2.5 China Mainland"
+        },
+        {
+            "@language": "ms",
+            "@value": "Pengiktirafan-TiadaTerbitan 2.5 Tanah Besar Cina"
+        },
+        {
+            "@language": "nl",
+            "@value": "Naamsvermelding-GeenAfgeleideWerken 2.5 China (vasteland)"
+        },
+        {
+            "@language": "no",
+            "@value": "Navngivelse-IngenBearbeidelse 2.5 Kina"
+        },
+        {
+            "@language": "nso",
+            "@value": "Tsebagatšo - Tše sa Fetolwego 2.5 China Naga-bogareng"
+        },
+        {
+            "@language": "oci-es",
+            "@value": "Attribution-NoDerivs 2.5 China Mainland"
+        },
+        {
+            "@language": "pl",
+            "@value": "Uznanie autorstwa-Bez utworów zależnych 2.5 Chiny"
+        },
+        {
+            "@language": "pt",
+            "@value": "Atribuição - SemDerivados 2.5 China Continental"
+        },
+        {
+            "@language": "pt-br",
+            "@value": "Atribuição-Vedada a criação de obras derivativas 2.5 China Mainland"
+        },
+        {
+            "@language": "pt-pt",
+            "@value": "Atribuição-Proibição de realização de Obras Derivadas 2.5 China"
+        },
+        {
+            "@language": "ro",
+            "@value": "Atribuire-FărăModificări 2.5 China continentală"
+        },
+        {
+            "@language": "ru",
+            "@value": "Attribution-NoDerivs (Атрибуция — Без производных произведений) 2.5 Материковый Китай"
+        },
+        {
+            "@language": "si-lk",
+            "@value": "Attribution-NoDerivs 2.5 China Mainland"
+        },
+        {
+            "@language": "sl",
+            "@value": "Priznanje avtorstva-Brez predelav 2.5 Kitajska"
+        },
+        {
+            "@language": "sq",
+            "@value": "Attribution-NoDerivs 2.5 Kinë Kontinentale"
+        },
+        {
+            "@language": "sr",
+            "@value": "Autorstvo-Bez prerada 2.5 Kina"
+        },
+        {
+            "@language": "sr",
+            "@value": "Ауторство-Без прерада 2.5 Кина"
+        },
+        {
+            "@language": "sr-latn",
+            "@value": "Autorstvo-Bez prerada 2.5 Kina"
+        },
+        {
+            "@language": "st",
+            "@value": "Attribution-NoDerivs 2.5 China Mainland"
+        },
+        {
+            "@language": "sv",
+            "@value": "Erkännande-IngaBearbetningar 2.5 Kina"
+        },
+        {
+            "@language": "ta",
+            "@value": "Attribution-NoDerivs 2.5 China Mainland"
+        },
+        {
+            "@language": "te",
+            "@value": "Attribution-NoDerivs 2.5 చైనా మెయిన్లాండ్"
+        },
+        {
+            "@language": "th",
+            "@value": "แสดงที่มา-ไม่ดัดแปลง 2.5 จีนแผ่นดินใหญ่"
+        },
+        {
+            "@language": "tr",
+            "@value": "Alıntı-Türetilemez 2.5 Çin Halk Cumhuriyeti"
+        },
+        {
+            "@language": "uk",
+            "@value": "Attribution-NoDerivs 2.5 China Mainland"
+        },
+        {
+            "@language": "ur",
+            "@value": "Attribution-NoDerivs 2.5 China Mainland"
+        },
+        {
+            "@language": "vi",
+            "@value": "Ghi nhận công của tác giả - Không phái sinh 2.5 China Mainland"
+        },
+        {
+            "@language": "zh",
+            "@value": "署名-禁止演绎 2.5 中国大陆"
+        },
+        {
+            "@language": "zh-hk",
+            "@value": "姓名標示-禁止改作 2.5 中國大陸"
+        },
+        {
+            "@language": "zh-tw",
+            "@value": "姓名標示-禁止改作 2.5 中國大陸"
+        },
+        {
+            "@language": "zu",
+            "@value": "Qaphela Umnikazi-Ungasuseli lutho kulokhu 2.5 EMainland China"
+        },
+        {
+            "@language": "zxx",
+            "@value": "${Attribution-NoDerivs} 2.5 ${China Mainland}"
+        }
+    ],
+    "owl:sameAs": {
+        "@id": "http://creativecommons.org/licenses/by-nd/2.5/cn/",
+        "@type": "cc:License",
+        "cc:jurisdiction": "http://creativecommons.org/international/cn/",
+        "cc:legalcode": "http://creativecommons.org/licenses/by-nd/2.5/cn/legalcode",
+        "cc:licenseClass": "http://creativecommons.org/license/",
+        "cc:permits": [
+            "cc:Distribution",
+            "cc:Reproduction"
+        ],
+        "cc:requires": [
+            "cc:Attribution",
+            "cc:Notice"
+        ],
+        "dc:creator": "http://creativecommons.org",
+        "dc:hasVersion": "2.5",
+        "dc:identifier": "by-nd",
+        "dc:source": "http://creativecommons.org/licenses/by-nd/2.5/",
+        "dc:title": [
+            {
+                "@language": "af",
+                "@value": "Erkenning-GeenAfleidings 2.5 Sjinese Vasteland"
+            },
+            {
+                "@language": "ar",
+                "@value": "نسب- غير مشتق 2.5 الصين "
+            },
+            {
+                "@language": "as",
+                "@value": "Attribution-NoDerivs 2.5 China Mainland"
+            },
+            {
+                "@language": "ast",
+                "@value": "Attribution-NoDerivs 2.5 China Mainland"
+            },
+            {
+                "@language": "ast-es",
+                "@value": "Attribution-NoDerivs 2.5 China Mainland"
+            },
+            {
+                "@language": "az",
+                "@value": "Attribution-NoDerivs 2.5 China Mainland"
+            },
+            {
+                "@language": "be",
+                "@value": "Attribution-NoDerivs 2.5 Мацерыковы Кітай"
+            },
+            {
+                "@language": "bg",
+                "@value": "Признание-Без производни 2.5 Китай (континентален)"
+            },
+            {
+                "@language": "bn",
+                "@value": "Attribution-NoDerivs 2.5 China Mainland"
+            },
+            {
+                "@language": "ca",
+                "@value": "Reconeixement-SenseObraDerivada 2.5 Xina"
+            },
+            {
+                "@language": "cs",
+                "@value": "Uveďte autora-Nezasahujte do díla 2.5 Kontinentální Čína"
+            },
+            {
+                "@language": "da",
+                "@value": "Navngivelse-IngenBearbejdelse 2.5 Kina"
+            },
+            {
+                "@language": "de",
+                "@value": "Namensnennung-Keine Bearbeitung 2.5 Volksrepublik China"
+            },
+            {
+                "@language": "de-at",
+                "@value": "Namensnennung-KeineBearbeitung 2.5 China"
+            },
+            {
+                "@language": "de-ch",
+                "@value": "Namensnennung-KeineBearbeitung 2.5 China"
+            },
+            {
+                "@language": "el",
+                "@value": "Αναφορά Δημιουργού-Όχι Παράγωγα Έργα 2.5 Κίνα"
+            },
+            {
+                "@language": "en",
+                "@value": "Attribution-NoDerivs 2.5 China Mainland"
+            },
+            {
+                "@language": "en-ca",
+                "@value": "Attribution-NoDerivs 2.5 China Mainland"
+            },
+            {
+                "@language": "en-gb",
+                "@value": "Attribution-NoDerivs 2.5 China"
+            },
+            {
+                "@language": "en-hk",
+                "@value": "Attribution-NoDerivs 2.5 China"
+            },
+            {
+                "@language": "en-sg",
+                "@value": "Attribution-NoDerivs 2.5 China"
+            },
+            {
+                "@language": "en-us",
+                "@value": "Attribution-NoDerivs 2.5 China Mainland"
+            },
+            {
+                "@language": "eo",
+                "@value": "Atribuite-Nemodifite 2.5 Ĉinujo"
+            },
+            {
+                "@language": "es",
+                "@value": "Atribución-SinDerivadas 2.5 China continental"
+            },
+            {
+                "@language": "es-ar",
+                "@value": "Atribución-SinDerivadas 2.5 China"
+            },
+            {
+                "@language": "es-cl",
+                "@value": "Atribución-SinDerivadas 2.5 China"
+            },
+            {
+                "@language": "es-co",
+                "@value": "Reconocimiento-SinObraDerivada 2.5 China"
+            },
+            {
+                "@language": "es-ec",
+                "@value": "Reconocimiento-SinObraDerivada 2.5 China"
+            },
+            {
+                "@language": "es-es",
+                "@value": "Reconocimiento-SinObraDerivada 2.5 China"
+            },
+            {
+                "@language": "es-gt",
+                "@value": "Reconocimiento-SinObraDerivada 2.5 China"
+            },
+            {
+                "@language": "es-mx",
+                "@value": "Atribución-No Derivadas 2.5 China"
+            },
+            {
+                "@language": "es-pe",
+                "@value": "Reconocimiento-SinObraDerivada 2.5 China"
+            },
+            {
+                "@language": "es-pr",
+                "@value": "Reconocimiento-SinObraDerivada 2.5 China"
+            },
+            {
+                "@language": "et",
+                "@value": "Autorile viitamine + Tuletatud teoste keeld 2.5 Mandri-Hiina"
+            },
+            {
+                "@language": "eu",
+                "@value": "Aitortu-LanEratorririkGabe 2.5 Txina"
+            },
+            {
+                "@language": "fa",
+                "@value": "Attribution-NoDerivs 2.5 چین سرزمین اصلی"
+            },
+            {
+                "@language": "fi",
+                "@value": "Nimeä-Ei muutoksia 2.5 Kiina"
+            },
+            {
+                "@language": "fr",
+                "@value": "Paternité - Pas de Modification 2.5 Chine continentale"
+            },
+            {
+                "@language": "fr-ca",
+                "@value": "Paternité - Pas de Modification 2.5 Chine"
+            },
+            {
+                "@language": "fr-ch",
+                "@value": "Paternité - Pas de Modification 2.5 Chine"
+            },
+            {
+                "@language": "fr-lu",
+                "@value": "Paternité - Pas de Modification 2.5 Chine"
+            },
+            {
+                "@language": "ga",
+                "@value": "Attribution-NoDerivs 2.5 China Mainland"
+            },
+            {
+                "@language": "gl",
+                "@value": "Recoñecemento-SenObraDerivada 2.5 China"
+            },
+            {
+                "@language": "he",
+                "@value": "ייחוס-איסור יצירות נגזרות 2.5 סין"
+            },
+            {
+                "@language": "hi",
+                "@value": "Attribution-NoDerivs 2.5 China Mainland"
+            },
+            {
+                "@language": "hr",
+                "@value": "Imenovanje-Bez prerada 2.5 Kina"
+            },
+            {
+                "@language": "hu",
+                "@value": "Nevezd meg! - Ne változtasd! 2.5 Kína"
+            },
+            {
+                "@language": "hy",
+                "@value": "Հղում - Օգտագործում առանց վերափոխումների 2.5 China Mainland"
+            },
+            {
+                "@language": "id",
+                "@value": "Atribusi-TanpaTurunan 2.5 Cina Daratan"
+            },
+            {
+                "@language": "is",
+                "@value": "Attribution-NoDerivs 2.5 China Mainland"
+            },
+            {
+                "@language": "it",
+                "@value": "Attribuzione - Non opere derivate 2.5 Cina"
+            },
+            {
+                "@language": "it-ch",
+                "@value": "Attribuzione - Non opere derivate 2.5 Cina"
+            },
+            {
+                "@language": "ja",
+                "@value": "表示 - 改変禁止 2.5 中華人民共和国"
+            },
+            {
+                "@language": "ka",
+                "@value": "ავტორობის მითითებით გადამუშავების გარეშე 2.5 ჩინეთი (მატერიკი)"
+            },
+            {
+                "@language": "kk",
+                "@value": "Туынды жасамау 2.5 China Mainland"
+            },
+            {
+                "@language": "ko",
+                "@value": "저작자표시-변경금지 2.5 중국 본토"
+            },
+            {
+                "@language": "lt",
+                "@value": "Attribution-NoDerivs 2.5 Kinijos žemynas"
+            },
+            {
+                "@language": "lv",
+                "@value": "Atsaucoties-Neatvasinot 2.5 Ķīna"
+            },
+            {
+                "@language": "mk",
+                "@value": "НаведиИзвор-БезИзведениДела 2.5 Кина"
+            },
+            {
+                "@language": "ml",
+                "@value": "Attribution-NoDerivs 2.5 China Mainland"
+            },
+            {
+                "@language": "mn",
+                "@value": "Attribution-NoDerivs 2.5 China Mainland"
+            },
+            {
+                "@language": "ms",
+                "@value": "Pengiktirafan-TiadaTerbitan 2.5 Tanah Besar Cina"
+            },
+            {
+                "@language": "nl",
+                "@value": "Naamsvermelding-GeenAfgeleideWerken 2.5 China (vasteland)"
+            },
+            {
+                "@language": "no",
+                "@value": "Navngivelse-IngenBearbeidelse 2.5 Kina"
+            },
+            {
+                "@language": "nso",
+                "@value": "Tsebagatšo - Tše sa Fetolwego 2.5 China Naga-bogareng"
+            },
+            {
+                "@language": "oci-es",
+                "@value": "Attribution-NoDerivs 2.5 China Mainland"
+            },
+            {
+                "@language": "pl",
+                "@value": "Uznanie autorstwa-Bez utworów zależnych 2.5 Chiny"
+            },
+            {
+                "@language": "pt",
+                "@value": "Atribuição - SemDerivados 2.5 China Continental"
+            },
+            {
+                "@language": "pt-br",
+                "@value": "Atribuição-Vedada a criação de obras derivativas 2.5 China Mainland"
+            },
+            {
+                "@language": "pt-pt",
+                "@value": "Atribuição-Proibição de realização de Obras Derivadas 2.5 China"
+            },
+            {
+                "@language": "ro",
+                "@value": "Atribuire-FărăModificări 2.5 China continentală"
+            },
+            {
+                "@language": "ru",
+                "@value": "Attribution-NoDerivs (Атрибуция — Без производных произведений) 2.5 Материковый Китай"
+            },
+            {
+                "@language": "si-lk",
+                "@value": "Attribution-NoDerivs 2.5 China Mainland"
+            },
+            {
+                "@language": "sl",
+                "@value": "Priznanje avtorstva-Brez predelav 2.5 Kitajska"
+            },
+            {
+                "@language": "sq",
+                "@value": "Attribution-NoDerivs 2.5 Kinë Kontinentale"
+            },
+            {
+                "@language": "sr",
+                "@value": "Autorstvo-Bez prerada 2.5 Kina"
+            },
+            {
+                "@language": "sr",
+                "@value": "Ауторство-Без прерада 2.5 Кина"
+            },
+            {
+                "@language": "sr-latn",
+                "@value": "Autorstvo-Bez prerada 2.5 Kina"
+            },
+            {
+                "@language": "st",
+                "@value": "Attribution-NoDerivs 2.5 China Mainland"
+            },
+            {
+                "@language": "sv",
+                "@value": "Erkännande-IngaBearbetningar 2.5 Kina"
+            },
+            {
+                "@language": "ta",
+                "@value": "Attribution-NoDerivs 2.5 China Mainland"
+            },
+            {
+                "@language": "te",
+                "@value": "Attribution-NoDerivs 2.5 చైనా మెయిన్లాండ్"
+            },
+            {
+                "@language": "th",
+                "@value": "แสดงที่มา-ไม่ดัดแปลง 2.5 จีนแผ่นดินใหญ่"
+            },
+            {
+                "@language": "tr",
+                "@value": "Alıntı-Türetilemez 2.5 Çin Halk Cumhuriyeti"
+            },
+            {
+                "@language": "uk",
+                "@value": "Attribution-NoDerivs 2.5 China Mainland"
+            },
+            {
+                "@language": "ur",
+                "@value": "Attribution-NoDerivs 2.5 China Mainland"
+            },
+            {
+                "@language": "vi",
+                "@value": "Ghi nhận công của tác giả - Không phái sinh 2.5 China Mainland"
+            },
+            {
+                "@language": "zh",
+                "@value": "署名-禁止演绎 2.5 中国大陆"
+            },
+            {
+                "@language": "zh-hk",
+                "@value": "姓名標示-禁止改作 2.5 中國大陸"
+            },
+            {
+                "@language": "zh-tw",
+                "@value": "姓名標示-禁止改作 2.5 中國大陸"
+            },
+            {
+                "@language": "zu",
+                "@value": "Qaphela Umnikazi-Ungasuseli lutho kulokhu 2.5 EMainland China"
+            },
+            {
+                "@language": "zxx",
+                "@value": "${Attribution-NoDerivs} 2.5 ${China Mainland}"
+            }
+        ],
+        "owl:sameAs": "https://licensedb.org/id/CC-BY-ND-2.5-cn",
+        "foaf:logo": [
+            "http://i.creativecommons.org/l/by-nd/2.5/cn/80x15.png",
+            "http://i.creativecommons.org/l/by-nd/2.5/cn/88x31.png"
+        ]
+    },
+    "foaf:logo": [
+        "http://i.creativecommons.org/l/by-nd/2.5/cn/80x15.png",
+        "http://i.creativecommons.org/l/by-nd/2.5/cn/88x31.png"
+    ],
+    "li:id": "CC-BY-ND-2.5-cn",
+    "li:name": "CC BY-ND 2.5 CN"
+}

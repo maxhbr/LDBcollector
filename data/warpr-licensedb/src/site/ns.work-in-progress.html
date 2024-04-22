@@ -1,0 +1,24 @@
+      <h1>License Database vocabulary</h1>
+
+      <h2>Classes</h2>
+
+      <div id="LicenseException" about="#LicenseException" typeof="rdfs:Class">
+        <h4 property="rdfs:label"><span class="prefix">li:</span>LicenseException</h4>
+        <p property="rdfs:comment">
+          A set of permissions granted in addition to the permissions
+          granted by a copyright license.
+        </p>
+        <!-- should this be a subclass of license? -->
+      </div>
+
+      <h2>License Properties</h2>
+
+      <div id="compatible" about="#compatible" typeof="rdf:Property">
+        <h4><span class="prefix">li:</span>compatible</h4>
+        <p>
+          A <a rel="rdfs:domain"
+          href="#License">License</a> <span property="rdfs:label">is
+          compatible with</span> a <a rel="rdfs:range"
+          href="#License">License</a>.
+        </p>
+      </div>

@@ -1,0 +1,854 @@
+{
+    "@context": {
+        "cc": "http://creativecommons.org/ns#",
+        "dc": "http://purl.org/dc/terms/",
+        "dc11": "http://purl.org/dc/elements/1.1/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "li": "https://licensedb.org/ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "cc:legalcode": {
+            "@type": "@id"
+        },
+        "cc:permits": {
+            "@type": "@id"
+        },
+        "cc:requires": {
+            "@type": "@id"
+        },
+        "cc:prohibits": {
+            "@type": "@id"
+        },
+        "cc:jurisdiction": {
+            "@type": "@id"
+        },
+        "cc:licenseClass": {
+            "@type": "@id"
+        },
+        "dc:creator": {
+            "@type": "@id"
+        },
+        "dc:source": {
+            "@type": "@id"
+        },
+        "dc:replaces": {
+            "@type": "@id"
+        },
+        "dc:isBasedOn": {
+            "@type": "@id"
+        },
+        "dc:isReplacedBy": {
+            "@type": "@id"
+        },
+        "foaf:logo": {
+            "@type": "@id"
+        },
+        "li:plaintext": {
+            "@type": "@id"
+        },
+        "li:libre": {
+            "@type": "@id"
+        },
+        "owl:sameAs": {
+            "@type": "@id"
+        }
+    },
+    "@id": "https://licensedb.org/id/CC-BY-NC-SA-3.0-us",
+    "@type": [
+        "cc:License",
+        "li:License"
+    ],
+    "cc:jurisdiction": "http://creativecommons.org/international/us/",
+    "cc:legalcode": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/legalcode",
+    "cc:licenseClass": "http://creativecommons.org/license/",
+    "cc:permits": [
+        "cc:DerivativeWorks",
+        "cc:Distribution",
+        "cc:Reproduction"
+    ],
+    "cc:prohibits": "cc:CommercialUse",
+    "cc:requires": [
+        "cc:Attribution",
+        "cc:Notice",
+        "cc:ShareAlike"
+    ],
+    "dc:creator": "http://creativecommons.org",
+    "dc:hasVersion": "3.0",
+    "dc:identifier": "by-nc-sa",
+    "dc:source": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+    "dc:title": [
+        {
+            "@language": "af",
+            "@value": "Erkenning-Niekommersieel-InsgelyksDeel 3.0 Verenigde State"
+        },
+        {
+            "@language": "ar",
+            "@value": "المشاركة على قدم المساواة-غير تجاري-نسب العمل 3.0 الولايات المنحدة"
+        },
+        {
+            "@language": "as",
+            "@value": "Attribution-NonCommercial-ShareAlike 3.0 United States"
+        },
+        {
+            "@language": "ast",
+            "@value": "Attribution-NonCommercial-ShareAlike 3.0 United States"
+        },
+        {
+            "@language": "ast-es",
+            "@value": "Attribution-NonCommercial-ShareAlike 3.0 United States"
+        },
+        {
+            "@language": "az",
+            "@value": "Attribution-NonCommercial-ShareAlike 3.0 United States"
+        },
+        {
+            "@language": "be",
+            "@value": "Attribution-NonCommercial-ShareAlike 3.0 ЗША"
+        },
+        {
+            "@language": "bg",
+            "@value": "Признание-Некомерсиално-Споделяне на споделеното 3.0 САЩ"
+        },
+        {
+            "@language": "bn",
+            "@value": "Attribution-NonCommercial-ShareAlike 3.0 United States"
+        },
+        {
+            "@language": "ca",
+            "@value": "Reconeixement-NoComercial-CompartirIgual 3.0 Estats Units d'Amèrica"
+        },
+        {
+            "@language": "cs",
+            "@value": "Uveďte autora-Nevyužívejte dílo komerčně-Zachovejte licenci 3.0 Spojené státy americké"
+        },
+        {
+            "@language": "da",
+            "@value": "Navngivelse-IkkeKommerciel–DelPåSammeVilkår 3.0 USA"
+        },
+        {
+            "@language": "de",
+            "@value": "Namensnennung-Nicht-kommerziell-Weitergabe unter gleichen Bedingungen 3.0 Vereinigte Staaten von Amerika"
+        },
+        {
+            "@language": "de-at",
+            "@value": "Namensnennung-NichtKommerziell-Weitergabe unter gleichen Bedingungen 3.0 Vereinigte Staaten von Amerika"
+        },
+        {
+            "@language": "de-ch",
+            "@value": "Namensnennung-NichtKommerziell-Weitergabe unter gleichen Bedingungen 3.0 Vereinigte Staaten von Amerika"
+        },
+        {
+            "@language": "el",
+            "@value": "Αναφορά Δημιουργού - Μη Εμπορική Χρήση - Παρόμοια Διανομή 3.0 Ηνωμένες Πολιτείες"
+        },
+        {
+            "@language": "en",
+            "@value": "Attribution-NonCommercial-ShareAlike 3.0 United States"
+        },
+        {
+            "@language": "en-ca",
+            "@value": "Attribution-NonCommercial-ShareAlike 3.0 United States"
+        },
+        {
+            "@language": "en-gb",
+            "@value": "Attribution-NonCommercial-ShareAlike 3.0 United States"
+        },
+        {
+            "@language": "en-hk",
+            "@value": "Attribution-NonCommercial-ShareAlike 3.0 United States"
+        },
+        {
+            "@language": "en-sg",
+            "@value": "Attribution-NonCommercial-ShareAlike 3.0 United States"
+        },
+        {
+            "@language": "en-us",
+            "@value": "Attribution-NonCommercial-ShareAlike 3.0 United States"
+        },
+        {
+            "@language": "eo",
+            "@value": "Atribuite-Nekomerce-Samkondiĉe 3.0 Usono"
+        },
+        {
+            "@language": "es",
+            "@value": "Atribución-NoComercial-CompartirIgual 3.0 Estados Unidos de América"
+        },
+        {
+            "@language": "es-ar",
+            "@value": "Atribución-NoComercial-CompartirDerivadasIgual 3.0 Estados Unidos de Norteamérica"
+        },
+        {
+            "@language": "es-cl",
+            "@value": "Atribución-NoComercial-LicenciarIgual 3.0 Estados Unidos"
+        },
+        {
+            "@language": "es-co",
+            "@value": "Reconocimiento-NoComercial-CompartirIgual 3.0 Estados Unidos"
+        },
+        {
+            "@language": "es-ec",
+            "@value": "Reconocimiento-NoComercial-CompartirIgual 3.0 Estados Unidos"
+        },
+        {
+            "@language": "es-es",
+            "@value": "Reconocimiento-NoComercial-CompartirIgual 3.0 Estados Unidos"
+        },
+        {
+            "@language": "es-gt",
+            "@value": "Reconocimiento-NoComercial-CompartirIgual 3.0 Estados Unidos"
+        },
+        {
+            "@language": "es-mx",
+            "@value": "Atribución-No Comercial-Licenciamiento Recíproco 3.0 Estados Unidos"
+        },
+        {
+            "@language": "es-pe",
+            "@value": "Reconocimiento-NoComercial-CompartirIgual 3.0 Estados Unidos"
+        },
+        {
+            "@language": "es-pr",
+            "@value": "Reconocimiento-NoComercial-CompartirIgual 3.0 Estados Unidos"
+        },
+        {
+            "@language": "et",
+            "@value": "Autorile viitamine + Mitteäriline eesmärk + Jagamine samadel tingimustel 3.0 Ameerika Ühendriigid"
+        },
+        {
+            "@language": "eu",
+            "@value": "Aitortu-EzKomertziala-PartekatuBerdin 3.0 Estatu Batuak"
+        },
+        {
+            "@language": "fa",
+            "@value": "Attribution-NonCommercial-ShareAlike 3.0 ایالات متحده"
+        },
+        {
+            "@language": "fi",
+            "@value": "Nimeä-Epäkaupallinen-Tarttuva 3.0 Yhdysvallat"
+        },
+        {
+            "@language": "fr",
+            "@value": "Attribution - Pas d'Utilisation Commerciale - Partage à l'Identique 3.0 États-Unis"
+        },
+        {
+            "@language": "fr-ca",
+            "@value": "Paternité - Pas d'Utilisation Commerciale - Partage des Conditions Initiales à l'Identique 3.0 Etats-Unis"
+        },
+        {
+            "@language": "fr-ch",
+            "@value": "Paternité - Pas d'Utilisation Commerciale - Partage des Conditions Initiales à l'Identique 3.0 Etats-Unis"
+        },
+        {
+            "@language": "fr-lu",
+            "@value": "Paternité - Pas d'Utilisation Commerciale - Partage des Conditions Initiales à l'Identique 3.0 Etats-Unis"
+        },
+        {
+            "@language": "ga",
+            "@value": "Attribution-NonCommercial-ShareAlike 3.0 United States"
+        },
+        {
+            "@language": "gl",
+            "@value": "Recoñecemento-NonComercial-CompartirIgual 3.0 Estados Unidos"
+        },
+        {
+            "@language": "he",
+            "@value": "ייחוס-שימוש לא מסחרי-שיתוף זהה 3.0 ארה\"ב"
+        },
+        {
+            "@language": "hi",
+            "@value": "Attribution-NonCommercial-ShareAlike 3.0 United States"
+        },
+        {
+            "@language": "hr",
+            "@value": "Imenovanje-Nekomercijalno-Dijeli pod istim uvjetima 3.0 SAD"
+        },
+        {
+            "@language": "hu",
+            "@value": "Nevezd meg! - Ne add el! - Így add tovább! 3.0 Egyesült Államok"
+        },
+        {
+            "@language": "hy",
+            "@value": "Հղում - ոչ-առևտրային օգտագործում - համանման տարածում 3.0 Միացյալ Նահանգներ"
+        },
+        {
+            "@language": "id",
+            "@value": "Atribusi-NonKomersial-BerbagiSerupa 3.0 Amerika Serikat"
+        },
+        {
+            "@language": "is",
+            "@value": "Attribution-NonCommercial-ShareAlike 3.0 Bandaríkin"
+        },
+        {
+            "@language": "it",
+            "@value": "Attribuzione - Non commerciale - Condividi allo stesso modo 3.0 Stati Uniti"
+        },
+        {
+            "@language": "it-ch",
+            "@value": "Attribuzione - Non commerciale - Condividi allo stesso modo 3.0 United States"
+        },
+        {
+            "@language": "ja",
+            "@value": "表示 - 非営利 - 継承 3.0 アメリカ合衆国"
+        },
+        {
+            "@language": "ka",
+            "@value": "ავტორობის მითითებით–არაკომერციული გამოყენებისთვის–გამოყენება იგივე პირობებით 3.0 შეერთებული შტატები"
+        },
+        {
+            "@language": "kk",
+            "@value": "Attribution-NonCommercial-ShareAlike 3.0 United States"
+        },
+        {
+            "@language": "ko",
+            "@value": "저작자표시-비영리-동일조건변경허락 3.0 미국"
+        },
+        {
+            "@language": "lt",
+            "@value": "Attribution-NonCommercial-ShareAlike 3.0 Jungtinės Valstijos"
+        },
+        {
+            "@language": "lv",
+            "@value": "Atsaucoties-Nekomerciāls-Nemainot licenci 3.0 Savienotās valstis"
+        },
+        {
+            "@language": "mk",
+            "@value": "НаведиИзвор-Некомерцијално-СподелиПодИстиУслови 3.0 САД"
+        },
+        {
+            "@language": "ml",
+            "@value": "Attribution-NonCommercial-ShareAlike 3.0 അമേരിക്കൻ ഐക്യനാടുകൾ"
+        },
+        {
+            "@language": "mn",
+            "@value": "Attribution-NonCommercial-ShareAlike 3.0 United States"
+        },
+        {
+            "@language": "ms",
+            "@value": "Pengiktirafan-BukanKomersial-PerkongsianSerupa 3.0 Amerika Syarikat"
+        },
+        {
+            "@language": "nl",
+            "@value": "Naamsvermelding-NietCommercieel-GelijkDelen 3.0 Verenigde Staten"
+        },
+        {
+            "@language": "no",
+            "@value": "Navngivelse-Ikkekommersiell-DelPåSammeVilkår 3.0 USA"
+        },
+        {
+            "@language": "nso",
+            "@value": "Tsebagatšo - E sego ya Kgwebo - Mohlakanelwa 3.0 United States"
+        },
+        {
+            "@language": "oci-es",
+            "@value": "Attribution-NonCommercial-ShareAlike 3.0 United States"
+        },
+        {
+            "@language": "pl",
+            "@value": "Uznanie autorstwa-Użycie niekomercyjne-Na tych samych warunkach 3.0 Stany Zjednoczone"
+        },
+        {
+            "@language": "pt",
+            "@value": "Atribuição - NãoComercial - CompartilhaIgual 3.0 Estados Unidos"
+        },
+        {
+            "@language": "pt-br",
+            "@value": "Atribuição-Uso não-comercial-Compartilhamento pela mesma licença 3.0 United States"
+        },
+        {
+            "@language": "pt-pt",
+            "@value": "Atribuição-Uso Não-Comercial-Partilha nos termos da mesma licença 3.0 Estados Unidos"
+        },
+        {
+            "@language": "ro",
+            "@value": "Atribuire-Necomercial-FărăModificări 3.0 Statele Unite ale Americii"
+        },
+        {
+            "@language": "ru",
+            "@value": "Attribution-NonCommercial-ShareAlike (Атрибуция — Некоммерческое использование — С сохранением условий) 3.0 США"
+        },
+        {
+            "@language": "si-lk",
+            "@value": "Attribution-NonCommercial-ShareAlike 3.0 United States"
+        },
+        {
+            "@language": "sl",
+            "@value": "Priznanje avtorstva-Nekomercialno-Deljenje pod enakimi pogoji 3.0 Združene države"
+        },
+        {
+            "@language": "sq",
+            "@value": "Attribution-NonCommercial-ShareAlike 3.0 Shtetet e Bashkuara"
+        },
+        {
+            "@language": "sr",
+            "@value": "Autorstvo-Nekomercijalno-Deliti pod istim uslovima 3.0 SAD"
+        },
+        {
+            "@language": "sr",
+            "@value": "Ауторство-Некомерцијално-Делити под истим условима 3.0 САД"
+        },
+        {
+            "@language": "sr-latn",
+            "@value": "Autorstvo-Nekomercijalno-Deliti pod istim uslovima 3.0 SAD"
+        },
+        {
+            "@language": "st",
+            "@value": "Attribution-NonCommercial-ShareAlike 3.0 United States"
+        },
+        {
+            "@language": "sv",
+            "@value": "Erkännande-IckeKommersiell-DelaLika 3.0 Förenta Staterna"
+        },
+        {
+            "@language": "ta",
+            "@value": "Attribution-NonCommercial-ShareAlike 3.0 United States"
+        },
+        {
+            "@language": "te",
+            "@value": "Attribution-NonCommercial-ShareAlike 3.0 అమెరికా సంయుక్త రాష్ట్రాలు"
+        },
+        {
+            "@language": "th",
+            "@value": "แสดงที่มา-ไม่ใช้เพื่อการค้า-อนุญาตแบบเดียวกัน 3.0 สหรัฐอเมริกา"
+        },
+        {
+            "@language": "tr",
+            "@value": "Attribution-Gayriticari-ShareAlike 3.0 Birleşik Devletler"
+        },
+        {
+            "@language": "uk",
+            "@value": "Attribution-NonCommercial-ShareAlike 3.0 United States"
+        },
+        {
+            "@language": "ur",
+            "@value": "Attribution-NonCommercial-ShareAlike 3.0 United States"
+        },
+        {
+            "@language": "vi",
+            "@value": "Attribution-NonCommercial-ShareAlike 3.0 Hợp chủng quốc Hoa Kỳ (Nước Mỹ)"
+        },
+        {
+            "@language": "zh",
+            "@value": "署名-非商业性使用-相同方式共享 3.0 美国"
+        },
+        {
+            "@language": "zh-hk",
+            "@value": "姓名標示-非商業性-相同方式分享 3.0 美國"
+        },
+        {
+            "@language": "zh-tw",
+            "@value": "姓名標示-非商業性-相同方式分享 3.0 美國"
+        },
+        {
+            "@language": "zu",
+            "@value": "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano-Yihlanganyeleni 3.0 E-United States"
+        },
+        {
+            "@language": "zxx",
+            "@value": "${Attribution-NonCommercial-ShareAlike} 3.0 ${United States}"
+        }
+    ],
+    "owl:sameAs": {
+        "@id": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+        "@type": "cc:License",
+        "cc:jurisdiction": "http://creativecommons.org/international/us/",
+        "cc:legalcode": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/legalcode",
+        "cc:licenseClass": "http://creativecommons.org/license/",
+        "cc:permits": [
+            "cc:DerivativeWorks",
+            "cc:Distribution",
+            "cc:Reproduction"
+        ],
+        "cc:prohibits": "cc:CommercialUse",
+        "cc:requires": [
+            "cc:Attribution",
+            "cc:Notice",
+            "cc:ShareAlike"
+        ],
+        "dc:creator": "http://creativecommons.org",
+        "dc:hasVersion": "3.0",
+        "dc:identifier": "by-nc-sa",
+        "dc:source": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "dc:title": [
+            {
+                "@language": "af",
+                "@value": "Erkenning-Niekommersieel-InsgelyksDeel 3.0 Verenigde State"
+            },
+            {
+                "@language": "ar",
+                "@value": "المشاركة على قدم المساواة-غير تجاري-نسب العمل 3.0 الولايات المنحدة"
+            },
+            {
+                "@language": "as",
+                "@value": "Attribution-NonCommercial-ShareAlike 3.0 United States"
+            },
+            {
+                "@language": "ast",
+                "@value": "Attribution-NonCommercial-ShareAlike 3.0 United States"
+            },
+            {
+                "@language": "ast-es",
+                "@value": "Attribution-NonCommercial-ShareAlike 3.0 United States"
+            },
+            {
+                "@language": "az",
+                "@value": "Attribution-NonCommercial-ShareAlike 3.0 United States"
+            },
+            {
+                "@language": "be",
+                "@value": "Attribution-NonCommercial-ShareAlike 3.0 ЗША"
+            },
+            {
+                "@language": "bg",
+                "@value": "Признание-Некомерсиално-Споделяне на споделеното 3.0 САЩ"
+            },
+            {
+                "@language": "bn",
+                "@value": "Attribution-NonCommercial-ShareAlike 3.0 United States"
+            },
+            {
+                "@language": "ca",
+                "@value": "Reconeixement-NoComercial-CompartirIgual 3.0 Estats Units d'Amèrica"
+            },
+            {
+                "@language": "cs",
+                "@value": "Uveďte autora-Nevyužívejte dílo komerčně-Zachovejte licenci 3.0 Spojené státy americké"
+            },
+            {
+                "@language": "da",
+                "@value": "Navngivelse-IkkeKommerciel–DelPåSammeVilkår 3.0 USA"
+            },
+            {
+                "@language": "de",
+                "@value": "Namensnennung-Nicht-kommerziell-Weitergabe unter gleichen Bedingungen 3.0 Vereinigte Staaten von Amerika"
+            },
+            {
+                "@language": "de-at",
+                "@value": "Namensnennung-NichtKommerziell-Weitergabe unter gleichen Bedingungen 3.0 Vereinigte Staaten von Amerika"
+            },
+            {
+                "@language": "de-ch",
+                "@value": "Namensnennung-NichtKommerziell-Weitergabe unter gleichen Bedingungen 3.0 Vereinigte Staaten von Amerika"
+            },
+            {
+                "@language": "el",
+                "@value": "Αναφορά Δημιουργού - Μη Εμπορική Χρήση - Παρόμοια Διανομή 3.0 Ηνωμένες Πολιτείες"
+            },
+            {
+                "@language": "en",
+                "@value": "Attribution-NonCommercial-ShareAlike 3.0 United States"
+            },
+            {
+                "@language": "en-ca",
+                "@value": "Attribution-NonCommercial-ShareAlike 3.0 United States"
+            },
+            {
+                "@language": "en-gb",
+                "@value": "Attribution-NonCommercial-ShareAlike 3.0 United States"
+            },
+            {
+                "@language": "en-hk",
+                "@value": "Attribution-NonCommercial-ShareAlike 3.0 United States"
+            },
+            {
+                "@language": "en-sg",
+                "@value": "Attribution-NonCommercial-ShareAlike 3.0 United States"
+            },
+            {
+                "@language": "en-us",
+                "@value": "Attribution-NonCommercial-ShareAlike 3.0 United States"
+            },
+            {
+                "@language": "eo",
+                "@value": "Atribuite-Nekomerce-Samkondiĉe 3.0 Usono"
+            },
+            {
+                "@language": "es",
+                "@value": "Atribución-NoComercial-CompartirIgual 3.0 Estados Unidos de América"
+            },
+            {
+                "@language": "es-ar",
+                "@value": "Atribución-NoComercial-CompartirDerivadasIgual 3.0 Estados Unidos de Norteamérica"
+            },
+            {
+                "@language": "es-cl",
+                "@value": "Atribución-NoComercial-LicenciarIgual 3.0 Estados Unidos"
+            },
+            {
+                "@language": "es-co",
+                "@value": "Reconocimiento-NoComercial-CompartirIgual 3.0 Estados Unidos"
+            },
+            {
+                "@language": "es-ec",
+                "@value": "Reconocimiento-NoComercial-CompartirIgual 3.0 Estados Unidos"
+            },
+            {
+                "@language": "es-es",
+                "@value": "Reconocimiento-NoComercial-CompartirIgual 3.0 Estados Unidos"
+            },
+            {
+                "@language": "es-gt",
+                "@value": "Reconocimiento-NoComercial-CompartirIgual 3.0 Estados Unidos"
+            },
+            {
+                "@language": "es-mx",
+                "@value": "Atribución-No Comercial-Licenciamiento Recíproco 3.0 Estados Unidos"
+            },
+            {
+                "@language": "es-pe",
+                "@value": "Reconocimiento-NoComercial-CompartirIgual 3.0 Estados Unidos"
+            },
+            {
+                "@language": "es-pr",
+                "@value": "Reconocimiento-NoComercial-CompartirIgual 3.0 Estados Unidos"
+            },
+            {
+                "@language": "et",
+                "@value": "Autorile viitamine + Mitteäriline eesmärk + Jagamine samadel tingimustel 3.0 Ameerika Ühendriigid"
+            },
+            {
+                "@language": "eu",
+                "@value": "Aitortu-EzKomertziala-PartekatuBerdin 3.0 Estatu Batuak"
+            },
+            {
+                "@language": "fa",
+                "@value": "Attribution-NonCommercial-ShareAlike 3.0 ایالات متحده"
+            },
+            {
+                "@language": "fi",
+                "@value": "Nimeä-Epäkaupallinen-Tarttuva 3.0 Yhdysvallat"
+            },
+            {
+                "@language": "fr",
+                "@value": "Attribution - Pas d'Utilisation Commerciale - Partage à l'Identique 3.0 États-Unis"
+            },
+            {
+                "@language": "fr-ca",
+                "@value": "Paternité - Pas d'Utilisation Commerciale - Partage des Conditions Initiales à l'Identique 3.0 Etats-Unis"
+            },
+            {
+                "@language": "fr-ch",
+                "@value": "Paternité - Pas d'Utilisation Commerciale - Partage des Conditions Initiales à l'Identique 3.0 Etats-Unis"
+            },
+            {
+                "@language": "fr-lu",
+                "@value": "Paternité - Pas d'Utilisation Commerciale - Partage des Conditions Initiales à l'Identique 3.0 Etats-Unis"
+            },
+            {
+                "@language": "ga",
+                "@value": "Attribution-NonCommercial-ShareAlike 3.0 United States"
+            },
+            {
+                "@language": "gl",
+                "@value": "Recoñecemento-NonComercial-CompartirIgual 3.0 Estados Unidos"
+            },
+            {
+                "@language": "he",
+                "@value": "ייחוס-שימוש לא מסחרי-שיתוף זהה 3.0 ארה\"ב"
+            },
+            {
+                "@language": "hi",
+                "@value": "Attribution-NonCommercial-ShareAlike 3.0 United States"
+            },
+            {
+                "@language": "hr",
+                "@value": "Imenovanje-Nekomercijalno-Dijeli pod istim uvjetima 3.0 SAD"
+            },
+            {
+                "@language": "hu",
+                "@value": "Nevezd meg! - Ne add el! - Így add tovább! 3.0 Egyesült Államok"
+            },
+            {
+                "@language": "hy",
+                "@value": "Հղում - ոչ-առևտրային օգտագործում - համանման տարածում 3.0 Միացյալ Նահանգներ"
+            },
+            {
+                "@language": "id",
+                "@value": "Atribusi-NonKomersial-BerbagiSerupa 3.0 Amerika Serikat"
+            },
+            {
+                "@language": "is",
+                "@value": "Attribution-NonCommercial-ShareAlike 3.0 Bandaríkin"
+            },
+            {
+                "@language": "it",
+                "@value": "Attribuzione - Non commerciale - Condividi allo stesso modo 3.0 Stati Uniti"
+            },
+            {
+                "@language": "it-ch",
+                "@value": "Attribuzione - Non commerciale - Condividi allo stesso modo 3.0 United States"
+            },
+            {
+                "@language": "ja",
+                "@value": "表示 - 非営利 - 継承 3.0 アメリカ合衆国"
+            },
+            {
+                "@language": "ka",
+                "@value": "ავტორობის მითითებით–არაკომერციული გამოყენებისთვის–გამოყენება იგივე პირობებით 3.0 შეერთებული შტატები"
+            },
+            {
+                "@language": "kk",
+                "@value": "Attribution-NonCommercial-ShareAlike 3.0 United States"
+            },
+            {
+                "@language": "ko",
+                "@value": "저작자표시-비영리-동일조건변경허락 3.0 미국"
+            },
+            {
+                "@language": "lt",
+                "@value": "Attribution-NonCommercial-ShareAlike 3.0 Jungtinės Valstijos"
+            },
+            {
+                "@language": "lv",
+                "@value": "Atsaucoties-Nekomerciāls-Nemainot licenci 3.0 Savienotās valstis"
+            },
+            {
+                "@language": "mk",
+                "@value": "НаведиИзвор-Некомерцијално-СподелиПодИстиУслови 3.0 САД"
+            },
+            {
+                "@language": "ml",
+                "@value": "Attribution-NonCommercial-ShareAlike 3.0 അമേരിക്കൻ ഐക്യനാടുകൾ"
+            },
+            {
+                "@language": "mn",
+                "@value": "Attribution-NonCommercial-ShareAlike 3.0 United States"
+            },
+            {
+                "@language": "ms",
+                "@value": "Pengiktirafan-BukanKomersial-PerkongsianSerupa 3.0 Amerika Syarikat"
+            },
+            {
+                "@language": "nl",
+                "@value": "Naamsvermelding-NietCommercieel-GelijkDelen 3.0 Verenigde Staten"
+            },
+            {
+                "@language": "no",
+                "@value": "Navngivelse-Ikkekommersiell-DelPåSammeVilkår 3.0 USA"
+            },
+            {
+                "@language": "nso",
+                "@value": "Tsebagatšo - E sego ya Kgwebo - Mohlakanelwa 3.0 United States"
+            },
+            {
+                "@language": "oci-es",
+                "@value": "Attribution-NonCommercial-ShareAlike 3.0 United States"
+            },
+            {
+                "@language": "pl",
+                "@value": "Uznanie autorstwa-Użycie niekomercyjne-Na tych samych warunkach 3.0 Stany Zjednoczone"
+            },
+            {
+                "@language": "pt",
+                "@value": "Atribuição - NãoComercial - CompartilhaIgual 3.0 Estados Unidos"
+            },
+            {
+                "@language": "pt-br",
+                "@value": "Atribuição-Uso não-comercial-Compartilhamento pela mesma licença 3.0 United States"
+            },
+            {
+                "@language": "pt-pt",
+                "@value": "Atribuição-Uso Não-Comercial-Partilha nos termos da mesma licença 3.0 Estados Unidos"
+            },
+            {
+                "@language": "ro",
+                "@value": "Atribuire-Necomercial-FărăModificări 3.0 Statele Unite ale Americii"
+            },
+            {
+                "@language": "ru",
+                "@value": "Attribution-NonCommercial-ShareAlike (Атрибуция — Некоммерческое использование — С сохранением условий) 3.0 США"
+            },
+            {
+                "@language": "si-lk",
+                "@value": "Attribution-NonCommercial-ShareAlike 3.0 United States"
+            },
+            {
+                "@language": "sl",
+                "@value": "Priznanje avtorstva-Nekomercialno-Deljenje pod enakimi pogoji 3.0 Združene države"
+            },
+            {
+                "@language": "sq",
+                "@value": "Attribution-NonCommercial-ShareAlike 3.0 Shtetet e Bashkuara"
+            },
+            {
+                "@language": "sr",
+                "@value": "Autorstvo-Nekomercijalno-Deliti pod istim uslovima 3.0 SAD"
+            },
+            {
+                "@language": "sr",
+                "@value": "Ауторство-Некомерцијално-Делити под истим условима 3.0 САД"
+            },
+            {
+                "@language": "sr-latn",
+                "@value": "Autorstvo-Nekomercijalno-Deliti pod istim uslovima 3.0 SAD"
+            },
+            {
+                "@language": "st",
+                "@value": "Attribution-NonCommercial-ShareAlike 3.0 United States"
+            },
+            {
+                "@language": "sv",
+                "@value": "Erkännande-IckeKommersiell-DelaLika 3.0 Förenta Staterna"
+            },
+            {
+                "@language": "ta",
+                "@value": "Attribution-NonCommercial-ShareAlike 3.0 United States"
+            },
+            {
+                "@language": "te",
+                "@value": "Attribution-NonCommercial-ShareAlike 3.0 అమెరికా సంయుక్త రాష్ట్రాలు"
+            },
+            {
+                "@language": "th",
+                "@value": "แสดงที่มา-ไม่ใช้เพื่อการค้า-อนุญาตแบบเดียวกัน 3.0 สหรัฐอเมริกา"
+            },
+            {
+                "@language": "tr",
+                "@value": "Attribution-Gayriticari-ShareAlike 3.0 Birleşik Devletler"
+            },
+            {
+                "@language": "uk",
+                "@value": "Attribution-NonCommercial-ShareAlike 3.0 United States"
+            },
+            {
+                "@language": "ur",
+                "@value": "Attribution-NonCommercial-ShareAlike 3.0 United States"
+            },
+            {
+                "@language": "vi",
+                "@value": "Attribution-NonCommercial-ShareAlike 3.0 Hợp chủng quốc Hoa Kỳ (Nước Mỹ)"
+            },
+            {
+                "@language": "zh",
+                "@value": "署名-非商业性使用-相同方式共享 3.0 美国"
+            },
+            {
+                "@language": "zh-hk",
+                "@value": "姓名標示-非商業性-相同方式分享 3.0 美國"
+            },
+            {
+                "@language": "zh-tw",
+                "@value": "姓名標示-非商業性-相同方式分享 3.0 美國"
+            },
+            {
+                "@language": "zu",
+                "@value": "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano-Yihlanganyeleni 3.0 E-United States"
+            },
+            {
+                "@language": "zxx",
+                "@value": "${Attribution-NonCommercial-ShareAlike} 3.0 ${United States}"
+            }
+        ],
+        "owl:sameAs": "https://licensedb.org/id/CC-BY-NC-SA-3.0-us",
+        "foaf:logo": [
+            "http://i.creativecommons.org/l/by-nc-sa/3.0/us/80x15.png",
+            "http://i.creativecommons.org/l/by-nc-sa/3.0/us/88x31.png"
+        ]
+    },
+    "foaf:logo": [
+        "http://i.creativecommons.org/l/by-nc-sa/3.0/us/80x15.png",
+        "http://i.creativecommons.org/l/by-nc-sa/3.0/us/88x31.png"
+    ],
+    "li:id": "CC-BY-NC-SA-3.0-us",
+    "li:name": "CC BY-NC-SA 3.0 US"
+}

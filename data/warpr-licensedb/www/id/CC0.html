@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="../licensedb.css" type="text/css">
+    <link href="../nprogress.css" rel="stylesheet" />
+    <style>
+     #nprogress .bar { background: #fff; }
+     #nprogress .peg { box-shadow: 0 0 10px #fff, 0 0 5px #fff; }
+     #nprogress .spinner-icon { border-top-color: #fff; border-left-color: #fff; }
+    </style>
+    <script id="license-data" type="application/ld+json" about="https://licensedb.org/id/CC0">
+{
+    "@context": {
+        "cc": "http://creativecommons.org/ns#",
+        "dc": "http://purl.org/dc/terms/",
+        "dc11": "http://purl.org/dc/elements/1.1/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "li": "https://licensedb.org/ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "cc:legalcode": {
+            "@type": "@id"
+        },
+        "cc:permits": {
+            "@type": "@id"
+        },
+        "cc:requires": {
+            "@type": "@id"
+        },
+        "cc:prohibits": {
+            "@type": "@id"
+        },
+        "cc:jurisdiction": {
+            "@type": "@id"
+        },
+        "cc:licenseClass": {
+            "@type": "@id"
+        },
+        "dc:creator": {
+            "@type": "@id"
+        },
+        "dc:source": {
+            "@type": "@id"
+        },
+        "dc:replaces": {
+            "@type": "@id"
+        },
+        "dc:isBasedOn": {
+            "@type": "@id"
+        },
+        "dc:isReplacedBy": {
+            "@type": "@id"
+        },
+        "foaf:logo": {
+            "@type": "@id"
+        },
+        "li:plaintext": {
+            "@type": "@id"
+        },
+        "li:libre": {
+            "@type": "@id"
+        },
+        "owl:sameAs": {
+            "@type": "@id"
+        }
+    },
+    "@id": "https://licensedb.org/id/CC0",
+    "@type": [
+        "cc:License",
+        "li:License"
+    ],
+    "cc:legalcode": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+    "cc:licenseClass": "http://creativecommons.org/choose/zero/",
+    "cc:permits": [
+        "cc:DerivativeWorks",
+        "cc:Distribution",
+        "cc:Reproduction"
+    ],
+    "dc11:identifier": "CC0",
+    "dc11:title": [
+        {
+            "@language": "af",
+            "@value": "CC0 1.0 Universal"
+        },
+        {
+            "@language": "ar",
+            "@value": "CC0 1.0 \u0639\u0627\u0645"
+        },
+        {
+            "@language": "as",
+            "@value": "CC0 1.0 Universal"
+        },
+        {
+            "@language": "ast",
+            "@value": "CC0 1.0 Universal"
+        },
+        {
+            "@language": "ast-es",
+            "@value": "CC0 1.0 Universal"
+        },
+        {
+            "@language": "az",
+            "@value": "CC0 1.0 Universal"
+        },
+        {
+            "@language": "be",
+            "@value": "CC0 1.0 Universal"
+        },
+        {
+            "@language": "bg",
+            "@value": "CC0 1.0 Universal"
+        },
+        {
+            "@language": "bn",
+            "@value": "CC0 1.0 \u09b8\u09be\u09b0\u09cd\u09ac\u099c\u09a8\u09c0\u09a8"
+        },
+        {
+            "@language": "ca",
+            "@value": "CC0 1.0 Universal"
+        },
+        {
+            "@language": "cs",
+            "@value": "CC0 1.0 Universal"
+        },
+        {
+            "@language": "da",
+            "@value": "CC0 1.0 Universelt"
+        },
+        {
+            "@language": "de",
+            "@value": "CC0 1.0 Universell"
+        },
+        {
+            "@language": "de-at",
+            "@value": "CC0 1.0 Universal"
+        },
+        {
+            "@language": "de-ch",
+            "@value": "CC0 1.0 Universal"
+        },
+        {
+            "@language": "el",
+            "@value": "CC0 1.0 \u03a0\u03b1\u03b3\u03ba\u03cc\u03c3\u03bc\u03b9\u03b1"
+        },
+        {
+            "@language": "en",
+            "@value": "CC0 1.0 Universal"
+        },
+        {
+            "@language": "en-ca",
+            "@value": "CC0 1.0 Universal"
+        },
+        {
+            "@language": "en-gb",
+            "@value": "CC0 1.0 Universal"
+        },
+        {
+            "@language": "en-hk",
+            "@value": "CC0 1.0 Universal"
+        },
+        {
+            "@language": "en-sg",
+            "@value": "CC0 1.0 Universal"
+        },
+        {
+            "@language": "en-us",
+            "@value": "CC0 1.0 Universal"
+        },
+        {
+            "@language": "eo",
+            "@value": "CC0 1.0 Universala"
+        },
+        {
+            "@language": "es",
+            "@value": "CC0 1.0 Universal"
+        },
+        {
+            "@language": "es-ar",
+            "@value": "CC0 1.0 Universal"
+        },
+        {
+            "@language": "es-cl",
+            "@value": "CC0 1.0 Universal"
+        },
+        {
+            "@language": "es-co",
+            "@value": "CC0 1.0 Universal"
+        },
+        {
+            "@language": "es-ec",
+            "@value": "CC0 1.0 Universal"
+        },
+        {
+            "@language": "es-es",
+            "@value": "CC0 1.0 Universal"
+        },
+        {
+            "@language": "es-gt",
+            "@value": "CC0 1.0 Universal"
+        },
+        {
+            "@language": "es-mx",
+            "@value": "CC0 1.0 Universal"
+        },
+        {
+            "@language": "es-pe",
+            "@value": "CC0 1.0 Universal"
+        },
+        {
+            "@language": "es-pr",
+            "@value": "CC0 1.0 Universal"
+        },
+        {
+            "@language": "et",
+            "@value": "CC0 1.0 \u00dcldine"
+        },
+        {
+            "@language": "eu",
+            "@value": "CC0 1.0 Universal"
+        },
+        {
+            "@language": "fa",
+            "@value": "CC0 1.0 \u062c\u0647\u0627\u0646\u06cc"
+        },
+        {
+            "@language": "fi",
+            "@value": "CC0 1.0 Yleismaailmallinen"
+        },
+        {
+            "@language": "fr",
+            "@value": "CC0 1.0 universel"
+        },
+        {
+            "@language": "fr-ca",
+            "@value": "CC0 1.0 Universal"
+        },
+        {
+            "@language": "fr-ch",
+            "@value": "CC0 1.0 Universal"
+        },
+        {
+            "@language": "fr-lu",
+            "@value": "CC0 1.0 Universal"
+        },
+        {
+            "@language": "ga",
+            "@value": "CC0 1.0 Universal"
+        },
+        {
+            "@language": "gl",
+            "@value": "CC0 1.0 Universal"
+        },
+        {
+            "@language": "he",
+            "@value": "CC0 1.0 Universal"
+        },
+        {
+            "@language": "hi",
+            "@value": "CC0 1.0 Universal"
+        },
+        {
+            "@language": "hr",
+            "@value": "CC0 1.0 Univerzalno"
+        },
+        {
+            "@language": "hu",
+            "@value": "CC0 1.0 Universal"
+        },
+        {
+            "@language": "hy",
+            "@value": "CC0 1.0 Universal"
+        },
+        {
+            "@language": "id",
+            "@value": "CC0 1.0 Universal"
+        },
+        {
+            "@language": "is",
+            "@value": "CC0 1.0 Universal"
+        },
+        {
+            "@language": "it",
+            "@value": "CC0 1.0 Universal"
+        },
+        {
+            "@language": "it-ch",
+            "@value": "CC0 1.0 Universal"
+        },
+        {
+            "@language": "ja",
+            "@value": "CC0 1.0 Universal"
+        },
+        {
+            "@language": "ka",
+            "@value": "CC0 1.0 \u10e3\u10dc\u10d8\u10d5\u10d4\u10e0\u10e1\u10d0\u10da\u10e3\u10e0\u10d8"
+        },
+        {
+            "@language": "kk",
+            "@value": "CC0 1.0 Universal"
+        },
+        {
+            "@language": "ko",
+            "@value": "CC0 1.0 \ubcf4\ud3b8\uc801\uc778"
+        },
+        {
+            "@language": "lt",
+            "@value": "CC0 1.0 Universal"
+        },
+        {
+            "@language": "lv",
+            "@value": "CC0 1.0 Univers\u0101ls"
+        },
+        {
+            "@language": "mk",
+            "@value": "CC0 1.0 Universal"
+        },
+        {
+            "@language": "ml",
+            "@value": "CC0 1.0 Universal"
+        },
+        {
+            "@language": "mn",
+            "@value": "CC0 1.0 Universal"
+        },
+        {
+            "@language": "ms",
+            "@value": "CC0 1.0 Universal"
+        },
+        {
+            "@language": "nl",
+            "@value": "CC0 1.0 Universeel"
+        },
+        {
+            "@language": "no",
+            "@value": "CC0 1.0 Universal"
+        },
+        {
+            "@language": "nso",
+            "@value": "CC0 1.0 Universal"
+        },
+        {
+            "@language": "oci-es",
+            "@value": "CC0 1.0 Universal"
+        },
+        {
+            "@language": "pl",
+            "@value": "CC0 1.0 uniwersalna"
+        },
+        {
+            "@language": "pt",
+            "@value": "CC0 1.0 Universal"
+        },
+        {
+            "@language": "pt-br",
+            "@value": "CC0 1.0 Universal"
+        },
+        {
+            "@language": "pt-pt",
+            "@value": "CC0 1.0 Universal"
+        },
+        {
+            "@language": "ro",
+            "@value": "CC0 1.0 Universal"
+        },
+        {
+            "@language": "ru",
+            "@value": "CC0 1.0 \u0423\u043d\u0438\u0432\u0435\u0440\u0441\u0430\u043b\u044c\u043d\u0430\u044f"
+        },
+        {
+            "@language": "si-lk",
+            "@value": "CC0 1.0 Universal"
+        },
+        {
+            "@language": "sl",
+            "@value": "CC0 1.0 Universal"
+        },
+        {
+            "@language": "sq",
+            "@value": "CC0 1.0 Universale"
+        },
+        {
+            "@language": "sr",
+            "@value": "CC0 1.0 Univerzalna"
+        },
+        {
+            "@language": "sr",
+            "@value": "CC0 1.0 \u0423\u043d\u0438\u0432\u0435\u0440\u0437\u0430\u043b\u043d\u0430"
+        },
+        {
+            "@language": "sr-latn",
+            "@value": "CC0 1.0 Univerzalna"
+        },
+        {
+            "@language": "st",
+            "@value": "CC0 1.0 util.Universal"
+        },
+        {
+            "@language": "sv",
+            "@value": "CC0 1.0 Universal"
+        },
+        {
+            "@language": "ta",
+            "@value": "CC0 1.0 Universal"
+        },
+        {
+            "@language": "te",
+            "@value": "CC0 1.0 \u0c35\u0c3f\u0c36\u0c4d\u0c35\u0c35\u0c4d\u0c2f\u0c3e\u0c2a\u0c4d\u0c24\u0c02"
+        },
+        {
+            "@language": "th",
+            "@value": "CC0 1.0 Universal"
+        },
+        {
+            "@language": "tr",
+            "@value": "CC0 1.0 Evrensel"
+        },
+        {
+            "@language": "uk",
+            "@value": "CC0 1.0 Universal"
+        },
+        {
+            "@language": "ur",
+            "@value": "CC0 1.0 Universal"
+        },
+        {
+            "@language": "vi",
+            "@value": "CC0 1.0 To\u00e0n c\u1ea7u"
+        },
+        {
+            "@language": "zh",
+            "@value": "CC0 1.0 Universal"
+        },
+        {
+            "@language": "zh-hk",
+            "@value": "CC0 1.0 \u901a\u7528"
+        },
+        {
+            "@language": "zh-tw",
+            "@value": "CC0 1.0 \u901a\u7528"
+        },
+        {
+            "@language": "zu",
+            "@value": "CC0 1.0 Universal"
+        },
+        {
+            "@language": "zxx",
+            "@value": "CC0 1.0 ${Universal}"
+        }
+    ],
+    "dc:hasVersion": "1.0",
+    "schema:sameAs": [
+        {
+            "@id": "http://creativecommons.org/publicdomain/zero/1.0/",
+            "@type": "cc:License",
+            "cc:legalcode": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+            "cc:licenseClass": "http://creativecommons.org/choose/zero/",
+            "cc:permits": [
+                "cc:DerivativeWorks",
+                "cc:Distribution",
+                "cc:Reproduction"
+            ],
+            "dc11:identifier": "CC0",
+            "dc11:title": [
+                {
+                    "@language": "af",
+                    "@value": "CC0 1.0 Universal"
+                },
+                {
+                    "@language": "ar",
+                    "@value": "CC0 1.0 \u0639\u0627\u0645"
+                },
+                {
+                    "@language": "as",
+                    "@value": "CC0 1.0 Universal"
+                },
+                {
+                    "@language": "ast",
+                    "@value": "CC0 1.0 Universal"
+                },
+                {
+                    "@language": "ast-es",
+                    "@value": "CC0 1.0 Universal"
+                },
+                {
+                    "@language": "az",
+                    "@value": "CC0 1.0 Universal"
+                },
+                {
+                    "@language": "be",
+                    "@value": "CC0 1.0 Universal"
+                },
+                {
+                    "@language": "bg",
+                    "@value": "CC0 1.0 Universal"
+                },
+                {
+                    "@language": "bn",
+                    "@value": "CC0 1.0 \u09b8\u09be\u09b0\u09cd\u09ac\u099c\u09a8\u09c0\u09a8"
+                },
+                {
+                    "@language": "ca",
+                    "@value": "CC0 1.0 Universal"
+                },
+                {
+                    "@language": "cs",
+                    "@value": "CC0 1.0 Universal"
+                },
+                {
+                    "@language": "da",
+                    "@value": "CC0 1.0 Universelt"
+                },
+                {
+                    "@language": "de",
+                    "@value": "CC0 1.0 Universell"
+                },
+                {
+                    "@language": "de-at",
+                    "@value": "CC0 1.0 Universal"
+                },
+                {
+                    "@language": "de-ch",
+                    "@value": "CC0 1.0 Universal"
+                },
+                {
+                    "@language": "el",
+                    "@value": "CC0 1.0 \u03a0\u03b1\u03b3\u03ba\u03cc\u03c3\u03bc\u03b9\u03b1"
+                },
+                {
+                    "@language": "en",
+                    "@value": "CC0 1.0 Universal"
+                },
+                {
+                    "@language": "en-ca",
+                    "@value": "CC0 1.0 Universal"
+                },
+                {
+                    "@language": "en-gb",
+                    "@value": "CC0 1.0 Universal"
+                },
+                {
+                    "@language": "en-hk",
+                    "@value": "CC0 1.0 Universal"
+                },
+                {
+                    "@language": "en-sg",
+                    "@value": "CC0 1.0 Universal"
+                },
+                {
+                    "@language": "en-us",
+                    "@value": "CC0 1.0 Universal"
+                },
+                {
+                    "@language": "eo",
+                    "@value": "CC0 1.0 Universala"
+                },
+                {
+                    "@language": "es",
+                    "@value": "CC0 1.0 Universal"
+                },
+                {
+                    "@language": "es-ar",
+                    "@value": "CC0 1.0 Universal"
+                },
+                {
+                    "@language": "es-cl",
+                    "@value": "CC0 1.0 Universal"
+                },
+                {
+                    "@language": "es-co",
+                    "@value": "CC0 1.0 Universal"
+                },
+                {
+                    "@language": "es-ec",
+                    "@value": "CC0 1.0 Universal"
+                },
+                {
+                    "@language": "es-es",
+                    "@value": "CC0 1.0 Universal"
+                },
+                {
+                    "@language": "es-gt",
+                    "@value": "CC0 1.0 Universal"
+                },
+                {
+                    "@language": "es-mx",
+                    "@value": "CC0 1.0 Universal"
+                },
+                {
+                    "@language": "es-pe",
+                    "@value": "CC0 1.0 Universal"
+                },
+                {
+                    "@language": "es-pr",
+                    "@value": "CC0 1.0 Universal"
+                },
+                {
+                    "@language": "et",
+                    "@value": "CC0 1.0 \u00dcldine"
+                },
+                {
+                    "@language": "eu",
+                    "@value": "CC0 1.0 Universal"
+                },
+                {
+                    "@language": "fa",
+                    "@value": "CC0 1.0 \u062c\u0647\u0627\u0646\u06cc"
+                },
+                {
+                    "@language": "fi",
+                    "@value": "CC0 1.0 Yleismaailmallinen"
+                },
+                {
+                    "@language": "fr",
+                    "@value": "CC0 1.0 universel"
+                },
+                {
+                    "@language": "fr-ca",
+                    "@value": "CC0 1.0 Universal"
+                },
+                {
+                    "@language": "fr-ch",
+                    "@value": "CC0 1.0 Universal"
+                },
+                {
+                    "@language": "fr-lu",
+                    "@value": "CC0 1.0 Universal"
+                },
+                {
+                    "@language": "ga",
+                    "@value": "CC0 1.0 Universal"
+                },
+                {
+                    "@language": "gl",
+                    "@value": "CC0 1.0 Universal"
+                },
+                {
+                    "@language": "he",
+                    "@value": "CC0 1.0 Universal"
+                },
+                {
+                    "@language": "hi",
+                    "@value": "CC0 1.0 Universal"
+                },
+                {
+                    "@language": "hr",
+                    "@value": "CC0 1.0 Univerzalno"
+                },
+                {
+                    "@language": "hu",
+                    "@value": "CC0 1.0 Universal"
+                },
+                {
+                    "@language": "hy",
+                    "@value": "CC0 1.0 Universal"
+                },
+                {
+                    "@language": "id",
+                    "@value": "CC0 1.0 Universal"
+                },
+                {
+                    "@language": "is",
+                    "@value": "CC0 1.0 Universal"
+                },
+                {
+                    "@language": "it",
+                    "@value": "CC0 1.0 Universal"
+                },
+                {
+                    "@language": "it-ch",
+                    "@value": "CC0 1.0 Universal"
+                },
+                {
+                    "@language": "ja",
+                    "@value": "CC0 1.0 Universal"
+                },
+                {
+                    "@language": "ka",
+                    "@value": "CC0 1.0 \u10e3\u10dc\u10d8\u10d5\u10d4\u10e0\u10e1\u10d0\u10da\u10e3\u10e0\u10d8"
+                },
+                {
+                    "@language": "kk",
+                    "@value": "CC0 1.0 Universal"
+                },
+                {
+                    "@language": "ko",
+                    "@value": "CC0 1.0 \ubcf4\ud3b8\uc801\uc778"
+                },
+                {
+                    "@language": "lt",
+                    "@value": "CC0 1.0 Universal"
+                },
+                {
+                    "@language": "lv",
+                    "@value": "CC0 1.0 Univers\u0101ls"
+                },
+                {
+                    "@language": "mk",
+                    "@value": "CC0 1.0 Universal"
+                },
+                {
+                    "@language": "ml",
+                    "@value": "CC0 1.0 Universal"
+                },
+                {
+                    "@language": "mn",
+                    "@value": "CC0 1.0 Universal"
+                },
+                {
+                    "@language": "ms",
+                    "@value": "CC0 1.0 Universal"
+                },
+                {
+                    "@language": "nl",
+                    "@value": "CC0 1.0 Universeel"
+                },
+                {
+                    "@language": "no",
+                    "@value": "CC0 1.0 Universal"
+                },
+                {
+                    "@language": "nso",
+                    "@value": "CC0 1.0 Universal"
+                },
+                {
+                    "@language": "oci-es",
+                    "@value": "CC0 1.0 Universal"
+                },
+                {
+                    "@language": "pl",
+                    "@value": "CC0 1.0 uniwersalna"
+                },
+                {
+                    "@language": "pt",
+                    "@value": "CC0 1.0 Universal"
+                },
+                {
+                    "@language": "pt-br",
+                    "@value": "CC0 1.0 Universal"
+                },
+                {
+                    "@language": "pt-pt",
+                    "@value": "CC0 1.0 Universal"
+                },
+                {
+                    "@language": "ro",
+                    "@value": "CC0 1.0 Universal"
+                },
+                {
+                    "@language": "ru",
+                    "@value": "CC0 1.0 \u0423\u043d\u0438\u0432\u0435\u0440\u0441\u0430\u043b\u044c\u043d\u0430\u044f"
+                },
+                {
+                    "@language": "si-lk",
+                    "@value": "CC0 1.0 Universal"
+                },
+                {
+                    "@language": "sl",
+                    "@value": "CC0 1.0 Universal"
+                },
+                {
+                    "@language": "sq",
+                    "@value": "CC0 1.0 Universale"
+                },
+                {
+                    "@language": "sr",
+                    "@value": "CC0 1.0 Univerzalna"
+                },
+                {
+                    "@language": "sr",
+                    "@value": "CC0 1.0 \u0423\u043d\u0438\u0432\u0435\u0440\u0437\u0430\u043b\u043d\u0430"
+                },
+                {
+                    "@language": "sr-latn",
+                    "@value": "CC0 1.0 Univerzalna"
+                },
+                {
+                    "@language": "st",
+                    "@value": "CC0 1.0 util.Universal"
+                },
+                {
+                    "@language": "sv",
+                    "@value": "CC0 1.0 Universal"
+                },
+                {
+                    "@language": "ta",
+                    "@value": "CC0 1.0 Universal"
+                },
+                {
+                    "@language": "te",
+                    "@value": "CC0 1.0 \u0c35\u0c3f\u0c36\u0c4d\u0c35\u0c35\u0c4d\u0c2f\u0c3e\u0c2a\u0c4d\u0c24\u0c02"
+                },
+                {
+                    "@language": "th",
+                    "@value": "CC0 1.0 Universal"
+                },
+                {
+                    "@language": "tr",
+                    "@value": "CC0 1.0 Evrensel"
+                },
+                {
+                    "@language": "uk",
+                    "@value": "CC0 1.0 Universal"
+                },
+                {
+                    "@language": "ur",
+                    "@value": "CC0 1.0 Universal"
+                },
+                {
+                    "@language": "vi",
+                    "@value": "CC0 1.0 To\u00e0n c\u1ea7u"
+                },
+                {
+                    "@language": "zh",
+                    "@value": "CC0 1.0 Universal"
+                },
+                {
+                    "@language": "zh-hk",
+                    "@value": "CC0 1.0 \u901a\u7528"
+                },
+                {
+                    "@language": "zh-tw",
+                    "@value": "CC0 1.0 \u901a\u7528"
+                },
+                {
+                    "@language": "zu",
+                    "@value": "CC0 1.0 Universal"
+                },
+                {
+                    "@language": "zxx",
+                    "@value": "CC0 1.0 ${Universal}"
+                }
+            ],
+            "dc:hasVersion": "1.0",
+            "foaf:logo": [
+                "http://i.creativecommons.org/p/zero/1.0/80x15.png",
+                "http://i.creativecommons.org/p/zero/1.0/88x31.png"
+            ]
+        },
+        {
+            "@id": "http://spdx.org/licenses/CC0-1.0"
+        }
+    ],
+    "spdx:licenseId": "CC0-1.0",
+    "owl:sameAs": "magnet:?xt=urn:btih:90dc5c0be029de84e523b9b3922520e79e0e6f08\u0026dn=cc0.txt",
+    "foaf:logo": [
+        "http://i.creativecommons.org/p/zero/1.0/80x15.png",
+        "http://i.creativecommons.org/p/zero/1.0/88x31.png"
+    ],
+    "li:id": "CC0",
+    "li:libre": [
+        "http://creativecommons.org/",
+        "http://freedomdefined.org/",
+        "http://fsf.org/",
+        "http://opendefinition.org/"
+    ],
+    "li:name": "CC0",
+    "li:notice": {
+        "li:canonical": false,
+        "li:orlater": false,
+        "li:short": true,
+        "li:text": "To the extent possible under law, {{rightsholder}} has waived all\ncopyright and related or neighboring rights to {{title}}.  See\nhttp://creativecommons.org/publicdomain/zero/1.0/ for more\ninformation.  "
+    },
+    "li:plaintext": [
+        "http://creativecommons.org/publicdomain/zero/1.0/legalcode.txt",
+        "https://licensedb.org/id/CC0.txt"
+    ]
+}
+
+</script>
+  </head>
+
+  <body>
+    <div id="header">
+      <a href="/" title="home">
+        <img src="/licensedb.png" style="margin: 1em; min-height: 46px;" />
+      </a>
+      <div id="menu">
+        <ul>
+          <li><a href="/">About</a></li>
+          <li><a href="/id/">Database</a></li>
+          <li><a href="/ns.html">Vocabulary</a></li>
+          <li><a href="/license.html">License</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="contentwrapper">
+          <p style="padding: 1em 108px; border-bottom: 1px solid #ffeeba; background: #fff3cd; color: #856404;">
+            &#x26A0; LicenseDB is no longer actively developed.  This is an archived (static) version
+            of the site.  The full project can be downloaded from
+            <a href="https://github.com/warpr/licensedb/">Github</a>.
+          </p>
+
+     <div id="license-details"></div>    </div>
+
+    
+    
+    <script src="/js/nprogress.js"></script>
+    <script src="/js/app.js"></script>
+
+  </body>
+</html>

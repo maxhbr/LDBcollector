@@ -1,0 +1,850 @@
+{
+    "@context": {
+        "cc": "http://creativecommons.org/ns#",
+        "dc": "http://purl.org/dc/terms/",
+        "dc11": "http://purl.org/dc/elements/1.1/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "li": "https://licensedb.org/ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "cc:legalcode": {
+            "@type": "@id"
+        },
+        "cc:permits": {
+            "@type": "@id"
+        },
+        "cc:requires": {
+            "@type": "@id"
+        },
+        "cc:prohibits": {
+            "@type": "@id"
+        },
+        "cc:jurisdiction": {
+            "@type": "@id"
+        },
+        "cc:licenseClass": {
+            "@type": "@id"
+        },
+        "dc:creator": {
+            "@type": "@id"
+        },
+        "dc:source": {
+            "@type": "@id"
+        },
+        "dc:replaces": {
+            "@type": "@id"
+        },
+        "dc:isBasedOn": {
+            "@type": "@id"
+        },
+        "dc:isReplacedBy": {
+            "@type": "@id"
+        },
+        "foaf:logo": {
+            "@type": "@id"
+        },
+        "li:plaintext": {
+            "@type": "@id"
+        },
+        "li:libre": {
+            "@type": "@id"
+        },
+        "owl:sameAs": {
+            "@type": "@id"
+        }
+    },
+    "@id": "https://licensedb.org/id/CC-BY-NC-ND-2.5-il",
+    "@type": [
+        "cc:License",
+        "li:License"
+    ],
+    "cc:jurisdiction": "http://creativecommons.org/international/il/",
+    "cc:legalcode": "http://creativecommons.org/licenses/by-nc-nd/2.5/il/legalcode",
+    "cc:licenseClass": "http://creativecommons.org/license/",
+    "cc:permits": [
+        "cc:Distribution",
+        "cc:Reproduction"
+    ],
+    "cc:prohibits": "cc:CommercialUse",
+    "cc:requires": [
+        "cc:Attribution",
+        "cc:Notice"
+    ],
+    "dc:creator": "http://creativecommons.org",
+    "dc:hasVersion": "2.5",
+    "dc:identifier": "by-nc-nd",
+    "dc:source": "http://creativecommons.org/licenses/by-nc-nd/2.5/",
+    "dc:title": [
+        {
+            "@language": "af",
+            "@value": "Erkenning-NieKommersieel-GeenAfleidings 2.5 Israel"
+        },
+        {
+            "@language": "ar",
+            "@value": "نسب- غير تجاري - لا اشتقاق 2.5 اسرائيل"
+        },
+        {
+            "@language": "as",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 Israel"
+        },
+        {
+            "@language": "ast",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 Israel"
+        },
+        {
+            "@language": "ast-es",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 Israel"
+        },
+        {
+            "@language": "az",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 Israel"
+        },
+        {
+            "@language": "be",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 Ізраіль"
+        },
+        {
+            "@language": "bg",
+            "@value": "Признание-Некомерсиално-Без производни 2.5 Израел"
+        },
+        {
+            "@language": "bn",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 Israel"
+        },
+        {
+            "@language": "ca",
+            "@value": "Reconeixement-NoComercial-SenseObraDerivada 2.5 Israel"
+        },
+        {
+            "@language": "cs",
+            "@value": "Uveďte autora-Neužívejte dílo komerčně-Nezasahujte do díla 2.5 Izrael"
+        },
+        {
+            "@language": "da",
+            "@value": "Navngivelse-IkkeKommerciel-IngenBearbejdelse 2.5 Israel"
+        },
+        {
+            "@language": "de",
+            "@value": "Namensnennung-NichtKommerziell-KeineBearbeitung 2.5 Israel"
+        },
+        {
+            "@language": "de-at",
+            "@value": "Namensnennung-NichtKommerziell-KeineBearbeitung 2.5 Israel"
+        },
+        {
+            "@language": "de-ch",
+            "@value": "Namensnennung-NichtKommerziell-KeineBearbeitung 2.5 Israel"
+        },
+        {
+            "@language": "el",
+            "@value": "Αναφορά Δημιουργού-Μη Εμπορική Χρήση-Όχι Παράγωγα Έργα 2.5 Ισραήλ"
+        },
+        {
+            "@language": "en",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 Israel"
+        },
+        {
+            "@language": "en-ca",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 Israel"
+        },
+        {
+            "@language": "en-gb",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 Israel"
+        },
+        {
+            "@language": "en-hk",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 Israel"
+        },
+        {
+            "@language": "en-sg",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 Israel"
+        },
+        {
+            "@language": "en-us",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 Israel"
+        },
+        {
+            "@language": "eo",
+            "@value": "Atribuite-Nekomerce-Nemodifite 2.5 Israelo"
+        },
+        {
+            "@language": "es",
+            "@value": "Atribución-NoComercial-SinDerivadas 2.5 Israel"
+        },
+        {
+            "@language": "es-ar",
+            "@value": "Atribución-NoComercial-SinDerivadas 2.5 Israel"
+        },
+        {
+            "@language": "es-cl",
+            "@value": "Atribución-NoComercial-SinDerivadas 2.5 Israel"
+        },
+        {
+            "@language": "es-co",
+            "@value": "Reconocimiento-NoComercial-SinObraDerivada 2.5 Israel"
+        },
+        {
+            "@language": "es-ec",
+            "@value": "Reconocimiento-NoComercial-SinObraDerivada 2.5 Israel"
+        },
+        {
+            "@language": "es-es",
+            "@value": "Reconocimiento-NoComercial-SinObraDerivada 2.5 Israel"
+        },
+        {
+            "@language": "es-gt",
+            "@value": "Reconocimiento-NoComercial-SinObraDerivada 2.5 Israel"
+        },
+        {
+            "@language": "es-mx",
+            "@value": "Atribución-No Comercial-No Derivadas 2.5 Israel"
+        },
+        {
+            "@language": "es-pe",
+            "@value": "Reconocimiento-NoComercial-SinObraDerivada 2.5 Israel"
+        },
+        {
+            "@language": "es-pr",
+            "@value": "Reconocimiento-NoComercial-SinObrasDerivadas 2.5 Israel"
+        },
+        {
+            "@language": "et",
+            "@value": "Autorile viitamine + Mitteäriline eesmärk + Tuletatud teoste keeld 2.5 Iisrael"
+        },
+        {
+            "@language": "eu",
+            "@value": "Aitortu-EzKomertziala-LanEratorririkGabe 2.5 Israel"
+        },
+        {
+            "@language": "fa",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 اسرائيل"
+        },
+        {
+            "@language": "fi",
+            "@value": "Nimeä-Ei muutoksia-Epäkaupallinen 2.5 Israel"
+        },
+        {
+            "@language": "fr",
+            "@value": "Attribution - Pas d’Utilisation Commerciale - Pas de Modification 2.5 Israël"
+        },
+        {
+            "@language": "fr-ca",
+            "@value": "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.5 Israël"
+        },
+        {
+            "@language": "fr-ch",
+            "@value": "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.5 Israël"
+        },
+        {
+            "@language": "fr-lu",
+            "@value": "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.5 Israël"
+        },
+        {
+            "@language": "ga",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 Israel"
+        },
+        {
+            "@language": "gl",
+            "@value": "Recoñecemento-NonComercial-SenObraDerivada 2.5 Israel"
+        },
+        {
+            "@language": "he",
+            "@value": "ייחוס-שימוש לא מסחרי-איסור יצירות נגזרות 2.5 ישראל"
+        },
+        {
+            "@language": "hi",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 इसरैल"
+        },
+        {
+            "@language": "hr",
+            "@value": "Imenovanje-Nekomercijalno-Bez prerada 2.5 Izrael"
+        },
+        {
+            "@language": "hu",
+            "@value": "Nevezd meg! - Ne add el! - Ne változtasd! 2.5 Izrael"
+        },
+        {
+            "@language": "hy",
+            "@value": "Հղում - Ոչ-առևտրային օգտագործում - Օգտագործում առանց վերափոխումների 2.5 Իսրայել"
+        },
+        {
+            "@language": "id",
+            "@value": "Atribusi-NonKomersial-TanpaTurunan 2.5 Israel"
+        },
+        {
+            "@language": "is",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 Ísrael"
+        },
+        {
+            "@language": "it",
+            "@value": "Attribuzione - Non commerciale - Non opere derivate 2.5 Israele"
+        },
+        {
+            "@language": "it-ch",
+            "@value": "Attribuzione - Non commerciale - Non opere derivate 2.5 Israel"
+        },
+        {
+            "@language": "ja",
+            "@value": "表示 - 非営利 - 改変禁止 2.5 イスラエル"
+        },
+        {
+            "@language": "ka",
+            "@value": "ავტორობის მითითებით–არაკომერციული გამოყენბისათვის–გადამუშავების გარეშე 2.5 ისრაელი"
+        },
+        {
+            "@language": "kk",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 Israel"
+        },
+        {
+            "@language": "ko",
+            "@value": "저작자표시-비영리-변경금지 2.5 이스라엘"
+        },
+        {
+            "@language": "lt",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 Izraelis"
+        },
+        {
+            "@language": "lv",
+            "@value": "Atsaucoties-Nekomerciāls-Nemainīts 2.5 Izraēla"
+        },
+        {
+            "@language": "mk",
+            "@value": "НаведиИзвор-Некомерцијално-БезАдаптираниДела 2.5 Израел"
+        },
+        {
+            "@language": "ml",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 ഇസ്രായൽ"
+        },
+        {
+            "@language": "mn",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 Израйль"
+        },
+        {
+            "@language": "ms",
+            "@value": "Pengiktirafan-BukanKomersial-TiadaTerbitan 2.5 Isreal"
+        },
+        {
+            "@language": "nl",
+            "@value": "Naamsvermelding-NietCommercieel-GeenAfgeleideWerken 2.5 Israël"
+        },
+        {
+            "@language": "no",
+            "@value": "Navngivelse-Ikkekommersiell-IngenBearbeidelse 2.5 Israel"
+        },
+        {
+            "@language": "nso",
+            "@value": "Tsebagatšo-E sego ya Kgwebo-Tše sa fetolwego 2.5 Isiraele"
+        },
+        {
+            "@language": "oci-es",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 Israel"
+        },
+        {
+            "@language": "pl",
+            "@value": "Uznanie autorstwa-Użycie niekomercyjne-Bez utworów zależnych 2.5 Izrael"
+        },
+        {
+            "@language": "pt",
+            "@value": "Atribuição - NãoComercial - SemDerivados 2.5 Israel"
+        },
+        {
+            "@language": "pt-br",
+            "@value": "Atribuição-Uso não-comercial-Vedada a criação de obras derivadas 2.5 Israel"
+        },
+        {
+            "@language": "pt-pt",
+            "@value": "Atribuição-Uso Não-Comercial-Proibição de realização de Obras Derivadas 2.5 Israel"
+        },
+        {
+            "@language": "ro",
+            "@value": "Atribuire-Necomercial-FărăModificări 2.5 Israel"
+        },
+        {
+            "@language": "ru",
+            "@value": "Attribution-NonCommercial-NoDerivs (Атрибуция — Некоммерческое использование — Без производных произведений) 2.5 Израиль"
+        },
+        {
+            "@language": "si-lk",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 Israel"
+        },
+        {
+            "@language": "sl",
+            "@value": "Priznanje avtorstva-Nekomercialno-Brez predelav 2.5 Izrael"
+        },
+        {
+            "@language": "sq",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 Izrael"
+        },
+        {
+            "@language": "sr",
+            "@value": "Autorstvo-Nekomercijalno-Bez prerada 2.5 Izrael"
+        },
+        {
+            "@language": "sr",
+            "@value": "Ауторство-Некомерцијално-Без прерада 2.5 Израел"
+        },
+        {
+            "@language": "sr-latn",
+            "@value": "Autorstvo-Nekomercijalno-Bez prerada 2.5 Izrael"
+        },
+        {
+            "@language": "st",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 Israel"
+        },
+        {
+            "@language": "sv",
+            "@value": "Erkännande-Ickekommersiell-IngaBearbetningar 2.5 Israel"
+        },
+        {
+            "@language": "ta",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 Israel"
+        },
+        {
+            "@language": "te",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 ఇజ్రాయిల్"
+        },
+        {
+            "@language": "th",
+            "@value": "แสดงที่มา-ไม่ใช้เพื่อการค้า-ไม่ดัดแปลง 2.5 อิสราเอล"
+        },
+        {
+            "@language": "tr",
+            "@value": "Attribution-Gayriticari-NoDerivs 2.5 İsrail"
+        },
+        {
+            "@language": "uk",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 Israel"
+        },
+        {
+            "@language": "ur",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 Israel"
+        },
+        {
+            "@language": "vi",
+            "@value": "Ghi nhận công của tác giả - Phi thương mại - Không phái sinh  2.5 Nước Israel"
+        },
+        {
+            "@language": "zh",
+            "@value": "署名-非商业性使用-禁止演绎 2.5 以色列"
+        },
+        {
+            "@language": "zh-hk",
+            "@value": "姓名標示-非商業性-禁止改作 2.5 以色列"
+        },
+        {
+            "@language": "zh-tw",
+            "@value": "姓名標示-非商業性-禁止改作 2.5 以色列"
+        },
+        {
+            "@language": "zu",
+            "@value": "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano-Ungasuseli lutho kulokhu 2.5 E-Israel"
+        },
+        {
+            "@language": "zxx",
+            "@value": "${Attribution-NonCommercial-NoDerivs} 2.5 ${Israel}"
+        }
+    ],
+    "owl:sameAs": {
+        "@id": "http://creativecommons.org/licenses/by-nc-nd/2.5/il/",
+        "@type": "cc:License",
+        "cc:jurisdiction": "http://creativecommons.org/international/il/",
+        "cc:legalcode": "http://creativecommons.org/licenses/by-nc-nd/2.5/il/legalcode",
+        "cc:licenseClass": "http://creativecommons.org/license/",
+        "cc:permits": [
+            "cc:Distribution",
+            "cc:Reproduction"
+        ],
+        "cc:prohibits": "cc:CommercialUse",
+        "cc:requires": [
+            "cc:Attribution",
+            "cc:Notice"
+        ],
+        "dc:creator": "http://creativecommons.org",
+        "dc:hasVersion": "2.5",
+        "dc:identifier": "by-nc-nd",
+        "dc:source": "http://creativecommons.org/licenses/by-nc-nd/2.5/",
+        "dc:title": [
+            {
+                "@language": "af",
+                "@value": "Erkenning-NieKommersieel-GeenAfleidings 2.5 Israel"
+            },
+            {
+                "@language": "ar",
+                "@value": "نسب- غير تجاري - لا اشتقاق 2.5 اسرائيل"
+            },
+            {
+                "@language": "as",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 Israel"
+            },
+            {
+                "@language": "ast",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 Israel"
+            },
+            {
+                "@language": "ast-es",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 Israel"
+            },
+            {
+                "@language": "az",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 Israel"
+            },
+            {
+                "@language": "be",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 Ізраіль"
+            },
+            {
+                "@language": "bg",
+                "@value": "Признание-Некомерсиално-Без производни 2.5 Израел"
+            },
+            {
+                "@language": "bn",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 Israel"
+            },
+            {
+                "@language": "ca",
+                "@value": "Reconeixement-NoComercial-SenseObraDerivada 2.5 Israel"
+            },
+            {
+                "@language": "cs",
+                "@value": "Uveďte autora-Neužívejte dílo komerčně-Nezasahujte do díla 2.5 Izrael"
+            },
+            {
+                "@language": "da",
+                "@value": "Navngivelse-IkkeKommerciel-IngenBearbejdelse 2.5 Israel"
+            },
+            {
+                "@language": "de",
+                "@value": "Namensnennung-NichtKommerziell-KeineBearbeitung 2.5 Israel"
+            },
+            {
+                "@language": "de-at",
+                "@value": "Namensnennung-NichtKommerziell-KeineBearbeitung 2.5 Israel"
+            },
+            {
+                "@language": "de-ch",
+                "@value": "Namensnennung-NichtKommerziell-KeineBearbeitung 2.5 Israel"
+            },
+            {
+                "@language": "el",
+                "@value": "Αναφορά Δημιουργού-Μη Εμπορική Χρήση-Όχι Παράγωγα Έργα 2.5 Ισραήλ"
+            },
+            {
+                "@language": "en",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 Israel"
+            },
+            {
+                "@language": "en-ca",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 Israel"
+            },
+            {
+                "@language": "en-gb",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 Israel"
+            },
+            {
+                "@language": "en-hk",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 Israel"
+            },
+            {
+                "@language": "en-sg",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 Israel"
+            },
+            {
+                "@language": "en-us",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 Israel"
+            },
+            {
+                "@language": "eo",
+                "@value": "Atribuite-Nekomerce-Nemodifite 2.5 Israelo"
+            },
+            {
+                "@language": "es",
+                "@value": "Atribución-NoComercial-SinDerivadas 2.5 Israel"
+            },
+            {
+                "@language": "es-ar",
+                "@value": "Atribución-NoComercial-SinDerivadas 2.5 Israel"
+            },
+            {
+                "@language": "es-cl",
+                "@value": "Atribución-NoComercial-SinDerivadas 2.5 Israel"
+            },
+            {
+                "@language": "es-co",
+                "@value": "Reconocimiento-NoComercial-SinObraDerivada 2.5 Israel"
+            },
+            {
+                "@language": "es-ec",
+                "@value": "Reconocimiento-NoComercial-SinObraDerivada 2.5 Israel"
+            },
+            {
+                "@language": "es-es",
+                "@value": "Reconocimiento-NoComercial-SinObraDerivada 2.5 Israel"
+            },
+            {
+                "@language": "es-gt",
+                "@value": "Reconocimiento-NoComercial-SinObraDerivada 2.5 Israel"
+            },
+            {
+                "@language": "es-mx",
+                "@value": "Atribución-No Comercial-No Derivadas 2.5 Israel"
+            },
+            {
+                "@language": "es-pe",
+                "@value": "Reconocimiento-NoComercial-SinObraDerivada 2.5 Israel"
+            },
+            {
+                "@language": "es-pr",
+                "@value": "Reconocimiento-NoComercial-SinObrasDerivadas 2.5 Israel"
+            },
+            {
+                "@language": "et",
+                "@value": "Autorile viitamine + Mitteäriline eesmärk + Tuletatud teoste keeld 2.5 Iisrael"
+            },
+            {
+                "@language": "eu",
+                "@value": "Aitortu-EzKomertziala-LanEratorririkGabe 2.5 Israel"
+            },
+            {
+                "@language": "fa",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 اسرائيل"
+            },
+            {
+                "@language": "fi",
+                "@value": "Nimeä-Ei muutoksia-Epäkaupallinen 2.5 Israel"
+            },
+            {
+                "@language": "fr",
+                "@value": "Attribution - Pas d’Utilisation Commerciale - Pas de Modification 2.5 Israël"
+            },
+            {
+                "@language": "fr-ca",
+                "@value": "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.5 Israël"
+            },
+            {
+                "@language": "fr-ch",
+                "@value": "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.5 Israël"
+            },
+            {
+                "@language": "fr-lu",
+                "@value": "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.5 Israël"
+            },
+            {
+                "@language": "ga",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 Israel"
+            },
+            {
+                "@language": "gl",
+                "@value": "Recoñecemento-NonComercial-SenObraDerivada 2.5 Israel"
+            },
+            {
+                "@language": "he",
+                "@value": "ייחוס-שימוש לא מסחרי-איסור יצירות נגזרות 2.5 ישראל"
+            },
+            {
+                "@language": "hi",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 इसरैल"
+            },
+            {
+                "@language": "hr",
+                "@value": "Imenovanje-Nekomercijalno-Bez prerada 2.5 Izrael"
+            },
+            {
+                "@language": "hu",
+                "@value": "Nevezd meg! - Ne add el! - Ne változtasd! 2.5 Izrael"
+            },
+            {
+                "@language": "hy",
+                "@value": "Հղում - Ոչ-առևտրային օգտագործում - Օգտագործում առանց վերափոխումների 2.5 Իսրայել"
+            },
+            {
+                "@language": "id",
+                "@value": "Atribusi-NonKomersial-TanpaTurunan 2.5 Israel"
+            },
+            {
+                "@language": "is",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 Ísrael"
+            },
+            {
+                "@language": "it",
+                "@value": "Attribuzione - Non commerciale - Non opere derivate 2.5 Israele"
+            },
+            {
+                "@language": "it-ch",
+                "@value": "Attribuzione - Non commerciale - Non opere derivate 2.5 Israel"
+            },
+            {
+                "@language": "ja",
+                "@value": "表示 - 非営利 - 改変禁止 2.5 イスラエル"
+            },
+            {
+                "@language": "ka",
+                "@value": "ავტორობის მითითებით–არაკომერციული გამოყენბისათვის–გადამუშავების გარეშე 2.5 ისრაელი"
+            },
+            {
+                "@language": "kk",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 Israel"
+            },
+            {
+                "@language": "ko",
+                "@value": "저작자표시-비영리-변경금지 2.5 이스라엘"
+            },
+            {
+                "@language": "lt",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 Izraelis"
+            },
+            {
+                "@language": "lv",
+                "@value": "Atsaucoties-Nekomerciāls-Nemainīts 2.5 Izraēla"
+            },
+            {
+                "@language": "mk",
+                "@value": "НаведиИзвор-Некомерцијално-БезАдаптираниДела 2.5 Израел"
+            },
+            {
+                "@language": "ml",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 ഇസ്രായൽ"
+            },
+            {
+                "@language": "mn",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 Израйль"
+            },
+            {
+                "@language": "ms",
+                "@value": "Pengiktirafan-BukanKomersial-TiadaTerbitan 2.5 Isreal"
+            },
+            {
+                "@language": "nl",
+                "@value": "Naamsvermelding-NietCommercieel-GeenAfgeleideWerken 2.5 Israël"
+            },
+            {
+                "@language": "no",
+                "@value": "Navngivelse-Ikkekommersiell-IngenBearbeidelse 2.5 Israel"
+            },
+            {
+                "@language": "nso",
+                "@value": "Tsebagatšo-E sego ya Kgwebo-Tše sa fetolwego 2.5 Isiraele"
+            },
+            {
+                "@language": "oci-es",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 Israel"
+            },
+            {
+                "@language": "pl",
+                "@value": "Uznanie autorstwa-Użycie niekomercyjne-Bez utworów zależnych 2.5 Izrael"
+            },
+            {
+                "@language": "pt",
+                "@value": "Atribuição - NãoComercial - SemDerivados 2.5 Israel"
+            },
+            {
+                "@language": "pt-br",
+                "@value": "Atribuição-Uso não-comercial-Vedada a criação de obras derivadas 2.5 Israel"
+            },
+            {
+                "@language": "pt-pt",
+                "@value": "Atribuição-Uso Não-Comercial-Proibição de realização de Obras Derivadas 2.5 Israel"
+            },
+            {
+                "@language": "ro",
+                "@value": "Atribuire-Necomercial-FărăModificări 2.5 Israel"
+            },
+            {
+                "@language": "ru",
+                "@value": "Attribution-NonCommercial-NoDerivs (Атрибуция — Некоммерческое использование — Без производных произведений) 2.5 Израиль"
+            },
+            {
+                "@language": "si-lk",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 Israel"
+            },
+            {
+                "@language": "sl",
+                "@value": "Priznanje avtorstva-Nekomercialno-Brez predelav 2.5 Izrael"
+            },
+            {
+                "@language": "sq",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 Izrael"
+            },
+            {
+                "@language": "sr",
+                "@value": "Autorstvo-Nekomercijalno-Bez prerada 2.5 Izrael"
+            },
+            {
+                "@language": "sr",
+                "@value": "Ауторство-Некомерцијално-Без прерада 2.5 Израел"
+            },
+            {
+                "@language": "sr-latn",
+                "@value": "Autorstvo-Nekomercijalno-Bez prerada 2.5 Izrael"
+            },
+            {
+                "@language": "st",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 Israel"
+            },
+            {
+                "@language": "sv",
+                "@value": "Erkännande-Ickekommersiell-IngaBearbetningar 2.5 Israel"
+            },
+            {
+                "@language": "ta",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 Israel"
+            },
+            {
+                "@language": "te",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 ఇజ్రాయిల్"
+            },
+            {
+                "@language": "th",
+                "@value": "แสดงที่มา-ไม่ใช้เพื่อการค้า-ไม่ดัดแปลง 2.5 อิสราเอล"
+            },
+            {
+                "@language": "tr",
+                "@value": "Attribution-Gayriticari-NoDerivs 2.5 İsrail"
+            },
+            {
+                "@language": "uk",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 Israel"
+            },
+            {
+                "@language": "ur",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 Israel"
+            },
+            {
+                "@language": "vi",
+                "@value": "Ghi nhận công của tác giả - Phi thương mại - Không phái sinh  2.5 Nước Israel"
+            },
+            {
+                "@language": "zh",
+                "@value": "署名-非商业性使用-禁止演绎 2.5 以色列"
+            },
+            {
+                "@language": "zh-hk",
+                "@value": "姓名標示-非商業性-禁止改作 2.5 以色列"
+            },
+            {
+                "@language": "zh-tw",
+                "@value": "姓名標示-非商業性-禁止改作 2.5 以色列"
+            },
+            {
+                "@language": "zu",
+                "@value": "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano-Ungasuseli lutho kulokhu 2.5 E-Israel"
+            },
+            {
+                "@language": "zxx",
+                "@value": "${Attribution-NonCommercial-NoDerivs} 2.5 ${Israel}"
+            }
+        ],
+        "owl:sameAs": "https://licensedb.org/id/CC-BY-NC-ND-2.5-il",
+        "foaf:logo": [
+            "http://i.creativecommons.org/l/by-nc-nd/2.5/il/80x15.png",
+            "http://i.creativecommons.org/l/by-nc-nd/2.5/il/88x31.png"
+        ]
+    },
+    "foaf:logo": [
+        "http://i.creativecommons.org/l/by-nc-nd/2.5/il/80x15.png",
+        "http://i.creativecommons.org/l/by-nc-nd/2.5/il/88x31.png"
+    ],
+    "li:id": "CC-BY-NC-ND-2.5-il",
+    "li:name": "CC BY-NC-ND 2.5 IL"
+}

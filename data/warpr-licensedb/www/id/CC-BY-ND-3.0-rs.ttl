@@ -1,0 +1,239 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/elements/1.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://creativecommons.org/licenses/by-nd/3.0/rs/> a cc:License ;
+    cc:jurisdiction <http://creativecommons.org/international/rs/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nd/3.0/rs/legalcode.sr-Cyrl>,
+        <http://creativecommons.org/licenses/by-nd/3.0/rs/legalcode.sr-Latn> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "3.0" ;
+    dc:identifier "by-nd" ;
+    dc:source <http://creativecommons.org/licenses/by-nd/3.0/> ;
+    dc:title "Erkenning-GeenAfleidings 3.0 Serbia"@af,
+        "نسب- غير مشتق 3.0 صربيا"@ar,
+        "Attribution-NoDerivs 3.0 Serbia"@as,
+        "Attribution-NoDerivs 3.0 Serbia"@ast,
+        "Attribution-NoDerivs 3.0 Serbia"@ast-es,
+        "Attribution-NoDerivs 3.0 Serbia"@az,
+        "Attribution-NoDerivs 3.0 Сербія"@be,
+        "Признание-Без производни 3.0 Сърбия"@bg,
+        "Attribution-NoDerivs 3.0 Serbia"@bn,
+        "Reconeixement-SenseObraDerivada 3.0 Sèrbia"@ca,
+        "Uveďte autora-Nezasahujte do díla 3.0 Srbsko"@cs,
+        "Navngivelse-IngenBearbejdelse 3.0 Serbia"@da,
+        "Namensnennung-Keine Bearbeitung 3.0 Serbien"@de,
+        "Namensnennung-KeineBearbeitung 3.0 Serbien"@de-at,
+        "Namensnennung-KeineBearbeitung 3.0 Serbien"@de-ch,
+        "Αναφορά Δημιουργού-Όχι Παράγωγα Έργα 3.0 Σερβία"@el,
+        "Attribution-NoDerivs 3.0 Serbia"@en,
+        "Attribution-NoDerivs 3.0 Serbia"@en-ca,
+        "Attribution-NoDerivs 3.0 Serbia"@en-gb,
+        "Attribution-NoDerivs 3.0 Serbia"@en-hk,
+        "Attribution-NoDerivs 3.0 Serbia"@en-sg,
+        "Attribution-NoDerivs 3.0 Serbia"@en-us,
+        "Atribuite-Nemodifite 3.0 Serbujo"@eo,
+        "Atribución-SinDerivadas 3.0 Serbia"@es,
+        "Atribución-SinDerivadas 3.0 Serbia"@es-ar,
+        "Atribución-SinDerivadas 3.0 Serbia"@es-cl,
+        "Reconocimiento-SinObraDerivada 3.0 Serbia"@es-co,
+        "Reconocimiento-SinObraDerivada 3.0 Serbia"@es-ec,
+        "Reconocimiento-SinObraDerivada 3.0 Serbia"@es-es,
+        "Reconocimiento-SinObraDerivada 3.0 Serbia"@es-gt,
+        "Atribución-No Derivadas 3.0 Serbia"@es-mx,
+        "Reconocimiento-SinObraDerivada 3.0 Serbia"@es-pe,
+        "Reconocimiento-SinObraDerivada 3.0 Serbia"@es-pr,
+        "Autorile viitamine + Tuletatud teoste keeld 3.0 Serbia"@et,
+        "Aitortu-LanEratorririkGabe 3.0 Serbia"@eu,
+        "Attribution-NoDerivs 3.0 صربستان"@fa,
+        "Nimeä-Ei muutoksia 3.0 Serbia"@fi,
+        "Paternité - Pas de Modification 3.0 Serbie"@fr,
+        "Paternité - Pas de Modification 3.0 Serbie"@fr-ca,
+        "Paternité - Pas de Modification 3.0 Serbie"@fr-ch,
+        "Paternité - Pas de Modification 3.0 Serbie"@fr-lu,
+        "Attribution-NoDerivs 3.0 Serbia"@ga,
+        "Recoñecemento-SenObraDerivada 3.0 Serbia"@gl,
+        "ייחוס-איסור יצירות נגזרות 3.0 סרביה"@he,
+        "Attribution-NoDerivs 3.0 Serbia"@hi,
+        "Imenovanje-Bez prerada 3.0 Srbija"@hr,
+        "Nevezd meg! - Ne változtasd! 3.0 Szerbia"@hu,
+        "Հղում - Օգտագործում առանց վերափոխումների 3.0 Սերբիա"@hy,
+        "Atribusi-TanpaTurunan 3.0 Serbia"@id,
+        "Attribution-NoDerivs 3.0 Serbía"@is,
+        "Attribuzione - Non opere derivate 3.0 Serbia"@it,
+        "Attribuzione - Non opere derivate 3.0 Serbia"@it-ch,
+        "表示 - 改変禁止 3.0 セルビア"@ja,
+        "ავტორობის მითითებით გადამუშავების გარეშე 3.0 სერბია"@ka,
+        "Туынды жасамау 3.0 Serbia"@kk,
+        "저작자표시-변경금지 3.0 세르비아"@ko,
+        "Attribution-NoDerivs 3.0 Serbija"@lt,
+        "Atsaucoties-Neatvasinot 3.0 Serbija"@lv,
+        "НаведиИзвор-БезИзведениДела 3.0 Србија"@mk,
+        "Attribution-NoDerivs 3.0 സെർബിയ"@ml,
+        "Attribution-NoDerivs 3.0 Serbia"@mn,
+        "Pengiktirafan-TiadaTerbitan 3.0 Serbia"@ms,
+        "Naamsvermelding-GeenAfgeleideWerken 3.0 Servië"@nl,
+        "Navngivelse-IngenBearbeidelse 3.0 Serbia"@no,
+        "Tsebagatšo - Tše sa Fetolwego 3.0 Serbia"@nso,
+        "Attribution-NoDerivs 3.0 Serbia"@oci-es,
+        "Uznanie autorstwa-Bez utworów zależnych 3.0 Serbia"@pl,
+        "Atribuição - SemDerivados 3.0 Sérvia"@pt,
+        "Atribuição-Vedada a criação de obras derivativas 3.0 Serbia"@pt-br,
+        "Atribuição-Proibição de realização de Obras Derivadas 3.0 Serbia"@pt-pt,
+        "Atribuire-FărăModificări 3.0 Serbia"@ro,
+        "Attribution-NoDerivs (Атрибуция — Без производных произведений) 3.0 Сербия"@ru,
+        "Attribution-NoDerivs 3.0 Serbia"@si-lk,
+        "Priznanje avtorstva-Brez predelav 3.0 Srbija"@sl,
+        "Attribution-NoDerivs 3.0 Serbi"@sq,
+        "Autorstvo-Bez prerada 3.0 Srbija"@sr,
+        "Ауторство-Без прерада 3.0 Србија"@sr,
+        "Autorstvo-Bez prerada 3.0 Srbija"@sr-latn,
+        "Attribution-NoDerivs 3.0 Serbia"@st,
+        "Erkännande-IngaBearbetningar 3.0 Serbien"@sv,
+        "Attribution-NoDerivs 3.0 செர்பியா"@ta,
+        "Attribution-NoDerivs 3.0 సెర్బియా"@te,
+        "แสดงที่มา-ไม่ดัดแปลง 3.0 เซอร์เบีย"@th,
+        "Alıntı-Türetilemez 3.0 Sırbistan"@tr,
+        "Attribution-NoDerivs 3.0 Serbia"@uk,
+        "Attribution-NoDerivs 3.0 Serbia"@ur,
+        "Ghi nhận công của tác giả - Không phái sinh 3.0 Nước Serbia"@vi,
+        "署名-禁止演绎 3.0 塞尔维亚"@zh,
+        "姓名標示-禁止改作 3.0 塞爾維亞"@zh-hk,
+        "姓名標示-禁止改作 3.0 塞爾維亞"@zh-tw,
+        "Qaphela Umnikazi-Ungasuseli lutho kulokhu 3.0 Serbia"@zu,
+        "${Attribution-NoDerivs} 3.0 ${Serbia}"@zxx ;
+    owl:sameAs <https://licensedb.org/id/CC-BY-ND-3.0-rs> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nd/3.0/rs/80x15.png>,
+        <http://i.creativecommons.org/l/by-nd/3.0/rs/88x31.png> .
+
+<https://licensedb.org/id/CC-BY-ND-3.0-rs> a cc:License,
+        li:License ;
+    cc:jurisdiction <http://creativecommons.org/international/rs/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nd/3.0/rs/legalcode.sr-Cyrl>,
+        <http://creativecommons.org/licenses/by-nd/3.0/rs/legalcode.sr-Latn> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "3.0" ;
+    dc:identifier "by-nd" ;
+    dc:source <http://creativecommons.org/licenses/by-nd/3.0/> ;
+    dc:title "Erkenning-GeenAfleidings 3.0 Serbia"@af,
+        "نسب- غير مشتق 3.0 صربيا"@ar,
+        "Attribution-NoDerivs 3.0 Serbia"@as,
+        "Attribution-NoDerivs 3.0 Serbia"@ast,
+        "Attribution-NoDerivs 3.0 Serbia"@ast-es,
+        "Attribution-NoDerivs 3.0 Serbia"@az,
+        "Attribution-NoDerivs 3.0 Сербія"@be,
+        "Признание-Без производни 3.0 Сърбия"@bg,
+        "Attribution-NoDerivs 3.0 Serbia"@bn,
+        "Reconeixement-SenseObraDerivada 3.0 Sèrbia"@ca,
+        "Uveďte autora-Nezasahujte do díla 3.0 Srbsko"@cs,
+        "Navngivelse-IngenBearbejdelse 3.0 Serbia"@da,
+        "Namensnennung-Keine Bearbeitung 3.0 Serbien"@de,
+        "Namensnennung-KeineBearbeitung 3.0 Serbien"@de-at,
+        "Namensnennung-KeineBearbeitung 3.0 Serbien"@de-ch,
+        "Αναφορά Δημιουργού-Όχι Παράγωγα Έργα 3.0 Σερβία"@el,
+        "Attribution-NoDerivs 3.0 Serbia"@en,
+        "Attribution-NoDerivs 3.0 Serbia"@en-ca,
+        "Attribution-NoDerivs 3.0 Serbia"@en-gb,
+        "Attribution-NoDerivs 3.0 Serbia"@en-hk,
+        "Attribution-NoDerivs 3.0 Serbia"@en-sg,
+        "Attribution-NoDerivs 3.0 Serbia"@en-us,
+        "Atribuite-Nemodifite 3.0 Serbujo"@eo,
+        "Atribución-SinDerivadas 3.0 Serbia"@es,
+        "Atribución-SinDerivadas 3.0 Serbia"@es-ar,
+        "Atribución-SinDerivadas 3.0 Serbia"@es-cl,
+        "Reconocimiento-SinObraDerivada 3.0 Serbia"@es-co,
+        "Reconocimiento-SinObraDerivada 3.0 Serbia"@es-ec,
+        "Reconocimiento-SinObraDerivada 3.0 Serbia"@es-es,
+        "Reconocimiento-SinObraDerivada 3.0 Serbia"@es-gt,
+        "Atribución-No Derivadas 3.0 Serbia"@es-mx,
+        "Reconocimiento-SinObraDerivada 3.0 Serbia"@es-pe,
+        "Reconocimiento-SinObraDerivada 3.0 Serbia"@es-pr,
+        "Autorile viitamine + Tuletatud teoste keeld 3.0 Serbia"@et,
+        "Aitortu-LanEratorririkGabe 3.0 Serbia"@eu,
+        "Attribution-NoDerivs 3.0 صربستان"@fa,
+        "Nimeä-Ei muutoksia 3.0 Serbia"@fi,
+        "Paternité - Pas de Modification 3.0 Serbie"@fr,
+        "Paternité - Pas de Modification 3.0 Serbie"@fr-ca,
+        "Paternité - Pas de Modification 3.0 Serbie"@fr-ch,
+        "Paternité - Pas de Modification 3.0 Serbie"@fr-lu,
+        "Attribution-NoDerivs 3.0 Serbia"@ga,
+        "Recoñecemento-SenObraDerivada 3.0 Serbia"@gl,
+        "ייחוס-איסור יצירות נגזרות 3.0 סרביה"@he,
+        "Attribution-NoDerivs 3.0 Serbia"@hi,
+        "Imenovanje-Bez prerada 3.0 Srbija"@hr,
+        "Nevezd meg! - Ne változtasd! 3.0 Szerbia"@hu,
+        "Հղում - Օգտագործում առանց վերափոխումների 3.0 Սերբիա"@hy,
+        "Atribusi-TanpaTurunan 3.0 Serbia"@id,
+        "Attribution-NoDerivs 3.0 Serbía"@is,
+        "Attribuzione - Non opere derivate 3.0 Serbia"@it,
+        "Attribuzione - Non opere derivate 3.0 Serbia"@it-ch,
+        "表示 - 改変禁止 3.0 セルビア"@ja,
+        "ავტორობის მითითებით გადამუშავების გარეშე 3.0 სერბია"@ka,
+        "Туынды жасамау 3.0 Serbia"@kk,
+        "저작자표시-변경금지 3.0 세르비아"@ko,
+        "Attribution-NoDerivs 3.0 Serbija"@lt,
+        "Atsaucoties-Neatvasinot 3.0 Serbija"@lv,
+        "НаведиИзвор-БезИзведениДела 3.0 Србија"@mk,
+        "Attribution-NoDerivs 3.0 സെർബിയ"@ml,
+        "Attribution-NoDerivs 3.0 Serbia"@mn,
+        "Pengiktirafan-TiadaTerbitan 3.0 Serbia"@ms,
+        "Naamsvermelding-GeenAfgeleideWerken 3.0 Servië"@nl,
+        "Navngivelse-IngenBearbeidelse 3.0 Serbia"@no,
+        "Tsebagatšo - Tše sa Fetolwego 3.0 Serbia"@nso,
+        "Attribution-NoDerivs 3.0 Serbia"@oci-es,
+        "Uznanie autorstwa-Bez utworów zależnych 3.0 Serbia"@pl,
+        "Atribuição - SemDerivados 3.0 Sérvia"@pt,
+        "Atribuição-Vedada a criação de obras derivativas 3.0 Serbia"@pt-br,
+        "Atribuição-Proibição de realização de Obras Derivadas 3.0 Serbia"@pt-pt,
+        "Atribuire-FărăModificări 3.0 Serbia"@ro,
+        "Attribution-NoDerivs (Атрибуция — Без производных произведений) 3.0 Сербия"@ru,
+        "Attribution-NoDerivs 3.0 Serbia"@si-lk,
+        "Priznanje avtorstva-Brez predelav 3.0 Srbija"@sl,
+        "Attribution-NoDerivs 3.0 Serbi"@sq,
+        "Autorstvo-Bez prerada 3.0 Srbija"@sr,
+        "Ауторство-Без прерада 3.0 Србија"@sr,
+        "Autorstvo-Bez prerada 3.0 Srbija"@sr-latn,
+        "Attribution-NoDerivs 3.0 Serbia"@st,
+        "Erkännande-IngaBearbetningar 3.0 Serbien"@sv,
+        "Attribution-NoDerivs 3.0 செர்பியா"@ta,
+        "Attribution-NoDerivs 3.0 సెర్బియా"@te,
+        "แสดงที่มา-ไม่ดัดแปลง 3.0 เซอร์เบีย"@th,
+        "Alıntı-Türetilemez 3.0 Sırbistan"@tr,
+        "Attribution-NoDerivs 3.0 Serbia"@uk,
+        "Attribution-NoDerivs 3.0 Serbia"@ur,
+        "Ghi nhận công của tác giả - Không phái sinh 3.0 Nước Serbia"@vi,
+        "署名-禁止演绎 3.0 塞尔维亚"@zh,
+        "姓名標示-禁止改作 3.0 塞爾維亞"@zh-hk,
+        "姓名標示-禁止改作 3.0 塞爾維亞"@zh-tw,
+        "Qaphela Umnikazi-Ungasuseli lutho kulokhu 3.0 Serbia"@zu,
+        "${Attribution-NoDerivs} 3.0 ${Serbia}"@zxx ;
+    owl:sameAs <http://creativecommons.org/licenses/by-nd/3.0/rs/> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nd/3.0/rs/80x15.png>,
+        <http://i.creativecommons.org/l/by-nd/3.0/rs/88x31.png> ;
+    li:id "CC-BY-ND-3.0-rs" ;
+    li:name "CC BY-ND 3.0 RS" .
+
+<http://creativecommons.org/licenses/by-nd/3.0/rs/legalcode.sr-Cyrl> dc:language "sr-Cyrl" .
+
+<http://creativecommons.org/licenses/by-nd/3.0/rs/legalcode.sr-Latn> dc:language "sr-Latn" .
+

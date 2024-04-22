@@ -1,0 +1,221 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/elements/1.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://creativecommons.org/licenses/by-nd/3.0/cr/> a cc:License ;
+    cc:jurisdiction <http://creativecommons.org/international/cr/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nd/3.0/cr/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "3.0" ;
+    dc:identifier "by-nd" ;
+    dc:source <http://creativecommons.org/licenses/by-nd/3.0/> ;
+    dc:title "Erkenning-GeenAfleidings 3.0 Costa Rica"@af,
+        "نسب- غير مشتق 3.0 Costa Rica"@ar,
+        "Attribution-NoDerivs 3.0 Costa Rica"@as,
+        "Attribution-NoDerivs 3.0 Costa Rica"@ast,
+        "Attribution-NoDerivs 3.0 country.cr"@ast-es,
+        "Attribution-NoDerivs 3.0 Costa Rica"@az,
+        "Attribution-NoDerivs 3.0 Costa Rica"@be,
+        "Признание-Без производни 3.0 Costa Rica"@bg,
+        "Attribution-NoDerivs 3.0 Costa Rica"@bn,
+        "Reconeixement-SenseObraDerivada 3.0 Costa Rica"@ca,
+        "Uveďte autora-Nezasahujte do díla 3.0 Costa Rica"@cs,
+        "Navngivelse-IngenBearbejdelse 3.0 Costa Rica"@da,
+        "Namensnennung-Keine Bearbeitung 3.0 Costa Rica"@de,
+        "Namensnennung-KeineBearbeitung 3.0 Costa Rica"@de-at,
+        "Namensnennung-KeineBearbeitung 3.0 Costa Rica"@de-ch,
+        "Αναφορά Δημιουργού-Όχι Παράγωγα Έργα 3.0 Κόστα Ρίκα"@el,
+        "Attribution-NoDerivs 3.0 Costa Rica"@en,
+        "Attribution-NoDerivs 3.0 Costa Rica"@en-ca,
+        "Attribution-NoDerivs 3.0 Costa Rica"@en-gb,
+        "Attribution-NoDerivs 3.0 Costa Rica"@en-hk,
+        "Attribution-NoDerivs 3.0 Costa Rica"@en-sg,
+        "Attribution-NoDerivs 3.0 Costa Rica"@en-us,
+        "Atribuite-Nemodifite 3.0 Kostariko"@eo,
+        "Atribución-SinDerivadas 3.0 Costa Rica"@es,
+        "Atribución-SinDerivadas 3.0 Costa Rica"@es-ar,
+        "Reconocimiento-SinObraDerivada 3.0 Costa Rica"@es-es,
+        "Reconocimiento-SinObraDerivada 3.0 Costa Rica"@es-pe,
+        "Autorile viitamine + Tuletatud teoste keeld 3.0 Costa Rica"@et,
+        "Aitortu-LanEratorririkGabe 3.0 Costa Rica"@eu,
+        "Attribution-NoDerivs 3.0 کاستاریکا"@fa,
+        "Nimeä-Ei muutoksia 3.0 Costa Rica"@fi,
+        "Paternité - Pas de Modification 3.0 Costa Rica"@fr,
+        "Paternité - Pas de Modification 3.0 Costa Rica"@fr-ca,
+        "Paternité - Pas de Modification 3.0 Costa Rica"@fr-ch,
+        "Paternité - Pas de Modification 3.0 Costa Rica"@fr-lu,
+        "Attribution-NoDerivs 3.0 Costa Rica"@ga,
+        "Recoñecemento-SenObraDerivada 3.0 Costa Rica"@gl,
+        "ייחוס-איסור יצירות נגזרות 3.0 Costa Rica"@he,
+        "Attribution-NoDerivs 3.0 Costa Rica"@hi,
+        "Imenovanje-Bez prerada 3.0 Costa Rica"@hr,
+        "Nevezd meg! - Ne változtasd! 3.0 Costa Rica"@hu,
+        "Հղում - Օգտագործում առանց վերափոխումների 3.0 Costa Rica"@hy,
+        "Atribusi-TanpaTurunan 3.0 Kosta Rika"@id,
+        "Attribution-NoDerivs 3.0 Costa Rica"@is,
+        "Attribuzione - Non opere derivate 3.0 Costa Rica"@it,
+        "Attribuzione - Non opere derivate 3.0 Costa Rica"@it-ch,
+        "表示 - 改変禁止 3.0 コスタ・リカ"@ja,
+        "ავტორობის მითითებით გადამუშავების გარეშე 3.0 Costa Rica"@ka,
+        "Туынды жасамау 3.0 Costa Rica"@kk,
+        "저작자표시-변경금지 3.0 코스타리카"@ko,
+        "Attribution-NoDerivs 3.0 Costa Rica"@lt,
+        "Atsaucoties-Neatvasinot 3.0 Costa Rica"@lv,
+        "НаведиИзвор-БезИзведениДела 3.0 Костарика"@mk,
+        "Attribution-NoDerivs 3.0 Costa Rica"@ml,
+        "Attribution-NoDerivs 3.0 Costa Rica"@mn,
+        "Pengiktirafan-TiadaTerbitan 3.0 Costa Rica"@ms,
+        "Naamsvermelding-GeenAfgeleideWerken 3.0 Costa Rica"@nl,
+        "Navngivelse-IngenBearbeidelse 3.0 Costa Rica"@no,
+        "Tsebagatšo - Tše sa Fetolwego 3.0 Costa Rica"@nso,
+        "Attribution-NoDerivs 3.0 Costa Rica"@oci-es,
+        "Uznanie autorstwa-Bez utworów zależnych 3.0 Kostaryka"@pl,
+        "Atribuição - SemDerivados 3.0 Costa Rica"@pt,
+        "Atribuição-Vedada a criação de obras derivativas 3.0 Costa Rica"@pt-br,
+        "Atribuição-Proibição de realização de Obras Derivadas 3.0 Costa Rica"@pt-pt,
+        "Atribuire-FărăModificări 3.0 Costa Rica"@ro,
+        "Attribution-NoDerivs (Атрибуция — Без производных произведений) 3.0 Коста-Рика"@ru,
+        "Attribution-NoDerivs 3.0 Costa Rica"@si-lk,
+        "Priznanje avtorstva-Brez predelav 3.0 Costa Rica"@sl,
+        "Attribution-NoDerivs 3.0 Kosta Rika"@sq,
+        "Autorstvo-Bez prerada 3.0 country.cr"@sr,
+        "Ауторство-Без прерада 3.0 Costa Rica"@sr,
+        "Autorstvo-Bez prerada 3.0 Costa Rica"@sr-latn,
+        "Erkännande-IngaBearbetningar 3.0 Costa Rica"@sv,
+        "Attribution-NoDerivs 3.0 Costa Rica"@ta,
+        "Attribution-NoDerivs 3.0 కోస్టా రికా"@te,
+        "แสดงที่มา-ไม่ดัดแปลง 3.0 Costa Rica"@th,
+        "Alıntı-Türetilemez 3.0 Kostarika"@tr,
+        "Attribution-NoDerivs 3.0 Costa Rica"@uk,
+        "Attribution-NoDerivs 3.0 Costa Rica"@ur,
+        "Ghi nhận công của tác giả - Không phái sinh 3.0 Costa Rica"@vi,
+        "署名-禁止演绎 3.0 Costa Rica"@zh,
+        "姓名標示-禁止改作 3.0 Costa Rica"@zh-hk,
+        "姓名標示-禁止改作 3.0 Costa Rica"@zh-tw,
+        "姓名標示-禁止改作 3.0 哥斯大黎加"@zh-tw,
+        "Qaphela Umnikazi-Ungasuseli lutho kulokhu 3.0 Costa Rica"@zu,
+        "${Attribution-NoDerivs} 3.0 ${Costa Rica}"@zxx ;
+    owl:sameAs <https://licensedb.org/id/CC-BY-ND-3.0-cr> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nd/3.0/cr/80x15.png>,
+        <http://i.creativecommons.org/l/by-nd/3.0/cr/88x31.png> .
+
+<https://licensedb.org/id/CC-BY-ND-3.0-cr> a cc:License,
+        li:License ;
+    cc:jurisdiction <http://creativecommons.org/international/cr/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nd/3.0/cr/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "3.0" ;
+    dc:identifier "by-nd" ;
+    dc:source <http://creativecommons.org/licenses/by-nd/3.0/> ;
+    dc:title "Erkenning-GeenAfleidings 3.0 Costa Rica"@af,
+        "نسب- غير مشتق 3.0 Costa Rica"@ar,
+        "Attribution-NoDerivs 3.0 Costa Rica"@as,
+        "Attribution-NoDerivs 3.0 Costa Rica"@ast,
+        "Attribution-NoDerivs 3.0 country.cr"@ast-es,
+        "Attribution-NoDerivs 3.0 Costa Rica"@az,
+        "Attribution-NoDerivs 3.0 Costa Rica"@be,
+        "Признание-Без производни 3.0 Costa Rica"@bg,
+        "Attribution-NoDerivs 3.0 Costa Rica"@bn,
+        "Reconeixement-SenseObraDerivada 3.0 Costa Rica"@ca,
+        "Uveďte autora-Nezasahujte do díla 3.0 Costa Rica"@cs,
+        "Navngivelse-IngenBearbejdelse 3.0 Costa Rica"@da,
+        "Namensnennung-Keine Bearbeitung 3.0 Costa Rica"@de,
+        "Namensnennung-KeineBearbeitung 3.0 Costa Rica"@de-at,
+        "Namensnennung-KeineBearbeitung 3.0 Costa Rica"@de-ch,
+        "Αναφορά Δημιουργού-Όχι Παράγωγα Έργα 3.0 Κόστα Ρίκα"@el,
+        "Attribution-NoDerivs 3.0 Costa Rica"@en,
+        "Attribution-NoDerivs 3.0 Costa Rica"@en-ca,
+        "Attribution-NoDerivs 3.0 Costa Rica"@en-gb,
+        "Attribution-NoDerivs 3.0 Costa Rica"@en-hk,
+        "Attribution-NoDerivs 3.0 Costa Rica"@en-sg,
+        "Attribution-NoDerivs 3.0 Costa Rica"@en-us,
+        "Atribuite-Nemodifite 3.0 Kostariko"@eo,
+        "Atribución-SinDerivadas 3.0 Costa Rica"@es,
+        "Atribución-SinDerivadas 3.0 Costa Rica"@es-ar,
+        "Reconocimiento-SinObraDerivada 3.0 Costa Rica"@es-es,
+        "Reconocimiento-SinObraDerivada 3.0 Costa Rica"@es-pe,
+        "Autorile viitamine + Tuletatud teoste keeld 3.0 Costa Rica"@et,
+        "Aitortu-LanEratorririkGabe 3.0 Costa Rica"@eu,
+        "Attribution-NoDerivs 3.0 کاستاریکا"@fa,
+        "Nimeä-Ei muutoksia 3.0 Costa Rica"@fi,
+        "Paternité - Pas de Modification 3.0 Costa Rica"@fr,
+        "Paternité - Pas de Modification 3.0 Costa Rica"@fr-ca,
+        "Paternité - Pas de Modification 3.0 Costa Rica"@fr-ch,
+        "Paternité - Pas de Modification 3.0 Costa Rica"@fr-lu,
+        "Attribution-NoDerivs 3.0 Costa Rica"@ga,
+        "Recoñecemento-SenObraDerivada 3.0 Costa Rica"@gl,
+        "ייחוס-איסור יצירות נגזרות 3.0 Costa Rica"@he,
+        "Attribution-NoDerivs 3.0 Costa Rica"@hi,
+        "Imenovanje-Bez prerada 3.0 Costa Rica"@hr,
+        "Nevezd meg! - Ne változtasd! 3.0 Costa Rica"@hu,
+        "Հղում - Օգտագործում առանց վերափոխումների 3.0 Costa Rica"@hy,
+        "Atribusi-TanpaTurunan 3.0 Kosta Rika"@id,
+        "Attribution-NoDerivs 3.0 Costa Rica"@is,
+        "Attribuzione - Non opere derivate 3.0 Costa Rica"@it,
+        "Attribuzione - Non opere derivate 3.0 Costa Rica"@it-ch,
+        "表示 - 改変禁止 3.0 コスタ・リカ"@ja,
+        "ავტორობის მითითებით გადამუშავების გარეშე 3.0 Costa Rica"@ka,
+        "Туынды жасамау 3.0 Costa Rica"@kk,
+        "저작자표시-변경금지 3.0 코스타리카"@ko,
+        "Attribution-NoDerivs 3.0 Costa Rica"@lt,
+        "Atsaucoties-Neatvasinot 3.0 Costa Rica"@lv,
+        "НаведиИзвор-БезИзведениДела 3.0 Костарика"@mk,
+        "Attribution-NoDerivs 3.0 Costa Rica"@ml,
+        "Attribution-NoDerivs 3.0 Costa Rica"@mn,
+        "Pengiktirafan-TiadaTerbitan 3.0 Costa Rica"@ms,
+        "Naamsvermelding-GeenAfgeleideWerken 3.0 Costa Rica"@nl,
+        "Navngivelse-IngenBearbeidelse 3.0 Costa Rica"@no,
+        "Tsebagatšo - Tše sa Fetolwego 3.0 Costa Rica"@nso,
+        "Attribution-NoDerivs 3.0 Costa Rica"@oci-es,
+        "Uznanie autorstwa-Bez utworów zależnych 3.0 Kostaryka"@pl,
+        "Atribuição - SemDerivados 3.0 Costa Rica"@pt,
+        "Atribuição-Vedada a criação de obras derivativas 3.0 Costa Rica"@pt-br,
+        "Atribuição-Proibição de realização de Obras Derivadas 3.0 Costa Rica"@pt-pt,
+        "Atribuire-FărăModificări 3.0 Costa Rica"@ro,
+        "Attribution-NoDerivs (Атрибуция — Без производных произведений) 3.0 Коста-Рика"@ru,
+        "Attribution-NoDerivs 3.0 Costa Rica"@si-lk,
+        "Priznanje avtorstva-Brez predelav 3.0 Costa Rica"@sl,
+        "Attribution-NoDerivs 3.0 Kosta Rika"@sq,
+        "Autorstvo-Bez prerada 3.0 country.cr"@sr,
+        "Ауторство-Без прерада 3.0 Costa Rica"@sr,
+        "Autorstvo-Bez prerada 3.0 Costa Rica"@sr-latn,
+        "Erkännande-IngaBearbetningar 3.0 Costa Rica"@sv,
+        "Attribution-NoDerivs 3.0 Costa Rica"@ta,
+        "Attribution-NoDerivs 3.0 కోస్టా రికా"@te,
+        "แสดงที่มา-ไม่ดัดแปลง 3.0 Costa Rica"@th,
+        "Alıntı-Türetilemez 3.0 Kostarika"@tr,
+        "Attribution-NoDerivs 3.0 Costa Rica"@uk,
+        "Attribution-NoDerivs 3.0 Costa Rica"@ur,
+        "Ghi nhận công của tác giả - Không phái sinh 3.0 Costa Rica"@vi,
+        "署名-禁止演绎 3.0 Costa Rica"@zh,
+        "姓名標示-禁止改作 3.0 Costa Rica"@zh-hk,
+        "姓名標示-禁止改作 3.0 Costa Rica"@zh-tw,
+        "姓名標示-禁止改作 3.0 哥斯大黎加"@zh-tw,
+        "Qaphela Umnikazi-Ungasuseli lutho kulokhu 3.0 Costa Rica"@zu,
+        "${Attribution-NoDerivs} 3.0 ${Costa Rica}"@zxx ;
+    owl:sameAs <http://creativecommons.org/licenses/by-nd/3.0/cr/> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nd/3.0/cr/80x15.png>,
+        <http://i.creativecommons.org/l/by-nd/3.0/cr/88x31.png> ;
+    li:id "CC-BY-ND-3.0-cr" ;
+    li:name "CC BY-ND 3.0 CR" .
+

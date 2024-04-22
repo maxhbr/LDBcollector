@@ -1,0 +1,842 @@
+{
+    "@context": {
+        "cc": "http://creativecommons.org/ns#",
+        "dc": "http://purl.org/dc/terms/",
+        "dc11": "http://purl.org/dc/elements/1.1/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "li": "https://licensedb.org/ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "cc:legalcode": {
+            "@type": "@id"
+        },
+        "cc:permits": {
+            "@type": "@id"
+        },
+        "cc:requires": {
+            "@type": "@id"
+        },
+        "cc:prohibits": {
+            "@type": "@id"
+        },
+        "cc:jurisdiction": {
+            "@type": "@id"
+        },
+        "cc:licenseClass": {
+            "@type": "@id"
+        },
+        "dc:creator": {
+            "@type": "@id"
+        },
+        "dc:source": {
+            "@type": "@id"
+        },
+        "dc:replaces": {
+            "@type": "@id"
+        },
+        "dc:isBasedOn": {
+            "@type": "@id"
+        },
+        "dc:isReplacedBy": {
+            "@type": "@id"
+        },
+        "foaf:logo": {
+            "@type": "@id"
+        },
+        "li:plaintext": {
+            "@type": "@id"
+        },
+        "li:libre": {
+            "@type": "@id"
+        },
+        "owl:sameAs": {
+            "@type": "@id"
+        }
+    },
+    "@id": "https://licensedb.org/id/CC-ND-NC-1.0",
+    "@type": [
+        "cc:License",
+        "li:License"
+    ],
+    "cc:deprecatedOn": {
+        "@type": "http://www.w3.org/2001/XMLSchema-datatypes#date",
+        "@value": "2004-05-25"
+    },
+    "cc:legalcode": "http://creativecommons.org/licenses/nd-nc/1.0/legalcode",
+    "cc:licenseClass": "http://creativecommons.org/license/",
+    "cc:permits": [
+        "cc:Distribution",
+        "cc:Reproduction"
+    ],
+    "cc:prohibits": "cc:CommercialUse",
+    "cc:requires": "cc:Notice",
+    "dc:creator": "http://creativecommons.org",
+    "dc:hasVersion": "1.0",
+    "dc:identifier": "nd-nc",
+    "dc:title": [
+        {
+            "@language": "af",
+            "@value": "GeenAfleidings-NieKommersieel 1.0 Generies"
+        },
+        {
+            "@language": "ar",
+            "@value": "لا اشتقاق- غير تجاري 1.0 عام"
+        },
+        {
+            "@language": "as",
+            "@value": "NoDerivs-NonCommercial 1.0 Generic"
+        },
+        {
+            "@language": "ast",
+            "@value": "NoDerivs-NonCommercial 1.0 Generic"
+        },
+        {
+            "@language": "ast-es",
+            "@value": "NoDerivs-NonCommercial 1.0 Generic"
+        },
+        {
+            "@language": "az",
+            "@value": "NoDerivs-NonCommercial 1.0 Generic"
+        },
+        {
+            "@language": "be",
+            "@value": "NoDerivs-NonCommercial 1.0 Generic"
+        },
+        {
+            "@language": "bg",
+            "@value": "Без производни-Некомерсиално 1.0 Неадаптиран"
+        },
+        {
+            "@language": "bn",
+            "@value": "NoDerivs-NonCommercial 1.0 Generic"
+        },
+        {
+            "@language": "ca",
+            "@value": "SenseObraDerivada-NoComercial 1.0 Genèrica"
+        },
+        {
+            "@language": "cs",
+            "@value": "Nezasahujte do díla-Nevyužívejte dílo komerčně 1.0 Generic"
+        },
+        {
+            "@language": "da",
+            "@value": "IngenBearbejdelse-IkkeKommerciel 1.0 Generisk"
+        },
+        {
+            "@language": "de",
+            "@value": "Keine Bearbeitung-Nicht-kommerziell 1.0 US-amerikanisch (nicht portiert)"
+        },
+        {
+            "@language": "de-at",
+            "@value": "KeineBearbeitung-NichtKommerziell 1.0 US-amerikanisch (nicht portiert)"
+        },
+        {
+            "@language": "de-ch",
+            "@value": "KeineBearbeitung-NichtKommerziell 1.0 US-amerikanisch (nicht portiert)"
+        },
+        {
+            "@language": "el",
+            "@value": "Όχι Παράγωγα Έργα - Μη Εμπορική Χρήση 1.0 Γενικό"
+        },
+        {
+            "@language": "en",
+            "@value": "NoDerivs-NonCommercial 1.0 Generic"
+        },
+        {
+            "@language": "en-ca",
+            "@value": "NoDerivs-NonCommercial 1.0 Generic"
+        },
+        {
+            "@language": "en-gb",
+            "@value": "NoDerivs-NonCommercial 1.0 Generic"
+        },
+        {
+            "@language": "en-hk",
+            "@value": "NoDerivs-NonCommercial 1.0 Generic"
+        },
+        {
+            "@language": "en-sg",
+            "@value": "NoDerivs-NonCommercial 1.0 Generic"
+        },
+        {
+            "@language": "en-us",
+            "@value": "NoDerivs-NonCommercial 1.0 Generic"
+        },
+        {
+            "@language": "eo",
+            "@value": "Nemodifite-Nekomerce 1.0 Ĝenerala"
+        },
+        {
+            "@language": "es",
+            "@value": "SinDerivadas-NoComercial 1.0 Genérica"
+        },
+        {
+            "@language": "es-ar",
+            "@value": "SinDerivadas-NoComercial 1.0 Genérica"
+        },
+        {
+            "@language": "es-cl",
+            "@value": "SinDerivadas-NoComercial 1.0 Genérica"
+        },
+        {
+            "@language": "es-co",
+            "@value": "SinObraDerivada-NoComercial 1.0 Genérica"
+        },
+        {
+            "@language": "es-ec",
+            "@value": "SinObraDerivada-NoComercial 1.0 Genérica"
+        },
+        {
+            "@language": "es-es",
+            "@value": "SinObraDerivada-NoComercial 1.0 Genérica"
+        },
+        {
+            "@language": "es-gt",
+            "@value": "SinObraDerivada-NoComercial 1.0 Genérica"
+        },
+        {
+            "@language": "es-mx",
+            "@value": "No Derivadas-No Comercial 1.0 Genérica"
+        },
+        {
+            "@language": "es-pe",
+            "@value": "SinObraDerivada-NoComercial 1.0 Genérica"
+        },
+        {
+            "@language": "es-pr",
+            "@value": "SinObraDerivada-NoComercial 1.0 Genérica"
+        },
+        {
+            "@language": "et",
+            "@value": "Mitteäriline eesmärk + Tuletatud teoste keeld 1.0 Üldine"
+        },
+        {
+            "@language": "eu",
+            "@value": "LanEratorririkGabe-EzKomertziala 1.0 Generikoa"
+        },
+        {
+            "@language": "fa",
+            "@value": "NoDerivs-NonCommercial 1.0 Generic"
+        },
+        {
+            "@language": "fi",
+            "@value": "Ei muutoksia-Epäkaupallinen 1.0 Raakaversio"
+        },
+        {
+            "@language": "fr",
+            "@value": "Pas de Modification - Pas d'Utilisation Commerciale 1.0 Générique"
+        },
+        {
+            "@language": "fr-ca",
+            "@value": "Pas de Modification - Pas d'Utilisation Commerciale 1.0 Générique"
+        },
+        {
+            "@language": "fr-ch",
+            "@value": "Pas de Modification - Pas d'Utilisation Commerciale 1.0 Générique"
+        },
+        {
+            "@language": "fr-lu",
+            "@value": "Pas de Modification - Pas d'Utilisation Commerciale 1.0 Générique"
+        },
+        {
+            "@language": "ga",
+            "@value": "NoDerivs-NonCommercial 1.0 Generic"
+        },
+        {
+            "@language": "gl",
+            "@value": "SenObraDerivada-NonComercial 1.0 Xenérica"
+        },
+        {
+            "@language": "he",
+            "@value": "איסור יצירות נגזרות-שימוש לא מסחרי 1.0 לא מותאם"
+        },
+        {
+            "@language": "hi",
+            "@value": "NoDerivs-NonCommercial 1.0 Generic"
+        },
+        {
+            "@language": "hr",
+            "@value": "Bez prerada-nekomercijalno 1.0 nelokalizirana licenca"
+        },
+        {
+            "@language": "hu",
+            "@value": "Ne változtasd! - Ne add el! 1.0 Általános"
+        },
+        {
+            "@language": "hy",
+            "@value": "Օգտագործում առանց վերափոխումների - ոչ-առևտրային օգտագործում 1.0 Generic"
+        },
+        {
+            "@language": "id",
+            "@value": "TanpaTurunan-NonKomersial 1.0 Generik"
+        },
+        {
+            "@language": "is",
+            "@value": "NoDerivs-NonCommercial 1.0 Generic"
+        },
+        {
+            "@language": "it",
+            "@value": "NoOpereDerivate-NonCommerciale 1.0 Generico"
+        },
+        {
+            "@language": "it-ch",
+            "@value": "NoOpereDerivate-NonCommerciale 1.0 Generico"
+        },
+        {
+            "@language": "ja",
+            "@value": "改変禁止 - 非営利 1.0 一般"
+        },
+        {
+            "@language": "ka",
+            "@value": "გადამუშავების გარეშე–არაკომერციული გამოყენებისათვის 1.0 ზოგადი"
+        },
+        {
+            "@language": "kk",
+            "@value": "NoDerivs-NonCommercial 1.0 Generic"
+        },
+        {
+            "@language": "ko",
+            "@value": "변경금지-비영리 1.0 일반"
+        },
+        {
+            "@language": "lt",
+            "@value": "NoDerivs-NonCommercial 1.0 Generic"
+        },
+        {
+            "@language": "lv",
+            "@value": "Nemainīts-Nekomerciāls 1.0 Vispārīgs"
+        },
+        {
+            "@language": "mk",
+            "@value": "БезИзведениДела-Некомерцијално 1.0 Нелокализирана лиценца"
+        },
+        {
+            "@language": "ml",
+            "@value": "NoDerivs-NonCommercial 1.0 Generic"
+        },
+        {
+            "@language": "mn",
+            "@value": "NoDerivs-NonCommercial 1.0 Generic"
+        },
+        {
+            "@language": "ms",
+            "@value": "TiadaTerbitan-BukanKomersial 1.0 Umum"
+        },
+        {
+            "@language": "nl",
+            "@value": "GeenAfgeleideWerken-NietCommercieel 1.0 Unported"
+        },
+        {
+            "@language": "no",
+            "@value": "IngenBearbeidelse-Ikkekommersiell 1.0 Generisk"
+        },
+        {
+            "@language": "nso",
+            "@value": "Tše sa Fetolwego - E sego tša Kgwebo 1.0 E sa fetišwago"
+        },
+        {
+            "@language": "oci-es",
+            "@value": "NoDerivs-NonCommercial 1.0 Generic"
+        },
+        {
+            "@language": "pl",
+            "@value": "Bez utworów zależnych-Użycie niekomercyjne 1.0 Ogólny"
+        },
+        {
+            "@language": "pt",
+            "@value": "SemDerivados - NãoComercial 1.0 Genérica"
+        },
+        {
+            "@language": "pt-br",
+            "@value": "Vedada a criação de obras derivadas-Uso não-comercial 1.0 Generic"
+        },
+        {
+            "@language": "pt-pt",
+            "@value": "Proibição de realização de Obras Derivadas-Uso Não-Comercial 1.0 Genérica"
+        },
+        {
+            "@language": "ro",
+            "@value": "FărăModificări-Necomercial 1.0 Generică"
+        },
+        {
+            "@language": "ru",
+            "@value": "NoDerivs-NonCommercial (Без производных произведений — Некоммерческое использование) 1.0 Generic"
+        },
+        {
+            "@language": "si-lk",
+            "@value": "NoDerivs-NonCommercial 1.0 Generic"
+        },
+        {
+            "@language": "sl",
+            "@value": "Brez predelav-Nekomercialno 1.0 Generična"
+        },
+        {
+            "@language": "sq",
+            "@value": "NoDerivs-NonCommercial 1.0 Të përgjithshme"
+        },
+        {
+            "@language": "sr",
+            "@value": "Bez prerada-Nekomercijalno 1.0 Generička licenca"
+        },
+        {
+            "@language": "sr",
+            "@value": "Без прерада-Некомерцијално 1.0 Генеричка лиценца"
+        },
+        {
+            "@language": "sr-latn",
+            "@value": "Bez prerada-Nekomercijalno 1.0 Generička licenca"
+        },
+        {
+            "@language": "st",
+            "@value": "NoDerivs-NonCommercial 1.0 Generic"
+        },
+        {
+            "@language": "sv",
+            "@value": "IngaBearbetningar-IckeKommersiell 1.0 Generisk"
+        },
+        {
+            "@language": "ta",
+            "@value": "NoDerivs-NonCommercial 1.0 Generic"
+        },
+        {
+            "@language": "te",
+            "@value": "NoDerivs-NonCommercial 1.0 Generic"
+        },
+        {
+            "@language": "th",
+            "@value": "ไม่แก้ไขดัดแปลง-ไม่ใช้เพื่อการค้า 1.0 ทั่วไป"
+        },
+        {
+            "@language": "tr",
+            "@value": "NoDerivs-Gayriticari 1.0 Kapsamlı"
+        },
+        {
+            "@language": "uk",
+            "@value": "NoDerivs-NonCommercial 1.0 Generic"
+        },
+        {
+            "@language": "ur",
+            "@value": "NoDerivs-NonCommercial 1.0 Generic"
+        },
+        {
+            "@language": "vi",
+            "@value": "NoDerivs-NonCommercial 1.0 Chung"
+        },
+        {
+            "@language": "zh",
+            "@value": "禁止演绎-非商业性使用 1.0 未本地化版本"
+        },
+        {
+            "@language": "zh-hk",
+            "@value": "禁止改作-非商業性 1.0 通用版"
+        },
+        {
+            "@language": "zh-tw",
+            "@value": "禁止改作-非商業性 1.0 通用版"
+        },
+        {
+            "@language": "zu",
+            "@value": "Ungasuseli lutho kulokhu-Ungayisebenziseli Ezentengiselwano 1.0 Engadlulisiwe"
+        },
+        {
+            "@language": "zxx",
+            "@value": "${NoDerivs-NonCommercial} 1.0 ${Generic}"
+        }
+    ],
+    "owl:sameAs": {
+        "@id": "http://creativecommons.org/licenses/nd-nc/1.0/",
+        "@type": "cc:License",
+        "cc:deprecatedOn": {
+            "@type": "http://www.w3.org/2001/XMLSchema-datatypes#date",
+            "@value": "2004-05-25"
+        },
+        "cc:legalcode": "http://creativecommons.org/licenses/nd-nc/1.0/legalcode",
+        "cc:licenseClass": "http://creativecommons.org/license/",
+        "cc:permits": [
+            "cc:Distribution",
+            "cc:Reproduction"
+        ],
+        "cc:prohibits": "cc:CommercialUse",
+        "cc:requires": "cc:Notice",
+        "dc:creator": "http://creativecommons.org",
+        "dc:hasVersion": "1.0",
+        "dc:identifier": "nd-nc",
+        "dc:title": [
+            {
+                "@language": "af",
+                "@value": "GeenAfleidings-NieKommersieel 1.0 Generies"
+            },
+            {
+                "@language": "ar",
+                "@value": "لا اشتقاق- غير تجاري 1.0 عام"
+            },
+            {
+                "@language": "as",
+                "@value": "NoDerivs-NonCommercial 1.0 Generic"
+            },
+            {
+                "@language": "ast",
+                "@value": "NoDerivs-NonCommercial 1.0 Generic"
+            },
+            {
+                "@language": "ast-es",
+                "@value": "NoDerivs-NonCommercial 1.0 Generic"
+            },
+            {
+                "@language": "az",
+                "@value": "NoDerivs-NonCommercial 1.0 Generic"
+            },
+            {
+                "@language": "be",
+                "@value": "NoDerivs-NonCommercial 1.0 Generic"
+            },
+            {
+                "@language": "bg",
+                "@value": "Без производни-Некомерсиално 1.0 Неадаптиран"
+            },
+            {
+                "@language": "bn",
+                "@value": "NoDerivs-NonCommercial 1.0 Generic"
+            },
+            {
+                "@language": "ca",
+                "@value": "SenseObraDerivada-NoComercial 1.0 Genèrica"
+            },
+            {
+                "@language": "cs",
+                "@value": "Nezasahujte do díla-Nevyužívejte dílo komerčně 1.0 Generic"
+            },
+            {
+                "@language": "da",
+                "@value": "IngenBearbejdelse-IkkeKommerciel 1.0 Generisk"
+            },
+            {
+                "@language": "de",
+                "@value": "Keine Bearbeitung-Nicht-kommerziell 1.0 US-amerikanisch (nicht portiert)"
+            },
+            {
+                "@language": "de-at",
+                "@value": "KeineBearbeitung-NichtKommerziell 1.0 US-amerikanisch (nicht portiert)"
+            },
+            {
+                "@language": "de-ch",
+                "@value": "KeineBearbeitung-NichtKommerziell 1.0 US-amerikanisch (nicht portiert)"
+            },
+            {
+                "@language": "el",
+                "@value": "Όχι Παράγωγα Έργα - Μη Εμπορική Χρήση 1.0 Γενικό"
+            },
+            {
+                "@language": "en",
+                "@value": "NoDerivs-NonCommercial 1.0 Generic"
+            },
+            {
+                "@language": "en-ca",
+                "@value": "NoDerivs-NonCommercial 1.0 Generic"
+            },
+            {
+                "@language": "en-gb",
+                "@value": "NoDerivs-NonCommercial 1.0 Generic"
+            },
+            {
+                "@language": "en-hk",
+                "@value": "NoDerivs-NonCommercial 1.0 Generic"
+            },
+            {
+                "@language": "en-sg",
+                "@value": "NoDerivs-NonCommercial 1.0 Generic"
+            },
+            {
+                "@language": "en-us",
+                "@value": "NoDerivs-NonCommercial 1.0 Generic"
+            },
+            {
+                "@language": "eo",
+                "@value": "Nemodifite-Nekomerce 1.0 Ĝenerala"
+            },
+            {
+                "@language": "es",
+                "@value": "SinDerivadas-NoComercial 1.0 Genérica"
+            },
+            {
+                "@language": "es-ar",
+                "@value": "SinDerivadas-NoComercial 1.0 Genérica"
+            },
+            {
+                "@language": "es-cl",
+                "@value": "SinDerivadas-NoComercial 1.0 Genérica"
+            },
+            {
+                "@language": "es-co",
+                "@value": "SinObraDerivada-NoComercial 1.0 Genérica"
+            },
+            {
+                "@language": "es-ec",
+                "@value": "SinObraDerivada-NoComercial 1.0 Genérica"
+            },
+            {
+                "@language": "es-es",
+                "@value": "SinObraDerivada-NoComercial 1.0 Genérica"
+            },
+            {
+                "@language": "es-gt",
+                "@value": "SinObraDerivada-NoComercial 1.0 Genérica"
+            },
+            {
+                "@language": "es-mx",
+                "@value": "No Derivadas-No Comercial 1.0 Genérica"
+            },
+            {
+                "@language": "es-pe",
+                "@value": "SinObraDerivada-NoComercial 1.0 Genérica"
+            },
+            {
+                "@language": "es-pr",
+                "@value": "SinObraDerivada-NoComercial 1.0 Genérica"
+            },
+            {
+                "@language": "et",
+                "@value": "Mitteäriline eesmärk + Tuletatud teoste keeld 1.0 Üldine"
+            },
+            {
+                "@language": "eu",
+                "@value": "LanEratorririkGabe-EzKomertziala 1.0 Generikoa"
+            },
+            {
+                "@language": "fa",
+                "@value": "NoDerivs-NonCommercial 1.0 Generic"
+            },
+            {
+                "@language": "fi",
+                "@value": "Ei muutoksia-Epäkaupallinen 1.0 Raakaversio"
+            },
+            {
+                "@language": "fr",
+                "@value": "Pas de Modification - Pas d'Utilisation Commerciale 1.0 Générique"
+            },
+            {
+                "@language": "fr-ca",
+                "@value": "Pas de Modification - Pas d'Utilisation Commerciale 1.0 Générique"
+            },
+            {
+                "@language": "fr-ch",
+                "@value": "Pas de Modification - Pas d'Utilisation Commerciale 1.0 Générique"
+            },
+            {
+                "@language": "fr-lu",
+                "@value": "Pas de Modification - Pas d'Utilisation Commerciale 1.0 Générique"
+            },
+            {
+                "@language": "ga",
+                "@value": "NoDerivs-NonCommercial 1.0 Generic"
+            },
+            {
+                "@language": "gl",
+                "@value": "SenObraDerivada-NonComercial 1.0 Xenérica"
+            },
+            {
+                "@language": "he",
+                "@value": "איסור יצירות נגזרות-שימוש לא מסחרי 1.0 לא מותאם"
+            },
+            {
+                "@language": "hi",
+                "@value": "NoDerivs-NonCommercial 1.0 Generic"
+            },
+            {
+                "@language": "hr",
+                "@value": "Bez prerada-nekomercijalno 1.0 nelokalizirana licenca"
+            },
+            {
+                "@language": "hu",
+                "@value": "Ne változtasd! - Ne add el! 1.0 Általános"
+            },
+            {
+                "@language": "hy",
+                "@value": "Օգտագործում առանց վերափոխումների - ոչ-առևտրային օգտագործում 1.0 Generic"
+            },
+            {
+                "@language": "id",
+                "@value": "TanpaTurunan-NonKomersial 1.0 Generik"
+            },
+            {
+                "@language": "is",
+                "@value": "NoDerivs-NonCommercial 1.0 Generic"
+            },
+            {
+                "@language": "it",
+                "@value": "NoOpereDerivate-NonCommerciale 1.0 Generico"
+            },
+            {
+                "@language": "it-ch",
+                "@value": "NoOpereDerivate-NonCommerciale 1.0 Generico"
+            },
+            {
+                "@language": "ja",
+                "@value": "改変禁止 - 非営利 1.0 一般"
+            },
+            {
+                "@language": "ka",
+                "@value": "გადამუშავების გარეშე–არაკომერციული გამოყენებისათვის 1.0 ზოგადი"
+            },
+            {
+                "@language": "kk",
+                "@value": "NoDerivs-NonCommercial 1.0 Generic"
+            },
+            {
+                "@language": "ko",
+                "@value": "변경금지-비영리 1.0 일반"
+            },
+            {
+                "@language": "lt",
+                "@value": "NoDerivs-NonCommercial 1.0 Generic"
+            },
+            {
+                "@language": "lv",
+                "@value": "Nemainīts-Nekomerciāls 1.0 Vispārīgs"
+            },
+            {
+                "@language": "mk",
+                "@value": "БезИзведениДела-Некомерцијално 1.0 Нелокализирана лиценца"
+            },
+            {
+                "@language": "ml",
+                "@value": "NoDerivs-NonCommercial 1.0 Generic"
+            },
+            {
+                "@language": "mn",
+                "@value": "NoDerivs-NonCommercial 1.0 Generic"
+            },
+            {
+                "@language": "ms",
+                "@value": "TiadaTerbitan-BukanKomersial 1.0 Umum"
+            },
+            {
+                "@language": "nl",
+                "@value": "GeenAfgeleideWerken-NietCommercieel 1.0 Unported"
+            },
+            {
+                "@language": "no",
+                "@value": "IngenBearbeidelse-Ikkekommersiell 1.0 Generisk"
+            },
+            {
+                "@language": "nso",
+                "@value": "Tše sa Fetolwego - E sego tša Kgwebo 1.0 E sa fetišwago"
+            },
+            {
+                "@language": "oci-es",
+                "@value": "NoDerivs-NonCommercial 1.0 Generic"
+            },
+            {
+                "@language": "pl",
+                "@value": "Bez utworów zależnych-Użycie niekomercyjne 1.0 Ogólny"
+            },
+            {
+                "@language": "pt",
+                "@value": "SemDerivados - NãoComercial 1.0 Genérica"
+            },
+            {
+                "@language": "pt-br",
+                "@value": "Vedada a criação de obras derivadas-Uso não-comercial 1.0 Generic"
+            },
+            {
+                "@language": "pt-pt",
+                "@value": "Proibição de realização de Obras Derivadas-Uso Não-Comercial 1.0 Genérica"
+            },
+            {
+                "@language": "ro",
+                "@value": "FărăModificări-Necomercial 1.0 Generică"
+            },
+            {
+                "@language": "ru",
+                "@value": "NoDerivs-NonCommercial (Без производных произведений — Некоммерческое использование) 1.0 Generic"
+            },
+            {
+                "@language": "si-lk",
+                "@value": "NoDerivs-NonCommercial 1.0 Generic"
+            },
+            {
+                "@language": "sl",
+                "@value": "Brez predelav-Nekomercialno 1.0 Generična"
+            },
+            {
+                "@language": "sq",
+                "@value": "NoDerivs-NonCommercial 1.0 Të përgjithshme"
+            },
+            {
+                "@language": "sr",
+                "@value": "Bez prerada-Nekomercijalno 1.0 Generička licenca"
+            },
+            {
+                "@language": "sr",
+                "@value": "Без прерада-Некомерцијално 1.0 Генеричка лиценца"
+            },
+            {
+                "@language": "sr-latn",
+                "@value": "Bez prerada-Nekomercijalno 1.0 Generička licenca"
+            },
+            {
+                "@language": "st",
+                "@value": "NoDerivs-NonCommercial 1.0 Generic"
+            },
+            {
+                "@language": "sv",
+                "@value": "IngaBearbetningar-IckeKommersiell 1.0 Generisk"
+            },
+            {
+                "@language": "ta",
+                "@value": "NoDerivs-NonCommercial 1.0 Generic"
+            },
+            {
+                "@language": "te",
+                "@value": "NoDerivs-NonCommercial 1.0 Generic"
+            },
+            {
+                "@language": "th",
+                "@value": "ไม่แก้ไขดัดแปลง-ไม่ใช้เพื่อการค้า 1.0 ทั่วไป"
+            },
+            {
+                "@language": "tr",
+                "@value": "NoDerivs-Gayriticari 1.0 Kapsamlı"
+            },
+            {
+                "@language": "uk",
+                "@value": "NoDerivs-NonCommercial 1.0 Generic"
+            },
+            {
+                "@language": "ur",
+                "@value": "NoDerivs-NonCommercial 1.0 Generic"
+            },
+            {
+                "@language": "vi",
+                "@value": "NoDerivs-NonCommercial 1.0 Chung"
+            },
+            {
+                "@language": "zh",
+                "@value": "禁止演绎-非商业性使用 1.0 未本地化版本"
+            },
+            {
+                "@language": "zh-hk",
+                "@value": "禁止改作-非商業性 1.0 通用版"
+            },
+            {
+                "@language": "zh-tw",
+                "@value": "禁止改作-非商業性 1.0 通用版"
+            },
+            {
+                "@language": "zu",
+                "@value": "Ungasuseli lutho kulokhu-Ungayisebenziseli Ezentengiselwano 1.0 Engadlulisiwe"
+            },
+            {
+                "@language": "zxx",
+                "@value": "${NoDerivs-NonCommercial} 1.0 ${Generic}"
+            }
+        ],
+        "owl:sameAs": "https://licensedb.org/id/CC-ND-NC-1.0",
+        "foaf:logo": "http://i.creativecommons.org/l/nd-nc/1.0/88x31.png"
+    },
+    "foaf:logo": "http://i.creativecommons.org/l/nd-nc/1.0/88x31.png",
+    "li:id": "CC-ND-NC-1.0",
+    "li:name": "CC ND-NC 1.0"
+}

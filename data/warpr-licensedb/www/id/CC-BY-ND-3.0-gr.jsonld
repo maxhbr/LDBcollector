@@ -1,0 +1,848 @@
+{
+    "@context": {
+        "cc": "http://creativecommons.org/ns#",
+        "dc": "http://purl.org/dc/terms/",
+        "dc11": "http://purl.org/dc/elements/1.1/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "li": "https://licensedb.org/ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "cc:legalcode": {
+            "@type": "@id"
+        },
+        "cc:permits": {
+            "@type": "@id"
+        },
+        "cc:requires": {
+            "@type": "@id"
+        },
+        "cc:prohibits": {
+            "@type": "@id"
+        },
+        "cc:jurisdiction": {
+            "@type": "@id"
+        },
+        "cc:licenseClass": {
+            "@type": "@id"
+        },
+        "dc:creator": {
+            "@type": "@id"
+        },
+        "dc:source": {
+            "@type": "@id"
+        },
+        "dc:replaces": {
+            "@type": "@id"
+        },
+        "dc:isBasedOn": {
+            "@type": "@id"
+        },
+        "dc:isReplacedBy": {
+            "@type": "@id"
+        },
+        "foaf:logo": {
+            "@type": "@id"
+        },
+        "li:plaintext": {
+            "@type": "@id"
+        },
+        "li:libre": {
+            "@type": "@id"
+        },
+        "owl:sameAs": {
+            "@type": "@id"
+        }
+    },
+    "@id": "https://licensedb.org/id/CC-BY-ND-3.0-gr",
+    "@type": [
+        "cc:License",
+        "li:License"
+    ],
+    "cc:jurisdiction": "http://creativecommons.org/international/gr/",
+    "cc:legalcode": "http://creativecommons.org/licenses/by-nd/3.0/gr/legalcode",
+    "cc:licenseClass": "http://creativecommons.org/license/",
+    "cc:permits": [
+        "cc:Distribution",
+        "cc:Reproduction"
+    ],
+    "cc:requires": [
+        "cc:Attribution",
+        "cc:Notice"
+    ],
+    "dc:creator": "http://creativecommons.org",
+    "dc:hasVersion": "3.0",
+    "dc:identifier": "by-nd",
+    "dc:source": "http://creativecommons.org/licenses/by-nd/3.0/",
+    "dc:title": [
+        {
+            "@language": "af",
+            "@value": "Erkenning-GeenAfleidings 3.0 Dummy (should say \"Greece\")"
+        },
+        {
+            "@language": "ar",
+            "@value": "نسب- غير مشتق 3.0 اليونان"
+        },
+        {
+            "@language": "as",
+            "@value": "Attribution-NoDerivs 3.0 Greece"
+        },
+        {
+            "@language": "ast",
+            "@value": "Attribution-NoDerivs 3.0 Grecia"
+        },
+        {
+            "@language": "ast-es",
+            "@value": "Attribution-NoDerivs 3.0 Greece"
+        },
+        {
+            "@language": "az",
+            "@value": "Attribution-NoDerivs 3.0 Greece"
+        },
+        {
+            "@language": "be",
+            "@value": "Attribution-NoDerivs 3.0 Грэцыя"
+        },
+        {
+            "@language": "bg",
+            "@value": "Признание-Без производни 3.0 Гърция"
+        },
+        {
+            "@language": "bn",
+            "@value": "Attribution-NoDerivs 3.0 Greece"
+        },
+        {
+            "@language": "ca",
+            "@value": "Reconeixement-SenseObraDerivada 3.0 Grècia"
+        },
+        {
+            "@language": "cs",
+            "@value": "Uveďte autora-Nezasahujte do díla 3.0 Řecko"
+        },
+        {
+            "@language": "da",
+            "@value": "Navngivelse-IngenBearbejdelse 3.0 Grækenland"
+        },
+        {
+            "@language": "de",
+            "@value": "Namensnennung-Keine Bearbeitung 3.0 Griechenland"
+        },
+        {
+            "@language": "de-at",
+            "@value": "Namensnennung-KeineBearbeitung 3.0 Griechenland"
+        },
+        {
+            "@language": "de-ch",
+            "@value": "Namensnennung-KeineBearbeitung 3.0 Greece"
+        },
+        {
+            "@language": "el",
+            "@value": "Αναφορά Δημιουργού-Όχι Παράγωγα Έργα 3.0 Ελλάδα"
+        },
+        {
+            "@language": "en",
+            "@value": "Attribution-NoDerivs 3.0 Greece"
+        },
+        {
+            "@language": "en-ca",
+            "@value": "Attribution-NoDerivs 3.0 Greece"
+        },
+        {
+            "@language": "en-gb",
+            "@value": "Attribution-NoDerivs 3.0 Greece"
+        },
+        {
+            "@language": "en-hk",
+            "@value": "Attribution-NoDerivs 3.0 Greece"
+        },
+        {
+            "@language": "en-sg",
+            "@value": "Attribution-NoDerivs 3.0 Greece"
+        },
+        {
+            "@language": "en-us",
+            "@value": "Attribution-NoDerivs 3.0 Greece"
+        },
+        {
+            "@language": "eo",
+            "@value": "Atribuite-Nemodifite 3.0 Grekujo"
+        },
+        {
+            "@language": "es",
+            "@value": "Atribución-SinDerivadas 3.0 Grecia"
+        },
+        {
+            "@language": "es-ar",
+            "@value": "Atribución-SinDerivadas 3.0 Greece"
+        },
+        {
+            "@language": "es-cl",
+            "@value": "Atribución-SinDerivadas 3.0 Greece"
+        },
+        {
+            "@language": "es-co",
+            "@value": "Reconocimiento-SinObraDerivada 3.0 Greece"
+        },
+        {
+            "@language": "es-ec",
+            "@value": "Reconocimiento-SinObraDerivada 3.0 Grecia"
+        },
+        {
+            "@language": "es-es",
+            "@value": "Reconocimiento-SinObraDerivada 3.0 Grecia"
+        },
+        {
+            "@language": "es-gt",
+            "@value": "Reconocimiento-SinObraDerivada 3.0 Grecia"
+        },
+        {
+            "@language": "es-mx",
+            "@value": "Atribución-No Derivadas 3.0 Greece"
+        },
+        {
+            "@language": "es-pe",
+            "@value": "Reconocimiento-SinObraDerivada 3.0 Greece"
+        },
+        {
+            "@language": "es-pr",
+            "@value": "Reconocimiento-SinObraDerivada 3.0 Greece"
+        },
+        {
+            "@language": "et",
+            "@value": "Autorile viitamine + Tuletatud teoste keeld 3.0 Kreeka"
+        },
+        {
+            "@language": "eu",
+            "@value": "Aitortu-LanEratorririkGabe 3.0 Greece"
+        },
+        {
+            "@language": "fa",
+            "@value": "Attribution-NoDerivs 3.0 یونان"
+        },
+        {
+            "@language": "fi",
+            "@value": "Nimeä-Ei muutoksia 3.0 Kreikka"
+        },
+        {
+            "@language": "fr",
+            "@value": "Paternité - Pas de Modification 3.0 Grèce"
+        },
+        {
+            "@language": "fr-ca",
+            "@value": "Paternité - Pas de Modification 3.0 Greece"
+        },
+        {
+            "@language": "fr-ch",
+            "@value": "Paternité - Pas de Modification 3.0 Greece"
+        },
+        {
+            "@language": "fr-lu",
+            "@value": "Paternité - Pas de Modification 3.0 Grèce"
+        },
+        {
+            "@language": "ga",
+            "@value": "Attribution-NoDerivs 3.0 Greece"
+        },
+        {
+            "@language": "gl",
+            "@value": "Recoñecemento-SenObraDerivada 3.0 Greece"
+        },
+        {
+            "@language": "he",
+            "@value": "ייחוס-איסור יצירות נגזרות 3.0 יוון"
+        },
+        {
+            "@language": "hi",
+            "@value": "Attribution-NoDerivs 3.0 ग्रीस"
+        },
+        {
+            "@language": "hr",
+            "@value": "Imenovanje-Bez prerada 3.0 Grčka"
+        },
+        {
+            "@language": "hu",
+            "@value": "Nevezd meg! - Ne változtasd! 3.0 Görögország"
+        },
+        {
+            "@language": "hy",
+            "@value": "Հղում - Օգտագործում առանց վերափոխումների 3.0 Հունաստան"
+        },
+        {
+            "@language": "id",
+            "@value": "Atribusi-TanpaTurunan 3.0 Yunani"
+        },
+        {
+            "@language": "is",
+            "@value": "Attribution-NoDerivs 3.0 Grikkland"
+        },
+        {
+            "@language": "it",
+            "@value": "Attribuzione - Non opere derivate 3.0 Grecia"
+        },
+        {
+            "@language": "it-ch",
+            "@value": "Attribuzione - Non opere derivate 3.0 Greece"
+        },
+        {
+            "@language": "ja",
+            "@value": "表示 - 改変禁止 3.0 ギリシャ"
+        },
+        {
+            "@language": "ka",
+            "@value": "ავტორობის მითითებით გადამუშავების გარეშე 3.0 საბერძნეთი"
+        },
+        {
+            "@language": "kk",
+            "@value": "Туынды жасамау 3.0 Грекия"
+        },
+        {
+            "@language": "ko",
+            "@value": "저작자표시-변경금지 3.0 그리스"
+        },
+        {
+            "@language": "lt",
+            "@value": "Attribution-NoDerivs 3.0 Graikija"
+        },
+        {
+            "@language": "lv",
+            "@value": "Atsaucoties-Neatvasinot 3.0 Grieķija"
+        },
+        {
+            "@language": "mk",
+            "@value": "НаведиИзвор-БезИзведениДела 3.0 Грција"
+        },
+        {
+            "@language": "ml",
+            "@value": "Attribution-NoDerivs 3.0 ഗ്രീസ്"
+        },
+        {
+            "@language": "mn",
+            "@value": "Attribution-NoDerivs 3.0 Грек"
+        },
+        {
+            "@language": "ms",
+            "@value": "Pengiktirafan-TiadaTerbitan 3.0 Greece"
+        },
+        {
+            "@language": "nl",
+            "@value": "Naamsvermelding-GeenAfgeleideWerken 3.0 Griekenland"
+        },
+        {
+            "@language": "no",
+            "@value": "Navngivelse-IngenBearbeidelse 3.0 Hellas"
+        },
+        {
+            "@language": "nso",
+            "@value": "Tsebagatšo - Tše sa Fetolwego 3.0 Greece"
+        },
+        {
+            "@language": "oci-es",
+            "@value": "Attribution-NoDerivs 3.0 Greece"
+        },
+        {
+            "@language": "pl",
+            "@value": "Uznanie autorstwa-Bez utworów zależnych 3.0 Grecja"
+        },
+        {
+            "@language": "pt",
+            "@value": "Atribuição - SemDerivados 3.0 Grécia"
+        },
+        {
+            "@language": "pt-br",
+            "@value": "Atribuição-Vedada a criação de obras derivativas 3.0 Grécia"
+        },
+        {
+            "@language": "pt-pt",
+            "@value": "Atribuição-Proibição de realização de Obras Derivadas 3.0 Greece"
+        },
+        {
+            "@language": "ro",
+            "@value": "Atribuire-FărăModificări 3.0 Grecia"
+        },
+        {
+            "@language": "ru",
+            "@value": "Attribution-NoDerivs (Атрибуция — Без производных произведений) 3.0 Греция"
+        },
+        {
+            "@language": "si-lk",
+            "@value": "Attribution-NoDerivs 3.0 ග්‍රීසිය"
+        },
+        {
+            "@language": "sl",
+            "@value": "Priznanje avtorstva-Brez predelav 3.0 Grčija"
+        },
+        {
+            "@language": "sq",
+            "@value": "Attribution-NoDerivs 3.0 Greqi"
+        },
+        {
+            "@language": "sr",
+            "@value": "Autorstvo-Bez prerada 3.0 Grčka"
+        },
+        {
+            "@language": "sr",
+            "@value": "Ауторство-Без прерада 3.0 Грчка"
+        },
+        {
+            "@language": "sr-latn",
+            "@value": "Autorstvo-Bez prerada 3.0 Grčka"
+        },
+        {
+            "@language": "st",
+            "@value": "Attribution-NoDerivs 3.0 Greece"
+        },
+        {
+            "@language": "sv",
+            "@value": "Erkännande-IngaBearbetningar 3.0 Grekland"
+        },
+        {
+            "@language": "ta",
+            "@value": "Attribution-NoDerivs 3.0 கிரீஸ்"
+        },
+        {
+            "@language": "te",
+            "@value": "Attribution-NoDerivs 3.0 గ్రీస్"
+        },
+        {
+            "@language": "th",
+            "@value": "แสดงที่มา-ไม่ดัดแปลง 3.0 กรีซ"
+        },
+        {
+            "@language": "tr",
+            "@value": "Alıntı-Türetilemez 3.0 Yunanistan"
+        },
+        {
+            "@language": "uk",
+            "@value": "Attribution-NoDerivs 3.0 Греція"
+        },
+        {
+            "@language": "ur",
+            "@value": "Attribution-NoDerivs 3.0 Greece"
+        },
+        {
+            "@language": "vi",
+            "@value": "Ghi nhận công của tác giả - Không phái sinh 3.0 Nước Hy Lạp "
+        },
+        {
+            "@language": "zh",
+            "@value": "署名-禁止演绎 3.0 希腊"
+        },
+        {
+            "@language": "zh-hk",
+            "@value": "姓名標示-禁止改作 3.0 希臘"
+        },
+        {
+            "@language": "zh-tw",
+            "@value": "姓名標示-禁止改作 3.0 希臘"
+        },
+        {
+            "@language": "zu",
+            "@value": "Qaphela Umnikazi-Ungasuseli lutho kulokhu 3.0 Greece"
+        },
+        {
+            "@language": "zxx",
+            "@value": "${Attribution-NoDerivs} 3.0 ${Greece}"
+        }
+    ],
+    "owl:sameAs": {
+        "@id": "http://creativecommons.org/licenses/by-nd/3.0/gr/",
+        "@type": "cc:License",
+        "cc:jurisdiction": "http://creativecommons.org/international/gr/",
+        "cc:legalcode": "http://creativecommons.org/licenses/by-nd/3.0/gr/legalcode",
+        "cc:licenseClass": "http://creativecommons.org/license/",
+        "cc:permits": [
+            "cc:Distribution",
+            "cc:Reproduction"
+        ],
+        "cc:requires": [
+            "cc:Attribution",
+            "cc:Notice"
+        ],
+        "dc:creator": "http://creativecommons.org",
+        "dc:hasVersion": "3.0",
+        "dc:identifier": "by-nd",
+        "dc:source": "http://creativecommons.org/licenses/by-nd/3.0/",
+        "dc:title": [
+            {
+                "@language": "af",
+                "@value": "Erkenning-GeenAfleidings 3.0 Dummy (should say \"Greece\")"
+            },
+            {
+                "@language": "ar",
+                "@value": "نسب- غير مشتق 3.0 اليونان"
+            },
+            {
+                "@language": "as",
+                "@value": "Attribution-NoDerivs 3.0 Greece"
+            },
+            {
+                "@language": "ast",
+                "@value": "Attribution-NoDerivs 3.0 Grecia"
+            },
+            {
+                "@language": "ast-es",
+                "@value": "Attribution-NoDerivs 3.0 Greece"
+            },
+            {
+                "@language": "az",
+                "@value": "Attribution-NoDerivs 3.0 Greece"
+            },
+            {
+                "@language": "be",
+                "@value": "Attribution-NoDerivs 3.0 Грэцыя"
+            },
+            {
+                "@language": "bg",
+                "@value": "Признание-Без производни 3.0 Гърция"
+            },
+            {
+                "@language": "bn",
+                "@value": "Attribution-NoDerivs 3.0 Greece"
+            },
+            {
+                "@language": "ca",
+                "@value": "Reconeixement-SenseObraDerivada 3.0 Grècia"
+            },
+            {
+                "@language": "cs",
+                "@value": "Uveďte autora-Nezasahujte do díla 3.0 Řecko"
+            },
+            {
+                "@language": "da",
+                "@value": "Navngivelse-IngenBearbejdelse 3.0 Grækenland"
+            },
+            {
+                "@language": "de",
+                "@value": "Namensnennung-Keine Bearbeitung 3.0 Griechenland"
+            },
+            {
+                "@language": "de-at",
+                "@value": "Namensnennung-KeineBearbeitung 3.0 Griechenland"
+            },
+            {
+                "@language": "de-ch",
+                "@value": "Namensnennung-KeineBearbeitung 3.0 Greece"
+            },
+            {
+                "@language": "el",
+                "@value": "Αναφορά Δημιουργού-Όχι Παράγωγα Έργα 3.0 Ελλάδα"
+            },
+            {
+                "@language": "en",
+                "@value": "Attribution-NoDerivs 3.0 Greece"
+            },
+            {
+                "@language": "en-ca",
+                "@value": "Attribution-NoDerivs 3.0 Greece"
+            },
+            {
+                "@language": "en-gb",
+                "@value": "Attribution-NoDerivs 3.0 Greece"
+            },
+            {
+                "@language": "en-hk",
+                "@value": "Attribution-NoDerivs 3.0 Greece"
+            },
+            {
+                "@language": "en-sg",
+                "@value": "Attribution-NoDerivs 3.0 Greece"
+            },
+            {
+                "@language": "en-us",
+                "@value": "Attribution-NoDerivs 3.0 Greece"
+            },
+            {
+                "@language": "eo",
+                "@value": "Atribuite-Nemodifite 3.0 Grekujo"
+            },
+            {
+                "@language": "es",
+                "@value": "Atribución-SinDerivadas 3.0 Grecia"
+            },
+            {
+                "@language": "es-ar",
+                "@value": "Atribución-SinDerivadas 3.0 Greece"
+            },
+            {
+                "@language": "es-cl",
+                "@value": "Atribución-SinDerivadas 3.0 Greece"
+            },
+            {
+                "@language": "es-co",
+                "@value": "Reconocimiento-SinObraDerivada 3.0 Greece"
+            },
+            {
+                "@language": "es-ec",
+                "@value": "Reconocimiento-SinObraDerivada 3.0 Grecia"
+            },
+            {
+                "@language": "es-es",
+                "@value": "Reconocimiento-SinObraDerivada 3.0 Grecia"
+            },
+            {
+                "@language": "es-gt",
+                "@value": "Reconocimiento-SinObraDerivada 3.0 Grecia"
+            },
+            {
+                "@language": "es-mx",
+                "@value": "Atribución-No Derivadas 3.0 Greece"
+            },
+            {
+                "@language": "es-pe",
+                "@value": "Reconocimiento-SinObraDerivada 3.0 Greece"
+            },
+            {
+                "@language": "es-pr",
+                "@value": "Reconocimiento-SinObraDerivada 3.0 Greece"
+            },
+            {
+                "@language": "et",
+                "@value": "Autorile viitamine + Tuletatud teoste keeld 3.0 Kreeka"
+            },
+            {
+                "@language": "eu",
+                "@value": "Aitortu-LanEratorririkGabe 3.0 Greece"
+            },
+            {
+                "@language": "fa",
+                "@value": "Attribution-NoDerivs 3.0 یونان"
+            },
+            {
+                "@language": "fi",
+                "@value": "Nimeä-Ei muutoksia 3.0 Kreikka"
+            },
+            {
+                "@language": "fr",
+                "@value": "Paternité - Pas de Modification 3.0 Grèce"
+            },
+            {
+                "@language": "fr-ca",
+                "@value": "Paternité - Pas de Modification 3.0 Greece"
+            },
+            {
+                "@language": "fr-ch",
+                "@value": "Paternité - Pas de Modification 3.0 Greece"
+            },
+            {
+                "@language": "fr-lu",
+                "@value": "Paternité - Pas de Modification 3.0 Grèce"
+            },
+            {
+                "@language": "ga",
+                "@value": "Attribution-NoDerivs 3.0 Greece"
+            },
+            {
+                "@language": "gl",
+                "@value": "Recoñecemento-SenObraDerivada 3.0 Greece"
+            },
+            {
+                "@language": "he",
+                "@value": "ייחוס-איסור יצירות נגזרות 3.0 יוון"
+            },
+            {
+                "@language": "hi",
+                "@value": "Attribution-NoDerivs 3.0 ग्रीस"
+            },
+            {
+                "@language": "hr",
+                "@value": "Imenovanje-Bez prerada 3.0 Grčka"
+            },
+            {
+                "@language": "hu",
+                "@value": "Nevezd meg! - Ne változtasd! 3.0 Görögország"
+            },
+            {
+                "@language": "hy",
+                "@value": "Հղում - Օգտագործում առանց վերափոխումների 3.0 Հունաստան"
+            },
+            {
+                "@language": "id",
+                "@value": "Atribusi-TanpaTurunan 3.0 Yunani"
+            },
+            {
+                "@language": "is",
+                "@value": "Attribution-NoDerivs 3.0 Grikkland"
+            },
+            {
+                "@language": "it",
+                "@value": "Attribuzione - Non opere derivate 3.0 Grecia"
+            },
+            {
+                "@language": "it-ch",
+                "@value": "Attribuzione - Non opere derivate 3.0 Greece"
+            },
+            {
+                "@language": "ja",
+                "@value": "表示 - 改変禁止 3.0 ギリシャ"
+            },
+            {
+                "@language": "ka",
+                "@value": "ავტორობის მითითებით გადამუშავების გარეშე 3.0 საბერძნეთი"
+            },
+            {
+                "@language": "kk",
+                "@value": "Туынды жасамау 3.0 Грекия"
+            },
+            {
+                "@language": "ko",
+                "@value": "저작자표시-변경금지 3.0 그리스"
+            },
+            {
+                "@language": "lt",
+                "@value": "Attribution-NoDerivs 3.0 Graikija"
+            },
+            {
+                "@language": "lv",
+                "@value": "Atsaucoties-Neatvasinot 3.0 Grieķija"
+            },
+            {
+                "@language": "mk",
+                "@value": "НаведиИзвор-БезИзведениДела 3.0 Грција"
+            },
+            {
+                "@language": "ml",
+                "@value": "Attribution-NoDerivs 3.0 ഗ്രീസ്"
+            },
+            {
+                "@language": "mn",
+                "@value": "Attribution-NoDerivs 3.0 Грек"
+            },
+            {
+                "@language": "ms",
+                "@value": "Pengiktirafan-TiadaTerbitan 3.0 Greece"
+            },
+            {
+                "@language": "nl",
+                "@value": "Naamsvermelding-GeenAfgeleideWerken 3.0 Griekenland"
+            },
+            {
+                "@language": "no",
+                "@value": "Navngivelse-IngenBearbeidelse 3.0 Hellas"
+            },
+            {
+                "@language": "nso",
+                "@value": "Tsebagatšo - Tše sa Fetolwego 3.0 Greece"
+            },
+            {
+                "@language": "oci-es",
+                "@value": "Attribution-NoDerivs 3.0 Greece"
+            },
+            {
+                "@language": "pl",
+                "@value": "Uznanie autorstwa-Bez utworów zależnych 3.0 Grecja"
+            },
+            {
+                "@language": "pt",
+                "@value": "Atribuição - SemDerivados 3.0 Grécia"
+            },
+            {
+                "@language": "pt-br",
+                "@value": "Atribuição-Vedada a criação de obras derivativas 3.0 Grécia"
+            },
+            {
+                "@language": "pt-pt",
+                "@value": "Atribuição-Proibição de realização de Obras Derivadas 3.0 Greece"
+            },
+            {
+                "@language": "ro",
+                "@value": "Atribuire-FărăModificări 3.0 Grecia"
+            },
+            {
+                "@language": "ru",
+                "@value": "Attribution-NoDerivs (Атрибуция — Без производных произведений) 3.0 Греция"
+            },
+            {
+                "@language": "si-lk",
+                "@value": "Attribution-NoDerivs 3.0 ග්‍රීසිය"
+            },
+            {
+                "@language": "sl",
+                "@value": "Priznanje avtorstva-Brez predelav 3.0 Grčija"
+            },
+            {
+                "@language": "sq",
+                "@value": "Attribution-NoDerivs 3.0 Greqi"
+            },
+            {
+                "@language": "sr",
+                "@value": "Autorstvo-Bez prerada 3.0 Grčka"
+            },
+            {
+                "@language": "sr",
+                "@value": "Ауторство-Без прерада 3.0 Грчка"
+            },
+            {
+                "@language": "sr-latn",
+                "@value": "Autorstvo-Bez prerada 3.0 Grčka"
+            },
+            {
+                "@language": "st",
+                "@value": "Attribution-NoDerivs 3.0 Greece"
+            },
+            {
+                "@language": "sv",
+                "@value": "Erkännande-IngaBearbetningar 3.0 Grekland"
+            },
+            {
+                "@language": "ta",
+                "@value": "Attribution-NoDerivs 3.0 கிரீஸ்"
+            },
+            {
+                "@language": "te",
+                "@value": "Attribution-NoDerivs 3.0 గ్రీస్"
+            },
+            {
+                "@language": "th",
+                "@value": "แสดงที่มา-ไม่ดัดแปลง 3.0 กรีซ"
+            },
+            {
+                "@language": "tr",
+                "@value": "Alıntı-Türetilemez 3.0 Yunanistan"
+            },
+            {
+                "@language": "uk",
+                "@value": "Attribution-NoDerivs 3.0 Греція"
+            },
+            {
+                "@language": "ur",
+                "@value": "Attribution-NoDerivs 3.0 Greece"
+            },
+            {
+                "@language": "vi",
+                "@value": "Ghi nhận công của tác giả - Không phái sinh 3.0 Nước Hy Lạp "
+            },
+            {
+                "@language": "zh",
+                "@value": "署名-禁止演绎 3.0 希腊"
+            },
+            {
+                "@language": "zh-hk",
+                "@value": "姓名標示-禁止改作 3.0 希臘"
+            },
+            {
+                "@language": "zh-tw",
+                "@value": "姓名標示-禁止改作 3.0 希臘"
+            },
+            {
+                "@language": "zu",
+                "@value": "Qaphela Umnikazi-Ungasuseli lutho kulokhu 3.0 Greece"
+            },
+            {
+                "@language": "zxx",
+                "@value": "${Attribution-NoDerivs} 3.0 ${Greece}"
+            }
+        ],
+        "owl:sameAs": "https://licensedb.org/id/CC-BY-ND-3.0-gr",
+        "foaf:logo": [
+            "http://i.creativecommons.org/l/by-nd/3.0/gr/80x15.png",
+            "http://i.creativecommons.org/l/by-nd/3.0/gr/88x31.png"
+        ]
+    },
+    "foaf:logo": [
+        "http://i.creativecommons.org/l/by-nd/3.0/gr/80x15.png",
+        "http://i.creativecommons.org/l/by-nd/3.0/gr/88x31.png"
+    ],
+    "li:id": "CC-BY-ND-3.0-gr",
+    "li:name": "CC BY-ND 3.0 GR"
+}

@@ -1,0 +1,237 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/elements/1.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://creativecommons.org/licenses/by-nc/2.5/mx/> a cc:License ;
+    cc:jurisdiction <http://creativecommons.org/international/mx/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nc/2.5/mx/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:prohibits cc:CommercialUse ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.5" ;
+    dc:identifier "by-nc" ;
+    dc:source <http://creativecommons.org/licenses/by-nc/2.5/> ;
+    dc:title "Erkenning-NieKommersieel 2.5 Mexiko"@af,
+        "نسب - غير تجاري 2.5 مكسيك"@ar,
+        "Attribution-NonCommercial 2.5 Mexico"@as,
+        "Attribution-NonCommercial 2.5 Mexico"@ast,
+        "Attribution-NonCommercial 2.5 Mexico"@ast-es,
+        "Attribution-NonCommercial 2.5 Mexico"@az,
+        "Attribution-NonCommercial 2.5 Мексіка"@be,
+        "Признание-Некомерсиално 2.5 Мексико"@bg,
+        "Attribution-NonCommercial 2.5 Mexico"@bn,
+        "Reconeixement-NoComercial 2.5 Mèxic"@ca,
+        "Uveďte autora-Neužívejte komerčně 2.5 Mexiko"@cs,
+        "Navngivelse-IkkeKommerciel 2.5 Mexico"@da,
+        "Namensnennung-Nicht-kommerziell 2.5 Mexiko"@de,
+        "Namensnennung-NichtKommerziell 2.5 Mexiko"@de-at,
+        "Namensnennung-NichtKommerziell 2.5 Mexiko"@de-ch,
+        "Αναφορά Δημιουργού-Μη Εμπορική Χρήση 2.5 Μεξικό"@el,
+        "Attribution-NonCommercial 2.5 Mexico"@en,
+        "Attribution-NonCommercial 2.5 Mexico"@en-ca,
+        "Attribution-NonCommercial 2.5 Mexico"@en-gb,
+        "Attribution-NonCommercial 2.5 Mexico"@en-hk,
+        "Attribution-NonCommercial 2.5 Mexico"@en-sg,
+        "Attribution-NonCommercial 2.5 Mexico"@en-us,
+        "Atribuite-Nekomerce 2.5 Meksiko"@eo,
+        "Atribución-NoComercial 2.5 México"@es,
+        "Atribución-NoComercial 2.5 México"@es-ar,
+        "Atribución-NoComercial 2.5 México"@es-cl,
+        "Reconocimiento-NoComercial 2.5 México"@es-co,
+        "Reconocimiento-NoComercial 2.5 México"@es-ec,
+        "Reconocimiento-NoComercial 2.5 México"@es-es,
+        "Reconocimiento-NoComercial 2.5 México"@es-gt,
+        "Atribución-No Comercial 2.5 México"@es-mx,
+        "Reconocimiento-NoComercial 2.5 México"@es-pe,
+        "Reconocimiento-NoComercial 2.5 México"@es-pr,
+        "Autorile viitamine + Mitteäriline eesmärk 2.5 Mehhiko"@et,
+        "Aitortu-EzKomertziala 2.5 Mexiko"@eu,
+        "Attribution-NonCommercial 2.5 مکزیک"@fa,
+        "Nimeä-Epäkaupallinen 2.5 Meksiko"@fi,
+        "Paternité - Pas d'Utilisation Commerciale 2.5 Mexique"@fr,
+        "Paternité - Pas d'Utilisation Commerciale 2.5 Mexique"@fr-ca,
+        "Paternité - Pas d'Utilisation Commerciale 2.5 Mexique"@fr-ch,
+        "Paternité - Pas d'Utilisation Commerciale 2.5 Mexique"@fr-lu,
+        "Attribution-NonCommercial 2.5 Mexico"@ga,
+        "Recoñecemento-NonComercial 2.5 Mexico"@gl,
+        "ייחוס-שימוש לא מסחרי 2.5 מקסיקו"@he,
+        "Attribution-NonCommercial 2.5 Mexico"@hi,
+        "Imenovanje-Nekomercijalno 2.5 Meksiko"@hr,
+        "Nevezd meg! - Ne add el! 2.5 Mexikó"@hu,
+        "Հղում - Ոչ-առևտրային օգտագործում 2.5 Մեքսիկա"@hy,
+        "Attribusi-NonKomersial 2.5 Meksiko"@id,
+        "Attribution-NonCommercial 2.5 Mexico"@is,
+        "Attribuzione - Non commerciale 2.5 Messico"@it,
+        "Attribuzione - Non commerciale 2.5 Mexico"@it-ch,
+        "表示 - 非営利 2.5 メキシコ"@ja,
+        "ავტორობის მითითებით არაკომერციული გამოყენებისათვის 2.5 მექსიკა"@ka,
+        "Коммерциялық емес 2.5 Mexico"@kk,
+        "저작자표시-비영리 2.5 멕시코"@ko,
+        "Attribution-NonCommercial 2.5 Meksika"@lt,
+        "Atsaucoties-Nekomerciāli 2.5 Meksika"@lv,
+        "НаведиИзвор-Некомерцијално 2.5 Мексико"@mk,
+        "Attribution-NonCommercial 2.5 മെക്സിക്കൊ"@ml,
+        "Attribution-NonCommercial 2.5 Mexico"@mn,
+        "Pengiktirafan-BukanKomersial 2.5 Mexico"@ms,
+        "Naamsvermelding-NietCommercieel 2.5 Mexico"@nl,
+        "Navngivelse-Ikkekommersiell 2.5 Mexiko"@no,
+        "Tsebagatšo- E sego ya kgwebo 2.5 Mexico"@nso,
+        "Attribution-NonCommercial 2.5 Mexico"@oci-es,
+        "Uznanie autorstwa-Użycie niekomercyjne 2.5 Meksyk"@pl,
+        "Atribuição - NãoComercial 2.5 México"@pt,
+        "Atribuição-Uso não-comercial 2.5 Mexico"@pt-br,
+        "Atribuição-Uso Não-Comercial 2.5 Mexico"@pt-pt,
+        "Atribuire-NeComercial 2.5 Mexic"@ro,
+        "Attribution-NonCommercial (Атрибуция — Некоммерческое использование) 2.5 Мексика"@ru,
+        "Attribution-NonCommercial 2.5 Mexico"@si-lk,
+        "Priznanje avtorstva-Nekomercialno 2.5 Mehika"@sl,
+        "Attribution-NonCommercial 2.5 Meksikë"@sq,
+        "Autorstvo-Nekomercijalno 2.5 Meksiko"@sr,
+        "Ауторство-Некомерцијално 2.5 Мексико"@sr,
+        "Autorstvo-Nekomercijalno 2.5 Meksiko"@sr-latn,
+        "Attribution-NonCommercial 2.5 Mexico"@st,
+        "Erkännande-IckeKommersiell 2.5 Mexiko"@sv,
+        "Attribution-NonCommercial 2.5 Mexico"@ta,
+        "Attribution-NonCommercial 2.5 మెక్సికో"@te,
+        "แสดงที่มา-ไม่ใช้เพื่อการค้า 2.5 เม็กซิโก"@th,
+        "Alıntı-Gayriticari 2.5 Meksika"@tr,
+        "Attribution-NonCommercial 2.5 Mexico"@uk,
+        "Attribution-NonCommercial 2.5 Mexico"@ur,
+        "Ghi nhận công của tác giả - Phi thương mại  2.5 Mexico"@vi,
+        "署名-非商业性使用 2.5 墨西哥"@zh,
+        "姓名標示-非商業性 2.5 墨西哥"@zh-hk,
+        "姓名標示-非商業性 2.5 墨西哥"@zh-tw,
+        "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano 2.5 EMexico"@zu,
+        "${Attribution-NonCommercial} 2.5 ${Mexico}"@zxx ;
+    owl:sameAs <https://licensedb.org/id/CC-BY-NC-2.5-mx> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nc/2.5/mx/80x15.png>,
+        <http://i.creativecommons.org/l/by-nc/2.5/mx/88x31.png> .
+
+<https://licensedb.org/id/CC-BY-NC-2.5-mx> a cc:License,
+        li:License ;
+    cc:jurisdiction <http://creativecommons.org/international/mx/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nc/2.5/mx/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:prohibits cc:CommercialUse ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.5" ;
+    dc:identifier "by-nc" ;
+    dc:source <http://creativecommons.org/licenses/by-nc/2.5/> ;
+    dc:title "Erkenning-NieKommersieel 2.5 Mexiko"@af,
+        "نسب - غير تجاري 2.5 مكسيك"@ar,
+        "Attribution-NonCommercial 2.5 Mexico"@as,
+        "Attribution-NonCommercial 2.5 Mexico"@ast,
+        "Attribution-NonCommercial 2.5 Mexico"@ast-es,
+        "Attribution-NonCommercial 2.5 Mexico"@az,
+        "Attribution-NonCommercial 2.5 Мексіка"@be,
+        "Признание-Некомерсиално 2.5 Мексико"@bg,
+        "Attribution-NonCommercial 2.5 Mexico"@bn,
+        "Reconeixement-NoComercial 2.5 Mèxic"@ca,
+        "Uveďte autora-Neužívejte komerčně 2.5 Mexiko"@cs,
+        "Navngivelse-IkkeKommerciel 2.5 Mexico"@da,
+        "Namensnennung-Nicht-kommerziell 2.5 Mexiko"@de,
+        "Namensnennung-NichtKommerziell 2.5 Mexiko"@de-at,
+        "Namensnennung-NichtKommerziell 2.5 Mexiko"@de-ch,
+        "Αναφορά Δημιουργού-Μη Εμπορική Χρήση 2.5 Μεξικό"@el,
+        "Attribution-NonCommercial 2.5 Mexico"@en,
+        "Attribution-NonCommercial 2.5 Mexico"@en-ca,
+        "Attribution-NonCommercial 2.5 Mexico"@en-gb,
+        "Attribution-NonCommercial 2.5 Mexico"@en-hk,
+        "Attribution-NonCommercial 2.5 Mexico"@en-sg,
+        "Attribution-NonCommercial 2.5 Mexico"@en-us,
+        "Atribuite-Nekomerce 2.5 Meksiko"@eo,
+        "Atribución-NoComercial 2.5 México"@es,
+        "Atribución-NoComercial 2.5 México"@es-ar,
+        "Atribución-NoComercial 2.5 México"@es-cl,
+        "Reconocimiento-NoComercial 2.5 México"@es-co,
+        "Reconocimiento-NoComercial 2.5 México"@es-ec,
+        "Reconocimiento-NoComercial 2.5 México"@es-es,
+        "Reconocimiento-NoComercial 2.5 México"@es-gt,
+        "Atribución-No Comercial 2.5 México"@es-mx,
+        "Reconocimiento-NoComercial 2.5 México"@es-pe,
+        "Reconocimiento-NoComercial 2.5 México"@es-pr,
+        "Autorile viitamine + Mitteäriline eesmärk 2.5 Mehhiko"@et,
+        "Aitortu-EzKomertziala 2.5 Mexiko"@eu,
+        "Attribution-NonCommercial 2.5 مکزیک"@fa,
+        "Nimeä-Epäkaupallinen 2.5 Meksiko"@fi,
+        "Paternité - Pas d'Utilisation Commerciale 2.5 Mexique"@fr,
+        "Paternité - Pas d'Utilisation Commerciale 2.5 Mexique"@fr-ca,
+        "Paternité - Pas d'Utilisation Commerciale 2.5 Mexique"@fr-ch,
+        "Paternité - Pas d'Utilisation Commerciale 2.5 Mexique"@fr-lu,
+        "Attribution-NonCommercial 2.5 Mexico"@ga,
+        "Recoñecemento-NonComercial 2.5 Mexico"@gl,
+        "ייחוס-שימוש לא מסחרי 2.5 מקסיקו"@he,
+        "Attribution-NonCommercial 2.5 Mexico"@hi,
+        "Imenovanje-Nekomercijalno 2.5 Meksiko"@hr,
+        "Nevezd meg! - Ne add el! 2.5 Mexikó"@hu,
+        "Հղում - Ոչ-առևտրային օգտագործում 2.5 Մեքսիկա"@hy,
+        "Attribusi-NonKomersial 2.5 Meksiko"@id,
+        "Attribution-NonCommercial 2.5 Mexico"@is,
+        "Attribuzione - Non commerciale 2.5 Messico"@it,
+        "Attribuzione - Non commerciale 2.5 Mexico"@it-ch,
+        "表示 - 非営利 2.5 メキシコ"@ja,
+        "ავტორობის მითითებით არაკომერციული გამოყენებისათვის 2.5 მექსიკა"@ka,
+        "Коммерциялық емес 2.5 Mexico"@kk,
+        "저작자표시-비영리 2.5 멕시코"@ko,
+        "Attribution-NonCommercial 2.5 Meksika"@lt,
+        "Atsaucoties-Nekomerciāli 2.5 Meksika"@lv,
+        "НаведиИзвор-Некомерцијално 2.5 Мексико"@mk,
+        "Attribution-NonCommercial 2.5 മെക്സിക്കൊ"@ml,
+        "Attribution-NonCommercial 2.5 Mexico"@mn,
+        "Pengiktirafan-BukanKomersial 2.5 Mexico"@ms,
+        "Naamsvermelding-NietCommercieel 2.5 Mexico"@nl,
+        "Navngivelse-Ikkekommersiell 2.5 Mexiko"@no,
+        "Tsebagatšo- E sego ya kgwebo 2.5 Mexico"@nso,
+        "Attribution-NonCommercial 2.5 Mexico"@oci-es,
+        "Uznanie autorstwa-Użycie niekomercyjne 2.5 Meksyk"@pl,
+        "Atribuição - NãoComercial 2.5 México"@pt,
+        "Atribuição-Uso não-comercial 2.5 Mexico"@pt-br,
+        "Atribuição-Uso Não-Comercial 2.5 Mexico"@pt-pt,
+        "Atribuire-NeComercial 2.5 Mexic"@ro,
+        "Attribution-NonCommercial (Атрибуция — Некоммерческое использование) 2.5 Мексика"@ru,
+        "Attribution-NonCommercial 2.5 Mexico"@si-lk,
+        "Priznanje avtorstva-Nekomercialno 2.5 Mehika"@sl,
+        "Attribution-NonCommercial 2.5 Meksikë"@sq,
+        "Autorstvo-Nekomercijalno 2.5 Meksiko"@sr,
+        "Ауторство-Некомерцијално 2.5 Мексико"@sr,
+        "Autorstvo-Nekomercijalno 2.5 Meksiko"@sr-latn,
+        "Attribution-NonCommercial 2.5 Mexico"@st,
+        "Erkännande-IckeKommersiell 2.5 Mexiko"@sv,
+        "Attribution-NonCommercial 2.5 Mexico"@ta,
+        "Attribution-NonCommercial 2.5 మెక్సికో"@te,
+        "แสดงที่มา-ไม่ใช้เพื่อการค้า 2.5 เม็กซิโก"@th,
+        "Alıntı-Gayriticari 2.5 Meksika"@tr,
+        "Attribution-NonCommercial 2.5 Mexico"@uk,
+        "Attribution-NonCommercial 2.5 Mexico"@ur,
+        "Ghi nhận công của tác giả - Phi thương mại  2.5 Mexico"@vi,
+        "署名-非商业性使用 2.5 墨西哥"@zh,
+        "姓名標示-非商業性 2.5 墨西哥"@zh-hk,
+        "姓名標示-非商業性 2.5 墨西哥"@zh-tw,
+        "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano 2.5 EMexico"@zu,
+        "${Attribution-NonCommercial} 2.5 ${Mexico}"@zxx ;
+    owl:sameAs <http://creativecommons.org/licenses/by-nc/2.5/mx/> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nc/2.5/mx/80x15.png>,
+        <http://i.creativecommons.org/l/by-nc/2.5/mx/88x31.png> ;
+    li:id "CC-BY-NC-2.5-mx" ;
+    li:name "CC BY-NC 2.5 MX" .
+

@@ -1,0 +1,856 @@
+{
+    "@context": {
+        "cc": "http://creativecommons.org/ns#",
+        "dc": "http://purl.org/dc/terms/",
+        "dc11": "http://purl.org/dc/elements/1.1/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "li": "https://licensedb.org/ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "cc:legalcode": {
+            "@type": "@id"
+        },
+        "cc:permits": {
+            "@type": "@id"
+        },
+        "cc:requires": {
+            "@type": "@id"
+        },
+        "cc:prohibits": {
+            "@type": "@id"
+        },
+        "cc:jurisdiction": {
+            "@type": "@id"
+        },
+        "cc:licenseClass": {
+            "@type": "@id"
+        },
+        "dc:creator": {
+            "@type": "@id"
+        },
+        "dc:source": {
+            "@type": "@id"
+        },
+        "dc:replaces": {
+            "@type": "@id"
+        },
+        "dc:isBasedOn": {
+            "@type": "@id"
+        },
+        "dc:isReplacedBy": {
+            "@type": "@id"
+        },
+        "foaf:logo": {
+            "@type": "@id"
+        },
+        "li:plaintext": {
+            "@type": "@id"
+        },
+        "li:libre": {
+            "@type": "@id"
+        },
+        "owl:sameAs": {
+            "@type": "@id"
+        }
+    },
+    "@id": "https://licensedb.org/id/CC-BY-SA-2.0-nl",
+    "@type": [
+        "cc:License",
+        "li:License"
+    ],
+    "cc:jurisdiction": "http://creativecommons.org/international/nl/",
+    "cc:legalcode": "http://creativecommons.org/licenses/by-sa/2.0/nl/legalcode",
+    "cc:licenseClass": "http://creativecommons.org/license/",
+    "cc:permits": [
+        "cc:DerivativeWorks",
+        "cc:Distribution",
+        "cc:Reproduction"
+    ],
+    "cc:requires": [
+        "cc:Attribution",
+        "cc:Notice",
+        "cc:ShareAlike"
+    ],
+    "dc:creator": "http://creativecommons.org",
+    "dc:hasVersion": "2.0",
+    "dc:identifier": "by-sa",
+    "dc:isReplacedBy": "https://licensedb.org/id/CC-BY-SA-2.5-nl",
+    "dc:replaces": "https://licensedb.org/id/CC-BY-SA-1.0-nl",
+    "dc:source": "http://creativecommons.org/licenses/by-sa/2.0/",
+    "dc:title": [
+        {
+            "@language": "af",
+            "@value": "Erkenning-InsgelyksDeel 2.0 Nederland"
+        },
+        {
+            "@language": "ar",
+            "@value": "نسب العمل- المشاركة على قدم المساواة 2.0 هولندا"
+        },
+        {
+            "@language": "as",
+            "@value": "Attribution-ShareAlike 2.0 Netherlands"
+        },
+        {
+            "@language": "ast",
+            "@value": "Attribution-ShareAlike 2.0 Netherlands"
+        },
+        {
+            "@language": "ast-es",
+            "@value": "Attribution-ShareAlike 2.0 Netherlands"
+        },
+        {
+            "@language": "az",
+            "@value": "Attribution-ShareAlike 2.0 Netherlands"
+        },
+        {
+            "@language": "be",
+            "@value": "Attribution-ShareAlike 2.0 Нідэрланды"
+        },
+        {
+            "@language": "bg",
+            "@value": "Признание-Споделяне на споделеното 2.0 Холандия"
+        },
+        {
+            "@language": "bn",
+            "@value": "Attribution-ShareAlike 2.0 Netherlands"
+        },
+        {
+            "@language": "ca",
+            "@value": "Reconeixement-CompartirIgual 2.0 Holanda"
+        },
+        {
+            "@language": "cs",
+            "@value": "Uveďte autora-Zachovejte licenci 2.0 Nizozemí"
+        },
+        {
+            "@language": "da",
+            "@value": "Navngivelse-DelPåSammeVilkår 2.0 Holland"
+        },
+        {
+            "@language": "de",
+            "@value": "Namensnennung-Weitergabe unter gleichen Bedingungen 2.0 Niederlande"
+        },
+        {
+            "@language": "de-at",
+            "@value": "Namensnennung-Weitergabe unter gleichen Bedingungen 2.0 Niederlande"
+        },
+        {
+            "@language": "de-ch",
+            "@value": "Namensnennung-Weitergabe unter gleichen Bedingungen 2.0 Niederlande"
+        },
+        {
+            "@language": "el",
+            "@value": "Αναφορά Δημιουργού - Παρόμοια Διανομή 2.0 Ολλανδία"
+        },
+        {
+            "@language": "en",
+            "@value": "Attribution-ShareAlike 2.0 Netherlands"
+        },
+        {
+            "@language": "en-ca",
+            "@value": "Attribution-ShareAlike 2.0 Netherlands"
+        },
+        {
+            "@language": "en-gb",
+            "@value": "Attribution-ShareAlike 2.0 Netherlands"
+        },
+        {
+            "@language": "en-hk",
+            "@value": "Attribution-ShareAlike 2.0 Netherlands"
+        },
+        {
+            "@language": "en-sg",
+            "@value": "Attribution-ShareAlike 2.0 Netherlands"
+        },
+        {
+            "@language": "en-us",
+            "@value": "Attribution-ShareAlike 2.0 Netherlands"
+        },
+        {
+            "@language": "eo",
+            "@value": "Atribuite-Samkondiĉe 2.0 Nederlando"
+        },
+        {
+            "@language": "es",
+            "@value": "Atribución-CompartirIgual 2.0 Holanda"
+        },
+        {
+            "@language": "es-ar",
+            "@value": "Atribución-CompartirDerivadasIgual 2.0 Holanda"
+        },
+        {
+            "@language": "es-cl",
+            "@value": "Atribución-LicenciarIgual 2.0 Holanda"
+        },
+        {
+            "@language": "es-co",
+            "@value": "Reconocimiento-CompartirIgual 2.0 Holanda"
+        },
+        {
+            "@language": "es-ec",
+            "@value": "Reconocimiento-CompartirIgual 2.0 Holanda"
+        },
+        {
+            "@language": "es-es",
+            "@value": "Reconocimiento-CompartirIgual 2.0 Holanda"
+        },
+        {
+            "@language": "es-gt",
+            "@value": "Reconocimiento-CompartirIgual 2.0 Holanda"
+        },
+        {
+            "@language": "es-mx",
+            "@value": "Atribución-Licenciamiento Recíproco 2.0 Holanda"
+        },
+        {
+            "@language": "es-pe",
+            "@value": "Reconocimiento-CompartirIgual 2.0 Holanda"
+        },
+        {
+            "@language": "es-pr",
+            "@value": "Reconocimiento-CompartirIgual 2.0 Holanda"
+        },
+        {
+            "@language": "et",
+            "@value": "Autorile viitamine + Jagamine samadel tingimustel 2.0 Holland"
+        },
+        {
+            "@language": "eu",
+            "@value": "Aitortu-PartekatuBerdin 2.0 Herbehereak"
+        },
+        {
+            "@language": "fa",
+            "@value": "Attribution-ShareAlike 2.0 هلند"
+        },
+        {
+            "@language": "fi",
+            "@value": "Nimeä-Tarttuva 2.0 Hollanti"
+        },
+        {
+            "@language": "fr",
+            "@value": "Paternité - Partage à l'Identique 2.0 Pays-Bas"
+        },
+        {
+            "@language": "fr-ca",
+            "@value": "Paternité - Partage des Conditions Initiales à l'Identique 2.0 Pays-Bas"
+        },
+        {
+            "@language": "fr-ch",
+            "@value": "Paternité - Partage des Conditions Initiales à l'Identique 2.0 Pays-Bas"
+        },
+        {
+            "@language": "fr-lu",
+            "@value": "Paternité - Partage des Conditions Initiales à l'Identique 2.0 Pays-Bas"
+        },
+        {
+            "@language": "ga",
+            "@value": "Attribution-ShareAlike 2.0 Netherlands"
+        },
+        {
+            "@language": "gl",
+            "@value": "Recoñecemento-CompartirIgual 2.0 Holanda"
+        },
+        {
+            "@language": "he",
+            "@value": "ייחוס-שיתוף זהה 2.0 הולנד"
+        },
+        {
+            "@language": "hi",
+            "@value": "Attribution-ShareAlike 2.0 Netherlands"
+        },
+        {
+            "@language": "hr",
+            "@value": "Imenovanje-Dijeli pod istim uvjetima 2.0 Nizozemska"
+        },
+        {
+            "@language": "hu",
+            "@value": "Nevezd meg! - Így add tovább! 2.0 Hollandia"
+        },
+        {
+            "@language": "hy",
+            "@value": "Հղում - համանման տարածում 2.0 Նիդերլանդներ"
+        },
+        {
+            "@language": "id",
+            "@value": "Atribusi-BerbagiSerupa 2.0 Belanda"
+        },
+        {
+            "@language": "is",
+            "@value": "Attribution-ShareAlike 2.0 Holland"
+        },
+        {
+            "@language": "it",
+            "@value": "Attribuzione - Condividi allo stesso modo 2.0 Olanda"
+        },
+        {
+            "@language": "it-ch",
+            "@value": "Attribuzione - Condividi allo stesso modo 2.0 Olanda"
+        },
+        {
+            "@language": "ja",
+            "@value": "表示 - 継承 2.0 オランダ"
+        },
+        {
+            "@language": "ka",
+            "@value": "ავტორობის მითითებით – გავრცელება იგივე პირობებით  2.0 ნიდერლანდები"
+        },
+        {
+            "@language": "kk",
+            "@value": "Attribution-ShareAlike 2.0 Netherlands"
+        },
+        {
+            "@language": "ko",
+            "@value": "저작자표시-동일조건변경허락 2.0 네덜란드"
+        },
+        {
+            "@language": "lt",
+            "@value": "Attribution-ShareAlike 2.0 Nyderlandai"
+        },
+        {
+            "@language": "lv",
+            "@value": "Atsaucoties-Nemainot licenci 2.0 Nīderlande"
+        },
+        {
+            "@language": "mk",
+            "@value": "НаведиИзвор-СподелиПодИстиУслови 2.0 Холандија"
+        },
+        {
+            "@language": "ml",
+            "@value": "Attribution-ShareAlike 2.0 നെതർലാന്റ്സ്"
+        },
+        {
+            "@language": "mn",
+            "@value": "Attribution-ShareAlike 2.0 Netherlands"
+        },
+        {
+            "@language": "ms",
+            "@value": "Pengiktirafan-PerkongsianSerupa 2.0 Netherlands"
+        },
+        {
+            "@language": "nl",
+            "@value": "Naamsvermelding-GelijkDelen 2.0 Nederland"
+        },
+        {
+            "@language": "no",
+            "@value": "Navngivelse-DelPåSammeVilkår 2.0 Nederland"
+        },
+        {
+            "@language": "nso",
+            "@value": "Tsebagatšo -Mohlakanelwa 2.0 Netherlands"
+        },
+        {
+            "@language": "oci-es",
+            "@value": "Attribution-ShareAlike 2.0 Netherlands"
+        },
+        {
+            "@language": "pl",
+            "@value": "Uznanie autorstwa-Na tych samych warunkach 2.0 Holandia"
+        },
+        {
+            "@language": "pt",
+            "@value": "Atribuição - CompartilhaIgual 2.0 Holanda"
+        },
+        {
+            "@language": "pt-br",
+            "@value": "Attribution-ShareAlike 2.0 Netherlands"
+        },
+        {
+            "@language": "pt-pt",
+            "@value": "Atribuição-Partilha nos termos da mesma licença 2.0 Holanda"
+        },
+        {
+            "@language": "ro",
+            "@value": "Atribuire - Distribuire-în-condiţii-identice 2.0 Olanda"
+        },
+        {
+            "@language": "ru",
+            "@value": "Attribution-ShareAlike (Атрибуция — С сохранением условий) 2.0 Нидерланды"
+        },
+        {
+            "@language": "si-lk",
+            "@value": "Attribution-ShareAlike 2.0 Netherlands"
+        },
+        {
+            "@language": "sl",
+            "@value": "Priznanje avtorstva-Deljenje pod enakimi pogoji 2.0 Nizozemska"
+        },
+        {
+            "@language": "sq",
+            "@value": "Attribution-ShareAlike 2.0 Holandë"
+        },
+        {
+            "@language": "sr",
+            "@value": "Autorstvo-Deliti pod istim uslovima 2.0 Holandija"
+        },
+        {
+            "@language": "sr",
+            "@value": "Ауторство-Делити под истим условима 2.0 Холандија"
+        },
+        {
+            "@language": "sr-latn",
+            "@value": "Autorstvo-Deliti pod istim uslovima 2.0 Holandija"
+        },
+        {
+            "@language": "st",
+            "@value": "Attribution-ShareAlike 2.0 Netherlands"
+        },
+        {
+            "@language": "sv",
+            "@value": "Erkännande-DelaLika 2.0 Nederländerna"
+        },
+        {
+            "@language": "ta",
+            "@value": "Attribution-ShareAlike 2.0 நெதர்லாந்து"
+        },
+        {
+            "@language": "te",
+            "@value": "Attribution-ShareAlike 2.0 నెదర్లాండ్స్"
+        },
+        {
+            "@language": "th",
+            "@value": "แสดงที่มา-อนุญาตแบบเดียวกัน 2.0 เนเธอร์แลนด์"
+        },
+        {
+            "@language": "tr",
+            "@value": "Alıntı-LisansıDevamEttirme 2.0 Hollanda"
+        },
+        {
+            "@language": "uk",
+            "@value": "Attribution-ShareAlike 2.0 Netherlands"
+        },
+        {
+            "@language": "ur",
+            "@value": "Attribution-ShareAlike 2.0 Netherlands"
+        },
+        {
+            "@language": "vi",
+            "@value": "Attribution-ShareAlike 2.0 Nước Hà Lan"
+        },
+        {
+            "@language": "zh",
+            "@value": "署名-相同方式共享 2.0 荷兰"
+        },
+        {
+            "@language": "zh-hk",
+            "@value": "姓名標示-相同方式分享 2.0 荷蘭"
+        },
+        {
+            "@language": "zh-tw",
+            "@value": "姓名標示-相同方式分享 2.0 荷蘭"
+        },
+        {
+            "@language": "zu",
+            "@value": "Qaphela Umnikazi-Zihlanganyeleni 2.0 iNetherlands"
+        },
+        {
+            "@language": "zxx",
+            "@value": "${Attribution-ShareAlike} 2.0 ${Netherlands}"
+        }
+    ],
+    "owl:sameAs": {
+        "@id": "http://creativecommons.org/licenses/by-sa/2.0/nl/",
+        "@type": "cc:License",
+        "cc:jurisdiction": "http://creativecommons.org/international/nl/",
+        "cc:legalcode": "http://creativecommons.org/licenses/by-sa/2.0/nl/legalcode",
+        "cc:licenseClass": "http://creativecommons.org/license/",
+        "cc:permits": [
+            "cc:DerivativeWorks",
+            "cc:Distribution",
+            "cc:Reproduction"
+        ],
+        "cc:requires": [
+            "cc:Attribution",
+            "cc:Notice",
+            "cc:ShareAlike"
+        ],
+        "dc:creator": "http://creativecommons.org",
+        "dc:hasVersion": "2.0",
+        "dc:identifier": "by-sa",
+        "dc:isReplacedBy": "http://creativecommons.org/licenses/by-sa/2.5/nl/",
+        "dc:source": "http://creativecommons.org/licenses/by-sa/2.0/",
+        "dc:title": [
+            {
+                "@language": "af",
+                "@value": "Erkenning-InsgelyksDeel 2.0 Nederland"
+            },
+            {
+                "@language": "ar",
+                "@value": "نسب العمل- المشاركة على قدم المساواة 2.0 هولندا"
+            },
+            {
+                "@language": "as",
+                "@value": "Attribution-ShareAlike 2.0 Netherlands"
+            },
+            {
+                "@language": "ast",
+                "@value": "Attribution-ShareAlike 2.0 Netherlands"
+            },
+            {
+                "@language": "ast-es",
+                "@value": "Attribution-ShareAlike 2.0 Netherlands"
+            },
+            {
+                "@language": "az",
+                "@value": "Attribution-ShareAlike 2.0 Netherlands"
+            },
+            {
+                "@language": "be",
+                "@value": "Attribution-ShareAlike 2.0 Нідэрланды"
+            },
+            {
+                "@language": "bg",
+                "@value": "Признание-Споделяне на споделеното 2.0 Холандия"
+            },
+            {
+                "@language": "bn",
+                "@value": "Attribution-ShareAlike 2.0 Netherlands"
+            },
+            {
+                "@language": "ca",
+                "@value": "Reconeixement-CompartirIgual 2.0 Holanda"
+            },
+            {
+                "@language": "cs",
+                "@value": "Uveďte autora-Zachovejte licenci 2.0 Nizozemí"
+            },
+            {
+                "@language": "da",
+                "@value": "Navngivelse-DelPåSammeVilkår 2.0 Holland"
+            },
+            {
+                "@language": "de",
+                "@value": "Namensnennung-Weitergabe unter gleichen Bedingungen 2.0 Niederlande"
+            },
+            {
+                "@language": "de-at",
+                "@value": "Namensnennung-Weitergabe unter gleichen Bedingungen 2.0 Niederlande"
+            },
+            {
+                "@language": "de-ch",
+                "@value": "Namensnennung-Weitergabe unter gleichen Bedingungen 2.0 Niederlande"
+            },
+            {
+                "@language": "el",
+                "@value": "Αναφορά Δημιουργού - Παρόμοια Διανομή 2.0 Ολλανδία"
+            },
+            {
+                "@language": "en",
+                "@value": "Attribution-ShareAlike 2.0 Netherlands"
+            },
+            {
+                "@language": "en-ca",
+                "@value": "Attribution-ShareAlike 2.0 Netherlands"
+            },
+            {
+                "@language": "en-gb",
+                "@value": "Attribution-ShareAlike 2.0 Netherlands"
+            },
+            {
+                "@language": "en-hk",
+                "@value": "Attribution-ShareAlike 2.0 Netherlands"
+            },
+            {
+                "@language": "en-sg",
+                "@value": "Attribution-ShareAlike 2.0 Netherlands"
+            },
+            {
+                "@language": "en-us",
+                "@value": "Attribution-ShareAlike 2.0 Netherlands"
+            },
+            {
+                "@language": "eo",
+                "@value": "Atribuite-Samkondiĉe 2.0 Nederlando"
+            },
+            {
+                "@language": "es",
+                "@value": "Atribución-CompartirIgual 2.0 Holanda"
+            },
+            {
+                "@language": "es-ar",
+                "@value": "Atribución-CompartirDerivadasIgual 2.0 Holanda"
+            },
+            {
+                "@language": "es-cl",
+                "@value": "Atribución-LicenciarIgual 2.0 Holanda"
+            },
+            {
+                "@language": "es-co",
+                "@value": "Reconocimiento-CompartirIgual 2.0 Holanda"
+            },
+            {
+                "@language": "es-ec",
+                "@value": "Reconocimiento-CompartirIgual 2.0 Holanda"
+            },
+            {
+                "@language": "es-es",
+                "@value": "Reconocimiento-CompartirIgual 2.0 Holanda"
+            },
+            {
+                "@language": "es-gt",
+                "@value": "Reconocimiento-CompartirIgual 2.0 Holanda"
+            },
+            {
+                "@language": "es-mx",
+                "@value": "Atribución-Licenciamiento Recíproco 2.0 Holanda"
+            },
+            {
+                "@language": "es-pe",
+                "@value": "Reconocimiento-CompartirIgual 2.0 Holanda"
+            },
+            {
+                "@language": "es-pr",
+                "@value": "Reconocimiento-CompartirIgual 2.0 Holanda"
+            },
+            {
+                "@language": "et",
+                "@value": "Autorile viitamine + Jagamine samadel tingimustel 2.0 Holland"
+            },
+            {
+                "@language": "eu",
+                "@value": "Aitortu-PartekatuBerdin 2.0 Herbehereak"
+            },
+            {
+                "@language": "fa",
+                "@value": "Attribution-ShareAlike 2.0 هلند"
+            },
+            {
+                "@language": "fi",
+                "@value": "Nimeä-Tarttuva 2.0 Hollanti"
+            },
+            {
+                "@language": "fr",
+                "@value": "Paternité - Partage à l'Identique 2.0 Pays-Bas"
+            },
+            {
+                "@language": "fr-ca",
+                "@value": "Paternité - Partage des Conditions Initiales à l'Identique 2.0 Pays-Bas"
+            },
+            {
+                "@language": "fr-ch",
+                "@value": "Paternité - Partage des Conditions Initiales à l'Identique 2.0 Pays-Bas"
+            },
+            {
+                "@language": "fr-lu",
+                "@value": "Paternité - Partage des Conditions Initiales à l'Identique 2.0 Pays-Bas"
+            },
+            {
+                "@language": "ga",
+                "@value": "Attribution-ShareAlike 2.0 Netherlands"
+            },
+            {
+                "@language": "gl",
+                "@value": "Recoñecemento-CompartirIgual 2.0 Holanda"
+            },
+            {
+                "@language": "he",
+                "@value": "ייחוס-שיתוף זהה 2.0 הולנד"
+            },
+            {
+                "@language": "hi",
+                "@value": "Attribution-ShareAlike 2.0 Netherlands"
+            },
+            {
+                "@language": "hr",
+                "@value": "Imenovanje-Dijeli pod istim uvjetima 2.0 Nizozemska"
+            },
+            {
+                "@language": "hu",
+                "@value": "Nevezd meg! - Így add tovább! 2.0 Hollandia"
+            },
+            {
+                "@language": "hy",
+                "@value": "Հղում - համանման տարածում 2.0 Նիդերլանդներ"
+            },
+            {
+                "@language": "id",
+                "@value": "Atribusi-BerbagiSerupa 2.0 Belanda"
+            },
+            {
+                "@language": "is",
+                "@value": "Attribution-ShareAlike 2.0 Holland"
+            },
+            {
+                "@language": "it",
+                "@value": "Attribuzione - Condividi allo stesso modo 2.0 Olanda"
+            },
+            {
+                "@language": "it-ch",
+                "@value": "Attribuzione - Condividi allo stesso modo 2.0 Olanda"
+            },
+            {
+                "@language": "ja",
+                "@value": "表示 - 継承 2.0 オランダ"
+            },
+            {
+                "@language": "ka",
+                "@value": "ავტორობის მითითებით – გავრცელება იგივე პირობებით  2.0 ნიდერლანდები"
+            },
+            {
+                "@language": "kk",
+                "@value": "Attribution-ShareAlike 2.0 Netherlands"
+            },
+            {
+                "@language": "ko",
+                "@value": "저작자표시-동일조건변경허락 2.0 네덜란드"
+            },
+            {
+                "@language": "lt",
+                "@value": "Attribution-ShareAlike 2.0 Nyderlandai"
+            },
+            {
+                "@language": "lv",
+                "@value": "Atsaucoties-Nemainot licenci 2.0 Nīderlande"
+            },
+            {
+                "@language": "mk",
+                "@value": "НаведиИзвор-СподелиПодИстиУслови 2.0 Холандија"
+            },
+            {
+                "@language": "ml",
+                "@value": "Attribution-ShareAlike 2.0 നെതർലാന്റ്സ്"
+            },
+            {
+                "@language": "mn",
+                "@value": "Attribution-ShareAlike 2.0 Netherlands"
+            },
+            {
+                "@language": "ms",
+                "@value": "Pengiktirafan-PerkongsianSerupa 2.0 Netherlands"
+            },
+            {
+                "@language": "nl",
+                "@value": "Naamsvermelding-GelijkDelen 2.0 Nederland"
+            },
+            {
+                "@language": "no",
+                "@value": "Navngivelse-DelPåSammeVilkår 2.0 Nederland"
+            },
+            {
+                "@language": "nso",
+                "@value": "Tsebagatšo -Mohlakanelwa 2.0 Netherlands"
+            },
+            {
+                "@language": "oci-es",
+                "@value": "Attribution-ShareAlike 2.0 Netherlands"
+            },
+            {
+                "@language": "pl",
+                "@value": "Uznanie autorstwa-Na tych samych warunkach 2.0 Holandia"
+            },
+            {
+                "@language": "pt",
+                "@value": "Atribuição - CompartilhaIgual 2.0 Holanda"
+            },
+            {
+                "@language": "pt-br",
+                "@value": "Attribution-ShareAlike 2.0 Netherlands"
+            },
+            {
+                "@language": "pt-pt",
+                "@value": "Atribuição-Partilha nos termos da mesma licença 2.0 Holanda"
+            },
+            {
+                "@language": "ro",
+                "@value": "Atribuire - Distribuire-în-condiţii-identice 2.0 Olanda"
+            },
+            {
+                "@language": "ru",
+                "@value": "Attribution-ShareAlike (Атрибуция — С сохранением условий) 2.0 Нидерланды"
+            },
+            {
+                "@language": "si-lk",
+                "@value": "Attribution-ShareAlike 2.0 Netherlands"
+            },
+            {
+                "@language": "sl",
+                "@value": "Priznanje avtorstva-Deljenje pod enakimi pogoji 2.0 Nizozemska"
+            },
+            {
+                "@language": "sq",
+                "@value": "Attribution-ShareAlike 2.0 Holandë"
+            },
+            {
+                "@language": "sr",
+                "@value": "Autorstvo-Deliti pod istim uslovima 2.0 Holandija"
+            },
+            {
+                "@language": "sr",
+                "@value": "Ауторство-Делити под истим условима 2.0 Холандија"
+            },
+            {
+                "@language": "sr-latn",
+                "@value": "Autorstvo-Deliti pod istim uslovima 2.0 Holandija"
+            },
+            {
+                "@language": "st",
+                "@value": "Attribution-ShareAlike 2.0 Netherlands"
+            },
+            {
+                "@language": "sv",
+                "@value": "Erkännande-DelaLika 2.0 Nederländerna"
+            },
+            {
+                "@language": "ta",
+                "@value": "Attribution-ShareAlike 2.0 நெதர்லாந்து"
+            },
+            {
+                "@language": "te",
+                "@value": "Attribution-ShareAlike 2.0 నెదర్లాండ్స్"
+            },
+            {
+                "@language": "th",
+                "@value": "แสดงที่มา-อนุญาตแบบเดียวกัน 2.0 เนเธอร์แลนด์"
+            },
+            {
+                "@language": "tr",
+                "@value": "Alıntı-LisansıDevamEttirme 2.0 Hollanda"
+            },
+            {
+                "@language": "uk",
+                "@value": "Attribution-ShareAlike 2.0 Netherlands"
+            },
+            {
+                "@language": "ur",
+                "@value": "Attribution-ShareAlike 2.0 Netherlands"
+            },
+            {
+                "@language": "vi",
+                "@value": "Attribution-ShareAlike 2.0 Nước Hà Lan"
+            },
+            {
+                "@language": "zh",
+                "@value": "署名-相同方式共享 2.0 荷兰"
+            },
+            {
+                "@language": "zh-hk",
+                "@value": "姓名標示-相同方式分享 2.0 荷蘭"
+            },
+            {
+                "@language": "zh-tw",
+                "@value": "姓名標示-相同方式分享 2.0 荷蘭"
+            },
+            {
+                "@language": "zu",
+                "@value": "Qaphela Umnikazi-Zihlanganyeleni 2.0 iNetherlands"
+            },
+            {
+                "@language": "zxx",
+                "@value": "${Attribution-ShareAlike} 2.0 ${Netherlands}"
+            }
+        ],
+        "owl:sameAs": "https://licensedb.org/id/CC-BY-SA-2.0-nl",
+        "foaf:logo": [
+            "http://i.creativecommons.org/l/by-sa/2.0/nl/80x15.png",
+            "http://i.creativecommons.org/l/by-sa/2.0/nl/88x31.png"
+        ]
+    },
+    "foaf:logo": [
+        "http://i.creativecommons.org/l/by-sa/2.0/nl/80x15.png",
+        "http://i.creativecommons.org/l/by-sa/2.0/nl/88x31.png"
+    ],
+    "li:id": "CC-BY-SA-2.0-nl",
+    "li:libre": "http://creativecommons.org/",
+    "li:name": "CC BY-SA 2.0 NL"
+}

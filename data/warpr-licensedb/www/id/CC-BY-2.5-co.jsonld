@@ -1,0 +1,851 @@
+{
+    "@context": {
+        "cc": "http://creativecommons.org/ns#",
+        "dc": "http://purl.org/dc/terms/",
+        "dc11": "http://purl.org/dc/elements/1.1/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "li": "https://licensedb.org/ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "cc:legalcode": {
+            "@type": "@id"
+        },
+        "cc:permits": {
+            "@type": "@id"
+        },
+        "cc:requires": {
+            "@type": "@id"
+        },
+        "cc:prohibits": {
+            "@type": "@id"
+        },
+        "cc:jurisdiction": {
+            "@type": "@id"
+        },
+        "cc:licenseClass": {
+            "@type": "@id"
+        },
+        "dc:creator": {
+            "@type": "@id"
+        },
+        "dc:source": {
+            "@type": "@id"
+        },
+        "dc:replaces": {
+            "@type": "@id"
+        },
+        "dc:isBasedOn": {
+            "@type": "@id"
+        },
+        "dc:isReplacedBy": {
+            "@type": "@id"
+        },
+        "foaf:logo": {
+            "@type": "@id"
+        },
+        "li:plaintext": {
+            "@type": "@id"
+        },
+        "li:libre": {
+            "@type": "@id"
+        },
+        "owl:sameAs": {
+            "@type": "@id"
+        }
+    },
+    "@id": "https://licensedb.org/id/CC-BY-2.5-co",
+    "@type": [
+        "cc:License",
+        "li:License"
+    ],
+    "cc:jurisdiction": "http://creativecommons.org/international/co/",
+    "cc:legalcode": "http://creativecommons.org/licenses/by/2.5/co/legalcode",
+    "cc:licenseClass": "http://creativecommons.org/license/",
+    "cc:permits": [
+        "cc:DerivativeWorks",
+        "cc:Distribution",
+        "cc:Reproduction"
+    ],
+    "cc:requires": [
+        "cc:Attribution",
+        "cc:Notice"
+    ],
+    "dc:creator": "http://creativecommons.org",
+    "dc:hasVersion": "2.5",
+    "dc:identifier": "by",
+    "dc:source": "http://creativecommons.org/licenses/by/2.5/",
+    "dc:title": [
+        {
+            "@language": "af",
+            "@value": "Erkenning 2.5 Colombia"
+        },
+        {
+            "@language": "ar",
+            "@value": "نسب المصنف  2.5 كولمبيا"
+        },
+        {
+            "@language": "as",
+            "@value": "Attribution 2.5 Colombia"
+        },
+        {
+            "@language": "ast",
+            "@value": "Attribution 2.5 Colombia"
+        },
+        {
+            "@language": "ast-es",
+            "@value": "Attribution 2.5 Colombia"
+        },
+        {
+            "@language": "az",
+            "@value": "Attribution 2.5 Colombia"
+        },
+        {
+            "@language": "be",
+            "@value": "Атрыбуцыя 2.5 Калумбія"
+        },
+        {
+            "@language": "bg",
+            "@value": "Признание 2.5 Колумбия"
+        },
+        {
+            "@language": "bn",
+            "@value": "Attribution 2.5 Colombia"
+        },
+        {
+            "@language": "ca",
+            "@value": "Reconeixement 2.5 Colòmbia"
+        },
+        {
+            "@language": "cs",
+            "@value": "Uveďte autora 2.5 Kolumbie"
+        },
+        {
+            "@language": "da",
+            "@value": "Navngivelse 2.5 Columbia"
+        },
+        {
+            "@language": "de",
+            "@value": "Namensnennung 2.5 Kolumbien"
+        },
+        {
+            "@language": "de-at",
+            "@value": "Namensnennung 2.5 Kolumbien"
+        },
+        {
+            "@language": "de-ch",
+            "@value": "Namensnennung 2.5 Kolumbien"
+        },
+        {
+            "@language": "el",
+            "@value": "Αναφορά Δημιουργού 2.5 Κολομβία"
+        },
+        {
+            "@language": "en",
+            "@value": "Attribution 2.5 Colombia"
+        },
+        {
+            "@language": "en-ca",
+            "@value": "Attribution 2.5 Colombia"
+        },
+        {
+            "@language": "en-gb",
+            "@value": "Attribution 2.5 Colombia"
+        },
+        {
+            "@language": "en-hk",
+            "@value": "Attribution 2.5 Colombia"
+        },
+        {
+            "@language": "en-sg",
+            "@value": "Attribution 2.5 Colombia"
+        },
+        {
+            "@language": "en-us",
+            "@value": "Attribution 2.5 Colombia"
+        },
+        {
+            "@language": "eo",
+            "@value": "Atribuite 2.5 Kolombio"
+        },
+        {
+            "@language": "es",
+            "@value": "Atribución 2.5 Colombia"
+        },
+        {
+            "@language": "es-ar",
+            "@value": "Atribución 2.5 Colombia"
+        },
+        {
+            "@language": "es-cl",
+            "@value": "Atribución 2.5 Colombia"
+        },
+        {
+            "@language": "es-co",
+            "@value": "Reconocimiento 2.5 Colombia"
+        },
+        {
+            "@language": "es-ec",
+            "@value": "Reconocimiento 2.5 Colombia"
+        },
+        {
+            "@language": "es-es",
+            "@value": "Reconocimiento 2.5 Colombia"
+        },
+        {
+            "@language": "es-gt",
+            "@value": "Reconocimiento 2.5 Colombia"
+        },
+        {
+            "@language": "es-mx",
+            "@value": "Atribución 2.5 Colombia"
+        },
+        {
+            "@language": "es-pe",
+            "@value": "Reconocimiento 2.5 Colombia"
+        },
+        {
+            "@language": "es-pr",
+            "@value": "Reconocimiento 2.5 Colombia"
+        },
+        {
+            "@language": "et",
+            "@value": "Autorile viitamine 2.5 Kolumbia"
+        },
+        {
+            "@language": "eu",
+            "@value": "Aitortu 2.5 Kolonbia"
+        },
+        {
+            "@language": "fa",
+            "@value": "Attribution 2.5 کلمبیا"
+        },
+        {
+            "@language": "fi",
+            "@value": "Nimeä 2.5 Kolumbia"
+        },
+        {
+            "@language": "fr",
+            "@value": "Attribution 2.5 Colombie"
+        },
+        {
+            "@language": "fr-ca",
+            "@value": "Paternité 2.5 Colombie"
+        },
+        {
+            "@language": "fr-ch",
+            "@value": "Paternité 2.5 Colombie"
+        },
+        {
+            "@language": "fr-lu",
+            "@value": "Paternité 2.5 Colombie"
+        },
+        {
+            "@language": "ga",
+            "@value": "Attribution 2.5 Colombia"
+        },
+        {
+            "@language": "gl",
+            "@value": "Recoñecemento 2.5 Colombia"
+        },
+        {
+            "@language": "he",
+            "@value": "ייחוס 2.5 קולומביה"
+        },
+        {
+            "@language": "hi",
+            "@value": "Attribution 2.5 Colombia"
+        },
+        {
+            "@language": "hr",
+            "@value": "Imenovanje 2.5 Kolumbija"
+        },
+        {
+            "@language": "hu",
+            "@value": "Nevezd meg! 2.5 Kolumbia"
+        },
+        {
+            "@language": "hy",
+            "@value": "Հղում 2.5 Կոլումբիա"
+        },
+        {
+            "@language": "id",
+            "@value": "Atribusi 2.5 Kolombia"
+        },
+        {
+            "@language": "is",
+            "@value": "Attribution 2.5 Colombia"
+        },
+        {
+            "@language": "it",
+            "@value": "Attribuzione 2.5 Colombia"
+        },
+        {
+            "@language": "it-ch",
+            "@value": "Attribuzione 2.5 Colombia"
+        },
+        {
+            "@language": "ja",
+            "@value": "表示 2.5 コロンビア"
+        },
+        {
+            "@language": "ka",
+            "@value": "ავტორობის მითითებით  2.5 კოლუმბია"
+        },
+        {
+            "@language": "kk",
+            "@value": "Атауын сақтау 2.5 Colombia"
+        },
+        {
+            "@language": "ko",
+            "@value": "저작자표시(Attribution) 2.5 콜롬비아"
+        },
+        {
+            "@language": "lt",
+            "@value": "Priskyrimas 2.5 Kolumbija"
+        },
+        {
+            "@language": "lv",
+            "@value": "Atsaucoties 2.5 Kolumbija"
+        },
+        {
+            "@language": "mk",
+            "@value": "Наведи извор 2.5 Колумбија"
+        },
+        {
+            "@language": "ml",
+            "@value": "കടപ്പാട് 2.5 കൊളംബിയ"
+        },
+        {
+            "@language": "mn",
+            "@value": "Attribution 2.5 Colombia"
+        },
+        {
+            "@language": "ms",
+            "@value": "Pengiktirafan 2.5 Colombia"
+        },
+        {
+            "@language": "nl",
+            "@value": "Naamsvermelding 2.5 Colombia"
+        },
+        {
+            "@language": "no",
+            "@value": "Navngivelse 2.5 Colombia"
+        },
+        {
+            "@language": "nso",
+            "@value": "Tsebagatšo 2.5 Colombia"
+        },
+        {
+            "@language": "oci-es",
+            "@value": "Attribution 2.5 Colombia"
+        },
+        {
+            "@language": "pl",
+            "@value": "Uznanie autorstwa 2.5 Kolumbia"
+        },
+        {
+            "@language": "pt",
+            "@value": "Atribuição  2.5 Colômbia"
+        },
+        {
+            "@language": "pt-br",
+            "@value": "Atribuição 2.5 Colombia"
+        },
+        {
+            "@language": "pt-pt",
+            "@value": "Atribuição 2.5 Colombia"
+        },
+        {
+            "@language": "ro",
+            "@value": "Atribuire 2.5 Colombia"
+        },
+        {
+            "@language": "ru",
+            "@value": "Attribution (Атрибуция) 2.5 Колумбия"
+        },
+        {
+            "@language": "si-lk",
+            "@value": "Attribution 2.5 Colombia"
+        },
+        {
+            "@language": "sl",
+            "@value": "Priznanje avtorstva 2.5 Kolumbija"
+        },
+        {
+            "@language": "sq",
+            "@value": "Attribution 2.5 Kolumbi"
+        },
+        {
+            "@language": "sr",
+            "@value": "Autorstvo 2.5 Kolumbija"
+        },
+        {
+            "@language": "sr",
+            "@value": "Ауторство 2.5 Колумбија"
+        },
+        {
+            "@language": "sr-latn",
+            "@value": "Autorstvo 2.5 Kolumbija"
+        },
+        {
+            "@language": "st",
+            "@value": "Attribution 2.5 Colombia"
+        },
+        {
+            "@language": "sv",
+            "@value": "Erkännande 2.5 Columbia"
+        },
+        {
+            "@language": "ta",
+            "@value": "Attribution 2.5 Colombia"
+        },
+        {
+            "@language": "te",
+            "@value": "ఆపాదింపు 2.5 కొలంబియా"
+        },
+        {
+            "@language": "th",
+            "@value": "แสดงที่มา 2.5 โคลัมเบีย"
+        },
+        {
+            "@language": "tr",
+            "@value": "Attribution 2.5 Kolombiya"
+        },
+        {
+            "@language": "uk",
+            "@value": "Attribution 2.5 Colombia"
+        },
+        {
+            "@language": "ur",
+            "@value": "Attribution 2.5 Colombia"
+        },
+        {
+            "@language": "vi",
+            "@value": "Ghi nhận công của tác giả 2.5 Colombia"
+        },
+        {
+            "@language": "zh",
+            "@value": "署名 2.5 哥伦比亚"
+        },
+        {
+            "@language": "zh-hk",
+            "@value": "姓名標示 2.5 哥倫比亞"
+        },
+        {
+            "@language": "zh-tw",
+            "@value": "姓名標示 2.5 哥倫比亞"
+        },
+        {
+            "@language": "zu",
+            "@value": "Qaphela Umnikazi 2.5 iColombia"
+        },
+        {
+            "@language": "zxx",
+            "@value": "${Attribution} 2.5 ${Colombia}"
+        }
+    ],
+    "owl:sameAs": {
+        "@id": "http://creativecommons.org/licenses/by/2.5/co/",
+        "@type": "cc:License",
+        "cc:jurisdiction": "http://creativecommons.org/international/co/",
+        "cc:legalcode": "http://creativecommons.org/licenses/by/2.5/co/legalcode",
+        "cc:licenseClass": "http://creativecommons.org/license/",
+        "cc:permits": [
+            "cc:DerivativeWorks",
+            "cc:Distribution",
+            "cc:Reproduction"
+        ],
+        "cc:requires": [
+            "cc:Attribution",
+            "cc:Notice"
+        ],
+        "dc:creator": "http://creativecommons.org",
+        "dc:hasVersion": "2.5",
+        "dc:identifier": "by",
+        "dc:source": "http://creativecommons.org/licenses/by/2.5/",
+        "dc:title": [
+            {
+                "@language": "af",
+                "@value": "Erkenning 2.5 Colombia"
+            },
+            {
+                "@language": "ar",
+                "@value": "نسب المصنف  2.5 كولمبيا"
+            },
+            {
+                "@language": "as",
+                "@value": "Attribution 2.5 Colombia"
+            },
+            {
+                "@language": "ast",
+                "@value": "Attribution 2.5 Colombia"
+            },
+            {
+                "@language": "ast-es",
+                "@value": "Attribution 2.5 Colombia"
+            },
+            {
+                "@language": "az",
+                "@value": "Attribution 2.5 Colombia"
+            },
+            {
+                "@language": "be",
+                "@value": "Атрыбуцыя 2.5 Калумбія"
+            },
+            {
+                "@language": "bg",
+                "@value": "Признание 2.5 Колумбия"
+            },
+            {
+                "@language": "bn",
+                "@value": "Attribution 2.5 Colombia"
+            },
+            {
+                "@language": "ca",
+                "@value": "Reconeixement 2.5 Colòmbia"
+            },
+            {
+                "@language": "cs",
+                "@value": "Uveďte autora 2.5 Kolumbie"
+            },
+            {
+                "@language": "da",
+                "@value": "Navngivelse 2.5 Columbia"
+            },
+            {
+                "@language": "de",
+                "@value": "Namensnennung 2.5 Kolumbien"
+            },
+            {
+                "@language": "de-at",
+                "@value": "Namensnennung 2.5 Kolumbien"
+            },
+            {
+                "@language": "de-ch",
+                "@value": "Namensnennung 2.5 Kolumbien"
+            },
+            {
+                "@language": "el",
+                "@value": "Αναφορά Δημιουργού 2.5 Κολομβία"
+            },
+            {
+                "@language": "en",
+                "@value": "Attribution 2.5 Colombia"
+            },
+            {
+                "@language": "en-ca",
+                "@value": "Attribution 2.5 Colombia"
+            },
+            {
+                "@language": "en-gb",
+                "@value": "Attribution 2.5 Colombia"
+            },
+            {
+                "@language": "en-hk",
+                "@value": "Attribution 2.5 Colombia"
+            },
+            {
+                "@language": "en-sg",
+                "@value": "Attribution 2.5 Colombia"
+            },
+            {
+                "@language": "en-us",
+                "@value": "Attribution 2.5 Colombia"
+            },
+            {
+                "@language": "eo",
+                "@value": "Atribuite 2.5 Kolombio"
+            },
+            {
+                "@language": "es",
+                "@value": "Atribución 2.5 Colombia"
+            },
+            {
+                "@language": "es-ar",
+                "@value": "Atribución 2.5 Colombia"
+            },
+            {
+                "@language": "es-cl",
+                "@value": "Atribución 2.5 Colombia"
+            },
+            {
+                "@language": "es-co",
+                "@value": "Reconocimiento 2.5 Colombia"
+            },
+            {
+                "@language": "es-ec",
+                "@value": "Reconocimiento 2.5 Colombia"
+            },
+            {
+                "@language": "es-es",
+                "@value": "Reconocimiento 2.5 Colombia"
+            },
+            {
+                "@language": "es-gt",
+                "@value": "Reconocimiento 2.5 Colombia"
+            },
+            {
+                "@language": "es-mx",
+                "@value": "Atribución 2.5 Colombia"
+            },
+            {
+                "@language": "es-pe",
+                "@value": "Reconocimiento 2.5 Colombia"
+            },
+            {
+                "@language": "es-pr",
+                "@value": "Reconocimiento 2.5 Colombia"
+            },
+            {
+                "@language": "et",
+                "@value": "Autorile viitamine 2.5 Kolumbia"
+            },
+            {
+                "@language": "eu",
+                "@value": "Aitortu 2.5 Kolonbia"
+            },
+            {
+                "@language": "fa",
+                "@value": "Attribution 2.5 کلمبیا"
+            },
+            {
+                "@language": "fi",
+                "@value": "Nimeä 2.5 Kolumbia"
+            },
+            {
+                "@language": "fr",
+                "@value": "Attribution 2.5 Colombie"
+            },
+            {
+                "@language": "fr-ca",
+                "@value": "Paternité 2.5 Colombie"
+            },
+            {
+                "@language": "fr-ch",
+                "@value": "Paternité 2.5 Colombie"
+            },
+            {
+                "@language": "fr-lu",
+                "@value": "Paternité 2.5 Colombie"
+            },
+            {
+                "@language": "ga",
+                "@value": "Attribution 2.5 Colombia"
+            },
+            {
+                "@language": "gl",
+                "@value": "Recoñecemento 2.5 Colombia"
+            },
+            {
+                "@language": "he",
+                "@value": "ייחוס 2.5 קולומביה"
+            },
+            {
+                "@language": "hi",
+                "@value": "Attribution 2.5 Colombia"
+            },
+            {
+                "@language": "hr",
+                "@value": "Imenovanje 2.5 Kolumbija"
+            },
+            {
+                "@language": "hu",
+                "@value": "Nevezd meg! 2.5 Kolumbia"
+            },
+            {
+                "@language": "hy",
+                "@value": "Հղում 2.5 Կոլումբիա"
+            },
+            {
+                "@language": "id",
+                "@value": "Atribusi 2.5 Kolombia"
+            },
+            {
+                "@language": "is",
+                "@value": "Attribution 2.5 Colombia"
+            },
+            {
+                "@language": "it",
+                "@value": "Attribuzione 2.5 Colombia"
+            },
+            {
+                "@language": "it-ch",
+                "@value": "Attribuzione 2.5 Colombia"
+            },
+            {
+                "@language": "ja",
+                "@value": "表示 2.5 コロンビア"
+            },
+            {
+                "@language": "ka",
+                "@value": "ავტორობის მითითებით  2.5 კოლუმბია"
+            },
+            {
+                "@language": "kk",
+                "@value": "Атауын сақтау 2.5 Colombia"
+            },
+            {
+                "@language": "ko",
+                "@value": "저작자표시(Attribution) 2.5 콜롬비아"
+            },
+            {
+                "@language": "lt",
+                "@value": "Priskyrimas 2.5 Kolumbija"
+            },
+            {
+                "@language": "lv",
+                "@value": "Atsaucoties 2.5 Kolumbija"
+            },
+            {
+                "@language": "mk",
+                "@value": "Наведи извор 2.5 Колумбија"
+            },
+            {
+                "@language": "ml",
+                "@value": "കടപ്പാട് 2.5 കൊളംബിയ"
+            },
+            {
+                "@language": "mn",
+                "@value": "Attribution 2.5 Colombia"
+            },
+            {
+                "@language": "ms",
+                "@value": "Pengiktirafan 2.5 Colombia"
+            },
+            {
+                "@language": "nl",
+                "@value": "Naamsvermelding 2.5 Colombia"
+            },
+            {
+                "@language": "no",
+                "@value": "Navngivelse 2.5 Colombia"
+            },
+            {
+                "@language": "nso",
+                "@value": "Tsebagatšo 2.5 Colombia"
+            },
+            {
+                "@language": "oci-es",
+                "@value": "Attribution 2.5 Colombia"
+            },
+            {
+                "@language": "pl",
+                "@value": "Uznanie autorstwa 2.5 Kolumbia"
+            },
+            {
+                "@language": "pt",
+                "@value": "Atribuição  2.5 Colômbia"
+            },
+            {
+                "@language": "pt-br",
+                "@value": "Atribuição 2.5 Colombia"
+            },
+            {
+                "@language": "pt-pt",
+                "@value": "Atribuição 2.5 Colombia"
+            },
+            {
+                "@language": "ro",
+                "@value": "Atribuire 2.5 Colombia"
+            },
+            {
+                "@language": "ru",
+                "@value": "Attribution (Атрибуция) 2.5 Колумбия"
+            },
+            {
+                "@language": "si-lk",
+                "@value": "Attribution 2.5 Colombia"
+            },
+            {
+                "@language": "sl",
+                "@value": "Priznanje avtorstva 2.5 Kolumbija"
+            },
+            {
+                "@language": "sq",
+                "@value": "Attribution 2.5 Kolumbi"
+            },
+            {
+                "@language": "sr",
+                "@value": "Autorstvo 2.5 Kolumbija"
+            },
+            {
+                "@language": "sr",
+                "@value": "Ауторство 2.5 Колумбија"
+            },
+            {
+                "@language": "sr-latn",
+                "@value": "Autorstvo 2.5 Kolumbija"
+            },
+            {
+                "@language": "st",
+                "@value": "Attribution 2.5 Colombia"
+            },
+            {
+                "@language": "sv",
+                "@value": "Erkännande 2.5 Columbia"
+            },
+            {
+                "@language": "ta",
+                "@value": "Attribution 2.5 Colombia"
+            },
+            {
+                "@language": "te",
+                "@value": "ఆపాదింపు 2.5 కొలంబియా"
+            },
+            {
+                "@language": "th",
+                "@value": "แสดงที่มา 2.5 โคลัมเบีย"
+            },
+            {
+                "@language": "tr",
+                "@value": "Attribution 2.5 Kolombiya"
+            },
+            {
+                "@language": "uk",
+                "@value": "Attribution 2.5 Colombia"
+            },
+            {
+                "@language": "ur",
+                "@value": "Attribution 2.5 Colombia"
+            },
+            {
+                "@language": "vi",
+                "@value": "Ghi nhận công của tác giả 2.5 Colombia"
+            },
+            {
+                "@language": "zh",
+                "@value": "署名 2.5 哥伦比亚"
+            },
+            {
+                "@language": "zh-hk",
+                "@value": "姓名標示 2.5 哥倫比亞"
+            },
+            {
+                "@language": "zh-tw",
+                "@value": "姓名標示 2.5 哥倫比亞"
+            },
+            {
+                "@language": "zu",
+                "@value": "Qaphela Umnikazi 2.5 iColombia"
+            },
+            {
+                "@language": "zxx",
+                "@value": "${Attribution} 2.5 ${Colombia}"
+            }
+        ],
+        "owl:sameAs": "https://licensedb.org/id/CC-BY-2.5-co",
+        "foaf:logo": [
+            "http://i.creativecommons.org/l/by/2.5/co/80x15.png",
+            "http://i.creativecommons.org/l/by/2.5/co/88x31.png"
+        ]
+    },
+    "foaf:logo": [
+        "http://i.creativecommons.org/l/by/2.5/co/80x15.png",
+        "http://i.creativecommons.org/l/by/2.5/co/88x31.png"
+    ],
+    "li:id": "CC-BY-2.5-co",
+    "li:libre": "http://creativecommons.org/",
+    "li:name": "CC BY 2.5 CO"
+}

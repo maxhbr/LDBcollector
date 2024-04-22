@@ -1,0 +1,865 @@
+{
+    "@context": {
+        "cc": "http://creativecommons.org/ns#",
+        "dc": "http://purl.org/dc/terms/",
+        "dc11": "http://purl.org/dc/elements/1.1/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "li": "https://licensedb.org/ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "cc:legalcode": {
+            "@type": "@id"
+        },
+        "cc:permits": {
+            "@type": "@id"
+        },
+        "cc:requires": {
+            "@type": "@id"
+        },
+        "cc:prohibits": {
+            "@type": "@id"
+        },
+        "cc:jurisdiction": {
+            "@type": "@id"
+        },
+        "cc:licenseClass": {
+            "@type": "@id"
+        },
+        "dc:creator": {
+            "@type": "@id"
+        },
+        "dc:source": {
+            "@type": "@id"
+        },
+        "dc:replaces": {
+            "@type": "@id"
+        },
+        "dc:isBasedOn": {
+            "@type": "@id"
+        },
+        "dc:isReplacedBy": {
+            "@type": "@id"
+        },
+        "foaf:logo": {
+            "@type": "@id"
+        },
+        "li:plaintext": {
+            "@type": "@id"
+        },
+        "li:libre": {
+            "@type": "@id"
+        },
+        "owl:sameAs": {
+            "@type": "@id"
+        }
+    },
+    "@id": "https://licensedb.org/id/CC-BY-2.0-ca",
+    "@type": [
+        "cc:License",
+        "li:License"
+    ],
+    "cc:jurisdiction": "http://creativecommons.org/international/ca/",
+    "cc:legalcode": [
+        {
+            "@id": "http://creativecommons.org/licenses/by/2.0/ca/legalcode.en",
+            "dc:language": "en"
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by/2.0/ca/legalcode.fr",
+            "dc:language": "fr"
+        }
+    ],
+    "cc:licenseClass": "http://creativecommons.org/license/",
+    "cc:permits": [
+        "cc:DerivativeWorks",
+        "cc:Distribution",
+        "cc:Reproduction"
+    ],
+    "cc:requires": [
+        "cc:Attribution",
+        "cc:Notice"
+    ],
+    "dc:creator": "http://creativecommons.org",
+    "dc:hasVersion": "2.0",
+    "dc:identifier": "by",
+    "dc:isReplacedBy": "https://licensedb.org/id/CC-BY-2.5-ca",
+    "dc:source": "http://creativecommons.org/licenses/by/2.0/",
+    "dc:title": [
+        {
+            "@language": "af",
+            "@value": "Erkenning 2.0 Kanada"
+        },
+        {
+            "@language": "ar",
+            "@value": "نسب المصنف  2.0 كندا"
+        },
+        {
+            "@language": "as",
+            "@value": "Attribution 2.0 Canada"
+        },
+        {
+            "@language": "ast",
+            "@value": "Attribution 2.0 Canada"
+        },
+        {
+            "@language": "ast-es",
+            "@value": "Attribution 2.0 Canada"
+        },
+        {
+            "@language": "az",
+            "@value": "Attribution 2.0 Canada"
+        },
+        {
+            "@language": "be",
+            "@value": "Атрыбуцыя 2.0 Канада"
+        },
+        {
+            "@language": "bg",
+            "@value": "Признание 2.0 Канада"
+        },
+        {
+            "@language": "bn",
+            "@value": "Attribution 2.0 Canada"
+        },
+        {
+            "@language": "ca",
+            "@value": "Reconeixement 2.0 Canadà"
+        },
+        {
+            "@language": "cs",
+            "@value": "Uveďte autora 2.0 Kanada"
+        },
+        {
+            "@language": "da",
+            "@value": "Navngivelse 2.0 Canada"
+        },
+        {
+            "@language": "de",
+            "@value": "Namensnennung 2.0 Kanada"
+        },
+        {
+            "@language": "de-at",
+            "@value": "Namensnennung 2.0 Kanada"
+        },
+        {
+            "@language": "de-ch",
+            "@value": "Namensnennung 2.0 Kanada"
+        },
+        {
+            "@language": "el",
+            "@value": "Αναφορά Δημιουργού 2.0 Καναδάς"
+        },
+        {
+            "@language": "en",
+            "@value": "Attribution 2.0 Canada"
+        },
+        {
+            "@language": "en-ca",
+            "@value": "Attribution 2.0 Canada"
+        },
+        {
+            "@language": "en-gb",
+            "@value": "Attribution 2.0 Canada"
+        },
+        {
+            "@language": "en-hk",
+            "@value": "Attribution 2.0 Canada"
+        },
+        {
+            "@language": "en-sg",
+            "@value": "Attribution 2.0 Canada"
+        },
+        {
+            "@language": "en-us",
+            "@value": "Attribution 2.0 Canada"
+        },
+        {
+            "@language": "eo",
+            "@value": "Atribuite 2.0 Kanado"
+        },
+        {
+            "@language": "es",
+            "@value": "Atribución 2.0 Canadá"
+        },
+        {
+            "@language": "es-ar",
+            "@value": "Atribución 2.0 Canadá"
+        },
+        {
+            "@language": "es-cl",
+            "@value": "Atribución 2.0 Canadá"
+        },
+        {
+            "@language": "es-co",
+            "@value": "Reconocimiento 2.0 Canadá"
+        },
+        {
+            "@language": "es-ec",
+            "@value": "Reconocimiento 2.0 Canadá"
+        },
+        {
+            "@language": "es-es",
+            "@value": "Reconocimiento 2.0 Canadá"
+        },
+        {
+            "@language": "es-gt",
+            "@value": "Reconocimiento 2.0 Canadá"
+        },
+        {
+            "@language": "es-mx",
+            "@value": "Atribución 2.0 Canadá"
+        },
+        {
+            "@language": "es-pe",
+            "@value": "Reconocimiento 2.0 Canadá"
+        },
+        {
+            "@language": "es-pr",
+            "@value": "Reconocimiento 2.0 Canadá"
+        },
+        {
+            "@language": "et",
+            "@value": "Autorile viitamine 2.0 Kanada"
+        },
+        {
+            "@language": "eu",
+            "@value": "Aitortu 2.0 Kanada"
+        },
+        {
+            "@language": "fa",
+            "@value": "Attribution 2.0 کانادا"
+        },
+        {
+            "@language": "fi",
+            "@value": "Nimeä 2.0 Kanada"
+        },
+        {
+            "@language": "fr",
+            "@value": "Attribution 2.0 Canada"
+        },
+        {
+            "@language": "fr-ca",
+            "@value": "Paternité 2.0 Canada"
+        },
+        {
+            "@language": "fr-ch",
+            "@value": "Paternité 2.0 Canada"
+        },
+        {
+            "@language": "fr-lu",
+            "@value": "Paternité 2.0 Canada"
+        },
+        {
+            "@language": "ga",
+            "@value": "Attribution 2.0 Canada"
+        },
+        {
+            "@language": "gl",
+            "@value": "Recoñecemento 2.0 Canadá"
+        },
+        {
+            "@language": "he",
+            "@value": "ייחוס 2.0 קנדה"
+        },
+        {
+            "@language": "hi",
+            "@value": "Attribution 2.0 Canada"
+        },
+        {
+            "@language": "hr",
+            "@value": "Imenovanje 2.0 Kanada"
+        },
+        {
+            "@language": "hu",
+            "@value": "Nevezd meg! 2.0 Kanada"
+        },
+        {
+            "@language": "hy",
+            "@value": "Հղում 2.0 Կանադա"
+        },
+        {
+            "@language": "id",
+            "@value": "Atribusi 2.0 Kanada"
+        },
+        {
+            "@language": "is",
+            "@value": "Attribution 2.0 Canada"
+        },
+        {
+            "@language": "it",
+            "@value": "Attribuzione 2.0 Canada"
+        },
+        {
+            "@language": "it-ch",
+            "@value": "Attribuzione 2.0 Canada"
+        },
+        {
+            "@language": "ja",
+            "@value": "表示 2.0 カナダ"
+        },
+        {
+            "@language": "ka",
+            "@value": "ავტორობის მითითებით  2.0 კანადა"
+        },
+        {
+            "@language": "kk",
+            "@value": "Атауын сақтау 2.0 Canada"
+        },
+        {
+            "@language": "ko",
+            "@value": "저작자표시(Attribution) 2.0 캐나다"
+        },
+        {
+            "@language": "lt",
+            "@value": "Priskyrimas 2.0 Kanada"
+        },
+        {
+            "@language": "lv",
+            "@value": "Atsaucoties 2.0 Kanāda"
+        },
+        {
+            "@language": "mk",
+            "@value": "Наведи извор 2.0 Канада"
+        },
+        {
+            "@language": "ml",
+            "@value": "കടപ്പാട് 2.0 കാനഡ"
+        },
+        {
+            "@language": "mn",
+            "@value": "Attribution 2.0 Canada"
+        },
+        {
+            "@language": "ms",
+            "@value": "Pengiktirafan 2.0 Kanada"
+        },
+        {
+            "@language": "nl",
+            "@value": "Naamsvermelding 2.0 Canada"
+        },
+        {
+            "@language": "no",
+            "@value": "Navngivelse 2.0 Canada"
+        },
+        {
+            "@language": "nso",
+            "@value": "Tsebagatšo 2.0 Khanada"
+        },
+        {
+            "@language": "oci-es",
+            "@value": "Attribution 2.0 Canada"
+        },
+        {
+            "@language": "pl",
+            "@value": "Uznanie autorstwa 2.0 Kanada"
+        },
+        {
+            "@language": "pt",
+            "@value": "Atribuição  2.0 Canadá"
+        },
+        {
+            "@language": "pt-br",
+            "@value": "Atribuição 2.0 Canada"
+        },
+        {
+            "@language": "pt-pt",
+            "@value": "Atribuição 2.0 Canadá"
+        },
+        {
+            "@language": "ro",
+            "@value": "Atribuire 2.0 Canada"
+        },
+        {
+            "@language": "ru",
+            "@value": "Attribution (Атрибуция) 2.0 Канада"
+        },
+        {
+            "@language": "si-lk",
+            "@value": "Attribution 2.0 Canada"
+        },
+        {
+            "@language": "sl",
+            "@value": "Priznanje avtorstva 2.0 Kanada"
+        },
+        {
+            "@language": "sq",
+            "@value": "Attribution 2.0 Kanada"
+        },
+        {
+            "@language": "sr",
+            "@value": "Autorstvo 2.0 Kanada"
+        },
+        {
+            "@language": "sr",
+            "@value": "Ауторство 2.0 Канада"
+        },
+        {
+            "@language": "sr-latn",
+            "@value": "Autorstvo 2.0 Kanada"
+        },
+        {
+            "@language": "st",
+            "@value": "Attribution 2.0 Canada"
+        },
+        {
+            "@language": "sv",
+            "@value": "Erkännande 2.0 Kanada"
+        },
+        {
+            "@language": "ta",
+            "@value": "Attribution 2.0 Canada"
+        },
+        {
+            "@language": "te",
+            "@value": "ఆపాదింపు 2.0 కెనడా"
+        },
+        {
+            "@language": "th",
+            "@value": "แสดงที่มา 2.0 แคนาดา"
+        },
+        {
+            "@language": "tr",
+            "@value": "Attribution 2.0 Kanada"
+        },
+        {
+            "@language": "uk",
+            "@value": "Attribution 2.0 Canada"
+        },
+        {
+            "@language": "ur",
+            "@value": "Attribution 2.0 Canada"
+        },
+        {
+            "@language": "vi",
+            "@value": "Ghi nhận công của tác giả 2.0 Canada"
+        },
+        {
+            "@language": "zh",
+            "@value": "署名 2.0 加拿大"
+        },
+        {
+            "@language": "zh-hk",
+            "@value": "姓名標示 2.0 加拿大"
+        },
+        {
+            "@language": "zh-tw",
+            "@value": "姓名標示 2.0 加拿大"
+        },
+        {
+            "@language": "zu",
+            "@value": "Qaphela Umnikazi 2.0 Ecanada"
+        },
+        {
+            "@language": "zxx",
+            "@value": "${Attribution} 2.0 ${Canada}"
+        }
+    ],
+    "owl:sameAs": {
+        "@id": "http://creativecommons.org/licenses/by/2.0/ca/",
+        "@type": "cc:License",
+        "cc:jurisdiction": "http://creativecommons.org/international/ca/",
+        "cc:legalcode": [
+            "http://creativecommons.org/licenses/by/2.0/ca/legalcode.en",
+            "http://creativecommons.org/licenses/by/2.0/ca/legalcode.fr"
+        ],
+        "cc:licenseClass": "http://creativecommons.org/license/",
+        "cc:permits": [
+            "cc:DerivativeWorks",
+            "cc:Distribution",
+            "cc:Reproduction"
+        ],
+        "cc:requires": [
+            "cc:Attribution",
+            "cc:Notice"
+        ],
+        "dc:creator": "http://creativecommons.org",
+        "dc:hasVersion": "2.0",
+        "dc:identifier": "by",
+        "dc:isReplacedBy": "http://creativecommons.org/licenses/by/2.5/ca/",
+        "dc:source": "http://creativecommons.org/licenses/by/2.0/",
+        "dc:title": [
+            {
+                "@language": "af",
+                "@value": "Erkenning 2.0 Kanada"
+            },
+            {
+                "@language": "ar",
+                "@value": "نسب المصنف  2.0 كندا"
+            },
+            {
+                "@language": "as",
+                "@value": "Attribution 2.0 Canada"
+            },
+            {
+                "@language": "ast",
+                "@value": "Attribution 2.0 Canada"
+            },
+            {
+                "@language": "ast-es",
+                "@value": "Attribution 2.0 Canada"
+            },
+            {
+                "@language": "az",
+                "@value": "Attribution 2.0 Canada"
+            },
+            {
+                "@language": "be",
+                "@value": "Атрыбуцыя 2.0 Канада"
+            },
+            {
+                "@language": "bg",
+                "@value": "Признание 2.0 Канада"
+            },
+            {
+                "@language": "bn",
+                "@value": "Attribution 2.0 Canada"
+            },
+            {
+                "@language": "ca",
+                "@value": "Reconeixement 2.0 Canadà"
+            },
+            {
+                "@language": "cs",
+                "@value": "Uveďte autora 2.0 Kanada"
+            },
+            {
+                "@language": "da",
+                "@value": "Navngivelse 2.0 Canada"
+            },
+            {
+                "@language": "de",
+                "@value": "Namensnennung 2.0 Kanada"
+            },
+            {
+                "@language": "de-at",
+                "@value": "Namensnennung 2.0 Kanada"
+            },
+            {
+                "@language": "de-ch",
+                "@value": "Namensnennung 2.0 Kanada"
+            },
+            {
+                "@language": "el",
+                "@value": "Αναφορά Δημιουργού 2.0 Καναδάς"
+            },
+            {
+                "@language": "en",
+                "@value": "Attribution 2.0 Canada"
+            },
+            {
+                "@language": "en-ca",
+                "@value": "Attribution 2.0 Canada"
+            },
+            {
+                "@language": "en-gb",
+                "@value": "Attribution 2.0 Canada"
+            },
+            {
+                "@language": "en-hk",
+                "@value": "Attribution 2.0 Canada"
+            },
+            {
+                "@language": "en-sg",
+                "@value": "Attribution 2.0 Canada"
+            },
+            {
+                "@language": "en-us",
+                "@value": "Attribution 2.0 Canada"
+            },
+            {
+                "@language": "eo",
+                "@value": "Atribuite 2.0 Kanado"
+            },
+            {
+                "@language": "es",
+                "@value": "Atribución 2.0 Canadá"
+            },
+            {
+                "@language": "es-ar",
+                "@value": "Atribución 2.0 Canadá"
+            },
+            {
+                "@language": "es-cl",
+                "@value": "Atribución 2.0 Canadá"
+            },
+            {
+                "@language": "es-co",
+                "@value": "Reconocimiento 2.0 Canadá"
+            },
+            {
+                "@language": "es-ec",
+                "@value": "Reconocimiento 2.0 Canadá"
+            },
+            {
+                "@language": "es-es",
+                "@value": "Reconocimiento 2.0 Canadá"
+            },
+            {
+                "@language": "es-gt",
+                "@value": "Reconocimiento 2.0 Canadá"
+            },
+            {
+                "@language": "es-mx",
+                "@value": "Atribución 2.0 Canadá"
+            },
+            {
+                "@language": "es-pe",
+                "@value": "Reconocimiento 2.0 Canadá"
+            },
+            {
+                "@language": "es-pr",
+                "@value": "Reconocimiento 2.0 Canadá"
+            },
+            {
+                "@language": "et",
+                "@value": "Autorile viitamine 2.0 Kanada"
+            },
+            {
+                "@language": "eu",
+                "@value": "Aitortu 2.0 Kanada"
+            },
+            {
+                "@language": "fa",
+                "@value": "Attribution 2.0 کانادا"
+            },
+            {
+                "@language": "fi",
+                "@value": "Nimeä 2.0 Kanada"
+            },
+            {
+                "@language": "fr",
+                "@value": "Attribution 2.0 Canada"
+            },
+            {
+                "@language": "fr-ca",
+                "@value": "Paternité 2.0 Canada"
+            },
+            {
+                "@language": "fr-ch",
+                "@value": "Paternité 2.0 Canada"
+            },
+            {
+                "@language": "fr-lu",
+                "@value": "Paternité 2.0 Canada"
+            },
+            {
+                "@language": "ga",
+                "@value": "Attribution 2.0 Canada"
+            },
+            {
+                "@language": "gl",
+                "@value": "Recoñecemento 2.0 Canadá"
+            },
+            {
+                "@language": "he",
+                "@value": "ייחוס 2.0 קנדה"
+            },
+            {
+                "@language": "hi",
+                "@value": "Attribution 2.0 Canada"
+            },
+            {
+                "@language": "hr",
+                "@value": "Imenovanje 2.0 Kanada"
+            },
+            {
+                "@language": "hu",
+                "@value": "Nevezd meg! 2.0 Kanada"
+            },
+            {
+                "@language": "hy",
+                "@value": "Հղում 2.0 Կանադա"
+            },
+            {
+                "@language": "id",
+                "@value": "Atribusi 2.0 Kanada"
+            },
+            {
+                "@language": "is",
+                "@value": "Attribution 2.0 Canada"
+            },
+            {
+                "@language": "it",
+                "@value": "Attribuzione 2.0 Canada"
+            },
+            {
+                "@language": "it-ch",
+                "@value": "Attribuzione 2.0 Canada"
+            },
+            {
+                "@language": "ja",
+                "@value": "表示 2.0 カナダ"
+            },
+            {
+                "@language": "ka",
+                "@value": "ავტორობის მითითებით  2.0 კანადა"
+            },
+            {
+                "@language": "kk",
+                "@value": "Атауын сақтау 2.0 Canada"
+            },
+            {
+                "@language": "ko",
+                "@value": "저작자표시(Attribution) 2.0 캐나다"
+            },
+            {
+                "@language": "lt",
+                "@value": "Priskyrimas 2.0 Kanada"
+            },
+            {
+                "@language": "lv",
+                "@value": "Atsaucoties 2.0 Kanāda"
+            },
+            {
+                "@language": "mk",
+                "@value": "Наведи извор 2.0 Канада"
+            },
+            {
+                "@language": "ml",
+                "@value": "കടപ്പാട് 2.0 കാനഡ"
+            },
+            {
+                "@language": "mn",
+                "@value": "Attribution 2.0 Canada"
+            },
+            {
+                "@language": "ms",
+                "@value": "Pengiktirafan 2.0 Kanada"
+            },
+            {
+                "@language": "nl",
+                "@value": "Naamsvermelding 2.0 Canada"
+            },
+            {
+                "@language": "no",
+                "@value": "Navngivelse 2.0 Canada"
+            },
+            {
+                "@language": "nso",
+                "@value": "Tsebagatšo 2.0 Khanada"
+            },
+            {
+                "@language": "oci-es",
+                "@value": "Attribution 2.0 Canada"
+            },
+            {
+                "@language": "pl",
+                "@value": "Uznanie autorstwa 2.0 Kanada"
+            },
+            {
+                "@language": "pt",
+                "@value": "Atribuição  2.0 Canadá"
+            },
+            {
+                "@language": "pt-br",
+                "@value": "Atribuição 2.0 Canada"
+            },
+            {
+                "@language": "pt-pt",
+                "@value": "Atribuição 2.0 Canadá"
+            },
+            {
+                "@language": "ro",
+                "@value": "Atribuire 2.0 Canada"
+            },
+            {
+                "@language": "ru",
+                "@value": "Attribution (Атрибуция) 2.0 Канада"
+            },
+            {
+                "@language": "si-lk",
+                "@value": "Attribution 2.0 Canada"
+            },
+            {
+                "@language": "sl",
+                "@value": "Priznanje avtorstva 2.0 Kanada"
+            },
+            {
+                "@language": "sq",
+                "@value": "Attribution 2.0 Kanada"
+            },
+            {
+                "@language": "sr",
+                "@value": "Autorstvo 2.0 Kanada"
+            },
+            {
+                "@language": "sr",
+                "@value": "Ауторство 2.0 Канада"
+            },
+            {
+                "@language": "sr-latn",
+                "@value": "Autorstvo 2.0 Kanada"
+            },
+            {
+                "@language": "st",
+                "@value": "Attribution 2.0 Canada"
+            },
+            {
+                "@language": "sv",
+                "@value": "Erkännande 2.0 Kanada"
+            },
+            {
+                "@language": "ta",
+                "@value": "Attribution 2.0 Canada"
+            },
+            {
+                "@language": "te",
+                "@value": "ఆపాదింపు 2.0 కెనడా"
+            },
+            {
+                "@language": "th",
+                "@value": "แสดงที่มา 2.0 แคนาดา"
+            },
+            {
+                "@language": "tr",
+                "@value": "Attribution 2.0 Kanada"
+            },
+            {
+                "@language": "uk",
+                "@value": "Attribution 2.0 Canada"
+            },
+            {
+                "@language": "ur",
+                "@value": "Attribution 2.0 Canada"
+            },
+            {
+                "@language": "vi",
+                "@value": "Ghi nhận công của tác giả 2.0 Canada"
+            },
+            {
+                "@language": "zh",
+                "@value": "署名 2.0 加拿大"
+            },
+            {
+                "@language": "zh-hk",
+                "@value": "姓名標示 2.0 加拿大"
+            },
+            {
+                "@language": "zh-tw",
+                "@value": "姓名標示 2.0 加拿大"
+            },
+            {
+                "@language": "zu",
+                "@value": "Qaphela Umnikazi 2.0 Ecanada"
+            },
+            {
+                "@language": "zxx",
+                "@value": "${Attribution} 2.0 ${Canada}"
+            }
+        ],
+        "owl:sameAs": "https://licensedb.org/id/CC-BY-2.0-ca",
+        "foaf:logo": [
+            "http://i.creativecommons.org/l/by/2.0/ca/80x15.png",
+            "http://i.creativecommons.org/l/by/2.0/ca/88x31.png"
+        ]
+    },
+    "foaf:logo": [
+        "http://i.creativecommons.org/l/by/2.0/ca/80x15.png",
+        "http://i.creativecommons.org/l/by/2.0/ca/88x31.png"
+    ],
+    "li:id": "CC-BY-2.0-ca",
+    "li:libre": "http://creativecommons.org/",
+    "li:name": "CC BY 2.0 CA"
+}

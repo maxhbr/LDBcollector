@@ -1,0 +1,851 @@
+{
+    "@context": {
+        "cc": "http://creativecommons.org/ns#",
+        "dc": "http://purl.org/dc/terms/",
+        "dc11": "http://purl.org/dc/elements/1.1/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "li": "https://licensedb.org/ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "cc:legalcode": {
+            "@type": "@id"
+        },
+        "cc:permits": {
+            "@type": "@id"
+        },
+        "cc:requires": {
+            "@type": "@id"
+        },
+        "cc:prohibits": {
+            "@type": "@id"
+        },
+        "cc:jurisdiction": {
+            "@type": "@id"
+        },
+        "cc:licenseClass": {
+            "@type": "@id"
+        },
+        "dc:creator": {
+            "@type": "@id"
+        },
+        "dc:source": {
+            "@type": "@id"
+        },
+        "dc:replaces": {
+            "@type": "@id"
+        },
+        "dc:isBasedOn": {
+            "@type": "@id"
+        },
+        "dc:isReplacedBy": {
+            "@type": "@id"
+        },
+        "foaf:logo": {
+            "@type": "@id"
+        },
+        "li:plaintext": {
+            "@type": "@id"
+        },
+        "li:libre": {
+            "@type": "@id"
+        },
+        "owl:sameAs": {
+            "@type": "@id"
+        }
+    },
+    "@id": "https://licensedb.org/id/CC-BY-2.5-my",
+    "@type": [
+        "cc:License",
+        "li:License"
+    ],
+    "cc:jurisdiction": "http://creativecommons.org/international/my/",
+    "cc:legalcode": "http://creativecommons.org/licenses/by/2.5/my/legalcode",
+    "cc:licenseClass": "http://creativecommons.org/license/",
+    "cc:permits": [
+        "cc:DerivativeWorks",
+        "cc:Distribution",
+        "cc:Reproduction"
+    ],
+    "cc:requires": [
+        "cc:Attribution",
+        "cc:Notice"
+    ],
+    "dc:creator": "http://creativecommons.org",
+    "dc:hasVersion": "2.5",
+    "dc:identifier": "by",
+    "dc:source": "http://creativecommons.org/licenses/by/2.5/",
+    "dc:title": [
+        {
+            "@language": "af",
+            "@value": "Erkenning 2.5 Maleisië"
+        },
+        {
+            "@language": "ar",
+            "@value": "نسب المصنف  2.5 ماليزيا"
+        },
+        {
+            "@language": "as",
+            "@value": "Attribution 2.5 Malaysia"
+        },
+        {
+            "@language": "ast",
+            "@value": "Attribution 2.5 Malaysia"
+        },
+        {
+            "@language": "ast-es",
+            "@value": "Attribution 2.5 Malaysia"
+        },
+        {
+            "@language": "az",
+            "@value": "Attribution 2.5 Malaysia"
+        },
+        {
+            "@language": "be",
+            "@value": "Атрыбуцыя 2.5 Малайзія"
+        },
+        {
+            "@language": "bg",
+            "@value": "Признание 2.5 Малайзия"
+        },
+        {
+            "@language": "bn",
+            "@value": "Attribution 2.5 Malaysia"
+        },
+        {
+            "@language": "ca",
+            "@value": "Reconeixement 2.5 Malàisia"
+        },
+        {
+            "@language": "cs",
+            "@value": "Uveďte autora 2.5 Malajsie"
+        },
+        {
+            "@language": "da",
+            "@value": "Navngivelse 2.5 Malaysia"
+        },
+        {
+            "@language": "de",
+            "@value": "Namensnennung 2.5 Malaysia"
+        },
+        {
+            "@language": "de-at",
+            "@value": "Namensnennung 2.5 Malaysia"
+        },
+        {
+            "@language": "de-ch",
+            "@value": "Namensnennung 2.5 Malaysia"
+        },
+        {
+            "@language": "el",
+            "@value": "Αναφορά Δημιουργού 2.5 Μαλαισία"
+        },
+        {
+            "@language": "en",
+            "@value": "Attribution 2.5 Malaysia"
+        },
+        {
+            "@language": "en-ca",
+            "@value": "Attribution 2.5 Malaysia"
+        },
+        {
+            "@language": "en-gb",
+            "@value": "Attribution 2.5 Malaysia"
+        },
+        {
+            "@language": "en-hk",
+            "@value": "Attribution 2.5 Malaysia"
+        },
+        {
+            "@language": "en-sg",
+            "@value": "Attribution 2.5 Malaysia"
+        },
+        {
+            "@language": "en-us",
+            "@value": "Attribution 2.5 Malaysia"
+        },
+        {
+            "@language": "eo",
+            "@value": "Atribuite 2.5 Malajzio"
+        },
+        {
+            "@language": "es",
+            "@value": "Atribución 2.5 Malasia"
+        },
+        {
+            "@language": "es-ar",
+            "@value": "Atribución 2.5 Malasia"
+        },
+        {
+            "@language": "es-cl",
+            "@value": "Atribución 2.5 Malasia"
+        },
+        {
+            "@language": "es-co",
+            "@value": "Reconocimiento 2.5 Malasia"
+        },
+        {
+            "@language": "es-ec",
+            "@value": "Reconocimiento 2.5 Malasia"
+        },
+        {
+            "@language": "es-es",
+            "@value": "Reconocimiento 2.5 Malasia"
+        },
+        {
+            "@language": "es-gt",
+            "@value": "Reconocimiento 2.5 Malasia"
+        },
+        {
+            "@language": "es-mx",
+            "@value": "Atribución 2.5 Malasia"
+        },
+        {
+            "@language": "es-pe",
+            "@value": "Reconocimiento 2.5 Malasia"
+        },
+        {
+            "@language": "es-pr",
+            "@value": "Reconocimiento 2.5 Malasia"
+        },
+        {
+            "@language": "et",
+            "@value": "Autorile viitamine 2.5 Malaisia"
+        },
+        {
+            "@language": "eu",
+            "@value": "Aitortu 2.5 Malaysia"
+        },
+        {
+            "@language": "fa",
+            "@value": "Attribution 2.5 مالزی"
+        },
+        {
+            "@language": "fi",
+            "@value": "Nimeä 2.5 Malesia"
+        },
+        {
+            "@language": "fr",
+            "@value": "Attribution 2.5 Malaisie"
+        },
+        {
+            "@language": "fr-ca",
+            "@value": "Paternité 2.5 Malaisie"
+        },
+        {
+            "@language": "fr-ch",
+            "@value": "Paternité 2.5 Malaisie"
+        },
+        {
+            "@language": "fr-lu",
+            "@value": "Paternité 2.5 Malaisie"
+        },
+        {
+            "@language": "ga",
+            "@value": "Attribution 2.5 Malaysia"
+        },
+        {
+            "@language": "gl",
+            "@value": "Recoñecemento 2.5 Malaysia"
+        },
+        {
+            "@language": "he",
+            "@value": "ייחוס 2.5 מלזיה"
+        },
+        {
+            "@language": "hi",
+            "@value": "Attribution 2.5 Malaysia"
+        },
+        {
+            "@language": "hr",
+            "@value": "Imenovanje 2.5 Malezija"
+        },
+        {
+            "@language": "hu",
+            "@value": "Nevezd meg! 2.5 Malajzia"
+        },
+        {
+            "@language": "hy",
+            "@value": "Հղում 2.5 Մալազիա"
+        },
+        {
+            "@language": "id",
+            "@value": "Atribusi 2.5 Malaysia"
+        },
+        {
+            "@language": "is",
+            "@value": "Attribution 2.5 Malaysia"
+        },
+        {
+            "@language": "it",
+            "@value": "Attribuzione 2.5 Malesia"
+        },
+        {
+            "@language": "it-ch",
+            "@value": "Attribuzione 2.5 Malaysia"
+        },
+        {
+            "@language": "ja",
+            "@value": "表示 2.5 マレーシア"
+        },
+        {
+            "@language": "ka",
+            "@value": "ავტორობის მითითებით  2.5 მალაიზია"
+        },
+        {
+            "@language": "kk",
+            "@value": "Атауын сақтау 2.5 Malaysia"
+        },
+        {
+            "@language": "ko",
+            "@value": "저작자표시(Attribution) 2.5 말레이시아"
+        },
+        {
+            "@language": "lt",
+            "@value": "Priskyrimas 2.5 Malaizija"
+        },
+        {
+            "@language": "lv",
+            "@value": "Atsaucoties 2.5 Malaizija"
+        },
+        {
+            "@language": "mk",
+            "@value": "Наведи извор 2.5 Малезија"
+        },
+        {
+            "@language": "ml",
+            "@value": "കടപ്പാട് 2.5 മലേഷ്യ"
+        },
+        {
+            "@language": "mn",
+            "@value": "Attribution 2.5 Malaysia"
+        },
+        {
+            "@language": "ms",
+            "@value": "Pengiktirafan 2.5 Malaysia"
+        },
+        {
+            "@language": "nl",
+            "@value": "Naamsvermelding 2.5 Maleisië"
+        },
+        {
+            "@language": "no",
+            "@value": "Navngivelse 2.5 Malaysia"
+        },
+        {
+            "@language": "nso",
+            "@value": "Tsebagatšo 2.5 Malaysia"
+        },
+        {
+            "@language": "oci-es",
+            "@value": "Attribution 2.5 Malaysia"
+        },
+        {
+            "@language": "pl",
+            "@value": "Uznanie autorstwa 2.5 Malezja"
+        },
+        {
+            "@language": "pt",
+            "@value": "Atribuição  2.5 Malásia"
+        },
+        {
+            "@language": "pt-br",
+            "@value": "Atribuição 2.5 Malaysia"
+        },
+        {
+            "@language": "pt-pt",
+            "@value": "Atribuição 2.5 Malaysia"
+        },
+        {
+            "@language": "ro",
+            "@value": "Atribuire 2.5 Malaiezia"
+        },
+        {
+            "@language": "ru",
+            "@value": "Attribution (Атрибуция) 2.5 Малайзия"
+        },
+        {
+            "@language": "si-lk",
+            "@value": "Attribution 2.5 Malaysia"
+        },
+        {
+            "@language": "sl",
+            "@value": "Priznanje avtorstva 2.5 Malezija"
+        },
+        {
+            "@language": "sq",
+            "@value": "Attribution 2.5 Malajzi"
+        },
+        {
+            "@language": "sr",
+            "@value": "Autorstvo 2.5 Malezija"
+        },
+        {
+            "@language": "sr",
+            "@value": "Ауторство 2.5 Малезија"
+        },
+        {
+            "@language": "sr-latn",
+            "@value": "Autorstvo 2.5 Malezija"
+        },
+        {
+            "@language": "st",
+            "@value": "Attribution 2.5 Malaysia"
+        },
+        {
+            "@language": "sv",
+            "@value": "Erkännande 2.5 Malaysia"
+        },
+        {
+            "@language": "ta",
+            "@value": "Attribution 2.5 Malaysia"
+        },
+        {
+            "@language": "te",
+            "@value": "ఆపాదింపు 2.5 మలేషియా"
+        },
+        {
+            "@language": "th",
+            "@value": "แสดงที่มา 2.5 มาเลเซีย"
+        },
+        {
+            "@language": "tr",
+            "@value": "Attribution 2.5 Malezya"
+        },
+        {
+            "@language": "uk",
+            "@value": "Attribution 2.5 Malaysia"
+        },
+        {
+            "@language": "ur",
+            "@value": "Attribution 2.5 Malaysia"
+        },
+        {
+            "@language": "vi",
+            "@value": "Ghi nhận công của tác giả 2.5 Malaysia"
+        },
+        {
+            "@language": "zh",
+            "@value": "署名 2.5 马来西亚"
+        },
+        {
+            "@language": "zh-hk",
+            "@value": "姓名標示 2.5 馬來西亞"
+        },
+        {
+            "@language": "zh-tw",
+            "@value": "姓名標示 2.5 馬來西亞"
+        },
+        {
+            "@language": "zu",
+            "@value": "Qaphela Umnikazi 2.5 iMalaysia"
+        },
+        {
+            "@language": "zxx",
+            "@value": "${Attribution} 2.5 ${Malaysia}"
+        }
+    ],
+    "owl:sameAs": {
+        "@id": "http://creativecommons.org/licenses/by/2.5/my/",
+        "@type": "cc:License",
+        "cc:jurisdiction": "http://creativecommons.org/international/my/",
+        "cc:legalcode": "http://creativecommons.org/licenses/by/2.5/my/legalcode",
+        "cc:licenseClass": "http://creativecommons.org/license/",
+        "cc:permits": [
+            "cc:DerivativeWorks",
+            "cc:Distribution",
+            "cc:Reproduction"
+        ],
+        "cc:requires": [
+            "cc:Attribution",
+            "cc:Notice"
+        ],
+        "dc:creator": "http://creativecommons.org",
+        "dc:hasVersion": "2.5",
+        "dc:identifier": "by",
+        "dc:source": "http://creativecommons.org/licenses/by/2.5/",
+        "dc:title": [
+            {
+                "@language": "af",
+                "@value": "Erkenning 2.5 Maleisië"
+            },
+            {
+                "@language": "ar",
+                "@value": "نسب المصنف  2.5 ماليزيا"
+            },
+            {
+                "@language": "as",
+                "@value": "Attribution 2.5 Malaysia"
+            },
+            {
+                "@language": "ast",
+                "@value": "Attribution 2.5 Malaysia"
+            },
+            {
+                "@language": "ast-es",
+                "@value": "Attribution 2.5 Malaysia"
+            },
+            {
+                "@language": "az",
+                "@value": "Attribution 2.5 Malaysia"
+            },
+            {
+                "@language": "be",
+                "@value": "Атрыбуцыя 2.5 Малайзія"
+            },
+            {
+                "@language": "bg",
+                "@value": "Признание 2.5 Малайзия"
+            },
+            {
+                "@language": "bn",
+                "@value": "Attribution 2.5 Malaysia"
+            },
+            {
+                "@language": "ca",
+                "@value": "Reconeixement 2.5 Malàisia"
+            },
+            {
+                "@language": "cs",
+                "@value": "Uveďte autora 2.5 Malajsie"
+            },
+            {
+                "@language": "da",
+                "@value": "Navngivelse 2.5 Malaysia"
+            },
+            {
+                "@language": "de",
+                "@value": "Namensnennung 2.5 Malaysia"
+            },
+            {
+                "@language": "de-at",
+                "@value": "Namensnennung 2.5 Malaysia"
+            },
+            {
+                "@language": "de-ch",
+                "@value": "Namensnennung 2.5 Malaysia"
+            },
+            {
+                "@language": "el",
+                "@value": "Αναφορά Δημιουργού 2.5 Μαλαισία"
+            },
+            {
+                "@language": "en",
+                "@value": "Attribution 2.5 Malaysia"
+            },
+            {
+                "@language": "en-ca",
+                "@value": "Attribution 2.5 Malaysia"
+            },
+            {
+                "@language": "en-gb",
+                "@value": "Attribution 2.5 Malaysia"
+            },
+            {
+                "@language": "en-hk",
+                "@value": "Attribution 2.5 Malaysia"
+            },
+            {
+                "@language": "en-sg",
+                "@value": "Attribution 2.5 Malaysia"
+            },
+            {
+                "@language": "en-us",
+                "@value": "Attribution 2.5 Malaysia"
+            },
+            {
+                "@language": "eo",
+                "@value": "Atribuite 2.5 Malajzio"
+            },
+            {
+                "@language": "es",
+                "@value": "Atribución 2.5 Malasia"
+            },
+            {
+                "@language": "es-ar",
+                "@value": "Atribución 2.5 Malasia"
+            },
+            {
+                "@language": "es-cl",
+                "@value": "Atribución 2.5 Malasia"
+            },
+            {
+                "@language": "es-co",
+                "@value": "Reconocimiento 2.5 Malasia"
+            },
+            {
+                "@language": "es-ec",
+                "@value": "Reconocimiento 2.5 Malasia"
+            },
+            {
+                "@language": "es-es",
+                "@value": "Reconocimiento 2.5 Malasia"
+            },
+            {
+                "@language": "es-gt",
+                "@value": "Reconocimiento 2.5 Malasia"
+            },
+            {
+                "@language": "es-mx",
+                "@value": "Atribución 2.5 Malasia"
+            },
+            {
+                "@language": "es-pe",
+                "@value": "Reconocimiento 2.5 Malasia"
+            },
+            {
+                "@language": "es-pr",
+                "@value": "Reconocimiento 2.5 Malasia"
+            },
+            {
+                "@language": "et",
+                "@value": "Autorile viitamine 2.5 Malaisia"
+            },
+            {
+                "@language": "eu",
+                "@value": "Aitortu 2.5 Malaysia"
+            },
+            {
+                "@language": "fa",
+                "@value": "Attribution 2.5 مالزی"
+            },
+            {
+                "@language": "fi",
+                "@value": "Nimeä 2.5 Malesia"
+            },
+            {
+                "@language": "fr",
+                "@value": "Attribution 2.5 Malaisie"
+            },
+            {
+                "@language": "fr-ca",
+                "@value": "Paternité 2.5 Malaisie"
+            },
+            {
+                "@language": "fr-ch",
+                "@value": "Paternité 2.5 Malaisie"
+            },
+            {
+                "@language": "fr-lu",
+                "@value": "Paternité 2.5 Malaisie"
+            },
+            {
+                "@language": "ga",
+                "@value": "Attribution 2.5 Malaysia"
+            },
+            {
+                "@language": "gl",
+                "@value": "Recoñecemento 2.5 Malaysia"
+            },
+            {
+                "@language": "he",
+                "@value": "ייחוס 2.5 מלזיה"
+            },
+            {
+                "@language": "hi",
+                "@value": "Attribution 2.5 Malaysia"
+            },
+            {
+                "@language": "hr",
+                "@value": "Imenovanje 2.5 Malezija"
+            },
+            {
+                "@language": "hu",
+                "@value": "Nevezd meg! 2.5 Malajzia"
+            },
+            {
+                "@language": "hy",
+                "@value": "Հղում 2.5 Մալազիա"
+            },
+            {
+                "@language": "id",
+                "@value": "Atribusi 2.5 Malaysia"
+            },
+            {
+                "@language": "is",
+                "@value": "Attribution 2.5 Malaysia"
+            },
+            {
+                "@language": "it",
+                "@value": "Attribuzione 2.5 Malesia"
+            },
+            {
+                "@language": "it-ch",
+                "@value": "Attribuzione 2.5 Malaysia"
+            },
+            {
+                "@language": "ja",
+                "@value": "表示 2.5 マレーシア"
+            },
+            {
+                "@language": "ka",
+                "@value": "ავტორობის მითითებით  2.5 მალაიზია"
+            },
+            {
+                "@language": "kk",
+                "@value": "Атауын сақтау 2.5 Malaysia"
+            },
+            {
+                "@language": "ko",
+                "@value": "저작자표시(Attribution) 2.5 말레이시아"
+            },
+            {
+                "@language": "lt",
+                "@value": "Priskyrimas 2.5 Malaizija"
+            },
+            {
+                "@language": "lv",
+                "@value": "Atsaucoties 2.5 Malaizija"
+            },
+            {
+                "@language": "mk",
+                "@value": "Наведи извор 2.5 Малезија"
+            },
+            {
+                "@language": "ml",
+                "@value": "കടപ്പാട് 2.5 മലേഷ്യ"
+            },
+            {
+                "@language": "mn",
+                "@value": "Attribution 2.5 Malaysia"
+            },
+            {
+                "@language": "ms",
+                "@value": "Pengiktirafan 2.5 Malaysia"
+            },
+            {
+                "@language": "nl",
+                "@value": "Naamsvermelding 2.5 Maleisië"
+            },
+            {
+                "@language": "no",
+                "@value": "Navngivelse 2.5 Malaysia"
+            },
+            {
+                "@language": "nso",
+                "@value": "Tsebagatšo 2.5 Malaysia"
+            },
+            {
+                "@language": "oci-es",
+                "@value": "Attribution 2.5 Malaysia"
+            },
+            {
+                "@language": "pl",
+                "@value": "Uznanie autorstwa 2.5 Malezja"
+            },
+            {
+                "@language": "pt",
+                "@value": "Atribuição  2.5 Malásia"
+            },
+            {
+                "@language": "pt-br",
+                "@value": "Atribuição 2.5 Malaysia"
+            },
+            {
+                "@language": "pt-pt",
+                "@value": "Atribuição 2.5 Malaysia"
+            },
+            {
+                "@language": "ro",
+                "@value": "Atribuire 2.5 Malaiezia"
+            },
+            {
+                "@language": "ru",
+                "@value": "Attribution (Атрибуция) 2.5 Малайзия"
+            },
+            {
+                "@language": "si-lk",
+                "@value": "Attribution 2.5 Malaysia"
+            },
+            {
+                "@language": "sl",
+                "@value": "Priznanje avtorstva 2.5 Malezija"
+            },
+            {
+                "@language": "sq",
+                "@value": "Attribution 2.5 Malajzi"
+            },
+            {
+                "@language": "sr",
+                "@value": "Autorstvo 2.5 Malezija"
+            },
+            {
+                "@language": "sr",
+                "@value": "Ауторство 2.5 Малезија"
+            },
+            {
+                "@language": "sr-latn",
+                "@value": "Autorstvo 2.5 Malezija"
+            },
+            {
+                "@language": "st",
+                "@value": "Attribution 2.5 Malaysia"
+            },
+            {
+                "@language": "sv",
+                "@value": "Erkännande 2.5 Malaysia"
+            },
+            {
+                "@language": "ta",
+                "@value": "Attribution 2.5 Malaysia"
+            },
+            {
+                "@language": "te",
+                "@value": "ఆపాదింపు 2.5 మలేషియా"
+            },
+            {
+                "@language": "th",
+                "@value": "แสดงที่มา 2.5 มาเลเซีย"
+            },
+            {
+                "@language": "tr",
+                "@value": "Attribution 2.5 Malezya"
+            },
+            {
+                "@language": "uk",
+                "@value": "Attribution 2.5 Malaysia"
+            },
+            {
+                "@language": "ur",
+                "@value": "Attribution 2.5 Malaysia"
+            },
+            {
+                "@language": "vi",
+                "@value": "Ghi nhận công của tác giả 2.5 Malaysia"
+            },
+            {
+                "@language": "zh",
+                "@value": "署名 2.5 马来西亚"
+            },
+            {
+                "@language": "zh-hk",
+                "@value": "姓名標示 2.5 馬來西亞"
+            },
+            {
+                "@language": "zh-tw",
+                "@value": "姓名標示 2.5 馬來西亞"
+            },
+            {
+                "@language": "zu",
+                "@value": "Qaphela Umnikazi 2.5 iMalaysia"
+            },
+            {
+                "@language": "zxx",
+                "@value": "${Attribution} 2.5 ${Malaysia}"
+            }
+        ],
+        "owl:sameAs": "https://licensedb.org/id/CC-BY-2.5-my",
+        "foaf:logo": [
+            "http://i.creativecommons.org/l/by/2.5/my/80x15.png",
+            "http://i.creativecommons.org/l/by/2.5/my/88x31.png"
+        ]
+    },
+    "foaf:logo": [
+        "http://i.creativecommons.org/l/by/2.5/my/80x15.png",
+        "http://i.creativecommons.org/l/by/2.5/my/88x31.png"
+    ],
+    "li:id": "CC-BY-2.5-my",
+    "li:libre": "http://creativecommons.org/",
+    "li:name": "CC BY 2.5 MY"
+}

@@ -1,0 +1,251 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/elements/1.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://creativecommons.org/licenses/by-nd/3.0/es/> a cc:License ;
+    cc:jurisdiction <http://creativecommons.org/international/es/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nd/3.0/es/legalcode.ast>,
+        <http://creativecommons.org/licenses/by-nd/3.0/es/legalcode.ca>,
+        <http://creativecommons.org/licenses/by-nd/3.0/es/legalcode.es>,
+        <http://creativecommons.org/licenses/by-nd/3.0/es/legalcode.eu>,
+        <http://creativecommons.org/licenses/by-nd/3.0/es/legalcode.gl> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "3.0" ;
+    dc:identifier "by-nd" ;
+    dc:source <http://creativecommons.org/licenses/by-nd/3.0/> ;
+    dc:title "Erkenning-GeenAfleidings 3.0 Spanje"@af,
+        "نسب- غير مشتق 3.0 اسبانيا"@ar,
+        "Attribution-NoDerivs 3.0 Spain"@as,
+        "Attribution-NoDerivs 3.0 Spain"@ast,
+        "Attribution-NoDerivs 3.0 Spain"@ast-es,
+        "Attribution-NoDerivs 3.0 Spain"@az,
+        "Attribution-NoDerivs 3.0 Іспанія"@be,
+        "Признание-Без производни 3.0 Испания"@bg,
+        "Attribution-NoDerivs 3.0 Spain"@bn,
+        "Reconeixement-SenseObraDerivada 3.0 Espanya"@ca,
+        "Uveďte autora-Nezasahujte do díla 3.0 Španělsko"@cs,
+        "Navngivelse-IngenBearbejdelse 3.0 Spanien"@da,
+        "Namensnennung-Keine Bearbeitung 3.0 Spanien"@de,
+        "Namensnennung-KeineBearbeitung 3.0 Spanien"@de-at,
+        "Namensnennung-KeineBearbeitung 3.0 Spanien"@de-ch,
+        "Αναφορά Δημιουργού-Όχι Παράγωγα Έργα 3.0 Ισπανία"@el,
+        "Attribution-NoDerivs 3.0 Spain"@en,
+        "Attribution-NoDerivs 3.0 Spain"@en-ca,
+        "Attribution-NoDerivs 3.0 Spain"@en-gb,
+        "Attribution-NoDerivs 3.0 Spain"@en-hk,
+        "Attribution-NoDerivs 3.0 Spain"@en-sg,
+        "Attribution-NoDerivs 3.0 Spain"@en-us,
+        "Atribuite-Nemodifite 3.0 Hispanujo"@eo,
+        "Atribución-SinDerivadas 3.0 España"@es,
+        "Atribución-SinDerivadas 3.0 España"@es-ar,
+        "Atribución-SinDerivadas 3.0 España"@es-cl,
+        "Reconocimiento-SinObraDerivada 3.0 España"@es-co,
+        "Reconocimiento-SinObraDerivada 3.0 España"@es-ec,
+        "Reconocimiento-SinObraDerivada 3.0 España"@es-es,
+        "Reconocimiento-SinObraDerivada 3.0 España"@es-gt,
+        "Atribución-No Derivadas 3.0 España"@es-mx,
+        "Reconocimiento-SinObraDerivada 3.0 España"@es-pe,
+        "Reconocimiento-SinObraDerivada 3.0 España"@es-pr,
+        "Autorile viitamine + Tuletatud teoste keeld 3.0 Hispaania"@et,
+        "Aitortu-LanEratorririkGabe 3.0 Espainia"@eu,
+        "Attribution-NoDerivs 3.0 اسپانیا"@fa,
+        "Nimeä-Ei muutoksia 3.0 Espanja"@fi,
+        "Paternité - Pas de Modification 3.0 Espagne"@fr,
+        "Paternité - Pas de Modification 3.0 Espagne"@fr-ca,
+        "Paternité - Pas de Modification 3.0 Espagne"@fr-ch,
+        "Paternité - Pas de Modification 3.0 Espagne"@fr-lu,
+        "Attribution-NoDerivs 3.0 Spain"@ga,
+        "Recoñecemento-SenObraDerivada 3.0 España"@gl,
+        "ייחוס-איסור יצירות נגזרות 3.0 ספרד"@he,
+        "Attribution-NoDerivs 3.0 Spain"@hi,
+        "Imenovanje-Bez prerada 3.0 Španjolska"@hr,
+        "Nevezd meg! - Ne változtasd! 3.0 Spanyolország"@hu,
+        "Հղում - Օգտագործում առանց վերափոխումների 3.0 Իսպանիա"@hy,
+        "Atribusi-TanpaTurunan 3.0 Spanyol"@id,
+        "Attribution-NoDerivs 3.0 Spánn"@is,
+        "Attribuzione - Non opere derivate 3.0 Spagna"@it,
+        "Attribuzione - Non opere derivate 3.0 Spagna"@it-ch,
+        "表示 - 改変禁止 3.0 スペイン"@ja,
+        "ავტორობის მითითებით გადამუშავების გარეშე 3.0 ესპანეთი"@ka,
+        "Туынды жасамау 3.0 Spain"@kk,
+        "저작자표시-변경금지 3.0 스페인"@ko,
+        "Attribution-NoDerivs 3.0 Ispanų"@lt,
+        "Atsaucoties-Neatvasinot 3.0 Spānija"@lv,
+        "НаведиИзвор-БезИзведениДела 3.0 Шпанија"@mk,
+        "Attribution-NoDerivs 3.0 സ്പെയിൻ"@ml,
+        "Attribution-NoDerivs 3.0 Spain"@mn,
+        "Pengiktirafan-TiadaTerbitan 3.0 Sepanyol"@ms,
+        "Naamsvermelding-GeenAfgeleideWerken 3.0 Spanje"@nl,
+        "Navngivelse-IngenBearbeidelse 3.0 Spania"@no,
+        "Tsebagatšo - Tše sa Fetolwego 3.0 Sepania"@nso,
+        "Attribution-NoDerivs 3.0 Spain"@oci-es,
+        "Uznanie autorstwa-Bez utworów zależnych 3.0 Hiszpania"@pl,
+        "Atribuição - SemDerivados 3.0 Espanha"@pt,
+        "Atribuição-Vedada a criação de obras derivativas 3.0 Spain"@pt-br,
+        "Atribuição-Proibição de realização de Obras Derivadas 3.0 Espanha"@pt-pt,
+        "Atribuire-FărăModificări 3.0 Spania"@ro,
+        "Attribution-NoDerivs (Атрибуция — Без производных произведений) 3.0 Испания"@ru,
+        "Attribution-NoDerivs 3.0 Spain"@si-lk,
+        "Priznanje avtorstva-Brez predelav 3.0 Španija"@sl,
+        "Attribution-NoDerivs 3.0 Spanjë"@sq,
+        "Autorstvo-Bez prerada 3.0 Španija"@sr,
+        "Ауторство-Без прерада 3.0 Шпанија"@sr,
+        "Autorstvo-Bez prerada 3.0 Španija"@sr-latn,
+        "Attribution-NoDerivs 3.0 Spain"@st,
+        "Erkännande-IngaBearbetningar 3.0 Spanien"@sv,
+        "Attribution-NoDerivs 3.0 ஸ்பெயின்"@ta,
+        "Attribution-NoDerivs 3.0 స్పెయిన్"@te,
+        "แสดงที่มา-ไม่ดัดแปลง 3.0 สเปน"@th,
+        "Alıntı-Türetilemez 3.0 İspanya"@tr,
+        "Attribution-NoDerivs 3.0 Spain"@uk,
+        "Attribution-NoDerivs 3.0 Spain"@ur,
+        "Ghi nhận công của tác giả - Không phái sinh 3.0 Nước Tây Ban Nha"@vi,
+        "署名-禁止演绎 3.0 西班牙"@zh,
+        "姓名標示-禁止改作 3.0 西班牙"@zh-hk,
+        "姓名標示-禁止改作 3.0 西班牙"@zh-tw,
+        "Qaphela Umnikazi-Ungasuseli lutho kulokhu 3.0 Espain"@zu,
+        "${Attribution-NoDerivs} 3.0 ${Spain}"@zxx ;
+    owl:sameAs <https://licensedb.org/id/CC-BY-ND-3.0-es> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nd/3.0/es/80x15.png>,
+        <http://i.creativecommons.org/l/by-nd/3.0/es/88x31.png> .
+
+<https://licensedb.org/id/CC-BY-ND-3.0-es> a cc:License,
+        li:License ;
+    cc:jurisdiction <http://creativecommons.org/international/es/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nd/3.0/es/legalcode.ast>,
+        <http://creativecommons.org/licenses/by-nd/3.0/es/legalcode.ca>,
+        <http://creativecommons.org/licenses/by-nd/3.0/es/legalcode.es>,
+        <http://creativecommons.org/licenses/by-nd/3.0/es/legalcode.eu>,
+        <http://creativecommons.org/licenses/by-nd/3.0/es/legalcode.gl> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "3.0" ;
+    dc:identifier "by-nd" ;
+    dc:source <http://creativecommons.org/licenses/by-nd/3.0/> ;
+    dc:title "Erkenning-GeenAfleidings 3.0 Spanje"@af,
+        "نسب- غير مشتق 3.0 اسبانيا"@ar,
+        "Attribution-NoDerivs 3.0 Spain"@as,
+        "Attribution-NoDerivs 3.0 Spain"@ast,
+        "Attribution-NoDerivs 3.0 Spain"@ast-es,
+        "Attribution-NoDerivs 3.0 Spain"@az,
+        "Attribution-NoDerivs 3.0 Іспанія"@be,
+        "Признание-Без производни 3.0 Испания"@bg,
+        "Attribution-NoDerivs 3.0 Spain"@bn,
+        "Reconeixement-SenseObraDerivada 3.0 Espanya"@ca,
+        "Uveďte autora-Nezasahujte do díla 3.0 Španělsko"@cs,
+        "Navngivelse-IngenBearbejdelse 3.0 Spanien"@da,
+        "Namensnennung-Keine Bearbeitung 3.0 Spanien"@de,
+        "Namensnennung-KeineBearbeitung 3.0 Spanien"@de-at,
+        "Namensnennung-KeineBearbeitung 3.0 Spanien"@de-ch,
+        "Αναφορά Δημιουργού-Όχι Παράγωγα Έργα 3.0 Ισπανία"@el,
+        "Attribution-NoDerivs 3.0 Spain"@en,
+        "Attribution-NoDerivs 3.0 Spain"@en-ca,
+        "Attribution-NoDerivs 3.0 Spain"@en-gb,
+        "Attribution-NoDerivs 3.0 Spain"@en-hk,
+        "Attribution-NoDerivs 3.0 Spain"@en-sg,
+        "Attribution-NoDerivs 3.0 Spain"@en-us,
+        "Atribuite-Nemodifite 3.0 Hispanujo"@eo,
+        "Atribución-SinDerivadas 3.0 España"@es,
+        "Atribución-SinDerivadas 3.0 España"@es-ar,
+        "Atribución-SinDerivadas 3.0 España"@es-cl,
+        "Reconocimiento-SinObraDerivada 3.0 España"@es-co,
+        "Reconocimiento-SinObraDerivada 3.0 España"@es-ec,
+        "Reconocimiento-SinObraDerivada 3.0 España"@es-es,
+        "Reconocimiento-SinObraDerivada 3.0 España"@es-gt,
+        "Atribución-No Derivadas 3.0 España"@es-mx,
+        "Reconocimiento-SinObraDerivada 3.0 España"@es-pe,
+        "Reconocimiento-SinObraDerivada 3.0 España"@es-pr,
+        "Autorile viitamine + Tuletatud teoste keeld 3.0 Hispaania"@et,
+        "Aitortu-LanEratorririkGabe 3.0 Espainia"@eu,
+        "Attribution-NoDerivs 3.0 اسپانیا"@fa,
+        "Nimeä-Ei muutoksia 3.0 Espanja"@fi,
+        "Paternité - Pas de Modification 3.0 Espagne"@fr,
+        "Paternité - Pas de Modification 3.0 Espagne"@fr-ca,
+        "Paternité - Pas de Modification 3.0 Espagne"@fr-ch,
+        "Paternité - Pas de Modification 3.0 Espagne"@fr-lu,
+        "Attribution-NoDerivs 3.0 Spain"@ga,
+        "Recoñecemento-SenObraDerivada 3.0 España"@gl,
+        "ייחוס-איסור יצירות נגזרות 3.0 ספרד"@he,
+        "Attribution-NoDerivs 3.0 Spain"@hi,
+        "Imenovanje-Bez prerada 3.0 Španjolska"@hr,
+        "Nevezd meg! - Ne változtasd! 3.0 Spanyolország"@hu,
+        "Հղում - Օգտագործում առանց վերափոխումների 3.0 Իսպանիա"@hy,
+        "Atribusi-TanpaTurunan 3.0 Spanyol"@id,
+        "Attribution-NoDerivs 3.0 Spánn"@is,
+        "Attribuzione - Non opere derivate 3.0 Spagna"@it,
+        "Attribuzione - Non opere derivate 3.0 Spagna"@it-ch,
+        "表示 - 改変禁止 3.0 スペイン"@ja,
+        "ავტორობის მითითებით გადამუშავების გარეშე 3.0 ესპანეთი"@ka,
+        "Туынды жасамау 3.0 Spain"@kk,
+        "저작자표시-변경금지 3.0 스페인"@ko,
+        "Attribution-NoDerivs 3.0 Ispanų"@lt,
+        "Atsaucoties-Neatvasinot 3.0 Spānija"@lv,
+        "НаведиИзвор-БезИзведениДела 3.0 Шпанија"@mk,
+        "Attribution-NoDerivs 3.0 സ്പെയിൻ"@ml,
+        "Attribution-NoDerivs 3.0 Spain"@mn,
+        "Pengiktirafan-TiadaTerbitan 3.0 Sepanyol"@ms,
+        "Naamsvermelding-GeenAfgeleideWerken 3.0 Spanje"@nl,
+        "Navngivelse-IngenBearbeidelse 3.0 Spania"@no,
+        "Tsebagatšo - Tše sa Fetolwego 3.0 Sepania"@nso,
+        "Attribution-NoDerivs 3.0 Spain"@oci-es,
+        "Uznanie autorstwa-Bez utworów zależnych 3.0 Hiszpania"@pl,
+        "Atribuição - SemDerivados 3.0 Espanha"@pt,
+        "Atribuição-Vedada a criação de obras derivativas 3.0 Spain"@pt-br,
+        "Atribuição-Proibição de realização de Obras Derivadas 3.0 Espanha"@pt-pt,
+        "Atribuire-FărăModificări 3.0 Spania"@ro,
+        "Attribution-NoDerivs (Атрибуция — Без производных произведений) 3.0 Испания"@ru,
+        "Attribution-NoDerivs 3.0 Spain"@si-lk,
+        "Priznanje avtorstva-Brez predelav 3.0 Španija"@sl,
+        "Attribution-NoDerivs 3.0 Spanjë"@sq,
+        "Autorstvo-Bez prerada 3.0 Španija"@sr,
+        "Ауторство-Без прерада 3.0 Шпанија"@sr,
+        "Autorstvo-Bez prerada 3.0 Španija"@sr-latn,
+        "Attribution-NoDerivs 3.0 Spain"@st,
+        "Erkännande-IngaBearbetningar 3.0 Spanien"@sv,
+        "Attribution-NoDerivs 3.0 ஸ்பெயின்"@ta,
+        "Attribution-NoDerivs 3.0 స్పెయిన్"@te,
+        "แสดงที่มา-ไม่ดัดแปลง 3.0 สเปน"@th,
+        "Alıntı-Türetilemez 3.0 İspanya"@tr,
+        "Attribution-NoDerivs 3.0 Spain"@uk,
+        "Attribution-NoDerivs 3.0 Spain"@ur,
+        "Ghi nhận công của tác giả - Không phái sinh 3.0 Nước Tây Ban Nha"@vi,
+        "署名-禁止演绎 3.0 西班牙"@zh,
+        "姓名標示-禁止改作 3.0 西班牙"@zh-hk,
+        "姓名標示-禁止改作 3.0 西班牙"@zh-tw,
+        "Qaphela Umnikazi-Ungasuseli lutho kulokhu 3.0 Espain"@zu,
+        "${Attribution-NoDerivs} 3.0 ${Spain}"@zxx ;
+    owl:sameAs <http://creativecommons.org/licenses/by-nd/3.0/es/> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nd/3.0/es/80x15.png>,
+        <http://i.creativecommons.org/l/by-nd/3.0/es/88x31.png> ;
+    li:id "CC-BY-ND-3.0-es" ;
+    li:name "CC BY-ND 3.0 ES" .
+
+<http://creativecommons.org/licenses/by-nd/3.0/es/legalcode.ast> dc:language "ast" .
+
+<http://creativecommons.org/licenses/by-nd/3.0/es/legalcode.ca> dc:language "ca" .
+
+<http://creativecommons.org/licenses/by-nd/3.0/es/legalcode.es> dc:language "es" .
+
+<http://creativecommons.org/licenses/by-nd/3.0/es/legalcode.eu> dc:language "eu" .
+
+<http://creativecommons.org/licenses/by-nd/3.0/es/legalcode.gl> dc:language "gl" .
+

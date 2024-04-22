@@ -1,0 +1,852 @@
+{
+    "@context": {
+        "cc": "http://creativecommons.org/ns#",
+        "dc": "http://purl.org/dc/terms/",
+        "dc11": "http://purl.org/dc/elements/1.1/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "li": "https://licensedb.org/ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "cc:legalcode": {
+            "@type": "@id"
+        },
+        "cc:permits": {
+            "@type": "@id"
+        },
+        "cc:requires": {
+            "@type": "@id"
+        },
+        "cc:prohibits": {
+            "@type": "@id"
+        },
+        "cc:jurisdiction": {
+            "@type": "@id"
+        },
+        "cc:licenseClass": {
+            "@type": "@id"
+        },
+        "dc:creator": {
+            "@type": "@id"
+        },
+        "dc:source": {
+            "@type": "@id"
+        },
+        "dc:replaces": {
+            "@type": "@id"
+        },
+        "dc:isBasedOn": {
+            "@type": "@id"
+        },
+        "dc:isReplacedBy": {
+            "@type": "@id"
+        },
+        "foaf:logo": {
+            "@type": "@id"
+        },
+        "li:plaintext": {
+            "@type": "@id"
+        },
+        "li:libre": {
+            "@type": "@id"
+        },
+        "owl:sameAs": {
+            "@type": "@id"
+        }
+    },
+    "@id": "https://licensedb.org/id/CC-BY-NC-2.5-in",
+    "@type": [
+        "cc:License",
+        "li:License"
+    ],
+    "cc:jurisdiction": "http://creativecommons.org/international/in/",
+    "cc:legalcode": "http://creativecommons.org/licenses/by-nc/2.5/in/legalcode",
+    "cc:licenseClass": "http://creativecommons.org/license/",
+    "cc:permits": [
+        "cc:DerivativeWorks",
+        "cc:Distribution",
+        "cc:Reproduction"
+    ],
+    "cc:prohibits": "cc:CommercialUse",
+    "cc:requires": [
+        "cc:Attribution",
+        "cc:Notice"
+    ],
+    "dc:creator": "http://creativecommons.org",
+    "dc:hasVersion": "2.5",
+    "dc:identifier": "by-nc",
+    "dc:source": "http://creativecommons.org/licenses/by-nc/2.5/",
+    "dc:title": [
+        {
+            "@language": "af",
+            "@value": "Erkenning-NieKommersieel 2.5 Indië"
+        },
+        {
+            "@language": "ar",
+            "@value": "نسب - غير تجاري 2.5 الهند"
+        },
+        {
+            "@language": "as",
+            "@value": "Attribution-NonCommercial 2.5 India"
+        },
+        {
+            "@language": "ast",
+            "@value": "Attribution-NonCommercial 2.5 India"
+        },
+        {
+            "@language": "ast-es",
+            "@value": "Attribution-NonCommercial 2.5 India"
+        },
+        {
+            "@language": "az",
+            "@value": "Attribution-NonCommercial 2.5 India"
+        },
+        {
+            "@language": "be",
+            "@value": "Attribution-NonCommercial 2.5 Індыя"
+        },
+        {
+            "@language": "bg",
+            "@value": "Признание-Некомерсиално 2.5 Индия"
+        },
+        {
+            "@language": "bn",
+            "@value": "Attribution-NonCommercial 2.5 India"
+        },
+        {
+            "@language": "ca",
+            "@value": "Reconeixement-NoComercial 2.5 Índia"
+        },
+        {
+            "@language": "cs",
+            "@value": "Uveďte autora-Neužívejte komerčně 2.5 Indie"
+        },
+        {
+            "@language": "da",
+            "@value": "Navngivelse-IkkeKommerciel 2.5 Indien"
+        },
+        {
+            "@language": "de",
+            "@value": "Namensnennung-Nicht-kommerziell 2.5 Indien"
+        },
+        {
+            "@language": "de-at",
+            "@value": "Namensnennung-NichtKommerziell 2.5 Indien"
+        },
+        {
+            "@language": "de-ch",
+            "@value": "Namensnennung-NichtKommerziell 2.5 Indien"
+        },
+        {
+            "@language": "el",
+            "@value": "Αναφορά Δημιουργού-Μη Εμπορική Χρήση 2.5 Ινδία"
+        },
+        {
+            "@language": "en",
+            "@value": "Attribution-NonCommercial 2.5 India"
+        },
+        {
+            "@language": "en-ca",
+            "@value": "Attribution-NonCommercial 2.5 India"
+        },
+        {
+            "@language": "en-gb",
+            "@value": "Attribution-NonCommercial 2.5 India"
+        },
+        {
+            "@language": "en-hk",
+            "@value": "Attribution-NonCommercial 2.5 India"
+        },
+        {
+            "@language": "en-sg",
+            "@value": "Attribution-NonCommercial 2.5 India"
+        },
+        {
+            "@language": "en-us",
+            "@value": "Attribution-NonCommercial 2.5 India"
+        },
+        {
+            "@language": "eo",
+            "@value": "Atribuite-Nekomerce 2.5 Barato"
+        },
+        {
+            "@language": "es",
+            "@value": "Atribución-NoComercial 2.5 India"
+        },
+        {
+            "@language": "es-ar",
+            "@value": "Atribución-NoComercial 2.5 India"
+        },
+        {
+            "@language": "es-cl",
+            "@value": "Atribución-NoComercial 2.5 India"
+        },
+        {
+            "@language": "es-co",
+            "@value": "Reconocimiento-NoComercial 2.5 India"
+        },
+        {
+            "@language": "es-ec",
+            "@value": "Reconocimiento-NoComercial 2.5 India"
+        },
+        {
+            "@language": "es-es",
+            "@value": "Reconocimiento-NoComercial 2.5 India"
+        },
+        {
+            "@language": "es-gt",
+            "@value": "Reconocimiento-NoComercial 2.5 India"
+        },
+        {
+            "@language": "es-mx",
+            "@value": "Atribución-No Comercial 2.5 India"
+        },
+        {
+            "@language": "es-pe",
+            "@value": "Reconocimiento-NoComercial 2.5 India"
+        },
+        {
+            "@language": "es-pr",
+            "@value": "Reconocimiento-NoComercial 2.5 India"
+        },
+        {
+            "@language": "et",
+            "@value": "Autorile viitamine + Mitteäriline eesmärk 2.5 India"
+        },
+        {
+            "@language": "eu",
+            "@value": "Aitortu-EzKomertziala 2.5 India"
+        },
+        {
+            "@language": "fa",
+            "@value": "Attribution-NonCommercial 2.5 هندوستان"
+        },
+        {
+            "@language": "fi",
+            "@value": "Nimeä-Epäkaupallinen 2.5 Intia"
+        },
+        {
+            "@language": "fr",
+            "@value": "Paternité - Pas d'Utilisation Commerciale 2.5 Inde"
+        },
+        {
+            "@language": "fr-ca",
+            "@value": "Paternité - Pas d'Utilisation Commerciale 2.5 Inde"
+        },
+        {
+            "@language": "fr-ch",
+            "@value": "Paternité - Pas d'Utilisation Commerciale 2.5 Inde"
+        },
+        {
+            "@language": "fr-lu",
+            "@value": "Paternité - Pas d'Utilisation Commerciale 2.5 Inde"
+        },
+        {
+            "@language": "ga",
+            "@value": "Attribution-NonCommercial 2.5 India"
+        },
+        {
+            "@language": "gl",
+            "@value": "Recoñecemento-NonComercial 2.5 India"
+        },
+        {
+            "@language": "he",
+            "@value": "ייחוס-שימוש לא מסחרי 2.5 הודו"
+        },
+        {
+            "@language": "hi",
+            "@value": "Attribution-NonCommercial 2.5 भारत"
+        },
+        {
+            "@language": "hr",
+            "@value": "Imenovanje-Nekomercijalno 2.5 Indija"
+        },
+        {
+            "@language": "hu",
+            "@value": "Nevezd meg! - Ne add el! 2.5 India"
+        },
+        {
+            "@language": "hy",
+            "@value": "Հղում - Ոչ-առևտրային օգտագործում 2.5 Հնդկաստան"
+        },
+        {
+            "@language": "id",
+            "@value": "Attribusi-NonKomersial 2.5 India"
+        },
+        {
+            "@language": "is",
+            "@value": "Attribution-NonCommercial 2.5 Indland"
+        },
+        {
+            "@language": "it",
+            "@value": "Attribuzione - Non commerciale 2.5 India"
+        },
+        {
+            "@language": "it-ch",
+            "@value": "Attribuzione - Non commerciale 2.5 India"
+        },
+        {
+            "@language": "ja",
+            "@value": "表示 - 非営利 2.5 インド"
+        },
+        {
+            "@language": "ka",
+            "@value": "ავტორობის მითითებით არაკომერციული გამოყენებისათვის 2.5 ინდოეთი"
+        },
+        {
+            "@language": "kk",
+            "@value": "Коммерциялық емес 2.5 India"
+        },
+        {
+            "@language": "ko",
+            "@value": "저작자표시-비영리 2.5 인디아"
+        },
+        {
+            "@language": "lt",
+            "@value": "Attribution-NonCommercial 2.5 Indija"
+        },
+        {
+            "@language": "lv",
+            "@value": "Atsaucoties-Nekomerciāli 2.5 Indiešu"
+        },
+        {
+            "@language": "mk",
+            "@value": "НаведиИзвор-Некомерцијално 2.5 Индија"
+        },
+        {
+            "@language": "ml",
+            "@value": "Attribution-NonCommercial 2.5 ഇന്ത്യ"
+        },
+        {
+            "@language": "mn",
+            "@value": "Attribution-NonCommercial 2.5 Энэтхэг"
+        },
+        {
+            "@language": "ms",
+            "@value": "Pengiktirafan-BukanKomersial 2.5 India"
+        },
+        {
+            "@language": "nl",
+            "@value": "Naamsvermelding-NietCommercieel 2.5 India"
+        },
+        {
+            "@language": "no",
+            "@value": "Navngivelse-Ikkekommersiell 2.5 India"
+        },
+        {
+            "@language": "nso",
+            "@value": "Tsebagatšo- E sego ya kgwebo 2.5 India"
+        },
+        {
+            "@language": "oci-es",
+            "@value": "Attribution-NonCommercial 2.5 India"
+        },
+        {
+            "@language": "pl",
+            "@value": "Uznanie autorstwa-Użycie niekomercyjne 2.5 Indie"
+        },
+        {
+            "@language": "pt",
+            "@value": "Atribuição - NãoComercial 2.5 Índia"
+        },
+        {
+            "@language": "pt-br",
+            "@value": "Atribuição-Uso não-comercial 2.5 India"
+        },
+        {
+            "@language": "pt-pt",
+            "@value": "Atribuição-Uso Não-Comercial 2.5 India"
+        },
+        {
+            "@language": "ro",
+            "@value": "Atribuire-NeComercial 2.5 India"
+        },
+        {
+            "@language": "ru",
+            "@value": "Attribution-NonCommercial (Атрибуция — Некоммерческое использование) 2.5 Индия"
+        },
+        {
+            "@language": "si-lk",
+            "@value": "Attribution-NonCommercial 2.5 India"
+        },
+        {
+            "@language": "sl",
+            "@value": "Priznanje avtorstva-Nekomercialno 2.5 Indija"
+        },
+        {
+            "@language": "sq",
+            "@value": "Attribution-NonCommercial 2.5 Indi"
+        },
+        {
+            "@language": "sr",
+            "@value": "Autorstvo-Nekomercijalno 2.5 Indija"
+        },
+        {
+            "@language": "sr",
+            "@value": "Ауторство-Некомерцијално 2.5 Индија"
+        },
+        {
+            "@language": "sr-latn",
+            "@value": "Autorstvo-Nekomercijalno 2.5 Indija"
+        },
+        {
+            "@language": "st",
+            "@value": "Attribution-NonCommercial 2.5 India"
+        },
+        {
+            "@language": "sv",
+            "@value": "Erkännande-IckeKommersiell 2.5 Indien"
+        },
+        {
+            "@language": "ta",
+            "@value": "Attribution-NonCommercial 2.5 இந்தியா"
+        },
+        {
+            "@language": "te",
+            "@value": "Attribution-NonCommercial 2.5 భారతదేశం"
+        },
+        {
+            "@language": "th",
+            "@value": "แสดงที่มา-ไม่ใช้เพื่อการค้า 2.5 อินเดีย"
+        },
+        {
+            "@language": "tr",
+            "@value": "Alıntı-Gayriticari 2.5 Hindistan"
+        },
+        {
+            "@language": "uk",
+            "@value": "Attribution-NonCommercial 2.5 India"
+        },
+        {
+            "@language": "ur",
+            "@value": "Attribution-NonCommercial 2.5 India"
+        },
+        {
+            "@language": "vi",
+            "@value": "Ghi nhận công của tác giả - Phi thương mại  2.5 Nước Ấn độ "
+        },
+        {
+            "@language": "zh",
+            "@value": "署名-非商业性使用 2.5 印度"
+        },
+        {
+            "@language": "zh-hk",
+            "@value": "姓名標示-非商業性 2.5 印度"
+        },
+        {
+            "@language": "zh-tw",
+            "@value": "姓名標示-非商業性 2.5 印度"
+        },
+        {
+            "@language": "zu",
+            "@value": "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano 2.5 Endiya"
+        },
+        {
+            "@language": "zxx",
+            "@value": "${Attribution-NonCommercial} 2.5 ${India}"
+        }
+    ],
+    "owl:sameAs": {
+        "@id": "http://creativecommons.org/licenses/by-nc/2.5/in/",
+        "@type": "cc:License",
+        "cc:jurisdiction": "http://creativecommons.org/international/in/",
+        "cc:legalcode": "http://creativecommons.org/licenses/by-nc/2.5/in/legalcode",
+        "cc:licenseClass": "http://creativecommons.org/license/",
+        "cc:permits": [
+            "cc:DerivativeWorks",
+            "cc:Distribution",
+            "cc:Reproduction"
+        ],
+        "cc:prohibits": "cc:CommercialUse",
+        "cc:requires": [
+            "cc:Attribution",
+            "cc:Notice"
+        ],
+        "dc:creator": "http://creativecommons.org",
+        "dc:hasVersion": "2.5",
+        "dc:identifier": "by-nc",
+        "dc:source": "http://creativecommons.org/licenses/by-nc/2.5/",
+        "dc:title": [
+            {
+                "@language": "af",
+                "@value": "Erkenning-NieKommersieel 2.5 Indië"
+            },
+            {
+                "@language": "ar",
+                "@value": "نسب - غير تجاري 2.5 الهند"
+            },
+            {
+                "@language": "as",
+                "@value": "Attribution-NonCommercial 2.5 India"
+            },
+            {
+                "@language": "ast",
+                "@value": "Attribution-NonCommercial 2.5 India"
+            },
+            {
+                "@language": "ast-es",
+                "@value": "Attribution-NonCommercial 2.5 India"
+            },
+            {
+                "@language": "az",
+                "@value": "Attribution-NonCommercial 2.5 India"
+            },
+            {
+                "@language": "be",
+                "@value": "Attribution-NonCommercial 2.5 Індыя"
+            },
+            {
+                "@language": "bg",
+                "@value": "Признание-Некомерсиално 2.5 Индия"
+            },
+            {
+                "@language": "bn",
+                "@value": "Attribution-NonCommercial 2.5 India"
+            },
+            {
+                "@language": "ca",
+                "@value": "Reconeixement-NoComercial 2.5 Índia"
+            },
+            {
+                "@language": "cs",
+                "@value": "Uveďte autora-Neužívejte komerčně 2.5 Indie"
+            },
+            {
+                "@language": "da",
+                "@value": "Navngivelse-IkkeKommerciel 2.5 Indien"
+            },
+            {
+                "@language": "de",
+                "@value": "Namensnennung-Nicht-kommerziell 2.5 Indien"
+            },
+            {
+                "@language": "de-at",
+                "@value": "Namensnennung-NichtKommerziell 2.5 Indien"
+            },
+            {
+                "@language": "de-ch",
+                "@value": "Namensnennung-NichtKommerziell 2.5 Indien"
+            },
+            {
+                "@language": "el",
+                "@value": "Αναφορά Δημιουργού-Μη Εμπορική Χρήση 2.5 Ινδία"
+            },
+            {
+                "@language": "en",
+                "@value": "Attribution-NonCommercial 2.5 India"
+            },
+            {
+                "@language": "en-ca",
+                "@value": "Attribution-NonCommercial 2.5 India"
+            },
+            {
+                "@language": "en-gb",
+                "@value": "Attribution-NonCommercial 2.5 India"
+            },
+            {
+                "@language": "en-hk",
+                "@value": "Attribution-NonCommercial 2.5 India"
+            },
+            {
+                "@language": "en-sg",
+                "@value": "Attribution-NonCommercial 2.5 India"
+            },
+            {
+                "@language": "en-us",
+                "@value": "Attribution-NonCommercial 2.5 India"
+            },
+            {
+                "@language": "eo",
+                "@value": "Atribuite-Nekomerce 2.5 Barato"
+            },
+            {
+                "@language": "es",
+                "@value": "Atribución-NoComercial 2.5 India"
+            },
+            {
+                "@language": "es-ar",
+                "@value": "Atribución-NoComercial 2.5 India"
+            },
+            {
+                "@language": "es-cl",
+                "@value": "Atribución-NoComercial 2.5 India"
+            },
+            {
+                "@language": "es-co",
+                "@value": "Reconocimiento-NoComercial 2.5 India"
+            },
+            {
+                "@language": "es-ec",
+                "@value": "Reconocimiento-NoComercial 2.5 India"
+            },
+            {
+                "@language": "es-es",
+                "@value": "Reconocimiento-NoComercial 2.5 India"
+            },
+            {
+                "@language": "es-gt",
+                "@value": "Reconocimiento-NoComercial 2.5 India"
+            },
+            {
+                "@language": "es-mx",
+                "@value": "Atribución-No Comercial 2.5 India"
+            },
+            {
+                "@language": "es-pe",
+                "@value": "Reconocimiento-NoComercial 2.5 India"
+            },
+            {
+                "@language": "es-pr",
+                "@value": "Reconocimiento-NoComercial 2.5 India"
+            },
+            {
+                "@language": "et",
+                "@value": "Autorile viitamine + Mitteäriline eesmärk 2.5 India"
+            },
+            {
+                "@language": "eu",
+                "@value": "Aitortu-EzKomertziala 2.5 India"
+            },
+            {
+                "@language": "fa",
+                "@value": "Attribution-NonCommercial 2.5 هندوستان"
+            },
+            {
+                "@language": "fi",
+                "@value": "Nimeä-Epäkaupallinen 2.5 Intia"
+            },
+            {
+                "@language": "fr",
+                "@value": "Paternité - Pas d'Utilisation Commerciale 2.5 Inde"
+            },
+            {
+                "@language": "fr-ca",
+                "@value": "Paternité - Pas d'Utilisation Commerciale 2.5 Inde"
+            },
+            {
+                "@language": "fr-ch",
+                "@value": "Paternité - Pas d'Utilisation Commerciale 2.5 Inde"
+            },
+            {
+                "@language": "fr-lu",
+                "@value": "Paternité - Pas d'Utilisation Commerciale 2.5 Inde"
+            },
+            {
+                "@language": "ga",
+                "@value": "Attribution-NonCommercial 2.5 India"
+            },
+            {
+                "@language": "gl",
+                "@value": "Recoñecemento-NonComercial 2.5 India"
+            },
+            {
+                "@language": "he",
+                "@value": "ייחוס-שימוש לא מסחרי 2.5 הודו"
+            },
+            {
+                "@language": "hi",
+                "@value": "Attribution-NonCommercial 2.5 भारत"
+            },
+            {
+                "@language": "hr",
+                "@value": "Imenovanje-Nekomercijalno 2.5 Indija"
+            },
+            {
+                "@language": "hu",
+                "@value": "Nevezd meg! - Ne add el! 2.5 India"
+            },
+            {
+                "@language": "hy",
+                "@value": "Հղում - Ոչ-առևտրային օգտագործում 2.5 Հնդկաստան"
+            },
+            {
+                "@language": "id",
+                "@value": "Attribusi-NonKomersial 2.5 India"
+            },
+            {
+                "@language": "is",
+                "@value": "Attribution-NonCommercial 2.5 Indland"
+            },
+            {
+                "@language": "it",
+                "@value": "Attribuzione - Non commerciale 2.5 India"
+            },
+            {
+                "@language": "it-ch",
+                "@value": "Attribuzione - Non commerciale 2.5 India"
+            },
+            {
+                "@language": "ja",
+                "@value": "表示 - 非営利 2.5 インド"
+            },
+            {
+                "@language": "ka",
+                "@value": "ავტორობის მითითებით არაკომერციული გამოყენებისათვის 2.5 ინდოეთი"
+            },
+            {
+                "@language": "kk",
+                "@value": "Коммерциялық емес 2.5 India"
+            },
+            {
+                "@language": "ko",
+                "@value": "저작자표시-비영리 2.5 인디아"
+            },
+            {
+                "@language": "lt",
+                "@value": "Attribution-NonCommercial 2.5 Indija"
+            },
+            {
+                "@language": "lv",
+                "@value": "Atsaucoties-Nekomerciāli 2.5 Indiešu"
+            },
+            {
+                "@language": "mk",
+                "@value": "НаведиИзвор-Некомерцијално 2.5 Индија"
+            },
+            {
+                "@language": "ml",
+                "@value": "Attribution-NonCommercial 2.5 ഇന്ത്യ"
+            },
+            {
+                "@language": "mn",
+                "@value": "Attribution-NonCommercial 2.5 Энэтхэг"
+            },
+            {
+                "@language": "ms",
+                "@value": "Pengiktirafan-BukanKomersial 2.5 India"
+            },
+            {
+                "@language": "nl",
+                "@value": "Naamsvermelding-NietCommercieel 2.5 India"
+            },
+            {
+                "@language": "no",
+                "@value": "Navngivelse-Ikkekommersiell 2.5 India"
+            },
+            {
+                "@language": "nso",
+                "@value": "Tsebagatšo- E sego ya kgwebo 2.5 India"
+            },
+            {
+                "@language": "oci-es",
+                "@value": "Attribution-NonCommercial 2.5 India"
+            },
+            {
+                "@language": "pl",
+                "@value": "Uznanie autorstwa-Użycie niekomercyjne 2.5 Indie"
+            },
+            {
+                "@language": "pt",
+                "@value": "Atribuição - NãoComercial 2.5 Índia"
+            },
+            {
+                "@language": "pt-br",
+                "@value": "Atribuição-Uso não-comercial 2.5 India"
+            },
+            {
+                "@language": "pt-pt",
+                "@value": "Atribuição-Uso Não-Comercial 2.5 India"
+            },
+            {
+                "@language": "ro",
+                "@value": "Atribuire-NeComercial 2.5 India"
+            },
+            {
+                "@language": "ru",
+                "@value": "Attribution-NonCommercial (Атрибуция — Некоммерческое использование) 2.5 Индия"
+            },
+            {
+                "@language": "si-lk",
+                "@value": "Attribution-NonCommercial 2.5 India"
+            },
+            {
+                "@language": "sl",
+                "@value": "Priznanje avtorstva-Nekomercialno 2.5 Indija"
+            },
+            {
+                "@language": "sq",
+                "@value": "Attribution-NonCommercial 2.5 Indi"
+            },
+            {
+                "@language": "sr",
+                "@value": "Autorstvo-Nekomercijalno 2.5 Indija"
+            },
+            {
+                "@language": "sr",
+                "@value": "Ауторство-Некомерцијално 2.5 Индија"
+            },
+            {
+                "@language": "sr-latn",
+                "@value": "Autorstvo-Nekomercijalno 2.5 Indija"
+            },
+            {
+                "@language": "st",
+                "@value": "Attribution-NonCommercial 2.5 India"
+            },
+            {
+                "@language": "sv",
+                "@value": "Erkännande-IckeKommersiell 2.5 Indien"
+            },
+            {
+                "@language": "ta",
+                "@value": "Attribution-NonCommercial 2.5 இந்தியா"
+            },
+            {
+                "@language": "te",
+                "@value": "Attribution-NonCommercial 2.5 భారతదేశం"
+            },
+            {
+                "@language": "th",
+                "@value": "แสดงที่มา-ไม่ใช้เพื่อการค้า 2.5 อินเดีย"
+            },
+            {
+                "@language": "tr",
+                "@value": "Alıntı-Gayriticari 2.5 Hindistan"
+            },
+            {
+                "@language": "uk",
+                "@value": "Attribution-NonCommercial 2.5 India"
+            },
+            {
+                "@language": "ur",
+                "@value": "Attribution-NonCommercial 2.5 India"
+            },
+            {
+                "@language": "vi",
+                "@value": "Ghi nhận công của tác giả - Phi thương mại  2.5 Nước Ấn độ "
+            },
+            {
+                "@language": "zh",
+                "@value": "署名-非商业性使用 2.5 印度"
+            },
+            {
+                "@language": "zh-hk",
+                "@value": "姓名標示-非商業性 2.5 印度"
+            },
+            {
+                "@language": "zh-tw",
+                "@value": "姓名標示-非商業性 2.5 印度"
+            },
+            {
+                "@language": "zu",
+                "@value": "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano 2.5 Endiya"
+            },
+            {
+                "@language": "zxx",
+                "@value": "${Attribution-NonCommercial} 2.5 ${India}"
+            }
+        ],
+        "owl:sameAs": "https://licensedb.org/id/CC-BY-NC-2.5-in",
+        "foaf:logo": [
+            "http://i.creativecommons.org/l/by-nc/2.5/in/80x15.png",
+            "http://i.creativecommons.org/l/by-nc/2.5/in/88x31.png"
+        ]
+    },
+    "foaf:logo": [
+        "http://i.creativecommons.org/l/by-nc/2.5/in/80x15.png",
+        "http://i.creativecommons.org/l/by-nc/2.5/in/88x31.png"
+    ],
+    "li:id": "CC-BY-NC-2.5-in",
+    "li:name": "CC BY-NC 2.5 IN"
+}

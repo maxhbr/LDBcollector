@@ -1,0 +1,237 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/elements/1.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://creativecommons.org/licenses/by-nc/2.0/de/> a cc:License ;
+    cc:jurisdiction <http://creativecommons.org/international/de/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nc/2.0/de/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:prohibits cc:CommercialUse ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.0" ;
+    dc:identifier "by-nc" ;
+    dc:source <http://creativecommons.org/licenses/by-nc/2.0/> ;
+    dc:title "Erkenning-NieKommersieel 2.0 Duitsland"@af,
+        "نسب - غير تجاري 2.0 المانيا"@ar,
+        "Attribution-NonCommercial 2.0 Germany"@as,
+        "Attribution-NonCommercial 2.0 Germany"@ast,
+        "Attribution-NonCommercial 2.0 Germany"@ast-es,
+        "Attribution-NonCommercial 2.0 Germany"@az,
+        "Attribution-NonCommercial 2.0 Нямеччына"@be,
+        "Признание-Некомерсиално 2.0 Германия"@bg,
+        "Attribution-NonCommercial 2.0 Germany"@bn,
+        "Reconeixement-NoComercial 2.0 Alemanya"@ca,
+        "Uveďte autora-Neužívejte komerčně 2.0 Německo"@cs,
+        "Navngivelse-IkkeKommerciel 2.0 Tyskland"@da,
+        "Namensnennung-Nicht-kommerziell 2.0 Deutschland"@de,
+        "Namensnennung-NichtKommerziell 2.0 Deutschland"@de-at,
+        "Namensnennung-NichtKommerziell 2.0 Deutschland"@de-ch,
+        "Αναφορά Δημιουργού-Μη Εμπορική Χρήση 2.0 Γερμανία"@el,
+        "Attribution-NonCommercial 2.0 Germany"@en,
+        "Attribution-NonCommercial 2.0 Germany"@en-ca,
+        "Attribution-NonCommercial 2.0 Germany"@en-gb,
+        "Attribution-NonCommercial 2.0 Germany"@en-hk,
+        "Attribution-NonCommercial 2.0 Germany"@en-sg,
+        "Attribution-NonCommercial 2.0 Germany"@en-us,
+        "Atribuite-Nekomerce 2.0 Germanujo"@eo,
+        "Atribución-NoComercial 2.0 Alemania"@es,
+        "Atribución-NoComercial 2.0 Alemania"@es-ar,
+        "Atribución-NoComercial 2.0 Alemania"@es-cl,
+        "Reconocimiento-NoComercial 2.0 Alemania"@es-co,
+        "Reconocimiento-NoComercial 2.0 Alemania"@es-ec,
+        "Reconocimiento-NoComercial 2.0 Alemania"@es-es,
+        "Reconocimiento-NoComercial 2.0 Alemania"@es-gt,
+        "Atribución-No Comercial 2.0 Alemania"@es-mx,
+        "Reconocimiento-NoComercial 2.0 Alemania"@es-pe,
+        "Reconocimiento-NoComercial 2.0 Alemania"@es-pr,
+        "Autorile viitamine + Mitteäriline eesmärk 2.0 Saksamaa"@et,
+        "Aitortu-EzKomertziala 2.0 Alemania"@eu,
+        "Attribution-NonCommercial 2.0 آلمان"@fa,
+        "Nimeä-Epäkaupallinen 2.0 Saksa"@fi,
+        "Paternité - Pas d'Utilisation Commerciale 2.0 Allemagne"@fr,
+        "Paternité - Pas d'Utilisation Commerciale 2.0 Allemagne"@fr-ca,
+        "Paternité - Pas d'Utilisation Commerciale 2.0 Allemagne"@fr-ch,
+        "Paternité - Pas d'Utilisation Commerciale 2.0 Allemagne"@fr-lu,
+        "Attribution-NonCommercial 2.0 Germany"@ga,
+        "Recoñecemento-NonComercial 2.0 Alemaña"@gl,
+        "ייחוס-שימוש לא מסחרי 2.0 גרמניה"@he,
+        "Attribution-NonCommercial 2.0 Germany"@hi,
+        "Imenovanje-Nekomercijalno 2.0 Njemačka"@hr,
+        "Nevezd meg! - Ne add el! 2.0 Németország"@hu,
+        "Հղում - Ոչ-առևտրային օգտագործում 2.0 Գերմանիա"@hy,
+        "Attribusi-NonKomersial 2.0 Jerman"@id,
+        "Attribution-NonCommercial 2.0 Germany"@is,
+        "Attribuzione - Non commerciale 2.0 Germania"@it,
+        "Attribuzione - Non commerciale 2.0 Germania"@it-ch,
+        "表示 - 非営利 2.0 ドイツ"@ja,
+        "ავტორობის მითითებით არაკომერციული გამოყენებისათვის 2.0 გერმანია"@ka,
+        "Коммерциялық емес 2.0 Germany"@kk,
+        "저작자표시-비영리 2.0 독일"@ko,
+        "Attribution-NonCommercial 2.0 Vokietija"@lt,
+        "Atsaucoties-Nekomerciāli 2.0 Vācija"@lv,
+        "НаведиИзвор-Некомерцијално 2.0 Германија"@mk,
+        "Attribution-NonCommercial 2.0 ജെർമൻ"@ml,
+        "Attribution-NonCommercial 2.0 Germany"@mn,
+        "Pengiktirafan-BukanKomersial 2.0 Negara Jerman"@ms,
+        "Naamsvermelding-NietCommercieel 2.0 Duitsland"@nl,
+        "Navngivelse-Ikkekommersiell 2.0 Tyskland"@no,
+        "Tsebagatšo- E sego ya kgwebo 2.0 Jeremane"@nso,
+        "Attribution-NonCommercial 2.0 Germany"@oci-es,
+        "Uznanie autorstwa-Użycie niekomercyjne 2.0 Niemcy"@pl,
+        "Atribuição - NãoComercial 2.0 Alemanha"@pt,
+        "Atribuição-Uso não-comercial 2.0 Germany"@pt-br,
+        "Atribuição-Uso Não-Comercial 2.0 Alemanha"@pt-pt,
+        "Atribuire-NeComercial 2.0 Germania"@ro,
+        "Attribution-NonCommercial (Атрибуция — Некоммерческое использование) 2.0 Германия"@ru,
+        "Attribution-NonCommercial 2.0 Germany"@si-lk,
+        "Priznanje avtorstva-Nekomercialno 2.0 Nemčija"@sl,
+        "Attribution-NonCommercial 2.0 Gjermani"@sq,
+        "Autorstvo-Nekomercijalno 2.0 Nemačka"@sr,
+        "Ауторство-Некомерцијално 2.0 Немачка"@sr,
+        "Autorstvo-Nekomercijalno 2.0 Nemačka"@sr-latn,
+        "Attribution-NonCommercial 2.0 Germany"@st,
+        "Erkännande-IckeKommersiell 2.0 Tyskland"@sv,
+        "Attribution-NonCommercial 2.0 Germany"@ta,
+        "Attribution-NonCommercial 2.0 జర్మనీ"@te,
+        "แสดงที่มา-ไม่ใช้เพื่อการค้า 2.0 เยอรมนี"@th,
+        "Alıntı-Gayriticari 2.0 Almanya"@tr,
+        "Attribution-NonCommercial 2.0 Germany"@uk,
+        "Attribution-NonCommercial 2.0 Germany"@ur,
+        "Ghi nhận công của tác giả - Phi thương mại  2.0 Germany"@vi,
+        "署名-非商业性使用 2.0 德国"@zh,
+        "姓名標示-非商業性 2.0 德國"@zh-hk,
+        "姓名標示-非商業性 2.0 德國"@zh-tw,
+        "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano 2.0 Ejalimane"@zu,
+        "${Attribution-NonCommercial} 2.0 ${Germany}"@zxx ;
+    owl:sameAs <https://licensedb.org/id/CC-BY-NC-2.0-de> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nc/2.0/de/80x15.png>,
+        <http://i.creativecommons.org/l/by-nc/2.0/de/88x31.png> .
+
+<https://licensedb.org/id/CC-BY-NC-2.0-de> a cc:License,
+        li:License ;
+    cc:jurisdiction <http://creativecommons.org/international/de/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nc/2.0/de/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:prohibits cc:CommercialUse ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.0" ;
+    dc:identifier "by-nc" ;
+    dc:source <http://creativecommons.org/licenses/by-nc/2.0/> ;
+    dc:title "Erkenning-NieKommersieel 2.0 Duitsland"@af,
+        "نسب - غير تجاري 2.0 المانيا"@ar,
+        "Attribution-NonCommercial 2.0 Germany"@as,
+        "Attribution-NonCommercial 2.0 Germany"@ast,
+        "Attribution-NonCommercial 2.0 Germany"@ast-es,
+        "Attribution-NonCommercial 2.0 Germany"@az,
+        "Attribution-NonCommercial 2.0 Нямеччына"@be,
+        "Признание-Некомерсиално 2.0 Германия"@bg,
+        "Attribution-NonCommercial 2.0 Germany"@bn,
+        "Reconeixement-NoComercial 2.0 Alemanya"@ca,
+        "Uveďte autora-Neužívejte komerčně 2.0 Německo"@cs,
+        "Navngivelse-IkkeKommerciel 2.0 Tyskland"@da,
+        "Namensnennung-Nicht-kommerziell 2.0 Deutschland"@de,
+        "Namensnennung-NichtKommerziell 2.0 Deutschland"@de-at,
+        "Namensnennung-NichtKommerziell 2.0 Deutschland"@de-ch,
+        "Αναφορά Δημιουργού-Μη Εμπορική Χρήση 2.0 Γερμανία"@el,
+        "Attribution-NonCommercial 2.0 Germany"@en,
+        "Attribution-NonCommercial 2.0 Germany"@en-ca,
+        "Attribution-NonCommercial 2.0 Germany"@en-gb,
+        "Attribution-NonCommercial 2.0 Germany"@en-hk,
+        "Attribution-NonCommercial 2.0 Germany"@en-sg,
+        "Attribution-NonCommercial 2.0 Germany"@en-us,
+        "Atribuite-Nekomerce 2.0 Germanujo"@eo,
+        "Atribución-NoComercial 2.0 Alemania"@es,
+        "Atribución-NoComercial 2.0 Alemania"@es-ar,
+        "Atribución-NoComercial 2.0 Alemania"@es-cl,
+        "Reconocimiento-NoComercial 2.0 Alemania"@es-co,
+        "Reconocimiento-NoComercial 2.0 Alemania"@es-ec,
+        "Reconocimiento-NoComercial 2.0 Alemania"@es-es,
+        "Reconocimiento-NoComercial 2.0 Alemania"@es-gt,
+        "Atribución-No Comercial 2.0 Alemania"@es-mx,
+        "Reconocimiento-NoComercial 2.0 Alemania"@es-pe,
+        "Reconocimiento-NoComercial 2.0 Alemania"@es-pr,
+        "Autorile viitamine + Mitteäriline eesmärk 2.0 Saksamaa"@et,
+        "Aitortu-EzKomertziala 2.0 Alemania"@eu,
+        "Attribution-NonCommercial 2.0 آلمان"@fa,
+        "Nimeä-Epäkaupallinen 2.0 Saksa"@fi,
+        "Paternité - Pas d'Utilisation Commerciale 2.0 Allemagne"@fr,
+        "Paternité - Pas d'Utilisation Commerciale 2.0 Allemagne"@fr-ca,
+        "Paternité - Pas d'Utilisation Commerciale 2.0 Allemagne"@fr-ch,
+        "Paternité - Pas d'Utilisation Commerciale 2.0 Allemagne"@fr-lu,
+        "Attribution-NonCommercial 2.0 Germany"@ga,
+        "Recoñecemento-NonComercial 2.0 Alemaña"@gl,
+        "ייחוס-שימוש לא מסחרי 2.0 גרמניה"@he,
+        "Attribution-NonCommercial 2.0 Germany"@hi,
+        "Imenovanje-Nekomercijalno 2.0 Njemačka"@hr,
+        "Nevezd meg! - Ne add el! 2.0 Németország"@hu,
+        "Հղում - Ոչ-առևտրային օգտագործում 2.0 Գերմանիա"@hy,
+        "Attribusi-NonKomersial 2.0 Jerman"@id,
+        "Attribution-NonCommercial 2.0 Germany"@is,
+        "Attribuzione - Non commerciale 2.0 Germania"@it,
+        "Attribuzione - Non commerciale 2.0 Germania"@it-ch,
+        "表示 - 非営利 2.0 ドイツ"@ja,
+        "ავტორობის მითითებით არაკომერციული გამოყენებისათვის 2.0 გერმანია"@ka,
+        "Коммерциялық емес 2.0 Germany"@kk,
+        "저작자표시-비영리 2.0 독일"@ko,
+        "Attribution-NonCommercial 2.0 Vokietija"@lt,
+        "Atsaucoties-Nekomerciāli 2.0 Vācija"@lv,
+        "НаведиИзвор-Некомерцијално 2.0 Германија"@mk,
+        "Attribution-NonCommercial 2.0 ജെർമൻ"@ml,
+        "Attribution-NonCommercial 2.0 Germany"@mn,
+        "Pengiktirafan-BukanKomersial 2.0 Negara Jerman"@ms,
+        "Naamsvermelding-NietCommercieel 2.0 Duitsland"@nl,
+        "Navngivelse-Ikkekommersiell 2.0 Tyskland"@no,
+        "Tsebagatšo- E sego ya kgwebo 2.0 Jeremane"@nso,
+        "Attribution-NonCommercial 2.0 Germany"@oci-es,
+        "Uznanie autorstwa-Użycie niekomercyjne 2.0 Niemcy"@pl,
+        "Atribuição - NãoComercial 2.0 Alemanha"@pt,
+        "Atribuição-Uso não-comercial 2.0 Germany"@pt-br,
+        "Atribuição-Uso Não-Comercial 2.0 Alemanha"@pt-pt,
+        "Atribuire-NeComercial 2.0 Germania"@ro,
+        "Attribution-NonCommercial (Атрибуция — Некоммерческое использование) 2.0 Германия"@ru,
+        "Attribution-NonCommercial 2.0 Germany"@si-lk,
+        "Priznanje avtorstva-Nekomercialno 2.0 Nemčija"@sl,
+        "Attribution-NonCommercial 2.0 Gjermani"@sq,
+        "Autorstvo-Nekomercijalno 2.0 Nemačka"@sr,
+        "Ауторство-Некомерцијално 2.0 Немачка"@sr,
+        "Autorstvo-Nekomercijalno 2.0 Nemačka"@sr-latn,
+        "Attribution-NonCommercial 2.0 Germany"@st,
+        "Erkännande-IckeKommersiell 2.0 Tyskland"@sv,
+        "Attribution-NonCommercial 2.0 Germany"@ta,
+        "Attribution-NonCommercial 2.0 జర్మనీ"@te,
+        "แสดงที่มา-ไม่ใช้เพื่อการค้า 2.0 เยอรมนี"@th,
+        "Alıntı-Gayriticari 2.0 Almanya"@tr,
+        "Attribution-NonCommercial 2.0 Germany"@uk,
+        "Attribution-NonCommercial 2.0 Germany"@ur,
+        "Ghi nhận công của tác giả - Phi thương mại  2.0 Germany"@vi,
+        "署名-非商业性使用 2.0 德国"@zh,
+        "姓名標示-非商業性 2.0 德國"@zh-hk,
+        "姓名標示-非商業性 2.0 德國"@zh-tw,
+        "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano 2.0 Ejalimane"@zu,
+        "${Attribution-NonCommercial} 2.0 ${Germany}"@zxx ;
+    owl:sameAs <http://creativecommons.org/licenses/by-nc/2.0/de/> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nc/2.0/de/80x15.png>,
+        <http://i.creativecommons.org/l/by-nc/2.0/de/88x31.png> ;
+    li:id "CC-BY-NC-2.0-de" ;
+    li:name "CC BY-NC 2.0 DE" .
+

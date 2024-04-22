@@ -1,0 +1,854 @@
+{
+    "@context": {
+        "cc": "http://creativecommons.org/ns#",
+        "dc": "http://purl.org/dc/terms/",
+        "dc11": "http://purl.org/dc/elements/1.1/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "li": "https://licensedb.org/ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "cc:legalcode": {
+            "@type": "@id"
+        },
+        "cc:permits": {
+            "@type": "@id"
+        },
+        "cc:requires": {
+            "@type": "@id"
+        },
+        "cc:prohibits": {
+            "@type": "@id"
+        },
+        "cc:jurisdiction": {
+            "@type": "@id"
+        },
+        "cc:licenseClass": {
+            "@type": "@id"
+        },
+        "dc:creator": {
+            "@type": "@id"
+        },
+        "dc:source": {
+            "@type": "@id"
+        },
+        "dc:replaces": {
+            "@type": "@id"
+        },
+        "dc:isBasedOn": {
+            "@type": "@id"
+        },
+        "dc:isReplacedBy": {
+            "@type": "@id"
+        },
+        "foaf:logo": {
+            "@type": "@id"
+        },
+        "li:plaintext": {
+            "@type": "@id"
+        },
+        "li:libre": {
+            "@type": "@id"
+        },
+        "owl:sameAs": {
+            "@type": "@id"
+        }
+    },
+    "@id": "https://licensedb.org/id/CC-BY-SA-2.5-hr",
+    "@type": [
+        "cc:License",
+        "li:License"
+    ],
+    "cc:jurisdiction": "http://creativecommons.org/international/hr/",
+    "cc:legalcode": "http://creativecommons.org/licenses/by-sa/2.5/hr/legalcode",
+    "cc:licenseClass": "http://creativecommons.org/license/",
+    "cc:permits": [
+        "cc:DerivativeWorks",
+        "cc:Distribution",
+        "cc:Reproduction"
+    ],
+    "cc:requires": [
+        "cc:Attribution",
+        "cc:Notice",
+        "cc:ShareAlike"
+    ],
+    "dc:creator": "http://creativecommons.org",
+    "dc:hasVersion": "2.5",
+    "dc:identifier": "by-sa",
+    "dc:replaces": "https://licensedb.org/id/CC-BY-SA-2.0-hr",
+    "dc:source": "http://creativecommons.org/licenses/by-sa/2.5/",
+    "dc:title": [
+        {
+            "@language": "af",
+            "@value": "Erkenning-InsgelyksDeel 2.5 Kroasië"
+        },
+        {
+            "@language": "ar",
+            "@value": "نسب العمل- المشاركة على قدم المساواة 2.5 كرواتيا"
+        },
+        {
+            "@language": "as",
+            "@value": "Attribution-ShareAlike 2.5 Croatia"
+        },
+        {
+            "@language": "ast",
+            "@value": "Attribution-ShareAlike 2.5 Croatia"
+        },
+        {
+            "@language": "ast-es",
+            "@value": "Attribution-ShareAlike 2.5 Croatia"
+        },
+        {
+            "@language": "az",
+            "@value": "Attribution-ShareAlike 2.5 Croatia"
+        },
+        {
+            "@language": "be",
+            "@value": "Attribution-ShareAlike 2.5 Харватыя"
+        },
+        {
+            "@language": "bg",
+            "@value": "Признание-Споделяне на споделеното 2.5 Хърватска"
+        },
+        {
+            "@language": "bn",
+            "@value": "Attribution-ShareAlike 2.5 Croatia"
+        },
+        {
+            "@language": "ca",
+            "@value": "Reconeixement-CompartirIgual 2.5 Croàcia"
+        },
+        {
+            "@language": "cs",
+            "@value": "Uveďte autora-Zachovejte licenci 2.5 Chorvatsko"
+        },
+        {
+            "@language": "da",
+            "@value": "Navngivelse-DelPåSammeVilkår 2.5 Kroatien"
+        },
+        {
+            "@language": "de",
+            "@value": "Namensnennung-Weitergabe unter gleichen Bedingungen 2.5 Kroatien"
+        },
+        {
+            "@language": "de-at",
+            "@value": "Namensnennung-Weitergabe unter gleichen Bedingungen 2.5 Kroatien"
+        },
+        {
+            "@language": "de-ch",
+            "@value": "Namensnennung-Weitergabe unter gleichen Bedingungen 2.5 Kroatien"
+        },
+        {
+            "@language": "el",
+            "@value": "Αναφορά Δημιουργού - Παρόμοια Διανομή 2.5 Κροατία"
+        },
+        {
+            "@language": "en",
+            "@value": "Attribution-ShareAlike 2.5 Croatia"
+        },
+        {
+            "@language": "en-ca",
+            "@value": "Attribution-ShareAlike 2.5 Croatia"
+        },
+        {
+            "@language": "en-gb",
+            "@value": "Attribution-ShareAlike 2.5 Croatia"
+        },
+        {
+            "@language": "en-hk",
+            "@value": "Attribution-ShareAlike 2.5 Croatia"
+        },
+        {
+            "@language": "en-sg",
+            "@value": "Attribution-ShareAlike 2.5 Croatia"
+        },
+        {
+            "@language": "en-us",
+            "@value": "Attribution-ShareAlike 2.5 Croatia"
+        },
+        {
+            "@language": "eo",
+            "@value": "Atribuite-Samkondiĉe 2.5 Kroatujo"
+        },
+        {
+            "@language": "es",
+            "@value": "Atribución-CompartirIgual 2.5 Croacia"
+        },
+        {
+            "@language": "es-ar",
+            "@value": "Atribución-CompartirDerivadasIgual 2.5 Croacia"
+        },
+        {
+            "@language": "es-cl",
+            "@value": "Atribución-LicenciarIgual 2.5 Croacia"
+        },
+        {
+            "@language": "es-co",
+            "@value": "Reconocimiento-CompartirIgual 2.5 Croacia"
+        },
+        {
+            "@language": "es-ec",
+            "@value": "Reconocimiento-CompartirIgual 2.5 Croacia"
+        },
+        {
+            "@language": "es-es",
+            "@value": "Reconocimiento-CompartirIgual 2.5 Croacia"
+        },
+        {
+            "@language": "es-gt",
+            "@value": "Reconocimiento-CompartirIgual 2.5 Croacia"
+        },
+        {
+            "@language": "es-mx",
+            "@value": "Atribución-Licenciamiento Recíproco 2.5 Croacia"
+        },
+        {
+            "@language": "es-pe",
+            "@value": "Reconocimiento-CompartirIgual 2.5 Croacia"
+        },
+        {
+            "@language": "es-pr",
+            "@value": "Reconocimiento-CompartirIgual 2.5 Croacia"
+        },
+        {
+            "@language": "et",
+            "@value": "Autorile viitamine + Jagamine samadel tingimustel 2.5 Horvaatia"
+        },
+        {
+            "@language": "eu",
+            "@value": "Aitortu-PartekatuBerdin 2.5 Kroazia"
+        },
+        {
+            "@language": "fa",
+            "@value": "Attribution-ShareAlike 2.5 کرواسی"
+        },
+        {
+            "@language": "fi",
+            "@value": "Nimeä-Tarttuva 2.5 Kroatia"
+        },
+        {
+            "@language": "fr",
+            "@value": "Paternité - Partage à l'Identique 2.5 Croatie"
+        },
+        {
+            "@language": "fr-ca",
+            "@value": "Paternité - Partage des Conditions Initiales à l'Identique 2.5 Croatie"
+        },
+        {
+            "@language": "fr-ch",
+            "@value": "Paternité - Partage des Conditions Initiales à l'Identique 2.5 Croatie"
+        },
+        {
+            "@language": "fr-lu",
+            "@value": "Paternité - Partage des Conditions Initiales à l'Identique 2.5 Croatie"
+        },
+        {
+            "@language": "ga",
+            "@value": "Attribution-ShareAlike 2.5 Croatia"
+        },
+        {
+            "@language": "gl",
+            "@value": "Recoñecemento-CompartirIgual 2.5 Croacia"
+        },
+        {
+            "@language": "he",
+            "@value": "ייחוס-שיתוף זהה 2.5 קרואטיה"
+        },
+        {
+            "@language": "hi",
+            "@value": "Attribution-ShareAlike 2.5 Croatia"
+        },
+        {
+            "@language": "hr",
+            "@value": "Imenovanje-Dijeli pod istim uvjetima 2.5 Hrvatska"
+        },
+        {
+            "@language": "hu",
+            "@value": "Nevezd meg! - Így add tovább! 2.5 Horvátország"
+        },
+        {
+            "@language": "hy",
+            "@value": "Հղում - համանման տարածում 2.5 Խորվաթիա"
+        },
+        {
+            "@language": "id",
+            "@value": "Atribusi-BerbagiSerupa 2.5 Kroasia"
+        },
+        {
+            "@language": "is",
+            "@value": "Attribution-ShareAlike 2.5 Króatía"
+        },
+        {
+            "@language": "it",
+            "@value": "Attribuzione - Condividi allo stesso modo 2.5 Croazia"
+        },
+        {
+            "@language": "it-ch",
+            "@value": "Attribuzione - Condividi allo stesso modo 2.5 Croazia"
+        },
+        {
+            "@language": "ja",
+            "@value": "表示 - 継承 2.5 クロアチア"
+        },
+        {
+            "@language": "ka",
+            "@value": "ავტორობის მითითებით – გავრცელება იგივე პირობებით  2.5 ხორვატია"
+        },
+        {
+            "@language": "kk",
+            "@value": "Attribution-ShareAlike 2.5 Croatia"
+        },
+        {
+            "@language": "ko",
+            "@value": "저작자표시-동일조건변경허락 2.5 크로아티아"
+        },
+        {
+            "@language": "lt",
+            "@value": "Attribution-ShareAlike 2.5 Kroatija"
+        },
+        {
+            "@language": "lv",
+            "@value": "Atsaucoties-Nemainot licenci 2.5 Horvātija"
+        },
+        {
+            "@language": "mk",
+            "@value": "НаведиИзвор-СподелиПодИстиУслови 2.5 Хрватска"
+        },
+        {
+            "@language": "ml",
+            "@value": "Attribution-ShareAlike 2.5 ക്രൊയേഷിയ"
+        },
+        {
+            "@language": "mn",
+            "@value": "Attribution-ShareAlike 2.5 Croatia"
+        },
+        {
+            "@language": "ms",
+            "@value": "Pengiktirafan-PerkongsianSerupa 2.5 Kroatia"
+        },
+        {
+            "@language": "nl",
+            "@value": "Naamsvermelding-GelijkDelen 2.5 Kroatië"
+        },
+        {
+            "@language": "no",
+            "@value": "Navngivelse-DelPåSammeVilkår 2.5 Kroatia"
+        },
+        {
+            "@language": "nso",
+            "@value": "Tsebagatšo -Mohlakanelwa 2.5 Croatia"
+        },
+        {
+            "@language": "oci-es",
+            "@value": "Attribution-ShareAlike 2.5 Croatia"
+        },
+        {
+            "@language": "pl",
+            "@value": "Uznanie autorstwa-Na tych samych warunkach 2.5 Chorwacja"
+        },
+        {
+            "@language": "pt",
+            "@value": "Atribuição - CompartilhaIgual 2.5 Croácia"
+        },
+        {
+            "@language": "pt-br",
+            "@value": "Attribution-ShareAlike 2.5 Croatia"
+        },
+        {
+            "@language": "pt-pt",
+            "@value": "Atribuição-Partilha nos termos da mesma licença 2.5 Croácia"
+        },
+        {
+            "@language": "ro",
+            "@value": "Atribuire - Distribuire-în-condiţii-identice 2.5 Croaţia"
+        },
+        {
+            "@language": "ru",
+            "@value": "Attribution-ShareAlike (Атрибуция — С сохранением условий) 2.5 Хорватия"
+        },
+        {
+            "@language": "si-lk",
+            "@value": "Attribution-ShareAlike 2.5 Croatia"
+        },
+        {
+            "@language": "sl",
+            "@value": "Priznanje avtorstva-Deljenje pod enakimi pogoji 2.5 Hrvaška"
+        },
+        {
+            "@language": "sq",
+            "@value": "Attribution-ShareAlike 2.5 Kroaci"
+        },
+        {
+            "@language": "sr",
+            "@value": "Autorstvo-Deliti pod istim uslovima 2.5 Hrvatska"
+        },
+        {
+            "@language": "sr",
+            "@value": "Ауторство-Делити под истим условима 2.5 Хрватска"
+        },
+        {
+            "@language": "sr-latn",
+            "@value": "Autorstvo-Deliti pod istim uslovima 2.5 Hrvatska"
+        },
+        {
+            "@language": "st",
+            "@value": "Attribution-ShareAlike 2.5 Croatia"
+        },
+        {
+            "@language": "sv",
+            "@value": "Erkännande-DelaLika 2.5 Kroatien"
+        },
+        {
+            "@language": "ta",
+            "@value": "Attribution-ShareAlike 2.5 Croatia"
+        },
+        {
+            "@language": "te",
+            "@value": "Attribution-ShareAlike 2.5 క్రోయేషియా"
+        },
+        {
+            "@language": "th",
+            "@value": "แสดงที่มา-อนุญาตแบบเดียวกัน 2.5 โครเอเชีย"
+        },
+        {
+            "@language": "tr",
+            "@value": "Alıntı-LisansıDevamEttirme 2.5 Hırvatistan"
+        },
+        {
+            "@language": "uk",
+            "@value": "Attribution-ShareAlike 2.5 Croatia"
+        },
+        {
+            "@language": "ur",
+            "@value": "Attribution-ShareAlike 2.5 Croatia"
+        },
+        {
+            "@language": "vi",
+            "@value": "Attribution-ShareAlike 2.5 Nước Croatia"
+        },
+        {
+            "@language": "zh",
+            "@value": "署名-相同方式共享 2.5 克罗地亚"
+        },
+        {
+            "@language": "zh-hk",
+            "@value": "姓名標示-相同方式分享 2.5 克羅埃西亞"
+        },
+        {
+            "@language": "zh-tw",
+            "@value": "姓名標示-相同方式分享 2.5 克羅埃西亞"
+        },
+        {
+            "@language": "zu",
+            "@value": "Qaphela Umnikazi-Zihlanganyeleni 2.5 eCroatia"
+        },
+        {
+            "@language": "zxx",
+            "@value": "${Attribution-ShareAlike} 2.5 ${Croatia}"
+        }
+    ],
+    "owl:sameAs": {
+        "@id": "http://creativecommons.org/licenses/by-sa/2.5/hr/",
+        "@type": "cc:License",
+        "cc:jurisdiction": "http://creativecommons.org/international/hr/",
+        "cc:legalcode": "http://creativecommons.org/licenses/by-sa/2.5/hr/legalcode",
+        "cc:licenseClass": "http://creativecommons.org/license/",
+        "cc:permits": [
+            "cc:DerivativeWorks",
+            "cc:Distribution",
+            "cc:Reproduction"
+        ],
+        "cc:requires": [
+            "cc:Attribution",
+            "cc:Notice",
+            "cc:ShareAlike"
+        ],
+        "dc:creator": "http://creativecommons.org",
+        "dc:hasVersion": "2.5",
+        "dc:identifier": "by-sa",
+        "dc:source": "http://creativecommons.org/licenses/by-sa/2.5/",
+        "dc:title": [
+            {
+                "@language": "af",
+                "@value": "Erkenning-InsgelyksDeel 2.5 Kroasië"
+            },
+            {
+                "@language": "ar",
+                "@value": "نسب العمل- المشاركة على قدم المساواة 2.5 كرواتيا"
+            },
+            {
+                "@language": "as",
+                "@value": "Attribution-ShareAlike 2.5 Croatia"
+            },
+            {
+                "@language": "ast",
+                "@value": "Attribution-ShareAlike 2.5 Croatia"
+            },
+            {
+                "@language": "ast-es",
+                "@value": "Attribution-ShareAlike 2.5 Croatia"
+            },
+            {
+                "@language": "az",
+                "@value": "Attribution-ShareAlike 2.5 Croatia"
+            },
+            {
+                "@language": "be",
+                "@value": "Attribution-ShareAlike 2.5 Харватыя"
+            },
+            {
+                "@language": "bg",
+                "@value": "Признание-Споделяне на споделеното 2.5 Хърватска"
+            },
+            {
+                "@language": "bn",
+                "@value": "Attribution-ShareAlike 2.5 Croatia"
+            },
+            {
+                "@language": "ca",
+                "@value": "Reconeixement-CompartirIgual 2.5 Croàcia"
+            },
+            {
+                "@language": "cs",
+                "@value": "Uveďte autora-Zachovejte licenci 2.5 Chorvatsko"
+            },
+            {
+                "@language": "da",
+                "@value": "Navngivelse-DelPåSammeVilkår 2.5 Kroatien"
+            },
+            {
+                "@language": "de",
+                "@value": "Namensnennung-Weitergabe unter gleichen Bedingungen 2.5 Kroatien"
+            },
+            {
+                "@language": "de-at",
+                "@value": "Namensnennung-Weitergabe unter gleichen Bedingungen 2.5 Kroatien"
+            },
+            {
+                "@language": "de-ch",
+                "@value": "Namensnennung-Weitergabe unter gleichen Bedingungen 2.5 Kroatien"
+            },
+            {
+                "@language": "el",
+                "@value": "Αναφορά Δημιουργού - Παρόμοια Διανομή 2.5 Κροατία"
+            },
+            {
+                "@language": "en",
+                "@value": "Attribution-ShareAlike 2.5 Croatia"
+            },
+            {
+                "@language": "en-ca",
+                "@value": "Attribution-ShareAlike 2.5 Croatia"
+            },
+            {
+                "@language": "en-gb",
+                "@value": "Attribution-ShareAlike 2.5 Croatia"
+            },
+            {
+                "@language": "en-hk",
+                "@value": "Attribution-ShareAlike 2.5 Croatia"
+            },
+            {
+                "@language": "en-sg",
+                "@value": "Attribution-ShareAlike 2.5 Croatia"
+            },
+            {
+                "@language": "en-us",
+                "@value": "Attribution-ShareAlike 2.5 Croatia"
+            },
+            {
+                "@language": "eo",
+                "@value": "Atribuite-Samkondiĉe 2.5 Kroatujo"
+            },
+            {
+                "@language": "es",
+                "@value": "Atribución-CompartirIgual 2.5 Croacia"
+            },
+            {
+                "@language": "es-ar",
+                "@value": "Atribución-CompartirDerivadasIgual 2.5 Croacia"
+            },
+            {
+                "@language": "es-cl",
+                "@value": "Atribución-LicenciarIgual 2.5 Croacia"
+            },
+            {
+                "@language": "es-co",
+                "@value": "Reconocimiento-CompartirIgual 2.5 Croacia"
+            },
+            {
+                "@language": "es-ec",
+                "@value": "Reconocimiento-CompartirIgual 2.5 Croacia"
+            },
+            {
+                "@language": "es-es",
+                "@value": "Reconocimiento-CompartirIgual 2.5 Croacia"
+            },
+            {
+                "@language": "es-gt",
+                "@value": "Reconocimiento-CompartirIgual 2.5 Croacia"
+            },
+            {
+                "@language": "es-mx",
+                "@value": "Atribución-Licenciamiento Recíproco 2.5 Croacia"
+            },
+            {
+                "@language": "es-pe",
+                "@value": "Reconocimiento-CompartirIgual 2.5 Croacia"
+            },
+            {
+                "@language": "es-pr",
+                "@value": "Reconocimiento-CompartirIgual 2.5 Croacia"
+            },
+            {
+                "@language": "et",
+                "@value": "Autorile viitamine + Jagamine samadel tingimustel 2.5 Horvaatia"
+            },
+            {
+                "@language": "eu",
+                "@value": "Aitortu-PartekatuBerdin 2.5 Kroazia"
+            },
+            {
+                "@language": "fa",
+                "@value": "Attribution-ShareAlike 2.5 کرواسی"
+            },
+            {
+                "@language": "fi",
+                "@value": "Nimeä-Tarttuva 2.5 Kroatia"
+            },
+            {
+                "@language": "fr",
+                "@value": "Paternité - Partage à l'Identique 2.5 Croatie"
+            },
+            {
+                "@language": "fr-ca",
+                "@value": "Paternité - Partage des Conditions Initiales à l'Identique 2.5 Croatie"
+            },
+            {
+                "@language": "fr-ch",
+                "@value": "Paternité - Partage des Conditions Initiales à l'Identique 2.5 Croatie"
+            },
+            {
+                "@language": "fr-lu",
+                "@value": "Paternité - Partage des Conditions Initiales à l'Identique 2.5 Croatie"
+            },
+            {
+                "@language": "ga",
+                "@value": "Attribution-ShareAlike 2.5 Croatia"
+            },
+            {
+                "@language": "gl",
+                "@value": "Recoñecemento-CompartirIgual 2.5 Croacia"
+            },
+            {
+                "@language": "he",
+                "@value": "ייחוס-שיתוף זהה 2.5 קרואטיה"
+            },
+            {
+                "@language": "hi",
+                "@value": "Attribution-ShareAlike 2.5 Croatia"
+            },
+            {
+                "@language": "hr",
+                "@value": "Imenovanje-Dijeli pod istim uvjetima 2.5 Hrvatska"
+            },
+            {
+                "@language": "hu",
+                "@value": "Nevezd meg! - Így add tovább! 2.5 Horvátország"
+            },
+            {
+                "@language": "hy",
+                "@value": "Հղում - համանման տարածում 2.5 Խորվաթիա"
+            },
+            {
+                "@language": "id",
+                "@value": "Atribusi-BerbagiSerupa 2.5 Kroasia"
+            },
+            {
+                "@language": "is",
+                "@value": "Attribution-ShareAlike 2.5 Króatía"
+            },
+            {
+                "@language": "it",
+                "@value": "Attribuzione - Condividi allo stesso modo 2.5 Croazia"
+            },
+            {
+                "@language": "it-ch",
+                "@value": "Attribuzione - Condividi allo stesso modo 2.5 Croazia"
+            },
+            {
+                "@language": "ja",
+                "@value": "表示 - 継承 2.5 クロアチア"
+            },
+            {
+                "@language": "ka",
+                "@value": "ავტორობის მითითებით – გავრცელება იგივე პირობებით  2.5 ხორვატია"
+            },
+            {
+                "@language": "kk",
+                "@value": "Attribution-ShareAlike 2.5 Croatia"
+            },
+            {
+                "@language": "ko",
+                "@value": "저작자표시-동일조건변경허락 2.5 크로아티아"
+            },
+            {
+                "@language": "lt",
+                "@value": "Attribution-ShareAlike 2.5 Kroatija"
+            },
+            {
+                "@language": "lv",
+                "@value": "Atsaucoties-Nemainot licenci 2.5 Horvātija"
+            },
+            {
+                "@language": "mk",
+                "@value": "НаведиИзвор-СподелиПодИстиУслови 2.5 Хрватска"
+            },
+            {
+                "@language": "ml",
+                "@value": "Attribution-ShareAlike 2.5 ക്രൊയേഷിയ"
+            },
+            {
+                "@language": "mn",
+                "@value": "Attribution-ShareAlike 2.5 Croatia"
+            },
+            {
+                "@language": "ms",
+                "@value": "Pengiktirafan-PerkongsianSerupa 2.5 Kroatia"
+            },
+            {
+                "@language": "nl",
+                "@value": "Naamsvermelding-GelijkDelen 2.5 Kroatië"
+            },
+            {
+                "@language": "no",
+                "@value": "Navngivelse-DelPåSammeVilkår 2.5 Kroatia"
+            },
+            {
+                "@language": "nso",
+                "@value": "Tsebagatšo -Mohlakanelwa 2.5 Croatia"
+            },
+            {
+                "@language": "oci-es",
+                "@value": "Attribution-ShareAlike 2.5 Croatia"
+            },
+            {
+                "@language": "pl",
+                "@value": "Uznanie autorstwa-Na tych samych warunkach 2.5 Chorwacja"
+            },
+            {
+                "@language": "pt",
+                "@value": "Atribuição - CompartilhaIgual 2.5 Croácia"
+            },
+            {
+                "@language": "pt-br",
+                "@value": "Attribution-ShareAlike 2.5 Croatia"
+            },
+            {
+                "@language": "pt-pt",
+                "@value": "Atribuição-Partilha nos termos da mesma licença 2.5 Croácia"
+            },
+            {
+                "@language": "ro",
+                "@value": "Atribuire - Distribuire-în-condiţii-identice 2.5 Croaţia"
+            },
+            {
+                "@language": "ru",
+                "@value": "Attribution-ShareAlike (Атрибуция — С сохранением условий) 2.5 Хорватия"
+            },
+            {
+                "@language": "si-lk",
+                "@value": "Attribution-ShareAlike 2.5 Croatia"
+            },
+            {
+                "@language": "sl",
+                "@value": "Priznanje avtorstva-Deljenje pod enakimi pogoji 2.5 Hrvaška"
+            },
+            {
+                "@language": "sq",
+                "@value": "Attribution-ShareAlike 2.5 Kroaci"
+            },
+            {
+                "@language": "sr",
+                "@value": "Autorstvo-Deliti pod istim uslovima 2.5 Hrvatska"
+            },
+            {
+                "@language": "sr",
+                "@value": "Ауторство-Делити под истим условима 2.5 Хрватска"
+            },
+            {
+                "@language": "sr-latn",
+                "@value": "Autorstvo-Deliti pod istim uslovima 2.5 Hrvatska"
+            },
+            {
+                "@language": "st",
+                "@value": "Attribution-ShareAlike 2.5 Croatia"
+            },
+            {
+                "@language": "sv",
+                "@value": "Erkännande-DelaLika 2.5 Kroatien"
+            },
+            {
+                "@language": "ta",
+                "@value": "Attribution-ShareAlike 2.5 Croatia"
+            },
+            {
+                "@language": "te",
+                "@value": "Attribution-ShareAlike 2.5 క్రోయేషియా"
+            },
+            {
+                "@language": "th",
+                "@value": "แสดงที่มา-อนุญาตแบบเดียวกัน 2.5 โครเอเชีย"
+            },
+            {
+                "@language": "tr",
+                "@value": "Alıntı-LisansıDevamEttirme 2.5 Hırvatistan"
+            },
+            {
+                "@language": "uk",
+                "@value": "Attribution-ShareAlike 2.5 Croatia"
+            },
+            {
+                "@language": "ur",
+                "@value": "Attribution-ShareAlike 2.5 Croatia"
+            },
+            {
+                "@language": "vi",
+                "@value": "Attribution-ShareAlike 2.5 Nước Croatia"
+            },
+            {
+                "@language": "zh",
+                "@value": "署名-相同方式共享 2.5 克罗地亚"
+            },
+            {
+                "@language": "zh-hk",
+                "@value": "姓名標示-相同方式分享 2.5 克羅埃西亞"
+            },
+            {
+                "@language": "zh-tw",
+                "@value": "姓名標示-相同方式分享 2.5 克羅埃西亞"
+            },
+            {
+                "@language": "zu",
+                "@value": "Qaphela Umnikazi-Zihlanganyeleni 2.5 eCroatia"
+            },
+            {
+                "@language": "zxx",
+                "@value": "${Attribution-ShareAlike} 2.5 ${Croatia}"
+            }
+        ],
+        "owl:sameAs": "https://licensedb.org/id/CC-BY-SA-2.5-hr",
+        "foaf:logo": [
+            "http://i.creativecommons.org/l/by-sa/2.5/hr/80x15.png",
+            "http://i.creativecommons.org/l/by-sa/2.5/hr/88x31.png"
+        ]
+    },
+    "foaf:logo": [
+        "http://i.creativecommons.org/l/by-sa/2.5/hr/80x15.png",
+        "http://i.creativecommons.org/l/by-sa/2.5/hr/88x31.png"
+    ],
+    "li:id": "CC-BY-SA-2.5-hr",
+    "li:libre": "http://creativecommons.org/",
+    "li:name": "CC BY-SA 2.5 HR"
+}

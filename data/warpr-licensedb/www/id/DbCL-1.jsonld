@@ -1,0 +1,80 @@
+{
+    "@context": {
+        "cc": "http://creativecommons.org/ns#",
+        "dc": "http://purl.org/dc/terms/",
+        "dc11": "http://purl.org/dc/elements/1.1/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "li": "https://licensedb.org/ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "cc:legalcode": {
+            "@type": "@id"
+        },
+        "cc:permits": {
+            "@type": "@id"
+        },
+        "cc:requires": {
+            "@type": "@id"
+        },
+        "cc:prohibits": {
+            "@type": "@id"
+        },
+        "cc:jurisdiction": {
+            "@type": "@id"
+        },
+        "cc:licenseClass": {
+            "@type": "@id"
+        },
+        "dc:creator": {
+            "@type": "@id"
+        },
+        "dc:source": {
+            "@type": "@id"
+        },
+        "dc:replaces": {
+            "@type": "@id"
+        },
+        "dc:isBasedOn": {
+            "@type": "@id"
+        },
+        "dc:isReplacedBy": {
+            "@type": "@id"
+        },
+        "foaf:logo": {
+            "@type": "@id"
+        },
+        "li:plaintext": {
+            "@type": "@id"
+        },
+        "li:libre": {
+            "@type": "@id"
+        },
+        "owl:sameAs": {
+            "@type": "@id"
+        }
+    },
+    "@id": "https://licensedb.org/id/DbCL-1",
+    "@type": [
+        "cc:License",
+        "li:License"
+    ],
+    "cc:legalcode": "http://opendatacommons.org/licenses/dbcl/1.0/",
+    "dc:creator": "http://opendatacommons.org/",
+    "dc:hasVersion": "1.0",
+    "dc:identifier": "DbCL",
+    "dc:title": "Database Contents License",
+    "schema:sameAs": {
+        "@id": "http://opendatacommons.org/licenses/dbcl/1.0/"
+    },
+    "li:id": "DbCL-1",
+    "li:name": "ODC DbCL 1.0",
+    "li:notice": {
+        "li:canonical": true,
+        "li:orlater": false,
+        "li:short": true,
+        "li:text": "{{title}} is made available under the Open Database License:\nhttp://opendatacommons.org/licenses/odbl/1.0/.  Any rights in\nindividual contents of the database are licensed under the Database\nContents License: http://opendatacommons.org/licenses/dbcl/1.0/.\n"
+    },
+    "li:plaintext": "http://www.opendatacommons.org/wp-content/uploads/2009/06/dbcl-10.txt"
+}

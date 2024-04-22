@@ -1,0 +1,851 @@
+{
+    "@context": {
+        "cc": "http://creativecommons.org/ns#",
+        "dc": "http://purl.org/dc/terms/",
+        "dc11": "http://purl.org/dc/elements/1.1/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "li": "https://licensedb.org/ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "cc:legalcode": {
+            "@type": "@id"
+        },
+        "cc:permits": {
+            "@type": "@id"
+        },
+        "cc:requires": {
+            "@type": "@id"
+        },
+        "cc:prohibits": {
+            "@type": "@id"
+        },
+        "cc:jurisdiction": {
+            "@type": "@id"
+        },
+        "cc:licenseClass": {
+            "@type": "@id"
+        },
+        "dc:creator": {
+            "@type": "@id"
+        },
+        "dc:source": {
+            "@type": "@id"
+        },
+        "dc:replaces": {
+            "@type": "@id"
+        },
+        "dc:isBasedOn": {
+            "@type": "@id"
+        },
+        "dc:isReplacedBy": {
+            "@type": "@id"
+        },
+        "foaf:logo": {
+            "@type": "@id"
+        },
+        "li:plaintext": {
+            "@type": "@id"
+        },
+        "li:libre": {
+            "@type": "@id"
+        },
+        "owl:sameAs": {
+            "@type": "@id"
+        }
+    },
+    "@id": "https://licensedb.org/id/CC-BY-1.0-fi",
+    "@type": [
+        "cc:License",
+        "li:License"
+    ],
+    "cc:jurisdiction": "http://creativecommons.org/international/fi/",
+    "cc:legalcode": "http://creativecommons.org/licenses/by/1.0/fi/legalcode",
+    "cc:licenseClass": "http://creativecommons.org/license/",
+    "cc:permits": [
+        "cc:DerivativeWorks",
+        "cc:Distribution",
+        "cc:Reproduction"
+    ],
+    "cc:requires": [
+        "cc:Attribution",
+        "cc:Notice"
+    ],
+    "dc:creator": "http://creativecommons.org",
+    "dc:hasVersion": "1.0",
+    "dc:identifier": "by",
+    "dc:source": "http://creativecommons.org/licenses/by/1.0/",
+    "dc:title": [
+        {
+            "@language": "af",
+            "@value": "Erkenning 1.0 Finland"
+        },
+        {
+            "@language": "ar",
+            "@value": "نسب المصنف  1.0 فلندا"
+        },
+        {
+            "@language": "as",
+            "@value": "Attribution 1.0 Finland"
+        },
+        {
+            "@language": "ast",
+            "@value": "Attribution 1.0 Finland"
+        },
+        {
+            "@language": "ast-es",
+            "@value": "Attribution 1.0 Finland"
+        },
+        {
+            "@language": "az",
+            "@value": "Attribution 1.0 Finland"
+        },
+        {
+            "@language": "be",
+            "@value": "Атрыбуцыя 1.0 Фінляндыя"
+        },
+        {
+            "@language": "bg",
+            "@value": "Признание 1.0 Финландия"
+        },
+        {
+            "@language": "bn",
+            "@value": "Attribution 1.0 Finland"
+        },
+        {
+            "@language": "ca",
+            "@value": "Reconeixement 1.0 Finlàndia"
+        },
+        {
+            "@language": "cs",
+            "@value": "Uveďte autora 1.0 Finsko"
+        },
+        {
+            "@language": "da",
+            "@value": "Navngivelse 1.0 Finland"
+        },
+        {
+            "@language": "de",
+            "@value": "Namensnennung 1.0 Finnland"
+        },
+        {
+            "@language": "de-at",
+            "@value": "Namensnennung 1.0 Finnland"
+        },
+        {
+            "@language": "de-ch",
+            "@value": "Namensnennung 1.0 Finnland"
+        },
+        {
+            "@language": "el",
+            "@value": "Αναφορά Δημιουργού 1.0 Φιλανδία"
+        },
+        {
+            "@language": "en",
+            "@value": "Attribution 1.0 Finland"
+        },
+        {
+            "@language": "en-ca",
+            "@value": "Attribution 1.0 Finland"
+        },
+        {
+            "@language": "en-gb",
+            "@value": "Attribution 1.0 Finland"
+        },
+        {
+            "@language": "en-hk",
+            "@value": "Attribution 1.0 Finland"
+        },
+        {
+            "@language": "en-sg",
+            "@value": "Attribution 1.0 Finland"
+        },
+        {
+            "@language": "en-us",
+            "@value": "Attribution 1.0 Finland"
+        },
+        {
+            "@language": "eo",
+            "@value": "Atribuite 1.0 Suomujo"
+        },
+        {
+            "@language": "es",
+            "@value": "Atribución 1.0 Finlandia"
+        },
+        {
+            "@language": "es-ar",
+            "@value": "Atribución 1.0 Finlandia"
+        },
+        {
+            "@language": "es-cl",
+            "@value": "Atribución 1.0 Finlandia"
+        },
+        {
+            "@language": "es-co",
+            "@value": "Reconocimiento 1.0 Finlandia"
+        },
+        {
+            "@language": "es-ec",
+            "@value": "Reconocimiento 1.0 Finlandia"
+        },
+        {
+            "@language": "es-es",
+            "@value": "Reconocimiento 1.0 Finlandia"
+        },
+        {
+            "@language": "es-gt",
+            "@value": "Reconocimiento 1.0 Finlandia"
+        },
+        {
+            "@language": "es-mx",
+            "@value": "Atribución 1.0 Finlandia"
+        },
+        {
+            "@language": "es-pe",
+            "@value": "Reconocimiento 1.0 Finlandia"
+        },
+        {
+            "@language": "es-pr",
+            "@value": "Reconocimiento 1.0 Finlandia"
+        },
+        {
+            "@language": "et",
+            "@value": "Autorile viitamine 1.0 Soome"
+        },
+        {
+            "@language": "eu",
+            "@value": "Aitortu 1.0 Finlandia"
+        },
+        {
+            "@language": "fa",
+            "@value": "Attribution 1.0 فنلاند"
+        },
+        {
+            "@language": "fi",
+            "@value": "Nimeä 1.0 Suomi"
+        },
+        {
+            "@language": "fr",
+            "@value": "Attribution 1.0 Finlande"
+        },
+        {
+            "@language": "fr-ca",
+            "@value": "Paternité 1.0 Finlande"
+        },
+        {
+            "@language": "fr-ch",
+            "@value": "Paternité 1.0 Finlande"
+        },
+        {
+            "@language": "fr-lu",
+            "@value": "Paternité 1.0 Finlande"
+        },
+        {
+            "@language": "ga",
+            "@value": "Attribution 1.0 Finland"
+        },
+        {
+            "@language": "gl",
+            "@value": "Recoñecemento 1.0 Finlandia"
+        },
+        {
+            "@language": "he",
+            "@value": "ייחוס 1.0 פינלנד"
+        },
+        {
+            "@language": "hi",
+            "@value": "Attribution 1.0 Finland"
+        },
+        {
+            "@language": "hr",
+            "@value": "Imenovanje 1.0 Finska"
+        },
+        {
+            "@language": "hu",
+            "@value": "Nevezd meg! 1.0 Finnország"
+        },
+        {
+            "@language": "hy",
+            "@value": "Հղում 1.0 Finland"
+        },
+        {
+            "@language": "id",
+            "@value": "Atribusi 1.0 Finlandia"
+        },
+        {
+            "@language": "is",
+            "@value": "Attribution 1.0 Finland"
+        },
+        {
+            "@language": "it",
+            "@value": "Attribuzione 1.0 Finlandia"
+        },
+        {
+            "@language": "it-ch",
+            "@value": "Attribuzione 1.0 Finlandia"
+        },
+        {
+            "@language": "ja",
+            "@value": "表示 1.0 フィンランド"
+        },
+        {
+            "@language": "ka",
+            "@value": "ავტორობის მითითებით  1.0 ფინეთი"
+        },
+        {
+            "@language": "kk",
+            "@value": "Атауын сақтау 1.0 Finland"
+        },
+        {
+            "@language": "ko",
+            "@value": "저작자표시(Attribution) 1.0 핀란드"
+        },
+        {
+            "@language": "lt",
+            "@value": "Priskyrimas 1.0 Suomija"
+        },
+        {
+            "@language": "lv",
+            "@value": "Atsaucoties 1.0 Somija"
+        },
+        {
+            "@language": "mk",
+            "@value": "Наведи извор 1.0 Финска"
+        },
+        {
+            "@language": "ml",
+            "@value": "കടപ്പാട് 1.0 ഫിൻലാന്റ്"
+        },
+        {
+            "@language": "mn",
+            "@value": "Attribution 1.0 Finland"
+        },
+        {
+            "@language": "ms",
+            "@value": "Pengiktirafan 1.0 Finland"
+        },
+        {
+            "@language": "nl",
+            "@value": "Naamsvermelding 1.0 Finland"
+        },
+        {
+            "@language": "no",
+            "@value": "Navngivelse 1.0 Finland"
+        },
+        {
+            "@language": "nso",
+            "@value": "Tsebagatšo 1.0 Finland"
+        },
+        {
+            "@language": "oci-es",
+            "@value": "Attribution 1.0 Finland"
+        },
+        {
+            "@language": "pl",
+            "@value": "Uznanie autorstwa 1.0 Finlandia"
+        },
+        {
+            "@language": "pt",
+            "@value": "Atribuição  1.0 Finlândia"
+        },
+        {
+            "@language": "pt-br",
+            "@value": "Atribuição 1.0 Finland"
+        },
+        {
+            "@language": "pt-pt",
+            "@value": "Atribuição 1.0 Filândia"
+        },
+        {
+            "@language": "ro",
+            "@value": "Atribuire 1.0 Finlanda"
+        },
+        {
+            "@language": "ru",
+            "@value": "Attribution (Атрибуция) 1.0 Финляндия"
+        },
+        {
+            "@language": "si-lk",
+            "@value": "Attribution 1.0 Finland"
+        },
+        {
+            "@language": "sl",
+            "@value": "Priznanje avtorstva 1.0 Finska"
+        },
+        {
+            "@language": "sq",
+            "@value": "Attribution 1.0 Finlandë"
+        },
+        {
+            "@language": "sr",
+            "@value": "Autorstvo 1.0 Finska"
+        },
+        {
+            "@language": "sr",
+            "@value": "Ауторство 1.0 Финска"
+        },
+        {
+            "@language": "sr-latn",
+            "@value": "Autorstvo 1.0 Finska"
+        },
+        {
+            "@language": "st",
+            "@value": "Attribution 1.0 Finland"
+        },
+        {
+            "@language": "sv",
+            "@value": "Erkännande 1.0 Finland"
+        },
+        {
+            "@language": "ta",
+            "@value": "Attribution 1.0 Finland"
+        },
+        {
+            "@language": "te",
+            "@value": "ఆపాదింపు 1.0 ఫిన్లాండ్"
+        },
+        {
+            "@language": "th",
+            "@value": "แสดงที่มา 1.0 ฟินแลนด์"
+        },
+        {
+            "@language": "tr",
+            "@value": "Attribution 1.0 Finlandiya"
+        },
+        {
+            "@language": "uk",
+            "@value": "Attribution 1.0 Finland"
+        },
+        {
+            "@language": "ur",
+            "@value": "Attribution 1.0 Finland"
+        },
+        {
+            "@language": "vi",
+            "@value": "Ghi nhận công của tác giả 1.0 Finland"
+        },
+        {
+            "@language": "zh",
+            "@value": "署名 1.0 芬兰"
+        },
+        {
+            "@language": "zh-hk",
+            "@value": "姓名標示 1.0 芬蘭"
+        },
+        {
+            "@language": "zh-tw",
+            "@value": "姓名標示 1.0 芬蘭"
+        },
+        {
+            "@language": "zu",
+            "@value": "Qaphela Umnikazi 1.0 iFinland"
+        },
+        {
+            "@language": "zxx",
+            "@value": "${Attribution} 1.0 ${Finland}"
+        }
+    ],
+    "owl:sameAs": {
+        "@id": "http://creativecommons.org/licenses/by/1.0/fi/",
+        "@type": "cc:License",
+        "cc:jurisdiction": "http://creativecommons.org/international/fi/",
+        "cc:legalcode": "http://creativecommons.org/licenses/by/1.0/fi/legalcode",
+        "cc:licenseClass": "http://creativecommons.org/license/",
+        "cc:permits": [
+            "cc:DerivativeWorks",
+            "cc:Distribution",
+            "cc:Reproduction"
+        ],
+        "cc:requires": [
+            "cc:Attribution",
+            "cc:Notice"
+        ],
+        "dc:creator": "http://creativecommons.org",
+        "dc:hasVersion": "1.0",
+        "dc:identifier": "by",
+        "dc:source": "http://creativecommons.org/licenses/by/1.0/",
+        "dc:title": [
+            {
+                "@language": "af",
+                "@value": "Erkenning 1.0 Finland"
+            },
+            {
+                "@language": "ar",
+                "@value": "نسب المصنف  1.0 فلندا"
+            },
+            {
+                "@language": "as",
+                "@value": "Attribution 1.0 Finland"
+            },
+            {
+                "@language": "ast",
+                "@value": "Attribution 1.0 Finland"
+            },
+            {
+                "@language": "ast-es",
+                "@value": "Attribution 1.0 Finland"
+            },
+            {
+                "@language": "az",
+                "@value": "Attribution 1.0 Finland"
+            },
+            {
+                "@language": "be",
+                "@value": "Атрыбуцыя 1.0 Фінляндыя"
+            },
+            {
+                "@language": "bg",
+                "@value": "Признание 1.0 Финландия"
+            },
+            {
+                "@language": "bn",
+                "@value": "Attribution 1.0 Finland"
+            },
+            {
+                "@language": "ca",
+                "@value": "Reconeixement 1.0 Finlàndia"
+            },
+            {
+                "@language": "cs",
+                "@value": "Uveďte autora 1.0 Finsko"
+            },
+            {
+                "@language": "da",
+                "@value": "Navngivelse 1.0 Finland"
+            },
+            {
+                "@language": "de",
+                "@value": "Namensnennung 1.0 Finnland"
+            },
+            {
+                "@language": "de-at",
+                "@value": "Namensnennung 1.0 Finnland"
+            },
+            {
+                "@language": "de-ch",
+                "@value": "Namensnennung 1.0 Finnland"
+            },
+            {
+                "@language": "el",
+                "@value": "Αναφορά Δημιουργού 1.0 Φιλανδία"
+            },
+            {
+                "@language": "en",
+                "@value": "Attribution 1.0 Finland"
+            },
+            {
+                "@language": "en-ca",
+                "@value": "Attribution 1.0 Finland"
+            },
+            {
+                "@language": "en-gb",
+                "@value": "Attribution 1.0 Finland"
+            },
+            {
+                "@language": "en-hk",
+                "@value": "Attribution 1.0 Finland"
+            },
+            {
+                "@language": "en-sg",
+                "@value": "Attribution 1.0 Finland"
+            },
+            {
+                "@language": "en-us",
+                "@value": "Attribution 1.0 Finland"
+            },
+            {
+                "@language": "eo",
+                "@value": "Atribuite 1.0 Suomujo"
+            },
+            {
+                "@language": "es",
+                "@value": "Atribución 1.0 Finlandia"
+            },
+            {
+                "@language": "es-ar",
+                "@value": "Atribución 1.0 Finlandia"
+            },
+            {
+                "@language": "es-cl",
+                "@value": "Atribución 1.0 Finlandia"
+            },
+            {
+                "@language": "es-co",
+                "@value": "Reconocimiento 1.0 Finlandia"
+            },
+            {
+                "@language": "es-ec",
+                "@value": "Reconocimiento 1.0 Finlandia"
+            },
+            {
+                "@language": "es-es",
+                "@value": "Reconocimiento 1.0 Finlandia"
+            },
+            {
+                "@language": "es-gt",
+                "@value": "Reconocimiento 1.0 Finlandia"
+            },
+            {
+                "@language": "es-mx",
+                "@value": "Atribución 1.0 Finlandia"
+            },
+            {
+                "@language": "es-pe",
+                "@value": "Reconocimiento 1.0 Finlandia"
+            },
+            {
+                "@language": "es-pr",
+                "@value": "Reconocimiento 1.0 Finlandia"
+            },
+            {
+                "@language": "et",
+                "@value": "Autorile viitamine 1.0 Soome"
+            },
+            {
+                "@language": "eu",
+                "@value": "Aitortu 1.0 Finlandia"
+            },
+            {
+                "@language": "fa",
+                "@value": "Attribution 1.0 فنلاند"
+            },
+            {
+                "@language": "fi",
+                "@value": "Nimeä 1.0 Suomi"
+            },
+            {
+                "@language": "fr",
+                "@value": "Attribution 1.0 Finlande"
+            },
+            {
+                "@language": "fr-ca",
+                "@value": "Paternité 1.0 Finlande"
+            },
+            {
+                "@language": "fr-ch",
+                "@value": "Paternité 1.0 Finlande"
+            },
+            {
+                "@language": "fr-lu",
+                "@value": "Paternité 1.0 Finlande"
+            },
+            {
+                "@language": "ga",
+                "@value": "Attribution 1.0 Finland"
+            },
+            {
+                "@language": "gl",
+                "@value": "Recoñecemento 1.0 Finlandia"
+            },
+            {
+                "@language": "he",
+                "@value": "ייחוס 1.0 פינלנד"
+            },
+            {
+                "@language": "hi",
+                "@value": "Attribution 1.0 Finland"
+            },
+            {
+                "@language": "hr",
+                "@value": "Imenovanje 1.0 Finska"
+            },
+            {
+                "@language": "hu",
+                "@value": "Nevezd meg! 1.0 Finnország"
+            },
+            {
+                "@language": "hy",
+                "@value": "Հղում 1.0 Finland"
+            },
+            {
+                "@language": "id",
+                "@value": "Atribusi 1.0 Finlandia"
+            },
+            {
+                "@language": "is",
+                "@value": "Attribution 1.0 Finland"
+            },
+            {
+                "@language": "it",
+                "@value": "Attribuzione 1.0 Finlandia"
+            },
+            {
+                "@language": "it-ch",
+                "@value": "Attribuzione 1.0 Finlandia"
+            },
+            {
+                "@language": "ja",
+                "@value": "表示 1.0 フィンランド"
+            },
+            {
+                "@language": "ka",
+                "@value": "ავტორობის მითითებით  1.0 ფინეთი"
+            },
+            {
+                "@language": "kk",
+                "@value": "Атауын сақтау 1.0 Finland"
+            },
+            {
+                "@language": "ko",
+                "@value": "저작자표시(Attribution) 1.0 핀란드"
+            },
+            {
+                "@language": "lt",
+                "@value": "Priskyrimas 1.0 Suomija"
+            },
+            {
+                "@language": "lv",
+                "@value": "Atsaucoties 1.0 Somija"
+            },
+            {
+                "@language": "mk",
+                "@value": "Наведи извор 1.0 Финска"
+            },
+            {
+                "@language": "ml",
+                "@value": "കടപ്പാട് 1.0 ഫിൻലാന്റ്"
+            },
+            {
+                "@language": "mn",
+                "@value": "Attribution 1.0 Finland"
+            },
+            {
+                "@language": "ms",
+                "@value": "Pengiktirafan 1.0 Finland"
+            },
+            {
+                "@language": "nl",
+                "@value": "Naamsvermelding 1.0 Finland"
+            },
+            {
+                "@language": "no",
+                "@value": "Navngivelse 1.0 Finland"
+            },
+            {
+                "@language": "nso",
+                "@value": "Tsebagatšo 1.0 Finland"
+            },
+            {
+                "@language": "oci-es",
+                "@value": "Attribution 1.0 Finland"
+            },
+            {
+                "@language": "pl",
+                "@value": "Uznanie autorstwa 1.0 Finlandia"
+            },
+            {
+                "@language": "pt",
+                "@value": "Atribuição  1.0 Finlândia"
+            },
+            {
+                "@language": "pt-br",
+                "@value": "Atribuição 1.0 Finland"
+            },
+            {
+                "@language": "pt-pt",
+                "@value": "Atribuição 1.0 Filândia"
+            },
+            {
+                "@language": "ro",
+                "@value": "Atribuire 1.0 Finlanda"
+            },
+            {
+                "@language": "ru",
+                "@value": "Attribution (Атрибуция) 1.0 Финляндия"
+            },
+            {
+                "@language": "si-lk",
+                "@value": "Attribution 1.0 Finland"
+            },
+            {
+                "@language": "sl",
+                "@value": "Priznanje avtorstva 1.0 Finska"
+            },
+            {
+                "@language": "sq",
+                "@value": "Attribution 1.0 Finlandë"
+            },
+            {
+                "@language": "sr",
+                "@value": "Autorstvo 1.0 Finska"
+            },
+            {
+                "@language": "sr",
+                "@value": "Ауторство 1.0 Финска"
+            },
+            {
+                "@language": "sr-latn",
+                "@value": "Autorstvo 1.0 Finska"
+            },
+            {
+                "@language": "st",
+                "@value": "Attribution 1.0 Finland"
+            },
+            {
+                "@language": "sv",
+                "@value": "Erkännande 1.0 Finland"
+            },
+            {
+                "@language": "ta",
+                "@value": "Attribution 1.0 Finland"
+            },
+            {
+                "@language": "te",
+                "@value": "ఆపాదింపు 1.0 ఫిన్లాండ్"
+            },
+            {
+                "@language": "th",
+                "@value": "แสดงที่มา 1.0 ฟินแลนด์"
+            },
+            {
+                "@language": "tr",
+                "@value": "Attribution 1.0 Finlandiya"
+            },
+            {
+                "@language": "uk",
+                "@value": "Attribution 1.0 Finland"
+            },
+            {
+                "@language": "ur",
+                "@value": "Attribution 1.0 Finland"
+            },
+            {
+                "@language": "vi",
+                "@value": "Ghi nhận công của tác giả 1.0 Finland"
+            },
+            {
+                "@language": "zh",
+                "@value": "署名 1.0 芬兰"
+            },
+            {
+                "@language": "zh-hk",
+                "@value": "姓名標示 1.0 芬蘭"
+            },
+            {
+                "@language": "zh-tw",
+                "@value": "姓名標示 1.0 芬蘭"
+            },
+            {
+                "@language": "zu",
+                "@value": "Qaphela Umnikazi 1.0 iFinland"
+            },
+            {
+                "@language": "zxx",
+                "@value": "${Attribution} 1.0 ${Finland}"
+            }
+        ],
+        "owl:sameAs": "https://licensedb.org/id/CC-BY-1.0-fi",
+        "foaf:logo": [
+            "http://i.creativecommons.org/l/by/1.0/fi/80x15.png",
+            "http://i.creativecommons.org/l/by/1.0/fi/88x31.png"
+        ]
+    },
+    "foaf:logo": [
+        "http://i.creativecommons.org/l/by/1.0/fi/80x15.png",
+        "http://i.creativecommons.org/l/by/1.0/fi/88x31.png"
+    ],
+    "li:id": "CC-BY-1.0-fi",
+    "li:libre": "http://creativecommons.org/",
+    "li:name": "CC BY 1.0 FI"
+}

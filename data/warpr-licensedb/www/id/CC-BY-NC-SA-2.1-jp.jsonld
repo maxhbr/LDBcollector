@@ -1,0 +1,855 @@
+{
+    "@context": {
+        "cc": "http://creativecommons.org/ns#",
+        "dc": "http://purl.org/dc/terms/",
+        "dc11": "http://purl.org/dc/elements/1.1/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "li": "https://licensedb.org/ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "cc:legalcode": {
+            "@type": "@id"
+        },
+        "cc:permits": {
+            "@type": "@id"
+        },
+        "cc:requires": {
+            "@type": "@id"
+        },
+        "cc:prohibits": {
+            "@type": "@id"
+        },
+        "cc:jurisdiction": {
+            "@type": "@id"
+        },
+        "cc:licenseClass": {
+            "@type": "@id"
+        },
+        "dc:creator": {
+            "@type": "@id"
+        },
+        "dc:source": {
+            "@type": "@id"
+        },
+        "dc:replaces": {
+            "@type": "@id"
+        },
+        "dc:isBasedOn": {
+            "@type": "@id"
+        },
+        "dc:isReplacedBy": {
+            "@type": "@id"
+        },
+        "foaf:logo": {
+            "@type": "@id"
+        },
+        "li:plaintext": {
+            "@type": "@id"
+        },
+        "li:libre": {
+            "@type": "@id"
+        },
+        "owl:sameAs": {
+            "@type": "@id"
+        }
+    },
+    "@id": "https://licensedb.org/id/CC-BY-NC-SA-2.1-jp",
+    "@type": [
+        "cc:License",
+        "li:License"
+    ],
+    "cc:jurisdiction": "http://creativecommons.org/international/jp/",
+    "cc:legalcode": "http://creativecommons.org/licenses/by-nc-sa/2.1/jp/legalcode",
+    "cc:licenseClass": "http://creativecommons.org/license/",
+    "cc:permits": [
+        "cc:DerivativeWorks",
+        "cc:Distribution",
+        "cc:Reproduction"
+    ],
+    "cc:prohibits": "cc:CommercialUse",
+    "cc:requires": [
+        "cc:Attribution",
+        "cc:Notice",
+        "cc:ShareAlike"
+    ],
+    "dc:creator": "http://creativecommons.org",
+    "dc:hasVersion": "2.1",
+    "dc:identifier": "by-nc-sa",
+    "dc:replaces": "https://licensedb.org/id/CC-BY-NC-SA-2.0-jp",
+    "dc:source": "http://creativecommons.org/licenses/by-nc-sa/2.1/",
+    "dc:title": [
+        {
+            "@language": "af",
+            "@value": "Erkenning-Niekommersieel-InsgelyksDeel 2.1 Japan"
+        },
+        {
+            "@language": "ar",
+            "@value": "المشاركة على قدم المساواة-غير تجاري-نسب العمل 2.1 اليابان"
+        },
+        {
+            "@language": "as",
+            "@value": "Attribution-NonCommercial-ShareAlike 2.1 Japan"
+        },
+        {
+            "@language": "ast",
+            "@value": "Attribution-NonCommercial-ShareAlike 2.1 Japan"
+        },
+        {
+            "@language": "ast-es",
+            "@value": "Attribution-NonCommercial-ShareAlike 2.1 Japan"
+        },
+        {
+            "@language": "az",
+            "@value": "Attribution-NonCommercial-ShareAlike 2.1 Japan"
+        },
+        {
+            "@language": "be",
+            "@value": "Attribution-NonCommercial-ShareAlike 2.1 Японія"
+        },
+        {
+            "@language": "bg",
+            "@value": "Признание-Некомерсиално-Споделяне на споделеното 2.1 Япония"
+        },
+        {
+            "@language": "bn",
+            "@value": "Attribution-NonCommercial-ShareAlike 2.1 Japan"
+        },
+        {
+            "@language": "ca",
+            "@value": "Reconeixement-NoComercial-CompartirIgual 2.1 Japó"
+        },
+        {
+            "@language": "cs",
+            "@value": "Uveďte autora-Nevyužívejte dílo komerčně-Zachovejte licenci 2.1 Japonsko"
+        },
+        {
+            "@language": "da",
+            "@value": "Navngivelse-IkkeKommerciel–DelPåSammeVilkår 2.1 Japan"
+        },
+        {
+            "@language": "de",
+            "@value": "Namensnennung-Nicht-kommerziell-Weitergabe unter gleichen Bedingungen 2.1 Japan"
+        },
+        {
+            "@language": "de-at",
+            "@value": "Namensnennung-NichtKommerziell-Weitergabe unter gleichen Bedingungen 2.1 Japan"
+        },
+        {
+            "@language": "de-ch",
+            "@value": "Namensnennung-NichtKommerziell-Weitergabe unter gleichen Bedingungen 2.1 Japan"
+        },
+        {
+            "@language": "el",
+            "@value": "Αναφορά Δημιουργού - Μη Εμπορική Χρήση - Παρόμοια Διανομή 2.1 Ιαπωνία"
+        },
+        {
+            "@language": "en",
+            "@value": "Attribution-NonCommercial-ShareAlike 2.1 Japan"
+        },
+        {
+            "@language": "en-ca",
+            "@value": "Attribution-NonCommercial-ShareAlike 2.1 Japan"
+        },
+        {
+            "@language": "en-gb",
+            "@value": "Attribution-NonCommercial-ShareAlike 2.1 Japan"
+        },
+        {
+            "@language": "en-hk",
+            "@value": "Attribution-NonCommercial-ShareAlike 2.1 Japan"
+        },
+        {
+            "@language": "en-sg",
+            "@value": "Attribution-NonCommercial-ShareAlike 2.1 Japan"
+        },
+        {
+            "@language": "en-us",
+            "@value": "Attribution-NonCommercial-ShareAlike 2.1 Japan"
+        },
+        {
+            "@language": "eo",
+            "@value": "Atribuite-Nekomerce-Samkondiĉe 2.1 Japanujo"
+        },
+        {
+            "@language": "es",
+            "@value": "Atribución-NoComercial-CompartirIgual 2.1 Japón"
+        },
+        {
+            "@language": "es-ar",
+            "@value": "Atribución-NoComercial-CompartirDerivadasIgual 2.1 Japón"
+        },
+        {
+            "@language": "es-cl",
+            "@value": "Atribución-NoComercial-LicenciarIgual 2.1 Japón"
+        },
+        {
+            "@language": "es-co",
+            "@value": "Reconocimiento-NoComercial-CompartirIgual 2.1 Japón"
+        },
+        {
+            "@language": "es-ec",
+            "@value": "Reconocimiento-NoComercial-CompartirIgual 2.1 Japón"
+        },
+        {
+            "@language": "es-es",
+            "@value": "Reconocimiento-NoComercial-CompartirIgual 2.1 Japón"
+        },
+        {
+            "@language": "es-gt",
+            "@value": "Reconocimiento-NoComercial-CompartirIgual 2.1 Japón"
+        },
+        {
+            "@language": "es-mx",
+            "@value": "Atribución-No Comercial-Licenciamiento Recíproco 2.1 Japón"
+        },
+        {
+            "@language": "es-pe",
+            "@value": "Reconocimiento-NoComercial-CompartirIgual 2.1 Japón"
+        },
+        {
+            "@language": "es-pr",
+            "@value": "Reconocimiento-NoComercial-CompartirIgual 2.1 Japón"
+        },
+        {
+            "@language": "et",
+            "@value": "Autorile viitamine + Mitteäriline eesmärk + Jagamine samadel tingimustel 2.1 Jaapan"
+        },
+        {
+            "@language": "eu",
+            "@value": "Aitortu-EzKomertziala-PartekatuBerdin 2.1 Japonia"
+        },
+        {
+            "@language": "fa",
+            "@value": "Attribution-NonCommercial-ShareAlike 2.1 ژاپن"
+        },
+        {
+            "@language": "fi",
+            "@value": "Nimeä-Epäkaupallinen-Tarttuva 2.1 Japani"
+        },
+        {
+            "@language": "fr",
+            "@value": "Attribution - Pas d'Utilisation Commerciale - Partage à l'Identique 2.1 Japon"
+        },
+        {
+            "@language": "fr-ca",
+            "@value": "Paternité - Pas d'Utilisation Commerciale - Partage des Conditions Initiales à l'Identique 2.1 Japon"
+        },
+        {
+            "@language": "fr-ch",
+            "@value": "Paternité - Pas d'Utilisation Commerciale - Partage des Conditions Initiales à l'Identique 2.1 Japon"
+        },
+        {
+            "@language": "fr-lu",
+            "@value": "Paternité - Pas d'Utilisation Commerciale - Partage des Conditions Initiales à l'Identique 2.1 Japon"
+        },
+        {
+            "@language": "ga",
+            "@value": "Attribution-NonCommercial-ShareAlike 2.1 Japan"
+        },
+        {
+            "@language": "gl",
+            "@value": "Recoñecemento-NonComercial-CompartirIgual 2.1 Xapón"
+        },
+        {
+            "@language": "he",
+            "@value": "ייחוס-שימוש לא מסחרי-שיתוף זהה 2.1 יפן"
+        },
+        {
+            "@language": "hi",
+            "@value": "Attribution-NonCommercial-ShareAlike 2.1 Japan"
+        },
+        {
+            "@language": "hr",
+            "@value": "Imenovanje-Nekomercijalno-Dijeli pod istim uvjetima 2.1 Japan"
+        },
+        {
+            "@language": "hu",
+            "@value": "Nevezd meg! - Ne add el! - Így add tovább! 2.1 Japán"
+        },
+        {
+            "@language": "hy",
+            "@value": "Հղում - ոչ-առևտրային օգտագործում - համանման տարածում 2.1 Japan"
+        },
+        {
+            "@language": "id",
+            "@value": "Atribusi-NonKomersial-BerbagiSerupa 2.1 Jepang"
+        },
+        {
+            "@language": "is",
+            "@value": "Attribution-NonCommercial-ShareAlike 2.1 Japan"
+        },
+        {
+            "@language": "it",
+            "@value": "Attribuzione - Non commerciale - Condividi allo stesso modo 2.1 Giappone"
+        },
+        {
+            "@language": "it-ch",
+            "@value": "Attribuzione - Non commerciale - Condividi allo stesso modo 2.1 Giappone"
+        },
+        {
+            "@language": "ja",
+            "@value": "表示 - 非営利 - 継承 2.1 日本"
+        },
+        {
+            "@language": "ka",
+            "@value": "ავტორობის მითითებით–არაკომერციული გამოყენებისთვის–გამოყენება იგივე პირობებით 2.1 იაპონია"
+        },
+        {
+            "@language": "kk",
+            "@value": "Attribution-NonCommercial-ShareAlike 2.1 Japan"
+        },
+        {
+            "@language": "ko",
+            "@value": "저작자표시-비영리-동일조건변경허락 2.1 일본"
+        },
+        {
+            "@language": "lt",
+            "@value": "Attribution-NonCommercial-ShareAlike 2.1 Japonija"
+        },
+        {
+            "@language": "lv",
+            "@value": "Atsaucoties-Nekomerciāls-Nemainot licenci 2.1 Japāna"
+        },
+        {
+            "@language": "mk",
+            "@value": "НаведиИзвор-Некомерцијално-СподелиПодИстиУслови 2.1 Јапонија"
+        },
+        {
+            "@language": "ml",
+            "@value": "Attribution-NonCommercial-ShareAlike 2.1 ജപ്പാൻ"
+        },
+        {
+            "@language": "mn",
+            "@value": "Attribution-NonCommercial-ShareAlike 2.1 Japan"
+        },
+        {
+            "@language": "ms",
+            "@value": "Pengiktirafan-BukanKomersial-PerkongsianSerupa 2.1 Jepun"
+        },
+        {
+            "@language": "nl",
+            "@value": "Naamsvermelding-NietCommercieel-GelijkDelen 2.1 Japan"
+        },
+        {
+            "@language": "no",
+            "@value": "Navngivelse-Ikkekommersiell-DelPåSammeVilkår 2.1 Japan"
+        },
+        {
+            "@language": "nso",
+            "@value": "Tsebagatšo - E sego ya Kgwebo - Mohlakanelwa 2.1 Japane"
+        },
+        {
+            "@language": "oci-es",
+            "@value": "Attribution-NonCommercial-ShareAlike 2.1 Japan"
+        },
+        {
+            "@language": "pl",
+            "@value": "Uznanie autorstwa-Użycie niekomercyjne-Na tych samych warunkach 2.1 Japonia"
+        },
+        {
+            "@language": "pt",
+            "@value": "Atribuição - NãoComercial - CompartilhaIgual 2.1 Japão"
+        },
+        {
+            "@language": "pt-br",
+            "@value": "Atribuição-Uso não-comercial-Compartilhamento pela mesma licença 2.1 Japan"
+        },
+        {
+            "@language": "pt-pt",
+            "@value": "Atribuição-Uso Não-Comercial-Partilha nos termos da mesma licença 2.1 Japão"
+        },
+        {
+            "@language": "ro",
+            "@value": "Atribuire-Necomercial-FărăModificări 2.1 Japonia"
+        },
+        {
+            "@language": "ru",
+            "@value": "Attribution-NonCommercial-ShareAlike (Атрибуция — Некоммерческое использование — С сохранением условий) 2.1 Япония"
+        },
+        {
+            "@language": "si-lk",
+            "@value": "Attribution-NonCommercial-ShareAlike 2.1 Japan"
+        },
+        {
+            "@language": "sl",
+            "@value": "Priznanje avtorstva-Nekomercialno-Deljenje pod enakimi pogoji 2.1 Japonska"
+        },
+        {
+            "@language": "sq",
+            "@value": "Attribution-NonCommercial-ShareAlike 2.1 Japoni"
+        },
+        {
+            "@language": "sr",
+            "@value": "Autorstvo-Nekomercijalno-Deliti pod istim uslovima 2.1 Japan"
+        },
+        {
+            "@language": "sr",
+            "@value": "Ауторство-Некомерцијално-Делити под истим условима 2.1 Јапан"
+        },
+        {
+            "@language": "sr-latn",
+            "@value": "Autorstvo-Nekomercijalno-Deliti pod istim uslovima 2.1 Japan"
+        },
+        {
+            "@language": "st",
+            "@value": "Attribution-NonCommercial-ShareAlike 2.1 Japan"
+        },
+        {
+            "@language": "sv",
+            "@value": "Erkännande-IckeKommersiell-DelaLika 2.1 Japan"
+        },
+        {
+            "@language": "ta",
+            "@value": "Attribution-NonCommercial-ShareAlike 2.1 Japan"
+        },
+        {
+            "@language": "te",
+            "@value": "Attribution-NonCommercial-ShareAlike 2.1 జపాన్"
+        },
+        {
+            "@language": "th",
+            "@value": "แสดงที่มา-ไม่ใช้เพื่อการค้า-อนุญาตแบบเดียวกัน 2.1 ่ญี่ปุ่น"
+        },
+        {
+            "@language": "tr",
+            "@value": "Attribution-Gayriticari-ShareAlike 2.1 Japonya"
+        },
+        {
+            "@language": "uk",
+            "@value": "Attribution-NonCommercial-ShareAlike 2.1 Japan"
+        },
+        {
+            "@language": "ur",
+            "@value": "Attribution-NonCommercial-ShareAlike 2.1 Japan"
+        },
+        {
+            "@language": "vi",
+            "@value": "Attribution-NonCommercial-ShareAlike 2.1 Nước Nhật Bản"
+        },
+        {
+            "@language": "zh",
+            "@value": "署名-非商业性使用-相同方式共享 2.1 日本"
+        },
+        {
+            "@language": "zh-hk",
+            "@value": "姓名標示-非商業性-相同方式分享 2.1 日本"
+        },
+        {
+            "@language": "zh-tw",
+            "@value": "姓名標示-非商業性-相同方式分享 2.1 日本"
+        },
+        {
+            "@language": "zu",
+            "@value": "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano-Yihlanganyeleni 2.1 Ejapane"
+        },
+        {
+            "@language": "zxx",
+            "@value": "${Attribution-NonCommercial-ShareAlike} 2.1 ${Japan}"
+        }
+    ],
+    "owl:sameAs": {
+        "@id": "http://creativecommons.org/licenses/by-nc-sa/2.1/jp/",
+        "@type": "cc:License",
+        "cc:jurisdiction": "http://creativecommons.org/international/jp/",
+        "cc:legalcode": "http://creativecommons.org/licenses/by-nc-sa/2.1/jp/legalcode",
+        "cc:licenseClass": "http://creativecommons.org/license/",
+        "cc:permits": [
+            "cc:DerivativeWorks",
+            "cc:Distribution",
+            "cc:Reproduction"
+        ],
+        "cc:prohibits": "cc:CommercialUse",
+        "cc:requires": [
+            "cc:Attribution",
+            "cc:Notice",
+            "cc:ShareAlike"
+        ],
+        "dc:creator": "http://creativecommons.org",
+        "dc:hasVersion": "2.1",
+        "dc:identifier": "by-nc-sa",
+        "dc:source": "http://creativecommons.org/licenses/by-nc-sa/2.1/",
+        "dc:title": [
+            {
+                "@language": "af",
+                "@value": "Erkenning-Niekommersieel-InsgelyksDeel 2.1 Japan"
+            },
+            {
+                "@language": "ar",
+                "@value": "المشاركة على قدم المساواة-غير تجاري-نسب العمل 2.1 اليابان"
+            },
+            {
+                "@language": "as",
+                "@value": "Attribution-NonCommercial-ShareAlike 2.1 Japan"
+            },
+            {
+                "@language": "ast",
+                "@value": "Attribution-NonCommercial-ShareAlike 2.1 Japan"
+            },
+            {
+                "@language": "ast-es",
+                "@value": "Attribution-NonCommercial-ShareAlike 2.1 Japan"
+            },
+            {
+                "@language": "az",
+                "@value": "Attribution-NonCommercial-ShareAlike 2.1 Japan"
+            },
+            {
+                "@language": "be",
+                "@value": "Attribution-NonCommercial-ShareAlike 2.1 Японія"
+            },
+            {
+                "@language": "bg",
+                "@value": "Признание-Некомерсиално-Споделяне на споделеното 2.1 Япония"
+            },
+            {
+                "@language": "bn",
+                "@value": "Attribution-NonCommercial-ShareAlike 2.1 Japan"
+            },
+            {
+                "@language": "ca",
+                "@value": "Reconeixement-NoComercial-CompartirIgual 2.1 Japó"
+            },
+            {
+                "@language": "cs",
+                "@value": "Uveďte autora-Nevyužívejte dílo komerčně-Zachovejte licenci 2.1 Japonsko"
+            },
+            {
+                "@language": "da",
+                "@value": "Navngivelse-IkkeKommerciel–DelPåSammeVilkår 2.1 Japan"
+            },
+            {
+                "@language": "de",
+                "@value": "Namensnennung-Nicht-kommerziell-Weitergabe unter gleichen Bedingungen 2.1 Japan"
+            },
+            {
+                "@language": "de-at",
+                "@value": "Namensnennung-NichtKommerziell-Weitergabe unter gleichen Bedingungen 2.1 Japan"
+            },
+            {
+                "@language": "de-ch",
+                "@value": "Namensnennung-NichtKommerziell-Weitergabe unter gleichen Bedingungen 2.1 Japan"
+            },
+            {
+                "@language": "el",
+                "@value": "Αναφορά Δημιουργού - Μη Εμπορική Χρήση - Παρόμοια Διανομή 2.1 Ιαπωνία"
+            },
+            {
+                "@language": "en",
+                "@value": "Attribution-NonCommercial-ShareAlike 2.1 Japan"
+            },
+            {
+                "@language": "en-ca",
+                "@value": "Attribution-NonCommercial-ShareAlike 2.1 Japan"
+            },
+            {
+                "@language": "en-gb",
+                "@value": "Attribution-NonCommercial-ShareAlike 2.1 Japan"
+            },
+            {
+                "@language": "en-hk",
+                "@value": "Attribution-NonCommercial-ShareAlike 2.1 Japan"
+            },
+            {
+                "@language": "en-sg",
+                "@value": "Attribution-NonCommercial-ShareAlike 2.1 Japan"
+            },
+            {
+                "@language": "en-us",
+                "@value": "Attribution-NonCommercial-ShareAlike 2.1 Japan"
+            },
+            {
+                "@language": "eo",
+                "@value": "Atribuite-Nekomerce-Samkondiĉe 2.1 Japanujo"
+            },
+            {
+                "@language": "es",
+                "@value": "Atribución-NoComercial-CompartirIgual 2.1 Japón"
+            },
+            {
+                "@language": "es-ar",
+                "@value": "Atribución-NoComercial-CompartirDerivadasIgual 2.1 Japón"
+            },
+            {
+                "@language": "es-cl",
+                "@value": "Atribución-NoComercial-LicenciarIgual 2.1 Japón"
+            },
+            {
+                "@language": "es-co",
+                "@value": "Reconocimiento-NoComercial-CompartirIgual 2.1 Japón"
+            },
+            {
+                "@language": "es-ec",
+                "@value": "Reconocimiento-NoComercial-CompartirIgual 2.1 Japón"
+            },
+            {
+                "@language": "es-es",
+                "@value": "Reconocimiento-NoComercial-CompartirIgual 2.1 Japón"
+            },
+            {
+                "@language": "es-gt",
+                "@value": "Reconocimiento-NoComercial-CompartirIgual 2.1 Japón"
+            },
+            {
+                "@language": "es-mx",
+                "@value": "Atribución-No Comercial-Licenciamiento Recíproco 2.1 Japón"
+            },
+            {
+                "@language": "es-pe",
+                "@value": "Reconocimiento-NoComercial-CompartirIgual 2.1 Japón"
+            },
+            {
+                "@language": "es-pr",
+                "@value": "Reconocimiento-NoComercial-CompartirIgual 2.1 Japón"
+            },
+            {
+                "@language": "et",
+                "@value": "Autorile viitamine + Mitteäriline eesmärk + Jagamine samadel tingimustel 2.1 Jaapan"
+            },
+            {
+                "@language": "eu",
+                "@value": "Aitortu-EzKomertziala-PartekatuBerdin 2.1 Japonia"
+            },
+            {
+                "@language": "fa",
+                "@value": "Attribution-NonCommercial-ShareAlike 2.1 ژاپن"
+            },
+            {
+                "@language": "fi",
+                "@value": "Nimeä-Epäkaupallinen-Tarttuva 2.1 Japani"
+            },
+            {
+                "@language": "fr",
+                "@value": "Attribution - Pas d'Utilisation Commerciale - Partage à l'Identique 2.1 Japon"
+            },
+            {
+                "@language": "fr-ca",
+                "@value": "Paternité - Pas d'Utilisation Commerciale - Partage des Conditions Initiales à l'Identique 2.1 Japon"
+            },
+            {
+                "@language": "fr-ch",
+                "@value": "Paternité - Pas d'Utilisation Commerciale - Partage des Conditions Initiales à l'Identique 2.1 Japon"
+            },
+            {
+                "@language": "fr-lu",
+                "@value": "Paternité - Pas d'Utilisation Commerciale - Partage des Conditions Initiales à l'Identique 2.1 Japon"
+            },
+            {
+                "@language": "ga",
+                "@value": "Attribution-NonCommercial-ShareAlike 2.1 Japan"
+            },
+            {
+                "@language": "gl",
+                "@value": "Recoñecemento-NonComercial-CompartirIgual 2.1 Xapón"
+            },
+            {
+                "@language": "he",
+                "@value": "ייחוס-שימוש לא מסחרי-שיתוף זהה 2.1 יפן"
+            },
+            {
+                "@language": "hi",
+                "@value": "Attribution-NonCommercial-ShareAlike 2.1 Japan"
+            },
+            {
+                "@language": "hr",
+                "@value": "Imenovanje-Nekomercijalno-Dijeli pod istim uvjetima 2.1 Japan"
+            },
+            {
+                "@language": "hu",
+                "@value": "Nevezd meg! - Ne add el! - Így add tovább! 2.1 Japán"
+            },
+            {
+                "@language": "hy",
+                "@value": "Հղում - ոչ-առևտրային օգտագործում - համանման տարածում 2.1 Japan"
+            },
+            {
+                "@language": "id",
+                "@value": "Atribusi-NonKomersial-BerbagiSerupa 2.1 Jepang"
+            },
+            {
+                "@language": "is",
+                "@value": "Attribution-NonCommercial-ShareAlike 2.1 Japan"
+            },
+            {
+                "@language": "it",
+                "@value": "Attribuzione - Non commerciale - Condividi allo stesso modo 2.1 Giappone"
+            },
+            {
+                "@language": "it-ch",
+                "@value": "Attribuzione - Non commerciale - Condividi allo stesso modo 2.1 Giappone"
+            },
+            {
+                "@language": "ja",
+                "@value": "表示 - 非営利 - 継承 2.1 日本"
+            },
+            {
+                "@language": "ka",
+                "@value": "ავტორობის მითითებით–არაკომერციული გამოყენებისთვის–გამოყენება იგივე პირობებით 2.1 იაპონია"
+            },
+            {
+                "@language": "kk",
+                "@value": "Attribution-NonCommercial-ShareAlike 2.1 Japan"
+            },
+            {
+                "@language": "ko",
+                "@value": "저작자표시-비영리-동일조건변경허락 2.1 일본"
+            },
+            {
+                "@language": "lt",
+                "@value": "Attribution-NonCommercial-ShareAlike 2.1 Japonija"
+            },
+            {
+                "@language": "lv",
+                "@value": "Atsaucoties-Nekomerciāls-Nemainot licenci 2.1 Japāna"
+            },
+            {
+                "@language": "mk",
+                "@value": "НаведиИзвор-Некомерцијално-СподелиПодИстиУслови 2.1 Јапонија"
+            },
+            {
+                "@language": "ml",
+                "@value": "Attribution-NonCommercial-ShareAlike 2.1 ജപ്പാൻ"
+            },
+            {
+                "@language": "mn",
+                "@value": "Attribution-NonCommercial-ShareAlike 2.1 Japan"
+            },
+            {
+                "@language": "ms",
+                "@value": "Pengiktirafan-BukanKomersial-PerkongsianSerupa 2.1 Jepun"
+            },
+            {
+                "@language": "nl",
+                "@value": "Naamsvermelding-NietCommercieel-GelijkDelen 2.1 Japan"
+            },
+            {
+                "@language": "no",
+                "@value": "Navngivelse-Ikkekommersiell-DelPåSammeVilkår 2.1 Japan"
+            },
+            {
+                "@language": "nso",
+                "@value": "Tsebagatšo - E sego ya Kgwebo - Mohlakanelwa 2.1 Japane"
+            },
+            {
+                "@language": "oci-es",
+                "@value": "Attribution-NonCommercial-ShareAlike 2.1 Japan"
+            },
+            {
+                "@language": "pl",
+                "@value": "Uznanie autorstwa-Użycie niekomercyjne-Na tych samych warunkach 2.1 Japonia"
+            },
+            {
+                "@language": "pt",
+                "@value": "Atribuição - NãoComercial - CompartilhaIgual 2.1 Japão"
+            },
+            {
+                "@language": "pt-br",
+                "@value": "Atribuição-Uso não-comercial-Compartilhamento pela mesma licença 2.1 Japan"
+            },
+            {
+                "@language": "pt-pt",
+                "@value": "Atribuição-Uso Não-Comercial-Partilha nos termos da mesma licença 2.1 Japão"
+            },
+            {
+                "@language": "ro",
+                "@value": "Atribuire-Necomercial-FărăModificări 2.1 Japonia"
+            },
+            {
+                "@language": "ru",
+                "@value": "Attribution-NonCommercial-ShareAlike (Атрибуция — Некоммерческое использование — С сохранением условий) 2.1 Япония"
+            },
+            {
+                "@language": "si-lk",
+                "@value": "Attribution-NonCommercial-ShareAlike 2.1 Japan"
+            },
+            {
+                "@language": "sl",
+                "@value": "Priznanje avtorstva-Nekomercialno-Deljenje pod enakimi pogoji 2.1 Japonska"
+            },
+            {
+                "@language": "sq",
+                "@value": "Attribution-NonCommercial-ShareAlike 2.1 Japoni"
+            },
+            {
+                "@language": "sr",
+                "@value": "Autorstvo-Nekomercijalno-Deliti pod istim uslovima 2.1 Japan"
+            },
+            {
+                "@language": "sr",
+                "@value": "Ауторство-Некомерцијално-Делити под истим условима 2.1 Јапан"
+            },
+            {
+                "@language": "sr-latn",
+                "@value": "Autorstvo-Nekomercijalno-Deliti pod istim uslovima 2.1 Japan"
+            },
+            {
+                "@language": "st",
+                "@value": "Attribution-NonCommercial-ShareAlike 2.1 Japan"
+            },
+            {
+                "@language": "sv",
+                "@value": "Erkännande-IckeKommersiell-DelaLika 2.1 Japan"
+            },
+            {
+                "@language": "ta",
+                "@value": "Attribution-NonCommercial-ShareAlike 2.1 Japan"
+            },
+            {
+                "@language": "te",
+                "@value": "Attribution-NonCommercial-ShareAlike 2.1 జపాన్"
+            },
+            {
+                "@language": "th",
+                "@value": "แสดงที่มา-ไม่ใช้เพื่อการค้า-อนุญาตแบบเดียวกัน 2.1 ่ญี่ปุ่น"
+            },
+            {
+                "@language": "tr",
+                "@value": "Attribution-Gayriticari-ShareAlike 2.1 Japonya"
+            },
+            {
+                "@language": "uk",
+                "@value": "Attribution-NonCommercial-ShareAlike 2.1 Japan"
+            },
+            {
+                "@language": "ur",
+                "@value": "Attribution-NonCommercial-ShareAlike 2.1 Japan"
+            },
+            {
+                "@language": "vi",
+                "@value": "Attribution-NonCommercial-ShareAlike 2.1 Nước Nhật Bản"
+            },
+            {
+                "@language": "zh",
+                "@value": "署名-非商业性使用-相同方式共享 2.1 日本"
+            },
+            {
+                "@language": "zh-hk",
+                "@value": "姓名標示-非商業性-相同方式分享 2.1 日本"
+            },
+            {
+                "@language": "zh-tw",
+                "@value": "姓名標示-非商業性-相同方式分享 2.1 日本"
+            },
+            {
+                "@language": "zu",
+                "@value": "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano-Yihlanganyeleni 2.1 Ejapane"
+            },
+            {
+                "@language": "zxx",
+                "@value": "${Attribution-NonCommercial-ShareAlike} 2.1 ${Japan}"
+            }
+        ],
+        "owl:sameAs": "https://licensedb.org/id/CC-BY-NC-SA-2.1-jp",
+        "foaf:logo": [
+            "http://i.creativecommons.org/l/by-nc-sa/2.1/jp/80x15.png",
+            "http://i.creativecommons.org/l/by-nc-sa/2.1/jp/88x31.png"
+        ]
+    },
+    "foaf:logo": [
+        "http://i.creativecommons.org/l/by-nc-sa/2.1/jp/80x15.png",
+        "http://i.creativecommons.org/l/by-nc-sa/2.1/jp/88x31.png"
+    ],
+    "li:id": "CC-BY-NC-SA-2.1-jp",
+    "li:name": "CC BY-NC-SA 2.1 JP"
+}

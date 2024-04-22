@@ -1,0 +1,238 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/elements/1.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://creativecommons.org/licenses/by/1.0/il/> a cc:License ;
+    cc:jurisdiction <http://creativecommons.org/international/il/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by/1.0/il/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "1.0" ;
+    dc:identifier "by" ;
+    dc:isReplacedBy <http://creativecommons.org/licenses/by/2.5/il/> ;
+    dc:source <http://creativecommons.org/licenses/by/1.0/> ;
+    dc:title "Erkenning 1.0 Israel"@af,
+        "نسب المصنف  1.0 اسرائيل"@ar,
+        "Attribution 1.0 Israel"@as,
+        "Attribution 1.0 Israel"@ast,
+        "Attribution 1.0 Israel"@ast-es,
+        "Attribution 1.0 Israel"@az,
+        "Атрыбуцыя 1.0 Ізраіль"@be,
+        "Признание 1.0 Израел"@bg,
+        "Attribution 1.0 Israel"@bn,
+        "Reconeixement 1.0 Israel"@ca,
+        "Uveďte autora 1.0 Izrael"@cs,
+        "Navngivelse 1.0 Israel"@da,
+        "Namensnennung 1.0 Israel"@de,
+        "Namensnennung 1.0 Israel"@de-at,
+        "Namensnennung 1.0 Israel"@de-ch,
+        "Αναφορά Δημιουργού 1.0 Ισραήλ"@el,
+        "Attribution 1.0 Israel"@en,
+        "Attribution 1.0 Israel"@en-ca,
+        "Attribution 1.0 Israel"@en-gb,
+        "Attribution 1.0 Israel"@en-hk,
+        "Attribution 1.0 Israel"@en-sg,
+        "Attribution 1.0 Israel"@en-us,
+        "Atribuite 1.0 Israelo"@eo,
+        "Atribución 1.0 Israel"@es,
+        "Atribución 1.0 Israel"@es-ar,
+        "Atribución 1.0 Israel"@es-cl,
+        "Reconocimiento 1.0 Israel"@es-co,
+        "Reconocimiento 1.0 Israel"@es-ec,
+        "Reconocimiento 1.0 Israel"@es-es,
+        "Reconocimiento 1.0 Israel"@es-gt,
+        "Atribución 1.0 Israel"@es-mx,
+        "Reconocimiento 1.0 Israel"@es-pe,
+        "Reconocimiento 1.0 Israel"@es-pr,
+        "Autorile viitamine 1.0 Iisrael"@et,
+        "Aitortu 1.0 Israel"@eu,
+        "Attribution 1.0 اسرائيل"@fa,
+        "Nimeä 1.0 Israel"@fi,
+        "Attribution 1.0 Israël"@fr,
+        "Paternité 1.0 Israël"@fr-ca,
+        "Paternité 1.0 Israël"@fr-ch,
+        "Paternité 1.0 Israël"@fr-lu,
+        "Attribution 1.0 Israel"@ga,
+        "Recoñecemento 1.0 Israel"@gl,
+        "ייחוס 1.0 ישראל"@he,
+        "Attribution 1.0 इसरैल"@hi,
+        "Imenovanje 1.0 Izrael"@hr,
+        "Nevezd meg! 1.0 Izrael"@hu,
+        "Հղում 1.0 Իսրայել"@hy,
+        "Atribusi 1.0 Israel"@id,
+        "Attribution 1.0 Ísrael"@is,
+        "Attribuzione 1.0 Israele"@it,
+        "Attribuzione 1.0 Israel"@it-ch,
+        "表示 1.0 イスラエル"@ja,
+        "ავტორობის მითითებით  1.0 ისრაელი"@ka,
+        "Атауын сақтау 1.0 Israel"@kk,
+        "저작자표시(Attribution) 1.0 이스라엘"@ko,
+        "Priskyrimas 1.0 Izraelis"@lt,
+        "Atsaucoties 1.0 Izraēla"@lv,
+        "Наведи извор 1.0 Израел"@mk,
+        "കടപ്പാട് 1.0 ഇസ്രായൽ"@ml,
+        "Attribution 1.0 Израйль"@mn,
+        "Pengiktirafan 1.0 Isreal"@ms,
+        "Naamsvermelding 1.0 Israël"@nl,
+        "Navngivelse 1.0 Israel"@no,
+        "Tsebagatšo 1.0 Isiraele"@nso,
+        "Attribution 1.0 Israel"@oci-es,
+        "Uznanie autorstwa 1.0 Izrael"@pl,
+        "Atribuição  1.0 Israel"@pt,
+        "Atribuição 1.0 Israel"@pt-br,
+        "Atribuição 1.0 Israel"@pt-pt,
+        "Atribuire 1.0 Israel"@ro,
+        "Attribution (Атрибуция) 1.0 Израиль"@ru,
+        "Attribution 1.0 Israel"@si-lk,
+        "Priznanje avtorstva 1.0 Izrael"@sl,
+        "Attribution 1.0 Izrael"@sq,
+        "Autorstvo 1.0 Izrael"@sr,
+        "Ауторство 1.0 Израел"@sr,
+        "Autorstvo 1.0 Izrael"@sr-latn,
+        "Attribution 1.0 Israel"@st,
+        "Erkännande 1.0 Israel"@sv,
+        "Attribution 1.0 Israel"@ta,
+        "ఆపాదింపు 1.0 ఇజ్రాయిల్"@te,
+        "แสดงที่มา 1.0 อิสราเอล"@th,
+        "Attribution 1.0 İsrail"@tr,
+        "Attribution 1.0 Israel"@uk,
+        "Attribution 1.0 Israel"@ur,
+        "Ghi nhận công của tác giả 1.0 Nước Israel"@vi,
+        "署名 1.0 以色列"@zh,
+        "姓名標示 1.0 以色列"@zh-hk,
+        "姓名標示 1.0 以色列"@zh-tw,
+        "Qaphela Umnikazi 1.0 E-Israel"@zu,
+        "${Attribution} 1.0 ${Israel}"@zxx ;
+    owl:sameAs <https://licensedb.org/id/CC-BY-1.0-il> ;
+    foaf:logo <http://i.creativecommons.org/l/by/1.0/il/80x15.png>,
+        <http://i.creativecommons.org/l/by/1.0/il/88x31.png> .
+
+<https://licensedb.org/id/CC-BY-1.0-il> a cc:License,
+        li:License ;
+    cc:jurisdiction <http://creativecommons.org/international/il/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by/1.0/il/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "1.0" ;
+    dc:identifier "by" ;
+    dc:isReplacedBy <https://licensedb.org/id/CC-BY-2.5-il> ;
+    dc:source <http://creativecommons.org/licenses/by/1.0/> ;
+    dc:title "Erkenning 1.0 Israel"@af,
+        "نسب المصنف  1.0 اسرائيل"@ar,
+        "Attribution 1.0 Israel"@as,
+        "Attribution 1.0 Israel"@ast,
+        "Attribution 1.0 Israel"@ast-es,
+        "Attribution 1.0 Israel"@az,
+        "Атрыбуцыя 1.0 Ізраіль"@be,
+        "Признание 1.0 Израел"@bg,
+        "Attribution 1.0 Israel"@bn,
+        "Reconeixement 1.0 Israel"@ca,
+        "Uveďte autora 1.0 Izrael"@cs,
+        "Navngivelse 1.0 Israel"@da,
+        "Namensnennung 1.0 Israel"@de,
+        "Namensnennung 1.0 Israel"@de-at,
+        "Namensnennung 1.0 Israel"@de-ch,
+        "Αναφορά Δημιουργού 1.0 Ισραήλ"@el,
+        "Attribution 1.0 Israel"@en,
+        "Attribution 1.0 Israel"@en-ca,
+        "Attribution 1.0 Israel"@en-gb,
+        "Attribution 1.0 Israel"@en-hk,
+        "Attribution 1.0 Israel"@en-sg,
+        "Attribution 1.0 Israel"@en-us,
+        "Atribuite 1.0 Israelo"@eo,
+        "Atribución 1.0 Israel"@es,
+        "Atribución 1.0 Israel"@es-ar,
+        "Atribución 1.0 Israel"@es-cl,
+        "Reconocimiento 1.0 Israel"@es-co,
+        "Reconocimiento 1.0 Israel"@es-ec,
+        "Reconocimiento 1.0 Israel"@es-es,
+        "Reconocimiento 1.0 Israel"@es-gt,
+        "Atribución 1.0 Israel"@es-mx,
+        "Reconocimiento 1.0 Israel"@es-pe,
+        "Reconocimiento 1.0 Israel"@es-pr,
+        "Autorile viitamine 1.0 Iisrael"@et,
+        "Aitortu 1.0 Israel"@eu,
+        "Attribution 1.0 اسرائيل"@fa,
+        "Nimeä 1.0 Israel"@fi,
+        "Attribution 1.0 Israël"@fr,
+        "Paternité 1.0 Israël"@fr-ca,
+        "Paternité 1.0 Israël"@fr-ch,
+        "Paternité 1.0 Israël"@fr-lu,
+        "Attribution 1.0 Israel"@ga,
+        "Recoñecemento 1.0 Israel"@gl,
+        "ייחוס 1.0 ישראל"@he,
+        "Attribution 1.0 इसरैल"@hi,
+        "Imenovanje 1.0 Izrael"@hr,
+        "Nevezd meg! 1.0 Izrael"@hu,
+        "Հղում 1.0 Իսրայել"@hy,
+        "Atribusi 1.0 Israel"@id,
+        "Attribution 1.0 Ísrael"@is,
+        "Attribuzione 1.0 Israele"@it,
+        "Attribuzione 1.0 Israel"@it-ch,
+        "表示 1.0 イスラエル"@ja,
+        "ავტორობის მითითებით  1.0 ისრაელი"@ka,
+        "Атауын сақтау 1.0 Israel"@kk,
+        "저작자표시(Attribution) 1.0 이스라엘"@ko,
+        "Priskyrimas 1.0 Izraelis"@lt,
+        "Atsaucoties 1.0 Izraēla"@lv,
+        "Наведи извор 1.0 Израел"@mk,
+        "കടപ്പാട് 1.0 ഇസ്രായൽ"@ml,
+        "Attribution 1.0 Израйль"@mn,
+        "Pengiktirafan 1.0 Isreal"@ms,
+        "Naamsvermelding 1.0 Israël"@nl,
+        "Navngivelse 1.0 Israel"@no,
+        "Tsebagatšo 1.0 Isiraele"@nso,
+        "Attribution 1.0 Israel"@oci-es,
+        "Uznanie autorstwa 1.0 Izrael"@pl,
+        "Atribuição  1.0 Israel"@pt,
+        "Atribuição 1.0 Israel"@pt-br,
+        "Atribuição 1.0 Israel"@pt-pt,
+        "Atribuire 1.0 Israel"@ro,
+        "Attribution (Атрибуция) 1.0 Израиль"@ru,
+        "Attribution 1.0 Israel"@si-lk,
+        "Priznanje avtorstva 1.0 Izrael"@sl,
+        "Attribution 1.0 Izrael"@sq,
+        "Autorstvo 1.0 Izrael"@sr,
+        "Ауторство 1.0 Израел"@sr,
+        "Autorstvo 1.0 Izrael"@sr-latn,
+        "Attribution 1.0 Israel"@st,
+        "Erkännande 1.0 Israel"@sv,
+        "Attribution 1.0 Israel"@ta,
+        "ఆపాదింపు 1.0 ఇజ్రాయిల్"@te,
+        "แสดงที่มา 1.0 อิสราเอล"@th,
+        "Attribution 1.0 İsrail"@tr,
+        "Attribution 1.0 Israel"@uk,
+        "Attribution 1.0 Israel"@ur,
+        "Ghi nhận công của tác giả 1.0 Nước Israel"@vi,
+        "署名 1.0 以色列"@zh,
+        "姓名標示 1.0 以色列"@zh-hk,
+        "姓名標示 1.0 以色列"@zh-tw,
+        "Qaphela Umnikazi 1.0 E-Israel"@zu,
+        "${Attribution} 1.0 ${Israel}"@zxx ;
+    owl:sameAs <http://creativecommons.org/licenses/by/1.0/il/> ;
+    foaf:logo <http://i.creativecommons.org/l/by/1.0/il/80x15.png>,
+        <http://i.creativecommons.org/l/by/1.0/il/88x31.png> ;
+    li:id "CC-BY-1.0-il" ;
+    li:libre <http://creativecommons.org/> ;
+    li:name "CC BY 1.0 IL" .
+

@@ -1,0 +1,237 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/elements/1.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://creativecommons.org/licenses/by-nc/2.5/my/> a cc:License ;
+    cc:jurisdiction <http://creativecommons.org/international/my/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nc/2.5/my/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:prohibits cc:CommercialUse ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.5" ;
+    dc:identifier "by-nc" ;
+    dc:source <http://creativecommons.org/licenses/by-nc/2.5/> ;
+    dc:title "Erkenning-NieKommersieel 2.5 Maleisië"@af,
+        "نسب - غير تجاري 2.5 ماليزيا"@ar,
+        "Attribution-NonCommercial 2.5 Malaysia"@as,
+        "Attribution-NonCommercial 2.5 Malaysia"@ast,
+        "Attribution-NonCommercial 2.5 Malaysia"@ast-es,
+        "Attribution-NonCommercial 2.5 Malaysia"@az,
+        "Attribution-NonCommercial 2.5 Малайзія"@be,
+        "Признание-Некомерсиално 2.5 Малайзия"@bg,
+        "Attribution-NonCommercial 2.5 Malaysia"@bn,
+        "Reconeixement-NoComercial 2.5 Malàisia"@ca,
+        "Uveďte autora-Neužívejte komerčně 2.5 Malajsie"@cs,
+        "Navngivelse-IkkeKommerciel 2.5 Malaysia"@da,
+        "Namensnennung-Nicht-kommerziell 2.5 Malaysia"@de,
+        "Namensnennung-NichtKommerziell 2.5 Malaysia"@de-at,
+        "Namensnennung-NichtKommerziell 2.5 Malaysia"@de-ch,
+        "Αναφορά Δημιουργού-Μη Εμπορική Χρήση 2.5 Μαλαισία"@el,
+        "Attribution-NonCommercial 2.5 Malaysia"@en,
+        "Attribution-NonCommercial 2.5 Malaysia"@en-ca,
+        "Attribution-NonCommercial 2.5 Malaysia"@en-gb,
+        "Attribution-NonCommercial 2.5 Malaysia"@en-hk,
+        "Attribution-NonCommercial 2.5 Malaysia"@en-sg,
+        "Attribution-NonCommercial 2.5 Malaysia"@en-us,
+        "Atribuite-Nekomerce 2.5 Malajzio"@eo,
+        "Atribución-NoComercial 2.5 Malasia"@es,
+        "Atribución-NoComercial 2.5 Malasia"@es-ar,
+        "Atribución-NoComercial 2.5 Malasia"@es-cl,
+        "Reconocimiento-NoComercial 2.5 Malasia"@es-co,
+        "Reconocimiento-NoComercial 2.5 Malasia"@es-ec,
+        "Reconocimiento-NoComercial 2.5 Malasia"@es-es,
+        "Reconocimiento-NoComercial 2.5 Malasia"@es-gt,
+        "Atribución-No Comercial 2.5 Malasia"@es-mx,
+        "Reconocimiento-NoComercial 2.5 Malasia"@es-pe,
+        "Reconocimiento-NoComercial 2.5 Malasia"@es-pr,
+        "Autorile viitamine + Mitteäriline eesmärk 2.5 Malaisia"@et,
+        "Aitortu-EzKomertziala 2.5 Malaysia"@eu,
+        "Attribution-NonCommercial 2.5 مالزی"@fa,
+        "Nimeä-Epäkaupallinen 2.5 Malesia"@fi,
+        "Paternité - Pas d'Utilisation Commerciale 2.5 Malaisie"@fr,
+        "Paternité - Pas d'Utilisation Commerciale 2.5 Malaisie"@fr-ca,
+        "Paternité - Pas d'Utilisation Commerciale 2.5 Malaisie"@fr-ch,
+        "Paternité - Pas d'Utilisation Commerciale 2.5 Malaisie"@fr-lu,
+        "Attribution-NonCommercial 2.5 Malaysia"@ga,
+        "Recoñecemento-NonComercial 2.5 Malaysia"@gl,
+        "ייחוס-שימוש לא מסחרי 2.5 מלזיה"@he,
+        "Attribution-NonCommercial 2.5 Malaysia"@hi,
+        "Imenovanje-Nekomercijalno 2.5 Malezija"@hr,
+        "Nevezd meg! - Ne add el! 2.5 Malajzia"@hu,
+        "Հղում - Ոչ-առևտրային օգտագործում 2.5 Մալազիա"@hy,
+        "Attribusi-NonKomersial 2.5 Malaysia"@id,
+        "Attribution-NonCommercial 2.5 Malaysia"@is,
+        "Attribuzione - Non commerciale 2.5 Malesia"@it,
+        "Attribuzione - Non commerciale 2.5 Malaysia"@it-ch,
+        "表示 - 非営利 2.5 マレーシア"@ja,
+        "ავტორობის მითითებით არაკომერციული გამოყენებისათვის 2.5 მალაიზია"@ka,
+        "Коммерциялық емес 2.5 Malaysia"@kk,
+        "저작자표시-비영리 2.5 말레이시아"@ko,
+        "Attribution-NonCommercial 2.5 Malaizija"@lt,
+        "Atsaucoties-Nekomerciāli 2.5 Malaizija"@lv,
+        "НаведиИзвор-Некомерцијално 2.5 Малезија"@mk,
+        "Attribution-NonCommercial 2.5 മലേഷ്യ"@ml,
+        "Attribution-NonCommercial 2.5 Malaysia"@mn,
+        "Pengiktirafan-BukanKomersial 2.5 Malaysia"@ms,
+        "Naamsvermelding-NietCommercieel 2.5 Maleisië"@nl,
+        "Navngivelse-Ikkekommersiell 2.5 Malaysia"@no,
+        "Tsebagatšo- E sego ya kgwebo 2.5 Malaysia"@nso,
+        "Attribution-NonCommercial 2.5 Malaysia"@oci-es,
+        "Uznanie autorstwa-Użycie niekomercyjne 2.5 Malezja"@pl,
+        "Atribuição - NãoComercial 2.5 Malásia"@pt,
+        "Atribuição-Uso não-comercial 2.5 Malaysia"@pt-br,
+        "Atribuição-Uso Não-Comercial 2.5 Malaysia"@pt-pt,
+        "Atribuire-NeComercial 2.5 Malaiezia"@ro,
+        "Attribution-NonCommercial (Атрибуция — Некоммерческое использование) 2.5 Малайзия"@ru,
+        "Attribution-NonCommercial 2.5 Malaysia"@si-lk,
+        "Priznanje avtorstva-Nekomercialno 2.5 Malezija"@sl,
+        "Attribution-NonCommercial 2.5 Malajzi"@sq,
+        "Autorstvo-Nekomercijalno 2.5 Malezija"@sr,
+        "Ауторство-Некомерцијално 2.5 Малезија"@sr,
+        "Autorstvo-Nekomercijalno 2.5 Malezija"@sr-latn,
+        "Attribution-NonCommercial 2.5 Malaysia"@st,
+        "Erkännande-IckeKommersiell 2.5 Malaysia"@sv,
+        "Attribution-NonCommercial 2.5 Malaysia"@ta,
+        "Attribution-NonCommercial 2.5 మలేషియా"@te,
+        "แสดงที่มา-ไม่ใช้เพื่อการค้า 2.5 มาเลเซีย"@th,
+        "Alıntı-Gayriticari 2.5 Malezya"@tr,
+        "Attribution-NonCommercial 2.5 Malaysia"@uk,
+        "Attribution-NonCommercial 2.5 Malaysia"@ur,
+        "Ghi nhận công của tác giả - Phi thương mại  2.5 Malaysia"@vi,
+        "署名-非商业性使用 2.5 马来西亚"@zh,
+        "姓名標示-非商業性 2.5 馬來西亞"@zh-hk,
+        "姓名標示-非商業性 2.5 馬來西亞"@zh-tw,
+        "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano 2.5 iMalaysia"@zu,
+        "${Attribution-NonCommercial} 2.5 ${Malaysia}"@zxx ;
+    owl:sameAs <https://licensedb.org/id/CC-BY-NC-2.5-my> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nc/2.5/my/80x15.png>,
+        <http://i.creativecommons.org/l/by-nc/2.5/my/88x31.png> .
+
+<https://licensedb.org/id/CC-BY-NC-2.5-my> a cc:License,
+        li:License ;
+    cc:jurisdiction <http://creativecommons.org/international/my/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nc/2.5/my/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:prohibits cc:CommercialUse ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.5" ;
+    dc:identifier "by-nc" ;
+    dc:source <http://creativecommons.org/licenses/by-nc/2.5/> ;
+    dc:title "Erkenning-NieKommersieel 2.5 Maleisië"@af,
+        "نسب - غير تجاري 2.5 ماليزيا"@ar,
+        "Attribution-NonCommercial 2.5 Malaysia"@as,
+        "Attribution-NonCommercial 2.5 Malaysia"@ast,
+        "Attribution-NonCommercial 2.5 Malaysia"@ast-es,
+        "Attribution-NonCommercial 2.5 Malaysia"@az,
+        "Attribution-NonCommercial 2.5 Малайзія"@be,
+        "Признание-Некомерсиално 2.5 Малайзия"@bg,
+        "Attribution-NonCommercial 2.5 Malaysia"@bn,
+        "Reconeixement-NoComercial 2.5 Malàisia"@ca,
+        "Uveďte autora-Neužívejte komerčně 2.5 Malajsie"@cs,
+        "Navngivelse-IkkeKommerciel 2.5 Malaysia"@da,
+        "Namensnennung-Nicht-kommerziell 2.5 Malaysia"@de,
+        "Namensnennung-NichtKommerziell 2.5 Malaysia"@de-at,
+        "Namensnennung-NichtKommerziell 2.5 Malaysia"@de-ch,
+        "Αναφορά Δημιουργού-Μη Εμπορική Χρήση 2.5 Μαλαισία"@el,
+        "Attribution-NonCommercial 2.5 Malaysia"@en,
+        "Attribution-NonCommercial 2.5 Malaysia"@en-ca,
+        "Attribution-NonCommercial 2.5 Malaysia"@en-gb,
+        "Attribution-NonCommercial 2.5 Malaysia"@en-hk,
+        "Attribution-NonCommercial 2.5 Malaysia"@en-sg,
+        "Attribution-NonCommercial 2.5 Malaysia"@en-us,
+        "Atribuite-Nekomerce 2.5 Malajzio"@eo,
+        "Atribución-NoComercial 2.5 Malasia"@es,
+        "Atribución-NoComercial 2.5 Malasia"@es-ar,
+        "Atribución-NoComercial 2.5 Malasia"@es-cl,
+        "Reconocimiento-NoComercial 2.5 Malasia"@es-co,
+        "Reconocimiento-NoComercial 2.5 Malasia"@es-ec,
+        "Reconocimiento-NoComercial 2.5 Malasia"@es-es,
+        "Reconocimiento-NoComercial 2.5 Malasia"@es-gt,
+        "Atribución-No Comercial 2.5 Malasia"@es-mx,
+        "Reconocimiento-NoComercial 2.5 Malasia"@es-pe,
+        "Reconocimiento-NoComercial 2.5 Malasia"@es-pr,
+        "Autorile viitamine + Mitteäriline eesmärk 2.5 Malaisia"@et,
+        "Aitortu-EzKomertziala 2.5 Malaysia"@eu,
+        "Attribution-NonCommercial 2.5 مالزی"@fa,
+        "Nimeä-Epäkaupallinen 2.5 Malesia"@fi,
+        "Paternité - Pas d'Utilisation Commerciale 2.5 Malaisie"@fr,
+        "Paternité - Pas d'Utilisation Commerciale 2.5 Malaisie"@fr-ca,
+        "Paternité - Pas d'Utilisation Commerciale 2.5 Malaisie"@fr-ch,
+        "Paternité - Pas d'Utilisation Commerciale 2.5 Malaisie"@fr-lu,
+        "Attribution-NonCommercial 2.5 Malaysia"@ga,
+        "Recoñecemento-NonComercial 2.5 Malaysia"@gl,
+        "ייחוס-שימוש לא מסחרי 2.5 מלזיה"@he,
+        "Attribution-NonCommercial 2.5 Malaysia"@hi,
+        "Imenovanje-Nekomercijalno 2.5 Malezija"@hr,
+        "Nevezd meg! - Ne add el! 2.5 Malajzia"@hu,
+        "Հղում - Ոչ-առևտրային օգտագործում 2.5 Մալազիա"@hy,
+        "Attribusi-NonKomersial 2.5 Malaysia"@id,
+        "Attribution-NonCommercial 2.5 Malaysia"@is,
+        "Attribuzione - Non commerciale 2.5 Malesia"@it,
+        "Attribuzione - Non commerciale 2.5 Malaysia"@it-ch,
+        "表示 - 非営利 2.5 マレーシア"@ja,
+        "ავტორობის მითითებით არაკომერციული გამოყენებისათვის 2.5 მალაიზია"@ka,
+        "Коммерциялық емес 2.5 Malaysia"@kk,
+        "저작자표시-비영리 2.5 말레이시아"@ko,
+        "Attribution-NonCommercial 2.5 Malaizija"@lt,
+        "Atsaucoties-Nekomerciāli 2.5 Malaizija"@lv,
+        "НаведиИзвор-Некомерцијално 2.5 Малезија"@mk,
+        "Attribution-NonCommercial 2.5 മലേഷ്യ"@ml,
+        "Attribution-NonCommercial 2.5 Malaysia"@mn,
+        "Pengiktirafan-BukanKomersial 2.5 Malaysia"@ms,
+        "Naamsvermelding-NietCommercieel 2.5 Maleisië"@nl,
+        "Navngivelse-Ikkekommersiell 2.5 Malaysia"@no,
+        "Tsebagatšo- E sego ya kgwebo 2.5 Malaysia"@nso,
+        "Attribution-NonCommercial 2.5 Malaysia"@oci-es,
+        "Uznanie autorstwa-Użycie niekomercyjne 2.5 Malezja"@pl,
+        "Atribuição - NãoComercial 2.5 Malásia"@pt,
+        "Atribuição-Uso não-comercial 2.5 Malaysia"@pt-br,
+        "Atribuição-Uso Não-Comercial 2.5 Malaysia"@pt-pt,
+        "Atribuire-NeComercial 2.5 Malaiezia"@ro,
+        "Attribution-NonCommercial (Атрибуция — Некоммерческое использование) 2.5 Малайзия"@ru,
+        "Attribution-NonCommercial 2.5 Malaysia"@si-lk,
+        "Priznanje avtorstva-Nekomercialno 2.5 Malezija"@sl,
+        "Attribution-NonCommercial 2.5 Malajzi"@sq,
+        "Autorstvo-Nekomercijalno 2.5 Malezija"@sr,
+        "Ауторство-Некомерцијално 2.5 Малезија"@sr,
+        "Autorstvo-Nekomercijalno 2.5 Malezija"@sr-latn,
+        "Attribution-NonCommercial 2.5 Malaysia"@st,
+        "Erkännande-IckeKommersiell 2.5 Malaysia"@sv,
+        "Attribution-NonCommercial 2.5 Malaysia"@ta,
+        "Attribution-NonCommercial 2.5 మలేషియా"@te,
+        "แสดงที่มา-ไม่ใช้เพื่อการค้า 2.5 มาเลเซีย"@th,
+        "Alıntı-Gayriticari 2.5 Malezya"@tr,
+        "Attribution-NonCommercial 2.5 Malaysia"@uk,
+        "Attribution-NonCommercial 2.5 Malaysia"@ur,
+        "Ghi nhận công của tác giả - Phi thương mại  2.5 Malaysia"@vi,
+        "署名-非商业性使用 2.5 马来西亚"@zh,
+        "姓名標示-非商業性 2.5 馬來西亞"@zh-hk,
+        "姓名標示-非商業性 2.5 馬來西亞"@zh-tw,
+        "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano 2.5 iMalaysia"@zu,
+        "${Attribution-NonCommercial} 2.5 ${Malaysia}"@zxx ;
+    owl:sameAs <http://creativecommons.org/licenses/by-nc/2.5/my/> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nc/2.5/my/80x15.png>,
+        <http://i.creativecommons.org/l/by-nc/2.5/my/88x31.png> ;
+    li:id "CC-BY-NC-2.5-my" ;
+    li:name "CC BY-NC 2.5 MY" .
+

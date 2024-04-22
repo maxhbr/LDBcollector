@@ -1,0 +1,237 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/elements/1.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://creativecommons.org/licenses/by/3.0/nl/> a cc:License ;
+    cc:jurisdiction <http://creativecommons.org/international/nl/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by/3.0/nl/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "3.0" ;
+    dc:identifier "by" ;
+    dc:source <http://creativecommons.org/licenses/by/3.0/> ;
+    dc:title "Erkenning 3.0 Nederland"@af,
+        "نسب المصنف  3.0 هولندا"@ar,
+        "Attribution 3.0 Netherlands"@as,
+        "Attribution 3.0 Netherlands"@ast,
+        "Attribution 3.0 Netherlands"@ast-es,
+        "Attribution 3.0 Netherlands"@az,
+        "Атрыбуцыя 3.0 Нідэрланды"@be,
+        "Признание 3.0 Холандия"@bg,
+        "Attribution 3.0 Netherlands"@bn,
+        "Reconeixement 3.0 Holanda"@ca,
+        "Uveďte autora 3.0 Nizozemí"@cs,
+        "Navngivelse 3.0 Holland"@da,
+        "Namensnennung 3.0 Niederlande"@de,
+        "Namensnennung 3.0 Niederlande"@de-at,
+        "Namensnennung 3.0 Niederlande"@de-ch,
+        "Αναφορά Δημιουργού 3.0 Ολλανδία"@el,
+        "Attribution 3.0 Netherlands"@en,
+        "Attribution 3.0 Netherlands"@en-ca,
+        "Attribution 3.0 Netherlands"@en-gb,
+        "Attribution 3.0 Netherlands"@en-hk,
+        "Attribution 3.0 Netherlands"@en-sg,
+        "Attribution 3.0 Netherlands"@en-us,
+        "Atribuite 3.0 Nederlando"@eo,
+        "Atribución 3.0 Holanda"@es,
+        "Atribución 3.0 Holanda"@es-ar,
+        "Atribución 3.0 Holanda"@es-cl,
+        "Reconocimiento 3.0 Holanda"@es-co,
+        "Reconocimiento 3.0 Holanda"@es-ec,
+        "Reconocimiento 3.0 Holanda"@es-es,
+        "Reconocimiento 3.0 Holanda"@es-gt,
+        "Atribución 3.0 Holanda"@es-mx,
+        "Reconocimiento 3.0 Holanda"@es-pe,
+        "Reconocimiento 3.0 Holanda"@es-pr,
+        "Autorile viitamine 3.0 Holland"@et,
+        "Aitortu 3.0 Herbehereak"@eu,
+        "Attribution 3.0 هلند"@fa,
+        "Nimeä 3.0 Hollanti"@fi,
+        "Attribution 3.0 Pays-Bas"@fr,
+        "Paternité 3.0 Pays-Bas"@fr-ca,
+        "Paternité 3.0 Pays-Bas"@fr-ch,
+        "Paternité 3.0 Pays-Bas"@fr-lu,
+        "Attribution 3.0 Netherlands"@ga,
+        "Recoñecemento 3.0 Holanda"@gl,
+        "ייחוס 3.0 הולנד"@he,
+        "Attribution 3.0 Netherlands"@hi,
+        "Imenovanje 3.0 Nizozemska"@hr,
+        "Nevezd meg! 3.0 Hollandia"@hu,
+        "Հղում 3.0 Նիդերլանդներ"@hy,
+        "Atribusi 3.0 Belanda"@id,
+        "Attribution 3.0 Holland"@is,
+        "Attribuzione 3.0 Olanda"@it,
+        "Attribuzione 3.0 Olanda"@it-ch,
+        "表示 3.0 オランダ"@ja,
+        "ავტორობის მითითებით  3.0 ნიდერლანდები"@ka,
+        "Атауын сақтау 3.0 Netherlands"@kk,
+        "저작자표시(Attribution) 3.0 네덜란드"@ko,
+        "Priskyrimas 3.0 Nyderlandai"@lt,
+        "Atsaucoties 3.0 Nīderlande"@lv,
+        "Наведи извор 3.0 Холандија"@mk,
+        "കടപ്പാട് 3.0 നെതർലാന്റ്സ്"@ml,
+        "Attribution 3.0 Netherlands"@mn,
+        "Pengiktirafan 3.0 Netherlands"@ms,
+        "Naamsvermelding 3.0 Nederland"@nl,
+        "Navngivelse 3.0 Nederland"@no,
+        "Tsebagatšo 3.0 Netherlands"@nso,
+        "Attribution 3.0 Netherlands"@oci-es,
+        "Uznanie autorstwa 3.0 Holandia"@pl,
+        "Atribuição  3.0 Holanda"@pt,
+        "Atribuição 3.0 Netherlands"@pt-br,
+        "Atribuição 3.0 Holanda"@pt-pt,
+        "Atribuire 3.0 Olanda"@ro,
+        "Attribution (Атрибуция) 3.0 Нидерланды"@ru,
+        "Attribution 3.0 Netherlands"@si-lk,
+        "Priznanje avtorstva 3.0 Nizozemska"@sl,
+        "Attribution 3.0 Holandë"@sq,
+        "Autorstvo 3.0 Holandija"@sr,
+        "Ауторство 3.0 Холандија"@sr,
+        "Autorstvo 3.0 Holandija"@sr-latn,
+        "Attribution 3.0 Netherlands"@st,
+        "Erkännande 3.0 Nederländerna"@sv,
+        "Attribution 3.0 நெதர்லாந்து"@ta,
+        "ఆపాదింపు 3.0 నెదర్లాండ్స్"@te,
+        "แสดงที่มา 3.0 เนเธอร์แลนด์"@th,
+        "Attribution 3.0 Hollanda"@tr,
+        "Attribution 3.0 Netherlands"@uk,
+        "Attribution 3.0 Netherlands"@ur,
+        "Ghi nhận công của tác giả 3.0 Nước Hà Lan"@vi,
+        "署名 3.0 荷兰"@zh,
+        "姓名標示 3.0 荷蘭"@zh-hk,
+        "姓名標示 3.0 荷蘭"@zh-tw,
+        "Qaphela Umnikazi 3.0 iNetherlands"@zu,
+        "${Attribution} 3.0 ${Netherlands}"@zxx ;
+    owl:sameAs <https://licensedb.org/id/CC-BY-3.0-nl> ;
+    foaf:logo <http://i.creativecommons.org/l/by/3.0/nl/80x15.png>,
+        <http://i.creativecommons.org/l/by/3.0/nl/88x31.png> .
+
+<https://licensedb.org/id/CC-BY-3.0-nl> a cc:License,
+        li:License ;
+    cc:jurisdiction <http://creativecommons.org/international/nl/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by/3.0/nl/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "3.0" ;
+    dc:identifier "by" ;
+    dc:replaces <https://licensedb.org/id/CC-BY-2.5-nl> ;
+    dc:source <http://creativecommons.org/licenses/by/3.0/> ;
+    dc:title "Erkenning 3.0 Nederland"@af,
+        "نسب المصنف  3.0 هولندا"@ar,
+        "Attribution 3.0 Netherlands"@as,
+        "Attribution 3.0 Netherlands"@ast,
+        "Attribution 3.0 Netherlands"@ast-es,
+        "Attribution 3.0 Netherlands"@az,
+        "Атрыбуцыя 3.0 Нідэрланды"@be,
+        "Признание 3.0 Холандия"@bg,
+        "Attribution 3.0 Netherlands"@bn,
+        "Reconeixement 3.0 Holanda"@ca,
+        "Uveďte autora 3.0 Nizozemí"@cs,
+        "Navngivelse 3.0 Holland"@da,
+        "Namensnennung 3.0 Niederlande"@de,
+        "Namensnennung 3.0 Niederlande"@de-at,
+        "Namensnennung 3.0 Niederlande"@de-ch,
+        "Αναφορά Δημιουργού 3.0 Ολλανδία"@el,
+        "Attribution 3.0 Netherlands"@en,
+        "Attribution 3.0 Netherlands"@en-ca,
+        "Attribution 3.0 Netherlands"@en-gb,
+        "Attribution 3.0 Netherlands"@en-hk,
+        "Attribution 3.0 Netherlands"@en-sg,
+        "Attribution 3.0 Netherlands"@en-us,
+        "Atribuite 3.0 Nederlando"@eo,
+        "Atribución 3.0 Holanda"@es,
+        "Atribución 3.0 Holanda"@es-ar,
+        "Atribución 3.0 Holanda"@es-cl,
+        "Reconocimiento 3.0 Holanda"@es-co,
+        "Reconocimiento 3.0 Holanda"@es-ec,
+        "Reconocimiento 3.0 Holanda"@es-es,
+        "Reconocimiento 3.0 Holanda"@es-gt,
+        "Atribución 3.0 Holanda"@es-mx,
+        "Reconocimiento 3.0 Holanda"@es-pe,
+        "Reconocimiento 3.0 Holanda"@es-pr,
+        "Autorile viitamine 3.0 Holland"@et,
+        "Aitortu 3.0 Herbehereak"@eu,
+        "Attribution 3.0 هلند"@fa,
+        "Nimeä 3.0 Hollanti"@fi,
+        "Attribution 3.0 Pays-Bas"@fr,
+        "Paternité 3.0 Pays-Bas"@fr-ca,
+        "Paternité 3.0 Pays-Bas"@fr-ch,
+        "Paternité 3.0 Pays-Bas"@fr-lu,
+        "Attribution 3.0 Netherlands"@ga,
+        "Recoñecemento 3.0 Holanda"@gl,
+        "ייחוס 3.0 הולנד"@he,
+        "Attribution 3.0 Netherlands"@hi,
+        "Imenovanje 3.0 Nizozemska"@hr,
+        "Nevezd meg! 3.0 Hollandia"@hu,
+        "Հղում 3.0 Նիդերլանդներ"@hy,
+        "Atribusi 3.0 Belanda"@id,
+        "Attribution 3.0 Holland"@is,
+        "Attribuzione 3.0 Olanda"@it,
+        "Attribuzione 3.0 Olanda"@it-ch,
+        "表示 3.0 オランダ"@ja,
+        "ავტორობის მითითებით  3.0 ნიდერლანდები"@ka,
+        "Атауын сақтау 3.0 Netherlands"@kk,
+        "저작자표시(Attribution) 3.0 네덜란드"@ko,
+        "Priskyrimas 3.0 Nyderlandai"@lt,
+        "Atsaucoties 3.0 Nīderlande"@lv,
+        "Наведи извор 3.0 Холандија"@mk,
+        "കടപ്പാട് 3.0 നെതർലാന്റ്സ്"@ml,
+        "Attribution 3.0 Netherlands"@mn,
+        "Pengiktirafan 3.0 Netherlands"@ms,
+        "Naamsvermelding 3.0 Nederland"@nl,
+        "Navngivelse 3.0 Nederland"@no,
+        "Tsebagatšo 3.0 Netherlands"@nso,
+        "Attribution 3.0 Netherlands"@oci-es,
+        "Uznanie autorstwa 3.0 Holandia"@pl,
+        "Atribuição  3.0 Holanda"@pt,
+        "Atribuição 3.0 Netherlands"@pt-br,
+        "Atribuição 3.0 Holanda"@pt-pt,
+        "Atribuire 3.0 Olanda"@ro,
+        "Attribution (Атрибуция) 3.0 Нидерланды"@ru,
+        "Attribution 3.0 Netherlands"@si-lk,
+        "Priznanje avtorstva 3.0 Nizozemska"@sl,
+        "Attribution 3.0 Holandë"@sq,
+        "Autorstvo 3.0 Holandija"@sr,
+        "Ауторство 3.0 Холандија"@sr,
+        "Autorstvo 3.0 Holandija"@sr-latn,
+        "Attribution 3.0 Netherlands"@st,
+        "Erkännande 3.0 Nederländerna"@sv,
+        "Attribution 3.0 நெதர்லாந்து"@ta,
+        "ఆపాదింపు 3.0 నెదర్లాండ్స్"@te,
+        "แสดงที่มา 3.0 เนเธอร์แลนด์"@th,
+        "Attribution 3.0 Hollanda"@tr,
+        "Attribution 3.0 Netherlands"@uk,
+        "Attribution 3.0 Netherlands"@ur,
+        "Ghi nhận công của tác giả 3.0 Nước Hà Lan"@vi,
+        "署名 3.0 荷兰"@zh,
+        "姓名標示 3.0 荷蘭"@zh-hk,
+        "姓名標示 3.0 荷蘭"@zh-tw,
+        "Qaphela Umnikazi 3.0 iNetherlands"@zu,
+        "${Attribution} 3.0 ${Netherlands}"@zxx ;
+    owl:sameAs <http://creativecommons.org/licenses/by/3.0/nl/> ;
+    foaf:logo <http://i.creativecommons.org/l/by/3.0/nl/80x15.png>,
+        <http://i.creativecommons.org/l/by/3.0/nl/88x31.png> ;
+    li:id "CC-BY-3.0-nl" ;
+    li:libre <http://creativecommons.org/> ;
+    li:name "CC BY 3.0 NL" .
+

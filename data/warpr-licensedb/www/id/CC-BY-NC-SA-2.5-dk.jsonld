@@ -1,0 +1,854 @@
+{
+    "@context": {
+        "cc": "http://creativecommons.org/ns#",
+        "dc": "http://purl.org/dc/terms/",
+        "dc11": "http://purl.org/dc/elements/1.1/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "li": "https://licensedb.org/ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "cc:legalcode": {
+            "@type": "@id"
+        },
+        "cc:permits": {
+            "@type": "@id"
+        },
+        "cc:requires": {
+            "@type": "@id"
+        },
+        "cc:prohibits": {
+            "@type": "@id"
+        },
+        "cc:jurisdiction": {
+            "@type": "@id"
+        },
+        "cc:licenseClass": {
+            "@type": "@id"
+        },
+        "dc:creator": {
+            "@type": "@id"
+        },
+        "dc:source": {
+            "@type": "@id"
+        },
+        "dc:replaces": {
+            "@type": "@id"
+        },
+        "dc:isBasedOn": {
+            "@type": "@id"
+        },
+        "dc:isReplacedBy": {
+            "@type": "@id"
+        },
+        "foaf:logo": {
+            "@type": "@id"
+        },
+        "li:plaintext": {
+            "@type": "@id"
+        },
+        "li:libre": {
+            "@type": "@id"
+        },
+        "owl:sameAs": {
+            "@type": "@id"
+        }
+    },
+    "@id": "https://licensedb.org/id/CC-BY-NC-SA-2.5-dk",
+    "@type": [
+        "cc:License",
+        "li:License"
+    ],
+    "cc:jurisdiction": "http://creativecommons.org/international/dk/",
+    "cc:legalcode": "http://creativecommons.org/licenses/by-nc-sa/2.5/dk/legalcode",
+    "cc:licenseClass": "http://creativecommons.org/license/",
+    "cc:permits": [
+        "cc:DerivativeWorks",
+        "cc:Distribution",
+        "cc:Reproduction"
+    ],
+    "cc:prohibits": "cc:CommercialUse",
+    "cc:requires": [
+        "cc:Attribution",
+        "cc:Notice",
+        "cc:ShareAlike"
+    ],
+    "dc:creator": "http://creativecommons.org",
+    "dc:hasVersion": "2.5",
+    "dc:identifier": "by-nc-sa",
+    "dc:source": "http://creativecommons.org/licenses/by-nc-sa/2.5/",
+    "dc:title": [
+        {
+            "@language": "af",
+            "@value": "Erkenning-Niekommersieel-InsgelyksDeel 2.5 Denemarke"
+        },
+        {
+            "@language": "ar",
+            "@value": "المشاركة على قدم المساواة-غير تجاري-نسب العمل 2.5 الدنمارك"
+        },
+        {
+            "@language": "as",
+            "@value": "Attribution-NonCommercial-ShareAlike 2.5 Denmark"
+        },
+        {
+            "@language": "ast",
+            "@value": "Attribution-NonCommercial-ShareAlike 2.5 Denmark"
+        },
+        {
+            "@language": "ast-es",
+            "@value": "Attribution-NonCommercial-ShareAlike 2.5 Denmark"
+        },
+        {
+            "@language": "az",
+            "@value": "Attribution-NonCommercial-ShareAlike 2.5 Denmark"
+        },
+        {
+            "@language": "be",
+            "@value": "Attribution-NonCommercial-ShareAlike 2.5 Данія"
+        },
+        {
+            "@language": "bg",
+            "@value": "Признание-Некомерсиално-Споделяне на споделеното 2.5 Дания"
+        },
+        {
+            "@language": "bn",
+            "@value": "Attribution-NonCommercial-ShareAlike 2.5 Denmark"
+        },
+        {
+            "@language": "ca",
+            "@value": "Reconeixement-NoComercial-CompartirIgual 2.5 Dinamarca"
+        },
+        {
+            "@language": "cs",
+            "@value": "Uveďte autora-Nevyužívejte dílo komerčně-Zachovejte licenci 2.5 Dánsko"
+        },
+        {
+            "@language": "da",
+            "@value": "Navngivelse-IkkeKommerciel–DelPåSammeVilkår 2.5 Danmark"
+        },
+        {
+            "@language": "de",
+            "@value": "Namensnennung-Nicht-kommerziell-Weitergabe unter gleichen Bedingungen 2.5 Dänemark"
+        },
+        {
+            "@language": "de-at",
+            "@value": "Namensnennung-NichtKommerziell-Weitergabe unter gleichen Bedingungen 2.5 Dänemark"
+        },
+        {
+            "@language": "de-ch",
+            "@value": "Namensnennung-NichtKommerziell-Weitergabe unter gleichen Bedingungen 2.5 Dänemark"
+        },
+        {
+            "@language": "el",
+            "@value": "Αναφορά Δημιουργού - Μη Εμπορική Χρήση - Παρόμοια Διανομή 2.5 Δανία"
+        },
+        {
+            "@language": "en",
+            "@value": "Attribution-NonCommercial-ShareAlike 2.5 Denmark"
+        },
+        {
+            "@language": "en-ca",
+            "@value": "Attribution-NonCommercial-ShareAlike 2.5 Denmark"
+        },
+        {
+            "@language": "en-gb",
+            "@value": "Attribution-NonCommercial-ShareAlike 2.5 Denmark"
+        },
+        {
+            "@language": "en-hk",
+            "@value": "Attribution-NonCommercial-ShareAlike 2.5 Denmark"
+        },
+        {
+            "@language": "en-sg",
+            "@value": "Attribution-NonCommercial-ShareAlike 2.5 Denmark"
+        },
+        {
+            "@language": "en-us",
+            "@value": "Attribution-NonCommercial-ShareAlike 2.5 Denmark"
+        },
+        {
+            "@language": "eo",
+            "@value": "Atribuite-Nekomerce-Samkondiĉe 2.5 Danujo"
+        },
+        {
+            "@language": "es",
+            "@value": "Atribución-NoComercial-CompartirIgual 2.5 Dinamarca"
+        },
+        {
+            "@language": "es-ar",
+            "@value": "Atribución-NoComercial-CompartirDerivadasIgual 2.5 Dinamarca"
+        },
+        {
+            "@language": "es-cl",
+            "@value": "Atribución-NoComercial-LicenciarIgual 2.5 Dinamarca"
+        },
+        {
+            "@language": "es-co",
+            "@value": "Reconocimiento-NoComercial-CompartirIgual 2.5 Dinamarca"
+        },
+        {
+            "@language": "es-ec",
+            "@value": "Reconocimiento-NoComercial-CompartirIgual 2.5 Dinamarca"
+        },
+        {
+            "@language": "es-es",
+            "@value": "Reconocimiento-NoComercial-CompartirIgual 2.5 Dinamarca"
+        },
+        {
+            "@language": "es-gt",
+            "@value": "Reconocimiento-NoComercial-CompartirIgual 2.5 Dinamarca"
+        },
+        {
+            "@language": "es-mx",
+            "@value": "Atribución-No Comercial-Licenciamiento Recíproco 2.5 Dinamarca"
+        },
+        {
+            "@language": "es-pe",
+            "@value": "Reconocimiento-NoComercial-CompartirIgual 2.5 Dinamarca"
+        },
+        {
+            "@language": "es-pr",
+            "@value": "Reconocimiento-NoComercial-CompartirIgual 2.5 Dinamarca"
+        },
+        {
+            "@language": "et",
+            "@value": "Autorile viitamine + Mitteäriline eesmärk + Jagamine samadel tingimustel 2.5 Taani"
+        },
+        {
+            "@language": "eu",
+            "@value": "Aitortu-EzKomertziala-PartekatuBerdin 2.5 Danimarka"
+        },
+        {
+            "@language": "fa",
+            "@value": "Attribution-NonCommercial-ShareAlike 2.5 دانمارک"
+        },
+        {
+            "@language": "fi",
+            "@value": "Nimeä-Epäkaupallinen-Tarttuva 2.5 Tanska"
+        },
+        {
+            "@language": "fr",
+            "@value": "Attribution - Pas d'Utilisation Commerciale - Partage à l'Identique 2.5 Danemark"
+        },
+        {
+            "@language": "fr-ca",
+            "@value": "Paternité - Pas d'Utilisation Commerciale - Partage des Conditions Initiales à l'Identique 2.5 Danemark"
+        },
+        {
+            "@language": "fr-ch",
+            "@value": "Paternité - Pas d'Utilisation Commerciale - Partage des Conditions Initiales à l'Identique 2.5 Danemark"
+        },
+        {
+            "@language": "fr-lu",
+            "@value": "Paternité - Pas d'Utilisation Commerciale - Partage des Conditions Initiales à l'Identique 2.5 Danemark"
+        },
+        {
+            "@language": "ga",
+            "@value": "Attribution-NonCommercial-ShareAlike 2.5 Denmark"
+        },
+        {
+            "@language": "gl",
+            "@value": "Recoñecemento-NonComercial-CompartirIgual 2.5 Denmark"
+        },
+        {
+            "@language": "he",
+            "@value": "ייחוס-שימוש לא מסחרי-שיתוף זהה 2.5 דנמרק"
+        },
+        {
+            "@language": "hi",
+            "@value": "Attribution-NonCommercial-ShareAlike 2.5 Denmark"
+        },
+        {
+            "@language": "hr",
+            "@value": "Imenovanje-Nekomercijalno-Dijeli pod istim uvjetima 2.5 Danska"
+        },
+        {
+            "@language": "hu",
+            "@value": "Nevezd meg! - Ne add el! - Így add tovább! 2.5 Dánia"
+        },
+        {
+            "@language": "hy",
+            "@value": "Հղում - ոչ-առևտրային օգտագործում - համանման տարածում 2.5 Դանիա"
+        },
+        {
+            "@language": "id",
+            "@value": "Atribusi-NonKomersial-BerbagiSerupa 2.5 Denmark"
+        },
+        {
+            "@language": "is",
+            "@value": "Attribution-NonCommercial-ShareAlike 2.5 Denmark"
+        },
+        {
+            "@language": "it",
+            "@value": "Attribuzione - Non commerciale - Condividi allo stesso modo 2.5 Denmark"
+        },
+        {
+            "@language": "it-ch",
+            "@value": "Attribuzione - Non commerciale - Condividi allo stesso modo 2.5 Denmark"
+        },
+        {
+            "@language": "ja",
+            "@value": "表示 - 非営利 - 継承 2.5 デンマーク"
+        },
+        {
+            "@language": "ka",
+            "@value": "ავტორობის მითითებით–არაკომერციული გამოყენებისთვის–გამოყენება იგივე პირობებით 2.5 დანია"
+        },
+        {
+            "@language": "kk",
+            "@value": "Attribution-NonCommercial-ShareAlike 2.5 Denmark"
+        },
+        {
+            "@language": "ko",
+            "@value": "저작자표시-비영리-동일조건변경허락 2.5 덴마크"
+        },
+        {
+            "@language": "lt",
+            "@value": "Attribution-NonCommercial-ShareAlike 2.5 Danija"
+        },
+        {
+            "@language": "lv",
+            "@value": "Atsaucoties-Nekomerciāls-Nemainot licenci 2.5 Dānija"
+        },
+        {
+            "@language": "mk",
+            "@value": "НаведиИзвор-Некомерцијално-СподелиПодИстиУслови 2.5 Данска"
+        },
+        {
+            "@language": "ml",
+            "@value": "Attribution-NonCommercial-ShareAlike 2.5 ഡെന്മാർക്ക്"
+        },
+        {
+            "@language": "mn",
+            "@value": "Attribution-NonCommercial-ShareAlike 2.5 Denmark"
+        },
+        {
+            "@language": "ms",
+            "@value": "Pengiktirafan-BukanKomersial-PerkongsianSerupa 2.5 Denmark"
+        },
+        {
+            "@language": "nl",
+            "@value": "Naamsvermelding-NietCommercieel-GelijkDelen 2.5 Denemarken"
+        },
+        {
+            "@language": "no",
+            "@value": "Navngivelse-Ikkekommersiell-DelPåSammeVilkår 2.5 Danmark"
+        },
+        {
+            "@language": "nso",
+            "@value": "Tsebagatšo - E sego ya Kgwebo - Mohlakanelwa 2.5 Denmark"
+        },
+        {
+            "@language": "oci-es",
+            "@value": "Attribution-NonCommercial-ShareAlike 2.5 Denmark"
+        },
+        {
+            "@language": "pl",
+            "@value": "Uznanie autorstwa-Użycie niekomercyjne-Na tych samych warunkach 2.5 Dania"
+        },
+        {
+            "@language": "pt",
+            "@value": "Atribuição - NãoComercial - CompartilhaIgual 2.5 Dinamarca"
+        },
+        {
+            "@language": "pt-br",
+            "@value": "Atribuição-Uso não-comercial-Compartilhamento pela mesma licença 2.5 Denmark"
+        },
+        {
+            "@language": "pt-pt",
+            "@value": "Atribuição-Uso Não-Comercial-Partilha nos termos da mesma licença 2.5 Denmark"
+        },
+        {
+            "@language": "ro",
+            "@value": "Atribuire-Necomercial-FărăModificări 2.5 Danemarca"
+        },
+        {
+            "@language": "ru",
+            "@value": "Attribution-NonCommercial-ShareAlike (Атрибуция — Некоммерческое использование — С сохранением условий) 2.5 Дания"
+        },
+        {
+            "@language": "si-lk",
+            "@value": "Attribution-NonCommercial-ShareAlike 2.5 Denmark"
+        },
+        {
+            "@language": "sl",
+            "@value": "Priznanje avtorstva-Nekomercialno-Deljenje pod enakimi pogoji 2.5 Danska"
+        },
+        {
+            "@language": "sq",
+            "@value": "Attribution-NonCommercial-ShareAlike 2.5 Danimarkë"
+        },
+        {
+            "@language": "sr",
+            "@value": "Autorstvo-Nekomercijalno-Deliti pod istim uslovima 2.5 Danska"
+        },
+        {
+            "@language": "sr",
+            "@value": "Ауторство-Некомерцијално-Делити под истим условима 2.5 Данска"
+        },
+        {
+            "@language": "sr-latn",
+            "@value": "Autorstvo-Nekomercijalno-Deliti pod istim uslovima 2.5 Danska"
+        },
+        {
+            "@language": "st",
+            "@value": "Attribution-NonCommercial-ShareAlike 2.5 Denmark"
+        },
+        {
+            "@language": "sv",
+            "@value": "Erkännande-IckeKommersiell-DelaLika 2.5 Danmark"
+        },
+        {
+            "@language": "ta",
+            "@value": "Attribution-NonCommercial-ShareAlike 2.5 Denmark"
+        },
+        {
+            "@language": "te",
+            "@value": "Attribution-NonCommercial-ShareAlike 2.5 డెన్మార్క్"
+        },
+        {
+            "@language": "th",
+            "@value": "แสดงที่มา-ไม่ใช้เพื่อการค้า-อนุญาตแบบเดียวกัน 2.5 เดนมาร์ก"
+        },
+        {
+            "@language": "tr",
+            "@value": "Attribution-Gayriticari-ShareAlike 2.5 Danimarka"
+        },
+        {
+            "@language": "uk",
+            "@value": "Attribution-NonCommercial-ShareAlike 2.5 Denmark"
+        },
+        {
+            "@language": "ur",
+            "@value": "Attribution-NonCommercial-ShareAlike 2.5 Denmark"
+        },
+        {
+            "@language": "vi",
+            "@value": "Attribution-NonCommercial-ShareAlike 2.5 Denmark"
+        },
+        {
+            "@language": "zh",
+            "@value": "署名-非商业性使用-相同方式共享 2.5 丹麦"
+        },
+        {
+            "@language": "zh-hk",
+            "@value": "姓名標示-非商業性-相同方式分享 2.5 丹麥"
+        },
+        {
+            "@language": "zh-tw",
+            "@value": "姓名標示-非商業性-相同方式分享 2.5 丹麥"
+        },
+        {
+            "@language": "zu",
+            "@value": "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano-Yihlanganyeleni 2.5 eDenmark"
+        },
+        {
+            "@language": "zxx",
+            "@value": "${Attribution-NonCommercial-ShareAlike} 2.5 ${Denmark}"
+        }
+    ],
+    "owl:sameAs": {
+        "@id": "http://creativecommons.org/licenses/by-nc-sa/2.5/dk/",
+        "@type": "cc:License",
+        "cc:jurisdiction": "http://creativecommons.org/international/dk/",
+        "cc:legalcode": "http://creativecommons.org/licenses/by-nc-sa/2.5/dk/legalcode",
+        "cc:licenseClass": "http://creativecommons.org/license/",
+        "cc:permits": [
+            "cc:DerivativeWorks",
+            "cc:Distribution",
+            "cc:Reproduction"
+        ],
+        "cc:prohibits": "cc:CommercialUse",
+        "cc:requires": [
+            "cc:Attribution",
+            "cc:Notice",
+            "cc:ShareAlike"
+        ],
+        "dc:creator": "http://creativecommons.org",
+        "dc:hasVersion": "2.5",
+        "dc:identifier": "by-nc-sa",
+        "dc:source": "http://creativecommons.org/licenses/by-nc-sa/2.5/",
+        "dc:title": [
+            {
+                "@language": "af",
+                "@value": "Erkenning-Niekommersieel-InsgelyksDeel 2.5 Denemarke"
+            },
+            {
+                "@language": "ar",
+                "@value": "المشاركة على قدم المساواة-غير تجاري-نسب العمل 2.5 الدنمارك"
+            },
+            {
+                "@language": "as",
+                "@value": "Attribution-NonCommercial-ShareAlike 2.5 Denmark"
+            },
+            {
+                "@language": "ast",
+                "@value": "Attribution-NonCommercial-ShareAlike 2.5 Denmark"
+            },
+            {
+                "@language": "ast-es",
+                "@value": "Attribution-NonCommercial-ShareAlike 2.5 Denmark"
+            },
+            {
+                "@language": "az",
+                "@value": "Attribution-NonCommercial-ShareAlike 2.5 Denmark"
+            },
+            {
+                "@language": "be",
+                "@value": "Attribution-NonCommercial-ShareAlike 2.5 Данія"
+            },
+            {
+                "@language": "bg",
+                "@value": "Признание-Некомерсиално-Споделяне на споделеното 2.5 Дания"
+            },
+            {
+                "@language": "bn",
+                "@value": "Attribution-NonCommercial-ShareAlike 2.5 Denmark"
+            },
+            {
+                "@language": "ca",
+                "@value": "Reconeixement-NoComercial-CompartirIgual 2.5 Dinamarca"
+            },
+            {
+                "@language": "cs",
+                "@value": "Uveďte autora-Nevyužívejte dílo komerčně-Zachovejte licenci 2.5 Dánsko"
+            },
+            {
+                "@language": "da",
+                "@value": "Navngivelse-IkkeKommerciel–DelPåSammeVilkår 2.5 Danmark"
+            },
+            {
+                "@language": "de",
+                "@value": "Namensnennung-Nicht-kommerziell-Weitergabe unter gleichen Bedingungen 2.5 Dänemark"
+            },
+            {
+                "@language": "de-at",
+                "@value": "Namensnennung-NichtKommerziell-Weitergabe unter gleichen Bedingungen 2.5 Dänemark"
+            },
+            {
+                "@language": "de-ch",
+                "@value": "Namensnennung-NichtKommerziell-Weitergabe unter gleichen Bedingungen 2.5 Dänemark"
+            },
+            {
+                "@language": "el",
+                "@value": "Αναφορά Δημιουργού - Μη Εμπορική Χρήση - Παρόμοια Διανομή 2.5 Δανία"
+            },
+            {
+                "@language": "en",
+                "@value": "Attribution-NonCommercial-ShareAlike 2.5 Denmark"
+            },
+            {
+                "@language": "en-ca",
+                "@value": "Attribution-NonCommercial-ShareAlike 2.5 Denmark"
+            },
+            {
+                "@language": "en-gb",
+                "@value": "Attribution-NonCommercial-ShareAlike 2.5 Denmark"
+            },
+            {
+                "@language": "en-hk",
+                "@value": "Attribution-NonCommercial-ShareAlike 2.5 Denmark"
+            },
+            {
+                "@language": "en-sg",
+                "@value": "Attribution-NonCommercial-ShareAlike 2.5 Denmark"
+            },
+            {
+                "@language": "en-us",
+                "@value": "Attribution-NonCommercial-ShareAlike 2.5 Denmark"
+            },
+            {
+                "@language": "eo",
+                "@value": "Atribuite-Nekomerce-Samkondiĉe 2.5 Danujo"
+            },
+            {
+                "@language": "es",
+                "@value": "Atribución-NoComercial-CompartirIgual 2.5 Dinamarca"
+            },
+            {
+                "@language": "es-ar",
+                "@value": "Atribución-NoComercial-CompartirDerivadasIgual 2.5 Dinamarca"
+            },
+            {
+                "@language": "es-cl",
+                "@value": "Atribución-NoComercial-LicenciarIgual 2.5 Dinamarca"
+            },
+            {
+                "@language": "es-co",
+                "@value": "Reconocimiento-NoComercial-CompartirIgual 2.5 Dinamarca"
+            },
+            {
+                "@language": "es-ec",
+                "@value": "Reconocimiento-NoComercial-CompartirIgual 2.5 Dinamarca"
+            },
+            {
+                "@language": "es-es",
+                "@value": "Reconocimiento-NoComercial-CompartirIgual 2.5 Dinamarca"
+            },
+            {
+                "@language": "es-gt",
+                "@value": "Reconocimiento-NoComercial-CompartirIgual 2.5 Dinamarca"
+            },
+            {
+                "@language": "es-mx",
+                "@value": "Atribución-No Comercial-Licenciamiento Recíproco 2.5 Dinamarca"
+            },
+            {
+                "@language": "es-pe",
+                "@value": "Reconocimiento-NoComercial-CompartirIgual 2.5 Dinamarca"
+            },
+            {
+                "@language": "es-pr",
+                "@value": "Reconocimiento-NoComercial-CompartirIgual 2.5 Dinamarca"
+            },
+            {
+                "@language": "et",
+                "@value": "Autorile viitamine + Mitteäriline eesmärk + Jagamine samadel tingimustel 2.5 Taani"
+            },
+            {
+                "@language": "eu",
+                "@value": "Aitortu-EzKomertziala-PartekatuBerdin 2.5 Danimarka"
+            },
+            {
+                "@language": "fa",
+                "@value": "Attribution-NonCommercial-ShareAlike 2.5 دانمارک"
+            },
+            {
+                "@language": "fi",
+                "@value": "Nimeä-Epäkaupallinen-Tarttuva 2.5 Tanska"
+            },
+            {
+                "@language": "fr",
+                "@value": "Attribution - Pas d'Utilisation Commerciale - Partage à l'Identique 2.5 Danemark"
+            },
+            {
+                "@language": "fr-ca",
+                "@value": "Paternité - Pas d'Utilisation Commerciale - Partage des Conditions Initiales à l'Identique 2.5 Danemark"
+            },
+            {
+                "@language": "fr-ch",
+                "@value": "Paternité - Pas d'Utilisation Commerciale - Partage des Conditions Initiales à l'Identique 2.5 Danemark"
+            },
+            {
+                "@language": "fr-lu",
+                "@value": "Paternité - Pas d'Utilisation Commerciale - Partage des Conditions Initiales à l'Identique 2.5 Danemark"
+            },
+            {
+                "@language": "ga",
+                "@value": "Attribution-NonCommercial-ShareAlike 2.5 Denmark"
+            },
+            {
+                "@language": "gl",
+                "@value": "Recoñecemento-NonComercial-CompartirIgual 2.5 Denmark"
+            },
+            {
+                "@language": "he",
+                "@value": "ייחוס-שימוש לא מסחרי-שיתוף זהה 2.5 דנמרק"
+            },
+            {
+                "@language": "hi",
+                "@value": "Attribution-NonCommercial-ShareAlike 2.5 Denmark"
+            },
+            {
+                "@language": "hr",
+                "@value": "Imenovanje-Nekomercijalno-Dijeli pod istim uvjetima 2.5 Danska"
+            },
+            {
+                "@language": "hu",
+                "@value": "Nevezd meg! - Ne add el! - Így add tovább! 2.5 Dánia"
+            },
+            {
+                "@language": "hy",
+                "@value": "Հղում - ոչ-առևտրային օգտագործում - համանման տարածում 2.5 Դանիա"
+            },
+            {
+                "@language": "id",
+                "@value": "Atribusi-NonKomersial-BerbagiSerupa 2.5 Denmark"
+            },
+            {
+                "@language": "is",
+                "@value": "Attribution-NonCommercial-ShareAlike 2.5 Denmark"
+            },
+            {
+                "@language": "it",
+                "@value": "Attribuzione - Non commerciale - Condividi allo stesso modo 2.5 Denmark"
+            },
+            {
+                "@language": "it-ch",
+                "@value": "Attribuzione - Non commerciale - Condividi allo stesso modo 2.5 Denmark"
+            },
+            {
+                "@language": "ja",
+                "@value": "表示 - 非営利 - 継承 2.5 デンマーク"
+            },
+            {
+                "@language": "ka",
+                "@value": "ავტორობის მითითებით–არაკომერციული გამოყენებისთვის–გამოყენება იგივე პირობებით 2.5 დანია"
+            },
+            {
+                "@language": "kk",
+                "@value": "Attribution-NonCommercial-ShareAlike 2.5 Denmark"
+            },
+            {
+                "@language": "ko",
+                "@value": "저작자표시-비영리-동일조건변경허락 2.5 덴마크"
+            },
+            {
+                "@language": "lt",
+                "@value": "Attribution-NonCommercial-ShareAlike 2.5 Danija"
+            },
+            {
+                "@language": "lv",
+                "@value": "Atsaucoties-Nekomerciāls-Nemainot licenci 2.5 Dānija"
+            },
+            {
+                "@language": "mk",
+                "@value": "НаведиИзвор-Некомерцијално-СподелиПодИстиУслови 2.5 Данска"
+            },
+            {
+                "@language": "ml",
+                "@value": "Attribution-NonCommercial-ShareAlike 2.5 ഡെന്മാർക്ക്"
+            },
+            {
+                "@language": "mn",
+                "@value": "Attribution-NonCommercial-ShareAlike 2.5 Denmark"
+            },
+            {
+                "@language": "ms",
+                "@value": "Pengiktirafan-BukanKomersial-PerkongsianSerupa 2.5 Denmark"
+            },
+            {
+                "@language": "nl",
+                "@value": "Naamsvermelding-NietCommercieel-GelijkDelen 2.5 Denemarken"
+            },
+            {
+                "@language": "no",
+                "@value": "Navngivelse-Ikkekommersiell-DelPåSammeVilkår 2.5 Danmark"
+            },
+            {
+                "@language": "nso",
+                "@value": "Tsebagatšo - E sego ya Kgwebo - Mohlakanelwa 2.5 Denmark"
+            },
+            {
+                "@language": "oci-es",
+                "@value": "Attribution-NonCommercial-ShareAlike 2.5 Denmark"
+            },
+            {
+                "@language": "pl",
+                "@value": "Uznanie autorstwa-Użycie niekomercyjne-Na tych samych warunkach 2.5 Dania"
+            },
+            {
+                "@language": "pt",
+                "@value": "Atribuição - NãoComercial - CompartilhaIgual 2.5 Dinamarca"
+            },
+            {
+                "@language": "pt-br",
+                "@value": "Atribuição-Uso não-comercial-Compartilhamento pela mesma licença 2.5 Denmark"
+            },
+            {
+                "@language": "pt-pt",
+                "@value": "Atribuição-Uso Não-Comercial-Partilha nos termos da mesma licença 2.5 Denmark"
+            },
+            {
+                "@language": "ro",
+                "@value": "Atribuire-Necomercial-FărăModificări 2.5 Danemarca"
+            },
+            {
+                "@language": "ru",
+                "@value": "Attribution-NonCommercial-ShareAlike (Атрибуция — Некоммерческое использование — С сохранением условий) 2.5 Дания"
+            },
+            {
+                "@language": "si-lk",
+                "@value": "Attribution-NonCommercial-ShareAlike 2.5 Denmark"
+            },
+            {
+                "@language": "sl",
+                "@value": "Priznanje avtorstva-Nekomercialno-Deljenje pod enakimi pogoji 2.5 Danska"
+            },
+            {
+                "@language": "sq",
+                "@value": "Attribution-NonCommercial-ShareAlike 2.5 Danimarkë"
+            },
+            {
+                "@language": "sr",
+                "@value": "Autorstvo-Nekomercijalno-Deliti pod istim uslovima 2.5 Danska"
+            },
+            {
+                "@language": "sr",
+                "@value": "Ауторство-Некомерцијално-Делити под истим условима 2.5 Данска"
+            },
+            {
+                "@language": "sr-latn",
+                "@value": "Autorstvo-Nekomercijalno-Deliti pod istim uslovima 2.5 Danska"
+            },
+            {
+                "@language": "st",
+                "@value": "Attribution-NonCommercial-ShareAlike 2.5 Denmark"
+            },
+            {
+                "@language": "sv",
+                "@value": "Erkännande-IckeKommersiell-DelaLika 2.5 Danmark"
+            },
+            {
+                "@language": "ta",
+                "@value": "Attribution-NonCommercial-ShareAlike 2.5 Denmark"
+            },
+            {
+                "@language": "te",
+                "@value": "Attribution-NonCommercial-ShareAlike 2.5 డెన్మార్క్"
+            },
+            {
+                "@language": "th",
+                "@value": "แสดงที่มา-ไม่ใช้เพื่อการค้า-อนุญาตแบบเดียวกัน 2.5 เดนมาร์ก"
+            },
+            {
+                "@language": "tr",
+                "@value": "Attribution-Gayriticari-ShareAlike 2.5 Danimarka"
+            },
+            {
+                "@language": "uk",
+                "@value": "Attribution-NonCommercial-ShareAlike 2.5 Denmark"
+            },
+            {
+                "@language": "ur",
+                "@value": "Attribution-NonCommercial-ShareAlike 2.5 Denmark"
+            },
+            {
+                "@language": "vi",
+                "@value": "Attribution-NonCommercial-ShareAlike 2.5 Denmark"
+            },
+            {
+                "@language": "zh",
+                "@value": "署名-非商业性使用-相同方式共享 2.5 丹麦"
+            },
+            {
+                "@language": "zh-hk",
+                "@value": "姓名標示-非商業性-相同方式分享 2.5 丹麥"
+            },
+            {
+                "@language": "zh-tw",
+                "@value": "姓名標示-非商業性-相同方式分享 2.5 丹麥"
+            },
+            {
+                "@language": "zu",
+                "@value": "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano-Yihlanganyeleni 2.5 eDenmark"
+            },
+            {
+                "@language": "zxx",
+                "@value": "${Attribution-NonCommercial-ShareAlike} 2.5 ${Denmark}"
+            }
+        ],
+        "owl:sameAs": "https://licensedb.org/id/CC-BY-NC-SA-2.5-dk",
+        "foaf:logo": [
+            "http://i.creativecommons.org/l/by-nc-sa/2.5/dk/80x15.png",
+            "http://i.creativecommons.org/l/by-nc-sa/2.5/dk/88x31.png"
+        ]
+    },
+    "foaf:logo": [
+        "http://i.creativecommons.org/l/by-nc-sa/2.5/dk/80x15.png",
+        "http://i.creativecommons.org/l/by-nc-sa/2.5/dk/88x31.png"
+    ],
+    "li:id": "CC-BY-NC-SA-2.5-dk",
+    "li:name": "CC BY-NC-SA 2.5 DK"
+}

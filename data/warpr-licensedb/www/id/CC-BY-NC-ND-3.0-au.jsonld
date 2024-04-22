@@ -1,0 +1,850 @@
+{
+    "@context": {
+        "cc": "http://creativecommons.org/ns#",
+        "dc": "http://purl.org/dc/terms/",
+        "dc11": "http://purl.org/dc/elements/1.1/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "li": "https://licensedb.org/ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "cc:legalcode": {
+            "@type": "@id"
+        },
+        "cc:permits": {
+            "@type": "@id"
+        },
+        "cc:requires": {
+            "@type": "@id"
+        },
+        "cc:prohibits": {
+            "@type": "@id"
+        },
+        "cc:jurisdiction": {
+            "@type": "@id"
+        },
+        "cc:licenseClass": {
+            "@type": "@id"
+        },
+        "dc:creator": {
+            "@type": "@id"
+        },
+        "dc:source": {
+            "@type": "@id"
+        },
+        "dc:replaces": {
+            "@type": "@id"
+        },
+        "dc:isBasedOn": {
+            "@type": "@id"
+        },
+        "dc:isReplacedBy": {
+            "@type": "@id"
+        },
+        "foaf:logo": {
+            "@type": "@id"
+        },
+        "li:plaintext": {
+            "@type": "@id"
+        },
+        "li:libre": {
+            "@type": "@id"
+        },
+        "owl:sameAs": {
+            "@type": "@id"
+        }
+    },
+    "@id": "https://licensedb.org/id/CC-BY-NC-ND-3.0-au",
+    "@type": [
+        "cc:License",
+        "li:License"
+    ],
+    "cc:jurisdiction": "http://creativecommons.org/international/au/",
+    "cc:legalcode": "http://creativecommons.org/licenses/by-nc-nd/3.0/au/legalcode",
+    "cc:licenseClass": "http://creativecommons.org/license/",
+    "cc:permits": [
+        "cc:Distribution",
+        "cc:Reproduction"
+    ],
+    "cc:prohibits": "cc:CommercialUse",
+    "cc:requires": [
+        "cc:Attribution",
+        "cc:Notice"
+    ],
+    "dc:creator": "http://creativecommons.org",
+    "dc:hasVersion": "3.0",
+    "dc:identifier": "by-nc-nd",
+    "dc:source": "http://creativecommons.org/licenses/by-nc-nd/3.0/",
+    "dc:title": [
+        {
+            "@language": "af",
+            "@value": "Erkenning-NieKommersieel-GeenAfleidings 3.0 Australië"
+        },
+        {
+            "@language": "ar",
+            "@value": "نسب- غير تجاري - لا اشتقاق 3.0 أستراليا"
+        },
+        {
+            "@language": "as",
+            "@value": "Attribution-NonCommercial-NoDerivs 3.0 Australia"
+        },
+        {
+            "@language": "ast",
+            "@value": "Attribution-NonCommercial-NoDerivs 3.0 Australia"
+        },
+        {
+            "@language": "ast-es",
+            "@value": "Attribution-NonCommercial-NoDerivs 3.0 Australia"
+        },
+        {
+            "@language": "az",
+            "@value": "Attribution-NonCommercial-NoDerivs 3.0 Australia"
+        },
+        {
+            "@language": "be",
+            "@value": "Attribution-NonCommercial-NoDerivs 3.0 Аўстралія"
+        },
+        {
+            "@language": "bg",
+            "@value": "Признание-Некомерсиално-Без производни 3.0 Австралия"
+        },
+        {
+            "@language": "bn",
+            "@value": "Attribution-NonCommercial-NoDerivs 3.0 Australia"
+        },
+        {
+            "@language": "ca",
+            "@value": "Reconeixement-NoComercial-SenseObraDerivada 3.0 Austràlia"
+        },
+        {
+            "@language": "cs",
+            "@value": "Uveďte autora-Neužívejte dílo komerčně-Nezasahujte do díla 3.0 Austrálie"
+        },
+        {
+            "@language": "da",
+            "@value": "Navngivelse-IkkeKommerciel-IngenBearbejdelse 3.0 Australien"
+        },
+        {
+            "@language": "de",
+            "@value": "Namensnennung-NichtKommerziell-KeineBearbeitung 3.0 Australien"
+        },
+        {
+            "@language": "de-at",
+            "@value": "Namensnennung-NichtKommerziell-KeineBearbeitung 3.0 Australien"
+        },
+        {
+            "@language": "de-ch",
+            "@value": "Namensnennung-NichtKommerziell-KeineBearbeitung 3.0 Australien"
+        },
+        {
+            "@language": "el",
+            "@value": "Αναφορά Δημιουργού-Μη Εμπορική Χρήση-Όχι Παράγωγα Έργα 3.0 Αυστραλία"
+        },
+        {
+            "@language": "en",
+            "@value": "Attribution-NonCommercial-NoDerivs 3.0 Australia"
+        },
+        {
+            "@language": "en-ca",
+            "@value": "Attribution-NonCommercial-NoDerivs 3.0 Australia"
+        },
+        {
+            "@language": "en-gb",
+            "@value": "Attribution-NonCommercial-NoDerivs 3.0 Australia"
+        },
+        {
+            "@language": "en-hk",
+            "@value": "Attribution-NonCommercial-NoDerivs 3.0 Australia"
+        },
+        {
+            "@language": "en-sg",
+            "@value": "Attribution-NonCommercial-NoDerivs 3.0 Australia"
+        },
+        {
+            "@language": "en-us",
+            "@value": "Attribution-NonCommercial-NoDerivs 3.0 Australia"
+        },
+        {
+            "@language": "eo",
+            "@value": "Atribuite-Nekomerce-Nemodifite 3.0 Aŭstralio"
+        },
+        {
+            "@language": "es",
+            "@value": "Atribución-NoComercial-SinDerivadas 3.0 Australia"
+        },
+        {
+            "@language": "es-ar",
+            "@value": "Atribución-NoComercial-SinDerivadas 3.0 Australia"
+        },
+        {
+            "@language": "es-cl",
+            "@value": "Atribución-NoComercial-SinDerivadas 3.0 Australia"
+        },
+        {
+            "@language": "es-co",
+            "@value": "Reconocimiento-NoComercial-SinObraDerivada 3.0 Australia"
+        },
+        {
+            "@language": "es-ec",
+            "@value": "Reconocimiento-NoComercial-SinObraDerivada 3.0 Australia"
+        },
+        {
+            "@language": "es-es",
+            "@value": "Reconocimiento-NoComercial-SinObraDerivada 3.0 Australia"
+        },
+        {
+            "@language": "es-gt",
+            "@value": "Reconocimiento-NoComercial-SinObraDerivada 3.0 Australia"
+        },
+        {
+            "@language": "es-mx",
+            "@value": "Atribución-No Comercial-No Derivadas 3.0 Australia"
+        },
+        {
+            "@language": "es-pe",
+            "@value": "Reconocimiento-NoComercial-SinObraDerivada 3.0 Australia"
+        },
+        {
+            "@language": "es-pr",
+            "@value": "Reconocimiento-NoComercial-SinObrasDerivadas 3.0 Australia"
+        },
+        {
+            "@language": "et",
+            "@value": "Autorile viitamine + Mitteäriline eesmärk + Tuletatud teoste keeld 3.0 Austraalia"
+        },
+        {
+            "@language": "eu",
+            "@value": "Aitortu-EzKomertziala-LanEratorririkGabe 3.0 Australia"
+        },
+        {
+            "@language": "fa",
+            "@value": "Attribution-NonCommercial-NoDerivs 3.0 استرالیا"
+        },
+        {
+            "@language": "fi",
+            "@value": "Nimeä-Ei muutoksia-Epäkaupallinen 3.0 Australia"
+        },
+        {
+            "@language": "fr",
+            "@value": "Attribution - Pas d’Utilisation Commerciale - Pas de Modification 3.0 Australie"
+        },
+        {
+            "@language": "fr-ca",
+            "@value": "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 3.0 Australie"
+        },
+        {
+            "@language": "fr-ch",
+            "@value": "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 3.0 Australie"
+        },
+        {
+            "@language": "fr-lu",
+            "@value": "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 3.0 Australie"
+        },
+        {
+            "@language": "ga",
+            "@value": "Attribution-NonCommercial-NoDerivs 3.0 Australia"
+        },
+        {
+            "@language": "gl",
+            "@value": "Recoñecemento-NonComercial-SenObraDerivada 3.0 Australia"
+        },
+        {
+            "@language": "he",
+            "@value": "ייחוס-שימוש לא מסחרי-איסור יצירות נגזרות 3.0 אוסטרליה"
+        },
+        {
+            "@language": "hi",
+            "@value": "Attribution-NonCommercial-NoDerivs 3.0 Australia"
+        },
+        {
+            "@language": "hr",
+            "@value": "Imenovanje-Nekomercijalno-Bez prerada 3.0 Australija"
+        },
+        {
+            "@language": "hu",
+            "@value": "Nevezd meg! - Ne add el! - Ne változtasd! 3.0 Ausztrália"
+        },
+        {
+            "@language": "hy",
+            "@value": "Հղում - Ոչ-առևտրային օգտագործում - Օգտագործում առանց վերափոխումների 3.0 Australia"
+        },
+        {
+            "@language": "id",
+            "@value": "Atribusi-NonKomersial-TanpaTurunan 3.0 Australia"
+        },
+        {
+            "@language": "is",
+            "@value": "Attribution-NonCommercial-NoDerivs 3.0 Australia"
+        },
+        {
+            "@language": "it",
+            "@value": "Attribuzione - Non commerciale - Non opere derivate 3.0 Australia"
+        },
+        {
+            "@language": "it-ch",
+            "@value": "Attribuzione - Non commerciale - Non opere derivate 3.0 Australia"
+        },
+        {
+            "@language": "ja",
+            "@value": "表示 - 非営利 - 改変禁止 3.0 オーストラリア"
+        },
+        {
+            "@language": "ka",
+            "@value": "ავტორობის მითითებით–არაკომერციული გამოყენბისათვის–გადამუშავების გარეშე 3.0 ავსტრალია"
+        },
+        {
+            "@language": "kk",
+            "@value": "Attribution-NonCommercial-NoDerivs 3.0 Australia"
+        },
+        {
+            "@language": "ko",
+            "@value": "저작자표시-비영리-변경금지 3.0 Australia"
+        },
+        {
+            "@language": "lt",
+            "@value": "Attribution-NonCommercial-NoDerivs 3.0 Australija"
+        },
+        {
+            "@language": "lv",
+            "@value": "Atsaucoties-Nekomerciāls-Nemainīts 3.0 Austrālija"
+        },
+        {
+            "@language": "mk",
+            "@value": "НаведиИзвор-Некомерцијално-БезАдаптираниДела 3.0 Австралија"
+        },
+        {
+            "@language": "ml",
+            "@value": "Attribution-NonCommercial-NoDerivs 3.0 ആസ്ട്രേലിയ"
+        },
+        {
+            "@language": "mn",
+            "@value": "Attribution-NonCommercial-NoDerivs 3.0 Australia"
+        },
+        {
+            "@language": "ms",
+            "@value": "Pengiktirafan-BukanKomersial-TiadaTerbitan 3.0 Australia"
+        },
+        {
+            "@language": "nl",
+            "@value": "Naamsvermelding-NietCommercieel-GeenAfgeleideWerken 3.0 Australië"
+        },
+        {
+            "@language": "no",
+            "@value": "Navngivelse-Ikkekommersiell-IngenBearbeidelse 3.0 Australia"
+        },
+        {
+            "@language": "nso",
+            "@value": "Tsebagatšo-E sego ya Kgwebo-Tše sa fetolwego 3.0 Australia"
+        },
+        {
+            "@language": "oci-es",
+            "@value": "Attribution-NonCommercial-NoDerivs 3.0 Australia"
+        },
+        {
+            "@language": "pl",
+            "@value": "Uznanie autorstwa-Użycie niekomercyjne-Bez utworów zależnych 3.0 Australia"
+        },
+        {
+            "@language": "pt",
+            "@value": "Atribuição - NãoComercial - SemDerivados 3.0 Austrália"
+        },
+        {
+            "@language": "pt-br",
+            "@value": "Atribuição-Uso não-comercial-Vedada a criação de obras derivadas 3.0 Australia"
+        },
+        {
+            "@language": "pt-pt",
+            "@value": "Atribuição-Uso Não-Comercial-Proibição de realização de Obras Derivadas 3.0 Austrália"
+        },
+        {
+            "@language": "ro",
+            "@value": "Atribuire-Necomercial-FărăModificări 3.0 Australia"
+        },
+        {
+            "@language": "ru",
+            "@value": "Attribution-NonCommercial-NoDerivs (Атрибуция — Некоммерческое использование — Без производных произведений) 3.0 Австралия"
+        },
+        {
+            "@language": "si-lk",
+            "@value": "Attribution-NonCommercial-NoDerivs 3.0 Australia"
+        },
+        {
+            "@language": "sl",
+            "@value": "Priznanje avtorstva-Nekomercialno-Brez predelav 3.0 Avstralija"
+        },
+        {
+            "@language": "sq",
+            "@value": "Attribution-NonCommercial-NoDerivs 3.0 Australi"
+        },
+        {
+            "@language": "sr",
+            "@value": "Autorstvo-Nekomercijalno-Bez prerada 3.0 Australija"
+        },
+        {
+            "@language": "sr",
+            "@value": "Ауторство-Некомерцијално-Без прерада 3.0 Аустралија"
+        },
+        {
+            "@language": "sr-latn",
+            "@value": "Autorstvo-Nekomercijalno-Bez prerada 3.0 Australija"
+        },
+        {
+            "@language": "st",
+            "@value": "Attribution-NonCommercial-NoDerivs 3.0 Australia"
+        },
+        {
+            "@language": "sv",
+            "@value": "Erkännande-Ickekommersiell-IngaBearbetningar 3.0 Australien"
+        },
+        {
+            "@language": "ta",
+            "@value": "Attribution-NonCommercial-NoDerivs 3.0 Australia"
+        },
+        {
+            "@language": "te",
+            "@value": "Attribution-NonCommercial-NoDerivs 3.0 ఆస్ట్రేలియా"
+        },
+        {
+            "@language": "th",
+            "@value": "แสดงที่มา-ไม่ใช้เพื่อการค้า-ไม่ดัดแปลง 3.0 ออสเตรเลีย"
+        },
+        {
+            "@language": "tr",
+            "@value": "Attribution-Gayriticari-NoDerivs 3.0 Avustralya"
+        },
+        {
+            "@language": "uk",
+            "@value": "Attribution-NonCommercial-NoDerivs 3.0 Australia"
+        },
+        {
+            "@language": "ur",
+            "@value": "Attribution-NonCommercial-NoDerivs 3.0 Australia"
+        },
+        {
+            "@language": "vi",
+            "@value": "Ghi nhận công của tác giả - Phi thương mại - Không phái sinh  3.0 Nước Úc "
+        },
+        {
+            "@language": "zh",
+            "@value": "署名-非商业性使用-禁止演绎 3.0 澳大利亚"
+        },
+        {
+            "@language": "zh-hk",
+            "@value": "姓名標示-非商業性-禁止改作 3.0 澳大利亞"
+        },
+        {
+            "@language": "zh-tw",
+            "@value": "姓名標示-非商業性-禁止改作 3.0 澳大利亞"
+        },
+        {
+            "@language": "zu",
+            "@value": "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano-Ungasuseli lutho kulokhu 3.0 e-Australia"
+        },
+        {
+            "@language": "zxx",
+            "@value": "${Attribution-NonCommercial-NoDerivs} 3.0 ${Australia}"
+        }
+    ],
+    "owl:sameAs": {
+        "@id": "http://creativecommons.org/licenses/by-nc-nd/3.0/au/",
+        "@type": "cc:License",
+        "cc:jurisdiction": "http://creativecommons.org/international/au/",
+        "cc:legalcode": "http://creativecommons.org/licenses/by-nc-nd/3.0/au/legalcode",
+        "cc:licenseClass": "http://creativecommons.org/license/",
+        "cc:permits": [
+            "cc:Distribution",
+            "cc:Reproduction"
+        ],
+        "cc:prohibits": "cc:CommercialUse",
+        "cc:requires": [
+            "cc:Attribution",
+            "cc:Notice"
+        ],
+        "dc:creator": "http://creativecommons.org",
+        "dc:hasVersion": "3.0",
+        "dc:identifier": "by-nc-nd",
+        "dc:source": "http://creativecommons.org/licenses/by-nc-nd/3.0/",
+        "dc:title": [
+            {
+                "@language": "af",
+                "@value": "Erkenning-NieKommersieel-GeenAfleidings 3.0 Australië"
+            },
+            {
+                "@language": "ar",
+                "@value": "نسب- غير تجاري - لا اشتقاق 3.0 أستراليا"
+            },
+            {
+                "@language": "as",
+                "@value": "Attribution-NonCommercial-NoDerivs 3.0 Australia"
+            },
+            {
+                "@language": "ast",
+                "@value": "Attribution-NonCommercial-NoDerivs 3.0 Australia"
+            },
+            {
+                "@language": "ast-es",
+                "@value": "Attribution-NonCommercial-NoDerivs 3.0 Australia"
+            },
+            {
+                "@language": "az",
+                "@value": "Attribution-NonCommercial-NoDerivs 3.0 Australia"
+            },
+            {
+                "@language": "be",
+                "@value": "Attribution-NonCommercial-NoDerivs 3.0 Аўстралія"
+            },
+            {
+                "@language": "bg",
+                "@value": "Признание-Некомерсиално-Без производни 3.0 Австралия"
+            },
+            {
+                "@language": "bn",
+                "@value": "Attribution-NonCommercial-NoDerivs 3.0 Australia"
+            },
+            {
+                "@language": "ca",
+                "@value": "Reconeixement-NoComercial-SenseObraDerivada 3.0 Austràlia"
+            },
+            {
+                "@language": "cs",
+                "@value": "Uveďte autora-Neužívejte dílo komerčně-Nezasahujte do díla 3.0 Austrálie"
+            },
+            {
+                "@language": "da",
+                "@value": "Navngivelse-IkkeKommerciel-IngenBearbejdelse 3.0 Australien"
+            },
+            {
+                "@language": "de",
+                "@value": "Namensnennung-NichtKommerziell-KeineBearbeitung 3.0 Australien"
+            },
+            {
+                "@language": "de-at",
+                "@value": "Namensnennung-NichtKommerziell-KeineBearbeitung 3.0 Australien"
+            },
+            {
+                "@language": "de-ch",
+                "@value": "Namensnennung-NichtKommerziell-KeineBearbeitung 3.0 Australien"
+            },
+            {
+                "@language": "el",
+                "@value": "Αναφορά Δημιουργού-Μη Εμπορική Χρήση-Όχι Παράγωγα Έργα 3.0 Αυστραλία"
+            },
+            {
+                "@language": "en",
+                "@value": "Attribution-NonCommercial-NoDerivs 3.0 Australia"
+            },
+            {
+                "@language": "en-ca",
+                "@value": "Attribution-NonCommercial-NoDerivs 3.0 Australia"
+            },
+            {
+                "@language": "en-gb",
+                "@value": "Attribution-NonCommercial-NoDerivs 3.0 Australia"
+            },
+            {
+                "@language": "en-hk",
+                "@value": "Attribution-NonCommercial-NoDerivs 3.0 Australia"
+            },
+            {
+                "@language": "en-sg",
+                "@value": "Attribution-NonCommercial-NoDerivs 3.0 Australia"
+            },
+            {
+                "@language": "en-us",
+                "@value": "Attribution-NonCommercial-NoDerivs 3.0 Australia"
+            },
+            {
+                "@language": "eo",
+                "@value": "Atribuite-Nekomerce-Nemodifite 3.0 Aŭstralio"
+            },
+            {
+                "@language": "es",
+                "@value": "Atribución-NoComercial-SinDerivadas 3.0 Australia"
+            },
+            {
+                "@language": "es-ar",
+                "@value": "Atribución-NoComercial-SinDerivadas 3.0 Australia"
+            },
+            {
+                "@language": "es-cl",
+                "@value": "Atribución-NoComercial-SinDerivadas 3.0 Australia"
+            },
+            {
+                "@language": "es-co",
+                "@value": "Reconocimiento-NoComercial-SinObraDerivada 3.0 Australia"
+            },
+            {
+                "@language": "es-ec",
+                "@value": "Reconocimiento-NoComercial-SinObraDerivada 3.0 Australia"
+            },
+            {
+                "@language": "es-es",
+                "@value": "Reconocimiento-NoComercial-SinObraDerivada 3.0 Australia"
+            },
+            {
+                "@language": "es-gt",
+                "@value": "Reconocimiento-NoComercial-SinObraDerivada 3.0 Australia"
+            },
+            {
+                "@language": "es-mx",
+                "@value": "Atribución-No Comercial-No Derivadas 3.0 Australia"
+            },
+            {
+                "@language": "es-pe",
+                "@value": "Reconocimiento-NoComercial-SinObraDerivada 3.0 Australia"
+            },
+            {
+                "@language": "es-pr",
+                "@value": "Reconocimiento-NoComercial-SinObrasDerivadas 3.0 Australia"
+            },
+            {
+                "@language": "et",
+                "@value": "Autorile viitamine + Mitteäriline eesmärk + Tuletatud teoste keeld 3.0 Austraalia"
+            },
+            {
+                "@language": "eu",
+                "@value": "Aitortu-EzKomertziala-LanEratorririkGabe 3.0 Australia"
+            },
+            {
+                "@language": "fa",
+                "@value": "Attribution-NonCommercial-NoDerivs 3.0 استرالیا"
+            },
+            {
+                "@language": "fi",
+                "@value": "Nimeä-Ei muutoksia-Epäkaupallinen 3.0 Australia"
+            },
+            {
+                "@language": "fr",
+                "@value": "Attribution - Pas d’Utilisation Commerciale - Pas de Modification 3.0 Australie"
+            },
+            {
+                "@language": "fr-ca",
+                "@value": "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 3.0 Australie"
+            },
+            {
+                "@language": "fr-ch",
+                "@value": "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 3.0 Australie"
+            },
+            {
+                "@language": "fr-lu",
+                "@value": "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 3.0 Australie"
+            },
+            {
+                "@language": "ga",
+                "@value": "Attribution-NonCommercial-NoDerivs 3.0 Australia"
+            },
+            {
+                "@language": "gl",
+                "@value": "Recoñecemento-NonComercial-SenObraDerivada 3.0 Australia"
+            },
+            {
+                "@language": "he",
+                "@value": "ייחוס-שימוש לא מסחרי-איסור יצירות נגזרות 3.0 אוסטרליה"
+            },
+            {
+                "@language": "hi",
+                "@value": "Attribution-NonCommercial-NoDerivs 3.0 Australia"
+            },
+            {
+                "@language": "hr",
+                "@value": "Imenovanje-Nekomercijalno-Bez prerada 3.0 Australija"
+            },
+            {
+                "@language": "hu",
+                "@value": "Nevezd meg! - Ne add el! - Ne változtasd! 3.0 Ausztrália"
+            },
+            {
+                "@language": "hy",
+                "@value": "Հղում - Ոչ-առևտրային օգտագործում - Օգտագործում առանց վերափոխումների 3.0 Australia"
+            },
+            {
+                "@language": "id",
+                "@value": "Atribusi-NonKomersial-TanpaTurunan 3.0 Australia"
+            },
+            {
+                "@language": "is",
+                "@value": "Attribution-NonCommercial-NoDerivs 3.0 Australia"
+            },
+            {
+                "@language": "it",
+                "@value": "Attribuzione - Non commerciale - Non opere derivate 3.0 Australia"
+            },
+            {
+                "@language": "it-ch",
+                "@value": "Attribuzione - Non commerciale - Non opere derivate 3.0 Australia"
+            },
+            {
+                "@language": "ja",
+                "@value": "表示 - 非営利 - 改変禁止 3.0 オーストラリア"
+            },
+            {
+                "@language": "ka",
+                "@value": "ავტორობის მითითებით–არაკომერციული გამოყენბისათვის–გადამუშავების გარეშე 3.0 ავსტრალია"
+            },
+            {
+                "@language": "kk",
+                "@value": "Attribution-NonCommercial-NoDerivs 3.0 Australia"
+            },
+            {
+                "@language": "ko",
+                "@value": "저작자표시-비영리-변경금지 3.0 Australia"
+            },
+            {
+                "@language": "lt",
+                "@value": "Attribution-NonCommercial-NoDerivs 3.0 Australija"
+            },
+            {
+                "@language": "lv",
+                "@value": "Atsaucoties-Nekomerciāls-Nemainīts 3.0 Austrālija"
+            },
+            {
+                "@language": "mk",
+                "@value": "НаведиИзвор-Некомерцијално-БезАдаптираниДела 3.0 Австралија"
+            },
+            {
+                "@language": "ml",
+                "@value": "Attribution-NonCommercial-NoDerivs 3.0 ആസ്ട്രേലിയ"
+            },
+            {
+                "@language": "mn",
+                "@value": "Attribution-NonCommercial-NoDerivs 3.0 Australia"
+            },
+            {
+                "@language": "ms",
+                "@value": "Pengiktirafan-BukanKomersial-TiadaTerbitan 3.0 Australia"
+            },
+            {
+                "@language": "nl",
+                "@value": "Naamsvermelding-NietCommercieel-GeenAfgeleideWerken 3.0 Australië"
+            },
+            {
+                "@language": "no",
+                "@value": "Navngivelse-Ikkekommersiell-IngenBearbeidelse 3.0 Australia"
+            },
+            {
+                "@language": "nso",
+                "@value": "Tsebagatšo-E sego ya Kgwebo-Tše sa fetolwego 3.0 Australia"
+            },
+            {
+                "@language": "oci-es",
+                "@value": "Attribution-NonCommercial-NoDerivs 3.0 Australia"
+            },
+            {
+                "@language": "pl",
+                "@value": "Uznanie autorstwa-Użycie niekomercyjne-Bez utworów zależnych 3.0 Australia"
+            },
+            {
+                "@language": "pt",
+                "@value": "Atribuição - NãoComercial - SemDerivados 3.0 Austrália"
+            },
+            {
+                "@language": "pt-br",
+                "@value": "Atribuição-Uso não-comercial-Vedada a criação de obras derivadas 3.0 Australia"
+            },
+            {
+                "@language": "pt-pt",
+                "@value": "Atribuição-Uso Não-Comercial-Proibição de realização de Obras Derivadas 3.0 Austrália"
+            },
+            {
+                "@language": "ro",
+                "@value": "Atribuire-Necomercial-FărăModificări 3.0 Australia"
+            },
+            {
+                "@language": "ru",
+                "@value": "Attribution-NonCommercial-NoDerivs (Атрибуция — Некоммерческое использование — Без производных произведений) 3.0 Австралия"
+            },
+            {
+                "@language": "si-lk",
+                "@value": "Attribution-NonCommercial-NoDerivs 3.0 Australia"
+            },
+            {
+                "@language": "sl",
+                "@value": "Priznanje avtorstva-Nekomercialno-Brez predelav 3.0 Avstralija"
+            },
+            {
+                "@language": "sq",
+                "@value": "Attribution-NonCommercial-NoDerivs 3.0 Australi"
+            },
+            {
+                "@language": "sr",
+                "@value": "Autorstvo-Nekomercijalno-Bez prerada 3.0 Australija"
+            },
+            {
+                "@language": "sr",
+                "@value": "Ауторство-Некомерцијално-Без прерада 3.0 Аустралија"
+            },
+            {
+                "@language": "sr-latn",
+                "@value": "Autorstvo-Nekomercijalno-Bez prerada 3.0 Australija"
+            },
+            {
+                "@language": "st",
+                "@value": "Attribution-NonCommercial-NoDerivs 3.0 Australia"
+            },
+            {
+                "@language": "sv",
+                "@value": "Erkännande-Ickekommersiell-IngaBearbetningar 3.0 Australien"
+            },
+            {
+                "@language": "ta",
+                "@value": "Attribution-NonCommercial-NoDerivs 3.0 Australia"
+            },
+            {
+                "@language": "te",
+                "@value": "Attribution-NonCommercial-NoDerivs 3.0 ఆస్ట్రేలియా"
+            },
+            {
+                "@language": "th",
+                "@value": "แสดงที่มา-ไม่ใช้เพื่อการค้า-ไม่ดัดแปลง 3.0 ออสเตรเลีย"
+            },
+            {
+                "@language": "tr",
+                "@value": "Attribution-Gayriticari-NoDerivs 3.0 Avustralya"
+            },
+            {
+                "@language": "uk",
+                "@value": "Attribution-NonCommercial-NoDerivs 3.0 Australia"
+            },
+            {
+                "@language": "ur",
+                "@value": "Attribution-NonCommercial-NoDerivs 3.0 Australia"
+            },
+            {
+                "@language": "vi",
+                "@value": "Ghi nhận công của tác giả - Phi thương mại - Không phái sinh  3.0 Nước Úc "
+            },
+            {
+                "@language": "zh",
+                "@value": "署名-非商业性使用-禁止演绎 3.0 澳大利亚"
+            },
+            {
+                "@language": "zh-hk",
+                "@value": "姓名標示-非商業性-禁止改作 3.0 澳大利亞"
+            },
+            {
+                "@language": "zh-tw",
+                "@value": "姓名標示-非商業性-禁止改作 3.0 澳大利亞"
+            },
+            {
+                "@language": "zu",
+                "@value": "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano-Ungasuseli lutho kulokhu 3.0 e-Australia"
+            },
+            {
+                "@language": "zxx",
+                "@value": "${Attribution-NonCommercial-NoDerivs} 3.0 ${Australia}"
+            }
+        ],
+        "owl:sameAs": "https://licensedb.org/id/CC-BY-NC-ND-3.0-au",
+        "foaf:logo": [
+            "http://i.creativecommons.org/l/by-nc-nd/3.0/au/80x15.png",
+            "http://i.creativecommons.org/l/by-nc-nd/3.0/au/88x31.png"
+        ]
+    },
+    "foaf:logo": [
+        "http://i.creativecommons.org/l/by-nc-nd/3.0/au/80x15.png",
+        "http://i.creativecommons.org/l/by-nc-nd/3.0/au/88x31.png"
+    ],
+    "li:id": "CC-BY-NC-ND-3.0-au",
+    "li:name": "CC BY-NC-ND 3.0 AU"
+}

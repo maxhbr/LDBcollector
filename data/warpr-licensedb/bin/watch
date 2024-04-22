@@ -1,0 +1,3 @@
+#!/bin/sh
+
+node_modules/.bin/webpack -d --watch --progress --colors --display-error-details

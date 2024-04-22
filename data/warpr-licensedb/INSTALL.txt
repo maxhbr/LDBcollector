@@ -1,0 +1,36 @@
+
+QuickStart
+==========
+
+You will need:
+
+    - a recent version (0.8.x) of nodejs with npm
+    - raptor2 (http://librdf.org/raptor/)
+    - the commandline version of php
+    - python 2.7
+    - GNU Make.
+
+On Ubuntu 12.04 or Debian 7.0 (Wheezy) you will have to install node manually,
+but the rest can be installed with:
+
+   sudo apt-get install raptor2-utils php5-cli python2.7 python-virtualenv make
+
+The python scripts need requests and rdflib, you can set up a virtualenv
+for that by running the included bin/bootstrap.sh script.
+
+For nodejs, several modules are required: 
+   mocha, underscore, underscore.string, negotiator, supertest
+
+Build the project using the provided GNUmakefile:
+   make
+
+It will also deploy in production.www, expected by the web server.
+
+Hosting
+=======
+
+The License Database project website (which includes the database) is
+currently hosted using nginx, with a small node server to do content
+negotiation.  A daemontools service directory is included as
+etc/service/ and the nginx configuration as etc/nginx.conf.
+

@@ -1,0 +1,235 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/elements/1.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://creativecommons.org/licenses/by-nc-nd/2.5/pt/> a cc:License ;
+    cc:jurisdiction <http://creativecommons.org/international/pt/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nc-nd/2.5/pt/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:Distribution,
+        cc:Reproduction ;
+    cc:prohibits cc:CommercialUse ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.5" ;
+    dc:identifier "by-nc-nd" ;
+    dc:source <http://creativecommons.org/licenses/by-nc-nd/2.5/> ;
+    dc:title "Erkenning-NieKommersieel-GeenAfleidings 2.5 Portugal"@af,
+        "نسب- غير تجاري - لا اشتقاق 2.5 البرتغال"@ar,
+        "Attribution-NonCommercial-NoDerivs 2.5 Portugal"@as,
+        "Attribution-NonCommercial-NoDerivs 2.5 Portugal"@ast,
+        "Attribution-NonCommercial-NoDerivs 2.5 Portugal"@ast-es,
+        "Attribution-NonCommercial-NoDerivs 2.5 Portugal"@az,
+        "Attribution-NonCommercial-NoDerivs 2.5 Партугалія"@be,
+        "Признание-Некомерсиално-Без производни 2.5 Португалия"@bg,
+        "Attribution-NonCommercial-NoDerivs 2.5 Portugal"@bn,
+        "Reconeixement-NoComercial-SenseObraDerivada 2.5 Portugal"@ca,
+        "Uveďte autora-Neužívejte dílo komerčně-Nezasahujte do díla 2.5 Portugalsko"@cs,
+        "Navngivelse-IkkeKommerciel-IngenBearbejdelse 2.5 Portugal"@da,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 2.5 Portugal"@de,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 2.5 Portugal"@de-at,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 2.5 Portugal"@de-ch,
+        "Αναφορά Δημιουργού-Μη Εμπορική Χρήση-Όχι Παράγωγα Έργα 2.5 Πορτογαλία"@el,
+        "Attribution-NonCommercial-NoDerivs 2.5 Portugal"@en,
+        "Attribution-NonCommercial-NoDerivs 2.5 Portugal"@en-ca,
+        "Attribution-NonCommercial-NoDerivs 2.5 Portugal"@en-gb,
+        "Attribution-NonCommercial-NoDerivs 2.5 Portugal"@en-hk,
+        "Attribution-NonCommercial-NoDerivs 2.5 Portugal"@en-sg,
+        "Attribution-NonCommercial-NoDerivs 2.5 Portugal"@en-us,
+        "Atribuite-Nekomerce-Nemodifite 2.5 Portugalujo"@eo,
+        "Atribución-NoComercial-SinDerivadas 2.5 Portugal"@es,
+        "Atribución-NoComercial-SinDerivadas 2.5 Portugal"@es-ar,
+        "Atribución-NoComercial-SinDerivadas 2.5 Portugal"@es-cl,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.5 Portugal"@es-co,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.5 Portugal"@es-ec,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.5 Portugal"@es-es,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.5 Portugal"@es-gt,
+        "Atribución-No Comercial-No Derivadas 2.5 Portugal"@es-mx,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.5 Portugal"@es-pe,
+        "Reconocimiento-NoComercial-SinObrasDerivadas 2.5 Portugal"@es-pr,
+        "Autorile viitamine + Mitteäriline eesmärk + Tuletatud teoste keeld 2.5 Portugal"@et,
+        "Aitortu-EzKomertziala-LanEratorririkGabe 2.5 Portugal"@eu,
+        "Attribution-NonCommercial-NoDerivs 2.5 پرتغال"@fa,
+        "Nimeä-Ei muutoksia-Epäkaupallinen 2.5 Portugali"@fi,
+        "Attribution - Pas d’Utilisation Commerciale - Pas de Modification 2.5 Portugal"@fr,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.5 Portugal"@fr-ca,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.5 Portugal"@fr-ch,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.5 Portugal"@fr-lu,
+        "Attribution-NonCommercial-NoDerivs 2.5 Portugal"@ga,
+        "Recoñecemento-NonComercial-SenObraDerivada 2.5 Portugal"@gl,
+        "ייחוס-שימוש לא מסחרי-איסור יצירות נגזרות 2.5 פורטוגל"@he,
+        "Attribution-NonCommercial-NoDerivs 2.5 Portugal"@hi,
+        "Imenovanje-Nekomercijalno-Bez prerada 2.5 Portugal"@hr,
+        "Nevezd meg! - Ne add el! - Ne változtasd! 2.5 Portugália"@hu,
+        "Հղում - Ոչ-առևտրային օգտագործում - Օգտագործում առանց վերափոխումների 2.5 Պորտուգալիա"@hy,
+        "Atribusi-NonKomersial-TanpaTurunan 2.5 Portugal"@id,
+        "Attribution-NonCommercial-NoDerivs 2.5 Portugal"@is,
+        "Attribuzione - Non commerciale - Non opere derivate 2.5 Portogallo"@it,
+        "Attribuzione - Non commerciale - Non opere derivate 2.5 Portogallo"@it-ch,
+        "表示 - 非営利 - 改変禁止 2.5 ポルトガル"@ja,
+        "ავტორობის მითითებით–არაკომერციული გამოყენბისათვის–გადამუშავების გარეშე 2.5 პორტუგალია"@ka,
+        "Attribution-NonCommercial-NoDerivs 2.5 Portugal"@kk,
+        "저작자표시-비영리-변경금지 2.5 포르투갈"@ko,
+        "Attribution-NonCommercial-NoDerivs 2.5 Portugalija"@lt,
+        "Atsaucoties-Nekomerciāls-Nemainīts 2.5 Portugāle"@lv,
+        "НаведиИзвор-Некомерцијално-БезАдаптираниДела 2.5 Португалија"@mk,
+        "Attribution-NonCommercial-NoDerivs 2.5 പോർച്ചുഗൽ"@ml,
+        "Attribution-NonCommercial-NoDerivs 2.5 Portugal"@mn,
+        "Pengiktirafan-BukanKomersial-TiadaTerbitan 2.5 Portugal"@ms,
+        "Naamsvermelding-NietCommercieel-GeenAfgeleideWerken 2.5 Portugal"@nl,
+        "Navngivelse-Ikkekommersiell-IngenBearbeidelse 2.5 Portugal"@no,
+        "Tsebagatšo-E sego ya Kgwebo-Tše sa fetolwego 2.5 Portugal"@nso,
+        "Attribution-NonCommercial-NoDerivs 2.5 Portugal"@oci-es,
+        "Uznanie autorstwa-Użycie niekomercyjne-Bez utworów zależnych 2.5 Portugalia"@pl,
+        "Atribuição - NãoComercial - SemDerivados 2.5 Portugal"@pt,
+        "Atribuição-Uso não-comercial-Vedada a criação de obras derivadas 2.5 Portugal"@pt-br,
+        "Atribuição-Uso Não-Comercial-Proibição de realização de Obras Derivadas 2.5 Portugal"@pt-pt,
+        "Atribuire-Necomercial-FărăModificări 2.5 Portugalia"@ro,
+        "Attribution-NonCommercial-NoDerivs (Атрибуция — Некоммерческое использование — Без производных произведений) 2.5 Португалия"@ru,
+        "Attribution-NonCommercial-NoDerivs 2.5 Portugal"@si-lk,
+        "Priznanje avtorstva-Nekomercialno-Brez predelav 2.5 Portugalska"@sl,
+        "Attribution-NonCommercial-NoDerivs 2.5 Portugali"@sq,
+        "Autorstvo-Nekomercijalno-Bez prerada 2.5 Portugalija"@sr,
+        "Ауторство-Некомерцијално-Без прерада 2.5 Португалија"@sr,
+        "Autorstvo-Nekomercijalno-Bez prerada 2.5 Portugalija"@sr-latn,
+        "Attribution-NonCommercial-NoDerivs 2.5 Portugal"@st,
+        "Erkännande-Ickekommersiell-IngaBearbetningar 2.5 Portugal"@sv,
+        "Attribution-NonCommercial-NoDerivs 2.5 Portugal"@ta,
+        "Attribution-NonCommercial-NoDerivs 2.5 పోర్చుగల్"@te,
+        "แสดงที่มา-ไม่ใช้เพื่อการค้า-ไม่ดัดแปลง 2.5 โปรตุเกส"@th,
+        "Attribution-Gayriticari-NoDerivs 2.5 Portekiz"@tr,
+        "Attribution-NonCommercial-NoDerivs 2.5 Portugal"@uk,
+        "Attribution-NonCommercial-NoDerivs 2.5 Portugal"@ur,
+        "Ghi nhận công của tác giả - Phi thương mại - Không phái sinh  2.5 Nước Bồ Đào Nha"@vi,
+        "署名-非商业性使用-禁止演绎 2.5 葡萄牙"@zh,
+        "姓名標示-非商業性-禁止改作 2.5 葡萄牙"@zh-hk,
+        "姓名標示-非商業性-禁止改作 2.5 葡萄牙"@zh-tw,
+        "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano-Ungasuseli lutho kulokhu 2.5 iPortugal"@zu,
+        "${Attribution-NonCommercial-NoDerivs} 2.5 ${Portugal}"@zxx ;
+    owl:sameAs <https://licensedb.org/id/CC-BY-NC-ND-2.5-pt> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nc-nd/2.5/pt/80x15.png>,
+        <http://i.creativecommons.org/l/by-nc-nd/2.5/pt/88x31.png> .
+
+<https://licensedb.org/id/CC-BY-NC-ND-2.5-pt> a cc:License,
+        li:License ;
+    cc:jurisdiction <http://creativecommons.org/international/pt/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nc-nd/2.5/pt/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:Distribution,
+        cc:Reproduction ;
+    cc:prohibits cc:CommercialUse ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.5" ;
+    dc:identifier "by-nc-nd" ;
+    dc:source <http://creativecommons.org/licenses/by-nc-nd/2.5/> ;
+    dc:title "Erkenning-NieKommersieel-GeenAfleidings 2.5 Portugal"@af,
+        "نسب- غير تجاري - لا اشتقاق 2.5 البرتغال"@ar,
+        "Attribution-NonCommercial-NoDerivs 2.5 Portugal"@as,
+        "Attribution-NonCommercial-NoDerivs 2.5 Portugal"@ast,
+        "Attribution-NonCommercial-NoDerivs 2.5 Portugal"@ast-es,
+        "Attribution-NonCommercial-NoDerivs 2.5 Portugal"@az,
+        "Attribution-NonCommercial-NoDerivs 2.5 Партугалія"@be,
+        "Признание-Некомерсиално-Без производни 2.5 Португалия"@bg,
+        "Attribution-NonCommercial-NoDerivs 2.5 Portugal"@bn,
+        "Reconeixement-NoComercial-SenseObraDerivada 2.5 Portugal"@ca,
+        "Uveďte autora-Neužívejte dílo komerčně-Nezasahujte do díla 2.5 Portugalsko"@cs,
+        "Navngivelse-IkkeKommerciel-IngenBearbejdelse 2.5 Portugal"@da,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 2.5 Portugal"@de,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 2.5 Portugal"@de-at,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 2.5 Portugal"@de-ch,
+        "Αναφορά Δημιουργού-Μη Εμπορική Χρήση-Όχι Παράγωγα Έργα 2.5 Πορτογαλία"@el,
+        "Attribution-NonCommercial-NoDerivs 2.5 Portugal"@en,
+        "Attribution-NonCommercial-NoDerivs 2.5 Portugal"@en-ca,
+        "Attribution-NonCommercial-NoDerivs 2.5 Portugal"@en-gb,
+        "Attribution-NonCommercial-NoDerivs 2.5 Portugal"@en-hk,
+        "Attribution-NonCommercial-NoDerivs 2.5 Portugal"@en-sg,
+        "Attribution-NonCommercial-NoDerivs 2.5 Portugal"@en-us,
+        "Atribuite-Nekomerce-Nemodifite 2.5 Portugalujo"@eo,
+        "Atribución-NoComercial-SinDerivadas 2.5 Portugal"@es,
+        "Atribución-NoComercial-SinDerivadas 2.5 Portugal"@es-ar,
+        "Atribución-NoComercial-SinDerivadas 2.5 Portugal"@es-cl,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.5 Portugal"@es-co,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.5 Portugal"@es-ec,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.5 Portugal"@es-es,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.5 Portugal"@es-gt,
+        "Atribución-No Comercial-No Derivadas 2.5 Portugal"@es-mx,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.5 Portugal"@es-pe,
+        "Reconocimiento-NoComercial-SinObrasDerivadas 2.5 Portugal"@es-pr,
+        "Autorile viitamine + Mitteäriline eesmärk + Tuletatud teoste keeld 2.5 Portugal"@et,
+        "Aitortu-EzKomertziala-LanEratorririkGabe 2.5 Portugal"@eu,
+        "Attribution-NonCommercial-NoDerivs 2.5 پرتغال"@fa,
+        "Nimeä-Ei muutoksia-Epäkaupallinen 2.5 Portugali"@fi,
+        "Attribution - Pas d’Utilisation Commerciale - Pas de Modification 2.5 Portugal"@fr,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.5 Portugal"@fr-ca,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.5 Portugal"@fr-ch,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.5 Portugal"@fr-lu,
+        "Attribution-NonCommercial-NoDerivs 2.5 Portugal"@ga,
+        "Recoñecemento-NonComercial-SenObraDerivada 2.5 Portugal"@gl,
+        "ייחוס-שימוש לא מסחרי-איסור יצירות נגזרות 2.5 פורטוגל"@he,
+        "Attribution-NonCommercial-NoDerivs 2.5 Portugal"@hi,
+        "Imenovanje-Nekomercijalno-Bez prerada 2.5 Portugal"@hr,
+        "Nevezd meg! - Ne add el! - Ne változtasd! 2.5 Portugália"@hu,
+        "Հղում - Ոչ-առևտրային օգտագործում - Օգտագործում առանց վերափոխումների 2.5 Պորտուգալիա"@hy,
+        "Atribusi-NonKomersial-TanpaTurunan 2.5 Portugal"@id,
+        "Attribution-NonCommercial-NoDerivs 2.5 Portugal"@is,
+        "Attribuzione - Non commerciale - Non opere derivate 2.5 Portogallo"@it,
+        "Attribuzione - Non commerciale - Non opere derivate 2.5 Portogallo"@it-ch,
+        "表示 - 非営利 - 改変禁止 2.5 ポルトガル"@ja,
+        "ავტორობის მითითებით–არაკომერციული გამოყენბისათვის–გადამუშავების გარეშე 2.5 პორტუგალია"@ka,
+        "Attribution-NonCommercial-NoDerivs 2.5 Portugal"@kk,
+        "저작자표시-비영리-변경금지 2.5 포르투갈"@ko,
+        "Attribution-NonCommercial-NoDerivs 2.5 Portugalija"@lt,
+        "Atsaucoties-Nekomerciāls-Nemainīts 2.5 Portugāle"@lv,
+        "НаведиИзвор-Некомерцијално-БезАдаптираниДела 2.5 Португалија"@mk,
+        "Attribution-NonCommercial-NoDerivs 2.5 പോർച്ചുഗൽ"@ml,
+        "Attribution-NonCommercial-NoDerivs 2.5 Portugal"@mn,
+        "Pengiktirafan-BukanKomersial-TiadaTerbitan 2.5 Portugal"@ms,
+        "Naamsvermelding-NietCommercieel-GeenAfgeleideWerken 2.5 Portugal"@nl,
+        "Navngivelse-Ikkekommersiell-IngenBearbeidelse 2.5 Portugal"@no,
+        "Tsebagatšo-E sego ya Kgwebo-Tše sa fetolwego 2.5 Portugal"@nso,
+        "Attribution-NonCommercial-NoDerivs 2.5 Portugal"@oci-es,
+        "Uznanie autorstwa-Użycie niekomercyjne-Bez utworów zależnych 2.5 Portugalia"@pl,
+        "Atribuição - NãoComercial - SemDerivados 2.5 Portugal"@pt,
+        "Atribuição-Uso não-comercial-Vedada a criação de obras derivadas 2.5 Portugal"@pt-br,
+        "Atribuição-Uso Não-Comercial-Proibição de realização de Obras Derivadas 2.5 Portugal"@pt-pt,
+        "Atribuire-Necomercial-FărăModificări 2.5 Portugalia"@ro,
+        "Attribution-NonCommercial-NoDerivs (Атрибуция — Некоммерческое использование — Без производных произведений) 2.5 Португалия"@ru,
+        "Attribution-NonCommercial-NoDerivs 2.5 Portugal"@si-lk,
+        "Priznanje avtorstva-Nekomercialno-Brez predelav 2.5 Portugalska"@sl,
+        "Attribution-NonCommercial-NoDerivs 2.5 Portugali"@sq,
+        "Autorstvo-Nekomercijalno-Bez prerada 2.5 Portugalija"@sr,
+        "Ауторство-Некомерцијално-Без прерада 2.5 Португалија"@sr,
+        "Autorstvo-Nekomercijalno-Bez prerada 2.5 Portugalija"@sr-latn,
+        "Attribution-NonCommercial-NoDerivs 2.5 Portugal"@st,
+        "Erkännande-Ickekommersiell-IngaBearbetningar 2.5 Portugal"@sv,
+        "Attribution-NonCommercial-NoDerivs 2.5 Portugal"@ta,
+        "Attribution-NonCommercial-NoDerivs 2.5 పోర్చుగల్"@te,
+        "แสดงที่มา-ไม่ใช้เพื่อการค้า-ไม่ดัดแปลง 2.5 โปรตุเกส"@th,
+        "Attribution-Gayriticari-NoDerivs 2.5 Portekiz"@tr,
+        "Attribution-NonCommercial-NoDerivs 2.5 Portugal"@uk,
+        "Attribution-NonCommercial-NoDerivs 2.5 Portugal"@ur,
+        "Ghi nhận công của tác giả - Phi thương mại - Không phái sinh  2.5 Nước Bồ Đào Nha"@vi,
+        "署名-非商业性使用-禁止演绎 2.5 葡萄牙"@zh,
+        "姓名標示-非商業性-禁止改作 2.5 葡萄牙"@zh-hk,
+        "姓名標示-非商業性-禁止改作 2.5 葡萄牙"@zh-tw,
+        "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano-Ungasuseli lutho kulokhu 2.5 iPortugal"@zu,
+        "${Attribution-NonCommercial-NoDerivs} 2.5 ${Portugal}"@zxx ;
+    owl:sameAs <http://creativecommons.org/licenses/by-nc-nd/2.5/pt/> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nc-nd/2.5/pt/80x15.png>,
+        <http://i.creativecommons.org/l/by-nc-nd/2.5/pt/88x31.png> ;
+    li:id "CC-BY-NC-ND-2.5-pt" ;
+    li:name "CC BY-NC-ND 2.5 PT" .
+

@@ -1,0 +1,855 @@
+{
+    "@context": {
+        "cc": "http://creativecommons.org/ns#",
+        "dc": "http://purl.org/dc/terms/",
+        "dc11": "http://purl.org/dc/elements/1.1/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "li": "https://licensedb.org/ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "cc:legalcode": {
+            "@type": "@id"
+        },
+        "cc:permits": {
+            "@type": "@id"
+        },
+        "cc:requires": {
+            "@type": "@id"
+        },
+        "cc:prohibits": {
+            "@type": "@id"
+        },
+        "cc:jurisdiction": {
+            "@type": "@id"
+        },
+        "cc:licenseClass": {
+            "@type": "@id"
+        },
+        "dc:creator": {
+            "@type": "@id"
+        },
+        "dc:source": {
+            "@type": "@id"
+        },
+        "dc:replaces": {
+            "@type": "@id"
+        },
+        "dc:isBasedOn": {
+            "@type": "@id"
+        },
+        "dc:isReplacedBy": {
+            "@type": "@id"
+        },
+        "foaf:logo": {
+            "@type": "@id"
+        },
+        "li:plaintext": {
+            "@type": "@id"
+        },
+        "li:libre": {
+            "@type": "@id"
+        },
+        "owl:sameAs": {
+            "@type": "@id"
+        }
+    },
+    "@id": "https://licensedb.org/id/CC-BY-ND-3.0",
+    "@type": [
+        "cc:License",
+        "li:License"
+    ],
+    "cc:legalcode": "http://creativecommons.org/licenses/by-nd/3.0/legalcode",
+    "cc:licenseClass": "http://creativecommons.org/license/",
+    "cc:permits": [
+        "cc:Distribution",
+        "cc:Reproduction"
+    ],
+    "cc:requires": [
+        "cc:Attribution",
+        "cc:Notice"
+    ],
+    "dc:creator": "http://creativecommons.org",
+    "dc:hasVersion": "3.0",
+    "dc:identifier": "by-nd",
+    "dc:isReplacedBy": "https://licensedb.org/id/CC-BY-ND-4.0",
+    "dc:replaces": "https://licensedb.org/id/CC-BY-ND-2.5",
+    "dc:title": [
+        {
+            "@language": "af",
+            "@value": "Erkenning-GeenAfleidings 3.0 Unported"
+        },
+        {
+            "@language": "ar",
+            "@value": "نسب- غير مشتق 3.0 الاصلية"
+        },
+        {
+            "@language": "as",
+            "@value": "Attribution-NoDerivs 3.0 Unported"
+        },
+        {
+            "@language": "ast",
+            "@value": "Attribution-NoDerivs 3.0 Unported"
+        },
+        {
+            "@language": "ast-es",
+            "@value": "Attribution-NoDerivs 3.0 Unported"
+        },
+        {
+            "@language": "az",
+            "@value": "Attribution-NoDerivs 3.0 Unported"
+        },
+        {
+            "@language": "be",
+            "@value": "Attribution-NoDerivs 3.0 Unported"
+        },
+        {
+            "@language": "bg",
+            "@value": "Признание-Без производни 3.0 Нелокализиран"
+        },
+        {
+            "@language": "bn",
+            "@value": "Attribution-NoDerivs 3.0 Unported"
+        },
+        {
+            "@language": "ca",
+            "@value": "Reconeixement-SenseObraDerivada 3.0 No adaptada"
+        },
+        {
+            "@language": "cs",
+            "@value": "Uveďte autora-Nezasahujte do díla 3.0 Unported"
+        },
+        {
+            "@language": "da",
+            "@value": "Navngivelse-IngenBearbejdelse 3.0 Unported"
+        },
+        {
+            "@language": "de",
+            "@value": "Namensnennung-Keine Bearbeitung 3.0 Unported"
+        },
+        {
+            "@language": "de-at",
+            "@value": "Namensnennung-KeineBearbeitung 3.0 Unported"
+        },
+        {
+            "@language": "de-ch",
+            "@value": "Namensnennung-KeineBearbeitung 3.0 Unported"
+        },
+        {
+            "@language": "el",
+            "@value": "Αναφορά Δημιουργού-Όχι Παράγωγα Έργα 3.0 Μη εισαγόμενο"
+        },
+        {
+            "@language": "en",
+            "@value": "Attribution-NoDerivs 3.0 Unported"
+        },
+        {
+            "@language": "en-ca",
+            "@value": "Attribution-NoDerivs 3.0 Unported"
+        },
+        {
+            "@language": "en-gb",
+            "@value": "Attribution-NoDerivs 3.0 Unported"
+        },
+        {
+            "@language": "en-hk",
+            "@value": "Attribution-NoDerivs 3.0 Unported"
+        },
+        {
+            "@language": "en-sg",
+            "@value": "Attribution-NoDerivs 3.0 Unported"
+        },
+        {
+            "@language": "en-us",
+            "@value": "Attribution-NoDerivs 3.0 Unported"
+        },
+        {
+            "@language": "eo",
+            "@value": "Atribuite-Nemodifite 3.0 Neadaptita"
+        },
+        {
+            "@language": "es",
+            "@value": "Atribución-SinDerivadas 3.0 Unported"
+        },
+        {
+            "@language": "es-ar",
+            "@value": "Atribución-SinDerivadas 3.0 Unported"
+        },
+        {
+            "@language": "es-cl",
+            "@value": "Atribución-SinDerivadas 3.0 Unported"
+        },
+        {
+            "@language": "es-co",
+            "@value": "Reconocimiento-SinObraDerivada 3.0 Unported"
+        },
+        {
+            "@language": "es-ec",
+            "@value": "Reconocimiento-SinObraDerivada 3.0 Unported"
+        },
+        {
+            "@language": "es-es",
+            "@value": "Reconocimiento-SinObraDerivada 3.0 Unported"
+        },
+        {
+            "@language": "es-gt",
+            "@value": "Reconocimiento-SinObraDerivada 3.0 Unported"
+        },
+        {
+            "@language": "es-mx",
+            "@value": "Atribución-No Derivadas 3.0 Unported"
+        },
+        {
+            "@language": "es-pe",
+            "@value": "Reconocimiento-SinObraDerivada 3.0 Unported"
+        },
+        {
+            "@language": "es-pr",
+            "@value": "Reconocimiento-SinObraDerivada 3.0 Unported"
+        },
+        {
+            "@language": "et",
+            "@value": "Autorile viitamine + Tuletatud teoste keeld 3.0 Jurisdiktsiooniga sidumata"
+        },
+        {
+            "@language": "eu",
+            "@value": "Aitortu-LanEratorririkGabe 3.0 Unported"
+        },
+        {
+            "@language": "fa",
+            "@value": "Attribution-NoDerivs 3.0 Unported"
+        },
+        {
+            "@language": "fi",
+            "@value": "Nimeä-Ei muutoksia 3.0 Muokkaamaton"
+        },
+        {
+            "@language": "fr",
+            "@value": "Paternité - Pas de Modification 3.0 non transposé"
+        },
+        {
+            "@language": "fr-ca",
+            "@value": "Paternité - Pas de Modification 3.0 Unported"
+        },
+        {
+            "@language": "fr-ch",
+            "@value": "Paternité - Pas de Modification 3.0 Unported"
+        },
+        {
+            "@language": "fr-lu",
+            "@value": "Paternité - Pas de Modification 3.0 Unported"
+        },
+        {
+            "@language": "ga",
+            "@value": "Attribution-NoDerivs 3.0 Unported"
+        },
+        {
+            "@language": "gl",
+            "@value": "Recoñecemento-SenObraDerivada 3.0 Unported"
+        },
+        {
+            "@language": "he",
+            "@value": "ייחוס-איסור יצירות נגזרות 3.0 לא מותאם"
+        },
+        {
+            "@language": "hi",
+            "@value": "Attribution-NoDerivs 3.0 Unported"
+        },
+        {
+            "@language": "hr",
+            "@value": "Imenovanje-Bez prerada 3.0 neloklizirana licenca"
+        },
+        {
+            "@language": "hu",
+            "@value": "Nevezd meg! - Ne változtasd! 3.0 Unported"
+        },
+        {
+            "@language": "hy",
+            "@value": "Հղում - Օգտագործում առանց վերափոխումների 3.0 Չտեղայնացված"
+        },
+        {
+            "@language": "id",
+            "@value": "Atribusi-TanpaTurunan 3.0 Unported"
+        },
+        {
+            "@language": "is",
+            "@value": "Attribution-NoDerivs 3.0 Unported"
+        },
+        {
+            "@language": "it",
+            "@value": "Attribuzione - Non opere derivate 3.0 Unported"
+        },
+        {
+            "@language": "it-ch",
+            "@value": "Attribuzione - Non opere derivate 3.0 Unported"
+        },
+        {
+            "@language": "ja",
+            "@value": "表示 - 改変禁止 3.0 非移植"
+        },
+        {
+            "@language": "ka",
+            "@value": "ავტორობის მითითებით გადამუშავების გარეშე 3.0 არაპორტირებული"
+        },
+        {
+            "@language": "kk",
+            "@value": "Туынды жасамау 3.0 Unported"
+        },
+        {
+            "@language": "ko",
+            "@value": "저작자표시-변경금지 3.0 Unported"
+        },
+        {
+            "@language": "lt",
+            "@value": "Attribution-NoDerivs 3.0 Unported"
+        },
+        {
+            "@language": "lv",
+            "@value": "Atsaucoties-Neatvasinot 3.0 Nepārnesta"
+        },
+        {
+            "@language": "mk",
+            "@value": "НаведиИзвор-БезИзведениДела 3.0 Unported"
+        },
+        {
+            "@language": "ml",
+            "@value": "Attribution-NoDerivs 3.0 Unported"
+        },
+        {
+            "@language": "mn",
+            "@value": "Attribution-NoDerivs 3.0 Unported"
+        },
+        {
+            "@language": "ms",
+            "@value": "Pengiktirafan-TiadaTerbitan 3.0 Unported"
+        },
+        {
+            "@language": "nl",
+            "@value": "Naamsvermelding-GeenAfgeleideWerken 3.0 Unported"
+        },
+        {
+            "@language": "no",
+            "@value": "Navngivelse-IngenBearbeidelse 3.0 Unported"
+        },
+        {
+            "@language": "nso",
+            "@value": "Tsebagatšo - Tše sa Fetolwego 3.0 Unported"
+        },
+        {
+            "@language": "oci-es",
+            "@value": "Attribution-NoDerivs 3.0 Unported"
+        },
+        {
+            "@language": "pl",
+            "@value": "Uznanie autorstwa-Bez utworów zależnych 3.0 Unported"
+        },
+        {
+            "@language": "pt",
+            "@value": "Atribuição - SemDerivados 3.0 Não Adaptada"
+        },
+        {
+            "@language": "pt-br",
+            "@value": "Atribuição-Vedada a criação de obras derivativas 3.0 Unported"
+        },
+        {
+            "@language": "pt-pt",
+            "@value": "Atribuição-Proibição de realização de Obras Derivadas 3.0 Unported"
+        },
+        {
+            "@language": "ro",
+            "@value": "Atribuire-FărăModificări 3.0 Ne-adaptată"
+        },
+        {
+            "@language": "ru",
+            "@value": "Attribution-NoDerivs (Атрибуция — Без производных произведений) 3.0 Непортированная"
+        },
+        {
+            "@language": "si-lk",
+            "@value": "Attribution-NoDerivs 3.0 Unported"
+        },
+        {
+            "@language": "sl",
+            "@value": "Priznanje avtorstva-Brez predelav 3.0 Nedoločena"
+        },
+        {
+            "@language": "sq",
+            "@value": "Attribution-NoDerivs 3.0 Unported"
+        },
+        {
+            "@language": "sr",
+            "@value": "Autorstvo-Bez prerada 3.0 Unported"
+        },
+        {
+            "@language": "sr",
+            "@value": "Ауторство-Без прерада 3.0 Unported"
+        },
+        {
+            "@language": "sr-latn",
+            "@value": "Autorstvo-Bez prerada 3.0 Unported"
+        },
+        {
+            "@language": "st",
+            "@value": "Attribution-NoDerivs 3.0 Unported"
+        },
+        {
+            "@language": "sv",
+            "@value": "Erkännande-IngaBearbetningar 3.0 Unported"
+        },
+        {
+            "@language": "ta",
+            "@value": "Attribution-NoDerivs 3.0 Unported"
+        },
+        {
+            "@language": "te",
+            "@value": "Attribution-NoDerivs 3.0 Unported"
+        },
+        {
+            "@language": "th",
+            "@value": "แสดงที่มา-ไม่ดัดแปลง 3.0 ต้นฉบับ"
+        },
+        {
+            "@language": "tr",
+            "@value": "Alıntı-Türetilemez 3.0 Unported"
+        },
+        {
+            "@language": "uk",
+            "@value": "Attribution-NoDerivs 3.0 Unported"
+        },
+        {
+            "@language": "ur",
+            "@value": "Attribution-NoDerivs 3.0 Unported"
+        },
+        {
+            "@language": "vi",
+            "@value": "Ghi nhận công của tác giả - Không phái sinh 3.0 Unported"
+        },
+        {
+            "@language": "zh",
+            "@value": "署名-禁止演绎 3.0 Unported"
+        },
+        {
+            "@language": "zh-hk",
+            "@value": "姓名標示-禁止改作 3.0 Unported"
+        },
+        {
+            "@language": "zh-tw",
+            "@value": "姓名標示-禁止改作 3.0 Unported"
+        },
+        {
+            "@language": "zu",
+            "@value": "Qaphela Umnikazi-Ungasuseli lutho kulokhu 3.0 Unported"
+        },
+        {
+            "@language": "zxx",
+            "@value": "${Attribution-NoDerivs} 3.0 ${Unported}"
+        }
+    ],
+    "schema:sameAs": {
+        "@id": "http://spdx.org/licenses/CC-BY-ND-3.0"
+    },
+    "spdx:licenseId": "CC-BY-ND-3.0",
+    "owl:sameAs": {
+        "@id": "http://creativecommons.org/licenses/by-nd/3.0/",
+        "@type": "cc:License",
+        "cc:legalcode": "http://creativecommons.org/licenses/by-nd/3.0/legalcode",
+        "cc:licenseClass": "http://creativecommons.org/license/",
+        "cc:permits": [
+            "cc:Distribution",
+            "cc:Reproduction"
+        ],
+        "cc:requires": [
+            "cc:Attribution",
+            "cc:Notice"
+        ],
+        "dc:creator": "http://creativecommons.org",
+        "dc:hasVersion": "3.0",
+        "dc:identifier": "by-nd",
+        "dc:isReplacedBy": "http://creativecommons.org/licenses/by-nd/4.0/",
+        "dc:title": [
+            {
+                "@language": "af",
+                "@value": "Erkenning-GeenAfleidings 3.0 Unported"
+            },
+            {
+                "@language": "ar",
+                "@value": "نسب- غير مشتق 3.0 الاصلية"
+            },
+            {
+                "@language": "as",
+                "@value": "Attribution-NoDerivs 3.0 Unported"
+            },
+            {
+                "@language": "ast",
+                "@value": "Attribution-NoDerivs 3.0 Unported"
+            },
+            {
+                "@language": "ast-es",
+                "@value": "Attribution-NoDerivs 3.0 Unported"
+            },
+            {
+                "@language": "az",
+                "@value": "Attribution-NoDerivs 3.0 Unported"
+            },
+            {
+                "@language": "be",
+                "@value": "Attribution-NoDerivs 3.0 Unported"
+            },
+            {
+                "@language": "bg",
+                "@value": "Признание-Без производни 3.0 Нелокализиран"
+            },
+            {
+                "@language": "bn",
+                "@value": "Attribution-NoDerivs 3.0 Unported"
+            },
+            {
+                "@language": "ca",
+                "@value": "Reconeixement-SenseObraDerivada 3.0 No adaptada"
+            },
+            {
+                "@language": "cs",
+                "@value": "Uveďte autora-Nezasahujte do díla 3.0 Unported"
+            },
+            {
+                "@language": "da",
+                "@value": "Navngivelse-IngenBearbejdelse 3.0 Unported"
+            },
+            {
+                "@language": "de",
+                "@value": "Namensnennung-Keine Bearbeitung 3.0 Unported"
+            },
+            {
+                "@language": "de-at",
+                "@value": "Namensnennung-KeineBearbeitung 3.0 Unported"
+            },
+            {
+                "@language": "de-ch",
+                "@value": "Namensnennung-KeineBearbeitung 3.0 Unported"
+            },
+            {
+                "@language": "el",
+                "@value": "Αναφορά Δημιουργού-Όχι Παράγωγα Έργα 3.0 Μη εισαγόμενο"
+            },
+            {
+                "@language": "en",
+                "@value": "Attribution-NoDerivs 3.0 Unported"
+            },
+            {
+                "@language": "en-ca",
+                "@value": "Attribution-NoDerivs 3.0 Unported"
+            },
+            {
+                "@language": "en-gb",
+                "@value": "Attribution-NoDerivs 3.0 Unported"
+            },
+            {
+                "@language": "en-hk",
+                "@value": "Attribution-NoDerivs 3.0 Unported"
+            },
+            {
+                "@language": "en-sg",
+                "@value": "Attribution-NoDerivs 3.0 Unported"
+            },
+            {
+                "@language": "en-us",
+                "@value": "Attribution-NoDerivs 3.0 Unported"
+            },
+            {
+                "@language": "eo",
+                "@value": "Atribuite-Nemodifite 3.0 Neadaptita"
+            },
+            {
+                "@language": "es",
+                "@value": "Atribución-SinDerivadas 3.0 Unported"
+            },
+            {
+                "@language": "es-ar",
+                "@value": "Atribución-SinDerivadas 3.0 Unported"
+            },
+            {
+                "@language": "es-cl",
+                "@value": "Atribución-SinDerivadas 3.0 Unported"
+            },
+            {
+                "@language": "es-co",
+                "@value": "Reconocimiento-SinObraDerivada 3.0 Unported"
+            },
+            {
+                "@language": "es-ec",
+                "@value": "Reconocimiento-SinObraDerivada 3.0 Unported"
+            },
+            {
+                "@language": "es-es",
+                "@value": "Reconocimiento-SinObraDerivada 3.0 Unported"
+            },
+            {
+                "@language": "es-gt",
+                "@value": "Reconocimiento-SinObraDerivada 3.0 Unported"
+            },
+            {
+                "@language": "es-mx",
+                "@value": "Atribución-No Derivadas 3.0 Unported"
+            },
+            {
+                "@language": "es-pe",
+                "@value": "Reconocimiento-SinObraDerivada 3.0 Unported"
+            },
+            {
+                "@language": "es-pr",
+                "@value": "Reconocimiento-SinObraDerivada 3.0 Unported"
+            },
+            {
+                "@language": "et",
+                "@value": "Autorile viitamine + Tuletatud teoste keeld 3.0 Jurisdiktsiooniga sidumata"
+            },
+            {
+                "@language": "eu",
+                "@value": "Aitortu-LanEratorririkGabe 3.0 Unported"
+            },
+            {
+                "@language": "fa",
+                "@value": "Attribution-NoDerivs 3.0 Unported"
+            },
+            {
+                "@language": "fi",
+                "@value": "Nimeä-Ei muutoksia 3.0 Muokkaamaton"
+            },
+            {
+                "@language": "fr",
+                "@value": "Paternité - Pas de Modification 3.0 non transposé"
+            },
+            {
+                "@language": "fr-ca",
+                "@value": "Paternité - Pas de Modification 3.0 Unported"
+            },
+            {
+                "@language": "fr-ch",
+                "@value": "Paternité - Pas de Modification 3.0 Unported"
+            },
+            {
+                "@language": "fr-lu",
+                "@value": "Paternité - Pas de Modification 3.0 Unported"
+            },
+            {
+                "@language": "ga",
+                "@value": "Attribution-NoDerivs 3.0 Unported"
+            },
+            {
+                "@language": "gl",
+                "@value": "Recoñecemento-SenObraDerivada 3.0 Unported"
+            },
+            {
+                "@language": "he",
+                "@value": "ייחוס-איסור יצירות נגזרות 3.0 לא מותאם"
+            },
+            {
+                "@language": "hi",
+                "@value": "Attribution-NoDerivs 3.0 Unported"
+            },
+            {
+                "@language": "hr",
+                "@value": "Imenovanje-Bez prerada 3.0 neloklizirana licenca"
+            },
+            {
+                "@language": "hu",
+                "@value": "Nevezd meg! - Ne változtasd! 3.0 Unported"
+            },
+            {
+                "@language": "hy",
+                "@value": "Հղում - Օգտագործում առանց վերափոխումների 3.0 Չտեղայնացված"
+            },
+            {
+                "@language": "id",
+                "@value": "Atribusi-TanpaTurunan 3.0 Unported"
+            },
+            {
+                "@language": "is",
+                "@value": "Attribution-NoDerivs 3.0 Unported"
+            },
+            {
+                "@language": "it",
+                "@value": "Attribuzione - Non opere derivate 3.0 Unported"
+            },
+            {
+                "@language": "it-ch",
+                "@value": "Attribuzione - Non opere derivate 3.0 Unported"
+            },
+            {
+                "@language": "ja",
+                "@value": "表示 - 改変禁止 3.0 非移植"
+            },
+            {
+                "@language": "ka",
+                "@value": "ავტორობის მითითებით გადამუშავების გარეშე 3.0 არაპორტირებული"
+            },
+            {
+                "@language": "kk",
+                "@value": "Туынды жасамау 3.0 Unported"
+            },
+            {
+                "@language": "ko",
+                "@value": "저작자표시-변경금지 3.0 Unported"
+            },
+            {
+                "@language": "lt",
+                "@value": "Attribution-NoDerivs 3.0 Unported"
+            },
+            {
+                "@language": "lv",
+                "@value": "Atsaucoties-Neatvasinot 3.0 Nepārnesta"
+            },
+            {
+                "@language": "mk",
+                "@value": "НаведиИзвор-БезИзведениДела 3.0 Unported"
+            },
+            {
+                "@language": "ml",
+                "@value": "Attribution-NoDerivs 3.0 Unported"
+            },
+            {
+                "@language": "mn",
+                "@value": "Attribution-NoDerivs 3.0 Unported"
+            },
+            {
+                "@language": "ms",
+                "@value": "Pengiktirafan-TiadaTerbitan 3.0 Unported"
+            },
+            {
+                "@language": "nl",
+                "@value": "Naamsvermelding-GeenAfgeleideWerken 3.0 Unported"
+            },
+            {
+                "@language": "no",
+                "@value": "Navngivelse-IngenBearbeidelse 3.0 Unported"
+            },
+            {
+                "@language": "nso",
+                "@value": "Tsebagatšo - Tše sa Fetolwego 3.0 Unported"
+            },
+            {
+                "@language": "oci-es",
+                "@value": "Attribution-NoDerivs 3.0 Unported"
+            },
+            {
+                "@language": "pl",
+                "@value": "Uznanie autorstwa-Bez utworów zależnych 3.0 Unported"
+            },
+            {
+                "@language": "pt",
+                "@value": "Atribuição - SemDerivados 3.0 Não Adaptada"
+            },
+            {
+                "@language": "pt-br",
+                "@value": "Atribuição-Vedada a criação de obras derivativas 3.0 Unported"
+            },
+            {
+                "@language": "pt-pt",
+                "@value": "Atribuição-Proibição de realização de Obras Derivadas 3.0 Unported"
+            },
+            {
+                "@language": "ro",
+                "@value": "Atribuire-FărăModificări 3.0 Ne-adaptată"
+            },
+            {
+                "@language": "ru",
+                "@value": "Attribution-NoDerivs (Атрибуция — Без производных произведений) 3.0 Непортированная"
+            },
+            {
+                "@language": "si-lk",
+                "@value": "Attribution-NoDerivs 3.0 Unported"
+            },
+            {
+                "@language": "sl",
+                "@value": "Priznanje avtorstva-Brez predelav 3.0 Nedoločena"
+            },
+            {
+                "@language": "sq",
+                "@value": "Attribution-NoDerivs 3.0 Unported"
+            },
+            {
+                "@language": "sr",
+                "@value": "Autorstvo-Bez prerada 3.0 Unported"
+            },
+            {
+                "@language": "sr",
+                "@value": "Ауторство-Без прерада 3.0 Unported"
+            },
+            {
+                "@language": "sr-latn",
+                "@value": "Autorstvo-Bez prerada 3.0 Unported"
+            },
+            {
+                "@language": "st",
+                "@value": "Attribution-NoDerivs 3.0 Unported"
+            },
+            {
+                "@language": "sv",
+                "@value": "Erkännande-IngaBearbetningar 3.0 Unported"
+            },
+            {
+                "@language": "ta",
+                "@value": "Attribution-NoDerivs 3.0 Unported"
+            },
+            {
+                "@language": "te",
+                "@value": "Attribution-NoDerivs 3.0 Unported"
+            },
+            {
+                "@language": "th",
+                "@value": "แสดงที่มา-ไม่ดัดแปลง 3.0 ต้นฉบับ"
+            },
+            {
+                "@language": "tr",
+                "@value": "Alıntı-Türetilemez 3.0 Unported"
+            },
+            {
+                "@language": "uk",
+                "@value": "Attribution-NoDerivs 3.0 Unported"
+            },
+            {
+                "@language": "ur",
+                "@value": "Attribution-NoDerivs 3.0 Unported"
+            },
+            {
+                "@language": "vi",
+                "@value": "Ghi nhận công của tác giả - Không phái sinh 3.0 Unported"
+            },
+            {
+                "@language": "zh",
+                "@value": "署名-禁止演绎 3.0 Unported"
+            },
+            {
+                "@language": "zh-hk",
+                "@value": "姓名標示-禁止改作 3.0 Unported"
+            },
+            {
+                "@language": "zh-tw",
+                "@value": "姓名標示-禁止改作 3.0 Unported"
+            },
+            {
+                "@language": "zu",
+                "@value": "Qaphela Umnikazi-Ungasuseli lutho kulokhu 3.0 Unported"
+            },
+            {
+                "@language": "zxx",
+                "@value": "${Attribution-NoDerivs} 3.0 ${Unported}"
+            }
+        ],
+        "owl:sameAs": "https://licensedb.org/id/CC-BY-ND-3.0",
+        "foaf:logo": [
+            "http://i.creativecommons.org/l/by-nd/3.0/80x15.png",
+            "http://i.creativecommons.org/l/by-nd/3.0/88x31.png"
+        ]
+    },
+    "foaf:logo": [
+        "http://i.creativecommons.org/l/by-nd/3.0/80x15.png",
+        "http://i.creativecommons.org/l/by-nd/3.0/88x31.png"
+    ],
+    "li:id": "CC-BY-ND-3.0",
+    "li:name": "CC BY-ND 3.0",
+    "li:plaintext": [
+        "http://creativecommons.org/licenses/by-nd/3.0/legalcode.txt",
+        "https://licensedb.org/id/CC-BY-ND-3.0.txt"
+    ]
+}
