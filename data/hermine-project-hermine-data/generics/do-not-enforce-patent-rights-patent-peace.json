@@ -1,0 +1,6 @@
+{
+  "name": "Do not enforce patent rights (Patent peace)",
+  "description": "Enforcing patents against licensees or making a non-infringement agreement contrary to the license is prohibited and/or terminates your rights under the license.",
+  "metacategory": "IPManagement",
+  "passivity": "Passive"
+}

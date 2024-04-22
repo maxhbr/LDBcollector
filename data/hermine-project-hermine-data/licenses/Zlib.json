@@ -1,0 +1,62 @@
+{
+    "spdx_id": "Zlib",
+    "long_name": "zlib License",
+    "license_version": "",
+    "radical": "Zlib",
+    "autoupgrade": null,
+    "steward": "",
+    "inspiration_spdx": "",
+    "copyleft": "None",
+    "url": "http://www.zlib.net/zlib_license.html",
+    "osi_approved": true,
+    "fsf_approved": true,
+    "foss": "Yes",
+    "patent_grant": false,
+    "ethical_clause": false,
+    "non_commercial": false,
+    "non_tivoisation": false,
+    "law_choice": "",
+    "comment": "",
+    "verbatim": "",
+    "obligations": [
+        {
+            "license": [
+                "Zlib"
+            ],
+            "generic": [
+                "Track and mention modifications in the source code"
+            ],
+            "name": "Marking modifications",
+            "verbatim": "2. Altered source versions must be plainly marked as such, and must not be misrepresented as being the original software.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "Altered"
+        },
+        {
+            "license": [
+                "Zlib"
+            ],
+            "generic": [
+                "Reproduce license and legal mentions in documentation"
+            ],
+            "name": "Acknowledgment in the product documentation",
+            "verbatim": "1. The origin of this software must not be misrepresented; you must not claim that you wrote the original software. If you use this software in a product, an acknowledgment in the product documentation would be appreciated but is not required.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "Zlib"
+            ],
+            "generic": [
+                "Preserve legal mentions in source code"
+            ],
+            "name": "Preserve License in source code",
+            "verbatim": "3. This notice may not be removed or altered from any source distribution.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        }
+    ]
+}

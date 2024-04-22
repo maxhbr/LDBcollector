@@ -1,0 +1,6 @@
+{
+  "name": "Display legal mentions in the user interface (if applicable)",
+  "description": "Display legal mentions during the execution of the software (in the dedicated place for legal mentions).",
+  "metacategory": "Mentions",
+  "passivity": "Active"
+}

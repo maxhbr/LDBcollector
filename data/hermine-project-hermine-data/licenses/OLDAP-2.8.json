@@ -1,0 +1,75 @@
+{
+    "spdx_id": "OLDAP-2.8",
+    "long_name": "Open LDAP Public License v2.8",
+    "license_version": "2.8",
+    "radical": "OLDAP",
+    "autoupgrade": true,
+    "steward": "The OpenLDAP Foundation",
+    "inspiration_spdx": "",
+    "copyleft": "None",
+    "url": "http://www.openldap.org/software/release/license.html",
+    "osi_approved": false,
+    "fsf_approved": null,
+    "foss": "Yes",
+    "patent_grant": false,
+    "ethical_clause": false,
+    "non_commercial": false,
+    "non_tivoisation": false,
+    "law_choice": "",
+    "comment": "",
+    "verbatim": "",
+    "obligations": [
+        {
+            "license": [
+                "OLDAP-2.8"
+            ],
+            "generic": [
+                "Reproduce license and legal mentions in documentation"
+            ],
+            "name": "License and notices in documentation",
+            "verbatim": "2. Redistributions in binary form must reproduce applicable copyright statements and notices, this list of conditions, and the following disclaimer in the documentation and/or other materials provided with the distribution, and\r\n    3. Redistributions must contain a verbatim copy of this document.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "OLDAP-2.8"
+            ],
+            "generic": [
+                "Preserve legal mentions in source code"
+            ],
+            "name": "Preserve License and notices in source code",
+            "verbatim": "1. Redistributions in source form must retain copyright statements and notices,\r\n3. Redistributions must contain a verbatim copy of this document.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "OLDAP-2.8"
+            ],
+            "generic": [
+                "Do not use project or contributor names for endorsement or promotion."
+            ],
+            "name": "No use of names for endorsment",
+            "verbatim": "The names of the authors and copyright holders must not be used in advertising or otherwise to promote the sale, use or other dealing in this Software without specific, written prior permission. Title to copyright in this Software shall at all times remain with copyright holders.",
+            "passivity": "",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "OLDAP-2.8"
+            ],
+            "generic": [
+                "Respect trademarks"
+            ],
+            "name": "Respect trademarks",
+            "verbatim": "The names of the authors and copyright holders must not be used in advertising or otherwise to promote the sale, use or other dealing in this Software without specific, written prior permission. Title to copyright in this Software shall at all times remain with copyright holders.",
+            "passivity": "",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        }
+    ]
+}

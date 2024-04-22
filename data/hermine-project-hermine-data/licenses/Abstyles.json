@@ -1,0 +1,49 @@
+{
+    "spdx_id": "Abstyles",
+    "long_name": "Abstyles License",
+    "license_version": "",
+    "radical": "Abstyles",
+    "autoupgrade": null,
+    "steward": "",
+    "inspiration_spdx": "",
+    "copyleft": "None",
+    "url": "https://fedoraproject.org/wiki/Licensing/Abstyles",
+    "osi_approved": false,
+    "fsf_approved": null,
+    "foss": "Yes",
+    "patent_grant": false,
+    "ethical_clause": false,
+    "non_commercial": false,
+    "non_tivoisation": false,
+    "law_choice": "",
+    "comment": "",
+    "verbatim": "",
+    "obligations": [
+        {
+            "license": [
+                "Abstyles"
+            ],
+            "generic": [
+                "Preserve legal mentions in source code"
+            ],
+            "name": "Preserve legal mentions in Source Code",
+            "verbatim": "Permission is granted to make and distribute verbatim copies of this document provided that the copyright notice and this permission notice are preserved on all copies.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "Abstyles"
+            ],
+            "generic": [
+                "Reproduce license and legal mentions in documentation"
+            ],
+            "name": "Licence and copyright notices in documentation",
+            "verbatim": "Permission is granted to make and distribute verbatim copies of this document provided that the copyright notice and this permission notice are preserved on all copies.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        }
+    ]
+}

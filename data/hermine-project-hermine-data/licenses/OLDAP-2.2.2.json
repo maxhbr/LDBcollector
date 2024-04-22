@@ -1,0 +1,75 @@
+{
+    "spdx_id": "OLDAP-2.2.2",
+    "long_name": "Open LDAP Public License 2.2.2",
+    "license_version": "2.2.2",
+    "radical": "OLDAP",
+    "autoupgrade": true,
+    "steward": "The OpenLDAP Foundation",
+    "inspiration_spdx": "",
+    "copyleft": "None",
+    "url": "http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=df2cc1e21eb7c160695f5b7cffd6296c151ba188",
+    "osi_approved": false,
+    "fsf_approved": null,
+    "foss": "Yes",
+    "patent_grant": false,
+    "ethical_clause": false,
+    "non_commercial": false,
+    "non_tivoisation": false,
+    "law_choice": "",
+    "comment": "",
+    "verbatim": "",
+    "obligations": [
+        {
+            "license": [
+                "OLDAP-2.2.2"
+            ],
+            "generic": [
+                "Reproduce license and legal mentions in documentation"
+            ],
+            "name": "License and notices in documentation",
+            "verbatim": "2. Redistributions in binary form must reproduce applicable copyright statements and notices, this list of conditions, and the following disclaimer in the documentation and/or other materials provided with the distribution.\r\n    6. Due credit should be given to the OpenLDAP Project (http://www.openldap.org/).",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "OLDAP-2.2.2"
+            ],
+            "generic": [
+                "Preserve legal mentions in source code"
+            ],
+            "name": "Preserve License and notices in source code",
+            "verbatim": "1. Redistributions of source code must retain copyright statements and notices.\r\n    3. Redistributions must contain a verbatim copy of this document.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "OLDAP-2.2.2"
+            ],
+            "generic": [
+                "Do not use project or contributor names for endorsement or promotion."
+            ],
+            "name": "No use of names for endorsment",
+            "verbatim": "4. The name \"OpenLDAP\" must not be used to endorse or promote products derived from this Software without prior written permission of the OpenLDAP Foundation.",
+            "passivity": "Passive",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "OLDAP-2.2.2"
+            ],
+            "generic": [
+                "Respect trademarks"
+            ],
+            "name": "Respect trademarks",
+            "verbatim": "5. Products derived from this Software may not be called \"OpenLDAP\" nor may \"OpenLDAP\" appear in their names without prior written permission of the OpenLDAP Foundation.",
+            "passivity": "Passive",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        }
+    ]
+}
