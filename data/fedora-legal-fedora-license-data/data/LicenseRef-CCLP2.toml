@@ -1,0 +1,11 @@
+[license]
+
+expression = "LicenseRef-CCLP2"
+
+status = [ "allowed-content" ]
+
+text = '''
+This package may be distributed freely, as long as
+all of these files are left intact.
+'''
+

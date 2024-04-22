@@ -1,0 +1,19 @@
+[license]
+
+expression = "ARL"
+status = [ "allowed" ]
+
+url = '''
+https://fedoraproject.org/wiki/Licensing/AspellRu
+'''
+
+[fedora]
+
+legacy-name = [
+    "Aspell-ru License"
+]
+
+legacy-abbreviation = [
+    "ARL"
+]
+

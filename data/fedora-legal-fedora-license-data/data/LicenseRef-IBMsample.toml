@@ -1,0 +1,18 @@
+[license]
+
+expression = "LicenseRef-IBMsample"
+status = [ "not-allowed" ]
+
+url = '''
+https://fedoraproject.org/wiki/Licensing/IBM_Sample_Code_License
+'''
+
+[fedora]
+
+legacy-name = [
+    "IBM Sample Code License"
+]
+
+notes = '''
+Use restrictions
+'''

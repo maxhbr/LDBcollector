@@ -1,0 +1,14 @@
+[license]
+
+expression = "xpp"
+status = [ "allowed" ]
+
+[fedora]
+
+legacy-name = [
+    "XPP License"
+]
+
+legacy-abbreviation = [
+    "xpp"
+]

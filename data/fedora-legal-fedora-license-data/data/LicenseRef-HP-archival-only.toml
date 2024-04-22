@@ -1,0 +1,10 @@
+[license]
+
+expression = "LicenseRef-HP-archival-only"
+
+status = [ "not-allowed" ]
+
+text = ''' Copying or other reproduction of this program except for
+archival purposes is prohibited without the prior written consent
+of HP Company.
+'''

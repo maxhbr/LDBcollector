@@ -1,0 +1,18 @@
+[license]
+
+expression = "NGPL"
+status = [ "allowed" ]
+
+url = '''
+http://opensource.org/licenses/nethack.php
+'''
+
+[fedora]
+
+legacy-name = [
+    "Nethack General Public License"
+]
+
+legacy-abbreviation = [
+    "NGPL"
+]

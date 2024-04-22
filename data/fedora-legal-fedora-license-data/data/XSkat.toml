@@ -1,0 +1,14 @@
+[license]
+
+expression = "XSkat"
+status = [ "allowed" ]
+
+[fedora]
+
+legacy-name = [
+    "XSkat License"
+]
+
+legacy-abbreviation = [
+    "XSkat"
+]

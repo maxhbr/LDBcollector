@@ -1,0 +1,10 @@
+[license]
+
+expression = "Watcom-1.0"
+status = [ "not-allowed" ]
+
+[fedora]
+
+legacy-name = [
+    "Sybase Open Watcom Public License 1.0"
+]

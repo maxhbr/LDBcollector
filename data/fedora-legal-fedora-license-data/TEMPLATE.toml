@@ -1,0 +1,138 @@
+# Each file provides information about a single allowed or not-allowed
+# license.  The file format is TOML and the sections are
+# described below.  For information on the TOML standard, see
+# https://toml.io/en/
+
+# All files must provide a 'license' block.
+[license]
+
+# The SPDX expression for this license. For example:
+#
+#     expression = "GPL-3.0-or-later WITH Autoconf-exception-3.0"
+#
+# This expression is constructed using valid SPDX license expression syntax,
+# including, where applicable, license and exception identifiers adopted by
+# SPDX. See:
+# SPDX License List: https://spdx.org/licenses/
+# SPDX License Exceptions: https://spdx.org/licenses/exceptions-index.html
+# Information on how to construct SPDX expressions:
+# https://spdx.github.io/spdx-spec/SPDX-license-expressions/
+# Note: the SPDX expression operators OR and AND should not be used 
+# in this context. 
+#
+# This is a required field.
+expression = ""
+
+# The status identifiers for this license expression.  It is an array
+# of strings where each string may be any of:
+#
+#     allowed
+#     allowed-content
+#     allowed-documentation
+#     allowed-fonts
+#     allowed-firmware
+#     not-allowed
+#
+# This is a required field.  At least one status is required, but a license
+# may have multiple statuses listed for specific "allowed" scenarios 
+# (e.g., "allowed-content" and "allowed-documentation").  Note that 
+# "not-allowed" should not be combined with any allowed statuses and "allowed"
+# need not be combined with any other allowed statuses. For more information 
+# on how Fedora determines the status of a license, 
+# see https://docs.fedoraproject.org/en-US/legal/license-approval
+status = [ "" ]
+
+# Optional URL(s) to the license text.  This field is a multiline
+# literal string. For licenses that consist of an SPDX identifier that is
+# on the SPDX License List, or license expressions that include an SPDX
+# identifier that is on the SPDX license list WITH an exception that is on
+# the SPDX list of license exceptions, 
+# a corresponding SPDX URL will be auto-generated when the Docs packages
+# displaying this data is published, so you do not need to put SPDX URLs here. 
+# For example:
+#
+#     url = '''
+#     https://www.gnu.org/licenses/gpl-3.0-standalone.html
+#     https://www.gnu.org/licenses/autoconf-exception-3.0.html
+#     '''
+#
+# This field is optional.
+#url = '''
+#'''
+
+# Any notes related to specific usage for a particular license. For example,
+# where an otherwise not-allowed license is permitted for older packages only.
+# This field is determined as part of the review process. This field is a multiline
+# literal string. 
+# 
+# This field is optional.
+#usage = '''
+#'''
+
+# Full text of the license for licenses that do not have an SPDX
+# expression.  This field is a multiline
+# literal string.  For example:
+#
+#     text = '''
+#     Lorem ipsum dolor sit amet, consectetur adipiscing
+#     elit. Vestibulum aliquam eros enim, eu tristique nisi tempus
+#     et. Nunc erat lacus, consequat eget lacinia eleifend, rutrum a
+#     lectus. Aliquam et risus vitae lacus pellentesque
+#     pellentesque. Pellentesque facilisis tempor fermentum. Ut id
+#     aliquet nisl. Sed tincidunt lorem ut lorem maximus
+#     bibendum. Duis hendrerit sem sed nunc faucibus
+#     consectetur. Morbi augue tortor, placerat id quam quis, suscipit
+#     sodales lacus. Interdum et malesuada fames ac ante ipsum primis
+#     in faucibus. Maecenas eu sem volutpat, congue metus ac, finibus
+#     sapien. In at quam porta, rutrum augue nec, semper lectus.
+#     '''
+#
+# This field is optional.
+#text = '''
+#'''
+
+# When license is "not-allowed", but there are known Fedora packages that
+# has been granted an exception to use this license. This name of source
+# package.
+#
+# This field is optional.
+#packages_with_exceptions = [
+#    "package1",
+#    "package2"
+#]
+
+# The 'fedora' block contains additional information specific to the 
+# Fedora Project regarding the license.  This section is optional 
+# and any of the fields in it are optional.
+#[fedora]
+
+# The names Fedora formerly used to refer to this license, prior to Fedora's
+# adoption of SPDX expressions for license metadata in August 2022.  This field is a
+# list of strings.
+#legacy-name = [
+#    "License Full Name",
+#    "Another Name For This License"
+#]
+
+# The short legacy-abbreviations Fedora formerly used to represent this license in RPM
+# packages.  This field is a list of strings.
+#legacy-abbreviation = [
+#    "ShortName",
+#    "ShorterName",
+#    "AnotherName"
+#]
+
+# Any additional notes, history, or other information about this
+# license and its use in Fedora.  This field is a multiline literal
+# string. This should generally only contain historical notes associated with the
+# old Fedora licensing wiki page. 
+#notes = '''
+#'''
+
+# Some licenses have only one one-to-one mapping, but despite this it should not
+# be used for automatic conversion. The value is the warning the tooling should emit
+# when user wants to automatically convert the license
+# This is temporary field. It will be removed in future - when Fedora fully
+# migrates to SPDX.
+#reason-to-not-allow-automatic-conversion= '''
+#'''

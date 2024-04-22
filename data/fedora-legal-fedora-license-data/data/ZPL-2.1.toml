@@ -1,0 +1,14 @@
+[license]
+
+expression = "ZPL-2.1"
+status = [ "allowed" ]
+
+[fedora]
+
+legacy-name = [
+    "Zope Public License v 2.1"
+]
+
+legacy-abbreviation = [
+    "ZPLv2.1"
+]

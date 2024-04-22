@@ -1,0 +1,14 @@
+[license]
+
+expression = "VSL-1.0"
+status = [ "allowed" ]
+
+[fedora]
+
+legacy-name = [
+    "Vovida Software License v. 1.0"
+]
+
+legacy-abbreviation = [
+    "VSL"
+]

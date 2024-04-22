@@ -1,0 +1,15 @@
+[license]
+
+expression = "Zend-2.0"
+status = [ "allowed" ]
+
+[fedora]
+
+legacy-name = [
+    "Zend License v2.0"
+]
+
+legacy-abbreviation = [
+    "Zend"
+]
+

@@ -1,0 +1,18 @@
+[license]
+
+expression = "LicenseRef-Larabie-font"
+status = [ "not-allowed" ]
+
+url = '''
+https://fedoraproject.org/wiki/Licensing/LarabieFontsLicense
+'''
+
+[fedora]
+
+legacy-name = [
+    "Larabie Fonts License"
+]
+
+notes = '''
+Cannot modify
+'''

@@ -1,0 +1,19 @@
+[license]
+
+expression = "Beerware"
+status = [ "allowed" ]
+
+url = '''
+https://fedoraproject.org/wiki/Licensing/Beerware
+'''
+
+[fedora]
+
+legacy-name = [
+    "Beerware License"
+]
+
+legacy-abbreviation = [
+    "Beerware"
+]
+

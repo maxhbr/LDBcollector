@@ -1,0 +1,19 @@
+[license]
+
+expression = "BSD-Protection"
+status = [ "allowed" ]
+
+url = '''
+https://fedoraproject.org/wiki/Licensing/BSD_Protection_License
+'''
+
+[fedora]
+
+legacy-name = [
+    "BSD Protection License"
+]
+
+legacy-abbreviation = [
+    "BSD Protection"
+]
+

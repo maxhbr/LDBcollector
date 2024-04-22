@@ -1,0 +1,10 @@
+[license]
+
+expression = "YPL-1.0"
+status = [ "not-allowed" ]
+
+[fedora]
+
+legacy-name = [
+    "Yahoo Public License 1.0"
+]

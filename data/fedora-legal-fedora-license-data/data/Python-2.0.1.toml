@@ -1,0 +1,18 @@
+[license]
+
+expression = "Python-2.0.1"
+status = [ "allowed" ]
+
+url = '''
+https://spdx.org/licenses/Python-2.0.1.html
+'''
+
+[fedora]
+
+legacy-name = [
+    "Python License"
+]
+
+legacy-abbreviation = [
+    "Python"
+]

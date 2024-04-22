@@ -1,0 +1,22 @@
+[license]
+
+expression = "BSL-1.0"
+status = [ "allowed" ]
+
+url = '''
+http://www.boost.org/LICENSE_1_0.txt
+https://fedoraproject.org/wiki/Licensing:MIT?rd=Licensing/MIT#Thrift_variant
+'''
+
+[fedora]
+
+legacy-name = [
+    "Boost Software License",
+    "MIT:Thrift variant"
+]
+
+legacy-abbreviation = [
+    "Boost",
+    "MIT"
+]
+

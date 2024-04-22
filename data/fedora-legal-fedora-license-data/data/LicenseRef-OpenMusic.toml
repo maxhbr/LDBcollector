@@ -1,0 +1,16 @@
+[license]
+
+expression = "LicenseRef-OpenMusic-green"
+status = [ "allowed-content" ]
+usage = ''' Note: clause VI must NOT be invoked
+'''
+
+[fedora]
+
+legacy-name = [
+    "LinuxTag Green OpenMusic License"
+]
+
+legacy-abbreviation = [
+    "Green OpenMusic"
+]

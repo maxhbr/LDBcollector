@@ -1,0 +1,19 @@
+[license]
+
+expression = "LicenseRef-Bibtex"
+status = [ "allowed" ]
+
+url = '''
+https://fedoraproject.org/wiki/Licensing/Bibtex
+'''
+
+[fedora]
+
+legacy-name = [
+    "Bibtex License"
+]
+
+legacy-abbreviation = [
+    "Bibtex"
+]
+

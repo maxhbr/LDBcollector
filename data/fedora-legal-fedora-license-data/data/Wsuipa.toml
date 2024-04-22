@@ -1,0 +1,15 @@
+[license]
+
+expression = "Wsuipa"
+status = [ "allowed" ]
+
+[fedora]
+
+legacy-name = [
+    "Wsuipa License"
+]
+
+legacy-abbreviation = [
+    "Wsuipa"
+]
+

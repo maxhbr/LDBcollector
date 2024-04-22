@@ -1,0 +1,18 @@
+[license]
+
+expression = "LicenseRef-NasaCDF"
+status = [ "not-allowed" ]
+
+url = '''
+https://fedoraproject.org/wiki/Licensing/NasaCDF
+'''
+
+[fedora]
+
+legacy-name = [
+    "NASA CDF License"
+]
+
+notes = '''
+Commercial use restrictions, poorly worded
+'''

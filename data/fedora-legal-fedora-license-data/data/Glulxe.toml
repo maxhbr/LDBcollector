@@ -1,0 +1,19 @@
+[license]
+
+expression = "Glulxe"
+status = [ "allowed" ]
+
+url = '''
+https://fedoraproject.org/wiki/Licensing/Glulxe
+'''
+
+[fedora]
+
+legacy-name = [
+    "Glulxe License"
+]
+
+legacy-abbreviation = [
+    "Glulxe"
+]
+

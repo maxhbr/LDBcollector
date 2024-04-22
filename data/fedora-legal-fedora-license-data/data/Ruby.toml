@@ -1,0 +1,18 @@
+[license]
+
+expression = "Ruby"
+status = [ "allowed" ]
+
+url = '''
+http://www.ruby-lang.org/en/LICENSE.txt
+'''
+
+[fedora]
+
+legacy-name = [
+    "Ruby License"
+]
+
+legacy-abbreviation = [
+    "Ruby"
+]

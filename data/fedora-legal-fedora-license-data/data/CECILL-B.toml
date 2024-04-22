@@ -1,0 +1,19 @@
+[license]
+
+expression = "CECILL-B"
+status = [ "allowed" ]
+
+url = '''
+http://www.cecill.info/licences.en.html
+'''
+
+[fedora]
+
+legacy-name = [
+    "CeCILL-B License"
+]
+
+legacy-abbreviation = [
+    "CeCILL-B"
+]
+

@@ -1,0 +1,18 @@
+[license]
+
+expression = "LicenseRef-unrar"
+status = [ "not-allowed" ]
+
+url = '''
+https://fedoraproject.org/wiki/Licensing/Unrar
+'''
+
+[fedora]
+
+legacy-name = [
+    "unrar license"
+]
+
+notes = '''
+Use restrictions, forced removal clause, see license page for details
+'''

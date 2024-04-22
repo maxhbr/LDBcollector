@@ -1,0 +1,14 @@
+[license]
+expression = "threeparttable"
+status = [ "allowed" ]
+
+[fedora]
+
+legacy-name = [
+    "Threeparttable License"
+]
+
+legacy-abbreviation = [
+    "Threeparttable"
+]
+

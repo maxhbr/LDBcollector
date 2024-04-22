@@ -1,0 +1,14 @@
+[license]
+
+expression = "Baekmuk"
+status = [ "allowed-fonts" ]
+
+[fedora]
+
+legacy-name = [
+    "Baekmuk License"
+]
+
+legacy-abbreviation = [
+    "Baekmuk"
+]

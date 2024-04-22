@@ -1,0 +1,12 @@
+[license]
+expression = "LicenseRef-Fedora-Public-Domain"
+status = ["allowed"]
+url = """
+https://docs.fedoraproject.org/en-US/legal/license-field/#_public_domain
+https://docs.fedoraproject.org/en-US/legal/update-existing-packages/#_public_domain
+"""
+
+[fedora]
+legacy-name = ["Public Domain"]
+legacy-abbreviation = ["Public Domain"]
+

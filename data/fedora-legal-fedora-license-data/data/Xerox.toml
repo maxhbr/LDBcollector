@@ -1,0 +1,15 @@
+[license]
+
+expression = "Xerox"
+status = [ "allowed" ]
+
+[fedora]
+
+legacy-name = [
+    "Xerox License"
+]
+
+legacy-abbreviation = [
+    "Xerox"
+]
+

@@ -1,0 +1,15 @@
+[license]
+
+expression = "TPDL"
+
+status = [ "allowed" ]
+
+[fedora]
+
+legacy-name = [
+    "Time::ParseDate License"
+]
+
+legacy-abbreviation = [
+    "TPDL"
+]

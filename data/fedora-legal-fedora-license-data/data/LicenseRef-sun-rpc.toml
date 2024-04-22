@@ -1,0 +1,18 @@
+[license]
+
+expression = "LicenseRef-sun-rpc"
+status = [ "not-allowed" ]
+
+url = '''
+https://fedoraproject.org/wiki/Licensing/SunRPC
+'''
+
+[fedora]
+
+legacy-name = [
+    "Sun RPC License"
+]
+
+notes = '''
+Restrictions on modification, distribution
+'''

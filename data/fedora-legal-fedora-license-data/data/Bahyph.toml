@@ -1,0 +1,19 @@
+[license]
+
+expression = "Bahyph"
+status = [ "allowed" ]
+
+url = '''
+https://fedoraproject.org/wiki/Licensing/Bahyph
+'''
+
+[fedora]
+
+legacy-name = [
+    "Bahyph License"
+]
+
+legacy-abbreviation = [
+    "Bahyph"
+]
+

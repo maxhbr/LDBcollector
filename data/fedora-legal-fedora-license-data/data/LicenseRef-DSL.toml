@@ -1,0 +1,14 @@
+[license]
+
+expression = "LicenseRef-DSL"
+status = [ "allowed-content" ]
+
+[fedora]
+
+legacy-name = [
+    "Design Science License"
+]
+
+legacy-abbreviation = [
+    "DSL"
+]

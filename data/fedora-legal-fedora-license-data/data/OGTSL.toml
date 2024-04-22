@@ -1,0 +1,19 @@
+[license]
+
+expression = "OGTSL"
+status = [ "not-allowed" ]
+
+url = '''
+http://opensource.org/licenses/opengroup.php
+'''
+
+[fedora]
+
+legacy-name = [
+    "Open Group Test Suite License"
+]
+
+notes = '''
+Same flaws as Artistic 1.0
+
+'''

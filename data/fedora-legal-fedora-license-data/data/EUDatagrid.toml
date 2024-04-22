@@ -1,0 +1,18 @@
+[license]
+
+expression = "EUDatagrid"
+status = [ "allowed" ]
+
+url = '''
+http://www.opensource.org/licenses/eudatagrid.php
+'''
+
+[fedora]
+
+legacy-name = [
+    "EU Datagrid Software License"
+]
+
+legacy-abbreviation = [
+    "EU Datagrid"
+]

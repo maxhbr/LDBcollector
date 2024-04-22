@@ -1,0 +1,15 @@
+[license]
+
+expression = "LicenseRef-MgOpen"
+status = [ "allowed-fonts" ]
+
+[fedora]
+
+legacy-name = [
+    "MgOpen Font License"
+]
+
+legacy-abbreviation = [
+    "MgOpen"
+]
+

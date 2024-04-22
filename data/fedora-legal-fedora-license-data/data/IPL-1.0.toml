@@ -1,0 +1,18 @@
+[license]
+
+expression = "IPL-1.0"
+status = [ "allowed" ]
+
+url = '''
+http://www.opensource.org/licenses/ibmpl.php
+'''
+
+[fedora]
+
+legacy-name = [
+    "IBM Public License"
+]
+
+legacy-abbreviation = [
+    "IBM"
+]

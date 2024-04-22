@@ -1,0 +1,18 @@
+[license]
+
+expression = "QPL-1.0"
+status = [ "allowed" ]
+
+url = '''
+http://doc.trolltech.com/4.0/qpl.html
+'''
+
+[fedora]
+
+legacy-name = [
+    "Q Public License"
+]
+
+legacy-abbreviation = [
+    "QPL"
+]

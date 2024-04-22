@@ -1,0 +1,18 @@
+[license]
+
+expression = "LicenseRef-unsplash"
+status = [ "not-allowed" ]
+
+url = '''
+https://unsplash.com/license
+'''
+
+[fedora]
+
+legacy-name = [
+    "Unsplash License"
+]
+
+notes = '''
+Some use restrictions
+'''

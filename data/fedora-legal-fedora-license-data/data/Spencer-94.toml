@@ -1,0 +1,15 @@
+[license]
+
+expression = "Spencer-94"
+status = [ "allowed" ]
+
+[fedora]
+
+legacy-name = [
+    "Henry Spencer Reg-Ex Library License"
+]
+
+legacy-abbreviation = [
+    "HSRL"
+]
+

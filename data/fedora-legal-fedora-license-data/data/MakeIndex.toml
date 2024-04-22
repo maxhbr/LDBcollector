@@ -1,0 +1,19 @@
+[license]
+
+expression = "MakeIndex"
+status = [ "allowed" ]
+
+url = '''
+https://fedoraproject.org/wiki/Licensing/MakeIndex
+'''
+
+[fedora]
+
+legacy-name = [
+    "MakeIndex License"
+]
+
+legacy-abbreviation = [
+    "MakeIndex"
+]
+

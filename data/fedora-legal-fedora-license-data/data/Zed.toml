@@ -1,0 +1,14 @@
+[license]
+
+expression = "Zed"
+status = [ "allowed" ]
+
+[fedora]
+
+legacy-name = [
+    "Zed License"
+]
+
+legacy-abbreviation = [
+    "Zed"
+]

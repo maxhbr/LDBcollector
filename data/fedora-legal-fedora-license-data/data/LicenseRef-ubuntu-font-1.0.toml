@@ -1,0 +1,18 @@
+[license]
+
+expression = "LicenseRef-ubuntu-font-1.0"
+status = [ "not-allowed" ]
+
+url = '''
+https://fedoraproject.org/wiki/Licensing/UbuntuFontLicense
+'''
+
+[fedora]
+
+legacy-name = [
+    "Ubuntu Font License"
+]
+
+notes = '''
+Poorly written, cannot actually use fonts
+'''

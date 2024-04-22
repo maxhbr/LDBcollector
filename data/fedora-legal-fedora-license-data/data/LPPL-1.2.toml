@@ -1,0 +1,16 @@
+[license]
+expression = "LPPL-1.2"
+status = [ "not-allowed"]
+
+usage = '''
+
+Packages under the LaTeX Project Public License version 1.2 or any
+later version are allowed with the understanding that Fedora will
+treat such packages as being licensed under the LaTeX Project Public
+License version 1.3a or any later version.  It is not necessary to
+include a copy of version 1.3a or to delete or replace copies of
+version 1.2, or to alter any notices referring to version
+1.2. However, any License tag that refers to the LPPL in this
+situation should use `LPPL-1.3a+`, not `LPPL-1.2` (or `LPPL-1.2+`).
+
+'''
