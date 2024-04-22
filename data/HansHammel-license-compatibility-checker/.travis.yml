@@ -1,0 +1,39 @@
+language: node_js
+
+sudo: false
+
+branches:
+  only:
+    - master
+    - /^greenkeeper-.*$/
+
+node_js:
+  - 10
+  - 11
+  - 12
+  - 13
+  - lts/*
+  - node
+
+os:
+  - windows
+  - linux
+  - osx
+
+matrix:
+  allow_failures:
+    - os: windows
+    
+env:
+  - NODE_ENV=testing
+
+cache:
+  directories:
+    - $HOME/.npm
+    - ~/.npm
+    - ~/.yarn-cache
+    - travis_phantomjs
+    - node_modules
+  
+script: npm test 
+#script: npm install -global && cd test && npm install && lcc

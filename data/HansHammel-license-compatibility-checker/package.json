@@ -1,0 +1,58 @@
+{
+  "name": "license-compatibility-checker",
+  "version": "0.3.5",
+  "main": "lib/index.js",
+  "scripts": {
+    "start": "node bin/cli.js",
+    "test": "node test/test.js",
+    "test2": "cd test && node test.js && node ../bin/cli.js",
+    "docdash": "node ./node_modules/jsdoc/jsdoc.js -c .jsdocrc -t ./node_modules/docdash -R README.md -r ./lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HansHammel/license-compatibility-checker.git"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "author": {
+    "name": "Oliver Bleckmann",
+    "url": "https://github.com/HansHammel"
+  },
+  "preferGlobal": true,
+  "bugs": {
+    "url": "https://github.com/HansHammel/license-compatibility-checker/issues"
+  },
+  "homepage": "https://github.com/HansHammel/license-compatibility-checker#readme",
+  "bin": {
+    "license-compatibility-checker": "bin/cli.js",
+    "lcc": "bin/cli.js"
+  },
+  "engines": {
+    "node": ">=0.12"
+  },
+  "keywords": [
+    "license",
+    "licenses",
+    "proliferation",
+    "compatibility",
+    "check",
+    "violation",
+    "validation",
+    "package.json",
+    "dependencies",
+    "modules",
+    "compliance",
+    "spdx"
+  ],
+  "license": "MIT",
+  "description": "Check npm dependencies' package.json for license compatibility (aka compliance check) with the current project based on spdx notation and naming conventions.",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "update-notifier": "^5.1.0"
+  },
+  "devDependencies": {
+    "docdash": "^1.2.0",
+    "jsdoc": "^3.6.6"
+  }
+}
