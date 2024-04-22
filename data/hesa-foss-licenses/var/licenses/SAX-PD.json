@@ -1,0 +1,21 @@
+{
+"meta": {
+    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+    "comment": ""
+  },
+  "name": "SAX Public Domain Notice",
+  "scancode_key": "sax-pd",
+  "spdxid": "SAX-PD",
+  "aliases": [
+   "SAX-PD",
+   "SAX Public Domain Notice",
+   "Sax Public Domain Notice",
+   "scancode://sax-pd",
+   "http://www.spdx.org/licenses/SAX-PD",
+   "for license please see accompanying LICENSE.txt file (available also at http://www.xmlpull.org/)",
+   "http://www.saxproject.org/copying.html",
+   "https://spdx.org/licenses/sax-pd",
+   "http://www.xmlpull.org/v1/download/unpacked/LICENSE.txt",
+   "scancode:sax-pd"
+  ]
+}

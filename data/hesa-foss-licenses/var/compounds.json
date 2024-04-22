@@ -1,0 +1,36 @@
+{
+    "meta": {
+        "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+        "comment": ""
+    },
+    "compounds": [
+        {
+            "spdxid": "GPL-2.0-only WITH Classpath-exception-2.0",
+            "aliases": [
+                "GPL-2.0-with-classpath-exception",
+                "GPL-2.0-only AND Classpath-exception-2.0"
+            ]
+        },
+        {
+            "spdxid": "GPL-2.0-only WITH Linux-syscall-note",
+            "aliases": [
+            ],
+            "compatibility_as": "GPL-2.0-only WITH Classpath-exception-2.0"
+        },
+        {
+            "spdxid": "GPL-2.0-or-later WITH Classpath-exception-2.0",
+            "aliases": [
+                "GPL-2.0-or-later AND Classpath-exception-2.0"
+            ]
+        },
+        {
+            "spdxid": "GPL-3.0-or-later WITH GCC-exception-3.1",
+            "aliases": [
+                "GPL-3.0-with-GCC-exception",
+                "GPLv3 w/Runtime exception",
+                "GPL v3 w/Runtime exception"
+            ],
+            "compatibility_as": "0BSD"
+        }
+    ]
+}

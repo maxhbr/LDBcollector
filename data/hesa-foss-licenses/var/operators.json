@@ -1,0 +1,19 @@
+{
+    "meta": {
+        "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+	"comment": "Operators (and mappings to SPDX) allowed"
+    },
+    "operators": {
+        "OR": "OR",
+        "or": "OR",
+        "|": "OR",
+        "||": "OR",
+        "AND": "AND",
+        "and": "AND",
+        "&": "AND",
+        "&&": "AND",
+        "with": "WITH",
+        "w/": "WITH",
+        "WITH": "WITH"
+    }
+}   

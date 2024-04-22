@@ -1,0 +1,84 @@
+{
+    "meta": {
+        "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+        "comment": ""
+    },
+    "ambiguities": {
+        "Academic Free License": {
+            "aliases": [
+                "License :: OSI Approved :: Academic Free License (AFL)"
+            ],
+            "problem": "This license has many different versions (1.1, 1.2, 2.0, 2.1 and 3.0). Without a version number it is not possible to determine which of the versions is meant."
+        },
+        "Apache License": {
+            "aliases": [
+                "Apache License",
+                "Apache Software License"
+            ],
+            "problem": "This license has different version (1.0, 1.1, and 2.0). Without a version number it is not possible to determine which of the versions is meant."
+        },
+        "Artistic License": {
+            "aliases": [
+                "License :: OSI Approved :: Artistic License",
+                "Artistic License",
+                "Artistic"
+            ],
+            "problem": "This license has different version (1.0, and 2.0). Without a version number it is not possible to determine which of the versions is meant."
+        },
+        "Boost": {
+            "aliases": [
+                "Boost License",
+                "Boost license",
+                "Boost"
+            ],
+            "problem": "There are at least two versions of the Boost license (Original Boost and BSL-1.0). Without the version/variant of the license it is not possible to determine which of the versions is meant."
+        },
+        "BSD": {
+            "aliases": [
+                "BSD License (BSD License)",
+                "BSD License"
+            ],
+            "problem": "There are a couple of variants or versions of the BSD license (0BSD, BSD-1-Clause, BSD-2-Clause, BSD-3-Clause and BSD-4-Clause). Without the version/variant of the license it is not possible to determine which of the versions is meant."
+        },
+        "Common Public License": {
+            "aliases": [
+                "Common Public License",
+                "CPL",
+                "License :: OSI Approved :: Common Public License"
+            ],
+            "problem": "There are couple of versions of the CPL license (0.5 and 1). Without the version/variant of the license it is not possible to determine which of the versions is meant."
+        },
+        "GNU General Public License": {
+            "aliases": [
+                "GPL",
+                "GNU GPL"
+            ],
+            "problem": "This license has different version (1, 2 and 3). Without a version number it is not possible to determine which of the versions is meant."
+        },
+        "GCC Runtime Library exception": {
+            "aliases": [
+                "GCC exception",
+                "GCC Exception"
+            ],
+            "problem": "This exception has different version (2.0, '2.0 with note' and 3.0). Without a version number it is not possible to determine which of the versions is meant."
+        },
+        "GNU Lesser General Public License": {
+            "aliases": [
+                "LGPL",
+                "GNU LGPL",
+                "GNU Library General Public License",
+                "GNU Library General Public License v2 only",
+                "GNU Library General Public License v2 only",
+                "License :: OSI Approved :: GNU Lesser General Public License v2 (LGPLv2)",
+                "GNU Lesser General Public License v2 (LGPLv2)",
+                "LGPLv2 or later"
+            ],
+            "problem": "This license has different versions (2.0, 2.1 and 3.0). Without a version number it is not possible to determine which of the versions is meant."
+        },
+        "GNU": {
+            "aliases": [
+            ],
+            "problem": "There a couple of licenses related to the GNU project. Without the name of the license and version number it is not possible to determine which of the versions is meant."
+        }
+    }
+}

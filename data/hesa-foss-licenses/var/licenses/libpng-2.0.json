@@ -1,0 +1,19 @@
+{
+"meta": {
+    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+    "comment": ""
+  },
+  "name": "PNG Reference Library License version 2",
+  "scancode_key": "libpng-v2", 
+  "spdxid": "libpng-2.0",
+  "aliases": [
+   "libpng-2.0",
+   "PNG Reference Library version 2",
+   "PNG Reference Library License 2.0",
+   "scancode://libpng-v2",
+   "LIbpng License v2",
+   "PNG Reference Library License 2",
+   "scancode:libpng-v2"
+  ],
+  "compatibility_as": "Zlib"
+}

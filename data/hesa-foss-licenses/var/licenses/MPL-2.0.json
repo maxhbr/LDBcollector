@@ -1,0 +1,32 @@
+{
+"meta": {
+    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+    "comment": ""
+  },
+  "name": "Mozilla Public License 2.0",
+  "scancode_key": "mpl-2.0", 
+  "spdxid": "MPL-2.0",
+  "aliases": [
+   "Mozilla Public License 2.0",
+   "mpl-2.0",
+   "mozilla2.0",
+   "Mozilla Public License, Version 2.0",
+   "License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)",
+   "Mozilla Public License Version 2.0",
+   "scancode://mpl-2.0",
+   "MPL 2.0",
+   "Mozilla Public License, v. 2.0",
+   "Mozilla Public License version 2.0",
+   "Mozilla Public License (Version 2.0)",
+   "Mozilla Public License v2.0",
+   "Mozilla License Version 2.0",
+   "Mozilla Public Licence 2.0",
+   "Mozilla Public License 2.0 (MPL 2.0)",
+   "MPLv2.0",
+   "MPL-2",
+   "scancode:mpl-2.0",
+   "osi:MPL-2.0",
+      "MPLv2",
+      "MPL-2.0+"
+  ]
+}

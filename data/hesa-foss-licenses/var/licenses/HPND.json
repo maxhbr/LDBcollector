@@ -1,0 +1,21 @@
+{
+"meta": {
+    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+    "comment": ""
+  },
+  "name": "Historical Permission Notice and Disclaimer",
+  "scancode_key": "historical", 
+  "spdxid": "HPND",
+  "aliases": [
+   "HPND",
+   "Historical Permission Notice and Disclaimer",
+   "scancode://historical",
+   "Historic Permission Notice and Disclaimer",
+   "http://www.opensource.org/licenses/historical.php",
+   "https://spdx.org/licenses/hpnd",
+   "scancode:historical",
+   "osi:HPND",
+   "Historical Permission Notice and Disclaimer (HPND)",
+   "HPND License"
+  ]
+}

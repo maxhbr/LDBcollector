@@ -1,0 +1,15 @@
+{
+    "meta": {
+        "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+        "comment": ""
+    },
+    "name": "FSF Unlimited License",
+    "scancode_key": "fsf-free",
+    "spdxid": "FSFUL",
+    "aliases": [
+        "FSF Unlimited License",
+        "scancode://fsf-free",
+        "FSFUL",
+        "scancode:fsf-free"
+    ]
+}

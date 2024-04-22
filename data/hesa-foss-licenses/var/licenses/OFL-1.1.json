@@ -1,0 +1,24 @@
+{
+"meta": {
+    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+    "comment": ""
+  },
+  "name": "SIL Open Font License 1.1",
+  "scancode_key": "ofl-1.1",
+  "spdxid": "OFL-1.1",
+  "aliases": [
+   "OFL-1.1",
+   "ofl-1.1",
+   "SIL Open Font License 1.1",
+   "Open Font License 1.1",
+   "SIL Open Font License, Version 1.1",
+   "SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007",
+   "scancode://ofl-1.1",
+   "OFL, Version 1.1",
+   "OFL 1.1",
+   "SIL OPEN FONT LICENSE Version 1.1",
+   "scancode:ofl-1.1",
+   "osi:OFL-1.1",
+   "SIL Open Font License 1.1 (OFL-1.1)"
+  ]
+}

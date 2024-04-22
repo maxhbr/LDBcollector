@@ -1,0 +1,16 @@
+{
+"meta": {
+    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+    "comment": ""
+  },
+  "name": "GNU Library General Public License 2.0",
+  "scancode_key": "lgpl-2.0",
+  "spdxid": "LGPL-2.0-only",
+  "compatibility_as": "LGPL-2.1-only",
+  "aliases": [
+      "LGPL-2.0-only",
+      "scancode://lgpl-2.0",
+      "LGPL 2.0",
+      "LGPLv2.0"
+  ]
+}

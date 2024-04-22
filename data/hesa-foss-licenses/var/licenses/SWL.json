@@ -1,0 +1,20 @@
+{
+"meta": {
+    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+    "comment": ""
+  },
+  "name": "Scheme Widget Library (SWL) Software License Agreement",
+  "scancode_key": "swl",
+  "spdxid": "SWL",
+  "aliases": [
+   "SWL",
+   "Scheme Widget Library (SWL) Software License Agreement",
+   "Scheme Widget Library Software License Agreement",
+   "scancode://swl",
+   "Scheme Widget Library (SWL) Software License",
+   "SWL License",
+   "SWL license",
+   "under SWL",
+   "scancode:swl"
+  ]
+}

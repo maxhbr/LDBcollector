@@ -1,0 +1,15 @@
+{
+    "meta": {
+        "disclaimer": "bla bla ",
+	"comment": "adapting to new format"
+    },
+    "spdxid": "GPL-2.0-or-later",
+    "scancode_key": "gpl-2.0-plus",
+    "name": "GPL 2.0 or later",
+    "aliases": [
+        "GPLv2+",
+        "GPL2+",
+        "GPL (v2 or later)",
+        "GNU General Public License v2 or later (GPLv2+)"
+    ]
+}

@@ -1,0 +1,57 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: FOSS Licenses
+Upstream-Contact: Henrik Sandklef <hesa@sandklef.com>
+Source: https://github.com/hesa/foss-licenses
+
+Files: var/licenses/*.LICENSE
+Copyright: Nexb
+License: CC-BY-4.0
+
+Files: tests/licenses/*.LICENSE
+Copyright: Nexb
+License: CC-BY-4.0
+
+Files: .github/workflows/push.yml
+Copyright: 2023 Henrik Sandklef <hesa@sandklef.com>
+License: CC-BY-4.0
+
+Files: .github/workflows/autorelease.yml
+Copyright: 2024 Henrik Sandklef <hesa@sandklef.com>
+License: CC-BY-4.0
+
+Files: .bumpversion.cfg
+Copyright: 2024 Henrik Sandklef <hesa@sandklef.com>
+License: CC-BY-4.0
+
+Files: .github/dependabot.yml
+Copyright: 2024 Henrik Sandklef <hesa@sandklef.com>
+License: CC-BY-4.0
+
+Files: var/licenses/*.json
+Copyright: 2023 Henrik Sandklef <hesa@sandklef.com>
+License: CC-BY-4.0
+
+Files: tests/licenses/*.json tests/*.json tests/yamllint.conf
+Copyright: 2023 Henrik Sandklef <hesa@sandklef.com>
+License: CC-BY-4.0
+
+Files: tests/licenses-additional/*.json
+Copyright: 2023 Henrik Sandklef <hesa@sandklef.com>
+License: CC-BY-4.0
+
+Files: tests/additional-licenses/mylicense.*
+Copyright: 2023 Henrik Sandklef <hesa@sandklef.com>
+License: CC-BY-4.0
+
+Files: tests/user.json
+Copyright: 2023 Henrik Sandklef <hesa@sandklef.com>
+License: CC-BY-4.0
+
+Files: var/*.json
+Copyright: 2023 Henrik Sandklef <hesa@sandklef.com>
+License: CC-BY-4.0
+
+Files: python/docs/Makefile python/docs/make.bat
+Copyright: 2023 (c) SPhinx authors, www.sphinx-doc.org
+License: BSD-2-Clause
+

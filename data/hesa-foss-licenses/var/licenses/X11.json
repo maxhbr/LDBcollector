@@ -1,0 +1,22 @@
+{
+"meta": {
+    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+    "comment": ""
+  },
+  "name": "X11 License",
+  "scancode_key": "x11-xconsortium", 
+  "spdxid": "X11",
+  "aliases": [
+   "X11",
+   "X11 License",
+   "scancode://x11-xconsortium",
+   "X11-Style (X Consortium)",
+   "scancode://x11",
+   "X License",
+   "MIT/X Consortium",
+   "X/MIT License",
+   "MIT/X11",
+   "MIT variant (X11)",
+   "scancode:x11-xconsortium"
+  ]
+}

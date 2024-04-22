@@ -1,0 +1,11 @@
+{
+"meta": {
+    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+    "comment": ""
+  },
+  "name": "Zope Public License 1.0",
+  "scancode_key": "zpl-1.0",
+  "spdxid": "LicenseRef-scancode-zpl-1.0",
+  "aliases": [
+  ]
+}

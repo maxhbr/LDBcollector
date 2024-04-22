@@ -1,0 +1,18 @@
+{
+"meta": {
+    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+    "comment": ""
+  },
+  "name": "Independent JPEG Group License",
+  "scancode_key": "ijg", 
+  "spdxid": "IJG",
+  "aliases": [
+   "IJG",
+   "Independent JPEG Group License",
+   "IJG License",
+   "scancode://ijg",
+   "JPEG License",
+   "IJG LICENSE",
+   "scancode:ijg"
+  ]
+}

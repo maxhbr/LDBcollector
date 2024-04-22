@@ -1,0 +1,18 @@
+{
+"meta": {
+    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+    "comment": ""
+  },
+  "name": "Public Domain",
+  "scancode_key": "public-domain",
+  "spdxid": "LicenseRef-scancode-public-domain",
+  "aliases": [
+      "Public Domain",
+      "public domain",
+      "Public domain",
+      "LicenseRef-Fedora-Public-Domain",
+      "Public Domain Dedication and License",
+      "Public-Domain"
+  ],
+  "compatibility_as": "CC0-1.0"
+}

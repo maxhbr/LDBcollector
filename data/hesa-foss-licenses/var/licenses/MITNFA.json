@@ -1,0 +1,18 @@
+{
+"meta": {
+    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+    "comment": ""
+  },
+  "name": "MIT with no false attribution License",
+  "spdxid": "MITNFA",
+  "scancode_key": "mit-no-false-attribs",
+  "aliases": [
+   "MITNFA",
+   "MIT +no-false-attribs license",
+   "MIT (NFA) License",
+   "MIT +no-false-attribs License",
+   "scancode://mit-no-false-attribs",
+   "MIT no false attribution License",
+   "scancode:mit-no-false-attribs"
+  ]
+}

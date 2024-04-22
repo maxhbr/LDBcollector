@@ -1,0 +1,18 @@
+{
+    "meta": {
+        "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+        "comment": ""
+    },
+    "name": "FSF All Permissive License",
+    "scancode_key": "fsf-ap",
+    "spdxid": "FSFAP",
+    "aliases": [
+        "FSFAP",
+        "FSF All Permissive license",
+        "FSF All Permissive License",
+        "scancode://fsf-ap",
+        "FSF All Permissive",
+        "FSF all permissive",
+        "scancode:fsf-ap"
+    ]
+}

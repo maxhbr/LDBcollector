@@ -1,0 +1,34 @@
+{
+"meta": {
+    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+    "comment": ""
+  },
+  "name": "ZLIB License",
+  "scancode_key": "zlib", 
+  "spdxid": "Zlib",
+  "aliases": [
+   "Zlib",
+   "zlib/libpng",
+   "zlib License",
+   "zlib",
+   "zlib/libpng License",
+   "zlib/libpng license",
+   "zlib-license",
+   "The zlib/libpng License (Zlib)",
+   "License :: OSI Approved :: zlib/libpng License",
+   "scancode://zlib",
+   "ZLIB License",
+   "zlib licence",
+   "http://www.opensource.org/licenses/zlib-license.php",
+   "The zlib/libpng License",
+   "For conditions of distribution and use, see copyright notice in zlib.h",
+   "This program is based on zlib",
+   "http://www.gzip.org/zlib/zlib_license.html",
+   "Aladdin MD5 License",
+   "scancode:zlib",
+   "scancode:aladdin-md5",
+   "scancode:d-zlib",
+   "scancode:fastbuild-2012-2020",
+   "osi:Zlib"
+  ]
+}

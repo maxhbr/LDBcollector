@@ -1,0 +1,17 @@
+{
+"meta": {
+    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+    "comment": ""
+  },
+  "name": "FastCGI DevKit",
+  "scancode_key": "fastcgi-devkit", 
+  "spdxid": "OML",
+  "aliases": [
+   "OML",
+   "Open Market License",
+   "scancode://fastcgi-devkit",
+   "FastCGI DevKit",
+   "OM License",
+   "scancode:fastcgi-devkit"
+  ]
+}

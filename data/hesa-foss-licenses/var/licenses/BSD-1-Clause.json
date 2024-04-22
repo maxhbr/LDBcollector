@@ -1,0 +1,19 @@
+{
+"meta": {
+    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+    "comment": ""
+  },
+  "name": "BSD-1-Clause",
+  "scancode_key": "bsd-1-clause",
+  "spdxid": "BSD-1-Clause",
+  "aliases": [
+   "BSD-1-Clause",
+   "BSD 1-Clause License",
+   "scancode://bsd-1-clause",
+   "BSD 1 Clause",
+   "BSD 1 CLAUSE",
+   "BSD-1-CLAUSE",
+   "BSD-1-clause",
+   "scancode:bsd-1-clause"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+"meta": {
+    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+    "comment": ""
+  },
+  "name": "WTFPL 1.0",
+  "scancode_key": "wtfpl-1.0",
+  "spdxid": "LicenseRef-scancode-wtfpl-1.0",
+  "aliases": [
+  ]
+}

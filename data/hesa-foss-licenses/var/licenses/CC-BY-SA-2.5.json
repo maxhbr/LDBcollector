@@ -1,0 +1,18 @@
+{
+"meta": {
+    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+    "comment": ""
+  },
+  "name": "Creative Commons Attribution Share Alike License 2.5",
+  "scancode_key": "cc-by-sa-2.5", 
+  "spdxid": "CC-BY-SA-2.5",
+  "aliases": [
+   "CC-BY-SA-2.5",
+   "Creative Commons BY-SA 2.5",
+   "Creative Commons Attribution-ShareAlike 2.5",
+   "Creative Commons Attribution Share Alike 2.5 Generic",
+   "scancode://cc-by-sa-2.5",
+   "Creative Commons Attribution Share Alike 2.5",
+   "scancode:cc-by-sa-2.5"
+  ]
+}

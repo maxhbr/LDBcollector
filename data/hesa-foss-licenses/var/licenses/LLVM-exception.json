@@ -1,0 +1,14 @@
+{
+"meta": {
+    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+    "comment": ""
+  },
+  "name": "LLVM Exception to Apache 2.0",
+  "scancode_key": "llvm-exception",
+  "spdxid": "LLVM-exception",
+    "aliases": [
+        "LLVM Exceptions",
+        "LLVM Exception",
+        "LLVM exception"
+  ]
+}

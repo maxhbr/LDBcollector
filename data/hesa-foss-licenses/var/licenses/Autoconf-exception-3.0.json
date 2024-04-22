@@ -1,0 +1,11 @@
+{
+  "meta": {
+    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+    "comment": ""
+  },
+  "name": "Autoconf exception to GPL 3.0",
+  "scancode_key": "autoconf-exception-3.0",
+  "spdxid": "Autoconf-exception-3.0",
+  "aliases": [
+  ]
+}

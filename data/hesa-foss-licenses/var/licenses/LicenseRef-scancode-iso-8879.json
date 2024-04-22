@@ -1,0 +1,12 @@
+{
+"meta": {
+    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+    "comment": ""
+  },
+  "name": "ISO 8879",
+  "scancode_key": "iso-8879",
+  "spdxid": "LicenseRef-scancode-iso-8879",
+  "aliases": [
+      "LicenseRef-ISO-8879"
+  ]
+}

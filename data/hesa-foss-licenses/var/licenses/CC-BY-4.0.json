@@ -1,0 +1,20 @@
+{
+"meta": {
+    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+    "comment": ""
+  },
+  "name": "Creative Commons Attribution 4.0 International Public License",
+  "scancode_key": "cc-by-4.0", 
+  "spdxid": "CC-BY-4.0",
+  "aliases": [
+   "CC-BY-4.0",
+   "cc-by-4.0",
+   "Creative Commons BY 4.0",
+   "Creative Commons Attribution 4.0",
+   "Creative Commons Attribution 4.0 International",
+   "scancode://cc-by-4.0",
+   "CC-BY 4.0",
+   "Creative Commons Attribution unported (CC-BY) v4.0",
+   "scancode:cc-by-4.0"
+  ]
+}

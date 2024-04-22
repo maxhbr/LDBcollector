@@ -1,0 +1,26 @@
+{
+  "meta": {
+    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+    "comment": "",
+    "date": "2023-08-29"
+  },
+  "name": "Apache License 1.1",
+  "scancode_key": "apache-1.1",
+  "spdxid": "Apache-1.1",
+  "aliases": [
+    "Apache License 1.1",
+    "Apache (v1.1)",
+    "Apache Software License 1.1",
+    "ASL 1.1",
+    "Apache Software License, Version 1.1",
+    "scancode://apache-1.1",
+    "Apache License Version 1.1",
+    "Apache Software License Version 1.1",
+    "Apache Software License version 1.1",
+    "Apache Software License v1.1",
+    "http://apache.org/licenses/LICENSE-1.1",
+    "https://spdx.org/licenses/apache-1.1",
+    "scancode:apache-1.1",
+    "osi:Apache-1.1"
+  ]
+}

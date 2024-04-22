@@ -1,0 +1,12 @@
+{
+"meta": {
+    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+    "comment": ""
+  },
+  "name": "X11-Style (FSF)",
+  "scancode_key": "x11-fsf",
+  "spdxid": "X11-distribute-modifications-variant",
+  "aliases": [
+      "X11-Style (FSF)"
+  ]
+}

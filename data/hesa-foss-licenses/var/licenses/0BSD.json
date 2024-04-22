@@ -1,0 +1,20 @@
+{
+"meta": {
+    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+    "comment": ""
+  },
+  "name": "BSD Zero Clause License",
+  "scancode_key": "bsd-zero", 
+  "spdxid": "0BSD",
+  "aliases": [
+   "0BSD",
+   "BSD Zero Clause License",
+   "scancode://bsd-zero",
+   "scancode:bsd-zero",
+   "osi:0BSD",
+   "BSD 0-Clause",
+   "the Zero-Clause BSD license",
+   "BSD-0-Clause",
+   "Zero-Clause BSD license"
+  ]
+}

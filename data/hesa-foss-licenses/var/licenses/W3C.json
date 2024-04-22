@@ -1,0 +1,23 @@
+{
+"meta": {
+    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+    "comment": ""
+  },
+  "name": "W3C Software Notice and License",
+  "scancode_key": "w3c",
+  "spdxid": "W3C",
+  "aliases": [
+   "W3C",
+   "W3C Software Notice and License (2002-12-31)",
+   "W3C Software Notice and License",
+   "W3C License",
+   "The W3C Software Notice and License",
+   "License :: OSI Approved :: W3C License",
+   "W3C Software Notice and License (became active on December 31 2002)",
+   "scancode://w3c",
+   "W3C Software Notice and License 20021231",
+   "http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231",
+   "scancode:w3c",
+   "osi:W3C"
+  ]
+}

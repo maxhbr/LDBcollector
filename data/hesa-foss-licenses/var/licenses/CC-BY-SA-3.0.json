@@ -1,0 +1,24 @@
+{
+"meta": {
+    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+    "comment": ""
+  },
+  "name": "Creative Commons Attribution Share Alike License 3.0",
+  "scancode_key": "cc-by-sa-3.0", 
+  "spdxid": "CC-BY-SA-3.0",
+  "aliases": [
+   "CC-BY-SA-3.0",
+   "Creative Commons BY-SA 3.0",
+   "Creative Commons Attribution-ShareAlike 3.0 Unported",
+   "Creative Commons Attribution Share Alike 3.0 Unported",
+   "scancode://cc-by-sa-3.0",
+   "Creative Commons Attribution Share-Alike (CC-BY-SA) v3.0",
+   "Creative Commons Attribution Share Alike 3.0",
+   "Creative Commons Attribution-ShareAlike 3.0",
+   "Creative Common Attribution-ShareAlike 3.0",
+   "http://creativecommons.org/licenses/by-sa/3.0",
+   "Creative Commons Attribution-Share Alike 3.0",
+   "https://creativecommons.org/licenses/by-sa/3.0/",
+   "scancode:cc-by-sa-3.0"
+  ]
+}

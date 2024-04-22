@@ -1,0 +1,24 @@
+{
+"meta": {
+    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+    "comment": ""
+  },
+  "name": "ISC License",
+  "scancode_key": "isc", 
+  "spdxid": "ISC",
+  "aliases": [
+   "ISC",
+   "ISC License",
+   "isc",
+   "isc-license",
+   "ISC License (ISC)",
+   "License :: OSI Approved :: ISC License (ISCL)",
+   "scancode://isc",
+   "ISC license",
+   "ISC Terms",
+   "ISC Permission",
+   "scancode:isc",
+   "osi:ISC",
+   "ISC License (ISCL)"
+  ]
+}

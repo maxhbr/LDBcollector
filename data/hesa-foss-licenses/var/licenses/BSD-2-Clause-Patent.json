@@ -1,0 +1,17 @@
+{
+    "meta": {
+        "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+        "comment": ""
+    },
+    "name": "BSD-2-Clause Plus Patent",
+    "scancode_key": "bsd-plus-patent",
+    "spdxid": "BSD-2-Clause-Patent",
+    "aliases": [
+        "BSD 2-Clause Patent License",
+        "scancode://bsd-plus-patent",
+        "BSD-2-Clause Plus Patent",
+        "BSD-2-Clause Plus Patent License",
+        "scancode:bsd-plus-patent",
+        "osi:BSDplusPatent"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+    "meta": {
+        "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+	"comment": ""
+    },
+    "comment": "This license can be found in misc freedesktop/X11 related projects.",
+    "name": "X11-Style (Keith Packard)",
+    "scancode_key": "x11-keith-packard",
+    "spdxid": "LicenseRef-flame-x11-keith-packard",
+    "aliases": [
+        "X11-Style (Keith Packard)",
+        "scancode://x11-keith-packard",
+        "x11-keith-packard",
+        "Keith Packard License"
+    ],
+    "compatibility_as": "HPND"
+}

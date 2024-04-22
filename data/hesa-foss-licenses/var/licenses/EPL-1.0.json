@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+    "comment": ""
+  },
+  "name": "Eclipse Public License 1.0",
+  "scancode_key": "epl-1.0",
+  "spdxid": "EPL-1.0",
+  "aliases": [
+    "EPL-1.0",
+    "Eclipse Public License 1.0",
+    "epl-1.0",
+    "eclipse-1.0",
+    "scancode://epl-1.0",
+    "EPL 1.0",
+    "Eclipse Public License - 1.0",
+    "Eclipse Public License (EPL) v1.0",
+    "Eclipse Public License - Version 1.0",
+    "Eclipse Public License v1.0",
+    "Eclipse Public License version 1.0",
+    "Eclipse Public License, Version 1.0",
+    "Eclipse Public License (EPL) 1.0",
+    "Eclipse Public License (EPL), Version 1.0",
+    "Eclise Public License, Version 1.0",
+    "Eclipse-1.0",
+    "EPL (Eclipse Public License), V1.0 or later",
+    "EPLv1",
+    "Eclipse Public License v1.0&#xD",
+    "http://www.eclipse.org/legal/epl-v10.html",
+    "https://www.eclipse.org/legal/epl-v10.html",
+    "Eclipse Public Licence, Version 1.0",
+    "Eclipse Public License - v1.0",
+    "Eclipse Public License -v 1.0",
+    "Eclipse Public License v 1.0",
+    "Eclipse Public License, V 1.0",
+    "scancode:epl-1.0",
+    "osi:EPL-1.0",
+    "Eclipse Public License 1.0 (EPL-1.0)",
+    "EPLv1.0"
+  ]
+}

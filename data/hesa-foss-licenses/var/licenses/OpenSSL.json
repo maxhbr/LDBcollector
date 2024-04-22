@@ -1,0 +1,18 @@
+{
+"meta": {
+    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+    "comment": ""
+  },
+  "name": "OpenSSL/SSLeay License",
+  "scancode_key": "openssl-ssleay",
+  "spdxid": "OpenSSL",
+  "aliases": [
+   "OpenSSL",
+   "OpenSSL License",
+   "scancode://openssl-ssleay",
+   "OpenSSL/SSLeay License",
+   "scancode://openssl",
+   "LicenseRef-scancode-openssl",
+   "OpenSSL license"
+  ]
+}

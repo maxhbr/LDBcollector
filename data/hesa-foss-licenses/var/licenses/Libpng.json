@@ -1,0 +1,18 @@
+{
+"meta": {
+    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+    "comment": ""
+  },
+  "name": "Libpng License",
+  "scancode_key": "libpng", 
+  "spdxid": "Libpng",
+  "aliases": [
+   "Libpng",
+   "libpng License",
+   "PNG Reference Library License 1.0",
+   "Libpng-1.0",
+   "scancode://libpng",
+   "PNG Reference Library License 1",
+   "PNG Reference Library License version 1"
+  ]
+}

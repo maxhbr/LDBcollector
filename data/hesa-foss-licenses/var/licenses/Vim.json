@@ -1,0 +1,21 @@
+{
+"meta": {
+    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+    "comment": ""
+  },
+  "name": "VIM License",
+  "scancode_key": "vim", 
+  "spdxid": "Vim",
+  "aliases": [
+   "Vim",
+   "Vim License",
+   "vim",
+   "VIM License",
+   "scancode://vim",
+   "VIM LICENSE",
+   "vim License",
+   "vim license",
+   "VIM licnese",
+   "scancode:vim"
+  ]
+}
