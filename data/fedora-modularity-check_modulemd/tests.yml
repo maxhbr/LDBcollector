@@ -1,0 +1,96 @@
+---
+- hosts: localhost
+  remote_user: root
+  gather_facts: no
+  vars:
+    artifacts: ./artifacts
+    testcase: dist.modulemd
+    taskotron_generic_task: true
+  tasks:
+    - name: Install required packages
+      dnf:
+        name: "{{ item }}"
+        state: latest
+      with_items:
+        - python2-pdc-client
+        - python2-aexpect
+        - python2-modulemd
+        - python2-requests
+        - python2-enchant
+        - hunspell-en-US
+        - libtaskotron-core
+        - libtaskotron-fedora
+      register: dnf_output
+      # retry for network failures
+      retries: 3
+      delay: 30
+      until: dnf_output is succeeded
+
+    - name: Print msg of DNF task
+      debug:
+        var: dnf_output.results[0].msg
+      when: "'msg' in dnf_output.results[0]"
+
+    - name: Print results of DNF task
+      debug:
+        var: dnf_output.results[0].results | sort
+      when: "'results' in dnf_output.results[0]"
+
+    - name: Install avocado from updates-testing
+      dnf:
+        name: "{{ item }}"
+        state: latest
+        enablerepo: updates-testing
+      with_items:
+        - python2-avocado
+        - python2-avocado-plugins-varianter-yaml-to-mux
+      register: dnf_output
+
+    - name: Print msg of DNF task
+      debug:
+        var: dnf_output.results[0].msg
+      when: "'msg' in dnf_output.results[0]"
+
+    - name: Print results of DNF task
+      debug:
+        var: dnf_output.results[0].results | sort
+      when: "'results' in dnf_output.results[0]"
+
+    - name: Enable MTF Copr repo
+      shell: dnf copr -y enable phracek/Modularity-testing-framework
+
+    - name: Install MTF from updates-testing
+      dnf:
+        name: modularity-testing-framework
+        state: latest
+        enablerepo: updates-testing
+      register: dnf_output
+
+    - name: Print msg of DNF task
+      debug:
+        var: dnf_output.msg
+      when: "'msg' in dnf_output"
+
+    - name: Print results of DNF task
+      debug:
+        var: dnf_output.results | sort
+      when: "'results' in dnf_output"
+
+    - name: Make sure taskotron results dir exists
+      # this is for placing results.yml file
+      file:
+        path: "{{ artifacts }}/taskotron"
+        state: directory
+
+    - name: Create work dir
+      tempfile:
+        path: /var/tmp
+        state: directory
+        prefix: task-{{ testcase }}_
+      register: workdir
+
+    - name: Run the check
+      shell: >
+        ./run_check.py {{ taskotron_item }} {{ workdir.path }}
+        {{ artifacts }} {{ testcase }}
+        &> {{ artifacts }}/test.log
