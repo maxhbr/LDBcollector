@@ -1,0 +1,19 @@
+{
+  "@context": "https://wking.github.io/fsf-api/schema/license.jsonld",
+  "id": "Unlicense",
+  "identifiers": {
+    "spdx": [
+      "Unlicense"
+    ]
+  },
+  "name": "The Unlicense",
+  "tags": [
+    "gpl-2-compatible",
+    "gpl-3-compatible",
+    "libre"
+  ],
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#Unlicense",
+    "http://directory.fsf.org/wiki/License:TheUnlicense"
+  ]
+}

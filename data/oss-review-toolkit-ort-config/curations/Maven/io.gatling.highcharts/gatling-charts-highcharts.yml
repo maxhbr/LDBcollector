@@ -1,0 +1,10 @@
+- id: "Maven:io.gatling.highcharts:gatling-charts-highcharts:3.7.0"
+  curations:
+    comment: |
+      The declared license 'Gatling Highcharts' refers to
+      https://raw.githubusercontent.com/gatling/gatling-highcharts/master/LICENSE which
+      is LicenseRef-ort-GatlingCorp-HighCharts, see also
+      https://repo1.maven.org/maven2/io/gatling/highcharts/gatling-charts-highcharts/3.7.0/gatling-charts-highcharts-3.7.0.pom
+      and 'custom-licenses/LicenseRef-ort-GatlingCorp-HighCharts'.
+    declared_license_mapping:
+      "Gatling Highcharts": "LicenseRef-ort-GatlingCorp-HighCharts"

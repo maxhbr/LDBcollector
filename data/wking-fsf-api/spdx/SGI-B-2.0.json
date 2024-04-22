@@ -1,0 +1,19 @@
+{
+  "@context": "https://wking.github.io/fsf-api/schema/license.jsonld",
+  "id": "SGIFreeB",
+  "identifiers": {
+    "spdx": [
+      "SGI-B-2.0"
+    ]
+  },
+  "name": "SGI Free Software License B, version 2.0",
+  "tags": [
+    "gpl-2-compatible",
+    "gpl-3-compatible",
+    "libre"
+  ],
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#SGIFreeB",
+    "http://directory.fsf.org/wiki/License:SGIFreeBv2"
+  ]
+}

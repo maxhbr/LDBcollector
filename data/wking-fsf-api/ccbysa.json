@@ -1,0 +1,17 @@
+{
+  "@context": "https://wking.github.io/fsf-api/schema/license.jsonld",
+  "id": "ccbysa",
+  "identifiers": {
+    "spdx": [
+      "CC-BY-SA-4.0"
+    ]
+  },
+  "name": "Creative Commons Attribution-Sharealike 4.0 license",
+  "tags": [
+    "libre"
+  ],
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#ccbysa",
+    "http://creativecommons.org/licenses/by-sa/4.0/legalcode"
+  ]
+}

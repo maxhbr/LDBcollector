@@ -1,0 +1,21 @@
+{
+  "@context": "https://wking.github.io/fsf-api/schema/license.jsonld",
+  "id": "FDLv1.1",
+  "identifiers": {
+    "spdx": [
+      "GFDL-1.1-or-later",
+      "GFDL-1.1-only",
+      "GFDL-1.1"
+    ]
+  },
+  "name": "GNU Free Documentation License",
+  "tags": [
+    "fdl-compatible",
+    "libre"
+  ],
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#FDL",
+    "https://www.gnu.org/licenses/fdl.html",
+    "https://www.gnu.org/licenses/license-list.html#FDLOther"
+  ]
+}

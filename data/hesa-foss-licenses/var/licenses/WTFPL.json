@@ -1,0 +1,28 @@
+{
+"meta": {
+    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+    "comment": ""
+  },
+  "name": "WTFPL 2.0",
+  "scancode_key": "wtfpl-2.0",
+  "spdxid": "WTFPL",
+  "aliases": [
+   "WTFPL",
+   "Do What The F*ck You Want To Public License",
+   "wtfpl",
+   "WTF Public License 2.0",
+   "WTFPL-2.0",
+   "scancode://wtfpl-2.0",
+   "WTFPL 2.0",
+   "Do What The Fuck You Want To Public License (WTFPL) 2",
+   "DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE",
+   "DO WHAT THE F#*@ YOU WANT TO PUBLIC LICENSE",
+   "DO WHAT YOU WANT TO PUBLIC LICENSE, Version 1",
+   "DO WHAT YOU WANT TO PUBLIC LICENSE, Version 2.0",
+   "Do What The Fuck You Want To Public License, Version 2",
+   "Do What you Want",
+   "http://www.wtfpl.net/about/",
+   "http://sam.zoy.org/wtfpl/",
+   "scancode:wtfpl-2.0"
+  ]
+}

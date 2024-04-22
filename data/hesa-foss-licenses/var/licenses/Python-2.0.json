@@ -1,0 +1,26 @@
+{
+"meta": {
+    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+    "comment": ""
+  },
+  "name": "Python Software Foundation License v2",
+  "scancode_key": "python", 
+  "spdxid": "Python-2.0",
+  "aliases": [
+   "Python-2.0",
+   "PSF-2.0",
+   "Python Software Foundation License 2.0",
+   "Python License 2.0",
+   "Python License, Version 2.0",
+   "License :: OSI Approved :: Python Software Foundation License",
+   "PYTHON SOFTWARE FOUNDATION LICENSE VERSION 2",
+   "scancode://psf-2.0",
+   "scancode://python",
+   "Python Software Foundation License 2",
+   "PSF-2",
+   "scancode:python",
+   "osi:Python-2.0",
+   "PSFv2",
+   "Python-2"
+  ]
+}

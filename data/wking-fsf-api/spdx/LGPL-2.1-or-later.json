@@ -1,0 +1,22 @@
+{
+  "@context": "https://wking.github.io/fsf-api/schema/license.jsonld",
+  "id": "LGPLv2.1",
+  "identifiers": {
+    "spdx": [
+      "LGPL-2.1-or-later",
+      "LGPL-2.1-only",
+      "LGPL-2.1",
+      "LGPL-2.1+"
+    ]
+  },
+  "name": "GNU Lesser General Public License (LGPL) version 2.1",
+  "tags": [
+    "gpl-2-compatible",
+    "gpl-3-compatible",
+    "libre"
+  ],
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#LGPLv2.1",
+    "https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+    "meta": {
+        "software":"License Policy Checker",
+        "version":"0.1"
+    },
+    "project": {
+        "name": "Europe - a flict example",
+        "version": "dummy",
+        "license": "GPL-3.0-only",
+        "dependencies": [
+            {
+                "name": "Sweden",
+                "version": "dummy",
+                "license": "GPL-2.0-or-later or Apache-2.0 or MPL-1.1",
+                "dependencies": []
+            }
+        ]
+    }
+}

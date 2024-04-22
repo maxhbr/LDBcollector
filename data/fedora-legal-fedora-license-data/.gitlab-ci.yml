@@ -1,0 +1,53 @@
+default:
+    image: fedora:latest
+
+    before_script:
+        - dnf install -y make git python3-pip '(python3-tomli if python3 < 3.11)' python3-tomli-w python3-jinja2
+        - pip3 install toml-validator
+
+stages:
+    - test
+    - deploy
+    
+toml-validate:
+    stage: test
+    rules:
+        - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
+    script:
+        - make toml-validate
+
+spec-validate:
+    stage: test
+    rules:
+        - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
+    script:
+        - make spec-validate
+
+rpmlint:
+    stage: test
+    rules:
+        - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
+    script:
+        - make rpmlint
+
+json:
+    stage: deploy
+    rules:
+        - if: '$CI_PIPELINE_SOURCE == "push" && $CI_COMMIT_REF_NAME == "main"'
+    artifacts:
+        paths:
+            - fedora-licenses.json
+    script:
+        - make json
+
+legal-doc:
+    stage: deploy
+    rules:
+        - if: '$CI_PIPELINE_SOURCE == "push" && $CI_COMMIT_REF_NAME == "main"'
+    artifacts:
+        paths:
+            - not-allowed-licenses.adoc
+            - allowed-licenses.adoc
+            - all-allowed.adoc
+    script:
+        - make legal-doc

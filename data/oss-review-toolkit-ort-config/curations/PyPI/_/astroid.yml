@@ -1,0 +1,7 @@
+- id: "PyPI::astroid:(,3.0.0["
+  curations:
+    comment: |
+      The library is licensed under LGPL-2.1-or-later, see:
+      https://github.com/PyCQA/astroid/blob/main/LICENSE
+    declared_license_mapping:
+      "GNU Lesser General Public License v2 (LGPLv2)": "LGPL-2.1-or-later"

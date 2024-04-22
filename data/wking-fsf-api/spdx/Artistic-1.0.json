@@ -1,0 +1,17 @@
+{
+  "@context": "https://wking.github.io/fsf-api/schema/license.jsonld",
+  "id": "ArtisticLicense",
+  "identifiers": {
+    "spdx": [
+      "Artistic-1.0"
+    ]
+  },
+  "name": "Artistic License 1.0",
+  "tags": [
+    "non-free"
+  ],
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#ArtisticLicense",
+    "http://directory.fsf.org/wiki/License:Artistic_v1.0"
+  ]
+}

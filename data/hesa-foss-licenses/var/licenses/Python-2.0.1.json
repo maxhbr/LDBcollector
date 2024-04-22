@@ -1,0 +1,11 @@
+{
+"meta": {
+    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+    "comment": ""
+  },
+  "name": "Python Software Foundation License v2.0.1",
+  "scancode_key": "python-2.0.1", 
+  "spdxid": "Python-2.0.1",
+  "aliases": [
+  ]
+}

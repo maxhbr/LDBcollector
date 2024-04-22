@@ -1,0 +1,81 @@
+{
+    "@context": {
+        "cc": "http://creativecommons.org/ns#",
+        "dc": "http://purl.org/dc/terms/",
+        "dc11": "http://purl.org/dc/elements/1.1/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "li": "https://licensedb.org/ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "cc:legalcode": {
+            "@type": "@id"
+        },
+        "cc:permits": {
+            "@type": "@id"
+        },
+        "cc:requires": {
+            "@type": "@id"
+        },
+        "cc:prohibits": {
+            "@type": "@id"
+        },
+        "cc:jurisdiction": {
+            "@type": "@id"
+        },
+        "cc:licenseClass": {
+            "@type": "@id"
+        },
+        "dc:creator": {
+            "@type": "@id"
+        },
+        "dc:source": {
+            "@type": "@id"
+        },
+        "dc:replaces": {
+            "@type": "@id"
+        },
+        "dc:isBasedOn": {
+            "@type": "@id"
+        },
+        "dc:isReplacedBy": {
+            "@type": "@id"
+        },
+        "foaf:logo": {
+            "@type": "@id"
+        },
+        "li:plaintext": {
+            "@type": "@id"
+        },
+        "li:libre": {
+            "@type": "@id"
+        },
+        "owl:sameAs": {
+            "@type": "@id"
+        }
+    },
+    "@id": "https://licensedb.org/id/ODC-By-1",
+    "@type": [
+        "cc:License",
+        "li:License"
+    ],
+    "cc:legalcode": "http://opendatacommons.org/licenses/by/1.0/",
+    "dc:creator": "http://opendatacommons.org/",
+    "dc:hasVersion": "1.0",
+    "dc:identifier": "ODC-By",
+    "dc:title": "Open Data Commons Attribution License",
+    "schema:sameAs": {
+        "@id": "http://opendatacommons.org/licenses/by/1.0/"
+    },
+    "li:id": "ODC-By-1",
+    "li:libre": "http://opendefinition.org/",
+    "li:name": "ODC By 1.0",
+    "li:notice": {
+        "li:canonical": true,
+        "li:orlater": false,
+        "li:short": true,
+        "li:text": "{{title}} is made available under the Open Data Commons Attribution\nLicense: http://opendatacommons.org/licenses/by/1.0/.\n"
+    },
+    "li:plaintext": "http://www.opendatacommons.org/wp-content/uploads/2010/01/odc_by_1.0_public_text.txt"
+}

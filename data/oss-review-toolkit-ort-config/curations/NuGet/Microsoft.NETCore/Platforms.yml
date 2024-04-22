@@ -1,0 +1,10 @@
+- id: "NuGet:Microsoft.NETCore:Platforms:[5.0.0,5.0.4]"
+  curations:
+    comment: "Manually located the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "src/libraries/pkg/Microsoft.NETCore.Platforms"
+- id: "NuGet:Microsoft.NETCore:Platforms:[6.0.0,)"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "src/libraries/Microsoft.NETCore.Platforms"

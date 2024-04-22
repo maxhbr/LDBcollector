@@ -1,0 +1,18 @@
+{
+  "@context": "https://wking.github.io/fsf-api/schema/license.jsonld",
+  "id": "freetype",
+  "identifiers": {
+    "spdx": [
+      "FTL"
+    ]
+  },
+  "name": "Freetype Project License",
+  "tags": [
+    "gpl-3-compatible",
+    "libre"
+  ],
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#freetype",
+    "http://directory.fsf.org/wiki/License:FreeType"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+    "meta": {
+        "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+        "comment": ""
+    },
+    "name": "FSF Unlimited License (With License Retention and Warranty Disclaimer)",
+    "scancode_key": "fsf-unlimited-no-warranty",
+    "spdxid": "FSFULLRWD",
+    "aliases": [
+        "FSF Unlimited License No Warranty"
+    ]
+}

@@ -1,0 +1,12 @@
+---
+excludes:
+  paths:
+  - pattern: "tools/**"
+    reason: "BUILD_TOOL_OF"
+    comment: "This directory contains projects used to generate ORT configurations."
+  - pattern: "evaluator-rules/build.gradle.kts"
+    reason: "BUILD_TOOL_OF"
+    comment: "This project is being used to provide IDE support for the evaluator.rules.kts file."
+  - pattern: "notifications/build.gradle.kts"
+    reason: "BUILD_TOOL_OF"
+    comment: "This project is being used to provide IDE support for the example.notifications.kts file."

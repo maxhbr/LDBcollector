@@ -1,0 +1,33 @@
+# generic elements
+*.log
+*.pot
+*.pyc
+__pycache__
+.ipynb_checkpoints/
+.vscode/
+.coverage
+.idea
+# Hermine specific
+/static/
+/vrac/
+variousScripts
+db.sqlite3
+shared.sqlite3
+shared.json
+**.css.map
+docs/build/
+hermine.iml
+**/.DS_Store
+hermine/hermine/VERSION.txt
+.ruff_cache
+
+# Secrets are secrets
+hermine/hermine/mysecrets.py
+hermine/hermine/config.py
+.env
+
+# Node deps
+node_modules/
+
+# Vite build
+hermine/vite_modules/dist/

@@ -1,0 +1,8 @@
+% layout 'default';
+% title "List recent reviews";
+
+<div id="recent-reviews"></div>
+
+% content_for 'ready_function' => begin
+  cavil.setupRecentReviews();
+% end

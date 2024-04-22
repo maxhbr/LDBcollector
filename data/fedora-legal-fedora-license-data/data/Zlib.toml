@@ -1,0 +1,14 @@
+[license]
+
+expression = "Zlib"
+status = [ "allowed" ]
+
+[fedora]
+
+legacy-name = [
+    "zlib/libpng License"
+]
+
+legacy-abbreviation = [
+    "zlib"
+]

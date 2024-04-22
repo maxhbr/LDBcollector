@@ -1,0 +1,19 @@
+{
+  "@context": "https://wking.github.io/fsf-api/schema/license.jsonld",
+  "id": "Zope2.1",
+  "identifiers": {
+    "spdx": [
+      "ZPL-2.1"
+    ]
+  },
+  "name": "Zope Public License, versions 2.0 and 2.1",
+  "tags": [
+    "gpl-2-compatible",
+    "gpl-3-compatible",
+    "libre"
+  ],
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#Zope2.0",
+    "http://directory.fsf.org/wiki?title=License:ZopePLv2.1"
+  ]
+}

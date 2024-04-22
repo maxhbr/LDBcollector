@@ -1,0 +1,272 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/elements/1.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix md: <http://www.w3.org/ns/md#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xhv: <http://www.w3.org/1999/xhtml/vocab#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://licensedb.org/id/CC-BY-4.0> a cc:License,
+        li:License ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org/> ;
+    dc:hasVersion "4.0" ;
+    dc:identifier "CC BY 4.0"@en ;
+    dc:replaces <https://licensedb.org/id/CC-BY-3.0> ;
+    dc:title "Attribution 4.0 International"@en ;
+    frbr:translation <http://creativecommons.org/licenses/by/4.0/deed.ar>,
+        <http://creativecommons.org/licenses/by/4.0/deed.ca>,
+        <http://creativecommons.org/licenses/by/4.0/deed.cs>,
+        <http://creativecommons.org/licenses/by/4.0/deed.da>,
+        <http://creativecommons.org/licenses/by/4.0/deed.de>,
+        <http://creativecommons.org/licenses/by/4.0/deed.el>,
+        <http://creativecommons.org/licenses/by/4.0/deed.en>,
+        <http://creativecommons.org/licenses/by/4.0/deed.eo>,
+        <http://creativecommons.org/licenses/by/4.0/deed.es>,
+        <http://creativecommons.org/licenses/by/4.0/deed.es_ES>,
+        <http://creativecommons.org/licenses/by/4.0/deed.fa>,
+        <http://creativecommons.org/licenses/by/4.0/deed.fi>,
+        <http://creativecommons.org/licenses/by/4.0/deed.fr>,
+        <http://creativecommons.org/licenses/by/4.0/deed.gl>,
+        <http://creativecommons.org/licenses/by/4.0/deed.hr>,
+        <http://creativecommons.org/licenses/by/4.0/deed.hu>,
+        <http://creativecommons.org/licenses/by/4.0/deed.id>,
+        <http://creativecommons.org/licenses/by/4.0/deed.is>,
+        <http://creativecommons.org/licenses/by/4.0/deed.it>,
+        <http://creativecommons.org/licenses/by/4.0/deed.ja>,
+        <http://creativecommons.org/licenses/by/4.0/deed.ko>,
+        <http://creativecommons.org/licenses/by/4.0/deed.lt>,
+        <http://creativecommons.org/licenses/by/4.0/deed.lv>,
+        <http://creativecommons.org/licenses/by/4.0/deed.ms>,
+        <http://creativecommons.org/licenses/by/4.0/deed.nl>,
+        <http://creativecommons.org/licenses/by/4.0/deed.no>,
+        <http://creativecommons.org/licenses/by/4.0/deed.pl>,
+        <http://creativecommons.org/licenses/by/4.0/deed.pt>,
+        <http://creativecommons.org/licenses/by/4.0/deed.pt_BR>,
+        <http://creativecommons.org/licenses/by/4.0/deed.ru>,
+        <http://creativecommons.org/licenses/by/4.0/deed.sv>,
+        <http://creativecommons.org/licenses/by/4.0/deed.tr>,
+        <http://creativecommons.org/licenses/by/4.0/deed.uk>,
+        <http://creativecommons.org/licenses/by/4.0/deed.zh_TW> ;
+    schema:sameAs <http://spdx.org/licenses/CC-BY-4.0> ;
+    spdx:licenseId "CC-BY-4.0" ;
+    xhv:alternate <http://creativecommons.org/licenses/by/4.0/deed.ar>,
+        <http://creativecommons.org/licenses/by/4.0/deed.ca>,
+        <http://creativecommons.org/licenses/by/4.0/deed.cs>,
+        <http://creativecommons.org/licenses/by/4.0/deed.da>,
+        <http://creativecommons.org/licenses/by/4.0/deed.de>,
+        <http://creativecommons.org/licenses/by/4.0/deed.el>,
+        <http://creativecommons.org/licenses/by/4.0/deed.en>,
+        <http://creativecommons.org/licenses/by/4.0/deed.eo>,
+        <http://creativecommons.org/licenses/by/4.0/deed.es>,
+        <http://creativecommons.org/licenses/by/4.0/deed.es_ES>,
+        <http://creativecommons.org/licenses/by/4.0/deed.fa>,
+        <http://creativecommons.org/licenses/by/4.0/deed.fi>,
+        <http://creativecommons.org/licenses/by/4.0/deed.fr>,
+        <http://creativecommons.org/licenses/by/4.0/deed.gl>,
+        <http://creativecommons.org/licenses/by/4.0/deed.hr>,
+        <http://creativecommons.org/licenses/by/4.0/deed.hu>,
+        <http://creativecommons.org/licenses/by/4.0/deed.id>,
+        <http://creativecommons.org/licenses/by/4.0/deed.is>,
+        <http://creativecommons.org/licenses/by/4.0/deed.it>,
+        <http://creativecommons.org/licenses/by/4.0/deed.ja>,
+        <http://creativecommons.org/licenses/by/4.0/deed.ko>,
+        <http://creativecommons.org/licenses/by/4.0/deed.lt>,
+        <http://creativecommons.org/licenses/by/4.0/deed.lv>,
+        <http://creativecommons.org/licenses/by/4.0/deed.ms>,
+        <http://creativecommons.org/licenses/by/4.0/deed.nl>,
+        <http://creativecommons.org/licenses/by/4.0/deed.no>,
+        <http://creativecommons.org/licenses/by/4.0/deed.pl>,
+        <http://creativecommons.org/licenses/by/4.0/deed.pt>,
+        <http://creativecommons.org/licenses/by/4.0/deed.pt_BR>,
+        <http://creativecommons.org/licenses/by/4.0/deed.ru>,
+        <http://creativecommons.org/licenses/by/4.0/deed.sv>,
+        <http://creativecommons.org/licenses/by/4.0/deed.tr>,
+        <http://creativecommons.org/licenses/by/4.0/deed.uk>,
+        <http://creativecommons.org/licenses/by/4.0/deed.zh_TW>,
+        <http://creativecommons.org/licenses/by/4.0/rdf> ;
+    xhv:stylesheet <http://creativecommons.org/includes/deed3-print.css>,
+        <http://creativecommons.org/includes/deed3.css>,
+        <http://creativecommons.org/includes/jurisdictions.css>,
+        <http://creativecommons.org/includes/yahooapis/2.6.0/container.css> ;
+    owl:sameAs <http://creativecommons.org/licenses/by/4.0/> ;
+    md:item () ;
+    foaf:logo <http://i.creativecommons.org/l/by/4.0/88x31.png> ;
+    li:id "CC-BY-4.0" ;
+    li:libre <http://creativecommons.org/>,
+        <http://debian.org/>,
+        <http://freedomdefined.org/>,
+        <http://fsf.org/> ;
+    li:name "CC BY 4.0" ;
+    li:plaintext <http://creativecommons.org/licenses/by/4.0/legalcode.txt>,
+        <https://licensedb.org/id/CC-BY-4.0.txt> .
+
+<http://creativecommons.org/> dc:title "Creative Commons"@en .
+
+<http://creativecommons.org/licenses/by/4.0/deed.ar> frbr:translationOf <http://creativecommons.org/licenses/by/4.0/> .
+
+<http://creativecommons.org/licenses/by/4.0/deed.ca> frbr:translationOf <http://creativecommons.org/licenses/by/4.0/> .
+
+<http://creativecommons.org/licenses/by/4.0/deed.cs> frbr:translationOf <http://creativecommons.org/licenses/by/4.0/> .
+
+<http://creativecommons.org/licenses/by/4.0/deed.da> frbr:translationOf <http://creativecommons.org/licenses/by/4.0/> .
+
+<http://creativecommons.org/licenses/by/4.0/deed.de> frbr:translationOf <http://creativecommons.org/licenses/by/4.0/> .
+
+<http://creativecommons.org/licenses/by/4.0/deed.el> frbr:translationOf <http://creativecommons.org/licenses/by/4.0/> .
+
+<http://creativecommons.org/licenses/by/4.0/deed.en> frbr:translationOf <http://creativecommons.org/licenses/by/4.0/> .
+
+<http://creativecommons.org/licenses/by/4.0/deed.eo> frbr:translationOf <http://creativecommons.org/licenses/by/4.0/> .
+
+<http://creativecommons.org/licenses/by/4.0/deed.es> frbr:translationOf <http://creativecommons.org/licenses/by/4.0/> .
+
+<http://creativecommons.org/licenses/by/4.0/deed.es_ES> frbr:translationOf <http://creativecommons.org/licenses/by/4.0/> .
+
+<http://creativecommons.org/licenses/by/4.0/deed.fa> frbr:translationOf <http://creativecommons.org/licenses/by/4.0/> .
+
+<http://creativecommons.org/licenses/by/4.0/deed.fi> frbr:translationOf <http://creativecommons.org/licenses/by/4.0/> .
+
+<http://creativecommons.org/licenses/by/4.0/deed.fr> frbr:translationOf <http://creativecommons.org/licenses/by/4.0/> .
+
+<http://creativecommons.org/licenses/by/4.0/deed.gl> frbr:translationOf <http://creativecommons.org/licenses/by/4.0/> .
+
+<http://creativecommons.org/licenses/by/4.0/deed.hr> frbr:translationOf <http://creativecommons.org/licenses/by/4.0/> .
+
+<http://creativecommons.org/licenses/by/4.0/deed.hu> frbr:translationOf <http://creativecommons.org/licenses/by/4.0/> .
+
+<http://creativecommons.org/licenses/by/4.0/deed.id> frbr:translationOf <http://creativecommons.org/licenses/by/4.0/> .
+
+<http://creativecommons.org/licenses/by/4.0/deed.is> frbr:translationOf <http://creativecommons.org/licenses/by/4.0/> .
+
+<http://creativecommons.org/licenses/by/4.0/deed.it> frbr:translationOf <http://creativecommons.org/licenses/by/4.0/> .
+
+<http://creativecommons.org/licenses/by/4.0/deed.ja> frbr:translationOf <http://creativecommons.org/licenses/by/4.0/> .
+
+<http://creativecommons.org/licenses/by/4.0/deed.ko> frbr:translationOf <http://creativecommons.org/licenses/by/4.0/> .
+
+<http://creativecommons.org/licenses/by/4.0/deed.lt> frbr:translationOf <http://creativecommons.org/licenses/by/4.0/> .
+
+<http://creativecommons.org/licenses/by/4.0/deed.lv> frbr:translationOf <http://creativecommons.org/licenses/by/4.0/> .
+
+<http://creativecommons.org/licenses/by/4.0/deed.ms> frbr:translationOf <http://creativecommons.org/licenses/by/4.0/> .
+
+<http://creativecommons.org/licenses/by/4.0/deed.nl> frbr:translationOf <http://creativecommons.org/licenses/by/4.0/> .
+
+<http://creativecommons.org/licenses/by/4.0/deed.no> frbr:translationOf <http://creativecommons.org/licenses/by/4.0/> .
+
+<http://creativecommons.org/licenses/by/4.0/deed.pl> frbr:translationOf <http://creativecommons.org/licenses/by/4.0/> .
+
+<http://creativecommons.org/licenses/by/4.0/deed.pt> frbr:translationOf <http://creativecommons.org/licenses/by/4.0/> .
+
+<http://creativecommons.org/licenses/by/4.0/deed.pt_BR> frbr:translationOf <http://creativecommons.org/licenses/by/4.0/> .
+
+<http://creativecommons.org/licenses/by/4.0/deed.ru> frbr:translationOf <http://creativecommons.org/licenses/by/4.0/> .
+
+<http://creativecommons.org/licenses/by/4.0/deed.sv> frbr:translationOf <http://creativecommons.org/licenses/by/4.0/> .
+
+<http://creativecommons.org/licenses/by/4.0/deed.tr> frbr:translationOf <http://creativecommons.org/licenses/by/4.0/> .
+
+<http://creativecommons.org/licenses/by/4.0/deed.uk> frbr:translationOf <http://creativecommons.org/licenses/by/4.0/> .
+
+<http://creativecommons.org/licenses/by/4.0/deed.zh_TW> frbr:translationOf <http://creativecommons.org/licenses/by/4.0/> .
+
+<http://creativecommons.org/licenses/by/4.0/> a cc:License ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org/> ;
+    dc:hasVersion "4.0" ;
+    dc:identifier "CC BY 4.0"@en ;
+    dc:title "Attribution 4.0 International"@en ;
+    frbr:translation <http://creativecommons.org/licenses/by/4.0/deed.ar>,
+        <http://creativecommons.org/licenses/by/4.0/deed.ca>,
+        <http://creativecommons.org/licenses/by/4.0/deed.cs>,
+        <http://creativecommons.org/licenses/by/4.0/deed.da>,
+        <http://creativecommons.org/licenses/by/4.0/deed.de>,
+        <http://creativecommons.org/licenses/by/4.0/deed.el>,
+        <http://creativecommons.org/licenses/by/4.0/deed.en>,
+        <http://creativecommons.org/licenses/by/4.0/deed.eo>,
+        <http://creativecommons.org/licenses/by/4.0/deed.es>,
+        <http://creativecommons.org/licenses/by/4.0/deed.es_ES>,
+        <http://creativecommons.org/licenses/by/4.0/deed.fa>,
+        <http://creativecommons.org/licenses/by/4.0/deed.fi>,
+        <http://creativecommons.org/licenses/by/4.0/deed.fr>,
+        <http://creativecommons.org/licenses/by/4.0/deed.gl>,
+        <http://creativecommons.org/licenses/by/4.0/deed.hr>,
+        <http://creativecommons.org/licenses/by/4.0/deed.hu>,
+        <http://creativecommons.org/licenses/by/4.0/deed.id>,
+        <http://creativecommons.org/licenses/by/4.0/deed.is>,
+        <http://creativecommons.org/licenses/by/4.0/deed.it>,
+        <http://creativecommons.org/licenses/by/4.0/deed.ja>,
+        <http://creativecommons.org/licenses/by/4.0/deed.ko>,
+        <http://creativecommons.org/licenses/by/4.0/deed.lt>,
+        <http://creativecommons.org/licenses/by/4.0/deed.lv>,
+        <http://creativecommons.org/licenses/by/4.0/deed.ms>,
+        <http://creativecommons.org/licenses/by/4.0/deed.nl>,
+        <http://creativecommons.org/licenses/by/4.0/deed.no>,
+        <http://creativecommons.org/licenses/by/4.0/deed.pl>,
+        <http://creativecommons.org/licenses/by/4.0/deed.pt>,
+        <http://creativecommons.org/licenses/by/4.0/deed.pt_BR>,
+        <http://creativecommons.org/licenses/by/4.0/deed.ru>,
+        <http://creativecommons.org/licenses/by/4.0/deed.sv>,
+        <http://creativecommons.org/licenses/by/4.0/deed.tr>,
+        <http://creativecommons.org/licenses/by/4.0/deed.uk>,
+        <http://creativecommons.org/licenses/by/4.0/deed.zh_TW> ;
+    xhv:alternate <http://creativecommons.org/licenses/by/4.0/deed.ar>,
+        <http://creativecommons.org/licenses/by/4.0/deed.ca>,
+        <http://creativecommons.org/licenses/by/4.0/deed.cs>,
+        <http://creativecommons.org/licenses/by/4.0/deed.da>,
+        <http://creativecommons.org/licenses/by/4.0/deed.de>,
+        <http://creativecommons.org/licenses/by/4.0/deed.el>,
+        <http://creativecommons.org/licenses/by/4.0/deed.en>,
+        <http://creativecommons.org/licenses/by/4.0/deed.eo>,
+        <http://creativecommons.org/licenses/by/4.0/deed.es>,
+        <http://creativecommons.org/licenses/by/4.0/deed.es_ES>,
+        <http://creativecommons.org/licenses/by/4.0/deed.fa>,
+        <http://creativecommons.org/licenses/by/4.0/deed.fi>,
+        <http://creativecommons.org/licenses/by/4.0/deed.fr>,
+        <http://creativecommons.org/licenses/by/4.0/deed.gl>,
+        <http://creativecommons.org/licenses/by/4.0/deed.hr>,
+        <http://creativecommons.org/licenses/by/4.0/deed.hu>,
+        <http://creativecommons.org/licenses/by/4.0/deed.id>,
+        <http://creativecommons.org/licenses/by/4.0/deed.is>,
+        <http://creativecommons.org/licenses/by/4.0/deed.it>,
+        <http://creativecommons.org/licenses/by/4.0/deed.ja>,
+        <http://creativecommons.org/licenses/by/4.0/deed.ko>,
+        <http://creativecommons.org/licenses/by/4.0/deed.lt>,
+        <http://creativecommons.org/licenses/by/4.0/deed.lv>,
+        <http://creativecommons.org/licenses/by/4.0/deed.ms>,
+        <http://creativecommons.org/licenses/by/4.0/deed.nl>,
+        <http://creativecommons.org/licenses/by/4.0/deed.no>,
+        <http://creativecommons.org/licenses/by/4.0/deed.pl>,
+        <http://creativecommons.org/licenses/by/4.0/deed.pt>,
+        <http://creativecommons.org/licenses/by/4.0/deed.pt_BR>,
+        <http://creativecommons.org/licenses/by/4.0/deed.ru>,
+        <http://creativecommons.org/licenses/by/4.0/deed.sv>,
+        <http://creativecommons.org/licenses/by/4.0/deed.tr>,
+        <http://creativecommons.org/licenses/by/4.0/deed.uk>,
+        <http://creativecommons.org/licenses/by/4.0/deed.zh_TW>,
+        <http://creativecommons.org/licenses/by/4.0/rdf> ;
+    xhv:stylesheet <http://creativecommons.org/includes/deed3-print.css>,
+        <http://creativecommons.org/includes/deed3.css>,
+        <http://creativecommons.org/includes/jurisdictions.css>,
+        <http://creativecommons.org/includes/yahooapis/2.6.0/container.css> ;
+    owl:sameAs <https://licensedb.org/id/CC-BY-4.0> ;
+    md:item () .
+

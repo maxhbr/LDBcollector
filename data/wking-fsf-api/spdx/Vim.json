@@ -1,0 +1,19 @@
+{
+  "@context": "https://wking.github.io/fsf-api/schema/license.jsonld",
+  "id": "Vim",
+  "identifiers": {
+    "spdx": [
+      "Vim"
+    ]
+  },
+  "name": "License of Vim, Version 6.1 or later",
+  "tags": [
+    "gpl-2-compatible",
+    "gpl-3-compatible",
+    "libre"
+  ],
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#Vim",
+    "http://directory.fsf.org/wiki/License:Vim7.2"
+  ]
+}

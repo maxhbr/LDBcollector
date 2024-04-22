@@ -1,0 +1,852 @@
+{
+    "@context": {
+        "cc": "http://creativecommons.org/ns#",
+        "dc": "http://purl.org/dc/terms/",
+        "dc11": "http://purl.org/dc/elements/1.1/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "li": "https://licensedb.org/ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "cc:legalcode": {
+            "@type": "@id"
+        },
+        "cc:permits": {
+            "@type": "@id"
+        },
+        "cc:requires": {
+            "@type": "@id"
+        },
+        "cc:prohibits": {
+            "@type": "@id"
+        },
+        "cc:jurisdiction": {
+            "@type": "@id"
+        },
+        "cc:licenseClass": {
+            "@type": "@id"
+        },
+        "dc:creator": {
+            "@type": "@id"
+        },
+        "dc:source": {
+            "@type": "@id"
+        },
+        "dc:replaces": {
+            "@type": "@id"
+        },
+        "dc:isBasedOn": {
+            "@type": "@id"
+        },
+        "dc:isReplacedBy": {
+            "@type": "@id"
+        },
+        "foaf:logo": {
+            "@type": "@id"
+        },
+        "li:plaintext": {
+            "@type": "@id"
+        },
+        "li:libre": {
+            "@type": "@id"
+        },
+        "owl:sameAs": {
+            "@type": "@id"
+        }
+    },
+    "@id": "https://licensedb.org/id/CC-BY-NC-2.5-my",
+    "@type": [
+        "cc:License",
+        "li:License"
+    ],
+    "cc:jurisdiction": "http://creativecommons.org/international/my/",
+    "cc:legalcode": "http://creativecommons.org/licenses/by-nc/2.5/my/legalcode",
+    "cc:licenseClass": "http://creativecommons.org/license/",
+    "cc:permits": [
+        "cc:DerivativeWorks",
+        "cc:Distribution",
+        "cc:Reproduction"
+    ],
+    "cc:prohibits": "cc:CommercialUse",
+    "cc:requires": [
+        "cc:Attribution",
+        "cc:Notice"
+    ],
+    "dc:creator": "http://creativecommons.org",
+    "dc:hasVersion": "2.5",
+    "dc:identifier": "by-nc",
+    "dc:source": "http://creativecommons.org/licenses/by-nc/2.5/",
+    "dc:title": [
+        {
+            "@language": "af",
+            "@value": "Erkenning-NieKommersieel 2.5 Maleisië"
+        },
+        {
+            "@language": "ar",
+            "@value": "نسب - غير تجاري 2.5 ماليزيا"
+        },
+        {
+            "@language": "as",
+            "@value": "Attribution-NonCommercial 2.5 Malaysia"
+        },
+        {
+            "@language": "ast",
+            "@value": "Attribution-NonCommercial 2.5 Malaysia"
+        },
+        {
+            "@language": "ast-es",
+            "@value": "Attribution-NonCommercial 2.5 Malaysia"
+        },
+        {
+            "@language": "az",
+            "@value": "Attribution-NonCommercial 2.5 Malaysia"
+        },
+        {
+            "@language": "be",
+            "@value": "Attribution-NonCommercial 2.5 Малайзія"
+        },
+        {
+            "@language": "bg",
+            "@value": "Признание-Некомерсиално 2.5 Малайзия"
+        },
+        {
+            "@language": "bn",
+            "@value": "Attribution-NonCommercial 2.5 Malaysia"
+        },
+        {
+            "@language": "ca",
+            "@value": "Reconeixement-NoComercial 2.5 Malàisia"
+        },
+        {
+            "@language": "cs",
+            "@value": "Uveďte autora-Neužívejte komerčně 2.5 Malajsie"
+        },
+        {
+            "@language": "da",
+            "@value": "Navngivelse-IkkeKommerciel 2.5 Malaysia"
+        },
+        {
+            "@language": "de",
+            "@value": "Namensnennung-Nicht-kommerziell 2.5 Malaysia"
+        },
+        {
+            "@language": "de-at",
+            "@value": "Namensnennung-NichtKommerziell 2.5 Malaysia"
+        },
+        {
+            "@language": "de-ch",
+            "@value": "Namensnennung-NichtKommerziell 2.5 Malaysia"
+        },
+        {
+            "@language": "el",
+            "@value": "Αναφορά Δημιουργού-Μη Εμπορική Χρήση 2.5 Μαλαισία"
+        },
+        {
+            "@language": "en",
+            "@value": "Attribution-NonCommercial 2.5 Malaysia"
+        },
+        {
+            "@language": "en-ca",
+            "@value": "Attribution-NonCommercial 2.5 Malaysia"
+        },
+        {
+            "@language": "en-gb",
+            "@value": "Attribution-NonCommercial 2.5 Malaysia"
+        },
+        {
+            "@language": "en-hk",
+            "@value": "Attribution-NonCommercial 2.5 Malaysia"
+        },
+        {
+            "@language": "en-sg",
+            "@value": "Attribution-NonCommercial 2.5 Malaysia"
+        },
+        {
+            "@language": "en-us",
+            "@value": "Attribution-NonCommercial 2.5 Malaysia"
+        },
+        {
+            "@language": "eo",
+            "@value": "Atribuite-Nekomerce 2.5 Malajzio"
+        },
+        {
+            "@language": "es",
+            "@value": "Atribución-NoComercial 2.5 Malasia"
+        },
+        {
+            "@language": "es-ar",
+            "@value": "Atribución-NoComercial 2.5 Malasia"
+        },
+        {
+            "@language": "es-cl",
+            "@value": "Atribución-NoComercial 2.5 Malasia"
+        },
+        {
+            "@language": "es-co",
+            "@value": "Reconocimiento-NoComercial 2.5 Malasia"
+        },
+        {
+            "@language": "es-ec",
+            "@value": "Reconocimiento-NoComercial 2.5 Malasia"
+        },
+        {
+            "@language": "es-es",
+            "@value": "Reconocimiento-NoComercial 2.5 Malasia"
+        },
+        {
+            "@language": "es-gt",
+            "@value": "Reconocimiento-NoComercial 2.5 Malasia"
+        },
+        {
+            "@language": "es-mx",
+            "@value": "Atribución-No Comercial 2.5 Malasia"
+        },
+        {
+            "@language": "es-pe",
+            "@value": "Reconocimiento-NoComercial 2.5 Malasia"
+        },
+        {
+            "@language": "es-pr",
+            "@value": "Reconocimiento-NoComercial 2.5 Malasia"
+        },
+        {
+            "@language": "et",
+            "@value": "Autorile viitamine + Mitteäriline eesmärk 2.5 Malaisia"
+        },
+        {
+            "@language": "eu",
+            "@value": "Aitortu-EzKomertziala 2.5 Malaysia"
+        },
+        {
+            "@language": "fa",
+            "@value": "Attribution-NonCommercial 2.5 مالزی"
+        },
+        {
+            "@language": "fi",
+            "@value": "Nimeä-Epäkaupallinen 2.5 Malesia"
+        },
+        {
+            "@language": "fr",
+            "@value": "Paternité - Pas d'Utilisation Commerciale 2.5 Malaisie"
+        },
+        {
+            "@language": "fr-ca",
+            "@value": "Paternité - Pas d'Utilisation Commerciale 2.5 Malaisie"
+        },
+        {
+            "@language": "fr-ch",
+            "@value": "Paternité - Pas d'Utilisation Commerciale 2.5 Malaisie"
+        },
+        {
+            "@language": "fr-lu",
+            "@value": "Paternité - Pas d'Utilisation Commerciale 2.5 Malaisie"
+        },
+        {
+            "@language": "ga",
+            "@value": "Attribution-NonCommercial 2.5 Malaysia"
+        },
+        {
+            "@language": "gl",
+            "@value": "Recoñecemento-NonComercial 2.5 Malaysia"
+        },
+        {
+            "@language": "he",
+            "@value": "ייחוס-שימוש לא מסחרי 2.5 מלזיה"
+        },
+        {
+            "@language": "hi",
+            "@value": "Attribution-NonCommercial 2.5 Malaysia"
+        },
+        {
+            "@language": "hr",
+            "@value": "Imenovanje-Nekomercijalno 2.5 Malezija"
+        },
+        {
+            "@language": "hu",
+            "@value": "Nevezd meg! - Ne add el! 2.5 Malajzia"
+        },
+        {
+            "@language": "hy",
+            "@value": "Հղում - Ոչ-առևտրային օգտագործում 2.5 Մալազիա"
+        },
+        {
+            "@language": "id",
+            "@value": "Attribusi-NonKomersial 2.5 Malaysia"
+        },
+        {
+            "@language": "is",
+            "@value": "Attribution-NonCommercial 2.5 Malaysia"
+        },
+        {
+            "@language": "it",
+            "@value": "Attribuzione - Non commerciale 2.5 Malesia"
+        },
+        {
+            "@language": "it-ch",
+            "@value": "Attribuzione - Non commerciale 2.5 Malaysia"
+        },
+        {
+            "@language": "ja",
+            "@value": "表示 - 非営利 2.5 マレーシア"
+        },
+        {
+            "@language": "ka",
+            "@value": "ავტორობის მითითებით არაკომერციული გამოყენებისათვის 2.5 მალაიზია"
+        },
+        {
+            "@language": "kk",
+            "@value": "Коммерциялық емес 2.5 Malaysia"
+        },
+        {
+            "@language": "ko",
+            "@value": "저작자표시-비영리 2.5 말레이시아"
+        },
+        {
+            "@language": "lt",
+            "@value": "Attribution-NonCommercial 2.5 Malaizija"
+        },
+        {
+            "@language": "lv",
+            "@value": "Atsaucoties-Nekomerciāli 2.5 Malaizija"
+        },
+        {
+            "@language": "mk",
+            "@value": "НаведиИзвор-Некомерцијално 2.5 Малезија"
+        },
+        {
+            "@language": "ml",
+            "@value": "Attribution-NonCommercial 2.5 മലേഷ്യ"
+        },
+        {
+            "@language": "mn",
+            "@value": "Attribution-NonCommercial 2.5 Malaysia"
+        },
+        {
+            "@language": "ms",
+            "@value": "Pengiktirafan-BukanKomersial 2.5 Malaysia"
+        },
+        {
+            "@language": "nl",
+            "@value": "Naamsvermelding-NietCommercieel 2.5 Maleisië"
+        },
+        {
+            "@language": "no",
+            "@value": "Navngivelse-Ikkekommersiell 2.5 Malaysia"
+        },
+        {
+            "@language": "nso",
+            "@value": "Tsebagatšo- E sego ya kgwebo 2.5 Malaysia"
+        },
+        {
+            "@language": "oci-es",
+            "@value": "Attribution-NonCommercial 2.5 Malaysia"
+        },
+        {
+            "@language": "pl",
+            "@value": "Uznanie autorstwa-Użycie niekomercyjne 2.5 Malezja"
+        },
+        {
+            "@language": "pt",
+            "@value": "Atribuição - NãoComercial 2.5 Malásia"
+        },
+        {
+            "@language": "pt-br",
+            "@value": "Atribuição-Uso não-comercial 2.5 Malaysia"
+        },
+        {
+            "@language": "pt-pt",
+            "@value": "Atribuição-Uso Não-Comercial 2.5 Malaysia"
+        },
+        {
+            "@language": "ro",
+            "@value": "Atribuire-NeComercial 2.5 Malaiezia"
+        },
+        {
+            "@language": "ru",
+            "@value": "Attribution-NonCommercial (Атрибуция — Некоммерческое использование) 2.5 Малайзия"
+        },
+        {
+            "@language": "si-lk",
+            "@value": "Attribution-NonCommercial 2.5 Malaysia"
+        },
+        {
+            "@language": "sl",
+            "@value": "Priznanje avtorstva-Nekomercialno 2.5 Malezija"
+        },
+        {
+            "@language": "sq",
+            "@value": "Attribution-NonCommercial 2.5 Malajzi"
+        },
+        {
+            "@language": "sr",
+            "@value": "Autorstvo-Nekomercijalno 2.5 Malezija"
+        },
+        {
+            "@language": "sr",
+            "@value": "Ауторство-Некомерцијално 2.5 Малезија"
+        },
+        {
+            "@language": "sr-latn",
+            "@value": "Autorstvo-Nekomercijalno 2.5 Malezija"
+        },
+        {
+            "@language": "st",
+            "@value": "Attribution-NonCommercial 2.5 Malaysia"
+        },
+        {
+            "@language": "sv",
+            "@value": "Erkännande-IckeKommersiell 2.5 Malaysia"
+        },
+        {
+            "@language": "ta",
+            "@value": "Attribution-NonCommercial 2.5 Malaysia"
+        },
+        {
+            "@language": "te",
+            "@value": "Attribution-NonCommercial 2.5 మలేషియా"
+        },
+        {
+            "@language": "th",
+            "@value": "แสดงที่มา-ไม่ใช้เพื่อการค้า 2.5 มาเลเซีย"
+        },
+        {
+            "@language": "tr",
+            "@value": "Alıntı-Gayriticari 2.5 Malezya"
+        },
+        {
+            "@language": "uk",
+            "@value": "Attribution-NonCommercial 2.5 Malaysia"
+        },
+        {
+            "@language": "ur",
+            "@value": "Attribution-NonCommercial 2.5 Malaysia"
+        },
+        {
+            "@language": "vi",
+            "@value": "Ghi nhận công của tác giả - Phi thương mại  2.5 Malaysia"
+        },
+        {
+            "@language": "zh",
+            "@value": "署名-非商业性使用 2.5 马来西亚"
+        },
+        {
+            "@language": "zh-hk",
+            "@value": "姓名標示-非商業性 2.5 馬來西亞"
+        },
+        {
+            "@language": "zh-tw",
+            "@value": "姓名標示-非商業性 2.5 馬來西亞"
+        },
+        {
+            "@language": "zu",
+            "@value": "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano 2.5 iMalaysia"
+        },
+        {
+            "@language": "zxx",
+            "@value": "${Attribution-NonCommercial} 2.5 ${Malaysia}"
+        }
+    ],
+    "owl:sameAs": {
+        "@id": "http://creativecommons.org/licenses/by-nc/2.5/my/",
+        "@type": "cc:License",
+        "cc:jurisdiction": "http://creativecommons.org/international/my/",
+        "cc:legalcode": "http://creativecommons.org/licenses/by-nc/2.5/my/legalcode",
+        "cc:licenseClass": "http://creativecommons.org/license/",
+        "cc:permits": [
+            "cc:DerivativeWorks",
+            "cc:Distribution",
+            "cc:Reproduction"
+        ],
+        "cc:prohibits": "cc:CommercialUse",
+        "cc:requires": [
+            "cc:Attribution",
+            "cc:Notice"
+        ],
+        "dc:creator": "http://creativecommons.org",
+        "dc:hasVersion": "2.5",
+        "dc:identifier": "by-nc",
+        "dc:source": "http://creativecommons.org/licenses/by-nc/2.5/",
+        "dc:title": [
+            {
+                "@language": "af",
+                "@value": "Erkenning-NieKommersieel 2.5 Maleisië"
+            },
+            {
+                "@language": "ar",
+                "@value": "نسب - غير تجاري 2.5 ماليزيا"
+            },
+            {
+                "@language": "as",
+                "@value": "Attribution-NonCommercial 2.5 Malaysia"
+            },
+            {
+                "@language": "ast",
+                "@value": "Attribution-NonCommercial 2.5 Malaysia"
+            },
+            {
+                "@language": "ast-es",
+                "@value": "Attribution-NonCommercial 2.5 Malaysia"
+            },
+            {
+                "@language": "az",
+                "@value": "Attribution-NonCommercial 2.5 Malaysia"
+            },
+            {
+                "@language": "be",
+                "@value": "Attribution-NonCommercial 2.5 Малайзія"
+            },
+            {
+                "@language": "bg",
+                "@value": "Признание-Некомерсиално 2.5 Малайзия"
+            },
+            {
+                "@language": "bn",
+                "@value": "Attribution-NonCommercial 2.5 Malaysia"
+            },
+            {
+                "@language": "ca",
+                "@value": "Reconeixement-NoComercial 2.5 Malàisia"
+            },
+            {
+                "@language": "cs",
+                "@value": "Uveďte autora-Neužívejte komerčně 2.5 Malajsie"
+            },
+            {
+                "@language": "da",
+                "@value": "Navngivelse-IkkeKommerciel 2.5 Malaysia"
+            },
+            {
+                "@language": "de",
+                "@value": "Namensnennung-Nicht-kommerziell 2.5 Malaysia"
+            },
+            {
+                "@language": "de-at",
+                "@value": "Namensnennung-NichtKommerziell 2.5 Malaysia"
+            },
+            {
+                "@language": "de-ch",
+                "@value": "Namensnennung-NichtKommerziell 2.5 Malaysia"
+            },
+            {
+                "@language": "el",
+                "@value": "Αναφορά Δημιουργού-Μη Εμπορική Χρήση 2.5 Μαλαισία"
+            },
+            {
+                "@language": "en",
+                "@value": "Attribution-NonCommercial 2.5 Malaysia"
+            },
+            {
+                "@language": "en-ca",
+                "@value": "Attribution-NonCommercial 2.5 Malaysia"
+            },
+            {
+                "@language": "en-gb",
+                "@value": "Attribution-NonCommercial 2.5 Malaysia"
+            },
+            {
+                "@language": "en-hk",
+                "@value": "Attribution-NonCommercial 2.5 Malaysia"
+            },
+            {
+                "@language": "en-sg",
+                "@value": "Attribution-NonCommercial 2.5 Malaysia"
+            },
+            {
+                "@language": "en-us",
+                "@value": "Attribution-NonCommercial 2.5 Malaysia"
+            },
+            {
+                "@language": "eo",
+                "@value": "Atribuite-Nekomerce 2.5 Malajzio"
+            },
+            {
+                "@language": "es",
+                "@value": "Atribución-NoComercial 2.5 Malasia"
+            },
+            {
+                "@language": "es-ar",
+                "@value": "Atribución-NoComercial 2.5 Malasia"
+            },
+            {
+                "@language": "es-cl",
+                "@value": "Atribución-NoComercial 2.5 Malasia"
+            },
+            {
+                "@language": "es-co",
+                "@value": "Reconocimiento-NoComercial 2.5 Malasia"
+            },
+            {
+                "@language": "es-ec",
+                "@value": "Reconocimiento-NoComercial 2.5 Malasia"
+            },
+            {
+                "@language": "es-es",
+                "@value": "Reconocimiento-NoComercial 2.5 Malasia"
+            },
+            {
+                "@language": "es-gt",
+                "@value": "Reconocimiento-NoComercial 2.5 Malasia"
+            },
+            {
+                "@language": "es-mx",
+                "@value": "Atribución-No Comercial 2.5 Malasia"
+            },
+            {
+                "@language": "es-pe",
+                "@value": "Reconocimiento-NoComercial 2.5 Malasia"
+            },
+            {
+                "@language": "es-pr",
+                "@value": "Reconocimiento-NoComercial 2.5 Malasia"
+            },
+            {
+                "@language": "et",
+                "@value": "Autorile viitamine + Mitteäriline eesmärk 2.5 Malaisia"
+            },
+            {
+                "@language": "eu",
+                "@value": "Aitortu-EzKomertziala 2.5 Malaysia"
+            },
+            {
+                "@language": "fa",
+                "@value": "Attribution-NonCommercial 2.5 مالزی"
+            },
+            {
+                "@language": "fi",
+                "@value": "Nimeä-Epäkaupallinen 2.5 Malesia"
+            },
+            {
+                "@language": "fr",
+                "@value": "Paternité - Pas d'Utilisation Commerciale 2.5 Malaisie"
+            },
+            {
+                "@language": "fr-ca",
+                "@value": "Paternité - Pas d'Utilisation Commerciale 2.5 Malaisie"
+            },
+            {
+                "@language": "fr-ch",
+                "@value": "Paternité - Pas d'Utilisation Commerciale 2.5 Malaisie"
+            },
+            {
+                "@language": "fr-lu",
+                "@value": "Paternité - Pas d'Utilisation Commerciale 2.5 Malaisie"
+            },
+            {
+                "@language": "ga",
+                "@value": "Attribution-NonCommercial 2.5 Malaysia"
+            },
+            {
+                "@language": "gl",
+                "@value": "Recoñecemento-NonComercial 2.5 Malaysia"
+            },
+            {
+                "@language": "he",
+                "@value": "ייחוס-שימוש לא מסחרי 2.5 מלזיה"
+            },
+            {
+                "@language": "hi",
+                "@value": "Attribution-NonCommercial 2.5 Malaysia"
+            },
+            {
+                "@language": "hr",
+                "@value": "Imenovanje-Nekomercijalno 2.5 Malezija"
+            },
+            {
+                "@language": "hu",
+                "@value": "Nevezd meg! - Ne add el! 2.5 Malajzia"
+            },
+            {
+                "@language": "hy",
+                "@value": "Հղում - Ոչ-առևտրային օգտագործում 2.5 Մալազիա"
+            },
+            {
+                "@language": "id",
+                "@value": "Attribusi-NonKomersial 2.5 Malaysia"
+            },
+            {
+                "@language": "is",
+                "@value": "Attribution-NonCommercial 2.5 Malaysia"
+            },
+            {
+                "@language": "it",
+                "@value": "Attribuzione - Non commerciale 2.5 Malesia"
+            },
+            {
+                "@language": "it-ch",
+                "@value": "Attribuzione - Non commerciale 2.5 Malaysia"
+            },
+            {
+                "@language": "ja",
+                "@value": "表示 - 非営利 2.5 マレーシア"
+            },
+            {
+                "@language": "ka",
+                "@value": "ავტორობის მითითებით არაკომერციული გამოყენებისათვის 2.5 მალაიზია"
+            },
+            {
+                "@language": "kk",
+                "@value": "Коммерциялық емес 2.5 Malaysia"
+            },
+            {
+                "@language": "ko",
+                "@value": "저작자표시-비영리 2.5 말레이시아"
+            },
+            {
+                "@language": "lt",
+                "@value": "Attribution-NonCommercial 2.5 Malaizija"
+            },
+            {
+                "@language": "lv",
+                "@value": "Atsaucoties-Nekomerciāli 2.5 Malaizija"
+            },
+            {
+                "@language": "mk",
+                "@value": "НаведиИзвор-Некомерцијално 2.5 Малезија"
+            },
+            {
+                "@language": "ml",
+                "@value": "Attribution-NonCommercial 2.5 മലേഷ്യ"
+            },
+            {
+                "@language": "mn",
+                "@value": "Attribution-NonCommercial 2.5 Malaysia"
+            },
+            {
+                "@language": "ms",
+                "@value": "Pengiktirafan-BukanKomersial 2.5 Malaysia"
+            },
+            {
+                "@language": "nl",
+                "@value": "Naamsvermelding-NietCommercieel 2.5 Maleisië"
+            },
+            {
+                "@language": "no",
+                "@value": "Navngivelse-Ikkekommersiell 2.5 Malaysia"
+            },
+            {
+                "@language": "nso",
+                "@value": "Tsebagatšo- E sego ya kgwebo 2.5 Malaysia"
+            },
+            {
+                "@language": "oci-es",
+                "@value": "Attribution-NonCommercial 2.5 Malaysia"
+            },
+            {
+                "@language": "pl",
+                "@value": "Uznanie autorstwa-Użycie niekomercyjne 2.5 Malezja"
+            },
+            {
+                "@language": "pt",
+                "@value": "Atribuição - NãoComercial 2.5 Malásia"
+            },
+            {
+                "@language": "pt-br",
+                "@value": "Atribuição-Uso não-comercial 2.5 Malaysia"
+            },
+            {
+                "@language": "pt-pt",
+                "@value": "Atribuição-Uso Não-Comercial 2.5 Malaysia"
+            },
+            {
+                "@language": "ro",
+                "@value": "Atribuire-NeComercial 2.5 Malaiezia"
+            },
+            {
+                "@language": "ru",
+                "@value": "Attribution-NonCommercial (Атрибуция — Некоммерческое использование) 2.5 Малайзия"
+            },
+            {
+                "@language": "si-lk",
+                "@value": "Attribution-NonCommercial 2.5 Malaysia"
+            },
+            {
+                "@language": "sl",
+                "@value": "Priznanje avtorstva-Nekomercialno 2.5 Malezija"
+            },
+            {
+                "@language": "sq",
+                "@value": "Attribution-NonCommercial 2.5 Malajzi"
+            },
+            {
+                "@language": "sr",
+                "@value": "Autorstvo-Nekomercijalno 2.5 Malezija"
+            },
+            {
+                "@language": "sr",
+                "@value": "Ауторство-Некомерцијално 2.5 Малезија"
+            },
+            {
+                "@language": "sr-latn",
+                "@value": "Autorstvo-Nekomercijalno 2.5 Malezija"
+            },
+            {
+                "@language": "st",
+                "@value": "Attribution-NonCommercial 2.5 Malaysia"
+            },
+            {
+                "@language": "sv",
+                "@value": "Erkännande-IckeKommersiell 2.5 Malaysia"
+            },
+            {
+                "@language": "ta",
+                "@value": "Attribution-NonCommercial 2.5 Malaysia"
+            },
+            {
+                "@language": "te",
+                "@value": "Attribution-NonCommercial 2.5 మలేషియా"
+            },
+            {
+                "@language": "th",
+                "@value": "แสดงที่มา-ไม่ใช้เพื่อการค้า 2.5 มาเลเซีย"
+            },
+            {
+                "@language": "tr",
+                "@value": "Alıntı-Gayriticari 2.5 Malezya"
+            },
+            {
+                "@language": "uk",
+                "@value": "Attribution-NonCommercial 2.5 Malaysia"
+            },
+            {
+                "@language": "ur",
+                "@value": "Attribution-NonCommercial 2.5 Malaysia"
+            },
+            {
+                "@language": "vi",
+                "@value": "Ghi nhận công của tác giả - Phi thương mại  2.5 Malaysia"
+            },
+            {
+                "@language": "zh",
+                "@value": "署名-非商业性使用 2.5 马来西亚"
+            },
+            {
+                "@language": "zh-hk",
+                "@value": "姓名標示-非商業性 2.5 馬來西亞"
+            },
+            {
+                "@language": "zh-tw",
+                "@value": "姓名標示-非商業性 2.5 馬來西亞"
+            },
+            {
+                "@language": "zu",
+                "@value": "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano 2.5 iMalaysia"
+            },
+            {
+                "@language": "zxx",
+                "@value": "${Attribution-NonCommercial} 2.5 ${Malaysia}"
+            }
+        ],
+        "owl:sameAs": "https://licensedb.org/id/CC-BY-NC-2.5-my",
+        "foaf:logo": [
+            "http://i.creativecommons.org/l/by-nc/2.5/my/80x15.png",
+            "http://i.creativecommons.org/l/by-nc/2.5/my/88x31.png"
+        ]
+    },
+    "foaf:logo": [
+        "http://i.creativecommons.org/l/by-nc/2.5/my/80x15.png",
+        "http://i.creativecommons.org/l/by-nc/2.5/my/88x31.png"
+    ],
+    "li:id": "CC-BY-NC-2.5-my",
+    "li:name": "CC BY-NC 2.5 MY"
+}

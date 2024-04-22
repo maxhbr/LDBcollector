@@ -1,0 +1,15 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+
+canonicalName: "CiviCRM Exception (AGPL 3.0)"
+category: "CiviCRM Exception"
+shortName: "CiviCRM-Exception-AGPL-3.0"
+
+type: "exception"
+
+alternativeNames:
+  - "CiviCRM licensing exception"
+
+otherIds: 
+  - "scancode:civicrm-exception-to-agpl-3.0"

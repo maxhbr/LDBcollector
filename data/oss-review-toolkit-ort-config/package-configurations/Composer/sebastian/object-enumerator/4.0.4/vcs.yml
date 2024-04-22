@@ -1,0 +1,13 @@
+---
+id: "Composer:sebastian:object-enumerator:4.0.4"
+vcs:
+  type: "Git"
+  url: "https://github.com/sebastianbergmann/object-enumerator.git"
+  revision: "5c9eeac41b290a3712d88851518825ad78f45c71"
+path_excludes:
+  - pattern: ".github/**"
+    reason: "BUILD_TOOL_OF"
+  - pattern: "tests/**"
+    reason: "TEST_OF"
+  - pattern: "tools/**"
+    reason: "BUILD_TOOL_OF"

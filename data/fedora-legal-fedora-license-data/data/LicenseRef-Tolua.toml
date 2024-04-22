@@ -1,0 +1,19 @@
+[license]
+
+expression = "LicenseRef-Tolua"
+status = [ "allowed" ]
+
+url = '''
+https://fedoraproject.org/wiki/Licensing/Tolua
+'''
+
+[fedora]
+
+legacy-name = [
+    "Tolua License"
+]
+
+legacy-abbreviation = [
+    "Tolua"
+]
+

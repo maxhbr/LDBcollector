@@ -1,0 +1,15 @@
+{
+  "meta": {
+    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+    "comment": ""
+  },
+  "name": "Mozilla Public License 2.0 (no copyleft exception)",
+  "scancode_key": "mpl-2.0-no-copyleft-exception",
+  "spdxid": "MPL-2.0-no-copyleft-exception",
+  "aliases": [
+    "MPL-2.0-no-copyleft-exception",
+    "Mozilla Public License 2.0 (no copyleft exception)",
+    "scancode://mpl-2.0-no-copyleft-exception",
+    "MPL 2.0 with no copyleft exception"
+  ]
+}

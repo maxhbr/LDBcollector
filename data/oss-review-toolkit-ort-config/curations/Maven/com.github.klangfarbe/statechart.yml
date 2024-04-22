@@ -1,0 +1,8 @@
+- id: "Maven:com.github.klangfarbe:statechart"
+  curations:
+    comment: |
+      No sources artifact is published, and also no SCM tag is in the POM. The
+      GitHub project page was found via Internet search.
+    vcs:
+      type: "Git"
+      url: "https://github.com/klangfarbe/UML-Statechart-Framework-for-Java.git"

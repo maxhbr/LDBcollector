@@ -1,0 +1,19 @@
+{
+  "@context": "https://wking.github.io/fsf-api/schema/license.jsonld",
+  "id": "clearbsd",
+  "identifiers": {
+    "spdx": [
+      "BSD-3-Clause-Clear"
+    ]
+  },
+  "name": "The Clear BSD License",
+  "tags": [
+    "gpl-2-compatible",
+    "gpl-3-compatible",
+    "libre"
+  ],
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#clearbsd",
+    "http://directory.fsf.org/wiki/License:ClearBSD"
+  ]
+}

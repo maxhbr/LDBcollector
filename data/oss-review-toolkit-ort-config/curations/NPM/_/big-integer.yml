@@ -1,0 +1,8 @@
+- id: "NPM::big-integer"
+  curations:
+    comment: |
+      The package metadata only contains an SSH URL that requires authentication, also see
+      https://github.com/peterolson/BigInteger.js/pull/243.
+    vcs:
+      type: "Git"
+      url: "https://github.com/peterolson/BigInteger.js.git"

@@ -1,0 +1,22 @@
+{
+    "spdx_id": "MIT-0",
+    "long_name": "MIT No Attribution",
+    "license_version": "",
+    "radical": "MIT-0",
+    "autoupgrade": null,
+    "steward": "",
+    "inspiration_spdx": "",
+    "copyleft": "None",
+    "url": "https://github.com/aws/mit-0",
+    "osi_approved": true,
+    "fsf_approved": true,
+    "foss": "Yes-Auto",
+    "patent_grant": false,
+    "ethical_clause": false,
+    "non_commercial": false,
+    "non_tivoisation": false,
+    "law_choice": "",
+    "comment": "",
+    "verbatim": "",
+    "obligations": []
+}

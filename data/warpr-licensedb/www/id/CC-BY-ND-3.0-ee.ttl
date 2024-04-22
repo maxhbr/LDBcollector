@@ -1,0 +1,223 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/elements/1.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://creativecommons.org/licenses/by-nd/3.0/ee/> a cc:License ;
+    cc:jurisdiction <http://creativecommons.org/international/ee/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nd/3.0/ee/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "3.0" ;
+    dc:identifier "by-nd" ;
+    dc:source <http://creativecommons.org/licenses/by-nd/3.0/> ;
+    dc:title "Erkenning-GeenAfleidings 3.0 Estonia"@af,
+        "نسب- غير مشتق 3.0 Estonia"@ar,
+        "Attribution-NoDerivs 3.0 Estonia"@as,
+        "Attribution-NoDerivs 3.0 Estonia"@ast,
+        "Attribution-NoDerivs 3.0 country.ee"@ast-es,
+        "Attribution-NoDerivs 3.0 Estonia"@az,
+        "Attribution-NoDerivs 3.0 Estonia"@be,
+        "Признание-Без производни 3.0 Estonia"@bg,
+        "Attribution-NoDerivs 3.0 Estonia"@bn,
+        "Reconeixement-SenseObraDerivada 3.0 Estònia"@ca,
+        "Uveďte autora-Nezasahujte do díla 3.0 Estonia"@cs,
+        "Navngivelse-IngenBearbejdelse 3.0 estisk"@da,
+        "Namensnennung-Keine Bearbeitung 3.0 Estland"@de,
+        "Namensnennung-KeineBearbeitung 3.0 Estonia"@de-at,
+        "Namensnennung-KeineBearbeitung 3.0 Estonia"@de-ch,
+        "Αναφορά Δημιουργού-Όχι Παράγωγα Έργα 3.0 Εσθονία"@el,
+        "Attribution-NoDerivs 3.0 Estonia"@en,
+        "Attribution-NoDerivs 3.0 Estonia"@en-ca,
+        "Attribution-NoDerivs 3.0 Estonia"@en-gb,
+        "Attribution-NoDerivs 3.0 Estonia"@en-hk,
+        "Attribution-NoDerivs 3.0 Estonia"@en-sg,
+        "Attribution-NoDerivs 3.0 Estonia"@en-us,
+        "Atribuite-Nemodifite 3.0 Estonujo"@eo,
+        "Atribución-SinDerivadas 3.0 Estonia"@es,
+        "Atribución-SinDerivadas 3.0 Estonia"@es-ar,
+        "Reconocimiento-SinObraDerivada 3.0 Estonia"@es-es,
+        "Reconocimiento-SinObraDerivada 3.0 Estonia"@es-pe,
+        "Autorile viitamine + Tuletatud teoste keeld 3.0 Eesti"@et,
+        "Aitortu-LanEratorririkGabe 3.0 Estonia"@eu,
+        "Attribution-NoDerivs 3.0 Estonia"@fa,
+        "Nimeä-Ei muutoksia 3.0 Viro"@fi,
+        "Paternité - Pas de Modification 3.0 Estonie"@fr,
+        "Paternité - Pas de Modification 3.0 Estonia"@fr-ca,
+        "Paternité - Pas de Modification 3.0 Estonia"@fr-ch,
+        "Paternité - Pas de Modification 3.0 Estonia"@fr-lu,
+        "Attribution-NoDerivs 3.0 Estonia"@ga,
+        "Recoñecemento-SenObraDerivada 3.0 Estonia"@gl,
+        "ייחוס-איסור יצירות נגזרות 3.0 Estonia"@he,
+        "Attribution-NoDerivs 3.0 Estonia"@hi,
+        "Imenovanje-Bez prerada 3.0 Estonija"@hr,
+        "Nevezd meg! - Ne változtasd! 3.0 Estonia"@hu,
+        "Հղում - Օգտագործում առանց վերափոխումների 3.0 Estonia"@hy,
+        "Atribusi-TanpaTurunan 3.0 Estonia"@id,
+        "Attribution-NoDerivs 3.0 Estonia"@is,
+        "Attribuzione - Non opere derivate 3.0 Estonia"@it,
+        "Attribuzione - Non opere derivate 3.0 Estonia"@it-ch,
+        "表示 - 改変禁止 3.0 エストニア"@ja,
+        "ავტორობის მითითებით გადამუშავების გარეშე 3.0 Estonia"@ka,
+        "Туынды жасамау 3.0 Estonia"@kk,
+        "저작자표시-변경금지 3.0 에스토니아"@ko,
+        "Attribution-NoDerivs 3.0 Estonia"@lt,
+        "Atsaucoties-Neatvasinot 3.0 Estonia"@lv,
+        "НаведиИзвор-БезИзведениДела 3.0 Естонија"@mk,
+        "Attribution-NoDerivs 3.0 Estonia"@ml,
+        "Attribution-NoDerivs 3.0 Estonia"@mn,
+        "Pengiktirafan-TiadaTerbitan 3.0 Estonia"@ms,
+        "Naamsvermelding-GeenAfgeleideWerken 3.0 Estland"@nl,
+        "Navngivelse-IngenBearbeidelse 3.0 Estland"@no,
+        "Tsebagatšo - Tše sa Fetolwego 3.0 Estonia"@nso,
+        "Attribution-NoDerivs 3.0 Estonia"@oci-es,
+        "Uznanie autorstwa-Bez utworów zależnych 3.0 Estonia"@pl,
+        "Atribuição - SemDerivados 3.0 Estónia"@pt,
+        "Atribuição-Vedada a criação de obras derivativas 3.0 Estonia"@pt-br,
+        "Atribuição-Vedada a criação de obras derivativas 3.0 Estônia"@pt-br,
+        "Atribuição-Proibição de realização de Obras Derivadas 3.0 Estonia"@pt-pt,
+        "Atribuire-FărăModificări 3.0 Estonia"@ro,
+        "Attribution-NoDerivs (Атрибуция — Без производных произведений) 3.0 Эстония"@ru,
+        "Attribution-NoDerivs 3.0 Estonia"@si-lk,
+        "Priznanje avtorstva-Brez predelav 3.0 Estonia"@sl,
+        "Attribution-NoDerivs 3.0 Estoni"@sq,
+        "Autorstvo-Bez prerada 3.0 country.ee"@sr,
+        "Ауторство-Без прерада 3.0 Estonia"@sr,
+        "Autorstvo-Bez prerada 3.0 Estonia"@sr-latn,
+        "Erkännande-IngaBearbetningar 3.0 Estonia"@sv,
+        "Attribution-NoDerivs 3.0 Estonia"@ta,
+        "Attribution-NoDerivs 3.0 Estonia"@te,
+        "แสดงที่มา-ไม่ดัดแปลง 3.0 Estonia"@th,
+        "Alıntı-Türetilemez 3.0 Estonya"@tr,
+        "Attribution-NoDerivs 3.0 Estonia"@uk,
+        "Attribution-NoDerivs 3.0 Estonia"@ur,
+        "Ghi nhận công của tác giả - Không phái sinh 3.0 Estonia"@vi,
+        "署名-禁止演绎 3.0 Estonia"@zh,
+        "姓名標示-禁止改作 3.0 Estonia"@zh-hk,
+        "姓名標示-禁止改作 3.0 Estonia"@zh-tw,
+        "姓名標示-禁止改作 3.0 愛沙尼亞"@zh-tw,
+        "Qaphela Umnikazi-Ungasuseli lutho kulokhu 3.0 Estonia"@zu,
+        "${Attribution-NoDerivs} 3.0 ${Estonia}"@zxx ;
+    owl:sameAs <https://licensedb.org/id/CC-BY-ND-3.0-ee> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nd/3.0/ee/80x15.png>,
+        <http://i.creativecommons.org/l/by-nd/3.0/ee/88x31.png> .
+
+<https://licensedb.org/id/CC-BY-ND-3.0-ee> a cc:License,
+        li:License ;
+    cc:jurisdiction <http://creativecommons.org/international/ee/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nd/3.0/ee/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "3.0" ;
+    dc:identifier "by-nd" ;
+    dc:source <http://creativecommons.org/licenses/by-nd/3.0/> ;
+    dc:title "Erkenning-GeenAfleidings 3.0 Estonia"@af,
+        "نسب- غير مشتق 3.0 Estonia"@ar,
+        "Attribution-NoDerivs 3.0 Estonia"@as,
+        "Attribution-NoDerivs 3.0 Estonia"@ast,
+        "Attribution-NoDerivs 3.0 country.ee"@ast-es,
+        "Attribution-NoDerivs 3.0 Estonia"@az,
+        "Attribution-NoDerivs 3.0 Estonia"@be,
+        "Признание-Без производни 3.0 Estonia"@bg,
+        "Attribution-NoDerivs 3.0 Estonia"@bn,
+        "Reconeixement-SenseObraDerivada 3.0 Estònia"@ca,
+        "Uveďte autora-Nezasahujte do díla 3.0 Estonia"@cs,
+        "Navngivelse-IngenBearbejdelse 3.0 estisk"@da,
+        "Namensnennung-Keine Bearbeitung 3.0 Estland"@de,
+        "Namensnennung-KeineBearbeitung 3.0 Estonia"@de-at,
+        "Namensnennung-KeineBearbeitung 3.0 Estonia"@de-ch,
+        "Αναφορά Δημιουργού-Όχι Παράγωγα Έργα 3.0 Εσθονία"@el,
+        "Attribution-NoDerivs 3.0 Estonia"@en,
+        "Attribution-NoDerivs 3.0 Estonia"@en-ca,
+        "Attribution-NoDerivs 3.0 Estonia"@en-gb,
+        "Attribution-NoDerivs 3.0 Estonia"@en-hk,
+        "Attribution-NoDerivs 3.0 Estonia"@en-sg,
+        "Attribution-NoDerivs 3.0 Estonia"@en-us,
+        "Atribuite-Nemodifite 3.0 Estonujo"@eo,
+        "Atribución-SinDerivadas 3.0 Estonia"@es,
+        "Atribución-SinDerivadas 3.0 Estonia"@es-ar,
+        "Reconocimiento-SinObraDerivada 3.0 Estonia"@es-es,
+        "Reconocimiento-SinObraDerivada 3.0 Estonia"@es-pe,
+        "Autorile viitamine + Tuletatud teoste keeld 3.0 Eesti"@et,
+        "Aitortu-LanEratorririkGabe 3.0 Estonia"@eu,
+        "Attribution-NoDerivs 3.0 Estonia"@fa,
+        "Nimeä-Ei muutoksia 3.0 Viro"@fi,
+        "Paternité - Pas de Modification 3.0 Estonie"@fr,
+        "Paternité - Pas de Modification 3.0 Estonia"@fr-ca,
+        "Paternité - Pas de Modification 3.0 Estonia"@fr-ch,
+        "Paternité - Pas de Modification 3.0 Estonia"@fr-lu,
+        "Attribution-NoDerivs 3.0 Estonia"@ga,
+        "Recoñecemento-SenObraDerivada 3.0 Estonia"@gl,
+        "ייחוס-איסור יצירות נגזרות 3.0 Estonia"@he,
+        "Attribution-NoDerivs 3.0 Estonia"@hi,
+        "Imenovanje-Bez prerada 3.0 Estonija"@hr,
+        "Nevezd meg! - Ne változtasd! 3.0 Estonia"@hu,
+        "Հղում - Օգտագործում առանց վերափոխումների 3.0 Estonia"@hy,
+        "Atribusi-TanpaTurunan 3.0 Estonia"@id,
+        "Attribution-NoDerivs 3.0 Estonia"@is,
+        "Attribuzione - Non opere derivate 3.0 Estonia"@it,
+        "Attribuzione - Non opere derivate 3.0 Estonia"@it-ch,
+        "表示 - 改変禁止 3.0 エストニア"@ja,
+        "ავტორობის მითითებით გადამუშავების გარეშე 3.0 Estonia"@ka,
+        "Туынды жасамау 3.0 Estonia"@kk,
+        "저작자표시-변경금지 3.0 에스토니아"@ko,
+        "Attribution-NoDerivs 3.0 Estonia"@lt,
+        "Atsaucoties-Neatvasinot 3.0 Estonia"@lv,
+        "НаведиИзвор-БезИзведениДела 3.0 Естонија"@mk,
+        "Attribution-NoDerivs 3.0 Estonia"@ml,
+        "Attribution-NoDerivs 3.0 Estonia"@mn,
+        "Pengiktirafan-TiadaTerbitan 3.0 Estonia"@ms,
+        "Naamsvermelding-GeenAfgeleideWerken 3.0 Estland"@nl,
+        "Navngivelse-IngenBearbeidelse 3.0 Estland"@no,
+        "Tsebagatšo - Tše sa Fetolwego 3.0 Estonia"@nso,
+        "Attribution-NoDerivs 3.0 Estonia"@oci-es,
+        "Uznanie autorstwa-Bez utworów zależnych 3.0 Estonia"@pl,
+        "Atribuição - SemDerivados 3.0 Estónia"@pt,
+        "Atribuição-Vedada a criação de obras derivativas 3.0 Estonia"@pt-br,
+        "Atribuição-Vedada a criação de obras derivativas 3.0 Estônia"@pt-br,
+        "Atribuição-Proibição de realização de Obras Derivadas 3.0 Estonia"@pt-pt,
+        "Atribuire-FărăModificări 3.0 Estonia"@ro,
+        "Attribution-NoDerivs (Атрибуция — Без производных произведений) 3.0 Эстония"@ru,
+        "Attribution-NoDerivs 3.0 Estonia"@si-lk,
+        "Priznanje avtorstva-Brez predelav 3.0 Estonia"@sl,
+        "Attribution-NoDerivs 3.0 Estoni"@sq,
+        "Autorstvo-Bez prerada 3.0 country.ee"@sr,
+        "Ауторство-Без прерада 3.0 Estonia"@sr,
+        "Autorstvo-Bez prerada 3.0 Estonia"@sr-latn,
+        "Erkännande-IngaBearbetningar 3.0 Estonia"@sv,
+        "Attribution-NoDerivs 3.0 Estonia"@ta,
+        "Attribution-NoDerivs 3.0 Estonia"@te,
+        "แสดงที่มา-ไม่ดัดแปลง 3.0 Estonia"@th,
+        "Alıntı-Türetilemez 3.0 Estonya"@tr,
+        "Attribution-NoDerivs 3.0 Estonia"@uk,
+        "Attribution-NoDerivs 3.0 Estonia"@ur,
+        "Ghi nhận công của tác giả - Không phái sinh 3.0 Estonia"@vi,
+        "署名-禁止演绎 3.0 Estonia"@zh,
+        "姓名標示-禁止改作 3.0 Estonia"@zh-hk,
+        "姓名標示-禁止改作 3.0 Estonia"@zh-tw,
+        "姓名標示-禁止改作 3.0 愛沙尼亞"@zh-tw,
+        "Qaphela Umnikazi-Ungasuseli lutho kulokhu 3.0 Estonia"@zu,
+        "${Attribution-NoDerivs} 3.0 ${Estonia}"@zxx ;
+    owl:sameAs <http://creativecommons.org/licenses/by-nd/3.0/ee/> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nd/3.0/ee/80x15.png>,
+        <http://i.creativecommons.org/l/by-nd/3.0/ee/88x31.png> ;
+    li:id "CC-BY-ND-3.0-ee" ;
+    li:name "CC BY-ND 3.0 EE" .
+

@@ -1,0 +1,14 @@
+[license]
+
+expression = "mplus"
+status = [ "allowed-fonts" ]
+
+[fedora]
+
+legacy-name = [
+    "mplus Font License"
+]
+
+legacy-abbreviation = [
+    "mplus"
+]

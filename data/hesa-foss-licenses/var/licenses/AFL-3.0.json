@@ -1,0 +1,22 @@
+{
+"meta": {
+    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+    "comment": ""
+  },
+  "name": "Academic Free License 3.0",
+  "scancode_key": "afl-3.0",
+  "spdxid": "AFL-3.0",
+  "aliases": [
+   "Academic Free License v3.0",
+   "afl-3.0",
+   "Academic Free License 3.0",
+   "Academic Free License, Version 3.0",
+   "scancode://afl-3.0",
+   "AFL 3.0",
+   "AFL, Version 3.0",
+   "AFL, 3.0",
+   "scancode:afl-3.0",
+   "osi:AFL-3.0",
+   "osi:afl-3.0"
+  ]
+}

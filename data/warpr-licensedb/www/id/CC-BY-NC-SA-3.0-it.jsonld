@@ -1,0 +1,798 @@
+{
+    "@context": {
+        "cc": "http://creativecommons.org/ns#",
+        "dc": "http://purl.org/dc/terms/",
+        "dc11": "http://purl.org/dc/elements/1.1/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "li": "https://licensedb.org/ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "cc:legalcode": {
+            "@type": "@id"
+        },
+        "cc:permits": {
+            "@type": "@id"
+        },
+        "cc:requires": {
+            "@type": "@id"
+        },
+        "cc:prohibits": {
+            "@type": "@id"
+        },
+        "cc:jurisdiction": {
+            "@type": "@id"
+        },
+        "cc:licenseClass": {
+            "@type": "@id"
+        },
+        "dc:creator": {
+            "@type": "@id"
+        },
+        "dc:source": {
+            "@type": "@id"
+        },
+        "dc:replaces": {
+            "@type": "@id"
+        },
+        "dc:isBasedOn": {
+            "@type": "@id"
+        },
+        "dc:isReplacedBy": {
+            "@type": "@id"
+        },
+        "foaf:logo": {
+            "@type": "@id"
+        },
+        "li:plaintext": {
+            "@type": "@id"
+        },
+        "li:libre": {
+            "@type": "@id"
+        },
+        "owl:sameAs": {
+            "@type": "@id"
+        }
+    },
+    "@id": "https://licensedb.org/id/CC-BY-NC-SA-3.0-it",
+    "@type": [
+        "cc:License",
+        "li:License"
+    ],
+    "cc:jurisdiction": "http://creativecommons.org/international/it/",
+    "cc:legalcode": "http://creativecommons.org/licenses/by-nc-sa/3.0/it/legalcode",
+    "cc:licenseClass": "http://creativecommons.org/license/",
+    "cc:permits": [
+        "cc:DerivativeWorks",
+        "cc:Distribution",
+        "cc:Reproduction"
+    ],
+    "cc:prohibits": "cc:CommercialUse",
+    "cc:requires": [
+        "cc:Attribution",
+        "cc:Notice",
+        "cc:ShareAlike"
+    ],
+    "dc:creator": "http://creativecommons.org",
+    "dc:hasVersion": "3.0",
+    "dc:identifier": "by-nc-sa",
+    "dc:source": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+    "dc:title": [
+        {
+            "@language": "af",
+            "@value": "Erkenning-Niekommersieel-InsgelyksDeel 3.0 Italië"
+        },
+        {
+            "@language": "ar",
+            "@value": "المشاركة على قدم المساواة-غير تجاري-نسب العمل 3.0 ايطاليا"
+        },
+        {
+            "@language": "as",
+            "@value": "Attribution-NonCommercial-ShareAlike 3.0 Italy"
+        },
+        {
+            "@language": "ast",
+            "@value": "Attribution-NonCommercial-ShareAlike 3.0 Italy"
+        },
+        {
+            "@language": "ast-es",
+            "@value": "Attribution-NonCommercial-ShareAlike 3.0 Italy"
+        },
+        {
+            "@language": "az",
+            "@value": "Attribution-NonCommercial-ShareAlike 3.0 Italy"
+        },
+        {
+            "@language": "be",
+            "@value": "Attribution-NonCommercial-ShareAlike 3.0 Італія"
+        },
+        {
+            "@language": "bg",
+            "@value": "Признание-Некомерсиално-Споделяне на споделеното 3.0 Италия"
+        },
+        {
+            "@language": "bn",
+            "@value": "Attribution-NonCommercial-ShareAlike 3.0 Italy"
+        },
+        {
+            "@language": "ca",
+            "@value": "Reconeixement-NoComercial-CompartirIgual 3.0 Itàlia"
+        },
+        {
+            "@language": "cs",
+            "@value": "Uveďte autora-Nevyužívejte dílo komerčně-Zachovejte licenci 3.0 Itálie"
+        },
+        {
+            "@language": "da",
+            "@value": "Navngivelse-IkkeKommerciel–DelPåSammeVilkår 3.0 Italien"
+        },
+        {
+            "@language": "de",
+            "@value": "Namensnennung-Nicht-kommerziell-Weitergabe unter gleichen Bedingungen 3.0 Italien"
+        },
+        {
+            "@language": "de-at",
+            "@value": "Namensnennung-NichtKommerziell-Weitergabe unter gleichen Bedingungen 3.0 Italien"
+        },
+        {
+            "@language": "de-ch",
+            "@value": "Namensnennung-NichtKommerziell-Weitergabe unter gleichen Bedingungen 3.0 Italien"
+        },
+        {
+            "@language": "el",
+            "@value": "Αναφορά Δημιουργού - Μη Εμπορική Χρήση - Παρόμοια Διανομή 3.0 Ιταλία"
+        },
+        {
+            "@language": "en",
+            "@value": "Attribution-NonCommercial-ShareAlike 3.0 Italy"
+        },
+        {
+            "@language": "en-ca",
+            "@value": "Attribution-NonCommercial-ShareAlike 3.0 Italy"
+        },
+        {
+            "@language": "en-gb",
+            "@value": "Attribution-NonCommercial-ShareAlike 3.0 Italy"
+        },
+        {
+            "@language": "en-hk",
+            "@value": "Attribution-NonCommercial-ShareAlike 3.0 Italy"
+        },
+        {
+            "@language": "en-sg",
+            "@value": "Attribution-NonCommercial-ShareAlike 3.0 Italy"
+        },
+        {
+            "@language": "en-us",
+            "@value": "Attribution-NonCommercial-ShareAlike 3.0 Italy"
+        },
+        {
+            "@language": "eo",
+            "@value": "Atribuite-Nekomerce-Samkondiĉe 3.0 Italujo"
+        },
+        {
+            "@language": "es",
+            "@value": "Atribución-NoComercial-CompartirIgual 3.0 Italia"
+        },
+        {
+            "@language": "es-ar",
+            "@value": "Atribución-NoComercial-CompartirDerivadasIgual 3.0 Italia"
+        },
+        {
+            "@language": "es-es",
+            "@value": "Reconocimiento-NoComercial-CompartirIgual 3.0 Italia"
+        },
+        {
+            "@language": "es-pe",
+            "@value": "Reconocimiento-NoComercial-CompartirIgual 3.0 Italia"
+        },
+        {
+            "@language": "et",
+            "@value": "Autorile viitamine + Mitteäriline eesmärk + Jagamine samadel tingimustel 3.0 Itaalia"
+        },
+        {
+            "@language": "eu",
+            "@value": "Aitortu-EzKomertziala-PartekatuBerdin 3.0 Italia"
+        },
+        {
+            "@language": "fa",
+            "@value": "Attribution-NonCommercial-ShareAlike 3.0 ایتالیا"
+        },
+        {
+            "@language": "fi",
+            "@value": "Nimeä-Epäkaupallinen-Tarttuva 3.0 Italia"
+        },
+        {
+            "@language": "fr",
+            "@value": "Attribution - Pas d'Utilisation Commerciale - Partage à l'Identique 3.0 Italie"
+        },
+        {
+            "@language": "fr-ca",
+            "@value": "Paternité - Pas d'Utilisation Commerciale - Partage des Conditions Initiales à l'Identique 3.0 Italie"
+        },
+        {
+            "@language": "fr-ch",
+            "@value": "Paternité - Pas d'Utilisation Commerciale - Partage des Conditions Initiales à l'Identique 3.0 Italie"
+        },
+        {
+            "@language": "fr-lu",
+            "@value": "Paternité - Pas d'Utilisation Commerciale - Partage des Conditions Initiales à l'Identique 3.0 Italie"
+        },
+        {
+            "@language": "ga",
+            "@value": "Attribution-NonCommercial-ShareAlike 3.0 Italy"
+        },
+        {
+            "@language": "gl",
+            "@value": "Recoñecemento-NonComercial-CompartirIgual 3.0 Italia"
+        },
+        {
+            "@language": "he",
+            "@value": "ייחוס-שימוש לא מסחרי-שיתוף זהה 3.0 איטליה"
+        },
+        {
+            "@language": "hi",
+            "@value": "Attribution-NonCommercial-ShareAlike 3.0 इटली"
+        },
+        {
+            "@language": "hr",
+            "@value": "Imenovanje-Nekomercijalno-Dijeli pod istim uvjetima 3.0 Italija"
+        },
+        {
+            "@language": "hu",
+            "@value": "Nevezd meg! - Ne add el! - Így add tovább! 3.0 Olaszország"
+        },
+        {
+            "@language": "hy",
+            "@value": "Հղում - ոչ-առևտրային օգտագործում - համանման տարածում 3.0 Իտալիա"
+        },
+        {
+            "@language": "id",
+            "@value": "Atribusi-NonKomersial-BerbagiSerupa 3.0 Italia"
+        },
+        {
+            "@language": "is",
+            "@value": "Attribution-NonCommercial-ShareAlike 3.0 Ítalía"
+        },
+        {
+            "@language": "it",
+            "@value": "Attribuzione - Non commerciale - Condividi allo stesso modo 3.0 Italia"
+        },
+        {
+            "@language": "it-ch",
+            "@value": "Attribuzione - Non commerciale - Condividi allo stesso modo 3.0 Italia"
+        },
+        {
+            "@language": "ja",
+            "@value": "表示 - 非営利 - 継承 3.0 イタリア"
+        },
+        {
+            "@language": "ka",
+            "@value": "ავტორობის მითითებით–არაკომერციული გამოყენებისთვის–გამოყენება იგივე პირობებით 3.0 იტალია"
+        },
+        {
+            "@language": "kk",
+            "@value": "Attribution-NonCommercial-ShareAlike 3.0 Italy"
+        },
+        {
+            "@language": "ko",
+            "@value": "저작자표시-비영리-동일조건변경허락 3.0 이탈리아"
+        },
+        {
+            "@language": "lt",
+            "@value": "Attribution-NonCommercial-ShareAlike 3.0 Italija"
+        },
+        {
+            "@language": "lv",
+            "@value": "Atsaucoties-Nekomerciāls-Nemainot licenci 3.0 Itāļu"
+        },
+        {
+            "@language": "mk",
+            "@value": "НаведиИзвор-Некомерцијално-СподелиПодИстиУслови 3.0 Италија"
+        },
+        {
+            "@language": "ml",
+            "@value": "Attribution-NonCommercial-ShareAlike 3.0 ഇറ്റലി"
+        },
+        {
+            "@language": "mn",
+            "@value": "Attribution-NonCommercial-ShareAlike 3.0 Итали"
+        },
+        {
+            "@language": "ms",
+            "@value": "Pengiktirafan-BukanKomersial-PerkongsianSerupa 3.0 Itali"
+        },
+        {
+            "@language": "nl",
+            "@value": "Naamsvermelding-NietCommercieel-GelijkDelen 3.0 Italië"
+        },
+        {
+            "@language": "no",
+            "@value": "Navngivelse-Ikkekommersiell-DelPåSammeVilkår 3.0 Italia"
+        },
+        {
+            "@language": "nso",
+            "@value": "Tsebagatšo - E sego ya Kgwebo - Mohlakanelwa 3.0 Italia"
+        },
+        {
+            "@language": "oci-es",
+            "@value": "Attribution-NonCommercial-ShareAlike 3.0 Italy"
+        },
+        {
+            "@language": "pl",
+            "@value": "Uznanie autorstwa-Użycie niekomercyjne-Na tych samych warunkach 3.0 Włochy"
+        },
+        {
+            "@language": "pt",
+            "@value": "Atribuição - NãoComercial - CompartilhaIgual 3.0 Itália"
+        },
+        {
+            "@language": "pt-br",
+            "@value": "Atribuição-Uso não-comercial-Compartilhamento pela mesma licença 3.0 Italy"
+        },
+        {
+            "@language": "pt-pt",
+            "@value": "Atribuição-Uso Não-Comercial-Partilha nos termos da mesma licença 3.0 Itália"
+        },
+        {
+            "@language": "ro",
+            "@value": "Atribuire-Necomercial-FărăModificări 3.0 Italia"
+        },
+        {
+            "@language": "ru",
+            "@value": "Attribution-NonCommercial-ShareAlike (Атрибуция — Некоммерческое использование — С сохранением условий) 3.0 Италия"
+        },
+        {
+            "@language": "si-lk",
+            "@value": "Attribution-NonCommercial-ShareAlike 3.0 Italy"
+        },
+        {
+            "@language": "sl",
+            "@value": "Priznanje avtorstva-Nekomercialno-Deljenje pod enakimi pogoji 3.0 Italija"
+        },
+        {
+            "@language": "sq",
+            "@value": "Attribution-NonCommercial-ShareAlike 3.0 Itali"
+        },
+        {
+            "@language": "sr",
+            "@value": "Autorstvo-Nekomercijalno-Deliti pod istim uslovima 3.0 Italija"
+        },
+        {
+            "@language": "sr",
+            "@value": "Ауторство-Некомерцијално-Делити под истим условима 3.0 Италија"
+        },
+        {
+            "@language": "sr-latn",
+            "@value": "Autorstvo-Nekomercijalno-Deliti pod istim uslovima 3.0 Italija"
+        },
+        {
+            "@language": "sv",
+            "@value": "Erkännande-IckeKommersiell-DelaLika 3.0 Italien"
+        },
+        {
+            "@language": "ta",
+            "@value": "Attribution-NonCommercial-ShareAlike 3.0 இத்தாலி"
+        },
+        {
+            "@language": "te",
+            "@value": "Attribution-NonCommercial-ShareAlike 3.0 ఇటలీ"
+        },
+        {
+            "@language": "th",
+            "@value": "แสดงที่มา-ไม่ใช้เพื่อการค้า-อนุญาตแบบเดียวกัน 3.0 อิตาลี"
+        },
+        {
+            "@language": "tr",
+            "@value": "Attribution-Gayriticari-ShareAlike 3.0 İtalya"
+        },
+        {
+            "@language": "uk",
+            "@value": "Attribution-NonCommercial-ShareAlike 3.0 Italy"
+        },
+        {
+            "@language": "ur",
+            "@value": "Attribution-NonCommercial-ShareAlike 3.0 Italy"
+        },
+        {
+            "@language": "vi",
+            "@value": "Attribution-NonCommercial-ShareAlike 3.0 Nước Italy"
+        },
+        {
+            "@language": "zh",
+            "@value": "署名-非商业性使用-相同方式共享 3.0 意大利"
+        },
+        {
+            "@language": "zh-hk",
+            "@value": "姓名標示-非商業性-相同方式分享 3.0 義大利"
+        },
+        {
+            "@language": "zh-tw",
+            "@value": "姓名標示-非商業性-相同方式分享 3.0 義大利"
+        },
+        {
+            "@language": "zu",
+            "@value": "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano-Yihlanganyeleni 3.0 i-Italy"
+        },
+        {
+            "@language": "zxx",
+            "@value": "${Attribution-NonCommercial-ShareAlike} 3.0 ${Italy}"
+        }
+    ],
+    "owl:sameAs": {
+        "@id": "http://creativecommons.org/licenses/by-nc-sa/3.0/it/",
+        "@type": "cc:License",
+        "cc:jurisdiction": "http://creativecommons.org/international/it/",
+        "cc:legalcode": "http://creativecommons.org/licenses/by-nc-sa/3.0/it/legalcode",
+        "cc:licenseClass": "http://creativecommons.org/license/",
+        "cc:permits": [
+            "cc:DerivativeWorks",
+            "cc:Distribution",
+            "cc:Reproduction"
+        ],
+        "cc:prohibits": "cc:CommercialUse",
+        "cc:requires": [
+            "cc:Attribution",
+            "cc:Notice",
+            "cc:ShareAlike"
+        ],
+        "dc:creator": "http://creativecommons.org",
+        "dc:hasVersion": "3.0",
+        "dc:identifier": "by-nc-sa",
+        "dc:source": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "dc:title": [
+            {
+                "@language": "af",
+                "@value": "Erkenning-Niekommersieel-InsgelyksDeel 3.0 Italië"
+            },
+            {
+                "@language": "ar",
+                "@value": "المشاركة على قدم المساواة-غير تجاري-نسب العمل 3.0 ايطاليا"
+            },
+            {
+                "@language": "as",
+                "@value": "Attribution-NonCommercial-ShareAlike 3.0 Italy"
+            },
+            {
+                "@language": "ast",
+                "@value": "Attribution-NonCommercial-ShareAlike 3.0 Italy"
+            },
+            {
+                "@language": "ast-es",
+                "@value": "Attribution-NonCommercial-ShareAlike 3.0 Italy"
+            },
+            {
+                "@language": "az",
+                "@value": "Attribution-NonCommercial-ShareAlike 3.0 Italy"
+            },
+            {
+                "@language": "be",
+                "@value": "Attribution-NonCommercial-ShareAlike 3.0 Італія"
+            },
+            {
+                "@language": "bg",
+                "@value": "Признание-Некомерсиално-Споделяне на споделеното 3.0 Италия"
+            },
+            {
+                "@language": "bn",
+                "@value": "Attribution-NonCommercial-ShareAlike 3.0 Italy"
+            },
+            {
+                "@language": "ca",
+                "@value": "Reconeixement-NoComercial-CompartirIgual 3.0 Itàlia"
+            },
+            {
+                "@language": "cs",
+                "@value": "Uveďte autora-Nevyužívejte dílo komerčně-Zachovejte licenci 3.0 Itálie"
+            },
+            {
+                "@language": "da",
+                "@value": "Navngivelse-IkkeKommerciel–DelPåSammeVilkår 3.0 Italien"
+            },
+            {
+                "@language": "de",
+                "@value": "Namensnennung-Nicht-kommerziell-Weitergabe unter gleichen Bedingungen 3.0 Italien"
+            },
+            {
+                "@language": "de-at",
+                "@value": "Namensnennung-NichtKommerziell-Weitergabe unter gleichen Bedingungen 3.0 Italien"
+            },
+            {
+                "@language": "de-ch",
+                "@value": "Namensnennung-NichtKommerziell-Weitergabe unter gleichen Bedingungen 3.0 Italien"
+            },
+            {
+                "@language": "el",
+                "@value": "Αναφορά Δημιουργού - Μη Εμπορική Χρήση - Παρόμοια Διανομή 3.0 Ιταλία"
+            },
+            {
+                "@language": "en",
+                "@value": "Attribution-NonCommercial-ShareAlike 3.0 Italy"
+            },
+            {
+                "@language": "en-ca",
+                "@value": "Attribution-NonCommercial-ShareAlike 3.0 Italy"
+            },
+            {
+                "@language": "en-gb",
+                "@value": "Attribution-NonCommercial-ShareAlike 3.0 Italy"
+            },
+            {
+                "@language": "en-hk",
+                "@value": "Attribution-NonCommercial-ShareAlike 3.0 Italy"
+            },
+            {
+                "@language": "en-sg",
+                "@value": "Attribution-NonCommercial-ShareAlike 3.0 Italy"
+            },
+            {
+                "@language": "en-us",
+                "@value": "Attribution-NonCommercial-ShareAlike 3.0 Italy"
+            },
+            {
+                "@language": "eo",
+                "@value": "Atribuite-Nekomerce-Samkondiĉe 3.0 Italujo"
+            },
+            {
+                "@language": "es",
+                "@value": "Atribución-NoComercial-CompartirIgual 3.0 Italia"
+            },
+            {
+                "@language": "es-ar",
+                "@value": "Atribución-NoComercial-CompartirDerivadasIgual 3.0 Italia"
+            },
+            {
+                "@language": "es-es",
+                "@value": "Reconocimiento-NoComercial-CompartirIgual 3.0 Italia"
+            },
+            {
+                "@language": "es-pe",
+                "@value": "Reconocimiento-NoComercial-CompartirIgual 3.0 Italia"
+            },
+            {
+                "@language": "et",
+                "@value": "Autorile viitamine + Mitteäriline eesmärk + Jagamine samadel tingimustel 3.0 Itaalia"
+            },
+            {
+                "@language": "eu",
+                "@value": "Aitortu-EzKomertziala-PartekatuBerdin 3.0 Italia"
+            },
+            {
+                "@language": "fa",
+                "@value": "Attribution-NonCommercial-ShareAlike 3.0 ایتالیا"
+            },
+            {
+                "@language": "fi",
+                "@value": "Nimeä-Epäkaupallinen-Tarttuva 3.0 Italia"
+            },
+            {
+                "@language": "fr",
+                "@value": "Attribution - Pas d'Utilisation Commerciale - Partage à l'Identique 3.0 Italie"
+            },
+            {
+                "@language": "fr-ca",
+                "@value": "Paternité - Pas d'Utilisation Commerciale - Partage des Conditions Initiales à l'Identique 3.0 Italie"
+            },
+            {
+                "@language": "fr-ch",
+                "@value": "Paternité - Pas d'Utilisation Commerciale - Partage des Conditions Initiales à l'Identique 3.0 Italie"
+            },
+            {
+                "@language": "fr-lu",
+                "@value": "Paternité - Pas d'Utilisation Commerciale - Partage des Conditions Initiales à l'Identique 3.0 Italie"
+            },
+            {
+                "@language": "ga",
+                "@value": "Attribution-NonCommercial-ShareAlike 3.0 Italy"
+            },
+            {
+                "@language": "gl",
+                "@value": "Recoñecemento-NonComercial-CompartirIgual 3.0 Italia"
+            },
+            {
+                "@language": "he",
+                "@value": "ייחוס-שימוש לא מסחרי-שיתוף זהה 3.0 איטליה"
+            },
+            {
+                "@language": "hi",
+                "@value": "Attribution-NonCommercial-ShareAlike 3.0 इटली"
+            },
+            {
+                "@language": "hr",
+                "@value": "Imenovanje-Nekomercijalno-Dijeli pod istim uvjetima 3.0 Italija"
+            },
+            {
+                "@language": "hu",
+                "@value": "Nevezd meg! - Ne add el! - Így add tovább! 3.0 Olaszország"
+            },
+            {
+                "@language": "hy",
+                "@value": "Հղում - ոչ-առևտրային օգտագործում - համանման տարածում 3.0 Իտալիա"
+            },
+            {
+                "@language": "id",
+                "@value": "Atribusi-NonKomersial-BerbagiSerupa 3.0 Italia"
+            },
+            {
+                "@language": "is",
+                "@value": "Attribution-NonCommercial-ShareAlike 3.0 Ítalía"
+            },
+            {
+                "@language": "it",
+                "@value": "Attribuzione - Non commerciale - Condividi allo stesso modo 3.0 Italia"
+            },
+            {
+                "@language": "it-ch",
+                "@value": "Attribuzione - Non commerciale - Condividi allo stesso modo 3.0 Italia"
+            },
+            {
+                "@language": "ja",
+                "@value": "表示 - 非営利 - 継承 3.0 イタリア"
+            },
+            {
+                "@language": "ka",
+                "@value": "ავტორობის მითითებით–არაკომერციული გამოყენებისთვის–გამოყენება იგივე პირობებით 3.0 იტალია"
+            },
+            {
+                "@language": "kk",
+                "@value": "Attribution-NonCommercial-ShareAlike 3.0 Italy"
+            },
+            {
+                "@language": "ko",
+                "@value": "저작자표시-비영리-동일조건변경허락 3.0 이탈리아"
+            },
+            {
+                "@language": "lt",
+                "@value": "Attribution-NonCommercial-ShareAlike 3.0 Italija"
+            },
+            {
+                "@language": "lv",
+                "@value": "Atsaucoties-Nekomerciāls-Nemainot licenci 3.0 Itāļu"
+            },
+            {
+                "@language": "mk",
+                "@value": "НаведиИзвор-Некомерцијално-СподелиПодИстиУслови 3.0 Италија"
+            },
+            {
+                "@language": "ml",
+                "@value": "Attribution-NonCommercial-ShareAlike 3.0 ഇറ്റലി"
+            },
+            {
+                "@language": "mn",
+                "@value": "Attribution-NonCommercial-ShareAlike 3.0 Итали"
+            },
+            {
+                "@language": "ms",
+                "@value": "Pengiktirafan-BukanKomersial-PerkongsianSerupa 3.0 Itali"
+            },
+            {
+                "@language": "nl",
+                "@value": "Naamsvermelding-NietCommercieel-GelijkDelen 3.0 Italië"
+            },
+            {
+                "@language": "no",
+                "@value": "Navngivelse-Ikkekommersiell-DelPåSammeVilkår 3.0 Italia"
+            },
+            {
+                "@language": "nso",
+                "@value": "Tsebagatšo - E sego ya Kgwebo - Mohlakanelwa 3.0 Italia"
+            },
+            {
+                "@language": "oci-es",
+                "@value": "Attribution-NonCommercial-ShareAlike 3.0 Italy"
+            },
+            {
+                "@language": "pl",
+                "@value": "Uznanie autorstwa-Użycie niekomercyjne-Na tych samych warunkach 3.0 Włochy"
+            },
+            {
+                "@language": "pt",
+                "@value": "Atribuição - NãoComercial - CompartilhaIgual 3.0 Itália"
+            },
+            {
+                "@language": "pt-br",
+                "@value": "Atribuição-Uso não-comercial-Compartilhamento pela mesma licença 3.0 Italy"
+            },
+            {
+                "@language": "pt-pt",
+                "@value": "Atribuição-Uso Não-Comercial-Partilha nos termos da mesma licença 3.0 Itália"
+            },
+            {
+                "@language": "ro",
+                "@value": "Atribuire-Necomercial-FărăModificări 3.0 Italia"
+            },
+            {
+                "@language": "ru",
+                "@value": "Attribution-NonCommercial-ShareAlike (Атрибуция — Некоммерческое использование — С сохранением условий) 3.0 Италия"
+            },
+            {
+                "@language": "si-lk",
+                "@value": "Attribution-NonCommercial-ShareAlike 3.0 Italy"
+            },
+            {
+                "@language": "sl",
+                "@value": "Priznanje avtorstva-Nekomercialno-Deljenje pod enakimi pogoji 3.0 Italija"
+            },
+            {
+                "@language": "sq",
+                "@value": "Attribution-NonCommercial-ShareAlike 3.0 Itali"
+            },
+            {
+                "@language": "sr",
+                "@value": "Autorstvo-Nekomercijalno-Deliti pod istim uslovima 3.0 Italija"
+            },
+            {
+                "@language": "sr",
+                "@value": "Ауторство-Некомерцијално-Делити под истим условима 3.0 Италија"
+            },
+            {
+                "@language": "sr-latn",
+                "@value": "Autorstvo-Nekomercijalno-Deliti pod istim uslovima 3.0 Italija"
+            },
+            {
+                "@language": "sv",
+                "@value": "Erkännande-IckeKommersiell-DelaLika 3.0 Italien"
+            },
+            {
+                "@language": "ta",
+                "@value": "Attribution-NonCommercial-ShareAlike 3.0 இத்தாலி"
+            },
+            {
+                "@language": "te",
+                "@value": "Attribution-NonCommercial-ShareAlike 3.0 ఇటలీ"
+            },
+            {
+                "@language": "th",
+                "@value": "แสดงที่มา-ไม่ใช้เพื่อการค้า-อนุญาตแบบเดียวกัน 3.0 อิตาลี"
+            },
+            {
+                "@language": "tr",
+                "@value": "Attribution-Gayriticari-ShareAlike 3.0 İtalya"
+            },
+            {
+                "@language": "uk",
+                "@value": "Attribution-NonCommercial-ShareAlike 3.0 Italy"
+            },
+            {
+                "@language": "ur",
+                "@value": "Attribution-NonCommercial-ShareAlike 3.0 Italy"
+            },
+            {
+                "@language": "vi",
+                "@value": "Attribution-NonCommercial-ShareAlike 3.0 Nước Italy"
+            },
+            {
+                "@language": "zh",
+                "@value": "署名-非商业性使用-相同方式共享 3.0 意大利"
+            },
+            {
+                "@language": "zh-hk",
+                "@value": "姓名標示-非商業性-相同方式分享 3.0 義大利"
+            },
+            {
+                "@language": "zh-tw",
+                "@value": "姓名標示-非商業性-相同方式分享 3.0 義大利"
+            },
+            {
+                "@language": "zu",
+                "@value": "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano-Yihlanganyeleni 3.0 i-Italy"
+            },
+            {
+                "@language": "zxx",
+                "@value": "${Attribution-NonCommercial-ShareAlike} 3.0 ${Italy}"
+            }
+        ],
+        "owl:sameAs": "https://licensedb.org/id/CC-BY-NC-SA-3.0-it",
+        "foaf:logo": [
+            "http://i.creativecommons.org/l/by-nc-sa/3.0/it/80x15.png",
+            "http://i.creativecommons.org/l/by-nc-sa/3.0/it/88x31.png"
+        ]
+    },
+    "foaf:logo": [
+        "http://i.creativecommons.org/l/by-nc-sa/3.0/it/80x15.png",
+        "http://i.creativecommons.org/l/by-nc-sa/3.0/it/88x31.png"
+    ],
+    "li:id": "CC-BY-NC-SA-3.0-it",
+    "li:name": "CC BY-NC-SA 3.0 IT"
+}

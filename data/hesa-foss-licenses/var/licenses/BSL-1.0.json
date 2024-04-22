@@ -1,0 +1,29 @@
+{
+    "meta": {
+        "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+        "comment": ""
+    },
+    "name": "Boost Software License 1.0",
+    "scancode_key": "boost-1.0",
+    "spdxid": "BSL-1.0",
+    "aliases": [
+        "BSL-1.0",
+        "BSL (v1.0)",
+        "BSL (v1)",
+        "Boost Software License 1.0",
+        "bsl-1.0",
+        "bsl1.0",
+        "Boost Software License 1.0 (BSL-1.0)",
+        "Boost Software License - Version 1.0",
+        "scancode://boost-1.0",
+        "Boost 1.0",
+        "BSL 1.0",
+        "BSL Version 1.0",
+        "BSL v1.0",
+        "Boost Software License, Version 1.0",
+        "Boost Software License v1.0",
+        "scancode:boost-1.0",
+        "osi:BSL-1.0",
+        "BSL 1.0 License"
+    ]
+}

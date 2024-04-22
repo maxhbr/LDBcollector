@@ -1,0 +1,67 @@
+name: linux
+on:
+  push:
+    branches:
+      - '*'
+    tags-ignore:
+      - '*'
+  pull_request:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: postgres
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+    steps:
+      - uses: actions/checkout@v2
+      - uses: shogo82148/actions-setup-perl@v1
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '18'
+      - name: node -v
+        run: which node; node -v; which npm; npm -v
+      - name: npm install
+        run: npm i
+      - name: Install playwright browsers
+        run: npx playwright install --with-deps
+      - name: perl -V
+        run: perl -V
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libmagic-dev ruby-sass openssh-client
+          cpanm -n https://github.com/openSUSE/Spooky-Patterns-XS/archive/1.55.tar.gz
+          cpanm -n --installdeps .
+          cpanm -n Test::Deep
+          cpanm -n Devel::Cover::Report::Coveralls
+      - name: Build assets
+        env:
+          NODE_ENV: production
+        run: npm run build
+      - name: Run tests
+        env:
+          TEST_ONLINE: postgresql://postgres:postgres@localhost:5432/postgres
+          HARNESS_PERL_SWITCHES: -MDevel::Cover
+        run: prove -l -v t/*.t
+      - name: Run UI tests
+        env:
+          TEST_ONLINE: postgresql://postgres:postgres@localhost:5432/postgres
+          TEST_WRAPPER_COVERAGE: 1
+        run: prove -l -v t/*.t.js
+      - name: Check assets
+        run: ls public/asset
+      - name: Coveralls
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: cover -report Coveralls

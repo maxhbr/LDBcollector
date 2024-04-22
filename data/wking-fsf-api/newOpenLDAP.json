@@ -1,0 +1,19 @@
+{
+  "@context": "https://wking.github.io/fsf-api/schema/license.jsonld",
+  "id": "newOpenLDAP",
+  "identifiers": {
+    "spdx": [
+      "OLDAP-2.7"
+    ]
+  },
+  "name": "OpenLDAP License, Version 2.7",
+  "tags": [
+    "gpl-2-compatible",
+    "gpl-3-compatible",
+    "libre"
+  ],
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#newOpenLDAP",
+    "http://directory.fsf.org/wiki/License:OpenLDAPv2.7"
+  ]
+}

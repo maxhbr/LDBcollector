@@ -1,0 +1,12 @@
+{
+  "@context": "https://wking.github.io/fsf-api/schema/license.jsonld",
+  "id": "Lha",
+  "name": "License of Lha",
+  "tags": [
+    "non-free"
+  ],
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#Lha",
+    "http://directory.fsf.org/wiki/License:Lha"
+  ]
+}

@@ -1,0 +1,18 @@
+[license]
+
+expression = "LicenseRef-msntp"
+status = [ "not-allowed" ]
+
+url = '''
+https://fedoraproject.org/wiki/Licensing/MSNTP
+'''
+
+[fedora]
+
+legacy-name = [
+    "MSNTP License"
+]
+
+notes = '''
+Commercial use restrictions
+'''

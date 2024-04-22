@@ -1,0 +1,37 @@
+{
+"meta": {
+    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+    "comment": ""
+  },
+  "name": "GNU Library General Public License 2.0 or later",
+  "scancode_key": "lgpl-2.0-plus",
+  "spdxid": "LGPL-2.0-or-later",
+  "compatibility_as": "LGPL-2.1-or-later",
+  "aliases": [
+   "LGPL-2.0-or-later",
+   "LGPL-2.0+",
+   "GNU Library General Public License 2.0 (or any later version)",
+   "scancode://lgpl-2.0-plus",
+   "LGPL 2.0 or later",
+   "GNU Library General Public License, Version 2.0+",
+   "GNU LIBRARY GENERAL PUBLIC LICENSE Version 2+",
+   "GNU Library or Lesser General Public License version 2.0+",
+   "GNU Library General Public License (GPL), Version 2.0+",
+   "GNU Library General Public License (LGPL), Version 2.0+",
+   "GNU Library General Public License 2+",
+   "GNU Library General Public License version 2.0+",
+   "GNU Library General Public License, Version 2.0 or any later version",
+   "LGPL 2+",
+   "LGPL 2.0+ license",
+   "LGPL V.2+",
+   "LGPL v2+",
+   "LGPLv2+",
+   "LGPL-2+",
+   "LGPL2+",
+   "GNU Library General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version",
+   "GNU Library General Public License as published by the Free Software Foundation; either version 2 of the License, or any later version",
+   "GNU Library General Public License as published by the Free Software Foundation, either version 2 of the License, or any later version",
+   "GNU Library General Public License as published by the Free Software Foundation; either version 2, or (at your option) any later version",
+   "scancode:lgpl-2.0-plus"
+  ]
+}

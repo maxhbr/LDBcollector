@@ -1,0 +1,24 @@
+[
+    {
+        "id": "Entessa",
+        "links": [
+            {
+                "note": "OSI Page",
+                "url": "https://opensource.org/licenses/Entessa"
+            }
+        ],
+        "name": "Entessa Public License",
+        "keywords": [
+            "discouraged",
+            "non-reusable",
+            "osi-approved"
+        ],
+        "text": [
+            {
+                "media_type": "text/html",
+                "title": "HTML",
+                "url": "https://opensource.org/licenses/Entessa"
+            }
+        ]
+    }
+]

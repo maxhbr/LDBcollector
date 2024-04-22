@@ -1,0 +1,108 @@
+{
+  "name": "licenses",
+  "title": "Licenses",
+  "description": "a list of licenses.",
+  "profile": "tabular-data-package",
+  "sources": [{
+    "title": "Open Definition Licenses Service",
+    "path": "https://licenses.opendefinition.org"
+  }],
+  "licenses": [{
+    "name": "ODC-PDDL-1.0",
+    "path": "https://opendefinition.org/licenses/odc-pddl",
+    "title": "Open Data Commons Public Domain Dedication and Licence 1.0"
+  }],
+  "resources": [{
+    "name": "licenses.csv",
+    "path": "licenses.csv",
+    "profile": "tabular-data-resource",
+    "format": "csv",
+    "mediatype": "text/csv",
+    "schema": {
+      "fields": [{
+          "name": "id",
+          "type": "string",
+          "constraints": {
+            "required": true,
+            "unique": true
+          }
+        },
+        {
+          "name": "domain_content",
+          "type": "boolean",
+          "description": "Open Content License",
+          "constraints": {
+            "required": true
+          }
+        },
+        {
+          "name": "domain_data",
+          "type": "boolean",
+          "description": "Open Data License",
+          "constraints": {
+            "required": true
+          }
+        },
+        {
+          "name": "domain_software",
+          "type": "boolean",
+          "description": "Open Software License",
+          "constraints": {
+            "required": true
+          }
+        },
+        {
+          "name": "family",
+          "type": "string"
+        },
+        {
+          "name": "is_generic",
+          "type": "boolean"
+        },
+        {
+          "name": "maintainer",
+          "type": "string"
+        },
+        {
+          "name": "od_conformance",
+          "type": "string",
+          "description": "Conforming to the Open Definition",
+          "constraints": {
+            "enum": ["approved", "not reviewed", "rejected"]
+          }
+        },
+        {
+          "name": "osd_conformance",
+          "type": "string",
+          "description": "Conforming to Open Source Definition",
+          "constraints": {
+            "enum": ["approved", "not reviewed", "rejected"]
+          }
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "constraints": {
+            "enum": ["active", "retired", "superceded"]
+          }
+        },
+        {
+          "name": "title",
+          "type": "string",
+          "constraints": {
+            "required": true,
+            "unique": true
+          }
+        },
+        {
+          "name": "url",
+          "type": "string",
+          "format": "uri",
+          "constraints": {
+            "unique": true
+          }
+        }
+      ]
+    }
+  }]
+}

@@ -1,0 +1,16 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+
+canonicalName: "Nmap Public Source License 0.95"
+category: "NPSL"
+shortName: "NPSL-0.95"
+
+alternativeNames:
+  - "Nmap Public Source License v0.95"
+  - "Nmap Public Source License v.0.95"
+  - "Nmap Public Source License version 0.95"
+  - "NPSL V0.95"
+
+otherIds: 
+  - "scancode:npsl-exception-0.95"

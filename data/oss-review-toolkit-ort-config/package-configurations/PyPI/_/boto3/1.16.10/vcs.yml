@@ -1,0 +1,15 @@
+---
+id: "PyPI::boto3:1.16.10"
+vcs:
+  type: "Git"
+  url: "https://github.com/boto/boto3.git"
+  revision: "6060f184ac3c85391ed45711d0adf76d9a8d74ee"
+path_excludes:
+  - pattern: ".changes/**"
+    reason: "DOCUMENTATION_OF"
+  - pattern: ".github/**"
+    reason: "BUILD_TOOL_OF"
+  - pattern: "docs/**"
+    reason: "DOCUMENTATION_OF"
+  - pattern: "tests/**"
+    reason: "TEST_OF"

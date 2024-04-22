@@ -1,0 +1,844 @@
+{
+    "@context": {
+        "cc": "http://creativecommons.org/ns#",
+        "dc": "http://purl.org/dc/terms/",
+        "dc11": "http://purl.org/dc/elements/1.1/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "li": "https://licensedb.org/ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "cc:legalcode": {
+            "@type": "@id"
+        },
+        "cc:permits": {
+            "@type": "@id"
+        },
+        "cc:requires": {
+            "@type": "@id"
+        },
+        "cc:prohibits": {
+            "@type": "@id"
+        },
+        "cc:jurisdiction": {
+            "@type": "@id"
+        },
+        "cc:licenseClass": {
+            "@type": "@id"
+        },
+        "dc:creator": {
+            "@type": "@id"
+        },
+        "dc:source": {
+            "@type": "@id"
+        },
+        "dc:replaces": {
+            "@type": "@id"
+        },
+        "dc:isBasedOn": {
+            "@type": "@id"
+        },
+        "dc:isReplacedBy": {
+            "@type": "@id"
+        },
+        "foaf:logo": {
+            "@type": "@id"
+        },
+        "li:plaintext": {
+            "@type": "@id"
+        },
+        "li:libre": {
+            "@type": "@id"
+        },
+        "owl:sameAs": {
+            "@type": "@id"
+        }
+    },
+    "@id": "https://licensedb.org/id/CC-NC-1.0",
+    "@type": [
+        "cc:License",
+        "li:License"
+    ],
+    "cc:deprecatedOn": {
+        "@type": "http://www.w3.org/2001/XMLSchema-datatypes#date",
+        "@value": "2004-05-25"
+    },
+    "cc:legalcode": "http://creativecommons.org/licenses/nc/1.0/legalcode",
+    "cc:licenseClass": "http://creativecommons.org/license/",
+    "cc:permits": [
+        "cc:DerivativeWorks",
+        "cc:Distribution",
+        "cc:Reproduction"
+    ],
+    "cc:prohibits": "cc:CommercialUse",
+    "cc:requires": "cc:Notice",
+    "dc:creator": "http://creativecommons.org",
+    "dc:hasVersion": "1.0",
+    "dc:identifier": "nc",
+    "dc:title": [
+        {
+            "@language": "af",
+            "@value": "NieKommersieel 1.0 Generies"
+        },
+        {
+            "@language": "ar",
+            "@value": "غير تجاري 1.0 عام"
+        },
+        {
+            "@language": "as",
+            "@value": "NonCommercial 1.0 Generic"
+        },
+        {
+            "@language": "ast",
+            "@value": "NonCommercial 1.0 Generic"
+        },
+        {
+            "@language": "ast-es",
+            "@value": "NonCommercial 1.0 Generic"
+        },
+        {
+            "@language": "az",
+            "@value": "NonCommercial 1.0 Generic"
+        },
+        {
+            "@language": "be",
+            "@value": "NonCommercial 1.0 Generic"
+        },
+        {
+            "@language": "bg",
+            "@value": "Некомерсиално 1.0 Неадаптиран"
+        },
+        {
+            "@language": "bn",
+            "@value": "অ-বানিজ্যিক 1.0 Generic"
+        },
+        {
+            "@language": "ca",
+            "@value": "NoComercial 1.0 Genèrica"
+        },
+        {
+            "@language": "cs",
+            "@value": "Neužívejte dílo komerčně 1.0 Generic"
+        },
+        {
+            "@language": "da",
+            "@value": "IkkeKommerciel 1.0 Generisk"
+        },
+        {
+            "@language": "de",
+            "@value": "Nicht kommerziell 1.0 US-amerikanisch (nicht portiert)"
+        },
+        {
+            "@language": "de-at",
+            "@value": "NichtKommerziell 1.0 US-amerikanisch (nicht portiert)"
+        },
+        {
+            "@language": "de-ch",
+            "@value": "NichtKommerziell 1.0 US-amerikanisch (nicht portiert)"
+        },
+        {
+            "@language": "el",
+            "@value": "Μη Εμπορική Χρήση 1.0 Γενικό"
+        },
+        {
+            "@language": "en",
+            "@value": "NonCommercial 1.0 Generic"
+        },
+        {
+            "@language": "en-ca",
+            "@value": "NonCommercial 1.0 Generic"
+        },
+        {
+            "@language": "en-gb",
+            "@value": "Non-Commercial 1.0 Generic"
+        },
+        {
+            "@language": "en-hk",
+            "@value": "Non-Commercial 1.0 Generic"
+        },
+        {
+            "@language": "en-sg",
+            "@value": "Non-Commercial 1.0 Generic"
+        },
+        {
+            "@language": "en-us",
+            "@value": "NonCommercial 1.0 Generic"
+        },
+        {
+            "@language": "eo",
+            "@value": "Nekomerce 1.0 Ĝenerala"
+        },
+        {
+            "@language": "es",
+            "@value": "NoComercial 1.0 Genérica"
+        },
+        {
+            "@language": "es-ar",
+            "@value": "NoComercial 1.0 Genérica"
+        },
+        {
+            "@language": "es-cl",
+            "@value": "NoComercial 1.0 Genérica"
+        },
+        {
+            "@language": "es-co",
+            "@value": "NoComercial 1.0 Genérica"
+        },
+        {
+            "@language": "es-ec",
+            "@value": "No Comercial 1.0 Genérica"
+        },
+        {
+            "@language": "es-es",
+            "@value": "NoComercial 1.0 Genérica"
+        },
+        {
+            "@language": "es-gt",
+            "@value": "No Comercial 1.0 Genérica"
+        },
+        {
+            "@language": "es-mx",
+            "@value": "No Comercial 1.0 Genérica"
+        },
+        {
+            "@language": "es-pe",
+            "@value": "NoComercial 1.0 Genérica"
+        },
+        {
+            "@language": "es-pr",
+            "@value": "NoComercial 1.0 Genérica"
+        },
+        {
+            "@language": "et",
+            "@value": "Mitteäriline eesmärk 1.0 Üldine"
+        },
+        {
+            "@language": "eu",
+            "@value": "EzKomertziala 1.0 Generikoa"
+        },
+        {
+            "@language": "fa",
+            "@value": "غیر تجاری 1.0 Generic"
+        },
+        {
+            "@language": "fi",
+            "@value": "Epäkaupallinen 1.0 Raakaversio"
+        },
+        {
+            "@language": "fr",
+            "@value": "Pas d'Utilisation Commerciale 1.0 Générique"
+        },
+        {
+            "@language": "fr-ca",
+            "@value": "Pas d'Utilisation Commerciale 1.0 Générique"
+        },
+        {
+            "@language": "fr-ch",
+            "@value": "Pas d'Utilisation Commerciale 1.0 Générique"
+        },
+        {
+            "@language": "fr-lu",
+            "@value": "Pas d'Utilisation Commerciale 1.0 Générique"
+        },
+        {
+            "@language": "ga",
+            "@value": "NonCommercial 1.0 Generic"
+        },
+        {
+            "@language": "gl",
+            "@value": "NonComercial 1.0 Xenérica"
+        },
+        {
+            "@language": "he",
+            "@value": "שימוש לא מסחרי 1.0 לא מותאם"
+        },
+        {
+            "@language": "hi",
+            "@value": "NonCommercial 1.0 Generic"
+        },
+        {
+            "@language": "hr",
+            "@value": "Nekomercijalno 1.0 nelokalizirana licenca"
+        },
+        {
+            "@language": "hu",
+            "@value": "Ne add el! 1.0 Általános"
+        },
+        {
+            "@language": "hy",
+            "@value": "Ոչ-առևտրային օգտագործում 1.0 Generic"
+        },
+        {
+            "@language": "id",
+            "@value": "NonKomersial 1.0 Generik"
+        },
+        {
+            "@language": "is",
+            "@value": "NonCommercial 1.0 Generic"
+        },
+        {
+            "@language": "it",
+            "@value": "NonCommerciale 1.0 Generico"
+        },
+        {
+            "@language": "it-ch",
+            "@value": "NonCommerciale 1.0 Generico"
+        },
+        {
+            "@language": "ja",
+            "@value": "非営利 1.0 一般"
+        },
+        {
+            "@language": "ka",
+            "@value": "არაკომერციული  1.0 ზოგადი"
+        },
+        {
+            "@language": "kk",
+            "@value": "Коммерциялық емес 1.0 Generic"
+        },
+        {
+            "@language": "ko",
+            "@value": "비영리 1.0 일반"
+        },
+        {
+            "@language": "lt",
+            "@value": "Nekomercinis 1.0 Generic"
+        },
+        {
+            "@language": "lv",
+            "@value": "Nekomerciāli 1.0 Vispārīgs"
+        },
+        {
+            "@language": "mk",
+            "@value": "Некомерцијално 1.0 Нелокализирана лиценца"
+        },
+        {
+            "@language": "ml",
+            "@value": "NonCommercial 1.0 Generic"
+        },
+        {
+            "@language": "mn",
+            "@value": "NonCommercial 1.0 Generic"
+        },
+        {
+            "@language": "ms",
+            "@value": "BukanKomersial 1.0 Umum"
+        },
+        {
+            "@language": "nl",
+            "@value": "NietCommercieel 1.0 Unported"
+        },
+        {
+            "@language": "no",
+            "@value": "Ikkekommersiell 1.0 Generisk"
+        },
+        {
+            "@language": "nso",
+            "@value": "E sego ya Kgwebo 1.0 E sa fetišwago"
+        },
+        {
+            "@language": "oci-es",
+            "@value": "NonCommercial 1.0 Generic"
+        },
+        {
+            "@language": "pl",
+            "@value": "Użycie niekomercyjne 1.0 Ogólny"
+        },
+        {
+            "@language": "pt",
+            "@value": "NãoComercial 1.0 Genérica"
+        },
+        {
+            "@language": "pt-br",
+            "@value": "Uso não-comercial 1.0 Generic"
+        },
+        {
+            "@language": "pt-pt",
+            "@value": "Uso Não-Comercial 1.0 Genérica"
+        },
+        {
+            "@language": "ro",
+            "@value": "NeComercial 1.0 Generică"
+        },
+        {
+            "@language": "ru",
+            "@value": "Некоммерческое использование 1.0 Generic"
+        },
+        {
+            "@language": "si-lk",
+            "@value": "NonCommercial 1.0 Generic"
+        },
+        {
+            "@language": "sl",
+            "@value": "Nekomercialno 1.0 Generična"
+        },
+        {
+            "@language": "sq",
+            "@value": "NonCommercial 1.0 Të përgjithshme"
+        },
+        {
+            "@language": "sr",
+            "@value": "Nekomercijalno 1.0 Generička licenca"
+        },
+        {
+            "@language": "sr",
+            "@value": "Некомерцијално 1.0 Генеричка лиценца"
+        },
+        {
+            "@language": "sr-latn",
+            "@value": "Nekomercijalno 1.0 Generička licenca"
+        },
+        {
+            "@language": "st",
+            "@value": "NonCommercial 1.0 Generic"
+        },
+        {
+            "@language": "sv",
+            "@value": "IckeKommersiell 1.0 Generisk"
+        },
+        {
+            "@language": "ta",
+            "@value": "NonCommercial 1.0 Generic"
+        },
+        {
+            "@language": "te",
+            "@value": "NonCommercial 1.0 Generic"
+        },
+        {
+            "@language": "th",
+            "@value": "ไม่ใช้เพื่อการค้า 1.0 ทั่วไป"
+        },
+        {
+            "@language": "tr",
+            "@value": "Gayriticari 1.0 Kapsamlı"
+        },
+        {
+            "@language": "uk",
+            "@value": "NonCommercial 1.0 Generic"
+        },
+        {
+            "@language": "ur",
+            "@value": "NonCommercial 1.0 Generic"
+        },
+        {
+            "@language": "vi",
+            "@value": "Phi thương mại 1.0 Chung"
+        },
+        {
+            "@language": "zh",
+            "@value": "非商业性使用 1.0 未本地化版本"
+        },
+        {
+            "@language": "zh-hk",
+            "@value": "非商業性 1.0 通用版"
+        },
+        {
+            "@language": "zh-tw",
+            "@value": "非商業性 1.0 通用版"
+        },
+        {
+            "@language": "zu",
+            "@value": "Ungayisebenziseli Ezentengiselwano 1.0 Engadlulisiwe"
+        },
+        {
+            "@language": "zxx",
+            "@value": "${NonCommercial} 1.0 ${Generic}"
+        }
+    ],
+    "owl:sameAs": {
+        "@id": "http://creativecommons.org/licenses/nc/1.0/",
+        "@type": "cc:License",
+        "cc:deprecatedOn": {
+            "@type": "http://www.w3.org/2001/XMLSchema-datatypes#date",
+            "@value": "2004-05-25"
+        },
+        "cc:legalcode": "http://creativecommons.org/licenses/nc/1.0/legalcode",
+        "cc:licenseClass": "http://creativecommons.org/license/",
+        "cc:permits": [
+            "cc:DerivativeWorks",
+            "cc:Distribution",
+            "cc:Reproduction"
+        ],
+        "cc:prohibits": "cc:CommercialUse",
+        "cc:requires": "cc:Notice",
+        "dc:creator": "http://creativecommons.org",
+        "dc:hasVersion": "1.0",
+        "dc:identifier": "nc",
+        "dc:title": [
+            {
+                "@language": "af",
+                "@value": "NieKommersieel 1.0 Generies"
+            },
+            {
+                "@language": "ar",
+                "@value": "غير تجاري 1.0 عام"
+            },
+            {
+                "@language": "as",
+                "@value": "NonCommercial 1.0 Generic"
+            },
+            {
+                "@language": "ast",
+                "@value": "NonCommercial 1.0 Generic"
+            },
+            {
+                "@language": "ast-es",
+                "@value": "NonCommercial 1.0 Generic"
+            },
+            {
+                "@language": "az",
+                "@value": "NonCommercial 1.0 Generic"
+            },
+            {
+                "@language": "be",
+                "@value": "NonCommercial 1.0 Generic"
+            },
+            {
+                "@language": "bg",
+                "@value": "Некомерсиално 1.0 Неадаптиран"
+            },
+            {
+                "@language": "bn",
+                "@value": "অ-বানিজ্যিক 1.0 Generic"
+            },
+            {
+                "@language": "ca",
+                "@value": "NoComercial 1.0 Genèrica"
+            },
+            {
+                "@language": "cs",
+                "@value": "Neužívejte dílo komerčně 1.0 Generic"
+            },
+            {
+                "@language": "da",
+                "@value": "IkkeKommerciel 1.0 Generisk"
+            },
+            {
+                "@language": "de",
+                "@value": "Nicht kommerziell 1.0 US-amerikanisch (nicht portiert)"
+            },
+            {
+                "@language": "de-at",
+                "@value": "NichtKommerziell 1.0 US-amerikanisch (nicht portiert)"
+            },
+            {
+                "@language": "de-ch",
+                "@value": "NichtKommerziell 1.0 US-amerikanisch (nicht portiert)"
+            },
+            {
+                "@language": "el",
+                "@value": "Μη Εμπορική Χρήση 1.0 Γενικό"
+            },
+            {
+                "@language": "en",
+                "@value": "NonCommercial 1.0 Generic"
+            },
+            {
+                "@language": "en-ca",
+                "@value": "NonCommercial 1.0 Generic"
+            },
+            {
+                "@language": "en-gb",
+                "@value": "Non-Commercial 1.0 Generic"
+            },
+            {
+                "@language": "en-hk",
+                "@value": "Non-Commercial 1.0 Generic"
+            },
+            {
+                "@language": "en-sg",
+                "@value": "Non-Commercial 1.0 Generic"
+            },
+            {
+                "@language": "en-us",
+                "@value": "NonCommercial 1.0 Generic"
+            },
+            {
+                "@language": "eo",
+                "@value": "Nekomerce 1.0 Ĝenerala"
+            },
+            {
+                "@language": "es",
+                "@value": "NoComercial 1.0 Genérica"
+            },
+            {
+                "@language": "es-ar",
+                "@value": "NoComercial 1.0 Genérica"
+            },
+            {
+                "@language": "es-cl",
+                "@value": "NoComercial 1.0 Genérica"
+            },
+            {
+                "@language": "es-co",
+                "@value": "NoComercial 1.0 Genérica"
+            },
+            {
+                "@language": "es-ec",
+                "@value": "No Comercial 1.0 Genérica"
+            },
+            {
+                "@language": "es-es",
+                "@value": "NoComercial 1.0 Genérica"
+            },
+            {
+                "@language": "es-gt",
+                "@value": "No Comercial 1.0 Genérica"
+            },
+            {
+                "@language": "es-mx",
+                "@value": "No Comercial 1.0 Genérica"
+            },
+            {
+                "@language": "es-pe",
+                "@value": "NoComercial 1.0 Genérica"
+            },
+            {
+                "@language": "es-pr",
+                "@value": "NoComercial 1.0 Genérica"
+            },
+            {
+                "@language": "et",
+                "@value": "Mitteäriline eesmärk 1.0 Üldine"
+            },
+            {
+                "@language": "eu",
+                "@value": "EzKomertziala 1.0 Generikoa"
+            },
+            {
+                "@language": "fa",
+                "@value": "غیر تجاری 1.0 Generic"
+            },
+            {
+                "@language": "fi",
+                "@value": "Epäkaupallinen 1.0 Raakaversio"
+            },
+            {
+                "@language": "fr",
+                "@value": "Pas d'Utilisation Commerciale 1.0 Générique"
+            },
+            {
+                "@language": "fr-ca",
+                "@value": "Pas d'Utilisation Commerciale 1.0 Générique"
+            },
+            {
+                "@language": "fr-ch",
+                "@value": "Pas d'Utilisation Commerciale 1.0 Générique"
+            },
+            {
+                "@language": "fr-lu",
+                "@value": "Pas d'Utilisation Commerciale 1.0 Générique"
+            },
+            {
+                "@language": "ga",
+                "@value": "NonCommercial 1.0 Generic"
+            },
+            {
+                "@language": "gl",
+                "@value": "NonComercial 1.0 Xenérica"
+            },
+            {
+                "@language": "he",
+                "@value": "שימוש לא מסחרי 1.0 לא מותאם"
+            },
+            {
+                "@language": "hi",
+                "@value": "NonCommercial 1.0 Generic"
+            },
+            {
+                "@language": "hr",
+                "@value": "Nekomercijalno 1.0 nelokalizirana licenca"
+            },
+            {
+                "@language": "hu",
+                "@value": "Ne add el! 1.0 Általános"
+            },
+            {
+                "@language": "hy",
+                "@value": "Ոչ-առևտրային օգտագործում 1.0 Generic"
+            },
+            {
+                "@language": "id",
+                "@value": "NonKomersial 1.0 Generik"
+            },
+            {
+                "@language": "is",
+                "@value": "NonCommercial 1.0 Generic"
+            },
+            {
+                "@language": "it",
+                "@value": "NonCommerciale 1.0 Generico"
+            },
+            {
+                "@language": "it-ch",
+                "@value": "NonCommerciale 1.0 Generico"
+            },
+            {
+                "@language": "ja",
+                "@value": "非営利 1.0 一般"
+            },
+            {
+                "@language": "ka",
+                "@value": "არაკომერციული  1.0 ზოგადი"
+            },
+            {
+                "@language": "kk",
+                "@value": "Коммерциялық емес 1.0 Generic"
+            },
+            {
+                "@language": "ko",
+                "@value": "비영리 1.0 일반"
+            },
+            {
+                "@language": "lt",
+                "@value": "Nekomercinis 1.0 Generic"
+            },
+            {
+                "@language": "lv",
+                "@value": "Nekomerciāli 1.0 Vispārīgs"
+            },
+            {
+                "@language": "mk",
+                "@value": "Некомерцијално 1.0 Нелокализирана лиценца"
+            },
+            {
+                "@language": "ml",
+                "@value": "NonCommercial 1.0 Generic"
+            },
+            {
+                "@language": "mn",
+                "@value": "NonCommercial 1.0 Generic"
+            },
+            {
+                "@language": "ms",
+                "@value": "BukanKomersial 1.0 Umum"
+            },
+            {
+                "@language": "nl",
+                "@value": "NietCommercieel 1.0 Unported"
+            },
+            {
+                "@language": "no",
+                "@value": "Ikkekommersiell 1.0 Generisk"
+            },
+            {
+                "@language": "nso",
+                "@value": "E sego ya Kgwebo 1.0 E sa fetišwago"
+            },
+            {
+                "@language": "oci-es",
+                "@value": "NonCommercial 1.0 Generic"
+            },
+            {
+                "@language": "pl",
+                "@value": "Użycie niekomercyjne 1.0 Ogólny"
+            },
+            {
+                "@language": "pt",
+                "@value": "NãoComercial 1.0 Genérica"
+            },
+            {
+                "@language": "pt-br",
+                "@value": "Uso não-comercial 1.0 Generic"
+            },
+            {
+                "@language": "pt-pt",
+                "@value": "Uso Não-Comercial 1.0 Genérica"
+            },
+            {
+                "@language": "ro",
+                "@value": "NeComercial 1.0 Generică"
+            },
+            {
+                "@language": "ru",
+                "@value": "Некоммерческое использование 1.0 Generic"
+            },
+            {
+                "@language": "si-lk",
+                "@value": "NonCommercial 1.0 Generic"
+            },
+            {
+                "@language": "sl",
+                "@value": "Nekomercialno 1.0 Generična"
+            },
+            {
+                "@language": "sq",
+                "@value": "NonCommercial 1.0 Të përgjithshme"
+            },
+            {
+                "@language": "sr",
+                "@value": "Nekomercijalno 1.0 Generička licenca"
+            },
+            {
+                "@language": "sr",
+                "@value": "Некомерцијално 1.0 Генеричка лиценца"
+            },
+            {
+                "@language": "sr-latn",
+                "@value": "Nekomercijalno 1.0 Generička licenca"
+            },
+            {
+                "@language": "st",
+                "@value": "NonCommercial 1.0 Generic"
+            },
+            {
+                "@language": "sv",
+                "@value": "IckeKommersiell 1.0 Generisk"
+            },
+            {
+                "@language": "ta",
+                "@value": "NonCommercial 1.0 Generic"
+            },
+            {
+                "@language": "te",
+                "@value": "NonCommercial 1.0 Generic"
+            },
+            {
+                "@language": "th",
+                "@value": "ไม่ใช้เพื่อการค้า 1.0 ทั่วไป"
+            },
+            {
+                "@language": "tr",
+                "@value": "Gayriticari 1.0 Kapsamlı"
+            },
+            {
+                "@language": "uk",
+                "@value": "NonCommercial 1.0 Generic"
+            },
+            {
+                "@language": "ur",
+                "@value": "NonCommercial 1.0 Generic"
+            },
+            {
+                "@language": "vi",
+                "@value": "Phi thương mại 1.0 Chung"
+            },
+            {
+                "@language": "zh",
+                "@value": "非商业性使用 1.0 未本地化版本"
+            },
+            {
+                "@language": "zh-hk",
+                "@value": "非商業性 1.0 通用版"
+            },
+            {
+                "@language": "zh-tw",
+                "@value": "非商業性 1.0 通用版"
+            },
+            {
+                "@language": "zu",
+                "@value": "Ungayisebenziseli Ezentengiselwano 1.0 Engadlulisiwe"
+            },
+            {
+                "@language": "zxx",
+                "@value": "${NonCommercial} 1.0 ${Generic}"
+            }
+        ],
+        "owl:sameAs": "https://licensedb.org/id/CC-NC-1.0",
+        "foaf:logo": "http://i.creativecommons.org/l/nc/1.0/88x31.png"
+    },
+    "foaf:logo": "http://i.creativecommons.org/l/nc/1.0/88x31.png",
+    "li:id": "CC-NC-1.0",
+    "li:name": "CC NC 1.0"
+}

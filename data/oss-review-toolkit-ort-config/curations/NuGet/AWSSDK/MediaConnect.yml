@@ -1,0 +1,5 @@
+- id: "NuGet:AWSSDK:MediaConnect:[3.3.416,)"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "sdk/src/Services/MediaConnect"

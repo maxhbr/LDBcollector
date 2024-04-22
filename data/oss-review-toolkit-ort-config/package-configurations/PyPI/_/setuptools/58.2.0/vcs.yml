@@ -1,0 +1,15 @@
+---
+id: "PyPI::setuptools:58.2.0"
+vcs:
+  type: "Git"
+  url: "https://github.com/pypa/setuptools.git"
+  revision: "41a229bdf7d2f444f6f355042e816a53fbc5a3b2"
+path_excludes:
+  - pattern: ".github/**"
+    reason: "BUILD_TOOL_OF"
+  - pattern: "docs/**"
+    reason: "DOCUMENTATION_OF"
+  - pattern: "setuptools/tests/**"
+    reason: "TEST_OF"
+  - pattern: "tools/**"
+    reason: "BUILD_TOOL_OF"

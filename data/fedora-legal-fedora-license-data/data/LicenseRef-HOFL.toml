@@ -1,0 +1,15 @@
+[license]
+
+expression = "LicenseRef-HOFL"
+status = [ "allowed-fonts" ]
+
+[fedora]
+
+legacy-name = [
+    "Hack Open Font License"
+]
+
+legacy-abbreviation = [
+    "HOFL"
+]
+

@@ -1,0 +1,67 @@
+# SPDX-FileCopyrightText: 2023 Siemens AG
+# SPDX-FileContributor: Gaurav Mishra <mishra.gaurav@siemens.com>
+# SPDX-License-Identifier: GPL-2.0-only
+
+name: Swagger API Updated
+
+on:
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+
+  doc-diff:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Set up Go
+      uses: actions/setup-go@v4
+      with:
+        go-version: '1.20'
+        check-latest: true
+        cache: true
+
+    - name: Install swag
+      run: |
+        go install github.com/swaggo/swag/cmd/swag@latest
+
+    - name: Build Swagger documents
+      run: |
+        swag init --parseDependency --generalInfo api.go --dir ./pkg/api,./pkg/auth,./pkg/db,./pkg/models,./pkg/utils --output ./swag/docs
+
+    - name: Check doc diff
+      run: |
+        diff swag/docs/docs.go cmd/laas/docs/docs.go > swagger-diff.txt
+        # Check if file swagger-diff.txt is empty
+        if [ -s swagger-diff.txt ]
+        then
+          # If file is not empty, echo a message and exit 1
+          echo "Swagger docs are not up to date. Please run 'swag init' and commit the changes."
+          exit 1
+        fi
+
+  doc-fmt:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Go
+        uses: actions/setup-go@v4
+        with:
+          go-version: '1.20'
+          check-latest: true
+          cache: true
+
+      - name: Install swag
+        run: |
+          go install github.com/swaggo/swag/cmd/swag@latest
+
+      - name: Format Swagger documents
+        run: |
+          swag fmt --generalInfo ./pkg/api/api.go --dir ./pkg/api,./pkg/auth,./pkg/db,./pkg/models,./pkg/utils
+
+      - name: Check file diff
+        run: |
+          git diff --exit-code

@@ -1,0 +1,14 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+
+canonicalName: "ISC License (Veillard)"
+category: "Permission"
+spdxIdentifier: "ISC-Veillard"
+
+alternativeNames:
+  - "ISC-Veillard"
+  - "ISC Veillard variant"
+
+otherIds: 
+  - "scancode:mit-veillard-variant"

@@ -1,0 +1,241 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/elements/1.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://creativecommons.org/licenses/by-nc-nd/2.0/be/> a cc:License ;
+    cc:jurisdiction <http://creativecommons.org/international/be/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nc-nd/2.0/be/legalcode.fr>,
+        <http://creativecommons.org/licenses/by-nc-nd/2.0/be/legalcode.nl> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:Distribution,
+        cc:Reproduction ;
+    cc:prohibits cc:CommercialUse ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.0" ;
+    dc:identifier "by-nc-nd" ;
+    dc:source <http://creativecommons.org/licenses/by-nc-nd/2.0/> ;
+    dc:title "Erkenning-NieKommersieel-GeenAfleidings 2.0 België"@af,
+        "نسب- غير تجاري - لا اشتقاق 2.0 بلجيكا"@ar,
+        "Attribution-NonCommercial-NoDerivs 2.0 Belgium"@as,
+        "Attribution-NonCommercial-NoDerivs 2.0 Belgium"@ast,
+        "Attribution-NonCommercial-NoDerivs 2.0 Belgium"@ast-es,
+        "Attribution-NonCommercial-NoDerivs 2.0 Belgium"@az,
+        "Attribution-NonCommercial-NoDerivs 2.0 Бельгія"@be,
+        "Признание-Некомерсиално-Без производни 2.0 Белгия"@bg,
+        "Attribution-NonCommercial-NoDerivs 2.0 Belgium"@bn,
+        "Reconeixement-NoComercial-SenseObraDerivada 2.0 Bèlgica"@ca,
+        "Uveďte autora-Neužívejte dílo komerčně-Nezasahujte do díla 2.0 Belgie"@cs,
+        "Navngivelse-IkkeKommerciel-IngenBearbejdelse 2.0 Belgien"@da,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 2.0 Belgien"@de,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 2.0 Belgien"@de-at,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 2.0 Belgien"@de-ch,
+        "Αναφορά Δημιουργού-Μη Εμπορική Χρήση-Όχι Παράγωγα Έργα 2.0 Βέλγιο"@el,
+        "Attribution-NonCommercial-NoDerivs 2.0 Belgium"@en,
+        "Attribution-NonCommercial-NoDerivs 2.0 Belgium"@en-ca,
+        "Attribution-NonCommercial-NoDerivs 2.0 Belgium"@en-gb,
+        "Attribution-NonCommercial-NoDerivs 2.0 Belgium"@en-hk,
+        "Attribution-NonCommercial-NoDerivs 2.0 Belgium"@en-sg,
+        "Attribution-NonCommercial-NoDerivs 2.0 Belgium"@en-us,
+        "Atribuite-Nekomerce-Nemodifite 2.0 Belgujo"@eo,
+        "Atribución-NoComercial-SinDerivadas 2.0 Bélgica"@es,
+        "Atribución-NoComercial-SinDerivadas 2.0 Bélgica"@es-ar,
+        "Atribución-NoComercial-SinDerivadas 2.0 Bélgica"@es-cl,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.0 Bélgica"@es-co,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.0 Bélgica"@es-ec,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.0 Bélgica"@es-es,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.0 Bélgica"@es-gt,
+        "Atribución-No Comercial-No Derivadas 2.0 Bélgica"@es-mx,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.0 Bélgica"@es-pe,
+        "Reconocimiento-NoComercial-SinObrasDerivadas 2.0 Bélgica"@es-pr,
+        "Autorile viitamine + Mitteäriline eesmärk + Tuletatud teoste keeld 2.0 Belgia"@et,
+        "Aitortu-EzKomertziala-LanEratorririkGabe 2.0 Belgika"@eu,
+        "Attribution-NonCommercial-NoDerivs 2.0 بلژیک"@fa,
+        "Nimeä-Ei muutoksia-Epäkaupallinen 2.0 Belgia"@fi,
+        "Attribution - Pas d’Utilisation Commerciale - Pas de Modification 2.0 Belgique"@fr,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.0 Belgique"@fr-ca,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.0 Belgique"@fr-ch,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.0 Belgique"@fr-lu,
+        "Attribution-NonCommercial-NoDerivs 2.0 Belgium"@ga,
+        "Recoñecemento-NonComercial-SenObraDerivada 2.0 Bélxica"@gl,
+        "ייחוס-שימוש לא מסחרי-איסור יצירות נגזרות 2.0 בלגיה"@he,
+        "Attribution-NonCommercial-NoDerivs 2.0 बेलजियम"@hi,
+        "Imenovanje-Nekomercijalno-Bez prerada 2.0 Belgija"@hr,
+        "Nevezd meg! - Ne add el! - Ne változtasd! 2.0 Belgium"@hu,
+        "Հղում - Ոչ-առևտրային օգտագործում - Օգտագործում առանց վերափոխումների 2.0 Բելգիա"@hy,
+        "Atribusi-NonKomersial-TanpaTurunan 2.0 Belgia"@id,
+        "Attribution-NonCommercial-NoDerivs 2.0 Belgía"@is,
+        "Attribuzione - Non commerciale - Non opere derivate 2.0 Belgio"@it,
+        "Attribuzione - Non commerciale - Non opere derivate 2.0 Belgio"@it-ch,
+        "表示 - 非営利 - 改変禁止 2.0 ベルギー"@ja,
+        "ავტორობის მითითებით–არაკომერციული გამოყენბისათვის–გადამუშავების გარეშე 2.0 ბელგია"@ka,
+        "Attribution-NonCommercial-NoDerivs 2.0 Belgium"@kk,
+        "저작자표시-비영리-변경금지 2.0 벨기에"@ko,
+        "Attribution-NonCommercial-NoDerivs 2.0 Belgija"@lt,
+        "Atsaucoties-Nekomerciāls-Nemainīts 2.0 Beļģija"@lv,
+        "НаведиИзвор-Некомерцијално-БезАдаптираниДела 2.0 Белгија"@mk,
+        "Attribution-NonCommercial-NoDerivs 2.0 ബെൽജിയം"@ml,
+        "Attribution-NonCommercial-NoDerivs 2.0 Бельги"@mn,
+        "Pengiktirafan-BukanKomersial-TiadaTerbitan 2.0 Belgium"@ms,
+        "Naamsvermelding-NietCommercieel-GeenAfgeleideWerken 2.0 België"@nl,
+        "Navngivelse-Ikkekommersiell-IngenBearbeidelse 2.0 Belgia"@no,
+        "Tsebagatšo-E sego ya Kgwebo-Tše sa fetolwego 2.0 Belgium"@nso,
+        "Attribution-NonCommercial-NoDerivs 2.0 Belgium"@oci-es,
+        "Uznanie autorstwa-Użycie niekomercyjne-Bez utworów zależnych 2.0 Belgia"@pl,
+        "Atribuição - NãoComercial - SemDerivados 2.0 Bélgica"@pt,
+        "Atribuição-Uso não-comercial-Vedada a criação de obras derivadas 2.0 Bélgica"@pt-br,
+        "Atribuição-Uso Não-Comercial-Proibição de realização de Obras Derivadas 2.0 Bélgica"@pt-pt,
+        "Atribuire-Necomercial-FărăModificări 2.0 Belgia"@ro,
+        "Attribution-NonCommercial-NoDerivs (Атрибуция — Некоммерческое использование — Без производных произведений) 2.0 Бельгия"@ru,
+        "Attribution-NonCommercial-NoDerivs 2.0 Belgium"@si-lk,
+        "Priznanje avtorstva-Nekomercialno-Brez predelav 2.0 Belgija"@sl,
+        "Attribution-NonCommercial-NoDerivs 2.0 Belgjikë"@sq,
+        "Autorstvo-Nekomercijalno-Bez prerada 2.0 Belgija"@sr,
+        "Ауторство-Некомерцијално-Без прерада 2.0 Белгија"@sr,
+        "Autorstvo-Nekomercijalno-Bez prerada 2.0 Belgija"@sr-latn,
+        "Attribution-NonCommercial-NoDerivs 2.0 Belgium"@st,
+        "Erkännande-Ickekommersiell-IngaBearbetningar 2.0 Belgien"@sv,
+        "Attribution-NonCommercial-NoDerivs 2.0 பெல்ஜியம்"@ta,
+        "Attribution-NonCommercial-NoDerivs 2.0 బెల్జియం"@te,
+        "แสดงที่มา-ไม่ใช้เพื่อการค้า-ไม่ดัดแปลง 2.0 เบลเยียม"@th,
+        "Attribution-Gayriticari-NoDerivs 2.0 Belçika"@tr,
+        "Attribution-NonCommercial-NoDerivs 2.0 Бельгія"@uk,
+        "Attribution-NonCommercial-NoDerivs 2.0 Belgium"@ur,
+        "Ghi nhận công của tác giả - Phi thương mại - Không phái sinh  2.0 Nước Bỉ"@vi,
+        "署名-非商业性使用-禁止演绎 2.0 比利时"@zh,
+        "姓名標示-非商業性-禁止改作 2.0 比利時"@zh-hk,
+        "姓名標示-非商業性-禁止改作 2.0 比利時"@zh-tw,
+        "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano-Ungasuseli lutho kulokhu 2.0 eBelgium"@zu,
+        "${Attribution-NonCommercial-NoDerivs} 2.0 ${Belgium}"@zxx ;
+    owl:sameAs <https://licensedb.org/id/CC-BY-NC-ND-2.0-be> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nc-nd/2.0/be/80x15.png>,
+        <http://i.creativecommons.org/l/by-nc-nd/2.0/be/88x31.png> .
+
+<https://licensedb.org/id/CC-BY-NC-ND-2.0-be> a cc:License,
+        li:License ;
+    cc:jurisdiction <http://creativecommons.org/international/be/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nc-nd/2.0/be/legalcode.fr>,
+        <http://creativecommons.org/licenses/by-nc-nd/2.0/be/legalcode.nl> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:Distribution,
+        cc:Reproduction ;
+    cc:prohibits cc:CommercialUse ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.0" ;
+    dc:identifier "by-nc-nd" ;
+    dc:source <http://creativecommons.org/licenses/by-nc-nd/2.0/> ;
+    dc:title "Erkenning-NieKommersieel-GeenAfleidings 2.0 België"@af,
+        "نسب- غير تجاري - لا اشتقاق 2.0 بلجيكا"@ar,
+        "Attribution-NonCommercial-NoDerivs 2.0 Belgium"@as,
+        "Attribution-NonCommercial-NoDerivs 2.0 Belgium"@ast,
+        "Attribution-NonCommercial-NoDerivs 2.0 Belgium"@ast-es,
+        "Attribution-NonCommercial-NoDerivs 2.0 Belgium"@az,
+        "Attribution-NonCommercial-NoDerivs 2.0 Бельгія"@be,
+        "Признание-Некомерсиално-Без производни 2.0 Белгия"@bg,
+        "Attribution-NonCommercial-NoDerivs 2.0 Belgium"@bn,
+        "Reconeixement-NoComercial-SenseObraDerivada 2.0 Bèlgica"@ca,
+        "Uveďte autora-Neužívejte dílo komerčně-Nezasahujte do díla 2.0 Belgie"@cs,
+        "Navngivelse-IkkeKommerciel-IngenBearbejdelse 2.0 Belgien"@da,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 2.0 Belgien"@de,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 2.0 Belgien"@de-at,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 2.0 Belgien"@de-ch,
+        "Αναφορά Δημιουργού-Μη Εμπορική Χρήση-Όχι Παράγωγα Έργα 2.0 Βέλγιο"@el,
+        "Attribution-NonCommercial-NoDerivs 2.0 Belgium"@en,
+        "Attribution-NonCommercial-NoDerivs 2.0 Belgium"@en-ca,
+        "Attribution-NonCommercial-NoDerivs 2.0 Belgium"@en-gb,
+        "Attribution-NonCommercial-NoDerivs 2.0 Belgium"@en-hk,
+        "Attribution-NonCommercial-NoDerivs 2.0 Belgium"@en-sg,
+        "Attribution-NonCommercial-NoDerivs 2.0 Belgium"@en-us,
+        "Atribuite-Nekomerce-Nemodifite 2.0 Belgujo"@eo,
+        "Atribución-NoComercial-SinDerivadas 2.0 Bélgica"@es,
+        "Atribución-NoComercial-SinDerivadas 2.0 Bélgica"@es-ar,
+        "Atribución-NoComercial-SinDerivadas 2.0 Bélgica"@es-cl,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.0 Bélgica"@es-co,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.0 Bélgica"@es-ec,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.0 Bélgica"@es-es,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.0 Bélgica"@es-gt,
+        "Atribución-No Comercial-No Derivadas 2.0 Bélgica"@es-mx,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.0 Bélgica"@es-pe,
+        "Reconocimiento-NoComercial-SinObrasDerivadas 2.0 Bélgica"@es-pr,
+        "Autorile viitamine + Mitteäriline eesmärk + Tuletatud teoste keeld 2.0 Belgia"@et,
+        "Aitortu-EzKomertziala-LanEratorririkGabe 2.0 Belgika"@eu,
+        "Attribution-NonCommercial-NoDerivs 2.0 بلژیک"@fa,
+        "Nimeä-Ei muutoksia-Epäkaupallinen 2.0 Belgia"@fi,
+        "Attribution - Pas d’Utilisation Commerciale - Pas de Modification 2.0 Belgique"@fr,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.0 Belgique"@fr-ca,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.0 Belgique"@fr-ch,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.0 Belgique"@fr-lu,
+        "Attribution-NonCommercial-NoDerivs 2.0 Belgium"@ga,
+        "Recoñecemento-NonComercial-SenObraDerivada 2.0 Bélxica"@gl,
+        "ייחוס-שימוש לא מסחרי-איסור יצירות נגזרות 2.0 בלגיה"@he,
+        "Attribution-NonCommercial-NoDerivs 2.0 बेलजियम"@hi,
+        "Imenovanje-Nekomercijalno-Bez prerada 2.0 Belgija"@hr,
+        "Nevezd meg! - Ne add el! - Ne változtasd! 2.0 Belgium"@hu,
+        "Հղում - Ոչ-առևտրային օգտագործում - Օգտագործում առանց վերափոխումների 2.0 Բելգիա"@hy,
+        "Atribusi-NonKomersial-TanpaTurunan 2.0 Belgia"@id,
+        "Attribution-NonCommercial-NoDerivs 2.0 Belgía"@is,
+        "Attribuzione - Non commerciale - Non opere derivate 2.0 Belgio"@it,
+        "Attribuzione - Non commerciale - Non opere derivate 2.0 Belgio"@it-ch,
+        "表示 - 非営利 - 改変禁止 2.0 ベルギー"@ja,
+        "ავტორობის მითითებით–არაკომერციული გამოყენბისათვის–გადამუშავების გარეშე 2.0 ბელგია"@ka,
+        "Attribution-NonCommercial-NoDerivs 2.0 Belgium"@kk,
+        "저작자표시-비영리-변경금지 2.0 벨기에"@ko,
+        "Attribution-NonCommercial-NoDerivs 2.0 Belgija"@lt,
+        "Atsaucoties-Nekomerciāls-Nemainīts 2.0 Beļģija"@lv,
+        "НаведиИзвор-Некомерцијално-БезАдаптираниДела 2.0 Белгија"@mk,
+        "Attribution-NonCommercial-NoDerivs 2.0 ബെൽജിയം"@ml,
+        "Attribution-NonCommercial-NoDerivs 2.0 Бельги"@mn,
+        "Pengiktirafan-BukanKomersial-TiadaTerbitan 2.0 Belgium"@ms,
+        "Naamsvermelding-NietCommercieel-GeenAfgeleideWerken 2.0 België"@nl,
+        "Navngivelse-Ikkekommersiell-IngenBearbeidelse 2.0 Belgia"@no,
+        "Tsebagatšo-E sego ya Kgwebo-Tše sa fetolwego 2.0 Belgium"@nso,
+        "Attribution-NonCommercial-NoDerivs 2.0 Belgium"@oci-es,
+        "Uznanie autorstwa-Użycie niekomercyjne-Bez utworów zależnych 2.0 Belgia"@pl,
+        "Atribuição - NãoComercial - SemDerivados 2.0 Bélgica"@pt,
+        "Atribuição-Uso não-comercial-Vedada a criação de obras derivadas 2.0 Bélgica"@pt-br,
+        "Atribuição-Uso Não-Comercial-Proibição de realização de Obras Derivadas 2.0 Bélgica"@pt-pt,
+        "Atribuire-Necomercial-FărăModificări 2.0 Belgia"@ro,
+        "Attribution-NonCommercial-NoDerivs (Атрибуция — Некоммерческое использование — Без производных произведений) 2.0 Бельгия"@ru,
+        "Attribution-NonCommercial-NoDerivs 2.0 Belgium"@si-lk,
+        "Priznanje avtorstva-Nekomercialno-Brez predelav 2.0 Belgija"@sl,
+        "Attribution-NonCommercial-NoDerivs 2.0 Belgjikë"@sq,
+        "Autorstvo-Nekomercijalno-Bez prerada 2.0 Belgija"@sr,
+        "Ауторство-Некомерцијално-Без прерада 2.0 Белгија"@sr,
+        "Autorstvo-Nekomercijalno-Bez prerada 2.0 Belgija"@sr-latn,
+        "Attribution-NonCommercial-NoDerivs 2.0 Belgium"@st,
+        "Erkännande-Ickekommersiell-IngaBearbetningar 2.0 Belgien"@sv,
+        "Attribution-NonCommercial-NoDerivs 2.0 பெல்ஜியம்"@ta,
+        "Attribution-NonCommercial-NoDerivs 2.0 బెల్జియం"@te,
+        "แสดงที่มา-ไม่ใช้เพื่อการค้า-ไม่ดัดแปลง 2.0 เบลเยียม"@th,
+        "Attribution-Gayriticari-NoDerivs 2.0 Belçika"@tr,
+        "Attribution-NonCommercial-NoDerivs 2.0 Бельгія"@uk,
+        "Attribution-NonCommercial-NoDerivs 2.0 Belgium"@ur,
+        "Ghi nhận công của tác giả - Phi thương mại - Không phái sinh  2.0 Nước Bỉ"@vi,
+        "署名-非商业性使用-禁止演绎 2.0 比利时"@zh,
+        "姓名標示-非商業性-禁止改作 2.0 比利時"@zh-hk,
+        "姓名標示-非商業性-禁止改作 2.0 比利時"@zh-tw,
+        "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano-Ungasuseli lutho kulokhu 2.0 eBelgium"@zu,
+        "${Attribution-NonCommercial-NoDerivs} 2.0 ${Belgium}"@zxx ;
+    owl:sameAs <http://creativecommons.org/licenses/by-nc-nd/2.0/be/> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nc-nd/2.0/be/80x15.png>,
+        <http://i.creativecommons.org/l/by-nc-nd/2.0/be/88x31.png> ;
+    li:id "CC-BY-NC-ND-2.0-be" ;
+    li:name "CC BY-NC-ND 2.0 BE" .
+
+<http://creativecommons.org/licenses/by-nc-nd/2.0/be/legalcode.fr> dc:language "fr" .
+
+<http://creativecommons.org/licenses/by-nc-nd/2.0/be/legalcode.nl> dc:language "nl" .
+

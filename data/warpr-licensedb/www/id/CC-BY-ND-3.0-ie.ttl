@@ -1,0 +1,219 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/elements/1.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://creativecommons.org/licenses/by-nd/3.0/ie/> a cc:License ;
+    cc:jurisdiction <http://creativecommons.org/international/ie/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nd/3.0/ie/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "3.0" ;
+    dc:identifier "by-nd" ;
+    dc:source <http://creativecommons.org/licenses/by-nd/3.0/> ;
+    dc:title "Erkenning-GeenAfleidings 3.0 Ierland"@af,
+        "نسب- غير مشتق 3.0  أيرلاندا"@ar,
+        "Attribution-NoDerivs 3.0 Ireland"@as,
+        "Attribution-NoDerivs 3.0 Ireland"@ast,
+        "Attribution-NoDerivs 3.0 Ireland"@ast-es,
+        "Attribution-NoDerivs 3.0 Ireland"@az,
+        "Attribution-NoDerivs 3.0 Ірландыя"@be,
+        "Признание-Без производни 3.0 Ирландия"@bg,
+        "Attribution-NoDerivs 3.0 Ireland"@bn,
+        "Reconeixement-SenseObraDerivada 3.0 Irlanda"@ca,
+        "Uveďte autora-Nezasahujte do díla 3.0 Irsko"@cs,
+        "Navngivelse-IngenBearbejdelse 3.0 Irland"@da,
+        "Namensnennung-Keine Bearbeitung 3.0 Irland"@de,
+        "Namensnennung-KeineBearbeitung 3.0 Irland"@de-at,
+        "Namensnennung-KeineBearbeitung 3.0 Irland"@de-ch,
+        "Αναφορά Δημιουργού-Όχι Παράγωγα Έργα 3.0 Ιρλανδία"@el,
+        "Attribution-NoDerivs 3.0 Ireland"@en,
+        "Attribution-NoDerivs 3.0 Ireland"@en-ca,
+        "Attribution-NoDerivs 3.0 Ireland"@en-gb,
+        "Attribution-NoDerivs 3.0 Ireland"@en-hk,
+        "Attribution-NoDerivs 3.0 Ireland"@en-sg,
+        "Attribution-NoDerivs 3.0 Ireland"@en-us,
+        "Atribuite-Nemodifite 3.0 Irlando"@eo,
+        "Atribución-SinDerivadas 3.0 Irlanda"@es,
+        "Atribución-SinDerivadas 3.0 Irlanda"@es-ar,
+        "Reconocimiento-SinObraDerivada 3.0 Irlanda"@es-es,
+        "Reconocimiento-SinObraDerivada 3.0 Irlanda"@es-pe,
+        "Autorile viitamine + Tuletatud teoste keeld 3.0 Iirimaa"@et,
+        "Aitortu-LanEratorririkGabe 3.0 Irlanda"@eu,
+        "Attribution-NoDerivs 3.0 ایرلند"@fa,
+        "Nimeä-Ei muutoksia 3.0 Irlanti"@fi,
+        "Paternité - Pas de Modification 3.0 Irlande"@fr,
+        "Paternité - Pas de Modification 3.0 Irlande"@fr-ca,
+        "Paternité - Pas de Modification 3.0 Irlande"@fr-ch,
+        "Paternité - Pas de Modification 3.0 Irlande"@fr-lu,
+        "Attribution-NoDerivs 3.0 Ireland"@ga,
+        "Recoñecemento-SenObraDerivada 3.0 Irlanda"@gl,
+        "ייחוס-איסור יצירות נגזרות 3.0 אירלנד"@he,
+        "Attribution-NoDerivs 3.0 ऐरलैंड"@hi,
+        "Imenovanje-Bez prerada 3.0 Irska"@hr,
+        "Nevezd meg! - Ne változtasd! 3.0 Írország"@hu,
+        "Հղում - Օգտագործում առանց վերափոխումների 3.0 Իրլանդիա"@hy,
+        "Atribusi-TanpaTurunan 3.0 Irlandia"@id,
+        "Attribution-NoDerivs 3.0 Írland"@is,
+        "Attribuzione - Non opere derivate 3.0 Irlanda"@it,
+        "Attribuzione - Non opere derivate 3.0 Irlanda"@it-ch,
+        "表示 - 改変禁止 3.0 アイルランド"@ja,
+        "ავტორობის მითითებით გადამუშავების გარეშე 3.0 ირლანდია"@ka,
+        "Туынды жасамау 3.0 Ireland"@kk,
+        "저작자표시-변경금지 3.0 아일랜드"@ko,
+        "Attribution-NoDerivs 3.0 Airija"@lt,
+        "Atsaucoties-Neatvasinot 3.0 Īrija"@lv,
+        "НаведиИзвор-БезИзведениДела 3.0 Ирска"@mk,
+        "Attribution-NoDerivs 3.0 അയർലാന്റ്"@ml,
+        "Attribution-NoDerivs 3.0 Ирланд"@mn,
+        "Pengiktirafan-TiadaTerbitan 3.0 Ireland"@ms,
+        "Naamsvermelding-GeenAfgeleideWerken 3.0 Ierland"@nl,
+        "Navngivelse-IngenBearbeidelse 3.0 Irland"@no,
+        "Tsebagatšo - Tše sa Fetolwego 3.0 Ireland"@nso,
+        "Attribution-NoDerivs 3.0 Ireland"@oci-es,
+        "Uznanie autorstwa-Bez utworów zależnych 3.0 Irlandia"@pl,
+        "Atribuição - SemDerivados 3.0 Irlanda"@pt,
+        "Atribuição-Vedada a criação de obras derivativas 3.0 Ireland"@pt-br,
+        "Atribuição-Proibição de realização de Obras Derivadas 3.0 Irlanda"@pt-pt,
+        "Atribuire-FărăModificări 3.0 Irlanda"@ro,
+        "Attribution-NoDerivs (Атрибуция — Без производных произведений) 3.0 Ирландия"@ru,
+        "Attribution-NoDerivs 3.0 Ireland"@si-lk,
+        "Priznanje avtorstva-Brez predelav 3.0 Irska"@sl,
+        "Attribution-NoDerivs 3.0 Irlandë"@sq,
+        "Attribution-NoDerivs 3.0 Ireland"@sr,
+        "Ауторство-Без прерада 3.0 Ирска"@sr,
+        "Autorstvo-Bez prerada 3.0 Irska"@sr-latn,
+        "Erkännande-IngaBearbetningar 3.0 Irland"@sv,
+        "Attribution-NoDerivs 3.0 ஐயர்லாந்து"@ta,
+        "Attribution-NoDerivs 3.0 ఐర్లాండ్"@te,
+        "แสดงที่มา-ไม่ดัดแปลง 3.0 ไอร์แลนด์"@th,
+        "Alıntı-Türetilemez 3.0 İrlanda"@tr,
+        "Attribution-NoDerivs 3.0 Ireland"@uk,
+        "Attribution-NoDerivs 3.0 Ireland"@ur,
+        "Ghi nhận công của tác giả - Không phái sinh 3.0 Nước Ireland"@vi,
+        "署名-禁止演绎 3.0 爱尔兰"@zh,
+        "姓名標示-禁止改作 3.0 愛爾蘭"@zh-hk,
+        "姓名標示-禁止改作 3.0 愛爾蘭"@zh-tw,
+        "Qaphela Umnikazi-Ungasuseli lutho kulokhu 3.0 i-Ireland"@zu,
+        "${Attribution-NoDerivs} 3.0 ${Ireland}"@zxx ;
+    owl:sameAs <https://licensedb.org/id/CC-BY-ND-3.0-ie> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nd/3.0/ie/80x15.png>,
+        <http://i.creativecommons.org/l/by-nd/3.0/ie/88x31.png> .
+
+<https://licensedb.org/id/CC-BY-ND-3.0-ie> a cc:License,
+        li:License ;
+    cc:jurisdiction <http://creativecommons.org/international/ie/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nd/3.0/ie/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "3.0" ;
+    dc:identifier "by-nd" ;
+    dc:source <http://creativecommons.org/licenses/by-nd/3.0/> ;
+    dc:title "Erkenning-GeenAfleidings 3.0 Ierland"@af,
+        "نسب- غير مشتق 3.0  أيرلاندا"@ar,
+        "Attribution-NoDerivs 3.0 Ireland"@as,
+        "Attribution-NoDerivs 3.0 Ireland"@ast,
+        "Attribution-NoDerivs 3.0 Ireland"@ast-es,
+        "Attribution-NoDerivs 3.0 Ireland"@az,
+        "Attribution-NoDerivs 3.0 Ірландыя"@be,
+        "Признание-Без производни 3.0 Ирландия"@bg,
+        "Attribution-NoDerivs 3.0 Ireland"@bn,
+        "Reconeixement-SenseObraDerivada 3.0 Irlanda"@ca,
+        "Uveďte autora-Nezasahujte do díla 3.0 Irsko"@cs,
+        "Navngivelse-IngenBearbejdelse 3.0 Irland"@da,
+        "Namensnennung-Keine Bearbeitung 3.0 Irland"@de,
+        "Namensnennung-KeineBearbeitung 3.0 Irland"@de-at,
+        "Namensnennung-KeineBearbeitung 3.0 Irland"@de-ch,
+        "Αναφορά Δημιουργού-Όχι Παράγωγα Έργα 3.0 Ιρλανδία"@el,
+        "Attribution-NoDerivs 3.0 Ireland"@en,
+        "Attribution-NoDerivs 3.0 Ireland"@en-ca,
+        "Attribution-NoDerivs 3.0 Ireland"@en-gb,
+        "Attribution-NoDerivs 3.0 Ireland"@en-hk,
+        "Attribution-NoDerivs 3.0 Ireland"@en-sg,
+        "Attribution-NoDerivs 3.0 Ireland"@en-us,
+        "Atribuite-Nemodifite 3.0 Irlando"@eo,
+        "Atribución-SinDerivadas 3.0 Irlanda"@es,
+        "Atribución-SinDerivadas 3.0 Irlanda"@es-ar,
+        "Reconocimiento-SinObraDerivada 3.0 Irlanda"@es-es,
+        "Reconocimiento-SinObraDerivada 3.0 Irlanda"@es-pe,
+        "Autorile viitamine + Tuletatud teoste keeld 3.0 Iirimaa"@et,
+        "Aitortu-LanEratorririkGabe 3.0 Irlanda"@eu,
+        "Attribution-NoDerivs 3.0 ایرلند"@fa,
+        "Nimeä-Ei muutoksia 3.0 Irlanti"@fi,
+        "Paternité - Pas de Modification 3.0 Irlande"@fr,
+        "Paternité - Pas de Modification 3.0 Irlande"@fr-ca,
+        "Paternité - Pas de Modification 3.0 Irlande"@fr-ch,
+        "Paternité - Pas de Modification 3.0 Irlande"@fr-lu,
+        "Attribution-NoDerivs 3.0 Ireland"@ga,
+        "Recoñecemento-SenObraDerivada 3.0 Irlanda"@gl,
+        "ייחוס-איסור יצירות נגזרות 3.0 אירלנד"@he,
+        "Attribution-NoDerivs 3.0 ऐरलैंड"@hi,
+        "Imenovanje-Bez prerada 3.0 Irska"@hr,
+        "Nevezd meg! - Ne változtasd! 3.0 Írország"@hu,
+        "Հղում - Օգտագործում առանց վերափոխումների 3.0 Իրլանդիա"@hy,
+        "Atribusi-TanpaTurunan 3.0 Irlandia"@id,
+        "Attribution-NoDerivs 3.0 Írland"@is,
+        "Attribuzione - Non opere derivate 3.0 Irlanda"@it,
+        "Attribuzione - Non opere derivate 3.0 Irlanda"@it-ch,
+        "表示 - 改変禁止 3.0 アイルランド"@ja,
+        "ავტორობის მითითებით გადამუშავების გარეშე 3.0 ირლანდია"@ka,
+        "Туынды жасамау 3.0 Ireland"@kk,
+        "저작자표시-변경금지 3.0 아일랜드"@ko,
+        "Attribution-NoDerivs 3.0 Airija"@lt,
+        "Atsaucoties-Neatvasinot 3.0 Īrija"@lv,
+        "НаведиИзвор-БезИзведениДела 3.0 Ирска"@mk,
+        "Attribution-NoDerivs 3.0 അയർലാന്റ്"@ml,
+        "Attribution-NoDerivs 3.0 Ирланд"@mn,
+        "Pengiktirafan-TiadaTerbitan 3.0 Ireland"@ms,
+        "Naamsvermelding-GeenAfgeleideWerken 3.0 Ierland"@nl,
+        "Navngivelse-IngenBearbeidelse 3.0 Irland"@no,
+        "Tsebagatšo - Tše sa Fetolwego 3.0 Ireland"@nso,
+        "Attribution-NoDerivs 3.0 Ireland"@oci-es,
+        "Uznanie autorstwa-Bez utworów zależnych 3.0 Irlandia"@pl,
+        "Atribuição - SemDerivados 3.0 Irlanda"@pt,
+        "Atribuição-Vedada a criação de obras derivativas 3.0 Ireland"@pt-br,
+        "Atribuição-Proibição de realização de Obras Derivadas 3.0 Irlanda"@pt-pt,
+        "Atribuire-FărăModificări 3.0 Irlanda"@ro,
+        "Attribution-NoDerivs (Атрибуция — Без производных произведений) 3.0 Ирландия"@ru,
+        "Attribution-NoDerivs 3.0 Ireland"@si-lk,
+        "Priznanje avtorstva-Brez predelav 3.0 Irska"@sl,
+        "Attribution-NoDerivs 3.0 Irlandë"@sq,
+        "Attribution-NoDerivs 3.0 Ireland"@sr,
+        "Ауторство-Без прерада 3.0 Ирска"@sr,
+        "Autorstvo-Bez prerada 3.0 Irska"@sr-latn,
+        "Erkännande-IngaBearbetningar 3.0 Irland"@sv,
+        "Attribution-NoDerivs 3.0 ஐயர்லாந்து"@ta,
+        "Attribution-NoDerivs 3.0 ఐర్లాండ్"@te,
+        "แสดงที่มา-ไม่ดัดแปลง 3.0 ไอร์แลนด์"@th,
+        "Alıntı-Türetilemez 3.0 İrlanda"@tr,
+        "Attribution-NoDerivs 3.0 Ireland"@uk,
+        "Attribution-NoDerivs 3.0 Ireland"@ur,
+        "Ghi nhận công của tác giả - Không phái sinh 3.0 Nước Ireland"@vi,
+        "署名-禁止演绎 3.0 爱尔兰"@zh,
+        "姓名標示-禁止改作 3.0 愛爾蘭"@zh-hk,
+        "姓名標示-禁止改作 3.0 愛爾蘭"@zh-tw,
+        "Qaphela Umnikazi-Ungasuseli lutho kulokhu 3.0 i-Ireland"@zu,
+        "${Attribution-NoDerivs} 3.0 ${Ireland}"@zxx ;
+    owl:sameAs <http://creativecommons.org/licenses/by-nd/3.0/ie/> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nd/3.0/ie/80x15.png>,
+        <http://i.creativecommons.org/l/by-nd/3.0/ie/88x31.png> ;
+    li:id "CC-BY-ND-3.0-ie" ;
+    li:name "CC BY-ND 3.0 IE" .
+

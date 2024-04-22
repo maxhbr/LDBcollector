@@ -1,0 +1,19 @@
+{
+  "@context": "https://wking.github.io/fsf-api/schema/license.jsonld",
+  "id": "ClarifiedArtistic",
+  "identifiers": {
+    "spdx": [
+      "ClArtistic"
+    ]
+  },
+  "name": "Clarified Artistic License",
+  "tags": [
+    "gpl-2-compatible",
+    "gpl-3-compatible",
+    "libre"
+  ],
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#ClarifiedArtistic",
+    "http://gianluca.dellavedova.org/2011/01/03/clarified-artistic-license/"
+  ]
+}

@@ -1,0 +1,19 @@
+[license]
+
+expression = "LicenseRef-softSurfer"
+status = [ "allowed" ]
+
+url = '''
+https://fedoraproject.org/wiki/Licensing/softSurfer
+'''
+
+[fedora]
+
+legacy-name = [
+    "softSurfer License"
+]
+
+legacy-abbreviation = [
+    "softSurfer"
+]
+

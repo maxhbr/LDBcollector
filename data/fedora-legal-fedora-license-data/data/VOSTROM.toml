@@ -1,0 +1,14 @@
+[license]
+
+expression = "VOSTROM"
+status = [ "allowed" ]
+
+[fedora]
+
+legacy-name = [
+    "VOSTROM Public License for Open Source"
+]
+
+legacy-abbreviation = [
+    "VOSTROM"
+]

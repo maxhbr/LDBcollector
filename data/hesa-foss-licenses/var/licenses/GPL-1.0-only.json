@@ -1,0 +1,28 @@
+{
+"meta": {
+    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+    "comment": ""
+  },
+  "name": "GNU General Public License 1.0",
+  "scancode_key": "gpl-1.0", 
+  "spdxid": "GPL-1.0-only",
+  "aliases": [
+   "GPL-1.0-only",
+   "GPL-1.0",
+   "GPL1.0",
+   "GPL1",
+   "GNU General Public License Version 1",
+   "GNU General Public License v1.0 only",
+   "GNU General Public License 1.0",
+   "scancode://gpl-1.0",
+   "GPL 1.0",
+   "GPLv1",
+   "GNU General Public License, Version 1",
+   "GNU General Public License, version 1",
+   "GNU General Public License (v1)",
+   "GNU GENERAL PUBLIC LICENSE Version 1",
+   "scancode:gpl-1.0",
+   "GPLv1.0",
+   "GPL-1"
+  ]
+}

@@ -1,0 +1,235 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/elements/1.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://creativecommons.org/licenses/nc/1.0/fi/> a cc:License ;
+    cc:deprecatedOn "2004-05-25"^^<http://www.w3.org/2001/XMLSchema-datatypes#date> ;
+    cc:jurisdiction <http://creativecommons.org/international/fi/> ;
+    cc:legalcode <http://creativecommons.org/licenses/nc/1.0/fi/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:prohibits cc:CommercialUse ;
+    cc:requires cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "1.0" ;
+    dc:identifier "nc" ;
+    dc:source <http://creativecommons.org/licenses/nc/1.0/> ;
+    dc:title "NieKommersieel 1.0 Finland"@af,
+        "غير تجاري 1.0 فلندا"@ar,
+        "NonCommercial 1.0 Finland"@as,
+        "NonCommercial 1.0 Finland"@ast,
+        "NonCommercial 1.0 Finland"@ast-es,
+        "NonCommercial 1.0 Finland"@az,
+        "NonCommercial 1.0 Фінляндыя"@be,
+        "Некомерсиално 1.0 Финландия"@bg,
+        "অ-বানিজ্যিক 1.0 Finland"@bn,
+        "NoComercial 1.0 Finlàndia"@ca,
+        "Neužívejte dílo komerčně 1.0 Finsko"@cs,
+        "IkkeKommerciel 1.0 Finland"@da,
+        "Nicht kommerziell 1.0 Finnland"@de,
+        "NichtKommerziell 1.0 Finnland"@de-at,
+        "NichtKommerziell 1.0 Finnland"@de-ch,
+        "Μη Εμπορική Χρήση 1.0 Φιλανδία"@el,
+        "NonCommercial 1.0 Finland"@en,
+        "NonCommercial 1.0 Finland"@en-ca,
+        "Non-Commercial 1.0 Finland"@en-gb,
+        "Non-Commercial 1.0 Finland"@en-hk,
+        "Non-Commercial 1.0 Finland"@en-sg,
+        "NonCommercial 1.0 Finland"@en-us,
+        "Nekomerce 1.0 Suomujo"@eo,
+        "NoComercial 1.0 Finlandia"@es,
+        "NoComercial 1.0 Finlandia"@es-ar,
+        "NoComercial 1.0 Finlandia"@es-cl,
+        "NoComercial 1.0 Finlandia"@es-co,
+        "No Comercial 1.0 Finlandia"@es-ec,
+        "NoComercial 1.0 Finlandia"@es-es,
+        "No Comercial 1.0 Finlandia"@es-gt,
+        "No Comercial 1.0 Finlandia"@es-mx,
+        "NoComercial 1.0 Finlandia"@es-pe,
+        "NoComercial 1.0 Finlandia"@es-pr,
+        "Mitteäriline eesmärk 1.0 Soome"@et,
+        "EzKomertziala 1.0 Finlandia"@eu,
+        "غیر تجاری 1.0 فنلاند"@fa,
+        "Epäkaupallinen 1.0 Suomi"@fi,
+        "Pas d'Utilisation Commerciale 1.0 Finlande"@fr,
+        "Pas d'Utilisation Commerciale 1.0 Finlande"@fr-ca,
+        "Pas d'Utilisation Commerciale 1.0 Finlande"@fr-ch,
+        "Pas d'Utilisation Commerciale 1.0 Finlande"@fr-lu,
+        "NonCommercial 1.0 Finland"@ga,
+        "NonComercial 1.0 Finlandia"@gl,
+        "שימוש לא מסחרי 1.0 פינלנד"@he,
+        "NonCommercial 1.0 Finland"@hi,
+        "Nekomercijalno 1.0 Finska"@hr,
+        "Ne add el! 1.0 Finnország"@hu,
+        "Ոչ-առևտրային օգտագործում 1.0 Finland"@hy,
+        "NonKomersial 1.0 Finlandia"@id,
+        "NonCommercial 1.0 Finland"@is,
+        "NonCommerciale 1.0 Finlandia"@it,
+        "NonCommerciale 1.0 Finlandia"@it-ch,
+        "非営利 1.0 フィンランド"@ja,
+        "არაკომერციული  1.0 ფინეთი"@ka,
+        "Коммерциялық емес 1.0 Finland"@kk,
+        "비영리 1.0 핀란드"@ko,
+        "Nekomercinis 1.0 Suomija"@lt,
+        "Nekomerciāli 1.0 Somija"@lv,
+        "Некомерцијално 1.0 Финска"@mk,
+        "NonCommercial 1.0 ഫിൻലാന്റ്"@ml,
+        "NonCommercial 1.0 Finland"@mn,
+        "BukanKomersial 1.0 Finland"@ms,
+        "NietCommercieel 1.0 Finland"@nl,
+        "Ikkekommersiell 1.0 Finland"@no,
+        "E sego ya Kgwebo 1.0 Finland"@nso,
+        "NonCommercial 1.0 Finland"@oci-es,
+        "Użycie niekomercyjne 1.0 Finlandia"@pl,
+        "NãoComercial 1.0 Finlândia"@pt,
+        "Uso não-comercial 1.0 Finland"@pt-br,
+        "Uso Não-Comercial 1.0 Filândia"@pt-pt,
+        "NeComercial 1.0 Finlanda"@ro,
+        "Некоммерческое использование 1.0 Финляндия"@ru,
+        "NonCommercial 1.0 Finland"@si-lk,
+        "Nekomercialno 1.0 Finska"@sl,
+        "NonCommercial 1.0 Finlandë"@sq,
+        "Nekomercijalno 1.0 Finska"@sr,
+        "Некомерцијално 1.0 Финска"@sr,
+        "Nekomercijalno 1.0 Finska"@sr-latn,
+        "NonCommercial 1.0 Finland"@st,
+        "IckeKommersiell 1.0 Finland"@sv,
+        "NonCommercial 1.0 Finland"@ta,
+        "NonCommercial 1.0 ఫిన్లాండ్"@te,
+        "ไม่ใช้เพื่อการค้า 1.0 ฟินแลนด์"@th,
+        "Gayriticari 1.0 Finlandiya"@tr,
+        "NonCommercial 1.0 Finland"@uk,
+        "NonCommercial 1.0 Finland"@ur,
+        "Phi thương mại 1.0 Finland"@vi,
+        "非商业性使用 1.0 芬兰"@zh,
+        "非商業性 1.0 芬蘭"@zh-hk,
+        "非商業性 1.0 芬蘭"@zh-tw,
+        "Ungayisebenziseli Ezentengiselwano 1.0 iFinland"@zu,
+        "${NonCommercial} 1.0 ${Finland}"@zxx ;
+    owl:sameAs <https://licensedb.org/id/CC-NC-1.0-fi> ;
+    foaf:logo <http://i.creativecommons.org/l/nc/1.0/fi/88x31.png> .
+
+<https://licensedb.org/id/CC-NC-1.0-fi> a cc:License,
+        li:License ;
+    cc:deprecatedOn "2004-05-25"^^<http://www.w3.org/2001/XMLSchema-datatypes#date> ;
+    cc:jurisdiction <http://creativecommons.org/international/fi/> ;
+    cc:legalcode <http://creativecommons.org/licenses/nc/1.0/fi/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:prohibits cc:CommercialUse ;
+    cc:requires cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "1.0" ;
+    dc:identifier "nc" ;
+    dc:source <http://creativecommons.org/licenses/nc/1.0/> ;
+    dc:title "NieKommersieel 1.0 Finland"@af,
+        "غير تجاري 1.0 فلندا"@ar,
+        "NonCommercial 1.0 Finland"@as,
+        "NonCommercial 1.0 Finland"@ast,
+        "NonCommercial 1.0 Finland"@ast-es,
+        "NonCommercial 1.0 Finland"@az,
+        "NonCommercial 1.0 Фінляндыя"@be,
+        "Некомерсиално 1.0 Финландия"@bg,
+        "অ-বানিজ্যিক 1.0 Finland"@bn,
+        "NoComercial 1.0 Finlàndia"@ca,
+        "Neužívejte dílo komerčně 1.0 Finsko"@cs,
+        "IkkeKommerciel 1.0 Finland"@da,
+        "Nicht kommerziell 1.0 Finnland"@de,
+        "NichtKommerziell 1.0 Finnland"@de-at,
+        "NichtKommerziell 1.0 Finnland"@de-ch,
+        "Μη Εμπορική Χρήση 1.0 Φιλανδία"@el,
+        "NonCommercial 1.0 Finland"@en,
+        "NonCommercial 1.0 Finland"@en-ca,
+        "Non-Commercial 1.0 Finland"@en-gb,
+        "Non-Commercial 1.0 Finland"@en-hk,
+        "Non-Commercial 1.0 Finland"@en-sg,
+        "NonCommercial 1.0 Finland"@en-us,
+        "Nekomerce 1.0 Suomujo"@eo,
+        "NoComercial 1.0 Finlandia"@es,
+        "NoComercial 1.0 Finlandia"@es-ar,
+        "NoComercial 1.0 Finlandia"@es-cl,
+        "NoComercial 1.0 Finlandia"@es-co,
+        "No Comercial 1.0 Finlandia"@es-ec,
+        "NoComercial 1.0 Finlandia"@es-es,
+        "No Comercial 1.0 Finlandia"@es-gt,
+        "No Comercial 1.0 Finlandia"@es-mx,
+        "NoComercial 1.0 Finlandia"@es-pe,
+        "NoComercial 1.0 Finlandia"@es-pr,
+        "Mitteäriline eesmärk 1.0 Soome"@et,
+        "EzKomertziala 1.0 Finlandia"@eu,
+        "غیر تجاری 1.0 فنلاند"@fa,
+        "Epäkaupallinen 1.0 Suomi"@fi,
+        "Pas d'Utilisation Commerciale 1.0 Finlande"@fr,
+        "Pas d'Utilisation Commerciale 1.0 Finlande"@fr-ca,
+        "Pas d'Utilisation Commerciale 1.0 Finlande"@fr-ch,
+        "Pas d'Utilisation Commerciale 1.0 Finlande"@fr-lu,
+        "NonCommercial 1.0 Finland"@ga,
+        "NonComercial 1.0 Finlandia"@gl,
+        "שימוש לא מסחרי 1.0 פינלנד"@he,
+        "NonCommercial 1.0 Finland"@hi,
+        "Nekomercijalno 1.0 Finska"@hr,
+        "Ne add el! 1.0 Finnország"@hu,
+        "Ոչ-առևտրային օգտագործում 1.0 Finland"@hy,
+        "NonKomersial 1.0 Finlandia"@id,
+        "NonCommercial 1.0 Finland"@is,
+        "NonCommerciale 1.0 Finlandia"@it,
+        "NonCommerciale 1.0 Finlandia"@it-ch,
+        "非営利 1.0 フィンランド"@ja,
+        "არაკომერციული  1.0 ფინეთი"@ka,
+        "Коммерциялық емес 1.0 Finland"@kk,
+        "비영리 1.0 핀란드"@ko,
+        "Nekomercinis 1.0 Suomija"@lt,
+        "Nekomerciāli 1.0 Somija"@lv,
+        "Некомерцијално 1.0 Финска"@mk,
+        "NonCommercial 1.0 ഫിൻലാന്റ്"@ml,
+        "NonCommercial 1.0 Finland"@mn,
+        "BukanKomersial 1.0 Finland"@ms,
+        "NietCommercieel 1.0 Finland"@nl,
+        "Ikkekommersiell 1.0 Finland"@no,
+        "E sego ya Kgwebo 1.0 Finland"@nso,
+        "NonCommercial 1.0 Finland"@oci-es,
+        "Użycie niekomercyjne 1.0 Finlandia"@pl,
+        "NãoComercial 1.0 Finlândia"@pt,
+        "Uso não-comercial 1.0 Finland"@pt-br,
+        "Uso Não-Comercial 1.0 Filândia"@pt-pt,
+        "NeComercial 1.0 Finlanda"@ro,
+        "Некоммерческое использование 1.0 Финляндия"@ru,
+        "NonCommercial 1.0 Finland"@si-lk,
+        "Nekomercialno 1.0 Finska"@sl,
+        "NonCommercial 1.0 Finlandë"@sq,
+        "Nekomercijalno 1.0 Finska"@sr,
+        "Некомерцијално 1.0 Финска"@sr,
+        "Nekomercijalno 1.0 Finska"@sr-latn,
+        "NonCommercial 1.0 Finland"@st,
+        "IckeKommersiell 1.0 Finland"@sv,
+        "NonCommercial 1.0 Finland"@ta,
+        "NonCommercial 1.0 ఫిన్లాండ్"@te,
+        "ไม่ใช้เพื่อการค้า 1.0 ฟินแลนด์"@th,
+        "Gayriticari 1.0 Finlandiya"@tr,
+        "NonCommercial 1.0 Finland"@uk,
+        "NonCommercial 1.0 Finland"@ur,
+        "Phi thương mại 1.0 Finland"@vi,
+        "非商业性使用 1.0 芬兰"@zh,
+        "非商業性 1.0 芬蘭"@zh-hk,
+        "非商業性 1.0 芬蘭"@zh-tw,
+        "Ungayisebenziseli Ezentengiselwano 1.0 iFinland"@zu,
+        "${NonCommercial} 1.0 ${Finland}"@zxx ;
+    owl:sameAs <http://creativecommons.org/licenses/nc/1.0/fi/> ;
+    foaf:logo <http://i.creativecommons.org/l/nc/1.0/fi/88x31.png> ;
+    li:id "CC-NC-1.0-fi" ;
+    li:name "CC NC 1.0 FI" .
+

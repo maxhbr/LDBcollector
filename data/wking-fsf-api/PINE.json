@@ -1,0 +1,12 @@
+{
+  "@context": "https://wking.github.io/fsf-api/schema/license.jsonld",
+  "id": "PINE",
+  "name": "License of PINE",
+  "tags": [
+    "non-free"
+  ],
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#PINE",
+    "http://directory.fsf.org/wiki/License:PINE"
+  ]
+}

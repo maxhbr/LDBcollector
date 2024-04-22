@@ -1,0 +1,14 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+
+canonicalName: "SGI OpenGL License"
+category: "SGI-OpenGL"
+spdxIdentifier: "SGI-OpenGL"
+
+alternativeNames:
+  - "SGI-OpenGL"
+  - "SGI OpenGL License"
+
+otherIds: 
+  - "scancode:x11-opengl"

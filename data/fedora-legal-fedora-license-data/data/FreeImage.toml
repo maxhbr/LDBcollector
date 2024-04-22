@@ -1,0 +1,19 @@
+[license]
+
+expression = "FreeImage"
+status = [ "allowed" ]
+
+url = '''
+http://freeimage.sourceforge.net/freeimage-license.txt
+'''
+
+[fedora]
+
+legacy-name = [
+    "FreeImage Public License"
+]
+
+legacy-abbreviation = [
+    "MPLv1.0"
+]
+

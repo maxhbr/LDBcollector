@@ -1,0 +1,237 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/elements/1.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://creativecommons.org/licenses/by-nc-sa/2.5/scotland/> a cc:License ;
+    cc:jurisdiction <http://creativecommons.org/international/scotland/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nc-sa/2.5/scotland/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:Distribution,
+        cc:Reproduction ;
+    cc:prohibits cc:CommercialUse ;
+    cc:requires cc:Attribution,
+        cc:Notice,
+        cc:ShareAlike ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.5" ;
+    dc:identifier "by-nc-sa" ;
+    dc:source <http://creativecommons.org/licenses/by-nc-sa/2.5/> ;
+    dc:title "Erkenning-Niekommersieel-InsgelyksDeel 2.5 VK: Skotland"@af,
+        "المشاركة على قدم المساواة-غير تجاري-نسب العمل 2.5 سكوتلندا - المملكة المتحدة"@ar,
+        "Attribution-NonCommercial-ShareAlike 2.5 UK: Scotland"@as,
+        "Attribution-NonCommercial-ShareAlike 2.5 UK: Scotland"@ast,
+        "Attribution-NonCommercial-ShareAlike 2.5 UK: Scotland"@ast-es,
+        "Attribution-NonCommercial-ShareAlike 2.5 UK: Scotland"@az,
+        "Attribution-NonCommercial-ShareAlike 2.5 Шатландыя"@be,
+        "Признание-Некомерсиално-Споделяне на споделеното 2.5 Обединено кралство: Шотландия"@bg,
+        "Attribution-NonCommercial-ShareAlike 2.5 UK: Scotland"@bn,
+        "Reconeixement-NoComercial-CompartirIgual 2.5 Escòcia"@ca,
+        "Uveďte autora-Nevyužívejte dílo komerčně-Zachovejte licenci 2.5 Skotsko"@cs,
+        "Navngivelse-IkkeKommerciel–DelPåSammeVilkår 2.5 Skotland"@da,
+        "Namensnennung-Nicht-kommerziell-Weitergabe unter gleichen Bedingungen 2.5 Schottland"@de,
+        "Namensnennung-NichtKommerziell-Weitergabe unter gleichen Bedingungen 2.5 Schottland"@de-at,
+        "Namensnennung-NichtKommerziell-Weitergabe unter gleichen Bedingungen 2.5 Schottland"@de-ch,
+        "Αναφορά Δημιουργού - Μη Εμπορική Χρήση - Παρόμοια Διανομή 2.5 Ηνωμένο Βασίλειο: Σκωτία"@el,
+        "Attribution-NonCommercial-ShareAlike 2.5 UK: Scotland"@en,
+        "Attribution-NonCommercial-ShareAlike 2.5 UK: Scotland"@en-ca,
+        "Attribution-NonCommercial-ShareAlike 2.5 UK: Scotland"@en-gb,
+        "Attribution-NonCommercial-ShareAlike 2.5 UK: Scotland"@en-hk,
+        "Attribution-NonCommercial-ShareAlike 2.5 UK: Scotland"@en-sg,
+        "Attribution-NonCommercial-ShareAlike 2.5 UK: Scotland"@en-us,
+        "Atribuite-Nekomerce-Samkondiĉe 2.5 Britujo: Skotujo"@eo,
+        "Atribución-NoComercial-CompartirIgual 2.5 Escocia"@es,
+        "Atribución-NoComercial-CompartirDerivadasIgual 2.5 Reino Unido: Escocia"@es-ar,
+        "Atribución-NoComercial-LicenciarIgual 2.5 Escocia"@es-cl,
+        "Reconocimiento-NoComercial-CompartirIgual 2.5 Escocia"@es-co,
+        "Reconocimiento-NoComercial-CompartirIgual 2.5 Escocia"@es-ec,
+        "Reconocimiento-NoComercial-CompartirIgual 2.5 Escocia"@es-es,
+        "Reconocimiento-NoComercial-CompartirIgual 2.5 Escocia"@es-gt,
+        "Atribución-No Comercial-Licenciamiento Recíproco 2.5 Escocia"@es-mx,
+        "Reconocimiento-NoComercial-CompartirIgual 2.5 Escocia"@es-pe,
+        "Reconocimiento-NoComercial-CompartirIgual 2.5 Escocia"@es-pr,
+        "Autorile viitamine + Mitteäriline eesmärk + Jagamine samadel tingimustel 2.5 Šotimaa"@et,
+        "Aitortu-EzKomertziala-PartekatuBerdin 2.5 Eskozia"@eu,
+        "Attribution-NonCommercial-ShareAlike 2.5 انگلستان : اسکاتلند"@fa,
+        "Nimeä-Epäkaupallinen-Tarttuva 2.5 Iso-Britannia: Scotland"@fi,
+        "Attribution - Pas d'Utilisation Commerciale - Partage à l'Identique 2.5 Royaume-Uni : Ecosse"@fr,
+        "Paternité - Pas d'Utilisation Commerciale - Partage des Conditions Initiales à l'Identique 2.5 Royaume-Uni : Ecosse"@fr-ca,
+        "Paternité - Pas d'Utilisation Commerciale - Partage des Conditions Initiales à l'Identique 2.5 Royaume-Uni : Ecosse"@fr-ch,
+        "Paternité - Pas d'Utilisation Commerciale - Partage des Conditions Initiales à l'Identique 2.5 Royaume-Uni : Ecosse"@fr-lu,
+        "Attribution-NonCommercial-ShareAlike 2.5 UK: Scotland"@ga,
+        "Recoñecemento-NonComercial-CompartirIgual 2.5 UK: Scotland"@gl,
+        "ייחוס-שימוש לא מסחרי-שיתוף זהה 2.5 סקוטלנד"@he,
+        "Attribution-NonCommercial-ShareAlike 2.5 UK: Scotland"@hi,
+        "Imenovanje-Nekomercijalno-Dijeli pod istim uvjetima 2.5 VB: Škotska"@hr,
+        "Nevezd meg! - Ne add el! - Így add tovább! 2.5 UK: Skócia"@hu,
+        "Հղում - ոչ-առևտրային օգտագործում - համանման տարածում 2.5 ՄԹ: Շոտլանդիա"@hy,
+        "Atribusi-NonKomersial-BerbagiSerupa 2.5 Britania Raya: Skotlandia"@id,
+        "Attribution-NonCommercial-ShareAlike 2.5 UK: Scotland"@is,
+        "Attribuzione - Non commerciale - Condividi allo stesso modo 2.5 UK: Scotland"@it,
+        "Attribuzione - Non commerciale - Condividi allo stesso modo 2.5 UK: Scotland"@it-ch,
+        "表示 - 非営利 - 継承 2.5 スコットランド（英）"@ja,
+        "ავტორობის მითითებით–არაკომერციული გამოყენებისთვის–გამოყენება იგივე პირობებით 2.5 გაერტიანებული სამეფო: შოტლანდია"@ka,
+        "Attribution-NonCommercial-ShareAlike 2.5 UK: Scotland"@kk,
+        "저작자표시-비영리-동일조건변경허락 2.5 영국 : 스코틀란드"@ko,
+        "Attribution-NonCommercial-ShareAlike 2.5 Jungtinė Karalystė: Škotija"@lt,
+        "Atsaucoties-Nekomerciāls-Nemainot licenci 2.5 Apvienotā karaliste: Skotija"@lv,
+        "НаведиИзвор-Некомерцијално-СподелиПодИстиУслови 2.5 Велика Британија: Шкотска"@mk,
+        "Attribution-NonCommercial-ShareAlike 2.5 UK: Scotland"@ml,
+        "Attribution-NonCommercial-ShareAlike 2.5 UK: Scotland"@mn,
+        "Pengiktirafan-BukanKomersial-PerkongsianSerupa 2.5 UK: Scotland"@ms,
+        "Naamsvermelding-NietCommercieel-GelijkDelen 2.5 Schotland"@nl,
+        "Navngivelse-Ikkekommersiell-DelPåSammeVilkår 2.5 UK: Skottland"@no,
+        "Tsebagatšo - E sego ya Kgwebo - Mohlakanelwa 2.5 UK: Scotland"@nso,
+        "Attribution-NonCommercial-ShareAlike 2.5 UK: Scotland"@oci-es,
+        "Uznanie autorstwa-Użycie niekomercyjne-Na tych samych warunkach 2.5 UK: Szkocja"@pl,
+        "Atribuição - NãoComercial - CompartilhaIgual 2.5 Reino Unido: Escócia"@pt,
+        "Atribuição-Uso não-comercial-Compartilhamento pela mesma licença 2.5 UK: Scotland"@pt-br,
+        "Atribuição-Uso Não-Comercial-Partilha nos termos da mesma licença 2.5 UK: Scotland"@pt-pt,
+        "Atribuire-Necomercial-FărăModificări 2.5 Marea Britanie: Scoţia"@ro,
+        "Attribution-NonCommercial-ShareAlike (Атрибуция — Некоммерческое использование — С сохранением условий) 2.5 Великобритания: Шотландия"@ru,
+        "Attribution-NonCommercial-ShareAlike 2.5 UK: Scotland"@si-lk,
+        "Priznanje avtorstva-Nekomercialno-Deljenje pod enakimi pogoji 2.5 Združeno kraljestvo: Škotska"@sl,
+        "Attribution-NonCommercial-ShareAlike 2.5 UK: Skoci"@sq,
+        "Autorstvo-Nekomercijalno-Deliti pod istim uslovima 2.5 VB: Škotska"@sr,
+        "Ауторство-Некомерцијално-Делити под истим условима 2.5 ВБ: Шкотска"@sr,
+        "Autorstvo-Nekomercijalno-Deliti pod istim uslovima 2.5 VB: Škotska"@sr-latn,
+        "Attribution-NonCommercial-ShareAlike 2.5 UK: Scotland"@st,
+        "Erkännande-IckeKommersiell-DelaLika 2.5 UK: Skottland"@sv,
+        "Attribution-NonCommercial-ShareAlike 2.5 UK: Scotland"@ta,
+        "Attribution-NonCommercial-ShareAlike 2.5 UK: Scotland"@te,
+        "แสดงที่มา-ไม่ใช้เพื่อการค้า-อนุญาตแบบเดียวกัน 2.5 สหราชอาณาจักร : สกอตแลนด์"@th,
+        "Attribution-Gayriticari-ShareAlike 2.5 UK: İngiltere"@tr,
+        "Attribution-NonCommercial-ShareAlike 2.5 UK: Scotland"@uk,
+        "Attribution-NonCommercial-ShareAlike 2.5 UK: Scotland"@ur,
+        "Attribution-NonCommercial-ShareAlike 2.5 UK: Scotland"@vi,
+        "署名-非商业性使用-相同方式共享 2.5 英国：苏格兰"@zh,
+        "姓名標示-非商業性-相同方式分享 2.5 英國: 蘇格蘭"@zh-hk,
+        "姓名標示-非商業性-相同方式分享 2.5 英國: 蘇格蘭"@zh-tw,
+        "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano-Yihlanganyeleni 2.5 E-UK: Scotland"@zu,
+        "${Attribution-NonCommercial-ShareAlike} 2.5 ${UK: Scotland}"@zxx ;
+    owl:sameAs <https://licensedb.org/id/CC-BY-NC-SA-2.5-scotland> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nc-sa/2.5/scotland/80x15.png>,
+        <http://i.creativecommons.org/l/by-nc-sa/2.5/scotland/88x31.png> .
+
+<https://licensedb.org/id/CC-BY-NC-SA-2.5-scotland> a cc:License,
+        li:License ;
+    cc:jurisdiction <http://creativecommons.org/international/scotland/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nc-sa/2.5/scotland/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:Distribution,
+        cc:Reproduction ;
+    cc:prohibits cc:CommercialUse ;
+    cc:requires cc:Attribution,
+        cc:Notice,
+        cc:ShareAlike ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.5" ;
+    dc:identifier "by-nc-sa" ;
+    dc:source <http://creativecommons.org/licenses/by-nc-sa/2.5/> ;
+    dc:title "Erkenning-Niekommersieel-InsgelyksDeel 2.5 VK: Skotland"@af,
+        "المشاركة على قدم المساواة-غير تجاري-نسب العمل 2.5 سكوتلندا - المملكة المتحدة"@ar,
+        "Attribution-NonCommercial-ShareAlike 2.5 UK: Scotland"@as,
+        "Attribution-NonCommercial-ShareAlike 2.5 UK: Scotland"@ast,
+        "Attribution-NonCommercial-ShareAlike 2.5 UK: Scotland"@ast-es,
+        "Attribution-NonCommercial-ShareAlike 2.5 UK: Scotland"@az,
+        "Attribution-NonCommercial-ShareAlike 2.5 Шатландыя"@be,
+        "Признание-Некомерсиално-Споделяне на споделеното 2.5 Обединено кралство: Шотландия"@bg,
+        "Attribution-NonCommercial-ShareAlike 2.5 UK: Scotland"@bn,
+        "Reconeixement-NoComercial-CompartirIgual 2.5 Escòcia"@ca,
+        "Uveďte autora-Nevyužívejte dílo komerčně-Zachovejte licenci 2.5 Skotsko"@cs,
+        "Navngivelse-IkkeKommerciel–DelPåSammeVilkår 2.5 Skotland"@da,
+        "Namensnennung-Nicht-kommerziell-Weitergabe unter gleichen Bedingungen 2.5 Schottland"@de,
+        "Namensnennung-NichtKommerziell-Weitergabe unter gleichen Bedingungen 2.5 Schottland"@de-at,
+        "Namensnennung-NichtKommerziell-Weitergabe unter gleichen Bedingungen 2.5 Schottland"@de-ch,
+        "Αναφορά Δημιουργού - Μη Εμπορική Χρήση - Παρόμοια Διανομή 2.5 Ηνωμένο Βασίλειο: Σκωτία"@el,
+        "Attribution-NonCommercial-ShareAlike 2.5 UK: Scotland"@en,
+        "Attribution-NonCommercial-ShareAlike 2.5 UK: Scotland"@en-ca,
+        "Attribution-NonCommercial-ShareAlike 2.5 UK: Scotland"@en-gb,
+        "Attribution-NonCommercial-ShareAlike 2.5 UK: Scotland"@en-hk,
+        "Attribution-NonCommercial-ShareAlike 2.5 UK: Scotland"@en-sg,
+        "Attribution-NonCommercial-ShareAlike 2.5 UK: Scotland"@en-us,
+        "Atribuite-Nekomerce-Samkondiĉe 2.5 Britujo: Skotujo"@eo,
+        "Atribución-NoComercial-CompartirIgual 2.5 Escocia"@es,
+        "Atribución-NoComercial-CompartirDerivadasIgual 2.5 Reino Unido: Escocia"@es-ar,
+        "Atribución-NoComercial-LicenciarIgual 2.5 Escocia"@es-cl,
+        "Reconocimiento-NoComercial-CompartirIgual 2.5 Escocia"@es-co,
+        "Reconocimiento-NoComercial-CompartirIgual 2.5 Escocia"@es-ec,
+        "Reconocimiento-NoComercial-CompartirIgual 2.5 Escocia"@es-es,
+        "Reconocimiento-NoComercial-CompartirIgual 2.5 Escocia"@es-gt,
+        "Atribución-No Comercial-Licenciamiento Recíproco 2.5 Escocia"@es-mx,
+        "Reconocimiento-NoComercial-CompartirIgual 2.5 Escocia"@es-pe,
+        "Reconocimiento-NoComercial-CompartirIgual 2.5 Escocia"@es-pr,
+        "Autorile viitamine + Mitteäriline eesmärk + Jagamine samadel tingimustel 2.5 Šotimaa"@et,
+        "Aitortu-EzKomertziala-PartekatuBerdin 2.5 Eskozia"@eu,
+        "Attribution-NonCommercial-ShareAlike 2.5 انگلستان : اسکاتلند"@fa,
+        "Nimeä-Epäkaupallinen-Tarttuva 2.5 Iso-Britannia: Scotland"@fi,
+        "Attribution - Pas d'Utilisation Commerciale - Partage à l'Identique 2.5 Royaume-Uni : Ecosse"@fr,
+        "Paternité - Pas d'Utilisation Commerciale - Partage des Conditions Initiales à l'Identique 2.5 Royaume-Uni : Ecosse"@fr-ca,
+        "Paternité - Pas d'Utilisation Commerciale - Partage des Conditions Initiales à l'Identique 2.5 Royaume-Uni : Ecosse"@fr-ch,
+        "Paternité - Pas d'Utilisation Commerciale - Partage des Conditions Initiales à l'Identique 2.5 Royaume-Uni : Ecosse"@fr-lu,
+        "Attribution-NonCommercial-ShareAlike 2.5 UK: Scotland"@ga,
+        "Recoñecemento-NonComercial-CompartirIgual 2.5 UK: Scotland"@gl,
+        "ייחוס-שימוש לא מסחרי-שיתוף זהה 2.5 סקוטלנד"@he,
+        "Attribution-NonCommercial-ShareAlike 2.5 UK: Scotland"@hi,
+        "Imenovanje-Nekomercijalno-Dijeli pod istim uvjetima 2.5 VB: Škotska"@hr,
+        "Nevezd meg! - Ne add el! - Így add tovább! 2.5 UK: Skócia"@hu,
+        "Հղում - ոչ-առևտրային օգտագործում - համանման տարածում 2.5 ՄԹ: Շոտլանդիա"@hy,
+        "Atribusi-NonKomersial-BerbagiSerupa 2.5 Britania Raya: Skotlandia"@id,
+        "Attribution-NonCommercial-ShareAlike 2.5 UK: Scotland"@is,
+        "Attribuzione - Non commerciale - Condividi allo stesso modo 2.5 UK: Scotland"@it,
+        "Attribuzione - Non commerciale - Condividi allo stesso modo 2.5 UK: Scotland"@it-ch,
+        "表示 - 非営利 - 継承 2.5 スコットランド（英）"@ja,
+        "ავტორობის მითითებით–არაკომერციული გამოყენებისთვის–გამოყენება იგივე პირობებით 2.5 გაერტიანებული სამეფო: შოტლანდია"@ka,
+        "Attribution-NonCommercial-ShareAlike 2.5 UK: Scotland"@kk,
+        "저작자표시-비영리-동일조건변경허락 2.5 영국 : 스코틀란드"@ko,
+        "Attribution-NonCommercial-ShareAlike 2.5 Jungtinė Karalystė: Škotija"@lt,
+        "Atsaucoties-Nekomerciāls-Nemainot licenci 2.5 Apvienotā karaliste: Skotija"@lv,
+        "НаведиИзвор-Некомерцијално-СподелиПодИстиУслови 2.5 Велика Британија: Шкотска"@mk,
+        "Attribution-NonCommercial-ShareAlike 2.5 UK: Scotland"@ml,
+        "Attribution-NonCommercial-ShareAlike 2.5 UK: Scotland"@mn,
+        "Pengiktirafan-BukanKomersial-PerkongsianSerupa 2.5 UK: Scotland"@ms,
+        "Naamsvermelding-NietCommercieel-GelijkDelen 2.5 Schotland"@nl,
+        "Navngivelse-Ikkekommersiell-DelPåSammeVilkår 2.5 UK: Skottland"@no,
+        "Tsebagatšo - E sego ya Kgwebo - Mohlakanelwa 2.5 UK: Scotland"@nso,
+        "Attribution-NonCommercial-ShareAlike 2.5 UK: Scotland"@oci-es,
+        "Uznanie autorstwa-Użycie niekomercyjne-Na tych samych warunkach 2.5 UK: Szkocja"@pl,
+        "Atribuição - NãoComercial - CompartilhaIgual 2.5 Reino Unido: Escócia"@pt,
+        "Atribuição-Uso não-comercial-Compartilhamento pela mesma licença 2.5 UK: Scotland"@pt-br,
+        "Atribuição-Uso Não-Comercial-Partilha nos termos da mesma licença 2.5 UK: Scotland"@pt-pt,
+        "Atribuire-Necomercial-FărăModificări 2.5 Marea Britanie: Scoţia"@ro,
+        "Attribution-NonCommercial-ShareAlike (Атрибуция — Некоммерческое использование — С сохранением условий) 2.5 Великобритания: Шотландия"@ru,
+        "Attribution-NonCommercial-ShareAlike 2.5 UK: Scotland"@si-lk,
+        "Priznanje avtorstva-Nekomercialno-Deljenje pod enakimi pogoji 2.5 Združeno kraljestvo: Škotska"@sl,
+        "Attribution-NonCommercial-ShareAlike 2.5 UK: Skoci"@sq,
+        "Autorstvo-Nekomercijalno-Deliti pod istim uslovima 2.5 VB: Škotska"@sr,
+        "Ауторство-Некомерцијално-Делити под истим условима 2.5 ВБ: Шкотска"@sr,
+        "Autorstvo-Nekomercijalno-Deliti pod istim uslovima 2.5 VB: Škotska"@sr-latn,
+        "Attribution-NonCommercial-ShareAlike 2.5 UK: Scotland"@st,
+        "Erkännande-IckeKommersiell-DelaLika 2.5 UK: Skottland"@sv,
+        "Attribution-NonCommercial-ShareAlike 2.5 UK: Scotland"@ta,
+        "Attribution-NonCommercial-ShareAlike 2.5 UK: Scotland"@te,
+        "แสดงที่มา-ไม่ใช้เพื่อการค้า-อนุญาตแบบเดียวกัน 2.5 สหราชอาณาจักร : สกอตแลนด์"@th,
+        "Attribution-Gayriticari-ShareAlike 2.5 UK: İngiltere"@tr,
+        "Attribution-NonCommercial-ShareAlike 2.5 UK: Scotland"@uk,
+        "Attribution-NonCommercial-ShareAlike 2.5 UK: Scotland"@ur,
+        "Attribution-NonCommercial-ShareAlike 2.5 UK: Scotland"@vi,
+        "署名-非商业性使用-相同方式共享 2.5 英国：苏格兰"@zh,
+        "姓名標示-非商業性-相同方式分享 2.5 英國: 蘇格蘭"@zh-hk,
+        "姓名標示-非商業性-相同方式分享 2.5 英國: 蘇格蘭"@zh-tw,
+        "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano-Yihlanganyeleni 2.5 E-UK: Scotland"@zu,
+        "${Attribution-NonCommercial-ShareAlike} 2.5 ${UK: Scotland}"@zxx ;
+    owl:sameAs <http://creativecommons.org/licenses/by-nc-sa/2.5/scotland/> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nc-sa/2.5/scotland/80x15.png>,
+        <http://i.creativecommons.org/l/by-nc-sa/2.5/scotland/88x31.png> ;
+    li:id "CC-BY-NC-SA-2.5-scotland" ;
+    li:name "CC BY-NC-SA 2.5 SCOTLAND" .
+

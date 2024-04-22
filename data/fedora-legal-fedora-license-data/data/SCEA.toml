@@ -1,0 +1,19 @@
+[license]
+
+expression = "SCEA"
+status = [ "allowed" ]
+
+url = '''
+http://research.scea.com/scea_shared_source_license.html
+'''
+
+[fedora]
+
+legacy-name = [
+    "SCEA Shared Source License"
+]
+
+legacy-abbreviation = [
+    "SCEA"
+]
+

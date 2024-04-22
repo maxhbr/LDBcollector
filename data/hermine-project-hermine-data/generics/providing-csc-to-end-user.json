@@ -1,0 +1,6 @@
+{
+  "name": "Providing CSC to end user",
+  "description": "Make the corresponding source code available (including modifications):\r\n-at the time of distribution of the software and on the same medium;\r\n-by including a written offer allowing others to obtain it;\r\n-by making it available online.",
+  "metacategory": "ProvidingSourceCode",
+  "passivity": "Active"
+}

@@ -1,0 +1,236 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/elements/1.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://creativecommons.org/licenses/by-nd/2.5/nl/> a cc:License ;
+    cc:jurisdiction <http://creativecommons.org/international/nl/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nd/2.5/nl/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.5" ;
+    dc:identifier "by-nd" ;
+    dc:isReplacedBy <http://creativecommons.org/licenses/by-nd/3.0/nl/> ;
+    dc:source <http://creativecommons.org/licenses/by-nd/2.5/> ;
+    dc:title "Erkenning-GeenAfleidings 2.5 Nederland"@af,
+        "نسب- غير مشتق 2.5 هولندا"@ar,
+        "Attribution-NoDerivs 2.5 Netherlands"@as,
+        "Attribution-NoDerivs 2.5 Netherlands"@ast,
+        "Attribution-NoDerivs 2.5 Netherlands"@ast-es,
+        "Attribution-NoDerivs 2.5 Netherlands"@az,
+        "Attribution-NoDerivs 2.5 Нідэрланды"@be,
+        "Признание-Без производни 2.5 Холандия"@bg,
+        "Attribution-NoDerivs 2.5 Netherlands"@bn,
+        "Reconeixement-SenseObraDerivada 2.5 Holanda"@ca,
+        "Uveďte autora-Nezasahujte do díla 2.5 Nizozemí"@cs,
+        "Navngivelse-IngenBearbejdelse 2.5 Holland"@da,
+        "Namensnennung-Keine Bearbeitung 2.5 Niederlande"@de,
+        "Namensnennung-KeineBearbeitung 2.5 Niederlande"@de-at,
+        "Namensnennung-KeineBearbeitung 2.5 Niederlande"@de-ch,
+        "Αναφορά Δημιουργού-Όχι Παράγωγα Έργα 2.5 Ολλανδία"@el,
+        "Attribution-NoDerivs 2.5 Netherlands"@en,
+        "Attribution-NoDerivs 2.5 Netherlands"@en-ca,
+        "Attribution-NoDerivs 2.5 Netherlands"@en-gb,
+        "Attribution-NoDerivs 2.5 Netherlands"@en-hk,
+        "Attribution-NoDerivs 2.5 Netherlands"@en-sg,
+        "Attribution-NoDerivs 2.5 Netherlands"@en-us,
+        "Atribuite-Nemodifite 2.5 Nederlando"@eo,
+        "Atribución-SinDerivadas 2.5 Holanda"@es,
+        "Atribución-SinDerivadas 2.5 Holanda"@es-ar,
+        "Atribución-SinDerivadas 2.5 Holanda"@es-cl,
+        "Reconocimiento-SinObraDerivada 2.5 Holanda"@es-co,
+        "Reconocimiento-SinObraDerivada 2.5 Holanda"@es-ec,
+        "Reconocimiento-SinObraDerivada 2.5 Holanda"@es-es,
+        "Reconocimiento-SinObraDerivada 2.5 Holanda"@es-gt,
+        "Atribución-No Derivadas 2.5 Holanda"@es-mx,
+        "Reconocimiento-SinObraDerivada 2.5 Holanda"@es-pe,
+        "Reconocimiento-SinObraDerivada 2.5 Holanda"@es-pr,
+        "Autorile viitamine + Tuletatud teoste keeld 2.5 Holland"@et,
+        "Aitortu-LanEratorririkGabe 2.5 Herbehereak"@eu,
+        "Attribution-NoDerivs 2.5 هلند"@fa,
+        "Nimeä-Ei muutoksia 2.5 Hollanti"@fi,
+        "Paternité - Pas de Modification 2.5 Pays-Bas"@fr,
+        "Paternité - Pas de Modification 2.5 Pays-Bas"@fr-ca,
+        "Paternité - Pas de Modification 2.5 Pays-Bas"@fr-ch,
+        "Paternité - Pas de Modification 2.5 Pays-Bas"@fr-lu,
+        "Attribution-NoDerivs 2.5 Netherlands"@ga,
+        "Recoñecemento-SenObraDerivada 2.5 Holanda"@gl,
+        "ייחוס-איסור יצירות נגזרות 2.5 הולנד"@he,
+        "Attribution-NoDerivs 2.5 Netherlands"@hi,
+        "Imenovanje-Bez prerada 2.5 Nizozemska"@hr,
+        "Nevezd meg! - Ne változtasd! 2.5 Hollandia"@hu,
+        "Հղում - Օգտագործում առանց վերափոխումների 2.5 Նիդերլանդներ"@hy,
+        "Atribusi-TanpaTurunan 2.5 Belanda"@id,
+        "Attribution-NoDerivs 2.5 Holland"@is,
+        "Attribuzione - Non opere derivate 2.5 Olanda"@it,
+        "Attribuzione - Non opere derivate 2.5 Olanda"@it-ch,
+        "表示 - 改変禁止 2.5 オランダ"@ja,
+        "ავტორობის მითითებით გადამუშავების გარეშე 2.5 ნიდერლანდები"@ka,
+        "Туынды жасамау 2.5 Netherlands"@kk,
+        "저작자표시-변경금지 2.5 네덜란드"@ko,
+        "Attribution-NoDerivs 2.5 Nyderlandai"@lt,
+        "Atsaucoties-Neatvasinot 2.5 Nīderlande"@lv,
+        "НаведиИзвор-БезИзведениДела 2.5 Холандија"@mk,
+        "Attribution-NoDerivs 2.5 നെതർലാന്റ്സ്"@ml,
+        "Attribution-NoDerivs 2.5 Netherlands"@mn,
+        "Pengiktirafan-TiadaTerbitan 2.5 Netherlands"@ms,
+        "Naamsvermelding-GeenAfgeleideWerken 2.5 Nederland"@nl,
+        "Navngivelse-IngenBearbeidelse 2.5 Nederland"@no,
+        "Tsebagatšo - Tše sa Fetolwego 2.5 Netherlands"@nso,
+        "Attribution-NoDerivs 2.5 Netherlands"@oci-es,
+        "Uznanie autorstwa-Bez utworów zależnych 2.5 Holandia"@pl,
+        "Atribuição - SemDerivados 2.5 Holanda"@pt,
+        "Atribuição-Vedada a criação de obras derivativas 2.5 Netherlands"@pt-br,
+        "Atribuição-Proibição de realização de Obras Derivadas 2.5 Holanda"@pt-pt,
+        "Atribuire-FărăModificări 2.5 Olanda"@ro,
+        "Attribution-NoDerivs (Атрибуция — Без производных произведений) 2.5 Нидерланды"@ru,
+        "Attribution-NoDerivs 2.5 Netherlands"@si-lk,
+        "Priznanje avtorstva-Brez predelav 2.5 Nizozemska"@sl,
+        "Attribution-NoDerivs 2.5 Holandë"@sq,
+        "Autorstvo-Bez prerada 2.5 Holandija"@sr,
+        "Ауторство-Без прерада 2.5 Холандија"@sr,
+        "Autorstvo-Bez prerada 2.5 Holandija"@sr-latn,
+        "Attribution-NoDerivs 2.5 Netherlands"@st,
+        "Erkännande-IngaBearbetningar 2.5 Nederländerna"@sv,
+        "Attribution-NoDerivs 2.5 நெதர்லாந்து"@ta,
+        "Attribution-NoDerivs 2.5 నెదర్లాండ్స్"@te,
+        "แสดงที่มา-ไม่ดัดแปลง 2.5 เนเธอร์แลนด์"@th,
+        "Alıntı-Türetilemez 2.5 Hollanda"@tr,
+        "Attribution-NoDerivs 2.5 Netherlands"@uk,
+        "Attribution-NoDerivs 2.5 Netherlands"@ur,
+        "Ghi nhận công của tác giả - Không phái sinh 2.5 Nước Hà Lan"@vi,
+        "署名-禁止演绎 2.5 荷兰"@zh,
+        "姓名標示-禁止改作 2.5 荷蘭"@zh-hk,
+        "姓名標示-禁止改作 2.5 荷蘭"@zh-tw,
+        "Qaphela Umnikazi-Ungasuseli lutho kulokhu 2.5 iNetherlands"@zu,
+        "${Attribution-NoDerivs} 2.5 ${Netherlands}"@zxx ;
+    owl:sameAs <https://licensedb.org/id/CC-BY-ND-2.5-nl> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nd/2.5/nl/80x15.png>,
+        <http://i.creativecommons.org/l/by-nd/2.5/nl/88x31.png> .
+
+<https://licensedb.org/id/CC-BY-ND-2.5-nl> a cc:License,
+        li:License ;
+    cc:jurisdiction <http://creativecommons.org/international/nl/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nd/2.5/nl/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.5" ;
+    dc:identifier "by-nd" ;
+    dc:isReplacedBy <https://licensedb.org/id/CC-BY-ND-3.0-nl> ;
+    dc:replaces <https://licensedb.org/id/CC-BY-ND-2.0-nl> ;
+    dc:source <http://creativecommons.org/licenses/by-nd/2.5/> ;
+    dc:title "Erkenning-GeenAfleidings 2.5 Nederland"@af,
+        "نسب- غير مشتق 2.5 هولندا"@ar,
+        "Attribution-NoDerivs 2.5 Netherlands"@as,
+        "Attribution-NoDerivs 2.5 Netherlands"@ast,
+        "Attribution-NoDerivs 2.5 Netherlands"@ast-es,
+        "Attribution-NoDerivs 2.5 Netherlands"@az,
+        "Attribution-NoDerivs 2.5 Нідэрланды"@be,
+        "Признание-Без производни 2.5 Холандия"@bg,
+        "Attribution-NoDerivs 2.5 Netherlands"@bn,
+        "Reconeixement-SenseObraDerivada 2.5 Holanda"@ca,
+        "Uveďte autora-Nezasahujte do díla 2.5 Nizozemí"@cs,
+        "Navngivelse-IngenBearbejdelse 2.5 Holland"@da,
+        "Namensnennung-Keine Bearbeitung 2.5 Niederlande"@de,
+        "Namensnennung-KeineBearbeitung 2.5 Niederlande"@de-at,
+        "Namensnennung-KeineBearbeitung 2.5 Niederlande"@de-ch,
+        "Αναφορά Δημιουργού-Όχι Παράγωγα Έργα 2.5 Ολλανδία"@el,
+        "Attribution-NoDerivs 2.5 Netherlands"@en,
+        "Attribution-NoDerivs 2.5 Netherlands"@en-ca,
+        "Attribution-NoDerivs 2.5 Netherlands"@en-gb,
+        "Attribution-NoDerivs 2.5 Netherlands"@en-hk,
+        "Attribution-NoDerivs 2.5 Netherlands"@en-sg,
+        "Attribution-NoDerivs 2.5 Netherlands"@en-us,
+        "Atribuite-Nemodifite 2.5 Nederlando"@eo,
+        "Atribución-SinDerivadas 2.5 Holanda"@es,
+        "Atribución-SinDerivadas 2.5 Holanda"@es-ar,
+        "Atribución-SinDerivadas 2.5 Holanda"@es-cl,
+        "Reconocimiento-SinObraDerivada 2.5 Holanda"@es-co,
+        "Reconocimiento-SinObraDerivada 2.5 Holanda"@es-ec,
+        "Reconocimiento-SinObraDerivada 2.5 Holanda"@es-es,
+        "Reconocimiento-SinObraDerivada 2.5 Holanda"@es-gt,
+        "Atribución-No Derivadas 2.5 Holanda"@es-mx,
+        "Reconocimiento-SinObraDerivada 2.5 Holanda"@es-pe,
+        "Reconocimiento-SinObraDerivada 2.5 Holanda"@es-pr,
+        "Autorile viitamine + Tuletatud teoste keeld 2.5 Holland"@et,
+        "Aitortu-LanEratorririkGabe 2.5 Herbehereak"@eu,
+        "Attribution-NoDerivs 2.5 هلند"@fa,
+        "Nimeä-Ei muutoksia 2.5 Hollanti"@fi,
+        "Paternité - Pas de Modification 2.5 Pays-Bas"@fr,
+        "Paternité - Pas de Modification 2.5 Pays-Bas"@fr-ca,
+        "Paternité - Pas de Modification 2.5 Pays-Bas"@fr-ch,
+        "Paternité - Pas de Modification 2.5 Pays-Bas"@fr-lu,
+        "Attribution-NoDerivs 2.5 Netherlands"@ga,
+        "Recoñecemento-SenObraDerivada 2.5 Holanda"@gl,
+        "ייחוס-איסור יצירות נגזרות 2.5 הולנד"@he,
+        "Attribution-NoDerivs 2.5 Netherlands"@hi,
+        "Imenovanje-Bez prerada 2.5 Nizozemska"@hr,
+        "Nevezd meg! - Ne változtasd! 2.5 Hollandia"@hu,
+        "Հղում - Օգտագործում առանց վերափոխումների 2.5 Նիդերլանդներ"@hy,
+        "Atribusi-TanpaTurunan 2.5 Belanda"@id,
+        "Attribution-NoDerivs 2.5 Holland"@is,
+        "Attribuzione - Non opere derivate 2.5 Olanda"@it,
+        "Attribuzione - Non opere derivate 2.5 Olanda"@it-ch,
+        "表示 - 改変禁止 2.5 オランダ"@ja,
+        "ავტორობის მითითებით გადამუშავების გარეშე 2.5 ნიდერლანდები"@ka,
+        "Туынды жасамау 2.5 Netherlands"@kk,
+        "저작자표시-변경금지 2.5 네덜란드"@ko,
+        "Attribution-NoDerivs 2.5 Nyderlandai"@lt,
+        "Atsaucoties-Neatvasinot 2.5 Nīderlande"@lv,
+        "НаведиИзвор-БезИзведениДела 2.5 Холандија"@mk,
+        "Attribution-NoDerivs 2.5 നെതർലാന്റ്സ്"@ml,
+        "Attribution-NoDerivs 2.5 Netherlands"@mn,
+        "Pengiktirafan-TiadaTerbitan 2.5 Netherlands"@ms,
+        "Naamsvermelding-GeenAfgeleideWerken 2.5 Nederland"@nl,
+        "Navngivelse-IngenBearbeidelse 2.5 Nederland"@no,
+        "Tsebagatšo - Tše sa Fetolwego 2.5 Netherlands"@nso,
+        "Attribution-NoDerivs 2.5 Netherlands"@oci-es,
+        "Uznanie autorstwa-Bez utworów zależnych 2.5 Holandia"@pl,
+        "Atribuição - SemDerivados 2.5 Holanda"@pt,
+        "Atribuição-Vedada a criação de obras derivativas 2.5 Netherlands"@pt-br,
+        "Atribuição-Proibição de realização de Obras Derivadas 2.5 Holanda"@pt-pt,
+        "Atribuire-FărăModificări 2.5 Olanda"@ro,
+        "Attribution-NoDerivs (Атрибуция — Без производных произведений) 2.5 Нидерланды"@ru,
+        "Attribution-NoDerivs 2.5 Netherlands"@si-lk,
+        "Priznanje avtorstva-Brez predelav 2.5 Nizozemska"@sl,
+        "Attribution-NoDerivs 2.5 Holandë"@sq,
+        "Autorstvo-Bez prerada 2.5 Holandija"@sr,
+        "Ауторство-Без прерада 2.5 Холандија"@sr,
+        "Autorstvo-Bez prerada 2.5 Holandija"@sr-latn,
+        "Attribution-NoDerivs 2.5 Netherlands"@st,
+        "Erkännande-IngaBearbetningar 2.5 Nederländerna"@sv,
+        "Attribution-NoDerivs 2.5 நெதர்லாந்து"@ta,
+        "Attribution-NoDerivs 2.5 నెదర్లాండ్స్"@te,
+        "แสดงที่มา-ไม่ดัดแปลง 2.5 เนเธอร์แลนด์"@th,
+        "Alıntı-Türetilemez 2.5 Hollanda"@tr,
+        "Attribution-NoDerivs 2.5 Netherlands"@uk,
+        "Attribution-NoDerivs 2.5 Netherlands"@ur,
+        "Ghi nhận công của tác giả - Không phái sinh 2.5 Nước Hà Lan"@vi,
+        "署名-禁止演绎 2.5 荷兰"@zh,
+        "姓名標示-禁止改作 2.5 荷蘭"@zh-hk,
+        "姓名標示-禁止改作 2.5 荷蘭"@zh-tw,
+        "Qaphela Umnikazi-Ungasuseli lutho kulokhu 2.5 iNetherlands"@zu,
+        "${Attribution-NoDerivs} 2.5 ${Netherlands}"@zxx ;
+    owl:sameAs <http://creativecommons.org/licenses/by-nd/2.5/nl/> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nd/2.5/nl/80x15.png>,
+        <http://i.creativecommons.org/l/by-nd/2.5/nl/88x31.png> ;
+    li:id "CC-BY-ND-2.5-nl" ;
+    li:name "CC BY-ND 2.5 NL" .
+

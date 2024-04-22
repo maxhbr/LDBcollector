@@ -1,0 +1,235 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/elements/1.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://creativecommons.org/licenses/by-nc-nd/3.0/no/> a cc:License ;
+    cc:jurisdiction <http://creativecommons.org/international/no/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nc-nd/3.0/no/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:Distribution,
+        cc:Reproduction ;
+    cc:prohibits cc:CommercialUse ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "3.0" ;
+    dc:identifier "by-nc-nd" ;
+    dc:source <http://creativecommons.org/licenses/by-nc-nd/3.0/> ;
+    dc:title "Erkenning-NieKommersieel-GeenAfleidings 3.0 Norway"@af,
+        "نسب- غير تجاري - لا اشتقاق 3.0 نروج"@ar,
+        "Attribution-NonCommercial-NoDerivs 3.0 Norway"@as,
+        "Attribution-NonCommercial-NoDerivs 3.0 Norway"@ast,
+        "Attribution-NonCommercial-NoDerivs 3.0 Norway"@ast-es,
+        "Attribution-NonCommercial-NoDerivs 3.0 Norway"@az,
+        "Attribution-NonCommercial-NoDerivs 3.0 Нарвегія"@be,
+        "Признание-Некомерсиално-Без производни 3.0 Norway"@bg,
+        "Attribution-NonCommercial-NoDerivs 3.0 Norway"@bn,
+        "Reconeixement-NoComercial-SenseObraDerivada 3.0 Noruega"@ca,
+        "Uveďte autora-Neužívejte dílo komerčně-Nezasahujte do díla 3.0 Norsko"@cs,
+        "Navngivelse-IkkeKommerciel-IngenBearbejdelse 3.0 Norway"@da,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 3.0 Norwegen"@de,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 3.0 Norway"@de-at,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 3.0 Norway"@de-ch,
+        "Αναφορά Δημιουργού-Μη Εμπορική Χρήση-Όχι Παράγωγα Έργα 3.0 Νορβηγία"@el,
+        "Attribution-NonCommercial-NoDerivs 3.0 Norway"@en,
+        "Attribution-NonCommercial-NoDerivs 3.0 Norway"@en-ca,
+        "Attribution-NonCommercial-NoDerivs 3.0 Norway"@en-gb,
+        "Attribution-NonCommercial-NoDerivs 3.0 Norway"@en-hk,
+        "Attribution-NonCommercial-NoDerivs 3.0 Norway"@en-sg,
+        "Attribution-NonCommercial-NoDerivs 3.0 Norway"@en-us,
+        "Atribuite-Nekomerce-Nemodifite 3.0 Norvegujo"@eo,
+        "Atribución-NoComercial-SinDerivadas 3.0 Noruega"@es,
+        "Atribución-NoComercial-SinDerivadas 3.0 Norway"@es-ar,
+        "Atribución-NoComercial-SinDerivadas 3.0 Norway"@es-cl,
+        "Reconocimiento-NoComercial-SinObraDerivada 3.0 Norway"@es-co,
+        "Reconocimiento-NoComercial-SinObraDerivada 3.0 Norway"@es-ec,
+        "Reconocimiento-NoComercial-SinObraDerivada 3.0 Noruega"@es-es,
+        "Reconocimiento-NoComercial-SinObraDerivada 3.0 Norway"@es-gt,
+        "Atribución-No Comercial-No Derivadas 3.0 Norway"@es-mx,
+        "Reconocimiento-NoComercial-SinObraDerivada 3.0 Norway"@es-pe,
+        "Reconocimiento-NoComercial-SinObrasDerivadas 3.0 Norway"@es-pr,
+        "Autorile viitamine + Mitteäriline eesmärk + Tuletatud teoste keeld 3.0 Norra"@et,
+        "Aitortu-EzKomertziala-LanEratorririkGabe 3.0 Norway"@eu,
+        "Attribution-NonCommercial-NoDerivs 3.0 نروژ"@fa,
+        "Nimeä-Ei muutoksia-Epäkaupallinen 3.0 Norja"@fi,
+        "Attribution - Pas d’Utilisation Commerciale - Pas de Modification 3.0 Norvège"@fr,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 3.0 Norway"@fr-ca,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 3.0 Norway"@fr-ch,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 3.0 Norway"@fr-lu,
+        "Attribution-NonCommercial-NoDerivs 3.0 Norway"@ga,
+        "Recoñecemento-NonComercial-SenObraDerivada 3.0 Norway"@gl,
+        "ייחוס-שימוש לא מסחרי-איסור יצירות נגזרות 3.0 נורווגיה"@he,
+        "Attribution-NonCommercial-NoDerivs 3.0 Norway"@hi,
+        "Imenovanje-Nekomercijalno-Bez prerada 3.0 Norveška"@hr,
+        "Nevezd meg! - Ne add el! - Ne változtasd! 3.0 Norvégia"@hu,
+        "Հղում - Ոչ-առևտրային օգտագործում - Օգտագործում առանց վերափոխումների 3.0 Նորվեգիա"@hy,
+        "Atribusi-NonKomersial-TanpaTurunan 3.0 Norwegia"@id,
+        "Attribution-NonCommercial-NoDerivs 3.0 Norway"@is,
+        "Attribuzione - Non commerciale - Non opere derivate 3.0 Norway"@it,
+        "Attribuzione - Non commerciale - Non opere derivate 3.0 Norway"@it-ch,
+        "表示 - 非営利 - 改変禁止 3.0 ノルウェー"@ja,
+        "ავტორობის მითითებით–არაკომერციული გამოყენბისათვის–გადამუშავების გარეშე 3.0 ნოვეგია"@ka,
+        "Attribution-NonCommercial-NoDerivs 3.0 Norway"@kk,
+        "저작자표시-비영리-변경금지 3.0 노르웨이"@ko,
+        "Attribution-NonCommercial-NoDerivs 3.0 Norvegija"@lt,
+        "Atsaucoties-Nekomerciāls-Nemainīts 3.0 Norvēģija"@lv,
+        "НаведиИзвор-Некомерцијално-БезАдаптираниДела 3.0 Норвешка"@mk,
+        "Attribution-NonCommercial-NoDerivs 3.0 നോർവെ"@ml,
+        "Attribution-NonCommercial-NoDerivs 3.0 Norway"@mn,
+        "Pengiktirafan-BukanKomersial-TiadaTerbitan 3.0 Norway"@ms,
+        "Naamsvermelding-NietCommercieel-GeenAfgeleideWerken 3.0 Norwegen "@nl,
+        "Navngivelse-Ikkekommersiell-IngenBearbeidelse 3.0 Norge"@no,
+        "Tsebagatšo-E sego ya Kgwebo-Tše sa fetolwego 3.0 Norway"@nso,
+        "Attribution-NonCommercial-NoDerivs 3.0 Norway"@oci-es,
+        "Uznanie autorstwa-Użycie niekomercyjne-Bez utworów zależnych 3.0 Norwegia"@pl,
+        "Atribuição - NãoComercial - SemDerivados 3.0 Noruega"@pt,
+        "Atribuição-Uso não-comercial-Vedada a criação de obras derivadas 3.0 Noruega"@pt-br,
+        "Atribuição-Uso Não-Comercial-Proibição de realização de Obras Derivadas 3.0 Norway"@pt-pt,
+        "Atribuire-Necomercial-FărăModificări 3.0 Norvegia"@ro,
+        "Attribution-NonCommercial-NoDerivs (Атрибуция — Некоммерческое использование — Без производных произведений) 3.0 Норвегия"@ru,
+        "Attribution-NonCommercial-NoDerivs 3.0 නෝර්වේ"@si-lk,
+        "Priznanje avtorstva-Nekomercialno-Brez predelav 3.0 Norway"@sl,
+        "Attribution-NonCommercial-NoDerivs 3.0 Norvegji"@sq,
+        "Autorstvo-Nekomercijalno-Bez prerada 3.0 Norveška"@sr,
+        "Ауторство-Некомерцијално-Без прерада 3.0 Норвешка"@sr,
+        "Autorstvo-Nekomercijalno-Bez prerada 3.0 Norveška"@sr-latn,
+        "Attribution-NonCommercial-NoDerivs 3.0 Norway"@st,
+        "Erkännande-Ickekommersiell-IngaBearbetningar 3.0 Norge"@sv,
+        "Attribution-NonCommercial-NoDerivs 3.0 Norway"@ta,
+        "Attribution-NonCommercial-NoDerivs 3.0 నార్వే"@te,
+        "แสดงที่มา-ไม่ใช้เพื่อการค้า-ไม่ดัดแปลง 3.0 นอร์เวย์"@th,
+        "Attribution-Gayriticari-NoDerivs 3.0 Norveç"@tr,
+        "Attribution-NonCommercial-NoDerivs 3.0 Norway"@uk,
+        "Attribution-NonCommercial-NoDerivs 3.0 Norway"@ur,
+        "Ghi nhận công của tác giả - Phi thương mại - Không phái sinh  3.0 Norway"@vi,
+        "署名-非商业性使用-禁止演绎 3.0 挪威"@zh,
+        "姓名標示-非商業性-禁止改作 3.0 挪威"@zh-hk,
+        "姓名標示-非商業性-禁止改作 3.0 挪威"@zh-tw,
+        "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano-Ungasuseli lutho kulokhu 3.0 Norway"@zu,
+        "${Attribution-NonCommercial-NoDerivs} 3.0 ${Norway}"@zxx ;
+    owl:sameAs <https://licensedb.org/id/CC-BY-NC-ND-3.0-no> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nc-nd/3.0/no/80x15.png>,
+        <http://i.creativecommons.org/l/by-nc-nd/3.0/no/88x31.png> .
+
+<https://licensedb.org/id/CC-BY-NC-ND-3.0-no> a cc:License,
+        li:License ;
+    cc:jurisdiction <http://creativecommons.org/international/no/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nc-nd/3.0/no/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:Distribution,
+        cc:Reproduction ;
+    cc:prohibits cc:CommercialUse ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "3.0" ;
+    dc:identifier "by-nc-nd" ;
+    dc:source <http://creativecommons.org/licenses/by-nc-nd/3.0/> ;
+    dc:title "Erkenning-NieKommersieel-GeenAfleidings 3.0 Norway"@af,
+        "نسب- غير تجاري - لا اشتقاق 3.0 نروج"@ar,
+        "Attribution-NonCommercial-NoDerivs 3.0 Norway"@as,
+        "Attribution-NonCommercial-NoDerivs 3.0 Norway"@ast,
+        "Attribution-NonCommercial-NoDerivs 3.0 Norway"@ast-es,
+        "Attribution-NonCommercial-NoDerivs 3.0 Norway"@az,
+        "Attribution-NonCommercial-NoDerivs 3.0 Нарвегія"@be,
+        "Признание-Некомерсиално-Без производни 3.0 Norway"@bg,
+        "Attribution-NonCommercial-NoDerivs 3.0 Norway"@bn,
+        "Reconeixement-NoComercial-SenseObraDerivada 3.0 Noruega"@ca,
+        "Uveďte autora-Neužívejte dílo komerčně-Nezasahujte do díla 3.0 Norsko"@cs,
+        "Navngivelse-IkkeKommerciel-IngenBearbejdelse 3.0 Norway"@da,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 3.0 Norwegen"@de,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 3.0 Norway"@de-at,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 3.0 Norway"@de-ch,
+        "Αναφορά Δημιουργού-Μη Εμπορική Χρήση-Όχι Παράγωγα Έργα 3.0 Νορβηγία"@el,
+        "Attribution-NonCommercial-NoDerivs 3.0 Norway"@en,
+        "Attribution-NonCommercial-NoDerivs 3.0 Norway"@en-ca,
+        "Attribution-NonCommercial-NoDerivs 3.0 Norway"@en-gb,
+        "Attribution-NonCommercial-NoDerivs 3.0 Norway"@en-hk,
+        "Attribution-NonCommercial-NoDerivs 3.0 Norway"@en-sg,
+        "Attribution-NonCommercial-NoDerivs 3.0 Norway"@en-us,
+        "Atribuite-Nekomerce-Nemodifite 3.0 Norvegujo"@eo,
+        "Atribución-NoComercial-SinDerivadas 3.0 Noruega"@es,
+        "Atribución-NoComercial-SinDerivadas 3.0 Norway"@es-ar,
+        "Atribución-NoComercial-SinDerivadas 3.0 Norway"@es-cl,
+        "Reconocimiento-NoComercial-SinObraDerivada 3.0 Norway"@es-co,
+        "Reconocimiento-NoComercial-SinObraDerivada 3.0 Norway"@es-ec,
+        "Reconocimiento-NoComercial-SinObraDerivada 3.0 Noruega"@es-es,
+        "Reconocimiento-NoComercial-SinObraDerivada 3.0 Norway"@es-gt,
+        "Atribución-No Comercial-No Derivadas 3.0 Norway"@es-mx,
+        "Reconocimiento-NoComercial-SinObraDerivada 3.0 Norway"@es-pe,
+        "Reconocimiento-NoComercial-SinObrasDerivadas 3.0 Norway"@es-pr,
+        "Autorile viitamine + Mitteäriline eesmärk + Tuletatud teoste keeld 3.0 Norra"@et,
+        "Aitortu-EzKomertziala-LanEratorririkGabe 3.0 Norway"@eu,
+        "Attribution-NonCommercial-NoDerivs 3.0 نروژ"@fa,
+        "Nimeä-Ei muutoksia-Epäkaupallinen 3.0 Norja"@fi,
+        "Attribution - Pas d’Utilisation Commerciale - Pas de Modification 3.0 Norvège"@fr,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 3.0 Norway"@fr-ca,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 3.0 Norway"@fr-ch,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 3.0 Norway"@fr-lu,
+        "Attribution-NonCommercial-NoDerivs 3.0 Norway"@ga,
+        "Recoñecemento-NonComercial-SenObraDerivada 3.0 Norway"@gl,
+        "ייחוס-שימוש לא מסחרי-איסור יצירות נגזרות 3.0 נורווגיה"@he,
+        "Attribution-NonCommercial-NoDerivs 3.0 Norway"@hi,
+        "Imenovanje-Nekomercijalno-Bez prerada 3.0 Norveška"@hr,
+        "Nevezd meg! - Ne add el! - Ne változtasd! 3.0 Norvégia"@hu,
+        "Հղում - Ոչ-առևտրային օգտագործում - Օգտագործում առանց վերափոխումների 3.0 Նորվեգիա"@hy,
+        "Atribusi-NonKomersial-TanpaTurunan 3.0 Norwegia"@id,
+        "Attribution-NonCommercial-NoDerivs 3.0 Norway"@is,
+        "Attribuzione - Non commerciale - Non opere derivate 3.0 Norway"@it,
+        "Attribuzione - Non commerciale - Non opere derivate 3.0 Norway"@it-ch,
+        "表示 - 非営利 - 改変禁止 3.0 ノルウェー"@ja,
+        "ავტორობის მითითებით–არაკომერციული გამოყენბისათვის–გადამუშავების გარეშე 3.0 ნოვეგია"@ka,
+        "Attribution-NonCommercial-NoDerivs 3.0 Norway"@kk,
+        "저작자표시-비영리-변경금지 3.0 노르웨이"@ko,
+        "Attribution-NonCommercial-NoDerivs 3.0 Norvegija"@lt,
+        "Atsaucoties-Nekomerciāls-Nemainīts 3.0 Norvēģija"@lv,
+        "НаведиИзвор-Некомерцијално-БезАдаптираниДела 3.0 Норвешка"@mk,
+        "Attribution-NonCommercial-NoDerivs 3.0 നോർവെ"@ml,
+        "Attribution-NonCommercial-NoDerivs 3.0 Norway"@mn,
+        "Pengiktirafan-BukanKomersial-TiadaTerbitan 3.0 Norway"@ms,
+        "Naamsvermelding-NietCommercieel-GeenAfgeleideWerken 3.0 Norwegen "@nl,
+        "Navngivelse-Ikkekommersiell-IngenBearbeidelse 3.0 Norge"@no,
+        "Tsebagatšo-E sego ya Kgwebo-Tše sa fetolwego 3.0 Norway"@nso,
+        "Attribution-NonCommercial-NoDerivs 3.0 Norway"@oci-es,
+        "Uznanie autorstwa-Użycie niekomercyjne-Bez utworów zależnych 3.0 Norwegia"@pl,
+        "Atribuição - NãoComercial - SemDerivados 3.0 Noruega"@pt,
+        "Atribuição-Uso não-comercial-Vedada a criação de obras derivadas 3.0 Noruega"@pt-br,
+        "Atribuição-Uso Não-Comercial-Proibição de realização de Obras Derivadas 3.0 Norway"@pt-pt,
+        "Atribuire-Necomercial-FărăModificări 3.0 Norvegia"@ro,
+        "Attribution-NonCommercial-NoDerivs (Атрибуция — Некоммерческое использование — Без производных произведений) 3.0 Норвегия"@ru,
+        "Attribution-NonCommercial-NoDerivs 3.0 නෝර්වේ"@si-lk,
+        "Priznanje avtorstva-Nekomercialno-Brez predelav 3.0 Norway"@sl,
+        "Attribution-NonCommercial-NoDerivs 3.0 Norvegji"@sq,
+        "Autorstvo-Nekomercijalno-Bez prerada 3.0 Norveška"@sr,
+        "Ауторство-Некомерцијално-Без прерада 3.0 Норвешка"@sr,
+        "Autorstvo-Nekomercijalno-Bez prerada 3.0 Norveška"@sr-latn,
+        "Attribution-NonCommercial-NoDerivs 3.0 Norway"@st,
+        "Erkännande-Ickekommersiell-IngaBearbetningar 3.0 Norge"@sv,
+        "Attribution-NonCommercial-NoDerivs 3.0 Norway"@ta,
+        "Attribution-NonCommercial-NoDerivs 3.0 నార్వే"@te,
+        "แสดงที่มา-ไม่ใช้เพื่อการค้า-ไม่ดัดแปลง 3.0 นอร์เวย์"@th,
+        "Attribution-Gayriticari-NoDerivs 3.0 Norveç"@tr,
+        "Attribution-NonCommercial-NoDerivs 3.0 Norway"@uk,
+        "Attribution-NonCommercial-NoDerivs 3.0 Norway"@ur,
+        "Ghi nhận công của tác giả - Phi thương mại - Không phái sinh  3.0 Norway"@vi,
+        "署名-非商业性使用-禁止演绎 3.0 挪威"@zh,
+        "姓名標示-非商業性-禁止改作 3.0 挪威"@zh-hk,
+        "姓名標示-非商業性-禁止改作 3.0 挪威"@zh-tw,
+        "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano-Ungasuseli lutho kulokhu 3.0 Norway"@zu,
+        "${Attribution-NonCommercial-NoDerivs} 3.0 ${Norway}"@zxx ;
+    owl:sameAs <http://creativecommons.org/licenses/by-nc-nd/3.0/no/> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nc-nd/3.0/no/80x15.png>,
+        <http://i.creativecommons.org/l/by-nc-nd/3.0/no/88x31.png> ;
+    li:id "CC-BY-NC-ND-3.0-no" ;
+    li:name "CC BY-NC-ND 3.0 NO" .
+

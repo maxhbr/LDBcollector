@@ -1,0 +1,14 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+
+canonicalName: "Jython License"
+category: "Jython"
+shortName: "Jython"
+
+alternativeNames:
+  - "The Jython License"
+  - "Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007 Jython Developers All rights reserved"
+
+otherIds: 
+  - "scancode:jython"

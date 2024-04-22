@@ -1,0 +1,31 @@
+---
+key: rsa-md5
+short_name: RSA-MD5 License
+name: RSA Data Security MD5
+category: Permissive
+owner: RSA (the Security Division of EMC)
+homepage_url: http://www.faqs.org/rfcs/rfc1321.html
+spdx_license_key: RSA-MD
+text_urls:
+    - http://www.ietf.org/rfc/rfc1321.txt
+other_urls:
+    - http://www.faqs.org/rfcs/rfc1321.html
+---
+
+License to copy and use this software is granted provided that it
+is identified as the "RSA Data Security, Inc. MD5 Message-Digest
+Algorithm" in all material mentioning or referencing this software
+or this function.
+
+License is also granted to make and use derivative works provided
+that such works are identified as "derived from the RSA Data
+Security, Inc. MD5 Message-Digest Algorithm" in all material
+mentioning or referencing the derived work.
+
+RSA Data Security, Inc. makes no representations concerning either
+the merchantability of this software or the suitability of this
+software for any particular purpose. It is provided "as is"
+without express or implied warranty of any kind.
+
+These notices must be retained in any copies of any part of this
+documentation and/or software.

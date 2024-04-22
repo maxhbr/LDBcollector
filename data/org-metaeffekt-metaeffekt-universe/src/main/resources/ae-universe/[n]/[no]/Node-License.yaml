@@ -1,0 +1,14 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+
+canonicalName: "Node License"
+category: "Node License"
+shortName: "node-js"
+
+alternativeNames:
+  - "Node-js License"
+  - "Node.js License"
+
+otherIds: 
+  - "scancode:node-js"

@@ -1,0 +1,18 @@
+[license]
+
+expression = "GPL-3.0-only"
+status = [ "allowed" ]
+
+url = '''
+http://www.fsf.org/licensing/licenses/gpl.html
+'''
+
+[fedora]
+
+legacy-name = [
+    "GNU General Public License v3.0 only"
+]
+
+legacy-abbreviation = [
+    "GPLv3"
+]

@@ -1,0 +1,13 @@
+---
+id: "Composer:sebastian:code-unit-reverse-lookup:2.0.3"
+vcs:
+  type: "Git"
+  url: "https://github.com/sebastianbergmann/code-unit-reverse-lookup.git"
+  revision: "ac91f01ccec49fb77bdc6fd1e548bc70f7faa3e5"
+path_excludes:
+  - pattern: ".github/**"
+    reason: "BUILD_TOOL_OF"
+  - pattern: "tests/**"
+    reason: "TEST_OF"
+  - pattern: "tools/**"
+    reason: "BUILD_TOOL_OF"

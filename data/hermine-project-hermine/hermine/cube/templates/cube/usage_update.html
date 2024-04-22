@@ -1,0 +1,25 @@
+<!--
+SPDX-FileCopyrightText: 2022 Hermine-team <hermine@inno3.fr>
+SPDX-License-Identifier: AGPL-3.0-only
+-->
+{% extends "cube/cube.html" %}
+{% block title %}Edit usage{% endblock %}
+
+{% block breadcrumbs %}
+  <ul>
+    <li><a href="{% url 'cube:dashboard' %}">Hermine</a></li>
+    <li><a href="{% url 'cube:product_detail' usage.release.product.id %}">{{ usage.release.product.name }}</a></li>
+    <li><a href="{% url 'cube:release_validation' usage.release.id %}">{{ usage.release.release_number }}</a></li>
+    <li>{{ usage.version }}</li>
+  </ul>
+{% endblock %}
+
+{% block herozone %}
+  <div class="hero-body">
+    <p class="title">Edit <em>{{ usage.version }}</em> usage</p>
+  </div>
+{% endblock %}
+
+{% block content %}
+  {% include "cube/includes/default_form.html" %}
+{% endblock %}

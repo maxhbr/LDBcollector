@@ -1,0 +1,367 @@
+[
+{
+    "model": "cube.team",
+    "pk": 1,
+    "fields": {
+        "name": "Test team"
+    }
+},
+{
+    "model": "cube.product",
+    "pk": 1,
+    "fields": {
+        "name": "test_product",
+        "description": "This is for testing purpose",
+        "owner": 1
+    }
+},
+{
+    "model": "cube.release",
+    "pk": 1,
+    "fields": {
+        "product": 1,
+        "release_number": "1.0",
+        "ship_status": "Active",
+        "pub_date": "2022-01-14T15:37:20Z",
+        "valid_step": 2
+    }
+},
+{
+    "model": "cube.release",
+    "pk": 2,
+    "fields": {
+        "product": 1,
+        "release_number": "2.0",
+        "ship_status": "Active",
+        "pub_date": null,
+        "valid_step": 5
+    }
+},
+{
+    "model": "cube.component",
+    "pk": 1,
+    "fields": {
+        "name": "test_component_alpha",
+        "purl_type": "npm",
+        "description": "This is a test description",
+        "programming_language": "javascript",
+        "spdx_expression": "",
+        "homepage_url": "http://test.com",
+        "export_control_status": ""
+    }
+},
+{
+    "model": "cube.component",
+    "pk": 2,
+    "fields": {
+        "name": "test_component_beta",
+        "purl_type": "npm",
+        "description": "Please delete meeeee",
+        "programming_language": "javascript",
+        "spdx_expression": "",
+        "homepage_url": "http://test.com",
+        "export_control_status": ""
+    }
+},
+{
+    "model": "cube.version",
+    "pk": 1,
+    "fields": {
+        "component": 1,
+        "version_number": "1.0",
+        "declared_license_expr": "LicenseRef-FakeLicense OR AND",
+        "spdx_valid_license_expr": "",
+        "corrected_license": "LicenseRef-FakeLicense OR LicenseRef-FakeLicense-Permissive",
+        "purl": ""
+    }
+},
+{
+    "model": "cube.version",
+    "pk": 2,
+    "fields": {
+        "component": 1,
+        "version_number": "2.0",
+        "declared_license_expr": "LicenseRef-FakeLicense OR AND LicenseRef-FakeLicense-Permissive",
+        "spdx_valid_license_expr": "",
+        "corrected_license": "",
+        "purl": ""
+    }
+},
+{
+    "model": "cube.license",
+    "pk": 1,
+    "fields": {
+        "spdx_id": "LicenseRef-FakeLicense-1.0",
+        "status": "To check",
+        "long_name": "Fake License",
+        "categories": "",
+        "license_version": "1.0",
+        "radical": "FakeLicense",
+        "autoupgrade": false,
+        "steward": "Test corp.",
+        "inspiration_spdx": "",
+        "inspiration": null,
+        "copyleft": "Network",
+        "allowed": "context",
+        "allowed_explanation": "Only allowed for test projects",
+        "url": "",
+        "osi_approved": false,
+        "fsf_approved": false,
+        "foss": "Yes",
+        "patent_grant": null,
+        "ethical_clause": null,
+        "non_commercial": null,
+        "non_tivoisation": null,
+        "law_choice": "",
+        "venue_choice": "",
+        "comment": "",
+        "verbatim": ""
+    }
+},
+{
+    "model": "cube.usage",
+    "pk": 1,
+    "fields": {
+        "release": 1,
+        "version": 1,
+        "status": "Validated",
+        "addition_method": "Manual",
+        "addition_date": "2022-01-19T16:01:40Z",
+        "linking": "Dynamic",
+        "component_modified": "Unmodified",
+        "exploitation": "DistributionSourceDistributionNonSource",
+        "description": "This is a test Usage",
+        "scope": "testscope",
+        "license_expression": ""
+    }
+},
+{
+    "model": "cube.usage",
+    "pk": 2,
+    "fields": {
+        "release": 1,
+        "version": 2,
+        "status": "Validated",
+        "addition_method": "Manual",
+        "addition_date": "2022-01-19T16:01:40Z",
+        "linking": "Dynamic",
+        "component_modified": "Unmodified",
+        "exploitation": "DistributionSourceDistributionNonSource",
+        "description": "This is a test Usage",
+        "scope": "testscope",
+        "license_expression": ""
+    }
+},
+{
+    "model": "cube.generic",
+    "pk": 1,
+    "fields": {
+        "name": "License and copyright notices in documentation",
+        "description": "Reproduce in documentation complete text of licenses and other texts relative to IP ownership.",
+        "in_core": true,
+        "metacategory": "IPManagement",
+        "team": 1,
+        "passivity": "Active"
+    }
+},
+{
+    "model": "cube.obligation",
+    "pk": 50,
+    "fields": {
+        "license": 1,
+        "generic": null,
+        "name": "Test License Distribution Unmodified",
+        "verbatim": "Test License Distribution Unmodified",
+        "passivity": "Active",
+        "trigger_expl": "DistributionSourceDistributionNonSource",
+        "trigger_mdf": "Unmodified"
+    }
+},
+{
+    "model": "cube.obligation",
+    "pk": 51,
+    "fields": {
+        "license": 1,
+        "generic": null,
+        "name": "Test License Distribution Modified or not",
+        "verbatim": "Test License Distribution Modified or not",
+        "passivity": "Active",
+        "trigger_expl": "DistributionSourceDistributionNonSource",
+        "trigger_mdf": "AlteredUnmodified"
+    }
+},
+{
+    "model": "cube.obligation",
+    "pk": 52,
+    "fields": {
+        "license": 1,
+        "generic": null,
+        "name": "Test License DistributionSource Altered",
+        "verbatim": "Test License DistributionSource Altered",
+        "passivity": "Active",
+        "trigger_expl": "DistributionSource",
+        "trigger_mdf": "Altered"
+    }
+},
+{
+    "model": "cube.obligation",
+    "pk": 53,
+    "fields": {
+        "license": 1,
+        "generic": null,
+        "name": "Test License DistributionSource Unmodified",
+        "verbatim": "Test License DistributionSource Unmodified",
+        "passivity": "Active",
+        "trigger_expl": "DistributionSource",
+        "trigger_mdf": "Unmodified"
+    }
+},
+{
+    "model": "cube.obligation",
+    "pk": 54,
+    "fields": {
+        "license": 1,
+        "generic": null,
+        "name": "Test License DistributionSource Modified or not",
+        "verbatim": "Test License DistributionSource Modified or not",
+        "passivity": "Active",
+        "trigger_expl": "DistributionSource",
+        "trigger_mdf": "AlteredUnmodified"
+    }
+},
+{
+    "model": "cube.obligation",
+    "pk": 55,
+    "fields": {
+        "license": 1,
+        "generic": null,
+        "name": "Test License DistributionNonSource Altered",
+        "verbatim": "Test License DistributionNonSource Altered",
+        "passivity": "Active",
+        "trigger_expl": "DistributionNonSource",
+        "trigger_mdf": "Altered"
+    }
+},
+{
+    "model": "cube.obligation",
+    "pk": 56,
+    "fields": {
+        "license": 1,
+        "generic": null,
+        "name": "Test License DistributionNonSource Unmodified",
+        "verbatim": "Test License DistributionNonSource Unmodified",
+        "passivity": "",
+        "trigger_expl": "DistributionNonSource",
+        "trigger_mdf": "Unmodified"
+    }
+},
+{
+    "model": "cube.obligation",
+    "pk": 57,
+    "fields": {
+        "license": 1,
+        "generic": null,
+        "name": "Test License DistributionNonSource Modified or not",
+        "verbatim": "Test License DistributionNonSource Modified or not",
+        "passivity": "Active",
+        "trigger_expl": "DistributionNonSource",
+        "trigger_mdf": "AlteredUnmodified"
+    }
+},
+{
+    "model": "cube.obligation",
+    "pk": 58,
+    "fields": {
+        "license": 1,
+        "generic": null,
+        "name": "Test License NetworkAccess Altered",
+        "verbatim": "Test License NetworkAccess Altered",
+        "passivity": "Active",
+        "trigger_expl": "NetworkAccess",
+        "trigger_mdf": "Altered"
+    }
+},
+{
+    "model": "cube.obligation",
+    "pk": 59,
+    "fields": {
+        "license": 1,
+        "generic": null,
+        "name": "TestObligation",
+        "verbatim": "This obligation is for testing purpose. please delete it.",
+        "passivity": "Active",
+        "trigger_expl": "DistributionSourceDistributionNonSource",
+        "trigger_mdf": "Unmodified"
+    }
+},
+{
+    "model": "cube.obligation",
+    "pk": 60,
+    "fields": {
+        "license": 1,
+        "generic": null,
+        "name": "Test License NetworkAccess Unmodified",
+        "verbatim": "Test License NetworkAccess Unmodified",
+        "passivity": "",
+        "trigger_expl": "DistributionSourceDistributionNonSource",
+        "trigger_mdf": "Unmodified"
+    }
+},
+{
+    "model": "cube.obligation",
+    "pk": 61,
+    "fields": {
+        "license": 1,
+        "generic": null,
+        "name": "Test License NetworkAccess Modified or not",
+        "verbatim": "Test License NetworkAccess Modified or not",
+        "passivity": "",
+        "trigger_expl": "NetworkAccess",
+        "trigger_mdf": "AlteredUnmodified"
+    }
+},
+{
+    "model": "cube.obligation",
+    "pk": 62,
+    "fields": {
+        "license": 1,
+        "generic": null,
+        "name": "Test License Distribution Altered",
+        "verbatim": "Test License Distribution Altered",
+        "passivity": "Active",
+        "trigger_expl": "DistributionSourceDistributionNonSource",
+        "trigger_mdf": "Altered"
+    }
+},
+{
+    "model": "cube.obligation",
+    "pk": 63,
+    "fields": {
+        "license": 1,
+        "generic": 1,
+        "name": "Test Generic Obligation",
+        "verbatim": "Test Generic Obligation",
+        "passivity": "Active",
+        "trigger_expl": "DistributionSourceDistributionNonSource",
+        "trigger_mdf": "Altered"
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$260000$JbLGlggLk2OMucFyaEbM1a$630+NRUbGkriwJY4TXywQoqwfAhiBE29k/G34HspjZo=",
+        "last_login": "2022-01-24T13:18:55.028Z",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2022-01-14T15:34:44.147Z",
+        "groups": [],
+        "user_permissions": []
+    }
+}
+]

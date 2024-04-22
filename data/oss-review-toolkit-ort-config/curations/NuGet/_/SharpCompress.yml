@@ -1,0 +1,75 @@
+- id: "NuGet::SharpCompress:0.9.0"
+  curations:
+    comment: "Set the VCS revision because the tag does not exactly match the version."
+    vcs:
+      revision: "0.9"
+- id: "NuGet::SharpCompress:0.10.0"
+  curations:
+    comment: "Set the VCS revision because the tag does not exactly match the version."
+    vcs:
+      revision: "0.10"
+- id: "NuGet::SharpCompress:0.11.0"
+  curations:
+    comment: "Set the VCS revision because the tag does not exactly match the version."
+    vcs:
+      revision: "0.11"
+- id: "NuGet::SharpCompress:0.18.0"
+  curations:
+    comment: "Set the VCS revision because the tag does not exactly match the version."
+    vcs:
+      revision: "0.18"
+- id: "NuGet::SharpCompress:0.19.0"
+  curations:
+    comment: "Set the VCS revision because the tag does not exactly match the version."
+    vcs:
+      revision: "0.19"
+- id: "NuGet::SharpCompress:0.21.0"
+  curations:
+    comment: "Set the VCS revision because the tag does not exactly match the version."
+    vcs:
+      revision: "0.21"
+- id: "NuGet::SharpCompress:0.22.0"
+  curations:
+    comment: "Set the VCS revision because the tag does not exactly match the version."
+    vcs:
+      revision: "0.22"
+- id: "NuGet::SharpCompress:0.23.0"
+  curations:
+    comment: "Set the VCS revision because the tag does not exactly match the version."
+    vcs:
+      revision: "0.23"
+- id: "NuGet::SharpCompress:0.24.0"
+  curations:
+    comment: "Set the VCS revision because the tag does not exactly match the version."
+    vcs:
+      revision: "0.24"
+- id: "NuGet::SharpCompress:0.25.0"
+  curations:
+    comment: "Set the VCS revision because the tag does not exactly match the version."
+    vcs:
+      revision: "0.25"
+- id: "NuGet::SharpCompress:0.26.0"
+  curations:
+    comment: "Set the VCS revision because the tag does not exactly match the version."
+    vcs:
+      revision: "0.26"
+- id: "NuGet::SharpCompress:0.27.0"
+  curations:
+    comment: "Set the VCS revision because the tag does not exactly match the version."
+    vcs:
+      revision: "0.27"
+- id: "NuGet::SharpCompress:0.28.0"
+  curations:
+    comment: "Set the VCS revision because the tag does not exactly match the version."
+    vcs:
+      revision: "0.28"
+- id: "NuGet::SharpCompress:0.29.0"
+  curations:
+    comment: "Set the VCS revision because the tag does not exactly match the version."
+    vcs:
+      revision: "0.29"
+- id: "NuGet::SharpCompress:0.30.0"
+  curations:
+    comment: "Set the VCS revision because the tag does not exactly match the version."
+    vcs:
+      revision: "0.30"

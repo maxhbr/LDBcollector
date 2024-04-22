@@ -1,0 +1,12 @@
+% layout 'default';
+% title 'List open reviews';
+
+% if (my $msg = flash 'message') {
+  <div class="alert alert-info"><%= $msg %></div>
+% }
+
+<div id="open-reviews"></div>
+
+% content_for 'ready_function' => begin
+  cavil.setupOpenReviews();
+% end

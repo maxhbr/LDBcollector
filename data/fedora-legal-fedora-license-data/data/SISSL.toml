@@ -1,0 +1,18 @@
+[license]
+
+expression = "SISSL"
+status = [ "allowed" ]
+
+url = '''
+http://www.openoffice.org/licenses/sissl_license.html
+'''
+
+[fedora]
+
+legacy-name = [
+    "Sun Industry Standards Source License"
+]
+
+legacy-abbreviation = [
+    "SISSL"
+]

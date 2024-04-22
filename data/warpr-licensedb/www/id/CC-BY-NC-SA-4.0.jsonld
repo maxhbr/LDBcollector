@@ -1,0 +1,686 @@
+{
+    "@context": {
+        "cc": "http://creativecommons.org/ns#",
+        "dc": "http://purl.org/dc/terms/",
+        "dc11": "http://purl.org/dc/elements/1.1/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "li": "https://licensedb.org/ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "cc:legalcode": {
+            "@type": "@id"
+        },
+        "cc:permits": {
+            "@type": "@id"
+        },
+        "cc:requires": {
+            "@type": "@id"
+        },
+        "cc:prohibits": {
+            "@type": "@id"
+        },
+        "cc:jurisdiction": {
+            "@type": "@id"
+        },
+        "cc:licenseClass": {
+            "@type": "@id"
+        },
+        "dc:creator": {
+            "@type": "@id"
+        },
+        "dc:source": {
+            "@type": "@id"
+        },
+        "dc:replaces": {
+            "@type": "@id"
+        },
+        "dc:isBasedOn": {
+            "@type": "@id"
+        },
+        "dc:isReplacedBy": {
+            "@type": "@id"
+        },
+        "foaf:logo": {
+            "@type": "@id"
+        },
+        "li:plaintext": {
+            "@type": "@id"
+        },
+        "li:libre": {
+            "@type": "@id"
+        },
+        "owl:sameAs": {
+            "@type": "@id"
+        }
+    },
+    "@id": "https://licensedb.org/id/CC-BY-NC-SA-4.0",
+    "@type": [
+        "cc:License",
+        "li:License"
+    ],
+    "cc:permits": [
+        "cc:DerivativeWorks",
+        "cc:Distribution",
+        "cc:Reproduction"
+    ],
+    "cc:prohibits": "cc:CommercialUse",
+    "cc:requires": [
+        "cc:Attribution",
+        "cc:Notice",
+        "cc:ShareAlike"
+    ],
+    "dc:creator": {
+        "@id": "http://creativecommons.org/",
+        "dc:title": {
+            "@language": "en",
+            "@value": "Creative Commons"
+        }
+    },
+    "dc:hasVersion": "4.0",
+    "dc:identifier": {
+        "@language": "en",
+        "@value": "CC BY-NC-SA 4.0"
+    },
+    "dc:replaces": "https://licensedb.org/id/CC-BY-NC-SA-3.0",
+    "dc:title": {
+        "@language": "en",
+        "@value": "Attribution-NonCommercial-ShareAlike 4.0 International"
+    },
+    "http://purl.org/vocab/frbr/core#translation": [
+        {
+            "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.ar",
+            "http://purl.org/vocab/frbr/core#translationOf": {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/"
+            }
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.ca",
+            "http://purl.org/vocab/frbr/core#translationOf": {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/"
+            }
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.cs",
+            "http://purl.org/vocab/frbr/core#translationOf": {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/"
+            }
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.da",
+            "http://purl.org/vocab/frbr/core#translationOf": {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/"
+            }
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.de",
+            "http://purl.org/vocab/frbr/core#translationOf": {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/"
+            }
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.el",
+            "http://purl.org/vocab/frbr/core#translationOf": {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/"
+            }
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en",
+            "http://purl.org/vocab/frbr/core#translationOf": {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/"
+            }
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.eo",
+            "http://purl.org/vocab/frbr/core#translationOf": {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/"
+            }
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.es",
+            "http://purl.org/vocab/frbr/core#translationOf": {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/"
+            }
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.es_ES",
+            "http://purl.org/vocab/frbr/core#translationOf": {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/"
+            }
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.fa",
+            "http://purl.org/vocab/frbr/core#translationOf": {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/"
+            }
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.fi",
+            "http://purl.org/vocab/frbr/core#translationOf": {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/"
+            }
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr",
+            "http://purl.org/vocab/frbr/core#translationOf": {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/"
+            }
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.gl",
+            "http://purl.org/vocab/frbr/core#translationOf": {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/"
+            }
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.hr",
+            "http://purl.org/vocab/frbr/core#translationOf": {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/"
+            }
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.hu",
+            "http://purl.org/vocab/frbr/core#translationOf": {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/"
+            }
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.id",
+            "http://purl.org/vocab/frbr/core#translationOf": {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/"
+            }
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.is",
+            "http://purl.org/vocab/frbr/core#translationOf": {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/"
+            }
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.it",
+            "http://purl.org/vocab/frbr/core#translationOf": {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/"
+            }
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.ja",
+            "http://purl.org/vocab/frbr/core#translationOf": {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/"
+            }
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.ko",
+            "http://purl.org/vocab/frbr/core#translationOf": {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/"
+            }
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.lt",
+            "http://purl.org/vocab/frbr/core#translationOf": {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/"
+            }
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.lv",
+            "http://purl.org/vocab/frbr/core#translationOf": {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/"
+            }
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.ms",
+            "http://purl.org/vocab/frbr/core#translationOf": {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/"
+            }
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.nl",
+            "http://purl.org/vocab/frbr/core#translationOf": {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/"
+            }
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.no",
+            "http://purl.org/vocab/frbr/core#translationOf": {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/"
+            }
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.pl",
+            "http://purl.org/vocab/frbr/core#translationOf": {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/"
+            }
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt",
+            "http://purl.org/vocab/frbr/core#translationOf": {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/"
+            }
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt_BR",
+            "http://purl.org/vocab/frbr/core#translationOf": {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/"
+            }
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.ru",
+            "http://purl.org/vocab/frbr/core#translationOf": {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/"
+            }
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.sv",
+            "http://purl.org/vocab/frbr/core#translationOf": {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/"
+            }
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.tr",
+            "http://purl.org/vocab/frbr/core#translationOf": {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/"
+            }
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.uk",
+            "http://purl.org/vocab/frbr/core#translationOf": {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/"
+            }
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh_TW",
+            "http://purl.org/vocab/frbr/core#translationOf": {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/"
+            }
+        }
+    ],
+    "schema:sameAs": {
+        "@id": "http://spdx.org/licenses/CC-BY-NC-SA-4.0"
+    },
+    "spdx:licenseId": "CC-BY-NC-SA-4.0",
+    "http://www.w3.org/1999/xhtml/vocab#alternate": [
+        {
+            "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.ar"
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.ca"
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.cs"
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.da"
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.de"
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.el"
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en"
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.eo"
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.es_ES"
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.fa"
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.fi"
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr"
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.gl"
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.hr"
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.hu"
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.id"
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.is"
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.it"
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.ja"
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.ko"
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.lt"
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.lv"
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.ms"
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.nl"
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.no"
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.pl"
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt"
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt_BR"
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.ru"
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.sv"
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.tr"
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.uk"
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh_TW"
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/rdf"
+        }
+    ],
+    "http://www.w3.org/1999/xhtml/vocab#stylesheet": [
+        {
+            "@id": "http://creativecommons.org/includes/deed3-print.css"
+        },
+        {
+            "@id": "http://creativecommons.org/includes/deed3.css"
+        },
+        {
+            "@id": "http://creativecommons.org/includes/jurisdictions.css"
+        },
+        {
+            "@id": "http://creativecommons.org/includes/yahooapis/2.6.0/container.css"
+        }
+    ],
+    "owl:sameAs": {
+        "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "@type": "cc:License",
+        "cc:permits": [
+            "cc:DerivativeWorks",
+            "cc:Distribution",
+            "cc:Reproduction"
+        ],
+        "cc:prohibits": "cc:CommercialUse",
+        "cc:requires": [
+            "cc:Attribution",
+            "cc:Notice",
+            "cc:ShareAlike"
+        ],
+        "dc:creator": "http://creativecommons.org/",
+        "dc:hasVersion": "4.0",
+        "dc:identifier": {
+            "@language": "en",
+            "@value": "CC BY-NC-SA 4.0"
+        },
+        "dc:title": {
+            "@language": "en",
+            "@value": "Attribution-NonCommercial-ShareAlike 4.0 International"
+        },
+        "http://purl.org/vocab/frbr/core#translation": [
+            {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.ar"
+            },
+            {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.ca"
+            },
+            {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.cs"
+            },
+            {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.da"
+            },
+            {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.de"
+            },
+            {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.el"
+            },
+            {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en"
+            },
+            {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.eo"
+            },
+            {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"
+            },
+            {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.es_ES"
+            },
+            {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.fa"
+            },
+            {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.fi"
+            },
+            {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr"
+            },
+            {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.gl"
+            },
+            {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.hr"
+            },
+            {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.hu"
+            },
+            {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.id"
+            },
+            {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.is"
+            },
+            {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.it"
+            },
+            {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.ja"
+            },
+            {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.ko"
+            },
+            {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.lt"
+            },
+            {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.lv"
+            },
+            {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.ms"
+            },
+            {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.nl"
+            },
+            {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.no"
+            },
+            {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.pl"
+            },
+            {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt"
+            },
+            {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt_BR"
+            },
+            {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.ru"
+            },
+            {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.sv"
+            },
+            {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.tr"
+            },
+            {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.uk"
+            },
+            {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh_TW"
+            }
+        ],
+        "http://www.w3.org/1999/xhtml/vocab#alternate": [
+            {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.ar"
+            },
+            {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.ca"
+            },
+            {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.cs"
+            },
+            {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.da"
+            },
+            {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.de"
+            },
+            {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.el"
+            },
+            {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en"
+            },
+            {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.eo"
+            },
+            {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"
+            },
+            {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.es_ES"
+            },
+            {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.fa"
+            },
+            {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.fi"
+            },
+            {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr"
+            },
+            {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.gl"
+            },
+            {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.hr"
+            },
+            {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.hu"
+            },
+            {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.id"
+            },
+            {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.is"
+            },
+            {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.it"
+            },
+            {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.ja"
+            },
+            {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.ko"
+            },
+            {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.lt"
+            },
+            {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.lv"
+            },
+            {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.ms"
+            },
+            {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.nl"
+            },
+            {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.no"
+            },
+            {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.pl"
+            },
+            {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt"
+            },
+            {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt_BR"
+            },
+            {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.ru"
+            },
+            {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.sv"
+            },
+            {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.tr"
+            },
+            {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.uk"
+            },
+            {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh_TW"
+            },
+            {
+                "@id": "http://creativecommons.org/licenses/by-nc-sa/4.0/rdf"
+            }
+        ],
+        "http://www.w3.org/1999/xhtml/vocab#stylesheet": [
+            {
+                "@id": "http://creativecommons.org/includes/deed3-print.css"
+            },
+            {
+                "@id": "http://creativecommons.org/includes/deed3.css"
+            },
+            {
+                "@id": "http://creativecommons.org/includes/jurisdictions.css"
+            },
+            {
+                "@id": "http://creativecommons.org/includes/yahooapis/2.6.0/container.css"
+            }
+        ],
+        "owl:sameAs": "https://licensedb.org/id/CC-BY-NC-SA-4.0",
+        "http://www.w3.org/ns/md#item": {
+            "@list": []
+        }
+    },
+    "http://www.w3.org/ns/md#item": {
+        "@list": []
+    },
+    "foaf:logo": "http://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png",
+    "li:id": "CC-BY-NC-SA-4.0",
+    "li:name": "CC BY-NC-SA 4.0",
+    "li:plaintext": [
+        "http://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.txt",
+        "https://licensedb.org/id/CC-BY-NC-SA-4.0.txt"
+    ]
+}

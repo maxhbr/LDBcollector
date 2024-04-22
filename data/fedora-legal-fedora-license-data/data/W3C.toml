@@ -1,0 +1,14 @@
+[license]
+
+expression = "W3C"
+status = [ "allowed" ]
+
+[fedora]
+
+legacy-name = [
+    "W3C Software Notice and License"
+]
+
+legacy-abbreviation = [
+    "W3C"
+]

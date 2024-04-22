@@ -1,0 +1,24 @@
+[
+    {
+        "id": "IPL-1.0",
+        "links": [
+            {
+                "note": "OSI Page",
+                "url": "https://opensource.org/licenses/IPL-1.0"
+            }
+        ],
+        "name": "IBM Public License, Version 1.0",
+        "keywords": [
+            "discouraged",
+            "non-reusable",
+            "osi-approved"
+        ],
+        "text": [
+            {
+                "media_type": "text/html",
+                "title": "HTML",
+                "url": "https://opensource.org/licenses/IPL-1.0"
+            }
+        ]
+    }
+]

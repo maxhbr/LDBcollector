@@ -1,0 +1,14 @@
+[license]
+
+expression = "LicenseRef-Wadalab"
+status = [ "allowed-fonts" ]
+
+[fedora]
+
+legacy-name = [
+    "Wadalab Font License"
+]
+
+legacy-abbreviation = [
+    "Wadalab"
+]

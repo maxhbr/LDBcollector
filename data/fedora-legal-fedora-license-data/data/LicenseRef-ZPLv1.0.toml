@@ -1,0 +1,19 @@
+[license]
+
+expression = "LicenseRef-ZPLv1.0"
+status = [ "allowed" ]
+
+url = '''
+http://www.zope.org/Resources/ZPL
+'''
+
+[fedora]
+
+legacy-name = [
+    "Zope Public License v 1.0"
+]
+
+legacy-abbreviation = [
+    "ZPLv1.0"
+]
+

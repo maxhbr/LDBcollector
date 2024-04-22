@@ -1,0 +1,18 @@
+[license]
+
+expression = "LicenseRef-free-fork"
+status = [ "not-allowed" ]
+
+url = '''
+https://fedoraproject.org/wiki/Licensing/UofWFreeFork
+'''
+
+[fedora]
+
+legacy-name = [
+    "University of Washington Free Fork License"
+]
+
+notes = '''
+No longer used
+'''

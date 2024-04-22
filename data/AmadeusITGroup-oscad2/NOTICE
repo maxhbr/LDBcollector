@@ -1,0 +1,41 @@
+OSCAd 2.0
+Copyright 2013 2014 Thomas Weißschuh, Amadeus IT Group
+Copyright 2013 2014 Kristian Schuhmacher, Amadeus IT Group
+
+It is licensed under the GNU Affero General Public License version 3.
+You can find a copy of it in the file LICENSE in this distribution.
+
+It contains several third party components.
+
+Author:                       Location:                   License copy:
+
+Babel Team                    oscad_i18n/__init__.py      LICENSE_BABEL
+German M. Bravo (Kronuz)      oscad/_scss.py              LICENSE_PYSCSS
+jQuery Foundation & Contribs. oscad/static/jquery/        LICENSE_JQUERY
+Twitter, Inc                  oscad/assets/scss/bootstrap LICENSE_BOOTSTRAP-SASS
+
+It is heavily based on its predecessor OSCAd which is licensed as follows:
+
+OSCAd, the (Telekom) Open Source Compliance Advisor
+(c) 2013 Karsten Reincke, Deutsche Telekom AG, Darmstadt, Germany
+
+    OSCAd is free software:
+    (1) you can (re)distribute and/or modify its backend components
+    under the terms of the GNU Affero General Public License as
+    published by the Free Software Foundation, either version 3 of the
+    License, or (at your option) any later version.
+
+    (2) generally, you can (re)distribute and/or modify its frontends
+    under the terms of the GNU General Public License as
+    published by the Free Software Foundation, either version 3 of the
+    License, or (at your option) any later version (Specific frontends
+    may be published under other open source licenses [see the file
+    COPYING in the frontend directories] )
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+    GNU Affero General Public License for more details.
+
+    You should have received a copy of the GNU Affero General Public License
+    along with this program. If not, see <http://www.gnu.org/licenses/>.

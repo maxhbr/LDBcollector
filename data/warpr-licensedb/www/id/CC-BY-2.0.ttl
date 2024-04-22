@@ -1,0 +1,238 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/elements/1.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://creativecommons.org/licenses/by/2.0/> a cc:License ;
+    cc:legalcode <http://creativecommons.org/licenses/by/2.0/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.0" ;
+    dc:identifier "by" ;
+    dc:isReplacedBy <http://creativecommons.org/licenses/by/2.5/> ;
+    dc:title "Erkenning 2.0 Generies"@af,
+        "نسب المصنف  2.0 عام"@ar,
+        "Attribution 2.0 Generic"@as,
+        "Attribution 2.0 Generic"@ast,
+        "Attribution 2.0 Generic"@ast-es,
+        "Attribution 2.0 Generic"@az,
+        "Атрыбуцыя 2.0 Generic"@be,
+        "Признание 2.0 Неадаптиран"@bg,
+        "Attribution 2.0 Generic"@bn,
+        "Reconeixement 2.0 Genèrica"@ca,
+        "Uveďte autora 2.0 Generic"@cs,
+        "Navngivelse 2.0 Generisk"@da,
+        "Namensnennung 2.0 US-amerikanisch (nicht portiert)"@de,
+        "Namensnennung 2.0 US-amerikanisch (nicht portiert)"@de-at,
+        "Namensnennung 2.0 US-amerikanisch (nicht portiert)"@de-ch,
+        "Αναφορά Δημιουργού 2.0 Γενικό"@el,
+        "Attribution 2.0 Generic"@en,
+        "Attribution 2.0 Generic"@en-ca,
+        "Attribution 2.0 Generic"@en-gb,
+        "Attribution 2.0 Generic"@en-hk,
+        "Attribution 2.0 Generic"@en-sg,
+        "Attribution 2.0 Generic"@en-us,
+        "Atribuite 2.0 Ĝenerala"@eo,
+        "Atribución 2.0 Genérica"@es,
+        "Atribución 2.0 Genérica"@es-ar,
+        "Atribución 2.0 Genérica"@es-cl,
+        "Reconocimiento 2.0 Genérica"@es-co,
+        "Reconocimiento 2.0 Genérica"@es-ec,
+        "Reconocimiento 2.0 Genérica"@es-es,
+        "Reconocimiento 2.0 Genérica"@es-gt,
+        "Atribución 2.0 Genérica"@es-mx,
+        "Reconocimiento 2.0 Genérica"@es-pe,
+        "Reconocimiento 2.0 Genérica"@es-pr,
+        "Autorile viitamine 2.0 Üldine"@et,
+        "Aitortu 2.0 Generikoa"@eu,
+        "Attribution 2.0 Generic"@fa,
+        "Nimeä 2.0 Raakaversio"@fi,
+        "Attribution 2.0 Générique"@fr,
+        "Paternité 2.0 Générique"@fr-ca,
+        "Paternité 2.0 Générique"@fr-ch,
+        "Paternité 2.0 Générique"@fr-lu,
+        "Attribution 2.0 Generic"@ga,
+        "Recoñecemento 2.0 Xenérica"@gl,
+        "ייחוס 2.0 לא מותאם"@he,
+        "Attribution 2.0 Generic"@hi,
+        "Imenovanje 2.0 nelokalizirana licenca"@hr,
+        "Nevezd meg! 2.0 Általános"@hu,
+        "Հղում 2.0 Generic"@hy,
+        "Atribusi 2.0 Generik"@id,
+        "Attribution 2.0 Generic"@is,
+        "Attribuzione 2.0 Generico"@it,
+        "Attribuzione 2.0 Generico"@it-ch,
+        "表示 2.0 一般"@ja,
+        "ავტორობის მითითებით  2.0 ზოგადი"@ka,
+        "Атауын сақтау 2.0 Generic"@kk,
+        "저작자표시(Attribution) 2.0 일반"@ko,
+        "Priskyrimas 2.0 Generic"@lt,
+        "Atsaucoties 2.0 Vispārīgs"@lv,
+        "Наведи извор 2.0 Нелокализирана лиценца"@mk,
+        "കടപ്പാട് 2.0 Generic"@ml,
+        "Attribution 2.0 Generic"@mn,
+        "Pengiktirafan 2.0 Umum"@ms,
+        "Naamsvermelding 2.0 Unported"@nl,
+        "Navngivelse 2.0 Generisk"@no,
+        "Tsebagatšo 2.0 E sa fetišwago"@nso,
+        "Attribution 2.0 Generic"@oci-es,
+        "Uznanie autorstwa 2.0 Ogólny"@pl,
+        "Atribuição  2.0 Genérica"@pt,
+        "Atribuição 2.0 Generic"@pt-br,
+        "Atribuição 2.0 Genérica"@pt-pt,
+        "Atribuire 2.0 Generică"@ro,
+        "Attribution (Атрибуция) 2.0 Generic"@ru,
+        "Attribution 2.0 Generic"@si-lk,
+        "Priznanje avtorstva 2.0 Generična"@sl,
+        "Attribution 2.0 Të përgjithshme"@sq,
+        "Autorstvo 2.0 Generička licenca"@sr,
+        "Ауторство 2.0 Генеричка лиценца"@sr,
+        "Autorstvo 2.0 Generička licenca"@sr-latn,
+        "Attribution 2.0 Generic"@st,
+        "Erkännande 2.0 Generisk"@sv,
+        "Attribution 2.0 Generic"@ta,
+        "ఆపాదింపు 2.0 Generic"@te,
+        "แสดงที่มา 2.0 ทั่วไป"@th,
+        "Attribution 2.0 Kapsamlı"@tr,
+        "Attribution 2.0 Generic"@uk,
+        "Attribution 2.0 Generic"@ur,
+        "Ghi nhận công của tác giả 2.0 Chung"@vi,
+        "署名 2.0 未本地化版本"@zh,
+        "姓名標示 2.0 通用版"@zh-hk,
+        "姓名標示 2.0 通用版"@zh-tw,
+        "Qaphela Umnikazi 2.0 Engadlulisiwe"@zu,
+        "${Attribution} 2.0 ${Generic}"@zxx ;
+    owl:sameAs <https://licensedb.org/id/CC-BY-2.0> ;
+    foaf:logo <http://i.creativecommons.org/l/by/2.0/80x15.png>,
+        <http://i.creativecommons.org/l/by/2.0/88x31.png> .
+
+<https://licensedb.org/id/CC-BY-2.0> a cc:License,
+        li:License ;
+    cc:legalcode <http://creativecommons.org/licenses/by/2.0/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.0" ;
+    dc:identifier "by" ;
+    dc:isReplacedBy <https://licensedb.org/id/CC-BY-2.5> ;
+    dc:replaces <https://licensedb.org/id/CC-BY-1.0> ;
+    dc:title "Erkenning 2.0 Generies"@af,
+        "نسب المصنف  2.0 عام"@ar,
+        "Attribution 2.0 Generic"@as,
+        "Attribution 2.0 Generic"@ast,
+        "Attribution 2.0 Generic"@ast-es,
+        "Attribution 2.0 Generic"@az,
+        "Атрыбуцыя 2.0 Generic"@be,
+        "Признание 2.0 Неадаптиран"@bg,
+        "Attribution 2.0 Generic"@bn,
+        "Reconeixement 2.0 Genèrica"@ca,
+        "Uveďte autora 2.0 Generic"@cs,
+        "Navngivelse 2.0 Generisk"@da,
+        "Namensnennung 2.0 US-amerikanisch (nicht portiert)"@de,
+        "Namensnennung 2.0 US-amerikanisch (nicht portiert)"@de-at,
+        "Namensnennung 2.0 US-amerikanisch (nicht portiert)"@de-ch,
+        "Αναφορά Δημιουργού 2.0 Γενικό"@el,
+        "Attribution 2.0 Generic"@en,
+        "Attribution 2.0 Generic"@en-ca,
+        "Attribution 2.0 Generic"@en-gb,
+        "Attribution 2.0 Generic"@en-hk,
+        "Attribution 2.0 Generic"@en-sg,
+        "Attribution 2.0 Generic"@en-us,
+        "Atribuite 2.0 Ĝenerala"@eo,
+        "Atribución 2.0 Genérica"@es,
+        "Atribución 2.0 Genérica"@es-ar,
+        "Atribución 2.0 Genérica"@es-cl,
+        "Reconocimiento 2.0 Genérica"@es-co,
+        "Reconocimiento 2.0 Genérica"@es-ec,
+        "Reconocimiento 2.0 Genérica"@es-es,
+        "Reconocimiento 2.0 Genérica"@es-gt,
+        "Atribución 2.0 Genérica"@es-mx,
+        "Reconocimiento 2.0 Genérica"@es-pe,
+        "Reconocimiento 2.0 Genérica"@es-pr,
+        "Autorile viitamine 2.0 Üldine"@et,
+        "Aitortu 2.0 Generikoa"@eu,
+        "Attribution 2.0 Generic"@fa,
+        "Nimeä 2.0 Raakaversio"@fi,
+        "Attribution 2.0 Générique"@fr,
+        "Paternité 2.0 Générique"@fr-ca,
+        "Paternité 2.0 Générique"@fr-ch,
+        "Paternité 2.0 Générique"@fr-lu,
+        "Attribution 2.0 Generic"@ga,
+        "Recoñecemento 2.0 Xenérica"@gl,
+        "ייחוס 2.0 לא מותאם"@he,
+        "Attribution 2.0 Generic"@hi,
+        "Imenovanje 2.0 nelokalizirana licenca"@hr,
+        "Nevezd meg! 2.0 Általános"@hu,
+        "Հղում 2.0 Generic"@hy,
+        "Atribusi 2.0 Generik"@id,
+        "Attribution 2.0 Generic"@is,
+        "Attribuzione 2.0 Generico"@it,
+        "Attribuzione 2.0 Generico"@it-ch,
+        "表示 2.0 一般"@ja,
+        "ავტორობის მითითებით  2.0 ზოგადი"@ka,
+        "Атауын сақтау 2.0 Generic"@kk,
+        "저작자표시(Attribution) 2.0 일반"@ko,
+        "Priskyrimas 2.0 Generic"@lt,
+        "Atsaucoties 2.0 Vispārīgs"@lv,
+        "Наведи извор 2.0 Нелокализирана лиценца"@mk,
+        "കടപ്പാട് 2.0 Generic"@ml,
+        "Attribution 2.0 Generic"@mn,
+        "Pengiktirafan 2.0 Umum"@ms,
+        "Naamsvermelding 2.0 Unported"@nl,
+        "Navngivelse 2.0 Generisk"@no,
+        "Tsebagatšo 2.0 E sa fetišwago"@nso,
+        "Attribution 2.0 Generic"@oci-es,
+        "Uznanie autorstwa 2.0 Ogólny"@pl,
+        "Atribuição  2.0 Genérica"@pt,
+        "Atribuição 2.0 Generic"@pt-br,
+        "Atribuição 2.0 Genérica"@pt-pt,
+        "Atribuire 2.0 Generică"@ro,
+        "Attribution (Атрибуция) 2.0 Generic"@ru,
+        "Attribution 2.0 Generic"@si-lk,
+        "Priznanje avtorstva 2.0 Generična"@sl,
+        "Attribution 2.0 Të përgjithshme"@sq,
+        "Autorstvo 2.0 Generička licenca"@sr,
+        "Ауторство 2.0 Генеричка лиценца"@sr,
+        "Autorstvo 2.0 Generička licenca"@sr-latn,
+        "Attribution 2.0 Generic"@st,
+        "Erkännande 2.0 Generisk"@sv,
+        "Attribution 2.0 Generic"@ta,
+        "ఆపాదింపు 2.0 Generic"@te,
+        "แสดงที่มา 2.0 ทั่วไป"@th,
+        "Attribution 2.0 Kapsamlı"@tr,
+        "Attribution 2.0 Generic"@uk,
+        "Attribution 2.0 Generic"@ur,
+        "Ghi nhận công của tác giả 2.0 Chung"@vi,
+        "署名 2.0 未本地化版本"@zh,
+        "姓名標示 2.0 通用版"@zh-hk,
+        "姓名標示 2.0 通用版"@zh-tw,
+        "Qaphela Umnikazi 2.0 Engadlulisiwe"@zu,
+        "${Attribution} 2.0 ${Generic}"@zxx ;
+    schema:sameAs <http://spdx.org/licenses/CC-BY-2.0> ;
+    spdx:licenseId "CC-BY-2.0" ;
+    owl:sameAs <http://creativecommons.org/licenses/by/2.0/> ;
+    foaf:logo <http://i.creativecommons.org/l/by/2.0/80x15.png>,
+        <http://i.creativecommons.org/l/by/2.0/88x31.png> ;
+    li:id "CC-BY-2.0" ;
+    li:libre <http://creativecommons.org/>,
+        <http://fsf.org/> ;
+    li:name "CC BY 2.0" .
+

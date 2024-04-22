@@ -1,0 +1,12 @@
+# SPDX-FileCopyrightText: 2023 Henrik Sandklef
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+bump2version ~= 1.0
+flake8 ~= 7.0
+reuse
+twine
+pytest
+sphinx
+sphinx-argparse
+

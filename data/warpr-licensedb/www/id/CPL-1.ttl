@@ -1,0 +1,42 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://licensedb.org/id/CPL-1> a cc:License,
+        li:License ;
+    cc:legalcode <http://www.ibm.com/developerworks/library/os-cpl.html> ;
+    dc:creator <http://www.ibm.com/> ;
+    dc:hasVersion "1.0" ;
+    dc:isReplacedBy <https://licensedb.org/id/EPL-1> ;
+    dc:title "Common Public License" ;
+    schema:sameAs <http://spdx.org/licenses/CPL-1.0>,
+        <http://www.ibm.com/developerworks/library/os-cpl.html> ;
+    spdx:licenseId "CPL-1.0" ;
+    li:id "CPL-1" ;
+    li:libre <http://fsf.org/>,
+        <http://opensource.org/> ;
+    li:name "CPL 1.0" ;
+    li:notice [ li:canonical true ;
+            li:orlater false ;
+            li:short true ;
+            li:text """/*******************************************************************************
+ * Copyright (c) {{year}} {{rightsholder}}.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Common Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/cpl-v10.html
+ *
+ * Contributors:
+ *    ______________ - initial API and implementation
+ *******************************************************************************/
+""" ] .
+

@@ -1,0 +1,142 @@
+= *Allowed* Licenses
+
+This page lists the various category of *allowed* licenses in separate tables.
+That is: *allowed*, if it is allowed for any use and *allowed-fonts*,
+*allowed-content*, *allowed-documentation*, or *allowed-firmware*, if it is
+allowed only for certain categories of material as described in
+xref:license-approval.adoc[License Approval]. This information is generated
+from data maintained in the
+https://gitlab.com/fedora/legal/fedora-license-data[Fedora License Data]
+repository.
+
+= *Allowed* Licenses
+
+[.datatable.dt-search]
+|===
+|SPDX Expression | Name | Legacy Abbreviation
+
+{% for license in ALLOWED_LICENSES %}
+| {{ spdx_url(license) }}
+ | {%- if 'fedora' in license -%}
+        {{ license['fedora']['legacy-name']|join(',') }}
+  {%- else -%}
+        {nbsp}
+  {%- endif -%}
+ | 
+  {%- if 'fedora' in license -%}
+          {{ license['fedora']['legacy-abbreviation']|join(',') }}
+  {%- else -%}
+          {nbsp}
+  {%- endif -%}
+{%- endfor %}
+|===
+
+
+= *Allowed* Content Licenses
+
+[.datatable.dt-search]
+|===
+|SPDX Expression | Name | Legacy Abbreviation | Usage
+
+{% for license in CONTENT_LICENSES -%}
+| {{ spdx_url(license) }}
+ | {%- if 'fedora' in license -%}
+        {{ license['fedora']['legacy-name']|join(',') }}
+  {%- else -%}
+        {nbsp}
+  {%- endif -%}
+ |
+  {%- if 'fedora' in license -%}
+        {{ license['fedora']['legacy-abbreviation']|join(',') }}
+  {%- else -%}
+        {nbsp}
+  {%- endif -%}
+| {%- if 'usage' in license['license'] -%}
+        {{- license['license']['usage']|trim -}}
+  {%- else -%}
+        &nbsp;
+  {%- endif -%}
+{%- endfor %}
+|===
+
+= *Allowed* Documentation Licenses
+
+[.datatable.dt-search]
+|===
+|SPDX Expression | Name | Legacy Abbreviation | Usage
+
+{% for license in DOCUMENTATION_LICENSES -%}
+| {{ spdx_url(license) }}
+ | {%- if 'fedora' in license -%}
+        {{ license['fedora']['legacy-name']|join(',') }}
+  {%- else -%}
+        {nbsp}
+  {%- endif -%}
+ |
+  {%- if 'fedora' in license -%}
+        {{ license['fedora']['legacy-abbreviation']|join(',') }}
+  {%- else -%}
+        {nbsp}
+  {%- endif -%}
+| {%- if 'usage' in license['license'] -%}
+        {{- license['license']['usage']|trim -}}
+  {%- else -%}
+        &nbsp;
+  {%- endif -%}
+{%- endfor %}
+|===
+
+= *Allowed* Font Licenses
+
+[.datatable.dt-search]
+|===
+|SPDX Expression | Name | Legacy Abbreviation | Usage
+
+{% for license in FONTS_LICENSES %}
+| {{ spdx_url(license) }}
+ | {%- if 'fedora' in license -%}
+        {{ license['fedora']['legacy-name']|join(',') }}
+  {%- else -%}
+        {nbsp}
+  {%- endif -%}
+ |
+  {%- if 'fedora' in license -%}
+        {{ license['fedora']['legacy-abbreviation']|join(',') }}
+  {%- else -%}
+        {nbsp}
+  {%- endif -%}
+| {%- if 'usage' in license['license'] -%}
+        {{- license['license']['usage']|trim -}}
+  {%- else -%}
+        &nbsp;
+  {%- endif -%}
+{%- endfor %}
+|===
+
+
+= *Allowed* Firmware Licenses
+
+[.datatable.dt-search]
+|===
+|SPDX Expression | Name | Legacy Abbreviation | Usage
+
+{% for license in FIRMWARE_LICENSES -%}
+| {{ spdx_url(license) }}
+ | {%- if 'fedora' in license -%}
+        {{ license['fedora']['legacy-name']|join(',') }}
+  {%- else -%}
+        &nbsp;
+  {%- endif -%}
+ |
+  {%- if 'fedora' in license -%}
+        {{ license['fedora']['legacy-abbreviation']|join(',') }}
+  {%- else -%}
+        {nbsp}
+  {%- endif -%}
+| {%- if 'usage' in license['license'] -%}
+        {{- license['license']['usage']|trim -}}
+  {%- else -%}
+        &nbsp;
+  {%- endif -%}
+{%- endfor %}
+|===

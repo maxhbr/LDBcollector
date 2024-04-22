@@ -1,0 +1,12 @@
+{
+  "@context": "https://wking.github.io/fsf-api/schema/license.jsonld",
+  "id": "Jahia",
+  "name": "Jahia Community Source License",
+  "tags": [
+    "non-free"
+  ],
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#Jahia",
+    "http://web.archive.org/web/20050317081359/http://www.jahia.org/jahia/page145.html"
+  ]
+}

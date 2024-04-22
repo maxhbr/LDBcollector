@@ -1,0 +1,240 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/elements/1.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://creativecommons.org/licenses/by-sa/2.0/hr/> a cc:License ;
+    cc:jurisdiction <http://creativecommons.org/international/hr/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-sa/2.0/hr/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Attribution,
+        cc:Notice,
+        cc:ShareAlike ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.0" ;
+    dc:identifier "by-sa" ;
+    dc:isReplacedBy <http://creativecommons.org/licenses/by-sa/2.5/hr/> ;
+    dc:source <http://creativecommons.org/licenses/by-sa/2.0/> ;
+    dc:title "Erkenning-InsgelyksDeel 2.0 Kroasië"@af,
+        "نسب العمل- المشاركة على قدم المساواة 2.0 كرواتيا"@ar,
+        "Attribution-ShareAlike 2.0 Croatia"@as,
+        "Attribution-ShareAlike 2.0 Croatia"@ast,
+        "Attribution-ShareAlike 2.0 Croatia"@ast-es,
+        "Attribution-ShareAlike 2.0 Croatia"@az,
+        "Attribution-ShareAlike 2.0 Харватыя"@be,
+        "Признание-Споделяне на споделеното 2.0 Хърватска"@bg,
+        "Attribution-ShareAlike 2.0 Croatia"@bn,
+        "Reconeixement-CompartirIgual 2.0 Croàcia"@ca,
+        "Uveďte autora-Zachovejte licenci 2.0 Chorvatsko"@cs,
+        "Navngivelse-DelPåSammeVilkår 2.0 Kroatien"@da,
+        "Namensnennung-Weitergabe unter gleichen Bedingungen 2.0 Kroatien"@de,
+        "Namensnennung-Weitergabe unter gleichen Bedingungen 2.0 Kroatien"@de-at,
+        "Namensnennung-Weitergabe unter gleichen Bedingungen 2.0 Kroatien"@de-ch,
+        "Αναφορά Δημιουργού - Παρόμοια Διανομή 2.0 Κροατία"@el,
+        "Attribution-ShareAlike 2.0 Croatia"@en,
+        "Attribution-ShareAlike 2.0 Croatia"@en-ca,
+        "Attribution-ShareAlike 2.0 Croatia"@en-gb,
+        "Attribution-ShareAlike 2.0 Croatia"@en-hk,
+        "Attribution-ShareAlike 2.0 Croatia"@en-sg,
+        "Attribution-ShareAlike 2.0 Croatia"@en-us,
+        "Atribuite-Samkondiĉe 2.0 Kroatujo"@eo,
+        "Atribución-CompartirIgual 2.0 Croacia"@es,
+        "Atribución-CompartirDerivadasIgual 2.0 Croacia"@es-ar,
+        "Atribución-LicenciarIgual 2.0 Croacia"@es-cl,
+        "Reconocimiento-CompartirIgual 2.0 Croacia"@es-co,
+        "Reconocimiento-CompartirIgual 2.0 Croacia"@es-ec,
+        "Reconocimiento-CompartirIgual 2.0 Croacia"@es-es,
+        "Reconocimiento-CompartirIgual 2.0 Croacia"@es-gt,
+        "Atribución-Licenciamiento Recíproco 2.0 Croacia"@es-mx,
+        "Reconocimiento-CompartirIgual 2.0 Croacia"@es-pe,
+        "Reconocimiento-CompartirIgual 2.0 Croacia"@es-pr,
+        "Autorile viitamine + Jagamine samadel tingimustel 2.0 Horvaatia"@et,
+        "Aitortu-PartekatuBerdin 2.0 Kroazia"@eu,
+        "Attribution-ShareAlike 2.0 کرواسی"@fa,
+        "Nimeä-Tarttuva 2.0 Kroatia"@fi,
+        "Paternité - Partage à l'Identique 2.0 Croatie"@fr,
+        "Paternité - Partage des Conditions Initiales à l'Identique 2.0 Croatie"@fr-ca,
+        "Paternité - Partage des Conditions Initiales à l'Identique 2.0 Croatie"@fr-ch,
+        "Paternité - Partage des Conditions Initiales à l'Identique 2.0 Croatie"@fr-lu,
+        "Attribution-ShareAlike 2.0 Croatia"@ga,
+        "Recoñecemento-CompartirIgual 2.0 Croacia"@gl,
+        "ייחוס-שיתוף זהה 2.0 קרואטיה"@he,
+        "Attribution-ShareAlike 2.0 Croatia"@hi,
+        "Imenovanje-Dijeli pod istim uvjetima 2.0 Hrvatska"@hr,
+        "Nevezd meg! - Így add tovább! 2.0 Horvátország"@hu,
+        "Հղում - համանման տարածում 2.0 Խորվաթիա"@hy,
+        "Atribusi-BerbagiSerupa 2.0 Kroasia"@id,
+        "Attribution-ShareAlike 2.0 Króatía"@is,
+        "Attribuzione - Condividi allo stesso modo 2.0 Croazia"@it,
+        "Attribuzione - Condividi allo stesso modo 2.0 Croazia"@it-ch,
+        "表示 - 継承 2.0 クロアチア"@ja,
+        "ავტორობის მითითებით – გავრცელება იგივე პირობებით  2.0 ხორვატია"@ka,
+        "Attribution-ShareAlike 2.0 Croatia"@kk,
+        "저작자표시-동일조건변경허락 2.0 크로아티아"@ko,
+        "Attribution-ShareAlike 2.0 Kroatija"@lt,
+        "Atsaucoties-Nemainot licenci 2.0 Horvātija"@lv,
+        "НаведиИзвор-СподелиПодИстиУслови 2.0 Хрватска"@mk,
+        "Attribution-ShareAlike 2.0 ക്രൊയേഷിയ"@ml,
+        "Attribution-ShareAlike 2.0 Croatia"@mn,
+        "Pengiktirafan-PerkongsianSerupa 2.0 Kroatia"@ms,
+        "Naamsvermelding-GelijkDelen 2.0 Kroatië"@nl,
+        "Navngivelse-DelPåSammeVilkår 2.0 Kroatia"@no,
+        "Tsebagatšo -Mohlakanelwa 2.0 Croatia"@nso,
+        "Attribution-ShareAlike 2.0 Croatia"@oci-es,
+        "Uznanie autorstwa-Na tych samych warunkach 2.0 Chorwacja"@pl,
+        "Atribuição - CompartilhaIgual 2.0 Croácia"@pt,
+        "Attribution-ShareAlike 2.0 Croatia"@pt-br,
+        "Atribuição-Partilha nos termos da mesma licença 2.0 Croácia"@pt-pt,
+        "Atribuire - Distribuire-în-condiţii-identice 2.0 Croaţia"@ro,
+        "Attribution-ShareAlike (Атрибуция — С сохранением условий) 2.0 Хорватия"@ru,
+        "Attribution-ShareAlike 2.0 Croatia"@si-lk,
+        "Priznanje avtorstva-Deljenje pod enakimi pogoji 2.0 Hrvaška"@sl,
+        "Attribution-ShareAlike 2.0 Kroaci"@sq,
+        "Autorstvo-Deliti pod istim uslovima 2.0 Hrvatska"@sr,
+        "Ауторство-Делити под истим условима 2.0 Хрватска"@sr,
+        "Autorstvo-Deliti pod istim uslovima 2.0 Hrvatska"@sr-latn,
+        "Attribution-ShareAlike 2.0 Croatia"@st,
+        "Erkännande-DelaLika 2.0 Kroatien"@sv,
+        "Attribution-ShareAlike 2.0 Croatia"@ta,
+        "Attribution-ShareAlike 2.0 క్రోయేషియా"@te,
+        "แสดงที่มา-อนุญาตแบบเดียวกัน 2.0 โครเอเชีย"@th,
+        "Alıntı-LisansıDevamEttirme 2.0 Hırvatistan"@tr,
+        "Attribution-ShareAlike 2.0 Croatia"@uk,
+        "Attribution-ShareAlike 2.0 Croatia"@ur,
+        "Attribution-ShareAlike 2.0 Nước Croatia"@vi,
+        "署名-相同方式共享 2.0 克罗地亚"@zh,
+        "姓名標示-相同方式分享 2.0 克羅埃西亞"@zh-hk,
+        "姓名標示-相同方式分享 2.0 克羅埃西亞"@zh-tw,
+        "Qaphela Umnikazi-Zihlanganyeleni 2.0 eCroatia"@zu,
+        "${Attribution-ShareAlike} 2.0 ${Croatia}"@zxx ;
+    owl:sameAs <https://licensedb.org/id/CC-BY-SA-2.0-hr> ;
+    foaf:logo <http://i.creativecommons.org/l/by-sa/2.0/hr/80x15.png>,
+        <http://i.creativecommons.org/l/by-sa/2.0/hr/88x31.png> .
+
+<https://licensedb.org/id/CC-BY-SA-2.0-hr> a cc:License,
+        li:License ;
+    cc:jurisdiction <http://creativecommons.org/international/hr/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-sa/2.0/hr/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Attribution,
+        cc:Notice,
+        cc:ShareAlike ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.0" ;
+    dc:identifier "by-sa" ;
+    dc:isReplacedBy <https://licensedb.org/id/CC-BY-SA-2.5-hr> ;
+    dc:source <http://creativecommons.org/licenses/by-sa/2.0/> ;
+    dc:title "Erkenning-InsgelyksDeel 2.0 Kroasië"@af,
+        "نسب العمل- المشاركة على قدم المساواة 2.0 كرواتيا"@ar,
+        "Attribution-ShareAlike 2.0 Croatia"@as,
+        "Attribution-ShareAlike 2.0 Croatia"@ast,
+        "Attribution-ShareAlike 2.0 Croatia"@ast-es,
+        "Attribution-ShareAlike 2.0 Croatia"@az,
+        "Attribution-ShareAlike 2.0 Харватыя"@be,
+        "Признание-Споделяне на споделеното 2.0 Хърватска"@bg,
+        "Attribution-ShareAlike 2.0 Croatia"@bn,
+        "Reconeixement-CompartirIgual 2.0 Croàcia"@ca,
+        "Uveďte autora-Zachovejte licenci 2.0 Chorvatsko"@cs,
+        "Navngivelse-DelPåSammeVilkår 2.0 Kroatien"@da,
+        "Namensnennung-Weitergabe unter gleichen Bedingungen 2.0 Kroatien"@de,
+        "Namensnennung-Weitergabe unter gleichen Bedingungen 2.0 Kroatien"@de-at,
+        "Namensnennung-Weitergabe unter gleichen Bedingungen 2.0 Kroatien"@de-ch,
+        "Αναφορά Δημιουργού - Παρόμοια Διανομή 2.0 Κροατία"@el,
+        "Attribution-ShareAlike 2.0 Croatia"@en,
+        "Attribution-ShareAlike 2.0 Croatia"@en-ca,
+        "Attribution-ShareAlike 2.0 Croatia"@en-gb,
+        "Attribution-ShareAlike 2.0 Croatia"@en-hk,
+        "Attribution-ShareAlike 2.0 Croatia"@en-sg,
+        "Attribution-ShareAlike 2.0 Croatia"@en-us,
+        "Atribuite-Samkondiĉe 2.0 Kroatujo"@eo,
+        "Atribución-CompartirIgual 2.0 Croacia"@es,
+        "Atribución-CompartirDerivadasIgual 2.0 Croacia"@es-ar,
+        "Atribución-LicenciarIgual 2.0 Croacia"@es-cl,
+        "Reconocimiento-CompartirIgual 2.0 Croacia"@es-co,
+        "Reconocimiento-CompartirIgual 2.0 Croacia"@es-ec,
+        "Reconocimiento-CompartirIgual 2.0 Croacia"@es-es,
+        "Reconocimiento-CompartirIgual 2.0 Croacia"@es-gt,
+        "Atribución-Licenciamiento Recíproco 2.0 Croacia"@es-mx,
+        "Reconocimiento-CompartirIgual 2.0 Croacia"@es-pe,
+        "Reconocimiento-CompartirIgual 2.0 Croacia"@es-pr,
+        "Autorile viitamine + Jagamine samadel tingimustel 2.0 Horvaatia"@et,
+        "Aitortu-PartekatuBerdin 2.0 Kroazia"@eu,
+        "Attribution-ShareAlike 2.0 کرواسی"@fa,
+        "Nimeä-Tarttuva 2.0 Kroatia"@fi,
+        "Paternité - Partage à l'Identique 2.0 Croatie"@fr,
+        "Paternité - Partage des Conditions Initiales à l'Identique 2.0 Croatie"@fr-ca,
+        "Paternité - Partage des Conditions Initiales à l'Identique 2.0 Croatie"@fr-ch,
+        "Paternité - Partage des Conditions Initiales à l'Identique 2.0 Croatie"@fr-lu,
+        "Attribution-ShareAlike 2.0 Croatia"@ga,
+        "Recoñecemento-CompartirIgual 2.0 Croacia"@gl,
+        "ייחוס-שיתוף זהה 2.0 קרואטיה"@he,
+        "Attribution-ShareAlike 2.0 Croatia"@hi,
+        "Imenovanje-Dijeli pod istim uvjetima 2.0 Hrvatska"@hr,
+        "Nevezd meg! - Így add tovább! 2.0 Horvátország"@hu,
+        "Հղում - համանման տարածում 2.0 Խորվաթիա"@hy,
+        "Atribusi-BerbagiSerupa 2.0 Kroasia"@id,
+        "Attribution-ShareAlike 2.0 Króatía"@is,
+        "Attribuzione - Condividi allo stesso modo 2.0 Croazia"@it,
+        "Attribuzione - Condividi allo stesso modo 2.0 Croazia"@it-ch,
+        "表示 - 継承 2.0 クロアチア"@ja,
+        "ავტორობის მითითებით – გავრცელება იგივე პირობებით  2.0 ხორვატია"@ka,
+        "Attribution-ShareAlike 2.0 Croatia"@kk,
+        "저작자표시-동일조건변경허락 2.0 크로아티아"@ko,
+        "Attribution-ShareAlike 2.0 Kroatija"@lt,
+        "Atsaucoties-Nemainot licenci 2.0 Horvātija"@lv,
+        "НаведиИзвор-СподелиПодИстиУслови 2.0 Хрватска"@mk,
+        "Attribution-ShareAlike 2.0 ക്രൊയേഷിയ"@ml,
+        "Attribution-ShareAlike 2.0 Croatia"@mn,
+        "Pengiktirafan-PerkongsianSerupa 2.0 Kroatia"@ms,
+        "Naamsvermelding-GelijkDelen 2.0 Kroatië"@nl,
+        "Navngivelse-DelPåSammeVilkår 2.0 Kroatia"@no,
+        "Tsebagatšo -Mohlakanelwa 2.0 Croatia"@nso,
+        "Attribution-ShareAlike 2.0 Croatia"@oci-es,
+        "Uznanie autorstwa-Na tych samych warunkach 2.0 Chorwacja"@pl,
+        "Atribuição - CompartilhaIgual 2.0 Croácia"@pt,
+        "Attribution-ShareAlike 2.0 Croatia"@pt-br,
+        "Atribuição-Partilha nos termos da mesma licença 2.0 Croácia"@pt-pt,
+        "Atribuire - Distribuire-în-condiţii-identice 2.0 Croaţia"@ro,
+        "Attribution-ShareAlike (Атрибуция — С сохранением условий) 2.0 Хорватия"@ru,
+        "Attribution-ShareAlike 2.0 Croatia"@si-lk,
+        "Priznanje avtorstva-Deljenje pod enakimi pogoji 2.0 Hrvaška"@sl,
+        "Attribution-ShareAlike 2.0 Kroaci"@sq,
+        "Autorstvo-Deliti pod istim uslovima 2.0 Hrvatska"@sr,
+        "Ауторство-Делити под истим условима 2.0 Хрватска"@sr,
+        "Autorstvo-Deliti pod istim uslovima 2.0 Hrvatska"@sr-latn,
+        "Attribution-ShareAlike 2.0 Croatia"@st,
+        "Erkännande-DelaLika 2.0 Kroatien"@sv,
+        "Attribution-ShareAlike 2.0 Croatia"@ta,
+        "Attribution-ShareAlike 2.0 క్రోయేషియా"@te,
+        "แสดงที่มา-อนุญาตแบบเดียวกัน 2.0 โครเอเชีย"@th,
+        "Alıntı-LisansıDevamEttirme 2.0 Hırvatistan"@tr,
+        "Attribution-ShareAlike 2.0 Croatia"@uk,
+        "Attribution-ShareAlike 2.0 Croatia"@ur,
+        "Attribution-ShareAlike 2.0 Nước Croatia"@vi,
+        "署名-相同方式共享 2.0 克罗地亚"@zh,
+        "姓名標示-相同方式分享 2.0 克羅埃西亞"@zh-hk,
+        "姓名標示-相同方式分享 2.0 克羅埃西亞"@zh-tw,
+        "Qaphela Umnikazi-Zihlanganyeleni 2.0 eCroatia"@zu,
+        "${Attribution-ShareAlike} 2.0 ${Croatia}"@zxx ;
+    owl:sameAs <http://creativecommons.org/licenses/by-sa/2.0/hr/> ;
+    foaf:logo <http://i.creativecommons.org/l/by-sa/2.0/hr/80x15.png>,
+        <http://i.creativecommons.org/l/by-sa/2.0/hr/88x31.png> ;
+    li:id "CC-BY-SA-2.0-hr" ;
+    li:libre <http://creativecommons.org/> ;
+    li:name "CC BY-SA 2.0 HR" .
+

@@ -1,0 +1,9 @@
+*.pyc
+*~
+/bin/rdf2hdt
+/etc/ldf-server.json
+/node_modules/
+
+.sconsign.dblite
+/.build
+/svcs/

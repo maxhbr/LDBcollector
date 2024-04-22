@@ -1,0 +1,245 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/elements/1.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://creativecommons.org/licenses/by/2.1/es/> a cc:License ;
+    cc:jurisdiction <http://creativecommons.org/international/es/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by/2.1/es/legalcode.ca>,
+        <http://creativecommons.org/licenses/by/2.1/es/legalcode.es> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.1" ;
+    dc:identifier "by" ;
+    dc:isReplacedBy <http://creativecommons.org/licenses/by/2.5/es/> ;
+    dc:source <http://creativecommons.org/licenses/by/2.1/> ;
+    dc:title "Erkenning 2.1 Spanje"@af,
+        "نسب المصنف  2.1 اسبانيا"@ar,
+        "Attribution 2.1 Spain"@as,
+        "Attribution 2.1 Spain"@ast,
+        "Attribution 2.1 Spain"@ast-es,
+        "Attribution 2.1 Spain"@az,
+        "Атрыбуцыя 2.1 Іспанія"@be,
+        "Признание 2.1 Испания"@bg,
+        "Attribution 2.1 Spain"@bn,
+        "Reconeixement 2.1 Espanya"@ca,
+        "Uveďte autora 2.1 Španělsko"@cs,
+        "Navngivelse 2.1 Spanien"@da,
+        "Namensnennung 2.1 Spanien"@de,
+        "Namensnennung 2.1 Spanien"@de-at,
+        "Namensnennung 2.1 Spanien"@de-ch,
+        "Αναφορά Δημιουργού 2.1 Ισπανία"@el,
+        "Attribution 2.1 Spain"@en,
+        "Attribution 2.1 Spain"@en-ca,
+        "Attribution 2.1 Spain"@en-gb,
+        "Attribution 2.1 Spain"@en-hk,
+        "Attribution 2.1 Spain"@en-sg,
+        "Attribution 2.1 Spain"@en-us,
+        "Atribuite 2.1 Hispanujo"@eo,
+        "Atribución 2.1 España"@es,
+        "Atribución 2.1 España"@es-ar,
+        "Atribución 2.1 España"@es-cl,
+        "Reconocimiento 2.1 España"@es-co,
+        "Reconocimiento 2.1 España"@es-ec,
+        "Reconocimiento 2.1 España"@es-es,
+        "Reconocimiento 2.1 España"@es-gt,
+        "Atribución 2.1 España"@es-mx,
+        "Reconocimiento 2.1 España"@es-pe,
+        "Reconocimiento 2.1 España"@es-pr,
+        "Autorile viitamine 2.1 Hispaania"@et,
+        "Aitortu 2.1 Espainia"@eu,
+        "Attribution 2.1 اسپانیا"@fa,
+        "Nimeä 2.1 Espanja"@fi,
+        "Attribution 2.1 Espagne"@fr,
+        "Paternité 2.1 Espagne"@fr-ca,
+        "Paternité 2.1 Espagne"@fr-ch,
+        "Paternité 2.1 Espagne"@fr-lu,
+        "Attribution 2.1 Spain"@ga,
+        "Recoñecemento 2.1 España"@gl,
+        "ייחוס 2.1 ספרד"@he,
+        "Attribution 2.1 Spain"@hi,
+        "Imenovanje 2.1 Španjolska"@hr,
+        "Nevezd meg! 2.1 Spanyolország"@hu,
+        "Հղում 2.1 Իսպանիա"@hy,
+        "Atribusi 2.1 Spanyol"@id,
+        "Attribution 2.1 Spánn"@is,
+        "Attribuzione 2.1 Spagna"@it,
+        "Attribuzione 2.1 Spagna"@it-ch,
+        "表示 2.1 スペイン"@ja,
+        "ავტორობის მითითებით  2.1 ესპანეთი"@ka,
+        "Атауын сақтау 2.1 Spain"@kk,
+        "저작자표시(Attribution) 2.1 스페인"@ko,
+        "Priskyrimas 2.1 Ispanų"@lt,
+        "Atsaucoties 2.1 Spānija"@lv,
+        "Наведи извор 2.1 Шпанија"@mk,
+        "കടപ്പാട് 2.1 സ്പെയിൻ"@ml,
+        "Attribution 2.1 Spain"@mn,
+        "Pengiktirafan 2.1 Sepanyol"@ms,
+        "Naamsvermelding 2.1 Spanje"@nl,
+        "Navngivelse 2.1 Spania"@no,
+        "Tsebagatšo 2.1 Sepania"@nso,
+        "Attribution 2.1 Spain"@oci-es,
+        "Uznanie autorstwa 2.1 Hiszpania"@pl,
+        "Atribuição  2.1 Espanha"@pt,
+        "Atribuição 2.1 Spain"@pt-br,
+        "Atribuição 2.1 Espanha"@pt-pt,
+        "Atribuire 2.1 Spania"@ro,
+        "Attribution (Атрибуция) 2.1 Испания"@ru,
+        "Attribution 2.1 Spain"@si-lk,
+        "Priznanje avtorstva 2.1 Španija"@sl,
+        "Attribution 2.1 Spanjë"@sq,
+        "Autorstvo 2.1 Španija"@sr,
+        "Ауторство 2.1 Шпанија"@sr,
+        "Autorstvo 2.1 Španija"@sr-latn,
+        "Attribution 2.1 Spain"@st,
+        "Erkännande 2.1 Spanien"@sv,
+        "Attribution 2.1 ஸ்பெயின்"@ta,
+        "ఆపాదింపు 2.1 స్పెయిన్"@te,
+        "แสดงที่มา 2.1 สเปน"@th,
+        "Attribution 2.1 İspanya"@tr,
+        "Attribution 2.1 Spain"@uk,
+        "Attribution 2.1 Spain"@ur,
+        "Ghi nhận công của tác giả 2.1 Nước Tây Ban Nha"@vi,
+        "署名 2.1 西班牙"@zh,
+        "姓名標示 2.1 西班牙"@zh-hk,
+        "姓名標示 2.1 西班牙"@zh-tw,
+        "Qaphela Umnikazi 2.1 Espain"@zu,
+        "${Attribution} 2.1 ${Spain}"@zxx ;
+    owl:sameAs <https://licensedb.org/id/CC-BY-2.1-es> ;
+    foaf:logo <http://i.creativecommons.org/l/by/2.1/es/80x15.png>,
+        <http://i.creativecommons.org/l/by/2.1/es/88x31.png> .
+
+<https://licensedb.org/id/CC-BY-2.1-es> a cc:License,
+        li:License ;
+    cc:jurisdiction <http://creativecommons.org/international/es/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by/2.1/es/legalcode.ca>,
+        <http://creativecommons.org/licenses/by/2.1/es/legalcode.es> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.1" ;
+    dc:identifier "by" ;
+    dc:isReplacedBy <https://licensedb.org/id/CC-BY-2.5-es> ;
+    dc:replaces <https://licensedb.org/id/CC-BY-2.0-es> ;
+    dc:source <http://creativecommons.org/licenses/by/2.1/> ;
+    dc:title "Erkenning 2.1 Spanje"@af,
+        "نسب المصنف  2.1 اسبانيا"@ar,
+        "Attribution 2.1 Spain"@as,
+        "Attribution 2.1 Spain"@ast,
+        "Attribution 2.1 Spain"@ast-es,
+        "Attribution 2.1 Spain"@az,
+        "Атрыбуцыя 2.1 Іспанія"@be,
+        "Признание 2.1 Испания"@bg,
+        "Attribution 2.1 Spain"@bn,
+        "Reconeixement 2.1 Espanya"@ca,
+        "Uveďte autora 2.1 Španělsko"@cs,
+        "Navngivelse 2.1 Spanien"@da,
+        "Namensnennung 2.1 Spanien"@de,
+        "Namensnennung 2.1 Spanien"@de-at,
+        "Namensnennung 2.1 Spanien"@de-ch,
+        "Αναφορά Δημιουργού 2.1 Ισπανία"@el,
+        "Attribution 2.1 Spain"@en,
+        "Attribution 2.1 Spain"@en-ca,
+        "Attribution 2.1 Spain"@en-gb,
+        "Attribution 2.1 Spain"@en-hk,
+        "Attribution 2.1 Spain"@en-sg,
+        "Attribution 2.1 Spain"@en-us,
+        "Atribuite 2.1 Hispanujo"@eo,
+        "Atribución 2.1 España"@es,
+        "Atribución 2.1 España"@es-ar,
+        "Atribución 2.1 España"@es-cl,
+        "Reconocimiento 2.1 España"@es-co,
+        "Reconocimiento 2.1 España"@es-ec,
+        "Reconocimiento 2.1 España"@es-es,
+        "Reconocimiento 2.1 España"@es-gt,
+        "Atribución 2.1 España"@es-mx,
+        "Reconocimiento 2.1 España"@es-pe,
+        "Reconocimiento 2.1 España"@es-pr,
+        "Autorile viitamine 2.1 Hispaania"@et,
+        "Aitortu 2.1 Espainia"@eu,
+        "Attribution 2.1 اسپانیا"@fa,
+        "Nimeä 2.1 Espanja"@fi,
+        "Attribution 2.1 Espagne"@fr,
+        "Paternité 2.1 Espagne"@fr-ca,
+        "Paternité 2.1 Espagne"@fr-ch,
+        "Paternité 2.1 Espagne"@fr-lu,
+        "Attribution 2.1 Spain"@ga,
+        "Recoñecemento 2.1 España"@gl,
+        "ייחוס 2.1 ספרד"@he,
+        "Attribution 2.1 Spain"@hi,
+        "Imenovanje 2.1 Španjolska"@hr,
+        "Nevezd meg! 2.1 Spanyolország"@hu,
+        "Հղում 2.1 Իսպանիա"@hy,
+        "Atribusi 2.1 Spanyol"@id,
+        "Attribution 2.1 Spánn"@is,
+        "Attribuzione 2.1 Spagna"@it,
+        "Attribuzione 2.1 Spagna"@it-ch,
+        "表示 2.1 スペイン"@ja,
+        "ავტორობის მითითებით  2.1 ესპანეთი"@ka,
+        "Атауын сақтау 2.1 Spain"@kk,
+        "저작자표시(Attribution) 2.1 스페인"@ko,
+        "Priskyrimas 2.1 Ispanų"@lt,
+        "Atsaucoties 2.1 Spānija"@lv,
+        "Наведи извор 2.1 Шпанија"@mk,
+        "കടപ്പാട് 2.1 സ്പെയിൻ"@ml,
+        "Attribution 2.1 Spain"@mn,
+        "Pengiktirafan 2.1 Sepanyol"@ms,
+        "Naamsvermelding 2.1 Spanje"@nl,
+        "Navngivelse 2.1 Spania"@no,
+        "Tsebagatšo 2.1 Sepania"@nso,
+        "Attribution 2.1 Spain"@oci-es,
+        "Uznanie autorstwa 2.1 Hiszpania"@pl,
+        "Atribuição  2.1 Espanha"@pt,
+        "Atribuição 2.1 Spain"@pt-br,
+        "Atribuição 2.1 Espanha"@pt-pt,
+        "Atribuire 2.1 Spania"@ro,
+        "Attribution (Атрибуция) 2.1 Испания"@ru,
+        "Attribution 2.1 Spain"@si-lk,
+        "Priznanje avtorstva 2.1 Španija"@sl,
+        "Attribution 2.1 Spanjë"@sq,
+        "Autorstvo 2.1 Španija"@sr,
+        "Ауторство 2.1 Шпанија"@sr,
+        "Autorstvo 2.1 Španija"@sr-latn,
+        "Attribution 2.1 Spain"@st,
+        "Erkännande 2.1 Spanien"@sv,
+        "Attribution 2.1 ஸ்பெயின்"@ta,
+        "ఆపాదింపు 2.1 స్పెయిన్"@te,
+        "แสดงที่มา 2.1 สเปน"@th,
+        "Attribution 2.1 İspanya"@tr,
+        "Attribution 2.1 Spain"@uk,
+        "Attribution 2.1 Spain"@ur,
+        "Ghi nhận công của tác giả 2.1 Nước Tây Ban Nha"@vi,
+        "署名 2.1 西班牙"@zh,
+        "姓名標示 2.1 西班牙"@zh-hk,
+        "姓名標示 2.1 西班牙"@zh-tw,
+        "Qaphela Umnikazi 2.1 Espain"@zu,
+        "${Attribution} 2.1 ${Spain}"@zxx ;
+    owl:sameAs <http://creativecommons.org/licenses/by/2.1/es/> ;
+    foaf:logo <http://i.creativecommons.org/l/by/2.1/es/80x15.png>,
+        <http://i.creativecommons.org/l/by/2.1/es/88x31.png> ;
+    li:id "CC-BY-2.1-es" ;
+    li:libre <http://creativecommons.org/> ;
+    li:name "CC BY 2.1 ES" .
+
+<http://creativecommons.org/licenses/by/2.1/es/legalcode.ca> dc:language "ca" .
+
+<http://creativecommons.org/licenses/by/2.1/es/legalcode.es> dc:language "es" .
+

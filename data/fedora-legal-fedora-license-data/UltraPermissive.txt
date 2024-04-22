@@ -1,0 +1,221 @@
+# This file is for collecting the actual text found in Fedora
+# packages that have used the Callaway short name, "Freely redistributable without restriction" 
+# or other texts that are comprised of ultra-permissive licenses that contain 
+# no conditions upon the license grant, regardless of what Callaway 
+# short name may have been used. The License: field for packages that have text listed here can use 
+# the SPDX-conformant identifier, "LicenseRef-Fedora-UltraPermissive" going forward.
+# For more information, see the instructions at https://docs.fedoraproject.org/en-US/legal/update-existing-packages/#_callaway_short_name_categories
+#
+# Include the following information:
+# 
+# Fedora package name
+#
+# Location of where you found the license notice text.
+# Preferably this would be a direct link to a file. If that is not possible,
+# provide enough information such that someone else can find the text in the wild
+# where you found it.
+#
+# The actual text found that corresponds to the use of 
+# the "Freely redistributable without restrictions" (previously) or (proposed use of) "LicenseRef-Fedora-MaxPermissive" identifiers.
+#
+# Copy template below and add yours to top of list, adding a space between entries.
+package = 
+location = 
+text = '''
+text here
+'''
+
+package = man-pages-ja
+location = https://linuxjm.osdn.jp/manual/LDP_man-pages/release/man2/futex.2
+text = '''
+.\" %%%LICENSE_START(FREELY_REDISTRIBUTABLE)
+.\" may be freely modified and distributed
+.\" %%%LICENSE_END
+'''
+
+# Treat "May be freely redistributed" as UltraPermissive unless context indicates no
+# permission to modify was intended
+package = man-pages-ja
+location = https://linuxjm.osdn.jp/manual/LDP_man-pages/release/man2/getitimer.2
+text = '''
+.\" Copyright 7/93 by Darren Senn <sinster@scintilla.santa-clara.ca.us>
+.\" Based on a similar page Copyright 1992 by Rick Faith
+.\"
+.\" %%%LICENSE_START(FREELY_REDISTRIBUTABLE)
+.\" May be freely distributed
+.\" %%%LICENSE_END
+.\"
+.\" Modified Tue Oct 22 00:22:35 EDT 1996 by Eric S. Raymond <esr@thyrsus.com>
+.\" 2005-04-06 mtk, Matthias Lang <matthias@corelatus.se>
+.\" 	Noted MAX_SEC_IN_JIFFIES ceiling
+'''
+
+package = man-pages-ja
+location = https://linuxjm.osdn.jp/manual/LDP_man-pages/release/man2/pciconfig_read.2
+text = '''
+.\" %%%LICENSE_START(FREELY_REDISTRIBUTABLE)
+.\" May be freely distributed and modified.
+.\" %%%LICENSE_END
+'''
+
+package = man-pages-ja
+location = https://linuxjm.osdn.jp/manual/LDP_man-pages/release/man3/getpt.3
+text = '''
+.\" %%%LICENSE_START(FREELY_REDISTRIBUTABLE)
+.\" Redistribute and modify at will.
+.\" %%%LICENSE_END
+'''
+
+package = man-pages-ja
+location = https://linuxjm.osdn.jp/manual/LDP_man-pages/release/man4/pts.4
+text = '''
+.\" %%%LICENSE_START(FREELY_REDISTRIBUTABLE)
+.\" Redistribute and revise at will.
+.\" %%%LICENSE_END
+'''
+
+package = xorg-x11-fonts
+location = https://gitlab.freedesktop.org/xorg/font/cursor-misc/-/blob/master/COPYING?ref_type=heads
+text = '''
+"These ""glyphs"" are unencumbered"
+'''
+
+package = xorg-x11-fonts
+location = https://gitlab.freedesktop.org/xorg/font/misc-cyrillic/-/blob/master/koi12x24b.bdf?ref_type=heads
+text = '''
+May be distributed and modified without restrictions.
+'''
+
+package = netpbm
+location = https://sourceforge.net/p/netpbm/code/HEAD/tree/stable/converter/ppm/ppmtoacad.c#l15
+text = '''
+Permission to use, copy, modify, and distribute this software and its documentation for any purpose and without fee is hereby granted, without any conditions or restrictions. This software is provided “as is” without express or implied warranty.
+'''
+
+package = man-pages
+location = https://git.kernel.org/pub/scm/docs/man-pages/man-pages.git/tree/man2/futex.2#n5
+text = '''
+may be freely modified and distributed
+'''
+
+package = man-pages
+location = https://git.kernel.org/pub/scm/docs/man-pages/man-pages.git/tree/man2/getitimer.2#n5
+text = '''
+May be freely distributed and modified
+'''
+
+package = man-pages
+location = https://git.kernel.org/pub/scm/docs/man-pages/man-pages.git/tree/man3/getpt.3#n4
+text = '''
+Redistribute and modify at will.
+'''
+
+package = man-pages
+location = https://git.kernel.org/pub/scm/docs/man-pages/man-pages.git/tree/man4/pts.4#n4
+text = '''
+Redistribute and revise at will.
+'''
+
+package = perl
+location = https://github.com/Perl/perl5/blob/blead/pod/perlunicook.pod#copyright-and-licence
+text = '''
+Most of these examples taken from the current edition of the “Camel Book”;
+that is, from the 4ᵗʰ Edition of I<Programming Perl>, Copyright © 2012 Tom
+Christiansen <et al.>, 2012-02-13 by O’Reilly Media.  The code itself is
+freely redistributable, and you are encouraged to transplant, fold,
+spindle, and mutilate any of the examples in this manpage however you please
+for inclusion into your own programs without any encumbrance whatsoever.
+Acknowledgement via code comment is polite but not required.
+'''
+
+package = perl-XML-Writer
+location = https://metacpan.org/release/JOSEPHW/XML-Writer-0.900/source/LICENSE
+text '''
+Writer.pm - write an XML document.
+
+Copyright (c) 1999 by Megginson Technologies.
+Copyright (c) 2003 Ed Avis <ed@membled.com>
+Copyright (c) 2004-2010 Joseph Walton <joe@kafsemo.org>
+
+Redistribution and use in source and compiled forms, with or without
+modification, are permitted under any circumstances.  No warranty.
+'''
+
+package = texlive-kix
+location = https://mirrors.rit.edu/CTAN/fonts/kixfont/kix.mf
+text = '''
+Available for any purpose, no warranties.
+'''
+
+package = texlive-docbytex
+location = https://mirror.math.princeton.edu/pub/CTAN/macros/generic/docbytex/README
+text = '''
+You can do anything with the files from DocBy.TeX package without 
+any limit. If the macro will be usable for you, you can tell the author 
+about it. There is no warranty for this macro.
+'''
+
+package = texlive-courseoutline
+location = https://ctan.math.utah.edu/ctan/tex-archive/macros/latex/contrib/courseoutline/courseoutline.cls
+text = '''
+Feel free to copy, modify, and distribute.
+I am interested in all changes you make.
+Please send changes to ngall@ucalgary.ca
+'''
+
+package = hanamin-fonts
+location = http://fonts.jp/hanazono/
+text = '''
+This font is a free software.
+Unlimited permission is granted to use, copy, and distribute it, with
+or without modification, either commercially and noncommercially.
+THIS FONT IS PROVIDED "AS IS" WITHOUT WARRANTY.
+License of this document is same as the font.
+
+Copyright 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2016, 2017 GlyphWiki Project.
+'''
+
+package = ibus-table-chinese
+location = https://github.com/mike-fabian/ibus-table-chinese
+text = '''
+Freely redistributable without restriction
+'''
+# Also occurs in one file as "This table is freely redistributable without restriction"
+# Should not be confused with the identical Callaway metadata name
+# For extensive discussion see:
+# https://gitlab.com/fedora/legal/fedora-license-data/-/issues/6
+# https://gitlab.com/fedora/legal/fedora-license-data/-/issues/106
+# (which approves use of LicenseRef-Fedora-MaxPermissive for this case)
+# https://gitlab.gnome.org/GNOME/gnome-software/-/issues/2004
+
+package = libmtp
+location = https://github.com/libmtp/libmtp/blob/master/m4/stdint.m4#L3
+text = '''
+This file may be copied and used freely without restrictions.  No warranty
+is expressed or implied.
+'''
+
+package = libpng
+          perl-Image-PNG_Libpng
+location = https://sourceforge.net/p/libpng/code/ci/master/tree/contrib/pngsuite/README
+text = '''
+Permission to use, copy, modify, and distribute these images for any
+purpose and without fee is hereby granted.
+'''
+
+package = librecad
+          python-ezdxf
+location = https://github.com/LibreCAD/LibreCAD/blob/10e64902a4f7d8ca20db2db045ef98f062f6fd0c/licenses/KST32B_v2.txt#L4
+text = '''
+FREEWARE (free to copy,change...; NO RESPONSIBILITY) : 無保証
+'''
+
+package = swig
+location = https://github.com/swig/swig/blob/master/LICENSE
+text = '''
+You may copy, modify, distribute, and make derivative works based on
+this software, in source code or object code form, without
+restriction. If you distribute the software to others, you may do
+so according to the terms of your choice. This software is offered as
+is, without warranty of any kind.
+'''

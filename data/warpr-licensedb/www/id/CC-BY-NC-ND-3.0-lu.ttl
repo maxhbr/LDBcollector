@@ -1,0 +1,235 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/elements/1.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://creativecommons.org/licenses/by-nc-nd/3.0/lu/> a cc:License ;
+    cc:jurisdiction <http://creativecommons.org/international/lu/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nc-nd/3.0/lu/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:Distribution,
+        cc:Reproduction ;
+    cc:prohibits cc:CommercialUse ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "3.0" ;
+    dc:identifier "by-nc-nd" ;
+    dc:source <http://creativecommons.org/licenses/by-nc-nd/3.0/> ;
+    dc:title "Erkenning-NieKommersieel-GeenAfleidings 3.0 Luxemburg"@af,
+        "نسب- غير تجاري - لا اشتقاق 3.0 لوكسمبورج"@ar,
+        "Attribution-NonCommercial-NoDerivs 3.0 Luxembourg"@as,
+        "Attribution-NonCommercial-NoDerivs 3.0 Luxembourg"@ast,
+        "Attribution-NonCommercial-NoDerivs 3.0 Luxembourg"@ast-es,
+        "Attribution-NonCommercial-NoDerivs 3.0 Luxembourg"@az,
+        "Attribution-NonCommercial-NoDerivs 3.0 Люксембург"@be,
+        "Признание-Некомерсиално-Без производни 3.0 Люксембург"@bg,
+        "Attribution-NonCommercial-NoDerivs 3.0 Luxembourg"@bn,
+        "Reconeixement-NoComercial-SenseObraDerivada 3.0 Luxemburg"@ca,
+        "Uveďte autora-Neužívejte dílo komerčně-Nezasahujte do díla 3.0 Lucembursko"@cs,
+        "Navngivelse-IkkeKommerciel-IngenBearbejdelse 3.0 Luxemborg"@da,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 3.0 Luxemburg"@de,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 3.0 Luxemburg"@de-at,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 3.0 Luxemburg"@de-ch,
+        "Αναφορά Δημιουργού-Μη Εμπορική Χρήση-Όχι Παράγωγα Έργα 3.0 Λουξεμβούργο"@el,
+        "Attribution-NonCommercial-NoDerivs 3.0 Luxembourg"@en,
+        "Attribution-NonCommercial-NoDerivs 3.0 Luxembourg"@en-ca,
+        "Attribution-NonCommercial-NoDerivs 3.0 Luxembourg"@en-gb,
+        "Attribution-NonCommercial-NoDerivs 3.0 Luxembourg"@en-hk,
+        "Attribution-NonCommercial-NoDerivs 3.0 Luxembourg"@en-sg,
+        "Attribution-NonCommercial-NoDerivs 3.0 Luxembourg"@en-us,
+        "Atribuite-Nekomerce-Nemodifite 3.0 Luksemburgo"@eo,
+        "Atribución-NoComercial-SinDerivadas 3.0 Luxemburgo"@es,
+        "Atribución-NoComercial-SinDerivadas 3.0 Luxemburgo"@es-ar,
+        "Atribución-NoComercial-SinDerivadas 3.0 Luxemburgo"@es-cl,
+        "Reconocimiento-NoComercial-SinObraDerivada 3.0 Luxemburgo"@es-co,
+        "Reconocimiento-NoComercial-SinObraDerivada 3.0 Luxemburgo"@es-ec,
+        "Reconocimiento-NoComercial-SinObraDerivada 3.0 Luxemburgo"@es-es,
+        "Reconocimiento-NoComercial-SinObraDerivada 3.0 Luxemburgo"@es-gt,
+        "Atribución-No Comercial-No Derivadas 3.0 Luxemburgo"@es-mx,
+        "Reconocimiento-NoComercial-SinObraDerivada 3.0 Luxemburgo"@es-pe,
+        "Reconocimiento-NoComercial-SinObrasDerivadas 3.0 Luxemburgo"@es-pr,
+        "Autorile viitamine + Mitteäriline eesmärk + Tuletatud teoste keeld 3.0 Luksemburg"@et,
+        "Aitortu-EzKomertziala-LanEratorririkGabe 3.0 Luxemburg"@eu,
+        "Attribution-NonCommercial-NoDerivs 3.0 Luxembourg"@fa,
+        "Nimeä-Ei muutoksia-Epäkaupallinen 3.0 Luxemburg"@fi,
+        "Attribution - Pas d’Utilisation Commerciale - Pas de Modification 3.0 Luxembourg"@fr,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 3.0 Luxembourg"@fr-ca,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 3.0 Luxembourg"@fr-ch,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 3.0 Luxembourg"@fr-lu,
+        "Attribution-NonCommercial-NoDerivs 3.0 Luxembourg"@ga,
+        "Recoñecemento-NonComercial-SenObraDerivada 3.0 Luxembourg"@gl,
+        "ייחוס-שימוש לא מסחרי-איסור יצירות נגזרות 3.0 לוקסמבורג"@he,
+        "Attribution-NonCommercial-NoDerivs 3.0 Luxembourg"@hi,
+        "Imenovanje-Nekomercijalno-Bez prerada 3.0 Luksemburg"@hr,
+        "Nevezd meg! - Ne add el! - Ne változtasd! 3.0 Luxemburg"@hu,
+        "Հղում - Ոչ-առևտրային օգտագործում - Օգտագործում առանց վերափոխումների 3.0 Լյուքսենբուրգ"@hy,
+        "Atribusi-NonKomersial-TanpaTurunan 3.0 Luksemburg"@id,
+        "Attribution-NonCommercial-NoDerivs 3.0 Lúxemborg"@is,
+        "Attribuzione - Non commerciale - Non opere derivate 3.0 Lussemburgo"@it,
+        "Attribuzione - Non commerciale - Non opere derivate 3.0 Luxembourg"@it-ch,
+        "表示 - 非営利 - 改変禁止 3.0 ルクセンブルグ"@ja,
+        "ავტორობის მითითებით–არაკომერციული გამოყენბისათვის–გადამუშავების გარეშე 3.0 ლუქსემბურგი"@ka,
+        "Attribution-NonCommercial-NoDerivs 3.0 Luxembourg"@kk,
+        "저작자표시-비영리-변경금지 3.0 룩셈부르크"@ko,
+        "Attribution-NonCommercial-NoDerivs 3.0 Liuksemburgas"@lt,
+        "Atsaucoties-Nekomerciāls-Nemainīts 3.0 Luksemburga"@lv,
+        "НаведиИзвор-Некомерцијално-БезАдаптираниДела 3.0 Луксембург"@mk,
+        "Attribution-NonCommercial-NoDerivs 3.0 ലക്സംബർഗ"@ml,
+        "Attribution-NonCommercial-NoDerivs 3.0 Luxembourg"@mn,
+        "Pengiktirafan-BukanKomersial-TiadaTerbitan 3.0 Luxembourg"@ms,
+        "Naamsvermelding-NietCommercieel-GeenAfgeleideWerken 3.0 Luxemburg"@nl,
+        "Navngivelse-Ikkekommersiell-IngenBearbeidelse 3.0 Luxembourg"@no,
+        "Tsebagatšo-E sego ya Kgwebo-Tše sa fetolwego 3.0 Luxembourg"@nso,
+        "Attribution-NonCommercial-NoDerivs 3.0 Luxembourg"@oci-es,
+        "Uznanie autorstwa-Użycie niekomercyjne-Bez utworów zależnych 3.0 Luksemburg"@pl,
+        "Atribuição - NãoComercial - SemDerivados 3.0 Luxemburgo"@pt,
+        "Atribuição-Uso não-comercial-Vedada a criação de obras derivadas 3.0 Luxembourg"@pt-br,
+        "Atribuição-Uso Não-Comercial-Proibição de realização de Obras Derivadas 3.0 Luxembourg"@pt-pt,
+        "Atribuire-Necomercial-FărăModificări 3.0 Luxemburg"@ro,
+        "Attribution-NonCommercial-NoDerivs (Атрибуция — Некоммерческое использование — Без производных произведений) 3.0 Люксембург"@ru,
+        "Attribution-NonCommercial-NoDerivs 3.0 Luxembourg"@si-lk,
+        "Priznanje avtorstva-Nekomercialno-Brez predelav 3.0 Luksemburg"@sl,
+        "Attribution-NonCommercial-NoDerivs 3.0 Luksemburg"@sq,
+        "Autorstvo-Nekomercijalno-Bez prerada 3.0 Luksemburg"@sr,
+        "Ауторство-Некомерцијално-Без прерада 3.0 Луксембург"@sr,
+        "Autorstvo-Nekomercijalno-Bez prerada 3.0 Luksemburg"@sr-latn,
+        "Attribution-NonCommercial-NoDerivs 3.0 Luxembourg"@st,
+        "Erkännande-Ickekommersiell-IngaBearbetningar 3.0 Luxemburg"@sv,
+        "Attribution-NonCommercial-NoDerivs 3.0 லக்ஸம்போர்க்"@ta,
+        "Attribution-NonCommercial-NoDerivs 3.0 Luxembourg"@te,
+        "แสดงที่มา-ไม่ใช้เพื่อการค้า-ไม่ดัดแปลง 3.0 ลักเซมเบิร์ก"@th,
+        "Attribution-Gayriticari-NoDerivs 3.0 Lüksemburg"@tr,
+        "Attribution-NonCommercial-NoDerivs 3.0 Luxembourg"@uk,
+        "Attribution-NonCommercial-NoDerivs 3.0 Luxembourg"@ur,
+        "Ghi nhận công của tác giả - Phi thương mại - Không phái sinh  3.0 Nước Lúc xăm bua"@vi,
+        "署名-非商业性使用-禁止演绎 3.0 卢森堡"@zh,
+        "姓名標示-非商業性-禁止改作 3.0 盧森堡"@zh-hk,
+        "姓名標示-非商業性-禁止改作 3.0 盧森堡"@zh-tw,
+        "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano-Ungasuseli lutho kulokhu 3.0 ELuxembourg"@zu,
+        "${Attribution-NonCommercial-NoDerivs} 3.0 ${Luxembourg}"@zxx ;
+    owl:sameAs <https://licensedb.org/id/CC-BY-NC-ND-3.0-lu> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nc-nd/3.0/lu/80x15.png>,
+        <http://i.creativecommons.org/l/by-nc-nd/3.0/lu/88x31.png> .
+
+<https://licensedb.org/id/CC-BY-NC-ND-3.0-lu> a cc:License,
+        li:License ;
+    cc:jurisdiction <http://creativecommons.org/international/lu/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nc-nd/3.0/lu/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:Distribution,
+        cc:Reproduction ;
+    cc:prohibits cc:CommercialUse ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "3.0" ;
+    dc:identifier "by-nc-nd" ;
+    dc:source <http://creativecommons.org/licenses/by-nc-nd/3.0/> ;
+    dc:title "Erkenning-NieKommersieel-GeenAfleidings 3.0 Luxemburg"@af,
+        "نسب- غير تجاري - لا اشتقاق 3.0 لوكسمبورج"@ar,
+        "Attribution-NonCommercial-NoDerivs 3.0 Luxembourg"@as,
+        "Attribution-NonCommercial-NoDerivs 3.0 Luxembourg"@ast,
+        "Attribution-NonCommercial-NoDerivs 3.0 Luxembourg"@ast-es,
+        "Attribution-NonCommercial-NoDerivs 3.0 Luxembourg"@az,
+        "Attribution-NonCommercial-NoDerivs 3.0 Люксембург"@be,
+        "Признание-Некомерсиално-Без производни 3.0 Люксембург"@bg,
+        "Attribution-NonCommercial-NoDerivs 3.0 Luxembourg"@bn,
+        "Reconeixement-NoComercial-SenseObraDerivada 3.0 Luxemburg"@ca,
+        "Uveďte autora-Neužívejte dílo komerčně-Nezasahujte do díla 3.0 Lucembursko"@cs,
+        "Navngivelse-IkkeKommerciel-IngenBearbejdelse 3.0 Luxemborg"@da,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 3.0 Luxemburg"@de,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 3.0 Luxemburg"@de-at,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 3.0 Luxemburg"@de-ch,
+        "Αναφορά Δημιουργού-Μη Εμπορική Χρήση-Όχι Παράγωγα Έργα 3.0 Λουξεμβούργο"@el,
+        "Attribution-NonCommercial-NoDerivs 3.0 Luxembourg"@en,
+        "Attribution-NonCommercial-NoDerivs 3.0 Luxembourg"@en-ca,
+        "Attribution-NonCommercial-NoDerivs 3.0 Luxembourg"@en-gb,
+        "Attribution-NonCommercial-NoDerivs 3.0 Luxembourg"@en-hk,
+        "Attribution-NonCommercial-NoDerivs 3.0 Luxembourg"@en-sg,
+        "Attribution-NonCommercial-NoDerivs 3.0 Luxembourg"@en-us,
+        "Atribuite-Nekomerce-Nemodifite 3.0 Luksemburgo"@eo,
+        "Atribución-NoComercial-SinDerivadas 3.0 Luxemburgo"@es,
+        "Atribución-NoComercial-SinDerivadas 3.0 Luxemburgo"@es-ar,
+        "Atribución-NoComercial-SinDerivadas 3.0 Luxemburgo"@es-cl,
+        "Reconocimiento-NoComercial-SinObraDerivada 3.0 Luxemburgo"@es-co,
+        "Reconocimiento-NoComercial-SinObraDerivada 3.0 Luxemburgo"@es-ec,
+        "Reconocimiento-NoComercial-SinObraDerivada 3.0 Luxemburgo"@es-es,
+        "Reconocimiento-NoComercial-SinObraDerivada 3.0 Luxemburgo"@es-gt,
+        "Atribución-No Comercial-No Derivadas 3.0 Luxemburgo"@es-mx,
+        "Reconocimiento-NoComercial-SinObraDerivada 3.0 Luxemburgo"@es-pe,
+        "Reconocimiento-NoComercial-SinObrasDerivadas 3.0 Luxemburgo"@es-pr,
+        "Autorile viitamine + Mitteäriline eesmärk + Tuletatud teoste keeld 3.0 Luksemburg"@et,
+        "Aitortu-EzKomertziala-LanEratorririkGabe 3.0 Luxemburg"@eu,
+        "Attribution-NonCommercial-NoDerivs 3.0 Luxembourg"@fa,
+        "Nimeä-Ei muutoksia-Epäkaupallinen 3.0 Luxemburg"@fi,
+        "Attribution - Pas d’Utilisation Commerciale - Pas de Modification 3.0 Luxembourg"@fr,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 3.0 Luxembourg"@fr-ca,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 3.0 Luxembourg"@fr-ch,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 3.0 Luxembourg"@fr-lu,
+        "Attribution-NonCommercial-NoDerivs 3.0 Luxembourg"@ga,
+        "Recoñecemento-NonComercial-SenObraDerivada 3.0 Luxembourg"@gl,
+        "ייחוס-שימוש לא מסחרי-איסור יצירות נגזרות 3.0 לוקסמבורג"@he,
+        "Attribution-NonCommercial-NoDerivs 3.0 Luxembourg"@hi,
+        "Imenovanje-Nekomercijalno-Bez prerada 3.0 Luksemburg"@hr,
+        "Nevezd meg! - Ne add el! - Ne változtasd! 3.0 Luxemburg"@hu,
+        "Հղում - Ոչ-առևտրային օգտագործում - Օգտագործում առանց վերափոխումների 3.0 Լյուքսենբուրգ"@hy,
+        "Atribusi-NonKomersial-TanpaTurunan 3.0 Luksemburg"@id,
+        "Attribution-NonCommercial-NoDerivs 3.0 Lúxemborg"@is,
+        "Attribuzione - Non commerciale - Non opere derivate 3.0 Lussemburgo"@it,
+        "Attribuzione - Non commerciale - Non opere derivate 3.0 Luxembourg"@it-ch,
+        "表示 - 非営利 - 改変禁止 3.0 ルクセンブルグ"@ja,
+        "ავტორობის მითითებით–არაკომერციული გამოყენბისათვის–გადამუშავების გარეშე 3.0 ლუქსემბურგი"@ka,
+        "Attribution-NonCommercial-NoDerivs 3.0 Luxembourg"@kk,
+        "저작자표시-비영리-변경금지 3.0 룩셈부르크"@ko,
+        "Attribution-NonCommercial-NoDerivs 3.0 Liuksemburgas"@lt,
+        "Atsaucoties-Nekomerciāls-Nemainīts 3.0 Luksemburga"@lv,
+        "НаведиИзвор-Некомерцијално-БезАдаптираниДела 3.0 Луксембург"@mk,
+        "Attribution-NonCommercial-NoDerivs 3.0 ലക്സംബർഗ"@ml,
+        "Attribution-NonCommercial-NoDerivs 3.0 Luxembourg"@mn,
+        "Pengiktirafan-BukanKomersial-TiadaTerbitan 3.0 Luxembourg"@ms,
+        "Naamsvermelding-NietCommercieel-GeenAfgeleideWerken 3.0 Luxemburg"@nl,
+        "Navngivelse-Ikkekommersiell-IngenBearbeidelse 3.0 Luxembourg"@no,
+        "Tsebagatšo-E sego ya Kgwebo-Tše sa fetolwego 3.0 Luxembourg"@nso,
+        "Attribution-NonCommercial-NoDerivs 3.0 Luxembourg"@oci-es,
+        "Uznanie autorstwa-Użycie niekomercyjne-Bez utworów zależnych 3.0 Luksemburg"@pl,
+        "Atribuição - NãoComercial - SemDerivados 3.0 Luxemburgo"@pt,
+        "Atribuição-Uso não-comercial-Vedada a criação de obras derivadas 3.0 Luxembourg"@pt-br,
+        "Atribuição-Uso Não-Comercial-Proibição de realização de Obras Derivadas 3.0 Luxembourg"@pt-pt,
+        "Atribuire-Necomercial-FărăModificări 3.0 Luxemburg"@ro,
+        "Attribution-NonCommercial-NoDerivs (Атрибуция — Некоммерческое использование — Без производных произведений) 3.0 Люксембург"@ru,
+        "Attribution-NonCommercial-NoDerivs 3.0 Luxembourg"@si-lk,
+        "Priznanje avtorstva-Nekomercialno-Brez predelav 3.0 Luksemburg"@sl,
+        "Attribution-NonCommercial-NoDerivs 3.0 Luksemburg"@sq,
+        "Autorstvo-Nekomercijalno-Bez prerada 3.0 Luksemburg"@sr,
+        "Ауторство-Некомерцијално-Без прерада 3.0 Луксембург"@sr,
+        "Autorstvo-Nekomercijalno-Bez prerada 3.0 Luksemburg"@sr-latn,
+        "Attribution-NonCommercial-NoDerivs 3.0 Luxembourg"@st,
+        "Erkännande-Ickekommersiell-IngaBearbetningar 3.0 Luxemburg"@sv,
+        "Attribution-NonCommercial-NoDerivs 3.0 லக்ஸம்போர்க்"@ta,
+        "Attribution-NonCommercial-NoDerivs 3.0 Luxembourg"@te,
+        "แสดงที่มา-ไม่ใช้เพื่อการค้า-ไม่ดัดแปลง 3.0 ลักเซมเบิร์ก"@th,
+        "Attribution-Gayriticari-NoDerivs 3.0 Lüksemburg"@tr,
+        "Attribution-NonCommercial-NoDerivs 3.0 Luxembourg"@uk,
+        "Attribution-NonCommercial-NoDerivs 3.0 Luxembourg"@ur,
+        "Ghi nhận công của tác giả - Phi thương mại - Không phái sinh  3.0 Nước Lúc xăm bua"@vi,
+        "署名-非商业性使用-禁止演绎 3.0 卢森堡"@zh,
+        "姓名標示-非商業性-禁止改作 3.0 盧森堡"@zh-hk,
+        "姓名標示-非商業性-禁止改作 3.0 盧森堡"@zh-tw,
+        "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano-Ungasuseli lutho kulokhu 3.0 ELuxembourg"@zu,
+        "${Attribution-NonCommercial-NoDerivs} 3.0 ${Luxembourg}"@zxx ;
+    owl:sameAs <http://creativecommons.org/licenses/by-nc-nd/3.0/lu/> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nc-nd/3.0/lu/80x15.png>,
+        <http://i.creativecommons.org/l/by-nc-nd/3.0/lu/88x31.png> ;
+    li:id "CC-BY-NC-ND-3.0-lu" ;
+    li:name "CC BY-NC-ND 3.0 LU" .
+

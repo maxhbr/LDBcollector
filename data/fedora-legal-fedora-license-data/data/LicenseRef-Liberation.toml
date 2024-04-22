@@ -1,0 +1,14 @@
+[license]
+
+expression = "LicenseRef-Liberation"
+status = [ "allowed-fonts" ]
+
+[fedora]
+
+legacy-name = [
+    "Liberation Font License"
+]
+
+legacy-abbreviation = [
+    "Liberation"
+]

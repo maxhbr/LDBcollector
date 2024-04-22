@@ -1,0 +1,43 @@
+{
+    "meta": {
+        "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+        "comment": ""
+    },
+    "name": "MIT License",
+    "scancode_key": "mit", 
+    "spdxid": "MIT",
+    "aliases": [
+        "MIT license (also X11)",
+        "The MIT License",
+        "MIT License",
+        "mit",
+        "Expat License",
+        "Expat license",
+        "Expat",
+        "mit-license",
+        "MIT/Expat License",
+        "License :: OSI Approved :: MIT License",
+        "scancode://mit",
+        "MIT license / X11 license",
+        "under MIT",
+        "MIT license",
+        "MIT Licence",
+        "MIT licencse",
+        "MIT-License",
+        "MIT Licensed",
+        "MIT Licence (MIT)",
+        "MIT License(MIT)",
+        "http://www.opensource.org/licenses/MIT",
+        "http://opensource.org/licenses/MIT",
+        "http://opensource.org/licenses/mit-license.php",
+        "Licensed under the MIT",
+        "licensed under the MIT",
+        "MIT LICENSE",
+        "scancode:mit",
+        "osi:MIT",
+        "MIT License (MIT)",
+        "MIT/Expat",
+        "The MIT License (MIT)",
+        "[MIT] License"
+    ]
+}

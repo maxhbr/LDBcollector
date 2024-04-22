@@ -1,0 +1,23 @@
+{
+  "key": "codexia",
+  "short_name": "Codexia License",
+  "name": "Codexia License",
+  "category": "Proprietary Free",
+  "owner": "Codexia",
+  "spdx_license_key": "LicenseRef-scancode-codexia",
+  "ignorable_copyrights": [
+    "Mike Ryan (mike@codexia.com) Copyright (c) 2000",
+    "portions (c) Allen Denver"
+  ],
+  "ignorable_holders": [
+    "Allen Denver",
+    "Mike Ryan"
+  ],
+  "ignorable_urls": [
+    "http://www.codexia.com/"
+  ],
+  "ignorable_emails": [
+    "mike@codexia.com"
+  ],
+  "text": "By Mike Ryan (mike@codexia.com)\nCopyright (c) 2000, portions (c) Allen Denver\n07.30.2000\n\nSome of the code based on Allen Denver's article \"Using the Performance Data Helper Library\"\n\nFree usage granted in all applications including commercial.\nDo NOT distribute without permission from me. I can be reached\nat mike@codexia.com, http://www.codexia.com\nPlease feel free to email me about this class.\n\nCompatibility:\nWindows 98, Windows NT 4.0 SP 3 (Dlls required), Windows 2000\n\nDevelopment Environ:\nVisual C++ 6.0\n\nLibraries / DLLs:\npdh.lib (linked in)\npdh.dll (provided with Windows 2000, must copy in for NT 4.0)"
+}

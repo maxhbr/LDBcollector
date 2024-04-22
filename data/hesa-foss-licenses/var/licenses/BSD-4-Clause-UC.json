@@ -1,0 +1,20 @@
+{
+    "meta": {
+        "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+	"comment": "",
+	"date": "2023-08-29"
+    },
+    "name": "BSD-4-Clause-UC",
+    "scancode_key": "bsd-original-uc",
+    "spdxid": "BSD-4-Clause-UC",
+    "aliases": [
+        "BSD-4-Clause (University of California-Specific)",
+
+        "BSD-4-Clause-UC",
+        "BSD 3-Clause License (UC; without 3rd Clause)",
+        "scancode://bsd-original-uc",
+        "BSD-Original-UC"
+
+        
+    ]
+}

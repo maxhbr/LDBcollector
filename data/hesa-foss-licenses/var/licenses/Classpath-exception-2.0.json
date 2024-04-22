@@ -1,0 +1,13 @@
+{
+    "meta": {
+        "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+        "comment": ""
+    },
+    "name": "Classpath exception to GPL 2.0 or later",
+    "scancode_key": "classpath-exception-2.0", 
+    "spdxid": "Classpath-exception-2.0",
+    "aliases": [
+        "Classpath-exception",
+        "Classpath exception"
+    ]
+}

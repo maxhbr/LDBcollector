@@ -1,0 +1,15 @@
+[license]
+
+expression = "HPND-sell-variant"
+
+status = [ "allowed" ]
+
+[fedora]
+
+legacy-name = [
+    "MIT Old Style"
+]
+
+legacy-abbreviation = [
+    "MIT"
+]

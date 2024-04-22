@@ -1,0 +1,19 @@
+[license]
+
+expression = "dvipdfm"
+status = [ "allowed" ]
+
+url = '''
+https://fedoraproject.org/wiki/Licensing/dvipdfm
+'''
+
+[fedora]
+
+legacy-name = [
+    "dvipdfm License"
+]
+
+legacy-abbreviation = [
+    "dvipdfm"
+]
+

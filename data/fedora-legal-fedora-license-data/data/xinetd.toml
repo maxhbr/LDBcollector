@@ -1,0 +1,14 @@
+[license]
+
+expression = "xinetd"
+status = [ "allowed" ]
+
+[fedora]
+
+legacy-name = [
+    "xinetd License"
+]
+
+legacy-abbreviation = [
+    "xinetd"
+]

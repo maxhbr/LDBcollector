@@ -1,0 +1,18 @@
+[license]
+
+expression = "LicenseRef-osgi-spec-2.0"
+status = [ "not-allowed" ]
+
+url = '''
+http://www.osgi.org/Main/OSGiSpecificationLicense
+'''
+
+[fedora]
+
+legacy-name = [
+    "OSGi Specification License"
+]
+
+notes = '''
+Forbids modification
+'''

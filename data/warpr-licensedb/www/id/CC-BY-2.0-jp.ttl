@@ -1,0 +1,238 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/elements/1.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://creativecommons.org/licenses/by/2.0/jp/> a cc:License ;
+    cc:jurisdiction <http://creativecommons.org/international/jp/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by/2.0/jp/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.0" ;
+    dc:identifier "by" ;
+    dc:isReplacedBy <http://creativecommons.org/licenses/by/2.1/jp/> ;
+    dc:source <http://creativecommons.org/licenses/by/2.0/> ;
+    dc:title "Erkenning 2.0 Japan"@af,
+        "نسب المصنف  2.0 اليابان"@ar,
+        "Attribution 2.0 Japan"@as,
+        "Attribution 2.0 Japan"@ast,
+        "Attribution 2.0 Japan"@ast-es,
+        "Attribution 2.0 Japan"@az,
+        "Атрыбуцыя 2.0 Японія"@be,
+        "Признание 2.0 Япония"@bg,
+        "Attribution 2.0 Japan"@bn,
+        "Reconeixement 2.0 Japó"@ca,
+        "Uveďte autora 2.0 Japonsko"@cs,
+        "Navngivelse 2.0 Japan"@da,
+        "Namensnennung 2.0 Japan"@de,
+        "Namensnennung 2.0 Japan"@de-at,
+        "Namensnennung 2.0 Japan"@de-ch,
+        "Αναφορά Δημιουργού 2.0 Ιαπωνία"@el,
+        "Attribution 2.0 Japan"@en,
+        "Attribution 2.0 Japan"@en-ca,
+        "Attribution 2.0 Japan"@en-gb,
+        "Attribution 2.0 Japan"@en-hk,
+        "Attribution 2.0 Japan"@en-sg,
+        "Attribution 2.0 Japan"@en-us,
+        "Atribuite 2.0 Japanujo"@eo,
+        "Atribución 2.0 Japón"@es,
+        "Atribución 2.0 Japón"@es-ar,
+        "Atribución 2.0 Japón"@es-cl,
+        "Reconocimiento 2.0 Japón"@es-co,
+        "Reconocimiento 2.0 Japón"@es-ec,
+        "Reconocimiento 2.0 Japón"@es-es,
+        "Reconocimiento 2.0 Japón"@es-gt,
+        "Atribución 2.0 Japón"@es-mx,
+        "Reconocimiento 2.0 Japón"@es-pe,
+        "Reconocimiento 2.0 Japón"@es-pr,
+        "Autorile viitamine 2.0 Jaapan"@et,
+        "Aitortu 2.0 Japonia"@eu,
+        "Attribution 2.0 ژاپن"@fa,
+        "Nimeä 2.0 Japani"@fi,
+        "Attribution 2.0 Japon"@fr,
+        "Paternité 2.0 Japon"@fr-ca,
+        "Paternité 2.0 Japon"@fr-ch,
+        "Paternité 2.0 Japon"@fr-lu,
+        "Attribution 2.0 Japan"@ga,
+        "Recoñecemento 2.0 Xapón"@gl,
+        "ייחוס 2.0 יפן"@he,
+        "Attribution 2.0 Japan"@hi,
+        "Imenovanje 2.0 Japan"@hr,
+        "Nevezd meg! 2.0 Japán"@hu,
+        "Հղում 2.0 Japan"@hy,
+        "Atribusi 2.0 Jepang"@id,
+        "Attribution 2.0 Japan"@is,
+        "Attribuzione 2.0 Giappone"@it,
+        "Attribuzione 2.0 Giappone"@it-ch,
+        "表示 2.0 日本"@ja,
+        "ავტორობის მითითებით  2.0 იაპონია"@ka,
+        "Атауын сақтау 2.0 Japan"@kk,
+        "저작자표시(Attribution) 2.0 일본"@ko,
+        "Priskyrimas 2.0 Japonija"@lt,
+        "Atsaucoties 2.0 Japāna"@lv,
+        "Наведи извор 2.0 Јапонија"@mk,
+        "കടപ്പാട് 2.0 ജപ്പാൻ"@ml,
+        "Attribution 2.0 Japan"@mn,
+        "Pengiktirafan 2.0 Jepun"@ms,
+        "Naamsvermelding 2.0 Japan"@nl,
+        "Navngivelse 2.0 Japan"@no,
+        "Tsebagatšo 2.0 Japane"@nso,
+        "Attribution 2.0 Japan"@oci-es,
+        "Uznanie autorstwa 2.0 Japonia"@pl,
+        "Atribuição  2.0 Japão"@pt,
+        "Atribuição 2.0 Japan"@pt-br,
+        "Atribuição 2.0 Japão"@pt-pt,
+        "Atribuire 2.0 Japonia"@ro,
+        "Attribution (Атрибуция) 2.0 Япония"@ru,
+        "Attribution 2.0 Japan"@si-lk,
+        "Priznanje avtorstva 2.0 Japonska"@sl,
+        "Attribution 2.0 Japoni"@sq,
+        "Autorstvo 2.0 Japan"@sr,
+        "Ауторство 2.0 Јапан"@sr,
+        "Autorstvo 2.0 Japan"@sr-latn,
+        "Attribution 2.0 Japan"@st,
+        "Erkännande 2.0 Japan"@sv,
+        "Attribution 2.0 Japan"@ta,
+        "ఆపాదింపు 2.0 జపాన్"@te,
+        "แสดงที่มา 2.0 ่ญี่ปุ่น"@th,
+        "Attribution 2.0 Japonya"@tr,
+        "Attribution 2.0 Japan"@uk,
+        "Attribution 2.0 Japan"@ur,
+        "Ghi nhận công của tác giả 2.0 Nước Nhật Bản"@vi,
+        "署名 2.0 日本"@zh,
+        "姓名標示 2.0 日本"@zh-hk,
+        "姓名標示 2.0 日本"@zh-tw,
+        "Qaphela Umnikazi 2.0 Ejapane"@zu,
+        "${Attribution} 2.0 ${Japan}"@zxx ;
+    owl:sameAs <https://licensedb.org/id/CC-BY-2.0-jp> ;
+    foaf:logo <http://i.creativecommons.org/l/by/2.0/jp/80x15.png>,
+        <http://i.creativecommons.org/l/by/2.0/jp/88x31.png> .
+
+<https://licensedb.org/id/CC-BY-2.0-jp> a cc:License,
+        li:License ;
+    cc:jurisdiction <http://creativecommons.org/international/jp/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by/2.0/jp/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.0" ;
+    dc:identifier "by" ;
+    dc:isReplacedBy <https://licensedb.org/id/CC-BY-2.1-jp> ;
+    dc:source <http://creativecommons.org/licenses/by/2.0/> ;
+    dc:title "Erkenning 2.0 Japan"@af,
+        "نسب المصنف  2.0 اليابان"@ar,
+        "Attribution 2.0 Japan"@as,
+        "Attribution 2.0 Japan"@ast,
+        "Attribution 2.0 Japan"@ast-es,
+        "Attribution 2.0 Japan"@az,
+        "Атрыбуцыя 2.0 Японія"@be,
+        "Признание 2.0 Япония"@bg,
+        "Attribution 2.0 Japan"@bn,
+        "Reconeixement 2.0 Japó"@ca,
+        "Uveďte autora 2.0 Japonsko"@cs,
+        "Navngivelse 2.0 Japan"@da,
+        "Namensnennung 2.0 Japan"@de,
+        "Namensnennung 2.0 Japan"@de-at,
+        "Namensnennung 2.0 Japan"@de-ch,
+        "Αναφορά Δημιουργού 2.0 Ιαπωνία"@el,
+        "Attribution 2.0 Japan"@en,
+        "Attribution 2.0 Japan"@en-ca,
+        "Attribution 2.0 Japan"@en-gb,
+        "Attribution 2.0 Japan"@en-hk,
+        "Attribution 2.0 Japan"@en-sg,
+        "Attribution 2.0 Japan"@en-us,
+        "Atribuite 2.0 Japanujo"@eo,
+        "Atribución 2.0 Japón"@es,
+        "Atribución 2.0 Japón"@es-ar,
+        "Atribución 2.0 Japón"@es-cl,
+        "Reconocimiento 2.0 Japón"@es-co,
+        "Reconocimiento 2.0 Japón"@es-ec,
+        "Reconocimiento 2.0 Japón"@es-es,
+        "Reconocimiento 2.0 Japón"@es-gt,
+        "Atribución 2.0 Japón"@es-mx,
+        "Reconocimiento 2.0 Japón"@es-pe,
+        "Reconocimiento 2.0 Japón"@es-pr,
+        "Autorile viitamine 2.0 Jaapan"@et,
+        "Aitortu 2.0 Japonia"@eu,
+        "Attribution 2.0 ژاپن"@fa,
+        "Nimeä 2.0 Japani"@fi,
+        "Attribution 2.0 Japon"@fr,
+        "Paternité 2.0 Japon"@fr-ca,
+        "Paternité 2.0 Japon"@fr-ch,
+        "Paternité 2.0 Japon"@fr-lu,
+        "Attribution 2.0 Japan"@ga,
+        "Recoñecemento 2.0 Xapón"@gl,
+        "ייחוס 2.0 יפן"@he,
+        "Attribution 2.0 Japan"@hi,
+        "Imenovanje 2.0 Japan"@hr,
+        "Nevezd meg! 2.0 Japán"@hu,
+        "Հղում 2.0 Japan"@hy,
+        "Atribusi 2.0 Jepang"@id,
+        "Attribution 2.0 Japan"@is,
+        "Attribuzione 2.0 Giappone"@it,
+        "Attribuzione 2.0 Giappone"@it-ch,
+        "表示 2.0 日本"@ja,
+        "ავტორობის მითითებით  2.0 იაპონია"@ka,
+        "Атауын сақтау 2.0 Japan"@kk,
+        "저작자표시(Attribution) 2.0 일본"@ko,
+        "Priskyrimas 2.0 Japonija"@lt,
+        "Atsaucoties 2.0 Japāna"@lv,
+        "Наведи извор 2.0 Јапонија"@mk,
+        "കടപ്പാട് 2.0 ജപ്പാൻ"@ml,
+        "Attribution 2.0 Japan"@mn,
+        "Pengiktirafan 2.0 Jepun"@ms,
+        "Naamsvermelding 2.0 Japan"@nl,
+        "Navngivelse 2.0 Japan"@no,
+        "Tsebagatšo 2.0 Japane"@nso,
+        "Attribution 2.0 Japan"@oci-es,
+        "Uznanie autorstwa 2.0 Japonia"@pl,
+        "Atribuição  2.0 Japão"@pt,
+        "Atribuição 2.0 Japan"@pt-br,
+        "Atribuição 2.0 Japão"@pt-pt,
+        "Atribuire 2.0 Japonia"@ro,
+        "Attribution (Атрибуция) 2.0 Япония"@ru,
+        "Attribution 2.0 Japan"@si-lk,
+        "Priznanje avtorstva 2.0 Japonska"@sl,
+        "Attribution 2.0 Japoni"@sq,
+        "Autorstvo 2.0 Japan"@sr,
+        "Ауторство 2.0 Јапан"@sr,
+        "Autorstvo 2.0 Japan"@sr-latn,
+        "Attribution 2.0 Japan"@st,
+        "Erkännande 2.0 Japan"@sv,
+        "Attribution 2.0 Japan"@ta,
+        "ఆపాదింపు 2.0 జపాన్"@te,
+        "แสดงที่มา 2.0 ่ญี่ปุ่น"@th,
+        "Attribution 2.0 Japonya"@tr,
+        "Attribution 2.0 Japan"@uk,
+        "Attribution 2.0 Japan"@ur,
+        "Ghi nhận công của tác giả 2.0 Nước Nhật Bản"@vi,
+        "署名 2.0 日本"@zh,
+        "姓名標示 2.0 日本"@zh-hk,
+        "姓名標示 2.0 日本"@zh-tw,
+        "Qaphela Umnikazi 2.0 Ejapane"@zu,
+        "${Attribution} 2.0 ${Japan}"@zxx ;
+    owl:sameAs <http://creativecommons.org/licenses/by/2.0/jp/> ;
+    foaf:logo <http://i.creativecommons.org/l/by/2.0/jp/80x15.png>,
+        <http://i.creativecommons.org/l/by/2.0/jp/88x31.png> ;
+    li:id "CC-BY-2.0-jp" ;
+    li:libre <http://creativecommons.org/> ;
+    li:name "CC BY 2.0 JP" .
+

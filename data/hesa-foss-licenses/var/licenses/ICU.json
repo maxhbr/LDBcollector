@@ -1,0 +1,13 @@
+{
+"meta": {
+    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+    "comment": ""
+  },
+  "name": "ICU License",
+  "scancode_key": "x11", 
+  "spdxid": "ICU",
+  "aliases": [
+      "ICU License",
+      "ICU Licens"
+  ]
+}

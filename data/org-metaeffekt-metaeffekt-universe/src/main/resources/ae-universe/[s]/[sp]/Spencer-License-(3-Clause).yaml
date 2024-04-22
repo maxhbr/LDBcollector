@@ -1,0 +1,21 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+
+canonicalName: "Spencer License (3-Clause)"
+category: "Spencer"
+spdxIdentifier: "Spencer-86"
+
+openCoDEStatus: "approved"
+
+alternativeNames:
+  - "Spencer, Version 86"
+  - "Spencer 86"
+  - "Spencer License, Version 86"
+  - "Spencer License, 86"
+  - "{{Spencer-86}} https://spdx.org/licenses/Spencer-86"
+  - "licenses.nuget.org/Spencer-86"
+  - "https://spdx.org/licenses/spencer-86"
+
+otherIds: 
+  - "scancode:regexp"

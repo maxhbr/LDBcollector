@@ -1,0 +1,20 @@
+{
+"meta": {
+    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+    "comment": ""
+  },
+  "name": "bzip2 License 2010",
+  "scancode_key": "bzip2-libbzip-2010", 
+  "spdxid": "bzip2-1.0.6",
+  "aliases": [
+   "bzip2-1.0.6",
+   "bzip2 and libbzip2 License v1.0.6",
+   "bzip2 License 1.0.6",
+   "The bzip2 license",
+   "scancode://bzip2-libbzip-2010",
+   "bzip2 License 2010",
+   "libzip2 version 1.0.6",
+   "scancode:bzip2-libbzip-2010",
+   "scancode:bzip2-libbzip-1.0.5"
+  ]
+}

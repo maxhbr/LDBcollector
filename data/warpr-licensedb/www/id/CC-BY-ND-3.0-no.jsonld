@@ -1,0 +1,848 @@
+{
+    "@context": {
+        "cc": "http://creativecommons.org/ns#",
+        "dc": "http://purl.org/dc/terms/",
+        "dc11": "http://purl.org/dc/elements/1.1/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "li": "https://licensedb.org/ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "cc:legalcode": {
+            "@type": "@id"
+        },
+        "cc:permits": {
+            "@type": "@id"
+        },
+        "cc:requires": {
+            "@type": "@id"
+        },
+        "cc:prohibits": {
+            "@type": "@id"
+        },
+        "cc:jurisdiction": {
+            "@type": "@id"
+        },
+        "cc:licenseClass": {
+            "@type": "@id"
+        },
+        "dc:creator": {
+            "@type": "@id"
+        },
+        "dc:source": {
+            "@type": "@id"
+        },
+        "dc:replaces": {
+            "@type": "@id"
+        },
+        "dc:isBasedOn": {
+            "@type": "@id"
+        },
+        "dc:isReplacedBy": {
+            "@type": "@id"
+        },
+        "foaf:logo": {
+            "@type": "@id"
+        },
+        "li:plaintext": {
+            "@type": "@id"
+        },
+        "li:libre": {
+            "@type": "@id"
+        },
+        "owl:sameAs": {
+            "@type": "@id"
+        }
+    },
+    "@id": "https://licensedb.org/id/CC-BY-ND-3.0-no",
+    "@type": [
+        "cc:License",
+        "li:License"
+    ],
+    "cc:jurisdiction": "http://creativecommons.org/international/no/",
+    "cc:legalcode": "http://creativecommons.org/licenses/by-nd/3.0/no/legalcode",
+    "cc:licenseClass": "http://creativecommons.org/license/",
+    "cc:permits": [
+        "cc:Distribution",
+        "cc:Reproduction"
+    ],
+    "cc:requires": [
+        "cc:Attribution",
+        "cc:Notice"
+    ],
+    "dc:creator": "http://creativecommons.org",
+    "dc:hasVersion": "3.0",
+    "dc:identifier": "by-nd",
+    "dc:source": "http://creativecommons.org/licenses/by-nd/3.0/",
+    "dc:title": [
+        {
+            "@language": "af",
+            "@value": "Erkenning-GeenAfleidings 3.0 Norway"
+        },
+        {
+            "@language": "ar",
+            "@value": "نسب- غير مشتق 3.0 نروج"
+        },
+        {
+            "@language": "as",
+            "@value": "Attribution-NoDerivs 3.0 Norway"
+        },
+        {
+            "@language": "ast",
+            "@value": "Attribution-NoDerivs 3.0 Norway"
+        },
+        {
+            "@language": "ast-es",
+            "@value": "Attribution-NoDerivs 3.0 Norway"
+        },
+        {
+            "@language": "az",
+            "@value": "Attribution-NoDerivs 3.0 Norway"
+        },
+        {
+            "@language": "be",
+            "@value": "Attribution-NoDerivs 3.0 Нарвегія"
+        },
+        {
+            "@language": "bg",
+            "@value": "Признание-Без производни 3.0 Norway"
+        },
+        {
+            "@language": "bn",
+            "@value": "Attribution-NoDerivs 3.0 Norway"
+        },
+        {
+            "@language": "ca",
+            "@value": "Reconeixement-SenseObraDerivada 3.0 Noruega"
+        },
+        {
+            "@language": "cs",
+            "@value": "Uveďte autora-Nezasahujte do díla 3.0 Norsko"
+        },
+        {
+            "@language": "da",
+            "@value": "Navngivelse-IngenBearbejdelse 3.0 Norway"
+        },
+        {
+            "@language": "de",
+            "@value": "Namensnennung-Keine Bearbeitung 3.0 Norwegen"
+        },
+        {
+            "@language": "de-at",
+            "@value": "Namensnennung-KeineBearbeitung 3.0 Norway"
+        },
+        {
+            "@language": "de-ch",
+            "@value": "Namensnennung-KeineBearbeitung 3.0 Norway"
+        },
+        {
+            "@language": "el",
+            "@value": "Αναφορά Δημιουργού-Όχι Παράγωγα Έργα 3.0 Νορβηγία"
+        },
+        {
+            "@language": "en",
+            "@value": "Attribution-NoDerivs 3.0 Norway"
+        },
+        {
+            "@language": "en-ca",
+            "@value": "Attribution-NoDerivs 3.0 Norway"
+        },
+        {
+            "@language": "en-gb",
+            "@value": "Attribution-NoDerivs 3.0 Norway"
+        },
+        {
+            "@language": "en-hk",
+            "@value": "Attribution-NoDerivs 3.0 Norway"
+        },
+        {
+            "@language": "en-sg",
+            "@value": "Attribution-NoDerivs 3.0 Norway"
+        },
+        {
+            "@language": "en-us",
+            "@value": "Attribution-NoDerivs 3.0 Norway"
+        },
+        {
+            "@language": "eo",
+            "@value": "Atribuite-Nemodifite 3.0 Norvegujo"
+        },
+        {
+            "@language": "es",
+            "@value": "Atribución-SinDerivadas 3.0 Noruega"
+        },
+        {
+            "@language": "es-ar",
+            "@value": "Atribución-SinDerivadas 3.0 Norway"
+        },
+        {
+            "@language": "es-cl",
+            "@value": "Atribución-SinDerivadas 3.0 Norway"
+        },
+        {
+            "@language": "es-co",
+            "@value": "Reconocimiento-SinObraDerivada 3.0 Norway"
+        },
+        {
+            "@language": "es-ec",
+            "@value": "Reconocimiento-SinObraDerivada 3.0 Norway"
+        },
+        {
+            "@language": "es-es",
+            "@value": "Reconocimiento-SinObraDerivada 3.0 Noruega"
+        },
+        {
+            "@language": "es-gt",
+            "@value": "Reconocimiento-SinObraDerivada 3.0 Norway"
+        },
+        {
+            "@language": "es-mx",
+            "@value": "Atribución-No Derivadas 3.0 Norway"
+        },
+        {
+            "@language": "es-pe",
+            "@value": "Reconocimiento-SinObraDerivada 3.0 Norway"
+        },
+        {
+            "@language": "es-pr",
+            "@value": "Reconocimiento-SinObraDerivada 3.0 Norway"
+        },
+        {
+            "@language": "et",
+            "@value": "Autorile viitamine + Tuletatud teoste keeld 3.0 Norra"
+        },
+        {
+            "@language": "eu",
+            "@value": "Aitortu-LanEratorririkGabe 3.0 Norway"
+        },
+        {
+            "@language": "fa",
+            "@value": "Attribution-NoDerivs 3.0 نروژ"
+        },
+        {
+            "@language": "fi",
+            "@value": "Nimeä-Ei muutoksia 3.0 Norja"
+        },
+        {
+            "@language": "fr",
+            "@value": "Paternité - Pas de Modification 3.0 Norvège"
+        },
+        {
+            "@language": "fr-ca",
+            "@value": "Paternité - Pas de Modification 3.0 Norway"
+        },
+        {
+            "@language": "fr-ch",
+            "@value": "Paternité - Pas de Modification 3.0 Norway"
+        },
+        {
+            "@language": "fr-lu",
+            "@value": "Paternité - Pas de Modification 3.0 Norway"
+        },
+        {
+            "@language": "ga",
+            "@value": "Attribution-NoDerivs 3.0 Norway"
+        },
+        {
+            "@language": "gl",
+            "@value": "Recoñecemento-SenObraDerivada 3.0 Norway"
+        },
+        {
+            "@language": "he",
+            "@value": "ייחוס-איסור יצירות נגזרות 3.0 נורווגיה"
+        },
+        {
+            "@language": "hi",
+            "@value": "Attribution-NoDerivs 3.0 Norway"
+        },
+        {
+            "@language": "hr",
+            "@value": "Imenovanje-Bez prerada 3.0 Norveška"
+        },
+        {
+            "@language": "hu",
+            "@value": "Nevezd meg! - Ne változtasd! 3.0 Norvégia"
+        },
+        {
+            "@language": "hy",
+            "@value": "Հղում - Օգտագործում առանց վերափոխումների 3.0 Նորվեգիա"
+        },
+        {
+            "@language": "id",
+            "@value": "Atribusi-TanpaTurunan 3.0 Norwegia"
+        },
+        {
+            "@language": "is",
+            "@value": "Attribution-NoDerivs 3.0 Norway"
+        },
+        {
+            "@language": "it",
+            "@value": "Attribuzione - Non opere derivate 3.0 Norway"
+        },
+        {
+            "@language": "it-ch",
+            "@value": "Attribuzione - Non opere derivate 3.0 Norway"
+        },
+        {
+            "@language": "ja",
+            "@value": "表示 - 改変禁止 3.0 ノルウェー"
+        },
+        {
+            "@language": "ka",
+            "@value": "ავტორობის მითითებით გადამუშავების გარეშე 3.0 ნოვეგია"
+        },
+        {
+            "@language": "kk",
+            "@value": "Туынды жасамау 3.0 Norway"
+        },
+        {
+            "@language": "ko",
+            "@value": "저작자표시-변경금지 3.0 노르웨이"
+        },
+        {
+            "@language": "lt",
+            "@value": "Attribution-NoDerivs 3.0 Norvegija"
+        },
+        {
+            "@language": "lv",
+            "@value": "Atsaucoties-Neatvasinot 3.0 Norvēģija"
+        },
+        {
+            "@language": "mk",
+            "@value": "НаведиИзвор-БезИзведениДела 3.0 Норвешка"
+        },
+        {
+            "@language": "ml",
+            "@value": "Attribution-NoDerivs 3.0 നോർവെ"
+        },
+        {
+            "@language": "mn",
+            "@value": "Attribution-NoDerivs 3.0 Norway"
+        },
+        {
+            "@language": "ms",
+            "@value": "Pengiktirafan-TiadaTerbitan 3.0 Norway"
+        },
+        {
+            "@language": "nl",
+            "@value": "Naamsvermelding-GeenAfgeleideWerken 3.0 Norwegen "
+        },
+        {
+            "@language": "no",
+            "@value": "Navngivelse-IngenBearbeidelse 3.0 Norge"
+        },
+        {
+            "@language": "nso",
+            "@value": "Tsebagatšo - Tše sa Fetolwego 3.0 Norway"
+        },
+        {
+            "@language": "oci-es",
+            "@value": "Attribution-NoDerivs 3.0 Norway"
+        },
+        {
+            "@language": "pl",
+            "@value": "Uznanie autorstwa-Bez utworów zależnych 3.0 Norwegia"
+        },
+        {
+            "@language": "pt",
+            "@value": "Atribuição - SemDerivados 3.0 Noruega"
+        },
+        {
+            "@language": "pt-br",
+            "@value": "Atribuição-Vedada a criação de obras derivativas 3.0 Noruega"
+        },
+        {
+            "@language": "pt-pt",
+            "@value": "Atribuição-Proibição de realização de Obras Derivadas 3.0 Norway"
+        },
+        {
+            "@language": "ro",
+            "@value": "Atribuire-FărăModificări 3.0 Norvegia"
+        },
+        {
+            "@language": "ru",
+            "@value": "Attribution-NoDerivs (Атрибуция — Без производных произведений) 3.0 Норвегия"
+        },
+        {
+            "@language": "si-lk",
+            "@value": "Attribution-NoDerivs 3.0 නෝර්වේ"
+        },
+        {
+            "@language": "sl",
+            "@value": "Priznanje avtorstva-Brez predelav 3.0 Norway"
+        },
+        {
+            "@language": "sq",
+            "@value": "Attribution-NoDerivs 3.0 Norvegji"
+        },
+        {
+            "@language": "sr",
+            "@value": "Autorstvo-Bez prerada 3.0 Norveška"
+        },
+        {
+            "@language": "sr",
+            "@value": "Ауторство-Без прерада 3.0 Норвешка"
+        },
+        {
+            "@language": "sr-latn",
+            "@value": "Autorstvo-Bez prerada 3.0 Norveška"
+        },
+        {
+            "@language": "st",
+            "@value": "Attribution-NoDerivs 3.0 Norway"
+        },
+        {
+            "@language": "sv",
+            "@value": "Erkännande-IngaBearbetningar 3.0 Norge"
+        },
+        {
+            "@language": "ta",
+            "@value": "Attribution-NoDerivs 3.0 Norway"
+        },
+        {
+            "@language": "te",
+            "@value": "Attribution-NoDerivs 3.0 నార్వే"
+        },
+        {
+            "@language": "th",
+            "@value": "แสดงที่มา-ไม่ดัดแปลง 3.0 นอร์เวย์"
+        },
+        {
+            "@language": "tr",
+            "@value": "Alıntı-Türetilemez 3.0 Norveç"
+        },
+        {
+            "@language": "uk",
+            "@value": "Attribution-NoDerivs 3.0 Norway"
+        },
+        {
+            "@language": "ur",
+            "@value": "Attribution-NoDerivs 3.0 Norway"
+        },
+        {
+            "@language": "vi",
+            "@value": "Ghi nhận công của tác giả - Không phái sinh 3.0 Norway"
+        },
+        {
+            "@language": "zh",
+            "@value": "署名-禁止演绎 3.0 挪威"
+        },
+        {
+            "@language": "zh-hk",
+            "@value": "姓名標示-禁止改作 3.0 挪威"
+        },
+        {
+            "@language": "zh-tw",
+            "@value": "姓名標示-禁止改作 3.0 挪威"
+        },
+        {
+            "@language": "zu",
+            "@value": "Qaphela Umnikazi-Ungasuseli lutho kulokhu 3.0 Norway"
+        },
+        {
+            "@language": "zxx",
+            "@value": "${Attribution-NoDerivs} 3.0 ${Norway}"
+        }
+    ],
+    "owl:sameAs": {
+        "@id": "http://creativecommons.org/licenses/by-nd/3.0/no/",
+        "@type": "cc:License",
+        "cc:jurisdiction": "http://creativecommons.org/international/no/",
+        "cc:legalcode": "http://creativecommons.org/licenses/by-nd/3.0/no/legalcode",
+        "cc:licenseClass": "http://creativecommons.org/license/",
+        "cc:permits": [
+            "cc:Distribution",
+            "cc:Reproduction"
+        ],
+        "cc:requires": [
+            "cc:Attribution",
+            "cc:Notice"
+        ],
+        "dc:creator": "http://creativecommons.org",
+        "dc:hasVersion": "3.0",
+        "dc:identifier": "by-nd",
+        "dc:source": "http://creativecommons.org/licenses/by-nd/3.0/",
+        "dc:title": [
+            {
+                "@language": "af",
+                "@value": "Erkenning-GeenAfleidings 3.0 Norway"
+            },
+            {
+                "@language": "ar",
+                "@value": "نسب- غير مشتق 3.0 نروج"
+            },
+            {
+                "@language": "as",
+                "@value": "Attribution-NoDerivs 3.0 Norway"
+            },
+            {
+                "@language": "ast",
+                "@value": "Attribution-NoDerivs 3.0 Norway"
+            },
+            {
+                "@language": "ast-es",
+                "@value": "Attribution-NoDerivs 3.0 Norway"
+            },
+            {
+                "@language": "az",
+                "@value": "Attribution-NoDerivs 3.0 Norway"
+            },
+            {
+                "@language": "be",
+                "@value": "Attribution-NoDerivs 3.0 Нарвегія"
+            },
+            {
+                "@language": "bg",
+                "@value": "Признание-Без производни 3.0 Norway"
+            },
+            {
+                "@language": "bn",
+                "@value": "Attribution-NoDerivs 3.0 Norway"
+            },
+            {
+                "@language": "ca",
+                "@value": "Reconeixement-SenseObraDerivada 3.0 Noruega"
+            },
+            {
+                "@language": "cs",
+                "@value": "Uveďte autora-Nezasahujte do díla 3.0 Norsko"
+            },
+            {
+                "@language": "da",
+                "@value": "Navngivelse-IngenBearbejdelse 3.0 Norway"
+            },
+            {
+                "@language": "de",
+                "@value": "Namensnennung-Keine Bearbeitung 3.0 Norwegen"
+            },
+            {
+                "@language": "de-at",
+                "@value": "Namensnennung-KeineBearbeitung 3.0 Norway"
+            },
+            {
+                "@language": "de-ch",
+                "@value": "Namensnennung-KeineBearbeitung 3.0 Norway"
+            },
+            {
+                "@language": "el",
+                "@value": "Αναφορά Δημιουργού-Όχι Παράγωγα Έργα 3.0 Νορβηγία"
+            },
+            {
+                "@language": "en",
+                "@value": "Attribution-NoDerivs 3.0 Norway"
+            },
+            {
+                "@language": "en-ca",
+                "@value": "Attribution-NoDerivs 3.0 Norway"
+            },
+            {
+                "@language": "en-gb",
+                "@value": "Attribution-NoDerivs 3.0 Norway"
+            },
+            {
+                "@language": "en-hk",
+                "@value": "Attribution-NoDerivs 3.0 Norway"
+            },
+            {
+                "@language": "en-sg",
+                "@value": "Attribution-NoDerivs 3.0 Norway"
+            },
+            {
+                "@language": "en-us",
+                "@value": "Attribution-NoDerivs 3.0 Norway"
+            },
+            {
+                "@language": "eo",
+                "@value": "Atribuite-Nemodifite 3.0 Norvegujo"
+            },
+            {
+                "@language": "es",
+                "@value": "Atribución-SinDerivadas 3.0 Noruega"
+            },
+            {
+                "@language": "es-ar",
+                "@value": "Atribución-SinDerivadas 3.0 Norway"
+            },
+            {
+                "@language": "es-cl",
+                "@value": "Atribución-SinDerivadas 3.0 Norway"
+            },
+            {
+                "@language": "es-co",
+                "@value": "Reconocimiento-SinObraDerivada 3.0 Norway"
+            },
+            {
+                "@language": "es-ec",
+                "@value": "Reconocimiento-SinObraDerivada 3.0 Norway"
+            },
+            {
+                "@language": "es-es",
+                "@value": "Reconocimiento-SinObraDerivada 3.0 Noruega"
+            },
+            {
+                "@language": "es-gt",
+                "@value": "Reconocimiento-SinObraDerivada 3.0 Norway"
+            },
+            {
+                "@language": "es-mx",
+                "@value": "Atribución-No Derivadas 3.0 Norway"
+            },
+            {
+                "@language": "es-pe",
+                "@value": "Reconocimiento-SinObraDerivada 3.0 Norway"
+            },
+            {
+                "@language": "es-pr",
+                "@value": "Reconocimiento-SinObraDerivada 3.0 Norway"
+            },
+            {
+                "@language": "et",
+                "@value": "Autorile viitamine + Tuletatud teoste keeld 3.0 Norra"
+            },
+            {
+                "@language": "eu",
+                "@value": "Aitortu-LanEratorririkGabe 3.0 Norway"
+            },
+            {
+                "@language": "fa",
+                "@value": "Attribution-NoDerivs 3.0 نروژ"
+            },
+            {
+                "@language": "fi",
+                "@value": "Nimeä-Ei muutoksia 3.0 Norja"
+            },
+            {
+                "@language": "fr",
+                "@value": "Paternité - Pas de Modification 3.0 Norvège"
+            },
+            {
+                "@language": "fr-ca",
+                "@value": "Paternité - Pas de Modification 3.0 Norway"
+            },
+            {
+                "@language": "fr-ch",
+                "@value": "Paternité - Pas de Modification 3.0 Norway"
+            },
+            {
+                "@language": "fr-lu",
+                "@value": "Paternité - Pas de Modification 3.0 Norway"
+            },
+            {
+                "@language": "ga",
+                "@value": "Attribution-NoDerivs 3.0 Norway"
+            },
+            {
+                "@language": "gl",
+                "@value": "Recoñecemento-SenObraDerivada 3.0 Norway"
+            },
+            {
+                "@language": "he",
+                "@value": "ייחוס-איסור יצירות נגזרות 3.0 נורווגיה"
+            },
+            {
+                "@language": "hi",
+                "@value": "Attribution-NoDerivs 3.0 Norway"
+            },
+            {
+                "@language": "hr",
+                "@value": "Imenovanje-Bez prerada 3.0 Norveška"
+            },
+            {
+                "@language": "hu",
+                "@value": "Nevezd meg! - Ne változtasd! 3.0 Norvégia"
+            },
+            {
+                "@language": "hy",
+                "@value": "Հղում - Օգտագործում առանց վերափոխումների 3.0 Նորվեգիա"
+            },
+            {
+                "@language": "id",
+                "@value": "Atribusi-TanpaTurunan 3.0 Norwegia"
+            },
+            {
+                "@language": "is",
+                "@value": "Attribution-NoDerivs 3.0 Norway"
+            },
+            {
+                "@language": "it",
+                "@value": "Attribuzione - Non opere derivate 3.0 Norway"
+            },
+            {
+                "@language": "it-ch",
+                "@value": "Attribuzione - Non opere derivate 3.0 Norway"
+            },
+            {
+                "@language": "ja",
+                "@value": "表示 - 改変禁止 3.0 ノルウェー"
+            },
+            {
+                "@language": "ka",
+                "@value": "ავტორობის მითითებით გადამუშავების გარეშე 3.0 ნოვეგია"
+            },
+            {
+                "@language": "kk",
+                "@value": "Туынды жасамау 3.0 Norway"
+            },
+            {
+                "@language": "ko",
+                "@value": "저작자표시-변경금지 3.0 노르웨이"
+            },
+            {
+                "@language": "lt",
+                "@value": "Attribution-NoDerivs 3.0 Norvegija"
+            },
+            {
+                "@language": "lv",
+                "@value": "Atsaucoties-Neatvasinot 3.0 Norvēģija"
+            },
+            {
+                "@language": "mk",
+                "@value": "НаведиИзвор-БезИзведениДела 3.0 Норвешка"
+            },
+            {
+                "@language": "ml",
+                "@value": "Attribution-NoDerivs 3.0 നോർവെ"
+            },
+            {
+                "@language": "mn",
+                "@value": "Attribution-NoDerivs 3.0 Norway"
+            },
+            {
+                "@language": "ms",
+                "@value": "Pengiktirafan-TiadaTerbitan 3.0 Norway"
+            },
+            {
+                "@language": "nl",
+                "@value": "Naamsvermelding-GeenAfgeleideWerken 3.0 Norwegen "
+            },
+            {
+                "@language": "no",
+                "@value": "Navngivelse-IngenBearbeidelse 3.0 Norge"
+            },
+            {
+                "@language": "nso",
+                "@value": "Tsebagatšo - Tše sa Fetolwego 3.0 Norway"
+            },
+            {
+                "@language": "oci-es",
+                "@value": "Attribution-NoDerivs 3.0 Norway"
+            },
+            {
+                "@language": "pl",
+                "@value": "Uznanie autorstwa-Bez utworów zależnych 3.0 Norwegia"
+            },
+            {
+                "@language": "pt",
+                "@value": "Atribuição - SemDerivados 3.0 Noruega"
+            },
+            {
+                "@language": "pt-br",
+                "@value": "Atribuição-Vedada a criação de obras derivativas 3.0 Noruega"
+            },
+            {
+                "@language": "pt-pt",
+                "@value": "Atribuição-Proibição de realização de Obras Derivadas 3.0 Norway"
+            },
+            {
+                "@language": "ro",
+                "@value": "Atribuire-FărăModificări 3.0 Norvegia"
+            },
+            {
+                "@language": "ru",
+                "@value": "Attribution-NoDerivs (Атрибуция — Без производных произведений) 3.0 Норвегия"
+            },
+            {
+                "@language": "si-lk",
+                "@value": "Attribution-NoDerivs 3.0 නෝර්වේ"
+            },
+            {
+                "@language": "sl",
+                "@value": "Priznanje avtorstva-Brez predelav 3.0 Norway"
+            },
+            {
+                "@language": "sq",
+                "@value": "Attribution-NoDerivs 3.0 Norvegji"
+            },
+            {
+                "@language": "sr",
+                "@value": "Autorstvo-Bez prerada 3.0 Norveška"
+            },
+            {
+                "@language": "sr",
+                "@value": "Ауторство-Без прерада 3.0 Норвешка"
+            },
+            {
+                "@language": "sr-latn",
+                "@value": "Autorstvo-Bez prerada 3.0 Norveška"
+            },
+            {
+                "@language": "st",
+                "@value": "Attribution-NoDerivs 3.0 Norway"
+            },
+            {
+                "@language": "sv",
+                "@value": "Erkännande-IngaBearbetningar 3.0 Norge"
+            },
+            {
+                "@language": "ta",
+                "@value": "Attribution-NoDerivs 3.0 Norway"
+            },
+            {
+                "@language": "te",
+                "@value": "Attribution-NoDerivs 3.0 నార్వే"
+            },
+            {
+                "@language": "th",
+                "@value": "แสดงที่มา-ไม่ดัดแปลง 3.0 นอร์เวย์"
+            },
+            {
+                "@language": "tr",
+                "@value": "Alıntı-Türetilemez 3.0 Norveç"
+            },
+            {
+                "@language": "uk",
+                "@value": "Attribution-NoDerivs 3.0 Norway"
+            },
+            {
+                "@language": "ur",
+                "@value": "Attribution-NoDerivs 3.0 Norway"
+            },
+            {
+                "@language": "vi",
+                "@value": "Ghi nhận công của tác giả - Không phái sinh 3.0 Norway"
+            },
+            {
+                "@language": "zh",
+                "@value": "署名-禁止演绎 3.0 挪威"
+            },
+            {
+                "@language": "zh-hk",
+                "@value": "姓名標示-禁止改作 3.0 挪威"
+            },
+            {
+                "@language": "zh-tw",
+                "@value": "姓名標示-禁止改作 3.0 挪威"
+            },
+            {
+                "@language": "zu",
+                "@value": "Qaphela Umnikazi-Ungasuseli lutho kulokhu 3.0 Norway"
+            },
+            {
+                "@language": "zxx",
+                "@value": "${Attribution-NoDerivs} 3.0 ${Norway}"
+            }
+        ],
+        "owl:sameAs": "https://licensedb.org/id/CC-BY-ND-3.0-no",
+        "foaf:logo": [
+            "http://i.creativecommons.org/l/by-nd/3.0/no/80x15.png",
+            "http://i.creativecommons.org/l/by-nd/3.0/no/88x31.png"
+        ]
+    },
+    "foaf:logo": [
+        "http://i.creativecommons.org/l/by-nd/3.0/no/80x15.png",
+        "http://i.creativecommons.org/l/by-nd/3.0/no/88x31.png"
+    ],
+    "li:id": "CC-BY-ND-3.0-no",
+    "li:name": "CC BY-ND 3.0 NO"
+}

@@ -1,0 +1,240 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/elements/1.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://creativecommons.org/licenses/by-sa/2.0/tw/> a cc:License ;
+    cc:jurisdiction <http://creativecommons.org/international/tw/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-sa/2.0/tw/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Attribution,
+        cc:Notice,
+        cc:ShareAlike ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.0" ;
+    dc:identifier "by-sa" ;
+    dc:isReplacedBy <http://creativecommons.org/licenses/by-sa/2.5/tw/> ;
+    dc:source <http://creativecommons.org/licenses/by-sa/2.0/> ;
+    dc:title "Erkenning-InsgelyksDeel 2.0 Taiwan"@af,
+        "نسب العمل- المشاركة على قدم المساواة 2.0 تايوان"@ar,
+        "Attribution-ShareAlike 2.0 Taiwan"@as,
+        "Attribution-ShareAlike 2.0 Taiwan"@ast,
+        "Attribution-ShareAlike 2.0 Taiwan"@ast-es,
+        "Attribution-ShareAlike 2.0 Taiwan"@az,
+        "Attribution-ShareAlike 2.0 Тайвань"@be,
+        "Признание-Споделяне на споделеното 2.0 Тайван"@bg,
+        "Attribution-ShareAlike 2.0 Taiwan"@bn,
+        "Reconeixement-CompartirIgual 2.0 Taiwan"@ca,
+        "Uveďte autora-Zachovejte licenci 2.0 Tchaj-van"@cs,
+        "Navngivelse-DelPåSammeVilkår 2.0 Taiwan"@da,
+        "Namensnennung-Weitergabe unter gleichen Bedingungen 2.0 Taiwan"@de,
+        "Namensnennung-Weitergabe unter gleichen Bedingungen 2.0 Taiwan"@de-at,
+        "Namensnennung-Weitergabe unter gleichen Bedingungen 2.0 Taiwan"@de-ch,
+        "Αναφορά Δημιουργού - Παρόμοια Διανομή 2.0 Ταϊβάν"@el,
+        "Attribution-ShareAlike 2.0 Taiwan"@en,
+        "Attribution-ShareAlike 2.0 Taiwan"@en-ca,
+        "Attribution-ShareAlike 2.0 Taiwan"@en-gb,
+        "Attribution-ShareAlike 2.0 Taiwan"@en-hk,
+        "Attribution-ShareAlike 2.0 Taiwan"@en-sg,
+        "Attribution-ShareAlike 2.0 Taiwan"@en-us,
+        "Atribuite-Samkondiĉe 2.0 Tajvano"@eo,
+        "Atribución-CompartirIgual 2.0 Taiwán"@es,
+        "Atribución-CompartirDerivadasIgual 2.0 Taiwan"@es-ar,
+        "Atribución-LicenciarIgual 2.0 Taiwan"@es-cl,
+        "Reconocimiento-CompartirIgual 2.0 Taiwan"@es-co,
+        "Reconocimiento-CompartirIgual 2.0 Taiwan"@es-ec,
+        "Reconocimiento-CompartirIgual 2.0 Taiwan"@es-es,
+        "Reconocimiento-CompartirIgual 2.0 Taiwan"@es-gt,
+        "Atribución-Licenciamiento Recíproco 2.0 Taiwan"@es-mx,
+        "Reconocimiento-CompartirIgual 2.0 Taiwan"@es-pe,
+        "Reconocimiento-CompartirIgual 2.0 Taiwan"@es-pr,
+        "Autorile viitamine + Jagamine samadel tingimustel 2.0 Taiwan"@et,
+        "Aitortu-PartekatuBerdin 2.0 Taiwan"@eu,
+        "Attribution-ShareAlike 2.0 تایوان"@fa,
+        "Nimeä-Tarttuva 2.0 Taiwan"@fi,
+        "Paternité - Partage à l'Identique 2.0 Taiwan"@fr,
+        "Paternité - Partage des Conditions Initiales à l'Identique 2.0 Taiwan"@fr-ca,
+        "Paternité - Partage des Conditions Initiales à l'Identique 2.0 Taiwan"@fr-ch,
+        "Paternité - Partage des Conditions Initiales à l'Identique 2.0 Taiwan"@fr-lu,
+        "Attribution-ShareAlike 2.0 Taiwan"@ga,
+        "Recoñecemento-CompartirIgual 2.0 Taiwan"@gl,
+        "ייחוס-שיתוף זהה 2.0 טאיוואן"@he,
+        "Attribution-ShareAlike 2.0 Taiwan"@hi,
+        "Imenovanje-Dijeli pod istim uvjetima 2.0 Tajvan"@hr,
+        "Nevezd meg! - Így add tovább! 2.0 Tajvan"@hu,
+        "Հղում - համանման տարածում 2.0 Թայվան"@hy,
+        "Atribusi-BerbagiSerupa 2.0 Taiwan"@id,
+        "Attribution-ShareAlike 2.0 Taiwan"@is,
+        "Attribuzione - Condividi allo stesso modo 2.0 Taiwan"@it,
+        "Attribuzione - Condividi allo stesso modo 2.0 Taiwan"@it-ch,
+        "表示 - 継承 2.0 台湾（中華民国）"@ja,
+        "ავტორობის მითითებით – გავრცელება იგივე პირობებით  2.0 ტაივანი"@ka,
+        "Attribution-ShareAlike 2.0 Taiwan"@kk,
+        "저작자표시-동일조건변경허락 2.0 대만"@ko,
+        "Attribution-ShareAlike 2.0 Taivanis"@lt,
+        "Atsaucoties-Nemainot licenci 2.0 Taivāna"@lv,
+        "НаведиИзвор-СподелиПодИстиУслови 2.0 Тајван"@mk,
+        "Attribution-ShareAlike 2.0 തായ്‌വാൻ"@ml,
+        "Attribution-ShareAlike 2.0 Taiwan"@mn,
+        "Pengiktirafan-PerkongsianSerupa 2.0 Taiwan"@ms,
+        "Naamsvermelding-GelijkDelen 2.0 Taiwan"@nl,
+        "Navngivelse-DelPåSammeVilkår 2.0 Taiwan"@no,
+        "Tsebagatšo -Mohlakanelwa 2.0 Taiwan"@nso,
+        "Attribution-ShareAlike 2.0 Taiwan"@oci-es,
+        "Uznanie autorstwa-Na tych samych warunkach 2.0 Tajwan"@pl,
+        "Atribuição - CompartilhaIgual 2.0 Taiwan"@pt,
+        "Attribution-ShareAlike 2.0 Taiwan"@pt-br,
+        "Atribuição-Partilha nos termos da mesma licença 2.0 Taiwan"@pt-pt,
+        "Atribuire - Distribuire-în-condiţii-identice 2.0 Taiwan"@ro,
+        "Attribution-ShareAlike (Атрибуция — С сохранением условий) 2.0 Тайвань"@ru,
+        "Attribution-ShareAlike 2.0 Taiwan"@si-lk,
+        "Priznanje avtorstva-Deljenje pod enakimi pogoji 2.0 Tajvan"@sl,
+        "Attribution-ShareAlike 2.0 Taivan"@sq,
+        "Autorstvo-Deliti pod istim uslovima 2.0 Tajvan"@sr,
+        "Ауторство-Делити под истим условима 2.0 Тајван"@sr,
+        "Autorstvo-Deliti pod istim uslovima 2.0 Tajvan"@sr-latn,
+        "Attribution-ShareAlike 2.0 Taiwan"@st,
+        "Erkännande-DelaLika 2.0 Taiwan"@sv,
+        "Attribution-ShareAlike 2.0 Taiwan"@ta,
+        "Attribution-ShareAlike 2.0 తైవాన్"@te,
+        "แสดงที่มา-อนุญาตแบบเดียวกัน 2.0 ไต้หวัน"@th,
+        "Alıntı-LisansıDevamEttirme 2.0 Tayvan"@tr,
+        "Attribution-ShareAlike 2.0 Taiwan"@uk,
+        "Attribution-ShareAlike 2.0 Taiwan"@ur,
+        "Attribution-ShareAlike 2.0 Taiwan"@vi,
+        "署名-相同方式共享 2.0 台湾"@zh,
+        "姓名標示-相同方式分享 2.0 台灣"@zh-hk,
+        "姓名標示-相同方式分享 2.0 台灣"@zh-tw,
+        "Qaphela Umnikazi-Zihlanganyeleni 2.0 iTaiwan"@zu,
+        "${Attribution-ShareAlike} 2.0 ${Taiwan}"@zxx ;
+    owl:sameAs <https://licensedb.org/id/CC-BY-SA-2.0-tw> ;
+    foaf:logo <http://i.creativecommons.org/l/by-sa/2.0/tw/80x15.png>,
+        <http://i.creativecommons.org/l/by-sa/2.0/tw/88x31.png> .
+
+<https://licensedb.org/id/CC-BY-SA-2.0-tw> a cc:License,
+        li:License ;
+    cc:jurisdiction <http://creativecommons.org/international/tw/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-sa/2.0/tw/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Attribution,
+        cc:Notice,
+        cc:ShareAlike ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.0" ;
+    dc:identifier "by-sa" ;
+    dc:isReplacedBy <https://licensedb.org/id/CC-BY-SA-2.5-tw> ;
+    dc:source <http://creativecommons.org/licenses/by-sa/2.0/> ;
+    dc:title "Erkenning-InsgelyksDeel 2.0 Taiwan"@af,
+        "نسب العمل- المشاركة على قدم المساواة 2.0 تايوان"@ar,
+        "Attribution-ShareAlike 2.0 Taiwan"@as,
+        "Attribution-ShareAlike 2.0 Taiwan"@ast,
+        "Attribution-ShareAlike 2.0 Taiwan"@ast-es,
+        "Attribution-ShareAlike 2.0 Taiwan"@az,
+        "Attribution-ShareAlike 2.0 Тайвань"@be,
+        "Признание-Споделяне на споделеното 2.0 Тайван"@bg,
+        "Attribution-ShareAlike 2.0 Taiwan"@bn,
+        "Reconeixement-CompartirIgual 2.0 Taiwan"@ca,
+        "Uveďte autora-Zachovejte licenci 2.0 Tchaj-van"@cs,
+        "Navngivelse-DelPåSammeVilkår 2.0 Taiwan"@da,
+        "Namensnennung-Weitergabe unter gleichen Bedingungen 2.0 Taiwan"@de,
+        "Namensnennung-Weitergabe unter gleichen Bedingungen 2.0 Taiwan"@de-at,
+        "Namensnennung-Weitergabe unter gleichen Bedingungen 2.0 Taiwan"@de-ch,
+        "Αναφορά Δημιουργού - Παρόμοια Διανομή 2.0 Ταϊβάν"@el,
+        "Attribution-ShareAlike 2.0 Taiwan"@en,
+        "Attribution-ShareAlike 2.0 Taiwan"@en-ca,
+        "Attribution-ShareAlike 2.0 Taiwan"@en-gb,
+        "Attribution-ShareAlike 2.0 Taiwan"@en-hk,
+        "Attribution-ShareAlike 2.0 Taiwan"@en-sg,
+        "Attribution-ShareAlike 2.0 Taiwan"@en-us,
+        "Atribuite-Samkondiĉe 2.0 Tajvano"@eo,
+        "Atribución-CompartirIgual 2.0 Taiwán"@es,
+        "Atribución-CompartirDerivadasIgual 2.0 Taiwan"@es-ar,
+        "Atribución-LicenciarIgual 2.0 Taiwan"@es-cl,
+        "Reconocimiento-CompartirIgual 2.0 Taiwan"@es-co,
+        "Reconocimiento-CompartirIgual 2.0 Taiwan"@es-ec,
+        "Reconocimiento-CompartirIgual 2.0 Taiwan"@es-es,
+        "Reconocimiento-CompartirIgual 2.0 Taiwan"@es-gt,
+        "Atribución-Licenciamiento Recíproco 2.0 Taiwan"@es-mx,
+        "Reconocimiento-CompartirIgual 2.0 Taiwan"@es-pe,
+        "Reconocimiento-CompartirIgual 2.0 Taiwan"@es-pr,
+        "Autorile viitamine + Jagamine samadel tingimustel 2.0 Taiwan"@et,
+        "Aitortu-PartekatuBerdin 2.0 Taiwan"@eu,
+        "Attribution-ShareAlike 2.0 تایوان"@fa,
+        "Nimeä-Tarttuva 2.0 Taiwan"@fi,
+        "Paternité - Partage à l'Identique 2.0 Taiwan"@fr,
+        "Paternité - Partage des Conditions Initiales à l'Identique 2.0 Taiwan"@fr-ca,
+        "Paternité - Partage des Conditions Initiales à l'Identique 2.0 Taiwan"@fr-ch,
+        "Paternité - Partage des Conditions Initiales à l'Identique 2.0 Taiwan"@fr-lu,
+        "Attribution-ShareAlike 2.0 Taiwan"@ga,
+        "Recoñecemento-CompartirIgual 2.0 Taiwan"@gl,
+        "ייחוס-שיתוף זהה 2.0 טאיוואן"@he,
+        "Attribution-ShareAlike 2.0 Taiwan"@hi,
+        "Imenovanje-Dijeli pod istim uvjetima 2.0 Tajvan"@hr,
+        "Nevezd meg! - Így add tovább! 2.0 Tajvan"@hu,
+        "Հղում - համանման տարածում 2.0 Թայվան"@hy,
+        "Atribusi-BerbagiSerupa 2.0 Taiwan"@id,
+        "Attribution-ShareAlike 2.0 Taiwan"@is,
+        "Attribuzione - Condividi allo stesso modo 2.0 Taiwan"@it,
+        "Attribuzione - Condividi allo stesso modo 2.0 Taiwan"@it-ch,
+        "表示 - 継承 2.0 台湾（中華民国）"@ja,
+        "ავტორობის მითითებით – გავრცელება იგივე პირობებით  2.0 ტაივანი"@ka,
+        "Attribution-ShareAlike 2.0 Taiwan"@kk,
+        "저작자표시-동일조건변경허락 2.0 대만"@ko,
+        "Attribution-ShareAlike 2.0 Taivanis"@lt,
+        "Atsaucoties-Nemainot licenci 2.0 Taivāna"@lv,
+        "НаведиИзвор-СподелиПодИстиУслови 2.0 Тајван"@mk,
+        "Attribution-ShareAlike 2.0 തായ്‌വാൻ"@ml,
+        "Attribution-ShareAlike 2.0 Taiwan"@mn,
+        "Pengiktirafan-PerkongsianSerupa 2.0 Taiwan"@ms,
+        "Naamsvermelding-GelijkDelen 2.0 Taiwan"@nl,
+        "Navngivelse-DelPåSammeVilkår 2.0 Taiwan"@no,
+        "Tsebagatšo -Mohlakanelwa 2.0 Taiwan"@nso,
+        "Attribution-ShareAlike 2.0 Taiwan"@oci-es,
+        "Uznanie autorstwa-Na tych samych warunkach 2.0 Tajwan"@pl,
+        "Atribuição - CompartilhaIgual 2.0 Taiwan"@pt,
+        "Attribution-ShareAlike 2.0 Taiwan"@pt-br,
+        "Atribuição-Partilha nos termos da mesma licença 2.0 Taiwan"@pt-pt,
+        "Atribuire - Distribuire-în-condiţii-identice 2.0 Taiwan"@ro,
+        "Attribution-ShareAlike (Атрибуция — С сохранением условий) 2.0 Тайвань"@ru,
+        "Attribution-ShareAlike 2.0 Taiwan"@si-lk,
+        "Priznanje avtorstva-Deljenje pod enakimi pogoji 2.0 Tajvan"@sl,
+        "Attribution-ShareAlike 2.0 Taivan"@sq,
+        "Autorstvo-Deliti pod istim uslovima 2.0 Tajvan"@sr,
+        "Ауторство-Делити под истим условима 2.0 Тајван"@sr,
+        "Autorstvo-Deliti pod istim uslovima 2.0 Tajvan"@sr-latn,
+        "Attribution-ShareAlike 2.0 Taiwan"@st,
+        "Erkännande-DelaLika 2.0 Taiwan"@sv,
+        "Attribution-ShareAlike 2.0 Taiwan"@ta,
+        "Attribution-ShareAlike 2.0 తైవాన్"@te,
+        "แสดงที่มา-อนุญาตแบบเดียวกัน 2.0 ไต้หวัน"@th,
+        "Alıntı-LisansıDevamEttirme 2.0 Tayvan"@tr,
+        "Attribution-ShareAlike 2.0 Taiwan"@uk,
+        "Attribution-ShareAlike 2.0 Taiwan"@ur,
+        "Attribution-ShareAlike 2.0 Taiwan"@vi,
+        "署名-相同方式共享 2.0 台湾"@zh,
+        "姓名標示-相同方式分享 2.0 台灣"@zh-hk,
+        "姓名標示-相同方式分享 2.0 台灣"@zh-tw,
+        "Qaphela Umnikazi-Zihlanganyeleni 2.0 iTaiwan"@zu,
+        "${Attribution-ShareAlike} 2.0 ${Taiwan}"@zxx ;
+    owl:sameAs <http://creativecommons.org/licenses/by-sa/2.0/tw/> ;
+    foaf:logo <http://i.creativecommons.org/l/by-sa/2.0/tw/80x15.png>,
+        <http://i.creativecommons.org/l/by-sa/2.0/tw/88x31.png> ;
+    li:id "CC-BY-SA-2.0-tw" ;
+    li:libre <http://creativecommons.org/> ;
+    li:name "CC BY-SA 2.0 TW" .
+

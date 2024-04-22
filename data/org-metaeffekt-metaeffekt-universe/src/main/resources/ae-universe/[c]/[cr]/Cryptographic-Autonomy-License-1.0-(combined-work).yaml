@@ -1,0 +1,22 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+
+canonicalName: "Cryptographic Autonomy License 1.0 (combined work)"
+category: "CAL-1.0 Combined Work Exception"
+shortName: "Cryptographic-Autonomy-License-1.0-Combined-Work-Exception"
+spdxIdentifier: "CAL-1.0-Combined-Work-Exception"
+
+osiStatus: "approved"
+osiCategory: "uncategorized"
+
+type: "expression"
+
+alternativeNames:
+  - "CAL-1.0-Combined-Work-Exception"
+  - "Cryptographic Autonomy License 1.0 (Combined Work Exception)"
+  - "Cryptographic Autonomy License 1.0 (combined work)"
+
+otherIds: 
+  - "scancode:cal-1.0-combined-work-exception"
+  - "osi:CAL-1.0"

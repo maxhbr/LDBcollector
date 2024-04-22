@@ -1,0 +1,848 @@
+{
+    "@context": {
+        "cc": "http://creativecommons.org/ns#",
+        "dc": "http://purl.org/dc/terms/",
+        "dc11": "http://purl.org/dc/elements/1.1/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "li": "https://licensedb.org/ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "cc:legalcode": {
+            "@type": "@id"
+        },
+        "cc:permits": {
+            "@type": "@id"
+        },
+        "cc:requires": {
+            "@type": "@id"
+        },
+        "cc:prohibits": {
+            "@type": "@id"
+        },
+        "cc:jurisdiction": {
+            "@type": "@id"
+        },
+        "cc:licenseClass": {
+            "@type": "@id"
+        },
+        "dc:creator": {
+            "@type": "@id"
+        },
+        "dc:source": {
+            "@type": "@id"
+        },
+        "dc:replaces": {
+            "@type": "@id"
+        },
+        "dc:isBasedOn": {
+            "@type": "@id"
+        },
+        "dc:isReplacedBy": {
+            "@type": "@id"
+        },
+        "foaf:logo": {
+            "@type": "@id"
+        },
+        "li:plaintext": {
+            "@type": "@id"
+        },
+        "li:libre": {
+            "@type": "@id"
+        },
+        "owl:sameAs": {
+            "@type": "@id"
+        }
+    },
+    "@id": "https://licensedb.org/id/CC-BY-ND-2.5-ar",
+    "@type": [
+        "cc:License",
+        "li:License"
+    ],
+    "cc:jurisdiction": "http://creativecommons.org/international/ar/",
+    "cc:legalcode": "http://creativecommons.org/licenses/by-nd/2.5/ar/legalcode",
+    "cc:licenseClass": "http://creativecommons.org/license/",
+    "cc:permits": [
+        "cc:Distribution",
+        "cc:Reproduction"
+    ],
+    "cc:requires": [
+        "cc:Attribution",
+        "cc:Notice"
+    ],
+    "dc:creator": "http://creativecommons.org",
+    "dc:hasVersion": "2.5",
+    "dc:identifier": "by-nd",
+    "dc:source": "http://creativecommons.org/licenses/by-nd/2.5/",
+    "dc:title": [
+        {
+            "@language": "af",
+            "@value": "Erkenning-GeenAfleidings 2.5 Argentinië"
+        },
+        {
+            "@language": "ar",
+            "@value": "نسب- غير مشتق 2.5 الأرجنتين"
+        },
+        {
+            "@language": "as",
+            "@value": "Attribution-NoDerivs 2.5 Argentina"
+        },
+        {
+            "@language": "ast",
+            "@value": "Attribution-NoDerivs 2.5 Argentina"
+        },
+        {
+            "@language": "ast-es",
+            "@value": "Attribution-NoDerivs 2.5 Argentina"
+        },
+        {
+            "@language": "az",
+            "@value": "Attribution-NoDerivs 2.5 Argentina"
+        },
+        {
+            "@language": "be",
+            "@value": "Attribution-NoDerivs 2.5 Аргентына"
+        },
+        {
+            "@language": "bg",
+            "@value": "Признание-Без производни 2.5 Аржентина"
+        },
+        {
+            "@language": "bn",
+            "@value": "Attribution-NoDerivs 2.5 Argentina"
+        },
+        {
+            "@language": "ca",
+            "@value": "Reconeixement-SenseObraDerivada 2.5 Argentina"
+        },
+        {
+            "@language": "cs",
+            "@value": "Uveďte autora-Nezasahujte do díla 2.5 Argentina"
+        },
+        {
+            "@language": "da",
+            "@value": "Navngivelse-IngenBearbejdelse 2.5 Argentina"
+        },
+        {
+            "@language": "de",
+            "@value": "Namensnennung-Keine Bearbeitung 2.5 Argentinien"
+        },
+        {
+            "@language": "de-at",
+            "@value": "Namensnennung-KeineBearbeitung 2.5 Argentinien"
+        },
+        {
+            "@language": "de-ch",
+            "@value": "Namensnennung-KeineBearbeitung 2.5 Argentinien"
+        },
+        {
+            "@language": "el",
+            "@value": "Αναφορά Δημιουργού-Όχι Παράγωγα Έργα 2.5 Αργεντινή"
+        },
+        {
+            "@language": "en",
+            "@value": "Attribution-NoDerivs 2.5 Argentina"
+        },
+        {
+            "@language": "en-ca",
+            "@value": "Attribution-NoDerivs 2.5 Argentina"
+        },
+        {
+            "@language": "en-gb",
+            "@value": "Attribution-NoDerivs 2.5 Argentina"
+        },
+        {
+            "@language": "en-hk",
+            "@value": "Attribution-NoDerivs 2.5 Argentina"
+        },
+        {
+            "@language": "en-sg",
+            "@value": "Attribution-NoDerivs 2.5 Argentina"
+        },
+        {
+            "@language": "en-us",
+            "@value": "Attribution-NoDerivs 2.5 Argentina"
+        },
+        {
+            "@language": "eo",
+            "@value": "Atribuite-Nemodifite 2.5 Argentino"
+        },
+        {
+            "@language": "es",
+            "@value": "Atribución-SinDerivadas 2.5 Argentina"
+        },
+        {
+            "@language": "es-ar",
+            "@value": "Atribución-SinDerivadas 2.5 Argentina"
+        },
+        {
+            "@language": "es-cl",
+            "@value": "Atribución-SinDerivadas 2.5 Argentina"
+        },
+        {
+            "@language": "es-co",
+            "@value": "Reconocimiento-SinObraDerivada 2.5 Argentina"
+        },
+        {
+            "@language": "es-ec",
+            "@value": "Reconocimiento-SinObraDerivada 2.5 Argentina"
+        },
+        {
+            "@language": "es-es",
+            "@value": "Reconocimiento-SinObraDerivada 2.5 Argentina"
+        },
+        {
+            "@language": "es-gt",
+            "@value": "Reconocimiento-SinObraDerivada 2.5 Argentina"
+        },
+        {
+            "@language": "es-mx",
+            "@value": "Atribución-No Derivadas 2.5 Argentina"
+        },
+        {
+            "@language": "es-pe",
+            "@value": "Reconocimiento-SinObraDerivada 2.5 Argentina"
+        },
+        {
+            "@language": "es-pr",
+            "@value": "Reconocimiento-SinObraDerivada 2.5 Argentina"
+        },
+        {
+            "@language": "et",
+            "@value": "Autorile viitamine + Tuletatud teoste keeld 2.5 Argentiina"
+        },
+        {
+            "@language": "eu",
+            "@value": "Aitortu-LanEratorririkGabe 2.5 Argentina"
+        },
+        {
+            "@language": "fa",
+            "@value": "Attribution-NoDerivs 2.5 آرژانتین"
+        },
+        {
+            "@language": "fi",
+            "@value": "Nimeä-Ei muutoksia 2.5 Argentiina"
+        },
+        {
+            "@language": "fr",
+            "@value": "Paternité - Pas de Modification 2.5 Argentine"
+        },
+        {
+            "@language": "fr-ca",
+            "@value": "Paternité - Pas de Modification 2.5 Argentine"
+        },
+        {
+            "@language": "fr-ch",
+            "@value": "Paternité - Pas de Modification 2.5 Argentine"
+        },
+        {
+            "@language": "fr-lu",
+            "@value": "Paternité - Pas de Modification 2.5 Argentine"
+        },
+        {
+            "@language": "ga",
+            "@value": "Attribution-NoDerivs 2.5 Argentina"
+        },
+        {
+            "@language": "gl",
+            "@value": "Recoñecemento-SenObraDerivada 2.5 Argentina"
+        },
+        {
+            "@language": "he",
+            "@value": "ייחוס-איסור יצירות נגזרות 2.5 ארגנטינה"
+        },
+        {
+            "@language": "hi",
+            "@value": "Attribution-NoDerivs 2.5 Argentina"
+        },
+        {
+            "@language": "hr",
+            "@value": "Imenovanje-Bez prerada 2.5 Argentina"
+        },
+        {
+            "@language": "hu",
+            "@value": "Nevezd meg! - Ne változtasd! 2.5 Argentína"
+        },
+        {
+            "@language": "hy",
+            "@value": "Հղում - Օգտագործում առանց վերափոխումների 2.5 Արգենտինա"
+        },
+        {
+            "@language": "id",
+            "@value": "Atribusi-TanpaTurunan 2.5 Argentina"
+        },
+        {
+            "@language": "is",
+            "@value": "Attribution-NoDerivs 2.5 Argentina"
+        },
+        {
+            "@language": "it",
+            "@value": "Attribuzione - Non opere derivate 2.5 Argentina"
+        },
+        {
+            "@language": "it-ch",
+            "@value": "Attribuzione - Non opere derivate 2.5 Argentina"
+        },
+        {
+            "@language": "ja",
+            "@value": "表示 - 改変禁止 2.5 アルゼンチン"
+        },
+        {
+            "@language": "ka",
+            "@value": "ავტორობის მითითებით გადამუშავების გარეშე 2.5 არგენტინა"
+        },
+        {
+            "@language": "kk",
+            "@value": "Туынды жасамау 2.5 Argentina"
+        },
+        {
+            "@language": "ko",
+            "@value": "저작자표시-변경금지 2.5 Argentina"
+        },
+        {
+            "@language": "lt",
+            "@value": "Attribution-NoDerivs 2.5 Argentina"
+        },
+        {
+            "@language": "lv",
+            "@value": "Atsaucoties-Neatvasinot 2.5 Argentīna"
+        },
+        {
+            "@language": "mk",
+            "@value": "НаведиИзвор-БезИзведениДела 2.5 Аргентина"
+        },
+        {
+            "@language": "ml",
+            "@value": "Attribution-NoDerivs 2.5 അർജന്റീന"
+        },
+        {
+            "@language": "mn",
+            "@value": "Attribution-NoDerivs 2.5 Argentina"
+        },
+        {
+            "@language": "ms",
+            "@value": "Pengiktirafan-TiadaTerbitan 2.5 Argentina"
+        },
+        {
+            "@language": "nl",
+            "@value": "Naamsvermelding-GeenAfgeleideWerken 2.5 Argentinië"
+        },
+        {
+            "@language": "no",
+            "@value": "Navngivelse-IngenBearbeidelse 2.5 Argentina"
+        },
+        {
+            "@language": "nso",
+            "@value": "Tsebagatšo - Tše sa Fetolwego 2.5 Argentina"
+        },
+        {
+            "@language": "oci-es",
+            "@value": "Attribution-NoDerivs 2.5 Argentina"
+        },
+        {
+            "@language": "pl",
+            "@value": "Uznanie autorstwa-Bez utworów zależnych 2.5 Argentyna"
+        },
+        {
+            "@language": "pt",
+            "@value": "Atribuição - SemDerivados 2.5 Argentina"
+        },
+        {
+            "@language": "pt-br",
+            "@value": "Atribuição-Vedada a criação de obras derivativas 2.5 Argentina"
+        },
+        {
+            "@language": "pt-pt",
+            "@value": "Atribuição-Proibição de realização de Obras Derivadas 2.5 Argentina"
+        },
+        {
+            "@language": "ro",
+            "@value": "Atribuire-FărăModificări 2.5 Argentina"
+        },
+        {
+            "@language": "ru",
+            "@value": "Attribution-NoDerivs (Атрибуция — Без производных произведений) 2.5 Аргентина"
+        },
+        {
+            "@language": "si-lk",
+            "@value": "Attribution-NoDerivs 2.5 Argentina"
+        },
+        {
+            "@language": "sl",
+            "@value": "Priznanje avtorstva-Brez predelav 2.5 Argentina"
+        },
+        {
+            "@language": "sq",
+            "@value": "Attribution-NoDerivs 2.5 Argjentinë"
+        },
+        {
+            "@language": "sr",
+            "@value": "Autorstvo-Bez prerada 2.5 Argentina"
+        },
+        {
+            "@language": "sr",
+            "@value": "Ауторство-Без прерада 2.5 Аргентина"
+        },
+        {
+            "@language": "sr-latn",
+            "@value": "Autorstvo-Bez prerada 2.5 Argentina"
+        },
+        {
+            "@language": "st",
+            "@value": "Attribution-NoDerivs 2.5 Argentina"
+        },
+        {
+            "@language": "sv",
+            "@value": "Erkännande-IngaBearbetningar 2.5 Argentina"
+        },
+        {
+            "@language": "ta",
+            "@value": "Attribution-NoDerivs 2.5 Argentina"
+        },
+        {
+            "@language": "te",
+            "@value": "Attribution-NoDerivs 2.5 అర్జెంటీనా"
+        },
+        {
+            "@language": "th",
+            "@value": "แสดงที่มา-ไม่ดัดแปลง 2.5 อาร์เจนตินา"
+        },
+        {
+            "@language": "tr",
+            "@value": "Alıntı-Türetilemez 2.5 Arjantin"
+        },
+        {
+            "@language": "uk",
+            "@value": "Attribution-NoDerivs 2.5 Argentina"
+        },
+        {
+            "@language": "ur",
+            "@value": "Attribution-NoDerivs 2.5 Argentina"
+        },
+        {
+            "@language": "vi",
+            "@value": "Ghi nhận công của tác giả - Không phái sinh 2.5 Nước Achentina"
+        },
+        {
+            "@language": "zh",
+            "@value": "署名-禁止演绎 2.5 阿根廷"
+        },
+        {
+            "@language": "zh-hk",
+            "@value": "姓名標示-禁止改作 2.5 阿根廷"
+        },
+        {
+            "@language": "zh-tw",
+            "@value": "姓名標示-禁止改作 2.5 阿根廷"
+        },
+        {
+            "@language": "zu",
+            "@value": "Qaphela Umnikazi-Ungasuseli lutho kulokhu 2.5 E-Argentina"
+        },
+        {
+            "@language": "zxx",
+            "@value": "${Attribution-NoDerivs} 2.5 ${Argentina}"
+        }
+    ],
+    "owl:sameAs": {
+        "@id": "http://creativecommons.org/licenses/by-nd/2.5/ar/",
+        "@type": "cc:License",
+        "cc:jurisdiction": "http://creativecommons.org/international/ar/",
+        "cc:legalcode": "http://creativecommons.org/licenses/by-nd/2.5/ar/legalcode",
+        "cc:licenseClass": "http://creativecommons.org/license/",
+        "cc:permits": [
+            "cc:Distribution",
+            "cc:Reproduction"
+        ],
+        "cc:requires": [
+            "cc:Attribution",
+            "cc:Notice"
+        ],
+        "dc:creator": "http://creativecommons.org",
+        "dc:hasVersion": "2.5",
+        "dc:identifier": "by-nd",
+        "dc:source": "http://creativecommons.org/licenses/by-nd/2.5/",
+        "dc:title": [
+            {
+                "@language": "af",
+                "@value": "Erkenning-GeenAfleidings 2.5 Argentinië"
+            },
+            {
+                "@language": "ar",
+                "@value": "نسب- غير مشتق 2.5 الأرجنتين"
+            },
+            {
+                "@language": "as",
+                "@value": "Attribution-NoDerivs 2.5 Argentina"
+            },
+            {
+                "@language": "ast",
+                "@value": "Attribution-NoDerivs 2.5 Argentina"
+            },
+            {
+                "@language": "ast-es",
+                "@value": "Attribution-NoDerivs 2.5 Argentina"
+            },
+            {
+                "@language": "az",
+                "@value": "Attribution-NoDerivs 2.5 Argentina"
+            },
+            {
+                "@language": "be",
+                "@value": "Attribution-NoDerivs 2.5 Аргентына"
+            },
+            {
+                "@language": "bg",
+                "@value": "Признание-Без производни 2.5 Аржентина"
+            },
+            {
+                "@language": "bn",
+                "@value": "Attribution-NoDerivs 2.5 Argentina"
+            },
+            {
+                "@language": "ca",
+                "@value": "Reconeixement-SenseObraDerivada 2.5 Argentina"
+            },
+            {
+                "@language": "cs",
+                "@value": "Uveďte autora-Nezasahujte do díla 2.5 Argentina"
+            },
+            {
+                "@language": "da",
+                "@value": "Navngivelse-IngenBearbejdelse 2.5 Argentina"
+            },
+            {
+                "@language": "de",
+                "@value": "Namensnennung-Keine Bearbeitung 2.5 Argentinien"
+            },
+            {
+                "@language": "de-at",
+                "@value": "Namensnennung-KeineBearbeitung 2.5 Argentinien"
+            },
+            {
+                "@language": "de-ch",
+                "@value": "Namensnennung-KeineBearbeitung 2.5 Argentinien"
+            },
+            {
+                "@language": "el",
+                "@value": "Αναφορά Δημιουργού-Όχι Παράγωγα Έργα 2.5 Αργεντινή"
+            },
+            {
+                "@language": "en",
+                "@value": "Attribution-NoDerivs 2.5 Argentina"
+            },
+            {
+                "@language": "en-ca",
+                "@value": "Attribution-NoDerivs 2.5 Argentina"
+            },
+            {
+                "@language": "en-gb",
+                "@value": "Attribution-NoDerivs 2.5 Argentina"
+            },
+            {
+                "@language": "en-hk",
+                "@value": "Attribution-NoDerivs 2.5 Argentina"
+            },
+            {
+                "@language": "en-sg",
+                "@value": "Attribution-NoDerivs 2.5 Argentina"
+            },
+            {
+                "@language": "en-us",
+                "@value": "Attribution-NoDerivs 2.5 Argentina"
+            },
+            {
+                "@language": "eo",
+                "@value": "Atribuite-Nemodifite 2.5 Argentino"
+            },
+            {
+                "@language": "es",
+                "@value": "Atribución-SinDerivadas 2.5 Argentina"
+            },
+            {
+                "@language": "es-ar",
+                "@value": "Atribución-SinDerivadas 2.5 Argentina"
+            },
+            {
+                "@language": "es-cl",
+                "@value": "Atribución-SinDerivadas 2.5 Argentina"
+            },
+            {
+                "@language": "es-co",
+                "@value": "Reconocimiento-SinObraDerivada 2.5 Argentina"
+            },
+            {
+                "@language": "es-ec",
+                "@value": "Reconocimiento-SinObraDerivada 2.5 Argentina"
+            },
+            {
+                "@language": "es-es",
+                "@value": "Reconocimiento-SinObraDerivada 2.5 Argentina"
+            },
+            {
+                "@language": "es-gt",
+                "@value": "Reconocimiento-SinObraDerivada 2.5 Argentina"
+            },
+            {
+                "@language": "es-mx",
+                "@value": "Atribución-No Derivadas 2.5 Argentina"
+            },
+            {
+                "@language": "es-pe",
+                "@value": "Reconocimiento-SinObraDerivada 2.5 Argentina"
+            },
+            {
+                "@language": "es-pr",
+                "@value": "Reconocimiento-SinObraDerivada 2.5 Argentina"
+            },
+            {
+                "@language": "et",
+                "@value": "Autorile viitamine + Tuletatud teoste keeld 2.5 Argentiina"
+            },
+            {
+                "@language": "eu",
+                "@value": "Aitortu-LanEratorririkGabe 2.5 Argentina"
+            },
+            {
+                "@language": "fa",
+                "@value": "Attribution-NoDerivs 2.5 آرژانتین"
+            },
+            {
+                "@language": "fi",
+                "@value": "Nimeä-Ei muutoksia 2.5 Argentiina"
+            },
+            {
+                "@language": "fr",
+                "@value": "Paternité - Pas de Modification 2.5 Argentine"
+            },
+            {
+                "@language": "fr-ca",
+                "@value": "Paternité - Pas de Modification 2.5 Argentine"
+            },
+            {
+                "@language": "fr-ch",
+                "@value": "Paternité - Pas de Modification 2.5 Argentine"
+            },
+            {
+                "@language": "fr-lu",
+                "@value": "Paternité - Pas de Modification 2.5 Argentine"
+            },
+            {
+                "@language": "ga",
+                "@value": "Attribution-NoDerivs 2.5 Argentina"
+            },
+            {
+                "@language": "gl",
+                "@value": "Recoñecemento-SenObraDerivada 2.5 Argentina"
+            },
+            {
+                "@language": "he",
+                "@value": "ייחוס-איסור יצירות נגזרות 2.5 ארגנטינה"
+            },
+            {
+                "@language": "hi",
+                "@value": "Attribution-NoDerivs 2.5 Argentina"
+            },
+            {
+                "@language": "hr",
+                "@value": "Imenovanje-Bez prerada 2.5 Argentina"
+            },
+            {
+                "@language": "hu",
+                "@value": "Nevezd meg! - Ne változtasd! 2.5 Argentína"
+            },
+            {
+                "@language": "hy",
+                "@value": "Հղում - Օգտագործում առանց վերափոխումների 2.5 Արգենտինա"
+            },
+            {
+                "@language": "id",
+                "@value": "Atribusi-TanpaTurunan 2.5 Argentina"
+            },
+            {
+                "@language": "is",
+                "@value": "Attribution-NoDerivs 2.5 Argentina"
+            },
+            {
+                "@language": "it",
+                "@value": "Attribuzione - Non opere derivate 2.5 Argentina"
+            },
+            {
+                "@language": "it-ch",
+                "@value": "Attribuzione - Non opere derivate 2.5 Argentina"
+            },
+            {
+                "@language": "ja",
+                "@value": "表示 - 改変禁止 2.5 アルゼンチン"
+            },
+            {
+                "@language": "ka",
+                "@value": "ავტორობის მითითებით გადამუშავების გარეშე 2.5 არგენტინა"
+            },
+            {
+                "@language": "kk",
+                "@value": "Туынды жасамау 2.5 Argentina"
+            },
+            {
+                "@language": "ko",
+                "@value": "저작자표시-변경금지 2.5 Argentina"
+            },
+            {
+                "@language": "lt",
+                "@value": "Attribution-NoDerivs 2.5 Argentina"
+            },
+            {
+                "@language": "lv",
+                "@value": "Atsaucoties-Neatvasinot 2.5 Argentīna"
+            },
+            {
+                "@language": "mk",
+                "@value": "НаведиИзвор-БезИзведениДела 2.5 Аргентина"
+            },
+            {
+                "@language": "ml",
+                "@value": "Attribution-NoDerivs 2.5 അർജന്റീന"
+            },
+            {
+                "@language": "mn",
+                "@value": "Attribution-NoDerivs 2.5 Argentina"
+            },
+            {
+                "@language": "ms",
+                "@value": "Pengiktirafan-TiadaTerbitan 2.5 Argentina"
+            },
+            {
+                "@language": "nl",
+                "@value": "Naamsvermelding-GeenAfgeleideWerken 2.5 Argentinië"
+            },
+            {
+                "@language": "no",
+                "@value": "Navngivelse-IngenBearbeidelse 2.5 Argentina"
+            },
+            {
+                "@language": "nso",
+                "@value": "Tsebagatšo - Tše sa Fetolwego 2.5 Argentina"
+            },
+            {
+                "@language": "oci-es",
+                "@value": "Attribution-NoDerivs 2.5 Argentina"
+            },
+            {
+                "@language": "pl",
+                "@value": "Uznanie autorstwa-Bez utworów zależnych 2.5 Argentyna"
+            },
+            {
+                "@language": "pt",
+                "@value": "Atribuição - SemDerivados 2.5 Argentina"
+            },
+            {
+                "@language": "pt-br",
+                "@value": "Atribuição-Vedada a criação de obras derivativas 2.5 Argentina"
+            },
+            {
+                "@language": "pt-pt",
+                "@value": "Atribuição-Proibição de realização de Obras Derivadas 2.5 Argentina"
+            },
+            {
+                "@language": "ro",
+                "@value": "Atribuire-FărăModificări 2.5 Argentina"
+            },
+            {
+                "@language": "ru",
+                "@value": "Attribution-NoDerivs (Атрибуция — Без производных произведений) 2.5 Аргентина"
+            },
+            {
+                "@language": "si-lk",
+                "@value": "Attribution-NoDerivs 2.5 Argentina"
+            },
+            {
+                "@language": "sl",
+                "@value": "Priznanje avtorstva-Brez predelav 2.5 Argentina"
+            },
+            {
+                "@language": "sq",
+                "@value": "Attribution-NoDerivs 2.5 Argjentinë"
+            },
+            {
+                "@language": "sr",
+                "@value": "Autorstvo-Bez prerada 2.5 Argentina"
+            },
+            {
+                "@language": "sr",
+                "@value": "Ауторство-Без прерада 2.5 Аргентина"
+            },
+            {
+                "@language": "sr-latn",
+                "@value": "Autorstvo-Bez prerada 2.5 Argentina"
+            },
+            {
+                "@language": "st",
+                "@value": "Attribution-NoDerivs 2.5 Argentina"
+            },
+            {
+                "@language": "sv",
+                "@value": "Erkännande-IngaBearbetningar 2.5 Argentina"
+            },
+            {
+                "@language": "ta",
+                "@value": "Attribution-NoDerivs 2.5 Argentina"
+            },
+            {
+                "@language": "te",
+                "@value": "Attribution-NoDerivs 2.5 అర్జెంటీనా"
+            },
+            {
+                "@language": "th",
+                "@value": "แสดงที่มา-ไม่ดัดแปลง 2.5 อาร์เจนตินา"
+            },
+            {
+                "@language": "tr",
+                "@value": "Alıntı-Türetilemez 2.5 Arjantin"
+            },
+            {
+                "@language": "uk",
+                "@value": "Attribution-NoDerivs 2.5 Argentina"
+            },
+            {
+                "@language": "ur",
+                "@value": "Attribution-NoDerivs 2.5 Argentina"
+            },
+            {
+                "@language": "vi",
+                "@value": "Ghi nhận công của tác giả - Không phái sinh 2.5 Nước Achentina"
+            },
+            {
+                "@language": "zh",
+                "@value": "署名-禁止演绎 2.5 阿根廷"
+            },
+            {
+                "@language": "zh-hk",
+                "@value": "姓名標示-禁止改作 2.5 阿根廷"
+            },
+            {
+                "@language": "zh-tw",
+                "@value": "姓名標示-禁止改作 2.5 阿根廷"
+            },
+            {
+                "@language": "zu",
+                "@value": "Qaphela Umnikazi-Ungasuseli lutho kulokhu 2.5 E-Argentina"
+            },
+            {
+                "@language": "zxx",
+                "@value": "${Attribution-NoDerivs} 2.5 ${Argentina}"
+            }
+        ],
+        "owl:sameAs": "https://licensedb.org/id/CC-BY-ND-2.5-ar",
+        "foaf:logo": [
+            "http://i.creativecommons.org/l/by-nd/2.5/ar/80x15.png",
+            "http://i.creativecommons.org/l/by-nd/2.5/ar/88x31.png"
+        ]
+    },
+    "foaf:logo": [
+        "http://i.creativecommons.org/l/by-nd/2.5/ar/80x15.png",
+        "http://i.creativecommons.org/l/by-nd/2.5/ar/88x31.png"
+    ],
+    "li:id": "CC-BY-ND-2.5-ar",
+    "li:name": "CC BY-ND 2.5 AR"
+}

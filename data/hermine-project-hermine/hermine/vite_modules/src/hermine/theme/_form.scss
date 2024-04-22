@@ -1,0 +1,94 @@
+.field {
+  &.has-check {
+    .field-body {
+      margin-top: $default-padding * .125;
+    }
+  }
+  .control {
+    .mdi-24px.mdi-set, .mdi-24px.mdi:before {
+      font-size: inherit;
+    }
+  }
+}
+
+.input, .textarea, select {
+  box-shadow: none;
+
+  &:focus, &:active {
+    box-shadow: none!important;
+  }
+}
+
+/**
+  Custom code to auto-apply Bulma styles on Django forms with minimal template modification
+ */
+
+.field.bulma {
+  label {
+    @extend .label
+  }
+
+  input:not([type=radio], [type=checkbox]) {
+    @extend .input
+  }
+
+  label:has(input[type=radio]) {
+    @extend .radio
+  }
+
+    label:has(input[type=checkbox]) {
+    @extend .checkbox
+  }
+
+  select {
+    @extend .select
+  }
+
+  button {
+    @extend .button
+  }
+
+  textarea {
+    @extend .textarea
+  }
+}
+
+.field.bulma.bulma-error {
+  input, select, .help {
+    @extend .is-danger
+  }
+}
+
+.select2.select2-container {
+  @extend .input;
+  padding: 0;
+  position: relative;
+  display: inline-block;
+
+  .select2-selection {
+    height: 100%;
+    padding: 5px 0 !important;
+    border: 0 !important;
+  }
+
+  .select2-selection__rendered {
+    padding: 0;
+    line-height: 1.5;
+
+    .select2-selection__choice {
+      margin-top: 0;
+      max-height: 27px;
+    }
+
+    .select2-search--inline {
+      max-height: 27px;
+      margin: 0;
+      input {
+        border: 0;
+        margin: 0;
+        padding: 5px;
+        max-height: 27px;
+      }
+    }
+  }
+}

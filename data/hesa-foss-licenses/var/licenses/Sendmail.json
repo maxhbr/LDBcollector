@@ -1,0 +1,18 @@
+{
+"meta": {
+    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+    "comment": ""
+  },
+  "name": "Sendmail License",
+  "scancode_key": "sendmail",
+  "spdxid": "Sendmail",
+  "aliases": [
+   "Sendmail",
+   "Sendmail License",
+   "SENDMAIL LICENSE (version 2004)",
+   "SENDMAIL LICENSE (version 2012)",
+   "SENDMAIL LICENSE (version 1998)",
+   "scancode://sendmail",
+   "scancode:sendmail"
+  ]
+}

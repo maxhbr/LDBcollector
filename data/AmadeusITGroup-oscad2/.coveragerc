@@ -1,0 +1,13 @@
+[run]
+branch = True
+source = oscad
+
+[report]
+show_missing = True
+exclude_lines =
+    .* # Platform-specific.*
+    except ImportError:
+    .*:.* # Python \d.*
+    pass
+    .* # Abstract
+    import

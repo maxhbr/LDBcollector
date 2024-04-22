@@ -1,0 +1,18 @@
+[license]
+
+expression = "LicenseRef-AMAP"
+status = [ "not-allowed" ]
+
+url = '''
+https://fedoraproject.org/wiki/Licensing/AMAP_License
+'''
+
+[fedora]
+
+legacy-name = [
+    "AMAP License"
+]
+
+notes = '''
+Additional restrictions are non-free and GPL incompatible
+'''

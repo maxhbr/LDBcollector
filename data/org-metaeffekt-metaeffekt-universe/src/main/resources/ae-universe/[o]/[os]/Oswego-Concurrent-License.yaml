@@ -1,0 +1,15 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+
+canonicalName: "Oswego Concurrent License"
+category: "Oswego Concurrent License"
+shortName: "oswego-concurrent"
+
+alternativeNames:
+  - "Oswego Concurrent License"
+  - "http://gee.cs.oswego.edu/dl/classes/EDU/oswego/cs/dl/util/sun-u.c.license.pdf"
+  - "http://g.oswego.edu/dl/classes/EDU/oswego/cs/dl/util/concurrent/intro.html"
+
+otherIds: 
+  - "scancode:oswego-concurrent"

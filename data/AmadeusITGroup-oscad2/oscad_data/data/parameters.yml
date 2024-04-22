@@ -1,0 +1,31 @@
+recipients:
+  - id: 4yourself
+    action: use
+  - id: 2others
+    action: distribute
+types:
+  - id: proapse
+    class: application
+  - id: snimoli
+    class: library
+states:
+  - id: modified
+    label: modified
+    article: a
+  - id: unmodified
+    label: unmodified
+    article: an
+forms:
+  - id: sources
+    label: source files
+  - id: binaries
+    label: binary files
+  - id: any
+    label: source or binary files
+contexts:
+  - id: independent
+    label: independent
+    suffix: piece of software
+  - id: embedded
+    label: empedded component
+    suffix: in my own software development

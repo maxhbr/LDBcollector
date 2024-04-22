@@ -1,0 +1,19 @@
+{
+"meta": {
+    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+    "comment": ""
+  },
+  "name": "Beer-Ware License",
+  "scancode_key": "beerware", 
+  "spdxid": "Beerware",
+  "compatibility_as": "BSD-1-Clause",
+  "aliases": [
+   "Beerware",
+   "Beerware License",
+   "scancode://beerware",
+   "Beer-Ware License",
+   "Beerware 42",
+   "BEERWARE",
+   "scancode:beerware"
+  ]
+}

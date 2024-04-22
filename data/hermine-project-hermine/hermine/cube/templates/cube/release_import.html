@@ -1,0 +1,51 @@
+<!--
+SPDX-FileCopyrightText: 2021 Hermine-team <hermine@inno3.fr>
+SPDX-FileCopyrightText: 2022 Martin Delabre <gitlab.com/delabre.martin>
+
+SPDX-License-Identifier: AGPL-3.0-only
+-->
+
+{% extends "cube/cube.html" %}
+{% block title %}{{ object.product.name }} {{object.release_number}}{% endblock %}
+{% block breadcrumbs %}
+  <ul>
+    <li><a href="{% url 'cube:dashboard' %}">Hermine</a></li>
+    <li><a href="{% url 'cube:product_detail' object.product.id %}">{{ object.product.name }}</a></li>
+    <li>{{object.release_number}}</li>
+    <li> Import components</li>
+  </ul>
+{% endblock %}
+{% block herozone %}
+  <div class="hero-body">
+    <p class="title">Release: {{object.release_number}} - Import components into this release</p>
+  </div>
+{% endblock %}
+{% block content %}
+  {% include "cube/includes/release_tabs.html" with active_tab="import" %}
+
+  {% if messages %}
+    {% for message in messages %}
+      <div class="notification is-{{ message.tags }} is-light">{{ message }}
+      </div>
+    {% endfor %}
+  {% endif %}
+  <div class="card">
+    <div class="card-content">
+      <h3>Import BOM</h3>
+      <form action="{% url 'cube:release_import' release.id %}" enctype="multipart/form-data" method="post">
+        {% csrf_token %}
+        {{ form }}
+        {% include "cube/includes/bulma_submit.html" with label="Import now" %}
+      </form>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-content">
+      <h3>Add single component</h3>
+      You can also <a href="{% url 'cube:usage_create' release.id %}">add an individual component</a> to the release.
+    </div>
+  </div>
+
+{% endblock %}
+
+

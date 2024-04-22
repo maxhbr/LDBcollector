@@ -1,0 +1,18 @@
+[license]
+
+expression = "NOSL"
+status = [ "allowed" ]
+
+url = '''
+http://bits.netizen.com.au/licenses/NOSL/nosl.txt
+'''
+
+[fedora]
+
+legacy-name = [
+    "Netizen Open Source License"
+]
+
+legacy-abbreviation = [
+    "NOSL"
+]

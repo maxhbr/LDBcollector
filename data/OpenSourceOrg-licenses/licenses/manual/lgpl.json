@@ -1,0 +1,60 @@
+[
+    {
+        "id": "LGPL-3.0",
+        "identifiers": [],
+        "keywords": [
+            "osi-approved",
+            "popular",
+            "copyleft"
+        ],
+        "links": [
+            {
+                "note": "OSI Page",
+                "url": "https://opensource.org/licenses/LGPL-3.0"
+            }
+        ],
+        "name": "GNU Lesser General Public License, Version 3.0",
+        "superseded_by": null,
+        "text": [
+            {
+                "media_type": "text/plain",
+                "title": "Plain Text",
+                "url": "https://www.gnu.org/licenses/lgpl-3.0.txt"
+            },
+            {
+                "media_type": "text/html",
+                "title": "HTML",
+                "url": "https://www.gnu.org/licenses/lgpl-3.0-standalone.html"
+            }
+        ]
+    },
+    {
+        "id": "LGPL-2.1",
+        "identifiers": [],
+        "keywords": [
+            "osi-approved",
+            "popular",
+            "copyleft"
+        ],
+        "links": [
+            {
+                "note": "OSI Page",
+                "url": "https://opensource.org/licenses/LGPL-2.1"
+            }
+        ],
+        "name": "GNU Lesser General Public License, Version 2.1",
+        "superseded_by": "LGPL-3.0",
+        "text": [
+            {
+                "media_type": "text/plain",
+                "title": "Plain Text",
+                "url": "https://www.gnu.org/licenses/lgpl-2.1.txt"
+            },
+            {
+                "media_type": "text/html",
+                "title": "HTML",
+                "url": "https://www.gnu.org/licenses/lgpl-2.1-standalone.html"
+            }
+        ]
+    }
+]

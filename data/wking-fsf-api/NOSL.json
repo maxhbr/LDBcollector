@@ -1,0 +1,17 @@
+{
+  "@context": "https://wking.github.io/fsf-api/schema/license.jsonld",
+  "id": "NOSL",
+  "identifiers": {
+    "spdx": [
+      "NOSL"
+    ]
+  },
+  "name": "Netizen Open Source License (NOSL), Version 1.0",
+  "tags": [
+    "libre"
+  ],
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#NOSL",
+    "http://directory.fsf.org/wiki/License:NOSLv1.0"
+  ]
+}

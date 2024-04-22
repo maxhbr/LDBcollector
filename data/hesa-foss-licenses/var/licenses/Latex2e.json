@@ -1,0 +1,18 @@
+{
+"meta": {
+    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+    "comment": ""
+  },
+  "name": "Latex2e License",
+  "scancode_key": "latex2e",
+  "spdxid": "Latex2e",
+  "aliases": [
+   "Latex2e",
+   "Latex2e License",
+   "scancode://latex2e",
+   "LATEX2E LICENSE",
+   "LATEX2E License",
+   "https://spdx.org/licenses/latex2e",
+   "scancode:latex2e"
+  ]
+}

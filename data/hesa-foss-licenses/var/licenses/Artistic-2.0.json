@@ -1,0 +1,26 @@
+{
+"meta": {
+    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+    "comment": ""
+  },
+  "name": "Artistic License 2.0",
+  "spdxid": "Artistic-2.0",
+  "scancode_key": "artistic-2.0",
+  "aliases": [
+   "Artistic 2.0",
+   "Artistic License (v. 2.0)",
+   "Artistic License 2.0",
+   "artistic-2.0",
+   "artistic-license-2.0",
+   "Artistic License, Version 2.0",
+   "The Artistic License 2.0",
+   "scancode://artistic-2.0",
+   "Artistic, Version 2.0",
+   "Artistic License (2.0)",
+   "Artistic-2",
+   "scancode:artistic-2.0",
+   "osi:Artistic-2.0",
+   "osi:artistic-license-2.0",
+   "AFL-2"
+  ]
+}

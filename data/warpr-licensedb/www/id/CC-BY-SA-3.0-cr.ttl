@@ -1,0 +1,226 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/elements/1.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://creativecommons.org/licenses/by-sa/3.0/cr/> a cc:License ;
+    cc:jurisdiction <http://creativecommons.org/international/cr/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-sa/3.0/cr/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Attribution,
+        cc:Notice,
+        cc:ShareAlike ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "3.0" ;
+    dc:identifier "by-sa" ;
+    dc:source <http://creativecommons.org/licenses/by-sa/3.0/> ;
+    dc:title "Erkenning-InsgelyksDeel 3.0 Costa Rica"@af,
+        "نسب العمل- المشاركة على قدم المساواة 3.0 Costa Rica"@ar,
+        "Attribution-ShareAlike 3.0 Costa Rica"@as,
+        "Attribution-ShareAlike 3.0 Costa Rica"@ast,
+        "Attribution-ShareAlike 3.0 country.cr"@ast-es,
+        "Attribution-ShareAlike 3.0 Costa Rica"@az,
+        "Attribution-ShareAlike 3.0 Costa Rica"@be,
+        "Признание-Споделяне на споделеното 3.0 Costa Rica"@bg,
+        "Attribution-ShareAlike 3.0 Costa Rica"@bn,
+        "Reconeixement-CompartirIgual 3.0 Costa Rica"@ca,
+        "Uveďte autora-Zachovejte licenci 3.0 Costa Rica"@cs,
+        "Navngivelse-DelPåSammeVilkår 3.0 Costa Rica"@da,
+        "Namensnennung-Weitergabe unter gleichen Bedingungen 3.0 Costa Rica"@de,
+        "Namensnennung-Weitergabe unter gleichen Bedingungen 3.0 Costa Rica"@de-at,
+        "Namensnennung-Weitergabe unter gleichen Bedingungen 3.0 Costa Rica"@de-ch,
+        "Αναφορά Δημιουργού - Παρόμοια Διανομή 3.0 Κόστα Ρίκα"@el,
+        "Attribution-ShareAlike 3.0 Costa Rica"@en,
+        "Attribution-ShareAlike 3.0 Costa Rica"@en-ca,
+        "Attribution-ShareAlike 3.0 Costa Rica"@en-gb,
+        "Attribution-ShareAlike 3.0 Costa Rica"@en-hk,
+        "Attribution-ShareAlike 3.0 Costa Rica"@en-sg,
+        "Attribution-ShareAlike 3.0 Costa Rica"@en-us,
+        "Atribuite-Samkondiĉe 3.0 Kostariko"@eo,
+        "Atribución-CompartirIgual 3.0 Costa Rica"@es,
+        "Atribución-CompartirDerivadasIgual 3.0 Costa Rica"@es-ar,
+        "Reconocimiento-CompartirIgual 3.0 Costa Rica"@es-es,
+        "Reconocimiento-CompartirIgual 3.0 Costa Rica"@es-pe,
+        "Autorile viitamine + Jagamine samadel tingimustel 3.0 Costa Rica"@et,
+        "Aitortu-PartekatuBerdin 3.0 Costa Rica"@eu,
+        "Attribution-ShareAlike 3.0 کاستاریکا"@fa,
+        "Nimeä-Tarttuva 3.0 Costa Rica"@fi,
+        "Paternité - Partage à l'Identique 3.0 Costa Rica"@fr,
+        "Paternité - Partage des Conditions Initiales à l'Identique 3.0 Costa Rica"@fr-ca,
+        "Paternité - Partage des Conditions Initiales à l'Identique 3.0 Costa Rica"@fr-ch,
+        "Paternité - Partage des Conditions Initiales à l'Identique 3.0 Costa Rica"@fr-lu,
+        "Attribution-ShareAlike 3.0 Costa Rica"@ga,
+        "Recoñecemento-CompartirIgual 3.0 Costa Rica"@gl,
+        "ייחוס-שיתוף זהה 3.0 Costa Rica"@he,
+        "Attribution-ShareAlike 3.0 Costa Rica"@hi,
+        "Imenovanje-Dijeli pod istim uvjetima 3.0 Costa Rica"@hr,
+        "Nevezd meg! - Így add tovább! 3.0 Costa Rica"@hu,
+        "Հղում - համանման տարածում 3.0 Costa Rica"@hy,
+        "Atribusi-BerbagiSerupa 3.0 Kosta Rika"@id,
+        "Attribution-ShareAlike 3.0 Costa Rica"@is,
+        "Attribuzione - Condividi allo stesso modo 3.0 Costa Rica"@it,
+        "Attribuzione - Condividi allo stesso modo 3.0 Costa Rica"@it-ch,
+        "表示 - 継承 3.0 コスタ・リカ"@ja,
+        "ავტორობის მითითებით – გავრცელება იგივე პირობებით  3.0 Costa Rica"@ka,
+        "Attribution-ShareAlike 3.0 Costa Rica"@kk,
+        "저작자표시-동일조건변경허락 3.0 코스타리카"@ko,
+        "Attribution-ShareAlike 3.0 Costa Rica"@lt,
+        "Atsaucoties-Nemainot licenci 3.0 Costa Rica"@lv,
+        "НаведиИзвор-СподелиПодИстиУслови 3.0 Костарика"@mk,
+        "Attribution-ShareAlike 3.0 Costa Rica"@ml,
+        "Attribution-ShareAlike 3.0 Costa Rica"@mn,
+        "Pengiktirafan-PerkongsianSerupa 3.0 Costa Rica"@ms,
+        "Naamsvermelding-GelijkDelen 3.0 Costa Rica"@nl,
+        "Navngivelse-DelPåSammeVilkår 3.0 Costa Rica"@no,
+        "Tsebagatšo -Mohlakanelwa 3.0 Costa Rica"@nso,
+        "Attribution-ShareAlike 3.0 Costa Rica"@oci-es,
+        "Uznanie autorstwa-Na tych samych warunkach 3.0 Kostaryka"@pl,
+        "Atribuição - CompartilhaIgual 3.0 Costa Rica"@pt,
+        "Attribution-ShareAlike 3.0 Costa Rica"@pt-br,
+        "Atribuição-Partilha nos termos da mesma licença 3.0 Costa Rica"@pt-pt,
+        "Atribuire - Distribuire-în-condiţii-identice 3.0 Costa Rica"@ro,
+        "Attribution-ShareAlike (Атрибуция — С сохранением условий) 3.0 Коста-Рика"@ru,
+        "Attribution-ShareAlike 3.0 Costa Rica"@si-lk,
+        "Priznanje avtorstva-Deljenje pod enakimi pogoji 3.0 Costa Rica"@sl,
+        "Attribution-ShareAlike 3.0 Kosta Rika"@sq,
+        "Autorstvo-Deliti pod istim uslovima 3.0 country.cr"@sr,
+        "Ауторство-Делити под истим условима 3.0 Costa Rica"@sr,
+        "Autorstvo-Deliti pod istim uslovima 3.0 Costa Rica"@sr-latn,
+        "Erkännande-DelaLika 3.0 Costa Rica"@sv,
+        "Attribution-ShareAlike 3.0 Costa Rica"@ta,
+        "Attribution-ShareAlike 3.0 కోస్టా రికా"@te,
+        "แสดงที่มา-อนุญาตแบบเดียวกัน 3.0 Costa Rica"@th,
+        "Alıntı-LisansıDevamEttirme 3.0 Kostarika"@tr,
+        "Attribution-ShareAlike 3.0 Costa Rica"@uk,
+        "Attribution-ShareAlike 3.0 Costa Rica"@ur,
+        "Attribution-ShareAlike 3.0 Costa Rica"@vi,
+        "署名-相同方式共享 3.0 Costa Rica"@zh,
+        "姓名標示-相同方式分享 3.0 Costa Rica"@zh-hk,
+        "姓名標示-相同方式分享 3.0 Costa Rica"@zh-tw,
+        "姓名標示-相同方式分享 3.0 哥斯大黎加"@zh-tw,
+        "Qaphela Umnikazi-Zihlanganyeleni 3.0 Costa Rica"@zu,
+        "${Attribution-ShareAlike} 3.0 ${Costa Rica}"@zxx ;
+    owl:sameAs <https://licensedb.org/id/CC-BY-SA-3.0-cr> ;
+    foaf:logo <http://i.creativecommons.org/l/by-sa/3.0/cr/80x15.png>,
+        <http://i.creativecommons.org/l/by-sa/3.0/cr/88x31.png> .
+
+<https://licensedb.org/id/CC-BY-SA-3.0-cr> a cc:License,
+        li:License ;
+    cc:jurisdiction <http://creativecommons.org/international/cr/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-sa/3.0/cr/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Attribution,
+        cc:Notice,
+        cc:ShareAlike ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "3.0" ;
+    dc:identifier "by-sa" ;
+    dc:source <http://creativecommons.org/licenses/by-sa/3.0/> ;
+    dc:title "Erkenning-InsgelyksDeel 3.0 Costa Rica"@af,
+        "نسب العمل- المشاركة على قدم المساواة 3.0 Costa Rica"@ar,
+        "Attribution-ShareAlike 3.0 Costa Rica"@as,
+        "Attribution-ShareAlike 3.0 Costa Rica"@ast,
+        "Attribution-ShareAlike 3.0 country.cr"@ast-es,
+        "Attribution-ShareAlike 3.0 Costa Rica"@az,
+        "Attribution-ShareAlike 3.0 Costa Rica"@be,
+        "Признание-Споделяне на споделеното 3.0 Costa Rica"@bg,
+        "Attribution-ShareAlike 3.0 Costa Rica"@bn,
+        "Reconeixement-CompartirIgual 3.0 Costa Rica"@ca,
+        "Uveďte autora-Zachovejte licenci 3.0 Costa Rica"@cs,
+        "Navngivelse-DelPåSammeVilkår 3.0 Costa Rica"@da,
+        "Namensnennung-Weitergabe unter gleichen Bedingungen 3.0 Costa Rica"@de,
+        "Namensnennung-Weitergabe unter gleichen Bedingungen 3.0 Costa Rica"@de-at,
+        "Namensnennung-Weitergabe unter gleichen Bedingungen 3.0 Costa Rica"@de-ch,
+        "Αναφορά Δημιουργού - Παρόμοια Διανομή 3.0 Κόστα Ρίκα"@el,
+        "Attribution-ShareAlike 3.0 Costa Rica"@en,
+        "Attribution-ShareAlike 3.0 Costa Rica"@en-ca,
+        "Attribution-ShareAlike 3.0 Costa Rica"@en-gb,
+        "Attribution-ShareAlike 3.0 Costa Rica"@en-hk,
+        "Attribution-ShareAlike 3.0 Costa Rica"@en-sg,
+        "Attribution-ShareAlike 3.0 Costa Rica"@en-us,
+        "Atribuite-Samkondiĉe 3.0 Kostariko"@eo,
+        "Atribución-CompartirIgual 3.0 Costa Rica"@es,
+        "Atribución-CompartirDerivadasIgual 3.0 Costa Rica"@es-ar,
+        "Reconocimiento-CompartirIgual 3.0 Costa Rica"@es-es,
+        "Reconocimiento-CompartirIgual 3.0 Costa Rica"@es-pe,
+        "Autorile viitamine + Jagamine samadel tingimustel 3.0 Costa Rica"@et,
+        "Aitortu-PartekatuBerdin 3.0 Costa Rica"@eu,
+        "Attribution-ShareAlike 3.0 کاستاریکا"@fa,
+        "Nimeä-Tarttuva 3.0 Costa Rica"@fi,
+        "Paternité - Partage à l'Identique 3.0 Costa Rica"@fr,
+        "Paternité - Partage des Conditions Initiales à l'Identique 3.0 Costa Rica"@fr-ca,
+        "Paternité - Partage des Conditions Initiales à l'Identique 3.0 Costa Rica"@fr-ch,
+        "Paternité - Partage des Conditions Initiales à l'Identique 3.0 Costa Rica"@fr-lu,
+        "Attribution-ShareAlike 3.0 Costa Rica"@ga,
+        "Recoñecemento-CompartirIgual 3.0 Costa Rica"@gl,
+        "ייחוס-שיתוף זהה 3.0 Costa Rica"@he,
+        "Attribution-ShareAlike 3.0 Costa Rica"@hi,
+        "Imenovanje-Dijeli pod istim uvjetima 3.0 Costa Rica"@hr,
+        "Nevezd meg! - Így add tovább! 3.0 Costa Rica"@hu,
+        "Հղում - համանման տարածում 3.0 Costa Rica"@hy,
+        "Atribusi-BerbagiSerupa 3.0 Kosta Rika"@id,
+        "Attribution-ShareAlike 3.0 Costa Rica"@is,
+        "Attribuzione - Condividi allo stesso modo 3.0 Costa Rica"@it,
+        "Attribuzione - Condividi allo stesso modo 3.0 Costa Rica"@it-ch,
+        "表示 - 継承 3.0 コスタ・リカ"@ja,
+        "ავტორობის მითითებით – გავრცელება იგივე პირობებით  3.0 Costa Rica"@ka,
+        "Attribution-ShareAlike 3.0 Costa Rica"@kk,
+        "저작자표시-동일조건변경허락 3.0 코스타리카"@ko,
+        "Attribution-ShareAlike 3.0 Costa Rica"@lt,
+        "Atsaucoties-Nemainot licenci 3.0 Costa Rica"@lv,
+        "НаведиИзвор-СподелиПодИстиУслови 3.0 Костарика"@mk,
+        "Attribution-ShareAlike 3.0 Costa Rica"@ml,
+        "Attribution-ShareAlike 3.0 Costa Rica"@mn,
+        "Pengiktirafan-PerkongsianSerupa 3.0 Costa Rica"@ms,
+        "Naamsvermelding-GelijkDelen 3.0 Costa Rica"@nl,
+        "Navngivelse-DelPåSammeVilkår 3.0 Costa Rica"@no,
+        "Tsebagatšo -Mohlakanelwa 3.0 Costa Rica"@nso,
+        "Attribution-ShareAlike 3.0 Costa Rica"@oci-es,
+        "Uznanie autorstwa-Na tych samych warunkach 3.0 Kostaryka"@pl,
+        "Atribuição - CompartilhaIgual 3.0 Costa Rica"@pt,
+        "Attribution-ShareAlike 3.0 Costa Rica"@pt-br,
+        "Atribuição-Partilha nos termos da mesma licença 3.0 Costa Rica"@pt-pt,
+        "Atribuire - Distribuire-în-condiţii-identice 3.0 Costa Rica"@ro,
+        "Attribution-ShareAlike (Атрибуция — С сохранением условий) 3.0 Коста-Рика"@ru,
+        "Attribution-ShareAlike 3.0 Costa Rica"@si-lk,
+        "Priznanje avtorstva-Deljenje pod enakimi pogoji 3.0 Costa Rica"@sl,
+        "Attribution-ShareAlike 3.0 Kosta Rika"@sq,
+        "Autorstvo-Deliti pod istim uslovima 3.0 country.cr"@sr,
+        "Ауторство-Делити под истим условима 3.0 Costa Rica"@sr,
+        "Autorstvo-Deliti pod istim uslovima 3.0 Costa Rica"@sr-latn,
+        "Erkännande-DelaLika 3.0 Costa Rica"@sv,
+        "Attribution-ShareAlike 3.0 Costa Rica"@ta,
+        "Attribution-ShareAlike 3.0 కోస్టా రికా"@te,
+        "แสดงที่มา-อนุญาตแบบเดียวกัน 3.0 Costa Rica"@th,
+        "Alıntı-LisansıDevamEttirme 3.0 Kostarika"@tr,
+        "Attribution-ShareAlike 3.0 Costa Rica"@uk,
+        "Attribution-ShareAlike 3.0 Costa Rica"@ur,
+        "Attribution-ShareAlike 3.0 Costa Rica"@vi,
+        "署名-相同方式共享 3.0 Costa Rica"@zh,
+        "姓名標示-相同方式分享 3.0 Costa Rica"@zh-hk,
+        "姓名標示-相同方式分享 3.0 Costa Rica"@zh-tw,
+        "姓名標示-相同方式分享 3.0 哥斯大黎加"@zh-tw,
+        "Qaphela Umnikazi-Zihlanganyeleni 3.0 Costa Rica"@zu,
+        "${Attribution-ShareAlike} 3.0 ${Costa Rica}"@zxx ;
+    owl:sameAs <http://creativecommons.org/licenses/by-sa/3.0/cr/> ;
+    foaf:logo <http://i.creativecommons.org/l/by-sa/3.0/cr/80x15.png>,
+        <http://i.creativecommons.org/l/by-sa/3.0/cr/88x31.png> ;
+    li:id "CC-BY-SA-3.0-cr" ;
+    li:libre <http://creativecommons.org/> ;
+    li:name "CC BY-SA 3.0 CR" .
+

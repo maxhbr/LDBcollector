@@ -1,0 +1,853 @@
+{
+    "@context": {
+        "cc": "http://creativecommons.org/ns#",
+        "dc": "http://purl.org/dc/terms/",
+        "dc11": "http://purl.org/dc/elements/1.1/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "li": "https://licensedb.org/ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "cc:legalcode": {
+            "@type": "@id"
+        },
+        "cc:permits": {
+            "@type": "@id"
+        },
+        "cc:requires": {
+            "@type": "@id"
+        },
+        "cc:prohibits": {
+            "@type": "@id"
+        },
+        "cc:jurisdiction": {
+            "@type": "@id"
+        },
+        "cc:licenseClass": {
+            "@type": "@id"
+        },
+        "dc:creator": {
+            "@type": "@id"
+        },
+        "dc:source": {
+            "@type": "@id"
+        },
+        "dc:replaces": {
+            "@type": "@id"
+        },
+        "dc:isBasedOn": {
+            "@type": "@id"
+        },
+        "dc:isReplacedBy": {
+            "@type": "@id"
+        },
+        "foaf:logo": {
+            "@type": "@id"
+        },
+        "li:plaintext": {
+            "@type": "@id"
+        },
+        "li:libre": {
+            "@type": "@id"
+        },
+        "owl:sameAs": {
+            "@type": "@id"
+        }
+    },
+    "@id": "https://licensedb.org/id/CC-BY-SA-2.5-se",
+    "@type": [
+        "cc:License",
+        "li:License"
+    ],
+    "cc:jurisdiction": "http://creativecommons.org/international/se/",
+    "cc:legalcode": "http://creativecommons.org/licenses/by-sa/2.5/se/legalcode",
+    "cc:licenseClass": "http://creativecommons.org/license/",
+    "cc:permits": [
+        "cc:DerivativeWorks",
+        "cc:Distribution",
+        "cc:Reproduction"
+    ],
+    "cc:requires": [
+        "cc:Attribution",
+        "cc:Notice",
+        "cc:ShareAlike"
+    ],
+    "dc:creator": "http://creativecommons.org",
+    "dc:hasVersion": "2.5",
+    "dc:identifier": "by-sa",
+    "dc:source": "http://creativecommons.org/licenses/by-sa/2.5/",
+    "dc:title": [
+        {
+            "@language": "af",
+            "@value": "Erkenning-InsgelyksDeel 2.5 Swede"
+        },
+        {
+            "@language": "ar",
+            "@value": "نسب العمل- المشاركة على قدم المساواة 2.5 السويد"
+        },
+        {
+            "@language": "as",
+            "@value": "Attribution-ShareAlike 2.5 Sweden"
+        },
+        {
+            "@language": "ast",
+            "@value": "Attribution-ShareAlike 2.5 Sweden"
+        },
+        {
+            "@language": "ast-es",
+            "@value": "Attribution-ShareAlike 2.5 Sweden"
+        },
+        {
+            "@language": "az",
+            "@value": "Attribution-ShareAlike 2.5 Sweden"
+        },
+        {
+            "@language": "be",
+            "@value": "Attribution-ShareAlike 2.5 Швецыя"
+        },
+        {
+            "@language": "bg",
+            "@value": "Признание-Споделяне на споделеното 2.5 Швеция"
+        },
+        {
+            "@language": "bn",
+            "@value": "Attribution-ShareAlike 2.5 Sweden"
+        },
+        {
+            "@language": "ca",
+            "@value": "Reconeixement-CompartirIgual 2.5 Suècia"
+        },
+        {
+            "@language": "cs",
+            "@value": "Uveďte autora-Zachovejte licenci 2.5 Švédsko"
+        },
+        {
+            "@language": "da",
+            "@value": "Navngivelse-DelPåSammeVilkår 2.5 Sverige"
+        },
+        {
+            "@language": "de",
+            "@value": "Namensnennung-Weitergabe unter gleichen Bedingungen 2.5 Schweden"
+        },
+        {
+            "@language": "de-at",
+            "@value": "Namensnennung-Weitergabe unter gleichen Bedingungen 2.5 Schweden"
+        },
+        {
+            "@language": "de-ch",
+            "@value": "Namensnennung-Weitergabe unter gleichen Bedingungen 2.5 Schweden"
+        },
+        {
+            "@language": "el",
+            "@value": "Αναφορά Δημιουργού - Παρόμοια Διανομή 2.5 Σουηδία"
+        },
+        {
+            "@language": "en",
+            "@value": "Attribution-ShareAlike 2.5 Sweden"
+        },
+        {
+            "@language": "en-ca",
+            "@value": "Attribution-ShareAlike 2.5 Sweden"
+        },
+        {
+            "@language": "en-gb",
+            "@value": "Attribution-ShareAlike 2.5 Sweden"
+        },
+        {
+            "@language": "en-hk",
+            "@value": "Attribution-ShareAlike 2.5 Sweden"
+        },
+        {
+            "@language": "en-sg",
+            "@value": "Attribution-ShareAlike 2.5 Sweden"
+        },
+        {
+            "@language": "en-us",
+            "@value": "Attribution-ShareAlike 2.5 Sweden"
+        },
+        {
+            "@language": "eo",
+            "@value": "Atribuite-Samkondiĉe 2.5 Svedujo"
+        },
+        {
+            "@language": "es",
+            "@value": "Atribución-CompartirIgual 2.5 Suecia"
+        },
+        {
+            "@language": "es-ar",
+            "@value": "Atribución-CompartirDerivadasIgual 2.5 Suecia"
+        },
+        {
+            "@language": "es-cl",
+            "@value": "Atribución-LicenciarIgual 2.5 Suecia"
+        },
+        {
+            "@language": "es-co",
+            "@value": "Reconocimiento-CompartirIgual 2.5 Suecia"
+        },
+        {
+            "@language": "es-ec",
+            "@value": "Reconocimiento-CompartirIgual 2.5 Suecia"
+        },
+        {
+            "@language": "es-es",
+            "@value": "Reconocimiento-CompartirIgual 2.5 Suecia"
+        },
+        {
+            "@language": "es-gt",
+            "@value": "Reconocimiento-CompartirIgual 2.5 Suecia"
+        },
+        {
+            "@language": "es-mx",
+            "@value": "Atribución-Licenciamiento Recíproco 2.5 Suecia"
+        },
+        {
+            "@language": "es-pe",
+            "@value": "Reconocimiento-CompartirIgual 2.5 Suecia"
+        },
+        {
+            "@language": "es-pr",
+            "@value": "Reconocimiento-CompartirIgual 2.5 Suecia"
+        },
+        {
+            "@language": "et",
+            "@value": "Autorile viitamine + Jagamine samadel tingimustel 2.5 Rootsi"
+        },
+        {
+            "@language": "eu",
+            "@value": "Aitortu-PartekatuBerdin 2.5 Suedia"
+        },
+        {
+            "@language": "fa",
+            "@value": "Attribution-ShareAlike 2.5 سوئد"
+        },
+        {
+            "@language": "fi",
+            "@value": "Nimeä-Tarttuva 2.5 Ruotsi"
+        },
+        {
+            "@language": "fr",
+            "@value": "Paternité - Partage à l'Identique 2.5 Suède"
+        },
+        {
+            "@language": "fr-ca",
+            "@value": "Paternité - Partage des Conditions Initiales à l'Identique 2.5 Suède"
+        },
+        {
+            "@language": "fr-ch",
+            "@value": "Paternité - Partage des Conditions Initiales à l'Identique 2.5 Suède"
+        },
+        {
+            "@language": "fr-lu",
+            "@value": "Paternité - Partage des Conditions Initiales à l'Identique 2.5 Suède"
+        },
+        {
+            "@language": "ga",
+            "@value": "Attribution-ShareAlike 2.5 Sweden"
+        },
+        {
+            "@language": "gl",
+            "@value": "Recoñecemento-CompartirIgual 2.5 Sweden"
+        },
+        {
+            "@language": "he",
+            "@value": "ייחוס-שיתוף זהה 2.5 שוודיה"
+        },
+        {
+            "@language": "hi",
+            "@value": "Attribution-ShareAlike 2.5 Sweden"
+        },
+        {
+            "@language": "hr",
+            "@value": "Imenovanje-Dijeli pod istim uvjetima 2.5 Švedska"
+        },
+        {
+            "@language": "hu",
+            "@value": "Nevezd meg! - Így add tovább! 2.5 Svédország"
+        },
+        {
+            "@language": "hy",
+            "@value": "Հղում - համանման տարածում 2.5 Շվեդիա"
+        },
+        {
+            "@language": "id",
+            "@value": "Atribusi-BerbagiSerupa 2.5 Swedia"
+        },
+        {
+            "@language": "is",
+            "@value": "Attribution-ShareAlike 2.5 Sweden"
+        },
+        {
+            "@language": "it",
+            "@value": "Attribuzione - Condividi allo stesso modo 2.5 Sweden"
+        },
+        {
+            "@language": "it-ch",
+            "@value": "Attribuzione - Condividi allo stesso modo 2.5 Sweden"
+        },
+        {
+            "@language": "ja",
+            "@value": "表示 - 継承 2.5 スエーデン"
+        },
+        {
+            "@language": "ka",
+            "@value": "ავტორობის მითითებით – გავრცელება იგივე პირობებით  2.5 შვედეთი"
+        },
+        {
+            "@language": "kk",
+            "@value": "Attribution-ShareAlike 2.5 Sweden"
+        },
+        {
+            "@language": "ko",
+            "@value": "저작자표시-동일조건변경허락 2.5 스웨덴"
+        },
+        {
+            "@language": "lt",
+            "@value": "Attribution-ShareAlike 2.5 Švedija"
+        },
+        {
+            "@language": "lv",
+            "@value": "Atsaucoties-Nemainot licenci 2.5 Zviedrija"
+        },
+        {
+            "@language": "mk",
+            "@value": "НаведиИзвор-СподелиПодИстиУслови 2.5 Шведска"
+        },
+        {
+            "@language": "ml",
+            "@value": "Attribution-ShareAlike 2.5 സ്വീഡൻ"
+        },
+        {
+            "@language": "mn",
+            "@value": "Attribution-ShareAlike 2.5 Sweden"
+        },
+        {
+            "@language": "ms",
+            "@value": "Pengiktirafan-PerkongsianSerupa 2.5 Sweden"
+        },
+        {
+            "@language": "nl",
+            "@value": "Naamsvermelding-GelijkDelen 2.5 Zweden"
+        },
+        {
+            "@language": "no",
+            "@value": "Navngivelse-DelPåSammeVilkår 2.5 Sverige"
+        },
+        {
+            "@language": "nso",
+            "@value": "Tsebagatšo -Mohlakanelwa 2.5 Sweden"
+        },
+        {
+            "@language": "oci-es",
+            "@value": "Attribution-ShareAlike 2.5 Sweden"
+        },
+        {
+            "@language": "pl",
+            "@value": "Uznanie autorstwa-Na tych samych warunkach 2.5 Szwecja"
+        },
+        {
+            "@language": "pt",
+            "@value": "Atribuição - CompartilhaIgual 2.5 Suécia"
+        },
+        {
+            "@language": "pt-br",
+            "@value": "Attribution-ShareAlike 2.5 Sweden"
+        },
+        {
+            "@language": "pt-pt",
+            "@value": "Atribuição-Partilha nos termos da mesma licença 2.5 Sweden"
+        },
+        {
+            "@language": "ro",
+            "@value": "Atribuire - Distribuire-în-condiţii-identice 2.5 Suedia"
+        },
+        {
+            "@language": "ru",
+            "@value": "Attribution-ShareAlike (Атрибуция — С сохранением условий) 2.5 Швеция"
+        },
+        {
+            "@language": "si-lk",
+            "@value": "Attribution-ShareAlike 2.5 Sweden"
+        },
+        {
+            "@language": "sl",
+            "@value": "Priznanje avtorstva-Deljenje pod enakimi pogoji 2.5 Švedska"
+        },
+        {
+            "@language": "sq",
+            "@value": "Attribution-ShareAlike 2.5 Suedi"
+        },
+        {
+            "@language": "sr",
+            "@value": "Autorstvo-Deliti pod istim uslovima 2.5 Švedska"
+        },
+        {
+            "@language": "sr",
+            "@value": "Ауторство-Делити под истим условима 2.5 Шведска"
+        },
+        {
+            "@language": "sr-latn",
+            "@value": "Autorstvo-Deliti pod istim uslovima 2.5 Švedska"
+        },
+        {
+            "@language": "st",
+            "@value": "Attribution-ShareAlike 2.5 Sweden"
+        },
+        {
+            "@language": "sv",
+            "@value": "Erkännande-DelaLika 2.5 Sverige"
+        },
+        {
+            "@language": "ta",
+            "@value": "Attribution-ShareAlike 2.5 Sweden"
+        },
+        {
+            "@language": "te",
+            "@value": "Attribution-ShareAlike 2.5 స్వీడన్"
+        },
+        {
+            "@language": "th",
+            "@value": "แสดงที่มา-อนุญาตแบบเดียวกัน 2.5 สวีเดน"
+        },
+        {
+            "@language": "tr",
+            "@value": "Alıntı-LisansıDevamEttirme 2.5 İsveç"
+        },
+        {
+            "@language": "uk",
+            "@value": "Attribution-ShareAlike 2.5 Sweden"
+        },
+        {
+            "@language": "ur",
+            "@value": "Attribution-ShareAlike 2.5 Sweden"
+        },
+        {
+            "@language": "vi",
+            "@value": "Attribution-ShareAlike 2.5 Sweden"
+        },
+        {
+            "@language": "zh",
+            "@value": "署名-相同方式共享 2.5 瑞典"
+        },
+        {
+            "@language": "zh-hk",
+            "@value": "姓名標示-相同方式分享 2.5 瑞典"
+        },
+        {
+            "@language": "zh-tw",
+            "@value": "姓名標示-相同方式分享 2.5 瑞典"
+        },
+        {
+            "@language": "zu",
+            "@value": "Qaphela Umnikazi-Zihlanganyeleni 2.5 iSweden"
+        },
+        {
+            "@language": "zxx",
+            "@value": "${Attribution-ShareAlike} 2.5 ${Sweden}"
+        }
+    ],
+    "owl:sameAs": {
+        "@id": "http://creativecommons.org/licenses/by-sa/2.5/se/",
+        "@type": "cc:License",
+        "cc:jurisdiction": "http://creativecommons.org/international/se/",
+        "cc:legalcode": "http://creativecommons.org/licenses/by-sa/2.5/se/legalcode",
+        "cc:licenseClass": "http://creativecommons.org/license/",
+        "cc:permits": [
+            "cc:DerivativeWorks",
+            "cc:Distribution",
+            "cc:Reproduction"
+        ],
+        "cc:requires": [
+            "cc:Attribution",
+            "cc:Notice",
+            "cc:ShareAlike"
+        ],
+        "dc:creator": "http://creativecommons.org",
+        "dc:hasVersion": "2.5",
+        "dc:identifier": "by-sa",
+        "dc:source": "http://creativecommons.org/licenses/by-sa/2.5/",
+        "dc:title": [
+            {
+                "@language": "af",
+                "@value": "Erkenning-InsgelyksDeel 2.5 Swede"
+            },
+            {
+                "@language": "ar",
+                "@value": "نسب العمل- المشاركة على قدم المساواة 2.5 السويد"
+            },
+            {
+                "@language": "as",
+                "@value": "Attribution-ShareAlike 2.5 Sweden"
+            },
+            {
+                "@language": "ast",
+                "@value": "Attribution-ShareAlike 2.5 Sweden"
+            },
+            {
+                "@language": "ast-es",
+                "@value": "Attribution-ShareAlike 2.5 Sweden"
+            },
+            {
+                "@language": "az",
+                "@value": "Attribution-ShareAlike 2.5 Sweden"
+            },
+            {
+                "@language": "be",
+                "@value": "Attribution-ShareAlike 2.5 Швецыя"
+            },
+            {
+                "@language": "bg",
+                "@value": "Признание-Споделяне на споделеното 2.5 Швеция"
+            },
+            {
+                "@language": "bn",
+                "@value": "Attribution-ShareAlike 2.5 Sweden"
+            },
+            {
+                "@language": "ca",
+                "@value": "Reconeixement-CompartirIgual 2.5 Suècia"
+            },
+            {
+                "@language": "cs",
+                "@value": "Uveďte autora-Zachovejte licenci 2.5 Švédsko"
+            },
+            {
+                "@language": "da",
+                "@value": "Navngivelse-DelPåSammeVilkår 2.5 Sverige"
+            },
+            {
+                "@language": "de",
+                "@value": "Namensnennung-Weitergabe unter gleichen Bedingungen 2.5 Schweden"
+            },
+            {
+                "@language": "de-at",
+                "@value": "Namensnennung-Weitergabe unter gleichen Bedingungen 2.5 Schweden"
+            },
+            {
+                "@language": "de-ch",
+                "@value": "Namensnennung-Weitergabe unter gleichen Bedingungen 2.5 Schweden"
+            },
+            {
+                "@language": "el",
+                "@value": "Αναφορά Δημιουργού - Παρόμοια Διανομή 2.5 Σουηδία"
+            },
+            {
+                "@language": "en",
+                "@value": "Attribution-ShareAlike 2.5 Sweden"
+            },
+            {
+                "@language": "en-ca",
+                "@value": "Attribution-ShareAlike 2.5 Sweden"
+            },
+            {
+                "@language": "en-gb",
+                "@value": "Attribution-ShareAlike 2.5 Sweden"
+            },
+            {
+                "@language": "en-hk",
+                "@value": "Attribution-ShareAlike 2.5 Sweden"
+            },
+            {
+                "@language": "en-sg",
+                "@value": "Attribution-ShareAlike 2.5 Sweden"
+            },
+            {
+                "@language": "en-us",
+                "@value": "Attribution-ShareAlike 2.5 Sweden"
+            },
+            {
+                "@language": "eo",
+                "@value": "Atribuite-Samkondiĉe 2.5 Svedujo"
+            },
+            {
+                "@language": "es",
+                "@value": "Atribución-CompartirIgual 2.5 Suecia"
+            },
+            {
+                "@language": "es-ar",
+                "@value": "Atribución-CompartirDerivadasIgual 2.5 Suecia"
+            },
+            {
+                "@language": "es-cl",
+                "@value": "Atribución-LicenciarIgual 2.5 Suecia"
+            },
+            {
+                "@language": "es-co",
+                "@value": "Reconocimiento-CompartirIgual 2.5 Suecia"
+            },
+            {
+                "@language": "es-ec",
+                "@value": "Reconocimiento-CompartirIgual 2.5 Suecia"
+            },
+            {
+                "@language": "es-es",
+                "@value": "Reconocimiento-CompartirIgual 2.5 Suecia"
+            },
+            {
+                "@language": "es-gt",
+                "@value": "Reconocimiento-CompartirIgual 2.5 Suecia"
+            },
+            {
+                "@language": "es-mx",
+                "@value": "Atribución-Licenciamiento Recíproco 2.5 Suecia"
+            },
+            {
+                "@language": "es-pe",
+                "@value": "Reconocimiento-CompartirIgual 2.5 Suecia"
+            },
+            {
+                "@language": "es-pr",
+                "@value": "Reconocimiento-CompartirIgual 2.5 Suecia"
+            },
+            {
+                "@language": "et",
+                "@value": "Autorile viitamine + Jagamine samadel tingimustel 2.5 Rootsi"
+            },
+            {
+                "@language": "eu",
+                "@value": "Aitortu-PartekatuBerdin 2.5 Suedia"
+            },
+            {
+                "@language": "fa",
+                "@value": "Attribution-ShareAlike 2.5 سوئد"
+            },
+            {
+                "@language": "fi",
+                "@value": "Nimeä-Tarttuva 2.5 Ruotsi"
+            },
+            {
+                "@language": "fr",
+                "@value": "Paternité - Partage à l'Identique 2.5 Suède"
+            },
+            {
+                "@language": "fr-ca",
+                "@value": "Paternité - Partage des Conditions Initiales à l'Identique 2.5 Suède"
+            },
+            {
+                "@language": "fr-ch",
+                "@value": "Paternité - Partage des Conditions Initiales à l'Identique 2.5 Suède"
+            },
+            {
+                "@language": "fr-lu",
+                "@value": "Paternité - Partage des Conditions Initiales à l'Identique 2.5 Suède"
+            },
+            {
+                "@language": "ga",
+                "@value": "Attribution-ShareAlike 2.5 Sweden"
+            },
+            {
+                "@language": "gl",
+                "@value": "Recoñecemento-CompartirIgual 2.5 Sweden"
+            },
+            {
+                "@language": "he",
+                "@value": "ייחוס-שיתוף זהה 2.5 שוודיה"
+            },
+            {
+                "@language": "hi",
+                "@value": "Attribution-ShareAlike 2.5 Sweden"
+            },
+            {
+                "@language": "hr",
+                "@value": "Imenovanje-Dijeli pod istim uvjetima 2.5 Švedska"
+            },
+            {
+                "@language": "hu",
+                "@value": "Nevezd meg! - Így add tovább! 2.5 Svédország"
+            },
+            {
+                "@language": "hy",
+                "@value": "Հղում - համանման տարածում 2.5 Շվեդիա"
+            },
+            {
+                "@language": "id",
+                "@value": "Atribusi-BerbagiSerupa 2.5 Swedia"
+            },
+            {
+                "@language": "is",
+                "@value": "Attribution-ShareAlike 2.5 Sweden"
+            },
+            {
+                "@language": "it",
+                "@value": "Attribuzione - Condividi allo stesso modo 2.5 Sweden"
+            },
+            {
+                "@language": "it-ch",
+                "@value": "Attribuzione - Condividi allo stesso modo 2.5 Sweden"
+            },
+            {
+                "@language": "ja",
+                "@value": "表示 - 継承 2.5 スエーデン"
+            },
+            {
+                "@language": "ka",
+                "@value": "ავტორობის მითითებით – გავრცელება იგივე პირობებით  2.5 შვედეთი"
+            },
+            {
+                "@language": "kk",
+                "@value": "Attribution-ShareAlike 2.5 Sweden"
+            },
+            {
+                "@language": "ko",
+                "@value": "저작자표시-동일조건변경허락 2.5 스웨덴"
+            },
+            {
+                "@language": "lt",
+                "@value": "Attribution-ShareAlike 2.5 Švedija"
+            },
+            {
+                "@language": "lv",
+                "@value": "Atsaucoties-Nemainot licenci 2.5 Zviedrija"
+            },
+            {
+                "@language": "mk",
+                "@value": "НаведиИзвор-СподелиПодИстиУслови 2.5 Шведска"
+            },
+            {
+                "@language": "ml",
+                "@value": "Attribution-ShareAlike 2.5 സ്വീഡൻ"
+            },
+            {
+                "@language": "mn",
+                "@value": "Attribution-ShareAlike 2.5 Sweden"
+            },
+            {
+                "@language": "ms",
+                "@value": "Pengiktirafan-PerkongsianSerupa 2.5 Sweden"
+            },
+            {
+                "@language": "nl",
+                "@value": "Naamsvermelding-GelijkDelen 2.5 Zweden"
+            },
+            {
+                "@language": "no",
+                "@value": "Navngivelse-DelPåSammeVilkår 2.5 Sverige"
+            },
+            {
+                "@language": "nso",
+                "@value": "Tsebagatšo -Mohlakanelwa 2.5 Sweden"
+            },
+            {
+                "@language": "oci-es",
+                "@value": "Attribution-ShareAlike 2.5 Sweden"
+            },
+            {
+                "@language": "pl",
+                "@value": "Uznanie autorstwa-Na tych samych warunkach 2.5 Szwecja"
+            },
+            {
+                "@language": "pt",
+                "@value": "Atribuição - CompartilhaIgual 2.5 Suécia"
+            },
+            {
+                "@language": "pt-br",
+                "@value": "Attribution-ShareAlike 2.5 Sweden"
+            },
+            {
+                "@language": "pt-pt",
+                "@value": "Atribuição-Partilha nos termos da mesma licença 2.5 Sweden"
+            },
+            {
+                "@language": "ro",
+                "@value": "Atribuire - Distribuire-în-condiţii-identice 2.5 Suedia"
+            },
+            {
+                "@language": "ru",
+                "@value": "Attribution-ShareAlike (Атрибуция — С сохранением условий) 2.5 Швеция"
+            },
+            {
+                "@language": "si-lk",
+                "@value": "Attribution-ShareAlike 2.5 Sweden"
+            },
+            {
+                "@language": "sl",
+                "@value": "Priznanje avtorstva-Deljenje pod enakimi pogoji 2.5 Švedska"
+            },
+            {
+                "@language": "sq",
+                "@value": "Attribution-ShareAlike 2.5 Suedi"
+            },
+            {
+                "@language": "sr",
+                "@value": "Autorstvo-Deliti pod istim uslovima 2.5 Švedska"
+            },
+            {
+                "@language": "sr",
+                "@value": "Ауторство-Делити под истим условима 2.5 Шведска"
+            },
+            {
+                "@language": "sr-latn",
+                "@value": "Autorstvo-Deliti pod istim uslovima 2.5 Švedska"
+            },
+            {
+                "@language": "st",
+                "@value": "Attribution-ShareAlike 2.5 Sweden"
+            },
+            {
+                "@language": "sv",
+                "@value": "Erkännande-DelaLika 2.5 Sverige"
+            },
+            {
+                "@language": "ta",
+                "@value": "Attribution-ShareAlike 2.5 Sweden"
+            },
+            {
+                "@language": "te",
+                "@value": "Attribution-ShareAlike 2.5 స్వీడన్"
+            },
+            {
+                "@language": "th",
+                "@value": "แสดงที่มา-อนุญาตแบบเดียวกัน 2.5 สวีเดน"
+            },
+            {
+                "@language": "tr",
+                "@value": "Alıntı-LisansıDevamEttirme 2.5 İsveç"
+            },
+            {
+                "@language": "uk",
+                "@value": "Attribution-ShareAlike 2.5 Sweden"
+            },
+            {
+                "@language": "ur",
+                "@value": "Attribution-ShareAlike 2.5 Sweden"
+            },
+            {
+                "@language": "vi",
+                "@value": "Attribution-ShareAlike 2.5 Sweden"
+            },
+            {
+                "@language": "zh",
+                "@value": "署名-相同方式共享 2.5 瑞典"
+            },
+            {
+                "@language": "zh-hk",
+                "@value": "姓名標示-相同方式分享 2.5 瑞典"
+            },
+            {
+                "@language": "zh-tw",
+                "@value": "姓名標示-相同方式分享 2.5 瑞典"
+            },
+            {
+                "@language": "zu",
+                "@value": "Qaphela Umnikazi-Zihlanganyeleni 2.5 iSweden"
+            },
+            {
+                "@language": "zxx",
+                "@value": "${Attribution-ShareAlike} 2.5 ${Sweden}"
+            }
+        ],
+        "owl:sameAs": "https://licensedb.org/id/CC-BY-SA-2.5-se",
+        "foaf:logo": [
+            "http://i.creativecommons.org/l/by-sa/2.5/se/80x15.png",
+            "http://i.creativecommons.org/l/by-sa/2.5/se/88x31.png"
+        ]
+    },
+    "foaf:logo": [
+        "http://i.creativecommons.org/l/by-sa/2.5/se/80x15.png",
+        "http://i.creativecommons.org/l/by-sa/2.5/se/88x31.png"
+    ],
+    "li:id": "CC-BY-SA-2.5-se",
+    "li:libre": "http://creativecommons.org/",
+    "li:name": "CC BY-SA 2.5 SE"
+}

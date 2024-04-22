@@ -1,0 +1,46 @@
+[
+    {
+        "id": "ECL-1.0",
+        "links": [
+            {
+                "note": "OSI Page",
+                "url": "https://opensource.org/licenses/ECL-1.0"
+            }
+        ],
+        "name": "Educational Community License, Version 1.0",
+        "superseded_by": "ECL-2.0",
+        "keywords": [
+            "discouraged",
+            "obsolete",
+            "osi-approved"
+        ],
+        "text": [
+            {
+                "media_type": "text/html",
+                "title": "HTML",
+                "url": "https://opensource.org/licenses/ECL-1.0"
+            }
+        ]
+    },
+    {
+        "id": "ECL-2.0",
+        "links": [
+            {
+                "note": "OSI Page",
+                "url": "https://opensource.org/licenses/ECL-2.0"
+            }
+        ],
+        "name": "Educational Community License, Version 2.0",
+        "keywords": [
+            "special-purpose",
+            "osi-approved"
+        ],
+        "text": [
+            {
+                "media_type": "text/html",
+                "title": "HTML",
+                "url": "https://opensource.org/licenses/ECL-2.0"
+            }
+        ]
+    }
+]

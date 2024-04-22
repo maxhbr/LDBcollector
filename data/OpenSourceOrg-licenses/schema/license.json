@@ -1,0 +1,91 @@
+{
+    "properties": {
+        "id": {
+            "type": "string"
+        },
+        "identifiers": {
+            "items": {
+                "properties": {
+                    "identifier": {
+                        "type": "string"
+                    },
+                    "scheme": {
+                        "type": "string"
+                    }
+                }
+            },
+            "type": "array"
+        },
+        "keywords": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "links": {
+            "items": {
+                "properties": {
+                    "note": {
+                        "blank": true,
+                        "type": "string"
+                    },
+                    "url": {
+                        "format": "uri",
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            },
+            "type": "array"
+        },
+        "name": {
+            "type": "string"
+        },
+        "other_names": {
+            "items": {
+                "properties": {
+                    "name": {
+                        "type": "string"
+                    },
+                    "note": {
+                        "type": [
+                            "null",
+                            "string"
+                        ]
+                    }
+                },
+                "type": "object"
+            },
+            "type": "array"
+        },
+        "superseded_by": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "text": {
+            "items": {
+                "properties": {
+                    "media_type": {
+                        "type": "string"
+                    },
+                    "title": {
+                        "type": "string"
+                    },
+                    "url": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            },
+            "type": "array"
+        }
+    },
+    "required": [
+        "identifiers",
+        "links",
+        "other_names"
+    ],
+    "type": "object"
+}

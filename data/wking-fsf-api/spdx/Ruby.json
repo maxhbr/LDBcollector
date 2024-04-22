@@ -1,0 +1,19 @@
+{
+  "@context": "https://wking.github.io/fsf-api/schema/license.jsonld",
+  "id": "Ruby",
+  "identifiers": {
+    "spdx": [
+      "Ruby"
+    ]
+  },
+  "name": "License of Ruby",
+  "tags": [
+    "gpl-2-compatible",
+    "gpl-3-compatible",
+    "libre"
+  ],
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#Ruby",
+    "http://directory.fsf.org/wiki/License:Ruby"
+  ]
+}

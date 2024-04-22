@@ -1,0 +1,23 @@
+{
+  "key": "uoi-ncsa",
+  "short_name": "NCSA Open Source License",
+  "name": "University of Illinois/NCSA Open Source License",
+  "category": "Permissive",
+  "owner": "NCSA - University of Illinois",
+  "homepage_url": "http://www.otm.illinois.edu/faculty/forms/opensource.asp",
+  "notes": "Per SPDX.org, this license is OSI certified",
+  "spdx_license_key": "NCSA",
+  "text_urls": [
+    "http://www.otm.illinois.edu/faculty/forms/opensource.asp"
+  ],
+  "osi_url": "http://www.opensource.org/licenses/UoI-NCSA.php",
+  "other_urls": [
+    "http://otm.illinois.edu/uiuc_openSource",
+    "http://www.ncsa.uiuc.edu/",
+    "http://www.opensource.org/licenses/NCSA",
+    "http://www.stlinux.com/node/140",
+    "https://opensource.org/licenses/NCSA"
+  ],
+  "minimum_coverage": 50,
+  "text": "University of Illinois/NCSA Open Source License\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this\nsoftware and associated documentation files (the \"Software\"), to deal with the\nSoftware without restriction, including without limitation the rights to use, copy,\nmodify, merge, publish, distribute, sublicense, and/or sell copies of the Software,\nand to permit persons to whom the Software is furnished to do so, subject to the\nfollowing conditions:\n\nRedistributions of source code must retain the above copyright notice, this list of\nconditions and the following disclaimers.\n\nRedistributions in binary form must reproduce the above copyright notice, this list\nof conditions and the following disclaimers in the documentation and/or other\nmaterials provided with the distribution.\n\nNeither the names of <Name of Development Group, Name of Institution>, nor\nthe names of its contributors may be used to endorse or promote products derived from\nthis Software without specific prior written permission.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,\nINCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A\nPARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE CONTRIBUTORS OR\nCOPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN\nACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\nSOFTWARE OR THE USE OR OTHER DEALINGS WITH THE SOFTWARE."
+}

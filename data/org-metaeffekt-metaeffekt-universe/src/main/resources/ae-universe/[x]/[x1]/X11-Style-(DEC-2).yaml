@@ -1,0 +1,20 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+
+canonicalName: "X11-Style (DEC 2)"
+category: "X11-Style (DEC 2)"
+spdxIdentifier: "HPND-DEC"
+
+openCoDEStatus: "approved"
+
+alternativeNames:
+  - "x11-dec2"
+  - "X11-DEC2"
+  - "X11-Style (DEC 2)"
+  - "HPND-DEC"
+  - "Historical Permission Notice and Disclaimer - DEC variant"
+  - "Historical Permission Notice and Disclaimer (DEC)"
+
+otherIds: 
+  - "scancode:x11-dec2"

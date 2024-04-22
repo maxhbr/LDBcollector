@@ -1,0 +1,29 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://licensedb.org/id/Artistic> a cc:License,
+        li:License ;
+    cc:legalcode <http://www.perlfoundation.org/artistic_license_1_0> ;
+    dc:creator <http://perlfoundation.org/> ;
+    dc:hasVersion "1.0" ;
+    dc:isReplacedBy <https://licensedb.org/id/Artistic-2> ;
+    dc:title "Artistic License" ;
+    schema:sameAs <http://spdx.org/licenses/Artistic-1.0>,
+        <http://www.perlfoundation.org/artistic_license_1_0> ;
+    spdx:licenseId "Artistic-1.0" ;
+    li:id "Artistic" ;
+    li:libre <http://debian.org/>,
+        <http://opensource.org/> ;
+    li:name "Artistic 1.0" ;
+    li:plaintext <http://www.perlfoundation.org/attachment/legal/Artistic_1.0.txt> .
+

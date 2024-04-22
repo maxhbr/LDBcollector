@@ -1,0 +1,48 @@
+---
+key: viewflow-agpl-3.0-exception
+short_name: Viewflow Library Exception to AGPL 3.0
+name: Viewflow Library Exception to AGPL 3.0
+category: Copyleft Limited
+owner: Viewflow
+homepage_url: https://github.com/viewflow/viewflow/blob/master/LICENSE_EXCEPTION
+is_exception: yes
+spdx_license_key: LicenseRef-scancode-viewflow-agpl-3.0-exception
+ignorable_copyrights:
+    - Copyright (c) 2017 Mikhail Podgurskiy <kmmbvnr@gmail.com>
+ignorable_holders:
+    - Mikhail Podgurskiy
+ignorable_emails:
+    - kmmbvnr@gmail.com
+---
+
+VIEWFLOW LIBRARY EXCEPTION
+
+Copyright (c) 2017 Mikhail Podgurskiy <kmmbvnr@gmail.com>
+
+This Viewflow Library Exception ("Exception") is an additional
+permission under section 7 of the GNU Affero General Public License,
+version 3 ("AGPLv3"). It applies to a viewflow library that bears a
+notice placed by the copyright holder of the library stating that the
+library is governed by AGPLv3 along with this Exception.
+
+1. Grant of Additional Permission.
+
+If you modify the Program or any covered work, without changing its
+source code, only by linking or combining some or all bundles of the
+Program with separate works covered by AGPL- incompatible license
+terms, the licensors of this Program grant you the additional
+permission to convey the resulting work.
+
+If you modify the Program, and your modified version becomes subject
+to the requirement stated in AGPLv3, section 13, you may satisfy this
+requirement by providing access to the Corresponding Source of your
+modified version to each user that explicitly requests such
+Corresponding Source, no later than 15 days following the date on
+which such request was received.
+
+
+2. No Weakening of Viewflow Copyleft.
+
+The availability of this Exception does not imply any general
+presumption that third-party software is unaffected by the copyleft
+requirements of the license of Viewflow

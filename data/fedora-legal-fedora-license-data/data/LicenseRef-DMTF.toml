@@ -1,0 +1,14 @@
+[license]
+
+expression = "LicenseRef-DMTF"
+status = [ "allowed-content" ]
+
+[fedora]
+
+legacy-name = [
+    "Distributed Management Task Force License"
+]
+
+legacy-abbreviation = [
+    "DMTF"
+]

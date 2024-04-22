@@ -1,0 +1,848 @@
+{
+    "@context": {
+        "cc": "http://creativecommons.org/ns#",
+        "dc": "http://purl.org/dc/terms/",
+        "dc11": "http://purl.org/dc/elements/1.1/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "li": "https://licensedb.org/ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "cc:legalcode": {
+            "@type": "@id"
+        },
+        "cc:permits": {
+            "@type": "@id"
+        },
+        "cc:requires": {
+            "@type": "@id"
+        },
+        "cc:prohibits": {
+            "@type": "@id"
+        },
+        "cc:jurisdiction": {
+            "@type": "@id"
+        },
+        "cc:licenseClass": {
+            "@type": "@id"
+        },
+        "dc:creator": {
+            "@type": "@id"
+        },
+        "dc:source": {
+            "@type": "@id"
+        },
+        "dc:replaces": {
+            "@type": "@id"
+        },
+        "dc:isBasedOn": {
+            "@type": "@id"
+        },
+        "dc:isReplacedBy": {
+            "@type": "@id"
+        },
+        "foaf:logo": {
+            "@type": "@id"
+        },
+        "li:plaintext": {
+            "@type": "@id"
+        },
+        "li:libre": {
+            "@type": "@id"
+        },
+        "owl:sameAs": {
+            "@type": "@id"
+        }
+    },
+    "@id": "https://licensedb.org/id/CC-BY-ND-3.0-ro",
+    "@type": [
+        "cc:License",
+        "li:License"
+    ],
+    "cc:jurisdiction": "http://creativecommons.org/international/ro/",
+    "cc:legalcode": "http://creativecommons.org/licenses/by-nd/3.0/ro/legalcode",
+    "cc:licenseClass": "http://creativecommons.org/license/",
+    "cc:permits": [
+        "cc:Distribution",
+        "cc:Reproduction"
+    ],
+    "cc:requires": [
+        "cc:Attribution",
+        "cc:Notice"
+    ],
+    "dc:creator": "http://creativecommons.org",
+    "dc:hasVersion": "3.0",
+    "dc:identifier": "by-nd",
+    "dc:source": "http://creativecommons.org/licenses/by-nd/3.0/",
+    "dc:title": [
+        {
+            "@language": "af",
+            "@value": "Erkenning-GeenAfleidings 3.0 Roemenië"
+        },
+        {
+            "@language": "ar",
+            "@value": "نسب- غير مشتق 3.0 رومانيا"
+        },
+        {
+            "@language": "as",
+            "@value": "Attribution-NoDerivs 3.0 Romania"
+        },
+        {
+            "@language": "ast",
+            "@value": "Attribution-NoDerivs 3.0 Romania"
+        },
+        {
+            "@language": "ast-es",
+            "@value": "Attribution-NoDerivs 3.0 Romania"
+        },
+        {
+            "@language": "az",
+            "@value": "Attribution-NoDerivs 3.0 Romania"
+        },
+        {
+            "@language": "be",
+            "@value": "Attribution-NoDerivs 3.0 Румынія"
+        },
+        {
+            "@language": "bg",
+            "@value": "Признание-Без производни 3.0 Румъния"
+        },
+        {
+            "@language": "bn",
+            "@value": "Attribution-NoDerivs 3.0 Romania"
+        },
+        {
+            "@language": "ca",
+            "@value": "Reconeixement-SenseObraDerivada 3.0 Romania"
+        },
+        {
+            "@language": "cs",
+            "@value": "Uveďte autora-Nezasahujte do díla 3.0 Rumunsko"
+        },
+        {
+            "@language": "da",
+            "@value": "Navngivelse-IngenBearbejdelse 3.0 Romænien"
+        },
+        {
+            "@language": "de",
+            "@value": "Namensnennung-Keine Bearbeitung 3.0 Rumänien"
+        },
+        {
+            "@language": "de-at",
+            "@value": "Namensnennung-KeineBearbeitung 3.0 Rumänien"
+        },
+        {
+            "@language": "de-ch",
+            "@value": "Namensnennung-KeineBearbeitung 3.0 Rumänien"
+        },
+        {
+            "@language": "el",
+            "@value": "Αναφορά Δημιουργού-Όχι Παράγωγα Έργα 3.0 Ρουμανία"
+        },
+        {
+            "@language": "en",
+            "@value": "Attribution-NoDerivs 3.0 Romania"
+        },
+        {
+            "@language": "en-ca",
+            "@value": "Attribution-NoDerivs 3.0 Romania"
+        },
+        {
+            "@language": "en-gb",
+            "@value": "Attribution-NoDerivs 3.0 Romania"
+        },
+        {
+            "@language": "en-hk",
+            "@value": "Attribution-NoDerivs 3.0 Romania"
+        },
+        {
+            "@language": "en-sg",
+            "@value": "Attribution-NoDerivs 3.0 Romania"
+        },
+        {
+            "@language": "en-us",
+            "@value": "Attribution-NoDerivs 3.0 Romania"
+        },
+        {
+            "@language": "eo",
+            "@value": "Atribuite-Nemodifite 3.0 Rumanujo"
+        },
+        {
+            "@language": "es",
+            "@value": "Atribución-SinDerivadas 3.0 Rumanía"
+        },
+        {
+            "@language": "es-ar",
+            "@value": "Atribución-SinDerivadas 3.0 Rumanía"
+        },
+        {
+            "@language": "es-cl",
+            "@value": "Atribución-SinDerivadas 3.0 Rumanía"
+        },
+        {
+            "@language": "es-co",
+            "@value": "Reconocimiento-SinObraDerivada 3.0 Rumanía"
+        },
+        {
+            "@language": "es-ec",
+            "@value": "Reconocimiento-SinObraDerivada 3.0 Rumanía"
+        },
+        {
+            "@language": "es-es",
+            "@value": "Reconocimiento-SinObraDerivada 3.0 Rumanía"
+        },
+        {
+            "@language": "es-gt",
+            "@value": "Reconocimiento-SinObraDerivada 3.0 Rumanía"
+        },
+        {
+            "@language": "es-mx",
+            "@value": "Atribución-No Derivadas 3.0 Rumanía"
+        },
+        {
+            "@language": "es-pe",
+            "@value": "Reconocimiento-SinObraDerivada 3.0 Rumanía"
+        },
+        {
+            "@language": "es-pr",
+            "@value": "Reconocimiento-SinObraDerivada 3.0 Rumanía"
+        },
+        {
+            "@language": "et",
+            "@value": "Autorile viitamine + Tuletatud teoste keeld 3.0 Rumeenia"
+        },
+        {
+            "@language": "eu",
+            "@value": "Aitortu-LanEratorririkGabe 3.0 Errumania"
+        },
+        {
+            "@language": "fa",
+            "@value": "Attribution-NoDerivs 3.0 رومانی"
+        },
+        {
+            "@language": "fi",
+            "@value": "Nimeä-Ei muutoksia 3.0 Romania"
+        },
+        {
+            "@language": "fr",
+            "@value": "Paternité - Pas de Modification 3.0 Roumanie"
+        },
+        {
+            "@language": "fr-ca",
+            "@value": "Paternité - Pas de Modification 3.0 Roumanie"
+        },
+        {
+            "@language": "fr-ch",
+            "@value": "Paternité - Pas de Modification 3.0 Roumanie"
+        },
+        {
+            "@language": "fr-lu",
+            "@value": "Paternité - Pas de Modification 3.0 Roumanie"
+        },
+        {
+            "@language": "ga",
+            "@value": "Attribution-NoDerivs 3.0 Romania"
+        },
+        {
+            "@language": "gl",
+            "@value": "Recoñecemento-SenObraDerivada 3.0 Romania"
+        },
+        {
+            "@language": "he",
+            "@value": "ייחוס-איסור יצירות נגזרות 3.0 רומניה"
+        },
+        {
+            "@language": "hi",
+            "@value": "Attribution-NoDerivs 3.0 Romania"
+        },
+        {
+            "@language": "hr",
+            "@value": "Imenovanje-Bez prerada 3.0 Rumunjska"
+        },
+        {
+            "@language": "hu",
+            "@value": "Nevezd meg! - Ne változtasd! 3.0 Románia"
+        },
+        {
+            "@language": "hy",
+            "@value": "Հղում - Օգտագործում առանց վերափոխումների 3.0 Ռումիներեն"
+        },
+        {
+            "@language": "id",
+            "@value": "Atribusi-TanpaTurunan 3.0 Rumania"
+        },
+        {
+            "@language": "is",
+            "@value": "Attribution-NoDerivs 3.0 Rúmenía"
+        },
+        {
+            "@language": "it",
+            "@value": "Attribuzione - Non opere derivate 3.0 Romania"
+        },
+        {
+            "@language": "it-ch",
+            "@value": "Attribuzione - Non opere derivate 3.0 Romania"
+        },
+        {
+            "@language": "ja",
+            "@value": "表示 - 改変禁止 3.0 ルーマニア"
+        },
+        {
+            "@language": "ka",
+            "@value": "ავტორობის მითითებით გადამუშავების გარეშე 3.0 რუმინული"
+        },
+        {
+            "@language": "kk",
+            "@value": "Туынды жасамау 3.0 Romania"
+        },
+        {
+            "@language": "ko",
+            "@value": "저작자표시-변경금지 3.0 루마니아"
+        },
+        {
+            "@language": "lt",
+            "@value": "Attribution-NoDerivs 3.0 Rumunija"
+        },
+        {
+            "@language": "lv",
+            "@value": "Atsaucoties-Neatvasinot 3.0 Rumāņu"
+        },
+        {
+            "@language": "mk",
+            "@value": "НаведиИзвор-БезИзведениДела 3.0 Романија"
+        },
+        {
+            "@language": "ml",
+            "@value": "Attribution-NoDerivs 3.0 റൊമാനിയ"
+        },
+        {
+            "@language": "mn",
+            "@value": "Attribution-NoDerivs 3.0 Romania"
+        },
+        {
+            "@language": "ms",
+            "@value": "Pengiktirafan-TiadaTerbitan 3.0 Romania"
+        },
+        {
+            "@language": "nl",
+            "@value": "Naamsvermelding-GeenAfgeleideWerken 3.0 Roemenië"
+        },
+        {
+            "@language": "no",
+            "@value": "Navngivelse-IngenBearbeidelse 3.0 Romania"
+        },
+        {
+            "@language": "nso",
+            "@value": "Tsebagatšo - Tše sa Fetolwego 3.0 Romaniya"
+        },
+        {
+            "@language": "oci-es",
+            "@value": "Attribution-NoDerivs 3.0 Romania"
+        },
+        {
+            "@language": "pl",
+            "@value": "Uznanie autorstwa-Bez utworów zależnych 3.0 Rumunia"
+        },
+        {
+            "@language": "pt",
+            "@value": "Atribuição - SemDerivados 3.0 Roménia"
+        },
+        {
+            "@language": "pt-br",
+            "@value": "Atribuição-Vedada a criação de obras derivativas 3.0 Romania"
+        },
+        {
+            "@language": "pt-pt",
+            "@value": "Atribuição-Proibição de realização de Obras Derivadas 3.0 Romania"
+        },
+        {
+            "@language": "ro",
+            "@value": "Atribuire-FărăModificări 3.0 România"
+        },
+        {
+            "@language": "ru",
+            "@value": "Attribution-NoDerivs (Атрибуция — Без производных произведений) 3.0 Румыния"
+        },
+        {
+            "@language": "si-lk",
+            "@value": "Attribution-NoDerivs 3.0 Romania"
+        },
+        {
+            "@language": "sl",
+            "@value": "Priznanje avtorstva-Brez predelav 3.0 Romunija"
+        },
+        {
+            "@language": "sq",
+            "@value": "Attribution-NoDerivs 3.0 Rumani"
+        },
+        {
+            "@language": "sr",
+            "@value": "Autorstvo-Bez prerada 3.0 Rumunija"
+        },
+        {
+            "@language": "sr",
+            "@value": "Ауторство-Без прерада 3.0 Румунија"
+        },
+        {
+            "@language": "sr-latn",
+            "@value": "Autorstvo-Bez prerada 3.0 Rumunija"
+        },
+        {
+            "@language": "st",
+            "@value": "Attribution-NoDerivs 3.0 Romania"
+        },
+        {
+            "@language": "sv",
+            "@value": "Erkännande-IngaBearbetningar 3.0 Rumänien"
+        },
+        {
+            "@language": "ta",
+            "@value": "Attribution-NoDerivs 3.0 ருமேனியா"
+        },
+        {
+            "@language": "te",
+            "@value": "Attribution-NoDerivs 3.0 రొమేనియా"
+        },
+        {
+            "@language": "th",
+            "@value": "แสดงที่มา-ไม่ดัดแปลง 3.0 โรมาเนีย"
+        },
+        {
+            "@language": "tr",
+            "@value": "Alıntı-Türetilemez 3.0 Romence"
+        },
+        {
+            "@language": "uk",
+            "@value": "Attribution-NoDerivs 3.0 Romania"
+        },
+        {
+            "@language": "ur",
+            "@value": "Attribution-NoDerivs 3.0 Romania"
+        },
+        {
+            "@language": "vi",
+            "@value": "Ghi nhận công của tác giả - Không phái sinh 3.0 Nước Rumani"
+        },
+        {
+            "@language": "zh",
+            "@value": "署名-禁止演绎 3.0 罗马尼亚"
+        },
+        {
+            "@language": "zh-hk",
+            "@value": "姓名標示-禁止改作 3.0 羅馬尼亞"
+        },
+        {
+            "@language": "zh-tw",
+            "@value": "姓名標示-禁止改作 3.0 羅馬尼亞"
+        },
+        {
+            "@language": "zu",
+            "@value": "Qaphela Umnikazi-Ungasuseli lutho kulokhu 3.0 eRomania"
+        },
+        {
+            "@language": "zxx",
+            "@value": "${Attribution-NoDerivs} 3.0 ${Romania}"
+        }
+    ],
+    "owl:sameAs": {
+        "@id": "http://creativecommons.org/licenses/by-nd/3.0/ro/",
+        "@type": "cc:License",
+        "cc:jurisdiction": "http://creativecommons.org/international/ro/",
+        "cc:legalcode": "http://creativecommons.org/licenses/by-nd/3.0/ro/legalcode",
+        "cc:licenseClass": "http://creativecommons.org/license/",
+        "cc:permits": [
+            "cc:Distribution",
+            "cc:Reproduction"
+        ],
+        "cc:requires": [
+            "cc:Attribution",
+            "cc:Notice"
+        ],
+        "dc:creator": "http://creativecommons.org",
+        "dc:hasVersion": "3.0",
+        "dc:identifier": "by-nd",
+        "dc:source": "http://creativecommons.org/licenses/by-nd/3.0/",
+        "dc:title": [
+            {
+                "@language": "af",
+                "@value": "Erkenning-GeenAfleidings 3.0 Roemenië"
+            },
+            {
+                "@language": "ar",
+                "@value": "نسب- غير مشتق 3.0 رومانيا"
+            },
+            {
+                "@language": "as",
+                "@value": "Attribution-NoDerivs 3.0 Romania"
+            },
+            {
+                "@language": "ast",
+                "@value": "Attribution-NoDerivs 3.0 Romania"
+            },
+            {
+                "@language": "ast-es",
+                "@value": "Attribution-NoDerivs 3.0 Romania"
+            },
+            {
+                "@language": "az",
+                "@value": "Attribution-NoDerivs 3.0 Romania"
+            },
+            {
+                "@language": "be",
+                "@value": "Attribution-NoDerivs 3.0 Румынія"
+            },
+            {
+                "@language": "bg",
+                "@value": "Признание-Без производни 3.0 Румъния"
+            },
+            {
+                "@language": "bn",
+                "@value": "Attribution-NoDerivs 3.0 Romania"
+            },
+            {
+                "@language": "ca",
+                "@value": "Reconeixement-SenseObraDerivada 3.0 Romania"
+            },
+            {
+                "@language": "cs",
+                "@value": "Uveďte autora-Nezasahujte do díla 3.0 Rumunsko"
+            },
+            {
+                "@language": "da",
+                "@value": "Navngivelse-IngenBearbejdelse 3.0 Romænien"
+            },
+            {
+                "@language": "de",
+                "@value": "Namensnennung-Keine Bearbeitung 3.0 Rumänien"
+            },
+            {
+                "@language": "de-at",
+                "@value": "Namensnennung-KeineBearbeitung 3.0 Rumänien"
+            },
+            {
+                "@language": "de-ch",
+                "@value": "Namensnennung-KeineBearbeitung 3.0 Rumänien"
+            },
+            {
+                "@language": "el",
+                "@value": "Αναφορά Δημιουργού-Όχι Παράγωγα Έργα 3.0 Ρουμανία"
+            },
+            {
+                "@language": "en",
+                "@value": "Attribution-NoDerivs 3.0 Romania"
+            },
+            {
+                "@language": "en-ca",
+                "@value": "Attribution-NoDerivs 3.0 Romania"
+            },
+            {
+                "@language": "en-gb",
+                "@value": "Attribution-NoDerivs 3.0 Romania"
+            },
+            {
+                "@language": "en-hk",
+                "@value": "Attribution-NoDerivs 3.0 Romania"
+            },
+            {
+                "@language": "en-sg",
+                "@value": "Attribution-NoDerivs 3.0 Romania"
+            },
+            {
+                "@language": "en-us",
+                "@value": "Attribution-NoDerivs 3.0 Romania"
+            },
+            {
+                "@language": "eo",
+                "@value": "Atribuite-Nemodifite 3.0 Rumanujo"
+            },
+            {
+                "@language": "es",
+                "@value": "Atribución-SinDerivadas 3.0 Rumanía"
+            },
+            {
+                "@language": "es-ar",
+                "@value": "Atribución-SinDerivadas 3.0 Rumanía"
+            },
+            {
+                "@language": "es-cl",
+                "@value": "Atribución-SinDerivadas 3.0 Rumanía"
+            },
+            {
+                "@language": "es-co",
+                "@value": "Reconocimiento-SinObraDerivada 3.0 Rumanía"
+            },
+            {
+                "@language": "es-ec",
+                "@value": "Reconocimiento-SinObraDerivada 3.0 Rumanía"
+            },
+            {
+                "@language": "es-es",
+                "@value": "Reconocimiento-SinObraDerivada 3.0 Rumanía"
+            },
+            {
+                "@language": "es-gt",
+                "@value": "Reconocimiento-SinObraDerivada 3.0 Rumanía"
+            },
+            {
+                "@language": "es-mx",
+                "@value": "Atribución-No Derivadas 3.0 Rumanía"
+            },
+            {
+                "@language": "es-pe",
+                "@value": "Reconocimiento-SinObraDerivada 3.0 Rumanía"
+            },
+            {
+                "@language": "es-pr",
+                "@value": "Reconocimiento-SinObraDerivada 3.0 Rumanía"
+            },
+            {
+                "@language": "et",
+                "@value": "Autorile viitamine + Tuletatud teoste keeld 3.0 Rumeenia"
+            },
+            {
+                "@language": "eu",
+                "@value": "Aitortu-LanEratorririkGabe 3.0 Errumania"
+            },
+            {
+                "@language": "fa",
+                "@value": "Attribution-NoDerivs 3.0 رومانی"
+            },
+            {
+                "@language": "fi",
+                "@value": "Nimeä-Ei muutoksia 3.0 Romania"
+            },
+            {
+                "@language": "fr",
+                "@value": "Paternité - Pas de Modification 3.0 Roumanie"
+            },
+            {
+                "@language": "fr-ca",
+                "@value": "Paternité - Pas de Modification 3.0 Roumanie"
+            },
+            {
+                "@language": "fr-ch",
+                "@value": "Paternité - Pas de Modification 3.0 Roumanie"
+            },
+            {
+                "@language": "fr-lu",
+                "@value": "Paternité - Pas de Modification 3.0 Roumanie"
+            },
+            {
+                "@language": "ga",
+                "@value": "Attribution-NoDerivs 3.0 Romania"
+            },
+            {
+                "@language": "gl",
+                "@value": "Recoñecemento-SenObraDerivada 3.0 Romania"
+            },
+            {
+                "@language": "he",
+                "@value": "ייחוס-איסור יצירות נגזרות 3.0 רומניה"
+            },
+            {
+                "@language": "hi",
+                "@value": "Attribution-NoDerivs 3.0 Romania"
+            },
+            {
+                "@language": "hr",
+                "@value": "Imenovanje-Bez prerada 3.0 Rumunjska"
+            },
+            {
+                "@language": "hu",
+                "@value": "Nevezd meg! - Ne változtasd! 3.0 Románia"
+            },
+            {
+                "@language": "hy",
+                "@value": "Հղում - Օգտագործում առանց վերափոխումների 3.0 Ռումիներեն"
+            },
+            {
+                "@language": "id",
+                "@value": "Atribusi-TanpaTurunan 3.0 Rumania"
+            },
+            {
+                "@language": "is",
+                "@value": "Attribution-NoDerivs 3.0 Rúmenía"
+            },
+            {
+                "@language": "it",
+                "@value": "Attribuzione - Non opere derivate 3.0 Romania"
+            },
+            {
+                "@language": "it-ch",
+                "@value": "Attribuzione - Non opere derivate 3.0 Romania"
+            },
+            {
+                "@language": "ja",
+                "@value": "表示 - 改変禁止 3.0 ルーマニア"
+            },
+            {
+                "@language": "ka",
+                "@value": "ავტორობის მითითებით გადამუშავების გარეშე 3.0 რუმინული"
+            },
+            {
+                "@language": "kk",
+                "@value": "Туынды жасамау 3.0 Romania"
+            },
+            {
+                "@language": "ko",
+                "@value": "저작자표시-변경금지 3.0 루마니아"
+            },
+            {
+                "@language": "lt",
+                "@value": "Attribution-NoDerivs 3.0 Rumunija"
+            },
+            {
+                "@language": "lv",
+                "@value": "Atsaucoties-Neatvasinot 3.0 Rumāņu"
+            },
+            {
+                "@language": "mk",
+                "@value": "НаведиИзвор-БезИзведениДела 3.0 Романија"
+            },
+            {
+                "@language": "ml",
+                "@value": "Attribution-NoDerivs 3.0 റൊമാനിയ"
+            },
+            {
+                "@language": "mn",
+                "@value": "Attribution-NoDerivs 3.0 Romania"
+            },
+            {
+                "@language": "ms",
+                "@value": "Pengiktirafan-TiadaTerbitan 3.0 Romania"
+            },
+            {
+                "@language": "nl",
+                "@value": "Naamsvermelding-GeenAfgeleideWerken 3.0 Roemenië"
+            },
+            {
+                "@language": "no",
+                "@value": "Navngivelse-IngenBearbeidelse 3.0 Romania"
+            },
+            {
+                "@language": "nso",
+                "@value": "Tsebagatšo - Tše sa Fetolwego 3.0 Romaniya"
+            },
+            {
+                "@language": "oci-es",
+                "@value": "Attribution-NoDerivs 3.0 Romania"
+            },
+            {
+                "@language": "pl",
+                "@value": "Uznanie autorstwa-Bez utworów zależnych 3.0 Rumunia"
+            },
+            {
+                "@language": "pt",
+                "@value": "Atribuição - SemDerivados 3.0 Roménia"
+            },
+            {
+                "@language": "pt-br",
+                "@value": "Atribuição-Vedada a criação de obras derivativas 3.0 Romania"
+            },
+            {
+                "@language": "pt-pt",
+                "@value": "Atribuição-Proibição de realização de Obras Derivadas 3.0 Romania"
+            },
+            {
+                "@language": "ro",
+                "@value": "Atribuire-FărăModificări 3.0 România"
+            },
+            {
+                "@language": "ru",
+                "@value": "Attribution-NoDerivs (Атрибуция — Без производных произведений) 3.0 Румыния"
+            },
+            {
+                "@language": "si-lk",
+                "@value": "Attribution-NoDerivs 3.0 Romania"
+            },
+            {
+                "@language": "sl",
+                "@value": "Priznanje avtorstva-Brez predelav 3.0 Romunija"
+            },
+            {
+                "@language": "sq",
+                "@value": "Attribution-NoDerivs 3.0 Rumani"
+            },
+            {
+                "@language": "sr",
+                "@value": "Autorstvo-Bez prerada 3.0 Rumunija"
+            },
+            {
+                "@language": "sr",
+                "@value": "Ауторство-Без прерада 3.0 Румунија"
+            },
+            {
+                "@language": "sr-latn",
+                "@value": "Autorstvo-Bez prerada 3.0 Rumunija"
+            },
+            {
+                "@language": "st",
+                "@value": "Attribution-NoDerivs 3.0 Romania"
+            },
+            {
+                "@language": "sv",
+                "@value": "Erkännande-IngaBearbetningar 3.0 Rumänien"
+            },
+            {
+                "@language": "ta",
+                "@value": "Attribution-NoDerivs 3.0 ருமேனியா"
+            },
+            {
+                "@language": "te",
+                "@value": "Attribution-NoDerivs 3.0 రొమేనియా"
+            },
+            {
+                "@language": "th",
+                "@value": "แสดงที่มา-ไม่ดัดแปลง 3.0 โรมาเนีย"
+            },
+            {
+                "@language": "tr",
+                "@value": "Alıntı-Türetilemez 3.0 Romence"
+            },
+            {
+                "@language": "uk",
+                "@value": "Attribution-NoDerivs 3.0 Romania"
+            },
+            {
+                "@language": "ur",
+                "@value": "Attribution-NoDerivs 3.0 Romania"
+            },
+            {
+                "@language": "vi",
+                "@value": "Ghi nhận công của tác giả - Không phái sinh 3.0 Nước Rumani"
+            },
+            {
+                "@language": "zh",
+                "@value": "署名-禁止演绎 3.0 罗马尼亚"
+            },
+            {
+                "@language": "zh-hk",
+                "@value": "姓名標示-禁止改作 3.0 羅馬尼亞"
+            },
+            {
+                "@language": "zh-tw",
+                "@value": "姓名標示-禁止改作 3.0 羅馬尼亞"
+            },
+            {
+                "@language": "zu",
+                "@value": "Qaphela Umnikazi-Ungasuseli lutho kulokhu 3.0 eRomania"
+            },
+            {
+                "@language": "zxx",
+                "@value": "${Attribution-NoDerivs} 3.0 ${Romania}"
+            }
+        ],
+        "owl:sameAs": "https://licensedb.org/id/CC-BY-ND-3.0-ro",
+        "foaf:logo": [
+            "http://i.creativecommons.org/l/by-nd/3.0/ro/80x15.png",
+            "http://i.creativecommons.org/l/by-nd/3.0/ro/88x31.png"
+        ]
+    },
+    "foaf:logo": [
+        "http://i.creativecommons.org/l/by-nd/3.0/ro/80x15.png",
+        "http://i.creativecommons.org/l/by-nd/3.0/ro/88x31.png"
+    ],
+    "li:id": "CC-BY-ND-3.0-ro",
+    "li:name": "CC BY-ND 3.0 RO"
+}

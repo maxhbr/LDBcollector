@@ -1,0 +1,47 @@
+[
+    {
+        "id": "EFL-1.0",
+        "links": [
+            {
+                "note": "OSI Page",
+                "url": "https://opensource.org/licenses/EFL-1.0"
+            }
+        ],
+        "name": "The Eiffel Forum License, Version 1",
+        "superseded_by": "EFL-2.0",
+        "keywords": [
+            "osi-approved",
+            "discouraged",
+            "obsolete"
+        ],
+        "text": [
+            {
+                "media_type": "text/html",
+                "title": "HTML",
+                "url": "https://opensource.org/licenses/EFL-1.0"
+            }
+        ]
+    },
+    {
+        "id": "EFL-2.0",
+        "links": [
+            {
+                "note": "OSI Page",
+                "url": "https://opensource.org/licenses/EFL-2.0"
+            }
+        ],
+        "name": "Eiffel Forum License, Version 2",
+        "keywords": [
+            "osi-approved",
+            "discouraged",
+            "redundant"
+        ],
+        "text": [
+            {
+                "media_type": "text/html",
+                "title": "HTML",
+                "url": "https://opensource.org/licenses/EFL-2.0"
+            }
+        ]
+    }
+]

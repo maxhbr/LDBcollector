@@ -1,0 +1,5 @@
+- id: "NuGet:AWSSDK.ElasticLoadBalancing:PCL:[3.1.0,)"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "sdk/src/Services/ElasticLoadBalancing"

@@ -1,0 +1,19 @@
+[license]
+
+expression = "GPL-2.0-or-later"
+status = [ "allowed" ]
+
+url = '''
+http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+'''
+
+[fedora]
+
+legacy-name = [
+    "GNU General Public License v2.0 or later"
+]
+
+legacy-abbreviation = [
+    "GPLv2+"
+]
+

@@ -1,0 +1,1592 @@
+# This file is for collecting the actual text found in Fedora
+# packages that have used the Callaway short name, "Public Domain" 
+# or the SPDX expression, "LicenseRef-Fedora-Public-Domain"
+# See the instructions at https://docs.fedoraproject.org/en-US/legal/update-existing-packages/#_callaway_short_name_categories
+# 
+# This file is for collecting the text of such public domain dedications.
+#
+# Please search this file first to see if the public domain text you've found 
+# is the same as text already recorded here. If so, simply add  
+# your package name and location to the existing part of this file that contains that text.
+#
+# Include the following information:
+# 
+# Fedora package name
+#
+# Location of where you found the public domain dedication text.
+# Preferably this would be a direct link to a file. If that is not possible,
+# provide enough information such that someone else can find the text in the wild
+# where you found it.
+#
+# The actual text of the public dedication found that corresponds to the use of 
+# the "Public Domain" (previously) or "LicenseRef-Fedora-Public-Domain" SPDX id.
+# Remove blank lines.
+#
+# Copy template below and add yours to top of list, adding a space between entries.
+
+package = 
+location = 
+text = '''
+text here
+'''
+
+package = glibc
+location = https://sourceware.org/git/?p=glibc.git;a=blob;hb=ef321e23c20eebc6d6fb4044425c00e6df27b05f;f=stdlib/tst-random.c
+text = '''
+/* Test program for random(), srandom(), initstate(), setstate()
+   Placed in the public domain.  */
+'''
+
+package = glibc
+location = https://sourceware.org/git/?p=glibc.git;a=blob;hb=ef321e23c20eebc6d6fb4044425c00e6df27b05f;f=timezone/zdump.c
+text = '''
+** This file is in the public domain, so clarified as of
+** 2009-05-17 by Arthur David Olson.
+'''
+
+package = minicom
+location = https://salsa.debian.org/minicom-team/minicom/-/blob/2.9/src/wildmat.c?ref_type=tags#L34-L51
+text = '''
+**  jseymour  1998/04/04 17:45 EST
+**	Before adding this to minicom (as part of my "getsdir()" addition),
+**	I emailed a request to Rich $alz, asking if I could "GPL" it.  Here
+**	is his reply:
+**
+**	    Date: Mon, 30 Mar 1998 10:50:06 -0500 (EST)
+**	    Message-Id: <199803301550.KAA14018@<anonymized>.com>
+**	    From: Rich Salz <salzr@<anonymized>.com>
+**	    To: jseymour@jimsun.LinxNet.com
+**	    Subject: Re: A Little Thing Named "Wildmat"
+**
+**	    Wildmat is in the public domain -- enjoy it.
+**
+**	    I would rather it not get encumbered with various licenses,
+**	    but since it is in the public domain you can do what you want...
+**
+**	So there you go.  (I anonymized his email address as I don't know
+**	that he was particularly interested in having it "advertised".)
+'''
+
+package = man-pages-ja
+location = https://linuxjm.osdn.jp/manual/LDP_man-pages/release/man2/nfsservctl.2
+text = '''
+.\" %%%LICENSE_START(PUBLIC_DOMAIN)
+.\" This text is in the public domain.
+.\" %%%LICENSE_END
+'''
+
+package = man-pages-ja
+location = https://linuxjm.osdn.jp/manual/LDP_man-pages/release/man3/getnameinfo.3
+           https://linuxjm.osdn.jp/manual/LDP_man-pages/release/man7/vdso.7
+           https://linuxjm.osdn.jp/manual/LDP_man-pages/release/man8/tzselect.8
+           https://linuxjm.osdn.jp/manual/LDP_man-pages/release/man8/zdump.8
+           https://linuxjm.osdn.jp/manual/LDP_man-pages/release/man8/zic.8
+text = '''
+.\" %%%LICENSE_START(PUBLIC_DOMAIN)
+.\" This page is in the public domain.
+.\" %%%LICENSE_END
+'''
+
+package = man-pages-ja
+location = https://linuxjm.osdn.jp/manual/LDP_man-pages/release/man3/grantpt.3
+           https://linuxjm.osdn.jp/manual/LDP_man-pages/release/man3/ptsname.3
+           https://linuxjm.osdn.jp/manual/LDP_man-pages/release/man3/unlockpt.3
+text = '''
+.\" %%%LICENSE_START(PUBLIC_DOMAIN)
+.\" This page is in the public domain. - aeb
+.\" %%%LICENSE_END
+'''
+
+package = man-pages-ja
+location = https://linuxjm.osdn.jp/manual/LDP_man-pages/release/man3/stdin.3
+text = '''
+.\" From dholland@burgundy.eecs.harvard.edu Tue Mar 24 18:08:15 1998
+.\"
+.\" This man page was written in 1998 by David A. Holland
+.\" Polished a bit by aeb.
+.\"
+.\" %%%LICENSE_START(PUBLIC_DOMAIN)
+.\" Placed in the Public Domain.
+.\" %%%LICENSE_END
+.\"
+.\" 2005-06-16 mtk, mentioned freopen()
+.\" 2007-12-08, mtk, Converted from mdoc to man macros
+'''
+
+package = man-pages-ja
+location = https://linuxjm.osdn.jp/manual/LDP_man-pages/release/man5/tzfile.5
+text = '''
+.\" %%%LICENSE_START(PUBLIC_DOMAIN)
+.\" This file is in the public domain, so clarified as of
+.\" 1996-06-05 by Arthur David Olson <arthur_david_olson@nih.gov>.
+.\" %%%LICENSE_END
+'''
+
+package = man-pages-ja
+location = https://linuxjm.osdn.jp/manual/LDP_man-pages/release/man8/ld.so.8
+text = '''
+.\" %%%LICENSE_START(PUBLIC_DOMAIN)
+.\" This is in the public domain
+.\" %%%LICENSE_END
+'''
+
+package = qemu
+location = https://gitlab.com/qemu-project/qemu/-/blob/master/include/qemu/jhash.h
+text = '''
+lookup3.c, by Bob Jenkins, May 2006, Public Domain.
+'''
+
+package = edk2
+location = https://github.com/tianocore/edk2/blob/master/BaseTools/Source/C/LzmaCompress/Sdk/DOC/lzma-sdk.txt
+           https://github.com/tianocore/edk2/blob/master/MdeModulePkg/Library/LzmaCustomDecompressLib/Sdk/DOC/lzma-sdk.txt
+text = '''
+LZMA SDK is written and placed in the public domain by Igor Pavlov.
+
+Some code in LZMA SDK is based on public domain code from another developers:
+  1) PPMd var.H (2001): Dmitry Shkarin
+  2) SHA-256: Wei Dai (Crypto++ library)
+
+Anyone is free to copy, modify, publish, use, compile, sell, or distribute the
+original LZMA SDK code, either in source code form or as a compiled binary, for
+any purpose, commercial or non-commercial, and by any means.
+
+LZMA SDK code is compatible with open source licenses, for example, you can
+include it to GNU GPL or GNU LGPL code.
+'''
+
+package = mingw-winpthreads
+          mingw-headers
+location = https://sourceforge.net/p/mingw-w64/mingw-w64/ci/master/tree/DISCLAIMER.PD
+text = '''
+/**
+ * This file has no copyright assigned and is placed in the Public Domain.
+ * This file is part of the w64 mingw-runtime package.
+ * No warranty is given; refer to the file DISCLAIMER.PD within this package.
+ */
+'''
+
+package = augeas
+location = https://github.com/hercules-team/augeas/blob/master/lenses/dpkg.aug
+text = '''
+This file, and the attendant test_dpgk.aug, are explicitly placed in the public domain.
+'''
+
+package = xorg-x11-fonts
+location = https://gitlab.freedesktop.org/xorg/font/winitzki-cyrillic/-/blob/master/COPYING?ref_type=heads
+text = '''
+Font converted from VGA/EGA to BDF.
+VGA and BDF created by Serge Winitzki.
+Public domain. February 2000.
+'''
+
+package = xorg-x11-fonts
+location = https://gitlab.freedesktop.org/xorg/font/micro-misc/-/blob/master/micro.bdf?ref_type=heads#L9
+text = '''
+"Public domain font.  Share and enjoy."
+'''
+
+package = aopalliance
+location = https://aopalliance.sourceforge.net/
+text = '''
+LICENCE: all the source code provided by AOP Alliance is Public Domain.
+'''
+
+package = byacc
+location = https://invisible-island.net/byacc/byacc.html#licensing
+           https://invisible-island.net/archives/byacc/byacc-20230521.tgz
+             (File: LICENSE)
+text = '''
+    Berkeley Yacc is in the public domain.  The data structures and algorithms
+used in Berkeley Yacc are all either taken from documents available to the
+general public or are inventions of the author.  Anyone may freely distribute
+source or binary forms of Berkeley Yacc whether unchanged or modified.
+Distributers may charge whatever fees they can obtain for Berkeley Yacc.
+Programs generated by Berkeley Yacc may be distributed freely.
+'''
+
+package = gdb
+          binutils
+location = https://sourceware.org/cgit/binutils-gdb/tree/libiberty/hashtab.c#n853
+text = '''
+lookup2.c, by Bob Jenkins, December 1996, Public Domain.
+'''
+
+package = gdb
+          binutils
+location = https://sourceware.org/cgit/binutils-gdb/tree/libiberty/xmemdup.c#n2
+text = '''
+This trivial function is in the public domain.
+'''
+
+package = gdb
+          binutils
+location = https://sourceware.org/cgit/binutils-gdb/tree/libiberty/memset.c#n2
+text = '''
+This implementation is in the public domain.
+'''
+
+package = gdb
+          binutils
+location = https://sourceware.org/cgit/binutils-gdb/tree/libiberty/alloca.c#n2
+text = '''
+(Mostly) portable public-domain implementation
+'''
+
+package = gdb
+          binutils
+location = https://sourceware.org/cgit/binutils-gdb/tree/libiberty/atexit.c#n2
+           https://sourceware.org/cgit/binutils-gdb/tree/libiberty/bcmp.c#n2
+           https://sourceware.org/cgit/binutils-gdb/tree/libiberty/bzero.c#n2
+           https://sourceware.org/cgit/binutils-gdb/tree/libiberty/calloc.c#n2
+           https://sourceware.org/cgit/binutils-gdb/tree/libiberty/getcwd.c#n2
+           https://sourceware.org/cgit/binutils-gdb/tree/libiberty/memcmp.c#n2
+           https://sourceware.org/cgit/binutils-gdb/tree/libiberty/memcpy.c#n2
+           https://sourceware.org/cgit/binutils-gdb/tree/libiberty/memmove.c#n2
+           https://sourceware.org/cgit/binutils-gdb/tree/libiberty/rename.c#n2
+           https://sourceware.org/cgit/binutils-gdb/tree/libiberty/strchr.c#n2
+           https://sourceware.org/cgit/binutils-gdb/tree/libiberty/strncmp.c#n2
+           https://sourceware.org/cgit/binutils-gdb/tree/libiberty/strnlen.c#n2
+           https://sourceware.org/cgit/binutils-gdb/tree/libiberty/strrchr.c#n2
+           https://sourceware.org/cgit/binutils-gdb/tree/libiberty/strstr.c#n2
+           https://sourceware.org/cgit/binutils-gdb/tree/libiberty/vfork.c#n2
+text = '''
+This function is in the public domain.
+'''
+
+package = source-highlight
+location = http://git.savannah.gnu.org/cgit/src-highlite.git/tree/lib/srchilite/readtags.c?h=rel_3_1_9&id=5a226cc9eab84652b2f74356345f2c2c271ac750#n6
+text = '''
+This source code is released into the public domain.
+'''
+
+package = source-highlight
+location = http://git.savannah.gnu.org/cgit/src-highlite.git/tree/lib/srchilite/readtags.h?h=rel_3_1_9&id=5a226cc9eab84652b2f74356345f2c2c271ac750#n6
+text = '''
+This source code is released for the public domain.
+'''
+
+package = man-pages
+location = https://git.kernel.org/pub/scm/docs/man-pages/man-pages.git/tree/man2/nfsservctl.2#n2
+text = '''
+This text is in the public domain.
+'''
+
+package = man-pages
+location = https://git.kernel.org/pub/scm/docs/man-pages/man-pages.git/tree/man3/getnameinfo.3#n3
+text = '''
+This page is in the public domain.
+'''
+
+package = man-pages
+location = https://git.kernel.org/pub/scm/docs/man-pages/man-pages.git/tree/man3/grantpt.3#n3
+text = '''
+This page is in the public domain. - aeb
+'''
+
+package = man-pages
+location = https://git.kernel.org/pub/scm/docs/man-pages/man-pages.git/tree/man3/stdin.3#n7
+text = '''
+Placed in the Public Domain.
+'''
+
+package = man-pages
+location = https://git.kernel.org/pub/scm/docs/man-pages/man-pages.git/tree/man8/ld.so.8#n2
+text = '''
+This is in the public domain
+'''
+
+package = automake
+location = https://git.savannah.gnu.org/cgit/automake.git/tree/lib/mkinstalldirs?h=v1.16#n8
+text = '''
+Public domain.
+'''
+
+package = words
+location = https://web.archive.org/web/20170930060409/http://icon.shef.ac.uk/Moby/
+text = '''
+The Moby lexicon project is complete and has
+been place into the public domain. Use, sell,
+rework, excerpt and use in any way on any platform.
+
+Placing this material on internal or public servers is
+also encouraged. The compiler is not aware of any
+export restrictions so freely distribute world-wide.
+
+You can verify the public domain status by contacting
+
+Grady Ward
+3449 Martha Ct.
+Arcata, CA  95521-4884
+
+daedal@myrealbox.com
+'''
+
+package = libinstpatch
+location = https://github.com/swami/libinstpatch/blob/v1.1.6/libinstpatch/md5.c#L2
+text = '''
+This code implements the MD5 message-digest algorithm.
+The algorithm is due to Ron Rivest.  This code was
+written by Colin Plumb in 1993, no copyright is claimed.
+This code is in the public domain; do with it what you wish.
+Equivalent code is available from RSA Data Security, Inc.
+This code has been tested against that, and is equivalent,
+except that you don't need to include two pages of legalese
+with every copy.
+'''
+
+package = libinstpatch
+location = https://github.com/swami/libinstpatch/blob/v1.1.6/examples/create_sf2.c#L11
+text = '''
+Use this example as you please (public domain)
+'''
+
+package = libinstpatch
+location = https://github.com/swami/libinstpatch/blob/v1.1.6/examples/split_sfont.c#L6
+text = '''
+Public domain use as you please
+'''
+
+package = dyninst
+location = https://github.com/dyninst/dyninst/blob/9696c64a3a1d6f41241d27c3c51820616490efa6/common/src/sha1.C#L33
+text = '''
+100% Public Domain
+'''
+
+package = dyninst
+location = https://github.com/dyninst/dyninst/blob/9696c64a3a1d6f41241d27c3c51820616490efa6/common/src/sha1.C#L37
+text = '''
+Still 100% Public Domain
+'''
+
+package = ruby
+location = https://github.com/ruby/ruby/blob/95a1d1fde8fb13d6b7bd6d63864d3bae8b34b0b0/missing/alloca.c#L1-L27
+text = '''
+alloca -- (mostly) portable public-domain implementation -- D A Gwyn
+'''
+
+package = ruby
+location = https://github.com/ruby/ruby/blob/95a1d1fde8fb13d6b7bd6d63864d3bae8b34b0b0/ext/date/date_strftime.c#L2-L4
+text = '''
+date_strftime.c: based on a public-domain implementation of ANSI C
+library routine strftime, which is originally written by Arnold
+Robbins.
+'''
+
+package = ruby
+location = https://github.com/ruby/ruby/blob/95a1d1fde8fb13d6b7bd6d63864d3bae8b34b0b0/strftime.c#L4-L47
+text = '''
+Public-domain implementation of ANSI C library routine.
+
+It's written in old-style C for maximal portability.
+However, since I'm used to prototypes, I've included them too.
+
+If you want stuff in the System V ascftime routine, add the SYSV_EXT define.
+For extensions from SunOS, add SUNOS_EXT.
+For stuff needed to implement the P1003.2 date command, add POSIX2_DATE.
+For VMS dates, add VMS_EXT.
+For a an RFC822 time format, add MAILHEADER_EXT.
+For ISO week years, add ISO_DATE_EXT.
+For complete POSIX semantics, add POSIX_SEMANTICS.
+
+The code for %c, %x, and %X now follows the 1003.2 specification for
+the POSIX locale.
+This version ignores LOCALE information.
+It also doesn't worry about multi-byte characters.
+So there.
+
+This file is also shipped with GAWK (GNU Awk), gawk specific bits of
+code are included if GAWK is defined.
+
+Arnold Robbins
+January, February, March, 1991
+Updated March, April 1992
+Updated April, 1993
+Updated February, 1994
+Updated May, 1994
+Updated January, 1995
+Updated September, 1995
+Updated January, 1996
+
+Fixes from ado@elsie.nci.nih.gov
+February 1991, May 1992
+Fixes from Tor Lillqvist tml@tik.vtt.fi
+May, 1993
+Further fixes from ado@elsie.nci.nih.gov
+February 1994
+%z code from chip@chinacat.unicom.com
+Applied September 1995
+%V code fixed (again) and %G, %g added,
+January 1996
+'''
+
+package = ruby
+location = https://github.com/ruby/ruby/blob/95a1d1fde8fb13d6b7bd6d63864d3bae8b34b0b0/win32/win32.c#L5147
+text = '''
+License: Public Domain, copied from mingw headers
+'''
+
+package = ruby
+location = https://github.com/ruby/ruby/blob/95a1d1fde8fb13d6b7bd6d63864d3bae8b34b0b0/missing/tgamma.c#L1-L7
+text = '''
+tgamma.c  - public domain implementation of function tgamma(3m)
+reference - Haruhiko Okumura: C-gengo niyoru saishin algorithm jiten
+            (New Algorithm handbook in C language) (Gijyutsu hyouron
+            sha, Tokyo, 1991) [in Japanese]
+            http://oku.edu.mie-u.ac.jp/~okumura/algo/
+'''
+
+package = ruby
+location = https://github.com/ruby/ruby/blob/95a1d1fde8fb13d6b7bd6d63864d3bae8b34b0b0/missing/strstr.c#L1
+text = '''
+public domain rewrite of strstr(3)
+'''
+
+package = ruby
+location = https://github.com/ruby/ruby/blob/95a1d1fde8fb13d6b7bd6d63864d3bae8b34b0b0/missing/strerror.c#L1
+text = '''
+public domain rewrite of strerror(3)
+'''
+
+package = ruby
+location = https://github.com/ruby/ruby/blob/95a1d1fde8fb13d6b7bd6d63864d3bae8b34b0b0/missing/strchr.c#L1
+text = '''
+public domain rewrite of strchr(3) and strrchr(3)
+'''
+
+package = ruby
+location = https://github.com/ruby/ruby/blob/95a1d1fde8fb13d6b7bd6d63864d3bae8b34b0b0/missing/memmove.c#L1
+text = '''
+public domain rewrite of memcmp(3)
+'''
+
+package = ruby
+location = https://github.com/ruby/ruby/blob/95a1d1fde8fb13d6b7bd6d63864d3bae8b34b0b0/missing/memcmp.c#L1
+text = '''
+public domain rewrite of memcmp(3)
+'''
+
+package = ruby
+location = https://github.com/ruby/ruby/blob/95a1d1fde8fb13d6b7bd6d63864d3bae8b34b0b0/missing/lgamma_r.c#L1-L9
+text = '''
+lgamma_r.c  - public domain implementation of function lgamma_r(3m)
+lgamma_r() is based on gamma().  modified by Tanaka Akira.
+reference - Haruhiko Okumura: C-gengo niyoru saishin algorithm jiten
+            (New Algorithm handbook in C language) (Gijyutsu hyouron
+            sha, Tokyo, 1991) [in Japanese]
+            http://oku.edu.mie-u.ac.jp/~okumura/algo/
+'''
+
+package = ruby
+location = https://github.com/ruby/ruby/blob/95a1d1fde8fb13d6b7bd6d63864d3bae8b34b0b0/missing/hypot.c#L1
+text = '''
+public domain rewrite of hypot
+'''
+
+package = ruby
+location = https://github.com/ruby/ruby/blob/95a1d1fde8fb13d6b7bd6d63864d3bae8b34b0b0/missing/erf.c#L1-L5
+text = '''
+erf.c  - public domain implementation of error function erf(3m)
+reference - Haruhiko Okumura: C-gengo niyoru saishin algorithm jiten
+            (New Algorithm handbook in C language) (Gijyutsu hyouron
+            sha, Tokyo, 1991) p.227 [in Japanese]
+'''
+
+package = ruby
+location = https://github.com/ruby/ruby/blob/95a1d1fde8fb13d6b7bd6d63864d3bae8b34b0b0/missing/acosh.c#L8
+text = '''
+public domain rewrite of acosh(3), asinh(3) and atanh(3)
+'''
+
+package = ruby
+location = https://github.com/ruby/ruby/blob/95a1d1fde8fb13d6b7bd6d63864d3bae8b34b0b0/lib/bundler/digest.rb#L3
+text = '''
+This code was extracted from https://github.com/Solistra/ruby-digest which is under public domain
+'''
+
+package = ruby
+location = https://github.com/ruby/ruby/blob/95a1d1fde8fb13d6b7bd6d63864d3bae8b34b0b0/st.c#L1-L5
+text = '''
+This is a public domain general purpose hash table package
+originally written by Peter Moore @ UCB.
+The hash table data structures were redesigned and the package was
+rewritten by Vladimir Makarov <vmakarov@redhat.com>.
+'''
+
+package = ruby
+location = https://github.com/ruby/ruby/blob/95a1d1fde8fb13d6b7bd6d63864d3bae8b34b0b0/include/ruby/st.h#L1-L5
+text = '''
+This is a public domain general purpose hash table package
+originally written by Peter Moore @ UCB.
+The hash table data structures were redesigned and the package was
+rewritten by Vladimir Makarov <vmakarov@redhat.com>.
+'''
+
+package = ruby
+location = https://github.com/ruby/ruby/blob/95a1d1fde8fb13d6b7bd6d63864d3bae8b34b0b0/ext/digest/sha1/sha1.h#L8
+text = '''
+100% Public Domain
+'''
+
+package = ruby
+location = https://github.com/ruby/ruby/blob/95a1d1fde8fb13d6b7bd6d63864d3bae8b34b0b0/ext/digest/sha1/sha1.c#L9
+text = '''
+100% Public Domain
+'''
+
+package = perl
+location = https://github.com/Perl/perl5/blob/blead/ext/SDBM_File/sdbm.h#L4-L5
+text = '''
+ * author: oz@nexus.yorku.ca
+ * status: public domain. 
+'''
+
+package = perl
+          perl-Test-Simple
+location = https://github.com/Test-More/test-more/blob/master/lib/Test/Tutorial.pod
+text = '''
+Irrespective of its distribution, all code examples in these files
+are hereby placed into the public domain.  You are permitted and
+encouraged to use this code in your own programs for fun
+or for profit as you see fit.  A simple comment in the code giving
+credit would be courteous but is not required.
+'''
+
+package = python-multiprocess
+location = https://github.com/uqfoundation/multiprocess/blob/273ee14261c9e08d794ab55f3398926e04a77364/py3.11/doc/html4css1.css#L6
+text = '''
+This stylesheet has been placed in the public domain.
+'''
+
+package = python-llvmlite
+location = https://github.com/numba/llvmlite/blob/v0.39.1/versioneer.py#L278-L280
+text = '''
+To make Versioneer easier to embed, all its code is hereby released into the
+public domain. The `_version.py` that it creates is also in the public
+domain.
+'''
+
+package = perl-Barcode-Code128
+location = https://metacpan.org/release/WRW/Barcode-Code128-2.21/source/README#L50
+text = '''
+This module is placed into the public domain.  You are free to
+use, modify, or redistribute this module in any way for commercial
+or other uses.  My only request is that if you change it, please
+submit copies of your changed code (or diffs) so that I can
+incorporate them into the version on CPAN.  Also, in order to
+reduce the likelihood of confusion please do not distribute a
+modified version of this module unless you change the name first.
+'''
+
+package = perl-libxml-perl
+location = https://metacpan.org/release/KMACLEOD/libxml-perl-0.08/source/lib/XML/Handler/Sample.pm
+text = '''
+# This template file is in the Public Domain.
+# You may do anything you want with this file.
+'''
+
+package = perl-Math-Int64
+location = https://github.com/salva/p5-Math-Int64/blob/master/templates/c_api_h.temp#L2
+text = '''
+* <% $c_api_h_filename %> - This file is in the public domain
+'''
+
+package = perl-Net-OpenID-Consumer
+          perl-Net-OpenID-Server
+location = https://metacpan.org/release/WROG/Net-OpenID-Consumer-1.18/source/examples/consumer.cgi
+           https://metacpan.org/release/ROBN/Net-OpenID-Server-1.09/source/examples/server.cgi
+text = '''
+This program is in the public domain.
+'''
+
+package = perl-perlfaq
+location = https://metacpan.org/release/ETHER/perlfaq-5.20210520/source/lib/perlfaq.pod
+text = '''
+Code examples in all the perlfaq documents are in the public domain.
+'''
+
+package = jo
+location = https://github.com/jpmens/jo/blob/2cc476178198774ad6bea89be0b9e4ed2d4bf4c5/base64.c#L3
+text = '''
+This code is public domain software.
+'''
+
+package = abseil-cpp
+          tzdata
+          glibc
+location = https://github.com/abseil/abseil-cpp/blob/c8a2f92586fe9b4e1aff049108f5db8064924d8e/absl/time/internal/cctz/src/tzfile.h#L8
+           https://github.com/eggert/tz/blob/main/asctime.c#L4
+           https://github.com/eggert/tz/blob/main/tzfile.5#L1
+           https://github.com/eggert/tz/blob/main/tzfile.h#L8
+           https://github.com/eggert/tz/blob/main/difftime.c#L4
+           https://github.com/eggert/tz/blob/main/localtime.c#L4
+           https://github.com/eggert/tz/blob/main/private.h#L8
+           https://github.com/eggert/tz/blob/main/time2posix.3#L1
+           https://sourceware.org/git/?p=glibc.git;a=blob;hb=ef321e23c20eebc6d6fb4044425c00e6df27b05f;f=timezone/private.h
+           https://sourceware.org/git/?p=glibc.git;a=blob;hb=ef321e23c20eebc6d6fb4044425c00e6df27b05f;f=timezone/tzfile.h
+text = '''
+This file is in the public domain, so clarified as of
+1996-06-05 by Arthur David Olson.
+'''
+
+package = tzdata
+          glibc
+location = https://github.com/eggert/tz/blob/main/zic.c#L4
+           https://sourceware.org/git/?p=glibc.git;a=blob;hb=ef321e23c20eebc6d6fb4044425c00e6df27b05f;f=timezone/yearistype
+           https://sourceware.org/git/?p=glibc.git;a=blob;hb=ef321e23c20eebc6d6fb4044425c00e6df27b05f;f=timezone/zic.c
+text = '''
+This file is in the public domain, so clarified as of
+2006-07-17 by Arthur David Olson.
+'''
+
+package = tzdata
+          glibc
+location = https://github.com/eggert/tz/blob/main/checklinks.awk#L3
+           https://github.com/eggert/tz/blob/main/checknow.awk#L3
+           https://github.com/eggert/tz/blob/main/checktab.awk#L3
+           https://github.com/eggert/tz/blob/main/tzselect.ksh#L9
+           https://github.com/eggert/tz/blob/main/ziguard.awk#L3
+           https://github.com/eggert/tz/blob/main/zishrink.awk#L3
+           https://sourceware.org/git/?p=glibc.git;a=blob;hb=ef321e23c20eebc6d6fb4044425c00e6df27b05f;f=timezone/tzselect.ksh
+text = '''
+Contributed by Paul Eggert.  This file is in the public domain.
+'''
+
+package = tzdata
+location = https://github.com/eggert/tz/blob/main/README#L53
+text = '''
+This file is in the public domain, so clarified as of 2009-05-17 by
+Arthur David Olson.  The other files in this distribution are either
+public domain or BSD licensed; see the file LICENSE for details.
+'''
+
+package = tzdata
+location = https://github.com/eggert/tz/blob/main/LICENSE#L1
+text = '''
+Unless specified below, all files in the tz code and data (including
+this LICENSE file) are in the public domain.
+'''
+
+package = tzdata
+location = https://github.com/eggert/tz/blob/main/tz-how-to.html#L712
+text = '''
+This web page is in the public domain, so clarified as of
+2015-10-20 by Bill Seymour.
+'''
+
+package = ecl
+location = https://gitlab.com/embeddable-common-lisp/ecl/-/blob/develop/src/lsp/cmuutil.lsp
+text = '''
+This code was written as part of the CMU Common Lisp project at
+Carnegie Mellon University, and has been placed in the public domain.
+'''
+
+package = fontconfig
+location = https://gitlab.freedesktop.org/fontconfig/fontconfig/-/blob/main/src/fcmd5.h
+text = '''
+This code implements the MD5 message-digest algorithm.
+The algorithm is due to Ron Rivest.  This code was
+written by Colin Plumb in 1993, no copyright is claimed.
+This code is in the public domain; do with it what you wish.
+Equivalent code is available from RSA Data Security, Inc.
+This code has been tested against that, and is equivalent,
+except that you don't need to include two pages of legalese
+with every copy.
+'''
+
+package = gap-pkg-profiling
+location = https://github.com/gap-packages/profiling/blob/master/src/md5.cc
+text = '''
+This code implements the MD5 message-digest algorithm.
+The algorithm is due to Ron Rivest.  This code was
+written by Colin Plumb in 1993, no copyright is claimed.
+This code is in the public domain; do with it what you wish.
+Equivalent code is available from RSA Data Security, Inc.
+This code has been tested against that, and is equivalent,
+except that you don't need to include two pages of legalese
+with every copy.
+'''
+
+package = icu4j
+location = https://github.com/unicode-org/icu/blob/main/icu4j/main/shared/licenses/LICENSE
+text = '''
+  ICU uses the public domain data and code derived from Time Zone
+Database for its time zone support. The ownership of the TZ database
+is explained in BCP 175: Procedure for Maintaining the Time Zone
+Database section 7.
+7.  Database Ownership
+    The TZ database itself is not an IETF Contribution or an IETF
+    document.  Rather it is a pre-existing and regularly updated work
+    that is in the public domain, and is intended to remain in the
+    public domain.  Therefore, BCPs 78 [RFC5378] and 79 [RFC3979] do
+    not apply to the TZ Database or contributions that individuals make
+    to it.  Should any claims be made and substantiated against the TZ
+    Database, the organization that is providing the IANA
+    Considerations defined in this RFC, under the memorandum of
+    understanding with the IETF, currently ICANN, may act in accordance
+    with all competent court orders.  No ownership claims will be made
+    by ICANN or the IETF Trust on the database or the code.  Any person
+    making a contribution to the database or code waives all rights to
+    future claims in that contribution or in the TZ Database.
+'''
+
+package = jisksp16-1990-fonts
+location = http://kanji.zinbun.kyoto-u.ac.jp/~yasuoka/ftp/fonts/jisksp16-1990.bdf.Z
+text = '''
+COPYRIGHT "Public Domain"
+'''
+
+package = pl
+location = https://github.com/SWI-Prolog/packages-http/blob/master/examples/calc.pl
+text = '''
+Copyright (C): Public domain
+'''
+
+package = pl
+location = https://github.com/SWI-Prolog/packages-semweb/blob/master/murmur.c
+text = '''
+License: Public domain
+'''
+
+package = pl
+location = https://github.com/SWI-Prolog/packages-stomp/blob/master/examples/ping.pl
+text = '''
+@license This code is in the public domain
+'''
+
+package = pl
+location = https://github.com/SWI-Prolog/packages-xpce/blob/master/src/gnu/getdate-source.y
+text = '''
+This code is in the public domain and has no copyright.
+'''
+
+package = pl
+          python-pdfminer
+          gdb
+          binutils
+location = https://github.com/SWI-Prolog/swipl-devel/blob/master/scripts/swipl-bt
+           https://github.com/SWI-Prolog/swipl-devel/blob/master/src/tools/functions.pm
+           https://github.com/pdfminer/pdfminer.six/blob/ebf7bcdb983f36d0ff5b40e4f23b52525cb28f18/pdfminer/ascii85.py#L3
+           https://sourceware.org/cgit/binutils-gdb/tree/libiberty/xstrerror.c#n3
+text = '''
+This code is in the public domain
+'''
+
+package = pl
+location = https://github.com/SWI-Prolog/swipl-devel/blob/master/src/pl-hash.c
+text = '''
+License: Public domain
+'''
+
+package = pvs-sbcl
+location = https://github.com/SRI-CSL/PVS/blob/master/src/md5.lisp
+text = '''
+This file implements The MD5 Message-Digest Algorithm, as defined in
+RFC 1321 by R. Rivest, published April 1992.
+It was written by Pierre R. Mai, with copious input from the
+cmucl-help mailing-list hosted at cons.org, in November 2001 and
+has been placed into the public domain.
+'''
+
+package = pvs-sbcl
+location = https://github.com/SRI-CSL/PVS/blob/master/src/metering.lisp
+text = '''
+This code is in the public domain and is distributed without warranty
+of any kind.
+'''
+
+package = pvs-sbcl
+location = https://github.com/SRI-CSL/PVS/blob/master/src/Field/decimals.lisp
+text = '''
+License: Public domain
+This program is distributed in the hope that it will be useful, but
+WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+'''
+
+package = imagej
+location = https://imagej.nih.gov/ij/disclaimer.html
+text = '''
+ImageJ was developed at the National Institutes of Health by an employee of the 
+Federal Government in the course of his official duties. Pursuant to Title 17, 
+Section 105 of the United States Code, this software is not subject to copyright 
+protection and is in the public domain. ImageJ is an experimental system. NIH 
+assumes no responsibility whatsoever for its use by other parties, and makes no 
+guarantees, expressed or implied, about its quality, reliability, or any other characteristic.
+'''
+
+package = gdouros-aegean-fonts
+        gdouros-aegyptus-fonts
+        gdouros-akkadian-fonts
+        gdouros-alexander-fonts
+        gdouros-anaktoria-fonts
+        gdouros-analecta-fonts
+        gdouros-aroania-fonts
+        gdouros-asea-fonts
+        gdouros-avdira-fonts
+        gdouros-musica-fonts
+        gdouros-symbola-fonts
+location = https://web.archive.org/web/20150625020428/http://users.teilar.gr/~g1951d/
+text = '''
+in lieu of a licence
+Fonts and documents in this site are not pieces of property or merchandise items; they carry no trademark, copyright, license or other market tags; they are free for any use.
+'''
+
+
+package = perl-IO-HTML
+location = https://metacpan.org/release/CJM/IO-HTML-1.004/source/examples/detect-encoding.pl
+text = '''
+This example is hereby placed in the public domain.
+You may copy from it freely.
+
+Detect the encoding of files given on the command line
+'''
+
+package = dotnet7.0
+location = https://github.com/dotnet/fsharp/blob/186d3f6ce267c27f8acaa2c8f3df1472bf2a88bf/src/FSharp.Core/resumable.fs#L2-L3
+text = '''
+To the extent possible under law, the author(s) have dedicated all copyright and related and neighboring rights
+to this software to the public domain worldwide. This software is distributed without any warranty.
+'''
+
+package = dotnet7.0
+location = https://github.com/dotnet/runtime/blob/e721ae953c61297aec73e8051696f2b9b30148c7/src/coreclr/inc/utilcode.h#L2417-L2425
+text = '''
+You can use this free for any purpose.  It's in the public domain.  It has no warranty.
+'''
+
+package = x11vnc
+location = https://github.com/LibVNC/x11vnc/tree/af63109a17f1b1ec8b1e332d215501f11c4a33a0/misc/turbovnc
+text = '''
+This work has been (or is hereby) released into the public domain by
+its author, Karl J. Runge <runge@karlrunge.com>. This applies worldwide.
+In case this is not legally possible: Karl J. Runge grants anyone the
+right to use this work for any purpose, without any conditions, unless
+such conditions are required by law.
+'''
+
+package = xmlpull
+location = https://github.com/xmlpull-xpp3/xmlpull-xpp3/blob/master/xmlpull/LICENSE.txt
+text = '''
+All of the XMLPULL API source code, compiled code, and documentation 
+contained in this distribution *except* for tests (see separate LICENSE_TESTS.txt)
+are in the Public Domain.
+XMLPULL API comes with NO WARRANTY or guarantee of fitness for any purpose.
+'''
+
+package = xz-java
+location = https://git.tukaani.org/?p=xz-java.git;a=blob;f=COPYING;h=8dd17645c4610c3d5eed9bcdd2699ecfac00406b;hb=HEAD
+text = ''' 
+Licensing of XZ for Java
+========================
+All the files in this package have been written by Lasse Collin,
+Igor Pavlov, and/or Brett Okken. All these files have been put into
+the public domain. You can do whatever you want with these files.
+This software is provided "as is", without any warranty.
+'''
+
+package = libselinux
+location = https://github.com/SELinuxProject/selinux/blob/master/libselinux/LICENSE
+text = '''
+This library (libselinux) is public domain software, i.e. not copyrighted.
+
+Warranty Exclusion
+------------------
+You agree that this software is a
+non-commercially developed program that may contain "bugs" (as that
+term is used in the industry) and that it may not function as intended.
+The software is licensed "as is". NSA makes no, and hereby expressly
+disclaims all, warranties, express, implied, statutory, or otherwise
+with respect to the software, including noninfringement and the implied
+warranties of merchantability and fitness for a particular purpose.
+
+Limitation of Liability
+-----------------------
+In no event will NSA be liable for any damages, including loss of data,
+lost profits, cost of cover, or other special, incidental,
+consequential, direct or indirect damages arising from the software or
+the use thereof, however caused and on any theory of liability. This
+limitation will apply even if NSA has been advised of the possibility
+of such damage. You acknowledge that this is a reasonable allocation of
+risk.
+'''
+
+package = dnsmasq
+location = https://thekelleys.org.uk/gitweb/?p=dnsmasq.git;a=blob_plain;f=po/es.po;hb=HEAD
+text = '''
+This file is put in the public domain.
+'''
+
+package = groff
+location = http://git.savannah.gnu.org/gitweb/?p=groff.git;a=blob;f=LICENSES;hb=HEAD#l52
+text = '''
+The files contain no AT&T code and are in the public domain.
+'''
+
+package = tzdata
+          glibc
+location = https://github.com/eggert/tz/blob/main/zone.tab#L3
+           https://github.com/eggert/tz/blob/main/backward#L3
+           https://github.com/eggert/tz/blob/main/northamerica#L3
+           https://github.com/eggert/tz/blob/main/iso3166.tab#L3
+           https://github.com/eggert/tz/blob/main/factory#L3
+           https://github.com/eggert/tz/blob/main/europe#L3
+           https://github.com/eggert/tz/blob/main/etcetera#L3
+           https://github.com/eggert/tz/blob/main/australasia#L3
+           https://github.com/eggert/tz/blob/main/asia#L3
+           https://github.com/eggert/tz/blob/main/antarctica#L3
+           https://github.com/eggert/tz/blob/main/africa#L3
+           https://github.com/eggert/tz/blob/main/southamerica#L3
+           https://github.com/eggert/tz/blob/main/tzselect.8#L1
+           https://github.com/eggert/tz/blob/main/zdump.8#L1
+           https://github.com/eggert/tz/blob/main/zdump.c#L4
+           https://github.com/eggert/tz/blob/main/zic.8#L1
+           https://github.com/eggert/tz/blob/main/calendars#L167
+           https://github.com/eggert/tz/blob/main/date.1#L1
+           https://github.com/eggert/tz/blob/main/workman.sh#L4
+           https://github.com/eggert/tz/blob/main/Makefile#L2
+           https://github.com/eggert/tz/blob/main/newctime.3#L1
+           https://github.com/eggert/tz/blob/main/newtzset.3#L1
+           https://github.com/eggert/tz/blob/main/tz-link.html#L1220
+           https://github.com/eggert/tz/blob/main/tz-art.html#L643
+           https://github.com/eggert/tz/blob/main/theory.html#L1497
+           https://sourceware.org/git/?p=glibc.git;a=blob;hb=ef321e23c20eebc6d6fb4044425c00e6df27b05f;f=timezone/africa
+           https://sourceware.org/git/?p=glibc.git;a=blob;hb=ef321e23c20eebc6d6fb4044425c00e6df27b05f;f=timezone/antarctica
+           https://sourceware.org/git/?p=glibc.git;a=blob;hb=ef321e23c20eebc6d6fb4044425c00e6df27b05f;f=timezone/asia
+           https://sourceware.org/git/?p=glibc.git;a=blob;hb=ef321e23c20eebc6d6fb4044425c00e6df27b05f;f=timezone/australasia
+           https://sourceware.org/git/?p=glibc.git;a=blob;hb=ef321e23c20eebc6d6fb4044425c00e6df27b05f;f=timezone/backward
+           https://sourceware.org/git/?p=glibc.git;a=blob;hb=ef321e23c20eebc6d6fb4044425c00e6df27b05f;f=timezone/etcetera
+           https://sourceware.org/git/?p=glibc.git;a=blob;hb=ef321e23c20eebc6d6fb4044425c00e6df27b05f;f=timezone/europe
+           https://sourceware.org/git/?p=glibc.git;a=blob;hb=ef321e23c20eebc6d6fb4044425c00e6df27b05f;f=timezone/factory
+           https://sourceware.org/git/?p=glibc.git;a=blob;hb=ef321e23c20eebc6d6fb4044425c00e6df27b05f;f=timezone/iso3166.tab
+           https://sourceware.org/git/?p=glibc.git;a=blob;hb=ef321e23c20eebc6d6fb4044425c00e6df27b05f;f=timezone/leapseconds
+           https://sourceware.org/git/?p=glibc.git;a=blob;hb=ef321e23c20eebc6d6fb4044425c00e6df27b05f;f=timezone/northamerica
+           https://sourceware.org/git/?p=glibc.git;a=blob;hb=ef321e23c20eebc6d6fb4044425c00e6df27b05f;f=timezone/pacificnew
+           https://sourceware.org/git/?p=glibc.git;a=blob;hb=ef321e23c20eebc6d6fb4044425c00e6df27b05f;f=timezone/solar87
+           https://sourceware.org/git/?p=glibc.git;a=blob;hb=ef321e23c20eebc6d6fb4044425c00e6df27b05f;f=timezone/solar88
+           https://sourceware.org/git/?p=glibc.git;a=blob;hb=ef321e23c20eebc6d6fb4044425c00e6df27b05f;f=timezone/solar89
+           https://sourceware.org/git/?p=glibc.git;a=blob;hb=ef321e23c20eebc6d6fb4044425c00e6df27b05f;f=timezone/southamerica
+           https://sourceware.org/git/?p=glibc.git;a=blob;hb=ef321e23c20eebc6d6fb4044425c00e6df27b05f;f=timezone/systemv
+           https://sourceware.org/git/?p=glibc.git;a=blob;hb=ef321e23c20eebc6d6fb4044425c00e6df27b05f;f=timezone/zone.tab
+text = '''
+# This file is in the public domain, so clarified as of
+# 2009-05-17 by Arthur David Olson.
+'''
+
+package = tzdata
+          abseil-cpp
+          gdb
+          binutils
+          varnish
+location = https://github.com/eggert/tz/blob/main/zone1970.tab#L3
+           https://github.com/eggert/tz/blob/main/backzone#L3
+           https://github.com/eggert/tz/blob/main/leapseconds.awk#L3
+           https://github.com/eggert/tz/blob/main/CONTRIBUTING#L97
+           https://github.com/eggert/tz/blob/main/NEWS#L6105
+           https://github.com/abseil/abseil-cpp/blob/c8a2f92586fe9b4e1aff049108f5db8064924d8e/absl/time/internal/cctz/testdata/zoneinfo/zone1970.tab#L3
+           https://sourceware.org/cgit/binutils-gdb/tree/libiberty/basename.c#n2
+           https://sourceware.org/cgit/binutils-gdb/tree/libiberty/insque.c#n2
+           https://sourceware.org/cgit/binutils-gdb/tree/libiberty/strsignal.c#n3
+           https://sourceware.org/cgit/binutils-gdb/tree/libiberty/strerror.c#n3
+           https://github.com/varnishcache/varnish-cache/blob/master/include/miniobj.h#L4
+           https://github.com/varnishcache/varnish-cache/blob/master/vmod/vmod_blob_tbl_encodings.h#L2
+           https://github.com/varnishcache/varnish-cache/blob/7.3/bin/varnishncsa/b64.c#L4
+           https://github.com/varnishcache/varnish-cache/blob/7.3/include/tbl/vhp_huffman.h#L4
+           https://github.com/varnishcache/varnish-cache/blob/7.3/include/tbl/vhp_static.h#L4
+text = '''
+# This file is in the public domain.
+'''
+
+package = autoconf
+          glibc
+location = https://git.savannah.gnu.org/cgit/autoconf.git/tree/build-aux/install-sh#n35
+           https://sourceware.org/git/?p=glibc.git;a=blob;hb=ef321e23c20eebc6d6fb4044425c00e6df27b05f;f=scripts/install-sh
+text = '''
+# FSF changes to this file are in the public domain.
+'''
+
+package = zpaq
+location = http://mattmahoney.net/dc/zpaq715.zip
+text = '''
+All of the remaining software is provided as-is, with no warranty.
+I, Matt Mahoney, release this software into
+the public domain. This applies worldwide.
+In some countries this may not be legally possible; if so:
+I grant anyone the right to use this software for any purpose,
+without any conditions, unless such conditions are required by law.
+'''
+
+package = plexus-utils
+location = https://github.com/codehaus-plexus/plexus-utils/blob/master/src/main/java/org/codehaus/plexus/util/FastMap.java
+           https://github.com/codehaus-plexus/plexus-utils/blob/master/src/main/java/org/codehaus/plexus/util/CachedMap.java
+           https://github.com/codehaus-plexus/plexus-utils/blob/master/src/main/java/org/codehaus/plexus/util/TypeFormat.java
+text = '''
+This class is public domain (not copyrighted).
+'''
+
+package = squid
+location = https://github.com/squid-cache/squid/blob/master/lib/dirent.c#L18
+test = '''
+This file has no copyright assigned and is placed in the Public Domain.
+'''
+
+package = squid
+location = https://github.com/squid-cache/squid/blob/master/lib/md5.c#L13
+           https://github.com/squid-cache/squid/blob/master/src/acl/external/wbinfo_group/ext_wbinfo_group_acl.pl.in#L71
+test = '''
+ This program is put in the public domain by Jerry Murdock
+ <jmurdock@itraktech.com>. It is distributed in the hope that it will
+ be useful, but WITHOUT ANY WARRANTY; without even the implied warranty
+ of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+'''
+
+package = openssh
+          qemu
+location = https://github.com/openssh/openssh-portable/blob/master/LICENCE#L101
+           https://gitlab.com/qemu-project/qemu/-/blob/master/crypto/aes.c
+text = '''
+This code is hereby placed in the public domain.
+'''
+
+package = sword
+location = http://crosswire.org/svn/sword/trunk/bindings/corba/java/src/org/crosswire/util/Base64.java
+text = '''
+I am placing this code in the Public Domain. Do with it as you will.
+This software comes with no guarantees or warranties but with
+plenty of well-wishing instead!
+Please visit http://iharder.net/xmlizable
+periodically to check for updates or to contribute improvements.
+'''
+
+package = apr-util
+location = https://github.com/apache/apr-util/blob/1.7.x/crypto/crypt_blowfish.c#L10
+           https://github.com/apache/apr-util/blob/1.7.x/crypto/crypt_blowfish.h#L2
+text = '''
+Written by Solar Designer <solar at openwall.com> in 1998-2011.
+
+No copyright is claimed, and the software is hereby placed in the public
+domain.  In case this attempt to disclaim copyright and place the software
+in the public domain is deemed null and void, then the software is
+Copyright (c) 1998-2011 Solar Designer and it is hereby released to the
+general public under the following terms:
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted.
+
+There's ABSOLUTELY NO WARRANTY, express or implied.
+'''
+
+package = dejavu-fonts
+location = https://dejavu-fonts.github.io/License.html
+text = '''
+Fonts are © Bitstream (see below). DejaVu changes are in public domain.
+'''
+
+package = svt-av1
+location = https://gitlab.com/AOMediaCodec/SVT-AV1/-/blob/master/Source/App/DecApp/EbMD5Utility.h?ref_type=heads#L13
+text = '''
+This is the header file for the MD5 message-digest algorithm.
+The algorithm is due to Ron Rivest.  This code was
+written by Colin Plumb in 1993, no copyright is claimed.
+This code is in the public domain; do with it what you wish.
+
+Equivalent code is available from RSA Data Security, Inc.
+This code has been tested against that, and is equivalent,
+except that you don't need to include two pages of legalese
+with every copy.
+
+To compute the message digest of a chunk of bytes, declare an
+Md5Context structure, pass it to MD5Init, call MD5Update as
+needed on buffers full of bytes, and then call MD5Final, which
+will fill a supplied 16-byte array with the digest.
+
+Changed so as no longer to depend on Colin Plumb's `usual.h'
+header definitions
+ - Ian Jackson <ian@chiark.greenend.org.uk>.
+Still in the public domain.
+'''
+
+package = vrpn
+location = https://github.com/vrpn/vrpn/blob/master/README.Legal#L1
+text = '''
+The initial release of VRPN (The Virtual Reality Peripheral Network) was placed into the public domain on 5/4/1998 by the copyright holder Russell M. Taylor II at the University of North Carolina at Chapel Hill.
+'''
+
+package = libsass
+location = https://github.com/sass/libsass/blob/master/src/cencode.c#L4
+text = '''
+This is part of the libb64 project, and has been placed in the public domain.
+For details, see http://sourceforge.net/projects/libb64
+'''
+
+package = memcached
+location = https://github.com/memcached/memcached/blob/master/murmur3_hash.c
+text = '''
+MurmurHash3 was written by Austin Appleby, and is placed in the public
+domain. The author hereby disclaims copyright to this source code.
+'''
+
+package = wavpack
+location = https://github.com/dbry/WavPack/blob/master/cli/md5.c
+text = '''
+Author:
+Alexander Peslyak, better known as Solar Designer <solar at openwall.com>
+
+This software was written by Alexander Peslyak in 2001.  No copyright is
+claimed, and the software is hereby placed in the public domain.
+In case this attempt to disclaim copyright and place the software in the
+public domain is deemed null and void, then the software is
+Copyright (c) 2001 Alexander Peslyak and it is hereby released to the
+general public under the following terms:
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted.
+
+There's ABSOLUTELY NO WARRANTY, express or implied.
+
+(This is a heavily cut-down "BSD license".)
+
+This differs from Colin Plumb's older public domain implementation in that
+no exactly 32-bit integer data type is required (any 32-bit or wider
+unsigned integer data type will do), there's no compile-time endianness
+configuration, and the function prototypes match OpenSSL's.  No code from
+Colin Plumb's implementation has been reused; this comment merely compares
+the properties of the two independent implementations.
+
+The primary goals of this implementation are portability and ease of use.
+It is meant to be fast, but not as fast as possible.  Some known
+optimizations are not included to reduce source code size and avoid
+compile-time configuration.
+'''
+
+package = jsoncpp
+location = https://github.com/open-source-parsers/jsoncpp/blob/master/LICENSE#L5
+text = '''
+Baptiste Lepilleur and The JsonCpp Authors explicitly disclaim copyright in all
+jurisdictions which recognize such a disclaimer. In such jurisdictions,
+this software is released into the Public Domain.
+'''
+
+package = libsecret
+location = https://github.com/GNOME/libsecret/blob/master/libsecret/mock/dh.py#L17
+text = '''
+Some utility functions from tlslite which is public domain
+Written by Trevor Perrin <trevp at trevp.net>
+http://trevp.net/tlslite/
+'''
+
+package = anthy
+# calctrans/corpus.*.txt
+location = https://ja.osdn.net/dl/anthy/anthy-9100h.tar.gz
+text = '''
+copying: public domain
+'''
+
+package = natural-earth-map-data
+location = https://www.naturalearthdata.com/about/terms-of-use/
+text = '''
+All versions of Natural Earth raster + vector map data found on this website are in the public domain. You may use the maps in any manner, including modifying the content and design, electronic dissemination, and offset printing. The primary authors, Tom Patterson and Nathaniel Vaughn Kelso, and all other contributors renounce all financial claim to the maps and invites you to use them for personal, educational, and commercial purposes.
+No permission is needed to use Natural Earth. Crediting the authors is unnecessary.
+However, if you wish to cite the map data, simply use one of the following.
+Short text:
+Made with Natural Earth.
+Long text:
+Made with Natural Earth. Free vector and raster map data @ naturalearthdata.com.
+'''
+
+package = attract-mode
+location = https://github.com/mickelson/attract/blob/master/extlibs/gameswf/gameswf/gameswf_abc.cpp#L3
+text = '''
+This source code has been donated to the Public Domain.  Do
+whatever you want with it.
+'''
+
+package = dotnet8.0
+location = https://github.com/dotnet/dotnet/blob/main/src/runtime/THIRD-PARTY-NOTICES.TXT#L222-L235
+text = '''
+License notice for Bit Twiddling Hacks
+--------------------------------------
+
+Bit Twiddling Hacks
+
+By Sean Eron Anderson
+seander@cs.stanford.edu
+
+Individually, the code snippets here are in the public domain (unless otherwise
+noted) — feel free to use them however you please. The aggregate collection and
+descriptions are © 1997-2005 Sean Eron Anderson. The code and descriptions are
+distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY and
+without even the implied warranty of merchantability or fitness for a particular
+purpose.
+'''
+
+package = python-pyahocorasick
+location = https://github.com/search?q=repo%3AWojciechMula%2Fpyahocorasick+Public+Domain&type=code
+text = '''
+Author    : Wojciech Muła, wojciech_mula@poczta.onet.pl
+WWW       : http://0x80.pl
+License   : public domain
+'''
+
+package = python-commoncode
+location = https://github.com/nexB/commoncode/blob/main/src/commoncode/functional.py#L31C1-L35C68
+text = '''
+Originally derived from http://www.andreasen.org/misc/util.py
+2002-2005 by Erwin S. Andreasen -- http://www.andreasen.org/misc.shtml
+This file is in the Public Domain
+'''
+
+package = remind
+location = https://git.skoll.ca/Skollsoft-Public/Remind/src/branch/master/src/moon.c#L56
+text = '''
+This program is in the public domain: "Do what thou wilt shall be the
+whole of the law". I'd appreciate receiving any bug fixes and/or
+enhancements, which I'll incorporate in future versions of the
+program. Please leave the original attribution information intact so
+that credit and blame may be properly apportioned.
+'''
+
+package = openshadinglanguage
+location = https://github.com/AcademySoftwareFoundation/OpenShadingLanguage/blob/cbb0e28159509db58ef7d2058db3acbdb2233703/src/doc/docs.css#L7C4-L7C84
+text = '''
+Licensed as public domain or BSD 2-clause, whichever is more convenient for you.
+'''
+
+package = openshadinglanguage
+location = https://github.com/AcademySoftwareFoundation/OpenShadingLanguage/blob/4d39f8099ff0035f4fdafde36a04252175c233a8/THIRD-PARTY.md?plain=1#L99-L107
+text = '''
+Public domain
+
+* The simplex noise implementation is Copyright (c) Stefan Gustavson.
+  It bears the following notice:
+
+  This library is public domain software, released by the author
+  into the public domain in February 2011. You may do anything
+  you like with it. You may even remove all attributions,
+  but of course I'd appreciate it if you kept my name somewhere.
+'''
+
+package = rwhoisd
+location = https://github.com/arineng/rwhoisd/blob/master/rwhoisd/mkdb/metaphon.c#L11-L13
+text = '''
+This implementation was written by Gary A. Parker and originally published
+in the June/July, 1991 (vol. 5 nr. 4) issue of C Gazette. As published,
+this code was explicitly placed in the public domain by the author.
+'''
+
+package = jansson
+location = https://github.com/akheron/jansson/blob/master/src/lookup3.h#L9
+text = '''
+You can use this free for any purpose.  It's in the public domain.  It has no warranty.
+'''
+
+package = iw
+location = https://github.com/sailfishos-mirror/iw/blob/master/sha256.c#L25C1-L25C1 
+text = '''
+This is based on SHA256 implementation in LibTomCrypt that was released into
+public domain by Tom St Denis.
+'''
+
+package = ppp
+location = https://github.com/ppp-project/ppp/blob/master/README#L162-L165
+text = '''
+All of the code can be freely used and redistributed.  The individual
+source files each have their own copyright and permission notice.
+Pppd, pppstats and pppdump are under BSD-style notices.  Some of the
+pppd plugins are GPL'd.  Chat is public domain.
+'''
+
+package = ppp
+location = https://github.com/ppp-project/ppp/blob/master/chat/chat.8#L513-L514
+text = '''
+The chat program is in public domain. This is not the GNU public
+license. If it breaks then you get to keep both pieces.
+'''
+
+package = ppp
+location = https://github.com/ppp-project/ppp/blob/master/chat/chat.c#L14
+text = '''
+This software is in the public domain.
+'''
+
+package = ppp
+location = https://github.com/ppp-project/ppp/blob/master/pppd/ppp-sha1.c#L94-L98
+text = '''
+SHA-1 in C
+By Steve Reid <steve@edmweb.com>
+100% Public Domain
+'''
+
+package = ppp
+location = https://github.com/ppp-project/ppp/blob/master/scripts/chatchat/chatchat.c#L74
+text = '''
+This program is in the public domain.
+'''
+
+package = rrdtool
+location = https://github.com/oetiker/rrdtool-1.x/blob/master/src/fnv.h#L53-L68 https://github.com/oetiker/rrdtool-1.x/blob/master/src/hash_32.c#L43-L58
+text = '''
+Please do not copyright this code.  This code is in the public domain.
+
+LANDON CURT NOLL DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE,
+INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO
+EVENT SHALL LANDON CURT NOLL BE LIABLE FOR ANY SPECIAL, INDIRECT OR
+CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF
+USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+PERFORMANCE OF THIS SOFTWARE.
+
+By:
+     chongo <Landon Curt Noll> /\oo/\
+     http://reality.sgi.com/chongo/
+     EMail: chongo_fnv at prime dot engr dot sgi dot com
+
+Share and Enjoy!	:-)
+'''
+
+package = rrdtool
+location = https://github.com/oetiker/rrdtool-1.x/blob/master/src/quicksort.h#L1-L8
+text = '''
+This file is in the public domain.
+'''
+
+package = rrdtool
+location = https://github.com/oetiker/rrdtool-1.x/blob/master/src/strftime.c#L1-L15
+text = '''
+implements the ansi c function strftime()
+
+written 6 september 1989 by jim nutt
+released into the public domain by jim nutt
+
+modified 21-Oct-89 by Rob Duff
+
+modified 08-Dec-04 by Tobi Oetiker (added %V)
+updated 2019-03-28 by Wolfgang Stöggl (added %F and %T)
+'''
+
+package = util-linux
+location = https://github.com/util-linux/util-linux/blob/master/include/all-io.h
+           https://github.com/util-linux/util-linux/blob/master/include/bitops.h
+           https://github.com/util-linux/util-linux/blob/master/include/blkdev.h
+           https://github.com/util-linux/util-linux/blob/master/include/buffer.h
+           https://github.com/util-linux/util-linux/blob/master/include/c.h
+           https://github.com/util-linux/util-linux/blob/master/include/closestream.h
+           https://github.com/util-linux/util-linux/blob/master/include/color-names.h
+           https://github.com/util-linux/util-linux/blob/master/include/coverage.h
+           https://github.com/util-linux/util-linux/blob/master/include/crc32c.h
+           https://github.com/util-linux/util-linux/blob/master/include/crc32.h
+           https://github.com/util-linux/util-linux/blob/master/include/env.h
+           https://github.com/util-linux/util-linux/blob/master/include/fileeq.h
+           https://github.com/util-linux/util-linux/blob/master/include/fileutils.h
+           https://github.com/util-linux/util-linux/blob/master/include/fuzz.h
+           https://github.com/util-linux/util-linux/blob/master/include/idcache.h
+           https://github.com/util-linux/util-linux/blob/master/include/iso9660.h
+           https://github.com/util-linux/util-linux/blob/master/include/jsonwrt.h
+           https://github.com/util-linux/util-linux/blob/master/include/linux_version.h
+           https://github.com/util-linux/util-linux/blob/master/include/loopdev.h
+           https://github.com/util-linux/util-linux/blob/master/include/mangle.h
+           https://github.com/util-linux/util-linux/blob/master/include/md5.h
+           https://github.com/util-linux/util-linux/blob/master/include/minix.h
+           https://github.com/util-linux/util-linux/blob/master/include/monotonic.h
+           https://github.com/util-linux/util-linux/blob/master/include/mount-api-utils.h
+           https://github.com/util-linux/util-linux/blob/master/include/namespace.h
+           https://github.com/util-linux/util-linux/blob/master/include/nls.h
+           https://github.com/util-linux/util-linux/blob/master/include/optutils.h
+           https://github.com/util-linux/util-linux/blob/master/include/partx.h
+           https://github.com/util-linux/util-linux/blob/master/include/path.h
+           https://github.com/util-linux/util-linux/blob/master/include/pathnames.h
+           https://github.com/util-linux/util-linux/blob/master/include/pidfd-utils.h
+           https://github.com/util-linux/util-linux/blob/master/include/procfs.h
+           https://github.com/util-linux/util-linux/blob/master/include/pt-bsd.h
+           https://github.com/util-linux/util-linux/blob/master/include/pt-gpt-partnames.h
+           https://github.com/util-linux/util-linux/blob/master/include/pt-mbr.h
+           https://github.com/util-linux/util-linux/blob/master/include/pt-mbr-partnames.h
+           https://github.com/util-linux/util-linux/blob/master/include/pt-sgi.h
+           https://github.com/util-linux/util-linux/blob/master/include/pt-sun.h
+           https://github.com/util-linux/util-linux/blob/master/include/pty-session.h
+           https://github.com/util-linux/util-linux/blob/master/include/pwdutils.h
+           https://github.com/util-linux/util-linux/blob/master/include/rpmatch.h
+           https://github.com/util-linux/util-linux/blob/master/include/selinux-utils.h
+           https://github.com/util-linux/util-linux/blob/master/include/sha1.h
+           https://github.com/util-linux/util-linux/blob/master/include/sha256.h
+           https://github.com/util-linux/util-linux/blob/master/include/signames.h
+           https://github.com/util-linux/util-linux/blob/master/include/statfs_magic.h
+           https://github.com/util-linux/util-linux/blob/master/include/strutils.h
+           https://github.com/util-linux/util-linux/blob/master/include/swapheader.h
+           https://github.com/util-linux/util-linux/blob/master/include/sysfs.h
+           https://github.com/util-linux/util-linux/blob/master/include/timer.h
+           https://github.com/util-linux/util-linux/blob/master/include/ttyutils.h
+           https://github.com/util-linux/util-linux/blob/master/include/widechar.h
+           https://github.com/util-linux/util-linux/blob/master/lib/blkdev.c
+           https://github.com/util-linux/util-linux/blob/master/lib/buffer.c
+           https://github.com/util-linux/util-linux/blob/master/lib/color-names.c
+           https://github.com/util-linux/util-linux/blob/master/lib/env.c
+           https://github.com/util-linux/util-linux/blob/master/lib/fileeq.c
+           https://github.com/util-linux/util-linux/blob/master/lib/fileutils.c
+           https://github.com/util-linux/util-linux/blob/master/lib/idcache.c
+           https://github.com/util-linux/util-linux/blob/master/lib/jsonwrt.c
+           https://github.com/util-linux/util-linux/blob/master/lib/langinfo.c
+           https://github.com/util-linux/util-linux/blob/master/lib/linux_version.c
+           https://github.com/util-linux/util-linux/blob/master/lib/loopdev.c
+           https://github.com/util-linux/util-linux/blob/master/lib/Makemodule.am
+           https://github.com/util-linux/util-linux/blob/master/lib/mangle.c
+           https://github.com/util-linux/util-linux/blob/master/lib/md5.c
+           https://github.com/util-linux/util-linux/blob/master/lib/monotonic.c
+           https://github.com/util-linux/util-linux/blob/master/lib/path.c
+           https://github.com/util-linux/util-linux/blob/master/lib/procfs.c
+           https://github.com/util-linux/util-linux/blob/master/lib/pty-session.c
+           https://github.com/util-linux/util-linux/blob/master/lib/pwdutils.c
+           https://github.com/util-linux/util-linux/blob/master/lib/selinux-utils.c
+           https://github.com/util-linux/util-linux/blob/master/lib/sha1.c
+           https://github.com/util-linux/util-linux/blob/master/lib/sha256.c
+           https://github.com/util-linux/util-linux/blob/master/lib/signames.c
+           https://github.com/util-linux/util-linux/blob/master/lib/strutils.c
+           https://github.com/util-linux/util-linux/blob/master/lib/swapprober.c
+           https://github.com/util-linux/util-linux/blob/master/lib/sysfs.c
+           https://github.com/util-linux/util-linux/blob/master/lib/timer.c
+           https://github.com/util-linux/util-linux/blob/master/lib/ttyutils.c
+           https://github.com/util-linux/util-linux/blob/master/login-utils/newgrp.1.adoc
+           https://github.com/util-linux/util-linux/blob/master/misc-utils/mcookie.1.adoc
+           https://github.com/util-linux/util-linux/blob/master/misc-utils/mcookie.c
+           https://github.com/util-linux/util-linux/blob/master/misc-utils/rename.1.adoc
+           https://github.com/util-linux/util-linux/blob/master/sys-utils/setpgid.1.adoc
+           https://github.com/util-linux/util-linux/blob/master/sys-utils/setpgid.c
+           https://github.com/util-linux/util-linux/blob/master/sys-utils/setsid.1.adoc
+           https://github.com/util-linux/util-linux/blob/master/sys-utils/setsid.c
+           https://github.com/util-linux/util-linux/blob/master/text-utils/line.1.adoc
+           https://github.com/util-linux/util-linux/blob/master/text-utils/line.c
+text = '''
+No copyright is claimed.  This code is in the public domain; do with
+it what you wish.
+'''
+
+package = irssi
+location = https://github.com/irssi/irssi/blob/master/scripts/autoop.pl#L13
+           https://github.com/irssi/irssi/blob/master/scripts/buf.pl#L16
+           https://github.com/irssi/irssi/blob/master/scripts/dns.pl#L21
+           https://github.com/irssi/irssi/blob/master/scripts/kills.pl#L22
+           https://github.com/irssi/irssi/blob/master/scripts/mail.pl#L10
+           https://github.com/irssi/irssi/blob/master/scripts/mlock.pl#L19
+           https://github.com/irssi/irssi/blob/master/scripts/quitmsg.pl#L14
+           https://github.com/irssi/irssi/blob/master/scripts/examples/command.pl#L14
+           https://github.com/irssi/irssi/blob/master/scripts/examples/msg-event.pl#L14
+           https://github.com/irssi/irssi/blob/master/scripts/examples/redirect.pl#L15
+text = '''
+Public Domain
+'''
+
+package = libdstr
+location = https://flaterco.com/files/libdstr-1.0.tar.bz2
+text = '''
+This source is public domain.  As if you would want it.
+'''
+
+package = dictd
+location = https://github.com/cheusov/dictd/blob/1.13.1/md5.c
+text = '''
+This code implements the MD5 message-digest algorithm.
+The algorithm is due to Ron Rivest.  This code was
+written by Colin Plumb in 1993, no copyright is claimed.
+This code is in the public domain; do with it what you wish.
+'''
+
+package = minicom
+location = https://salsa.debian.org/minicom-team/minicom/-/blob/2.9/src/wildmat.c?ref_type=tags#L34-L51
+text = '''
+Before adding this to minicom (as part of my "getsdir()" addition),
+I emailed a request to Rich $alz, asking if I could "GPL" it.  Here
+is his reply:
+
+    Date: Mon, 30 Mar 1998 10:50:06 -0500 (EST)
+    Message-Id: <199803301550.KAA14018@<anonymized>.com>
+    From: Rich Salz <salzr@<anonymized>.com>
+    To: jseymour@jimsun.LinxNet.com
+    Subject: Re: A Little Thing Named "Wildmat"
+
+    Wildmat is in the public domain -- enjoy it.
+
+    I would rather it not get encumbered with various licenses,
+    but since it is in the public domain you can do what you want...
+
+So there you go.  (I anonymized his email address as I don't know
+that he was particularly interested in having it "advertised".)
+'''
+
+package = tcd-utils
+location = https://flaterco.com/files/xtide/tcd-utils-20240222.tar.xz
+text = '''
+tcd-utils themselves are public domain.  However, the GNU automake,
+autoconf, etc. scripts bundled with them as part of their build
+process are not.  Please see their respective licenses.
+
+tcd-utils are distributed in the hope that they will be useful, but
+WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+'''
+
+package = libtcd
+location = https://flaterco.com/files/xtide/libtcd-2.2.7-r3.tar.xz
+text = '''
+Libtcd itself is public domain.  However, the GNU automake, autoconf,
+libtool, etc. scripts bundled with it as part of its build process are
+not.  Please see their respective licenses.
+
+Libtcd is distributed in the hope that it will be useful, but WITHOUT
+ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.
+'''
+
+package = tcd-utils
+          libtcd
+location = https://flaterco.com/files/xtide/tcd-utils-20240222.tar.xz
+           https://flaterco.com/files/xtide/libtcd-2.2.7-r3.tar.xz
+text = '''
+                        DISTRIBUTION STATEMENT
+
+This source file is unclassified, distribution unlimited, public
+domain.  It is distributed in the hope that it will be useful, but
+WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+'''
+
+package = sshguard
+location = https://bitbucket.org/sshguard/sshguard/src/master/src/blocker/fnv.h
+           https://bitbucket.org/sshguard/sshguard/src/master/src/blocker/hash_32a.c
+text = '''
+ * Please do not copyright this code.  This code is in the public domain.
+ *
+ * LANDON CURT NOLL DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE,
+ * INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO
+ * EVENT SHALL LANDON CURT NOLL BE LIABLE FOR ANY SPECIAL, INDIRECT OR
+ * CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF
+ * USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+ * OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+ * PERFORMANCE OF THIS SOFTWARE.
+'''
+
+package = mopac7
+location = http://bioinformatics.org/ghemical/download/current/mopac7-1.15.tar.gz
+text = '''
+The original copyright notice of MOPAC7:
+
+C
+C         Notice of Public Domain nature of MOPAC
+C
+C      'This computer program is a work of the United States
+C       Government and as such is not subject to protection by
+C       copyright (17 U.S.C. # 105.)  Any person who fraudulently
+C       places a copyright notice or does any other act contrary
+C       to the provisions of 17 U.S. Code 506(c) shall be subject
+C       to the penalties provided therein.  This notice shall not
+C       be altered or removed from this software and is to be on
+C       all reproductions.'
+C
+
+Changes made to MOPAC7 code in this work may be used/distributed under the
+same rules as the original MOPAC7 package; this work is in Public Domain.
+'''
+
+package = OpenCTM
+location = https://github.com/Danny02/OpenCTM/raw/e2e588db50a1d2a6b63f668f703bf899e0daf8ee/lib/liblzma/readme.txt
+text = '''
+Public Domain
+'''

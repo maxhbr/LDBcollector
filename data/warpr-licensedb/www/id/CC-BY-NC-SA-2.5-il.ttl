@@ -1,0 +1,240 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/elements/1.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://creativecommons.org/licenses/by-nc-sa/2.5/il/> a cc:License ;
+    cc:jurisdiction <http://creativecommons.org/international/il/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nc-sa/2.5/il/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:prohibits cc:CommercialUse ;
+    cc:requires cc:Attribution,
+        cc:Notice,
+        cc:ShareAlike ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.5" ;
+    dc:identifier "by-nc-sa" ;
+    dc:source <http://creativecommons.org/licenses/by-nc-sa/2.5/> ;
+    dc:title "Erkenning-Niekommersieel-InsgelyksDeel 2.5 Israel"@af,
+        "المشاركة على قدم المساواة-غير تجاري-نسب العمل 2.5 اسرائيل"@ar,
+        "Attribution-NonCommercial-ShareAlike 2.5 Israel"@as,
+        "Attribution-NonCommercial-ShareAlike 2.5 Israel"@ast,
+        "Attribution-NonCommercial-ShareAlike 2.5 Israel"@ast-es,
+        "Attribution-NonCommercial-ShareAlike 2.5 Israel"@az,
+        "Attribution-NonCommercial-ShareAlike 2.5 Ізраіль"@be,
+        "Признание-Некомерсиално-Споделяне на споделеното 2.5 Израел"@bg,
+        "Attribution-NonCommercial-ShareAlike 2.5 Israel"@bn,
+        "Reconeixement-NoComercial-CompartirIgual 2.5 Israel"@ca,
+        "Uveďte autora-Nevyužívejte dílo komerčně-Zachovejte licenci 2.5 Izrael"@cs,
+        "Navngivelse-IkkeKommerciel–DelPåSammeVilkår 2.5 Israel"@da,
+        "Namensnennung-Nicht-kommerziell-Weitergabe unter gleichen Bedingungen 2.5 Israel"@de,
+        "Namensnennung-NichtKommerziell-Weitergabe unter gleichen Bedingungen 2.5 Israel"@de-at,
+        "Namensnennung-NichtKommerziell-Weitergabe unter gleichen Bedingungen 2.5 Israel"@de-ch,
+        "Αναφορά Δημιουργού - Μη Εμπορική Χρήση - Παρόμοια Διανομή 2.5 Ισραήλ"@el,
+        "Attribution-NonCommercial-ShareAlike 2.5 Israel"@en,
+        "Attribution-NonCommercial-ShareAlike 2.5 Israel"@en-ca,
+        "Attribution-NonCommercial-ShareAlike 2.5 Israel"@en-gb,
+        "Attribution-NonCommercial-ShareAlike 2.5 Israel"@en-hk,
+        "Attribution-NonCommercial-ShareAlike 2.5 Israel"@en-sg,
+        "Attribution-NonCommercial-ShareAlike 2.5 Israel"@en-us,
+        "Atribuite-Nekomerce-Samkondiĉe 2.5 Israelo"@eo,
+        "Atribución-NoComercial-CompartirIgual 2.5 Israel"@es,
+        "Atribución-NoComercial-CompartirDerivadasIgual 2.5 Israel"@es-ar,
+        "Atribución-NoComercial-LicenciarIgual 2.5 Israel"@es-cl,
+        "Reconocimiento-NoComercial-CompartirIgual 2.5 Israel"@es-co,
+        "Reconocimiento-NoComercial-CompartirIgual 2.5 Israel"@es-ec,
+        "Reconocimiento-NoComercial-CompartirIgual 2.5 Israel"@es-es,
+        "Reconocimiento-NoComercial-CompartirIgual 2.5 Israel"@es-gt,
+        "Atribución-No Comercial-Licenciamiento Recíproco 2.5 Israel"@es-mx,
+        "Reconocimiento-NoComercial-CompartirIgual 2.5 Israel"@es-pe,
+        "Reconocimiento-NoComercial-CompartirIgual 2.5 Israel"@es-pr,
+        "Autorile viitamine + Mitteäriline eesmärk + Jagamine samadel tingimustel 2.5 Iisrael"@et,
+        "Aitortu-EzKomertziala-PartekatuBerdin 2.5 Israel"@eu,
+        "Attribution-NonCommercial-ShareAlike 2.5 اسرائيل"@fa,
+        "Nimeä-Epäkaupallinen-Tarttuva 2.5 Israel"@fi,
+        "Attribution - Pas d'Utilisation Commerciale - Partage à l'Identique 2.5 Israël"@fr,
+        "Paternité - Pas d'Utilisation Commerciale - Partage des Conditions Initiales à l'Identique 2.5 Israël"@fr-ca,
+        "Paternité - Pas d'Utilisation Commerciale - Partage des Conditions Initiales à l'Identique 2.5 Israël"@fr-ch,
+        "Paternité - Pas d'Utilisation Commerciale - Partage des Conditions Initiales à l'Identique 2.5 Israël"@fr-lu,
+        "Attribution-NonCommercial-ShareAlike 2.5 Israel"@ga,
+        "Recoñecemento-NonComercial-CompartirIgual 2.5 Israel"@gl,
+        "ייחוס-שימוש לא מסחרי-שיתוף זהה 2.5 ישראל"@he,
+        "Attribution-NonCommercial-ShareAlike 2.5 इसरैल"@hi,
+        "Imenovanje-Nekomercijalno-Dijeli pod istim uvjetima 2.5 Izrael"@hr,
+        "Nevezd meg! - Ne add el! - Így add tovább! 2.5 Izrael"@hu,
+        "Հղում - ոչ-առևտրային օգտագործում - համանման տարածում 2.5 Իսրայել"@hy,
+        "Atribusi-NonKomersial-BerbagiSerupa 2.5 Israel"@id,
+        "Attribution-NonCommercial-ShareAlike 2.5 Ísrael"@is,
+        "Attribuzione - Non commerciale - Condividi allo stesso modo 2.5 Israele"@it,
+        "Attribuzione - Non commerciale - Condividi allo stesso modo 2.5 Israel"@it-ch,
+        "表示 - 非営利 - 継承 2.5 イスラエル"@ja,
+        "ავტორობის მითითებით–არაკომერციული გამოყენებისთვის–გამოყენება იგივე პირობებით 2.5 ისრაელი"@ka,
+        "Attribution-NonCommercial-ShareAlike 2.5 Israel"@kk,
+        "저작자표시-비영리-동일조건변경허락 2.5 이스라엘"@ko,
+        "Attribution-NonCommercial-ShareAlike 2.5 Izraelis"@lt,
+        "Atsaucoties-Nekomerciāls-Nemainot licenci 2.5 Izraēla"@lv,
+        "НаведиИзвор-Некомерцијално-СподелиПодИстиУслови 2.5 Израел"@mk,
+        "Attribution-NonCommercial-ShareAlike 2.5 ഇസ്രായൽ"@ml,
+        "Attribution-NonCommercial-ShareAlike 2.5 Израйль"@mn,
+        "Pengiktirafan-BukanKomersial-PerkongsianSerupa 2.5 Isreal"@ms,
+        "Naamsvermelding-NietCommercieel-GelijkDelen 2.5 Israël"@nl,
+        "Navngivelse-Ikkekommersiell-DelPåSammeVilkår 2.5 Israel"@no,
+        "Tsebagatšo - E sego ya Kgwebo - Mohlakanelwa 2.5 Isiraele"@nso,
+        "Attribution-NonCommercial-ShareAlike 2.5 Israel"@oci-es,
+        "Uznanie autorstwa-Użycie niekomercyjne-Na tych samych warunkach 2.5 Izrael"@pl,
+        "Atribuição - NãoComercial - CompartilhaIgual 2.5 Israel"@pt,
+        "Atribuição-Uso não-comercial-Compartilhamento pela mesma licença 2.5 Israel"@pt-br,
+        "Atribuição-Uso Não-Comercial-Partilha nos termos da mesma licença 2.5 Israel"@pt-pt,
+        "Atribuire-Necomercial-FărăModificări 2.5 Israel"@ro,
+        "Attribution-NonCommercial-ShareAlike (Атрибуция — Некоммерческое использование — С сохранением условий) 2.5 Израиль"@ru,
+        "Attribution-NonCommercial-ShareAlike 2.5 Israel"@si-lk,
+        "Priznanje avtorstva-Nekomercialno-Deljenje pod enakimi pogoji 2.5 Izrael"@sl,
+        "Attribution-NonCommercial-ShareAlike 2.5 Izrael"@sq,
+        "Autorstvo-Nekomercijalno-Deliti pod istim uslovima 2.5 Izrael"@sr,
+        "Ауторство-Некомерцијално-Делити под истим условима 2.5 Израел"@sr,
+        "Autorstvo-Nekomercijalno-Deliti pod istim uslovima 2.5 Izrael"@sr-latn,
+        "Attribution-NonCommercial-ShareAlike 2.5 Israel"@st,
+        "Erkännande-IckeKommersiell-DelaLika 2.5 Israel"@sv,
+        "Attribution-NonCommercial-ShareAlike 2.5 Israel"@ta,
+        "Attribution-NonCommercial-ShareAlike 2.5 ఇజ్రాయిల్"@te,
+        "แสดงที่มา-ไม่ใช้เพื่อการค้า-อนุญาตแบบเดียวกัน 2.5 อิสราเอล"@th,
+        "Attribution-Gayriticari-ShareAlike 2.5 İsrail"@tr,
+        "Attribution-NonCommercial-ShareAlike 2.5 Israel"@uk,
+        "Attribution-NonCommercial-ShareAlike 2.5 Israel"@ur,
+        "Attribution-NonCommercial-ShareAlike 2.5 Nước Israel"@vi,
+        "署名-非商业性使用-相同方式共享 2.5 以色列"@zh,
+        "姓名標示-非商業性-相同方式分享 2.5 以色列"@zh-hk,
+        "姓名標示-非商業性-相同方式分享 2.5 以色列"@zh-tw,
+        "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano-Yihlanganyeleni 2.5 E-Israel"@zu,
+        "${Attribution-NonCommercial-ShareAlike} 2.5 ${Israel}"@zxx ;
+    owl:sameAs <https://licensedb.org/id/CC-BY-NC-SA-2.5-il> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nc-sa/2.5/il/80x15.png>,
+        <http://i.creativecommons.org/l/by-nc-sa/2.5/il/88x31.png> .
+
+<https://licensedb.org/id/CC-BY-NC-SA-2.5-il> a cc:License,
+        li:License ;
+    cc:jurisdiction <http://creativecommons.org/international/il/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nc-sa/2.5/il/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:prohibits cc:CommercialUse ;
+    cc:requires cc:Attribution,
+        cc:Notice,
+        cc:ShareAlike ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.5" ;
+    dc:identifier "by-nc-sa" ;
+    dc:replaces <https://licensedb.org/id/CC-BY-NC-SA-1.0-il> ;
+    dc:source <http://creativecommons.org/licenses/by-nc-sa/2.5/> ;
+    dc:title "Erkenning-Niekommersieel-InsgelyksDeel 2.5 Israel"@af,
+        "المشاركة على قدم المساواة-غير تجاري-نسب العمل 2.5 اسرائيل"@ar,
+        "Attribution-NonCommercial-ShareAlike 2.5 Israel"@as,
+        "Attribution-NonCommercial-ShareAlike 2.5 Israel"@ast,
+        "Attribution-NonCommercial-ShareAlike 2.5 Israel"@ast-es,
+        "Attribution-NonCommercial-ShareAlike 2.5 Israel"@az,
+        "Attribution-NonCommercial-ShareAlike 2.5 Ізраіль"@be,
+        "Признание-Некомерсиално-Споделяне на споделеното 2.5 Израел"@bg,
+        "Attribution-NonCommercial-ShareAlike 2.5 Israel"@bn,
+        "Reconeixement-NoComercial-CompartirIgual 2.5 Israel"@ca,
+        "Uveďte autora-Nevyužívejte dílo komerčně-Zachovejte licenci 2.5 Izrael"@cs,
+        "Navngivelse-IkkeKommerciel–DelPåSammeVilkår 2.5 Israel"@da,
+        "Namensnennung-Nicht-kommerziell-Weitergabe unter gleichen Bedingungen 2.5 Israel"@de,
+        "Namensnennung-NichtKommerziell-Weitergabe unter gleichen Bedingungen 2.5 Israel"@de-at,
+        "Namensnennung-NichtKommerziell-Weitergabe unter gleichen Bedingungen 2.5 Israel"@de-ch,
+        "Αναφορά Δημιουργού - Μη Εμπορική Χρήση - Παρόμοια Διανομή 2.5 Ισραήλ"@el,
+        "Attribution-NonCommercial-ShareAlike 2.5 Israel"@en,
+        "Attribution-NonCommercial-ShareAlike 2.5 Israel"@en-ca,
+        "Attribution-NonCommercial-ShareAlike 2.5 Israel"@en-gb,
+        "Attribution-NonCommercial-ShareAlike 2.5 Israel"@en-hk,
+        "Attribution-NonCommercial-ShareAlike 2.5 Israel"@en-sg,
+        "Attribution-NonCommercial-ShareAlike 2.5 Israel"@en-us,
+        "Atribuite-Nekomerce-Samkondiĉe 2.5 Israelo"@eo,
+        "Atribución-NoComercial-CompartirIgual 2.5 Israel"@es,
+        "Atribución-NoComercial-CompartirDerivadasIgual 2.5 Israel"@es-ar,
+        "Atribución-NoComercial-LicenciarIgual 2.5 Israel"@es-cl,
+        "Reconocimiento-NoComercial-CompartirIgual 2.5 Israel"@es-co,
+        "Reconocimiento-NoComercial-CompartirIgual 2.5 Israel"@es-ec,
+        "Reconocimiento-NoComercial-CompartirIgual 2.5 Israel"@es-es,
+        "Reconocimiento-NoComercial-CompartirIgual 2.5 Israel"@es-gt,
+        "Atribución-No Comercial-Licenciamiento Recíproco 2.5 Israel"@es-mx,
+        "Reconocimiento-NoComercial-CompartirIgual 2.5 Israel"@es-pe,
+        "Reconocimiento-NoComercial-CompartirIgual 2.5 Israel"@es-pr,
+        "Autorile viitamine + Mitteäriline eesmärk + Jagamine samadel tingimustel 2.5 Iisrael"@et,
+        "Aitortu-EzKomertziala-PartekatuBerdin 2.5 Israel"@eu,
+        "Attribution-NonCommercial-ShareAlike 2.5 اسرائيل"@fa,
+        "Nimeä-Epäkaupallinen-Tarttuva 2.5 Israel"@fi,
+        "Attribution - Pas d'Utilisation Commerciale - Partage à l'Identique 2.5 Israël"@fr,
+        "Paternité - Pas d'Utilisation Commerciale - Partage des Conditions Initiales à l'Identique 2.5 Israël"@fr-ca,
+        "Paternité - Pas d'Utilisation Commerciale - Partage des Conditions Initiales à l'Identique 2.5 Israël"@fr-ch,
+        "Paternité - Pas d'Utilisation Commerciale - Partage des Conditions Initiales à l'Identique 2.5 Israël"@fr-lu,
+        "Attribution-NonCommercial-ShareAlike 2.5 Israel"@ga,
+        "Recoñecemento-NonComercial-CompartirIgual 2.5 Israel"@gl,
+        "ייחוס-שימוש לא מסחרי-שיתוף זהה 2.5 ישראל"@he,
+        "Attribution-NonCommercial-ShareAlike 2.5 इसरैल"@hi,
+        "Imenovanje-Nekomercijalno-Dijeli pod istim uvjetima 2.5 Izrael"@hr,
+        "Nevezd meg! - Ne add el! - Így add tovább! 2.5 Izrael"@hu,
+        "Հղում - ոչ-առևտրային օգտագործում - համանման տարածում 2.5 Իսրայել"@hy,
+        "Atribusi-NonKomersial-BerbagiSerupa 2.5 Israel"@id,
+        "Attribution-NonCommercial-ShareAlike 2.5 Ísrael"@is,
+        "Attribuzione - Non commerciale - Condividi allo stesso modo 2.5 Israele"@it,
+        "Attribuzione - Non commerciale - Condividi allo stesso modo 2.5 Israel"@it-ch,
+        "表示 - 非営利 - 継承 2.5 イスラエル"@ja,
+        "ავტორობის მითითებით–არაკომერციული გამოყენებისთვის–გამოყენება იგივე პირობებით 2.5 ისრაელი"@ka,
+        "Attribution-NonCommercial-ShareAlike 2.5 Israel"@kk,
+        "저작자표시-비영리-동일조건변경허락 2.5 이스라엘"@ko,
+        "Attribution-NonCommercial-ShareAlike 2.5 Izraelis"@lt,
+        "Atsaucoties-Nekomerciāls-Nemainot licenci 2.5 Izraēla"@lv,
+        "НаведиИзвор-Некомерцијално-СподелиПодИстиУслови 2.5 Израел"@mk,
+        "Attribution-NonCommercial-ShareAlike 2.5 ഇസ്രായൽ"@ml,
+        "Attribution-NonCommercial-ShareAlike 2.5 Израйль"@mn,
+        "Pengiktirafan-BukanKomersial-PerkongsianSerupa 2.5 Isreal"@ms,
+        "Naamsvermelding-NietCommercieel-GelijkDelen 2.5 Israël"@nl,
+        "Navngivelse-Ikkekommersiell-DelPåSammeVilkår 2.5 Israel"@no,
+        "Tsebagatšo - E sego ya Kgwebo - Mohlakanelwa 2.5 Isiraele"@nso,
+        "Attribution-NonCommercial-ShareAlike 2.5 Israel"@oci-es,
+        "Uznanie autorstwa-Użycie niekomercyjne-Na tych samych warunkach 2.5 Izrael"@pl,
+        "Atribuição - NãoComercial - CompartilhaIgual 2.5 Israel"@pt,
+        "Atribuição-Uso não-comercial-Compartilhamento pela mesma licença 2.5 Israel"@pt-br,
+        "Atribuição-Uso Não-Comercial-Partilha nos termos da mesma licença 2.5 Israel"@pt-pt,
+        "Atribuire-Necomercial-FărăModificări 2.5 Israel"@ro,
+        "Attribution-NonCommercial-ShareAlike (Атрибуция — Некоммерческое использование — С сохранением условий) 2.5 Израиль"@ru,
+        "Attribution-NonCommercial-ShareAlike 2.5 Israel"@si-lk,
+        "Priznanje avtorstva-Nekomercialno-Deljenje pod enakimi pogoji 2.5 Izrael"@sl,
+        "Attribution-NonCommercial-ShareAlike 2.5 Izrael"@sq,
+        "Autorstvo-Nekomercijalno-Deliti pod istim uslovima 2.5 Izrael"@sr,
+        "Ауторство-Некомерцијално-Делити под истим условима 2.5 Израел"@sr,
+        "Autorstvo-Nekomercijalno-Deliti pod istim uslovima 2.5 Izrael"@sr-latn,
+        "Attribution-NonCommercial-ShareAlike 2.5 Israel"@st,
+        "Erkännande-IckeKommersiell-DelaLika 2.5 Israel"@sv,
+        "Attribution-NonCommercial-ShareAlike 2.5 Israel"@ta,
+        "Attribution-NonCommercial-ShareAlike 2.5 ఇజ్రాయిల్"@te,
+        "แสดงที่มา-ไม่ใช้เพื่อการค้า-อนุญาตแบบเดียวกัน 2.5 อิสราเอล"@th,
+        "Attribution-Gayriticari-ShareAlike 2.5 İsrail"@tr,
+        "Attribution-NonCommercial-ShareAlike 2.5 Israel"@uk,
+        "Attribution-NonCommercial-ShareAlike 2.5 Israel"@ur,
+        "Attribution-NonCommercial-ShareAlike 2.5 Nước Israel"@vi,
+        "署名-非商业性使用-相同方式共享 2.5 以色列"@zh,
+        "姓名標示-非商業性-相同方式分享 2.5 以色列"@zh-hk,
+        "姓名標示-非商業性-相同方式分享 2.5 以色列"@zh-tw,
+        "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano-Yihlanganyeleni 2.5 E-Israel"@zu,
+        "${Attribution-NonCommercial-ShareAlike} 2.5 ${Israel}"@zxx ;
+    owl:sameAs <http://creativecommons.org/licenses/by-nc-sa/2.5/il/> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nc-sa/2.5/il/80x15.png>,
+        <http://i.creativecommons.org/l/by-nc-sa/2.5/il/88x31.png> ;
+    li:id "CC-BY-NC-SA-2.5-il" ;
+    li:name "CC BY-NC-SA 2.5 IL" .
+

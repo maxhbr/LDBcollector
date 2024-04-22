@@ -1,0 +1,853 @@
+{
+    "@context": {
+        "cc": "http://creativecommons.org/ns#",
+        "dc": "http://purl.org/dc/terms/",
+        "dc11": "http://purl.org/dc/elements/1.1/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "li": "https://licensedb.org/ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "cc:legalcode": {
+            "@type": "@id"
+        },
+        "cc:permits": {
+            "@type": "@id"
+        },
+        "cc:requires": {
+            "@type": "@id"
+        },
+        "cc:prohibits": {
+            "@type": "@id"
+        },
+        "cc:jurisdiction": {
+            "@type": "@id"
+        },
+        "cc:licenseClass": {
+            "@type": "@id"
+        },
+        "dc:creator": {
+            "@type": "@id"
+        },
+        "dc:source": {
+            "@type": "@id"
+        },
+        "dc:replaces": {
+            "@type": "@id"
+        },
+        "dc:isBasedOn": {
+            "@type": "@id"
+        },
+        "dc:isReplacedBy": {
+            "@type": "@id"
+        },
+        "foaf:logo": {
+            "@type": "@id"
+        },
+        "li:plaintext": {
+            "@type": "@id"
+        },
+        "li:libre": {
+            "@type": "@id"
+        },
+        "owl:sameAs": {
+            "@type": "@id"
+        }
+    },
+    "@id": "https://licensedb.org/id/CC-BY-1.0",
+    "@type": [
+        "cc:License",
+        "li:License"
+    ],
+    "cc:legalcode": "http://creativecommons.org/licenses/by/1.0/legalcode",
+    "cc:licenseClass": "http://creativecommons.org/license/",
+    "cc:permits": [
+        "cc:DerivativeWorks",
+        "cc:Distribution",
+        "cc:Reproduction"
+    ],
+    "cc:requires": [
+        "cc:Attribution",
+        "cc:Notice"
+    ],
+    "dc:creator": "http://creativecommons.org",
+    "dc:hasVersion": "1.0",
+    "dc:identifier": "by",
+    "dc:isReplacedBy": "https://licensedb.org/id/CC-BY-2.0",
+    "dc:title": [
+        {
+            "@language": "af",
+            "@value": "Erkenning 1.0 Generies"
+        },
+        {
+            "@language": "ar",
+            "@value": "نسب المصنف  1.0 عام"
+        },
+        {
+            "@language": "as",
+            "@value": "Attribution 1.0 Generic"
+        },
+        {
+            "@language": "ast",
+            "@value": "Attribution 1.0 Generic"
+        },
+        {
+            "@language": "ast-es",
+            "@value": "Attribution 1.0 Generic"
+        },
+        {
+            "@language": "az",
+            "@value": "Attribution 1.0 Generic"
+        },
+        {
+            "@language": "be",
+            "@value": "Атрыбуцыя 1.0 Generic"
+        },
+        {
+            "@language": "bg",
+            "@value": "Признание 1.0 Неадаптиран"
+        },
+        {
+            "@language": "bn",
+            "@value": "Attribution 1.0 Generic"
+        },
+        {
+            "@language": "ca",
+            "@value": "Reconeixement 1.0 Genèrica"
+        },
+        {
+            "@language": "cs",
+            "@value": "Uveďte autora 1.0 Generic"
+        },
+        {
+            "@language": "da",
+            "@value": "Navngivelse 1.0 Generisk"
+        },
+        {
+            "@language": "de",
+            "@value": "Namensnennung 1.0 US-amerikanisch (nicht portiert)"
+        },
+        {
+            "@language": "de-at",
+            "@value": "Namensnennung 1.0 US-amerikanisch (nicht portiert)"
+        },
+        {
+            "@language": "de-ch",
+            "@value": "Namensnennung 1.0 US-amerikanisch (nicht portiert)"
+        },
+        {
+            "@language": "el",
+            "@value": "Αναφορά Δημιουργού 1.0 Γενικό"
+        },
+        {
+            "@language": "en",
+            "@value": "Attribution 1.0 Generic"
+        },
+        {
+            "@language": "en-ca",
+            "@value": "Attribution 1.0 Generic"
+        },
+        {
+            "@language": "en-gb",
+            "@value": "Attribution 1.0 Generic"
+        },
+        {
+            "@language": "en-hk",
+            "@value": "Attribution 1.0 Generic"
+        },
+        {
+            "@language": "en-sg",
+            "@value": "Attribution 1.0 Generic"
+        },
+        {
+            "@language": "en-us",
+            "@value": "Attribution 1.0 Generic"
+        },
+        {
+            "@language": "eo",
+            "@value": "Atribuite 1.0 Ĝenerala"
+        },
+        {
+            "@language": "es",
+            "@value": "Atribución 1.0 Genérica"
+        },
+        {
+            "@language": "es-ar",
+            "@value": "Atribución 1.0 Genérica"
+        },
+        {
+            "@language": "es-cl",
+            "@value": "Atribución 1.0 Genérica"
+        },
+        {
+            "@language": "es-co",
+            "@value": "Reconocimiento 1.0 Genérica"
+        },
+        {
+            "@language": "es-ec",
+            "@value": "Reconocimiento 1.0 Genérica"
+        },
+        {
+            "@language": "es-es",
+            "@value": "Reconocimiento 1.0 Genérica"
+        },
+        {
+            "@language": "es-gt",
+            "@value": "Reconocimiento 1.0 Genérica"
+        },
+        {
+            "@language": "es-mx",
+            "@value": "Atribución 1.0 Genérica"
+        },
+        {
+            "@language": "es-pe",
+            "@value": "Reconocimiento 1.0 Genérica"
+        },
+        {
+            "@language": "es-pr",
+            "@value": "Reconocimiento 1.0 Genérica"
+        },
+        {
+            "@language": "et",
+            "@value": "Autorile viitamine 1.0 Üldine"
+        },
+        {
+            "@language": "eu",
+            "@value": "Aitortu 1.0 Generikoa"
+        },
+        {
+            "@language": "fa",
+            "@value": "Attribution 1.0 Generic"
+        },
+        {
+            "@language": "fi",
+            "@value": "Nimeä 1.0 Raakaversio"
+        },
+        {
+            "@language": "fr",
+            "@value": "Attribution 1.0 Générique"
+        },
+        {
+            "@language": "fr-ca",
+            "@value": "Paternité 1.0 Générique"
+        },
+        {
+            "@language": "fr-ch",
+            "@value": "Paternité 1.0 Générique"
+        },
+        {
+            "@language": "fr-lu",
+            "@value": "Paternité 1.0 Générique"
+        },
+        {
+            "@language": "ga",
+            "@value": "Attribution 1.0 Generic"
+        },
+        {
+            "@language": "gl",
+            "@value": "Recoñecemento 1.0 Xenérica"
+        },
+        {
+            "@language": "he",
+            "@value": "ייחוס 1.0 לא מותאם"
+        },
+        {
+            "@language": "hi",
+            "@value": "Attribution 1.0 Generic"
+        },
+        {
+            "@language": "hr",
+            "@value": "Imenovanje 1.0 nelokalizirana licenca"
+        },
+        {
+            "@language": "hu",
+            "@value": "Nevezd meg! 1.0 Általános"
+        },
+        {
+            "@language": "hy",
+            "@value": "Հղում 1.0 Generic"
+        },
+        {
+            "@language": "id",
+            "@value": "Atribusi 1.0 Generik"
+        },
+        {
+            "@language": "is",
+            "@value": "Attribution 1.0 Generic"
+        },
+        {
+            "@language": "it",
+            "@value": "Attribuzione 1.0 Generico"
+        },
+        {
+            "@language": "it-ch",
+            "@value": "Attribuzione 1.0 Generico"
+        },
+        {
+            "@language": "ja",
+            "@value": "表示 1.0 一般"
+        },
+        {
+            "@language": "ka",
+            "@value": "ავტორობის მითითებით  1.0 ზოგადი"
+        },
+        {
+            "@language": "kk",
+            "@value": "Атауын сақтау 1.0 Generic"
+        },
+        {
+            "@language": "ko",
+            "@value": "저작자표시(Attribution) 1.0 일반"
+        },
+        {
+            "@language": "lt",
+            "@value": "Priskyrimas 1.0 Generic"
+        },
+        {
+            "@language": "lv",
+            "@value": "Atsaucoties 1.0 Vispārīgs"
+        },
+        {
+            "@language": "mk",
+            "@value": "Наведи извор 1.0 Нелокализирана лиценца"
+        },
+        {
+            "@language": "ml",
+            "@value": "കടപ്പാട് 1.0 Generic"
+        },
+        {
+            "@language": "mn",
+            "@value": "Attribution 1.0 Generic"
+        },
+        {
+            "@language": "ms",
+            "@value": "Pengiktirafan 1.0 Umum"
+        },
+        {
+            "@language": "nl",
+            "@value": "Naamsvermelding 1.0 Unported"
+        },
+        {
+            "@language": "no",
+            "@value": "Navngivelse 1.0 Generisk"
+        },
+        {
+            "@language": "nso",
+            "@value": "Tsebagatšo 1.0 E sa fetišwago"
+        },
+        {
+            "@language": "oci-es",
+            "@value": "Attribution 1.0 Generic"
+        },
+        {
+            "@language": "pl",
+            "@value": "Uznanie autorstwa 1.0 Ogólny"
+        },
+        {
+            "@language": "pt",
+            "@value": "Atribuição  1.0 Genérica"
+        },
+        {
+            "@language": "pt-br",
+            "@value": "Atribuição 1.0 Generic"
+        },
+        {
+            "@language": "pt-pt",
+            "@value": "Atribuição 1.0 Genérica"
+        },
+        {
+            "@language": "ro",
+            "@value": "Atribuire 1.0 Generică"
+        },
+        {
+            "@language": "ru",
+            "@value": "Attribution (Атрибуция) 1.0 Generic"
+        },
+        {
+            "@language": "si-lk",
+            "@value": "Attribution 1.0 Generic"
+        },
+        {
+            "@language": "sl",
+            "@value": "Priznanje avtorstva 1.0 Generična"
+        },
+        {
+            "@language": "sq",
+            "@value": "Attribution 1.0 Të përgjithshme"
+        },
+        {
+            "@language": "sr",
+            "@value": "Autorstvo 1.0 Generička licenca"
+        },
+        {
+            "@language": "sr",
+            "@value": "Ауторство 1.0 Генеричка лиценца"
+        },
+        {
+            "@language": "sr-latn",
+            "@value": "Autorstvo 1.0 Generička licenca"
+        },
+        {
+            "@language": "st",
+            "@value": "Attribution 1.0 Generic"
+        },
+        {
+            "@language": "sv",
+            "@value": "Erkännande 1.0 Generisk"
+        },
+        {
+            "@language": "ta",
+            "@value": "Attribution 1.0 Generic"
+        },
+        {
+            "@language": "te",
+            "@value": "ఆపాదింపు 1.0 Generic"
+        },
+        {
+            "@language": "th",
+            "@value": "แสดงที่มา 1.0 ทั่วไป"
+        },
+        {
+            "@language": "tr",
+            "@value": "Attribution 1.0 Kapsamlı"
+        },
+        {
+            "@language": "uk",
+            "@value": "Attribution 1.0 Generic"
+        },
+        {
+            "@language": "ur",
+            "@value": "Attribution 1.0 Generic"
+        },
+        {
+            "@language": "vi",
+            "@value": "Ghi nhận công của tác giả 1.0 Chung"
+        },
+        {
+            "@language": "zh",
+            "@value": "署名 1.0 未本地化版本"
+        },
+        {
+            "@language": "zh-hk",
+            "@value": "姓名標示 1.0 通用版"
+        },
+        {
+            "@language": "zh-tw",
+            "@value": "姓名標示 1.0 通用版"
+        },
+        {
+            "@language": "zu",
+            "@value": "Qaphela Umnikazi 1.0 Engadlulisiwe"
+        },
+        {
+            "@language": "zxx",
+            "@value": "${Attribution} 1.0 ${Generic}"
+        }
+    ],
+    "schema:sameAs": {
+        "@id": "http://spdx.org/licenses/CC-BY-1.0"
+    },
+    "spdx:licenseId": "CC-BY-1.0",
+    "owl:sameAs": {
+        "@id": "http://creativecommons.org/licenses/by/1.0/",
+        "@type": "cc:License",
+        "cc:legalcode": "http://creativecommons.org/licenses/by/1.0/legalcode",
+        "cc:licenseClass": "http://creativecommons.org/license/",
+        "cc:permits": [
+            "cc:DerivativeWorks",
+            "cc:Distribution",
+            "cc:Reproduction"
+        ],
+        "cc:requires": [
+            "cc:Attribution",
+            "cc:Notice"
+        ],
+        "dc:creator": "http://creativecommons.org",
+        "dc:hasVersion": "1.0",
+        "dc:identifier": "by",
+        "dc:isReplacedBy": "http://creativecommons.org/licenses/by/2.0/",
+        "dc:title": [
+            {
+                "@language": "af",
+                "@value": "Erkenning 1.0 Generies"
+            },
+            {
+                "@language": "ar",
+                "@value": "نسب المصنف  1.0 عام"
+            },
+            {
+                "@language": "as",
+                "@value": "Attribution 1.0 Generic"
+            },
+            {
+                "@language": "ast",
+                "@value": "Attribution 1.0 Generic"
+            },
+            {
+                "@language": "ast-es",
+                "@value": "Attribution 1.0 Generic"
+            },
+            {
+                "@language": "az",
+                "@value": "Attribution 1.0 Generic"
+            },
+            {
+                "@language": "be",
+                "@value": "Атрыбуцыя 1.0 Generic"
+            },
+            {
+                "@language": "bg",
+                "@value": "Признание 1.0 Неадаптиран"
+            },
+            {
+                "@language": "bn",
+                "@value": "Attribution 1.0 Generic"
+            },
+            {
+                "@language": "ca",
+                "@value": "Reconeixement 1.0 Genèrica"
+            },
+            {
+                "@language": "cs",
+                "@value": "Uveďte autora 1.0 Generic"
+            },
+            {
+                "@language": "da",
+                "@value": "Navngivelse 1.0 Generisk"
+            },
+            {
+                "@language": "de",
+                "@value": "Namensnennung 1.0 US-amerikanisch (nicht portiert)"
+            },
+            {
+                "@language": "de-at",
+                "@value": "Namensnennung 1.0 US-amerikanisch (nicht portiert)"
+            },
+            {
+                "@language": "de-ch",
+                "@value": "Namensnennung 1.0 US-amerikanisch (nicht portiert)"
+            },
+            {
+                "@language": "el",
+                "@value": "Αναφορά Δημιουργού 1.0 Γενικό"
+            },
+            {
+                "@language": "en",
+                "@value": "Attribution 1.0 Generic"
+            },
+            {
+                "@language": "en-ca",
+                "@value": "Attribution 1.0 Generic"
+            },
+            {
+                "@language": "en-gb",
+                "@value": "Attribution 1.0 Generic"
+            },
+            {
+                "@language": "en-hk",
+                "@value": "Attribution 1.0 Generic"
+            },
+            {
+                "@language": "en-sg",
+                "@value": "Attribution 1.0 Generic"
+            },
+            {
+                "@language": "en-us",
+                "@value": "Attribution 1.0 Generic"
+            },
+            {
+                "@language": "eo",
+                "@value": "Atribuite 1.0 Ĝenerala"
+            },
+            {
+                "@language": "es",
+                "@value": "Atribución 1.0 Genérica"
+            },
+            {
+                "@language": "es-ar",
+                "@value": "Atribución 1.0 Genérica"
+            },
+            {
+                "@language": "es-cl",
+                "@value": "Atribución 1.0 Genérica"
+            },
+            {
+                "@language": "es-co",
+                "@value": "Reconocimiento 1.0 Genérica"
+            },
+            {
+                "@language": "es-ec",
+                "@value": "Reconocimiento 1.0 Genérica"
+            },
+            {
+                "@language": "es-es",
+                "@value": "Reconocimiento 1.0 Genérica"
+            },
+            {
+                "@language": "es-gt",
+                "@value": "Reconocimiento 1.0 Genérica"
+            },
+            {
+                "@language": "es-mx",
+                "@value": "Atribución 1.0 Genérica"
+            },
+            {
+                "@language": "es-pe",
+                "@value": "Reconocimiento 1.0 Genérica"
+            },
+            {
+                "@language": "es-pr",
+                "@value": "Reconocimiento 1.0 Genérica"
+            },
+            {
+                "@language": "et",
+                "@value": "Autorile viitamine 1.0 Üldine"
+            },
+            {
+                "@language": "eu",
+                "@value": "Aitortu 1.0 Generikoa"
+            },
+            {
+                "@language": "fa",
+                "@value": "Attribution 1.0 Generic"
+            },
+            {
+                "@language": "fi",
+                "@value": "Nimeä 1.0 Raakaversio"
+            },
+            {
+                "@language": "fr",
+                "@value": "Attribution 1.0 Générique"
+            },
+            {
+                "@language": "fr-ca",
+                "@value": "Paternité 1.0 Générique"
+            },
+            {
+                "@language": "fr-ch",
+                "@value": "Paternité 1.0 Générique"
+            },
+            {
+                "@language": "fr-lu",
+                "@value": "Paternité 1.0 Générique"
+            },
+            {
+                "@language": "ga",
+                "@value": "Attribution 1.0 Generic"
+            },
+            {
+                "@language": "gl",
+                "@value": "Recoñecemento 1.0 Xenérica"
+            },
+            {
+                "@language": "he",
+                "@value": "ייחוס 1.0 לא מותאם"
+            },
+            {
+                "@language": "hi",
+                "@value": "Attribution 1.0 Generic"
+            },
+            {
+                "@language": "hr",
+                "@value": "Imenovanje 1.0 nelokalizirana licenca"
+            },
+            {
+                "@language": "hu",
+                "@value": "Nevezd meg! 1.0 Általános"
+            },
+            {
+                "@language": "hy",
+                "@value": "Հղում 1.0 Generic"
+            },
+            {
+                "@language": "id",
+                "@value": "Atribusi 1.0 Generik"
+            },
+            {
+                "@language": "is",
+                "@value": "Attribution 1.0 Generic"
+            },
+            {
+                "@language": "it",
+                "@value": "Attribuzione 1.0 Generico"
+            },
+            {
+                "@language": "it-ch",
+                "@value": "Attribuzione 1.0 Generico"
+            },
+            {
+                "@language": "ja",
+                "@value": "表示 1.0 一般"
+            },
+            {
+                "@language": "ka",
+                "@value": "ავტორობის მითითებით  1.0 ზოგადი"
+            },
+            {
+                "@language": "kk",
+                "@value": "Атауын сақтау 1.0 Generic"
+            },
+            {
+                "@language": "ko",
+                "@value": "저작자표시(Attribution) 1.0 일반"
+            },
+            {
+                "@language": "lt",
+                "@value": "Priskyrimas 1.0 Generic"
+            },
+            {
+                "@language": "lv",
+                "@value": "Atsaucoties 1.0 Vispārīgs"
+            },
+            {
+                "@language": "mk",
+                "@value": "Наведи извор 1.0 Нелокализирана лиценца"
+            },
+            {
+                "@language": "ml",
+                "@value": "കടപ്പാട് 1.0 Generic"
+            },
+            {
+                "@language": "mn",
+                "@value": "Attribution 1.0 Generic"
+            },
+            {
+                "@language": "ms",
+                "@value": "Pengiktirafan 1.0 Umum"
+            },
+            {
+                "@language": "nl",
+                "@value": "Naamsvermelding 1.0 Unported"
+            },
+            {
+                "@language": "no",
+                "@value": "Navngivelse 1.0 Generisk"
+            },
+            {
+                "@language": "nso",
+                "@value": "Tsebagatšo 1.0 E sa fetišwago"
+            },
+            {
+                "@language": "oci-es",
+                "@value": "Attribution 1.0 Generic"
+            },
+            {
+                "@language": "pl",
+                "@value": "Uznanie autorstwa 1.0 Ogólny"
+            },
+            {
+                "@language": "pt",
+                "@value": "Atribuição  1.0 Genérica"
+            },
+            {
+                "@language": "pt-br",
+                "@value": "Atribuição 1.0 Generic"
+            },
+            {
+                "@language": "pt-pt",
+                "@value": "Atribuição 1.0 Genérica"
+            },
+            {
+                "@language": "ro",
+                "@value": "Atribuire 1.0 Generică"
+            },
+            {
+                "@language": "ru",
+                "@value": "Attribution (Атрибуция) 1.0 Generic"
+            },
+            {
+                "@language": "si-lk",
+                "@value": "Attribution 1.0 Generic"
+            },
+            {
+                "@language": "sl",
+                "@value": "Priznanje avtorstva 1.0 Generična"
+            },
+            {
+                "@language": "sq",
+                "@value": "Attribution 1.0 Të përgjithshme"
+            },
+            {
+                "@language": "sr",
+                "@value": "Autorstvo 1.0 Generička licenca"
+            },
+            {
+                "@language": "sr",
+                "@value": "Ауторство 1.0 Генеричка лиценца"
+            },
+            {
+                "@language": "sr-latn",
+                "@value": "Autorstvo 1.0 Generička licenca"
+            },
+            {
+                "@language": "st",
+                "@value": "Attribution 1.0 Generic"
+            },
+            {
+                "@language": "sv",
+                "@value": "Erkännande 1.0 Generisk"
+            },
+            {
+                "@language": "ta",
+                "@value": "Attribution 1.0 Generic"
+            },
+            {
+                "@language": "te",
+                "@value": "ఆపాదింపు 1.0 Generic"
+            },
+            {
+                "@language": "th",
+                "@value": "แสดงที่มา 1.0 ทั่วไป"
+            },
+            {
+                "@language": "tr",
+                "@value": "Attribution 1.0 Kapsamlı"
+            },
+            {
+                "@language": "uk",
+                "@value": "Attribution 1.0 Generic"
+            },
+            {
+                "@language": "ur",
+                "@value": "Attribution 1.0 Generic"
+            },
+            {
+                "@language": "vi",
+                "@value": "Ghi nhận công của tác giả 1.0 Chung"
+            },
+            {
+                "@language": "zh",
+                "@value": "署名 1.0 未本地化版本"
+            },
+            {
+                "@language": "zh-hk",
+                "@value": "姓名標示 1.0 通用版"
+            },
+            {
+                "@language": "zh-tw",
+                "@value": "姓名標示 1.0 通用版"
+            },
+            {
+                "@language": "zu",
+                "@value": "Qaphela Umnikazi 1.0 Engadlulisiwe"
+            },
+            {
+                "@language": "zxx",
+                "@value": "${Attribution} 1.0 ${Generic}"
+            }
+        ],
+        "owl:sameAs": "https://licensedb.org/id/CC-BY-1.0",
+        "foaf:logo": [
+            "http://i.creativecommons.org/l/by/1.0/80x15.png",
+            "http://i.creativecommons.org/l/by/1.0/88x31.png"
+        ]
+    },
+    "foaf:logo": [
+        "http://i.creativecommons.org/l/by/1.0/80x15.png",
+        "http://i.creativecommons.org/l/by/1.0/88x31.png"
+    ],
+    "li:id": "CC-BY-1.0",
+    "li:libre": "http://creativecommons.org/",
+    "li:name": "CC BY 1.0"
+}

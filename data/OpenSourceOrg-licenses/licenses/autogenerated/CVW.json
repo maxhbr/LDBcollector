@@ -1,0 +1,24 @@
+[
+    {
+        "id": "CVW",
+        "links": [
+            {
+                "note": "OSI Page",
+                "url": "https://opensource.org/licenses/CVW"
+            }
+        ],
+        "name": "The MITRE Collaborative Virtual Workspace License",
+        "keywords": [
+            "discouraged",
+            "retired",
+            "osi-approved"
+        ],
+        "text": [
+            {
+                "media_type": "text/html",
+                "title": "HTML",
+                "url": "https://opensource.org/licenses/CVW"
+            }
+        ]
+    }
+]

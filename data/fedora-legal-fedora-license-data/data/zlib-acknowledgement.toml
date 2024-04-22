@@ -1,0 +1,17 @@
+[license]
+
+expression = "zlib-acknowledgement"
+status = [ "allowed" ]
+
+[fedora]
+
+legacy-name = [
+    "Nunit License",
+    "zlib/libpng License with Acknowledgement"
+]
+
+legacy-abbreviation = [
+    "MIT with advertising",
+    "zlib with acknowledgement"
+]
+

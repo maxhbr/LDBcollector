@@ -1,0 +1,7 @@
+% layout 'default', title => 'List products';
+
+<div id="known-products"></div>
+
+% content_for 'ready_function' => begin
+  cavil.setupKnownProducts();
+% end

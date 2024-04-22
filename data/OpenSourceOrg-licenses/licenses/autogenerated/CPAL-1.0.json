@@ -1,0 +1,22 @@
+[
+    {
+        "id": "CPAL-1.0",
+        "links": [
+            {
+                "note": "OSI Page",
+                "url": "https://opensource.org/licenses/CPAL-1.0"
+            }
+        ],
+        "name": "Common Public Attribution License Version 1.0 (CPAL-1.0)",
+        "keywords": [
+            "osi-approved"
+        ],
+        "text": [
+            {
+                "media_type": "text/html",
+                "title": "HTML",
+                "url": "https://opensource.org/licenses/CPAL-1.0"
+            }
+        ]
+    }
+]

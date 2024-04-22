@@ -1,0 +1,13 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+
+canonicalName: "BSD 3-Clause License (Inferno Nettverk)"
+category: "BSD"
+spdxIdentifier: "BSD-Inferno-Nettverk"
+
+alternativeNames:
+  - "BSD-Inferno-Nettverk"
+
+otherIds: 
+  - "scancode:bsd-inferno-nettverk"

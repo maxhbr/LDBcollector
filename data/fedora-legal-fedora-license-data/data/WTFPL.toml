@@ -1,0 +1,14 @@
+[license]
+
+expression = "WTFPL"
+status = [ "allowed" ]
+
+[fedora]
+
+legacy-name = [
+    "Do What The F*ck You Want To Public License"
+]
+
+legacy-abbreviation = [
+    "WTFPL"
+]

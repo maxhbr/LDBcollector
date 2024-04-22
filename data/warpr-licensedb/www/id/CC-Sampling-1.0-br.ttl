@@ -1,0 +1,235 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/elements/1.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://creativecommons.org/licenses/sampling/1.0/br/> a cc:License ;
+    cc:deprecatedOn "2007-06-04"^^<http://www.w3.org/2001/XMLSchema-datatypes#date> ;
+    cc:jurisdiction <http://creativecommons.org/international/br/> ;
+    cc:legalcode <http://creativecommons.org/licenses/sampling/1.0/br/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/sampling/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Reproduction ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "1.0" ;
+    dc:identifier "sampling" ;
+    dc:source <http://creativecommons.org/licenses/sampling/1.0/> ;
+    dc:title "Voorsmaak 1.0"@af,
+        "العينات 1.0"@ar,
+        "Sampling 1.0"@as,
+        "Sampling 1.0"@ast,
+        "Sampling 1.0"@ast-es,
+        "Sampling 1.0"@az,
+        "Семплирование 1.0"@be,
+        "Семплиране 1.0"@bg,
+        "উদাহরন হিসেবে নির্বাচিত শিক্ষার যোগ্য 1.0"@bn,
+        "Sampling 1.0"@ca,
+        "Vytváření samplů 1.0"@cs,
+        "Sampling 1.0"@da,
+        "Sampling 1.0"@de,
+        "Sampling 1.0"@de-at,
+        "Sampling 1.0"@de-ch,
+        "Sampling 1.0"@el,
+        "Sampling 1.0"@en,
+        "Sampling 1.0"@en-ca,
+        "Sampling 1.0"@en-gb,
+        "Sampling 1.0"@en-hk,
+        "Sampling 1.0"@en-sg,
+        "Sampling 1.0"@en-us,
+        "Specimeno 1.0"@eo,
+        "Sampling 1.0"@es,
+        "Sampling 1.0"@es-ar,
+        "Sampling 1.0"@es-cl,
+        "Sampling 1.0"@es-co,
+        "Sampling 1.0"@es-ec,
+        "Sampling 1.0"@es-es,
+        "Sampling 1.0"@es-gt,
+        "Sampling 1.0"@es-mx,
+        "Sampling 1.0"@es-pe,
+        "Sampling 1.0"@es-pr,
+        "Valikkasutus 1.0"@et,
+        "Sampling 1.0"@eu,
+        "Sampling 1.0"@fa,
+        "Sämpläys 1.0"@fi,
+        "Échantillonnage 1.0"@fr,
+        "Sampling/Echantillonage 1.0"@fr-ca,
+        "Sampling/Echantillonage 1.0"@fr-ch,
+        "Sampling/Echantillonage 1.0"@fr-lu,
+        "Sampling 1.0"@ga,
+        "Sampling 1.0"@gl,
+        "דגימה 1.0"@he,
+        "Sampling 1.0"@hi,
+        "Sempliranje 1.0"@hr,
+        "Sampling 1.0"@hu,
+        "Sampling 1.0"@hy,
+        "Sampling 1.0"@id,
+        "Sampling 1.0"@is,
+        "<span lang=\"en\">Sampling</span> 1.0"@it,
+        "<span lang=\"en\">Sampling</span> 1.0"@it-ch,
+        "サンプリング 1.0"@ja,
+        "სცადეთ 1.0"@ka,
+        "Sampling 1.0"@kk,
+        "샘플링 1.0"@ko,
+        "Sampling 1.0"@lt,
+        "Iztveršana 1.0"@lv,
+        "Семплирање 1.0"@mk,
+        "Sampling 1.0"@ml,
+        "Sampling 1.0"@mn,
+        "Mengambil Contoh 1.0"@ms,
+        "Sampling 1.0"@nl,
+        "Sampling 1.0"@no,
+        "Sampole 1.0"@nso,
+        "Sampling 1.0"@oci-es,
+        "Sampling 1.0"@pl,
+        "Sampling 1.0"@pt,
+        "Sampling 1.0"@pt-br,
+        "Sampling 1.0"@pt-pt,
+        "Sampling 1.0"@ro,
+        "Использование частей произведения (<i>Sampling</i>) 1.0"@ru,
+        "Sampling 1.0"@si-lk,
+        "Vzorčenje (sampling) 1.0"@sl,
+        "Sampling 1.0"@sq,
+        "Stvaranje dela na osnovu uzorka (sampling) 1.0"@sr,
+        "Стварање дела на основу узорка (sampling) 1.0"@sr,
+        "Stvaranje dela na osnovu uzorka (sampling) 1.0"@sr-latn,
+        "Sampling 1.0"@st,
+        "Sampling 1.0"@sv,
+        "Sampling 1.0"@ta,
+        "Sampling 1.0"@te,
+        "ใช้ตัวอย่าง 1.0"@th,
+        "Sampling 1.0"@tr,
+        "Sampling 1.0"@uk,
+        "Sampling 1.0"@ur,
+        "Làm mẫu 1.0"@vi,
+        "取样使用 1.0"@zh,
+        "取樣 1.0"@zh-hk,
+        "取樣 1.0"@zh-tw,
+        "Ukuthatha isampula 1.0"@zu,
+        "${Sampling} 1.0"@zxx ;
+    owl:sameAs <https://licensedb.org/id/CC-Sampling-1.0-br> ;
+    foaf:logo <http://i.creativecommons.org/l/sampling/1.0/br/80x15.png>,
+        <http://i.creativecommons.org/l/sampling/1.0/br/88x31.png> .
+
+<https://licensedb.org/id/CC-Sampling-1.0-br> a cc:License,
+        li:License ;
+    cc:deprecatedOn "2007-06-04"^^<http://www.w3.org/2001/XMLSchema-datatypes#date> ;
+    cc:jurisdiction <http://creativecommons.org/international/br/> ;
+    cc:legalcode <http://creativecommons.org/licenses/sampling/1.0/br/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/sampling/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Reproduction ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "1.0" ;
+    dc:identifier "sampling" ;
+    dc:source <http://creativecommons.org/licenses/sampling/1.0/> ;
+    dc:title "Voorsmaak 1.0"@af,
+        "العينات 1.0"@ar,
+        "Sampling 1.0"@as,
+        "Sampling 1.0"@ast,
+        "Sampling 1.0"@ast-es,
+        "Sampling 1.0"@az,
+        "Семплирование 1.0"@be,
+        "Семплиране 1.0"@bg,
+        "উদাহরন হিসেবে নির্বাচিত শিক্ষার যোগ্য 1.0"@bn,
+        "Sampling 1.0"@ca,
+        "Vytváření samplů 1.0"@cs,
+        "Sampling 1.0"@da,
+        "Sampling 1.0"@de,
+        "Sampling 1.0"@de-at,
+        "Sampling 1.0"@de-ch,
+        "Sampling 1.0"@el,
+        "Sampling 1.0"@en,
+        "Sampling 1.0"@en-ca,
+        "Sampling 1.0"@en-gb,
+        "Sampling 1.0"@en-hk,
+        "Sampling 1.0"@en-sg,
+        "Sampling 1.0"@en-us,
+        "Specimeno 1.0"@eo,
+        "Sampling 1.0"@es,
+        "Sampling 1.0"@es-ar,
+        "Sampling 1.0"@es-cl,
+        "Sampling 1.0"@es-co,
+        "Sampling 1.0"@es-ec,
+        "Sampling 1.0"@es-es,
+        "Sampling 1.0"@es-gt,
+        "Sampling 1.0"@es-mx,
+        "Sampling 1.0"@es-pe,
+        "Sampling 1.0"@es-pr,
+        "Valikkasutus 1.0"@et,
+        "Sampling 1.0"@eu,
+        "Sampling 1.0"@fa,
+        "Sämpläys 1.0"@fi,
+        "Échantillonnage 1.0"@fr,
+        "Sampling/Echantillonage 1.0"@fr-ca,
+        "Sampling/Echantillonage 1.0"@fr-ch,
+        "Sampling/Echantillonage 1.0"@fr-lu,
+        "Sampling 1.0"@ga,
+        "Sampling 1.0"@gl,
+        "דגימה 1.0"@he,
+        "Sampling 1.0"@hi,
+        "Sempliranje 1.0"@hr,
+        "Sampling 1.0"@hu,
+        "Sampling 1.0"@hy,
+        "Sampling 1.0"@id,
+        "Sampling 1.0"@is,
+        "<span lang=\"en\">Sampling</span> 1.0"@it,
+        "<span lang=\"en\">Sampling</span> 1.0"@it-ch,
+        "サンプリング 1.0"@ja,
+        "სცადეთ 1.0"@ka,
+        "Sampling 1.0"@kk,
+        "샘플링 1.0"@ko,
+        "Sampling 1.0"@lt,
+        "Iztveršana 1.0"@lv,
+        "Семплирање 1.0"@mk,
+        "Sampling 1.0"@ml,
+        "Sampling 1.0"@mn,
+        "Mengambil Contoh 1.0"@ms,
+        "Sampling 1.0"@nl,
+        "Sampling 1.0"@no,
+        "Sampole 1.0"@nso,
+        "Sampling 1.0"@oci-es,
+        "Sampling 1.0"@pl,
+        "Sampling 1.0"@pt,
+        "Sampling 1.0"@pt-br,
+        "Sampling 1.0"@pt-pt,
+        "Sampling 1.0"@ro,
+        "Использование частей произведения (<i>Sampling</i>) 1.0"@ru,
+        "Sampling 1.0"@si-lk,
+        "Vzorčenje (sampling) 1.0"@sl,
+        "Sampling 1.0"@sq,
+        "Stvaranje dela na osnovu uzorka (sampling) 1.0"@sr,
+        "Стварање дела на основу узорка (sampling) 1.0"@sr,
+        "Stvaranje dela na osnovu uzorka (sampling) 1.0"@sr-latn,
+        "Sampling 1.0"@st,
+        "Sampling 1.0"@sv,
+        "Sampling 1.0"@ta,
+        "Sampling 1.0"@te,
+        "ใช้ตัวอย่าง 1.0"@th,
+        "Sampling 1.0"@tr,
+        "Sampling 1.0"@uk,
+        "Sampling 1.0"@ur,
+        "Làm mẫu 1.0"@vi,
+        "取样使用 1.0"@zh,
+        "取樣 1.0"@zh-hk,
+        "取樣 1.0"@zh-tw,
+        "Ukuthatha isampula 1.0"@zu,
+        "${Sampling} 1.0"@zxx ;
+    owl:sameAs <http://creativecommons.org/licenses/sampling/1.0/br/> ;
+    foaf:logo <http://i.creativecommons.org/l/sampling/1.0/br/80x15.png>,
+        <http://i.creativecommons.org/l/sampling/1.0/br/88x31.png> ;
+    li:id "CC-Sampling-1.0-br" ;
+    li:name "CC Sampling 1.0 BR" .
+

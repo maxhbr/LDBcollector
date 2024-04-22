@@ -1,0 +1,52 @@
+<!--
+SPDX-FileCopyrightText: 2022 Hermine-team <hermine@inno3.fr>
+
+SPDX-License-Identifier: AGPL-3.0-only
+-->
+
+{% extends "cube/cube.html" %}
+{% load cube_tags %}
+
+{% block title %}Add license{% endblock %}
+
+{% block breadcrumbs %}
+  <ul>
+    <li><a href="{% url 'cube:dashboard' %}">Hermine</a></li>
+    <li><a href="{% url 'cube:license_list' %}">Licenses</a></li>
+    <li>Add license</li>
+  </ul>
+{% endblock %}
+
+{% block herozone %}
+  <h1 class="title">Add new license</h1>
+{% endblock %}
+
+{% block content %}
+  <form method="post">
+    {% csrf_token %}
+    {{ form.non_field_errors }}
+    <div class="field is-horizontal">
+      <div class="field-label"></div>
+      <div class="field-body">
+        <h2>License data</h2>
+      </div>
+    </div>
+    {% for field in shared_fields %}
+      <div{% with classes=field.css_classes %} class="field is-horizontal bulma{% if field.errors %} bulma-error{% endif %}{% if classes %} {{ classes }}{% endif %}"{% endwith %}>
+        {% include "django/forms/field.html" %}
+      </div>
+    {% endfor %}
+    <div class="field is-horizontal mt-6">
+      <div class="field-label"></div>
+      <div class="field-body">
+        <h2>Internal policy</h2>
+      </div>
+    </div>
+    {% for field in policy_fields %}
+      <div{% with classes=field.css_classes %} class="field is-horizontal bulma{% if field.errors %} bulma-error{% endif %}{% if classes %} {{ classes }}{% endif %}"{% endwith %}>
+        {% include "django/forms/field.html" %}
+      </div>
+    {% endfor %}
+    {% include "cube/includes/bulma_submit.html" %}
+  </form>
+{% endblock %}

@@ -1,0 +1,13 @@
+---
+id: "PyPI::pandas:1.1.3"
+source_artifact_url: "https://files.pythonhosted.org/packages/1b/e5/552ba65835ab43e12b299458fea94ee23886125b8b8aabc91edb03f2ba65/pandas-1.1.3.tar.gz"
+path_excludes:
+  - pattern: "pandas-1.1.3/doc/**"
+    reason: "DOCUMENTATION_OF"
+license_finding_curations:
+  - path: "pandas-1.1.3/LICENSES/MUSL_LICENSE"
+    concluded_license: "MIT"
+    reason: "INCORRECT"
+    comment:
+      "The Panda maintainers copied the entire MUSL LICENSE file for copying a several lines from MUSL libc \
+      (https://musl.libc.org) which are MIT licensed. See also https://github.com/pandas-dev/pandas/pull/23981."

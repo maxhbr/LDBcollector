@@ -1,0 +1,243 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/elements/1.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://creativecommons.org/licenses/by-nc-nd/2.0/ca/> a cc:License ;
+    cc:jurisdiction <http://creativecommons.org/international/ca/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nc-nd/2.0/ca/legalcode.en>,
+        <http://creativecommons.org/licenses/by-nc-nd/2.0/ca/legalcode.fr> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:Distribution,
+        cc:Reproduction ;
+    cc:prohibits cc:CommercialUse ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.0" ;
+    dc:identifier "by-nc-nd" ;
+    dc:isReplacedBy <http://creativecommons.org/licenses/by-nc-nd/2.5/ca/> ;
+    dc:source <http://creativecommons.org/licenses/by-nc-nd/2.0/> ;
+    dc:title "Erkenning-NieKommersieel-GeenAfleidings 2.0 Kanada"@af,
+        "نسب- غير تجاري - لا اشتقاق 2.0 كندا"@ar,
+        "Attribution-NonCommercial-NoDerivs 2.0 Canada"@as,
+        "Attribution-NonCommercial-NoDerivs 2.0 Canada"@ast,
+        "Attribution-NonCommercial-NoDerivs 2.0 Canada"@ast-es,
+        "Attribution-NonCommercial-NoDerivs 2.0 Canada"@az,
+        "Attribution-NonCommercial-NoDerivs 2.0 Канада"@be,
+        "Признание-Некомерсиално-Без производни 2.0 Канада"@bg,
+        "Attribution-NonCommercial-NoDerivs 2.0 Canada"@bn,
+        "Reconeixement-NoComercial-SenseObraDerivada 2.0 Canadà"@ca,
+        "Uveďte autora-Neužívejte dílo komerčně-Nezasahujte do díla 2.0 Kanada"@cs,
+        "Navngivelse-IkkeKommerciel-IngenBearbejdelse 2.0 Canada"@da,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 2.0 Kanada"@de,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 2.0 Kanada"@de-at,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 2.0 Kanada"@de-ch,
+        "Αναφορά Δημιουργού-Μη Εμπορική Χρήση-Όχι Παράγωγα Έργα 2.0 Καναδάς"@el,
+        "Attribution-NonCommercial-NoDerivs 2.0 Canada"@en,
+        "Attribution-NonCommercial-NoDerivs 2.0 Canada"@en-ca,
+        "Attribution-NonCommercial-NoDerivs 2.0 Canada"@en-gb,
+        "Attribution-NonCommercial-NoDerivs 2.0 Canada"@en-hk,
+        "Attribution-NonCommercial-NoDerivs 2.0 Canada"@en-sg,
+        "Attribution-NonCommercial-NoDerivs 2.0 Canada"@en-us,
+        "Atribuite-Nekomerce-Nemodifite 2.0 Kanado"@eo,
+        "Atribución-NoComercial-SinDerivadas 2.0 Canadá"@es,
+        "Atribución-NoComercial-SinDerivadas 2.0 Canadá"@es-ar,
+        "Atribución-NoComercial-SinDerivadas 2.0 Canadá"@es-cl,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.0 Canadá"@es-co,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.0 Canadá"@es-ec,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.0 Canadá"@es-es,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.0 Canadá"@es-gt,
+        "Atribución-No Comercial-No Derivadas 2.0 Canadá"@es-mx,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.0 Canadá"@es-pe,
+        "Reconocimiento-NoComercial-SinObrasDerivadas 2.0 Canadá"@es-pr,
+        "Autorile viitamine + Mitteäriline eesmärk + Tuletatud teoste keeld 2.0 Kanada"@et,
+        "Aitortu-EzKomertziala-LanEratorririkGabe 2.0 Kanada"@eu,
+        "Attribution-NonCommercial-NoDerivs 2.0 کانادا"@fa,
+        "Nimeä-Ei muutoksia-Epäkaupallinen 2.0 Kanada"@fi,
+        "Attribution - Pas d’Utilisation Commerciale - Pas de Modification 2.0 Canada"@fr,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.0 Canada"@fr-ca,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.0 Canada"@fr-ch,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.0 Canada"@fr-lu,
+        "Attribution-NonCommercial-NoDerivs 2.0 Canada"@ga,
+        "Recoñecemento-NonComercial-SenObraDerivada 2.0 Canadá"@gl,
+        "ייחוס-שימוש לא מסחרי-איסור יצירות נגזרות 2.0 קנדה"@he,
+        "Attribution-NonCommercial-NoDerivs 2.0 Canada"@hi,
+        "Imenovanje-Nekomercijalno-Bez prerada 2.0 Kanada"@hr,
+        "Nevezd meg! - Ne add el! - Ne változtasd! 2.0 Kanada"@hu,
+        "Հղում - Ոչ-առևտրային օգտագործում - Օգտագործում առանց վերափոխումների 2.0 Կանադա"@hy,
+        "Atribusi-NonKomersial-TanpaTurunan 2.0 Kanada"@id,
+        "Attribution-NonCommercial-NoDerivs 2.0 Canada"@is,
+        "Attribuzione - Non commerciale - Non opere derivate 2.0 Canada"@it,
+        "Attribuzione - Non commerciale - Non opere derivate 2.0 Canada"@it-ch,
+        "表示 - 非営利 - 改変禁止 2.0 カナダ"@ja,
+        "ავტორობის მითითებით–არაკომერციული გამოყენბისათვის–გადამუშავების გარეშე 2.0 კანადა"@ka,
+        "Attribution-NonCommercial-NoDerivs 2.0 Canada"@kk,
+        "저작자표시-비영리-변경금지 2.0 캐나다"@ko,
+        "Attribution-NonCommercial-NoDerivs 2.0 Kanada"@lt,
+        "Atsaucoties-Nekomerciāls-Nemainīts 2.0 Kanāda"@lv,
+        "НаведиИзвор-Некомерцијално-БезАдаптираниДела 2.0 Канада"@mk,
+        "Attribution-NonCommercial-NoDerivs 2.0 കാനഡ"@ml,
+        "Attribution-NonCommercial-NoDerivs 2.0 Canada"@mn,
+        "Pengiktirafan-BukanKomersial-TiadaTerbitan 2.0 Kanada"@ms,
+        "Naamsvermelding-NietCommercieel-GeenAfgeleideWerken 2.0 Canada"@nl,
+        "Navngivelse-Ikkekommersiell-IngenBearbeidelse 2.0 Canada"@no,
+        "Tsebagatšo-E sego ya Kgwebo-Tše sa fetolwego 2.0 Khanada"@nso,
+        "Attribution-NonCommercial-NoDerivs 2.0 Canada"@oci-es,
+        "Uznanie autorstwa-Użycie niekomercyjne-Bez utworów zależnych 2.0 Kanada"@pl,
+        "Atribuição - NãoComercial - SemDerivados 2.0 Canadá"@pt,
+        "Atribuição-Uso não-comercial-Vedada a criação de obras derivadas 2.0 Canada"@pt-br,
+        "Atribuição-Uso Não-Comercial-Proibição de realização de Obras Derivadas 2.0 Canadá"@pt-pt,
+        "Atribuire-Necomercial-FărăModificări 2.0 Canada"@ro,
+        "Attribution-NonCommercial-NoDerivs (Атрибуция — Некоммерческое использование — Без производных произведений) 2.0 Канада"@ru,
+        "Attribution-NonCommercial-NoDerivs 2.0 Canada"@si-lk,
+        "Priznanje avtorstva-Nekomercialno-Brez predelav 2.0 Kanada"@sl,
+        "Attribution-NonCommercial-NoDerivs 2.0 Kanada"@sq,
+        "Autorstvo-Nekomercijalno-Bez prerada 2.0 Kanada"@sr,
+        "Ауторство-Некомерцијално-Без прерада 2.0 Канада"@sr,
+        "Autorstvo-Nekomercijalno-Bez prerada 2.0 Kanada"@sr-latn,
+        "Attribution-NonCommercial-NoDerivs 2.0 Canada"@st,
+        "Erkännande-Ickekommersiell-IngaBearbetningar 2.0 Kanada"@sv,
+        "Attribution-NonCommercial-NoDerivs 2.0 Canada"@ta,
+        "Attribution-NonCommercial-NoDerivs 2.0 కెనడా"@te,
+        "แสดงที่มา-ไม่ใช้เพื่อการค้า-ไม่ดัดแปลง 2.0 แคนาดา"@th,
+        "Attribution-Gayriticari-NoDerivs 2.0 Kanada"@tr,
+        "Attribution-NonCommercial-NoDerivs 2.0 Canada"@uk,
+        "Attribution-NonCommercial-NoDerivs 2.0 Canada"@ur,
+        "Ghi nhận công của tác giả - Phi thương mại - Không phái sinh  2.0 Canada"@vi,
+        "署名-非商业性使用-禁止演绎 2.0 加拿大"@zh,
+        "姓名標示-非商業性-禁止改作 2.0 加拿大"@zh-hk,
+        "姓名標示-非商業性-禁止改作 2.0 加拿大"@zh-tw,
+        "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano-Ungasuseli lutho kulokhu 2.0 Ecanada"@zu,
+        "${Attribution-NonCommercial-NoDerivs} 2.0 ${Canada}"@zxx ;
+    owl:sameAs <https://licensedb.org/id/CC-BY-NC-ND-2.0-ca> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nc-nd/2.0/ca/80x15.png>,
+        <http://i.creativecommons.org/l/by-nc-nd/2.0/ca/88x31.png> .
+
+<https://licensedb.org/id/CC-BY-NC-ND-2.0-ca> a cc:License,
+        li:License ;
+    cc:jurisdiction <http://creativecommons.org/international/ca/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nc-nd/2.0/ca/legalcode.en>,
+        <http://creativecommons.org/licenses/by-nc-nd/2.0/ca/legalcode.fr> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:Distribution,
+        cc:Reproduction ;
+    cc:prohibits cc:CommercialUse ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.0" ;
+    dc:identifier "by-nc-nd" ;
+    dc:isReplacedBy <https://licensedb.org/id/CC-BY-NC-ND-2.5-ca> ;
+    dc:source <http://creativecommons.org/licenses/by-nc-nd/2.0/> ;
+    dc:title "Erkenning-NieKommersieel-GeenAfleidings 2.0 Kanada"@af,
+        "نسب- غير تجاري - لا اشتقاق 2.0 كندا"@ar,
+        "Attribution-NonCommercial-NoDerivs 2.0 Canada"@as,
+        "Attribution-NonCommercial-NoDerivs 2.0 Canada"@ast,
+        "Attribution-NonCommercial-NoDerivs 2.0 Canada"@ast-es,
+        "Attribution-NonCommercial-NoDerivs 2.0 Canada"@az,
+        "Attribution-NonCommercial-NoDerivs 2.0 Канада"@be,
+        "Признание-Некомерсиално-Без производни 2.0 Канада"@bg,
+        "Attribution-NonCommercial-NoDerivs 2.0 Canada"@bn,
+        "Reconeixement-NoComercial-SenseObraDerivada 2.0 Canadà"@ca,
+        "Uveďte autora-Neužívejte dílo komerčně-Nezasahujte do díla 2.0 Kanada"@cs,
+        "Navngivelse-IkkeKommerciel-IngenBearbejdelse 2.0 Canada"@da,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 2.0 Kanada"@de,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 2.0 Kanada"@de-at,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 2.0 Kanada"@de-ch,
+        "Αναφορά Δημιουργού-Μη Εμπορική Χρήση-Όχι Παράγωγα Έργα 2.0 Καναδάς"@el,
+        "Attribution-NonCommercial-NoDerivs 2.0 Canada"@en,
+        "Attribution-NonCommercial-NoDerivs 2.0 Canada"@en-ca,
+        "Attribution-NonCommercial-NoDerivs 2.0 Canada"@en-gb,
+        "Attribution-NonCommercial-NoDerivs 2.0 Canada"@en-hk,
+        "Attribution-NonCommercial-NoDerivs 2.0 Canada"@en-sg,
+        "Attribution-NonCommercial-NoDerivs 2.0 Canada"@en-us,
+        "Atribuite-Nekomerce-Nemodifite 2.0 Kanado"@eo,
+        "Atribución-NoComercial-SinDerivadas 2.0 Canadá"@es,
+        "Atribución-NoComercial-SinDerivadas 2.0 Canadá"@es-ar,
+        "Atribución-NoComercial-SinDerivadas 2.0 Canadá"@es-cl,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.0 Canadá"@es-co,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.0 Canadá"@es-ec,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.0 Canadá"@es-es,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.0 Canadá"@es-gt,
+        "Atribución-No Comercial-No Derivadas 2.0 Canadá"@es-mx,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.0 Canadá"@es-pe,
+        "Reconocimiento-NoComercial-SinObrasDerivadas 2.0 Canadá"@es-pr,
+        "Autorile viitamine + Mitteäriline eesmärk + Tuletatud teoste keeld 2.0 Kanada"@et,
+        "Aitortu-EzKomertziala-LanEratorririkGabe 2.0 Kanada"@eu,
+        "Attribution-NonCommercial-NoDerivs 2.0 کانادا"@fa,
+        "Nimeä-Ei muutoksia-Epäkaupallinen 2.0 Kanada"@fi,
+        "Attribution - Pas d’Utilisation Commerciale - Pas de Modification 2.0 Canada"@fr,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.0 Canada"@fr-ca,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.0 Canada"@fr-ch,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.0 Canada"@fr-lu,
+        "Attribution-NonCommercial-NoDerivs 2.0 Canada"@ga,
+        "Recoñecemento-NonComercial-SenObraDerivada 2.0 Canadá"@gl,
+        "ייחוס-שימוש לא מסחרי-איסור יצירות נגזרות 2.0 קנדה"@he,
+        "Attribution-NonCommercial-NoDerivs 2.0 Canada"@hi,
+        "Imenovanje-Nekomercijalno-Bez prerada 2.0 Kanada"@hr,
+        "Nevezd meg! - Ne add el! - Ne változtasd! 2.0 Kanada"@hu,
+        "Հղում - Ոչ-առևտրային օգտագործում - Օգտագործում առանց վերափոխումների 2.0 Կանադա"@hy,
+        "Atribusi-NonKomersial-TanpaTurunan 2.0 Kanada"@id,
+        "Attribution-NonCommercial-NoDerivs 2.0 Canada"@is,
+        "Attribuzione - Non commerciale - Non opere derivate 2.0 Canada"@it,
+        "Attribuzione - Non commerciale - Non opere derivate 2.0 Canada"@it-ch,
+        "表示 - 非営利 - 改変禁止 2.0 カナダ"@ja,
+        "ავტორობის მითითებით–არაკომერციული გამოყენბისათვის–გადამუშავების გარეშე 2.0 კანადა"@ka,
+        "Attribution-NonCommercial-NoDerivs 2.0 Canada"@kk,
+        "저작자표시-비영리-변경금지 2.0 캐나다"@ko,
+        "Attribution-NonCommercial-NoDerivs 2.0 Kanada"@lt,
+        "Atsaucoties-Nekomerciāls-Nemainīts 2.0 Kanāda"@lv,
+        "НаведиИзвор-Некомерцијално-БезАдаптираниДела 2.0 Канада"@mk,
+        "Attribution-NonCommercial-NoDerivs 2.0 കാനഡ"@ml,
+        "Attribution-NonCommercial-NoDerivs 2.0 Canada"@mn,
+        "Pengiktirafan-BukanKomersial-TiadaTerbitan 2.0 Kanada"@ms,
+        "Naamsvermelding-NietCommercieel-GeenAfgeleideWerken 2.0 Canada"@nl,
+        "Navngivelse-Ikkekommersiell-IngenBearbeidelse 2.0 Canada"@no,
+        "Tsebagatšo-E sego ya Kgwebo-Tše sa fetolwego 2.0 Khanada"@nso,
+        "Attribution-NonCommercial-NoDerivs 2.0 Canada"@oci-es,
+        "Uznanie autorstwa-Użycie niekomercyjne-Bez utworów zależnych 2.0 Kanada"@pl,
+        "Atribuição - NãoComercial - SemDerivados 2.0 Canadá"@pt,
+        "Atribuição-Uso não-comercial-Vedada a criação de obras derivadas 2.0 Canada"@pt-br,
+        "Atribuição-Uso Não-Comercial-Proibição de realização de Obras Derivadas 2.0 Canadá"@pt-pt,
+        "Atribuire-Necomercial-FărăModificări 2.0 Canada"@ro,
+        "Attribution-NonCommercial-NoDerivs (Атрибуция — Некоммерческое использование — Без производных произведений) 2.0 Канада"@ru,
+        "Attribution-NonCommercial-NoDerivs 2.0 Canada"@si-lk,
+        "Priznanje avtorstva-Nekomercialno-Brez predelav 2.0 Kanada"@sl,
+        "Attribution-NonCommercial-NoDerivs 2.0 Kanada"@sq,
+        "Autorstvo-Nekomercijalno-Bez prerada 2.0 Kanada"@sr,
+        "Ауторство-Некомерцијално-Без прерада 2.0 Канада"@sr,
+        "Autorstvo-Nekomercijalno-Bez prerada 2.0 Kanada"@sr-latn,
+        "Attribution-NonCommercial-NoDerivs 2.0 Canada"@st,
+        "Erkännande-Ickekommersiell-IngaBearbetningar 2.0 Kanada"@sv,
+        "Attribution-NonCommercial-NoDerivs 2.0 Canada"@ta,
+        "Attribution-NonCommercial-NoDerivs 2.0 కెనడా"@te,
+        "แสดงที่มา-ไม่ใช้เพื่อการค้า-ไม่ดัดแปลง 2.0 แคนาดา"@th,
+        "Attribution-Gayriticari-NoDerivs 2.0 Kanada"@tr,
+        "Attribution-NonCommercial-NoDerivs 2.0 Canada"@uk,
+        "Attribution-NonCommercial-NoDerivs 2.0 Canada"@ur,
+        "Ghi nhận công của tác giả - Phi thương mại - Không phái sinh  2.0 Canada"@vi,
+        "署名-非商业性使用-禁止演绎 2.0 加拿大"@zh,
+        "姓名標示-非商業性-禁止改作 2.0 加拿大"@zh-hk,
+        "姓名標示-非商業性-禁止改作 2.0 加拿大"@zh-tw,
+        "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano-Ungasuseli lutho kulokhu 2.0 Ecanada"@zu,
+        "${Attribution-NonCommercial-NoDerivs} 2.0 ${Canada}"@zxx ;
+    owl:sameAs <http://creativecommons.org/licenses/by-nc-nd/2.0/ca/> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nc-nd/2.0/ca/80x15.png>,
+        <http://i.creativecommons.org/l/by-nc-nd/2.0/ca/88x31.png> ;
+    li:id "CC-BY-NC-ND-2.0-ca" ;
+    li:name "CC BY-NC-ND 2.0 CA" .
+
+<http://creativecommons.org/licenses/by-nc-nd/2.0/ca/legalcode.en> dc:language "en" .
+
+<http://creativecommons.org/licenses/by-nc-nd/2.0/ca/legalcode.fr> dc:language "fr" .
+

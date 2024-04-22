@@ -1,0 +1,22 @@
+---
+key: asmus
+short_name: ASMUS License
+name: ASMUS License
+category: Permissive
+owner: ASMUS, Inc.
+spdx_license_key: LicenseRef-scancode-asmus
+other_urls:
+    - http://home.ix.netcom.com/~asmus-inc/index.html
+---
+
+ASMUS License
+
+Disclaimer and legal rights
+---------------------------
+
+This file contains bugs. All representations to the contrary are void.
+
+Source code in this file and the accompanying headers and included 
+files may be distributed free of charge by anyone, as long as full 
+credit is given and any and all liabilities are assumed by the 
+recipient.

@@ -1,0 +1,22 @@
+[license]
+
+expression = "libtiff"
+status = [ "allowed" ]
+
+url = '''
+https://fedoraproject.org/wiki/Licensing/libtiff
+https://fedoraproject.org/wiki/Licensing:MIT?rd=Licensing/MIT#Hylafax_Variant
+'''
+
+[fedora]
+
+legacy-name = [
+    "libtiff License",
+    "MIT:Hylafax Variant"
+]
+
+legacy-abbreviation = [
+    "libtiff",
+    "MIT"
+]
+

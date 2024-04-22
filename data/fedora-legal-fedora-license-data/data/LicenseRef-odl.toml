@@ -1,0 +1,19 @@
+[license]
+
+expression = "LicenseRef-odl"
+status = [ "not-allowed" ]
+
+url = '''
+http://dmoz.org/license.html
+https://enterprise.dejacode.com/licenses/public/odl/#license-text
+'''
+
+[fedora]
+
+legacy-name = [
+    "Open Directory License"
+]
+
+notes = '''
+link broken
+'''

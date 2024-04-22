@@ -1,0 +1,19 @@
+[license]
+
+expression = "LicenseRef-Jabber"
+status = [ "allowed" ]
+
+url = '''
+http://opensource.org/licenses/jabberpl.php
+'''
+
+[fedora]
+
+legacy-name = [
+    "Jabber Open Source License"
+]
+
+legacy-abbreviation = [
+    "Jabber"
+]
+

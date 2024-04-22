@@ -1,0 +1,14 @@
+license_callback({
+  "domain_content": false, 
+  "domain_data": false, 
+  "domain_software": false, 
+  "family": "", 
+  "id": "ukcrown", 
+  "od_conformance": "rejected", 
+  "osd_conformance": "not reviewed", 
+  "maintainer": "", 
+  "status": "active", 
+  "title": "UK Crown Copyright", 
+  "url": ""
+}
+);

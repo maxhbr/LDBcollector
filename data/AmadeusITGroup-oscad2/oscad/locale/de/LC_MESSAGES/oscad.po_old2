@@ -1,0 +1,369 @@
+# German translations for oscad.
+# Copyright (C) 2013 ORGANIZATION
+# This file is distributed under the same license as the oscad project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: oscad 0.0.1\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2013-12-09 12:47+0000\n"
+"PO-Revision-Date: 2013-12-09 12:51+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: de <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 1.3\n"
+
+#: oscad/subscribers.py:22
+msgid "New Request"
+msgstr "Neue Anfrage"
+
+#: oscad/subscribers.py:24
+msgid "Matrix Request"
+msgstr "Matrix Anfrage"
+
+#: oscad/subscribers.py:25
+msgid "Imprint"
+msgstr "Impressum"
+
+#: oscad/subscribers.py:26
+msgid "Help"
+msgstr "Hilfe"
+
+#: oscad/views.py:125
+#, python-format
+msgid "Missing parameter: %(param)s"
+msgstr "Fehlender Parameter: %(param)s"
+
+#: oscad/views.py:133
+msgid "The combination of parameters you have entered is invalid"
+msgstr "Die Kombination der eingegebenen Parameter ist ungültig"
+
+#: oscad/views.py:141
+#, python-format
+msgid ""
+"The license \"%(license)s\" you have entered is not covered by this "
+"application"
+msgstr ""
+"Die Lizenz, \"%(license)\" die sie angegeben haben, wird von dieser "
+"Anwendung nicht abgedeckt"
+
+#: oscad/templates/baserequest.jinja2:12
+msgid ""
+"What do I have to do for using or distributing a piece of open source "
+"software in accordance to specific open source license &mdash; as a "
+"modified or unmodified, embedded or independent application or library, "
+"used or distributed in the form of binaries or sources?"
+msgstr ""
+
+#: oscad/templates/help.jinja2:5
+msgid "Parameters"
+msgstr ""
+
+#: oscad/templates/help.jinja2:8 oscad/templates/matrix.jinja2:17
+msgid "Type"
+msgstr ""
+
+#: oscad/templates/help.jinja2:10
+msgid "What does this mean: proapse or snimoli?"
+msgstr ""
+
+#: oscad/templates/help.jinja2:16
+msgid ""
+"A piece of (open source) software is a program, an application, or a "
+"server [proapse], only if you can start its binary form with your normal "
+"program launcher, or (in case of a text file which still must be "
+"interpreted by an interpreter like php, perl, bash etc.) if you can start"
+" an interpreter which takes the file as one of its arguments and executes"
+" the commands. In all other cases, it is a snippet, a module, a library "
+"or a plugin (snimoli)"
+msgstr ""
+
+#: oscad/templates/help.jinja2:22 oscad/templates/matrix.jinja2:19
+msgid "Context"
+msgstr ""
+
+#: oscad/templates/help.jinja2:24
+msgid "What does this mean: independent or embedded?"
+msgstr ""
+
+#: oscad/templates/help.jinja2:30
+msgid ""
+"You are using a piece of open source software as an embedded component of"
+" a larger unit if [a] one of your files of the larger unit contains a "
+"verbatim or a modified copy (i.e. a snippet) of the received open source "
+"software, or [b] if your larger unit contains an include statement "
+"referring to a functionally defining file of the received open source "
+"software, or [c] if your larger unit calls a function defined in the "
+"received open source software, or [d] if your development environment "
+"contains a compiler or linker directive referring to the received open "
+"source software (binaries) and if your larger unit can't be executed "
+"without resolving this linker directive."
+msgstr ""
+
+#: oscad/templates/help.jinja2:36
+msgid ""
+"On the opposite, if you are using an open source application [proapse] "
+"(which can directly be executed by your operating system or by an "
+"interpreter) or if you are distributing an open source snippet, module or"
+" library without embedding it into a larger 'on-top application', then "
+"you are using this piece of open source software independendly."
+msgstr ""
+
+#: oscad/templates/help.jinja2:42
+msgid "So, we can say that ..."
+msgstr ""
+
+#: oscad/templates/help.jinja2:47
+msgid "an application is used independendly per definition."
+msgstr ""
+
+#: oscad/templates/help.jinja2:52
+msgid ""
+"often open source distributions contain libraries which are not used by "
+"one of its applications, but are offered to the software developer - so "
+"the distributor is using this library independly."
+msgstr ""
+
+#: oscad/templates/help.jinja2:60 oscad/templates/matrix.jinja2:18
+msgid "State"
+msgstr ""
+
+#: oscad/templates/help.jinja2:62
+msgid "What does this mean: modified or unmodified?"
+msgstr ""
+
+#: oscad/templates/help.jinja2:69
+msgid ""
+"You are modifying a piece of (open source) software if you expand, reduce"
+" or modify at least one of the received software files, and - in case of "
+"dealing with binary object code - if you (re)compile and (re)link the "
+"modified software to a new binary file [modified]. But if you use / "
+"distribute the software as you have got it, you do not modify it "
+"[unmodified]."
+msgstr ""
+
+#: oscad/templates/help.jinja2:75
+msgid ""
+"Note: if you only modify some of the configuration files, you are not "
+"modifying the open source software itself."
+msgstr ""
+
+#: oscad/templates/help.jinja2:81 oscad/templates/matrix.jinja2:20
+msgid "Recipient"
+msgstr ""
+
+#: oscad/templates/help.jinja2:83
+msgid "What does this mean: 4yourself or 2others?"
+msgstr ""
+
+#: oscad/templates/help.jinja2:90
+msgid ""
+"You are using the received open source software only for yourself "
+"(4yourself), if you as a person do not pass it to other entities like "
+"persons, organizations, companies etc., or if you - as a member of a "
+"specific development group - pass it only to the other members of your "
+"development group. But if you store open source software on any device "
+"such as a mobile phone, an USB stick, etc. or if you attach it to any "
+"transport medium like email etc. and if you then sell, give away, or "
+"simply send this device or  transport medium to anyone (other than a "
+"direct member of your development group) then you indeed handover the "
+"open source software to third parties (2others)."
+msgstr ""
+
+#: oscad/templates/help.jinja2:96 oscad/templates/matrix.jinja2:21
+msgid "Form"
+msgstr ""
+
+#: oscad/templates/help.jinja2:98
+msgid "What does this mean: sources or binaries?"
+msgstr ""
+
+#: oscad/templates/help.jinja2:104
+msgid ""
+"Sometimes it is up to you to decide whether you want to distribute only "
+"the binaries or whether you are intentionally going to distribute the "
+"sources (too). These are the two forms of distributed open source "
+"software. But in some  cases, you have to respect some special conditions"
+" if you want to distribute the sources and/or the binaries."
+msgstr ""
+
+#: oscad/templates/imprint.jinja2:23
+#, python-format
+msgid ""
+"The %(oscad)s is intended to be developed in collaboration with the Open "
+"Source Community. The task lists presented by the OSCAd strictly follow "
+"the %(oslic)s."
+msgstr ""
+
+#: oscad/templates/imprint.jinja2:29
+msgid ""
+"This OSLiC was presented on the European Legal and Licensing Workshop "
+"2013 in Amsterdam.  It was very welcomed. But the very benevolent "
+"feedback of this meeting also expressed the need to have an interactive "
+"version of the OSLiC instead of being thrown back to the slightly "
+"unwieldy pdf version. The OSCAd seizes this idea. Initially, the OSCAd "
+"was developed by some employees of Deutsche Telekom AG."
+msgstr ""
+
+#: oscad/templates/imprint.jinja2:35
+#, python-format
+msgid ""
+"This version here is a complete rewrite initiated and sponsored by "
+"%(amadeus)s. The new version is designed to fulfill requirements by "
+"Amadeus which the old version could not."
+msgstr ""
+
+#: oscad/templates/imprint.jinja2:41
+msgid "Author:"
+msgstr ""
+
+#: oscad/templates/imprint.jinja2:45
+msgid ""
+"is currently engaged as a Systems Analyst at 'Amadeus Germany GmbH'. He "
+"is a contributor to various Open Source Projects and a member of the "
+"Amadeus Germany Open Source initiative."
+msgstr ""
+
+#: oscad/templates/imprint.jinja2:51
+msgid "Initiator:"
+msgstr ""
+
+#: oscad/templates/imprint.jinja2:57
+msgid ""
+"is currently engaged as a Senior Expert at 'Deutsche Telekom AG / "
+"Products&amp; Innovation' and a leading member of the Telekom Open Source"
+" Review Board. Formerly he worked as PMI certified Project Manager, "
+"Certified ScrumMaster, Technical Project Leader, IT System Specialist, "
+"and Programmer. He is the mentor of the (Telekom) Open Source License "
+"Compendium and initiator of the (Telekom) Open Source Compliance Advisor."
+msgstr ""
+
+#: oscad/templates/imprint.jinja2:63
+msgid "Contributors"
+msgstr ""
+
+#: oscad/templates/imprint.jinja2:66
+msgid "Generously, we got help by"
+msgstr ""
+
+#: oscad/templates/imprint.jinja2:78
+msgid "Sponsoring Companies"
+msgstr ""
+
+#: oscad/templates/matrix.jinja2:49
+msgid "Known licenses"
+msgstr ""
+
+#: oscad/templates/matrix.jinja2:66
+msgid "Planned licenses"
+msgstr ""
+
+#: oscad/templates/request.jinja2:8
+msgid "Focus"
+msgstr ""
+
+#: oscad/templates/request.jinja2:9
+msgid "Question"
+msgstr ""
+
+#: oscad/templates/request.jinja2:10
+msgid "Answer"
+msgstr ""
+
+#: oscad/templates/request.jinja2:39
+msgid "License"
+msgstr ""
+
+#: oscad/templates/request.jinja2:41
+msgid "Under which open source license is the software released you want to use?"
+msgstr ""
+
+#: oscad/templates/request.jinja2:48
+msgid "known"
+msgstr ""
+
+#: oscad/templates/request.jinja2:68
+msgid "planned"
+msgstr ""
+
+#: oscad/templates/request.jinja2:87
+msgid "Submit request"
+msgstr ""
+
+#: oscad/templates/requesthint.jinja2:3
+msgid "Hint"
+msgstr ""
+
+#: oscad/templates/requesthint.jinja2:6
+msgid ""
+"The OSLiC and the OSCAd are dealing with prototypic use cases. If you "
+"feel, that your specific case can't be specified by this form or is "
+"irregularly covered by one of the cases (false positives), please contact"
+" your legal expert. If you feel that your specific case is irregularly "
+"not covered by our taxonomy (false negative), contact us, please!"
+msgstr ""
+
+#: oscad/templates/result.jinja2:10
+msgid "Results"
+msgstr ""
+
+#: oscad/templates/result.jinja2:15
+msgid "Request:"
+msgstr ""
+
+#: oscad/templates/result.jinja2:20
+#, python-format
+msgid ""
+"Provided I want to %(recipient)s %(state_article)s %(state)s open source "
+"%(type)s in the form of %(form)s as an %(context)s %(context_suffix)s, "
+"what do I have to do for acting in accordance to the %(license)s?"
+msgstr ""
+
+#: oscad/templates/result.jinja2:31
+msgid "refers to"
+msgstr ""
+
+#: oscad/templates/result.jinja2:49
+#, python-format
+msgid "connotes w.r.t.  %(lsuc_name)s"
+msgstr ""
+
+#: oscad/templates/result.jinja2:60
+msgid "requires:"
+msgstr ""
+
+#: oscad/templates/result.jinja2:70
+msgid "mandatory:"
+msgstr ""
+
+#: oscad/templates/result.jinja2:81
+msgid "voluntary:"
+msgstr ""
+
+#: oscad/templates/result.jinja2:92
+msgid "forbids:"
+msgstr ""
+
+#: oscad/templates/result.jinja2:109
+#, python-format
+msgid ""
+"Background information: For a deeper understanding of the reasons why "
+"these tasks are fulfilling the license %(lsuc_license_name)s in respect "
+"to %(osuc_name)s see OSLiC chapter %(lsuc_oslic_todo)s especially chapter"
+" %(lsuc_oslic_lsuc)s and chapter %(lsuc_oslic_explain)s.  For further "
+"information on the protecting power of the license %(lsuc_license_name)s "
+"see OSLiC chapter %(lsuc_oslic_protection)s."
+msgstr ""
+
+#: oscad/templates/result.jinja2:119
+#, python-format
+msgid ""
+"Concerning the open source use cases in general, see OSLiC chapter 4 and "
+"5. Finally, %(lsuc_license_name)s contains a patent clause; for details "
+"see OSLiC chapter %(lsuc_oslic_patent)s."
+msgstr ""
+

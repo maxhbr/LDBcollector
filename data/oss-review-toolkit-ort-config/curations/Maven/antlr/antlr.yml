@@ -1,0 +1,30 @@
+- id: "Maven:antlr:antlr:2.+"
+  curations:
+    comment: |
+      No public VCS location was found during research.
+    vcs: null
+- id: "Maven:antlr:antlr:2.7.6"
+  curations:
+    comment: |
+      The source distribution was found via the homepage.
+    source_artifact:
+      url: "http://www.antlr2.org/download/antlr-2.7.6.tar.gz"
+      hash:
+        value: "e923acd81c590234ea241da96a536e3dcf7f77fb"
+        algorithm: "SHA1"
+- id: "Maven:antlr:antlr:2.7.7"
+  curations:
+    comment: |
+      The source distribution was found via the homepage.
+    source_artifact:
+      url: "http://www.antlr2.org/download/antlr-2.7.7.tar.gz"
+      hash:
+        value: "802655c343cc7806aaf1ec2177a0e663ff209de1"
+        algorithm: "SHA1"
+- id: "Maven:antlr:antlr:2.7.7"
+  curations:
+    comment: |
+      Version 2.7.7 declares "BSD License" in its POM, which is wrong when looking at the `LICENSE.txt` contained in the
+      source artifact. Instead, it is the ANTLR-specific Public Domain license.
+    declared_license_mapping:
+      BSD License: "ANTLR-PD"

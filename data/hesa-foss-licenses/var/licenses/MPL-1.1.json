@@ -1,0 +1,27 @@
+{
+"meta": {
+    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+    "comment": ""
+  },
+  "name": "Mozilla Public License 1.1",
+  "scancode_key": "mpl-1.1", 
+  "spdxid": "MPL-1.1",
+  "aliases": [
+   "MPL-1.1",
+   "Mozilla Public License 1.1",
+   "mozilla1.1",
+   "Mozilla Public License, Version 1.1",
+   "License :: OSI Approved :: Mozilla Public License 1.1 (MPL 1.1)",
+   "Mozilla Public License 1.1 (MPL 1.1)",
+   "Mozilla Public License Version 1.1",
+   "scancode://mpl-1.1",
+   "MPL 1.1",
+   "MPLv1.1",
+   "MOZILLA PUBLIC LICENSE 1.1",
+   "MOZILLA PUBLIC LICENSE Version 1.1",
+   "Mozilla Public License (MPL) version 1.1",
+   "scancode:dpl-1.1",
+   "scancode:monetdb-1.1",
+   "osi:MPL-1.1"
+  ]
+}

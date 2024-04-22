@@ -1,0 +1,15 @@
+{
+"meta": {
+    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+    "comment": ""
+  },
+  "name": "X11-Style (Tiff)",
+  "scancode_key": "x11-tiff", 
+  "spdxid": "libtiff",
+  "aliases": [
+   "libtiff",
+   "libtiff License",
+   "scancode://x11-tiff",
+   "X11-Style (Tiff)"
+  ]
+}

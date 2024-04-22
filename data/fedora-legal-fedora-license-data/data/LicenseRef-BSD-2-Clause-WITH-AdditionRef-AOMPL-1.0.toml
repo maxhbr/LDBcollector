@@ -1,0 +1,4 @@
+[license]
+expression = "LicenseRef-BSD-2-Clause-WITH-AdditionRef-AOMPL-1.0"
+status = [ "allowed" ]
+# see https://gitlab.com/fedora/legal/fedora-license-data/-/issues/407

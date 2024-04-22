@@ -1,0 +1,12 @@
+{
+  "@context": "https://wking.github.io/fsf-api/schema/license.jsonld",
+  "id": "josl",
+  "name": "Jabber Open Source License, Version 1.0",
+  "tags": [
+    "libre"
+  ],
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#josl",
+    "http://directory.fsf.org/wiki/License:JabberOSLv1.0"
+  ]
+}

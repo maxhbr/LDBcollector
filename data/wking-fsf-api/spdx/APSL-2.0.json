@@ -1,0 +1,17 @@
+{
+  "@context": "https://wking.github.io/fsf-api/schema/license.jsonld",
+  "id": "apsl2",
+  "identifiers": {
+    "spdx": [
+      "APSL-2.0"
+    ]
+  },
+  "name": "Apple Public Source License (APSL), version 2",
+  "tags": [
+    "libre"
+  ],
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#apsl2",
+    "http://directory.fsf.org/wiki/License:APSLv2.0"
+  ]
+}

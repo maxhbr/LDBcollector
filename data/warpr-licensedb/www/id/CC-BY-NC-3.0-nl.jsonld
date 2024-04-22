@@ -1,0 +1,853 @@
+{
+    "@context": {
+        "cc": "http://creativecommons.org/ns#",
+        "dc": "http://purl.org/dc/terms/",
+        "dc11": "http://purl.org/dc/elements/1.1/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "li": "https://licensedb.org/ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "cc:legalcode": {
+            "@type": "@id"
+        },
+        "cc:permits": {
+            "@type": "@id"
+        },
+        "cc:requires": {
+            "@type": "@id"
+        },
+        "cc:prohibits": {
+            "@type": "@id"
+        },
+        "cc:jurisdiction": {
+            "@type": "@id"
+        },
+        "cc:licenseClass": {
+            "@type": "@id"
+        },
+        "dc:creator": {
+            "@type": "@id"
+        },
+        "dc:source": {
+            "@type": "@id"
+        },
+        "dc:replaces": {
+            "@type": "@id"
+        },
+        "dc:isBasedOn": {
+            "@type": "@id"
+        },
+        "dc:isReplacedBy": {
+            "@type": "@id"
+        },
+        "foaf:logo": {
+            "@type": "@id"
+        },
+        "li:plaintext": {
+            "@type": "@id"
+        },
+        "li:libre": {
+            "@type": "@id"
+        },
+        "owl:sameAs": {
+            "@type": "@id"
+        }
+    },
+    "@id": "https://licensedb.org/id/CC-BY-NC-3.0-nl",
+    "@type": [
+        "cc:License",
+        "li:License"
+    ],
+    "cc:jurisdiction": "http://creativecommons.org/international/nl/",
+    "cc:legalcode": "http://creativecommons.org/licenses/by-nc/3.0/nl/legalcode",
+    "cc:licenseClass": "http://creativecommons.org/license/",
+    "cc:permits": [
+        "cc:DerivativeWorks",
+        "cc:Distribution",
+        "cc:Reproduction"
+    ],
+    "cc:prohibits": "cc:CommercialUse",
+    "cc:requires": [
+        "cc:Attribution",
+        "cc:Notice"
+    ],
+    "dc:creator": "http://creativecommons.org",
+    "dc:hasVersion": "3.0",
+    "dc:identifier": "by-nc",
+    "dc:replaces": "https://licensedb.org/id/CC-BY-NC-2.5-nl",
+    "dc:source": "http://creativecommons.org/licenses/by-nc/3.0/",
+    "dc:title": [
+        {
+            "@language": "af",
+            "@value": "Erkenning-NieKommersieel 3.0 Nederland"
+        },
+        {
+            "@language": "ar",
+            "@value": "نسب - غير تجاري 3.0 هولندا"
+        },
+        {
+            "@language": "as",
+            "@value": "Attribution-NonCommercial 3.0 Netherlands"
+        },
+        {
+            "@language": "ast",
+            "@value": "Attribution-NonCommercial 3.0 Netherlands"
+        },
+        {
+            "@language": "ast-es",
+            "@value": "Attribution-NonCommercial 3.0 Netherlands"
+        },
+        {
+            "@language": "az",
+            "@value": "Attribution-NonCommercial 3.0 Netherlands"
+        },
+        {
+            "@language": "be",
+            "@value": "Attribution-NonCommercial 3.0 Нідэрланды"
+        },
+        {
+            "@language": "bg",
+            "@value": "Признание-Некомерсиално 3.0 Холандия"
+        },
+        {
+            "@language": "bn",
+            "@value": "Attribution-NonCommercial 3.0 Netherlands"
+        },
+        {
+            "@language": "ca",
+            "@value": "Reconeixement-NoComercial 3.0 Holanda"
+        },
+        {
+            "@language": "cs",
+            "@value": "Uveďte autora-Neužívejte komerčně 3.0 Nizozemí"
+        },
+        {
+            "@language": "da",
+            "@value": "Navngivelse-IkkeKommerciel 3.0 Holland"
+        },
+        {
+            "@language": "de",
+            "@value": "Namensnennung-Nicht-kommerziell 3.0 Niederlande"
+        },
+        {
+            "@language": "de-at",
+            "@value": "Namensnennung-NichtKommerziell 3.0 Niederlande"
+        },
+        {
+            "@language": "de-ch",
+            "@value": "Namensnennung-NichtKommerziell 3.0 Niederlande"
+        },
+        {
+            "@language": "el",
+            "@value": "Αναφορά Δημιουργού-Μη Εμπορική Χρήση 3.0 Ολλανδία"
+        },
+        {
+            "@language": "en",
+            "@value": "Attribution-NonCommercial 3.0 Netherlands"
+        },
+        {
+            "@language": "en-ca",
+            "@value": "Attribution-NonCommercial 3.0 Netherlands"
+        },
+        {
+            "@language": "en-gb",
+            "@value": "Attribution-NonCommercial 3.0 Netherlands"
+        },
+        {
+            "@language": "en-hk",
+            "@value": "Attribution-NonCommercial 3.0 Netherlands"
+        },
+        {
+            "@language": "en-sg",
+            "@value": "Attribution-NonCommercial 3.0 Netherlands"
+        },
+        {
+            "@language": "en-us",
+            "@value": "Attribution-NonCommercial 3.0 Netherlands"
+        },
+        {
+            "@language": "eo",
+            "@value": "Atribuite-Nekomerce 3.0 Nederlando"
+        },
+        {
+            "@language": "es",
+            "@value": "Atribución-NoComercial 3.0 Holanda"
+        },
+        {
+            "@language": "es-ar",
+            "@value": "Atribución-NoComercial 3.0 Holanda"
+        },
+        {
+            "@language": "es-cl",
+            "@value": "Atribución-NoComercial 3.0 Holanda"
+        },
+        {
+            "@language": "es-co",
+            "@value": "Reconocimiento-NoComercial 3.0 Holanda"
+        },
+        {
+            "@language": "es-ec",
+            "@value": "Reconocimiento-NoComercial 3.0 Holanda"
+        },
+        {
+            "@language": "es-es",
+            "@value": "Reconocimiento-NoComercial 3.0 Holanda"
+        },
+        {
+            "@language": "es-gt",
+            "@value": "Reconocimiento-NoComercial 3.0 Holanda"
+        },
+        {
+            "@language": "es-mx",
+            "@value": "Atribución-No Comercial 3.0 Holanda"
+        },
+        {
+            "@language": "es-pe",
+            "@value": "Reconocimiento-NoComercial 3.0 Holanda"
+        },
+        {
+            "@language": "es-pr",
+            "@value": "Reconocimiento-NoComercial 3.0 Holanda"
+        },
+        {
+            "@language": "et",
+            "@value": "Autorile viitamine + Mitteäriline eesmärk 3.0 Holland"
+        },
+        {
+            "@language": "eu",
+            "@value": "Aitortu-EzKomertziala 3.0 Herbehereak"
+        },
+        {
+            "@language": "fa",
+            "@value": "Attribution-NonCommercial 3.0 هلند"
+        },
+        {
+            "@language": "fi",
+            "@value": "Nimeä-Epäkaupallinen 3.0 Hollanti"
+        },
+        {
+            "@language": "fr",
+            "@value": "Paternité - Pas d'Utilisation Commerciale 3.0 Pays-Bas"
+        },
+        {
+            "@language": "fr-ca",
+            "@value": "Paternité - Pas d'Utilisation Commerciale 3.0 Pays-Bas"
+        },
+        {
+            "@language": "fr-ch",
+            "@value": "Paternité - Pas d'Utilisation Commerciale 3.0 Pays-Bas"
+        },
+        {
+            "@language": "fr-lu",
+            "@value": "Paternité - Pas d'Utilisation Commerciale 3.0 Pays-Bas"
+        },
+        {
+            "@language": "ga",
+            "@value": "Attribution-NonCommercial 3.0 Netherlands"
+        },
+        {
+            "@language": "gl",
+            "@value": "Recoñecemento-NonComercial 3.0 Holanda"
+        },
+        {
+            "@language": "he",
+            "@value": "ייחוס-שימוש לא מסחרי 3.0 הולנד"
+        },
+        {
+            "@language": "hi",
+            "@value": "Attribution-NonCommercial 3.0 Netherlands"
+        },
+        {
+            "@language": "hr",
+            "@value": "Imenovanje-Nekomercijalno 3.0 Nizozemska"
+        },
+        {
+            "@language": "hu",
+            "@value": "Nevezd meg! - Ne add el! 3.0 Hollandia"
+        },
+        {
+            "@language": "hy",
+            "@value": "Հղում - Ոչ-առևտրային օգտագործում 3.0 Նիդերլանդներ"
+        },
+        {
+            "@language": "id",
+            "@value": "Attribusi-NonKomersial 3.0 Belanda"
+        },
+        {
+            "@language": "is",
+            "@value": "Attribution-NonCommercial 3.0 Holland"
+        },
+        {
+            "@language": "it",
+            "@value": "Attribuzione - Non commerciale 3.0 Olanda"
+        },
+        {
+            "@language": "it-ch",
+            "@value": "Attribuzione - Non commerciale 3.0 Olanda"
+        },
+        {
+            "@language": "ja",
+            "@value": "表示 - 非営利 3.0 オランダ"
+        },
+        {
+            "@language": "ka",
+            "@value": "ავტორობის მითითებით არაკომერციული გამოყენებისათვის 3.0 ნიდერლანდები"
+        },
+        {
+            "@language": "kk",
+            "@value": "Коммерциялық емес 3.0 Netherlands"
+        },
+        {
+            "@language": "ko",
+            "@value": "저작자표시-비영리 3.0 네덜란드"
+        },
+        {
+            "@language": "lt",
+            "@value": "Attribution-NonCommercial 3.0 Nyderlandai"
+        },
+        {
+            "@language": "lv",
+            "@value": "Atsaucoties-Nekomerciāli 3.0 Nīderlande"
+        },
+        {
+            "@language": "mk",
+            "@value": "НаведиИзвор-Некомерцијално 3.0 Холандија"
+        },
+        {
+            "@language": "ml",
+            "@value": "Attribution-NonCommercial 3.0 നെതർലാന്റ്സ്"
+        },
+        {
+            "@language": "mn",
+            "@value": "Attribution-NonCommercial 3.0 Netherlands"
+        },
+        {
+            "@language": "ms",
+            "@value": "Pengiktirafan-BukanKomersial 3.0 Netherlands"
+        },
+        {
+            "@language": "nl",
+            "@value": "Naamsvermelding-NietCommercieel 3.0 Nederland"
+        },
+        {
+            "@language": "no",
+            "@value": "Navngivelse-Ikkekommersiell 3.0 Nederland"
+        },
+        {
+            "@language": "nso",
+            "@value": "Tsebagatšo- E sego ya kgwebo 3.0 Netherlands"
+        },
+        {
+            "@language": "oci-es",
+            "@value": "Attribution-NonCommercial 3.0 Netherlands"
+        },
+        {
+            "@language": "pl",
+            "@value": "Uznanie autorstwa-Użycie niekomercyjne 3.0 Holandia"
+        },
+        {
+            "@language": "pt",
+            "@value": "Atribuição - NãoComercial 3.0 Holanda"
+        },
+        {
+            "@language": "pt-br",
+            "@value": "Atribuição-Uso não-comercial 3.0 Netherlands"
+        },
+        {
+            "@language": "pt-pt",
+            "@value": "Atribuição-Uso Não-Comercial 3.0 Holanda"
+        },
+        {
+            "@language": "ro",
+            "@value": "Atribuire-NeComercial 3.0 Olanda"
+        },
+        {
+            "@language": "ru",
+            "@value": "Attribution-NonCommercial (Атрибуция — Некоммерческое использование) 3.0 Нидерланды"
+        },
+        {
+            "@language": "si-lk",
+            "@value": "Attribution-NonCommercial 3.0 Netherlands"
+        },
+        {
+            "@language": "sl",
+            "@value": "Priznanje avtorstva-Nekomercialno 3.0 Nizozemska"
+        },
+        {
+            "@language": "sq",
+            "@value": "Attribution-NonCommercial 3.0 Holandë"
+        },
+        {
+            "@language": "sr",
+            "@value": "Autorstvo-Nekomercijalno 3.0 Holandija"
+        },
+        {
+            "@language": "sr",
+            "@value": "Ауторство-Некомерцијално 3.0 Холандија"
+        },
+        {
+            "@language": "sr-latn",
+            "@value": "Autorstvo-Nekomercijalno 3.0 Holandija"
+        },
+        {
+            "@language": "st",
+            "@value": "Attribution-NonCommercial 3.0 Netherlands"
+        },
+        {
+            "@language": "sv",
+            "@value": "Erkännande-IckeKommersiell 3.0 Nederländerna"
+        },
+        {
+            "@language": "ta",
+            "@value": "Attribution-NonCommercial 3.0 நெதர்லாந்து"
+        },
+        {
+            "@language": "te",
+            "@value": "Attribution-NonCommercial 3.0 నెదర్లాండ్స్"
+        },
+        {
+            "@language": "th",
+            "@value": "แสดงที่มา-ไม่ใช้เพื่อการค้า 3.0 เนเธอร์แลนด์"
+        },
+        {
+            "@language": "tr",
+            "@value": "Alıntı-Gayriticari 3.0 Hollanda"
+        },
+        {
+            "@language": "uk",
+            "@value": "Attribution-NonCommercial 3.0 Netherlands"
+        },
+        {
+            "@language": "ur",
+            "@value": "Attribution-NonCommercial 3.0 Netherlands"
+        },
+        {
+            "@language": "vi",
+            "@value": "Ghi nhận công của tác giả - Phi thương mại  3.0 Nước Hà Lan"
+        },
+        {
+            "@language": "zh",
+            "@value": "署名-非商业性使用 3.0 荷兰"
+        },
+        {
+            "@language": "zh-hk",
+            "@value": "姓名標示-非商業性 3.0 荷蘭"
+        },
+        {
+            "@language": "zh-tw",
+            "@value": "姓名標示-非商業性 3.0 荷蘭"
+        },
+        {
+            "@language": "zu",
+            "@value": "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano 3.0 iNetherlands"
+        },
+        {
+            "@language": "zxx",
+            "@value": "${Attribution-NonCommercial} 3.0 ${Netherlands}"
+        }
+    ],
+    "owl:sameAs": {
+        "@id": "http://creativecommons.org/licenses/by-nc/3.0/nl/",
+        "@type": "cc:License",
+        "cc:jurisdiction": "http://creativecommons.org/international/nl/",
+        "cc:legalcode": "http://creativecommons.org/licenses/by-nc/3.0/nl/legalcode",
+        "cc:licenseClass": "http://creativecommons.org/license/",
+        "cc:permits": [
+            "cc:DerivativeWorks",
+            "cc:Distribution",
+            "cc:Reproduction"
+        ],
+        "cc:prohibits": "cc:CommercialUse",
+        "cc:requires": [
+            "cc:Attribution",
+            "cc:Notice"
+        ],
+        "dc:creator": "http://creativecommons.org",
+        "dc:hasVersion": "3.0",
+        "dc:identifier": "by-nc",
+        "dc:source": "http://creativecommons.org/licenses/by-nc/3.0/",
+        "dc:title": [
+            {
+                "@language": "af",
+                "@value": "Erkenning-NieKommersieel 3.0 Nederland"
+            },
+            {
+                "@language": "ar",
+                "@value": "نسب - غير تجاري 3.0 هولندا"
+            },
+            {
+                "@language": "as",
+                "@value": "Attribution-NonCommercial 3.0 Netherlands"
+            },
+            {
+                "@language": "ast",
+                "@value": "Attribution-NonCommercial 3.0 Netherlands"
+            },
+            {
+                "@language": "ast-es",
+                "@value": "Attribution-NonCommercial 3.0 Netherlands"
+            },
+            {
+                "@language": "az",
+                "@value": "Attribution-NonCommercial 3.0 Netherlands"
+            },
+            {
+                "@language": "be",
+                "@value": "Attribution-NonCommercial 3.0 Нідэрланды"
+            },
+            {
+                "@language": "bg",
+                "@value": "Признание-Некомерсиално 3.0 Холандия"
+            },
+            {
+                "@language": "bn",
+                "@value": "Attribution-NonCommercial 3.0 Netherlands"
+            },
+            {
+                "@language": "ca",
+                "@value": "Reconeixement-NoComercial 3.0 Holanda"
+            },
+            {
+                "@language": "cs",
+                "@value": "Uveďte autora-Neužívejte komerčně 3.0 Nizozemí"
+            },
+            {
+                "@language": "da",
+                "@value": "Navngivelse-IkkeKommerciel 3.0 Holland"
+            },
+            {
+                "@language": "de",
+                "@value": "Namensnennung-Nicht-kommerziell 3.0 Niederlande"
+            },
+            {
+                "@language": "de-at",
+                "@value": "Namensnennung-NichtKommerziell 3.0 Niederlande"
+            },
+            {
+                "@language": "de-ch",
+                "@value": "Namensnennung-NichtKommerziell 3.0 Niederlande"
+            },
+            {
+                "@language": "el",
+                "@value": "Αναφορά Δημιουργού-Μη Εμπορική Χρήση 3.0 Ολλανδία"
+            },
+            {
+                "@language": "en",
+                "@value": "Attribution-NonCommercial 3.0 Netherlands"
+            },
+            {
+                "@language": "en-ca",
+                "@value": "Attribution-NonCommercial 3.0 Netherlands"
+            },
+            {
+                "@language": "en-gb",
+                "@value": "Attribution-NonCommercial 3.0 Netherlands"
+            },
+            {
+                "@language": "en-hk",
+                "@value": "Attribution-NonCommercial 3.0 Netherlands"
+            },
+            {
+                "@language": "en-sg",
+                "@value": "Attribution-NonCommercial 3.0 Netherlands"
+            },
+            {
+                "@language": "en-us",
+                "@value": "Attribution-NonCommercial 3.0 Netherlands"
+            },
+            {
+                "@language": "eo",
+                "@value": "Atribuite-Nekomerce 3.0 Nederlando"
+            },
+            {
+                "@language": "es",
+                "@value": "Atribución-NoComercial 3.0 Holanda"
+            },
+            {
+                "@language": "es-ar",
+                "@value": "Atribución-NoComercial 3.0 Holanda"
+            },
+            {
+                "@language": "es-cl",
+                "@value": "Atribución-NoComercial 3.0 Holanda"
+            },
+            {
+                "@language": "es-co",
+                "@value": "Reconocimiento-NoComercial 3.0 Holanda"
+            },
+            {
+                "@language": "es-ec",
+                "@value": "Reconocimiento-NoComercial 3.0 Holanda"
+            },
+            {
+                "@language": "es-es",
+                "@value": "Reconocimiento-NoComercial 3.0 Holanda"
+            },
+            {
+                "@language": "es-gt",
+                "@value": "Reconocimiento-NoComercial 3.0 Holanda"
+            },
+            {
+                "@language": "es-mx",
+                "@value": "Atribución-No Comercial 3.0 Holanda"
+            },
+            {
+                "@language": "es-pe",
+                "@value": "Reconocimiento-NoComercial 3.0 Holanda"
+            },
+            {
+                "@language": "es-pr",
+                "@value": "Reconocimiento-NoComercial 3.0 Holanda"
+            },
+            {
+                "@language": "et",
+                "@value": "Autorile viitamine + Mitteäriline eesmärk 3.0 Holland"
+            },
+            {
+                "@language": "eu",
+                "@value": "Aitortu-EzKomertziala 3.0 Herbehereak"
+            },
+            {
+                "@language": "fa",
+                "@value": "Attribution-NonCommercial 3.0 هلند"
+            },
+            {
+                "@language": "fi",
+                "@value": "Nimeä-Epäkaupallinen 3.0 Hollanti"
+            },
+            {
+                "@language": "fr",
+                "@value": "Paternité - Pas d'Utilisation Commerciale 3.0 Pays-Bas"
+            },
+            {
+                "@language": "fr-ca",
+                "@value": "Paternité - Pas d'Utilisation Commerciale 3.0 Pays-Bas"
+            },
+            {
+                "@language": "fr-ch",
+                "@value": "Paternité - Pas d'Utilisation Commerciale 3.0 Pays-Bas"
+            },
+            {
+                "@language": "fr-lu",
+                "@value": "Paternité - Pas d'Utilisation Commerciale 3.0 Pays-Bas"
+            },
+            {
+                "@language": "ga",
+                "@value": "Attribution-NonCommercial 3.0 Netherlands"
+            },
+            {
+                "@language": "gl",
+                "@value": "Recoñecemento-NonComercial 3.0 Holanda"
+            },
+            {
+                "@language": "he",
+                "@value": "ייחוס-שימוש לא מסחרי 3.0 הולנד"
+            },
+            {
+                "@language": "hi",
+                "@value": "Attribution-NonCommercial 3.0 Netherlands"
+            },
+            {
+                "@language": "hr",
+                "@value": "Imenovanje-Nekomercijalno 3.0 Nizozemska"
+            },
+            {
+                "@language": "hu",
+                "@value": "Nevezd meg! - Ne add el! 3.0 Hollandia"
+            },
+            {
+                "@language": "hy",
+                "@value": "Հղում - Ոչ-առևտրային օգտագործում 3.0 Նիդերլանդներ"
+            },
+            {
+                "@language": "id",
+                "@value": "Attribusi-NonKomersial 3.0 Belanda"
+            },
+            {
+                "@language": "is",
+                "@value": "Attribution-NonCommercial 3.0 Holland"
+            },
+            {
+                "@language": "it",
+                "@value": "Attribuzione - Non commerciale 3.0 Olanda"
+            },
+            {
+                "@language": "it-ch",
+                "@value": "Attribuzione - Non commerciale 3.0 Olanda"
+            },
+            {
+                "@language": "ja",
+                "@value": "表示 - 非営利 3.0 オランダ"
+            },
+            {
+                "@language": "ka",
+                "@value": "ავტორობის მითითებით არაკომერციული გამოყენებისათვის 3.0 ნიდერლანდები"
+            },
+            {
+                "@language": "kk",
+                "@value": "Коммерциялық емес 3.0 Netherlands"
+            },
+            {
+                "@language": "ko",
+                "@value": "저작자표시-비영리 3.0 네덜란드"
+            },
+            {
+                "@language": "lt",
+                "@value": "Attribution-NonCommercial 3.0 Nyderlandai"
+            },
+            {
+                "@language": "lv",
+                "@value": "Atsaucoties-Nekomerciāli 3.0 Nīderlande"
+            },
+            {
+                "@language": "mk",
+                "@value": "НаведиИзвор-Некомерцијално 3.0 Холандија"
+            },
+            {
+                "@language": "ml",
+                "@value": "Attribution-NonCommercial 3.0 നെതർലാന്റ്സ്"
+            },
+            {
+                "@language": "mn",
+                "@value": "Attribution-NonCommercial 3.0 Netherlands"
+            },
+            {
+                "@language": "ms",
+                "@value": "Pengiktirafan-BukanKomersial 3.0 Netherlands"
+            },
+            {
+                "@language": "nl",
+                "@value": "Naamsvermelding-NietCommercieel 3.0 Nederland"
+            },
+            {
+                "@language": "no",
+                "@value": "Navngivelse-Ikkekommersiell 3.0 Nederland"
+            },
+            {
+                "@language": "nso",
+                "@value": "Tsebagatšo- E sego ya kgwebo 3.0 Netherlands"
+            },
+            {
+                "@language": "oci-es",
+                "@value": "Attribution-NonCommercial 3.0 Netherlands"
+            },
+            {
+                "@language": "pl",
+                "@value": "Uznanie autorstwa-Użycie niekomercyjne 3.0 Holandia"
+            },
+            {
+                "@language": "pt",
+                "@value": "Atribuição - NãoComercial 3.0 Holanda"
+            },
+            {
+                "@language": "pt-br",
+                "@value": "Atribuição-Uso não-comercial 3.0 Netherlands"
+            },
+            {
+                "@language": "pt-pt",
+                "@value": "Atribuição-Uso Não-Comercial 3.0 Holanda"
+            },
+            {
+                "@language": "ro",
+                "@value": "Atribuire-NeComercial 3.0 Olanda"
+            },
+            {
+                "@language": "ru",
+                "@value": "Attribution-NonCommercial (Атрибуция — Некоммерческое использование) 3.0 Нидерланды"
+            },
+            {
+                "@language": "si-lk",
+                "@value": "Attribution-NonCommercial 3.0 Netherlands"
+            },
+            {
+                "@language": "sl",
+                "@value": "Priznanje avtorstva-Nekomercialno 3.0 Nizozemska"
+            },
+            {
+                "@language": "sq",
+                "@value": "Attribution-NonCommercial 3.0 Holandë"
+            },
+            {
+                "@language": "sr",
+                "@value": "Autorstvo-Nekomercijalno 3.0 Holandija"
+            },
+            {
+                "@language": "sr",
+                "@value": "Ауторство-Некомерцијално 3.0 Холандија"
+            },
+            {
+                "@language": "sr-latn",
+                "@value": "Autorstvo-Nekomercijalno 3.0 Holandija"
+            },
+            {
+                "@language": "st",
+                "@value": "Attribution-NonCommercial 3.0 Netherlands"
+            },
+            {
+                "@language": "sv",
+                "@value": "Erkännande-IckeKommersiell 3.0 Nederländerna"
+            },
+            {
+                "@language": "ta",
+                "@value": "Attribution-NonCommercial 3.0 நெதர்லாந்து"
+            },
+            {
+                "@language": "te",
+                "@value": "Attribution-NonCommercial 3.0 నెదర్లాండ్స్"
+            },
+            {
+                "@language": "th",
+                "@value": "แสดงที่มา-ไม่ใช้เพื่อการค้า 3.0 เนเธอร์แลนด์"
+            },
+            {
+                "@language": "tr",
+                "@value": "Alıntı-Gayriticari 3.0 Hollanda"
+            },
+            {
+                "@language": "uk",
+                "@value": "Attribution-NonCommercial 3.0 Netherlands"
+            },
+            {
+                "@language": "ur",
+                "@value": "Attribution-NonCommercial 3.0 Netherlands"
+            },
+            {
+                "@language": "vi",
+                "@value": "Ghi nhận công của tác giả - Phi thương mại  3.0 Nước Hà Lan"
+            },
+            {
+                "@language": "zh",
+                "@value": "署名-非商业性使用 3.0 荷兰"
+            },
+            {
+                "@language": "zh-hk",
+                "@value": "姓名標示-非商業性 3.0 荷蘭"
+            },
+            {
+                "@language": "zh-tw",
+                "@value": "姓名標示-非商業性 3.0 荷蘭"
+            },
+            {
+                "@language": "zu",
+                "@value": "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano 3.0 iNetherlands"
+            },
+            {
+                "@language": "zxx",
+                "@value": "${Attribution-NonCommercial} 3.0 ${Netherlands}"
+            }
+        ],
+        "owl:sameAs": "https://licensedb.org/id/CC-BY-NC-3.0-nl",
+        "foaf:logo": [
+            "http://i.creativecommons.org/l/by-nc/3.0/nl/80x15.png",
+            "http://i.creativecommons.org/l/by-nc/3.0/nl/88x31.png"
+        ]
+    },
+    "foaf:logo": [
+        "http://i.creativecommons.org/l/by-nc/3.0/nl/80x15.png",
+        "http://i.creativecommons.org/l/by-nc/3.0/nl/88x31.png"
+    ],
+    "li:id": "CC-BY-NC-3.0-nl",
+    "li:name": "CC BY-NC 3.0 NL"
+}

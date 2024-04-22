@@ -1,0 +1,81 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: flict
+Upstream-Contact: Henrik Sandklef <hesa@sandklef.com>
+Source: https://github.com/vinland-technology/flict/
+
+Files: example-data/osadl-matrix-mini.csv
+Copyright: 2021 Henrik Sandklef <hesa@sandklef.com>
+License: GPL-3.0-or-later
+
+Files: example-data/*.json
+Copyright: 2022 Henrik Sandklef <hesa@sandklef.com>
+License: GPL-3.0-or-later
+
+Files: example-data/*.spdx.json
+Copyright: 2022 Henrik Sandklef <hesa@sandklef.com>
+License: CC0-1.0
+
+Files: flict/var/osadl-matrix.csv
+Copyright: 2017 - 2020 Open Source Automation Development Lab (OSADL) eG and contributors, 2021 Henrik Sandklef <hesa@sandklef.com>
+License: GPL-3.0-or-later
+
+Files: devel/additional_matrix.json
+Copyright: 2022 Henrik Sandklef <hesa@sandklef.com>
+License: GPL-3.0-or-later
+
+Files: flict/var/alias.json
+Copyright: 2021 Henrik Sandklef <hesa@sandklef.com>
+License: GPL-3.0-or-later
+
+Files: flict/var/scancode-licenses.json
+Copyright: 2021 nexb, 2021 Henrik Sandklef <hesa@sandklef.com>
+License: CC-BY-4.0
+
+Files: flict/var/schemas/v1/flict-compatibility-report-schema.json flict/var/schemas/v1/flict-verification-report-schema.json
+Copyright: 2024 Henrik Sandklef <hesa@sandklef.com>
+License: CC-BY-4.0
+
+Files: CONTRIBUTORS
+Copyright: 2021 Henrik Sandklef <hesa@sandklef.com>
+License: GPL-3.0-or-later
+
+Files: CONTRIBUTING.md
+Copyright: 2021 Henrik Sandklef <hesa@sandklef.com>
+License: GPL-3.0-or-later
+
+Files: requirements*
+Copyright: 2021 Konrad Weihmann @priv-kweihmann, Henrik Sandklef <hesa@sandklef.com>
+License: GPL-3.0-or-later
+
+Files: MANIFEST.in
+Copyright: 2021 Konrad Weihmann @priv-kweihmann
+License: GPL-3.0-or-later
+
+Files: .github/*
+Copyright: 2021 Konrad Weihmann @priv-kweihmann
+License: GPL-3.0-or-later
+
+Files: logos/*
+Copyright: 2021 Jens Reuterberg
+License: GPL-3.0-or-later
+
+Files: .bumpversion.cfg
+Copyright: 2022 Konrad Weihmann @priv-kweihmann
+License: GPL-3.0-or-later
+
+Files: tests/complete-lic-ext.json
+Copyright: 2023 Henrik Sandklef <hesa@sandklef.com>
+License: GPL-3.0-or-later
+
+Files: tests/incomplete-lic-ext.json
+Copyright: 2023 Henrik Sandklef <hesa@sandklef.com>
+License: GPL-3.0-or-later
+
+Files: tests/mini-matrix.json
+Copyright: 2023 Henrik Sandklef <hesa@sandklef.com>
+License: GPL-3.0-or-later
+
+Files: tmp-test-data.json
+Copyright: 2023 Henrik Sandklef <hesa@sandklef.com>
+License: GPL-3.0-or-later
+

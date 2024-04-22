@@ -1,0 +1,23 @@
+{
+  "key": "ricebsd",
+  "short_name": "RiceBSD",
+  "name": "Rice BSD Software License",
+  "category": "Permissive",
+  "owner": "Rice University",
+  "homepage_url": "https://web.archive.org/web/20060907200326/http://www.caam.rice.edu/software/ARPACK/RiceBSD.doc",
+  "spdx_license_key": "LicenseRef-scancode-ricebsd",
+  "other_urls": [
+    "https://github.com/pisilinux/uludag/blob/d202a1ddc0f5855acbad532ae0cf319f9f280c55/tags/pisi/2.2.18/licenses/RiceBSD",
+    "https://github.com/search?q=\"Also%2C+we+ask+that+use+of+ARPACK+is+properly\"&type=code have this"
+  ],
+  "ignorable_copyrights": [
+    "(c) 2001, Rice University"
+  ],
+  "ignorable_holders": [
+    "Rice University"
+  ],
+  "ignorable_authors": [
+    "D.C. Sorensen, R.B. Lehoucq, C. Yang, and K. Maschhoff"
+  ],
+  "text": "Rice BSD Software License\nPermits source and binary redistribution of the software ARPACK and\nP_ARPACK  for both non-commercial and commercial use.\n\n   Copyright (\u00a9) 2001, Rice University\n   Developed by D.C. Sorensen, R.B. Lehoucq, C. Yang, and K. Maschhoff.\n   All rights reserved.\n\n\n   Redistribution and use in source and binary forms, with or without\n   modification, are permitted provided that the following conditions are\n   met:\n    \u2022 Redistributions of source code must retain the above copyright notice,\n      this list of conditions and the following disclaimer.\n    \u2022 Redistributions in binary form must reproduce the above copyright\n      notice, this list of conditions and the following disclaimer in the\n      documentation and/or other materials provided with the distribution.\n    \u2022 If you modify the source for these routines we ask that you change the\n      name of the routine and comment the changes made to the original.\n    \u2022 Written notification is provided to the developers of  intent to use\n      this software.  Also, we ask that use of ARPACK is properly cited in\n      any resulting publications or software documentation.\n    \u2022 Neither the name of Rice University (RICE) nor the names of its\n      contributors may be used to endorse or promote products derived from\n      this software without specific prior written permission.\n\n\nTHIS SOFTWARE IS PROVIDED BY RICE AND CONTRIBUTORS \"AS IS\" AND  ANY  EXPRESS\nOR  IMPLIED  WARRANTIES,  INCLUDING,  BUT  NOT  LIMITED  TO,   THE   IMPLIED\nWARRANTIES OF MERCHANTABILITY AND  FITNESS  FOR  A  PARTICULAR  PURPOSE  ARE\nDISCLAIMED. IN NO EVENT  SHALL  RICE  OR  CONTRIBUTORS  BE  LIABLE  FOR  ANY\nDIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR  CONSEQUENTIAL  DAMAGES\n(INCLUDING,  BUT  NOT  LIMITED  TO,  PROCUREMENT  OF  SUBSTITUTE  GOODS   OR\nSERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS  INTERRUPTION)  HOWEVER\nCAUSED  AND  ON  ANY  THEORY  OF  LIABILITY,  WHETHER  IN  CONTRACT,  STRICT\nLIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING  IN  ANY  WAY\nOUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF  SUCH\nDAMAGE."
+}

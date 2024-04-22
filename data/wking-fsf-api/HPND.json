@@ -1,0 +1,19 @@
+{
+  "@context": "https://wking.github.io/fsf-api/schema/license.jsonld",
+  "id": "HPND",
+  "identifiers": {
+    "spdx": [
+      "HPND"
+    ]
+  },
+  "name": "Historical Permission Notice and Disclaimer",
+  "tags": [
+    "gpl-2-compatible",
+    "gpl-3-compatible",
+    "libre"
+  ],
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#HPND",
+    "http://directory.fsf.org/wiki/License:Historical_Permission_Notice_and_Disclaimer"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "@context": "https://wking.github.io/fsf-api/schema/license.jsonld",
+  "id": "apache1.1",
+  "identifiers": {
+    "spdx": [
+      "Apache-1.1"
+    ]
+  },
+  "name": "Apache License, Version 1.1",
+  "tags": [
+    "libre"
+  ],
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#apache1.1",
+    "http://directory.fsf.org/wiki/License:Apache1.1"
+  ]
+}

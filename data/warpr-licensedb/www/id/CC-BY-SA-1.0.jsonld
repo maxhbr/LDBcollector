@@ -1,0 +1,855 @@
+{
+    "@context": {
+        "cc": "http://creativecommons.org/ns#",
+        "dc": "http://purl.org/dc/terms/",
+        "dc11": "http://purl.org/dc/elements/1.1/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "li": "https://licensedb.org/ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "cc:legalcode": {
+            "@type": "@id"
+        },
+        "cc:permits": {
+            "@type": "@id"
+        },
+        "cc:requires": {
+            "@type": "@id"
+        },
+        "cc:prohibits": {
+            "@type": "@id"
+        },
+        "cc:jurisdiction": {
+            "@type": "@id"
+        },
+        "cc:licenseClass": {
+            "@type": "@id"
+        },
+        "dc:creator": {
+            "@type": "@id"
+        },
+        "dc:source": {
+            "@type": "@id"
+        },
+        "dc:replaces": {
+            "@type": "@id"
+        },
+        "dc:isBasedOn": {
+            "@type": "@id"
+        },
+        "dc:isReplacedBy": {
+            "@type": "@id"
+        },
+        "foaf:logo": {
+            "@type": "@id"
+        },
+        "li:plaintext": {
+            "@type": "@id"
+        },
+        "li:libre": {
+            "@type": "@id"
+        },
+        "owl:sameAs": {
+            "@type": "@id"
+        }
+    },
+    "@id": "https://licensedb.org/id/CC-BY-SA-1.0",
+    "@type": [
+        "cc:License",
+        "li:License"
+    ],
+    "cc:legalcode": "http://creativecommons.org/licenses/by-sa/1.0/legalcode",
+    "cc:licenseClass": "http://creativecommons.org/license/",
+    "cc:permits": [
+        "cc:DerivativeWorks",
+        "cc:Distribution",
+        "cc:Reproduction"
+    ],
+    "cc:requires": [
+        "cc:Attribution",
+        "cc:Notice",
+        "cc:ShareAlike"
+    ],
+    "dc:creator": "http://creativecommons.org",
+    "dc:hasVersion": "1.0",
+    "dc:identifier": "by-sa",
+    "dc:isReplacedBy": "https://licensedb.org/id/CC-BY-SA-2.0",
+    "dc:title": [
+        {
+            "@language": "af",
+            "@value": "Erkenning-InsgelyksDeel 1.0 Generies"
+        },
+        {
+            "@language": "ar",
+            "@value": "نسب العمل- المشاركة على قدم المساواة 1.0 عام"
+        },
+        {
+            "@language": "as",
+            "@value": "Attribution-ShareAlike 1.0 Generic"
+        },
+        {
+            "@language": "ast",
+            "@value": "Attribution-ShareAlike 1.0 Generic"
+        },
+        {
+            "@language": "ast-es",
+            "@value": "Attribution-ShareAlike 1.0 Generic"
+        },
+        {
+            "@language": "az",
+            "@value": "Attribution-ShareAlike 1.0 Generic"
+        },
+        {
+            "@language": "be",
+            "@value": "Attribution-ShareAlike 1.0 Generic"
+        },
+        {
+            "@language": "bg",
+            "@value": "Признание-Споделяне на споделеното 1.0 Неадаптиран"
+        },
+        {
+            "@language": "bn",
+            "@value": "Attribution-ShareAlike 1.0 Generic"
+        },
+        {
+            "@language": "ca",
+            "@value": "Reconeixement-CompartirIgual 1.0 Genèrica"
+        },
+        {
+            "@language": "cs",
+            "@value": "Uveďte autora-Zachovejte licenci 1.0 Generic"
+        },
+        {
+            "@language": "da",
+            "@value": "Navngivelse-DelPåSammeVilkår 1.0 Generisk"
+        },
+        {
+            "@language": "de",
+            "@value": "Namensnennung-Weitergabe unter gleichen Bedingungen 1.0 US-amerikanisch (nicht portiert)"
+        },
+        {
+            "@language": "de-at",
+            "@value": "Namensnennung-Weitergabe unter gleichen Bedingungen 1.0 US-amerikanisch (nicht portiert)"
+        },
+        {
+            "@language": "de-ch",
+            "@value": "Namensnennung-Weitergabe unter gleichen Bedingungen 1.0 US-amerikanisch (nicht portiert)"
+        },
+        {
+            "@language": "el",
+            "@value": "Αναφορά Δημιουργού - Παρόμοια Διανομή 1.0 Γενικό"
+        },
+        {
+            "@language": "en",
+            "@value": "Attribution-ShareAlike 1.0 Generic"
+        },
+        {
+            "@language": "en-ca",
+            "@value": "Attribution-ShareAlike 1.0 Generic"
+        },
+        {
+            "@language": "en-gb",
+            "@value": "Attribution-ShareAlike 1.0 Generic"
+        },
+        {
+            "@language": "en-hk",
+            "@value": "Attribution-ShareAlike 1.0 Generic"
+        },
+        {
+            "@language": "en-sg",
+            "@value": "Attribution-ShareAlike 1.0 Generic"
+        },
+        {
+            "@language": "en-us",
+            "@value": "Attribution-ShareAlike 1.0 Generic"
+        },
+        {
+            "@language": "eo",
+            "@value": "Atribuite-Samkondiĉe 1.0 Ĝenerala"
+        },
+        {
+            "@language": "es",
+            "@value": "Atribución-CompartirIgual 1.0 Genérica"
+        },
+        {
+            "@language": "es-ar",
+            "@value": "Atribución-CompartirDerivadasIgual 1.0 Genérica"
+        },
+        {
+            "@language": "es-cl",
+            "@value": "Atribución-LicenciarIgual 1.0 Genérica"
+        },
+        {
+            "@language": "es-co",
+            "@value": "Reconocimiento-CompartirIgual 1.0 Genérica"
+        },
+        {
+            "@language": "es-ec",
+            "@value": "Reconocimiento-CompartirIgual 1.0 Genérica"
+        },
+        {
+            "@language": "es-es",
+            "@value": "Reconocimiento-CompartirIgual 1.0 Genérica"
+        },
+        {
+            "@language": "es-gt",
+            "@value": "Reconocimiento-CompartirIgual 1.0 Genérica"
+        },
+        {
+            "@language": "es-mx",
+            "@value": "Atribución-Licenciamiento Recíproco 1.0 Genérica"
+        },
+        {
+            "@language": "es-pe",
+            "@value": "Reconocimiento-CompartirIgual 1.0 Genérica"
+        },
+        {
+            "@language": "es-pr",
+            "@value": "Reconocimiento-CompartirIgual 1.0 Genérica"
+        },
+        {
+            "@language": "et",
+            "@value": "Autorile viitamine + Jagamine samadel tingimustel 1.0 Üldine"
+        },
+        {
+            "@language": "eu",
+            "@value": "Aitortu-PartekatuBerdin 1.0 Generikoa"
+        },
+        {
+            "@language": "fa",
+            "@value": "Attribution-ShareAlike 1.0 Generic"
+        },
+        {
+            "@language": "fi",
+            "@value": "Nimeä-Tarttuva 1.0 Raakaversio"
+        },
+        {
+            "@language": "fr",
+            "@value": "Paternité - Partage à l'Identique 1.0 Générique"
+        },
+        {
+            "@language": "fr-ca",
+            "@value": "Paternité - Partage des Conditions Initiales à l'Identique 1.0 Générique"
+        },
+        {
+            "@language": "fr-ch",
+            "@value": "Paternité - Partage des Conditions Initiales à l'Identique 1.0 Générique"
+        },
+        {
+            "@language": "fr-lu",
+            "@value": "Paternité - Partage des Conditions Initiales à l'Identique 1.0 Générique"
+        },
+        {
+            "@language": "ga",
+            "@value": "Attribution-ShareAlike 1.0 Generic"
+        },
+        {
+            "@language": "gl",
+            "@value": "Recoñecemento-CompartirIgual 1.0 Xenérica"
+        },
+        {
+            "@language": "he",
+            "@value": "ייחוס-שיתוף זהה 1.0 לא מותאם"
+        },
+        {
+            "@language": "hi",
+            "@value": "Attribution-ShareAlike 1.0 Generic"
+        },
+        {
+            "@language": "hr",
+            "@value": "Imenovanje-Dijeli pod istim uvjetima 1.0 nelokalizirana licenca"
+        },
+        {
+            "@language": "hu",
+            "@value": "Nevezd meg! - Így add tovább! 1.0 Általános"
+        },
+        {
+            "@language": "hy",
+            "@value": "Հղում - համանման տարածում 1.0 Generic"
+        },
+        {
+            "@language": "id",
+            "@value": "Atribusi-BerbagiSerupa 1.0 Generik"
+        },
+        {
+            "@language": "is",
+            "@value": "Attribution-ShareAlike 1.0 Generic"
+        },
+        {
+            "@language": "it",
+            "@value": "Attribuzione - Condividi allo stesso modo 1.0 Generico"
+        },
+        {
+            "@language": "it-ch",
+            "@value": "Attribuzione - Condividi allo stesso modo 1.0 Generico"
+        },
+        {
+            "@language": "ja",
+            "@value": "表示 - 継承 1.0 一般"
+        },
+        {
+            "@language": "ka",
+            "@value": "ავტორობის მითითებით – გავრცელება იგივე პირობებით  1.0 ზოგადი"
+        },
+        {
+            "@language": "kk",
+            "@value": "Attribution-ShareAlike 1.0 Generic"
+        },
+        {
+            "@language": "ko",
+            "@value": "저작자표시-동일조건변경허락 1.0 일반"
+        },
+        {
+            "@language": "lt",
+            "@value": "Attribution-ShareAlike 1.0 Generic"
+        },
+        {
+            "@language": "lv",
+            "@value": "Atsaucoties-Nemainot licenci 1.0 Vispārīgs"
+        },
+        {
+            "@language": "mk",
+            "@value": "НаведиИзвор-СподелиПодИстиУслови 1.0 Нелокализирана лиценца"
+        },
+        {
+            "@language": "ml",
+            "@value": "Attribution-ShareAlike 1.0 Generic"
+        },
+        {
+            "@language": "mn",
+            "@value": "Attribution-ShareAlike 1.0 Generic"
+        },
+        {
+            "@language": "ms",
+            "@value": "Pengiktirafan-PerkongsianSerupa 1.0 Umum"
+        },
+        {
+            "@language": "nl",
+            "@value": "Naamsvermelding-GelijkDelen 1.0 Unported"
+        },
+        {
+            "@language": "no",
+            "@value": "Navngivelse-DelPåSammeVilkår 1.0 Generisk"
+        },
+        {
+            "@language": "nso",
+            "@value": "Tsebagatšo -Mohlakanelwa 1.0 E sa fetišwago"
+        },
+        {
+            "@language": "oci-es",
+            "@value": "Attribution-ShareAlike 1.0 Generic"
+        },
+        {
+            "@language": "pl",
+            "@value": "Uznanie autorstwa-Na tych samych warunkach 1.0 Ogólny"
+        },
+        {
+            "@language": "pt",
+            "@value": "Atribuição - CompartilhaIgual 1.0 Genérica"
+        },
+        {
+            "@language": "pt-br",
+            "@value": "Attribution-ShareAlike 1.0 Generic"
+        },
+        {
+            "@language": "pt-pt",
+            "@value": "Atribuição-Partilha nos termos da mesma licença 1.0 Genérica"
+        },
+        {
+            "@language": "ro",
+            "@value": "Atribuire - Distribuire-în-condiţii-identice 1.0 Generică"
+        },
+        {
+            "@language": "ru",
+            "@value": "Attribution-ShareAlike (Атрибуция — С сохранением условий) 1.0 Generic"
+        },
+        {
+            "@language": "si-lk",
+            "@value": "Attribution-ShareAlike 1.0 Generic"
+        },
+        {
+            "@language": "sl",
+            "@value": "Priznanje avtorstva-Deljenje pod enakimi pogoji 1.0 Generična"
+        },
+        {
+            "@language": "sq",
+            "@value": "Attribution-ShareAlike 1.0 Të përgjithshme"
+        },
+        {
+            "@language": "sr",
+            "@value": "Autorstvo-Deliti pod istim uslovima 1.0 Generička licenca"
+        },
+        {
+            "@language": "sr",
+            "@value": "Ауторство-Делити под истим условима 1.0 Генеричка лиценца"
+        },
+        {
+            "@language": "sr-latn",
+            "@value": "Autorstvo-Deliti pod istim uslovima 1.0 Generička licenca"
+        },
+        {
+            "@language": "st",
+            "@value": "Attribution-ShareAlike 1.0 Generic"
+        },
+        {
+            "@language": "sv",
+            "@value": "Erkännande-DelaLika 1.0 Generisk"
+        },
+        {
+            "@language": "ta",
+            "@value": "Attribution-ShareAlike 1.0 Generic"
+        },
+        {
+            "@language": "te",
+            "@value": "Attribution-ShareAlike 1.0 Generic"
+        },
+        {
+            "@language": "th",
+            "@value": "แสดงที่มา-อนุญาตแบบเดียวกัน 1.0 ทั่วไป"
+        },
+        {
+            "@language": "tr",
+            "@value": "Alıntı-LisansıDevamEttirme 1.0 Kapsamlı"
+        },
+        {
+            "@language": "uk",
+            "@value": "Attribution-ShareAlike 1.0 Generic"
+        },
+        {
+            "@language": "ur",
+            "@value": "Attribution-ShareAlike 1.0 Generic"
+        },
+        {
+            "@language": "vi",
+            "@value": "Attribution-ShareAlike 1.0 Chung"
+        },
+        {
+            "@language": "zh",
+            "@value": "署名-相同方式共享 1.0 未本地化版本"
+        },
+        {
+            "@language": "zh-hk",
+            "@value": "姓名標示-相同方式分享 1.0 通用版"
+        },
+        {
+            "@language": "zh-tw",
+            "@value": "姓名標示-相同方式分享 1.0 通用版"
+        },
+        {
+            "@language": "zu",
+            "@value": "Qaphela Umnikazi-Zihlanganyeleni 1.0 Engadlulisiwe"
+        },
+        {
+            "@language": "zxx",
+            "@value": "${Attribution-ShareAlike} 1.0 ${Generic}"
+        }
+    ],
+    "schema:sameAs": {
+        "@id": "http://spdx.org/licenses/CC-BY-SA-1.0"
+    },
+    "spdx:licenseId": "CC-BY-SA-1.0",
+    "owl:sameAs": {
+        "@id": "http://creativecommons.org/licenses/by-sa/1.0/",
+        "@type": "cc:License",
+        "cc:legalcode": "http://creativecommons.org/licenses/by-sa/1.0/legalcode",
+        "cc:licenseClass": "http://creativecommons.org/license/",
+        "cc:permits": [
+            "cc:DerivativeWorks",
+            "cc:Distribution",
+            "cc:Reproduction"
+        ],
+        "cc:requires": [
+            "cc:Attribution",
+            "cc:Notice",
+            "cc:ShareAlike"
+        ],
+        "dc:creator": "http://creativecommons.org",
+        "dc:hasVersion": "1.0",
+        "dc:identifier": "by-sa",
+        "dc:isReplacedBy": "http://creativecommons.org/licenses/by-sa/2.0/",
+        "dc:title": [
+            {
+                "@language": "af",
+                "@value": "Erkenning-InsgelyksDeel 1.0 Generies"
+            },
+            {
+                "@language": "ar",
+                "@value": "نسب العمل- المشاركة على قدم المساواة 1.0 عام"
+            },
+            {
+                "@language": "as",
+                "@value": "Attribution-ShareAlike 1.0 Generic"
+            },
+            {
+                "@language": "ast",
+                "@value": "Attribution-ShareAlike 1.0 Generic"
+            },
+            {
+                "@language": "ast-es",
+                "@value": "Attribution-ShareAlike 1.0 Generic"
+            },
+            {
+                "@language": "az",
+                "@value": "Attribution-ShareAlike 1.0 Generic"
+            },
+            {
+                "@language": "be",
+                "@value": "Attribution-ShareAlike 1.0 Generic"
+            },
+            {
+                "@language": "bg",
+                "@value": "Признание-Споделяне на споделеното 1.0 Неадаптиран"
+            },
+            {
+                "@language": "bn",
+                "@value": "Attribution-ShareAlike 1.0 Generic"
+            },
+            {
+                "@language": "ca",
+                "@value": "Reconeixement-CompartirIgual 1.0 Genèrica"
+            },
+            {
+                "@language": "cs",
+                "@value": "Uveďte autora-Zachovejte licenci 1.0 Generic"
+            },
+            {
+                "@language": "da",
+                "@value": "Navngivelse-DelPåSammeVilkår 1.0 Generisk"
+            },
+            {
+                "@language": "de",
+                "@value": "Namensnennung-Weitergabe unter gleichen Bedingungen 1.0 US-amerikanisch (nicht portiert)"
+            },
+            {
+                "@language": "de-at",
+                "@value": "Namensnennung-Weitergabe unter gleichen Bedingungen 1.0 US-amerikanisch (nicht portiert)"
+            },
+            {
+                "@language": "de-ch",
+                "@value": "Namensnennung-Weitergabe unter gleichen Bedingungen 1.0 US-amerikanisch (nicht portiert)"
+            },
+            {
+                "@language": "el",
+                "@value": "Αναφορά Δημιουργού - Παρόμοια Διανομή 1.0 Γενικό"
+            },
+            {
+                "@language": "en",
+                "@value": "Attribution-ShareAlike 1.0 Generic"
+            },
+            {
+                "@language": "en-ca",
+                "@value": "Attribution-ShareAlike 1.0 Generic"
+            },
+            {
+                "@language": "en-gb",
+                "@value": "Attribution-ShareAlike 1.0 Generic"
+            },
+            {
+                "@language": "en-hk",
+                "@value": "Attribution-ShareAlike 1.0 Generic"
+            },
+            {
+                "@language": "en-sg",
+                "@value": "Attribution-ShareAlike 1.0 Generic"
+            },
+            {
+                "@language": "en-us",
+                "@value": "Attribution-ShareAlike 1.0 Generic"
+            },
+            {
+                "@language": "eo",
+                "@value": "Atribuite-Samkondiĉe 1.0 Ĝenerala"
+            },
+            {
+                "@language": "es",
+                "@value": "Atribución-CompartirIgual 1.0 Genérica"
+            },
+            {
+                "@language": "es-ar",
+                "@value": "Atribución-CompartirDerivadasIgual 1.0 Genérica"
+            },
+            {
+                "@language": "es-cl",
+                "@value": "Atribución-LicenciarIgual 1.0 Genérica"
+            },
+            {
+                "@language": "es-co",
+                "@value": "Reconocimiento-CompartirIgual 1.0 Genérica"
+            },
+            {
+                "@language": "es-ec",
+                "@value": "Reconocimiento-CompartirIgual 1.0 Genérica"
+            },
+            {
+                "@language": "es-es",
+                "@value": "Reconocimiento-CompartirIgual 1.0 Genérica"
+            },
+            {
+                "@language": "es-gt",
+                "@value": "Reconocimiento-CompartirIgual 1.0 Genérica"
+            },
+            {
+                "@language": "es-mx",
+                "@value": "Atribución-Licenciamiento Recíproco 1.0 Genérica"
+            },
+            {
+                "@language": "es-pe",
+                "@value": "Reconocimiento-CompartirIgual 1.0 Genérica"
+            },
+            {
+                "@language": "es-pr",
+                "@value": "Reconocimiento-CompartirIgual 1.0 Genérica"
+            },
+            {
+                "@language": "et",
+                "@value": "Autorile viitamine + Jagamine samadel tingimustel 1.0 Üldine"
+            },
+            {
+                "@language": "eu",
+                "@value": "Aitortu-PartekatuBerdin 1.0 Generikoa"
+            },
+            {
+                "@language": "fa",
+                "@value": "Attribution-ShareAlike 1.0 Generic"
+            },
+            {
+                "@language": "fi",
+                "@value": "Nimeä-Tarttuva 1.0 Raakaversio"
+            },
+            {
+                "@language": "fr",
+                "@value": "Paternité - Partage à l'Identique 1.0 Générique"
+            },
+            {
+                "@language": "fr-ca",
+                "@value": "Paternité - Partage des Conditions Initiales à l'Identique 1.0 Générique"
+            },
+            {
+                "@language": "fr-ch",
+                "@value": "Paternité - Partage des Conditions Initiales à l'Identique 1.0 Générique"
+            },
+            {
+                "@language": "fr-lu",
+                "@value": "Paternité - Partage des Conditions Initiales à l'Identique 1.0 Générique"
+            },
+            {
+                "@language": "ga",
+                "@value": "Attribution-ShareAlike 1.0 Generic"
+            },
+            {
+                "@language": "gl",
+                "@value": "Recoñecemento-CompartirIgual 1.0 Xenérica"
+            },
+            {
+                "@language": "he",
+                "@value": "ייחוס-שיתוף זהה 1.0 לא מותאם"
+            },
+            {
+                "@language": "hi",
+                "@value": "Attribution-ShareAlike 1.0 Generic"
+            },
+            {
+                "@language": "hr",
+                "@value": "Imenovanje-Dijeli pod istim uvjetima 1.0 nelokalizirana licenca"
+            },
+            {
+                "@language": "hu",
+                "@value": "Nevezd meg! - Így add tovább! 1.0 Általános"
+            },
+            {
+                "@language": "hy",
+                "@value": "Հղում - համանման տարածում 1.0 Generic"
+            },
+            {
+                "@language": "id",
+                "@value": "Atribusi-BerbagiSerupa 1.0 Generik"
+            },
+            {
+                "@language": "is",
+                "@value": "Attribution-ShareAlike 1.0 Generic"
+            },
+            {
+                "@language": "it",
+                "@value": "Attribuzione - Condividi allo stesso modo 1.0 Generico"
+            },
+            {
+                "@language": "it-ch",
+                "@value": "Attribuzione - Condividi allo stesso modo 1.0 Generico"
+            },
+            {
+                "@language": "ja",
+                "@value": "表示 - 継承 1.0 一般"
+            },
+            {
+                "@language": "ka",
+                "@value": "ავტორობის მითითებით – გავრცელება იგივე პირობებით  1.0 ზოგადი"
+            },
+            {
+                "@language": "kk",
+                "@value": "Attribution-ShareAlike 1.0 Generic"
+            },
+            {
+                "@language": "ko",
+                "@value": "저작자표시-동일조건변경허락 1.0 일반"
+            },
+            {
+                "@language": "lt",
+                "@value": "Attribution-ShareAlike 1.0 Generic"
+            },
+            {
+                "@language": "lv",
+                "@value": "Atsaucoties-Nemainot licenci 1.0 Vispārīgs"
+            },
+            {
+                "@language": "mk",
+                "@value": "НаведиИзвор-СподелиПодИстиУслови 1.0 Нелокализирана лиценца"
+            },
+            {
+                "@language": "ml",
+                "@value": "Attribution-ShareAlike 1.0 Generic"
+            },
+            {
+                "@language": "mn",
+                "@value": "Attribution-ShareAlike 1.0 Generic"
+            },
+            {
+                "@language": "ms",
+                "@value": "Pengiktirafan-PerkongsianSerupa 1.0 Umum"
+            },
+            {
+                "@language": "nl",
+                "@value": "Naamsvermelding-GelijkDelen 1.0 Unported"
+            },
+            {
+                "@language": "no",
+                "@value": "Navngivelse-DelPåSammeVilkår 1.0 Generisk"
+            },
+            {
+                "@language": "nso",
+                "@value": "Tsebagatšo -Mohlakanelwa 1.0 E sa fetišwago"
+            },
+            {
+                "@language": "oci-es",
+                "@value": "Attribution-ShareAlike 1.0 Generic"
+            },
+            {
+                "@language": "pl",
+                "@value": "Uznanie autorstwa-Na tych samych warunkach 1.0 Ogólny"
+            },
+            {
+                "@language": "pt",
+                "@value": "Atribuição - CompartilhaIgual 1.0 Genérica"
+            },
+            {
+                "@language": "pt-br",
+                "@value": "Attribution-ShareAlike 1.0 Generic"
+            },
+            {
+                "@language": "pt-pt",
+                "@value": "Atribuição-Partilha nos termos da mesma licença 1.0 Genérica"
+            },
+            {
+                "@language": "ro",
+                "@value": "Atribuire - Distribuire-în-condiţii-identice 1.0 Generică"
+            },
+            {
+                "@language": "ru",
+                "@value": "Attribution-ShareAlike (Атрибуция — С сохранением условий) 1.0 Generic"
+            },
+            {
+                "@language": "si-lk",
+                "@value": "Attribution-ShareAlike 1.0 Generic"
+            },
+            {
+                "@language": "sl",
+                "@value": "Priznanje avtorstva-Deljenje pod enakimi pogoji 1.0 Generična"
+            },
+            {
+                "@language": "sq",
+                "@value": "Attribution-ShareAlike 1.0 Të përgjithshme"
+            },
+            {
+                "@language": "sr",
+                "@value": "Autorstvo-Deliti pod istim uslovima 1.0 Generička licenca"
+            },
+            {
+                "@language": "sr",
+                "@value": "Ауторство-Делити под истим условима 1.0 Генеричка лиценца"
+            },
+            {
+                "@language": "sr-latn",
+                "@value": "Autorstvo-Deliti pod istim uslovima 1.0 Generička licenca"
+            },
+            {
+                "@language": "st",
+                "@value": "Attribution-ShareAlike 1.0 Generic"
+            },
+            {
+                "@language": "sv",
+                "@value": "Erkännande-DelaLika 1.0 Generisk"
+            },
+            {
+                "@language": "ta",
+                "@value": "Attribution-ShareAlike 1.0 Generic"
+            },
+            {
+                "@language": "te",
+                "@value": "Attribution-ShareAlike 1.0 Generic"
+            },
+            {
+                "@language": "th",
+                "@value": "แสดงที่มา-อนุญาตแบบเดียวกัน 1.0 ทั่วไป"
+            },
+            {
+                "@language": "tr",
+                "@value": "Alıntı-LisansıDevamEttirme 1.0 Kapsamlı"
+            },
+            {
+                "@language": "uk",
+                "@value": "Attribution-ShareAlike 1.0 Generic"
+            },
+            {
+                "@language": "ur",
+                "@value": "Attribution-ShareAlike 1.0 Generic"
+            },
+            {
+                "@language": "vi",
+                "@value": "Attribution-ShareAlike 1.0 Chung"
+            },
+            {
+                "@language": "zh",
+                "@value": "署名-相同方式共享 1.0 未本地化版本"
+            },
+            {
+                "@language": "zh-hk",
+                "@value": "姓名標示-相同方式分享 1.0 通用版"
+            },
+            {
+                "@language": "zh-tw",
+                "@value": "姓名標示-相同方式分享 1.0 通用版"
+            },
+            {
+                "@language": "zu",
+                "@value": "Qaphela Umnikazi-Zihlanganyeleni 1.0 Engadlulisiwe"
+            },
+            {
+                "@language": "zxx",
+                "@value": "${Attribution-ShareAlike} 1.0 ${Generic}"
+            }
+        ],
+        "owl:sameAs": "https://licensedb.org/id/CC-BY-SA-1.0",
+        "foaf:logo": [
+            "http://i.creativecommons.org/l/by-sa/1.0/80x15.png",
+            "http://i.creativecommons.org/l/by-sa/1.0/88x31.png"
+        ]
+    },
+    "foaf:logo": [
+        "http://i.creativecommons.org/l/by-sa/1.0/80x15.png",
+        "http://i.creativecommons.org/l/by-sa/1.0/88x31.png"
+    ],
+    "li:id": "CC-BY-SA-1.0",
+    "li:libre": "http://creativecommons.org/",
+    "li:name": "CC BY-SA 1.0"
+}

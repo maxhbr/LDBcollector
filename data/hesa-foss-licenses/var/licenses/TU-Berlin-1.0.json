@@ -1,0 +1,21 @@
+{
+"meta": {
+    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+    "comment": ""
+  },
+  "name": "Technische Universitaet Berlin Attribution License 1.0",
+  "scancode_key": "tu-berlin",
+  "spdxid": "TU-Berlin-1.0",
+  "aliases": [
+   "TU-Berlin-1.0",
+   "Technische Universitaet Berlin License 1.0",
+   "TU Berlin License 1.0",
+   "TU Berlin, Version 1.0",
+   "TU Berlin 1.0",
+   "TU-Berlin, Version 1.0",
+   "TU-Berlin 1.0",
+   "TU Berlin License, Version 1.0",
+   "TU-Berlin License, Version 1.0",
+   "TU-Berlin License, 1.0"
+  ]
+}

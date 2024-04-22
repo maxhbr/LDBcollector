@@ -1,0 +1,7 @@
+- id: "PyPI::click:(,9.0.0["
+  curations:
+    comment: |
+      The library is licensed under BSD-3-Clause, see:
+      https://github.com/pallets/click/blob/main/LICENSE.rst
+    declared_license_mapping:
+      "BSD License": "BSD-3-Clause"

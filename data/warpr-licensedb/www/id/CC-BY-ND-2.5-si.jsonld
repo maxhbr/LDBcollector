@@ -1,0 +1,848 @@
+{
+    "@context": {
+        "cc": "http://creativecommons.org/ns#",
+        "dc": "http://purl.org/dc/terms/",
+        "dc11": "http://purl.org/dc/elements/1.1/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "li": "https://licensedb.org/ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "cc:legalcode": {
+            "@type": "@id"
+        },
+        "cc:permits": {
+            "@type": "@id"
+        },
+        "cc:requires": {
+            "@type": "@id"
+        },
+        "cc:prohibits": {
+            "@type": "@id"
+        },
+        "cc:jurisdiction": {
+            "@type": "@id"
+        },
+        "cc:licenseClass": {
+            "@type": "@id"
+        },
+        "dc:creator": {
+            "@type": "@id"
+        },
+        "dc:source": {
+            "@type": "@id"
+        },
+        "dc:replaces": {
+            "@type": "@id"
+        },
+        "dc:isBasedOn": {
+            "@type": "@id"
+        },
+        "dc:isReplacedBy": {
+            "@type": "@id"
+        },
+        "foaf:logo": {
+            "@type": "@id"
+        },
+        "li:plaintext": {
+            "@type": "@id"
+        },
+        "li:libre": {
+            "@type": "@id"
+        },
+        "owl:sameAs": {
+            "@type": "@id"
+        }
+    },
+    "@id": "https://licensedb.org/id/CC-BY-ND-2.5-si",
+    "@type": [
+        "cc:License",
+        "li:License"
+    ],
+    "cc:jurisdiction": "http://creativecommons.org/international/si/",
+    "cc:legalcode": "http://creativecommons.org/licenses/by-nd/2.5/si/legalcode",
+    "cc:licenseClass": "http://creativecommons.org/license/",
+    "cc:permits": [
+        "cc:Distribution",
+        "cc:Reproduction"
+    ],
+    "cc:requires": [
+        "cc:Attribution",
+        "cc:Notice"
+    ],
+    "dc:creator": "http://creativecommons.org",
+    "dc:hasVersion": "2.5",
+    "dc:identifier": "by-nd",
+    "dc:source": "http://creativecommons.org/licenses/by-nd/2.5/",
+    "dc:title": [
+        {
+            "@language": "af",
+            "@value": "Erkenning-GeenAfleidings 2.5 Slowenië"
+        },
+        {
+            "@language": "ar",
+            "@value": "نسب- غير مشتق 2.5 سلوفينيا"
+        },
+        {
+            "@language": "as",
+            "@value": "Attribution-NoDerivs 2.5 Slovenia"
+        },
+        {
+            "@language": "ast",
+            "@value": "Attribution-NoDerivs 2.5 Slovenia"
+        },
+        {
+            "@language": "ast-es",
+            "@value": "Attribution-NoDerivs 2.5 Slovenia"
+        },
+        {
+            "@language": "az",
+            "@value": "Attribution-NoDerivs 2.5 Slovenia"
+        },
+        {
+            "@language": "be",
+            "@value": "Attribution-NoDerivs 2.5 Славенія"
+        },
+        {
+            "@language": "bg",
+            "@value": "Признание-Без производни 2.5 Словения"
+        },
+        {
+            "@language": "bn",
+            "@value": "Attribution-NoDerivs 2.5 Slovenia"
+        },
+        {
+            "@language": "ca",
+            "@value": "Reconeixement-SenseObraDerivada 2.5 Eslovènia"
+        },
+        {
+            "@language": "cs",
+            "@value": "Uveďte autora-Nezasahujte do díla 2.5 Slovinsko"
+        },
+        {
+            "@language": "da",
+            "@value": "Navngivelse-IngenBearbejdelse 2.5 Slovenien"
+        },
+        {
+            "@language": "de",
+            "@value": "Namensnennung-Keine Bearbeitung 2.5 Slowenien"
+        },
+        {
+            "@language": "de-at",
+            "@value": "Namensnennung-KeineBearbeitung 2.5 Slowenien"
+        },
+        {
+            "@language": "de-ch",
+            "@value": "Namensnennung-KeineBearbeitung 2.5 Slowenien"
+        },
+        {
+            "@language": "el",
+            "@value": "Αναφορά Δημιουργού-Όχι Παράγωγα Έργα 2.5 Σλοβενία"
+        },
+        {
+            "@language": "en",
+            "@value": "Attribution-NoDerivs 2.5 Slovenia"
+        },
+        {
+            "@language": "en-ca",
+            "@value": "Attribution-NoDerivs 2.5 Slovenia"
+        },
+        {
+            "@language": "en-gb",
+            "@value": "Attribution-NoDerivs 2.5 Slovenia"
+        },
+        {
+            "@language": "en-hk",
+            "@value": "Attribution-NoDerivs 2.5 Slovenia"
+        },
+        {
+            "@language": "en-sg",
+            "@value": "Attribution-NoDerivs 2.5 Slovenia"
+        },
+        {
+            "@language": "en-us",
+            "@value": "Attribution-NoDerivs 2.5 Slovenia"
+        },
+        {
+            "@language": "eo",
+            "@value": "Atribuite-Nemodifite 2.5 Slovenujo"
+        },
+        {
+            "@language": "es",
+            "@value": "Atribución-SinDerivadas 2.5 Eslovenia"
+        },
+        {
+            "@language": "es-ar",
+            "@value": "Atribución-SinDerivadas 2.5 Eslovenia"
+        },
+        {
+            "@language": "es-cl",
+            "@value": "Atribución-SinDerivadas 2.5 Eslovenia"
+        },
+        {
+            "@language": "es-co",
+            "@value": "Reconocimiento-SinObraDerivada 2.5 Eslovenia"
+        },
+        {
+            "@language": "es-ec",
+            "@value": "Reconocimiento-SinObraDerivada 2.5 Eslovenia"
+        },
+        {
+            "@language": "es-es",
+            "@value": "Reconocimiento-SinObraDerivada 2.5 Eslovenia"
+        },
+        {
+            "@language": "es-gt",
+            "@value": "Reconocimiento-SinObraDerivada 2.5 Eslovenia"
+        },
+        {
+            "@language": "es-mx",
+            "@value": "Atribución-No Derivadas 2.5 Eslovenia"
+        },
+        {
+            "@language": "es-pe",
+            "@value": "Reconocimiento-SinObraDerivada 2.5 Eslovenia"
+        },
+        {
+            "@language": "es-pr",
+            "@value": "Reconocimiento-SinObraDerivada 2.5 Eslovenia"
+        },
+        {
+            "@language": "et",
+            "@value": "Autorile viitamine + Tuletatud teoste keeld 2.5 Sloveenia"
+        },
+        {
+            "@language": "eu",
+            "@value": "Aitortu-LanEratorririkGabe 2.5 Eslovenia"
+        },
+        {
+            "@language": "fa",
+            "@value": "Attribution-NoDerivs 2.5 اسلوونی"
+        },
+        {
+            "@language": "fi",
+            "@value": "Nimeä-Ei muutoksia 2.5 Slovenia"
+        },
+        {
+            "@language": "fr",
+            "@value": "Paternité - Pas de Modification 2.5 Slovénie"
+        },
+        {
+            "@language": "fr-ca",
+            "@value": "Paternité - Pas de Modification 2.5 Slovénie"
+        },
+        {
+            "@language": "fr-ch",
+            "@value": "Paternité - Pas de Modification 2.5 Slovénie"
+        },
+        {
+            "@language": "fr-lu",
+            "@value": "Paternité - Pas de Modification 2.5 Slovénie"
+        },
+        {
+            "@language": "ga",
+            "@value": "Attribution-NoDerivs 2.5 Slovenia"
+        },
+        {
+            "@language": "gl",
+            "@value": "Recoñecemento-SenObraDerivada 2.5 Slovenia"
+        },
+        {
+            "@language": "he",
+            "@value": "ייחוס-איסור יצירות נגזרות 2.5 סלובניה"
+        },
+        {
+            "@language": "hi",
+            "@value": "Attribution-NoDerivs 2.5 Slovenia"
+        },
+        {
+            "@language": "hr",
+            "@value": "Imenovanje-Bez prerada 2.5 Slovenija"
+        },
+        {
+            "@language": "hu",
+            "@value": "Nevezd meg! - Ne változtasd! 2.5 Szlovénia"
+        },
+        {
+            "@language": "hy",
+            "@value": "Հղում - Օգտագործում առանց վերափոխումների 2.5 Սլովենիա"
+        },
+        {
+            "@language": "id",
+            "@value": "Atribusi-TanpaTurunan 2.5 Slovenia"
+        },
+        {
+            "@language": "is",
+            "@value": "Attribution-NoDerivs 2.5 Slovenia"
+        },
+        {
+            "@language": "it",
+            "@value": "Attribuzione - Non opere derivate 2.5 Slovenia"
+        },
+        {
+            "@language": "it-ch",
+            "@value": "Attribuzione - Non opere derivate 2.5 Slovenia"
+        },
+        {
+            "@language": "ja",
+            "@value": "表示 - 改変禁止 2.5 スロベニア"
+        },
+        {
+            "@language": "ka",
+            "@value": "ავტორობის მითითებით გადამუშავების გარეშე 2.5 სლოვენია"
+        },
+        {
+            "@language": "kk",
+            "@value": "Туынды жасамау 2.5 Slovenia"
+        },
+        {
+            "@language": "ko",
+            "@value": "저작자표시-변경금지 2.5 슬로베니아"
+        },
+        {
+            "@language": "lt",
+            "@value": "Attribution-NoDerivs 2.5 Slovėnija"
+        },
+        {
+            "@language": "lv",
+            "@value": "Atsaucoties-Neatvasinot 2.5 Slovēnija"
+        },
+        {
+            "@language": "mk",
+            "@value": "НаведиИзвор-БезИзведениДела 2.5 Словенија"
+        },
+        {
+            "@language": "ml",
+            "@value": "Attribution-NoDerivs 2.5 സ്ലോവേനിയ"
+        },
+        {
+            "@language": "mn",
+            "@value": "Attribution-NoDerivs 2.5 Slovenia"
+        },
+        {
+            "@language": "ms",
+            "@value": "Pengiktirafan-TiadaTerbitan 2.5 Slovenia"
+        },
+        {
+            "@language": "nl",
+            "@value": "Naamsvermelding-GeenAfgeleideWerken 2.5 Slovenië"
+        },
+        {
+            "@language": "no",
+            "@value": "Navngivelse-IngenBearbeidelse 2.5 Slovenia"
+        },
+        {
+            "@language": "nso",
+            "@value": "Tsebagatšo - Tše sa Fetolwego 2.5 Slovenia"
+        },
+        {
+            "@language": "oci-es",
+            "@value": "Attribution-NoDerivs 2.5 Slovenia"
+        },
+        {
+            "@language": "pl",
+            "@value": "Uznanie autorstwa-Bez utworów zależnych 2.5 Słowenia"
+        },
+        {
+            "@language": "pt",
+            "@value": "Atribuição - SemDerivados 2.5 Eslovénia"
+        },
+        {
+            "@language": "pt-br",
+            "@value": "Atribuição-Vedada a criação de obras derivativas 2.5 Slovenia"
+        },
+        {
+            "@language": "pt-pt",
+            "@value": "Atribuição-Proibição de realização de Obras Derivadas 2.5 Slovenia"
+        },
+        {
+            "@language": "ro",
+            "@value": "Atribuire-FărăModificări 2.5 Slovenia"
+        },
+        {
+            "@language": "ru",
+            "@value": "Attribution-NoDerivs (Атрибуция — Без производных произведений) 2.5 Словения"
+        },
+        {
+            "@language": "si-lk",
+            "@value": "Attribution-NoDerivs 2.5 Slovenia"
+        },
+        {
+            "@language": "sl",
+            "@value": "Priznanje avtorstva-Brez predelav 2.5 Slovenija"
+        },
+        {
+            "@language": "sq",
+            "@value": "Attribution-NoDerivs 2.5 Sloveni"
+        },
+        {
+            "@language": "sr",
+            "@value": "Autorstvo-Bez prerada 2.5 Slovenija"
+        },
+        {
+            "@language": "sr",
+            "@value": "Ауторство-Без прерада 2.5 Словенија"
+        },
+        {
+            "@language": "sr-latn",
+            "@value": "Autorstvo-Bez prerada 2.5 Slovenija"
+        },
+        {
+            "@language": "st",
+            "@value": "Attribution-NoDerivs 2.5 Slovenia"
+        },
+        {
+            "@language": "sv",
+            "@value": "Erkännande-IngaBearbetningar 2.5 Slovenien"
+        },
+        {
+            "@language": "ta",
+            "@value": "Attribution-NoDerivs 2.5 Slovenia"
+        },
+        {
+            "@language": "te",
+            "@value": "Attribution-NoDerivs 2.5 స్లొవేనియా"
+        },
+        {
+            "@language": "th",
+            "@value": "แสดงที่มา-ไม่ดัดแปลง 2.5 สโลวาเนีย"
+        },
+        {
+            "@language": "tr",
+            "@value": "Alıntı-Türetilemez 2.5 Slovenya"
+        },
+        {
+            "@language": "uk",
+            "@value": "Attribution-NoDerivs 2.5 Slovenia"
+        },
+        {
+            "@language": "ur",
+            "@value": "Attribution-NoDerivs 2.5 Slovenia"
+        },
+        {
+            "@language": "vi",
+            "@value": "Ghi nhận công của tác giả - Không phái sinh 2.5 Slovenia"
+        },
+        {
+            "@language": "zh",
+            "@value": "署名-禁止演绎 2.5 斯洛文尼亚"
+        },
+        {
+            "@language": "zh-hk",
+            "@value": "姓名標示-禁止改作 2.5 斯洛維尼亞"
+        },
+        {
+            "@language": "zh-tw",
+            "@value": "姓名標示-禁止改作 2.5 斯洛維尼亞"
+        },
+        {
+            "@language": "zu",
+            "@value": "Qaphela Umnikazi-Ungasuseli lutho kulokhu 2.5 iSlovenia"
+        },
+        {
+            "@language": "zxx",
+            "@value": "${Attribution-NoDerivs} 2.5 ${Slovenia}"
+        }
+    ],
+    "owl:sameAs": {
+        "@id": "http://creativecommons.org/licenses/by-nd/2.5/si/",
+        "@type": "cc:License",
+        "cc:jurisdiction": "http://creativecommons.org/international/si/",
+        "cc:legalcode": "http://creativecommons.org/licenses/by-nd/2.5/si/legalcode",
+        "cc:licenseClass": "http://creativecommons.org/license/",
+        "cc:permits": [
+            "cc:Distribution",
+            "cc:Reproduction"
+        ],
+        "cc:requires": [
+            "cc:Attribution",
+            "cc:Notice"
+        ],
+        "dc:creator": "http://creativecommons.org",
+        "dc:hasVersion": "2.5",
+        "dc:identifier": "by-nd",
+        "dc:source": "http://creativecommons.org/licenses/by-nd/2.5/",
+        "dc:title": [
+            {
+                "@language": "af",
+                "@value": "Erkenning-GeenAfleidings 2.5 Slowenië"
+            },
+            {
+                "@language": "ar",
+                "@value": "نسب- غير مشتق 2.5 سلوفينيا"
+            },
+            {
+                "@language": "as",
+                "@value": "Attribution-NoDerivs 2.5 Slovenia"
+            },
+            {
+                "@language": "ast",
+                "@value": "Attribution-NoDerivs 2.5 Slovenia"
+            },
+            {
+                "@language": "ast-es",
+                "@value": "Attribution-NoDerivs 2.5 Slovenia"
+            },
+            {
+                "@language": "az",
+                "@value": "Attribution-NoDerivs 2.5 Slovenia"
+            },
+            {
+                "@language": "be",
+                "@value": "Attribution-NoDerivs 2.5 Славенія"
+            },
+            {
+                "@language": "bg",
+                "@value": "Признание-Без производни 2.5 Словения"
+            },
+            {
+                "@language": "bn",
+                "@value": "Attribution-NoDerivs 2.5 Slovenia"
+            },
+            {
+                "@language": "ca",
+                "@value": "Reconeixement-SenseObraDerivada 2.5 Eslovènia"
+            },
+            {
+                "@language": "cs",
+                "@value": "Uveďte autora-Nezasahujte do díla 2.5 Slovinsko"
+            },
+            {
+                "@language": "da",
+                "@value": "Navngivelse-IngenBearbejdelse 2.5 Slovenien"
+            },
+            {
+                "@language": "de",
+                "@value": "Namensnennung-Keine Bearbeitung 2.5 Slowenien"
+            },
+            {
+                "@language": "de-at",
+                "@value": "Namensnennung-KeineBearbeitung 2.5 Slowenien"
+            },
+            {
+                "@language": "de-ch",
+                "@value": "Namensnennung-KeineBearbeitung 2.5 Slowenien"
+            },
+            {
+                "@language": "el",
+                "@value": "Αναφορά Δημιουργού-Όχι Παράγωγα Έργα 2.5 Σλοβενία"
+            },
+            {
+                "@language": "en",
+                "@value": "Attribution-NoDerivs 2.5 Slovenia"
+            },
+            {
+                "@language": "en-ca",
+                "@value": "Attribution-NoDerivs 2.5 Slovenia"
+            },
+            {
+                "@language": "en-gb",
+                "@value": "Attribution-NoDerivs 2.5 Slovenia"
+            },
+            {
+                "@language": "en-hk",
+                "@value": "Attribution-NoDerivs 2.5 Slovenia"
+            },
+            {
+                "@language": "en-sg",
+                "@value": "Attribution-NoDerivs 2.5 Slovenia"
+            },
+            {
+                "@language": "en-us",
+                "@value": "Attribution-NoDerivs 2.5 Slovenia"
+            },
+            {
+                "@language": "eo",
+                "@value": "Atribuite-Nemodifite 2.5 Slovenujo"
+            },
+            {
+                "@language": "es",
+                "@value": "Atribución-SinDerivadas 2.5 Eslovenia"
+            },
+            {
+                "@language": "es-ar",
+                "@value": "Atribución-SinDerivadas 2.5 Eslovenia"
+            },
+            {
+                "@language": "es-cl",
+                "@value": "Atribución-SinDerivadas 2.5 Eslovenia"
+            },
+            {
+                "@language": "es-co",
+                "@value": "Reconocimiento-SinObraDerivada 2.5 Eslovenia"
+            },
+            {
+                "@language": "es-ec",
+                "@value": "Reconocimiento-SinObraDerivada 2.5 Eslovenia"
+            },
+            {
+                "@language": "es-es",
+                "@value": "Reconocimiento-SinObraDerivada 2.5 Eslovenia"
+            },
+            {
+                "@language": "es-gt",
+                "@value": "Reconocimiento-SinObraDerivada 2.5 Eslovenia"
+            },
+            {
+                "@language": "es-mx",
+                "@value": "Atribución-No Derivadas 2.5 Eslovenia"
+            },
+            {
+                "@language": "es-pe",
+                "@value": "Reconocimiento-SinObraDerivada 2.5 Eslovenia"
+            },
+            {
+                "@language": "es-pr",
+                "@value": "Reconocimiento-SinObraDerivada 2.5 Eslovenia"
+            },
+            {
+                "@language": "et",
+                "@value": "Autorile viitamine + Tuletatud teoste keeld 2.5 Sloveenia"
+            },
+            {
+                "@language": "eu",
+                "@value": "Aitortu-LanEratorririkGabe 2.5 Eslovenia"
+            },
+            {
+                "@language": "fa",
+                "@value": "Attribution-NoDerivs 2.5 اسلوونی"
+            },
+            {
+                "@language": "fi",
+                "@value": "Nimeä-Ei muutoksia 2.5 Slovenia"
+            },
+            {
+                "@language": "fr",
+                "@value": "Paternité - Pas de Modification 2.5 Slovénie"
+            },
+            {
+                "@language": "fr-ca",
+                "@value": "Paternité - Pas de Modification 2.5 Slovénie"
+            },
+            {
+                "@language": "fr-ch",
+                "@value": "Paternité - Pas de Modification 2.5 Slovénie"
+            },
+            {
+                "@language": "fr-lu",
+                "@value": "Paternité - Pas de Modification 2.5 Slovénie"
+            },
+            {
+                "@language": "ga",
+                "@value": "Attribution-NoDerivs 2.5 Slovenia"
+            },
+            {
+                "@language": "gl",
+                "@value": "Recoñecemento-SenObraDerivada 2.5 Slovenia"
+            },
+            {
+                "@language": "he",
+                "@value": "ייחוס-איסור יצירות נגזרות 2.5 סלובניה"
+            },
+            {
+                "@language": "hi",
+                "@value": "Attribution-NoDerivs 2.5 Slovenia"
+            },
+            {
+                "@language": "hr",
+                "@value": "Imenovanje-Bez prerada 2.5 Slovenija"
+            },
+            {
+                "@language": "hu",
+                "@value": "Nevezd meg! - Ne változtasd! 2.5 Szlovénia"
+            },
+            {
+                "@language": "hy",
+                "@value": "Հղում - Օգտագործում առանց վերափոխումների 2.5 Սլովենիա"
+            },
+            {
+                "@language": "id",
+                "@value": "Atribusi-TanpaTurunan 2.5 Slovenia"
+            },
+            {
+                "@language": "is",
+                "@value": "Attribution-NoDerivs 2.5 Slovenia"
+            },
+            {
+                "@language": "it",
+                "@value": "Attribuzione - Non opere derivate 2.5 Slovenia"
+            },
+            {
+                "@language": "it-ch",
+                "@value": "Attribuzione - Non opere derivate 2.5 Slovenia"
+            },
+            {
+                "@language": "ja",
+                "@value": "表示 - 改変禁止 2.5 スロベニア"
+            },
+            {
+                "@language": "ka",
+                "@value": "ავტორობის მითითებით გადამუშავების გარეშე 2.5 სლოვენია"
+            },
+            {
+                "@language": "kk",
+                "@value": "Туынды жасамау 2.5 Slovenia"
+            },
+            {
+                "@language": "ko",
+                "@value": "저작자표시-변경금지 2.5 슬로베니아"
+            },
+            {
+                "@language": "lt",
+                "@value": "Attribution-NoDerivs 2.5 Slovėnija"
+            },
+            {
+                "@language": "lv",
+                "@value": "Atsaucoties-Neatvasinot 2.5 Slovēnija"
+            },
+            {
+                "@language": "mk",
+                "@value": "НаведиИзвор-БезИзведениДела 2.5 Словенија"
+            },
+            {
+                "@language": "ml",
+                "@value": "Attribution-NoDerivs 2.5 സ്ലോവേനിയ"
+            },
+            {
+                "@language": "mn",
+                "@value": "Attribution-NoDerivs 2.5 Slovenia"
+            },
+            {
+                "@language": "ms",
+                "@value": "Pengiktirafan-TiadaTerbitan 2.5 Slovenia"
+            },
+            {
+                "@language": "nl",
+                "@value": "Naamsvermelding-GeenAfgeleideWerken 2.5 Slovenië"
+            },
+            {
+                "@language": "no",
+                "@value": "Navngivelse-IngenBearbeidelse 2.5 Slovenia"
+            },
+            {
+                "@language": "nso",
+                "@value": "Tsebagatšo - Tše sa Fetolwego 2.5 Slovenia"
+            },
+            {
+                "@language": "oci-es",
+                "@value": "Attribution-NoDerivs 2.5 Slovenia"
+            },
+            {
+                "@language": "pl",
+                "@value": "Uznanie autorstwa-Bez utworów zależnych 2.5 Słowenia"
+            },
+            {
+                "@language": "pt",
+                "@value": "Atribuição - SemDerivados 2.5 Eslovénia"
+            },
+            {
+                "@language": "pt-br",
+                "@value": "Atribuição-Vedada a criação de obras derivativas 2.5 Slovenia"
+            },
+            {
+                "@language": "pt-pt",
+                "@value": "Atribuição-Proibição de realização de Obras Derivadas 2.5 Slovenia"
+            },
+            {
+                "@language": "ro",
+                "@value": "Atribuire-FărăModificări 2.5 Slovenia"
+            },
+            {
+                "@language": "ru",
+                "@value": "Attribution-NoDerivs (Атрибуция — Без производных произведений) 2.5 Словения"
+            },
+            {
+                "@language": "si-lk",
+                "@value": "Attribution-NoDerivs 2.5 Slovenia"
+            },
+            {
+                "@language": "sl",
+                "@value": "Priznanje avtorstva-Brez predelav 2.5 Slovenija"
+            },
+            {
+                "@language": "sq",
+                "@value": "Attribution-NoDerivs 2.5 Sloveni"
+            },
+            {
+                "@language": "sr",
+                "@value": "Autorstvo-Bez prerada 2.5 Slovenija"
+            },
+            {
+                "@language": "sr",
+                "@value": "Ауторство-Без прерада 2.5 Словенија"
+            },
+            {
+                "@language": "sr-latn",
+                "@value": "Autorstvo-Bez prerada 2.5 Slovenija"
+            },
+            {
+                "@language": "st",
+                "@value": "Attribution-NoDerivs 2.5 Slovenia"
+            },
+            {
+                "@language": "sv",
+                "@value": "Erkännande-IngaBearbetningar 2.5 Slovenien"
+            },
+            {
+                "@language": "ta",
+                "@value": "Attribution-NoDerivs 2.5 Slovenia"
+            },
+            {
+                "@language": "te",
+                "@value": "Attribution-NoDerivs 2.5 స్లొవేనియా"
+            },
+            {
+                "@language": "th",
+                "@value": "แสดงที่มา-ไม่ดัดแปลง 2.5 สโลวาเนีย"
+            },
+            {
+                "@language": "tr",
+                "@value": "Alıntı-Türetilemez 2.5 Slovenya"
+            },
+            {
+                "@language": "uk",
+                "@value": "Attribution-NoDerivs 2.5 Slovenia"
+            },
+            {
+                "@language": "ur",
+                "@value": "Attribution-NoDerivs 2.5 Slovenia"
+            },
+            {
+                "@language": "vi",
+                "@value": "Ghi nhận công của tác giả - Không phái sinh 2.5 Slovenia"
+            },
+            {
+                "@language": "zh",
+                "@value": "署名-禁止演绎 2.5 斯洛文尼亚"
+            },
+            {
+                "@language": "zh-hk",
+                "@value": "姓名標示-禁止改作 2.5 斯洛維尼亞"
+            },
+            {
+                "@language": "zh-tw",
+                "@value": "姓名標示-禁止改作 2.5 斯洛維尼亞"
+            },
+            {
+                "@language": "zu",
+                "@value": "Qaphela Umnikazi-Ungasuseli lutho kulokhu 2.5 iSlovenia"
+            },
+            {
+                "@language": "zxx",
+                "@value": "${Attribution-NoDerivs} 2.5 ${Slovenia}"
+            }
+        ],
+        "owl:sameAs": "https://licensedb.org/id/CC-BY-ND-2.5-si",
+        "foaf:logo": [
+            "http://i.creativecommons.org/l/by-nd/2.5/si/80x15.png",
+            "http://i.creativecommons.org/l/by-nd/2.5/si/88x31.png"
+        ]
+    },
+    "foaf:logo": [
+        "http://i.creativecommons.org/l/by-nd/2.5/si/80x15.png",
+        "http://i.creativecommons.org/l/by-nd/2.5/si/88x31.png"
+    ],
+    "li:id": "CC-BY-ND-2.5-si",
+    "li:name": "CC BY-ND 2.5 SI"
+}

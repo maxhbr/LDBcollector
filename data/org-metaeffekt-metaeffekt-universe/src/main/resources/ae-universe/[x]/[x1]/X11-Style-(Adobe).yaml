@@ -1,0 +1,16 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+
+canonicalName: "X11-Style (Adobe)"
+category: "X11-Style (Adobe)"
+shortName: "X11-Adobe"
+
+openCoDEStatus: "approved"
+
+alternativeNames:
+  - "X11-Style (Adobe)"
+  - "X11-Adobe"
+
+otherIds: 
+  - "scancode:x11-adobe"

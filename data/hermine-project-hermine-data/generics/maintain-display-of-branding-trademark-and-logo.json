@@ -1,0 +1,6 @@
+{
+  "name": "Maintain display of branding (trademark and logo)",
+  "description": "You must keep and display all the IP related mentions in their existing form, which includes logos. *(see [Open-source badgeware](https://lwn.net/Articles/243841/))*",
+  "metacategory": "Mentions",
+  "passivity": "Passive"
+}

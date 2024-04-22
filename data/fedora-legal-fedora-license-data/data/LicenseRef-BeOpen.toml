@@ -1,0 +1,19 @@
+[license]
+
+expression = "LicenseRef-BeOpen"
+status = [ "allowed" ]
+
+url = '''
+https://fedoraproject.org/wiki/Licensing/BeOpen
+'''
+
+[fedora]
+
+legacy-name = [
+    "BeOpen Open Source License Agreement Version 1"
+]
+
+legacy-abbreviation = [
+    "BeOpen"
+]
+

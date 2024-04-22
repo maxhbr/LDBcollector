@@ -1,0 +1,237 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/elements/1.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://creativecommons.org/licenses/by-nc-nd/2.0/pl/> a cc:License ;
+    cc:jurisdiction <http://creativecommons.org/international/pl/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nc-nd/2.0/pl/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:Distribution,
+        cc:Reproduction ;
+    cc:prohibits cc:CommercialUse ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.0" ;
+    dc:identifier "by-nc-nd" ;
+    dc:isReplacedBy <http://creativecommons.org/licenses/by-nc-nd/2.5/pl/> ;
+    dc:source <http://creativecommons.org/licenses/by-nc-nd/2.0/> ;
+    dc:title "Erkenning-NieKommersieel-GeenAfleidings 2.0 Pole"@af,
+        "نسب- غير تجاري - لا اشتقاق 2.0 بولندا"@ar,
+        "Attribution-NonCommercial-NoDerivs 2.0 Poland"@as,
+        "Attribution-NonCommercial-NoDerivs 2.0 Poland"@ast,
+        "Attribution-NonCommercial-NoDerivs 2.0 Poland"@ast-es,
+        "Attribution-NonCommercial-NoDerivs 2.0 Poland"@az,
+        "Attribution-NonCommercial-NoDerivs 2.0 Польшча"@be,
+        "Признание-Некомерсиално-Без производни 2.0 Полша"@bg,
+        "Attribution-NonCommercial-NoDerivs 2.0 Poland"@bn,
+        "Reconeixement-NoComercial-SenseObraDerivada 2.0 Polònia"@ca,
+        "Uveďte autora-Neužívejte dílo komerčně-Nezasahujte do díla 2.0 Polsko"@cs,
+        "Navngivelse-IkkeKommerciel-IngenBearbejdelse 2.0 Polen"@da,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 2.0 Polen"@de,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 2.0 Polen"@de-at,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 2.0 Polen"@de-ch,
+        "Αναφορά Δημιουργού-Μη Εμπορική Χρήση-Όχι Παράγωγα Έργα 2.0 Πολωνία"@el,
+        "Attribution-NonCommercial-NoDerivs 2.0 Poland"@en,
+        "Attribution-NonCommercial-NoDerivs 2.0 Poland"@en-ca,
+        "Attribution-NonCommercial-NoDerivs 2.0 Poland"@en-gb,
+        "Attribution-NonCommercial-NoDerivs 2.0 Poland"@en-hk,
+        "Attribution-NonCommercial-NoDerivs 2.0 Poland"@en-sg,
+        "Attribution-NonCommercial-NoDerivs 2.0 Poland"@en-us,
+        "Atribuite-Nekomerce-Nemodifite 2.0 Polujo"@eo,
+        "Atribución-NoComercial-SinDerivadas 2.0 Polonia"@es,
+        "Atribución-NoComercial-SinDerivadas 2.0 Polonia"@es-ar,
+        "Atribución-NoComercial-SinDerivadas 2.0 Polonia"@es-cl,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.0 Polonia"@es-co,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.0 Polonia"@es-ec,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.0 Polonia"@es-es,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.0 Polonia"@es-gt,
+        "Atribución-No Comercial-No Derivadas 2.0 Polonia"@es-mx,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.0 Polonia"@es-pe,
+        "Reconocimiento-NoComercial-SinObrasDerivadas 2.0 Polonia"@es-pr,
+        "Autorile viitamine + Mitteäriline eesmärk + Tuletatud teoste keeld 2.0 Poola"@et,
+        "Aitortu-EzKomertziala-LanEratorririkGabe 2.0 Polonia"@eu,
+        "Attribution-NonCommercial-NoDerivs 2.0 لهستان"@fa,
+        "Nimeä-Ei muutoksia-Epäkaupallinen 2.0 Puola"@fi,
+        "Attribution - Pas d’Utilisation Commerciale - Pas de Modification 2.0 Pologne"@fr,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.0 Pologne"@fr-ca,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.0 Pologne"@fr-ch,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.0 Pologne"@fr-lu,
+        "Attribution-NonCommercial-NoDerivs 2.0 Poland"@ga,
+        "Recoñecemento-NonComercial-SenObraDerivada 2.0 Polonia"@gl,
+        "ייחוס-שימוש לא מסחרי-איסור יצירות נגזרות 2.0 פולין"@he,
+        "Attribution-NonCommercial-NoDerivs 2.0 पोलैंड"@hi,
+        "Imenovanje-Nekomercijalno-Bez prerada 2.0 Poljska"@hr,
+        "Nevezd meg! - Ne add el! - Ne változtasd! 2.0 Lengyelország"@hu,
+        "Հղում - Ոչ-առևտրային օգտագործում - Օգտագործում առանց վերափոխումների 2.0 Լեհաստան"@hy,
+        "Atribusi-NonKomersial-TanpaTurunan 2.0 Polandia"@id,
+        "Attribution-NonCommercial-NoDerivs 2.0 Pólland"@is,
+        "Attribuzione - Non commerciale - Non opere derivate 2.0 Polonia"@it,
+        "Attribuzione - Non commerciale - Non opere derivate 2.0 Polonia"@it-ch,
+        "表示 - 非営利 - 改変禁止 2.0 ポーランド"@ja,
+        "ავტორობის მითითებით–არაკომერციული გამოყენბისათვის–გადამუშავების გარეშე 2.0 პოლონეთი"@ka,
+        "Attribution-NonCommercial-NoDerivs 2.0 Poland"@kk,
+        "저작자표시-비영리-변경금지 2.0 폴란드"@ko,
+        "Attribution-NonCommercial-NoDerivs 2.0 Lenkija"@lt,
+        "Atsaucoties-Nekomerciāls-Nemainīts 2.0 Polija"@lv,
+        "НаведиИзвор-Некомерцијално-БезАдаптираниДела 2.0 Полска"@mk,
+        "Attribution-NonCommercial-NoDerivs 2.0 പോളണ്ട്"@ml,
+        "Attribution-NonCommercial-NoDerivs 2.0 Польш"@mn,
+        "Pengiktirafan-BukanKomersial-TiadaTerbitan 2.0 Poland"@ms,
+        "Naamsvermelding-NietCommercieel-GeenAfgeleideWerken 2.0 Polen"@nl,
+        "Navngivelse-Ikkekommersiell-IngenBearbeidelse 2.0 Polen"@no,
+        "Tsebagatšo-E sego ya Kgwebo-Tše sa fetolwego 2.0 Poland"@nso,
+        "Attribution-NonCommercial-NoDerivs 2.0 Poland"@oci-es,
+        "Uznanie autorstwa-Użycie niekomercyjne-Bez utworów zależnych 2.0 Polska"@pl,
+        "Atribuição - NãoComercial - SemDerivados 2.0 Polónia"@pt,
+        "Atribuição-Uso não-comercial-Vedada a criação de obras derivadas 2.0 Poland"@pt-br,
+        "Atribuição-Uso Não-Comercial-Proibição de realização de Obras Derivadas 2.0 Polonia"@pt-pt,
+        "Atribuire-Necomercial-FărăModificări 2.0 Polonia"@ro,
+        "Attribution-NonCommercial-NoDerivs (Атрибуция — Некоммерческое использование — Без производных произведений) 2.0 Польша"@ru,
+        "Attribution-NonCommercial-NoDerivs 2.0 Poland"@si-lk,
+        "Priznanje avtorstva-Nekomercialno-Brez predelav 2.0 Poljska"@sl,
+        "Attribution-NonCommercial-NoDerivs 2.0 Poloni"@sq,
+        "Autorstvo-Nekomercijalno-Bez prerada 2.0 Poljska"@sr,
+        "Ауторство-Некомерцијално-Без прерада 2.0 Пољска"@sr,
+        "Autorstvo-Nekomercijalno-Bez prerada 2.0 Poljska"@sr-latn,
+        "Attribution-NonCommercial-NoDerivs 2.0 Poland"@st,
+        "Erkännande-Ickekommersiell-IngaBearbetningar 2.0 Polen"@sv,
+        "Attribution-NonCommercial-NoDerivs 2.0 போலாந்து"@ta,
+        "Attribution-NonCommercial-NoDerivs 2.0 పోలాండ్"@te,
+        "แสดงที่มา-ไม่ใช้เพื่อการค้า-ไม่ดัดแปลง 2.0 โปแลนด์"@th,
+        "Attribution-Gayriticari-NoDerivs 2.0 Polonya"@tr,
+        "Attribution-NonCommercial-NoDerivs 2.0 Poland"@uk,
+        "Attribution-NonCommercial-NoDerivs 2.0 Poland"@ur,
+        "Ghi nhận công của tác giả - Phi thương mại - Không phái sinh  2.0 Nước Phần Lan"@vi,
+        "署名-非商业性使用-禁止演绎 2.0 波兰"@zh,
+        "姓名標示-非商業性-禁止改作 2.0 波蘭"@zh-hk,
+        "姓名標示-非商業性-禁止改作 2.0 波蘭"@zh-tw,
+        "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano-Ungasuseli lutho kulokhu 2.0 EPoland"@zu,
+        "${Attribution-NonCommercial-NoDerivs} 2.0 ${Poland}"@zxx ;
+    owl:sameAs <https://licensedb.org/id/CC-BY-NC-ND-2.0-pl> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nc-nd/2.0/pl/80x15.png>,
+        <http://i.creativecommons.org/l/by-nc-nd/2.0/pl/88x31.png> .
+
+<https://licensedb.org/id/CC-BY-NC-ND-2.0-pl> a cc:License,
+        li:License ;
+    cc:jurisdiction <http://creativecommons.org/international/pl/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nc-nd/2.0/pl/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:Distribution,
+        cc:Reproduction ;
+    cc:prohibits cc:CommercialUse ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.0" ;
+    dc:identifier "by-nc-nd" ;
+    dc:isReplacedBy <https://licensedb.org/id/CC-BY-NC-ND-2.5-pl> ;
+    dc:source <http://creativecommons.org/licenses/by-nc-nd/2.0/> ;
+    dc:title "Erkenning-NieKommersieel-GeenAfleidings 2.0 Pole"@af,
+        "نسب- غير تجاري - لا اشتقاق 2.0 بولندا"@ar,
+        "Attribution-NonCommercial-NoDerivs 2.0 Poland"@as,
+        "Attribution-NonCommercial-NoDerivs 2.0 Poland"@ast,
+        "Attribution-NonCommercial-NoDerivs 2.0 Poland"@ast-es,
+        "Attribution-NonCommercial-NoDerivs 2.0 Poland"@az,
+        "Attribution-NonCommercial-NoDerivs 2.0 Польшча"@be,
+        "Признание-Некомерсиално-Без производни 2.0 Полша"@bg,
+        "Attribution-NonCommercial-NoDerivs 2.0 Poland"@bn,
+        "Reconeixement-NoComercial-SenseObraDerivada 2.0 Polònia"@ca,
+        "Uveďte autora-Neužívejte dílo komerčně-Nezasahujte do díla 2.0 Polsko"@cs,
+        "Navngivelse-IkkeKommerciel-IngenBearbejdelse 2.0 Polen"@da,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 2.0 Polen"@de,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 2.0 Polen"@de-at,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 2.0 Polen"@de-ch,
+        "Αναφορά Δημιουργού-Μη Εμπορική Χρήση-Όχι Παράγωγα Έργα 2.0 Πολωνία"@el,
+        "Attribution-NonCommercial-NoDerivs 2.0 Poland"@en,
+        "Attribution-NonCommercial-NoDerivs 2.0 Poland"@en-ca,
+        "Attribution-NonCommercial-NoDerivs 2.0 Poland"@en-gb,
+        "Attribution-NonCommercial-NoDerivs 2.0 Poland"@en-hk,
+        "Attribution-NonCommercial-NoDerivs 2.0 Poland"@en-sg,
+        "Attribution-NonCommercial-NoDerivs 2.0 Poland"@en-us,
+        "Atribuite-Nekomerce-Nemodifite 2.0 Polujo"@eo,
+        "Atribución-NoComercial-SinDerivadas 2.0 Polonia"@es,
+        "Atribución-NoComercial-SinDerivadas 2.0 Polonia"@es-ar,
+        "Atribución-NoComercial-SinDerivadas 2.0 Polonia"@es-cl,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.0 Polonia"@es-co,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.0 Polonia"@es-ec,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.0 Polonia"@es-es,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.0 Polonia"@es-gt,
+        "Atribución-No Comercial-No Derivadas 2.0 Polonia"@es-mx,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.0 Polonia"@es-pe,
+        "Reconocimiento-NoComercial-SinObrasDerivadas 2.0 Polonia"@es-pr,
+        "Autorile viitamine + Mitteäriline eesmärk + Tuletatud teoste keeld 2.0 Poola"@et,
+        "Aitortu-EzKomertziala-LanEratorririkGabe 2.0 Polonia"@eu,
+        "Attribution-NonCommercial-NoDerivs 2.0 لهستان"@fa,
+        "Nimeä-Ei muutoksia-Epäkaupallinen 2.0 Puola"@fi,
+        "Attribution - Pas d’Utilisation Commerciale - Pas de Modification 2.0 Pologne"@fr,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.0 Pologne"@fr-ca,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.0 Pologne"@fr-ch,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.0 Pologne"@fr-lu,
+        "Attribution-NonCommercial-NoDerivs 2.0 Poland"@ga,
+        "Recoñecemento-NonComercial-SenObraDerivada 2.0 Polonia"@gl,
+        "ייחוס-שימוש לא מסחרי-איסור יצירות נגזרות 2.0 פולין"@he,
+        "Attribution-NonCommercial-NoDerivs 2.0 पोलैंड"@hi,
+        "Imenovanje-Nekomercijalno-Bez prerada 2.0 Poljska"@hr,
+        "Nevezd meg! - Ne add el! - Ne változtasd! 2.0 Lengyelország"@hu,
+        "Հղում - Ոչ-առևտրային օգտագործում - Օգտագործում առանց վերափոխումների 2.0 Լեհաստան"@hy,
+        "Atribusi-NonKomersial-TanpaTurunan 2.0 Polandia"@id,
+        "Attribution-NonCommercial-NoDerivs 2.0 Pólland"@is,
+        "Attribuzione - Non commerciale - Non opere derivate 2.0 Polonia"@it,
+        "Attribuzione - Non commerciale - Non opere derivate 2.0 Polonia"@it-ch,
+        "表示 - 非営利 - 改変禁止 2.0 ポーランド"@ja,
+        "ავტორობის მითითებით–არაკომერციული გამოყენბისათვის–გადამუშავების გარეშე 2.0 პოლონეთი"@ka,
+        "Attribution-NonCommercial-NoDerivs 2.0 Poland"@kk,
+        "저작자표시-비영리-변경금지 2.0 폴란드"@ko,
+        "Attribution-NonCommercial-NoDerivs 2.0 Lenkija"@lt,
+        "Atsaucoties-Nekomerciāls-Nemainīts 2.0 Polija"@lv,
+        "НаведиИзвор-Некомерцијално-БезАдаптираниДела 2.0 Полска"@mk,
+        "Attribution-NonCommercial-NoDerivs 2.0 പോളണ്ട്"@ml,
+        "Attribution-NonCommercial-NoDerivs 2.0 Польш"@mn,
+        "Pengiktirafan-BukanKomersial-TiadaTerbitan 2.0 Poland"@ms,
+        "Naamsvermelding-NietCommercieel-GeenAfgeleideWerken 2.0 Polen"@nl,
+        "Navngivelse-Ikkekommersiell-IngenBearbeidelse 2.0 Polen"@no,
+        "Tsebagatšo-E sego ya Kgwebo-Tše sa fetolwego 2.0 Poland"@nso,
+        "Attribution-NonCommercial-NoDerivs 2.0 Poland"@oci-es,
+        "Uznanie autorstwa-Użycie niekomercyjne-Bez utworów zależnych 2.0 Polska"@pl,
+        "Atribuição - NãoComercial - SemDerivados 2.0 Polónia"@pt,
+        "Atribuição-Uso não-comercial-Vedada a criação de obras derivadas 2.0 Poland"@pt-br,
+        "Atribuição-Uso Não-Comercial-Proibição de realização de Obras Derivadas 2.0 Polonia"@pt-pt,
+        "Atribuire-Necomercial-FărăModificări 2.0 Polonia"@ro,
+        "Attribution-NonCommercial-NoDerivs (Атрибуция — Некоммерческое использование — Без производных произведений) 2.0 Польша"@ru,
+        "Attribution-NonCommercial-NoDerivs 2.0 Poland"@si-lk,
+        "Priznanje avtorstva-Nekomercialno-Brez predelav 2.0 Poljska"@sl,
+        "Attribution-NonCommercial-NoDerivs 2.0 Poloni"@sq,
+        "Autorstvo-Nekomercijalno-Bez prerada 2.0 Poljska"@sr,
+        "Ауторство-Некомерцијално-Без прерада 2.0 Пољска"@sr,
+        "Autorstvo-Nekomercijalno-Bez prerada 2.0 Poljska"@sr-latn,
+        "Attribution-NonCommercial-NoDerivs 2.0 Poland"@st,
+        "Erkännande-Ickekommersiell-IngaBearbetningar 2.0 Polen"@sv,
+        "Attribution-NonCommercial-NoDerivs 2.0 போலாந்து"@ta,
+        "Attribution-NonCommercial-NoDerivs 2.0 పోలాండ్"@te,
+        "แสดงที่มา-ไม่ใช้เพื่อการค้า-ไม่ดัดแปลง 2.0 โปแลนด์"@th,
+        "Attribution-Gayriticari-NoDerivs 2.0 Polonya"@tr,
+        "Attribution-NonCommercial-NoDerivs 2.0 Poland"@uk,
+        "Attribution-NonCommercial-NoDerivs 2.0 Poland"@ur,
+        "Ghi nhận công của tác giả - Phi thương mại - Không phái sinh  2.0 Nước Phần Lan"@vi,
+        "署名-非商业性使用-禁止演绎 2.0 波兰"@zh,
+        "姓名標示-非商業性-禁止改作 2.0 波蘭"@zh-hk,
+        "姓名標示-非商業性-禁止改作 2.0 波蘭"@zh-tw,
+        "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano-Ungasuseli lutho kulokhu 2.0 EPoland"@zu,
+        "${Attribution-NonCommercial-NoDerivs} 2.0 ${Poland}"@zxx ;
+    owl:sameAs <http://creativecommons.org/licenses/by-nc-nd/2.0/pl/> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nc-nd/2.0/pl/80x15.png>,
+        <http://i.creativecommons.org/l/by-nc-nd/2.0/pl/88x31.png> ;
+    li:id "CC-BY-NC-ND-2.0-pl" ;
+    li:name "CC BY-NC-ND 2.0 PL" .
+

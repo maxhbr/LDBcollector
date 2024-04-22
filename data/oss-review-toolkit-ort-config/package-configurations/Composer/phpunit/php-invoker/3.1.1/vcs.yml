@@ -1,0 +1,13 @@
+---
+id: "Composer:phpunit:php-invoker:3.1.1"
+vcs:
+  type: "Git"
+  url: "https://github.com/sebastianbergmann/php-invoker.git"
+  revision: "5a10147d0aaf65b58940a0b72f71c9ac0423cc67"
+path_excludes:
+  - pattern: ".github/**"
+    reason: "BUILD_TOOL_OF"
+  - pattern: "tests/**"
+    reason: "TEST_OF"
+  - pattern: "tools/**"
+    reason: "BUILD_TOOL_OF"

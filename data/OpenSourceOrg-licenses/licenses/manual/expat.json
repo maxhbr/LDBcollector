@@ -1,0 +1,41 @@
+[
+    {
+        "id": "MIT",
+        "identifiers": [
+            {
+                "identifier": "Expat",
+                "scheme": "DEP5"
+            }
+        ],
+        "keywords": [
+            "osi-approved",
+            "popular",
+            "permissive"
+        ],
+        "links": [
+            {
+                "note": "OSI Page",
+                "url": "https://opensource.org/licenses/mit"
+            }
+        ],
+        "name": "MIT/Expat License",
+        "other_names": [
+            {
+                "name": "MIT",
+                "note": "Because MIT has used many licenses for software, the Free Software Foundation considers MIT License ambiguous. The MIT License published on the OSI site is the same as the Expat License."
+            },
+            {
+                "name": "Expat",
+                "note": "Because MIT has used many licenses for software, the Free Software Foundation considers MIT License ambiguous. The MIT License published on the OSI site is the same as the Expat License."
+            }
+        ],
+        "superseded_by": null,
+        "text": [
+            {
+                "media_type": "text/html",
+                "title": "HTML",
+                "url": "https://opensource.org/licenses/mit"
+            }
+        ]
+    }
+]

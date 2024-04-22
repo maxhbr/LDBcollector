@@ -1,0 +1,17 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+
+canonicalName: "SSH Notice (short)"
+category: "SSH"
+spdxIdentifier: "SSH-short"
+
+alternativeNames:
+  - "SSH short notice"
+  - "Tatu Ylonen's original licence"
+  - "Tatu Ylonen's licence"
+  - "Tatu Ylonen's Licence"
+  - "Tatu Ylonen Licence"
+
+otherIds: 
+  - "scancode:tatu-ylonen"

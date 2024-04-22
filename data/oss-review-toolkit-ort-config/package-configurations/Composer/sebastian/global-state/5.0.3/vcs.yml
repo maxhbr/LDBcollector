@@ -1,0 +1,13 @@
+---
+id: "Composer:sebastian:global-state:5.0.3"
+vcs:
+  type: "Git"
+  url: "https://github.com/sebastianbergmann/global-state.git"
+  revision: "23bd5951f7ff26f12d4e3242864df3e08dec4e49"
+path_excludes:
+  - pattern: ".github/**"
+    reason: "BUILD_TOOL_OF"
+  - pattern: "tests/**"
+    reason: "TEST_OF"
+  - pattern: "tools/**"
+    reason: "BUILD_TOOL_OF"

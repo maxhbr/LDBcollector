@@ -1,0 +1,24 @@
+{
+"meta": {
+    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+    "comment": ""
+  },
+  "name": "Open Data Commons Attribution License v1.0",
+  "scancode_key": "odc-by-1.0", 
+  "spdxid": "ODC-By-1.0",
+  "aliases": [
+   "ODC-By-1.0",
+   "ODC By License 1.0",
+   "ODC-BY-1.0",
+   "Open Data Commons Attribution License 1.0",
+   "Open Data Commons Attribution License v1.0",
+   "scancode://odc-by-1.0",
+   "ODC By, Version 1.0",
+   "ODC By, 1.0",
+   "ODC By License, Version 1.0",
+   "ODC By License, 1.0",
+   "ODC Attribution License",
+   "ODC-By",
+   "scancode:odc-by-1.0"
+  ]
+}

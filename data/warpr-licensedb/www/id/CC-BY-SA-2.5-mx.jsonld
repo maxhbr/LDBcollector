@@ -1,0 +1,853 @@
+{
+    "@context": {
+        "cc": "http://creativecommons.org/ns#",
+        "dc": "http://purl.org/dc/terms/",
+        "dc11": "http://purl.org/dc/elements/1.1/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "li": "https://licensedb.org/ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "cc:legalcode": {
+            "@type": "@id"
+        },
+        "cc:permits": {
+            "@type": "@id"
+        },
+        "cc:requires": {
+            "@type": "@id"
+        },
+        "cc:prohibits": {
+            "@type": "@id"
+        },
+        "cc:jurisdiction": {
+            "@type": "@id"
+        },
+        "cc:licenseClass": {
+            "@type": "@id"
+        },
+        "dc:creator": {
+            "@type": "@id"
+        },
+        "dc:source": {
+            "@type": "@id"
+        },
+        "dc:replaces": {
+            "@type": "@id"
+        },
+        "dc:isBasedOn": {
+            "@type": "@id"
+        },
+        "dc:isReplacedBy": {
+            "@type": "@id"
+        },
+        "foaf:logo": {
+            "@type": "@id"
+        },
+        "li:plaintext": {
+            "@type": "@id"
+        },
+        "li:libre": {
+            "@type": "@id"
+        },
+        "owl:sameAs": {
+            "@type": "@id"
+        }
+    },
+    "@id": "https://licensedb.org/id/CC-BY-SA-2.5-mx",
+    "@type": [
+        "cc:License",
+        "li:License"
+    ],
+    "cc:jurisdiction": "http://creativecommons.org/international/mx/",
+    "cc:legalcode": "http://creativecommons.org/licenses/by-sa/2.5/mx/legalcode",
+    "cc:licenseClass": "http://creativecommons.org/license/",
+    "cc:permits": [
+        "cc:DerivativeWorks",
+        "cc:Distribution",
+        "cc:Reproduction"
+    ],
+    "cc:requires": [
+        "cc:Attribution",
+        "cc:Notice",
+        "cc:ShareAlike"
+    ],
+    "dc:creator": "http://creativecommons.org",
+    "dc:hasVersion": "2.5",
+    "dc:identifier": "by-sa",
+    "dc:source": "http://creativecommons.org/licenses/by-sa/2.5/",
+    "dc:title": [
+        {
+            "@language": "af",
+            "@value": "Erkenning-InsgelyksDeel 2.5 Mexiko"
+        },
+        {
+            "@language": "ar",
+            "@value": "نسب العمل- المشاركة على قدم المساواة 2.5 مكسيك"
+        },
+        {
+            "@language": "as",
+            "@value": "Attribution-ShareAlike 2.5 Mexico"
+        },
+        {
+            "@language": "ast",
+            "@value": "Attribution-ShareAlike 2.5 Mexico"
+        },
+        {
+            "@language": "ast-es",
+            "@value": "Attribution-ShareAlike 2.5 Mexico"
+        },
+        {
+            "@language": "az",
+            "@value": "Attribution-ShareAlike 2.5 Mexico"
+        },
+        {
+            "@language": "be",
+            "@value": "Attribution-ShareAlike 2.5 Мексіка"
+        },
+        {
+            "@language": "bg",
+            "@value": "Признание-Споделяне на споделеното 2.5 Мексико"
+        },
+        {
+            "@language": "bn",
+            "@value": "Attribution-ShareAlike 2.5 Mexico"
+        },
+        {
+            "@language": "ca",
+            "@value": "Reconeixement-CompartirIgual 2.5 Mèxic"
+        },
+        {
+            "@language": "cs",
+            "@value": "Uveďte autora-Zachovejte licenci 2.5 Mexiko"
+        },
+        {
+            "@language": "da",
+            "@value": "Navngivelse-DelPåSammeVilkår 2.5 Mexico"
+        },
+        {
+            "@language": "de",
+            "@value": "Namensnennung-Weitergabe unter gleichen Bedingungen 2.5 Mexiko"
+        },
+        {
+            "@language": "de-at",
+            "@value": "Namensnennung-Weitergabe unter gleichen Bedingungen 2.5 Mexiko"
+        },
+        {
+            "@language": "de-ch",
+            "@value": "Namensnennung-Weitergabe unter gleichen Bedingungen 2.5 Mexiko"
+        },
+        {
+            "@language": "el",
+            "@value": "Αναφορά Δημιουργού - Παρόμοια Διανομή 2.5 Μεξικό"
+        },
+        {
+            "@language": "en",
+            "@value": "Attribution-ShareAlike 2.5 Mexico"
+        },
+        {
+            "@language": "en-ca",
+            "@value": "Attribution-ShareAlike 2.5 Mexico"
+        },
+        {
+            "@language": "en-gb",
+            "@value": "Attribution-ShareAlike 2.5 Mexico"
+        },
+        {
+            "@language": "en-hk",
+            "@value": "Attribution-ShareAlike 2.5 Mexico"
+        },
+        {
+            "@language": "en-sg",
+            "@value": "Attribution-ShareAlike 2.5 Mexico"
+        },
+        {
+            "@language": "en-us",
+            "@value": "Attribution-ShareAlike 2.5 Mexico"
+        },
+        {
+            "@language": "eo",
+            "@value": "Atribuite-Samkondiĉe 2.5 Meksiko"
+        },
+        {
+            "@language": "es",
+            "@value": "Atribución-CompartirIgual 2.5 México"
+        },
+        {
+            "@language": "es-ar",
+            "@value": "Atribución-CompartirDerivadasIgual 2.5 México"
+        },
+        {
+            "@language": "es-cl",
+            "@value": "Atribución-LicenciarIgual 2.5 México"
+        },
+        {
+            "@language": "es-co",
+            "@value": "Reconocimiento-CompartirIgual 2.5 México"
+        },
+        {
+            "@language": "es-ec",
+            "@value": "Reconocimiento-CompartirIgual 2.5 México"
+        },
+        {
+            "@language": "es-es",
+            "@value": "Reconocimiento-CompartirIgual 2.5 México"
+        },
+        {
+            "@language": "es-gt",
+            "@value": "Reconocimiento-CompartirIgual 2.5 México"
+        },
+        {
+            "@language": "es-mx",
+            "@value": "Atribución-Licenciamiento Recíproco 2.5 México"
+        },
+        {
+            "@language": "es-pe",
+            "@value": "Reconocimiento-CompartirIgual 2.5 México"
+        },
+        {
+            "@language": "es-pr",
+            "@value": "Reconocimiento-CompartirIgual 2.5 México"
+        },
+        {
+            "@language": "et",
+            "@value": "Autorile viitamine + Jagamine samadel tingimustel 2.5 Mehhiko"
+        },
+        {
+            "@language": "eu",
+            "@value": "Aitortu-PartekatuBerdin 2.5 Mexiko"
+        },
+        {
+            "@language": "fa",
+            "@value": "Attribution-ShareAlike 2.5 مکزیک"
+        },
+        {
+            "@language": "fi",
+            "@value": "Nimeä-Tarttuva 2.5 Meksiko"
+        },
+        {
+            "@language": "fr",
+            "@value": "Paternité - Partage à l'Identique 2.5 Mexique"
+        },
+        {
+            "@language": "fr-ca",
+            "@value": "Paternité - Partage des Conditions Initiales à l'Identique 2.5 Mexique"
+        },
+        {
+            "@language": "fr-ch",
+            "@value": "Paternité - Partage des Conditions Initiales à l'Identique 2.5 Mexique"
+        },
+        {
+            "@language": "fr-lu",
+            "@value": "Paternité - Partage des Conditions Initiales à l'Identique 2.5 Mexique"
+        },
+        {
+            "@language": "ga",
+            "@value": "Attribution-ShareAlike 2.5 Mexico"
+        },
+        {
+            "@language": "gl",
+            "@value": "Recoñecemento-CompartirIgual 2.5 Mexico"
+        },
+        {
+            "@language": "he",
+            "@value": "ייחוס-שיתוף זהה 2.5 מקסיקו"
+        },
+        {
+            "@language": "hi",
+            "@value": "Attribution-ShareAlike 2.5 Mexico"
+        },
+        {
+            "@language": "hr",
+            "@value": "Imenovanje-Dijeli pod istim uvjetima 2.5 Meksiko"
+        },
+        {
+            "@language": "hu",
+            "@value": "Nevezd meg! - Így add tovább! 2.5 Mexikó"
+        },
+        {
+            "@language": "hy",
+            "@value": "Հղում - համանման տարածում 2.5 Մեքսիկա"
+        },
+        {
+            "@language": "id",
+            "@value": "Atribusi-BerbagiSerupa 2.5 Meksiko"
+        },
+        {
+            "@language": "is",
+            "@value": "Attribution-ShareAlike 2.5 Mexico"
+        },
+        {
+            "@language": "it",
+            "@value": "Attribuzione - Condividi allo stesso modo 2.5 Messico"
+        },
+        {
+            "@language": "it-ch",
+            "@value": "Attribuzione - Condividi allo stesso modo 2.5 Mexico"
+        },
+        {
+            "@language": "ja",
+            "@value": "表示 - 継承 2.5 メキシコ"
+        },
+        {
+            "@language": "ka",
+            "@value": "ავტორობის მითითებით – გავრცელება იგივე პირობებით  2.5 მექსიკა"
+        },
+        {
+            "@language": "kk",
+            "@value": "Attribution-ShareAlike 2.5 Mexico"
+        },
+        {
+            "@language": "ko",
+            "@value": "저작자표시-동일조건변경허락 2.5 멕시코"
+        },
+        {
+            "@language": "lt",
+            "@value": "Attribution-ShareAlike 2.5 Meksika"
+        },
+        {
+            "@language": "lv",
+            "@value": "Atsaucoties-Nemainot licenci 2.5 Meksika"
+        },
+        {
+            "@language": "mk",
+            "@value": "НаведиИзвор-СподелиПодИстиУслови 2.5 Мексико"
+        },
+        {
+            "@language": "ml",
+            "@value": "Attribution-ShareAlike 2.5 മെക്സിക്കൊ"
+        },
+        {
+            "@language": "mn",
+            "@value": "Attribution-ShareAlike 2.5 Mexico"
+        },
+        {
+            "@language": "ms",
+            "@value": "Pengiktirafan-PerkongsianSerupa 2.5 Mexico"
+        },
+        {
+            "@language": "nl",
+            "@value": "Naamsvermelding-GelijkDelen 2.5 Mexico"
+        },
+        {
+            "@language": "no",
+            "@value": "Navngivelse-DelPåSammeVilkår 2.5 Mexiko"
+        },
+        {
+            "@language": "nso",
+            "@value": "Tsebagatšo -Mohlakanelwa 2.5 Mexico"
+        },
+        {
+            "@language": "oci-es",
+            "@value": "Attribution-ShareAlike 2.5 Mexico"
+        },
+        {
+            "@language": "pl",
+            "@value": "Uznanie autorstwa-Na tych samych warunkach 2.5 Meksyk"
+        },
+        {
+            "@language": "pt",
+            "@value": "Atribuição - CompartilhaIgual 2.5 México"
+        },
+        {
+            "@language": "pt-br",
+            "@value": "Attribution-ShareAlike 2.5 Mexico"
+        },
+        {
+            "@language": "pt-pt",
+            "@value": "Atribuição-Partilha nos termos da mesma licença 2.5 Mexico"
+        },
+        {
+            "@language": "ro",
+            "@value": "Atribuire - Distribuire-în-condiţii-identice 2.5 Mexic"
+        },
+        {
+            "@language": "ru",
+            "@value": "Attribution-ShareAlike (Атрибуция — С сохранением условий) 2.5 Мексика"
+        },
+        {
+            "@language": "si-lk",
+            "@value": "Attribution-ShareAlike 2.5 Mexico"
+        },
+        {
+            "@language": "sl",
+            "@value": "Priznanje avtorstva-Deljenje pod enakimi pogoji 2.5 Mehika"
+        },
+        {
+            "@language": "sq",
+            "@value": "Attribution-ShareAlike 2.5 Meksikë"
+        },
+        {
+            "@language": "sr",
+            "@value": "Autorstvo-Deliti pod istim uslovima 2.5 Meksiko"
+        },
+        {
+            "@language": "sr",
+            "@value": "Ауторство-Делити под истим условима 2.5 Мексико"
+        },
+        {
+            "@language": "sr-latn",
+            "@value": "Autorstvo-Deliti pod istim uslovima 2.5 Meksiko"
+        },
+        {
+            "@language": "st",
+            "@value": "Attribution-ShareAlike 2.5 Mexico"
+        },
+        {
+            "@language": "sv",
+            "@value": "Erkännande-DelaLika 2.5 Mexiko"
+        },
+        {
+            "@language": "ta",
+            "@value": "Attribution-ShareAlike 2.5 Mexico"
+        },
+        {
+            "@language": "te",
+            "@value": "Attribution-ShareAlike 2.5 మెక్సికో"
+        },
+        {
+            "@language": "th",
+            "@value": "แสดงที่มา-อนุญาตแบบเดียวกัน 2.5 เม็กซิโก"
+        },
+        {
+            "@language": "tr",
+            "@value": "Alıntı-LisansıDevamEttirme 2.5 Meksika"
+        },
+        {
+            "@language": "uk",
+            "@value": "Attribution-ShareAlike 2.5 Mexico"
+        },
+        {
+            "@language": "ur",
+            "@value": "Attribution-ShareAlike 2.5 Mexico"
+        },
+        {
+            "@language": "vi",
+            "@value": "Attribution-ShareAlike 2.5 Mexico"
+        },
+        {
+            "@language": "zh",
+            "@value": "署名-相同方式共享 2.5 墨西哥"
+        },
+        {
+            "@language": "zh-hk",
+            "@value": "姓名標示-相同方式分享 2.5 墨西哥"
+        },
+        {
+            "@language": "zh-tw",
+            "@value": "姓名標示-相同方式分享 2.5 墨西哥"
+        },
+        {
+            "@language": "zu",
+            "@value": "Qaphela Umnikazi-Zihlanganyeleni 2.5 EMexico"
+        },
+        {
+            "@language": "zxx",
+            "@value": "${Attribution-ShareAlike} 2.5 ${Mexico}"
+        }
+    ],
+    "owl:sameAs": {
+        "@id": "http://creativecommons.org/licenses/by-sa/2.5/mx/",
+        "@type": "cc:License",
+        "cc:jurisdiction": "http://creativecommons.org/international/mx/",
+        "cc:legalcode": "http://creativecommons.org/licenses/by-sa/2.5/mx/legalcode",
+        "cc:licenseClass": "http://creativecommons.org/license/",
+        "cc:permits": [
+            "cc:DerivativeWorks",
+            "cc:Distribution",
+            "cc:Reproduction"
+        ],
+        "cc:requires": [
+            "cc:Attribution",
+            "cc:Notice",
+            "cc:ShareAlike"
+        ],
+        "dc:creator": "http://creativecommons.org",
+        "dc:hasVersion": "2.5",
+        "dc:identifier": "by-sa",
+        "dc:source": "http://creativecommons.org/licenses/by-sa/2.5/",
+        "dc:title": [
+            {
+                "@language": "af",
+                "@value": "Erkenning-InsgelyksDeel 2.5 Mexiko"
+            },
+            {
+                "@language": "ar",
+                "@value": "نسب العمل- المشاركة على قدم المساواة 2.5 مكسيك"
+            },
+            {
+                "@language": "as",
+                "@value": "Attribution-ShareAlike 2.5 Mexico"
+            },
+            {
+                "@language": "ast",
+                "@value": "Attribution-ShareAlike 2.5 Mexico"
+            },
+            {
+                "@language": "ast-es",
+                "@value": "Attribution-ShareAlike 2.5 Mexico"
+            },
+            {
+                "@language": "az",
+                "@value": "Attribution-ShareAlike 2.5 Mexico"
+            },
+            {
+                "@language": "be",
+                "@value": "Attribution-ShareAlike 2.5 Мексіка"
+            },
+            {
+                "@language": "bg",
+                "@value": "Признание-Споделяне на споделеното 2.5 Мексико"
+            },
+            {
+                "@language": "bn",
+                "@value": "Attribution-ShareAlike 2.5 Mexico"
+            },
+            {
+                "@language": "ca",
+                "@value": "Reconeixement-CompartirIgual 2.5 Mèxic"
+            },
+            {
+                "@language": "cs",
+                "@value": "Uveďte autora-Zachovejte licenci 2.5 Mexiko"
+            },
+            {
+                "@language": "da",
+                "@value": "Navngivelse-DelPåSammeVilkår 2.5 Mexico"
+            },
+            {
+                "@language": "de",
+                "@value": "Namensnennung-Weitergabe unter gleichen Bedingungen 2.5 Mexiko"
+            },
+            {
+                "@language": "de-at",
+                "@value": "Namensnennung-Weitergabe unter gleichen Bedingungen 2.5 Mexiko"
+            },
+            {
+                "@language": "de-ch",
+                "@value": "Namensnennung-Weitergabe unter gleichen Bedingungen 2.5 Mexiko"
+            },
+            {
+                "@language": "el",
+                "@value": "Αναφορά Δημιουργού - Παρόμοια Διανομή 2.5 Μεξικό"
+            },
+            {
+                "@language": "en",
+                "@value": "Attribution-ShareAlike 2.5 Mexico"
+            },
+            {
+                "@language": "en-ca",
+                "@value": "Attribution-ShareAlike 2.5 Mexico"
+            },
+            {
+                "@language": "en-gb",
+                "@value": "Attribution-ShareAlike 2.5 Mexico"
+            },
+            {
+                "@language": "en-hk",
+                "@value": "Attribution-ShareAlike 2.5 Mexico"
+            },
+            {
+                "@language": "en-sg",
+                "@value": "Attribution-ShareAlike 2.5 Mexico"
+            },
+            {
+                "@language": "en-us",
+                "@value": "Attribution-ShareAlike 2.5 Mexico"
+            },
+            {
+                "@language": "eo",
+                "@value": "Atribuite-Samkondiĉe 2.5 Meksiko"
+            },
+            {
+                "@language": "es",
+                "@value": "Atribución-CompartirIgual 2.5 México"
+            },
+            {
+                "@language": "es-ar",
+                "@value": "Atribución-CompartirDerivadasIgual 2.5 México"
+            },
+            {
+                "@language": "es-cl",
+                "@value": "Atribución-LicenciarIgual 2.5 México"
+            },
+            {
+                "@language": "es-co",
+                "@value": "Reconocimiento-CompartirIgual 2.5 México"
+            },
+            {
+                "@language": "es-ec",
+                "@value": "Reconocimiento-CompartirIgual 2.5 México"
+            },
+            {
+                "@language": "es-es",
+                "@value": "Reconocimiento-CompartirIgual 2.5 México"
+            },
+            {
+                "@language": "es-gt",
+                "@value": "Reconocimiento-CompartirIgual 2.5 México"
+            },
+            {
+                "@language": "es-mx",
+                "@value": "Atribución-Licenciamiento Recíproco 2.5 México"
+            },
+            {
+                "@language": "es-pe",
+                "@value": "Reconocimiento-CompartirIgual 2.5 México"
+            },
+            {
+                "@language": "es-pr",
+                "@value": "Reconocimiento-CompartirIgual 2.5 México"
+            },
+            {
+                "@language": "et",
+                "@value": "Autorile viitamine + Jagamine samadel tingimustel 2.5 Mehhiko"
+            },
+            {
+                "@language": "eu",
+                "@value": "Aitortu-PartekatuBerdin 2.5 Mexiko"
+            },
+            {
+                "@language": "fa",
+                "@value": "Attribution-ShareAlike 2.5 مکزیک"
+            },
+            {
+                "@language": "fi",
+                "@value": "Nimeä-Tarttuva 2.5 Meksiko"
+            },
+            {
+                "@language": "fr",
+                "@value": "Paternité - Partage à l'Identique 2.5 Mexique"
+            },
+            {
+                "@language": "fr-ca",
+                "@value": "Paternité - Partage des Conditions Initiales à l'Identique 2.5 Mexique"
+            },
+            {
+                "@language": "fr-ch",
+                "@value": "Paternité - Partage des Conditions Initiales à l'Identique 2.5 Mexique"
+            },
+            {
+                "@language": "fr-lu",
+                "@value": "Paternité - Partage des Conditions Initiales à l'Identique 2.5 Mexique"
+            },
+            {
+                "@language": "ga",
+                "@value": "Attribution-ShareAlike 2.5 Mexico"
+            },
+            {
+                "@language": "gl",
+                "@value": "Recoñecemento-CompartirIgual 2.5 Mexico"
+            },
+            {
+                "@language": "he",
+                "@value": "ייחוס-שיתוף זהה 2.5 מקסיקו"
+            },
+            {
+                "@language": "hi",
+                "@value": "Attribution-ShareAlike 2.5 Mexico"
+            },
+            {
+                "@language": "hr",
+                "@value": "Imenovanje-Dijeli pod istim uvjetima 2.5 Meksiko"
+            },
+            {
+                "@language": "hu",
+                "@value": "Nevezd meg! - Így add tovább! 2.5 Mexikó"
+            },
+            {
+                "@language": "hy",
+                "@value": "Հղում - համանման տարածում 2.5 Մեքսիկա"
+            },
+            {
+                "@language": "id",
+                "@value": "Atribusi-BerbagiSerupa 2.5 Meksiko"
+            },
+            {
+                "@language": "is",
+                "@value": "Attribution-ShareAlike 2.5 Mexico"
+            },
+            {
+                "@language": "it",
+                "@value": "Attribuzione - Condividi allo stesso modo 2.5 Messico"
+            },
+            {
+                "@language": "it-ch",
+                "@value": "Attribuzione - Condividi allo stesso modo 2.5 Mexico"
+            },
+            {
+                "@language": "ja",
+                "@value": "表示 - 継承 2.5 メキシコ"
+            },
+            {
+                "@language": "ka",
+                "@value": "ავტორობის მითითებით – გავრცელება იგივე პირობებით  2.5 მექსიკა"
+            },
+            {
+                "@language": "kk",
+                "@value": "Attribution-ShareAlike 2.5 Mexico"
+            },
+            {
+                "@language": "ko",
+                "@value": "저작자표시-동일조건변경허락 2.5 멕시코"
+            },
+            {
+                "@language": "lt",
+                "@value": "Attribution-ShareAlike 2.5 Meksika"
+            },
+            {
+                "@language": "lv",
+                "@value": "Atsaucoties-Nemainot licenci 2.5 Meksika"
+            },
+            {
+                "@language": "mk",
+                "@value": "НаведиИзвор-СподелиПодИстиУслови 2.5 Мексико"
+            },
+            {
+                "@language": "ml",
+                "@value": "Attribution-ShareAlike 2.5 മെക്സിക്കൊ"
+            },
+            {
+                "@language": "mn",
+                "@value": "Attribution-ShareAlike 2.5 Mexico"
+            },
+            {
+                "@language": "ms",
+                "@value": "Pengiktirafan-PerkongsianSerupa 2.5 Mexico"
+            },
+            {
+                "@language": "nl",
+                "@value": "Naamsvermelding-GelijkDelen 2.5 Mexico"
+            },
+            {
+                "@language": "no",
+                "@value": "Navngivelse-DelPåSammeVilkår 2.5 Mexiko"
+            },
+            {
+                "@language": "nso",
+                "@value": "Tsebagatšo -Mohlakanelwa 2.5 Mexico"
+            },
+            {
+                "@language": "oci-es",
+                "@value": "Attribution-ShareAlike 2.5 Mexico"
+            },
+            {
+                "@language": "pl",
+                "@value": "Uznanie autorstwa-Na tych samych warunkach 2.5 Meksyk"
+            },
+            {
+                "@language": "pt",
+                "@value": "Atribuição - CompartilhaIgual 2.5 México"
+            },
+            {
+                "@language": "pt-br",
+                "@value": "Attribution-ShareAlike 2.5 Mexico"
+            },
+            {
+                "@language": "pt-pt",
+                "@value": "Atribuição-Partilha nos termos da mesma licença 2.5 Mexico"
+            },
+            {
+                "@language": "ro",
+                "@value": "Atribuire - Distribuire-în-condiţii-identice 2.5 Mexic"
+            },
+            {
+                "@language": "ru",
+                "@value": "Attribution-ShareAlike (Атрибуция — С сохранением условий) 2.5 Мексика"
+            },
+            {
+                "@language": "si-lk",
+                "@value": "Attribution-ShareAlike 2.5 Mexico"
+            },
+            {
+                "@language": "sl",
+                "@value": "Priznanje avtorstva-Deljenje pod enakimi pogoji 2.5 Mehika"
+            },
+            {
+                "@language": "sq",
+                "@value": "Attribution-ShareAlike 2.5 Meksikë"
+            },
+            {
+                "@language": "sr",
+                "@value": "Autorstvo-Deliti pod istim uslovima 2.5 Meksiko"
+            },
+            {
+                "@language": "sr",
+                "@value": "Ауторство-Делити под истим условима 2.5 Мексико"
+            },
+            {
+                "@language": "sr-latn",
+                "@value": "Autorstvo-Deliti pod istim uslovima 2.5 Meksiko"
+            },
+            {
+                "@language": "st",
+                "@value": "Attribution-ShareAlike 2.5 Mexico"
+            },
+            {
+                "@language": "sv",
+                "@value": "Erkännande-DelaLika 2.5 Mexiko"
+            },
+            {
+                "@language": "ta",
+                "@value": "Attribution-ShareAlike 2.5 Mexico"
+            },
+            {
+                "@language": "te",
+                "@value": "Attribution-ShareAlike 2.5 మెక్సికో"
+            },
+            {
+                "@language": "th",
+                "@value": "แสดงที่มา-อนุญาตแบบเดียวกัน 2.5 เม็กซิโก"
+            },
+            {
+                "@language": "tr",
+                "@value": "Alıntı-LisansıDevamEttirme 2.5 Meksika"
+            },
+            {
+                "@language": "uk",
+                "@value": "Attribution-ShareAlike 2.5 Mexico"
+            },
+            {
+                "@language": "ur",
+                "@value": "Attribution-ShareAlike 2.5 Mexico"
+            },
+            {
+                "@language": "vi",
+                "@value": "Attribution-ShareAlike 2.5 Mexico"
+            },
+            {
+                "@language": "zh",
+                "@value": "署名-相同方式共享 2.5 墨西哥"
+            },
+            {
+                "@language": "zh-hk",
+                "@value": "姓名標示-相同方式分享 2.5 墨西哥"
+            },
+            {
+                "@language": "zh-tw",
+                "@value": "姓名標示-相同方式分享 2.5 墨西哥"
+            },
+            {
+                "@language": "zu",
+                "@value": "Qaphela Umnikazi-Zihlanganyeleni 2.5 EMexico"
+            },
+            {
+                "@language": "zxx",
+                "@value": "${Attribution-ShareAlike} 2.5 ${Mexico}"
+            }
+        ],
+        "owl:sameAs": "https://licensedb.org/id/CC-BY-SA-2.5-mx",
+        "foaf:logo": [
+            "http://i.creativecommons.org/l/by-sa/2.5/mx/80x15.png",
+            "http://i.creativecommons.org/l/by-sa/2.5/mx/88x31.png"
+        ]
+    },
+    "foaf:logo": [
+        "http://i.creativecommons.org/l/by-sa/2.5/mx/80x15.png",
+        "http://i.creativecommons.org/l/by-sa/2.5/mx/88x31.png"
+    ],
+    "li:id": "CC-BY-SA-2.5-mx",
+    "li:libre": "http://creativecommons.org/",
+    "li:name": "CC BY-SA 2.5 MX"
+}

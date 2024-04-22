@@ -1,0 +1,20 @@
+[license]
+
+expression = "LicenseRef-NPSL-0.94"
+status = [ "not-allowed" ]
+
+url = '''
+https://nmap.org/npsl/npsl-annotated.html
+https://svn.nmap.org/nmap/LICENSE
+'''
+
+[fedora]
+
+legacy-name = [
+    "Nmap Public Source License Version 0.92 (NPSL)"
+]
+
+notes = '''
+The "Proprietary software companies" text in the preamble is a field of use
+restriction.  
+'''

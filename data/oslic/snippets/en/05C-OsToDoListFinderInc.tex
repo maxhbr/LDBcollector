@@ -1,0 +1,536 @@
+% Telekom osCompendium 'for being included' snippet template
+%
+% (c) Karsten Reincke, Deutsche Telekom AG, Darmstadt 2011
+%
+% This LaTeX-File is licensed under the Creative Commons Attribution-ShareAlike
+% 3.0 Germany License (http://creativecommons.org/licenses/by-sa/3.0/de/): Feel
+% free 'to share (to copy, distribute and transmit)' or 'to remix (to adapt)'
+% it, if you '... distribute the resulting work under the same or similar
+% license to this one' and if you respect how 'you must attribute the work in
+% the manner specified by the author ...':
+%
+% In an internet based reuse please link the reused parts to www.telekom.com and
+% mention the original authors and Deutsche Telekom AG in a suitable manner. In
+% a paper-like reuse please insert a short hint to www.telekom.com and to the
+% original authors and Deutsche Telekom AG into your preface. For normal
+% quotations please use the scientific standard to cite.
+%
+% [ Framework derived from 'mind your Scholar Research Framework' 
+%   mycsrf (c) K. Reincke 2012 CC BY 3.0  http://mycsrf.fodina.de/ ]
+%
+
+
+%% use all entries of the bibliography
+%\nocite{*}
+
+\chapter{Open Source Use Cases: Find the License Fulfilling To-do Lists}\label{sec:OSUCfinder}
+
+\footnotesize
+\begin{quote}\itshape
+This chapter offers the \emph{Open Source Use Case Finder}: Based on the
+information gathered by a form, it allows to traverse a tree whose leaves are
+linked to the \emph{open source use cases} which finally refer to the respective
+to-do lists.
+\end{quote}
+\normalsize{}
+
+\section{A standard form for gathering the relevant information}
+\label{OSLiCStandardFormForGatheringInformation}
+ 
+{
+% The 8.5cm below were found by trial and error - 8.6cm will generate an
+% overfull hbox. 
+\newcommand{\question[1]}{\parbox[c][#1][c]{8.5cm}}
+\newcommand{\checkboxes}[2]{%
+    \parbox{7.5em}{
+        $\square$\hspace{1em}#1\\
+        $\square$\hspace{1em}#2}}
+
+\begin{small}
+\begin{tabular}[h]{|l|l|l|l|}
+\hline 
+  \ & \textit{Which open source software do you want to use?} & \ \\
+\hline 
+  \ & \textit{Under which open source license is it released?} & \ \\
+\hline
+\hline 
+\textbf{Focus} & \textbf{Questions} & \textbf{Answers}\\
+\hline 
+\hline 
+  Type
+  & \question[2.9cm]{
+    \textit{Is the open source software you want to use a library in the
+    broadest sense (an includable code \textbf{\underline{sni}}ppet, a linkable
+    \textbf{\underline{mo}}dule or \textbf{\underline{li}}brary, or a loadable
+    plugin), or is it an autonomous \textbf{\underline{pro}}gram,
+    \textbf{\underline{ap}}plication, or \textbf{\underline{se}}rver which can be
+    executed?}} 
+  & \checkboxes{snimoli}{proapse}
+  \\
+\hline 
+  State 
+  & \question[1.7cm]{
+    \textit{Do you want to leave the open source software
+    \textbf{\underline{unmodified}} as you have received it, or are you going to
+    create a \textbf{\underline{modified}} version of it?}} 
+  & \checkboxes{unmodified}{modified}
+  \\
+\hline 
+  Context 
+  & \question[2.15cm]{ 
+    \textit{Are you going to use / distribute the open source software as an
+    \textbf{\underline{independent}} unit, or do you plan to integrate it as an
+    \textbf{\underline{embedded}} component into a complexer piece of software?}}
+  & \checkboxes{independent}{embedded}
+  \\
+\hline 
+  Recipient 
+  & \question[1.7cm]{ 
+    \textit{Are you going to use the open source
+    software only \textbf{\underline{for}} \textbf{\underline{yourself}}, or do
+    you plan to (re)distribute it (also) \textbf{\underline{to}}
+    \textbf{\underline{other}} third parties?}}
+  & \checkboxes{4yourself}{2others}
+  \\
+\hline 
+\hline
+  Form 
+  & \question[1.7cm]{
+    \textit{Given you want to (re)distribute an open source based work [2others],
+    do you focus on distributing the \textbf{\underline{binaries}} or the
+    \textbf{\underline{sources}}?}}
+  & \checkboxes{binaries}{sources}
+  \\
+\hline
+  IoAccess 
+  & \question[2.6cm]{
+    \textit{Given you are using open source software [4yourself] by executing a
+    modified os program [modified] or by creating \& executing a program using
+    an os library [embedded], does this program distribute its IO data
+    \textbf{\underline{only locally}} or \textbf{\underline{via internet}}?}} &
+    \checkboxes{onlyLocally}{viaInternet}
+  \\
+\hline 
+\hline
+\end{tabular}
+\end{small}
+}
+
+As discussed earlier, there are of course some invalid or irrelevant
+combinations.\footnote{type::proapse excludes state::embedded;
+recipient::4yourself excludes the combination with state::independent and
+type::snimoli; any value of class 'mode' implies state::embedded; form is only
+relevant if recipient::2others; ioAccess is only relevant if
+recipient::4yourself[for details see page
+\pageref{InvalidFinderTokenCombinations}]. If you have encountered one of these
+invalid combinations, please check the corresponding explanations.} Here are
+some extra explanations concerning the classes resp. the focuses:
+
+\begin{description}
+\item[Type:] A piece of (open source) software is a program, an application, or
+a server, only if you can start its binary form with your normal program
+launcher, or (in case of a text file which still must be interpreted by an
+interpreter like php, perl, bash etc.) if you can start an interpreter which
+takes the file as one of its arguments and executes the commands.
+\item[State:] You are modifying a piece of (open source) software if you expand,
+reduce or modify at least one of the received software files, and---in case of
+dealing with binary object code---if you (re)compile and (re)link the modified
+software to a new binary file. But if you only modify some of the configuration
+files, you are not modifying the open source software itself.
+\item[Context:] You are using a piece of open source software as an embedded
+component of a larger unit \ldots
+  \begin{itemize}
+  \item  if one of your files of the larger unit contains a verbatim or a
+  modified copy (i.e.\ a snippet) of the received open source software, or
+  \item if your larger unit contains an include statement referring to a
+  functionally defining file of the received open source software, or
+  \item if your larger unit calls a function defined in the received open source
+  software, or
+  \item if your development environment contains a compiler or linker directive
+  referring to the received open source software (binaries) and if your larger
+  unit can't be executed without resolving this linker directive.
+  \end{itemize}
+\item[Recipient:] You are using the received open source software only for
+yourself, if you as a person do not pass it to other entities like persons,
+organizations, companies etc., or if you---as a member of a specific
+development group---pass it only to the other members of your development
+group. But if you store open source software on any device such as a mobile
+phone, an USB stick, etc.\ or if you attach it to any transport medium like
+email etc.\ and if you then sell, give away, or simply send this device or
+transport medium to anyone (other than a direct member of your development
+group) then you indeed hand the open source software over to third
+parties.\footnote{Please remember that---at least in Germany---there are
+opinions that even handing over software to another legal entity or department
+of the same company is also a kind of distribution. It is always safest to take
+the broadest possible meaning.}
+\item[Form:] Open source software knows two ways to distribute the software: in
+the form of binaries and in the form of sources. Mostly it is up to you to
+decide whether you want to distribute only the binaries or whether you are
+intentionally going to distribute the sources (too). At a first glance, the
+concepts 'sources' and 'binaries' seems to be clearly distinguished.
+On the one hand, compiled sources should be taken as binaries. On the other
+hand, editable pieces of software are denoted by the concept 'sources'. But
+sometimes the difference is not as clear as wished: For example, you can modify
+even already compiled object files by using an hex-editor. Or it is very
+difficult to modify the minimized versions of javascript files even if they are
+indeed text files. Therefore, the OSLiC 'reuses' a famous \textbf{rule of
+thumb}: \enquote{The source code for a work means the preferred form of the work
+for making modifications to it}.\citeGPLtwo{§3} All other forms are denoted by
+the concept of 'binaries'. Based on this specification, you can respect some
+special conditions if you want to distribute the sources and/or the binaries.
+\item[ioAccess:] If you execute an open source program or an own program using
+an open source library, then (normally) you do not distribute that software.
+Under these circumstances, the most open source licenses do not require anything
+for executing the program compliantly - even if it is the base of a globally
+used internet service. For closing this 'gap', the AGPL has been invented: Like
+the GPL, the AGPL let the obligation to fulfill the well known set of GPL tasks
+be triggered by distributing the software. But, it let these tasks also be
+triggered by an established remote network interaction: whoever interacts with
+the locally executed program remotely through a computer network gets all the
+rights which normally the receiver of a distribution gets. Nevertheless, the
+AGPL does not wish to cause an overhead of tasks: Only \emph{locally excuted
+open source programs which have been modfied} or \emph{locally executed own
+programs using an AGPL licensed library} shall indeed trigger the fulfillment of
+the requirements. Thus, we introduced the features \emph{ioAccess:onlyLocally}
+and \emph{ioAccess:viaInternet}: They are only relevant if you uses a program
+only for yourself (4yourself) \textbf{and} [ (if that AGPL licensed program has
+been modified \{proapse and modified\}) \textbf{or} (if that program uses an
+embedded AGPL licensed library \{snimoli and embedded\}) ].
+
+\end{description}
+
+\section{The taxonomic Open Source Use Case Finder}
+
+Now, after having gathered the necessary information, determine your 
+open source use case by traversing the following tree and its corresponding
+branches:
+
+{
+\newcommand{\choicetext}[2]{\tiny #1:\\ \textbf{\textit{#2}}}
+
+\newcommand{\cunmodified}{\choicetext{state}{unmodified}}
+\newcommand{\cmodified}{\choicetext{state}{modified}}
+\newcommand{\cindependent}{\choicetext{context}{independent}}
+\newcommand{\cembedded}{\choicetext{context}{embedded}}
+\newcommand{\cyourself}{\choicetext{recipient}{4yourself}}
+\newcommand{\cothers}{\choicetext{recipient}{2others}}
+\newcommand{\csources}{\choicetext{form}{sources}}
+\newcommand{\cbinaries}{\choicetext{form}{binaries}}
+\newcommand{\conlylocal}{\choicetext{ioAccess}{onlyLocal}}
+\newcommand{\cviainternet}{\choicetext{ioAccess}{viaInternet}}
+
+
+\newcommand{\osuctxtshort}[1]{$\Rightarrow$ OSUC-#1: \textit{p.\ \pageref{OSUC-#1-DEF}}}
+\newcommand{\osuctxtbreak}[1]{$\Rightarrow$ OSUC-#1\\ \textit{(see p.\ \pageref{OSUC-#1-DEF})}}
+\newcommand{\osucchild}[1]{child { node[anchor=west] {#1} edge from parent[draw=none] }}
+
+\tikzset{choice/.style={rectangle, draw, rounded corners}}
+
+\begin{tikzpicture}[
+    font=\scriptsize,
+    align=left,
+    grow'=right,
+    level 1/.style={sibling distance=27em, level distance=18mm},
+    level 2/.style={sibling distance=15em, level distance=18mm},
+    level 3/.style={sibling distance=8em, level distance=24mm},
+    level 4/.style={sibling distance=5em, level distance=24mm},
+    level 5/.style={sibling distance=2.5em, level distance=24mm},
+    level 6/.style={sibling distance=1em, level distance=18mm},
+%     level 3/.style={sibling distance=7em,  level distance=18mm, anchor=west, minimum width=2cm},
+%     level 4/.style={sibling distance=3em,  level distance=18mm, minimum width=1.65cm},
+%     level 5/.style={sibling distance=3em,  level distance=18mm, minimum width=1.45cm},
+%     level 6/.style={sibling distance=3em,  level distance=6mm},
+]
+\node [ellipse,draw] {OSS}
+    child { node [choice] { \choicetext{type}{proapse} }
+      child { node [choice] {\cunmodified}
+        child { node [choice] {\cindependent}
+          child { node[choice] {\cyourself} 
+            \osucchild{\osuctxtshort{01}}
+          }
+          child { node[choice] {\cothers} 
+            child { node[choice] {\csources} 
+              \osucchild{\osuctxtbreak{02S}}
+            }
+            child { node[choice] {\cbinaries} 
+             \osucchild{\osuctxtbreak{02B}}
+            }
+          }
+        }
+      }
+      child { node [choice] {\cmodified}
+        child { node [choice] {\cindependent}
+          child { node[choice] {\cyourself} 
+            child { node[choice] {\conlylocal} 
+              \osucchild{\osuctxtbreak{03L}}
+            }
+            child { node[choice] {\cviainternet} 
+              \osucchild{\osuctxtbreak{03N}}
+            }
+          }
+          child { node[choice] {\cothers} 
+            child { node[choice] {\csources} 
+              \osucchild{\osuctxtbreak{04S}}
+            }
+            child { node[choice] {\cbinaries} 
+              \osucchild{\osuctxtbreak{04B}}
+            }
+          }
+        }
+      }
+    }
+    child { node [choice] { \choicetext{type}{snimoli} }
+      child { node [choice] {\cunmodified}
+        child { node [choice] {\cindependent} 
+          child { node[choice] {\cothers} 
+            child { node[choice] {\csources} 
+              \osucchild{\osuctxtbreak{05S}}
+            }
+            child { node[choice] {\cbinaries} 
+              \osucchild{\osuctxtbreak{05B}}
+            }
+          }
+        }
+        child { node [choice] {\cembedded} 
+          child { node[choice] {\cyourself} 
+            child { node[choice] {\conlylocal} 
+              \osucchild{\osuctxtbreak{06L}}
+            }
+            child { node[choice] {\cviainternet} 
+              \osucchild{\osuctxtbreak{06N}}
+            }
+          }
+          child { node[choice] {\cothers} 
+            child { node[choice] {\csources} 
+              \osucchild{\osuctxtbreak{07S}}
+            }
+            child { node[choice] {\cbinaries} 
+              \osucchild{\osuctxtbreak{07B}}
+            }
+          }
+        }
+      }
+      child { node [choice] {\cmodified}
+        child { node [choice] {\cindependent} 
+          child { node[choice] {\cothers} 
+            child { node[choice] {\csources} 
+              \osucchild{\osuctxtbreak{08S}}
+            }
+            child { node[choice] {\cbinaries} 
+              \osucchild{\osuctxtbreak{08B}}
+            }
+          }
+        }
+        child { node [choice] {\cembedded} 
+          child { node[choice] {\cyourself} 
+            child { node[choice] {\conlylocal} 
+              \osucchild{\osuctxtbreak{09L}}
+            }
+            child { node[choice] {\cviainternet} 
+              \osucchild{\osuctxtbreak{09N}}
+            }
+          }
+          child { node[choice] {\cothers} 
+            child { node[choice] {\csources} 
+              \osucchild{\osuctxtbreak{10S}}
+            }
+            child { node[choice] {\cbinaries} 
+              \osucchild{\osuctxtbreak{10B}}
+            }
+          }
+        }
+      }
+    };
+\end{tikzpicture}
+\label{OSLiCUseCaseFinder}
+}
+
+
+\section{The open source use cases and its to-do list references}
+
+On the following pages, each \textbf{O}pen \textbf{S}ource \textbf{U}se
+\textbf{C}ase is textually specified one more time and complemented by a list of
+page numbers. Each of these pages covers the license-specific to-do list whose
+items together offer a processable way for acting according to the license under
+the circumstances of the described \textbf{O}pen \textbf{S}ource \textbf{U}se
+\textbf{C}ase.
+
+
+\begin{osucdefinitions}
+\bgroup
+\newcommand{\osuclinktable}[1]{%
+  To see the \textit{specific, license fulfilling to-do lists}
+  jump to the following pages:
+  \begin{itemize}
+    \item p.\ \pageref{OSUC-#1-AGPL} for the \textbf{AGPL-3.0}
+      \textit{(= GNU Affero General Public License)} 
+    \item p.\ \pageref{OSUC-#1-APL} for the \textbf{Apache-2.0}
+      \textit{(= Apache License)}
+    \item p.\ \pageref{OSUC-#1-BSD2} for the \textbf{BSD-2-Clause} License
+      \textit{(= Berkeley Software Distribution)}
+    \item p.\ \pageref{OSUC-#1-BSD3} for the \textbf{BSD-3-Clause} License
+      \textit{(= Berkeley Software Distribution)}
+    \item p.\ \pageref{OSUC-#1-CDDL} for the \textbf{CDDL-1.0}
+      \textit{(= Common Develop and Distribution License)}  
+    \item p.\ \pageref{OSUC-#1-EPL} for the \textbf{EPL-1.0}
+      \textit{(= Eclipse Public License)}     
+    \item p.\ \pageref{OSUC-#1-EUPL} for the \textbf{EUPL-1.1}
+      \textit{(= European Union Public License)} 
+    \item p.\ \pageref{OSUC-#1-GPL2} for the \textbf{GPL-2.0}
+       \textit{(= GNU General Public License Version 2)} 
+    \item p.\ \pageref{OSUC-#1-GPL3} for the \textbf{GPL-3.0}
+       \textit{(= GNU General Public License Version 3)} 
+    \item p.\ \pageref{OSUC-#1-LGPL2} for the \textbf{LGPL-2.1}
+      \textit{(= GNU Lesser General Public License Version 2.1)}           
+    \item p.\ \pageref{OSUC-#1-LGPL3} for the \textbf{LGPL-3.0}
+      \textit{(= GNU Lesser General Public License Version 3)}           
+    \item p.\ \pageref{OSUC-#1-MIT} for the \textbf{MIT} License
+       \textit{(= Massachusetts Institute of Technology)} 
+    \item p.\ \pageref{OSUC-#1-MPL} for the \textbf{MPL}
+      \textit{(= Mozilla Public License)}     
+    \item p.\ \pageref{OSUC-#1-MSPL} for the \textbf{MS-PL}
+      \textit{(= Microsoft Public License)} 
+    \item p.\ \pageref{OSUC-#1-PGL} for the \textbf{PostgreSQL}
+      \textit{(= Postgres License)} 
+    \item p.\ \pageref{OSUC-#1-PHP} for the \textbf{PHP-3.0} License 
+  \end{itemize}}
+
+\newcommand{\osucitem}[3]{%
+  \osucdef{#1}{#2}{#3}
+  \osuclinktable{#1}}
+
+\begin{description}
+\label{OSUCList}
+\osucitem{01}{proapse, unmodified, independent, 4yourself}{%
+Only for yourself, you are going to use an unmodified open source program,
+application, or server just as you received it. But you do not combine it with
+other components in the sense of software development} 
+
+\osucitem{02S}{proapse, unmodified, independent, 2others, sources}{%
+Just as you received it, you are going to distribute an unmodified open source
+program, application, or server to third parties in the form of sources. In this
+act of distribution, you do not combine this program, application, or server
+with other software components in the sense of software development} 
+
+\osucitem{02B}{proapse, unmodified, independent, 2others, binaries}{%
+Just as you received it, you are going to distribute an unmodified open source
+program, application, or server to third parties in the form of binaries. In
+this act of distribution, you do not combine this program, application, or
+server with other software components in the sense of software development} 
+  
+% \osucitem{03}{proapse, modified, independent, 4yourself}{%
+% Only for yourself, you are going to modify an open source program, application,
+% or server after you received it and before you will use it. But you do not
+% combine it with other components in the sense of software development} 
+
+\osucitem{03L}{proapse, modified, independent, 4yourself, onlyLocal}{% 
+You are executing an open source program, application, or server which you have
+modified (but not combined with other components in the sense of software
+development) and which distributes its input/output only locally to you}
+
+\osucitem{03N}{proapse, modified, independent, 4yourself, viaInternet}{% 
+You are executing an open source program, application, or server which you have
+modified (but not combined with other components in the sense of software
+development) and which distributes its input/output to you or other users via the
+internet}
+
+\osucitem{04S}{proapse, modified, independent, 2others, sources}{%
+You are going to modify an open source program, application, or server after you
+received it and  before you will distribute it to third parties in the form of
+sources. But you do not combine this modified program, application, or server
+with other software components in the sense of software development}
+  
+\osucitem{04B}{proapse, modified, independent, 2others, binaries}{%
+You are going to modify an open source program, application, or server after you
+received it and before you will distribute it to third parties in the form of
+binaries. But you do not combine this modified program, application, or server
+with other software components in the sense of software development}
+
+\osucitem{05S}{snimoli, unmodified, independent, 2others, sources}{%
+Just as you received it, you are going to distribute an unmodified open source
+library, code snippet, module, or plugin to third parties in the form of
+sources. In this act of distribution, you do not combine this library, code
+snippet, module, or plugin with other software components in the sense of
+software development} 
+
+\osucitem{05B}{snimoli, unmodified,independent, 2others, binaries}{%
+Just as you received it, you are going to distribute an unmodified open source
+library, code snippet, module, or plugin to third parties in the form of
+binaries. In this act of distribution, you do not combine this library, code
+snippet, module, or plugin with other software components in the sense of
+software development} 
+
+% \osucitem{06}{snimoli, unmodified, embedded, 4yourself}{%
+% Only for yourself and just as you received it, you are going to combine an
+% unmodified open source library, code snippet, module, or plugin into a larger
+% software unit as one of its parts}  
+
+\osucitem{06L}{snimoli, umodified, embedded, 4yourself, onlyLocal}{% 
+You are executing any application which distributes input/output only locally to
+you and which uses an unmodified embedded open source library, code snippet,
+module, or plugin}
+
+\osucitem{06N}{snimoli, umodified, embedded, 4yourself, viaInternet}{%
+You are executing any application which distributes its input/output to you or
+other users via the internet and which uses an unmodified embedded open source
+library, code snippet, module, or plugin}
+
+
+\osucitem{07S}{snimoli, unmodified, embedded, 2others, sources}{%
+Just as you received it and before you will distribute it to third parties in
+the form of sources and together with a larger software unit, you are going to
+combine and embed an unmodified open source library, code snippet, module, or
+plugin into that larger software unit in the sense of software development}
+
+\osucitem{07B}{snimoli, unmodified, embedded, 2others, binaries}{%
+Just as you received it and before you will distribute it to third parties in
+the form of binaries and together with a larger software unit, you are going to
+combine and embed an unmodified open source library, code snippet, module, or
+plugin into that larger software unit in the sense of software development}
+
+\osucitem{08S}{snimoli, modified, independent, 2others, sources}{%
+Before you will distribute it to third parties in the form of sources, you are
+going to modify an open source library, code snippet, module, or plugin. But you
+do not combine it with other software components in the sense of software
+development}  
+
+\osucitem{08B}{snimoli, modified, independent, 2others, binaries}{%
+Before you will distribute it to third parties in the form of binaries, you are
+going to modify an open source library, code snippet, module, or plugin. But you
+do not combine it with other software components in the sense of software
+development} 
+
+% \osucitem{09}{snimoli, modified, embedded, 4yourself}{%
+% Only for yourself, you are going to modify an open source library, code snippet,
+% module, or plugin, and you will combine it in the sense of software development
+% into a larger software unit as one of its parts} 
+
+\osucitem{09L}{snimoli, modified, embedded, 4yourself, onlyLocal}{% 
+You are executing any application which distributes input/output only locally to
+you and which uses an embedded open source library, code snippet, module, or
+plugin -- being modified by you}
+
+\osucitem{09N}{snimoli, modified, embedded, 4yourself, viaInternet}{%
+You are executing any application which distributes its input/output to you or
+other users via the internet and which uses an embedded open source library,
+code snippet, module, or plugin -- being modified by you}
+
+\osucitem{10S}{snimoli, modified, embedded, 2others, sources}{%
+Before you will distribute it to third parties in the form of sources, you are
+going to modify an open source library, code snippet, module, or plugin, which
+you combine with other software components in the sense of software development}
+
+\osucitem{10B}{snimoli, modified, embedded, 2others, binaries}{%
+Before you will distribute it to third parties in the form of binaries, you are
+going to modify an open source library, code snippet, module, or plugin, which
+you combine with other software components in the sense of software development}
+\end{description}
+\egroup
+\end{osucdefinitions}
+
+%\bibliography{../../../bibfiles/oscResourcesEn}
+
+% Local Variables:
+% mode: latex
+% fill-column: 80
+% End:

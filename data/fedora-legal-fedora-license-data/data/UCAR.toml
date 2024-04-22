@@ -1,0 +1,14 @@
+[license]
+
+expression = "UCAR"
+status = [ "allowed" ]
+
+[fedora]
+
+legacy-name = [
+    "UCAR License"
+]
+
+legacy-abbreviation = [
+    "UCAR"
+]

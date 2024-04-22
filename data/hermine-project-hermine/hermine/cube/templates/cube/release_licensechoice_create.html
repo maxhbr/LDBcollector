@@ -1,0 +1,55 @@
+<!--
+SPDX-FileCopyrightText: 2022 Hermine-team <hermine@inno3.fr>
+SPDX-License-Identifier: AGPL-3.0-only
+-->
+{% extends "cube/cube.html" %}
+{% load cube_tags %}
+{% block title %}{{ form.usage.release.product.name }} {{ form.usage.release.release_number }}{% endblock %}
+{% block breadcrumbs %}
+  <ul>
+    <li><a href="{% url 'cube:dashboard' %}">Hermine</a></li>
+    <li><a href="{% url 'cube:product_detail' form.usage.release.product.id %}">{{ form.usage.release.product.name }}</a></li>
+    <li><a href="{% url 'cube:release_validation' form.usage.release.id %}">{{ form.usage.release.release_number }}</a></li>
+    <li>Add license choice</li>
+  </ul>
+{% endblock %}
+{% block content %}
+  <div class="columns">
+    <div class="column">
+      <form method="post" action="{% url "cube:release_licensechoice_create" form.usage.id %}">
+        {% csrf_token %}
+        <div class="field is-horizontal bulma">
+          <div class="field-label">Component validated license expression:</div>
+          <div class="field-body"><strong>{{ form.usage.version.effective_license }}</strong></div>
+        </div>
+        {{ form }}
+        <div class="field is-horizontal bulma">
+          <div class="field-label"> </div>
+          <div class="control field-body">
+            <button type="submit" value="Save" class="button is-link">Save</button>
+          </div>
+        </div>
+
+      </form>
+    </div>
+    <div class="column is-two-fifths">
+      <div class="card">
+        <div class="card-content">
+          <h4 class="is-4"><i class="fa fa-info-circle" aria-hidden="true"></i> Licenses status</h4>
+          <table>
+            <tr>
+              <th>Identifier</th>
+              <th>Status</th>
+            </tr>
+            {% for license in form.usage.version.licenses %}
+              <tr>
+                <td><a href="{% url "cube:license_detail" license.id %}">{{ license.spdx_id }}</a></td>
+                <td><span class="tag {{ license|licenseAllowedCSS }}">{{ license.get_allowed_display }}</span></td>
+              </tr>
+            {% endfor %}
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

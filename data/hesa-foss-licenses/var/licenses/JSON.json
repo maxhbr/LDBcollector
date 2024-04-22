@@ -1,0 +1,15 @@
+{
+"meta": {
+    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+    "comment": ""
+  },
+  "name": "JSON License",
+  "scancode_key": "json", 
+  "spdxid": "JSON",
+  "aliases": [
+   "JSON",
+   "JSON License",
+   "scancode://json",
+   "JSON evil license"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "@context": {
+    "id": {
+      "@id": "schema:identifier"
+    },
+    "identifiers": {
+      "@container": "@index",
+      "@id": "schema:identifier"
+    },
+    "name": {
+      "@id": "schema:name"
+    },
+    "schema": "https://schema.org/",
+    "tags": {
+      "@id": "schema:keywords"
+    },
+    "uris": {
+      "@container": "@list",
+      "@id": "schema:url"
+    }
+  }
+}

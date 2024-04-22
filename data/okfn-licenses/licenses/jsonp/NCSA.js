@@ -1,0 +1,15 @@
+license_callback({
+  "domain_content": false,
+  "domain_data": false,
+  "domain_software": true,
+  "family": "",
+  "id": "NCSA",
+  "legacy_ids": ["uoi-ncsa"],
+  "od_conformance": "not reviewed",
+  "osd_conformance": "approved",
+  "maintainer": "",
+  "status": "active",
+  "title": "University of Illinois/NCSA Open Source License",
+  "url": "https://opensource.org/licenses/NCSA"
+}
+);

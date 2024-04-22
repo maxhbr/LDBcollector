@@ -1,0 +1,17 @@
+{
+  "@context": "https://wking.github.io/fsf-api/schema/license.jsonld",
+  "id": "Zend",
+  "identifiers": {
+    "spdx": [
+      "Zend-2.0"
+    ]
+  },
+  "name": "Zend License, Version 2.0",
+  "tags": [
+    "libre"
+  ],
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#Zend",
+    "http://directory.fsf.org/wiki/License:ZELv2.0"
+  ]
+}

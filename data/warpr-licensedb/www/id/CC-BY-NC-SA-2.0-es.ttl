@@ -1,0 +1,247 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/elements/1.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://creativecommons.org/licenses/by-nc-sa/2.0/es/> a cc:License ;
+    cc:jurisdiction <http://creativecommons.org/international/es/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nc-sa/2.0/es/legalcode.ca>,
+        <http://creativecommons.org/licenses/by-nc-sa/2.0/es/legalcode.es> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:prohibits cc:CommercialUse ;
+    cc:requires cc:Attribution,
+        cc:Notice,
+        cc:ShareAlike ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.0" ;
+    dc:identifier "by-nc-sa" ;
+    dc:isReplacedBy <http://creativecommons.org/licenses/by-nc-sa/2.1/es/> ;
+    dc:source <http://creativecommons.org/licenses/by-nc-sa/2.0/> ;
+    dc:title "Erkenning-Niekommersieel-InsgelyksDeel 2.0 Spanje"@af,
+        "المشاركة على قدم المساواة-غير تجاري-نسب العمل 2.0 اسبانيا"@ar,
+        "Attribution-NonCommercial-ShareAlike 2.0 Spain"@as,
+        "Attribution-NonCommercial-ShareAlike 2.0 Spain"@ast,
+        "Attribution-NonCommercial-ShareAlike 2.0 Spain"@ast-es,
+        "Attribution-NonCommercial-ShareAlike 2.0 Spain"@az,
+        "Attribution-NonCommercial-ShareAlike 2.0 Іспанія"@be,
+        "Признание-Некомерсиално-Споделяне на споделеното 2.0 Испания"@bg,
+        "Attribution-NonCommercial-ShareAlike 2.0 Spain"@bn,
+        "Reconeixement-NoComercial-CompartirIgual 2.0 Espanya"@ca,
+        "Uveďte autora-Nevyužívejte dílo komerčně-Zachovejte licenci 2.0 Španělsko"@cs,
+        "Navngivelse-IkkeKommerciel–DelPåSammeVilkår 2.0 Spanien"@da,
+        "Namensnennung-Nicht-kommerziell-Weitergabe unter gleichen Bedingungen 2.0 Spanien"@de,
+        "Namensnennung-NichtKommerziell-Weitergabe unter gleichen Bedingungen 2.0 Spanien"@de-at,
+        "Namensnennung-NichtKommerziell-Weitergabe unter gleichen Bedingungen 2.0 Spanien"@de-ch,
+        "Αναφορά Δημιουργού - Μη Εμπορική Χρήση - Παρόμοια Διανομή 2.0 Ισπανία"@el,
+        "Attribution-NonCommercial-ShareAlike 2.0 Spain"@en,
+        "Attribution-NonCommercial-ShareAlike 2.0 Spain"@en-ca,
+        "Attribution-NonCommercial-ShareAlike 2.0 Spain"@en-gb,
+        "Attribution-NonCommercial-ShareAlike 2.0 Spain"@en-hk,
+        "Attribution-NonCommercial-ShareAlike 2.0 Spain"@en-sg,
+        "Attribution-NonCommercial-ShareAlike 2.0 Spain"@en-us,
+        "Atribuite-Nekomerce-Samkondiĉe 2.0 Hispanujo"@eo,
+        "Atribución-NoComercial-CompartirIgual 2.0 España"@es,
+        "Atribución-NoComercial-CompartirDerivadasIgual 2.0 España"@es-ar,
+        "Atribución-NoComercial-LicenciarIgual 2.0 España"@es-cl,
+        "Reconocimiento-NoComercial-CompartirIgual 2.0 España"@es-co,
+        "Reconocimiento-NoComercial-CompartirIgual 2.0 España"@es-ec,
+        "Reconocimiento-NoComercial-CompartirIgual 2.0 España"@es-es,
+        "Reconocimiento-NoComercial-CompartirIgual 2.0 España"@es-gt,
+        "Atribución-No Comercial-Licenciamiento Recíproco 2.0 España"@es-mx,
+        "Reconocimiento-NoComercial-CompartirIgual 2.0 España"@es-pe,
+        "Reconocimiento-NoComercial-CompartirIgual 2.0 España"@es-pr,
+        "Autorile viitamine + Mitteäriline eesmärk + Jagamine samadel tingimustel 2.0 Hispaania"@et,
+        "Aitortu-EzKomertziala-PartekatuBerdin 2.0 Espainia"@eu,
+        "Attribution-NonCommercial-ShareAlike 2.0 اسپانیا"@fa,
+        "Nimeä-Epäkaupallinen-Tarttuva 2.0 Espanja"@fi,
+        "Attribution - Pas d'Utilisation Commerciale - Partage à l'Identique 2.0 Espagne"@fr,
+        "Paternité - Pas d'Utilisation Commerciale - Partage des Conditions Initiales à l'Identique 2.0 Espagne"@fr-ca,
+        "Paternité - Pas d'Utilisation Commerciale - Partage des Conditions Initiales à l'Identique 2.0 Espagne"@fr-ch,
+        "Paternité - Pas d'Utilisation Commerciale - Partage des Conditions Initiales à l'Identique 2.0 Espagne"@fr-lu,
+        "Attribution-NonCommercial-ShareAlike 2.0 Spain"@ga,
+        "Recoñecemento-NonComercial-CompartirIgual 2.0 España"@gl,
+        "ייחוס-שימוש לא מסחרי-שיתוף זהה 2.0 ספרד"@he,
+        "Attribution-NonCommercial-ShareAlike 2.0 Spain"@hi,
+        "Imenovanje-Nekomercijalno-Dijeli pod istim uvjetima 2.0 Španjolska"@hr,
+        "Nevezd meg! - Ne add el! - Így add tovább! 2.0 Spanyolország"@hu,
+        "Հղում - ոչ-առևտրային օգտագործում - համանման տարածում 2.0 Իսպանիա"@hy,
+        "Atribusi-NonKomersial-BerbagiSerupa 2.0 Spanyol"@id,
+        "Attribution-NonCommercial-ShareAlike 2.0 Spánn"@is,
+        "Attribuzione - Non commerciale - Condividi allo stesso modo 2.0 Spagna"@it,
+        "Attribuzione - Non commerciale - Condividi allo stesso modo 2.0 Spagna"@it-ch,
+        "表示 - 非営利 - 継承 2.0 スペイン"@ja,
+        "ავტორობის მითითებით–არაკომერციული გამოყენებისთვის–გამოყენება იგივე პირობებით 2.0 ესპანეთი"@ka,
+        "Attribution-NonCommercial-ShareAlike 2.0 Spain"@kk,
+        "저작자표시-비영리-동일조건변경허락 2.0 스페인"@ko,
+        "Attribution-NonCommercial-ShareAlike 2.0 Ispanų"@lt,
+        "Atsaucoties-Nekomerciāls-Nemainot licenci 2.0 Spānija"@lv,
+        "НаведиИзвор-Некомерцијално-СподелиПодИстиУслови 2.0 Шпанија"@mk,
+        "Attribution-NonCommercial-ShareAlike 2.0 സ്പെയിൻ"@ml,
+        "Attribution-NonCommercial-ShareAlike 2.0 Spain"@mn,
+        "Pengiktirafan-BukanKomersial-PerkongsianSerupa 2.0 Sepanyol"@ms,
+        "Naamsvermelding-NietCommercieel-GelijkDelen 2.0 Spanje"@nl,
+        "Navngivelse-Ikkekommersiell-DelPåSammeVilkår 2.0 Spania"@no,
+        "Tsebagatšo - E sego ya Kgwebo - Mohlakanelwa 2.0 Sepania"@nso,
+        "Attribution-NonCommercial-ShareAlike 2.0 Spain"@oci-es,
+        "Uznanie autorstwa-Użycie niekomercyjne-Na tych samych warunkach 2.0 Hiszpania"@pl,
+        "Atribuição - NãoComercial - CompartilhaIgual 2.0 Espanha"@pt,
+        "Atribuição-Uso não-comercial-Compartilhamento pela mesma licença 2.0 Spain"@pt-br,
+        "Atribuição-Uso Não-Comercial-Partilha nos termos da mesma licença 2.0 Espanha"@pt-pt,
+        "Atribuire-Necomercial-FărăModificări 2.0 Spania"@ro,
+        "Attribution-NonCommercial-ShareAlike (Атрибуция — Некоммерческое использование — С сохранением условий) 2.0 Испания"@ru,
+        "Attribution-NonCommercial-ShareAlike 2.0 Spain"@si-lk,
+        "Priznanje avtorstva-Nekomercialno-Deljenje pod enakimi pogoji 2.0 Španija"@sl,
+        "Attribution-NonCommercial-ShareAlike 2.0 Spanjë"@sq,
+        "Autorstvo-Nekomercijalno-Deliti pod istim uslovima 2.0 Španija"@sr,
+        "Ауторство-Некомерцијално-Делити под истим условима 2.0 Шпанија"@sr,
+        "Autorstvo-Nekomercijalno-Deliti pod istim uslovima 2.0 Španija"@sr-latn,
+        "Attribution-NonCommercial-ShareAlike 2.0 Spain"@st,
+        "Erkännande-IckeKommersiell-DelaLika 2.0 Spanien"@sv,
+        "Attribution-NonCommercial-ShareAlike 2.0 ஸ்பெயின்"@ta,
+        "Attribution-NonCommercial-ShareAlike 2.0 స్పెయిన్"@te,
+        "แสดงที่มา-ไม่ใช้เพื่อการค้า-อนุญาตแบบเดียวกัน 2.0 สเปน"@th,
+        "Attribution-Gayriticari-ShareAlike 2.0 İspanya"@tr,
+        "Attribution-NonCommercial-ShareAlike 2.0 Spain"@uk,
+        "Attribution-NonCommercial-ShareAlike 2.0 Spain"@ur,
+        "Attribution-NonCommercial-ShareAlike 2.0 Nước Tây Ban Nha"@vi,
+        "署名-非商业性使用-相同方式共享 2.0 西班牙"@zh,
+        "姓名標示-非商業性-相同方式分享 2.0 西班牙"@zh-hk,
+        "姓名標示-非商業性-相同方式分享 2.0 西班牙"@zh-tw,
+        "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano-Yihlanganyeleni 2.0 Espain"@zu,
+        "${Attribution-NonCommercial-ShareAlike} 2.0 ${Spain}"@zxx ;
+    owl:sameAs <https://licensedb.org/id/CC-BY-NC-SA-2.0-es> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nc-sa/2.0/es/80x15.png>,
+        <http://i.creativecommons.org/l/by-nc-sa/2.0/es/88x31.png> .
+
+<https://licensedb.org/id/CC-BY-NC-SA-2.0-es> a cc:License,
+        li:License ;
+    cc:jurisdiction <http://creativecommons.org/international/es/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nc-sa/2.0/es/legalcode.ca>,
+        <http://creativecommons.org/licenses/by-nc-sa/2.0/es/legalcode.es> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:prohibits cc:CommercialUse ;
+    cc:requires cc:Attribution,
+        cc:Notice,
+        cc:ShareAlike ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.0" ;
+    dc:identifier "by-nc-sa" ;
+    dc:isReplacedBy <https://licensedb.org/id/CC-BY-NC-SA-2.1-es> ;
+    dc:source <http://creativecommons.org/licenses/by-nc-sa/2.0/> ;
+    dc:title "Erkenning-Niekommersieel-InsgelyksDeel 2.0 Spanje"@af,
+        "المشاركة على قدم المساواة-غير تجاري-نسب العمل 2.0 اسبانيا"@ar,
+        "Attribution-NonCommercial-ShareAlike 2.0 Spain"@as,
+        "Attribution-NonCommercial-ShareAlike 2.0 Spain"@ast,
+        "Attribution-NonCommercial-ShareAlike 2.0 Spain"@ast-es,
+        "Attribution-NonCommercial-ShareAlike 2.0 Spain"@az,
+        "Attribution-NonCommercial-ShareAlike 2.0 Іспанія"@be,
+        "Признание-Некомерсиално-Споделяне на споделеното 2.0 Испания"@bg,
+        "Attribution-NonCommercial-ShareAlike 2.0 Spain"@bn,
+        "Reconeixement-NoComercial-CompartirIgual 2.0 Espanya"@ca,
+        "Uveďte autora-Nevyužívejte dílo komerčně-Zachovejte licenci 2.0 Španělsko"@cs,
+        "Navngivelse-IkkeKommerciel–DelPåSammeVilkår 2.0 Spanien"@da,
+        "Namensnennung-Nicht-kommerziell-Weitergabe unter gleichen Bedingungen 2.0 Spanien"@de,
+        "Namensnennung-NichtKommerziell-Weitergabe unter gleichen Bedingungen 2.0 Spanien"@de-at,
+        "Namensnennung-NichtKommerziell-Weitergabe unter gleichen Bedingungen 2.0 Spanien"@de-ch,
+        "Αναφορά Δημιουργού - Μη Εμπορική Χρήση - Παρόμοια Διανομή 2.0 Ισπανία"@el,
+        "Attribution-NonCommercial-ShareAlike 2.0 Spain"@en,
+        "Attribution-NonCommercial-ShareAlike 2.0 Spain"@en-ca,
+        "Attribution-NonCommercial-ShareAlike 2.0 Spain"@en-gb,
+        "Attribution-NonCommercial-ShareAlike 2.0 Spain"@en-hk,
+        "Attribution-NonCommercial-ShareAlike 2.0 Spain"@en-sg,
+        "Attribution-NonCommercial-ShareAlike 2.0 Spain"@en-us,
+        "Atribuite-Nekomerce-Samkondiĉe 2.0 Hispanujo"@eo,
+        "Atribución-NoComercial-CompartirIgual 2.0 España"@es,
+        "Atribución-NoComercial-CompartirDerivadasIgual 2.0 España"@es-ar,
+        "Atribución-NoComercial-LicenciarIgual 2.0 España"@es-cl,
+        "Reconocimiento-NoComercial-CompartirIgual 2.0 España"@es-co,
+        "Reconocimiento-NoComercial-CompartirIgual 2.0 España"@es-ec,
+        "Reconocimiento-NoComercial-CompartirIgual 2.0 España"@es-es,
+        "Reconocimiento-NoComercial-CompartirIgual 2.0 España"@es-gt,
+        "Atribución-No Comercial-Licenciamiento Recíproco 2.0 España"@es-mx,
+        "Reconocimiento-NoComercial-CompartirIgual 2.0 España"@es-pe,
+        "Reconocimiento-NoComercial-CompartirIgual 2.0 España"@es-pr,
+        "Autorile viitamine + Mitteäriline eesmärk + Jagamine samadel tingimustel 2.0 Hispaania"@et,
+        "Aitortu-EzKomertziala-PartekatuBerdin 2.0 Espainia"@eu,
+        "Attribution-NonCommercial-ShareAlike 2.0 اسپانیا"@fa,
+        "Nimeä-Epäkaupallinen-Tarttuva 2.0 Espanja"@fi,
+        "Attribution - Pas d'Utilisation Commerciale - Partage à l'Identique 2.0 Espagne"@fr,
+        "Paternité - Pas d'Utilisation Commerciale - Partage des Conditions Initiales à l'Identique 2.0 Espagne"@fr-ca,
+        "Paternité - Pas d'Utilisation Commerciale - Partage des Conditions Initiales à l'Identique 2.0 Espagne"@fr-ch,
+        "Paternité - Pas d'Utilisation Commerciale - Partage des Conditions Initiales à l'Identique 2.0 Espagne"@fr-lu,
+        "Attribution-NonCommercial-ShareAlike 2.0 Spain"@ga,
+        "Recoñecemento-NonComercial-CompartirIgual 2.0 España"@gl,
+        "ייחוס-שימוש לא מסחרי-שיתוף זהה 2.0 ספרד"@he,
+        "Attribution-NonCommercial-ShareAlike 2.0 Spain"@hi,
+        "Imenovanje-Nekomercijalno-Dijeli pod istim uvjetima 2.0 Španjolska"@hr,
+        "Nevezd meg! - Ne add el! - Így add tovább! 2.0 Spanyolország"@hu,
+        "Հղում - ոչ-առևտրային օգտագործում - համանման տարածում 2.0 Իսպանիա"@hy,
+        "Atribusi-NonKomersial-BerbagiSerupa 2.0 Spanyol"@id,
+        "Attribution-NonCommercial-ShareAlike 2.0 Spánn"@is,
+        "Attribuzione - Non commerciale - Condividi allo stesso modo 2.0 Spagna"@it,
+        "Attribuzione - Non commerciale - Condividi allo stesso modo 2.0 Spagna"@it-ch,
+        "表示 - 非営利 - 継承 2.0 スペイン"@ja,
+        "ავტორობის მითითებით–არაკომერციული გამოყენებისთვის–გამოყენება იგივე პირობებით 2.0 ესპანეთი"@ka,
+        "Attribution-NonCommercial-ShareAlike 2.0 Spain"@kk,
+        "저작자표시-비영리-동일조건변경허락 2.0 스페인"@ko,
+        "Attribution-NonCommercial-ShareAlike 2.0 Ispanų"@lt,
+        "Atsaucoties-Nekomerciāls-Nemainot licenci 2.0 Spānija"@lv,
+        "НаведиИзвор-Некомерцијално-СподелиПодИстиУслови 2.0 Шпанија"@mk,
+        "Attribution-NonCommercial-ShareAlike 2.0 സ്പെയിൻ"@ml,
+        "Attribution-NonCommercial-ShareAlike 2.0 Spain"@mn,
+        "Pengiktirafan-BukanKomersial-PerkongsianSerupa 2.0 Sepanyol"@ms,
+        "Naamsvermelding-NietCommercieel-GelijkDelen 2.0 Spanje"@nl,
+        "Navngivelse-Ikkekommersiell-DelPåSammeVilkår 2.0 Spania"@no,
+        "Tsebagatšo - E sego ya Kgwebo - Mohlakanelwa 2.0 Sepania"@nso,
+        "Attribution-NonCommercial-ShareAlike 2.0 Spain"@oci-es,
+        "Uznanie autorstwa-Użycie niekomercyjne-Na tych samych warunkach 2.0 Hiszpania"@pl,
+        "Atribuição - NãoComercial - CompartilhaIgual 2.0 Espanha"@pt,
+        "Atribuição-Uso não-comercial-Compartilhamento pela mesma licença 2.0 Spain"@pt-br,
+        "Atribuição-Uso Não-Comercial-Partilha nos termos da mesma licença 2.0 Espanha"@pt-pt,
+        "Atribuire-Necomercial-FărăModificări 2.0 Spania"@ro,
+        "Attribution-NonCommercial-ShareAlike (Атрибуция — Некоммерческое использование — С сохранением условий) 2.0 Испания"@ru,
+        "Attribution-NonCommercial-ShareAlike 2.0 Spain"@si-lk,
+        "Priznanje avtorstva-Nekomercialno-Deljenje pod enakimi pogoji 2.0 Španija"@sl,
+        "Attribution-NonCommercial-ShareAlike 2.0 Spanjë"@sq,
+        "Autorstvo-Nekomercijalno-Deliti pod istim uslovima 2.0 Španija"@sr,
+        "Ауторство-Некомерцијално-Делити под истим условима 2.0 Шпанија"@sr,
+        "Autorstvo-Nekomercijalno-Deliti pod istim uslovima 2.0 Španija"@sr-latn,
+        "Attribution-NonCommercial-ShareAlike 2.0 Spain"@st,
+        "Erkännande-IckeKommersiell-DelaLika 2.0 Spanien"@sv,
+        "Attribution-NonCommercial-ShareAlike 2.0 ஸ்பெயின்"@ta,
+        "Attribution-NonCommercial-ShareAlike 2.0 స్పెయిన్"@te,
+        "แสดงที่มา-ไม่ใช้เพื่อการค้า-อนุญาตแบบเดียวกัน 2.0 สเปน"@th,
+        "Attribution-Gayriticari-ShareAlike 2.0 İspanya"@tr,
+        "Attribution-NonCommercial-ShareAlike 2.0 Spain"@uk,
+        "Attribution-NonCommercial-ShareAlike 2.0 Spain"@ur,
+        "Attribution-NonCommercial-ShareAlike 2.0 Nước Tây Ban Nha"@vi,
+        "署名-非商业性使用-相同方式共享 2.0 西班牙"@zh,
+        "姓名標示-非商業性-相同方式分享 2.0 西班牙"@zh-hk,
+        "姓名標示-非商業性-相同方式分享 2.0 西班牙"@zh-tw,
+        "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano-Yihlanganyeleni 2.0 Espain"@zu,
+        "${Attribution-NonCommercial-ShareAlike} 2.0 ${Spain}"@zxx ;
+    owl:sameAs <http://creativecommons.org/licenses/by-nc-sa/2.0/es/> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nc-sa/2.0/es/80x15.png>,
+        <http://i.creativecommons.org/l/by-nc-sa/2.0/es/88x31.png> ;
+    li:id "CC-BY-NC-SA-2.0-es" ;
+    li:name "CC BY-NC-SA 2.0 ES" .
+
+<http://creativecommons.org/licenses/by-nc-sa/2.0/es/legalcode.ca> dc:language "ca" .
+
+<http://creativecommons.org/licenses/by-nc-sa/2.0/es/legalcode.es> dc:language "es" .
+

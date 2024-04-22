@@ -1,0 +1,12 @@
+{
+  "@context": "https://wking.github.io/fsf-api/schema/license.jsonld",
+  "id": "UtahPublicLicense",
+  "name": "University of Utah Public License",
+  "tags": [
+    "non-free"
+  ],
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#UtahPublicLicense",
+    "http://www.cs.utah.edu/~gk/teem/txt/LICENSE.txt"
+  ]
+}

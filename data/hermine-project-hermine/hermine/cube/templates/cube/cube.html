@@ -1,0 +1,332 @@
+<!--
+SPDX-FileCopyrightText: Viktor Kuzhelny https://github.com/vikdiesel/admin-one-bulma-dashboard/
+SPDX-FileCopyrightText: 2021 Hermine-team <hermine@inno3.fr>
+SPDX-FileCopyrightText: 2022 Martin Delabre <gitlab.com/delabre.martin>
+SPDX-License-Identifier: MIT
+-->
+<!DOCTYPE html>
+<html lang="en" class="has-aside-left has-aside-mobile-transition has-navbar-fixed-top has-aside-expanded">
+  <head>
+    {% load static %}
+    <!-- Fonts -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="{% static 'favicon.ico' %}">
+    {% include "hermine/index.html" %}
+    <title>{% block title %}{% endblock %} - Hermine
+    </title>
+  </head>
+  <body>
+    <div id="app">
+      <nav id="navbar-main" class="navbar is-fixed-top">
+        <div class="navbar-brand">
+          <a class="navbar-item is-hidden-desktop jb-aside-mobile-toggle">
+            <span class="icon">
+              <i class="fas fa-bars">
+              </i>
+            </span>
+          </a>
+        </div>
+        <div class="navbar-brand is-right">
+          <a class="navbar-item is-hidden-desktop jb-navbar-menu-toggle" data-target="navbar-menu">
+            <span class="icon"><i class="fas fa-ellipsis-v"></i></span>
+          </a>
+        </div>
+        <div class="navbar-menu fadeIn animated faster" id="navbar-menu">
+          <div class="navbar-end">
+            <div class="navbar-item"><span class="icon"><i class="fas fa-users"></i></span> {% for group in user.groups.all %} {{ group }} {%endfor%}</div>
+            <div class="navbar-item">
+              <div class="is-user-avatar">
+                <span class="icon"><i class="fas fa-user"></i></span>
+              </div>
+              <div class="is-user-name">
+                <span>{%if user.first_name or user.last_name %}{{user.first_name}} {{user.last_name}}{%else%}{{user.username}}{%endif%}
+                </span>
+              </div>
+            </div>
+            <form class="navbar-item" method="post" action="{% url 'logout' %}">{% csrf_token %}
+              <button class="button  is-desktop-icon-only" type="submit">
+                <span class="icon"><i class="fas fa-sign-out-alt"></i>
+                </span>
+                <span>Logout</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <aside class="aside is-placed-left is-expanded">
+        <div class="aside-tools">
+          <div class="aside-tools-label">
+            <span><b>Hermine</b></span>
+          </div>
+        </div>
+        <div class="menu is-menu-main">
+          <p class="menu-label">General</p>
+          <ul class="menu-list">
+            <li>
+              <a href="{% url 'cube:dashboard' %}" class="has-icon">
+                <span class="icon"><i class="fas fa-chart-pie"></i></span>
+                <span class="menu-item-label">Dashboard</span>
+              </a>
+            </li>
+          </ul>
+          {% if perms.cube.view_product or perms.cube.view_category or perms.cube.view_component or perms.cube.view_licensecuration %}
+            <p class="menu-label">Development</p>
+            <ul class="menu-list">
+              {% if perms.cube.view_product or perms.cube.view_category %}
+                <li>
+                  <a class="has-icon has-dropdown-icon">
+                    <span class="icon"><i class="fas fa-cubes"></i></span>
+                    <span class="menu-item-label">Your products</span>
+                    <div class="dropdown-icon">
+                      <span class="icon"><i class="fas fa-caret-right"></i></span>
+                    </div>
+                  </a>
+                  <ul>
+                    {% if perms.cube.view_product %}
+                      <li>
+                        <a href="{% url 'cube:product_list' %}">
+                          <span>All products</span>
+                        </a>
+                      </li>
+                    {% endif %}
+                    {% if perms.cube.view_category %}
+                      <li>
+                        <a href="{% url 'cube:category_list' %}">
+                          <span>Product categories</span>
+                        </a>
+                      </li>
+                    {% endif %}
+                  </ul>
+                </li>
+              {% endif %}
+              {% if perms.cube.view_component or perms.cube.view_licensecuration %}
+                <li>
+                  <a class="has-icon has-dropdown-icon">
+                    <span class="icon"><i class="fas fa-puzzle-piece"></i></span>
+                    <span class="menu-item-label">Components</span>
+                    <div class="dropdown-icon">
+                      <span class="icon"><i class="fas fa-caret-right"></i></span>
+                    </div>
+                  </a>
+                  <ul>
+                    {% if perms.cube.view_component %}
+                      <li>
+                        <a href="{% url 'cube:component_list' %}">
+                          <span>Complete List</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="{% url 'cube:component_populars' %}">
+                          <span>Most used ones</span>
+                        </a>
+                      </li>
+                    {% endif %}
+                    {% if perms.cube.view_licensecuration %}
+                      <li>
+                        <a href="{% url 'cube:licensecuration_list' %}">
+                          <span>Curations</span>
+                        </a>
+                      </li>
+                    {% endif %}
+                  </ul>
+                </li>
+              {% endif %}
+            </ul>
+          {% endif %}
+          <p class="menu-label">Legal
+          </p>
+          <ul class="menu-list">
+            {% if perms.cube.view_license %}
+              <li>
+                <a href="{% url 'cube:license_list' %}" class="has-icon">
+                  <span class="icon">
+                    <i class="fas fa-balance-scale">
+                    </i>
+                  </span>
+                  <span class="menu-item-label">Licenses
+                  </span>
+                </a>
+              </li>
+            {% endif %}
+            {% if perms.cube.view_generic %}
+              <li>
+                <a href="{% url 'cube:generic_list' %}" class=" has-icon">
+                  <span class="icon">
+                    <i class="fas fa-award">
+                    </i>
+                  </span>
+                  <span class="menu-item-label">Generic obligations
+                  </span>
+                </a>
+              </li>
+            {% endif %}
+            {% if perms.cube.view_derogation %}
+              <li>
+                <a href="{% url 'cube:authorizedcontext_list' %}" class=" has-icon">
+                  <span class="icon">
+                    <i class="fas fa-clipboard-check">
+                    </i>
+                  </span>
+                  <span class="menu-item-label">Authorized contexts
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'cube:derogation_list' %}" class=" has-icon">
+                  <span class="icon">
+                    <i class="fas fa-clipboard-check">
+                    </i>
+                  </span>
+                  <span class="menu-item-label">Specific derogations
+                  </span>
+                </a>
+              </li>
+            {% endif %}
+            {% if perms.cube.view_licensechoice %}
+              <li>
+                <a href="{% url 'cube:licensechoice_list' %}" class=" has-icon">
+                  <span class="icon">
+                    <i class="fas fa-project-diagram">
+                    </i>
+                  </span>
+                  <span class="menu-item-label">License choices
+                  </span>
+                </a>
+              </li>
+            {% endif %}
+            {% if perms.cube.view_license and is_shared_reference_loaded %}
+              <li>
+                <a href="{% url 'cube:shared_reference' %}" class="has-icon">
+                  <span class="icon">
+                    <i class="fas fa-share-alt">
+                    </i>
+                  </span>
+                  <span class="menu-item-label">Shared reference
+                  </span>
+                </a>
+              </li>
+            {% endif %}
+          </ul>
+          {% if user.is_staff %}
+            <p class="menu-label">Tools
+            </p>
+            <ul class="menu-list">
+              <li>
+                <a href="{% url 'schema-redoc' %}" class="has-icon">
+                  <span class="icon">
+                    <i class="fas fa-database">
+                    </i>
+                  </span>
+                  <span class="menu-item-label">API
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'admin:index' %}" class="has-icon">
+                  <span class="icon">
+                    <i class="fas fa-cogs">
+                    </i>
+                  </span>
+                  <span class="menu-item-label">Django Admin
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://docs.hermine-foss.org/" class="has-icon" target="_blank">
+                  <span class="icon">
+                    <i class="fas fa-book">
+                    </i>
+                  </span>
+                  <span class="menu-item-label">Documentation
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'cube:about' %}" class="has-icon">
+                  <span class="icon">
+                    <i class="far fa-question-circle">
+                    </i>
+                  </span>
+                  <span class="menu-item-label">About
+                  </span>
+                </a>
+              </li>
+            </ul>
+          {% endif %}
+        </div>
+      </aside>
+      <section class="section is-title-bar">
+        <div class="level">
+          <div class="level-left">
+            <div class="level-item">
+              {% block breadcrumbs %}
+              {% endblock %}
+            </div>
+          </div>
+          <div class="level-right">
+            <div class="level-item">
+              {% block actions %}
+              {% endblock %}
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="hero is-hero-bar is-small">
+        <div class="hero-body">
+          <div class="level">
+            <div class="level-left">
+              <div class="level-item">
+                {% block herozone %}
+                {% endblock %}
+              </div>
+            </div>
+            <div class="level-right">
+              <div class="level-item">
+                {% block infoitem %}
+                {% endblock %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section is-main-section content">
+        {% block content %}
+        {% endblock %}
+      </section>
+      <footer class="footer">
+        <div class="container-fluid">
+          <div class="level">
+            <div class="level-left">
+              <div class="level-item">
+                © 2021, Hermine project contributors
+              </div>
+              <div class="level-item">
+                <a href="https://gitlab.com/hermine-project/hermine" style="height: 20px">
+                  <img src="{% static 'cube/media/agpl.svg' %}" alt="AGPL-3.0 License">
+                </a>
+              </div>
+            </div>
+            <div class="level-right">
+              <div class="level-item">
+                {% load version %}
+                <span class='version'>{% version %}</span>
+              </div>
+              <div class="level-item">
+                <div class="logo">
+                  <a href="https://hermine-foss.org">
+                    <img src="{% static 'cube/media/LogoHermine.svg' %}" alt="Hermine project Logo">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
+
+
+

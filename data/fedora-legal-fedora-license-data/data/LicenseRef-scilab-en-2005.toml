@@ -1,0 +1,18 @@
+[license]
+
+expression = "LicenseRef-scilab-en-2005"
+status = [ "not-allowed" ]
+
+url = '''
+https://fedoraproject.org/wiki/Licensing/Scilab_License_Old
+'''
+
+[fedora]
+
+legacy-name = [
+    "Scilab License (OLD)"
+]
+
+notes = '''
+Current versions of Scilab use the CeCILL license
+'''

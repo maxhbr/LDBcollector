@@ -1,0 +1,18 @@
+[license]
+
+expression = "LicenseRef-DIP-SIPA-font"
+status = [ "not-allowed" ]
+
+url = '''
+https://fedoraproject.org/wiki/Licensing/DIP_SIPA_Font_License
+'''
+
+[fedora]
+
+legacy-name = [
+    "DIP SIPA Font License"
+]
+
+notes = '''
+Restrictions on modification
+'''

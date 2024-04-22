@@ -1,0 +1,19 @@
+[license]
+
+expression = "Adobe-2006"
+status = [ "allowed" ]
+
+url = '''
+https://fedoraproject.org/wiki/Licensing/AdobeLicense
+'''
+
+[fedora]
+
+legacy-name = [
+    "Adobe Systems Incorporated Source Code License Agreement"
+]
+
+legacy-abbreviation = [
+    "Adobe"
+]
+

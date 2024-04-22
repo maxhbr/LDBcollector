@@ -1,0 +1,13 @@
+{
+"meta": {
+    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+    "comment": ""
+  },
+  "name": "Boost Original",
+  "scancode_key": "boost-original",
+  "spdxid": "LicenseRef-scancode-boost-original",
+    "aliases": [
+        "Boost Original",
+        "Original Boost"
+  ]
+}

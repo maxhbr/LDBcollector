@@ -1,0 +1,17 @@
+{
+  "@context": "https://wking.github.io/fsf-api/schema/license.jsonld",
+  "id": "bittorrent",
+  "identifiers": {
+    "spdx": [
+      "BitTorrent-1.1"
+    ]
+  },
+  "name": "BitTorrent Open Source License",
+  "tags": [
+    "libre"
+  ],
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#bittorrent",
+    "http://directory.fsf.org/wiki/License:BitTorrentOSL1.1"
+  ]
+}

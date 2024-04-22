@@ -1,0 +1,24 @@
+[
+    {
+        "id": "AAL",
+        "links": [
+            {
+                "note": "OSI Page",
+                "url": "https://opensource.org/licenses/AAL"
+            }
+        ],
+        "name": "Attribution Assurance License",
+        "keywords": [
+            "osi-approved",
+            "discouraged",
+            "redundant"
+        ],
+        "text": [
+            {
+                "media_type": "text/html",
+                "title": "HTML",
+                "url": "https://opensource.org/licenses/AAL"
+            }
+        ]
+    }
+]

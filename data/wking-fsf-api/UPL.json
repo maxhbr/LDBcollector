@@ -1,0 +1,19 @@
+{
+  "@context": "https://wking.github.io/fsf-api/schema/license.jsonld",
+  "id": "UPL",
+  "identifiers": {
+    "spdx": [
+      "UPL-1.0"
+    ]
+  },
+  "name": "Universal Permissive License (UPL)",
+  "tags": [
+    "gpl-2-compatible",
+    "gpl-3-compatible",
+    "libre"
+  ],
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#UPL",
+    "http://directory.fsf.org/wiki/License:Universal_Permissive_License"
+  ]
+}

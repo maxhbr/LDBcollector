@@ -1,0 +1,10 @@
+[license]
+
+expression = "MIT-Festival"
+status = [ "allowed" ]
+
+[fedora]
+
+legacy-abbreviation = [
+    "MIT"
+]

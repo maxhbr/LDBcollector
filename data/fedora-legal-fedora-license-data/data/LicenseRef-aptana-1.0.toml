@@ -1,0 +1,19 @@
+[license]
+
+expression = "LicenseRef-aptana-1.0"
+status = [ "not-allowed" ]
+
+url = '''
+http://aptana.com/legal/apl/
+https://enterprise.dejacode.com/licenses/public/aptana-1.0/?_list_filters=q%3Daptana#license-text
+'''
+
+[fedora]
+
+legacy-name = [
+    "Aptana Public License"
+]
+
+notes = '''
+No permission to redistribute  broken link
+'''

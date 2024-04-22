@@ -1,0 +1,21 @@
+{
+"meta": {
+    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+    "comment": ""
+  },
+  "name": "Creative Commons Attribution License 3.0",
+  "scancode_key": "cc-by-3.0", 
+  "spdxid": "CC-BY-3.0",
+  "aliases": [
+   "CC-BY-3.0",
+   "Creative Commons BY 3.0",
+   "Creative Commons Attribution 3.0 Unported",
+   "scancode://cc-by-3.0",
+   "Creative Commons Attribution unported (CC-BY) v3.0",
+   "Creative Commons Attribution 3.0",
+   "CC-A 3.0",
+   "CC-BY 3.0",
+   "http://creativecommons.org/licenses/by/3.0",
+   "scancode:cc-by-3.0"
+  ]
+}

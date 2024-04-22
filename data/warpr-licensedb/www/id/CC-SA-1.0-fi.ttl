@@ -1,0 +1,235 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/elements/1.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://creativecommons.org/licenses/sa/1.0/fi/> a cc:License ;
+    cc:deprecatedOn "2004-05-25"^^<http://www.w3.org/2001/XMLSchema-datatypes#date> ;
+    cc:jurisdiction <http://creativecommons.org/international/fi/> ;
+    cc:legalcode <http://creativecommons.org/licenses/sa/1.0/fi/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Notice,
+        cc:ShareAlike ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "1.0" ;
+    dc:identifier "sa" ;
+    dc:source <http://creativecommons.org/licenses/sa/1.0/> ;
+    dc:title "InsgelyksDeel 1.0 Finland"@af,
+        "المشاركة على قدم المساواة 1.0 فلندا"@ar,
+        "ShareAlike 1.0 Finland"@as,
+        "ShareAlike 1.0 Finland"@ast,
+        "ShareAlike 1.0 Finland"@ast-es,
+        "ShareAlike 1.0 Finland"@az,
+        "ShareAlike 1.0 Фінляндыя"@be,
+        "Споделяне на споделеното 1.0 Финландия"@bg,
+        "ShareAlike 1.0 Finland"@bn,
+        "CompartirIgual 1.0 Finlàndia"@ca,
+        "Zachovejte licenci 1.0 Finsko"@cs,
+        "DelPåSammeVilkår 1.0 Finland"@da,
+        "Weitergabe unter gleichen Bedingungen 1.0 Finnland"@de,
+        "Weitergabe unter gleichen Bedingungen 1.0 Finnland"@de-at,
+        "Weitergabe unter gleichen Bedingungen 1.0 Finnland"@de-ch,
+        "Παρόμοια Διανομή 1.0 Φιλανδία"@el,
+        "ShareAlike 1.0 Finland"@en,
+        "ShareAlike 1.0 Finland"@en-ca,
+        "ShareAlike 1.0 Finland"@en-gb,
+        "ShareAlike 1.0 Finland"@en-hk,
+        "ShareAlike 1.0 Finland"@en-sg,
+        "ShareAlike 1.0 Finland"@en-us,
+        "Samkondiĉe 1.0 Suomujo"@eo,
+        "CompartirIgual 1.0 Finlandia"@es,
+        "CompartirDerivadasIgual 1.0 Finlandia"@es-ar,
+        "Licenciar Igual 1.0 Finlandia"@es-cl,
+        "CompartirIgual 1.0 Finlandia"@es-co,
+        "CompartirIgual 1.0 Finlandia"@es-ec,
+        "CompartirIgual 1.0 Finlandia"@es-es,
+        "CompartirIgual 1.0 Finlandia"@es-gt,
+        "Licenciamiento Recíproco 1.0 Finlandia"@es-mx,
+        "CompartirIgual 1.0 Finlandia"@es-pe,
+        "CompartirIgual 1.0 Finlandia"@es-pr,
+        "Jagamine samadel tingimustel  1.0 Soome"@et,
+        "PartekatuBerdin 1.0 Finlandia"@eu,
+        "ShareAlike 1.0 فنلاند"@fa,
+        "Tarttuva 1.0 Suomi"@fi,
+        "Partage à l'Identique 1.0 Finlande"@fr,
+        "Partage des conditions initiales à l'identique 1.0 Finlande"@fr-ca,
+        "Partage des conditions initiales à l'identique 1.0 Finlande"@fr-ch,
+        "Partage des conditions initiales à l'identique 1.0 Finlande"@fr-lu,
+        "ShareAlike 1.0 Finland"@ga,
+        "CompartirIgual 1.0 Finlandia"@gl,
+        "שיתוף זהה 1.0 פינלנד"@he,
+        "ShareAlike 1.0 Finland"@hi,
+        "Dijeli pod istim uvjetima 1.0 Finska"@hr,
+        "Így add tovább! 1.0 Finnország"@hu,
+        "Համանման տարածում 1.0 Finland"@hy,
+        "BerbagiSerupa 1.0 Finlandia"@id,
+        "ShareAlike 1.0 Finland"@is,
+        "StessaLicenza 1.0 Finlandia"@it,
+        "StessaLicenza 1.0 Finlandia"@it-ch,
+        "継承 1.0 フィンランド"@ja,
+        "გავრცელება იგივე პირობებით 1.0 ფინეთი"@ka,
+        "ShareAlike 1.0 Finland"@kk,
+        "동일조건변경허락 1.0 핀란드"@ko,
+        "ShareAlike 1.0 Suomija"@lt,
+        "Līdzvērtīgs 1.0 Somija"@lv,
+        "СподелиПодИстиУслови 1.0 Финска"@mk,
+        "ShareAlike 1.0 ഫിൻലാന്റ്"@ml,
+        "ShareAlike 1.0 Finland"@mn,
+        "Perkongsian serupa 1.0 Finland"@ms,
+        "GelijkDelen 1.0 Finland"@nl,
+        "DelPåSammeVilkår 1.0 Finland"@no,
+        "Mohlakanelwa 1.0 Finland"@nso,
+        "ShareAlike 1.0 Finland"@oci-es,
+        "Na tych samych warunkach 1.0 Finlandia"@pl,
+        "CompartilhaIgual 1.0 Finlândia"@pt,
+        "ShareAlike 1.0 Finland"@pt-br,
+        "Partilha nos termos da mesma licença 1.0 Filândia"@pt-pt,
+        "Distribuie-în-condiţii-identice 1.0 Finlanda"@ro,
+        "С сохранением условий<br />(<i>ShareAlike</i>) 1.0 Финляндия"@ru,
+        "ShareAlike 1.0 Finland"@si-lk,
+        "Deljenje pod enakimi pogoji 1.0 Finska"@sl,
+        "ShareAlike 1.0 Finlandë"@sq,
+        "Deliti pod istim uslovima 1.0 Finska"@sr,
+        "Делити под истим условима 1.0 Финска"@sr,
+        "Deliti pod istim uslovima 1.0 Finska"@sr-latn,
+        "ShareAlike 1.0 Finland"@st,
+        "DelaLika 1.0 Finland"@sv,
+        "ShareAlike 1.0 Finland"@ta,
+        "ShareAlike 1.0 ఫిన్లాండ్"@te,
+        "อนุญาตแบบเดียวกัน 1.0 ฟินแลนด์"@th,
+        "LisansıDevamEttirme 1.0 Finlandiya"@tr,
+        "ShareAlike 1.0 Finland"@uk,
+        "ShareAlike 1.0 Finland"@ur,
+        "ShareAlike 1.0 Finland"@vi,
+        "相同方式共享 1.0 芬兰"@zh,
+        "相同方式分享 1.0 芬蘭"@zh-hk,
+        "相同方式分享 1.0 芬蘭"@zh-tw,
+        "Zihlanganyeleni 1.0 iFinland"@zu,
+        "${ShareAlike} 1.0 ${Finland}"@zxx ;
+    owl:sameAs <https://licensedb.org/id/CC-SA-1.0-fi> ;
+    foaf:logo <http://i.creativecommons.org/l/sa/1.0/fi/88x31.png> .
+
+<https://licensedb.org/id/CC-SA-1.0-fi> a cc:License,
+        li:License ;
+    cc:deprecatedOn "2004-05-25"^^<http://www.w3.org/2001/XMLSchema-datatypes#date> ;
+    cc:jurisdiction <http://creativecommons.org/international/fi/> ;
+    cc:legalcode <http://creativecommons.org/licenses/sa/1.0/fi/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Notice,
+        cc:ShareAlike ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "1.0" ;
+    dc:identifier "sa" ;
+    dc:source <http://creativecommons.org/licenses/sa/1.0/> ;
+    dc:title "InsgelyksDeel 1.0 Finland"@af,
+        "المشاركة على قدم المساواة 1.0 فلندا"@ar,
+        "ShareAlike 1.0 Finland"@as,
+        "ShareAlike 1.0 Finland"@ast,
+        "ShareAlike 1.0 Finland"@ast-es,
+        "ShareAlike 1.0 Finland"@az,
+        "ShareAlike 1.0 Фінляндыя"@be,
+        "Споделяне на споделеното 1.0 Финландия"@bg,
+        "ShareAlike 1.0 Finland"@bn,
+        "CompartirIgual 1.0 Finlàndia"@ca,
+        "Zachovejte licenci 1.0 Finsko"@cs,
+        "DelPåSammeVilkår 1.0 Finland"@da,
+        "Weitergabe unter gleichen Bedingungen 1.0 Finnland"@de,
+        "Weitergabe unter gleichen Bedingungen 1.0 Finnland"@de-at,
+        "Weitergabe unter gleichen Bedingungen 1.0 Finnland"@de-ch,
+        "Παρόμοια Διανομή 1.0 Φιλανδία"@el,
+        "ShareAlike 1.0 Finland"@en,
+        "ShareAlike 1.0 Finland"@en-ca,
+        "ShareAlike 1.0 Finland"@en-gb,
+        "ShareAlike 1.0 Finland"@en-hk,
+        "ShareAlike 1.0 Finland"@en-sg,
+        "ShareAlike 1.0 Finland"@en-us,
+        "Samkondiĉe 1.0 Suomujo"@eo,
+        "CompartirIgual 1.0 Finlandia"@es,
+        "CompartirDerivadasIgual 1.0 Finlandia"@es-ar,
+        "Licenciar Igual 1.0 Finlandia"@es-cl,
+        "CompartirIgual 1.0 Finlandia"@es-co,
+        "CompartirIgual 1.0 Finlandia"@es-ec,
+        "CompartirIgual 1.0 Finlandia"@es-es,
+        "CompartirIgual 1.0 Finlandia"@es-gt,
+        "Licenciamiento Recíproco 1.0 Finlandia"@es-mx,
+        "CompartirIgual 1.0 Finlandia"@es-pe,
+        "CompartirIgual 1.0 Finlandia"@es-pr,
+        "Jagamine samadel tingimustel  1.0 Soome"@et,
+        "PartekatuBerdin 1.0 Finlandia"@eu,
+        "ShareAlike 1.0 فنلاند"@fa,
+        "Tarttuva 1.0 Suomi"@fi,
+        "Partage à l'Identique 1.0 Finlande"@fr,
+        "Partage des conditions initiales à l'identique 1.0 Finlande"@fr-ca,
+        "Partage des conditions initiales à l'identique 1.0 Finlande"@fr-ch,
+        "Partage des conditions initiales à l'identique 1.0 Finlande"@fr-lu,
+        "ShareAlike 1.0 Finland"@ga,
+        "CompartirIgual 1.0 Finlandia"@gl,
+        "שיתוף זהה 1.0 פינלנד"@he,
+        "ShareAlike 1.0 Finland"@hi,
+        "Dijeli pod istim uvjetima 1.0 Finska"@hr,
+        "Így add tovább! 1.0 Finnország"@hu,
+        "Համանման տարածում 1.0 Finland"@hy,
+        "BerbagiSerupa 1.0 Finlandia"@id,
+        "ShareAlike 1.0 Finland"@is,
+        "StessaLicenza 1.0 Finlandia"@it,
+        "StessaLicenza 1.0 Finlandia"@it-ch,
+        "継承 1.0 フィンランド"@ja,
+        "გავრცელება იგივე პირობებით 1.0 ფინეთი"@ka,
+        "ShareAlike 1.0 Finland"@kk,
+        "동일조건변경허락 1.0 핀란드"@ko,
+        "ShareAlike 1.0 Suomija"@lt,
+        "Līdzvērtīgs 1.0 Somija"@lv,
+        "СподелиПодИстиУслови 1.0 Финска"@mk,
+        "ShareAlike 1.0 ഫിൻലാന്റ്"@ml,
+        "ShareAlike 1.0 Finland"@mn,
+        "Perkongsian serupa 1.0 Finland"@ms,
+        "GelijkDelen 1.0 Finland"@nl,
+        "DelPåSammeVilkår 1.0 Finland"@no,
+        "Mohlakanelwa 1.0 Finland"@nso,
+        "ShareAlike 1.0 Finland"@oci-es,
+        "Na tych samych warunkach 1.0 Finlandia"@pl,
+        "CompartilhaIgual 1.0 Finlândia"@pt,
+        "ShareAlike 1.0 Finland"@pt-br,
+        "Partilha nos termos da mesma licença 1.0 Filândia"@pt-pt,
+        "Distribuie-în-condiţii-identice 1.0 Finlanda"@ro,
+        "С сохранением условий<br />(<i>ShareAlike</i>) 1.0 Финляндия"@ru,
+        "ShareAlike 1.0 Finland"@si-lk,
+        "Deljenje pod enakimi pogoji 1.0 Finska"@sl,
+        "ShareAlike 1.0 Finlandë"@sq,
+        "Deliti pod istim uslovima 1.0 Finska"@sr,
+        "Делити под истим условима 1.0 Финска"@sr,
+        "Deliti pod istim uslovima 1.0 Finska"@sr-latn,
+        "ShareAlike 1.0 Finland"@st,
+        "DelaLika 1.0 Finland"@sv,
+        "ShareAlike 1.0 Finland"@ta,
+        "ShareAlike 1.0 ఫిన్లాండ్"@te,
+        "อนุญาตแบบเดียวกัน 1.0 ฟินแลนด์"@th,
+        "LisansıDevamEttirme 1.0 Finlandiya"@tr,
+        "ShareAlike 1.0 Finland"@uk,
+        "ShareAlike 1.0 Finland"@ur,
+        "ShareAlike 1.0 Finland"@vi,
+        "相同方式共享 1.0 芬兰"@zh,
+        "相同方式分享 1.0 芬蘭"@zh-hk,
+        "相同方式分享 1.0 芬蘭"@zh-tw,
+        "Zihlanganyeleni 1.0 iFinland"@zu,
+        "${ShareAlike} 1.0 ${Finland}"@zxx ;
+    owl:sameAs <http://creativecommons.org/licenses/sa/1.0/fi/> ;
+    foaf:logo <http://i.creativecommons.org/l/sa/1.0/fi/88x31.png> ;
+    li:id "CC-SA-1.0-fi" ;
+    li:name "CC SA 1.0 FI" .
+

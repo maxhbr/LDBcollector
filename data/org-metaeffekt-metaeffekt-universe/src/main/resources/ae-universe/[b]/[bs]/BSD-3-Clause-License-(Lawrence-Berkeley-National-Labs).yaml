@@ -1,0 +1,20 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+
+canonicalName: "BSD 3-Clause License (Lawrence Berkeley National Labs)"
+category: "BSD"
+spdxIdentifier: "BSD-3-Clause-LBNL"
+
+openCoDEStatus: "approved"
+
+osiStatus: "approved"
+osiCategory: "special purpose"
+
+alternativeNames:
+  - "BSD-3-Clause-LBNL"
+  - "Lawrence Berkeley National Labs BSD variant license"
+
+otherIds: 
+  - "scancode:lbnl-bsd"
+  - "osi:BSD-3-Clause-LBNL"

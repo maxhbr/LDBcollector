@@ -1,0 +1,73 @@
+# SPDX-FileCopyrightText: 2021 Hermine-team <hermine@inno3.fr>
+# SPDX-FileCopyrightText: 2022 Martin Delabre <gitlab.com/delabre.martin>
+#
+# SPDX-License-Identifier: AGPL-3.0-only
+
+[tool.poetry]
+name = "hermine-project"
+version = "0.3.1"
+description = ""
+authors = ["Camille Moulin <cmoulin@inno3.fr>", "Martin Delabre <martin.delabre@inno3.fr>", "Maud Royer <hello@maudroyer.fr>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+djangorestframework = "^3.12.4"
+drf-nested-routers = "^0.93.3"
+psycopg2-binary = "^2.9.2"
+python-dateutil = "^2.8.2"
+odfpy = "^1.4.1"
+django = "^5.0.0"
+spdx-tools = "^0.8.0"
+social-auth-app-django = "^5.0.0"
+django-filter = "^23.1"
+drf-yasg = "^1.20.0"
+packageurl-python = "^0.11.0"
+junit-xml = "^1.9"
+license-expression = "^30.0.0"
+tqdm = "^4.64.1"
+pyyaml = "^6.0"
+django-silk = "^5.0.3"
+semantic-version = "^2.10.0"
+
+
+
+[tool.poetry.group.dev.dependencies]
+Sphinx = "^6"
+myst-parser = "^1"
+mdit-py-plugins = "^0.3.0"
+sphinx-rtd-theme = "^1.0.0"
+pip-audit = "^2.4.0"
+coverage = "^7"
+graphviz = "^0.20.0"
+pydot = "^1.4.2"
+dco-check = "^0.4.0"
+reuse = "^1.0.0"
+black = {version = "^23.3.0", allow-prereleases = true}
+flake8-black = "^0.3.3"
+ruff = "^0.0.246"
+djhtml = "^3.0.6"
+
+[tool.black]
+exclude = "hermine/cube/migrations"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+# See https://github.com/charliermarsh/ruff#configuration
+
+# Enable Pyflakes `E` and `F` codes by default.
+select = ["E", "F"]
+ignore = ["E501"]
+
+exclude = [
+    ".git",
+    ".venv",
+    "__pypackages__",
+    "hermine/cube/migrations",
+    "__init__.py",
+]
+
+[tool.ruff.per-file-ignores]
+"apps.py" = ["F401"]

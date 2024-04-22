@@ -1,0 +1,36 @@
+{
+    "meta": {
+        "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+        "comment": ""
+    },
+    "dual-licenses": [
+        {
+            "spdxid": "GPL-2.0-or-later",
+            "newer-versions": [
+                "GPL-2.0-only",
+                "GPL-3.0-only"
+            ]
+        },
+        {
+            "spdxid": "LGPL-2.0-or-later",
+            "newer-versions": [
+                "LGPL-2.0-only",
+                "LGPL-2.1-only",
+                "LGPL-3.0-only"
+            ]
+        },
+        {
+            "spdxid": "LGPL-2.1-or-later",
+            "newer-versions": [
+                "LGPL-2.1-only",
+                "LGPL-3.0-only"
+            ]
+        },
+        {
+            "spdxid": "LGPL-3.0-or-later",
+            "newer-versions": [
+                "LGPL-3.0-only"
+            ]
+        }
+    ]
+}

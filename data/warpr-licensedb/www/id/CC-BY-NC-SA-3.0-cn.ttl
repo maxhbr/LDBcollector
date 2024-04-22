@@ -1,0 +1,225 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/elements/1.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://creativecommons.org/licenses/by-nc-sa/3.0/cn/> a cc:License ;
+    cc:jurisdiction <http://creativecommons.org/international/cn/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nc-sa/3.0/cn/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:prohibits cc:CommercialUse ;
+    cc:requires cc:Attribution,
+        cc:Notice,
+        cc:ShareAlike ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "3.0" ;
+    dc:identifier "by-nc-sa" ;
+    dc:source <http://creativecommons.org/licenses/by-nc-sa/3.0/> ;
+    dc:title "Erkenning-Niekommersieel-InsgelyksDeel 3.0 Sjinese Vasteland"@af,
+        "المشاركة على قدم المساواة-غير تجاري-نسب العمل 3.0 الصين "@ar,
+        "Attribution-NonCommercial-ShareAlike 3.0 China Mainland"@as,
+        "Attribution-NonCommercial-ShareAlike 3.0 China Mainland"@ast,
+        "Attribution-NonCommercial-ShareAlike 3.0 China Mainland"@ast-es,
+        "Attribution-NonCommercial-ShareAlike 3.0 China Mainland"@az,
+        "Attribution-NonCommercial-ShareAlike 3.0 Мацерыковы Кітай"@be,
+        "Признание-Некомерсиално-Споделяне на споделеното 3.0 Китай (континентален)"@bg,
+        "Attribution-NonCommercial-ShareAlike 3.0 China Mainland"@bn,
+        "Reconeixement-NoComercial-CompartirIgual 3.0 Xina"@ca,
+        "Uveďte autora-Nevyužívejte dílo komerčně-Zachovejte licenci 3.0 Kontinentální Čína"@cs,
+        "Navngivelse-IkkeKommerciel–DelPåSammeVilkår 3.0 Kina"@da,
+        "Namensnennung - Nicht-kommerziell - Weitergabe unter gleichen Bedingungen 3.0 Volksrepublik China"@de,
+        "Namensnennung-NichtKommerziell-Weitergabe unter gleichen Bedingungen 3.0 China"@de-at,
+        "Namensnennung - Nicht-kommerziell - Weitergabe unter gleichen Bedingungen 3.0 Volksrepublik China"@de-ch,
+        "Αναφορά Δημιουργού - Μη Εμπορική Χρήση - Παρόμοια Διανομή 3.0 Κίνα"@el,
+        "Attribution-NonCommercial-ShareAlike 3.0 China Mainland"@en,
+        "Attribution-NonCommercial-ShareAlike 3.0 China Mainland"@en-ca,
+        "Attribution-NonCommercial-ShareAlike 3.0 China"@en-gb,
+        "Attribution-NonCommercial-ShareAlike 3.0 China"@en-hk,
+        "Attribution-NonCommercial-ShareAlike 3.0 China"@en-sg,
+        "Attribution-NonCommercial-ShareAlike 3.0 China Mainland"@en-us,
+        "Atribuite-Nekomerce-Samkondiĉe 3.0 Ĉinujo"@eo,
+        "Atribución-NoComercial-CompartirIgual 3.0 China continental"@es,
+        "Atribución-NoComercial-CompartirIgual 3.0 China continental"@es-ar,
+        "Reconocimiento-NoComercial-CompartirIgual 3.0 China"@es-es,
+        "Reconocimiento-NoComercial-CompartirIgual 3.0 China"@es-pe,
+        "Autorile viitamine + Mitteäriline eesmärk + Jagamine samadel tingimustel 3.0 Mandri-Hiina"@et,
+        "Aitortu-EzKomertziala-PartekatuBerdin 3.0 Txina"@eu,
+        "Attribution-NonCommercial-ShareAlike 3.0 چین سرزمین اصلی"@fa,
+        "Nimeä-Epäkaupallinen-JaaSamoin 3.0 Kiina"@fi,
+        "Attribution - Pas d’Utilisation Commerciale - Partage dans les Mêmes Conditions 3.0 Chine continentale"@fr,
+        "Paternité - Pas d'Utilisation Commerciale - Partage des Conditions Initiales à l'Identique 3.0 Chine"@fr-ca,
+        "Paternité - Pas d'Utilisation Commerciale - Partage des Conditions Initiales à l'Identique 3.0 Chine"@fr-ch,
+        "Paternité - Pas d'Utilisation Commerciale - Partage des Conditions Initiales à l'Identique 3.0 Chine"@fr-lu,
+        "Attribution-NonCommercial-ShareAlike 3.0 China Mainland"@ga,
+        "Recoñecemento-NonComercial-CompartirIgual 3.0 China continental"@gl,
+        "ייחוס-שימוש לא מסחרי-שיתוף זהה 3.0 סין"@he,
+        "Attribution-NonCommercial-ShareAlike 3.0 China Mainland"@hi,
+        "Imenovanje-Nekomercijalno-Dijeli pod istim uvjetima 3.0 Kina"@hr,
+        "Nevezd meg! - Ne add el! - Így add tovább! 3.0 Kína"@hu,
+        "Հղում - ոչ-առևտրային օգտագործում - համանման տարածում 3.0 China Mainland"@hy,
+        "Atribusi-NonKomersial-BerbagiSerupa 3.0 Cina Daratan"@id,
+        "Attribution-NonCommercial-ShareAlike 3.0 China Mainland"@is,
+        "Attribuzione - Non commerciale - Condividi allo stesso modo 3.0 Cina"@it,
+        "Attribuzione - Non commerciale - Condividi allo stesso modo 3.0 Cina"@it-ch,
+        "表示 - 非営利 - 継承 3.0 中華人民共和国"@ja,
+        "ავტორობის მითითებით–არაკომერციული გამოყენებისთვის–გამოყენება იგივე პირობებით 3.0 ჩინეთი (მატერიკი)"@ka,
+        "Attribution-NonCommercial-ShareAlike 3.0 China Mainland"@kk,
+        "저작자표시-비영리-동일조건변경허락 3.0 중국 본토"@ko,
+        "Attribution-NonCommercial-ShareAlike 3.0 Kinijos žemynas"@lt,
+        "Atsaucoties-Nekomerciāls-Nemainot licenci 3.0 Ķīna"@lv,
+        "НаведиИзвор-Некомерцијално-СподелиПодИстиУслови 3.0 Кина"@mk,
+        "Attribution-NonCommercial-ShareAlike 3.0 China Mainland"@ml,
+        "Attribution-NonCommercial-ShareAlike 3.0 China Mainland"@mn,
+        "Pengiktirafan-BukanKomersial-PerkongsianSerupa 3.0 Tanah Besar Cina"@ms,
+        "Naamsvermelding-NietCommercieel-GelijkDelen 3.0 China (vasteland)"@nl,
+        "Navngivelse-Ikkekommersiell-DelPåSammeVilkår 3.0 Kina"@no,
+        "Tsebagatšo - E sego ya Kgwebo - Mohlakanelwa 3.0 China Naga-bogareng"@nso,
+        "Attribution-NonCommercial-ShareAlike 3.0 China Mainland"@oci-es,
+        "Uznanie autorstwa-Użycie niekomercyjne-Na tych samych warunkach 3.0 Chiny"@pl,
+        "Atribuição - NãoComercial - CompartilhaIgual 3.0 China Continental"@pt,
+        "Atribuição-NãoComercial-CompartilhaIgual 3.0 China Continental"@pt-br,
+        "Atribuição-Uso Não-Comercial-Partilha nos termos da mesma licença 3.0 China"@pt-pt,
+        "Atribuire-Necomercial-FărăModificări 3.0 China continentală"@ro,
+        "«Attribution-NonCommercial-ShareAlike» («Атрибуция — Некоммерческое использование — На тех же условиях») 3.0 Материковый Китай"@ru,
+        "Attribution-NonCommercial-ShareAlike 3.0 China Mainland"@si-lk,
+        "Priznanje avtorstva-Nekomercialno-Deljenje pod enakimi pogoji 3.0 Kitajska"@sl,
+        "Attribution-NonCommercial-ShareAlike 3.0 Kinë Kontinentale"@sq,
+        "Attribution-NonCommercial-ShareAlike 3.0 China Mainland"@sr,
+        "Ауторство-Некомерцијално-Делити под истим условима 3.0 Кина"@sr,
+        "Autorstvo-Nekomercijalno-Deliti pod istim uslovima 3.0 Kina"@sr-latn,
+        "Erkännande-IckeKommersiell-DelaLika 3.0 Kina"@sv,
+        "Attribution-NonCommercial-ShareAlike 3.0 China Mainland"@ta,
+        "Attribution-NonCommercial-ShareAlike 3.0 చైనా మెయిన్లాండ్"@te,
+        "แสดงที่มา-ไม่ใช้เพื่อการค้า-อนุญาตแบบเดียวกัน 3.0 จีนแผ่นดินใหญ่"@th,
+        "Attribution-Gayriticari-ShareAlike 3.0 Çin Halk Cumhuriyeti"@tr,
+        "Із зазначенням авторства - Некомерційна - Розповсюдження на тих самих умовах 3.0 Континентальний Китай"@uk,
+        "Attribution-NonCommercial-ShareAlike 3.0 China Mainland"@ur,
+        "Attribution-NonCommercial-ShareAlike 3.0 China Mainland"@vi,
+        "署名-非商业性使用-相同方式共享 3.0 中国大陆"@zh,
+        "姓名標示-非商業性-相同方式分享 3.0 中國大陸"@zh-hk,
+        "姓名標示-非商業性-相同方式分享 3.0 中國大陸"@zh-tw,
+        "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano-Yihlanganyeleni 3.0 EMainland China"@zu,
+        "${Attribution-NonCommercial-ShareAlike} 3.0 ${China Mainland}"@zxx ;
+    owl:sameAs <https://licensedb.org/id/CC-BY-NC-SA-3.0-cn> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nc-sa/3.0/cn/80x15.png>,
+        <http://i.creativecommons.org/l/by-nc-sa/3.0/cn/88x31.png> .
+
+<https://licensedb.org/id/CC-BY-NC-SA-3.0-cn> a cc:License,
+        li:License ;
+    cc:jurisdiction <http://creativecommons.org/international/cn/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nc-sa/3.0/cn/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:prohibits cc:CommercialUse ;
+    cc:requires cc:Attribution,
+        cc:Notice,
+        cc:ShareAlike ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "3.0" ;
+    dc:identifier "by-nc-sa" ;
+    dc:source <http://creativecommons.org/licenses/by-nc-sa/3.0/> ;
+    dc:title "Erkenning-Niekommersieel-InsgelyksDeel 3.0 Sjinese Vasteland"@af,
+        "المشاركة على قدم المساواة-غير تجاري-نسب العمل 3.0 الصين "@ar,
+        "Attribution-NonCommercial-ShareAlike 3.0 China Mainland"@as,
+        "Attribution-NonCommercial-ShareAlike 3.0 China Mainland"@ast,
+        "Attribution-NonCommercial-ShareAlike 3.0 China Mainland"@ast-es,
+        "Attribution-NonCommercial-ShareAlike 3.0 China Mainland"@az,
+        "Attribution-NonCommercial-ShareAlike 3.0 Мацерыковы Кітай"@be,
+        "Признание-Некомерсиално-Споделяне на споделеното 3.0 Китай (континентален)"@bg,
+        "Attribution-NonCommercial-ShareAlike 3.0 China Mainland"@bn,
+        "Reconeixement-NoComercial-CompartirIgual 3.0 Xina"@ca,
+        "Uveďte autora-Nevyužívejte dílo komerčně-Zachovejte licenci 3.0 Kontinentální Čína"@cs,
+        "Navngivelse-IkkeKommerciel–DelPåSammeVilkår 3.0 Kina"@da,
+        "Namensnennung - Nicht-kommerziell - Weitergabe unter gleichen Bedingungen 3.0 Volksrepublik China"@de,
+        "Namensnennung-NichtKommerziell-Weitergabe unter gleichen Bedingungen 3.0 China"@de-at,
+        "Namensnennung - Nicht-kommerziell - Weitergabe unter gleichen Bedingungen 3.0 Volksrepublik China"@de-ch,
+        "Αναφορά Δημιουργού - Μη Εμπορική Χρήση - Παρόμοια Διανομή 3.0 Κίνα"@el,
+        "Attribution-NonCommercial-ShareAlike 3.0 China Mainland"@en,
+        "Attribution-NonCommercial-ShareAlike 3.0 China Mainland"@en-ca,
+        "Attribution-NonCommercial-ShareAlike 3.0 China"@en-gb,
+        "Attribution-NonCommercial-ShareAlike 3.0 China"@en-hk,
+        "Attribution-NonCommercial-ShareAlike 3.0 China"@en-sg,
+        "Attribution-NonCommercial-ShareAlike 3.0 China Mainland"@en-us,
+        "Atribuite-Nekomerce-Samkondiĉe 3.0 Ĉinujo"@eo,
+        "Atribución-NoComercial-CompartirIgual 3.0 China continental"@es,
+        "Atribución-NoComercial-CompartirIgual 3.0 China continental"@es-ar,
+        "Reconocimiento-NoComercial-CompartirIgual 3.0 China"@es-es,
+        "Reconocimiento-NoComercial-CompartirIgual 3.0 China"@es-pe,
+        "Autorile viitamine + Mitteäriline eesmärk + Jagamine samadel tingimustel 3.0 Mandri-Hiina"@et,
+        "Aitortu-EzKomertziala-PartekatuBerdin 3.0 Txina"@eu,
+        "Attribution-NonCommercial-ShareAlike 3.0 چین سرزمین اصلی"@fa,
+        "Nimeä-Epäkaupallinen-JaaSamoin 3.0 Kiina"@fi,
+        "Attribution - Pas d’Utilisation Commerciale - Partage dans les Mêmes Conditions 3.0 Chine continentale"@fr,
+        "Paternité - Pas d'Utilisation Commerciale - Partage des Conditions Initiales à l'Identique 3.0 Chine"@fr-ca,
+        "Paternité - Pas d'Utilisation Commerciale - Partage des Conditions Initiales à l'Identique 3.0 Chine"@fr-ch,
+        "Paternité - Pas d'Utilisation Commerciale - Partage des Conditions Initiales à l'Identique 3.0 Chine"@fr-lu,
+        "Attribution-NonCommercial-ShareAlike 3.0 China Mainland"@ga,
+        "Recoñecemento-NonComercial-CompartirIgual 3.0 China continental"@gl,
+        "ייחוס-שימוש לא מסחרי-שיתוף זהה 3.0 סין"@he,
+        "Attribution-NonCommercial-ShareAlike 3.0 China Mainland"@hi,
+        "Imenovanje-Nekomercijalno-Dijeli pod istim uvjetima 3.0 Kina"@hr,
+        "Nevezd meg! - Ne add el! - Így add tovább! 3.0 Kína"@hu,
+        "Հղում - ոչ-առևտրային օգտագործում - համանման տարածում 3.0 China Mainland"@hy,
+        "Atribusi-NonKomersial-BerbagiSerupa 3.0 Cina Daratan"@id,
+        "Attribution-NonCommercial-ShareAlike 3.0 China Mainland"@is,
+        "Attribuzione - Non commerciale - Condividi allo stesso modo 3.0 Cina"@it,
+        "Attribuzione - Non commerciale - Condividi allo stesso modo 3.0 Cina"@it-ch,
+        "表示 - 非営利 - 継承 3.0 中華人民共和国"@ja,
+        "ავტორობის მითითებით–არაკომერციული გამოყენებისთვის–გამოყენება იგივე პირობებით 3.0 ჩინეთი (მატერიკი)"@ka,
+        "Attribution-NonCommercial-ShareAlike 3.0 China Mainland"@kk,
+        "저작자표시-비영리-동일조건변경허락 3.0 중국 본토"@ko,
+        "Attribution-NonCommercial-ShareAlike 3.0 Kinijos žemynas"@lt,
+        "Atsaucoties-Nekomerciāls-Nemainot licenci 3.0 Ķīna"@lv,
+        "НаведиИзвор-Некомерцијално-СподелиПодИстиУслови 3.0 Кина"@mk,
+        "Attribution-NonCommercial-ShareAlike 3.0 China Mainland"@ml,
+        "Attribution-NonCommercial-ShareAlike 3.0 China Mainland"@mn,
+        "Pengiktirafan-BukanKomersial-PerkongsianSerupa 3.0 Tanah Besar Cina"@ms,
+        "Naamsvermelding-NietCommercieel-GelijkDelen 3.0 China (vasteland)"@nl,
+        "Navngivelse-Ikkekommersiell-DelPåSammeVilkår 3.0 Kina"@no,
+        "Tsebagatšo - E sego ya Kgwebo - Mohlakanelwa 3.0 China Naga-bogareng"@nso,
+        "Attribution-NonCommercial-ShareAlike 3.0 China Mainland"@oci-es,
+        "Uznanie autorstwa-Użycie niekomercyjne-Na tych samych warunkach 3.0 Chiny"@pl,
+        "Atribuição - NãoComercial - CompartilhaIgual 3.0 China Continental"@pt,
+        "Atribuição-NãoComercial-CompartilhaIgual 3.0 China Continental"@pt-br,
+        "Atribuição-Uso Não-Comercial-Partilha nos termos da mesma licença 3.0 China"@pt-pt,
+        "Atribuire-Necomercial-FărăModificări 3.0 China continentală"@ro,
+        "«Attribution-NonCommercial-ShareAlike» («Атрибуция — Некоммерческое использование — На тех же условиях») 3.0 Материковый Китай"@ru,
+        "Attribution-NonCommercial-ShareAlike 3.0 China Mainland"@si-lk,
+        "Priznanje avtorstva-Nekomercialno-Deljenje pod enakimi pogoji 3.0 Kitajska"@sl,
+        "Attribution-NonCommercial-ShareAlike 3.0 Kinë Kontinentale"@sq,
+        "Attribution-NonCommercial-ShareAlike 3.0 China Mainland"@sr,
+        "Ауторство-Некомерцијално-Делити под истим условима 3.0 Кина"@sr,
+        "Autorstvo-Nekomercijalno-Deliti pod istim uslovima 3.0 Kina"@sr-latn,
+        "Erkännande-IckeKommersiell-DelaLika 3.0 Kina"@sv,
+        "Attribution-NonCommercial-ShareAlike 3.0 China Mainland"@ta,
+        "Attribution-NonCommercial-ShareAlike 3.0 చైనా మెయిన్లాండ్"@te,
+        "แสดงที่มา-ไม่ใช้เพื่อการค้า-อนุญาตแบบเดียวกัน 3.0 จีนแผ่นดินใหญ่"@th,
+        "Attribution-Gayriticari-ShareAlike 3.0 Çin Halk Cumhuriyeti"@tr,
+        "Із зазначенням авторства - Некомерційна - Розповсюдження на тих самих умовах 3.0 Континентальний Китай"@uk,
+        "Attribution-NonCommercial-ShareAlike 3.0 China Mainland"@ur,
+        "Attribution-NonCommercial-ShareAlike 3.0 China Mainland"@vi,
+        "署名-非商业性使用-相同方式共享 3.0 中国大陆"@zh,
+        "姓名標示-非商業性-相同方式分享 3.0 中國大陸"@zh-hk,
+        "姓名標示-非商業性-相同方式分享 3.0 中國大陸"@zh-tw,
+        "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano-Yihlanganyeleni 3.0 EMainland China"@zu,
+        "${Attribution-NonCommercial-ShareAlike} 3.0 ${China Mainland}"@zxx ;
+    owl:sameAs <http://creativecommons.org/licenses/by-nc-sa/3.0/cn/> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nc-sa/3.0/cn/80x15.png>,
+        <http://i.creativecommons.org/l/by-nc-sa/3.0/cn/88x31.png> ;
+    li:id "CC-BY-NC-SA-3.0-cn" ;
+    li:name "CC BY-NC-SA 3.0 CN" .
+

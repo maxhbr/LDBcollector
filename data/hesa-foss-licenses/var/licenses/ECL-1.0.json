@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+        "comment": ""
+    },
+    "name": "Educational Community License 1.0",
+    "scancode_key": "ecl-1.0",
+    "spdxid": "ECL-1.0",
+    "aliases": [
+        "ECL-1.0",
+        "Educational Community License v1.0",
+        "Educational Community License 1.0",
+        "Educational Community License, Version 1.0",
+        "scancode://ecl-1.0",
+        "ECL 1.0",
+        "ECL, Version 1.0",
+        "Educational Community License version 1.0",
+        "scancode:ecl-1.0",
+        "osi:ECL-1.0"
+    ]
+}

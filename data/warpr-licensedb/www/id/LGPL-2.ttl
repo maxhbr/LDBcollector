@@ -1,0 +1,52 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://licensedb.org/id/LGPL-2> a cc:License,
+        li:License ;
+    cc:legalcode <http://gnu.org/licenses/lgpl-2.0.html> ;
+    dc:creator <http://fsf.org/> ;
+    dc:hasVersion "2.0" ;
+    dc:identifier "GNU LGPL" ;
+    dc:isReplacedBy <https://licensedb.org/id/LGPL-2.1> ;
+    dc:title "GNU Library General Public License" ;
+    schema:sameAs <http://gnu.org/licenses/lgpl-2.0.html>,
+        <http://spdx.org/licenses/LGPL-2.0>,
+        <http://spdx.org/licenses/LGPL-2.0+> ;
+    spdx:licenseId "LGPL-2.0",
+        "LGPL-2.0+" ;
+    li:id "LGPL-2" ;
+    li:libre <http://debian.org/>,
+        <http://fsf.org/> ;
+    li:name "GNU LGPLv2" ;
+    li:notice [ li:canonical true ;
+            li:orlater true ;
+            li:short false ;
+            li:text """{{description}}
+Copyright (C) {{year}}  {{rightsholder}}
+
+This library is free software; you can redistribute it and/or
+modify it under the terms of the GNU Library General Public
+License as published by the Free Software Foundation; either
+version 2 of the License, or (at your option) any later version.
+
+This library is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+Library General Public License for more details.
+
+You should have received a copy of the GNU Library General Public
+License along with this library; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+""" ] ;
+    li:plaintext <http://gnu.org/licenses/lgpl-2.0.txt> .
+

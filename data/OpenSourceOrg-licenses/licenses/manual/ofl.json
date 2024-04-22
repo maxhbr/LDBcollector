@@ -1,0 +1,23 @@
+[
+    {
+        "id": "OFL-1.1",
+        "links": [
+            {
+                "note": "OSI Page",
+                "url": "https://opensource.org/licenses/OFL-1.1"
+            }
+        ],
+        "name": "SIL Open Font License, Version 1.1",
+        "keywords": [
+            "osi-approved",
+            "special-purpose"
+        ],
+        "text": [
+            {
+                "media_type": "text/html",
+                "title": "HTML",
+                "url": "https://opensource.org/licenses/OFL-1.1"
+            }
+        ]
+    }
+]

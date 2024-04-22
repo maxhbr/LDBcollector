@@ -1,0 +1,53 @@
+---
+# SPDX-FileCopyrightText: 2021 HH Partners, Attorneys-at-law Ltd <doubleopen@hhpartners.fi>
+# SPDX-License-Identifier: CC0-1.0
+
+name: Check
+
+on:
+  push:
+    branches:
+      - "main"
+  pull_request:
+    branches:
+      - "main"
+  workflow_dispatch:
+
+jobs:
+  Check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clone the repository
+        uses: actions/checkout@v4
+      - name: Setup Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+      - name: Check license classifications
+        run: ./scripts/check-license-classifications.main.kts
+
+  Lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clone the repository
+        uses: actions/checkout@v4
+      - name: Lint YAML files
+        uses: ibiqlik/action-yamllint@v3
+        with:
+          file_or_dir: license-classifications.yml
+
+  REUSE:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clone the repository
+        uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+      - name: Check REUSE Compliance
+        run: |
+          pip install --user reuse
+          ~/.local/bin/reuse lint

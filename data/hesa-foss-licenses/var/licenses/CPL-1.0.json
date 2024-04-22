@@ -1,0 +1,26 @@
+{
+"meta": {
+    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+    "comment": ""
+  },
+  "name": "Common Public License 1.0",
+  "scancode_key": "cpl-1.0",
+  "spdxid": "CPL-1.0",
+  "aliases": [
+   "Common Public License 1.0",
+   "Common Public License, Version 1.0",
+   "Common Public License Version 1.0",
+   "scancode://cpl-1.0",
+   "CPL 1.0",
+   "Common Public License (CPL), Version 1.0",
+   "CPL-v1.0",
+   "CPL-1.0",
+   "Common Public License (CPL) -- V1.0",
+   "Common Public License - v 1.0",
+   "Common Public License v1.0",
+   "Common Public License version 1.0",
+   "Common Public License v. 1.0",
+   "scancode:cpl-1.0",
+   "osi:CPL-1.0"
+  ]
+}

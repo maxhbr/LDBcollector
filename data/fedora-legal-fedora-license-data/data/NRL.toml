@@ -1,0 +1,19 @@
+[license]
+
+expression = "NRL"
+status = [ "allowed" ]
+
+url = '''
+http://web.mit.edu/network/isakmp/nrllicense.html
+'''
+
+[fedora]
+
+legacy-name = [
+    "NRL License"
+]
+
+legacy-abbreviation = [
+    "BSD with advertising"
+]
+

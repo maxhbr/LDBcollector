@@ -1,0 +1,26 @@
+---
+id: "PyPI::flower:0.9.7"
+vcs:
+  type: "Git"
+  url: "https://github.com/mher/flower.git"
+  revision: "26d19a816a362cdce32fd125596ed3bd238b40b4"
+path_excludes:
+  - pattern: ".github/**"
+    reason: "BUILD_TOOL_OF"
+  - pattern: "docs/**"
+    reason: "DOCUMENTATION_OF"
+  - pattern: "examples/**"
+    reason: "EXAMPLE_OF"
+  - pattern: "tests/**"
+    reason: "TEST_OF"
+license_finding_curations:
+  - path: "flower/static/css/jquery-ui.css"
+    concluded_license: "GPL-2.0-only OR MIT"
+    reason: "INCORRECT"
+    comment: "Code comment states 'Licensed MIT, GPL' meaning dual licensed under the MIT or GPL-2.0-only, see \
+      https://github.com/mher/flower/blob/v0.9.7/flower/static/css/jquery-ui.css#L4."
+  - path: "flower/static/js/jquery-ui-1-8-15.min.js"
+    concluded_license: "GPL-2.0-only OR MIT"
+    reason: "INCORRECT"
+    comment: "Code comment states 'Dual licensed under the MIT or GPL Version 2 licenses', see \
+      https://github.com/mher/flower/blob/v0.9.7/flower/static/js/jquery-ui-1-8-15.min.js#L5."

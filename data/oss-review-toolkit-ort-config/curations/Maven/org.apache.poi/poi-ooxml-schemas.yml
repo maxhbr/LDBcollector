@@ -1,0 +1,14 @@
+- id: "Maven:org.apache.poi:poi-ooxml-schemas"
+  curations:
+    comment: |
+      No SCM tag is in the POM, but the repository was found via Internet search.
+    vcs:
+      type: "Git"
+      url: "https://github.com/apache/poi.git"
+
+- id: "Maven:org.apache.poi:poi-ooxml-schemas:[3.5,5.0.0]"
+  curations:
+    comment: |
+      Sources for the ooxml-schemas are specified in this sub-directory.
+    vcs:
+      path: "src/ooxml"

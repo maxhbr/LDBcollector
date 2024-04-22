@@ -1,0 +1,236 @@
+[
+    {
+        "model": "cube.generic",
+        "fields": {
+            "name": "License agreement does not attempt to limit rights given by upstream",
+            "description": "The license agreement of the global product must not limit rights given by the upstream Open Source license for the code of the original Open Source component",
+            "in_core": false,
+            "metacategory": "LicenseAgreement",
+            "team": [
+                "Legal"
+            ],
+            "passivity": "Passive"
+        }
+    },
+    {
+        "model": "cube.generic",
+        "fields": {
+            "name": "License agreement disclaiming responsability of other contributors",
+            "description": "The vendor\u2019s license agreement must exclude all contributors from any warranty or any liability",
+            "in_core": true,
+            "metacategory": "LicenseAgreement",
+            "team": [
+                "Legal"
+            ],
+            "passivity": "Active"
+        }
+    },
+    {
+        "model": "cube.generic",
+        "fields": {
+            "name": "Strong Copyleft",
+            "description": "Derivative works or works based on the Open Source Software must be distributed under the initial license or another license approved by the initial license.",
+            "in_core": false,
+            "metacategory": "IPManagement",
+            "team": [
+                "Legal"
+            ],
+            "passivity": "Active"
+        }
+    },
+    {
+        "model": "cube.generic",
+        "fields": {
+            "name": "Weak Copyleft",
+            "description": "Some categories of derivative works or of works based on the Open Source Software must be distributed under the initial license or another license approved by the initial license.",
+            "in_core": false,
+            "metacategory": "IPManagement",
+            "team": [
+                "Legal"
+            ],
+            "passivity": "Active"
+        }
+    },
+    {
+        "model": "cube.generic",
+        "fields": {
+            "name": "SaaS : mentions",
+            "description": "Display to users interacting with your application remotely through a computer network specific mentions required by the license.",
+            "in_core": false,
+            "metacategory": "Mentions",
+            "team": [
+                "DevQA"
+            ],
+            "passivity": "Active"
+        }
+    },
+    {
+        "model": "cube.generic",
+        "fields": {
+            "name": "Extra mentions in documentation",
+            "description": "Include specific mentions/attributions/ statements or warnings in the documentation.",
+            "in_core": false,
+            "metacategory": "Mentions",
+            "team": [
+                "DevQA"
+            ],
+            "passivity": "Active"
+        }
+    },
+    {
+        "model": "cube.generic",
+        "fields": {
+            "name": "Non Tivoization",
+            "description": "Make available any methods, procedures, authorization keys, or other information required to install and execute modified versions the information required to run a modified version of the software (including  provision of load certificates) on the hardware.",
+            "in_core": false,
+            "metacategory": "TechnicalConstraints",
+            "team": [
+                "DevQA"
+            ],
+            "passivity": "Active"
+        }
+    },
+    {
+        "model": "cube.generic",
+        "fields": {
+            "name": "SaaS : network Copyleft",
+            "description": "Derivative works or works based on the Open Source Software must be made available to users interacting with your application remotely through a computer network under the initial license or another license approved by the initial license.",
+            "in_core": false,
+            "metacategory": "IPManagement",
+            "team": [
+                "Legal"
+            ],
+            "passivity": "Active"
+        }
+    },
+    {
+        "model": "cube.generic",
+        "fields": {
+            "name": "Providing CSC to end user",
+            "description": "Rendre disponible le code source correspondant (modifications comprises) par :\r\n- au moment de la distribution du logiciel et sur le m\u00eame support ;\t\r\n- en incluant une offre \u00e9crite permettant de l'obtenir ;\t\r\n- en le rendant disponible en ligne ;",
+            "in_core": false,
+            "metacategory": "ProvidingSourceCode",
+            "team": [
+                "DevQA"
+            ],
+            "passivity": "Active"
+        }
+    },
+    {
+        "model": "cube.generic",
+        "fields": {
+            "name": "Indemnification of contributors",
+            "description": "If any contributors is attacked because of the usage or distribution of the product, then they must be defended and indemnified",
+            "in_core": false,
+            "metacategory": "LicenseAgreement",
+            "team": [
+                "Legal"
+            ],
+            "passivity": "Active"
+        }
+    },
+    {
+        "model": "cube.generic",
+        "fields": {
+            "name": "Obnoxious advertising clause",
+            "description": "Display of specific content in any advertising document mentioning the features or the use of the software.",
+            "in_core": false,
+            "metacategory": "Communication",
+            "team": [
+                "Communication"
+            ],
+            "passivity": "Active"
+        }
+    },
+    {
+        "model": "cube.generic",
+        "fields": {
+            "name": "Preserve IP mentions in Source code",
+            "description": "Keep all legal notices and license texts intact, including in the headers.",
+            "in_core": true,
+            "metacategory": "Mentions",
+            "team": [
+                "DevQA"
+            ],
+            "passivity": "Active"
+        }
+    },
+    {
+        "model": "cube.generic",
+        "fields": {
+            "name": "License and copyright notices in documentation",
+            "description": "Reproduce within the documentation the complete text of the licenses, copyright notices and other texts related to involved Intellectual Property.",
+            "in_core": true,
+            "metacategory": "Mentions",
+            "team": [
+                "DevQA"
+            ],
+            "passivity": "Active"
+        }
+    },
+    {
+        "model": "cube.generic",
+        "fields": {
+            "name": "Display copyright and licence in Program",
+            "description": "Display particular mentions during the execution and the installation of the software (in the dedicated place for legal mentions).",
+            "in_core": true,
+            "metacategory": "Mentions",
+            "team": [
+                "DevQA"
+            ],
+            "passivity": "Active"
+        }
+    },
+    {
+        "model": "cube.generic",
+        "fields": {
+            "name": "No use of names for endorsement",
+            "description": "Names of the project authors/contributors are not to be used for commercial or promotional purposes.",
+            "in_core": true,
+            "metacategory": "Communication",
+            "team": [
+                "Communication"
+            ],
+            "passivity": "Passive"
+        }
+    },
+    {
+        "model": "cube.generic",
+        "fields": {
+            "name": "Patent Peace",
+            "description": "Enforcing patents against licensees or making a non-infringement agreement contrary to the license is prohibited.",
+            "in_core": true,
+            "metacategory": "IPManagement",
+            "team": [
+                "Legal"
+            ],
+            "passivity": "Passive"
+        }
+    },
+    {
+        "model": "cube.generic",
+        "fields": {
+            "name": "Marking Modifications",
+            "description": "Document all modifications made in the source code of third-party Open Source components.",
+            "in_core": true,
+            "metacategory": "Mentions",
+            "team": [
+                "DevQA"
+            ],
+            "passivity": "Active"
+        }
+    },
+    {
+        "model": "cube.generic",
+        "fields": {
+            "name": "Respect trademarks",
+            "description": "Don\u2019t use elements of the project that may be covered by Trademark Law (project name, logo) in external communications.",
+            "in_core": true,
+            "metacategory": "Communication",
+            "team": [
+                "Communication"
+            ],
+            "passivity": "Passive"
+        }
+    }
+]

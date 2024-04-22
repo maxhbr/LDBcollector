@@ -1,0 +1,13 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+
+canonicalName: "Artop Software License"
+category: "Artop"
+shortName: "ASLR"
+
+alternativeNames:
+  - "Artop Software License Based on AUTOSAR Released Material"
+
+otherIds: 
+  - "scancode:aslr"

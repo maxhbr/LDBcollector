@@ -1,0 +1,22 @@
+[
+    {
+        "id": "ISC",
+        "links": [
+            {
+                "note": "OSI Page",
+                "url": "https://opensource.org/licenses/ISC"
+            }
+        ],
+        "name": "ISC License (ISC)",
+        "keywords": [
+            "osi-approved"
+        ],
+        "text": [
+            {
+                "media_type": "text/html",
+                "title": "HTML",
+                "url": "https://opensource.org/licenses/ISC"
+            }
+        ]
+    }
+]

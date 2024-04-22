@@ -1,0 +1,14 @@
+[license]
+
+expression = "Linux-man-pages-copyleft"
+status = [ "allowed-documentation" ]
+
+[fedora]
+
+legacy-name = [
+    "Verbatim License"
+]
+
+legacy-abbreviation = [
+    "Verbatim"
+]

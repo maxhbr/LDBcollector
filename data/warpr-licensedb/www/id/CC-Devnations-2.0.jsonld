@@ -1,0 +1,842 @@
+{
+    "@context": {
+        "cc": "http://creativecommons.org/ns#",
+        "dc": "http://purl.org/dc/terms/",
+        "dc11": "http://purl.org/dc/elements/1.1/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "li": "https://licensedb.org/ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "cc:legalcode": {
+            "@type": "@id"
+        },
+        "cc:permits": {
+            "@type": "@id"
+        },
+        "cc:requires": {
+            "@type": "@id"
+        },
+        "cc:prohibits": {
+            "@type": "@id"
+        },
+        "cc:jurisdiction": {
+            "@type": "@id"
+        },
+        "cc:licenseClass": {
+            "@type": "@id"
+        },
+        "dc:creator": {
+            "@type": "@id"
+        },
+        "dc:source": {
+            "@type": "@id"
+        },
+        "dc:replaces": {
+            "@type": "@id"
+        },
+        "dc:isBasedOn": {
+            "@type": "@id"
+        },
+        "dc:isReplacedBy": {
+            "@type": "@id"
+        },
+        "foaf:logo": {
+            "@type": "@id"
+        },
+        "li:plaintext": {
+            "@type": "@id"
+        },
+        "li:libre": {
+            "@type": "@id"
+        },
+        "owl:sameAs": {
+            "@type": "@id"
+        }
+    },
+    "@id": "https://licensedb.org/id/CC-Devnations-2.0",
+    "@type": [
+        "cc:License",
+        "li:License"
+    ],
+    "cc:deprecatedOn": {
+        "@type": "http://www.w3.org/2001/XMLSchema-datatypes#date",
+        "@value": "2007-06-04"
+    },
+    "cc:legalcode": "http://creativecommons.org/licenses/devnations/2.0/legalcode",
+    "cc:licenseClass": "http://creativecommons.org/license/",
+    "cc:permits": [
+        "cc:DerivativeWorks",
+        "cc:Distribution",
+        "cc:Reproduction"
+    ],
+    "cc:prohibits": "cc:HighIncomeNationUse",
+    "cc:requires": "cc:Notice",
+    "dc:creator": "http://creativecommons.org",
+    "dc:hasVersion": "2.0",
+    "dc:identifier": "devnations",
+    "dc:title": [
+        {
+            "@language": "af",
+            "@value": "Ontwikkelende Nasies License"
+        },
+        {
+            "@language": "ar",
+            "@value": "الدول النامية License"
+        },
+        {
+            "@language": "as",
+            "@value": "Developing Nations License"
+        },
+        {
+            "@language": "ast",
+            "@value": "Developing Nations License"
+        },
+        {
+            "@language": "ast-es",
+            "@value": "Developing Nations License"
+        },
+        {
+            "@language": "az",
+            "@value": "Developing Nations License"
+        },
+        {
+            "@language": "be",
+            "@value": "Краіны ў стадыі развіцця License"
+        },
+        {
+            "@language": "bg",
+            "@value": "Развиващи се нации License"
+        },
+        {
+            "@language": "bn",
+            "@value": "Developing Nations License"
+        },
+        {
+            "@language": "ca",
+            "@value": "Nacions en desenvolupament License"
+        },
+        {
+            "@language": "cs",
+            "@value": "Rozvojové národy License"
+        },
+        {
+            "@language": "da",
+            "@value": "Udviklingslande License"
+        },
+        {
+            "@language": "de",
+            "@value": "Entwicklungsländer License"
+        },
+        {
+            "@language": "de-at",
+            "@value": "Entwicklungsländer License"
+        },
+        {
+            "@language": "de-ch",
+            "@value": "Entwicklungsländer License"
+        },
+        {
+            "@language": "el",
+            "@value": "Αναπτυσσόμενα Έθνη License"
+        },
+        {
+            "@language": "en",
+            "@value": "Developing Nations License"
+        },
+        {
+            "@language": "en-ca",
+            "@value": "Developing Nations License"
+        },
+        {
+            "@language": "en-gb",
+            "@value": "Developing Nations License"
+        },
+        {
+            "@language": "en-hk",
+            "@value": "Developing Nations License"
+        },
+        {
+            "@language": "en-sg",
+            "@value": "Developing Nations License"
+        },
+        {
+            "@language": "en-us",
+            "@value": "Developing Nations License"
+        },
+        {
+            "@language": "eo",
+            "@value": "Evolulandoj License"
+        },
+        {
+            "@language": "es",
+            "@value": "Naciones en desarrollo License"
+        },
+        {
+            "@language": "es-ar",
+            "@value": "Naciones en Desarrollo License"
+        },
+        {
+            "@language": "es-cl",
+            "@value": "Países en Desarrollo License"
+        },
+        {
+            "@language": "es-co",
+            "@value": "Naciones en desarrollo License"
+        },
+        {
+            "@language": "es-ec",
+            "@value": "Naciones en desarrollo License"
+        },
+        {
+            "@language": "es-es",
+            "@value": "Naciones en desarrollo License"
+        },
+        {
+            "@language": "es-gt",
+            "@value": "Naciones en desarrollo License"
+        },
+        {
+            "@language": "es-mx",
+            "@value": "Naciones en desarrollo License"
+        },
+        {
+            "@language": "es-pe",
+            "@value": "Naciones en desarrollo License"
+        },
+        {
+            "@language": "es-pr",
+            "@value": "Naciones en desarrollo License"
+        },
+        {
+            "@language": "et",
+            "@value": "Arengumaad License"
+        },
+        {
+            "@language": "eu",
+            "@value": "Garapen bidean diren herrialdeak License"
+        },
+        {
+            "@language": "fa",
+            "@value": "Developing Nations License"
+        },
+        {
+            "@language": "fi",
+            "@value": "Kehitysmaa License"
+        },
+        {
+            "@language": "fr",
+            "@value": "Pays en voie de développement License"
+        },
+        {
+            "@language": "fr-ca",
+            "@value": "Pays en Voie de Développement License"
+        },
+        {
+            "@language": "fr-ch",
+            "@value": "Pays en Voie de Développement License"
+        },
+        {
+            "@language": "fr-lu",
+            "@value": "Pays en Voie de Développement License"
+        },
+        {
+            "@language": "ga",
+            "@value": "Developing Nations License"
+        },
+        {
+            "@language": "gl",
+            "@value": "Developing Nations License"
+        },
+        {
+            "@language": "he",
+            "@value": "מדינות מתפתחות License"
+        },
+        {
+            "@language": "hi",
+            "@value": "Developing Nations License"
+        },
+        {
+            "@language": "hr",
+            "@value": "Zemlje u razvoju License"
+        },
+        {
+            "@language": "hu",
+            "@value": "Fejlődő országok License"
+        },
+        {
+            "@language": "hy",
+            "@value": "Developing Nations License"
+        },
+        {
+            "@language": "id",
+            "@value": "Negara Berkembang License"
+        },
+        {
+            "@language": "is",
+            "@value": "Developing Nations License"
+        },
+        {
+            "@language": "it",
+            "@value": "Developing Nations License"
+        },
+        {
+            "@language": "it-ch",
+            "@value": "Developing Nations License"
+        },
+        {
+            "@language": "ja",
+            "@value": "発展途上国 License"
+        },
+        {
+            "@language": "ka",
+            "@value": "განვითარებადი ერები License"
+        },
+        {
+            "@language": "kk",
+            "@value": "Developing Nations License"
+        },
+        {
+            "@language": "ko",
+            "@value": "개발도상국 License"
+        },
+        {
+            "@language": "lt",
+            "@value": "Besivystančios šalys License"
+        },
+        {
+            "@language": "lv",
+            "@value": "Attīstošās nācijas License"
+        },
+        {
+            "@language": "mk",
+            "@value": "Земји во развој License"
+        },
+        {
+            "@language": "ml",
+            "@value": "വികസ്വര രാഷ്ട്രങ്ങൾ License"
+        },
+        {
+            "@language": "mn",
+            "@value": "Developing Nations License"
+        },
+        {
+            "@language": "ms",
+            "@value": "Negara-Negara Membangun License"
+        },
+        {
+            "@language": "nl",
+            "@value": "Ontwikkelingslanden  License"
+        },
+        {
+            "@language": "no",
+            "@value": "Utviklingsland License"
+        },
+        {
+            "@language": "nso",
+            "@value": "Dinaga tše Hlabologago License"
+        },
+        {
+            "@language": "oci-es",
+            "@value": "Developing Nations License"
+        },
+        {
+            "@language": "pl",
+            "@value": "Państwa rozwijające się License"
+        },
+        {
+            "@language": "pt",
+            "@value": "Países em Desenvolvimento License"
+        },
+        {
+            "@language": "pt-br",
+            "@value": "Developing Nations License"
+        },
+        {
+            "@language": "pt-pt",
+            "@value": "Nações em Desenvolvimento License"
+        },
+        {
+            "@language": "ro",
+            "@value": "Naţiuni în curs de dezvoltare License"
+        },
+        {
+            "@language": "ru",
+            "@value": "Развивающиеся страны License"
+        },
+        {
+            "@language": "si-lk",
+            "@value": "Developing Nations License"
+        },
+        {
+            "@language": "sl",
+            "@value": "Narodi v razvoju License"
+        },
+        {
+            "@language": "sq",
+            "@value": "Kombe Në Zhvillim License"
+        },
+        {
+            "@language": "sr",
+            "@value": "Developing Nations License"
+        },
+        {
+            "@language": "sr-latn",
+            "@value": "Developing Nations License"
+        },
+        {
+            "@language": "st",
+            "@value": "Developing Nations License"
+        },
+        {
+            "@language": "sv",
+            "@value": "Utvecklingsländer License"
+        },
+        {
+            "@language": "ta",
+            "@value": "Developing Nations License"
+        },
+        {
+            "@language": "te",
+            "@value": "అభివృద్ధి చెందుతున్న దేశాలు License"
+        },
+        {
+            "@language": "th",
+            "@value": "ประเทศกำลังพัฒนา License"
+        },
+        {
+            "@language": "tr",
+            "@value": "Developing Nations License"
+        },
+        {
+            "@language": "uk",
+            "@value": "Developing Nations License"
+        },
+        {
+            "@language": "ur",
+            "@value": "Developing Nations License"
+        },
+        {
+            "@language": "vi",
+            "@value": "Developing Nations License"
+        },
+        {
+            "@language": "zh",
+            "@value": "发展中国家 License"
+        },
+        {
+            "@language": "zh-hk",
+            "@value": "開發中國家 License"
+        },
+        {
+            "@language": "zh-tw",
+            "@value": "開發中國家 License"
+        },
+        {
+            "@language": "zu",
+            "@value": "Izizwe Ezisathuthuka License"
+        },
+        {
+            "@language": "zxx",
+            "@value": "${Developing Nations} License"
+        }
+    ],
+    "owl:sameAs": {
+        "@id": "http://creativecommons.org/licenses/devnations/2.0/",
+        "@type": "cc:License",
+        "cc:deprecatedOn": {
+            "@type": "http://www.w3.org/2001/XMLSchema-datatypes#date",
+            "@value": "2007-06-04"
+        },
+        "cc:legalcode": "http://creativecommons.org/licenses/devnations/2.0/legalcode",
+        "cc:licenseClass": "http://creativecommons.org/license/",
+        "cc:permits": [
+            "cc:DerivativeWorks",
+            "cc:Distribution",
+            "cc:Reproduction"
+        ],
+        "cc:prohibits": "cc:HighIncomeNationUse",
+        "cc:requires": "cc:Notice",
+        "dc:creator": "http://creativecommons.org",
+        "dc:hasVersion": "2.0",
+        "dc:identifier": "devnations",
+        "dc:title": [
+            {
+                "@language": "af",
+                "@value": "Ontwikkelende Nasies License"
+            },
+            {
+                "@language": "ar",
+                "@value": "الدول النامية License"
+            },
+            {
+                "@language": "as",
+                "@value": "Developing Nations License"
+            },
+            {
+                "@language": "ast",
+                "@value": "Developing Nations License"
+            },
+            {
+                "@language": "ast-es",
+                "@value": "Developing Nations License"
+            },
+            {
+                "@language": "az",
+                "@value": "Developing Nations License"
+            },
+            {
+                "@language": "be",
+                "@value": "Краіны ў стадыі развіцця License"
+            },
+            {
+                "@language": "bg",
+                "@value": "Развиващи се нации License"
+            },
+            {
+                "@language": "bn",
+                "@value": "Developing Nations License"
+            },
+            {
+                "@language": "ca",
+                "@value": "Nacions en desenvolupament License"
+            },
+            {
+                "@language": "cs",
+                "@value": "Rozvojové národy License"
+            },
+            {
+                "@language": "da",
+                "@value": "Udviklingslande License"
+            },
+            {
+                "@language": "de",
+                "@value": "Entwicklungsländer License"
+            },
+            {
+                "@language": "de-at",
+                "@value": "Entwicklungsländer License"
+            },
+            {
+                "@language": "de-ch",
+                "@value": "Entwicklungsländer License"
+            },
+            {
+                "@language": "el",
+                "@value": "Αναπτυσσόμενα Έθνη License"
+            },
+            {
+                "@language": "en",
+                "@value": "Developing Nations License"
+            },
+            {
+                "@language": "en-ca",
+                "@value": "Developing Nations License"
+            },
+            {
+                "@language": "en-gb",
+                "@value": "Developing Nations License"
+            },
+            {
+                "@language": "en-hk",
+                "@value": "Developing Nations License"
+            },
+            {
+                "@language": "en-sg",
+                "@value": "Developing Nations License"
+            },
+            {
+                "@language": "en-us",
+                "@value": "Developing Nations License"
+            },
+            {
+                "@language": "eo",
+                "@value": "Evolulandoj License"
+            },
+            {
+                "@language": "es",
+                "@value": "Naciones en desarrollo License"
+            },
+            {
+                "@language": "es-ar",
+                "@value": "Naciones en Desarrollo License"
+            },
+            {
+                "@language": "es-cl",
+                "@value": "Países en Desarrollo License"
+            },
+            {
+                "@language": "es-co",
+                "@value": "Naciones en desarrollo License"
+            },
+            {
+                "@language": "es-ec",
+                "@value": "Naciones en desarrollo License"
+            },
+            {
+                "@language": "es-es",
+                "@value": "Naciones en desarrollo License"
+            },
+            {
+                "@language": "es-gt",
+                "@value": "Naciones en desarrollo License"
+            },
+            {
+                "@language": "es-mx",
+                "@value": "Naciones en desarrollo License"
+            },
+            {
+                "@language": "es-pe",
+                "@value": "Naciones en desarrollo License"
+            },
+            {
+                "@language": "es-pr",
+                "@value": "Naciones en desarrollo License"
+            },
+            {
+                "@language": "et",
+                "@value": "Arengumaad License"
+            },
+            {
+                "@language": "eu",
+                "@value": "Garapen bidean diren herrialdeak License"
+            },
+            {
+                "@language": "fa",
+                "@value": "Developing Nations License"
+            },
+            {
+                "@language": "fi",
+                "@value": "Kehitysmaa License"
+            },
+            {
+                "@language": "fr",
+                "@value": "Pays en voie de développement License"
+            },
+            {
+                "@language": "fr-ca",
+                "@value": "Pays en Voie de Développement License"
+            },
+            {
+                "@language": "fr-ch",
+                "@value": "Pays en Voie de Développement License"
+            },
+            {
+                "@language": "fr-lu",
+                "@value": "Pays en Voie de Développement License"
+            },
+            {
+                "@language": "ga",
+                "@value": "Developing Nations License"
+            },
+            {
+                "@language": "gl",
+                "@value": "Developing Nations License"
+            },
+            {
+                "@language": "he",
+                "@value": "מדינות מתפתחות License"
+            },
+            {
+                "@language": "hi",
+                "@value": "Developing Nations License"
+            },
+            {
+                "@language": "hr",
+                "@value": "Zemlje u razvoju License"
+            },
+            {
+                "@language": "hu",
+                "@value": "Fejlődő országok License"
+            },
+            {
+                "@language": "hy",
+                "@value": "Developing Nations License"
+            },
+            {
+                "@language": "id",
+                "@value": "Negara Berkembang License"
+            },
+            {
+                "@language": "is",
+                "@value": "Developing Nations License"
+            },
+            {
+                "@language": "it",
+                "@value": "Developing Nations License"
+            },
+            {
+                "@language": "it-ch",
+                "@value": "Developing Nations License"
+            },
+            {
+                "@language": "ja",
+                "@value": "発展途上国 License"
+            },
+            {
+                "@language": "ka",
+                "@value": "განვითარებადი ერები License"
+            },
+            {
+                "@language": "kk",
+                "@value": "Developing Nations License"
+            },
+            {
+                "@language": "ko",
+                "@value": "개발도상국 License"
+            },
+            {
+                "@language": "lt",
+                "@value": "Besivystančios šalys License"
+            },
+            {
+                "@language": "lv",
+                "@value": "Attīstošās nācijas License"
+            },
+            {
+                "@language": "mk",
+                "@value": "Земји во развој License"
+            },
+            {
+                "@language": "ml",
+                "@value": "വികസ്വര രാഷ്ട്രങ്ങൾ License"
+            },
+            {
+                "@language": "mn",
+                "@value": "Developing Nations License"
+            },
+            {
+                "@language": "ms",
+                "@value": "Negara-Negara Membangun License"
+            },
+            {
+                "@language": "nl",
+                "@value": "Ontwikkelingslanden  License"
+            },
+            {
+                "@language": "no",
+                "@value": "Utviklingsland License"
+            },
+            {
+                "@language": "nso",
+                "@value": "Dinaga tše Hlabologago License"
+            },
+            {
+                "@language": "oci-es",
+                "@value": "Developing Nations License"
+            },
+            {
+                "@language": "pl",
+                "@value": "Państwa rozwijające się License"
+            },
+            {
+                "@language": "pt",
+                "@value": "Países em Desenvolvimento License"
+            },
+            {
+                "@language": "pt-br",
+                "@value": "Developing Nations License"
+            },
+            {
+                "@language": "pt-pt",
+                "@value": "Nações em Desenvolvimento License"
+            },
+            {
+                "@language": "ro",
+                "@value": "Naţiuni în curs de dezvoltare License"
+            },
+            {
+                "@language": "ru",
+                "@value": "Развивающиеся страны License"
+            },
+            {
+                "@language": "si-lk",
+                "@value": "Developing Nations License"
+            },
+            {
+                "@language": "sl",
+                "@value": "Narodi v razvoju License"
+            },
+            {
+                "@language": "sq",
+                "@value": "Kombe Në Zhvillim License"
+            },
+            {
+                "@language": "sr",
+                "@value": "Developing Nations License"
+            },
+            {
+                "@language": "sr-latn",
+                "@value": "Developing Nations License"
+            },
+            {
+                "@language": "st",
+                "@value": "Developing Nations License"
+            },
+            {
+                "@language": "sv",
+                "@value": "Utvecklingsländer License"
+            },
+            {
+                "@language": "ta",
+                "@value": "Developing Nations License"
+            },
+            {
+                "@language": "te",
+                "@value": "అభివృద్ధి చెందుతున్న దేశాలు License"
+            },
+            {
+                "@language": "th",
+                "@value": "ประเทศกำลังพัฒนา License"
+            },
+            {
+                "@language": "tr",
+                "@value": "Developing Nations License"
+            },
+            {
+                "@language": "uk",
+                "@value": "Developing Nations License"
+            },
+            {
+                "@language": "ur",
+                "@value": "Developing Nations License"
+            },
+            {
+                "@language": "vi",
+                "@value": "Developing Nations License"
+            },
+            {
+                "@language": "zh",
+                "@value": "发展中国家 License"
+            },
+            {
+                "@language": "zh-hk",
+                "@value": "開發中國家 License"
+            },
+            {
+                "@language": "zh-tw",
+                "@value": "開發中國家 License"
+            },
+            {
+                "@language": "zu",
+                "@value": "Izizwe Ezisathuthuka License"
+            },
+            {
+                "@language": "zxx",
+                "@value": "${Developing Nations} License"
+            }
+        ],
+        "owl:sameAs": "https://licensedb.org/id/CC-Devnations-2.0",
+        "foaf:logo": [
+            "http://i.creativecommons.org/l/devnations/2.0/80x15.png",
+            "http://i.creativecommons.org/l/devnations/2.0/88x31.png"
+        ]
+    },
+    "foaf:logo": [
+        "http://i.creativecommons.org/l/devnations/2.0/80x15.png",
+        "http://i.creativecommons.org/l/devnations/2.0/88x31.png"
+    ],
+    "li:id": "CC-Devnations-2.0",
+    "li:name": "CC Devnations 2.0"
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Making modified version substituable",
+  "description": "Ensure that the modified version can be replaced by the standard version.",
+  "metacategory": "TechnicalConstraints",
+  "passivity": "Active"
+}

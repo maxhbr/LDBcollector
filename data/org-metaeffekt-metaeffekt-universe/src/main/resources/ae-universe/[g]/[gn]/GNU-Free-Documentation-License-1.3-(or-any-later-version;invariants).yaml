@@ -1,0 +1,24 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+
+canonicalName: "GNU Free Documentation License 1.3 (or any later version; invariants)"
+category: "GFDL"
+shortName: "GFDL-1.3+-invariants"
+spdxIdentifier: "GFDL-1.3-invariants-or-later"
+
+alternativeNames:
+  - "GNU Free Documentation License v1.3 or later - invariants"
+  - "licenses.nuget.org/GFDL-1.3-invariants-or-later"
+  - "{{GFDL-1.3-invariants-or-later}} https://spdx.org/licenses/GFDL-1.3-invariants-or-later"
+  - "gfdl-1.3-invariants-or-later"
+  - "GNU Free Documentation License, Version 1.3+ invariants"
+  - "GNU Free Documentation License, v1.3+ invariants"
+  - "GFDL Version 1.3+ invariants"
+  - "GFDL v1.3+ invariants"
+  - "GNU Free Documentation License, Version 1.3 or any later version, invariants"
+  - "GFDL-1.3+ invariants"
+  - "GFDL version 1.3 or later invariants"
+
+otherIds: 
+  - "scancode:gfdl-1.3-invariants-or-later"

@@ -1,0 +1,15 @@
+---
+id: "NPM::spdx-exceptions:2.2.0"
+vcs:
+  type: "Git"
+  url: "https://github.com/kemitchell/spdx-exceptions.json.git"
+  revision: "c33d7b8f1966c486c8f831e0dd1c5af6f4deefbd"
+path_excludes:
+- pattern: "package.json"
+  reason: "BUILD_TOOL_OF"
+license_finding_curations:
+- path: "index.json"
+  concluded_license: "NONE"
+  reason: "INCORRECT"
+  comment: "The files do not contain any license text, just a large listing of SPDX\
+    \ license IDs causing false positives."
