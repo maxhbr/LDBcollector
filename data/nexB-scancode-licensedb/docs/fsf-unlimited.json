@@ -1,0 +1,10 @@
+{
+  "key": "fsf-unlimited",
+  "short_name": "FSF-Unlimited",
+  "name": "Free Software Foundation - Unlimited License",
+  "category": "Permissive",
+  "owner": "Free Software Foundation (FSF)",
+  "homepage_url": "https://fedoraproject.org/wiki/Licensing/FSF_Unlimited_License#License_Retention_Variant",
+  "spdx_license_key": "FSFULLR",
+  "text": "This file is free software; the Free Software Foundation gives\nunlimited permission to copy and/or distribute it, with or without\nmodifications, as long as this notice is preserved."
+}

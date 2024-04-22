@@ -1,0 +1,9 @@
+{
+  "key": "keith-rule",
+  "short_name": "Keith Rule License",
+  "name": "Keith Rule License",
+  "category": "Permissive",
+  "owner": "Keith Rule",
+  "spdx_license_key": "LicenseRef-scancode-keith-rule",
+  "text": "You may freely use or modify this code provided this\nCopyright is included in all derived versions."
+}

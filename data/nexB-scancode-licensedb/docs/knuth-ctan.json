@@ -1,0 +1,12 @@
+{
+  "key": "knuth-ctan",
+  "short_name": "Knuth CTAN License",
+  "name": "Knuth CTAN License",
+  "category": "Permissive",
+  "owner": "CTAN",
+  "spdx_license_key": "Knuth-CTAN",
+  "other_urls": [
+    "https://ctan.org/license/knuth"
+  ],
+  "text": "This software is copyrighted. Unlimited copying and redistribution\nof this package and/or its individual files are permitted\nas long as there are no modifications. Modifications, and\nredistribution of modifications, are also permitted, but\nonly if the resulting package and/or files are renamed."
+}

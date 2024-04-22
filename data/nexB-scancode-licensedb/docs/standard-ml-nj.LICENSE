@@ -1,0 +1,45 @@
+---
+key: standard-ml-nj
+short_name: Standard ML of New Jersey
+name: Standard ML of New Jersey
+category: Permissive
+owner: Alcatel-Lucent
+homepage_url: http://www.smlnj.org//license.html
+notes: |
+    per SPDX.org, SPDX ended up with this license on the license list twice
+    once as of v1.17 with the short identifier SMLNJ and then added (again) as
+    of v1.20 with the short identifier StandardML-NJ. The former list entry has
+    been deprecated. Here, this license is not verbatim the SPDX SMLMJ, but
+    instead the more generic variant as used in the Java CUP parser generator
+    that has no specific references to Lucent and Bell Labs and is therefore a
+    better choice for reuse.
+spdx_license_key: SMLNJ
+other_spdx_license_keys:
+    - StandardML-NJ
+text_urls:
+    - http://directory.fsf.org/wiki/License:StandardMLofNJ
+    - http://www.smlnj.org//license.html
+    - https://fedoraproject.org/wiki/Licensing:MIT?rd=Licensing/MIT#Standard_ML_of_New_Jersey_Variant
+faq_url: http://www.gnu.org/licenses/license-list.html#StandardMLofNJ
+other_urls:
+    - http://www.gnu.org/licenses/license-list.html#StandardMLofNJ
+    - http://www2.cs.tum.edu/projects/cup/
+    - https://www.smlnj.org/license.html
+---
+
+Permission to use, copy, modify, and distribute this software and its
+documentation for any purpose and without fee is hereby granted,
+provided that the above copyright notice appear in all copies and that
+both the copyright notice and this permission notice and warranty
+disclaimer appear in supporting documentation, and that the names of the
+authors or their employers not be used in advertising or publicity
+pertaining to distribution of the software without specific, written
+prior permission.
+
+The authors and their employers disclaim all warranties with regard to
+this software, including all implied warranties of merchantability and
+fitness. In no event shall the authors or their employers be liable for
+any special, indirect or consequential damages or any damages whatsoever
+resulting from loss of use, data or profits, whether in an action of
+contract, negligence or other tortious action, arising out of or in
+connection with the use or performance of this software.

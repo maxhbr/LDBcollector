@@ -1,0 +1,40 @@
+---
+key: hs-regexp
+short_name: Henry Spencer Regexp License
+name: Henry Spencer Regexp License
+category: Permissive
+owner: Henry Spencer
+homepage_url: https://github.com/garyhouston/regex/blob/master/COPYRIGHT
+notes: this is very similar to the purdue-bsd license
+spdx_license_key: Spencer-94
+text_urls:
+    - http://search.cpan.org/~knok/File-MMagic-1.12/MMagic.pm
+    - http://stbase.org/manual/es/mod/mod_mime_magic.html
+    - http://www.cisco.com/c/en/us/td/docs/switches/metro/me3600x_3800x/software/release/15-3_1_S/command/reference/3800x3600xcr/ossack.html
+    - http://www.pell.portland.or.us/~orc/Code/magicfilter/magicfilter-2.3.c/file/process.c
+    - https://dev.mysql.com/doc/mysql-security-excerpt/5.0/en/license-regex.html
+other_urls:
+    - https://fedoraproject.org/wiki/Licensing/Henry_Spencer_Reg-Ex_Library_License
+    - https://metacpan.org/release/KNOK/File-MMagic-1.30/source/COPYING#L28
+minimum_coverage: 70
+---
+
+This software is not subject to any license of the American Telephone
+and Telegraph Company or of the Regents of the University of California.
+
+Permission is granted to anyone to use this software for any purpose on any
+computer system, and to alter it and redistribute it, subject to the following
+restrictions:
+
+1. The author is not responsible for the consequences of use of this software,
+no matter how awful, even if they arise from flaws in it.
+
+2. The origin of this software must not be misrepresented, either by explicit
+claim or by omission. Since few users ever read sources, credits must appear in
+the documentation.
+
+3. Altered versions must be plainly marked as such, and must not be
+misrepresented as being the original software. Since few users ever read
+sources, credits must appear in the documentation.
+
+4. This notice may not be removed or altered.

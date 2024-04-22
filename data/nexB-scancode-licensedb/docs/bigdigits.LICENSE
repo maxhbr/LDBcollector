@@ -1,0 +1,62 @@
+---
+key: bigdigits
+short_name: BigDigits License
+name: BigDigits License
+category: Permissive
+owner: DI Management Services
+homepage_url: http://www.di-mgt.com.au/
+notes: |
+    As of version 2.5 (October 2015) we have re-issued this source code under
+    the Mozilla Public License, v. 2.0. We have no objection whatsoever to
+    developers using this code in commercial software or as part of an open
+    source project provided the MPL licence remains unchanged in our source
+    code modules. For reference, here is the old copyright and licence notice
+    for version 2.4 (April 2013) and earlier.
+spdx_license_key: LicenseRef-scancode-bigdigits
+text_urls:
+    - http://www.di-mgt.com.au/bigdigitsCopyright.txt
+    - https://web-beta.archive.org/web/20151013165906/http://www.di-mgt.com.au/bigdigitsCopyright.txt
+ignorable_copyrights:
+    - copyright (c) 2001-11 D.I. Management Services Pty Limited
+    - copyright (c) 2001-11 by D.I. Management Services Pty Limited <www.di-mgt.com.au>
+ignorable_holders:
+    - D.I. Management Services Pty Limited
+ignorable_authors:
+    - David Ireland
+ignorable_urls:
+    - http://www.di-mgt.com.au/
+    - http://www.di-mgt.com.au/bigdigits.html
+---
+
+BigDigits License 
+
+This source code is part of the BIGDIGITS multiple-precision arithmetic
+library Version 2.3 originally written by David Ireland, copyright (c)
+2001-11 D.I. Management Services Pty Limited, all rights reserved.
+
+You are permitted to use compiled versions of this code at no charge as
+part of your own executable files and to distribute unlimited copies of
+such executable files for any purposes including commercial ones
+provided you agree to these terms and conditions and  keep the copyright
+notices intact in the source code and you ensure  that the following
+characters remain in any object or executable files you distribute AND
+clearly in any accompanying documentation:
+
+"Contains BIGDIGITS multiple-precision arithmetic code originally
+written by David Ireland, copyright (c) 2001-11 by D.I. Management
+Services Pty Limited <www.di-mgt.com.au>, and is used with permission."
+
+David Ireland and DI Management Services Pty Limited make no
+representations concerning either the merchantability of this software
+or the suitability of this software for any particular purpose. It is
+provided "as is" without express or implied warranty of any kind. Our
+liability will be limited exclusively to the refund of the money you
+paid us for the software, namely nothing. By using the software you
+expressly agree to such a waiver. If you do not agree to the terms, do
+not use the software.
+
+Please forward any comments and bug reports to <www.di-mgt.com.au>. The
+latest version of the source code can be downloaded from 
+<www.di-mgt.com.au/bigdigits.html>.
+
+Last updated: 11 November 2011.

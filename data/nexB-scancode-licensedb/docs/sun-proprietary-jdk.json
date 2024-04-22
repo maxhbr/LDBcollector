@@ -1,0 +1,9 @@
+{
+  "key": "sun-proprietary-jdk",
+  "is_deprecated": true,
+  "short_name": "Sun proprietary notice for Java sources",
+  "name": "Sun proprietary notice for Java sources",
+  "category": "Commercial",
+  "owner": "Oracle Corporation",
+  "text": "SUN PROPRIETARY/CONFIDENTIAL. Use is subject to license terms."
+}

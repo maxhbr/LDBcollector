@@ -1,0 +1,24 @@
+---
+key: newsletr
+short_name: Newsletr License
+name: Newsletr License
+category: Permissive
+owner: Hunter Goatley
+homepage_url: https://fedoraproject.org/wiki/Licensing/Newsletr
+notes: |
+    Per Fedora, This is a zlib variant, less restrictive. It was found on the
+    component of texlive 2010. It is Free and GPL-compatible.
+spdx_license_key: Newsletr
+minimum_coverage: 50
+---
+
+Permission is granted to anyone to use this software for any purpose
+on any computer system, and to redistribute it freely, subject to the
+following restrictions:
+
+1. This software is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+2. Altered versions must be plainly marked as such, and must not be
+misrepresented as being the original software.

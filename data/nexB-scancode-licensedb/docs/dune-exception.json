@@ -1,0 +1,14 @@
+{
+  "key": "dune-exception",
+  "short_name": "DUNE exception to the GPL",
+  "name": "DUNE exception to the GPL",
+  "category": "Copyleft Limited",
+  "owner": "DUNE Project",
+  "homepage_url": "https://dune-project.org/about/license/",
+  "is_exception": true,
+  "spdx_license_key": "LicenseRef-scancode-dune-exception",
+  "text_urls": [
+    "https://github.com/dune-project/dune-common/blob/master/LICENSE.md"
+  ],
+  "text": "As a special exception, you may use the DUNE source files as part of a software\nlibrary or application without restriction. Specifically, if other files\ninstantiate templates or use macros or inline functions from one or more of the\nDUNE source files, or you compile one or more of the DUNE source files and link\nthem with other files to produce an executable, this does not by itself cause\nthe resulting executable to be covered by the GNU General Public License. This\nexception does not however invalidate any other reasons why the executable file\nmight be covered by the GNU General Public License."
+}

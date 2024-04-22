@@ -1,0 +1,48 @@
+---
+key: fftpack-2004
+short_name: FFTPACK License 2004
+name: FFTPACK License 2004
+category: Permissive
+owner: NCAR
+homepage_url: https://github.com/marton78/pffft/blob/master/pffft.c
+spdx_license_key: LicenseRef-scancode-fftpack-2004
+text_urls:
+    - https://bitbucket.org/jpommier/pffft/src/master/pffft.c
+other_urls:
+    - https://github.com/nexB/scancode-toolkit/issues/1978
+standard_notice: |
+    http://www.cisl.ucar.edu/css/software/fftpack5/ftpk.html
+    Copyright (c) 2004 the University Corporation for Atmospheric
+    Research ("UCAR"). All rights reserved. Developed by NCAR's
+    Computational and Information Systems Laboratory, UCAR,
+    www.cisl.ucar.edu.
+---
+
+FFTPACK license:
+Redistribution and use of the Software in source and binary forms,
+with or without modification, is permitted provided that the
+following conditions are met:
+
+   - Neither the names of NCAR's Computational and Information Systems
+   Laboratory, the University Corporation for Atmospheric Research,
+   nor the names of its sponsors or contributors may be used to
+   endorse or promote products derived from this Software without
+   specific prior written permission.  
+
+   - Redistributions of source code must retain the above copyright
+   notices, this list of conditions, and the disclaimer below.
+
+   - Redistributions in binary form must reproduce the above copyright
+   notice, this list of conditions, and the disclaimer below in the
+   documentation and/or other materials provided with the
+   distribution.
+
+   THIS SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+   EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO THE WARRANTIES OF
+   MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+   NONINFRINGEMENT. IN NO EVENT SHALL THE CONTRIBUTORS OR COPYRIGHT
+   HOLDERS BE LIABLE FOR ANY CLAIM, INDIRECT, INCIDENTAL, SPECIAL,
+   EXEMPLARY, OR CONSEQUENTIAL DAMAGES OR OTHER LIABILITY, WHETHER IN AN
+   ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+   CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS WITH THE
+   SOFTWARE.

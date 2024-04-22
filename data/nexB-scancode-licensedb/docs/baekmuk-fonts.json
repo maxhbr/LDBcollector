@@ -1,0 +1,21 @@
+{
+  "key": "baekmuk-fonts",
+  "short_name": "Baekmuk Fonts License",
+  "name": "Baekmuk Fonts License",
+  "category": "Permissive",
+  "owner": "Unspecified",
+  "spdx_license_key": "Baekmuk",
+  "other_spdx_license_keys": [
+    "LicenseRef-scancode-baekmuk-fonts"
+  ],
+  "other_urls": [
+    "https://fedoraproject.org/wiki/Licensing:Baekmuk?rd=Licensing/Baekmuk"
+  ],
+  "ignorable_copyrights": [
+    "Copyright (c) Kim Jeong-Hwan"
+  ],
+  "ignorable_holders": [
+    "Kim Jeong-Hwan"
+  ],
+  "text": "Baekmuk Fonts License\n\nCopyright (c)  Kim Jeong-Hwan All rights reserved.\n\nPermission to use, copy, modify and distribute this font is\nhereby granted, provided that both the copyright notice and\nthis permission notice appear in all copies of the font,\nderivative works or modified versions, and that the following\nacknowledgement appear in supporting documentation:\n    Baekmuk Batang, Baekmuk Dotum, Baekmuk Gulim, and\n    Baekmuk Headline are registered trademarks owned by\n    Kim Jeong-Hwan."
+}

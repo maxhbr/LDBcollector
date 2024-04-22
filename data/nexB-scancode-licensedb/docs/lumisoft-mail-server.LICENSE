@@ -1,0 +1,27 @@
+---
+key: lumisoft-mail-server
+short_name: LumiSoft Mail Server License
+name: LumiSoft Mail Server License
+category: Proprietary Free
+owner: LumiSoft
+homepage_url: http://www.lumisoft.ee/lsWWW/ENG/Products/Mail_Server/mail_index_eng.aspx?type=info
+spdx_license_key: LicenseRef-scancode-lumisoft-mail-server
+other_urls:
+    - http://www.lumisoft.ee/lsWWW/ENG/Products/Mail_Server/mail_index_eng.aspx?type=download
+---
+
+General usage terms:
+
+  *) If you use/redistribute compiled binary, there are no restrictions.
+     You can use it in any project, commercial and no-commercial.
+
+  *) It's allowed to complile source code parts to your application,
+     but then you may not rename class names and namespaces.
+
+  *) Anything is possible, if special agreement between LumiSoft.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, 
+INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR 
+PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE 
+FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, 
+ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

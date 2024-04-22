@@ -1,0 +1,10 @@
+{
+  "key": "linum",
+  "is_deprecated": true,
+  "short_name": "Linum Software License",
+  "name": "Linum Software License",
+  "category": "Permissive",
+  "owner": "Linum Software GmbH",
+  "notes": "replaced by identical philippe-de-muyter license",
+  "text": " * This program is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE."
+}
