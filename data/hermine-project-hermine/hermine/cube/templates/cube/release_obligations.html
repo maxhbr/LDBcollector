@@ -1,0 +1,100 @@
+<!--
+SPDX-FileCopyrightText: 2021 Hermine-team <hermine@inno3.fr>
+SPDX-FileCopyrightText: 2022 Martin Delabre <gitlab.com/delabre.martin>
+
+SPDX-License-Identifier: AGPL-3.0-only
+-->
+
+{% extends "cube/cube.html" %}
+{% load cube_tags %}
+{% block title %}{{ object.product.name }} {{object.release_number}}{% endblock %}
+{% block breadcrumbs %}
+  <ul>
+    <li><a href="{% url 'cube:dashboard' %}">Hermine</a></li>
+    <li><a href="{% url 'cube:product_detail' object.product.id %}">{{ object.product.name }}</a></li>
+    <li>{{object.release_number}}</li>
+    <li>Obligations</li>
+  </ul>
+{% endblock %}
+{% block herozone %}
+  <div class="hero-body">
+    <p class="title">Release: {{object.release_number}}</p>
+  </div>
+{% endblock %}
+{% block content %}
+  {%if object.valid_step != 5 %}
+
+    <article class="message is-warning">
+      <div class="message-header">
+        <p>Warning</p>
+        <button class="delete" aria-label="delete"></button>
+      </div>
+      <div class="message-body">
+        The components of this release have not been validated in their entirety.
+      </div>
+    </article>
+  {%endif%}
+
+  {% include "cube/includes/release_tabs.html" with active_tab="obligations" %}
+
+  <h2 class="title is-2">Licenses involved in this release</h2>
+  <p>{% for license_involved in licenses_involved %}
+    <a href="{% url "cube:license_detail" license_involved.id %}"><span class="tag {{ license_involved|licenseAllowedCSS }}">{{ license_involved.spdx_id }}</span></a>
+  {% endfor %}
+  </p>
+  <h2 class="title is-2">List of generic obligations to follow</h2>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>In core?</th>
+        <th>Generic name</th>
+        <th>Lead</th>
+        <th>Metacategory</th>
+        <th>Active/Passive</th>
+        <th>Components</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for generic in generics_involved %}
+        <tr>
+          <td>{% if generic.in_core %}
+            <span class="tag is-primary"> In core</span>
+          {% else %}
+            <span class="tag is-danger"> Not in core</span>
+          {% endif %}
+          </td>
+          <td><a href="{% url 'cube:generic_detail' generic.id %}">{{generic.name}}</a></td>
+          <td>{{generic.team.name}}</td>
+          <td>{{generic.metacategory}}</td>
+          <td>{{generic.passivity}}</td>
+          <td><a href="{% url 'cube:release_generic' object.id generic.id %}">Concerned components</a></td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+  {% if specifics_involved %}
+    <h2 class="title is-2">List of license-specific obligations to follow</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>License</th>
+          <th>Obligation</th>
+          <th>Text</th>
+          <th>Active/Passive</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for obligation in specifics_involved %}
+          <tr>
+            <td>{{obligation.license.spdx_id}}</td>
+            <td>{{obligation.name}}</td>
+            <td>{{obligation.verbatim}}</td>
+            <td>{{obligation.passivity}}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  {% endif %}
+
+{% endblock %}

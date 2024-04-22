@@ -1,0 +1,12 @@
+<div class="field-label">
+  {% if field.label %}{{ field.label_tag }}{% endif %}
+</div>
+<div class="field-body">
+  <div class="field">
+    {{ field.errors }}
+    <div class="control">
+      {{ field }}
+    </div>
+    {% if field.help_text %}<p class="helptext help"{% if field.auto_id %} id="{{ field.auto_id }}_helptext"{% endif %}>{{ field.help_text|safe }}</p>{% endif %}
+  </div>
+</div>

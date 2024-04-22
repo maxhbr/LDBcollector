@@ -1,0 +1,188 @@
+<!--
+SPDX-FileCopyrightText: 2021 Hermine-team <hermine@inno3.fr>
+SPDX-FileCopyrightText: 2022 Martin Delabre <gitlab.com/delabre.martin>
+
+SPDX-License-Identifier: AGPL-3.0-only
+-->
+
+{% extends "cube/cube.html" %}
+{% load static %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block herozone %}
+  <h1 class="title">
+    <span class="icon is-medium">
+      <i class="fas fa-chart-pie"></i>
+    </span>
+    Dashboard
+  </h1>
+{% endblock %}
+
+{% block content %}
+  <section class="section is-main-section">
+    <h2>Welcome to Hermine.</h2>
+    <p>Explore your products, choose your Open Source Policy, and know your obligations. </p>
+
+    {% if last_releases and perms.cube.vew_release %}
+      <h2>Last releases consulted</h2>
+      <table class="table is-striped is-hoverable is-fullwidth">
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Release</th>
+            <th>Status</th>
+            <th>Dependencies</th>
+            <th>Validation Steps</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for release in last_releases %}
+            <tr>
+              <td><a href="{% url 'cube:product_detail' release.product.id %}">{{ release.product.name }}</a></td>
+              <td><a href="{% url 'cube:release_summary' release.id %}">{{ release.release_number }}</a>
+              </td>
+              <td>{{ release.ship_status }}</td>
+              <td>{{ release.usage_set.all|length }}</td>
+              <td>
+                <progress class="progress is-primary" value="{{ release.valid_step }}" max="5">15%
+                </progress>
+              </td>
+              <td>
+                <a href="{% url 'cube:release_summary' release.id %}"><i class="fas fa-info-circle"></i></a> |
+                <a href="{%  url 'cube:release_import' release.id %}"><i class="fas fa-upload"></i></a> |
+                <a href="{% url 'cube:release_update' release.id %}?from={{ request.path|urlencode }}"><i class="far fa-edit"></i></a>
+              </td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    {% endif %}
+
+    <h2>Development</h2>
+    <div class="tile is-ancestor">
+
+      <a href="{% url 'cube:product_list' %}" class="tile is-parent">
+        <div class="card tile is-child">
+          <div class="card-content">
+            <div class="level is-mobile">
+              <div class="level-item">
+                <div class="is-widget-label"><h3 class="subtitle is-spaced">
+                  Your products
+                </h3>
+                  <h1 class="title">
+                    {{ products_count }}
+                  </h1>
+                </div>
+              </div>
+              <div class="level-item has-widget-icon">
+                <div class="is-widget-icon"><span class="icon has-text-primary is-large"><i class="fas fa-cubes fa-2x"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a href="{% url 'cube:product_list' %}" class="tile is-parent">
+        <div class="card tile is-child">
+          <div class="card-content">
+            <div class="level is-mobile">
+              <div class="level-item">
+                <div class="is-widget-label">
+                  <h3 class="subtitle is-spaced">
+                    Releases
+                  </h3>
+                  <h1 class="title">
+                    {{ releases_count }}
+                  </h1>
+                </div>
+              </div>
+              <div class="level-item has-widget-icon">
+                <div class="is-widget-icon"><span class="icon has-text-primary is-large"><i class="fas fa-code-branch fa-2x"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a href="{% url 'cube:component_list' %}" class="tile is-parent">
+        <div class="card tile is-child">
+          <div class="card-content">
+            <div class="level is-mobile">
+              <div class="level-item">
+                <div class="is-widget-label">
+                  <h3 class="subtitle is-spaced">
+                    Components (3rd parties)
+                  </h3>
+                  <h1 class="title">
+                    {{ components_count }}
+                  </h1>
+                </div>
+              </div>
+              <div class="level-item has-widget-icon">
+                <div class="is-widget-icon"><span class="icon has-text-info is-large"><i
+                  class="fas fa-puzzle-piece fa-2x"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <h2>Legal</h2>
+    <div class="tile is-ancestor">
+
+      <a href="{% url 'cube:license_list' %}" class="tile is-parent">
+        <div class="card tile is-child">
+          <div class="card-content">
+            <div class="level is-mobile">
+              <div class="level-item">
+                <div class="is-widget-label">
+                  <h3 class="subtitle is-spaced">
+                    Licenses
+                  </h3>
+                  <h1 class="title">
+                    {{ licenses_count }}
+                  </h1>
+                </div>
+              </div>
+              <div class="level-item has-widget-icon">
+                <div class="is-widget-icon"><span class="icon has-text-success is-large"><i
+                  class="fas fa-balance-scale fa-2x"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a href="{% url 'cube:generic_list' %}" class="tile is-parent">
+        <div class="card tile is-child">
+          <div class="card-content">
+            <div class="level is-mobile">
+              <div class="level-item">
+                <div class="is-widget-label">
+                  <h3 class="subtitle is-spaced">
+                    Generic obligations
+                  </h3>
+                  <h1 class="title">
+                    {{ generics_count }}
+                  </h1>
+                </div>
+              </div>
+              <div class="level-item has-widget-icon">
+                <div class="is-widget-icon"><span class="icon has-text-success is-large"><i
+                  class="fas fa-award fa-2x"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </section>
+{% endblock %}

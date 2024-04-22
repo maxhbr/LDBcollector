@@ -1,0 +1,29 @@
+<!--
+SPDX-FileCopyrightText: 2022 Hermine-team <hermine@inno3.fr>
+SPDX-License-Identifier: AGPL-3.0-only
+-->
+{% extends "cube/cube.html" %}
+{% block title %}Edit license choice rule{% endblock %}
+{% block breadcrumbs %}
+  <ul>
+    <li><a href="{% url 'cube:dashboard' %}">Hermine</a></li>
+    <li><a href="{% url 'cube:licensechoice_list' %}">Licenses choices</a></li>
+    <li>{{ object.expression_in }}</li>
+  </ul>
+{% endblock %}
+
+{% block herozone %}
+  <h1 class="title">
+    <span class="icon is-medium"><i class="fas fa-project-diagram"></i></span>
+    Edit license choice for {{ object.expression_in }}
+  </h1>
+{% endblock %}
+
+{% block content %}
+  <p>
+    You can only change the choice for the rule context. To apply this rule to another context,
+    <a href="{% url 'cube:licensechoice_create' %}">create a new rule</a> with the same expressions.
+  </p>
+  {% include "cube/includes/default_form.html" %}
+{% endblock %}
+

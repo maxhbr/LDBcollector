@@ -1,0 +1,68 @@
+<!--
+SPDX-FileCopyrightText: 2021 Hermine-team <hermine@inno3.fr>
+SPDX-FileCopyrightText: 2022 Martin Delabre <gitlab.com/delabre.martin>
+
+SPDX-License-Identifier: AGPL-3.0-only -->
+
+{% extends "cube/cube.html" %}
+{% block title %}License choices{% endblock %}
+{% block breadcrumbs %}
+  <ul>
+    <li><a href="{% url 'cube:dashboard' %}">Hermine</a></li>
+    <li>License choices rules</li>
+  </ul>
+{% endblock %}
+
+{% block actions %}
+  <a class="button is-info is-inverted" href="{% url 'cube:licensechoice_create'%}">
+    <span class="icon">
+      <i class="fas fa-plus"></i>
+    </span>
+    <span>Create a new choice rule</span>
+  </a>
+{% endblock %}
+
+{% block herozone %}
+  <h1 class="title">
+    <span class="icon is-medium"><i class="fas fa-project-diagram"></i></span>
+    License choices rules
+  </h1>
+{% endblock %}
+
+{% block content %}
+  {% include "cube/includes/list_nav.html" %}
+  <p>This is the list of <em>global</em> license choices, which apply on all components, products, scope or exploitation.
+    See <a href="{% url 'admin:cube_licensechoice_changelist' %}"> all license choices</a>.</p>
+  <table class="table is-striped is-hoverable is-fullwidth">
+    <thead>
+      <tr>
+        <th>License expression</th>
+        <th>Choice</th>
+        <th>Explanation</th>
+        <th>Updated</th>
+        <th>Edit rule</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for rule in object_list %}
+        <tr>
+          <td>{{ rule.expression_in }}</td>
+          <td>{{ rule.expression_out }}</td>
+          <td>{{ rule.explanation|truncatechars:50 }}</td>
+          <td>{{ rule.updated }} ({{ rule.author|default:"<em>author unknown</em>" }})</td>
+          <td>
+            {% if perms.cube.change_licensechoice %}
+              <a href="{%url 'cube:licensechoice_update' rule.id %}"><i class="far fa-edit"></i></a>
+            {% endif %}
+          </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% include "cube/includes/list_nav.html" %}
+
+{% endblock %}
+
+
+
+

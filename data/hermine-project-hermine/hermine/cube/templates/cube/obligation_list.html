@@ -1,0 +1,53 @@
+<!--<!--
+SPDX-FileCopyrightText: 2024 Hermine-team <hermine@inno3.fr>
+SPDX-License-Identifier: AGPL-3.0-only
+-->
+
+{% extends "cube/cube.html" %}
+{% block title %}Orphan obligation{% endblock %}
+
+{% block breadcrumbs %}
+  <ul>
+    <li><a href="{% url 'cube:dashboard' %}">Hermine</a></li>
+    <li>Orphan obligations</li>
+  </ul>
+{% endblock %}
+
+{% block herozone %}
+  <h1 class="title">
+    <span class="icon is-medium">
+      <i class="fas fa-unlink"></i>
+    </span>
+    Orphan obligations
+  </h1>
+{% endblock %}
+
+{% block content %}
+  <div id="content-main">
+    <p>Orphan obligations are obligations specific to a license, not attached to any generic obligation.
+    </p>
+    <div class="b-table has-pagination">
+      <div class="table-wrapper">
+
+        <table class="table is-striped is-hoverable">
+          <thead>
+            <tr>
+              <th>Licence name</th>
+              <th>Obligation name</th>
+              <th>Content (abridged)</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for obligation in obligations %}
+              <tr>
+                <td><a href="{% url 'cube:license_detail' obligation.license.id %}">{{obligation.license.spdx_id}}</a></td>
+                <td>{{obligation.name}}</td>
+                <td>{{obligation.verbatim|truncatechars:77}}</td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+{% endblock %}

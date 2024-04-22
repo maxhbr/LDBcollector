@@ -1,0 +1,74 @@
+{
+  "spdxVersion": "SPDX-2.2",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "hello-imports.spdx.json",
+  "creationInfo": {
+    "created": "2018-10-19T16:14:22Z",
+    "creators": [
+      "Organization: Inno3"
+    ]
+  },
+  "documentNamespace": "http://spdx.org/spdxdocs/hello-imports.spdx.json",
+  "documentDescribes": [
+    "SPDXRef-dependency1",
+    "SPDXRef-dependency2",
+    "SPDXRef-dependency3",
+    "SPDXRef-dependency4",
+    "SPDXRef-dependency5"
+  ],
+  "packages": [
+    {
+      "name": "@spdx-valid-dependency",
+      "SPDXID": "SPDXRef-dependency1",
+      "licenseConcluded": "LicenseRef-fakeLicense-ContextAllowed-1.0",
+      "licenseDeclared": "LicenseRef-fakeLicense-ContextAllowed-1.0",
+      "copyrightText": "NOASSERTION",
+      "versionInfo": "v1",
+      "downloadLocation": "https://example.com/spdx-valid-dependency.tar.gz",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:npm/spdx-valid-dependency@v1"
+        }
+      ]
+    },
+    {
+      "name": "@spdx-invalid-dependency",
+      "SPDXID": "SPDXRef-dependency2",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Allowed-1.0 AND ContextAllowed-1.0",
+      "copyrightText": "NOASSERTION",
+      "versionInfo": "v1",
+      "downloadLocation": "https://example.com/spdx-invalid-dependency.tar.gz"
+    },
+    {
+      "name": "ambiguous-dependency",
+      "SPDXID": "SPDXRef-dependency3",
+      "licenseConcluded": "LicenseRef-fakeLicense-ContextAllowed-1.0 AND LicenseRef-fakeLicense-Allowed-1.0",
+      "licenseDeclared": "LicenseRef-fakeLicense-ContextAllowed-1.0 AND LicenseRef-fakeLicense-Allowed-1.0",
+      "copyrightText": "NOASSERTION",
+      "versionInfo": "v1",
+      "downloadLocation": "https://example.com/ambiguous-dependency.tar.gz"
+    },
+    {
+      "name": "no-assertion-dependency",
+      "SPDXID": "SPDXRef-dependency4",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "versionInfo": "v1",
+      "downloadLocation": "https://example.com/no-assertion-dependency.tar.gz"
+    },
+    {
+      "name": "wrong-concluded-dependency",
+      "SPDXID": "SPDXRef-dependency5",
+      "licenseConcluded": "LicenseRef-fakeLicense-ContextAllowed-1.0",
+      "licenseDeclared": "NotAnalyzedLicense AND WeekCopyLeft-1.0",
+      "copyrightText": "NOASSERTION",
+      "versionInfo": "v1",
+      "downloadLocation": "https://example.com/wrong-concluded-dependency.tar.gz"
+    }
+  ]
+}

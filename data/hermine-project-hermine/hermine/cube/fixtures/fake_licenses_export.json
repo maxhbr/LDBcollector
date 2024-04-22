@@ -1,0 +1,166 @@
+[
+    {
+        "model": "cube.license",
+        "fields": {
+            "spdx_id": "LicenseRef-fakeLicense-Allowed-1.0",
+            "long_name": "Fake allowed License-1.0",
+            "license_version": "1.0",
+            "radical": "fakeLicense-allowed",
+            "autoupgrade": null,
+            "steward": "",
+            "inspiration_spdx": "",
+            "copyleft": "None",
+            "allowed": "always",
+            "allowed_explanation": "",
+            "url": "",
+            "osi_approved": null,
+            "fsf_approved": null,
+            "foss": "",
+            "patent_grant": null,
+            "ethical_clause": null,
+            "non_commercial": null,
+            "non_tivoisation": null,
+            "law_choice": "",
+            "comment": "",
+            "verbatim": ""
+        }
+    },
+    {
+        "model": "cube.license",
+        "fields": {
+            "spdx_id": "LicenseRef-fakeLicense-ContextAllowed-1.0",
+            "long_name": "Fake Context Allowed License-1.0",
+            "license_version": "Fake Context Allowed License",
+            "radical": "Fake Context Allowed License-1.0",
+            "autoupgrade": null,
+            "steward": "",
+            "inspiration_spdx": "",
+            "copyleft": "Weak",
+            "allowed": "context",
+            "allowed_explanation": "Only allowed for dynamically linked components",
+            "url": "",
+            "osi_approved": null,
+            "fsf_approved": null,
+            "foss": "Yes",
+            "patent_grant": null,
+            "ethical_clause": null,
+            "non_commercial": null,
+            "non_tivoisation": null,
+            "law_choice": "",
+            "comment": "",
+            "verbatim": ""
+        }
+    },
+    {
+        "model":  "cube.obligation",
+        "fields": {
+            "license": [
+                "LicenseRef-fakeLicense-Allowed-1.0"
+            ],
+            "generic": [
+                "Fake - Generic 1"
+            ],
+            "name": "Fake Perm 1. For Gen 1 : Obligation for : Distributed Source or Object, Modified or not",
+            "verbatim": "An active fake Obligation related to Fake Generic 1 and triggered by Distribution of Source or Object, Modified or not",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        }
+    },
+    {
+        "model":  "cube.obligation",
+        "fields":  {
+            "license":  [
+                "LicenseRef-fakeLicense-Allowed-1.0"
+            ],
+            "generic":  [
+                "Fake - Generic 2 - Modified only"
+            ],
+            "name": "Fake Perm 1. For Gen 2 : Obligation for : Distributed Source or Object, Only if Modified",
+            "verbatim": "An active fake Obligation related to Fake Generic 2 and triggered by Distribution of Source or Object, only if Modified",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "Altered"
+        }
+    },
+    {
+        "model":  "cube.obligation",
+        "fields":  {
+            "license":  [
+                "LicenseRef-fakeLicense-Allowed-1.0"
+            ],
+            "generic":  [
+                "Fake - Generic 3 - Remote access"
+            ],
+            "name": "Fake Perm 1. For Gen 3 : Obligation for : Network access, Modified or not",
+            "verbatim": "An active fake Obligation related to Fake Generic 1 and triggered by Network access Modified or not",
+            "passivity": "Active",
+            "trigger_expl": "NetworkAccess",
+            "trigger_mdf": "AlteredUnmodified"
+        }
+    },
+    {
+        "model":  "cube.obligation",
+        "fields":  {
+            "license":  [
+                "LicenseRef-fakeLicense-Allowed-1.0"
+            ],
+            "generic":  [
+                "Fake - Generic 4 - Passive"
+            ],
+            "name": "Fake Perm 1. For Gen 4 : Passive Obligation",
+            "verbatim": "A passive fake Obligation related to Fake Generic 4",
+            "passivity": "Passive",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        }
+    },
+    {
+        "model":  "cube.obligation",
+        "fields": {
+            "license": [
+                "LicenseRef-fakeLicense-ContextAllowed-1.0"
+            ],
+            "generic": [
+                "Fake - Generic 1"
+            ],
+            "name": "Fake WeakCopylft 1. For Gen 1 : Obligation for : Distributed Source or Object, Modified or not",
+            "verbatim": "An active fake Obligation related to Fake Generic 1 and triggered by Distribution of Source or Object, Modified or not",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        }
+    },
+    {
+        "model":  "cube.obligation",
+        "fields":  {
+            "license": [
+                "LicenseRef-fakeLicense-ContextAllowed-1.0"
+            ],
+            "generic":  [
+                "Fake - Generic 5 - Copyleft - Modfied"
+            ],
+            "name": "Fake WeakCopylft 1. For Gen 1 : Obligation for : Distributed Source or Object, Only if Modified",
+            "verbatim": "An active fake Obligation related to Fake Generic 4 and triggered by Distribution and modificaiton",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "Altered"
+        }
+    },
+    {
+        "model":  "cube.obligation",
+        "fields":  {
+            "license": [
+                "LicenseRef-fakeLicense-ContextAllowed-1.0"
+            ],
+            "generic":  [
+                "Fake - Generic 4 - Passive"
+            ],
+            "name": "Fake Weak Copyleft 1. For Gen 4 : Passive Obligation",
+            "verbatim": "A passive fake Obligation related to Fake Generic 4 in a weak copyleft license",
+            "passivity": "Passive",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        }
+    }
+]

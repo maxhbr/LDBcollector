@@ -1,0 +1,122 @@
+<!--
+SPDX-FileCopyrightText: 2021 Hermine-team <hermine@inno3.fr>
+
+SPDX-License-Identifier: AGPL-3.0-only
+-->
+
+{% extends "cube/cube.html" %}
+{% load cube_tags %}
+{% block title %}Shared reference data{% endblock %}
+
+{% block breadcrumbs %}
+  <ul>
+    <li><a href="{% url 'cube:dashboard' %}">Hermine</a></li>
+    <li><a href="{% url "cube:license_list" %}">Licenses</a></li>
+    <li>Shared reference data</li>
+  </ul>
+{% endblock %}
+
+{% block herozone %}
+  <h1 class="title">
+    <span class="icon is-medium"><i class="fas fa-clipboard-check"></i></span>
+    Shared reference data
+  </h1>
+{% endblock %}
+
+{% block content %}
+  <h3>Licenses</h3>
+  {% if licenses.total %}
+    <table class="is-flex">
+      <tr>
+        <th>Total</th>
+        <th>{{ licenses.total }}</th>
+      </tr>
+      <tr>
+        <th>Different from shared data</th>
+        <td>{{ licenses.diff }}</td>
+      </tr>
+      <tr>
+        <th>Absent from shared data</th>
+        <td>{{ licenses.only_local }}</td>
+      </tr>
+    </table>
+  {% else %}
+    <div class="notification is-warning">
+      <p>No license was found in the local data. You may want to copy licenses from the shared
+        database to initialise Hermine.</p>
+    </div>
+  {% endif %}
+
+  {% if licenses.only_shared %}
+    <div class="is-flex">
+      <div class="notification is-info is-light">
+        <p>{{ licenses.only_shared }} license{{ licenses.only_shared|pluralize }} present in the shared database
+          {{ licenses.only_shared|pluralize:'is,are' }} missing from local data</p>
+        <form method="post" action="{% url "cube:shared_licenses_copy" %}">
+          {% csrf_token %}
+          <div class="field">
+            <div class="control">
+              <button type="submit" class="button">
+                Sync {{ licenses.only_shared }} license{{ licenses.only_shared|pluralize }}
+              </button>
+            </div>
+            <div class="help">
+              This will also copy any linked obligation or generic obligation.
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  {% endif %}
+
+  <h3>Generic obligations</h3>
+  <table class="is-flex">
+    <tr>
+      <th>Total</th>
+      <th>{{ generics.total }}</th>
+    </tr>
+    <tr>
+      <th>Different from shared data</th>
+      <td>{{ generics.diff }}</td>
+    </tr>
+    <tr>
+      <th>Absent from shared data</th>
+      <td>{{ generics.only_local }}</td>
+    </tr>
+  </table>
+
+  {% if generics.only_shared %}
+    <div class="is-flex">
+      <div class="notification is-info is-light">
+        <p>{{ generics.only_shared }} generic{{ generics.only_shared|pluralize }} present in the shared database
+          {{ generics.only_shared|pluralize:'is,are' }} missing from local data</p>
+        <form method="post" action="{% url "cube:shared_generics_copy" %}">
+          {% csrf_token %}
+          <button type="submit" class="button">
+            Sync {{ generics.only_shared }} generic{{ generics.only_shared|pluralize }}
+          </button>
+        </form>
+      </div>
+    </div>
+  {% endif %}
+
+  <hr>
+  <h3>Sync everything</h3>
+  <div class="message is-danger">
+    <div class="message-header">
+      Sync all local data with shared reference data
+    </div>
+    <div class="message-body">
+      <p><b>Use this cautiously.</b><p>
+        <p>
+          This updates all licenses, obligations and generic obligations to match the shared database,
+          erasing all your local changes.<br> This also copies any missing data.
+        </p>
+        <form method="post" action="{% url "cube:shared_sync_everything" %}">
+          {% csrf_token %}
+          {{ form }}
+          <button type="submit" class="button is-danger">Sync all local data with shared reference data</button>
+        </form>
+      </div>
+      </div>
+{% endblock %}
