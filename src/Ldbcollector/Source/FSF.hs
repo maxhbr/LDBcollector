@@ -69,6 +69,8 @@ instance HasOriginalData FSF where
 
 instance Source FSF where
   getSource _ = Source "FSF"
+  getExpectedDirectories (FSF dir) = [dir]
+  getExpectedFiles (FSF dir) = [dir </> "licenses-full.json", dir </> "licenses.json"]
   getFacts (FSF dir) = do
     jsons <- (fmap (filter (not . isSuffixOf "licenses-full.json") . filter (not . isSuffixOf "licenses.json")) . glob) (dir </> "*.json")
     V.fromList . wrapFacts <$> mapM parseFsfJSON jsons

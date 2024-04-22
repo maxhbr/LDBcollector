@@ -60,16 +60,39 @@ class (HasOriginalData a) => Source a where
   -- getLicenseNamespace _ = Nothing
   getSourceDescription :: a -> Maybe Text
   getSourceDescription _ = Nothing
+  getExpectedFiles :: a -> [FilePath]
+  getExpectedFiles _ = []
+  getExpectedDirectories :: a -> [FilePath]
+  getExpectedDirectories _ = []
+  guardSource :: a -> LicenseGraphM Bool
+  guardSource a = let
+        mkGuardFun :: (FilePath -> IO Bool) -> FilePath -> LicenseGraphM Bool
+        mkGuardFun fun path = lift $ do
+          exists <- fun path
+          unless exists $ errorM rootLoggerName ("# expected file " ++ path ++ " does not exist")
+          return exists
+    in do
+        filesExist <- mapM (mkGuardFun doesFileExist) (getExpectedFiles a)
+        directoriesExist <- mapM (mkGuardFun doesDirectoryExist) (getExpectedDirectories a)
+        return $ and (filesExist ++ directoriesExist)
   applySource :: a -> LicenseGraphM ()
   applySource a =
     let source = getSource a
-     in timedLGM (show source) $ do
-          lift $ infoM rootLoggerName ("# get " ++ show source)
-          MTL.modify (\lg -> lg {_sources = Map.insert source (WrappedSource a) (_sources lg)})
-          facts <- force <$> MTL.lift (getFacts a)
-          lift $ infoM rootLoggerName (show (V.length facts) ++ " entries")
-          V.mapM_ (\fact -> withFact (source, fact) applyFact) facts
-          debugOrderAndSize
+     in do
+        passed <- guardSource a
+        if passed
+          then timedLGM (show source) $ do
+                  lift $ infoM rootLoggerName ("# get " ++ show source)
+                  facts <- force <$> MTL.lift (getFacts a)
+                  if not (null facts)
+                    then do
+                      MTL.modify (\lg -> lg {_sources = Map.insert source (WrappedSource a) (_sources lg)})
+                      lift $ infoM rootLoggerName (show (V.length facts) ++ " entries")
+                      V.mapM_ (\fact -> withFact (source, fact) applyFact) facts
+                      debugOrderAndSize
+                    else do
+                      lift $ errorM rootLoggerName ("# " ++ show source ++ " returned no facts")
+          else lift $ errorM rootLoggerName ("# did not apply " ++ show source ++ " as guard was not satisfied")
 
 data WrappedSource where
   WrappedSource :: forall a. (Source a) => a -> WrappedSource

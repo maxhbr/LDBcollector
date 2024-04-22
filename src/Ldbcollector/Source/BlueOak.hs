@@ -154,6 +154,8 @@ instance HasOriginalData BlueOakCouncil where
 
 instance Source BlueOakCouncil where
   getSource _ = Source "BlueOakCouncil"
+  getExpectedFiles (BlueOakCouncilLicenseList file) = [file]
+  getExpectedFiles (BlueOakCouncilCopyleftList file) = [file]
   getFacts (BlueOakCouncilLicenseList file) = do
     logFileReadIO file
     decoded <- eitherDecodeFileStrict file :: IO (Either String BlueOakData)

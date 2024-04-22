@@ -108,6 +108,7 @@ instance HasOriginalData OKFN where
 
 instance Source OKFN where
   getSource _ = Source "OKFN"
+  getExpectedFiles (OKFN allJSON) = [allJSON]
   getFacts (OKFN allJSON) = do
     logFileReadIO allJSON
     decoded <- eitherDecodeFileStrict allJSON :: IO (Either String (Map.Map String OKFNLicense))

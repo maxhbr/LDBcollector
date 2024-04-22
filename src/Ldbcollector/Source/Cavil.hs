@@ -49,6 +49,7 @@ instance HasOriginalData CavilLicenseChanges where
 
 instance Source CavilLicenseChanges where
   getSource _ = Source "CavilLicenseChanges"
+  getExpectedFiles (CavilLicenseChanges txt) = [txt]
   getSourceDescription _ = Just "Cavil is a legal review system for the Open Build Service. It is used in the development of openSUSE Tumbleweed, openSUSE Leap, as well as SUSE Linux Enterprise."
   getFacts (CavilLicenseChanges txt) = do
     logFileReadIO txt

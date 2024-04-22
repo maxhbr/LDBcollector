@@ -12,6 +12,8 @@ import Data.Text qualified as T
 import Data.Vector qualified as V
 import Ldbcollector.Model
 import Network.Protocol.OpenSource.License qualified as OSI
+import Network.HTTP.Simple (httpLBS, getResponseStatusCode, parseRequest, Response)
+import Control.Exception (try, SomeException)
 
 newtype OSILicense
   = OSILicense OSI.OSILicense
@@ -61,6 +63,14 @@ instance HasOriginalData OSI where
 
 instance Source OSI where
   getSource _ = Source "OSI"
+  guardSource _ = lift $ do
+    request <- parseRequest "https://api.opensource.org"
+    result <- try (httpLBS request) :: IO (Either SomeException (Response ByteString))
+    case result of
+        Left err -> do
+            errorM rootLoggerName "Network is not accessible"
+            return False
+        Right _ -> return True
   getFacts OSI = do
     response <- runExceptT OSI.allLicenses
     case response of

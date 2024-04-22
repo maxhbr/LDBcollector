@@ -83,6 +83,7 @@ instance HasOriginalData FossLicenseVar where
 
 instance Source FossLicenseVar where
   getSource _ = Source "FOSS License"
+  getExpectedDirectories (FossLicenseVar var) = [var </> "licenses"]
   getFacts (FossLicenseVar var) =
     let parseOrFailJson json = do
           logFileReadIO json

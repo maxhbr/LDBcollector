@@ -181,6 +181,7 @@ instance HasOriginalData FOSSLight where
 
 instance Source FOSSLight where
   getSource _ = Source "FOSSLight"
+  getExpectedFiles (FOSSLight sqlite) = [sqlite]
   getFacts (FOSSLight sqlite) =
     let extractLicensesFromSqlite :: IO ([FOSSLight_License], [FOSSLight_Nick])
         extractLicensesFromSqlite = do
@@ -208,9 +209,6 @@ instance Source FOSSLight where
           S.close conn
           return (licenses, nicks)
      in do
-          sqliteFileExists <- doesFileExist sqlite
-          if sqliteFileExists
-            then do
               (licenses, nicks) <- extractLicensesFromSqlite
               let rawFromLicense (license@FOSSLight_License {_fossLight_name = name}) =
                     let nicksForLicense = map (\(FOSSLight_Nick _ nick) -> nick) $ filter (\n@(FOSSLight_Nick name' _) -> name == name') nicks
@@ -218,6 +216,3 @@ instance Source FOSSLight where
                   facts = map (wrapFact . rawFromLicense) licenses
 
               return (V.fromList facts)
-            else do
-              stderrLogIO ("missing file: " ++ sqlite)
-              return mempty
