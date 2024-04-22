@@ -1,0 +1,5 @@
+- id: "NuGet:Microsoft.VisualStudio:LanguageServices.Razor:[2.1.7,)"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "src/Razor/src/Microsoft.VisualStudio.LanguageServices.Razor"

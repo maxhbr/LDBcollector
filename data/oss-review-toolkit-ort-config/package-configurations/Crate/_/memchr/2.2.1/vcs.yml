@@ -1,0 +1,11 @@
+---
+id: "Crate::memchr:2.2.1"
+vcs:
+  type: "Git"
+  url: "https://github.com/BurntSushi/rust-memchr.git"
+  revision: "75155594dd6c130d47c944bbf31813f454d94341"
+path_excludes:
+  - pattern: "bench/**"
+    reason: "TEST_OF"
+  - pattern: "ci/**"
+    reason: "BUILD_TOOL_OF"

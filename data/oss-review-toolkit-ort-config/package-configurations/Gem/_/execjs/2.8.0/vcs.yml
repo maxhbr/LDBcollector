@@ -1,0 +1,9 @@
+---
+id: "Gem::execjs:2.8.0"
+vcs:
+  type: "Git"
+  url: "https://github.com/rails/execjs.git"
+  revision: "2cac62d20dffdb3b208e117cfa7dddec6c43418b"
+path_excludes:
+  - pattern: "test/**"
+    reason: "TEST_OF"

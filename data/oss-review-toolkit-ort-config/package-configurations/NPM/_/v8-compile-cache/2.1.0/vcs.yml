@@ -1,0 +1,11 @@
+---
+id: "NPM::v8-compile-cache:2.1.0"
+vcs:
+  type: "Git"
+  url: "https://github.com/zertosh/v8-compile-cache.git"
+  revision: "0b9eae0a5f61955f0001d8ebcf3f8410df42f4b6"
+path_excludes:
+- pattern: "bench/**"
+  reason: "TEST_OF"
+- pattern: "package.json"
+  reason: "BUILD_TOOL_OF"

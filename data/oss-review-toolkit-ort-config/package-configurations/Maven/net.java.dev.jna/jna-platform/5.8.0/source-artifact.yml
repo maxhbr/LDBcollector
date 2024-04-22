@@ -1,0 +1,11 @@
+---
+id: "Maven:net.java.dev.jna:jna-platform:5.8.0"
+source_artifact_url: "https://repo.maven.apache.org/maven2/net/java/dev/jna/jna-platform/5.8.0/jna-platform-5.8.0-sources.jar"
+license_finding_curations:
+- concluded_license: "NONE"
+  detected_license: "LicenseRef-scancode-proprietary-license"
+  path: "com/sun/jna/platform/win32/WinError.java"
+  start_lines: 15782
+  line_count: 2
+  reason: CODE
+  comment: "Match in 'Illegal modify operation. Some aspect of the modification is not permitted.'."

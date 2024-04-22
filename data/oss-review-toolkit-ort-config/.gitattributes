@@ -1,0 +1,5 @@
+# Always use Unix line endings for Unix Gradle wrapper script.
+gradlew	text eol=lf
+
+# Always use Windows line endings for Windows batch scripts.
+*.bat	text eol=crlf

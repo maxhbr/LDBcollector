@@ -1,0 +1,16 @@
+- id: "PyPI::python-dateutil:(,2.8.2]"
+  curations:
+    comment: |
+      The LICENSE file states that contributions after 2017-12-01 as well as older
+      contributions that have been re-licensed fall under Apache-2.0, and non-relicensed
+      older contributions fall under BSD-3-Clause. However, it also
+      says that "The above BSD License Applies to all code, even that also covered by Apache 2.0" [1],
+      meaning that all code in total falls under Apache-2.0 AND BSD-3-Clause.
+      This seems to contradict the declared "Dual License" [2], which usually implies a choice between
+      the licenses. So even if Apache-2.0 OR BSD-3-Clause might have been intended, the wording
+      says something else, and sticking to Apache-2.0 AND BSD-3-Clause is the conservative conclusion.
+      [1]: https://github.com/dateutil/dateutil/blob/0586f4afa26fc6799128d98d4f97a49c7d6ab314/LICENSE#L54C1-L54C81
+      [2]: https://github.com/dateutil/dateutil/blob/0586f4afa26fc6799128d98d4f97a49c7d6ab314/setup.cfg#L16
+    declared_license_mapping:
+      "BSD License": "BSD-3-Clause"
+      "Dual License": "Apache-2.0 AND BSD-3-Clause"

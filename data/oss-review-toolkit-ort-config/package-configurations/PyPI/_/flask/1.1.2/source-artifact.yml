@@ -1,0 +1,12 @@
+---
+id: "PyPI::flask:1.1.2"
+source_artifact_url: "https://files.pythonhosted.org/packages/4e/0b/cb02268c90e67545a0e3a37ea1ca3d45de3aca43ceb7dbf1712fb5127d5d/Flask-1.1.2.tar.gz"
+path_excludes:
+  - pattern: "Flask-1.1.2/artwork/**"
+    reason: "DATA_FILE_OF"
+  - pattern: "Flask-1.1.2/docs/**"
+    reason: "DOCUMENTATION_OF"
+  - pattern: "Flask-1.1.2/examples/**"
+    reason: "EXAMPLE_OF"
+  - pattern: "Flask-1.1.2/tests/**"
+    reason: "TEST_OF"

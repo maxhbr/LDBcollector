@@ -1,0 +1,7 @@
+- id: "PyPI::wrapt:(,2.0.0["
+  curations:
+    comment: |
+      The library is licensed under BSD-2-Clause, see:
+      https://github.com/GrahamDumpleton/wrapt/blob/develop/LICENSE
+    declared_license_mapping:
+      "BSD License": "BSD-2-Clause"

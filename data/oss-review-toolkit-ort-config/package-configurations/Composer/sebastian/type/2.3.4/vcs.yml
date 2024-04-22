@@ -1,0 +1,13 @@
+---
+id: "Composer:sebastian:type:2.3.4"
+vcs:
+  type: "Git"
+  url: "https://github.com/sebastianbergmann/type.git"
+  revision: "b8cd8a1c753c90bc1a0f5372170e3e489136f914"
+path_excludes:
+  - pattern: ".github/**"
+    reason: "BUILD_TOOL_OF"
+  - pattern: "tests/**"
+    reason: "TEST_OF"
+  - pattern: "tools/**"
+    reason: "BUILD_TOOL_OF"

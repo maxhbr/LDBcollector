@@ -1,0 +1,5 @@
+- id: "NuGet:Microsoft.Azure:Management.DigitalTwins:"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "sdk/digitaltwins/Microsoft.Azure.Management.DigitalTwins"

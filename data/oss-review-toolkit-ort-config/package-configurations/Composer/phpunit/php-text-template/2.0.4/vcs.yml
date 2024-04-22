@@ -1,0 +1,11 @@
+---
+id: "Composer:phpunit:php-text-template:2.0.4"
+vcs:
+  type: "Git"
+  url: "https://github.com/sebastianbergmann/php-text-template.git"
+  revision: "5da5f67fc95621df9ff4c4e5a84d6a8a2acf7c28"
+path_excludes:
+  - pattern: "tests/**"
+    reason: "TEST_OF"
+  - pattern: "tools/**"
+    reason: "BUILD_TOOL_OF"

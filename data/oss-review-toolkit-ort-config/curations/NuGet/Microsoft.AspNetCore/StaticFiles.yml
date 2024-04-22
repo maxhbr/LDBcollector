@@ -1,0 +1,10 @@
+- id: "NuGet:Microsoft.AspNetCore:StaticFiles:2.1.7"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "src/StaticFiles/src/Microsoft.AspNetCore.StaticFiles"
+- id: "NuGet:Microsoft.AspNetCore:StaticFiles:[2.1.8,)"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "src/Middleware/StaticFiles/src"

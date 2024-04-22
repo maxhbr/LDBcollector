@@ -1,0 +1,8 @@
+---
+id: "PyPI::pygments:2.8.1"
+source_artifact_url: "https://files.pythonhosted.org/packages/15/9d/bc9047ca1eee944cc245f3649feea6eecde3f38011ee9b8a6a64fb7088cd/Pygments-2.8.1.tar.gz"
+path_excludes:
+  - pattern: "Pygments-2.8.1/doc/**"
+    reason: "DOCUMENTATION_OF"
+  - pattern: "Pygments-2.8.1/tests/**"
+    reason: "TEST_OF"

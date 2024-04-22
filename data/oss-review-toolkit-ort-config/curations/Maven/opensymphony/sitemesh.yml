@@ -1,0 +1,7 @@
+- id: "Maven:opensymphony:sitemesh:(,2.4.2]"
+  curations:
+    comment: |-
+      Outdated "cvs.dev.java.net" host in POM: https://repo1.maven.org/maven2/opensymphony/sitemesh/2.4.2/sitemesh-2.4.2.pom
+    vcs:
+      type: "Git"
+      url: "https://github.com/sitemesh/sitemesh2.git"

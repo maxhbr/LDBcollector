@@ -1,0 +1,13 @@
+---
+id: "Composer:sebastian:recursion-context:4.0.4"
+vcs:
+  type: "Git"
+  url: "https://github.com/sebastianbergmann/recursion-context.git"
+  revision: "cd9d8cf3c5804de4341c283ed787f099f5506172"
+path_excludes:
+  - pattern: ".github/**"
+    reason: "BUILD_TOOL_OF"
+  - pattern: "tests/**"
+    reason: "TEST_OF"
+  - pattern: "tools/**"
+    reason: "BUILD_TOOL_OF"

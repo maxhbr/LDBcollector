@@ -1,0 +1,6 @@
+---
+id: "PyPI::gitpython:3.1.0"
+source_artifact_url: "https://files.pythonhosted.org/packages/ee/bc/c8b6bc8b81b94f50bd46ed690e2677beec0071228e7f153981cb51f4d59a/GitPython-3.1.0.tar.gz"
+path_excludes:
+  - pattern: "doc/**"
+    reason: "DOCUMENTATION_OF"

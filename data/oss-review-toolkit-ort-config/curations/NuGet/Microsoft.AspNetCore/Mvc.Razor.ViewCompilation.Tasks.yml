@@ -1,0 +1,20 @@
+- id: "NuGet:Microsoft.AspNetCore:Mvc.Razor.ViewCompilation.Tasks:2.1.7"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "src/MvcPrecompilation/src/Microsoft.AspNetCore.Mvc.Razor.ViewCompilation.Tasks"
+- id: "NuGet:Microsoft.AspNetCore:Mvc.Razor.ViewCompilation.Tasks:2.2.1"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "src/MvcPrecompilation/src/Microsoft.AspNetCore.Mvc.Razor.ViewCompilation.Tasks"
+- id: "NuGet:Microsoft.AspNetCore:Mvc.Razor.ViewCompilation.Tasks:[2.1.8,2.1.31]"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "src/Mvc/ViewCompilation.Tasks"
+- id: "NuGet:Microsoft.AspNetCore:Mvc.Razor.ViewCompilation.Tasks:[2.2.2,)"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "src/Mvc/ViewCompilation.Tasks"

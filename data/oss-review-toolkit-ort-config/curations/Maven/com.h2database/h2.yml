@@ -1,0 +1,8 @@
+- id: "Maven:com.h2database:h2"
+  curations:
+    declared_license_mapping:
+      "The H2 License, Version 1.0": LicenseRef-scancode-h2-1.0
+    comment: |
+      The additionally linked license URL links to the same URL as the LicenseRef-scancode-h2-1.0 does
+      (https://h2database.com/html/license.html), see e.g.
+      https://repo1.maven.org/maven2/com/h2database/h2/1.3.164/h2-1.3.164.pom.

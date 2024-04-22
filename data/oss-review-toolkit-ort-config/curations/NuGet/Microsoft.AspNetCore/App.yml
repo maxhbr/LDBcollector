@@ -1,0 +1,10 @@
+- id: "NuGet:Microsoft.AspNetCore:App:[2.1.0,2.1.5]"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "src/Microsoft.AspNetCore.App"
+- id: "NuGet:Microsoft.AspNetCore:App:[2.1.6,)"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "src/Packages/Microsoft.AspNetCore.App"

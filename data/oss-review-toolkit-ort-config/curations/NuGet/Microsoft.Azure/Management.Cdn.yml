@@ -1,0 +1,5 @@
+- id: "NuGet:Microsoft.Azure:Management.Cdn:"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "sdk/cdn/Microsoft.Azure.Management.Cdn"

@@ -1,0 +1,11 @@
+---
+id: "Crate::aho-corasick:0.7.6"
+vcs:
+  type: "Git"
+  url: "https://github.com/BurntSushi/aho-corasick.git"
+  revision: "f1bf13c9ba179733a172794507dcdd0539fa4269"
+path_excludes:
+  - pattern: "bench/**"
+    reason: "TEST_OF"
+  - pattern: "ci/**"
+    reason: "BUILD_TOOL_OF"

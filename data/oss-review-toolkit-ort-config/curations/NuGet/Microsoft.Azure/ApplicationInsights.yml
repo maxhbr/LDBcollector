@@ -1,0 +1,5 @@
+- id: "NuGet:Microsoft.Azure:ApplicationInsights:"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "sdk/applicationinsights/Microsoft.Azure.ApplicationInsights.Query"

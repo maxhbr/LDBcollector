@@ -1,0 +1,10 @@
+- id: "NuGet:Microsoft.DotNet:Web.ItemTemplates:[2.1.7,2.2.13]"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "src/Templating/src/Microsoft.DotNet.Web.ItemTemplates"
+- id: "NuGet:Microsoft.DotNet:Web.ItemTemplates:[3.0.0,)"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "src/ProjectTemplates/Web.ItemTemplates"

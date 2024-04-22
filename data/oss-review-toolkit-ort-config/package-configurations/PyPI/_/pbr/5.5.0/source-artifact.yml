@@ -1,0 +1,8 @@
+---
+id: "PyPI::pbr:5.5.0"
+source_artifact_url: "https://files.pythonhosted.org/packages/f1/6b/25479e6b27c7fdf2550b97611c55e58245fc6c1ee8fb297056e1168832ff/pbr-5.5.0.tar.gz"
+path_excludes:
+  - pattern: "pbr-5.5.0/doc/**"
+    reason: "DOCUMENTATION_OF"
+  - pattern: "pbr-5.5.0/pbr/tests/**"
+    reason: "TEST_OF"

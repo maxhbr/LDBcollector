@@ -1,0 +1,7 @@
+- id: "Maven:com.atlassian.sal:sal-api:[3.0.0,6.0.0["
+  curations:
+    comment: |
+      Declared license links to the BSD-3-Clause license, see
+      https://bitbucket.org/atlassian/atlassian-sal/src/sal-parent-5.0.0/pom.xml#lines-301:302
+    declared_license_mapping:
+      BSD License: "BSD-3-Clause"

@@ -1,0 +1,6 @@
+- id: "Maven:org.niis.xrd4j:common"
+  curations:
+    comment: |
+      Non-standard path within the repository.
+    vcs:
+      path: "src/common"

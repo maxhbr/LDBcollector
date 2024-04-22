@@ -1,0 +1,20 @@
+---
+id: "NPM::spdx-license-ids:3.0.5"
+vcs:
+  type: "Git"
+  url: "https://github.com/shinnn/spdx-license-ids.git"
+  revision: "2bc004aae6f30d625d3aad95eac09d9aaf1c97cc"
+path_excludes:
+- pattern: "package.json"
+  reason: "BUILD_TOOL_OF"
+license_finding_curations:
+- path: "Readme-md"
+  concluded_license: "CC0-1.0"
+  reason: "INCORRECT"
+  comment: "The file contains examples which in turn contain SPDX license IDs causing\
+    \ false positives. The license section says that it is licensed under 'CC0-1.0'."
+- path: "{index.json|deprecated.json}"
+  concluded_license: "NONE"
+  reason: "INCORRECT"
+  comment: "The files do not contain any license text, just a large listing of SPDX\
+    \ license IDs causing false positives."

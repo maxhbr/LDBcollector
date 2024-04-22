@@ -1,0 +1,8 @@
+---
+id: "PyPI::pillow:8.1.2"
+source_artifact_url: "https://files.pythonhosted.org/packages/60/f0/dd2eb7911f948bf529f58f0c7931f6f6466f711bd6f1d81a69dc4edd4e2a/Pillow-8.1.2.tar.gz"
+path_excludes:
+  - pattern: "Pillow-8.0.1/docs/**"
+    reason: "DOCUMENTATION_OF"
+  - pattern: "Pillow-8.1.2/Tests/**"
+    reason: "TEST_OF"

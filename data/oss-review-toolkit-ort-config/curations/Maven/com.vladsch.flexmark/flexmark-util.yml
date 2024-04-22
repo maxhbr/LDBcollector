@@ -1,0 +1,7 @@
+- id: "Maven:com.vladsch.flexmark:flexmark-util"
+  curations:
+    comment: |
+      Repository found via Internet search.
+    vcs:
+      url: "https://github.com/vsch/flexmark-java.git"
+      path: "flexmark-util"

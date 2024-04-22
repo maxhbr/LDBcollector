@@ -1,0 +1,13 @@
+---
+id: "Crate::bstr:0.2.6"
+vcs:
+  type: "Git"
+  url: "https://github.com/BurntSushi/bstr.git"
+  revision: "28655310319b5793bcb5e883947bcae3ce414a1e"
+path_excludes:
+  - pattern: "bench/**"
+    reason: "TEST_OF"
+  - pattern: "ci/**"
+    reason: "BUILD_TOOL_OF"
+  - pattern: "examples/**"
+    reason: "EXAMPLE_OF"

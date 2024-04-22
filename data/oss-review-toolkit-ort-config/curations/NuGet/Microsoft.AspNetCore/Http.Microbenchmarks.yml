@@ -1,0 +1,10 @@
+- id: "NuGet:Microsoft.AspNetCore:Http.Microbenchmarks:[3.0.0,5.0.13]"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "src/Http/perf/Microbenchmarks"
+- id: "NuGet:Microsoft.AspNetCore:Http.Microbenchmarks:[6.0.0,)"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "src/Http/Http/perf/Microbenchmarks"

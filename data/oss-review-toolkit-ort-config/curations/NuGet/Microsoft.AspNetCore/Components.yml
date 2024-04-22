@@ -1,0 +1,5 @@
+- id: "NuGet:Microsoft.AspNetCore:Components:[3.0.0,)"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "src/Components/Components/src"

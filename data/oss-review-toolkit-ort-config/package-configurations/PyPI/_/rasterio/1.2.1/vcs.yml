@@ -1,0 +1,21 @@
+---
+id: "PyPI::rasterio:1.2.1"
+vcs:
+  type: "Git"
+  url: "https://github.com/mapbox/rasterio.git"
+  revision: "054155a92467ca072ad21486e159ed4786f92eb9"
+path_excludes:
+  - pattern: ".github/**"
+    reason: "BUILD_TOOL_OF"
+  - pattern: "benchmarks/**"
+    reason: "TEST_OF"
+  - pattern: "cloudformation/**"
+    reason: "BUILD_TOOL_OF"
+  - pattern: "docs/**"
+    reason: "DOCUMENTATION_OF"
+  - pattern: "examples/**"
+    reason: "EXAMPLE_OF"
+  - pattern: "scripts/**"
+    reason: "BUILD_TOOL_OF"
+  - pattern: "tests/**"
+    reason: "TEST_OF"

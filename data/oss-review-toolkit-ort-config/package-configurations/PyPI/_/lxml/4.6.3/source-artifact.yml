@@ -1,0 +1,14 @@
+---
+id: "PyPI::lxml:4.6.3"
+source_artifact_url: "https://files.pythonhosted.org/packages/e5/21/a2e4517e3d216f0051687eea3d3317557bde68736f038a3b105ac3809247/lxml-4.6.3.tar.gz"
+path_excludes:
+  - pattern: "lxml-4.6.3/**/tests/**"
+    reason: "BUILD_TOOL_OF"
+  - pattern: "lxml-4.6.3/benchmark/**"
+    reason: "EXAMPLE_OF"
+  - pattern: "lxml-4.6.3/doc/**"
+    reason: "DOCUMENTATION_OF"
+  - pattern: "lxml-4.6.3/samples/**"
+    reason: "EXAMPLE_OF"
+  - pattern: "lxml-4.6.3/tools/**"
+    reason: "BUILD_TOOL_OF"

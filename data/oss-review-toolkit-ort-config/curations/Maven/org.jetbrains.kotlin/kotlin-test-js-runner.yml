@@ -1,0 +1,5 @@
+- id: "Maven:org.jetbrains.kotlin:kotlin-test-js-runner:[1.4.0,)"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "libraries/tools/kotlin-test-js-runner"

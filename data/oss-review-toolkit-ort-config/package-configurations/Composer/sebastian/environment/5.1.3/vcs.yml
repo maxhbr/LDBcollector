@@ -1,0 +1,13 @@
+---
+id: "Composer:sebastian:environment:5.1.3"
+vcs:
+  type: "Git"
+  url: "https://github.com/sebastianbergmann/environment.git"
+  revision: "388b6ced16caa751030f6a69e588299fa09200ac"
+path_excludes:
+  - pattern: ".github/**"
+    reason: "BUILD_TOOL_OF"
+  - pattern: "tests/**"
+    reason: "TEST_OF"
+  - pattern: "tools/**"
+    reason: "BUILD_TOOL_OF"
