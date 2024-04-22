@@ -1,0 +1,33 @@
+###################################################################
+#
+# SPDX-FileCopyrightText: 2021 Henrik Sandklef
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+#
+###################################################################
+
+*~
+__pycache__
+*.pdf
+*.html
+*.png
+
+dist
+build
+flict.egg-info
+
+TEST*.xml
+tests/all.log
+.pytest_cache
+.mypy_cache
+.coverage
+
+tmp/*
+
+# python virtual environment related directory
+**venv*
+env
+.env
+
+# test data related
+tmp-test-data.json
