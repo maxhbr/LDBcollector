@@ -1,0 +1,54 @@
+{
+    "@graph": [
+        {
+            "@id": "_:b0",
+            "spdx:timestamp": "2024-04-17T05:05:14Z",
+            "spdx:order": {
+                "@value": "0",
+                "@type": "http://www.w3.org/2001/XMLSchema#int"
+            },
+            "spdx:url": "https://fedoraproject.org/wiki/Licensing/FSF_Unlimited_License",
+            "spdx:match": "false",
+            "spdx:isWayBackLink": {
+                "@value": "false",
+                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+            },
+            "spdx:isValid": {
+                "@value": "true",
+                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+            },
+            "spdx:isLive": {
+                "@value": "true",
+                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+            },
+            "@type": "spdx:CrossRef"
+        },
+        {
+            "@id": "http://spdx.org/licenses/FSFUL",
+            "spdx:licenseTextHtml": "\n      <div class=\"replaceable-license-text\"> \n         <p>Copyright (C) 1992-1996, 1998-2012 Free Software Foundation, Inc.</p>\n\n      </div>\n\n      <p>This <var class=\"replaceable-license-text\"> configure</var> script is free software; the Free Software Foundation gives unlimited permission to copy,\n         distribute and modify it.</p>\n\n    ",
+            "@type": "spdx:ListedLicense",
+            "spdx:licenseText": "Copyright (C) 1992-1996, 1998-2012 Free Software Foundation, Inc.\n\nThis configure script is free software; the Free Software Foundation gives unlimited permission to copy, distribute and modify it.\n",
+            "spdx:name": "FSF Unlimited License",
+            "spdx:licenseId": "FSFUL",
+            "spdx:standardLicenseTemplate": "<<var;name=\"copyright\";original=\"Copyright (C) 1992-1996, 1998-2012 Free Software Foundation, Inc.  \";match=\".{0,5000}\">>\n\nThis <<var;name=\"file\";original=\"configure\";match=\".+\">> script is free software; the Free Software Foundation gives unlimited permission to copy, distribute and modify it.\n\n",
+            "spdx:crossRef": {
+                "@id": "_:b0"
+            },
+            "spdx:isDeprecatedLicenseId": {
+                "@value": "false",
+                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+            },
+            "rdfs:seeAlso": "https://fedoraproject.org/wiki/Licensing/FSF_Unlimited_License",
+            "spdx:isOsiApproved": {
+                "@value": "false",
+                "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+            }
+        }
+    ],
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "doap": "http://usefulinc.com/ns/doap#",
+        "ptr": "http://www.w3.org/2009/pointers#"
+    }
+}
