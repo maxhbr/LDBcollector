@@ -1,0 +1,4290 @@
+---
+# SPDX-FileCopyrightText: 2023 Double Open Oy <support@doubleopen.org>
+# SPDX-FileCopyrightText: 2022-2023 HH Partners, Attorneys-at-law Ltd <doubleopen@hhpartners.fi>
+# SPDX-FileCopyrightText: 2021 The Linux Foundation® <legal@linuxfoundation.org>
+# SPDX-FileCopyrightText: 2015-2021 nexB, Inc. <info@nexb.com>
+# SPDX-License-Identifier: CC0-1.0 AND CC-BY-3.0 AND CC-BY-4.0
+#
+# Example of license-classifications.yml, using the license names from the SPDX License List
+# (https://spdx.org/licenses/) licensed under CC-BY-3.0. When licenses are not covered by SPDX,
+# we use license names from the ScanCode LicenseDB, although with a different and more detailed
+# categorization, enabling better automation at least for our use cases. Since we also use other
+# scanners, notably Nomos and Monk in Fossology, we have included some license names of our own to
+# help process unclear scanner findings. The ScanCode LicenseDB, designed and built by nexB, Inc.,
+# is available at: https://scancode-licensedb.aboutcode.org/, licensed under CC-BY-4.0.
+#
+# Content in this file created by Double Open Oy or the Double Open project by HH Partners is
+# published under CC0-1.0.
+#
+# The following introduces the applicable categories and properties. Each license should be in one
+# category. A license can have multiple properties.
+#
+# Do you want this file to be updated? Make a GitHub issue or send email to support@doubleopen.org.
+# If you make a pull request, we expect every contribution to be published under CC0-1.0.
+
+categories:
+  - name: "copyleft-strong"
+    description: >-
+      Open source license that requires you to license modifications, as well as any code that ends
+      up in the same binary (including static linking and module modifications), as well as other
+      code that is part of the same work, with the same strong copyleft license.
+      Examples: GPL-2.0, GPL-3.0, AGPL-3.0, EUPL-1.0, EUPL-1.1, EUPL-1.2.
+
+  - name: "copyleft-LGPL"
+    description: >-
+      This category is for particular software interaction method defined in the LGPL family of
+      licenses, namely LGPL-2.0, LGPL-2.1 and LGPL-3.0. Loosely, if you statically link with an LGPL
+      licensed library, you need to provide for the recipient the option to modify the LGPL licensed
+      library and thereafter relink with your application. This category is for the LGPL family of
+      licenses, namely LGPL-2.0, LGPL-2.1 and LGPL-3.0.
+
+  - name: "copyleft-module-level"
+    description: >-
+      Open source license that requires you to license modifications made into the same software
+      module with the same license as the original open source software module. This also applies,
+      if you add code from this module to your own module. Examples: EPL-1.1, CPL-1.0.
+
+  - name: "copyleft-file-level"
+    description: >-
+      Open source license that requires you to license modifications made into the same file with
+      the same license as the original open source file. This also applies, if you add code from
+      this file to your own file. Example: MPL-2.0.
+
+  - name: "permissive"
+    description: >-
+      Open source license that is made available under "non-copyleft" licenses. These generally
+      require attribution of the included works and may include other obligations.
+
+  - name: "free-restricted"
+    description: >-
+      A permissive or open source-style license that contains restrictions regarding the usage of
+      the work (for example, where a software is not allowed to be used in nuclear facilities) or
+      the redistribution of the software (for example, where commercial redistribution of the
+      software is not allowed without express permission). These licenses are not open source
+      licenses, since they do not include all the required freedoms.
+
+  - name: "proprietary-free"
+    description: >-
+      A proprietary-free license may not require a commercial license, but has specific
+      terms and conditions which the project is obligated to follow. Some of these terms and
+      conditions are provided with or in the code or in clickable downloaded licenses. Examples are
+      the Sun Binary Code License Agreement or a freely offered BSP.
+
+  - name: "commercial"
+    description: >-
+      A license for third-party proprietary content offered under a direct commercial license
+      between a supplier and a customer.
+
+  - name: "public-domain"
+    description: >-
+      A dedication by which a work is placed into the public domain without any explicit
+      obligations, but which may have a notice that must be kept with the work per project policy.
+      The match maybe to software, code examples on a website, published public domain
+      specifications or another type of publication.
+
+  - name: "source-available"
+    description: >-
+      A source-available license is released through a source code distribution model that
+      includes arrangements where the source can be viewed, and in some cases modified, but without
+      necessarily meeting the criteria to be called open-source.
+
+  - name: "unstated"
+    description: >-
+      A statement used when no license is stated, but the content is likely under copyright. Common
+      examples include code snippets from publications and websites (such as those from O'Reilly
+      Media).
+
+  - name: "irrelevant"
+    description: >-
+      Category for scanner hits that are irrelevant for compliance purposes.
+
+  - name: "property:network-clause"
+    description: >-
+      This license has specific terms that apply when the software is used or deployed over a
+      network. Few licenses have such terms; examples include Affero GPL, EUPL-1.2 (and other
+      versions) OSL and the Common Public Attribution License (CPAL 1.0).
+
+  - name: "property:advertising-clause"
+    description: >-
+      This license requires a notice in certain advertisements for the product (typically those
+      mentioning features of the licensed software) that the licensed software is being used.
+
+  - name: "property:non-commercial"
+    description: >-
+      Licenses that add a restriction that prevents the use of the software for commercial purposes.
+
+  - name: "property:include-in-notice-file"
+    description: >-
+      Whether the license includes a notice obligation or similar which can be fulfilled by adding
+      the relevant copyright notices and the license text into the project/product notice file.
+
+  - name: "include-in-notice-file"
+    description: >-
+      Same as above, as a temporary work-around for the category name not being configurable in ORT
+      reports, see https://github.com/oss-review-toolkit/ort/issues/8220.
+
+  - name: "property:mark-modifications"
+    description: >-
+      The licence includes an obligation to mark all modifications of licensed content.
+
+  - name: "property:antitivo-clause"
+    description: >-
+      This property means that the licensee/end user must be offered an opportunity to reinstall
+      modified versions of the licensed software on the device and that there must not be any
+      controls, such as firmware checking for checksums of the software on device and consequent
+      non-operation of the software or device due to the failure of such checks, unless the
+      licensee/end user is given adequate information to bypass such controls. This property only
+      applies to (i) products normally used for personal, family or household purposes (interpreted
+      broadly), and (ii) products designed or sold for incorporation into a dwelling. Known
+      instances in GPL-3.0, LGPL-3.0, AGPL-3.0.
+
+  - name: "property:nuclear-restriction"
+    description: >-
+      This property denies the use of the software in a nuclear facility.
+
+  - name: "property:patent-clause"
+    description: >-
+      This property indicates that the license has patent licensing related terms. All patent
+      related provisions in a license, with the exception of a basic patent license, trigger this
+      clause. For example Apache-2.0 license includes a license cancellation clause due to patent
+      disputes.
+
+  - name: "property:distribute-source-code"
+    description: >-
+      This property indicates that the license requires that the source code of the OSS is either
+      distributed, or offered to distribute, in connection with the software delivery.
+
+  - name: "property:modification-related-obligations"
+    description: >-
+      This property indicates that the license contains obligations that are triggered by modifying
+      the licensed content. The scope of obligations could vary, but typically it is about somehow
+      making sure that the recipients of the modified content don't attribute the modifications to
+      the wrong author and/or that the unmodified content is available to the recipients. The
+      obligations go beoynd of mere marking of the modifications. Artistic-type licenses have this
+      property, but also some others.
+
+  - name: "property:AutoConf-or-other-exception"
+    description: >-
+      This property indicates that the license includes an AutoConf exception or another type of
+      exception to the license terms. These exceptions vary in terms: some exceptions render the
+      license, assuming the exception criteria applies, permissive-style. Other exceptions do not
+      render the license permissive style, but rather somehow otherwise relax the terms of the
+      license, for example by introducing a list of compatible copyleft-licenses.
+
+  - name: "property:unclear-scanner-finding"
+    description: >-
+      This property indicates that the scanner finding requires manual conclusion.
+
+  - name: "property:unchecked"
+    description: >-
+      This property marking means that the properties of the license have not been checked. Ask for
+      license categorization/checking. This typically is an uncommon license, which has not yet been
+      fully categorized.
+
+  - name: "property:specification-license"
+    description: >-
+      An open source-style license that is typically applied to specification files and has some
+      important limitations, such as a prohibition on modifying the licensed work. These licenses
+      usually fall in the free-restricted category. This property enables users an option to
+      automatically accept specification licenses, even if free-restricted licenses otherwise
+      create rule violations.
+
+  - name: "property:creativecommons"
+    description: >-
+      Licenses and dedications published and maintained by the Creative Commons. These
+      often apply to content that is not software, while sometimes also software is licensed
+      under these licenses.
+
+  - name: "property:no-modifications"
+    description: >-
+      Licenses with this property prohibit the making of modifications to the licensed content.
+      This is initially applied to Creative Commons licenses but will be used more widely as
+      license reviews progress. Contributions/pull requests are welcome.
+
+categorizations:
+  - id: "0BSD"
+    categories:
+      - "permissive"
+
+  # https://spdx.org/licenses/AFL-1.1.html
+  - id: "AFL-1.1"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:patent-clause"
+
+  # https://spdx.org/licenses/AFL-1.2.html
+  - id: "AFL-1.2"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:patent-clause"
+
+  - id: "AFL-2.0"
+    categories:
+      - "permissive"
+      - "property:distribute-source-code"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:patent-clause"
+
+  - id: "AFL-2.1"
+    categories:
+      - "permissive"
+      - "property:distribute-source-code"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:patent-clause"
+
+  # https://spdx.org/licenses/AFL-3.0.html
+  - id: "AFL-3.0"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:patent-clause"
+      - "property:network-clause"
+
+  # https://spdx.org/licenses/AGPL-1.0-only.html
+  - id: "AGPL-1.0-only"
+    categories:
+      - "copyleft-strong"
+      - "property:network-clause"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+
+  # https://spdx.org/licenses/AGPL-1.0-or-later.html
+  - id: "AGPL-1.0-or-later"
+    categories:
+      - "copyleft-strong"
+      - "property:network-clause"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+
+  # https://spdx.org/licenses/AGPL-3.0-only.html
+  - id: "AGPL-3.0-only"
+    categories:
+      - "copyleft-strong"
+      - "property:network-clause"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:antitivo-clause"
+      - "property:distribute-source-code"
+      - "property:patent-clause"
+
+  # https://spdx.org/licenses/AGPL-3.0-only.html
+  - id: "AGPL-3.0-or-later"
+    categories:
+      - "copyleft-strong"
+      - "property:network-clause"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:antitivo-clause"
+      - "property:distribute-source-code"
+      - "property:patent-clause"
+
+  # https://spdx.org/licenses/AMDPLPA.html
+  - id: "AMDPLPA"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "ANTLR-PD"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "APAFML"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/APL-1.0.html
+  - id: "APL-1.0"
+    categories:
+      - "copyleft-module-level"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:patent-clause"
+      - "property:distribute-source-code"
+
+  # https://spdx.org/licenses/APSL-1.0.html
+  - id: "APSL-1.0"
+    categories:
+      - "copyleft-file-level"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:patent-clause"
+      - "property:distribute-source-code"
+
+  # https://spdx.org/licenses/APSL-1.1.html
+  - id: "APSL-1.1"
+    categories:
+      - "copyleft-file-level"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:patent-clause"
+      - "property:distribute-source-code"
+
+  # https://spdx.org/licenses/APSL-1.2.html
+  - id: "APSL-1.2"
+    categories:
+      - "copyleft-file-level"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:patent-clause"
+      - "property:distribute-source-code"
+
+  # https://spdx.org/licenses/APSL-2.0.html
+  - id: "APSL-2.0"
+    categories:
+      - "copyleft-file-level"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:patent-clause"
+      - "property:distribute-source-code"
+
+  # https://spdx.org/licenses/Adobe-2006.html
+  - id: "Adobe-2006"
+    categories:
+      - "permissive"
+
+  - id: "Adobe-Glyph"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/Apache-1.0.html
+  - id: "Apache-1.0"
+    categories:
+      - "permissive"
+      - "property:advertising-clause"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/Apache-1.1.html
+  - id: "Apache-1.1"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/Apache-2.0.html
+  - id: "Apache-2.0"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:patent-clause"
+
+  # https://spdx.org/licenses/Apache-2.0.html
+  # https://spdx.org/licenses/LLVM-exception.html
+  - id: "Apache-2.0 WITH LLVM-exception"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:patent-clause"
+      - "property:AutoConf-or-other-exception"
+
+  # https://spdx.org/licenses/Artistic-1.0.html
+  - id: "Artistic-1.0"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:modification-related-obligations"
+
+  # https://spdx.org/licenses/Artistic-1.0-Perl.html
+  - id: "Artistic-1.0-Perl"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:modification-related-obligations"
+
+  # https://spdx.org/licenses/Artistic-1.0-cl8.html
+  - id: "Artistic-1.0-cl8"
+    categories:
+      - "copyleft-file-level"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:modification-related-obligations"
+
+  # https://spdx.org/licenses/Artistic-2.0.html
+  - id: "Artistic-2.0"
+    categories:
+      - "copyleft-module-level"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:modification-related-obligations"
+      - "property:distribute-source-code"
+      - "property:patent-clause"
+
+  # https://spdx.org/licenses/BSD-1-Clause.html
+  - id: "BSD-1-Clause"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/BSD-2-Clause.html
+  - id: "BSD-2-Clause"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "BSD-2-Clause-Views"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/BSD-3-Clause.html
+  - id: "BSD-3-Clause"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "BSD-3-Clause-Attribution"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/BSD-3-Clause-Clear.html
+  - id: "BSD-3-Clause-Clear"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "BSD-3-Clause-LBNL"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/BSD-3-Clause-Modification.html
+  - id: "BSD-3-Clause-Modification"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:mark-modifications"
+
+  - id: "BSD-3-Clause-No-Nuclear-License"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:nuclear-restriction"
+
+  - id: "BSD-3-Clause-No-Nuclear-Warranty"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:nuclear-restriction"
+
+  - id: "BSD-3-Clause-Open-MPI"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/BSD-4-Clause.html
+  - id: "BSD-4-Clause"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:advertising-clause"
+
+  - id: "BSD-4-Clause-Shortened"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/BSD-4-Clause-UC.html
+  - id: "BSD-4-Clause-UC"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/BSD-4.3RENO.html
+  - id: "BSD-4.3RENO"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/BSD-4.3TAHOE.html
+  - id: "BSD-4.3TAHOE"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:no-modifications"
+      - "property:advertising-clause"
+
+  # https://spdx.org/licenses/BSD-Protection.html
+  - id: "BSD-Protection"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+
+  - id: "BSD-Source-Code"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/BSL-1.0.html
+  - id: "BSL-1.0"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "BUSL-1.1"
+    categories:
+      - "commercial"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "Beerware"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/BitTorrent-1.0.html
+  - id: "BitTorrent-1.0"
+    categories:
+      - "copyleft-file-level"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:patent-clause"
+
+  # https://spdx.org/licenses/BitTorrent-1.1.html
+  - id: "BitTorrent-1.1"
+    categories:
+      - "copyleft-file-level"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:patent-clause"
+
+  - id: "Bitstream-Vera"
+    categories:
+      - "free-restricted"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/BlueOak-1.0.0.html
+  - id: "BlueOak-1.0.0"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/Borceux.html
+  - id: "Borceux"
+    categories:
+      - "permissive"
+
+  # https://spdx.org/licenses/CATOSL-1.1.html
+  - id: "CATOSL-1.1"
+    categories:
+      - "copyleft-file-level"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:patent-clause"
+
+  # https://spdx.org/licenses/CC-BY-1.0.html
+  - id: "CC-BY-1.0"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:creativecommons"
+
+  # https://spdx.org/licenses/CC-BY-2.0.html
+  - id: "CC-BY-2.0"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:creativecommons"
+
+  # https://spdx.org/licenses/CC-BY-2.5.html
+  - id: "CC-BY-2.5"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:creativecommons"
+
+  # https://spdx.org/licenses/CC-BY-3.0.html
+  - id: "CC-BY-3.0"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:creativecommons"
+
+  # https://spdx.org/licenses/CC-BY-4.0.html
+  - id: "CC-BY-4.0"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:creativecommons"
+
+  # https://spdx.org/licenses/CC-BY-NC-1.0.html
+  - id: "CC-BY-NC-1.0"
+    categories:
+      - "free-restricted"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:non-commercial"
+      - "property:creativecommons"
+
+  # https://spdx.org/licenses/CC-BY-NC-2.0.html
+  - id: "CC-BY-NC-2.0"
+    categories:
+      - "free-restricted"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:non-commercial"
+      - "property:creativecommons"
+
+  # https://spdx.org/licenses/CC-BY-NC-2.5.html
+  - id: "CC-BY-NC-2.5"
+    categories:
+      - "free-restricted"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:non-commercial"
+      - "property:creativecommons"
+
+  # https://spdx.org/licenses/CC-BY-NC-3.0.html
+  - id: "CC-BY-NC-3.0"
+    categories:
+      - "free-restricted"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:non-commercial"
+      - "property:creativecommons"
+
+  # https://spdx.org/licenses/CC-BY-NC-4.0.html
+  - id: "CC-BY-NC-4.0"
+    categories:
+      - "free-restricted"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:non-commercial"
+      - "property:creativecommons"
+
+  # https://spdx.org/licenses/CC-BY-NC-ND-1.0.html
+  - id: "CC-BY-NC-ND-1.0"
+    categories:
+      - "free-restricted"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:non-commercial"
+      - "property:creativecommons"
+      - "property:no-modifications"
+
+  # https://spdx.org/licenses/CC-BY-NC-ND-2.0.html
+  - id: "CC-BY-NC-ND-2.0"
+    categories:
+      - "free-restricted"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:non-commercial"
+      - "property:creativecommons"
+      - "property:no-modifications"
+
+  # https://spdx.org/licenses/CC-BY-NC-ND-2.5.html
+  - id: "CC-BY-NC-ND-2.5"
+    categories:
+      - "free-restricted"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:non-commercial"
+      - "property:creativecommons"
+      - "property:no-modifications"
+
+  # https://spdx.org/licenses/CC-BY-NC-ND-3.0.html
+  - id: "CC-BY-NC-ND-3.0"
+    categories:
+      - "free-restricted"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:non-commercial"
+      - "property:creativecommons"
+      - "property:no-modifications"
+
+  - id: "CC-BY-NC-ND-4.0"
+    categories:
+      - "free-restricted"
+      - "property:non-commercial"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:creativecommons"
+      - "property:no-modifications"
+
+  # https://spdx.org/licenses/CC-BY-NC-SA-1.0.html
+  - id: "CC-BY-NC-SA-1.0"
+    categories:
+      - "free-restricted"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:non-commercial"
+      - "property:creativecommons"
+
+  # https://spdx.org/licenses/CC-BY-NC-SA-2.0.html
+  - id: "CC-BY-NC-SA-2.0"
+    categories:
+      - "free-restricted"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:non-commercial"
+      - "property:creativecommons"
+
+  - id: "CC-BY-NC-SA-2.5"
+    categories:
+      - "source-available"
+      - "property:non-commercial"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:creativecommons"
+
+  # https://spdx.org/licenses/CC-BY-NC-SA-3.0.html
+  - id: "CC-BY-NC-SA-3.0"
+    categories:
+      - "free-restricted"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:non-commercial"
+      - "property:creativecommons"
+
+  - id: "CC-BY-NC-SA-4.0"
+    categories:
+      - "source-available"
+      - "property:non-commercial"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:creativecommons"
+
+  # https://spdx.org/licenses/CC-BY-ND-1.0.html
+  - id: "CC-BY-ND-1.0"
+    categories:
+      - "free-restricted"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:creativecommons"
+      - "property:no-modifications"
+
+  # https://spdx.org/licenses/CC-BY-ND-2.0.html
+  - id: "CC-BY-ND-2.0"
+    categories:
+      - "free-restricted"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:creativecommons"
+      - "property:no-modifications"
+
+  # https://spdx.org/licenses/CC-BY-ND-2.5.html
+  - id: "CC-BY-ND-2.5"
+    categories:
+      - "free-restricted"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:creativecommons"
+      - "property:no-modifications"
+
+  # https://spdx.org/licenses/CC-BY-ND-3.0.html
+  - id: "CC-BY-ND-3.0"
+    categories:
+      - "free-restricted"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:creativecommons"
+      - "property:no-modifications"
+
+  # https://spdx.org/licenses/CC-BY-ND-4.0.html
+  - id: "CC-BY-ND-4.0"
+    categories:
+      - "free-restricted"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:creativecommons"
+      - "property:no-modifications"
+
+  - id: "CC-BY-SA-2.0"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:creativecommons"
+
+  - id: "CC-BY-SA-2.5"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:creativecommons"
+
+  - id: "CC-BY-SA-3.0"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:creativecommons"
+
+  - id: "CC-BY-SA-4.0"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:creativecommons"
+
+  # https://spdx.org/licenses/CC-PDDC.html
+  - id: "CC-PDDC"
+    categories:
+      - "public-domain"
+
+  # https://spdx.org/licenses/CC0-1.0.html
+  - id: "CC0-1.0"
+    categories:
+      - "public-domain"
+      - "property:creativecommons"
+
+  # https://spdx.org/licenses/CDDL-1.0.html
+  - id: "CDDL-1.0"
+    categories:
+      - "copyleft-file-level"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:patent-clause"
+
+  # https://spdx.org/licenses/CDDL-1.1.html
+  - id: "CDDL-1.1"
+    categories:
+      - "copyleft-file-level"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:patent-clause"
+
+  # https://spdx.org/licenses/CNRI-Jython.html
+  - id: "CNRI-Jython"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/CNRI-Python.html
+  - id: "CNRI-Python"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/CPL-1.0.html
+  - id: "CPL-1.0"
+    categories:
+      - "copyleft-module-level"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:patent-clause"
+
+  # https://spdx.org/licenses/CUA-OPL-1.0.html
+  - id: "CUA-OPL-1.0"
+    categories:
+      - "copyleft-file-level"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:patent-clause"
+
+  - id: "DOC"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/ECL-2.0.html
+  - id: "ECL-2.0"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:patent-clause"
+
+  # https://spdx.org/licenses/EFL-2.0.html
+  - id: "EFL-2.0"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/EPL-1.0.html
+  - id: "EPL-1.0"
+    categories:
+      - "copyleft-module-level"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:patent-clause"
+
+  # https://spdx.org/licenses/EPL-2.0.html
+  - id: "EPL-2.0"
+    categories:
+      - "copyleft-file-level"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:patent-clause"
+
+  # https://spdx.org/licenses/EUPL-1.1.html
+  - id: "EUPL-1.1"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:network-clause"
+      - "property:distribute-source-code"
+
+  # https://spdx.org/licenses/EUPL-1.2.html
+  - id: "EUPL-1.2"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:network-clause"
+      - "property:distribute-source-code"
+
+  - id: "Elastic-2.0"
+    categories:
+      - "source-available"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/FSFAP.html
+  - id: "FSFAP"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/FSFUL.html
+  - id: "FSFUL"
+    categories:
+      - "permissive"
+
+  # https://spdx.org/licenses/FSFULLR.html
+  - id: "FSFULLR"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/FSFULLRWD.html
+  - id: "FSFULLRWD"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "FTL"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "FreeImage"
+    categories:
+      - "copyleft-module-level"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/GFDL-1.1.html
+  - id: "GFDL-1.1-only"
+    categories:
+      - "copyleft-module-level"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:unchecked"
+
+  # https://spdx.org/licenses/GFDL-1.1.html
+  - id: "GFDL-1.1-or-later"
+    categories:
+      - "copyleft-module-level"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:unchecked"
+
+  # https://spdx.org/licenses/GFDL-1.2.html
+  - id: "GFDL-1.2-only"
+    categories:
+      - "copyleft-module-level"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:unchecked"
+
+  # https://spdx.org/licenses/GFDL-1.2.html
+  - id: "GFDL-1.2-or-later"
+    categories:
+      - "copyleft-module-level"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:unchecked"
+
+  # https://spdx.org/licenses/GFDL-1.3.html
+  - id: "GFDL-1.3-only"
+    categories:
+      - "copyleft-module-level"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:unchecked"
+
+  # https://spdx.org/licenses/GFDL-1.3.html
+  - id: "GFDL-1.3-or-later"
+    categories:
+      - "copyleft-module-level"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:unchecked"
+
+  # https://spdx.org/licenses/GPL-1.0-only.html
+  - id: "GPL-1.0-only"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+
+  # https://spdx.org/licenses/GPL-1.0-or-later.html
+  - id: "GPL-1.0-or-later"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+
+  # https://spdx.org/licenses/GPL-1.0-or-later.html
+  # https://spdx.org/licenses/Autoconf-exception-generic.html
+  - id: "GPL-1.0-or-later WITH Autoconf-exception-generic"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:AutoConf-or-other-exception"
+
+  # https://spdx.org/licenses/GPL-1.0-or-later.html
+  # https://spdx.org/licenses/Linux-syscall-note.html
+  - id: "GPL-1.0-or-later WITH Linux-syscall-note"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:AutoConf-or-other-exception"
+
+  # https://spdx.org/licenses/GPL-2.0-only.html
+  - id: "GPL-2.0-only"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+
+  # https://spdx.org/licenses/GPL-2.0-only.html
+  # https://spdx.org/licenses/Classpath-exception-2.0.html
+  - id: "GPL-2.0-only WITH Classpath-exception-2.0"
+    categories:
+      - "copyleft-module-level"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:AutoConf-or-other-exception"
+
+  # https://spdx.org/licenses/GPL-2.0-only.html
+  # https://spdx.org/licenses/Font-exception-2.0.html
+  - id: "GPL-2.0-only WITH Font-exception-2.0"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:AutoConf-or-other-exception"
+
+  - id: "GPL-2.0-only WITH GCC-exception-2.0"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:AutoConf-or-other-exception"
+
+  # https://spdx.org/licenses/GPL-2.0-only.html
+  # https://scancode-licensedb.aboutcode.org/mysql-linking-exception-2018.html
+  - id: "GPL-2.0-only WITH LicenseRef-scancode-mysql-linking-exception-2018"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:AutoConf-or-other-exception"
+
+  # https://spdx.org/licenses/GPL-2.0-only.html
+  # https://spdx.org/licenses/Linux-syscall-note.html
+  - id: "GPL-2.0-only WITH Linux-syscall-note"
+    categories:
+      - "copyleft-module-level"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:AutoConf-or-other-exception"
+
+  # https://spdx.org/licenses/GPL-2.0-only.html
+  # https://spdx.org/licenses/Universal-FOSS-exception-1.0.html
+  - id: "GPL-2.0-only WITH Universal-FOSS-exception-1.0"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:AutoConf-or-other-exception"
+
+  # https://spdx.org/licenses/GPL-2.0-or-later.html
+  - id: "GPL-2.0-or-later"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+
+  # https://spdx.org/licenses/GPL-2.0-or-later.html
+  # https://spdx.org/licenses/Autoconf-exception-2.0.html
+  - id: "GPL-2.0-or-later WITH Autoconf-exception-2.0"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:AutoConf-or-other-exception"
+
+  # https://spdx.org/licenses/GPL-2.0-or-later.html
+  # https://spdx.org/licenses/Autoconf-exception-generic.html
+  - id: "GPL-2.0-or-later WITH Autoconf-exception-generic"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:AutoConf-or-other-exception"
+
+  # https://spdx.org/licenses/GPL-2.0-or-later.html
+  # https://spdx.org/licenses/Bison-exception-2.2.html
+  - id: "GPL-2.0-or-later WITH Bison-exception-2.2"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:AutoConf-or-other-exception"
+
+  # https://spdx.org/licenses/GPL-2.0-or-later.html
+  # https://spdx.org/licenses/Classpath-exception-2.0.html
+  - id: "GPL-2.0-or-later WITH Classpath-exception-2.0"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:AutoConf-or-other-exception"
+
+  - id: "GPL-2.0-or-later WITH GCC-exception-2.0"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:AutoConf-or-other-exception"
+
+  # https://spdx.org/licenses/GPL-2.0-or-later.html
+  # https://spdx.org/licenses/Libtool-exception.html
+  - id: "GPL-2.0-or-later WITH Libtool-exception"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:AutoConf-or-other-exception"
+
+  # https://spdx.org/licenses/GPL-2.0-or-later.html
+  # https://spdx.org/licenses/Linux-syscall-note.html
+  - id: "GPL-2.0-or-later WITH Linux-syscall-note"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:AutoConf-or-other-exception"
+
+  # https://spdx.org/licenses/GPL-2.0-or-later.html
+  # https://spdx.org/licenses/eCos-exception-2.0.html
+  - id: "GPL-2.0-or-later WITH eCos-exception-2.0"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:AutoConf-or-other-exception"
+
+  # https://spdx.org/licenses/GPL-3.0-only.html
+  - id: "GPL-3.0-only"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:antitivo-clause"
+      - "property:distribute-source-code"
+      - "property:patent-clause"
+
+  # https://spdx.org/licenses/GPL-3.0-only.html
+  # https://spdx.org/licenses/Autoconf-exception-3.0.html
+  - id: "GPL-3.0-only WITH Autoconf-exception-3.0"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:antitivo-clause"
+      - "property:distribute-source-code"
+      - "property:patent-clause"
+      - "property:AutoConf-or-other-exception"
+
+  # https://spdx.org/licenses/GPL-3.0-only.html
+  # https://spdx.org/licenses/Font-exception-2.0.html
+  - id: "GPL-3.0-only WITH Font-exception-2.0"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:antitivo-clause"
+      - "property:distribute-source-code"
+      - "property:patent-clause"
+      - "property:AutoConf-or-other-exception"
+
+  # https://spdx.org/licenses/GPL-3.0-only.html
+  # https://spdx.org/licenses/GCC-exception-3.1.html
+  - id: "GPL-3.0-only WITH GCC-exception-3.1"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:antitivo-clause"
+      - "property:distribute-source-code"
+      - "property:patent-clause"
+      - "property:AutoConf-or-other-exception"
+
+  # https://spdx.org/licenses/GPL-3.0-or-later.html
+  - id: "GPL-3.0-or-later"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:antitivo-clause"
+      - "property:distribute-source-code"
+      - "property:patent-clause"
+
+  # https://spdx.org/licenses/GPL-3.0-or-later.html
+  # https://spdx.org/licenses/Autoconf-exception-2.0.html
+  - id: "GPL-3.0-or-later WITH Autoconf-exception-2.0"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:antitivo-clause"
+      - "property:distribute-source-code"
+      - "property:patent-clause"
+      - "property:AutoConf-or-other-exception"
+
+  # https://spdx.org/licenses/GPL-3.0-or-later.html
+  # https://spdx.org/licenses/Autoconf-exception-3.0.html
+  - id: "GPL-3.0-or-later WITH Autoconf-exception-3.0"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:antitivo-clause"
+      - "property:distribute-source-code"
+      - "property:patent-clause"
+      - "property:AutoConf-or-other-exception"
+
+  # https://spdx.org/licenses/GPL-3.0-or-later.html
+  # https://spdx.org/licenses/Autoconf-exception-generic.html
+  - id: "GPL-3.0-or-later WITH Autoconf-exception-generic"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:antitivo-clause"
+      - "property:distribute-source-code"
+      - "property:patent-clause"
+      - "property:AutoConf-or-other-exception"
+
+  # https://spdx.org/licenses/GPL-3.0-or-later.html
+  # https://spdx.org/licenses/Bison-exception-2.2.html
+  - id: "GPL-3.0-or-later WITH Bison-exception-2.2"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:antitivo-clause"
+      - "property:distribute-source-code"
+      - "property:patent-clause"
+      - "property:AutoConf-or-other-exception"
+
+  # https://spdx.org/licenses/GPL-3.0-or-later.html
+  # https://spdx.org/licenses/Font-exception-2.0.html
+  - id: "GPL-3.0-or-later WITH Font-exception-2.0"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:antitivo-clause"
+      - "property:distribute-source-code"
+      - "property:patent-clause"
+      - "property:AutoConf-or-other-exception"
+
+  # https://spdx.org/licenses/GPL-3.0-or-later.html
+  # https://spdx.org/licenses/GCC-exception-3.1.html
+  - id: "GPL-3.0-or-later WITH GCC-exception-3.1"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:antitivo-clause"
+      - "property:distribute-source-code"
+      - "property:patent-clause"
+      - "property:AutoConf-or-other-exception"
+
+  # https://spdx.org/licenses/GPL-3.0-or-later.html
+  # https://spdx.org/licenses/Libtool-exception.html
+  - id: "GPL-3.0-or-later WITH Libtool-exception"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:antitivo-clause"
+      - "property:distribute-source-code"
+      - "property:patent-clause"
+      - "property:AutoConf-or-other-exception"
+
+  # https://spdx.org/licenses/GPL-3.0-or-later.html
+  # https://scancode-licensedb.aboutcode.org/autoconf-macro-exception.html
+  - id: "GPL-3.0-or-later WITH LicenseRef-scancode-autoconf-macro-exception"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:antitivo-clause"
+      - "property:distribute-source-code"
+      - "property:patent-clause"
+      - "property:AutoConf-or-other-exception"
+
+  # https://spdx.org/licenses/GPL-3.0-or-later.html
+  # https://scancode-licensedb.aboutcode.org/autoconf-simple-exception.html
+  - id: "GPL-3.0-or-later WITH LicenseRef-scancode-autoconf-simple-exception"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:antitivo-clause"
+      - "property:distribute-source-code"
+      - "property:patent-clause"
+      - "property:AutoConf-or-other-exception"
+
+  # https://spdx.org/licenses/GPL-3.0-or-later.html
+  # https://scancode-licensedb.aboutcode.org/tex-exception.html
+  - id: "GPL-3.0-or-later WITH LicenseRef-scancode-tex-exception"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:antitivo-clause"
+      - "property:distribute-source-code"
+      - "property:patent-clause"
+      - "property:AutoConf-or-other-exception"
+
+  # https://spdx.org/licenses/HPND.html
+  - id: "HPND"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/HPND-sell-variant.html
+  - id: "HPND-sell-variant"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/IBM-pibs.html
+  - id: "IBM-pibs"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/ICU.html
+  - id: "ICU"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/IJG.html
+  - id: "IJG"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "IPA"
+    categories:
+      - "copyleft-module-level"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/IPL-1.0.html
+  - id: "IPL-1.0"
+    categories:
+      - "copyleft-module-level"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:patent-clause"
+
+  # https://spdx.org/licenses/ISC.html
+  - id: "ISC"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/Info-ZIP.html
+  - id: "Info-ZIP"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/Inner-Net-2.0.html
+  - id: "Inner-Net-2.0"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/Intel.html
+  - id: "Intel"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/JPNIC.html
+  - id: "JPNIC"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/JSON.html
+  - id: "JSON"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/LGPL-2.0-only.html
+  - id: "LGPL-2.0-only"
+    categories:
+      - "copyleft-LGPL"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+
+  # https://spdx.org/licenses/LGPL-2.0-or-later.html
+  - id: "LGPL-2.0-or-later"
+    categories:
+      - "copyleft-LGPL"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+
+  # https://spdx.org/licenses/LGPL-2.0-or-later.html
+  # https://spdx.org/licenses/Linux-syscall-note.html
+  - id: "LGPL-2.0-or-later WITH Linux-syscall-note"
+    categories:
+      - "copyleft-LGPL"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:AutoConf-or-other-exception"
+
+  # https://spdx.org/licenses/LGPL-2.0-or-later.html
+  # https://spdx.org/licenses/OCaml-LGPL-linking-exception.html
+  - id: "LGPL-2.0-or-later WITH OCaml-LGPL-linking-exception"
+    categories:
+      - "copyleft-LGPL"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:AutoConf-or-other-exception"
+
+  # https://spdx.org/licenses/LGPL-2.1-only.html
+  - id: "LGPL-2.1-only"
+    categories:
+      - "copyleft-LGPL"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+
+  # https://spdx.org/licenses/LGPL-2.1-only.html
+  # https://spdx.org/licenses/OCaml-LGPL-linking-exception.html
+  - id: "LGPL-2.1-only WITH OCaml-LGPL-linking-exception"
+    categories:
+      - "copyleft-LGPL"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:AutoConf-or-other-exception"
+
+  # https://spdx.org/licenses/LGPL-2.1-or-later.html
+  - id: "LGPL-2.1-or-later"
+    categories:
+      - "copyleft-LGPL"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+
+  - id: "LGPL-2.1-or-later WITH GCC-exception-2.0"
+    categories:
+      - "copyleft-LGPL"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:AutoConf-or-other-exception"
+
+  # Duplicate of LicenseRef-LGPL-2.1-or-later-with-unlimited-linking-exception classification
+  # due to tooling requirements.
+  - id: "LGPL-2.1-or-later WITH LicenseRef-scancode-unlimited-link-exception-lgpl"
+    categories:
+      - "copyleft-LGPL"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:AutoConf-or-other-exception"
+
+  # https://spdx.org/licenses/LGPL-2.1-or-later.html
+  # https://spdx.org/licenses/Linux-syscall-note.html
+  - id: "LGPL-2.1-or-later WITH Linux-syscall-note"
+    categories:
+      - "copyleft-LGPL"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:AutoConf-or-other-exception"
+
+  # https://spdx.org/licenses/LGPL-2.1-or-later.html
+  # https://spdx.org/licenses/OCaml-LGPL-linking-exception.html
+  - id: "LGPL-2.1-or-later WITH OCaml-LGPL-linking-exception"
+    categories:
+      - "copyleft-LGPL"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:AutoConf-or-other-exception"
+
+  # https://spdx.org/licenses/LGPL-3.0-only.html
+  - id: "LGPL-3.0-only"
+    categories:
+      - "copyleft-LGPL"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:antitivo-clause"
+      - "property:distribute-source-code"
+      - "property:patent-clause"
+
+  # https://spdx.org/licenses/LGPL-3.0-or-later.html
+  - id: "LGPL-3.0-or-later"
+    categories:
+      - "copyleft-LGPL"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:antitivo-clause"
+      - "property:distribute-source-code"
+      - "property:patent-clause"
+
+  # https://spdx.org/licenses/LGPL-3.0-or-later.html
+  # https://spdx.org/licenses/openvpn-openssl-exception.html
+  - id: "LGPL-3.0-or-later WITH openvpn-openssl-exception"
+    categories:
+      - "copyleft-LGPL"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:antitivo-clause"
+      - "property:distribute-source-code"
+      - "property:patent-clause"
+      - "property:AutoConf-or-other-exception"
+
+  # https://spdx.org/licenses/LPL-1.02.html
+  - id: "LPL-1.02"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:patent-clause"
+
+  # https://spdx.org/licenses/LPPL-1.0.html
+  - id: "LPPL-1.0"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+
+  # https://spdx.org/licenses/LPPL-1.2.html
+  - id: "LPPL-1.2"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+
+  # https://spdx.org/licenses/LPPL-1.2.html
+  - id: "LPPL-1.2+"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+
+  - id: "LPPL-1.3a"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:mark-modifications"
+
+  # https://spdx.org/licenses/LPPL-1.3c.html
+  - id: "LPPL-1.3c"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+
+  # https://spdx.org/licenses/Latex2e.html
+  - id: "Latex2e"
+    categories:
+      - "copyleft-module-level"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:unchecked"
+
+  # https://spdx.org/licenses/Libpng.html
+  - id: "Libpng"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-389-exception"
+    categories:
+      - "property:AutoConf-or-other-exception"
+
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-Apache"
+    categories:
+      - "property:unclear-scanner-finding"
+
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-Apple.Sample"
+    categories:
+      - "permissive"
+
+  - id: "LicenseRef-Autoconf-exception"
+    categories:
+      - "property:AutoConf-or-other-exception"
+
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-Autoconf-exception-3.0"
+    categories:
+      - "property:AutoConf-or-other-exception"
+
+  - id: "LicenseRef-BSD"
+    categories:
+      - "permissive"
+
+  - id: "LicenseRef-BSD-1-Clause-No-Notice-Requirement"
+    categories:
+      - "permissive"
+
+  - id: "LicenseRef-BSD-1-Clause-No-Notice-Requirements"
+    categories:
+      - "permissive"
+
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-BSD-2"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-BSD-4-Clause-NetBSD"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-BSD-possibility"
+    categories:
+      - "permissive"
+
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-BSD-style"
+    categories:
+      - "permissive"
+
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-BSL-style"
+    categories:
+      - "permissive"
+
+  - id: "LicenseRef-Bellcore"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # Proprietary recipes for Yocto.
+  - id: "LicenseRef-CLOSED"
+    categories:
+      - "irrelevant"
+
+  - id: "LicenseRef-COMMERCIAL"
+    categories:
+      - "commercial"
+
+  - id: "LicenseRef-Cryptogams"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-DEC-Unknown-License"
+    categories:
+      - "commercial"
+
+  - id: "LicenseRef-Debian-SPI-style"
+    categories:
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "permissive"
+
+  # https://www.eclipse.org/legal/tck.php
+  - id: "LicenseRef-EFTCK-1.0"
+    categories:
+      - "free-restricted"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:no-modifications"
+  - id: "LicenseRef-Elfutils-Exception"
+    categories:
+      - "property:AutoConf-or-other-exception"
+
+  - id: "LicenseRef-FSF"
+    categories:
+      - "permissive"
+
+  # https://scancode-licensedb.aboutcode.org/fsf-unlimited-no-warranty.html
+  - id: "LicenseRef-FSF-Unlimited-No-Warranty"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-Firmware-imx-sdma-firmware"
+    categories:
+      - "proprietary-free"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-GFDL"
+    categories:
+      - "copyleft-module-level"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:unchecked"
+
+  - id: "LicenseRef-GLib-manual"
+    categories:
+      - "copyleft-module-level"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:unchecked"
+
+  - id: "LicenseRef-GPL"
+    categories:
+      - "property:unclear-scanner-finding"
+
+  # https://spdx.org/licenses/GPL-2.0-or-later.html
+  - id: "LicenseRef-GPL-2.0-or-later-with-TeX-exception"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:AutoConf-or-other-exception"
+
+  # https://spdx.org/licenses/GPL-2.0-or-later.html
+  - id: "LicenseRef-GPL-2.0-or-later-with-autoconf-macro-exception"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:AutoConf-or-other-exception"
+
+  # https://spdx.org/licenses/GPL-2.0-or-later.html
+  # https://spdx.org/licenses/Bison-exception-2.2.html
+  - id: "LicenseRef-GPL-2.0-or-later-with-bison-exception-2.0"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:AutoConf-or-other-exception"
+
+  - id: "LicenseRef-GPL-2.0-or-later-with-guile-exception-2.0"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:AutoConf-or-other-exception"
+
+  # https://spdx.org/licenses/GPL-2.0-or-later.html
+  # https://github.com/gpg/libgpg-error/blob/220a427b4f997ef6af1b2d4e82ef1dc96e0cd6ff/lang/cl/mkerrcodes.awk
+  - id: "LicenseRef-GPL-2.0-or-later-with-mkerrcodes.awk-exception"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:AutoConf-or-other-exception"
+
+  - id: "LicenseRef-GPL-2.0-or-later-with-shtool-exception"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:AutoConf-or-other-exception"
+
+  - id: "LicenseRef-GPL-2.0-or-later-with-strongswan-exception"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:AutoConf-or-other-exception"
+
+  # https://spdx.org/licenses/GPL-2.0-or-later.html
+  # https://spdx.org/licenses/openvpn-openssl-exception.html
+  - id: "LicenseRef-GPL-2.0-with-OpenSSL-exception"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:AutoConf-or-other-exception"
+
+  # https://spdx.org/licenses/GPL-2.0-or-later.html
+  # https://spdx.org/licenses/openvpn-openssl-exception.html
+  - id: "LicenseRef-GPL-2.0-with-openssl-exception"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:AutoConf-or-other-exception"
+
+  # https://spdx.org/licenses/GPL-3.0-or-later.html
+  - id: "LicenseRef-GPL-3.0-or-later-with-Autoconf-macro-exception"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:antitivo-clause"
+      - "property:distribute-source-code"
+      - "property:patent-clause"
+      - "property:AutoConf-or-other-exception"
+
+  # https://spdx.org/licenses/GPL-3.0-or-later.html
+  - id: "LicenseRef-GPL-3.0-or-later-with-TeX-exception"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:antitivo-clause"
+      - "property:distribute-source-code"
+      - "property:patent-clause"
+      - "property:AutoConf-or-other-exception"
+
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-HP-Compaq"
+    categories:
+      - "irrelevant"
+
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-HP-DEC"
+    categories:
+      - "commercial"
+
+  - id: "LicenseRef-IBM-US-Government-Restriction"
+    categories:
+      - "proprietary-free"
+
+  - id: "LicenseRef-IBM-dhcp"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://scancode-licensedb.aboutcode.org/ietf.html
+  - id: "LicenseRef-IETF"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-IOS"
+    categories:
+      - "proprietary-free"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-Intel-Binary"
+    categories:
+      - "proprietary-free"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:unchecked"
+
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-Intel-WLAN"
+    categories:
+      - "irrelevant"
+
+  # https://tldp.org/COPYRIGHT.html
+  - id: "LicenseRef-LDPL"
+    categories:
+      - "copyleft-file-level"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-LGPL"
+    categories:
+      - "property:unclear-scanner-finding"
+
+  - id: "LicenseRef-LGPL-2.1-or-later-with-linking-exception"
+    categories:
+      - "copyleft-LGPL"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:AutoConf-or-other-exception"
+
+  - id: "LicenseRef-LGPL-2.1-or-later-with-unlimited-linking-exception"
+    categories:
+      - "copyleft-LGPL"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:AutoConf-or-other-exception"
+
+  # This is needed for the license to (not) be picked correctly for notice generation.
+  - id: "LicenseRef-LicenseRef-Permissive-no-warranty"
+    categories:
+      - "permissive"
+
+  - id: "LicenseRef-Linux-HOWTO"
+    categories:
+      - "copyleft-file-level"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:unchecked"
+
+  - id: "LicenseRef-Linux-syscall-note"
+    categories:
+      - "property:AutoConf-or-other-exception"
+      - "copyleft-strong"
+      - "property:distribute-source-code"
+
+  - id: "LicenseRef-MIT-old-style-no-adv"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-MIT-old-style-with-legal-disclaimer"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-MIT-possibility"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-MIT-style"
+    categories:
+      - "permissive"
+
+  - id: "LicenseRef-MPL"
+    categories:
+      - "property:unclear-scanner-finding"
+
+  - id: "LicenseRef-Mediatek"
+    categories:
+      - "commercial"
+
+  - id: "LicenseRef-NOT-public-domain"
+    categories:
+      - "irrelevant"
+
+  - id: "LicenseRef-NewBSD"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-Non-profit"
+    categories:
+      - "property:unclear-scanner-finding"
+
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-NotreDame-style"
+    categories:
+      - "permissive"
+
+  - id: "LicenseRef-Nvidia-EULA-b"
+    categories:
+      - "commercial"
+
+  # https://spdx.org/licenses/OLDAP-2.8.html
+  - id: "LicenseRef-OLDAP"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://www.openldap.org/software/release/license.html
+  - id: "LicenseRef-OpenLDAP"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-OpenSSL-exception"
+    categories:
+      - "property:AutoConf-or-other-exception"
+
+  - id: "LicenseRef-PD"
+    categories:
+      - "public-domain"
+
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-Patent-ref"
+    categories:
+      - "irrelevant"
+
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-Perl-possibility"
+    categories:
+      - "property:unclear-scanner-finding"
+
+  - id: "LicenseRef-Permissive-attribution"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-Permissive-no-warranty"
+    categories:
+      - "permissive"
+
+  - id: "LicenseRef-Public-domain"
+    categories:
+      - "public-domain"
+
+  - id: "LicenseRef-Public-domain-ref"
+    categories:
+      - "public-domain"
+
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-Public-domainC"
+    categories:
+      - "public-domain"
+
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-Python"
+    categories:
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "permissive"
+
+  - id: "LicenseRef-Python-2.2"
+    categories:
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "permissive"
+
+  - id: "LicenseRef-Red-Hat-Permissive-No-Warranty-No-Liability"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-SSLeay"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:advertising-clause"
+
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-Same-license-as"
+    categories:
+      - "property:unclear-scanner-finding"
+
+  - id: "LicenseRef-Scanner-WebM"
+    categories:
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "permissive"
+
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-See-URL"
+    categories:
+      - "property:unclear-scanner-finding"
+
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-See-doc.OTHER"
+    categories:
+      - "property:unclear-scanner-finding"
+
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-See-file"
+    categories:
+      - "property:unclear-scanner-finding"
+
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-See-file.COPYING"
+    categories:
+      - "property:unclear-scanner-finding"
+
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-See-file.LICENSE"
+    categories:
+      - "property:unclear-scanner-finding"
+
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-See-file.README"
+    categories:
+      - "property:unclear-scanner-finding"
+
+  - id: "LicenseRef-SunPro"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://github.com/joelagnel/meta-ti/blob/fd86d69fde9203136bd2f22d4f5e7c810f44c42d/licenses/TI-TFL
+  - id: "LicenseRef-TI-TFL"
+    categories:
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "proprietary-free"
+      - "property:unchecked"
+
+  - id: "LicenseRef-TeX-exception"
+    categories:
+      - "property:AutoConf-or-other-exception"
+
+  - id: "LicenseRef-U-Michigan"
+    categories:
+      - "permissive"
+
+  - id: "LicenseRef-USC"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-Unicode"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-W3C-IP"
+    categories:
+      - "property:unclear-scanner-finding"
+
+  - id: "LicenseRef-W3C-copyright-documents-19990405"
+    categories:
+      - "property:unchecked"
+      - "free-restricted"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-W3C-possibility"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/W3C.html
+  - id: "LicenseRef-W3C-style"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-WebM"
+    categories:
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "permissive"
+
+  - id: "LicenseRef-Windows-binary-build-Python"
+    categories:
+      - "free-restricted"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://scancode-licensedb.aboutcode.org/wordnet.html
+  - id: "LicenseRef-WordNet-3.0"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-X11-possibility"
+    categories:
+      - "permissive"
+
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-X11-style"
+    categories:
+      - "permissive"
+
+  - id: "LicenseRef-Xceive-license"
+    categories:
+      - "proprietary-free"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-Zlib-possibility"
+    categories:
+      - "permissive"
+
+  - id: "LicenseRef-agafari-font-non-commercial"
+    categories:
+      - "free-restricted"
+      - "property:non-commercial"
+
+  - id: "LicenseRef-amd-linux-firmware-export"
+    categories:
+      - "proprietary-free"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-benjamin-kowarsch"
+    categories:
+      - "free-restricted"
+      - "property:non-commercial"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-brian-gladman-3-clause"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-broadcom-linux-firmware"
+    categories:
+      - "proprietary-free"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-bsd-credit"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-bsd-dpt"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-bsd-original-uc-1986"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-bzip2"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://opensource.apple.com/source/bzip2/bzip2-16/bzip2/manual.html
+  - id: "LicenseRef-bzip2-1.0.4"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-cavium-linux-firmware"
+    categories:
+      - "proprietary-free"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://www.apple.com/legal/sla/docs/xcode.pdf
+  - id: "LicenseRef-doubleopen-apple-xcode-sdk"
+    categories:
+      - "commercial"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://github.com/apache/cxf/blob/3.4.x-fixes/distribution/src/main/release/samples/jax_rs/search/src/main/resources/JavaWebSocketAPI_1.0_Final.pdf
+  - id: "LicenseRef-doubleopen-jsr-356-websocket-spec"
+    categories:
+      - "proprietary-free"
+      - "property:specification-license"
+      - "property:no-modifications"
+      - "property:patent-clause"
+
+  - id: "LicenseRef-eCos-exception-2.0"
+    categories:
+      - "property:AutoConf-or-other-exception"
+
+  - id: "LicenseRef-freebsd-boot"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://scancode-licensedb.aboutcode.org/fsf-unlimited-no-warranty.html
+  - id: "LicenseRef-fsf-unlimited-no-warranty"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-gary-s-brown"
+    categories:
+      - "permissive"
+
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-gnu-javamail-exception"
+    categories:
+      - "property:AutoConf-or-other-exception"
+
+  - id: "LicenseRef-gpl-2.0-adaptec"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/GPL-2.0-only.html
+  - id: "LicenseRef-gpl-2.0-or-later-with-ada-linking-exception"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:AutoConf-or-other-exception"
+
+  # https://www.highcharts.com/license
+  - id: "LicenseRef-highsoft-standard-license-agreement"
+    categories:
+      - "commercial"
+
+  - id: "LicenseRef-inner-net-2.0"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:advertising-clause"
+
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-linking-exception"
+    categories:
+      - "property:unchecked"
+      - "property:AutoConf-or-other-exception"
+
+  - id: "LicenseRef-marvell-firmware"
+    categories:
+      - "proprietary-free"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-michigan-disclaimer"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-mif-exception"
+    categories:
+      - "property:AutoConf-or-other-exception"
+
+  - id: "LicenseRef-mit-no-advert-export-control"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-moxa-linux-firmware"
+    categories:
+      - "proprietary-free"
+
+  - id: "LicenseRef-naist-2003"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-netronome-firmware"
+    categories:
+      - "proprietary-free"
+
+  - id: "LicenseRef-nxp-firmware-patent"
+    categories:
+      - "proprietary-free"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-other-permissive"
+    categories:
+      - "permissive"
+
+  - id: "LicenseRef-permissive-no-attribution-requirement"
+    categories:
+      - "permissive"
+
+  - id: "LicenseRef-qca-technology"
+    categories:
+      - "proprietary-free"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-redistribution-only-license"
+    categories:
+      - "proprietary-free"
+
+  - id: "LicenseRef-scancode-ada-linking-exception"
+    categories:
+      - "property:AutoConf-or-other-exception"
+
+  - id: "LicenseRef-scancode-afpl-9.0"
+    categories:
+      - "free-restricted"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:non-commercial"
+
+  - id: "LicenseRef-scancode-apple-attribution-1997"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-scancode-apple-sscl"
+    categories:
+      - "permissive"
+
+  - id: "LicenseRef-scancode-arm-llvm-sga"
+    categories:
+      - "permissive"
+      - "property:patent-clause"
+
+  # https://scancode-licensedb.aboutcode.org/atmel-microcontroller.html
+  - id: "LicenseRef-scancode-atmel-microcontroller"
+    categories:
+      - "proprietary-free"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-scancode-autoconf-macro-exception"
+    categories:
+      - "property:AutoConf-or-other-exception"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-scancode-autoconf-simple-exception"
+    categories:
+      - "property:AutoConf-or-other-exception"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-scancode-autoconf-simple-exception-2.0"
+    categories:
+      - "property:AutoConf-or-other-exception"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-scancode-bakoma-fonts-1995"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-scancode-binary-linux-firmware-patent"
+    categories:
+      - "proprietary-free"
+
+  # https://scancode-licensedb.aboutcode.org/bison-exception-2.0.html
+  - id: "LicenseRef-scancode-bison-exception-2.0"
+    categories:
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:AutoConf-or-other-exception"
+
+  - id: "LicenseRef-scancode-bitstream"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-scancode-bitzi-pd"
+    categories:
+      - "permissive"
+
+  - id: "LicenseRef-scancode-blas-2017"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-scancode-boost-original"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-scancode-bsd-1988"
+    categories:
+      - "property:unchecked"
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://scancode-licensedb.aboutcode.org/bsd-3-clause-no-change.html
+  - id: "LicenseRef-scancode-bsd-3-clause-no-change"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://scancode-licensedb.aboutcode.org/bsd-axis-nomod.html
+  - id: "LicenseRef-scancode-bsd-axis-nomod"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-scancode-bsd-new-tcpdump"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-scancode-bsd-no-disclaimer"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-scancode-bsd-no-disclaimer-unmodified"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-scancode-bsd-original-uc-1986"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://github.com/nexB/scancode-licensedb/blob/main/docs/bsd-simplified-darwin.LICENSE
+  - id: "LicenseRef-scancode-bsd-simplified-darwin"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-scancode-bsd-unchanged"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-scancode-bsd-unmodified"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-scancode-bsd-x11"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-scancode-bsla"
+    categories:
+      - "property:advertising-clause"
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-scancode-bytemark"
+    categories:
+      - "permissive"
+
+  - id: "LicenseRef-scancode-carnegie-mellon"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-scancode-carnegie-mellon-contributors"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://github.com/nexB/scancode-licensedb/blob/main/docs/cc-devnations-2.0.LICENSE
+  - id: "LicenseRef-scancode-cc-devnations-2.0"
+    categories:
+      - "proprietary-free"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+
+  # https://scancode-licensedb.aboutcode.org/cmu-mit.html
+  - id: "LicenseRef-scancode-cmu-mit"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://scancode-licensedb.aboutcode.org/cmu-simple.html
+  - id: "LicenseRef-scancode-cmu-simple"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://scancode-licensedb.aboutcode.org/cmu-template.html
+  - id: "LicenseRef-scancode-cmu-template"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-scancode-cncf-individual-cla-1.0"
+    categories:
+      - "irrelevant"
+
+  - id: "LicenseRef-scancode-commercial-license"
+    categories:
+      - "commercial"
+
+  - id: "LicenseRef-scancode-cve-tou"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-scancode-dco-1.1"
+    categories:
+      - "irrelevant"
+
+  # https://scancode-licensedb.aboutcode.org/docbook.html
+  - id: "LicenseRef-scancode-docbook"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-scancode-eclipse-sua-2005"
+    categories:
+      - "copyleft-module-level"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:patent-clause"
+
+  # https://scancode-licensedb.aboutcode.org/ecma-documentation.html
+  - id: "LicenseRef-scancode-ecma-documentation"
+    categories:
+      - "free-restricted"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:no-modifications"
+      - "property:specification-license"
+
+  - id: "LicenseRef-scancode-ecma-no-patent"
+    categories:
+      - "proprietary-free"
+
+  # https://scancode-licensedb.aboutcode.org/efsl-1.0.html
+  - id: "LicenseRef-scancode-efsl-1.0"
+    categories:
+      - "proprietary-free"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-scancode-ekioh"
+    categories:
+      - "permissive"
+
+  # https://scancode-licensedb.aboutcode.org/gcc-exception-3.0.html
+  - id: "LicenseRef-scancode-exception-3.0"
+    categories:
+      - "property:AutoConf-or-other-exception"
+
+  - id: "LicenseRef-scancode-facebook-patent-rights-2"
+    categories:
+      - "permissive"
+      - "property:patent-clause"
+
+  - id: "LicenseRef-scancode-free-unknown"
+    categories:
+      - "property:unclear-scanner-finding"
+
+  - id: "LicenseRef-scancode-freebsd-boot"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-scancode-freemarker"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-scancode-frontier-1.0"
+    categories:
+      - "copyleft-module-level"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+
+  - id: "LicenseRef-scancode-fsf-notice"
+    categories:
+      - "permissive"
+
+  - id: "LicenseRef-scancode-fsf-unlimited-no-warranty"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-scancode-gary-s-brown"
+    categories:
+      - "permissive"
+
+  - id: "LicenseRef-scancode-generic-cla"
+    categories:
+      - "irrelevant"
+
+  - id: "LicenseRef-scancode-generic-exception"
+    categories:
+      - "property:AutoConf-or-other-exception"
+
+  - id: "LicenseRef-scancode-generic-export-compliance"
+    categories:
+      - "irrelevant"
+
+  - id: "LicenseRef-scancode-gnu-emacs-gpl-1988"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+
+  - id: "LicenseRef-scancode-google-patent-license-golang"
+    categories:
+      - "permissive"
+
+  # https://scancode-licensedb.aboutcode.org/h2-1.0.html
+  - id: "LicenseRef-scancode-h2-1.0"
+    categories:
+      - "copyleft-file-level"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:patent-clause"
+
+  - id: "LicenseRef-scancode-html5"
+    categories:
+      - "permissive"
+
+  - id: "LicenseRef-scancode-ibm-dhcp"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://scancode-licensedb.aboutcode.org/ietf.html
+  - id: "LicenseRef-scancode-ietf"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://scancode-licensedb.aboutcode.org/ietf-trust.html
+  - id: "LicenseRef-scancode-ietf-trust"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://scancode-licensedb.aboutcode.org/indiana-extreme.html
+  - id: "LicenseRef-scancode-indiana-extreme"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://scancode-licensedb.aboutcode.org/inner-net-2.0.html
+  - id: "LicenseRef-scancode-inner-net-2.0"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:advertising-clause"
+
+  # https://github.com/nexB/scancode-licensedb/blob/main/docs/iptc-2006.LICENSE
+  - id: "LicenseRef-scancode-iptc-2006"
+    categories:
+      - "proprietary-free"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://scancode-licensedb.aboutcode.org/iso-8879.html
+  - id: "LicenseRef-scancode-iso-8879"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://scancode-licensedb.aboutcode.org/jdom.html
+  - id: "LicenseRef-scancode-jdom"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-scancode-jetty-ccla-1.1"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:patent-clause"
+
+  # https://scancode-licensedb.aboutcode.org/jpython-1.1.html
+  - id: "LicenseRef-scancode-jpython-1.1"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://github.com/nexB/scancode-licensedb/blob/main/docs/json-js-pd.LICENSE
+  - id: "LicenseRef-scancode-json-js-pd"
+    categories:
+      - "public-domain"
+
+  # https://github.com/nexB/scancode-licensedb/blob/main/docs/json-pd.LICENSE
+  - id: "LicenseRef-scancode-json-pd"
+    categories:
+      - "public-domain"
+
+  - id: "LicenseRef-scancode-jsr-107-jcache-spec-2013"
+    categories:
+      - "proprietary-free"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://scancode-licensedb.aboutcode.org/jython.html
+  - id: "LicenseRef-scancode-jython"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://scancode-licensedb.aboutcode.org/khronos.html
+  - id: "LicenseRef-scancode-khronos"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-scancode-ldap-sdk-free-use"
+    categories:
+      - "property:unchecked"
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-scancode-ldpgpl-1a"
+    categories:
+      - "copyleft-file-level"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://scancode-licensedb.aboutcode.org/libpbm.html
+  - id: "LicenseRef-scancode-libpbm"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-scancode-llnl"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-scancode-m-plus"
+    categories:
+      - "permissive"
+
+  - id: "LicenseRef-scancode-minpack"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-scancode-mit-addition"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-scancode-mit-license-1998"
+    categories:
+      - "property:unchecked"
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-scancode-mit-modern"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-scancode-mit-nagy"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://github.com/nexB/scancode-toolkit/blob/ded56e9120f5fdfb9a1a0309130bb4305a66aacb/src/licensedcode/data/licenses/mit-no-advert-export-control.LICENSE
+  - id: "LicenseRef-scancode-mit-no-advert-export-control"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-scancode-mit-old-style"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-scancode-mit-old-style-no-advert"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://scancode-licensedb.aboutcode.org/mit-specification-disclaimer.html
+  - id: "LicenseRef-scancode-mit-specification-disclaimer"
+    categories:
+      - "permissive"
+
+  - id: "LicenseRef-scancode-mit-synopsys"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-scancode-mit-veillard-variant"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-scancode-motorola"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-scancode-mozilla-gc"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-scancode-ms-asp-net-web-optimization-framework"
+    categories:
+      - "proprietary-free"
+
+  - id: "LicenseRef-scancode-ms-net-library"
+    categories:
+      - "proprietary-free"
+
+  - id: "LicenseRef-scancode-ms-net-library-2018-11"
+    categories:
+      - "proprietary-free"
+
+  - id: "LicenseRef-scancode-ms-patent-promise"
+    categories:
+      - "irrelevant"
+
+  - id: "LicenseRef-scancode-ms-specification"
+    categories:
+      - "free-restricted"
+      - "property:specification-license"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://scancode-licensedb.aboutcode.org/ms-ws-routing-spec.html
+  - id: "LicenseRef-scancode-ms-ws-routing-spec"
+    categories:
+      - "permissive"
+
+  # https://github.com/nexB/scancode-licensedb/blob/main/docs/mx4j.LICENSE
+  - id: "LicenseRef-scancode-mx4j"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-scancode-mysql-floss-exception-2.0"
+    categories:
+      - "property:AutoConf-or-other-exception"
+
+  - id: "LicenseRef-scancode-mysql-linking-exception-2018"
+    categories:
+      - "property:AutoConf-or-other-exception"
+
+  - id: "LicenseRef-scancode-netronome-firmware"
+    categories:
+      - "proprietary-free"
+
+  - id: "LicenseRef-scancode-newlib-subdirectory"
+    categories:
+      - "copyleft-LGPL"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+
+  - id: "LicenseRef-scancode-newton-king-cla"
+    categories:
+      - "unstated"
+
+  - id: "LicenseRef-scancode-nilsson-historical"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://scancode-licensedb.aboutcode.org/oasis-ws-security-spec.html
+  - id: "LicenseRef-scancode-oasis-ws-security-spec"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://web.cs.ucdavis.edu/~rogaway/ocb/license1.pdf
+  - id: "LicenseRef-scancode-ocb-open-source-2013"
+    categories:
+      - "permissive"
+
+  # https://github.com/nexB/scancode-toolkit/blob/ded56e9120f5fdfb9a1a0309130bb4305a66aacb/src/licensedcode/data/licenses/ogc.LICENSE
+  - id: "LicenseRef-scancode-ogc"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://www.ogc.org/about-ogc/policies/document-notice/
+  - id: "LicenseRef-scancode-ogc-document-2020"
+    categories:
+      - "proprietary-free"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-scancode-openjdk-exception"
+    categories:
+      - "property:AutoConf-or-other-exception"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-scancode-openpub"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://scancode-licensedb.aboutcode.org/openssl.html
+  - id: "LicenseRef-scancode-openssl"
+    categories:
+      - "permissive"
+      - "property:advertising-clause"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/LGPL-3.0-or-later.html
+  # https://spdx.org/licenses/openvpn-openssl-exception.html
+  - id: "LicenseRef-scancode-openssl-exception-lgpl-3.0-plus"
+    categories:
+      - "copyleft-LGPL"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:antitivo-clause"
+      - "property:distribute-source-code"
+      - "property:patent-clause"
+      - "property:AutoConf-or-other-exception"
+
+  # https://scancode-licensedb.aboutcode.org/oracle-openjdk-classpath-exception-2.0.html
+  - id: "LicenseRef-scancode-oracle-openjdk-classpath-exception-2.0"
+    categories:
+      - "copyleft-module-level"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:AutoConf-or-other-exception"
+
+  - id: "LicenseRef-scancode-osf-1990"
+    categories:
+      - "property:unchecked"
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-scancode-other-copyleft"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://scancode-licensedb.aboutcode.org/other-permissive.html
+  - id: "LicenseRef-scancode-other-permissive"
+    categories:
+      - "permissive"
+
+  # http://pcre.sourceforge.net/license.txt
+  # https://scancode-licensedb.aboutcode.org/pcre.html
+  - id: "LicenseRef-scancode-pcre"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:mark-modifications"
+
+  # https://github.com/nexB/scancode-toolkit/blob/ded56e9120f5fdfb9a1a0309130bb4305a66aacb/src/licensedcode/data/licenses/philippe-de-muyter.LICENSE
+  - id: "LicenseRef-scancode-philippe-de-muyter"
+    categories:
+      - "permissive"
+
+  - id: "LicenseRef-scancode-pngsuite"
+    categories:
+      - "permissive"
+
+  # https://scancode-licensedb.aboutcode.org/proprietary-license.html
+  - id: "LicenseRef-scancode-proprietary-license"
+    categories:
+      - "commercial"
+
+  # https://scancode-licensedb.aboutcode.org/protobuf.html
+  - id: "LicenseRef-scancode-protobuf"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-scancode-psf-3.7.2"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-scancode-public-domain"
+    categories:
+      - "public-domain"
+
+  # https://scancode-licensedb.aboutcode.org/public-domain-disclaimer.html
+  - id: "LicenseRef-scancode-public-domain-disclaimer"
+    categories:
+      - "public-domain"
+
+  - id: "LicenseRef-scancode-python-cwi"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://github.com/nexB/scancode-toolkit/blob/ded56e9120f5fdfb9a1a0309130bb4305a66aacb/src/licensedcode/data/licenses/red-hat-attribution.LICENSE
+  - id: "LicenseRef-scancode-red-hat-attribution"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-scancode-reportbug"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-scancode-robert-hubley"
+    categories:
+      - "irrelevant"
+
+  - id: "LicenseRef-scancode-rsa-1990"
+    categories:
+      - "property:unchecked"
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://scancode-licensedb.aboutcode.org/rsa-cryptoki.html
+  - id: "LicenseRef-scancode-rsa-cryptoki"
+    categories:
+      - "permissive"
+      - "property:advertising-clause"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-scancode-rsa-md4"
+    categories:
+      - "permissive"
+      - "property:advertising-clause"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-scancode-secret-labs-2011"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://scancode-licensedb.aboutcode.org/service-comp-arch.html
+  - id: "LicenseRef-scancode-service-comp-arch"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://github.com/nexB/scancode-toolkit/blob/ded56e9120f5fdfb9a1a0309130bb4305a66aacb/src/licensedcode/data/licenses/snprintf.LICENSE
+  - id: "LicenseRef-scancode-snprintf"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-scancode-srgb"
+    categories:
+      - "proprietary-free"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-scancode-ssleay-windows"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:advertising-clause"
+
+  - id: "LicenseRef-scancode-sun-bsd-extra"
+    categories:
+      - "free-restricted"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-scancode-sun-ejb-spec-3.0"
+    categories:
+      - "proprietary-free"
+      - "property:patent-clause"
+
+  # https://scancode-licensedb.aboutcode.org/sun-jsr-spec-04-2006.html
+  - id: "LicenseRef-scancode-sun-jsr-spec-04-2006"
+    categories:
+      - "proprietary-free"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:specification-license"
+
+  - id: "LicenseRef-scancode-sun-prop-non-commercial"
+    categories:
+      - "proprietary-free"
+      - "property:non-commercial"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-scancode-sun-sdk-spec-1.1"
+    categories:
+      - "proprietary-free"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-scancode-sunpro"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://scancode-licensedb.aboutcode.org/synopsys-attribution.html
+  - id: "LicenseRef-scancode-synopsys-attribution"
+    categories:
+      - "free-restricted"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-scancode-taligent-jdk"
+    categories:
+      - "proprietary-free"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-scancode-tex-exception"
+    categories:
+      - "property:AutoConf-or-other-exception"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-scancode-tim-janik-2003"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-scancode-ubuntu-font-1.0"
+    categories:
+      - "free-restricted"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-scancode-unicode"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-scancode-unicode-mappings"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-scancode-unknown"
+    categories:
+      - "property:unclear-scanner-finding"
+
+  - id: "LicenseRef-scancode-unknown-license-reference"
+    categories:
+      - "property:unclear-scanner-finding"
+
+  - id: "LicenseRef-scancode-unknown-spdx"
+    categories:
+      - "unstated"
+
+  - id: "LicenseRef-scancode-unlimited-link-exception-lgpl"
+    categories:
+      - "copyleft-LGPL"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:AutoConf-or-other-exception"
+
+  - id: "LicenseRef-scancode-us-govt-public-domain"
+    categories:
+      - "public-domain"
+
+  # https:https://scancode-licensedb.aboutcode.org/w3c-community-cla.html//
+  - id: "LicenseRef-scancode-w3c-community-cla"
+    categories:
+      - "permissive"
+      - "property:modification-related-obligations"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-scancode-w3c-docs-19990405"
+    categories:
+      - "free-restricted"
+      - "property:specification-license"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-scancode-w3c-docs-20021231"
+    categories:
+      - "free-restricted"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://www.w3.org/copyright/test-suite-license-2008/
+  - id: "LicenseRef-scancode-w3c-test-suite"
+    categories:
+      - "proprietary-free"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-scancode-warranty-disclaimer"
+    categories:
+      - "irrelevant"
+
+  - id: "LicenseRef-scancode-ws-addressing-spec"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-scancode-ws-policy-specification"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-scancode-ws-trust-specification"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-scancode-x11-hanson"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-scancode-x11-lucent"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-scancode-x11-opengroup"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-scancode-x11-stanford"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://scancode-licensedb.aboutcode.org/xfree86-1.0.html
+  - id: "LicenseRef-scancode-xfree86-1.0"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-scancode-zipeg"
+    categories:
+      - "proprietary-free"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://scancode-licensedb.aboutcode.org/zpl-1.0.html
+  - id: "LicenseRef-scancode-zpl-1.0"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-sflow-license"
+    categories:
+      - "proprietary-free"
+
+  - id: "LicenseRef-st-mcd-2.0"
+    categories:
+      - "free-restricted"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-stmicroelectronics-linux-firmware"
+    categories:
+      - "proprietary-free"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-tested-software"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-tso-license"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "LicenseRef-u-boot-exception-2.0"
+    categories:
+      - "property:AutoConf-or-other-exception"
+
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-verbatim-distribution-license"
+    categories:
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "permissive"
+
+  - id: "LicenseRef-verbatim-no-modifications"
+    categories:
+      - "proprietary-free"
+
+  - id: "Linux-OpenIB"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/MIT.html
+  - id: "MIT"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/MIT-0.html
+  - id: "MIT-0"
+    categories:
+      - "permissive"
+
+  # https://spdx.org/licenses/MIT-CMU.html
+  - id: "MIT-CMU"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/MIT-Modern-Variant.html
+  - id: "MIT-Modern-Variant"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/MIT-feh.html
+  - id: "MIT-feh"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/MIT-open-group.html
+  - id: "MIT-open-group"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/MITNFA.html
+  - id: "MITNFA"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:modification-related-obligations"
+
+  # https://spdx.org/licenses/MPL-1.0.html
+  - id: "MPL-1.0"
+    categories:
+      - "copyleft-file-level"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+
+  # https://spdx.org/licenses/MPL-1.1.html
+  - id: "MPL-1.1"
+    categories:
+      - "copyleft-file-level"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:patent-clause"
+
+  # https://spdx.org/licenses/MPL-2.0.html
+  - id: "MPL-2.0"
+    categories:
+      - "copyleft-file-level"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:patent-clause"
+
+  - id: "MPL-2.0-no-copyleft-exception"
+    categories:
+      - "copyleft-file-level"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:patent-clause"
+
+  # https://spdx.org/licenses/MS-LPL.html
+  - id: "MS-LPL"
+    categories:
+      - "free-restricted"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:patent-clause"
+      - "property:unchecked"
+
+  # https://spdx.org/licenses/MS-PL.html
+  - id: "MS-PL"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:patent-clause"
+
+  # https://spdx.org/licenses/MS-RL.html
+  - id: "MS-RL"
+    categories:
+      - "copyleft-file-level"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:patent-clause"
+
+  # https://spdx.org/licenses/MTLL.html
+  - id: "MTLL"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "Minpack"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "NCSA"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "NIST-PD"
+    categories:
+      - "public-domain"
+
+  - id: "NOSL"
+    categories:
+      - "copyleft-file-level"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:patent-clause"
+
+  # https://spdx.org/licenses/NPL-1.1.html
+  - id: "NPL-1.1"
+    categories:
+      - "copyleft-file-level"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:patent-clause"
+
+  - id: "NRL"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:advertising-clause"
+
+  # https://spdx.org/licenses/NTP.html
+  - id: "NTP"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "NTP-0"
+    categories:
+      - "permissive"
+
+  - id: "NetCDF"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "Noweb"
+    categories:
+      - "copyleft-module-level"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/ODC-By-1.0.html
+  - id: "ODC-By-1.0"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/ODbL-1.0.html
+  - id: "ODbL-1.0"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+
+  # https://spdx.org/licenses/OFL-1.0.html
+  - id: "OFL-1.0"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/OFL-1.1.html
+  - id: "OFL-1.1"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/OFL-1.1-no-RFN.html
+  - id: "OFL-1.1-no-RFN"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "OGC-1.0"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "OGL-UK-3.0"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/OLDAP-2.0.1.html
+  - id: "OLDAP-2.0.1"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/OLDAP-2.8.html
+  - id: "OLDAP-2.8"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/OSL-2.1.html
+  - id: "OSL-2.1"
+    categories:
+      - "copyleft-module-level"
+      - "property:network-clause"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:patent-clause"
+
+  # https://spdx.org/licenses/OSL-3.0.html
+  - id: "OSL-3.0"
+    categories:
+      - "copyleft-module-level"
+      - "property:network-clause"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:patent-clause"
+
+  # https://spdx.org/licenses/OpenSSL.html
+  - id: "OpenSSL"
+    categories:
+      - "permissive"
+      - "property:advertising-clause"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "PSF-2.0"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "Plexus"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "PostgreSQL"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/Python-2.0.html
+  - id: "Python-2.0"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://www.python.org/download/releases/2.0.1/license/
+  - id: "Python-2.0.1"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:mark-modifications"
+
+  - id: "Qhull"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "RHeCos-1.1"
+    categories:
+      - "copyleft-file-level"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:unchecked"
+
+  - id: "RSA-MD"
+    categories:
+      - "property:advertising-clause"
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/Rdisc.html
+  - id: "Rdisc"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/Ruby.html
+  - id: "Ruby"
+    categories:
+      - "copyleft-file-level"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+
+  # https://spdx.org/licenses/SAX-PD.html
+  - id: "SAX-PD"
+    categories:
+      - "public-domain"
+
+  - id: "SISSL"
+    categories:
+      - "proprietary-free"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+
+  # https://spdx.org/licenses/SMLNJ.html
+  - id: "SMLNJ"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "SSH-OpenSSH"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "SSH-short"
+    categories:
+      - "permissive"
+
+  - id: "Saxpath"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/Spencer-86.html
+  - id: "Spencer-86"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/Spencer-94.html
+  - id: "Spencer-94"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "SunPro"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "TCL"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "TCP-wrappers"
+    categories:
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "permissive"
+
+  - id: "TMate"
+    categories:
+      - "proprietary-free"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+
+# https://spdx.org/licenses/UPL-1.0.html
+  - id: "UPL-1.0"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/Unicode-DFS-2015.html
+  - id: "Unicode-DFS-2015"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/Unicode-DFS-2016.html
+  - id: "Unicode-DFS-2016"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "Unicode-TOU"
+    categories:
+      - "proprietary-free"
+
+  # https://spdx.org/licenses/Unlicense.html
+  - id: "Unlicense"
+    categories:
+      - "public-domain"
+
+  - id: "Vim"
+    categories:
+      - "copyleft-module-level"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/W3C.html
+  - id: "W3C"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "W3C-19980720"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/W3C-20150513.html
+  - id: "W3C-20150513"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/WTFPL.html
+  - id: "WTFPL"
+    categories:
+      - "public-domain"
+
+  # https://spdx.org/licenses/X11.html
+  - id: "X11"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/X11-distribute-modifications-variant.html
+  - id: "X11-distribute-modifications-variant"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/XFree86-1.1.html
+  - id: "XFree86-1.1"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "Xerox"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/YPL-1.0.html
+  - id: "YPL-1.0"
+    categories:
+      - "copyleft-file-level"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+
+  # https://spdx.org/licenses/ZPL-1.1.html
+  - id: "ZPL-1.1"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/ZPL-2.0.html
+  - id: "ZPL-2.0"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/ZPL-2.1.html
+  - id: "ZPL-2.1"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/Zed.html
+  - id: "Zed"
+    categories:
+      - "free-restricted"
+
+  - id: "Zend-2.0"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:advertising-clause"
+
+  # https://spdx.org/licenses/Zlib.html
+  - id: "Zlib"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  - id: "blessing"
+    categories:
+      - "public-domain"
+
+  # https://spdx.org/licenses/bzip2-1.0.5.html
+  - id: "bzip2-1.0.6"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://raw.githubusercontent.com/copyleft-next/copyleft-next/master/Releases/copyleft-next-0.3.1
+  - id: "copyleft-next-0.3.1"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:unchecked"
+
+  # https://spdx.org/licenses/curl.html
+  - id: "curl"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/libselinux-1.0.html
+  - id: "libselinux-1.0"
+    categories:
+      - "public-domain"
+
+  # https://spdx.org/licenses/mplus.html
+  - id: "mplus"
+    categories:
+      - "permissive"
+
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "naist-2003"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/snprintf.html
+  - id: "snprintf"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # hhttps://spdx.org/licenses/xlock.html
+  - id: "xlock"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/xpp.html
+  - id: "xpp"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:advertising-clause"
+
+  # https://spdx.org/licenses/zlib-acknowledgement.html
+  - id: "zlib-acknowledgement"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://scancode-licensedb.aboutcode.org/hazelcast-community-1.0.html
+  - id: "LicenseRef-scancode-hazelcast-community-1.0"
+    categories:
+      - "free-restricted"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:mark-modifications"
+
+  # https://schemas.xmlsoap.org/wsdl/http/wsdl-http.xsd
+  - id: "LicenseRef-doubleopen-wsdl-schema"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:no-modifications"
+
+  # https://scancode-licensedb.aboutcode.org/arm-cortex-mx.html
+  - id: "LicenseRef-scancode-arm-cortex-mx"
+    categories:
+      - "proprietary-free"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://spdx.org/licenses/BSD-2-Clause-Darwin.html
+  - id: "BSD-2-Clause-Darwin"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+
+  # https://scancode-licensedb.aboutcode.org/jsr-107-jcache-spec.html
+  - id: "LicenseRef-scancode-jsr-107-jcache-spec"
+    categories:
+      - "proprietary-free"
+      - "property:include-in-notice-file"
+      - "include-in-notice-file"
+      - "property:specification-license"
+      - "property:patent-clause"
+      - "property:no-modifications"
