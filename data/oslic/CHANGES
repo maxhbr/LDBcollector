@@ -1,0 +1,65 @@
+2015-03-01:
+* AGPL completed
+* review of page references etc. completed
+* release number 1.0.0
+2015-01-15:
+* added excursion for solving the reverse engineering challenge
+* prepared the modifications with respect to the 6th AGPL relevant question
+2014-01-13:
+* change to pdfLatex
+2013-07-28: 
+* LGPL specific finder improved
+* Default version set to English (oslic-en-*.* => oslic-*.*)
+* Added also the indirectly used secondary literature
+2013-05-20: sychronized OSCAd and OSLiC
+2013-04-29: handling of new files improved for copy left licenses
+2013-04-19: patterns for CDDL integrated into release 0.95.4
+2013-04-15: improvement evoked by the FSFE LLW feedback:
+* form to gather the information simplified
+* OSLiC finder and case structure simplified
+* improved GPL and EUPL task list structure
+* statically / dynamically linked as criteria erased
+2013-04-04: integrated many new task lists for generating the fsfe-amsterdam release.
+2013-03-06: patent statements, license descriptions, and to-do lists added
+2013-02-16: closure of the integration of the results of the first call for reviews
+2013-02-11: integrated the received feedback
+2013-02-10: collection of
+- refactoring the structure
+- new introduction
+- improved classification chapter
+2013-02-01: collection of many improvements concerning
+- the license classification
+- the license finder
+- the set of evaluated licenses
+2012-08-17: preparation for release 0.5.0
+- added eclipse license integration structure
+- integrated dictionaries for using the eclipse spell checker methods
+2012-07-12: release 0.4.1
+- integrated csquotes into all pages
+- replaced qlqq and grqq by enquote{} for using
+  language specific quotation styles  
+2012-07-05: release 0.4.0
+- textual improvements
+2012-07-03: release 0.3.99
+- completed the break through version containing the
+  finder, the definitions, and the corresponding
+  BSD to-do lists.
+- Integrated Greg's proposals for adding a license
+  specific finder additionally.
+2012-06-24: release 0.3.90
+- completed the OS UC finder introducing chapter
+2012-03-22: released 0.2.1
+- generalization of bin/gendist.sh (thanks to Eitan Adler [grimreaper])
+- upgrade of bin/gendist.sh according to changings 0.1.6->0.2.0
+2012-03-21: released 0.2.0
+2012-03-02: gsharpe integration committed
+2012-02-26: kreincke
+- increments releasnumber onto 0.1.92
+- let generated the publishable release oslic-en-0.1.92.pdf
+2012-02-26: kreincke
+- aligned the list of authors according to the oslic internet pages
+- updated onto release 0.1.91
+- refactored sources for being configurable as endnote or footnote version 
+2012-02-22: kreincke
+- CHANGES added
+- initial public release 0.1.90 generated

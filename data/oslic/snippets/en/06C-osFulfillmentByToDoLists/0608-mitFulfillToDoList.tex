@@ -1,0 +1,310 @@
+% Telekom osCompendium 'for being included' snippet template
+%
+% (c) Karsten Reincke, Deutsche Telekom AG, Darmstadt 2011
+%
+% This LaTeX-File is licensed under the Creative Commons Attribution-ShareAlike
+% 3.0 Germany License (http://creativecommons.org/licenses/by-sa/3.0/de/): Feel
+% free 'to share (to copy, distribute and transmit)' or 'to remix (to adapt)'
+% it, if you '... distribute the resulting work under the same or similar
+% license to this one' and if you respect how 'you must attribute the work in
+% the manner specified by the author ...':
+%
+% In an internet based reuse please link the reused parts to www.telekom.com and
+% mention the original authors and Deutsche Telekom AG in a suitable manner. In
+% a paper-like reuse please insert a short hint to www.telekom.com and to the
+% original authors and Deutsche Telekom AG into your preface. For normal
+% quotations please use the scientific standard to cite.
+%
+% [ Framework derived from 'mind your Scholar Research Framework' 
+%   mycsrf (c) K. Reincke 2012 CC BY 3.0  http://mycsrf.fodina.de/ ]
+%
+
+
+%% use all entries of the bibliography
+%\nocite{*}
+
+\section{MIT licensed software}
+
+\begin{license}{MIT}
+\licensename{MIT}
+\licensespec{MIT License}
+\licenseabbrev{MIT}
+
+The MIT license is known as one of the most permissive licenses. Thus, the
+MIT specific finder can be simplified:
+
+\tikzstyle{nodv} = [font=\small, ellipse, draw, fill=gray!10, 
+    text width=2cm, text centered, minimum height=2em]
+
+\tikzstyle{nods} = [font=\footnotesize, rectangle, draw, fill=gray!20, 
+    text width=1.2cm, text centered, rounded corners, minimum height=3em]
+
+\tikzstyle{nodb} = [font=\footnotesize, rectangle, draw, fill=gray!20, 
+    text width=2.2cm, text centered, rounded corners, minimum height=3em]
+
+\tikzstyle{nodx} = [font=\footnotesize, rectangle, draw, fill=gray!20, 
+    text width=2.4cm, text centered, rounded corners, minimum height=3em]
+    
+\tikzstyle{leaf} = [font=\tiny, rectangle, draw, fill=gray!30, 
+    text width=1.2cm, text centered, minimum height=6em]
+
+\tikzstyle{edge} = [draw, -latex']
+
+\begin{tikzpicture}[]
+
+\node[nodv] (l61) at ( 2.4, 9.2) {MIT};
+
+\node[nodb] (l51) at ( 0.0, 7.8) {\textit{recipient:} \\ \textbf{4yourself}};
+\node[nodb] (l52) at ( 4.8, 7.8) {\textit{recipient:} \\ \textbf{2others}};
+
+\node[nodb] (l41) at ( 2.5, 6.2) {\textit{state:} \\ \textbf{unmodified}};
+\node[nodb] (l42) at ( 7.0, 6.2) {\textit{state:} \\ \textbf{modified}};
+
+\node[nodb] (l31) at ( 5.0, 4.6) {\textit{type:} \\ \textbf{proapse}};
+\node[nodb] (l32) at ( 9.0, 4.6) {\textit{type:} \\ \textbf{snimoli}};
+
+\node[nodx] (l21) at ( 7.5, 2.8) {\textit{context:} \\ \textbf{independent}};
+\node[nodx] (l22) at (10.5, 2.8) {\textit{context:} \\ \textbf{embedded}};
+
+\node[leaf] (l11) at ( 0.0, 0.0) {\textbf{MIT-C1} \textit{using software only for yourself}};
+\node[leaf] (l12) at ( 2.5, 0.0) {\textbf{MIT-C2} \textit{distributing unmodified package}};
+\node[leaf] (l13) at ( 5.0, 0.0) {\textbf{MIT-C3} \textit{distributing modified program}};
+\node[leaf] (l14) at ( 7.5, 0.0) {\textbf{MIT-C4} \textit{distributing modified library as independent package}};
+\node[leaf] (l15) at (10.5, 0.0) {\textbf{MIT-C5} \textit{distributing modified library as embedded package}};
+
+
+\path [edge] (l61) -- (l51);
+\path [edge] (l61) -- (l52);
+\path [edge] (l51) -- (l11);
+\path [edge] (l52) -- (l41);
+\path [edge] (l52) -- (l42);
+\path [edge] (l41) -- (l12);
+\path [edge] (l42) -- (l31);
+\path [edge] (l42) -- (l32);
+\path [edge] (l31) -- (l13);
+\path [edge] (l32) -- (l21);
+\path [edge] (l32) -- (l22);
+\path [edge] (l21) -- (l14);
+\path [edge] (l22) -- (l15);
+
+\end{tikzpicture}
+
+%%
+%% Common building blocks
+%%
+
+% ------------------------------------------------------------------------------
+% License elements must be preserved
+\newcommand{\keepLicensingElements}{Ensure that the licensing elements
+  (especially the MIT license text containing the specific copyright notices of
+  the original author(s), the permission notices and the MIT disclaimer) are
+  retained in your package in the form you have received them.}
+
+% ------------------------------------------------------------------------------
+% Add a link to the project home page
+\newcommand{\linkToProject}{It's a good tradition to let the documentation of
+  your distribution and/or your additional material also contain a link to the 
+  original software (project) and its homepage.}
+
+% ------------------------------------------------------------------------------
+% Mark your modifications of the software
+\newcommand{\markYourModifications}{Mark your modifications in the source code,
+  regardless whether you want to distribute the code or not.}
+
+% ------------------------------------------------------------------------------
+% Add a copyright notice for your modifications 
+\newcommand{\addYourCopyrightNotice}{You can augment an existing copyright 
+  notice presented by the program with information about your own work or
+  modifications.}
+
+% ------------------------------------------------------------------------------
+% Acknowledge the use of the OSS
+\newcommand{\displayAcknowledement}{It is a good practice of the open source  
+  community to let the copyright notice that is shown by the running program  
+  also state that the program uses a component licensed under the MIT
+  license. And it is a good tradition to insert links to the homepage or 
+  download page of this component.} 
+
+% ------------------------------------------------------------------------------
+
+\subsection{MIT-C1: Using the software only for yourself}
+\begin{lsuc}{MIT-C1}
+  \linkosuc{01}
+  \linkosuc{03L} 
+  \linkosuc{03N} 
+  \linkosuc{06L}
+  \linkosuc{06N}
+  \linkosuc{09L}
+  \linkosuc{09N}
+  
+  \lsucmeans{that you received MIT licensed software, that you will use it
+  only for yourself and that you do not hand it over to any 3rd party in any
+  sense.}
+
+  \lsuccovers{OSUC-01, OSUC-03L, OSUC-03N, OSUC-06L, OSUC-06N, OSUC-09L, and
+  OSUC-09N\footnote{For details $\rightarrow$ \oslic, pp.\ \pageref{OSUC-01-DEF}
+  - \pageref{OSUC-09N-DEF}}}
+
+  \begin{lsucrequiresnothing}
+    \lsucitem{You are allowed to use any kind of MIT licensed software in any
+      sense and in any context without any obligations if you do not give the
+      software to third parties and if you do not modify the existing copyright
+      notices and the existing permission notice.}
+  \end{lsucrequiresnothing}
+
+  \lsucprohibitsnothing
+\end{lsuc}
+
+\subsection{MIT-C2: Passing the unmodified software}
+\begin{lsuc}{MIT-C2}
+  \linkosuc{02S} 
+  \linkosuc{05S} 
+  \linkosuc{07S} 
+  \linkosuc{02B} 
+  \linkosuc{05B} 
+  \linkosuc{07B} 
+
+  \lsucmeans{that you received MIT licensed software which you are now going to
+  distribute to third parties in the form of unmodified binaries or as unmodifed
+  source code files. In this case it makes no difference if you distribute a
+  program, an application, a server, a snippet, a module, a library, or a plugin
+  as an independent package.}
+
+  \lsuccovers{OSUC-02S,  OSUC-02B, OSUC-05S, OSUC-05B, OSUC-07S,
+    OSUC-07B\footnote{For details $\rightarrow$ \oslic,
+      pp.\ \pageref{OSUC-02S-DEF} - \pageref{OSUC-07B-DEF}}} 
+
+  \begin{lsucrequires}
+    \lsucmandatory{\keepLicensingElements}
+    \lsucoptional{\linkToProject}
+  \end{lsucrequires}
+
+  \lsucprohibitsnothing
+\end{lsuc}
+
+
+\subsection{MIT-C3: Passing a modified program}
+\begin{lsuc}{MIT-C3}
+  \linkosuc{04S}
+  \linkosuc{04B}
+
+  \lsucmeans{that you received an MIT licensed program, application, or server
+  (proapse), that you modified it, and that you are now going to distribute this
+  modified version to third parties in the form binaries or as source code
+  files.}
+
+  \lsuccovers{OSUC-04S, OSUC-04B\footnote{For details $\rightarrow$ \oslic,
+      pp.\ \pageref{OSUC-04S-DEF}}}
+
+  \begin{lsucrequires}
+    \lsucmandatory{\keepLicensingElements}
+    \lsucoptional{\markYourModifications}
+    \lsucoptional{\linkToProject}
+    \lsucoptional{\addYourCopyrightNotice} 
+    \lsucoptional{\displayAcknowledement}
+  \end{lsucrequires}
+
+  \lsucprohibitsnothing
+\end{lsuc}
+
+\subsection{MIT-C4: Passing a modified library independently}
+\begin{lsuc}{MIT-C4}
+  \linkosuc{08S}
+  \linkosuc{08B}
+
+  \lsucmeans{that you received an MIT licensed code snippet, module, library, or
+  plugin (snimoli), that you modified it, and that you are now going to
+  distribute this modified version to third parties in the the form of binaries
+  or as source code files, but without embedding it into another larger software
+  unit.}
+
+  \lsuccovers{OSUC-08S, OSUC-08B\footnote{For details $\rightarrow$ \oslic,
+      pp.\ \pageref{OSUC-08S-DEF}}}
+
+  \begin{lsucrequires}
+    \lsucmandatory{\keepLicensingElements}
+    \lsucoptional{\markYourModifications}
+    \lsucoptional{\linkToProject}
+  \end{lsucrequires}
+
+  \lsucprohibitsnothing
+\end{lsuc}
+
+
+\subsection{MIT-C5: Passing a modified library as embedded component}
+\begin{lsuc}{MIT-C5}
+  \linkosuc{10S}
+  \linkosuc{10B}
+
+  \lsucmeans{that you received an MIT licensed code snippet, module, library, or
+  plugin (snimoli), that you modified it, and that you are now going to
+  distribute this modified version to third parties in the form of binaries or
+  as source code files together with another larger software unit which contains
+  this code snippet, module, library, or plugin as an embedded component,
+  regardless whether you distribute it in the form of binaries or as source code
+  files.}
+
+  \lsuccovers{OSUC-10S, OSUC-10B\footnote{For details $\rightarrow$ \oslic,
+      pp.\ \pageref{OSUC-10S-DEF}}}
+
+  \begin{lsucrequires}
+    \lsucmandatory{\keepLicensingElements}
+    \lsucoptional{\markYourModifications}
+    \lsucoptional{\displayAcknowledement}
+    \lsucoptional{\linkToProject}
+
+    \lsucoptional{Arrange your distribution so that the original licensing
+      elements (especially the MIT license text containing the specific
+      copyright notices of the original author(s), the permission notices and
+      the MIT disclaimer) clearly refer only to the embedded library and do not
+      disturb the licensing of your own overarching work. It's a good tradition
+      to keep the libraries, modules, snippet, or plugins in separate
+      directories, which contain also all licensing elements.}
+  \end{lsucrequires}
+
+  \lsucprohibitsnothing
+\end{lsuc}
+
+\subsection{Discussions and Explanations}
+\label{MITDiscussion}
+The MIT-License is known as one of the most permissive licenses. It is a very
+short license containing (0) a copyright notice, (1) a paragraph saying that you
+are allowed to do almost anything you want, followed (2) by the condition that
+you have to \enquote{include} the existing copyright notes and the permission
+notes \enquote{[\ldots] in all copies or substantial portions of the software},
+and (3) closed by the well known disclaimer.\citeMIT{} But the license doesn't
+talk about the difference of source code and object code. So, you have to find
+the right way by yourself. 
+Here are our readings:
+
+\begin{itemize}
+  \item If you do not modify the received MIT licensed application, neither for
+    your own purposes, nor for handing over the program to 3rd parties, you can 
+    conclude that all copyright notices and permission notices are already
+    correct.
+  \item Nevertheless, we added the hint not to modify these licensing elements
+    in the context of the use case \emph{used by yourself}. This is implied by
+    the MIT license itself. It requires explicitly that \enquote{the above
+      copyright notice and this permission notice shall be included in all
+      copies or substantial portions of the Software}\citeMIT---thus also into
+    those copies you make for your own purposes on your own machines. 
+  \item If you modify the MIT licensed application, regardless for which
+    purpose, you are simply not allowed to erase or modify existing copyright
+    notes and permission notices. You may add your own modifications under new
+    conditions, but the old notices must survive. 
+  \item We request that you also keep the MIT disclaimer. This is not
+    explicitely required by the license. The permission notices, which is
+    required to be preserved, most likely refers to the text \emph{between} the
+    copyright notice and the disclaimer and, hence, does not include the latter.
+    But another possible, although less likely interpretation is that the whole
+    text of the license is what permission notice refers to.  
+\end{itemize}
+
+\end{license}
+
+%\bibliography{../../../bibfiles/oscResourcesEn}
+
+% Local Variables:
+% mode: latex
+% fill-column: 80
+% End:
