@@ -1,0 +1,15 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+
+canonicalName: "Detection Rule License 1.1"
+category: "Detection Rule"
+spdxIdentifier: "DRL-1.1"
+
+alternativeNames:
+  - "Detection Rule License (DRL) 1.1"
+  - "Detection Rule License 1.1"
+  - "DRL-1.1"
+
+otherIds: 
+  - "scancode:drl-1.1"

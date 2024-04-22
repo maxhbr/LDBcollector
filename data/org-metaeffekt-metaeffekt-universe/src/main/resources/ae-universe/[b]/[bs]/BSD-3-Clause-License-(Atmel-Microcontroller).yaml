@@ -1,0 +1,13 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+
+canonicalName: "BSD 3-Clause License (Atmel Microcontroller)"
+category: "BSD"
+shortName: "BSD-3-Clause-Atmel-Microcontroller"
+
+alternativeNames:
+  - "Atmel Microcontroller License"
+
+otherIds: 
+  - "scancode:atmel-microcontroller"

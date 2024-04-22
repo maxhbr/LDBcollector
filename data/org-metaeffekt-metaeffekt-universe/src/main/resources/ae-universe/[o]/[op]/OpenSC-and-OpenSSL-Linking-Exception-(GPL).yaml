@@ -1,0 +1,15 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+
+canonicalName: "OpenSC and OpenSSL Linking Exception (GPL)"
+category: "GPL Linking Exception"
+shortName: "OpenSC-OpenSSL-Linking-Exception-GPL"
+
+type: "exception"
+
+alternativeNames:
+  - "OpenSC and OpenSSL linking exception to GPL in OpenPace"
+
+otherIds: 
+  - "scancode:opensc-openssl-openpace-exception-gpl"

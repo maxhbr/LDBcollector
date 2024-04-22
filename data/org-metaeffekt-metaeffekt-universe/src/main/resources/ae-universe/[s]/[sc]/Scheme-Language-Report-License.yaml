@@ -1,0 +1,15 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+
+canonicalName: "Scheme Language Report License"
+category: "SchemeReport"
+spdxIdentifier: "SchemeReport"
+
+alternativeNames:
+  - "Scheme Language Report License"
+  - "licenses.nuget.org/SchemeReport"
+  - "{{SchemeReport}} https://spdx.org/licenses/SchemeReport"
+
+otherIds: 
+  - "scancode:schemereport"

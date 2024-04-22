@@ -1,0 +1,27 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+
+canonicalName: "Multics License"
+category: "Multics"
+spdxIdentifier: "Multics"
+
+osiStatus: "approved"
+osiCategory: "non-reusable"
+
+alternativeNames:
+  - "Multics License"
+  - "MULTICS LICENSE"
+  - "MULTICS License"
+  - "http://opensource.org/licenses/multics.txt"
+  - "licenses.nuget.org/Multics"
+  - "{{Multics}} https://spdx.org/licenses/Multics"
+  - "http://www.multicians.org/"
+  - "https://spdx.org/licenses/multics"
+  - "http://www.opensource.org/licenses/multics"
+  - "https://www.opensource.org/licenses/multics"
+  - "Copyright 1972 by Massachusetts Institute of Technology and Honeywell Information Systems Inc"
+
+otherIds: 
+  - "scancode:multics"
+  - "osi:Multics"

@@ -1,0 +1,18 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+
+canonicalName: "IBM pibs License"
+category: "IBM pibs"
+spdxIdentifier: "IBM-pibs"
+
+openCoDEStatus: "approved"
+
+alternativeNames:
+  - "IBM pibs"
+  - "IBM PIBS"
+  - "IBM-pibs"
+  - "IBM-PIBS"
+
+otherIds: 
+  - "scancode:ibm-pibs"

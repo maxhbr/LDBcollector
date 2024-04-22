@@ -1,0 +1,15 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+
+canonicalName: "HaskellReport License"
+category: "HaskellReport"
+spdxIdentifier: "HaskellReport"
+
+alternativeNames:
+  - "HaskellReport License"
+  - "HASKELLREPORT LICENSE"
+  - "HASKELLREPORT License"
+
+otherIds: 
+  - "scancode:haskell-report"

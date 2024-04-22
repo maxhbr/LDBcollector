@@ -1,0 +1,35 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+
+canonicalName: "BSD 2-Clause License"
+category: "BSD"
+spdxIdentifier: "BSD-2-Clause"
+
+openCoDEStatus: "approved"
+
+osiStatus: "approved"
+osiCategory: "popular/strong community"
+
+alternativeNames:
+  - "2-clause BSD license"
+  - "BSD 2-Clause"
+  - "BSD 2-clause"
+  - "BSD Software License, 2-clause version"
+  - "2-clause BSDL"
+  - "BSD-2"
+  - "BSD2-Clause License"
+  - "BSD 2 Clause"
+  - "BSD 2 clause"
+  - "Two-clause BSD-style license"
+  - "bsd_2"
+  - "https://www.freebsd.org/copyright/freebsd-license.html"
+  - "FreeBSD License"
+  - "two-clause BSD License"
+  - "2-Clause BSD license"
+  - "2 clause BSD license"
+  - "2-clause BSD licenses"
+
+otherIds: 
+  - "scancode:bsd-simplified"
+  - "osi:BSD-2-Clause"

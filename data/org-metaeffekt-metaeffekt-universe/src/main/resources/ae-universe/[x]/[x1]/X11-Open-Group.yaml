@@ -1,0 +1,18 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+
+canonicalName: "X11 Open Group"
+category: "X11"
+shortName: "X11-Open Group"
+spdxIdentifier: "MIT-open-group"
+
+openCoDEStatus: "approved"
+
+alternativeNames:
+  - "mit-open-group"
+  - "MIT-open-group"
+  - "MIT Open Group variant"
+
+otherIds: 
+  - "scancode:x11-opengroup"

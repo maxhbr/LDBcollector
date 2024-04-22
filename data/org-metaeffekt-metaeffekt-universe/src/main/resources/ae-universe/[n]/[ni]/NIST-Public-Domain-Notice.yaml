@@ -1,0 +1,17 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+
+canonicalName: "NIST Public Domain Notice"
+category: "NIST Public Domain Notice"
+spdxIdentifier: "NIST-PD"
+
+openCoDEStatus: "approved"
+
+alternativeNames:
+  - "nist-pd"
+  - "NIST-PD"
+  - "NIST Public Domain Notice"
+
+otherIds: 
+  - "scancode:nist-pd"

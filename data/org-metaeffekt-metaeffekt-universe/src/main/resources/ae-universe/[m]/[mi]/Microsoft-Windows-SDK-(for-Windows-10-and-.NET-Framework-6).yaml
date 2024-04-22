@@ -1,0 +1,13 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+
+canonicalName: "Microsoft Windows SDK (for Windows 10 and .NET Framework 6)"
+category: "Microsoft Windows SDK"
+shortName: "MS-Windows-SDK-Win10-NET-6"
+
+alternativeNames:
+  - "MICROSOFT WINDOWS SOFTWARE DEVELOPMENT KIT (SDK) FOR WINDOWS 10"
+
+otherIds: 
+  - "scancode:ms-windows-sdk-win10-net-6"

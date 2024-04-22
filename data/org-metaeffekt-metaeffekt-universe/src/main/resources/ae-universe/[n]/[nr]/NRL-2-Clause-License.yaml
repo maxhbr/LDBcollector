@@ -1,0 +1,15 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+
+canonicalName: "NRL 2-Clause License"
+category: "NRL"
+shortName: "NRL-2-Clause"
+
+openCoDEStatus: "approved"
+
+alternativeNames:
+  - "NRL 2-Clause License"
+
+otherIds: 
+  - "scancode:bsd-new-tcpdump"

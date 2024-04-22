@@ -1,0 +1,13 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+
+canonicalName: "Oracle Binary Code License Agreement (JSSE 1.0.3 for CDC 1.0.2)"
+category: "Oracle BCLA"
+shortName: "Oracle-BCLA-JSSE-1.0.3-CDC-1.0.2"
+
+alternativeNames:
+  - "Oracle Binary Code License Agreement for Java Secure Sockets Extension 1.0.3 for Connected Device Configuration 1.0.2"
+
+otherIds: 
+  - "scancode:oracle-bcl-jsse-1.0.3"

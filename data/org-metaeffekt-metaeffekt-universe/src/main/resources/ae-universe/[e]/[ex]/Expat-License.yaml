@@ -1,0 +1,19 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+
+canonicalName: "Expat License"
+category: "MIT"
+shortName: "Expat"
+
+openCoDEStatus: "(approved)"
+openCoDESimilarLicenseId: "MIT"
+
+namedEquivalence: "MIT License"
+
+alternativeNames:
+  - "Expat License"
+  - "EXPAT License"
+
+otherIds: 
+  - "opencode:mit"

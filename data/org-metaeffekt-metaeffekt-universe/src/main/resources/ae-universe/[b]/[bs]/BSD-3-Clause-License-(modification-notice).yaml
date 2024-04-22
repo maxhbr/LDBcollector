@@ -1,0 +1,13 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+
+canonicalName: "BSD-3-Clause License (modification notice)"
+category: "BSD"
+shortName: "BSD-3-Clause-modification-notice"
+
+alternativeNames:
+  - "BSD-3-Clause without notice modification"
+
+otherIds: 
+  - "scancode:bsd-new-nomod"

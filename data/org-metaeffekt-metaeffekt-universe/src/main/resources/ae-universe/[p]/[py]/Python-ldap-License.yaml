@@ -1,0 +1,15 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+
+canonicalName: "Python ldap License"
+category: "python-ldap"
+spdxIdentifier: "python-ldap"
+
+openCoDEStatus: "not approved"
+
+alternativeNames:
+  - "Python ldap License"
+
+otherIds: 
+  - "scancode:python-ldap"

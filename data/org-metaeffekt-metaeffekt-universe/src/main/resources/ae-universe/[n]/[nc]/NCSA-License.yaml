@@ -1,0 +1,21 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+
+canonicalName: "NCSA License"
+category: "BSD"
+spdxIdentifier: "NCSA"
+
+openCoDEStatus: "approved"
+
+osiStatus: "approved"
+osiCategory: "redundant with more popular"
+
+alternativeNames:
+  - "NCSA License"
+  - "NCSA LICENSE"
+  - "NCSA Open Source License"
+
+otherIds: 
+  - "scancode:uoi-ncsa"
+  - "osi:NCSA"

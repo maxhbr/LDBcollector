@@ -1,0 +1,15 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+
+canonicalName: "Original SSLeay License"
+category: "SSLeay License"
+spdxIdentifier: "SSLeay-standalone"
+
+alternativeNames:
+  - "Original SSLeay License"
+  - "SSLeay-standalone"
+  - "SSLeay License - standalone"
+
+otherIds: 
+  - "scancode:ssleay-windows"

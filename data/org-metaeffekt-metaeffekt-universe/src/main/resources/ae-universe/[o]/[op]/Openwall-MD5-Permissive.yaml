@@ -1,0 +1,13 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+
+canonicalName: "Openwall MD5 Permissive"
+category: "Openwall MD5 Permissive"
+shortName: "openwall-md5-permissive"
+
+alternativeNames:
+  - "Openwall MD5 Permissive"
+
+otherIds: 
+  - "scancode:openwall-md5-permissive"

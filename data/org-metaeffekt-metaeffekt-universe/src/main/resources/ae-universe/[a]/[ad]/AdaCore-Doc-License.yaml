@@ -1,0 +1,16 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+
+canonicalName: "AdaCore Doc License"
+category: "AdaCore-doc"
+spdxIdentifier: "AdaCore-doc"
+
+openCoDEStatus: "approved"
+
+alternativeNames:
+  - "AdaCore-doc"
+  - "AdaCore Doc License"
+
+otherIds: 
+  - "scancode:adacore-doc"

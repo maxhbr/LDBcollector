@@ -1,0 +1,15 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+
+canonicalName: "PNG Reference Library License 2.0"
+category: "libpng"
+spdxIdentifier: "libpng-2.0"
+
+openCoDEStatus: "approved"
+
+alternativeNames:
+  - "PNG Reference Library License 2"
+
+otherIds: 
+  - "scancode:libpng-v2"

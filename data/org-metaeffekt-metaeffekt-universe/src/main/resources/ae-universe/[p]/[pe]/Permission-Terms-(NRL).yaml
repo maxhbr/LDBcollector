@@ -1,0 +1,15 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+
+canonicalName: "Permission Terms (NRL)"
+category: "Permission"
+spdxIdentifier: "CMU-Mach-nodoc"
+
+alternativeNames:
+  - "Permission Terms (NRL)"
+  - "CMU-Mach-nodoc"
+  - "CMU    Mach - no notices-in-documentation variant"
+
+otherIds: 
+  - "scancode:nrl-permission"

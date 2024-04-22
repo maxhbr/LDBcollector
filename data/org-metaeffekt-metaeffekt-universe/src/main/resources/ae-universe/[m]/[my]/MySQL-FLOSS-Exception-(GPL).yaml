@@ -1,0 +1,16 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+
+canonicalName: "MySQL FLOSS Exception (GPL)"
+category: "MySQL FLOSS"
+shortName: "MySQL-FLOSS-Exception"
+
+type: "exception"
+
+alternativeNames:
+  - "MySQL FLOSS License Exception"
+  - "The MySQL AB Exception for Free/Libre and Open Source Software-only Applications Using MySQL Client Libraries (the \"FLOSS Exception\"). Version 0.6, 7 March 2007"
+
+otherIds: 
+  - "scancode:mysql-floss-exception-2.0"

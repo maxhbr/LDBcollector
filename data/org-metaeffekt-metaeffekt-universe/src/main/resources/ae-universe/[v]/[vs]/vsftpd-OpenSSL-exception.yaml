@@ -1,0 +1,17 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+
+canonicalName: "vsftpd OpenSSL Exception"
+category: "vsftpd-openssl-exception"
+shortName: "vsftpd-OpenSSL-Exception"
+spdxIdentifier: "vsftpd-openssl-exception"
+
+type: "exception"
+
+alternativeNames:
+  - "vsftpd-openssl-exception"
+  - "vsftpd OpenSSL exception"
+
+otherIds: 
+  - "scancode:vsftpd-openssl-exception"

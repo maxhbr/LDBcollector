@@ -1,0 +1,22 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022-2024. All rights reserved.
+
+canonicalName: "CeCILL-C License"
+category: "CeCILL-C"
+spdxIdentifier: "CECILL-C"
+
+openCoDEStatus: "approved"
+
+alternativeNames:
+  - "CeCILL C"
+  - "CeCILL-C"
+  - "CECILL C"
+  - "CECILL-C"
+  - "CECILL C License"
+  - "CECILL-C License"
+  - "https://spdx.org/licenses/cecill-c"
+  - "eCILL-C Free Software License Agreement"
+
+otherIds: 
+  - "scancode:cecill-c-en"
