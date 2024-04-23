@@ -12,9 +12,14 @@
 # See https://docs.gitlab.com/ee/ci/variables/#cicd-variable-precedence
 image: python:3.8-alpine
 
-stages:
-  - test
-  - release
+include:
+  - template: Jobs/Dependency-Scanning.gitlab-ci.yml
+  - project: 'to-be-continuous/docker'
+    ref: '5.10.1'
+    file: '/templates/gitlab-ci-docker.yml'
+
+variables:
+  DOCKER_DRIVER: overlay2
 
 tests:
   stage: test
@@ -58,8 +63,6 @@ pages:
   artifacts:
     paths:
     - public
-variables:
-  DOCKER_DRIVER: overlay2
 
 release:
   stage: release
@@ -72,6 +75,3 @@ release:
     name: "$(echo $CI_COMMIT_TAG | sed 's/^v//')"
     tag_name: "$CI_COMMIT_TAG"
     description: See changes in CHANGELOG.md
-
-include:
-  - template: Jobs/Dependency-Scanning.gitlab-ci.yml
